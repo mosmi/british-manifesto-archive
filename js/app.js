@@ -5,8 +5,8 @@
 
 const SITE = {
   name: 'The British Manifesto Archive',
-  domain: 'manifestos.org.uk',
-  url: 'https://manifestos.org.uk',
+  domain: 'www.manifestos.org.uk',
+  url: 'https://www.manifestos.org.uk',
   description: 'A comprehensive digital archive of UK general election manifestos from 1945 to 2024. Browse party manifestos, election results, and constituency maps.',
 };
 
@@ -1526,7 +1526,7 @@ function renderAbout(app) {
     <div class="about-section">
       <span class="section-label">About this archive</span>
       <h1>The British<br>Manifesto Archive</h1>
-      <p class="about-domain"><a href="https://manifestos.org.uk/">manifestos.org.uk</a></p>
+      <p class="about-domain"><a href="https://www.manifestos.org.uk/">www.manifestos.org.uk</a></p>
       <div class="gold-rule"></div>
       <p>A comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of every UK general election from 1945 to 2024.</p>
       <p>The archive covers all four nations of the United Kingdom — England, Wales, Scotland and Northern Ireland — including their devolved institutions. Statistical data is sourced from the House of Commons Library Research Briefing CBP-7529, <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em>.</p>
