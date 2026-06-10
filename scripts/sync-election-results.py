@@ -93,6 +93,7 @@ LABEL_TO_PARTY: dict[str, str] = {
     "alliance": "alliance",
     "alliance alliance party of northern ireland": "alliance",
     "alliance party": "alliance",
+    "apni": "alliance",
     "vanguard": "vanguard",
     "tuv": "tuv",
     "traditional unionist voice tuv": "tuv",

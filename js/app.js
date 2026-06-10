@@ -21,6 +21,9 @@ function hasManifestoPdf(electionId, partyId) {
   return !MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`);
 }
 
+// Not shown in election-page manifesto lists (no manifestos published)
+const MANIFESTO_EXCLUDED_PARTIES = new Set(['speaker', 'independent']);
+
 function setPageTitle(pageTitle) {
   document.title = pageTitle
     ? `${pageTitle} — ${SITE.domain}`
@@ -747,7 +750,7 @@ function renderElection(app, id) {
   const manifestoPartyIds = [
     ...election.results.filter(r => r.seats > 0).map(r => r.party),
     ...(election.extraManifestoParties || []),
-  ].filter((v, i, a) => a.indexOf(v) === i && v !== 'others' && PARTIES[v]);
+  ].filter((v, i, a) => a.indexOf(v) === i && v !== 'others' && PARTIES[v] && !MANIFESTO_EXCLUDED_PARTIES.has(v));
 
   const NATION_ORDER  = ['england', 'scotland', 'wales', 'northern-ireland', 'others'];
   const NATION_LABELS = { england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England & UK-wide', scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland', wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales', 'northern-ireland': '🇮🇪 Northern Ireland', others: 'Other Parties' };

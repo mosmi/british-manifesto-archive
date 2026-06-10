@@ -22,6 +22,8 @@ import re
 import time
 import urllib.error
 import urllib.request
+import xml.etree.ElementTree as ET
+import zipfile
 from difflib import get_close_matches
 from pathlib import Path
 
@@ -29,6 +31,21 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "constituencies"
 HEX_DIR = ROOT / "data" / "hex"
 CACHE_DIR = ROOT / "data" / "cache" / "politicsresources"
+HOC_2019_XLSX = ROOT / "data" / "sources" / "HoC-GE2019-results-by-constituency.xlsx"
+
+HOC_2019_FIRST_PARTY = {
+    "Con": ("conservative", "Conservative"),
+    "Lab": ("labour", "Labour"),
+    "LD": ("libdem", "Liberal Democrat"),
+    "SNP": ("snp", "Scottish National Party"),
+    "PC": ("plaid", "Plaid Cymru"),
+    "DUP": ("dup", "DUP"),
+    "SF": ("sinnfein", "Sinn Féin"),
+    "SDLP": ("sdlp", "SDLP"),
+    "Green": ("green", "Green"),
+    "Spk": ("speaker", "Speaker"),
+    "APNI": ("alliance", "Alliance"),
+}
 
 
 def _apply_display_name_fixes(constituencies: list[dict]) -> None:
@@ -490,6 +507,91 @@ def build_election_json(
     }
 
 
+def read_xlsx_sheet_rows(path: Path, sheet: str = "sheet1.xml") -> list[list[str]]:
+    """Read first worksheet rows from an .xlsx without external dependencies."""
+    with zipfile.ZipFile(path) as zf:
+        shared: list[str] = []
+        if "xl/sharedStrings.xml" in zf.namelist():
+            root = ET.fromstring(zf.read("xl/sharedStrings.xml"))
+            ns = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+            for si in root.findall(".//m:si", ns):
+                texts = [t.text or "" for t in si.findall(".//m:t", ns)]
+                shared.append("".join(texts))
+        sheet_xml = f"xl/worksheets/{sheet}"
+        if sheet_xml not in zf.namelist():
+            sheet_xml = "xl/worksheets/sheet1.xml"
+        root = ET.fromstring(zf.read(sheet_xml))
+        ns = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+        rows: list[list[str]] = []
+        for row in root.findall(".//m:sheetData/m:row", ns):
+            vals: list[str] = []
+            for cell in row.findall("m:c", ns):
+                cell_type = cell.get("t")
+                value = cell.find("m:v", ns)
+                if value is None:
+                    vals.append("")
+                elif cell_type == "s":
+                    vals.append(shared[int(value.text)])
+                else:
+                    vals.append(value.text or "")
+            rows.append(vals)
+        return rows
+
+
+def fetch_hoc_xlsx_2019(path: Path = HOC_2019_XLSX) -> list[dict]:
+    """House of Commons GE2019 constituency results (First party column)."""
+    if not path.is_file():
+        raise FileNotFoundError(path)
+
+    rows = read_xlsx_sheet_rows(path)
+    header_idx = next(
+        (i for i, row in enumerate(rows) if row and row[0] == "ONS ID"),
+        None,
+    )
+    if header_idx is None:
+        raise RuntimeError(f"Could not find header row in {path}")
+
+    header = rows[header_idx]
+    col = {name: header.index(name) for name in header if name}
+
+    nation_by_country = {
+        "England": "england",
+        "Wales": "wales",
+        "Scotland": "scotland",
+        "Northern Ireland": "northern-ireland",
+    }
+
+    out: list[dict] = []
+    for row in rows[header_idx + 1 :]:
+        if len(row) <= col["Constituency name"]:
+            continue
+        name = row[col["Constituency name"]].strip()
+        if not name:
+            continue
+        first_party = row[col["First party"]].strip()
+        if first_party not in HOC_2019_FIRST_PARTY:
+            raise RuntimeError(f"Unmapped 2019 party code: {first_party!r} ({name})")
+        party_id, party_label = HOC_2019_FIRST_PARTY[first_party]
+        mp = f"{row[col['Member first name']].strip()} {row[col['Member surname']].strip()}".strip()
+        country = row[col["Country name"]].strip()
+        item = {
+            "name": name,
+            "mp": mp,
+            "party": party_id,
+            "partyLabel": party_label,
+            "nation": nation_by_country.get(country),
+            "code": row[col["ONS ID"]].strip(),
+            "region": row[col["ONS region ID"]].strip()
+            if "ONS region ID" in col
+            else None,
+        }
+        out.append(item)
+
+    if len(out) != 650:
+        raise RuntimeError(f"Expected 650 constituencies in {path}, got {len(out)}")
+    return out
+
+
 def fetch_wpc_2019() -> list[dict]:
     url = "https://raw.githubusercontent.com/alasdairrae/wpc/master/files/wpc_2019_flat_file_v9.csv"
     text = fetch_url(url)
@@ -568,9 +670,13 @@ def process_election(election_id: str) -> None:
     source = ""
 
     if election_id == "2019":
-        constituencies = fetch_wpc_2019()
+        if HOC_2019_XLSX.is_file():
+            constituencies = fetch_hoc_xlsx_2019()
+            source = "House of Commons Library (HoC-GE2019-results-by-constituency.xlsx)"
+        else:
+            constituencies = fetch_wpc_2019()
+            source = "alasdairrae/wpc (2019 flat file)"
         hex_file = "uk-constituencies-2010.hexjson"
-        source = "alasdairrae/wpc (2019 flat file)"
         hex_data = json.loads((HEX_DIR / hex_file).read_text(encoding="utf-8"))
         hexes = hex_data["hexes"]
         _, hex_lookup = load_hex_layout(HEX_DIR / hex_file)
@@ -628,7 +734,7 @@ def process_election(election_id: str) -> None:
     if out_path.exists():
         prev = json.loads(out_path.read_text(encoding="utf-8"))
         prev_seats = prev.get("totalSeats", 0)
-        if prev_seats > len(constituencies):
+        if prev_seats > len(constituencies) and election_id != "2019":
             print(
                 f"  → kept existing {prev_seats} constituencies "
                 f"(new fetch only {len(constituencies)})"
