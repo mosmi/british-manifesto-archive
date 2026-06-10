@@ -10,6 +10,17 @@ const SITE = {
   description: 'A comprehensive digital archive of UK general election manifestos from 1945 to 2024. Browse party manifestos, election results, and constituency maps.',
 };
 
+// Manifesto text without a PDF scan (electionId/partyId)
+const MANIFESTO_TEXT_ONLY = new Set([
+  '2001/omrlp',
+  '2005/omrlp',
+  '2015/omrlp',
+]);
+
+function hasManifestoPdf(electionId, partyId) {
+  return !MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`);
+}
+
 function setPageTitle(pageTitle) {
   document.title = pageTitle
     ? `${pageTitle} — ${SITE.domain}`
@@ -625,15 +636,44 @@ function setupTimelineFilter() {
 }
 
 // ── MANIFESTO CARD BUILDER ────────────────────────────────────
-function buildManifestoCard(pid, election) {
+function buildManifestoCard(pid, election, opts = {}) {
   const p = PARTIES[pid];
   const displayName  = getPartyName(pid, election.year);
   const pdfPath      = `manifestos/${election.id}/${pid}/manifesto.pdf`;
+  const textPath     = `#/manifesto/${election.id}/${pid}`;
   const coverPath    = `manifestos/${election.id}/${pid}/cover.png`;
   const coverFallback= `manifestos/${election.id}/${pid}/cover.jpg`;
-  const noSeats      = !election.results.find(r => r.party === pid && r.seats > 0);
+  const hasPdf       = hasManifestoPdf(election.id, pid);
+  const thumbHref    = hasPdf ? pdfPath : textPath;
+  const thumbTarget  = hasPdf ? ' target="_blank" rel="noopener"' : '';
+  const thumbLabel   = hasPdf
+    ? `Open ${displayName} ${election.displayYear} manifesto PDF`
+    : `Read ${displayName} ${election.displayYear} manifesto online`;
+
+  const result = opts.result;
+  const noSeats = result
+    ? result.seats === 0
+    : !election.results.find(r => r.party === pid && r.seats > 0);
+  const headerName = opts.showYearAsTitle
+    ? election.displayYear
+    : partyLink(pid, displayName, election.year);
+  const seatsTag = result
+    ? (result.seats === 0
+      ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
+      : `<div class="manifesto-party-tag">${result.seats} seat${result.seats !== 1 ? 's' : ''}</div>`)
+    : (noSeats
+      ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
+      : `<div class="manifesto-party-tag">${election.displayYear}</div>`);
+
+  const pdfLink = hasPdf
+    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document</div></div>
+        </a>`
+    : '';
+
   return `<div class="manifesto-card" style="--party-color:${p.color};--party-dim:${p.dim}">
-      <a href="${pdfPath}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">
+      <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
         <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
           onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFallback}';}">
         <div class="manifesto-thumb-placeholder" style="display:none">
@@ -650,15 +690,12 @@ function buildManifestoCard(pid, election) {
       </a>
       <div class="manifesto-card-header">
         <div class="manifesto-party-dot" style="background:${p.color}"></div>
-        <div class="manifesto-party-name">${partyLink(pid, displayName, election.year)}</div>
-        ${noSeats ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>' : `<div class="manifesto-party-tag">${election.displayYear}</div>`}
+        <div class="manifesto-party-name">${headerName}</div>
+        ${seatsTag}
       </div>
       <div class="manifesto-card-body">
-        <a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document</div></div>
-        </a>
-        <a href="#/manifesto/${election.id}/${pid}" class="manifesto-link">
+        ${pdfLink}
+        <a href="${textPath}" class="manifesto-link">
           <span class="manifesto-link-icon">📝</span>
           <div class="manifesto-link-info"><div class="manifesto-link-title">Read Online</div><div class="manifesto-link-sub">Formatted text version</div></div>
         </a>
@@ -935,47 +972,12 @@ function renderParty(app, id) {
     </a>`;
   }).join('');
 
-  const manifestoItems = partyElections.slice().reverse().map(({ election: e, result: r }) => {
-    const noSeats   = r.seats === 0;
-    const pdfPath   = `manifestos/${e.id}/${id}/manifesto.pdf`;
-    const coverPath = `manifestos/${e.id}/${id}/cover.png`;
-    const coverFallback = `manifestos/${e.id}/${id}/cover.jpg`;
-    const seatsTag  = noSeats
-      ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
-      : `<div class="manifesto-party-tag">${r.seats} seat${r.seats !== 1 ? 's' : ''}</div>`;
-    return `<div class="manifesto-card" style="--party-color:${color};--party-dim:${party.dim}">
-      <a href="${pdfPath}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open ${party.shortName} ${e.displayYear} manifesto PDF">
-        <img src="${coverPath}" alt="${party.shortName} ${e.displayYear} manifesto cover"
-          onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFallback}';}">
-        <div class="manifesto-thumb-placeholder" style="display:none">
-          <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
-            <rect x="4" y="2" width="32" height="42" rx="2" fill="currentColor" opacity="0.15"/>
-            <rect x="8" y="6" width="32" height="42" rx="2" fill="currentColor" opacity="0.2"/>
-            <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9" stroke="currentColor" stroke-width="0.5"/>
-            <line x1="19" y1="22" x2="37" y2="22" stroke="white" stroke-width="1.5" opacity="0.4"/>
-            <line x1="19" y1="28" x2="37" y2="28" stroke="white" stroke-width="1.5" opacity="0.4"/>
-            <line x1="19" y1="34" x2="30" y2="34" stroke="white" stroke-width="1.5" opacity="0.4"/>
-          </svg>
-          <span class="thumb-year">${e.displayYear}</span>
-        </div>
-      </a>
-      <div class="manifesto-card-header">
-        <div class="manifesto-party-dot" style="background:${color}"></div>
-        <div class="manifesto-party-name">${e.displayYear}</div>
-        ${seatsTag}
-      </div>
-      <div class="manifesto-card-body">
-        <a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document</div></div>
-        </a>
-        <a href="#/manifesto/${e.id}/${id}" class="manifesto-link">
-          <span class="manifesto-link-icon">📝</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Read Online</div><div class="manifesto-link-sub">Formatted text version</div></div>
-        </a>
-      </div>
-    </div>`;
-  }).join('');
+  const manifestoElections = partyElections.filter(({ election: e }) =>
+    hasManifestoPdf(e.id, id) || MANIFESTO_TEXT_ONLY.has(`${e.id}/${id}`)
+  );
+  const manifestoItems = manifestoElections.slice().reverse().map(({ election: e, result: r }) =>
+    buildManifestoCard(id, e, { result: r, showYearAsTitle: true })
+  ).join('');
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
   const nationCrumb = nationId
@@ -1460,7 +1462,9 @@ function renderManifesto(app, electionId, partyId) {
             <span style="color:${party.color}">${election.date}</span>
             <div id="manifesto-frontmatter"></div>
           </div>
-          <a href="manifestos/${electionId}/${partyId}/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF</a>
+          ${hasManifestoPdf(electionId, partyId)
+            ? '<a href="manifestos/' + electionId + '/' + partyId + '/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF</a>'
+            : ''}
         </div>
       </div>
       <div class="manifesto-viewer-body">
@@ -1489,7 +1493,9 @@ function renderManifesto(app, electionId, partyId) {
       document.getElementById('manifesto-content').innerHTML = `
         <div class="manifesto-placeholder-msg">
           <p>No manifesto text file found at <code>manifestos/${electionId}/${partyId}/manifesto.md</code>.</p>
-          <p>To add this manifesto, create a Markdown file at that path. You can also <a href="manifestos/${electionId}/${partyId}/manifesto.pdf" target="_blank" rel="noopener">view the PDF scan</a> if available.</p>
+          ${hasManifestoPdf(electionId, partyId)
+            ? `<p>You can also <a href="manifestos/${electionId}/${partyId}/manifesto.pdf" target="_blank" rel="noopener">view the PDF scan</a> if available.</p>`
+            : ''}
         </div>`;
     });
 }

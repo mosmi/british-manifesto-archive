@@ -1238,7 +1238,7 @@ const ELECTIONS = [
       'Lib Dems advance to 52 seats under Charles Kennedy',
     ],
     youtubeId: '-HGDplurdMQ',
-    extraManifestoParties: ['ukip', 'green', 'welshlab', 'scottishcon', 'scottishlab'],
+    extraManifestoParties: ['ukip', 'green', 'welshlab', 'scottishcon', 'scottishlab', 'omrlp'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 19.6 },
       welshlab:    { party: 'welshlab',    seats: 34, votes: 0, percentage: 48.6 },
@@ -1274,7 +1274,7 @@ const ELECTIONS = [
       'Lowest Labour vote share since 1987 despite majority win',
     ],
     youtubeId: '-fz6OdDZhT0',
-    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
+    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  3, votes: 0, percentage: 21.4 },
       welshlab:    { party: 'welshlab',    seats: 29, votes: 0, percentage: 42.7 },
@@ -1349,7 +1349,7 @@ const ELECTIONS = [
       'Miliband resigns; Jeremy Corbyn elected Labour leader months later',
     ],
     youtubeId: 'VjJDyIAI4SI',
-    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
+    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 11, votes: 0, percentage: 27.2 },
       welshlab:    { party: 'welshlab',    seats: 25, votes: 0, percentage: 36.9 },
