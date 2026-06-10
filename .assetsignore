@@ -1,0 +1,25 @@
+# Wrangler uploads everything under [assets] directory unless listed here.
+# The Cloudflare build clone includes .git — exclude it (pack files can be 600MB+).
+
+.git/
+**/.git/
+
+# Dev tooling — not part of the public site
+scripts/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Repo metadata (not served to visitors)
+README.md
+.gitignore
+wrangler.toml
+.assetsignore
+
+# Local-only files
+previews/
+data/cache/
+General election *.pdf
+Wikipedia*.html
+.DS_Store

@@ -24,7 +24,7 @@ Keep these dashboard settings:
 | **Deploy command** | `npx wrangler deploy` |
 | **Root directory** | `/` |
 
-`wrangler.toml` tells Wrangler to upload the repo root as static assets (`[assets] directory = "./"`).
+`wrangler.toml` tells Wrangler to upload the repo root as static assets (`[assets] directory = "./"`). `.assetsignore` excludes `.git/`, `scripts/`, and other non-public files from the upload.
 
 ### Option B — Pages (alternative)
 
