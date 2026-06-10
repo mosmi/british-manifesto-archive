@@ -1322,8 +1322,18 @@ h1, h2, h3, h4 {
   font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 300;
   color: var(--cream);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
+.about-domain {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 2rem !important;
+}
+.about-domain a {
+  color: var(--gold);
+  text-decoration: none;
+}
+.about-domain a:hover { text-decoration: underline; }
 .about-section p {
   font-size: 1rem;
   color: var(--text-muted);
@@ -1390,6 +1400,11 @@ h1, h2, h3, h4 {
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
+.footer-logo a {
+  color: var(--cream);
+  text-decoration: none;
+}
+.footer-logo a:hover { color: var(--gold); }
 .footer-tagline {
   font-size: 0.85rem;
   color: var(--text-muted);

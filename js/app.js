@@ -3,6 +3,46 @@
    Hash-based SPA routing + page rendering
    ============================================================ */
 
+const SITE = {
+  name: 'The British Manifesto Archive',
+  domain: 'manifestos.org.uk',
+  url: 'https://manifestos.org.uk',
+  description: 'A comprehensive digital archive of UK general election manifestos from 1945 to 2024. Browse party manifestos, election results, and constituency maps.',
+};
+
+function setPageTitle(pageTitle) {
+  document.title = pageTitle
+    ? `${pageTitle} — ${SITE.domain}`
+    : `${SITE.name} — ${SITE.domain}`;
+}
+
+function setPageMeta({ title, description } = {}) {
+  const pageTitle = title
+    ? `${title} — ${SITE.domain}`
+    : `${SITE.name} — ${SITE.domain}`;
+  const pageDescription = description || SITE.description;
+
+  setPageTitle(title);
+
+  const desc = document.getElementById('meta-description');
+  if (desc) desc.setAttribute('content', pageDescription);
+
+  const ogTitle = document.getElementById('og-title');
+  if (ogTitle) ogTitle.setAttribute('content', pageTitle);
+
+  const ogDesc = document.getElementById('og-description');
+  if (ogDesc) ogDesc.setAttribute('content', pageDescription);
+
+  const ogUrl = document.getElementById('og-url');
+  if (ogUrl) ogUrl.setAttribute('content', `${SITE.url}/`);
+
+  const twitterTitle = document.getElementById('twitter-title');
+  if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
+
+  const twitterDesc = document.getElementById('twitter-description');
+  if (twitterDesc) twitterDesc.setAttribute('content', pageDescription);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   buildNav();
   setupMobileMenu();
@@ -207,7 +247,7 @@ function setupMegaMenu() {
 let _homeElectionIndex = null;
 
 function renderHome(app) {
-  document.title = 'The British Manifesto Archive';
+  setPageMeta();
   _homeElectionIndex = ELECTIONS.length - 1;
 
   app.innerHTML = `
@@ -630,7 +670,10 @@ function buildManifestoCard(pid, election) {
 function renderElection(app, id) {
   const election = getElection(id);
   if (!election) { renderNotFound(app); return; }
-  document.title = `${election.displayYear} General Election — The British Manifesto Archive`;
+  setPageMeta({
+    title: `${election.displayYear} General Election`,
+    description: `Results, maps, and manifestos from the ${election.displayYear} UK general election.`,
+  });
 
   const winner   = PARTIES[election.winner] || {};
   const color    = winner.color || 'var(--gold)';
@@ -859,7 +902,10 @@ async function initElectionHexmap(electionId) {
 function renderParty(app, id) {
   const party = PARTIES[id];
   if (!party) { renderNotFound(app); return; }
-  document.title = `${party.shortName} — The British Manifesto Archive`;
+  setPageMeta({
+    title: party.shortName,
+    description: `Manifestos and election history for the ${party.shortName} in UK general elections since 1945.`,
+  });
 
   const color = party.color;
 
@@ -980,7 +1026,10 @@ function renderParty(app, id) {
 function renderNation(app, id) {
   const nation = NATIONS[id];
   if (!nation) { renderNotFound(app); return; }
-  document.title = `${nation.name} — The British Manifesto Archive`;
+  setPageMeta({
+    title: nation.name,
+    description: `Election results and parties in ${nation.name} at UK general elections since 1945.`,
+  });
 
   const navConfig = NAV_PARTIES[id];
   const partyLinks = navConfig ? navConfig.parties.map(pid => {
@@ -1199,7 +1248,10 @@ function renderNation(app, id) {
 function renderDevolved(app, id) {
   const portal = DEVOLVED_PORTALS?.[id];
   if (!portal) { renderNotFound(app); return; }
-  document.title = `${portal.label} — The British Manifesto Archive`;
+  setPageMeta({
+    title: portal.label,
+    description: `Devolved election information for ${portal.label}.`,
+  });
 
   const nation = NATIONS[portal.nation];
   const navConfig = NAV_PARTIES[portal.nation];
@@ -1251,7 +1303,10 @@ function renderDevolved(app, id) {
 
 // ── OTHERS PAGE ───────────────────────────────────────────────
 function renderOthers(app) {
-  document.title = 'Other Parties — The British Manifesto Archive';
+  setPageMeta({
+    title: 'Other Parties',
+    description: 'Minor and regional parties that have won seats at UK general elections since 1945.',
+  });
   const cards = OTHERS_PARTIES.map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
@@ -1382,7 +1437,10 @@ function renderManifesto(app, electionId, partyId) {
   const party    = PARTIES[partyId];
   if (!election || !party) { renderNotFound(app); return; }
   const displayName = getPartyName(partyId, election.year);
-  document.title = `${displayName} ${election.displayYear} Manifesto — The British Manifesto Archive`;
+  setPageMeta({
+    title: `${displayName} ${election.displayYear} Manifesto`,
+    description: `Read the ${displayName} manifesto from the ${election.displayYear} UK general election.`,
+  });
 
   app.innerHTML = `
     <div class="manifesto-viewer-page">
@@ -1451,11 +1509,15 @@ function parseMarkdown(md) {
 
 // ── ABOUT PAGE ────────────────────────────────────────────────
 function renderAbout(app) {
-  document.title = 'About — The British Manifesto Archive';
+  setPageMeta({
+    title: 'About',
+    description: 'About manifestos.org.uk — a digital archive of UK general election manifestos, results, and maps from 1945 to 2024.',
+  });
   app.innerHTML = `
     <div class="about-section">
       <span class="section-label">About this archive</span>
       <h1>The British<br>Manifesto Archive</h1>
+      <p class="about-domain"><a href="https://manifestos.org.uk/">manifestos.org.uk</a></p>
       <div class="gold-rule"></div>
       <p>A comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of every UK general election from 1945 to 2024.</p>
       <p>The archive covers all four nations of the United Kingdom — England, Wales, Scotland and Northern Ireland — including their devolved institutions. Statistical data is sourced from the House of Commons Library Research Briefing CBP-7529, <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em>.</p>
@@ -1483,6 +1545,6 @@ manifestos/{election-id}/{party-id}/manifesto.md</pre>
 
 // ── 404 ───────────────────────────────────────────────────────
 function renderNotFound(app) {
-  document.title = 'Not Found — The British Manifesto Archive';
+  setPageMeta({ title: 'Not Found', description: 'Page not found on manifestos.org.uk.' });
   app.innerHTML = `<div class="not-found"><h1>404</h1><p>This page could not be found.</p><a href="#/">Return to home</a></div>`;
 }
