@@ -10,21 +10,33 @@ python3 -m http.server 8888 --bind 127.0.0.1
 
 Open [http://127.0.0.1:8888/](http://127.0.0.1:8888/).
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
 
-1. Push this repository to GitHub (or GitLab).
-2. In [Cloudflare Pages](https://pages.cloudflare.com/), choose **Create a project → Connect to Git**.
-3. Select the repository and use these build settings:
+### Option A — Workers (current setup)
 
-   | Setting | Value |
-   |---------|-------|
-   | **Framework preset** | None |
-   | **Build command** | *(leave empty)* |
-   | **Build output directory** | `.` |
+If your Cloudflare project says **“Connect your Worker to a Git repository”** and shows **Deploy command: `npx wrangler deploy`**, you created a **Workers** project. That is fine for this static site.
 
-4. Deploy. The site will be served from `https://<project>.pages.dev`.
+Keep these dashboard settings:
 
-`wrangler.toml` and `_headers` in the repo root configure the static output directory and caching headers.
+| Setting | Value |
+|---------|-------|
+| **Build command** | *(empty)* |
+| **Deploy command** | `npx wrangler deploy` |
+| **Root directory** | `/` |
+
+`wrangler.toml` tells Wrangler to upload the repo root as static assets (`[assets] directory = "./"`).
+
+### Option B — Pages (alternative)
+
+For the classic Pages UI (Framework preset, Build output directory):
+
+1. **Workers & Pages** → **Create** → choose the **Pages** tab (not Workers)
+2. **Import an existing Git repository** → select this repo
+3. Framework preset: **None**, Build command: *(empty)*, Build output directory: **`.`**
+
+### After connecting Git
+
+Push to `main` (or **Deployments → Retry deployment**). The site will be served from your `*.workers.dev` or `*.pages.dev` URL.
 
 ### Before deploying
 
