@@ -1,0 +1,84 @@
+{
+  "id": "1945",
+  "year": 1945,
+  "displayYear": "1945",
+  "date": "5 July 1945",
+  "winner": "labour",
+  "pm": "Clement Attlee",
+  "outgoingPm": "Winston Churchill",
+  "totalSeats": 640,
+  "summary": "The 1945 general election produced one of the most dramatic results in British political history. Despite Winston Churchill's enormous personal popularity as wartime leader, the electorate delivered a landslide victory to Clement Attlee's Labour Party. Labour won 393 seats — a majority of 146 — on a programme of postwar reconstruction, nationalisation, and the creation of a comprehensive welfare state.\n\nThe result shocked many observers, including Churchill himself. British voters distinguished between Churchill the war hero and the Conservative Party, whose pre-war record on unemployment and appeasement had not been forgotten. Labour's promise of a \"New Jerusalem\" — built on the wartime Beveridge Report's blueprint for a cradle-to-grave welfare state — resonated with a population exhausted by years of sacrifice and determined to avoid the poverty of the 1930s.\n\nThe Attlee government went on to create the National Health Service (1948), nationalise key industries including coal, steel, and the railways, and preside over Indian independence. It remains one of the most transformative governments in British history.",
+  "highlights": [
+    "Labour wins 393 seats — its greatest ever majority at the time",
+    "Churchill loses despite leading Britain to victory in World War II",
+    "Result attributed to working-class desire for postwar reform and memory of 1930s unemployment",
+    "Attlee government goes on to create the NHS and nationalise key industries",
+    "Three weeks between polling day (5 July) and result (26 July) — votes from soldiers abroad counted last"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 23.8
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 25,
+      "votes": 0,
+      "percentage": 58.5
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 14.9
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 27,
+      "votes": 0,
+      "percentage": 40.3
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 37,
+      "votes": 0,
+      "percentage": 47.9
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 0,
+      "votes": 0,
+      "percentage": 5.6
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 393,
+      "votes": 11995152,
+      "percentage": 47.8
+    },
+    {
+      "party": "conservative",
+      "seats": 213,
+      "votes": 9988306,
+      "percentage": 39.8
+    },
+    {
+      "party": "libdem",
+      "seats": 12,
+      "votes": 2248226,
+      "percentage": 9
+    },
+    {
+      "party": "others",
+      "seats": 22,
+      "votes": 854294,
+      "percentage": 3.4
+    }
+  ]
+}

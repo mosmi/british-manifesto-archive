@@ -1,0 +1,205 @@
+{
+  "electionId": "1945",
+  "note": "22 constituencies (42 MPs) rendered outside the UK hex boundary. Member colours follow Wikipedia party convention; 1945 NI Unionists use Conservative blue.",
+  "groups": [
+    {
+      "id": "territorial_multimember_england",
+      "seats": [
+        {
+          "name": "City of London",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Sir George Broadbridge, Bt", "party": "Conservative", "colour": "#0087DC" },
+            { "name": "Sir Andrew Duncan", "party": "National", "colour": "#AAAAAA" }
+          ]
+        },
+        {
+          "name": "Blackburn",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Barbara Castle", "party": "Labour", "colour": "#E4003B" },
+            { "name": "John Edwards", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Bolton",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Jack Jones", "party": "Labour", "colour": "#E4003B" },
+            { "name": "John Lewis", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Brighton",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Anthony Marlowe", "party": "Conservative", "colour": "#0087DC" },
+            { "name": "William Teeling", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "Derby",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Philip Noel-Baker", "party": "Labour", "colour": "#E4003B" },
+            { "name": "Clifford Wilcock", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Norwich",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Lady Noel-Buxton", "party": "Labour", "colour": "#E4003B" },
+            { "name": "John Paton", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Oldham",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Frank Fairhurst", "party": "Labour", "colour": "#E4003B" },
+            { "name": "Leslie Hale", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Preston",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Samuel Segal", "party": "Labour", "colour": "#E4003B" },
+            { "name": "John William Sunderland", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Southampton",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Tommy Lewis", "party": "Labour", "colour": "#E4003B" },
+            { "name": "Ralph Morley", "party": "Labour", "colour": "#E4003B" }
+          ]
+        },
+        {
+          "name": "Stockport",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Sir Arnold Gridley", "party": "Conservative", "colour": "#0087DC" },
+            { "name": "Norman Hulbert", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "Sunderland",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Richard Ewart", "party": "Labour", "colour": "#E4003B" },
+            { "name": "Fred Willey", "party": "Labour", "colour": "#E4003B" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "territorial_multimember_scotland",
+      "seats": [
+        {
+          "name": "Dundee",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Thomas Cook", "party": "Labour", "colour": "#E4003B" },
+            { "name": "John Strachey", "party": "Labour", "colour": "#E4003B" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "territorial_multimember_ni",
+      "seats": [
+        {
+          "name": "Antrim",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Hon. Sir Hugh O'Neill", "party": "Conservative", "colour": "#0087DC" },
+            { "name": "Samuel Gillmor Haughton", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "Down",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "James Little", "party": "Independent Unionist", "colour": "#AADFFF" },
+            { "name": "W. D. Smiles", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "Fermanagh and Tyrone",
+          "type": "territorial_multimember",
+          "members": [
+            { "name": "Anthony Mulvey", "party": "Irish Nationalist", "colour": "#008672" },
+            { "name": "Patrick Cunningham", "party": "Irish Nationalist", "colour": "#008672" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university",
+      "seats": [
+        {
+          "name": "Cambridge University",
+          "type": "university",
+          "members": [
+            { "name": "Kenneth Pickthorn", "party": "Conservative", "colour": "#0087DC" },
+            { "name": "Wilson Harris", "party": "Independent", "colour": "#DCDCDC" }
+          ]
+        },
+        {
+          "name": "Combined English Universities",
+          "type": "university",
+          "members": [
+            { "name": "Eleanor Rathbone", "party": "Independent", "colour": "#DCDCDC" },
+            { "name": "Kenneth Lindsay", "party": "Independent", "colour": "#DCDCDC" }
+          ]
+        },
+        {
+          "name": "Combined Scottish Universities",
+          "type": "university",
+          "members": [
+            { "name": "Sir John Anderson", "party": "National", "colour": "#AAAAAA" },
+            { "name": "Sir John Boyd Orr", "party": "Independent", "colour": "#DCDCDC" },
+            { "name": "Sir John Graham Kerr", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "London University",
+          "type": "university",
+          "members": [
+            { "name": "Sir Ernest Graham-Little", "party": "Independent", "colour": "#DCDCDC" }
+          ]
+        },
+        {
+          "name": "Oxford University",
+          "type": "university",
+          "members": [
+            { "name": "Alan Herbert", "party": "Independent", "colour": "#DCDCDC" },
+            { "name": "Sir Arthur Salter", "party": "Independent", "colour": "#DCDCDC" }
+          ]
+        },
+        {
+          "name": "Queen's University of Belfast",
+          "type": "university",
+          "members": [
+            { "name": "Douglas Savory", "party": "Conservative", "colour": "#0087DC" }
+          ]
+        },
+        {
+          "name": "University of Wales",
+          "type": "university",
+          "members": [
+            { "name": "William John Gruffydd", "party": "Liberal", "colour": "#FFD700" }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "constituencies": 22,
+    "members": 42,
+    "mainland_hexes": 599
+  }
+}

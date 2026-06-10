@@ -1,0 +1,83 @@
+{
+  "id": "1955",
+  "year": 1955,
+  "displayYear": "1955",
+  "date": "26 May 1955",
+  "winner": "conservative",
+  "pm": "Anthony Eden",
+  "outgoingPm": "Winston Churchill",
+  "totalSeats": 630,
+  "summary": "Anthony Eden called and won a snap election shortly after succeeding Churchill as Prime Minister, increasing the Conservative majority to 60. Eden's personal popularity and economic stability helped secure the result. Labour under Hugh Gaitskell struggled to present a distinct alternative. Eden's triumph would be short-lived: the Suez Crisis of 1956 forced his resignation within two years.",
+  "highlights": [
+    "Eden increases Conservative majority to 60 seats",
+    "First election fought with commercial television advertising",
+    "Labour under Gaitskell cannot break through",
+    "Suez Crisis would end Eden's premiership within 18 months"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 29.9
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 27,
+      "votes": 0,
+      "percentage": 57.6
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 7.3
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 36,
+      "votes": 0,
+      "percentage": 50.1
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 34,
+      "votes": 0,
+      "percentage": 46.7
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 1.9
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 344,
+      "votes": 13286569,
+      "percentage": 49.7
+    },
+    {
+      "party": "labour",
+      "seats": 277,
+      "votes": 12404970,
+      "percentage": 46.4
+    },
+    {
+      "party": "libdem",
+      "seats": 6,
+      "votes": 722405,
+      "percentage": 2.7
+    },
+    {
+      "party": "others",
+      "seats": 3,
+      "votes": 346554,
+      "percentage": 1.2
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+---
+election_year: 2005
+party_id: loony
+party_name: Official Monster Raving Loony Party
+party_leader: Alan Hope
+political_spectrum: satirical
+victory: false
+government_outcome: opposition
+sections:
+  - economy
+  - taxation
+  - health
+  - education
+  - defence
+  - foreign-policy
+  - transport
+  - law-and-order
+  - democracy-and-constitution
+---
+
+# Official Monster Raving Loony Party Manifesto 2005
+
+## The Official Monster Raving Loony Party
+
+### 2005 General Election Manifesto
+
+---
+
+On the eve of the dissolution, we take the liberty of recalling to your minds the considerations which, in our judgement, should weigh with you in the exercise of your rights as voters during the next few weeks.
+
+We firstly intend to sack anyone who writes such nonsense as the opening statement, and pledge to fight the general election on an invisible platform so that people cannot see the floors in our policies.
+
+We are pleased that the Government has stolen our loony policy of discouraging binge drinking by proposing to open pubs for 24 hours and now feel that the public see that a vote for the Official Monster Raving Loony Party is no longer a wasted vote. We are preparing for Government.
+
+---
+
+### Economy
+
+#### Overview
+
+Our team of experts has decided that Income Tax has not proved popular with the public and will therefore be abolished. It was started in order to finance the Napoleonic war in 1799 and we now believe that the time is right to announce the cessation of hostilities with Napoleon. Some of the money left in the coffers will be used to fill in our part of the Channel Tunnel in case no one has mentioned it to the French. Any remaining money will be strategically placed on a horse at the 3-30 at Haydock Park at odds of at least 12/1 in order to see us through until the next election. Income Tax will be officially replaced by people lending the government a bob or two at the end of the week when we're a bit skint.
+
+#### Other Policies
+
+- We will issue a 99p coin to save on change.
+- The Official Monster Raving Loony Party will not join the single European currency. We will invite all European countries to JOIN THE POUND.
+- Rich people should be taxed to pay for the printing of money, as they use most of it.
+- Tax credits will be paid to nice people. There will be a "total bastard" tax for everyone else.
+
+---
+
+### Sleaze
+
+#### Overview
+
+We feel that a £57,000 a year salary is quite ample for the average person to survive on and that the £118,000 expenses that MPs also manage to wangle is far too much. The expenses money will in future be distributed to the poor and needy so that they can waste it instead.
+
+#### Other Policies
+
+- Any Home Secretary claiming to have more children than necessary will be made to run the House of Commons Crèche.
+- Any cabinet minister found telling lies will be shot across the English Channel in a high velocity circus cannon to save time and first class travel expenses. Top British engineers will be employed to plot the correct trajectory. A European funded net will be set up strategically in front of the European Parliament so that when the errant MP hits it, he or she will bounce through the second floor window where they will be handed champagne and canapés at a reception hosted by Leon Brittan and Peter Mandelson.
+- To help finance the above mentioned net, when it is not required it will be hired out to the London production of *Chitty Chitty Bang Bang!* for the child catcher.
+- In reaction to the old adage, "Children are so honest", we intend to reduce the age of standing for parliament from 21 to 5.
+
+---
+
+### Education
+
+#### Overview
+
+We pledge to reduce class sizes by making the pupils sit closer to one another and issuing them with smaller desks. Any MP whose constituency sells off a school playing field for development will be required to relinquish their own back garden as a replacement sports facility for the school. All future Deputy Prime Ministers will be required to be fluent in at least one language to encourage the education system.
+
+#### Other Policies
+
+- In the interests of fair education policy, under a Loony government all children will automatically be given full marks in their exams.
+- Bright pupils will be provided with dimmer switches to prevent them distracting the rest of the class.
+- SATs tests will be abolished and replaced by Gordon Ramsay-style cookery lessons and Rolf Harris art classes.
+- All children will be given two birthdays like the Queen.
+- Any child who is cleverer than their teacher will be allowed to take over the class and the teacher will stand at the back with a dunce's hat on. He or she will then be on half pay until he or she has learnt enough to regain the upper ground. This is our policy for child empowerment.
+- The number 13 will be abolished due to its longstanding unpopularity. The bus to Acton North will now not have a number on it but not much else will be affected. Therefore if you see a bus with no number on it, it will be going to Acton North. Please remember this for future reference.
+
+#### Policies for Students
+
+- Eton and Oxford will be relocated to Blackpool and Bognor Regis, leaving the other universities with a chance of a bigger intake.
+- All students will be awarded The Louis Pasteur degree for the scientific research into the growth of mould.
+- We intend to make free university tuition available to all students named Grant.
+- Any student who says the word "Like" when not grammatically called for — as in, "Hey, I'm.. Like, going down the… like, pub", or "I was, like, don't do that" — will be made to go and stay with George Bush for a week in order to discourage them from other stupid Americanisms.
+
+---
+
+### Political Reform
+
+#### Overview: Relocation of the Houses of Parliament
+
+The Houses of Parliament will be demolished and replaced by a mobile parliament. This will allow MPs to be picked up in the mornings if their cars won't start. It will also allow the public to see parliament at work and members will be able to wave to the public as it is going along. It will also cut out any necessity to have regional assemblies as it can park up at different towns and villages throughout the year. On the old site of parliament a large statue of Screaming Lord Sutch will be erected and a Loony Village will be built where it will be obligatory to enjoy yourself. Pogo sticks will be provided free of charge.
+
+#### Other Policies
+
+- We will replace the House of Lords with the House of Cards, to make it easier for the Government to deal with.
+- Portional Representation will be introduced in England. One vote, one Raffle Ticket.
+- Government Whips will only be used if a politician has been really bad. Minor offences should receive the political slipper.
+
+### Transport
+
+- In order to combat motorway congestion we will immediately close all motorways to all vehicles with the exception of bicycles, to encourage our green policy and fitness. Any bicycles with more than 3 gears will also be banned for safety reasons. Apart from anything else, this will allow police to get on with catching burglars. Traffic cops who are not intelligent enough to cope with proper police work will be allowed to wear their uniforms for a transitional period before being retrained as vicars.
+- Pram lanes will be created in all shopping centres.
+- All cars will be converted to run on Venos to help stop congestion.
+- 4-wheel drive vehicles will only be allowed to drive off road, thereby stopping mothers picking up their children from school in them when they only live 100 yards down the road. They will also be wrapped in bubble wrap to make them safer.
+- All trains will be fitted with an automatic braking system that will function as soon as it sees red; this will include people who have been completely enraged by having to stand waiting on a platform for 3 hours.
+- Rather than attempt re-opening disused railway lines we will put sound systems every 500 yards along the disused tracks which will play sound effects of old steam trains to keep railway loonies happy. When they choose to walk along the old railways nostalgically, men will be employed to throw buckets of soot over them every so often.
+- Drivers will be allowed to drive over roundabouts when there's nothing about. This will make driving through Milton Keynes much more fun.
+- All speed cameras will be abolished and replaced by a new device fitted to your car which will automatically slow down to the speed limit when driven through an infra-red beam. This will also apply to police cars; their device will be set to 5 mph through built-up areas.
+- Traffic wardens will be renamed Dick Turpin because, let's face it, it's daylight robbery.
+- Any kerbs that are caught crawling will be arrested and the council will be fined £100,000.
+
+---
+
+### Law and Order
+
+- We fully back the government's policy of discouraging binge drinking by opening pubs for 24 hours. We believe that 24 hours is not quite long enough and propose to make the length of a day 32 hours long so that the pubs can be open for even longer. We also rather like the government idea of coming down hard on drugs by legalising them. Regarding tobacco, it will now only be legal to smoke it with cannabis. Anyone found to have a cigarette not containing any cannabis will be made to walk to Coventry with a stone in their shoe, unless they come from Coventry, in which case an alternative major city will be substituted on the advice of a committee who will meet far too often and eat dope cakes.
+- Anyone caught breaking the law will be made to mend it.
+- Any child found breaking the Auntie Social Order will be sent to their Uncle's for a good clip around the ear.
+- All police will be made to say "HELLO, HELLO, HELLO" when making an arrest. This will treble the police force.
+- Police helmets will be reintroduced and made even sillier. The higher the police rank, the higher their hat becomes. At Christmas they will be able to put flashing lights on them and generally decorate them. Once they have achieved the rank of Chief Constable the height of their hats will not allow them to leave their office — which they don't anyway.
+
+### Home Affairs
+
+- We will set up an enquiry to find out why there's a Polar Bear on Fox's Glacier Mints.
+- The Millennium Bridge will be made wobbly again, by building a pub at either end.
+- All computers will carry a hazard warning sign saying: *"Please do NOT forget to open your window before you throw this computer out of it."*
+- Due to the government's policy of opening pubs 24 hours a day, a Loony government will, for public safety, make the wearing of seat belts compulsory in all pubs, and pub tables will be fitted with airbags so you can fall over drunk without damaging your head (this does not offer protection from your wife attacking you with the rolling pin when you get home drunk).
+- Everyone wanting to come and live in the UK will be made welcome, so long as they are over the age of 85 and accompanied by both parents.
+
+---
+
+### Environment
+
+- All foxes will be issued with sheep's clothing.
+- Half the grey squirrel population will be painted red in order to increase the red squirrel population.
+- All houses built on flood plains will have foundations made of sponge, in order to soak up surplus water.
+- All people that think that they have a right to roam will need permission from the Pope.
+- Fox hunting will be reintroduced under the "one hound – one dog" policy to make it a bit fairer.
+- All food shall be clearly labelled "Recommended for Oral Use".
+- All fast food will be clearly labelled "May contain traces of real food".
+- With the growth of the motorist's nightmare, the HUMPS, town farm cows WILL BE RE-INTRODUCED, as when they are going for milking they will block roads admirably and keep the speeding traffic down.
+
+---
+
+### Health
+
+- To solve the increasing obesity problem and global warming, all TVs and home computers must be run only by exercycle generators. A phase-in period of this major remedy will be allowed — maybe 5 to 5 million minutes.
+- We will ask the Tooth Fairy to bring back all our good teeth and stop the rot in your dental services.
+- The care in care homes needs to be addressed under an OMRLP government. Cocktails of drugs used to keep the elderly quiet will be banned and replaced by fruit cocktail, oxtail and prawn cocktail.
+- All foreign GPs in England and Wales will be taught the local dialect so they know when their patients feel Jiggered (Tired), Manky (Rough), Gipping (Vomiting) or have got somit rang with their Fizog (Face).
+- To prevent congestion on hospital wards, all hospital visits will be cut to 30 minutes a day, with the exception of Coco the Clown to entertain the nurses.
+
+---
+
+### Defence
+
+- All WMDs (Weapons of Mass Distraction) will be made highly visible so that we can find them.
+- Any politician wanting to start a war will be shipped off to the country in question with a bag of conkers. They can then conker the country themselves.
+- The white cliffs of Dover will be painted blue to camouflage our islands.
+- Buckingham Palace will be defended by triffids, cultivated by Prince Charles.
+- Anyone criticising defence will be made to mend it with de hammer and de nails.
+
+---
+
+### Pets
+
+- Anyone believing that their pet understands every word that they say to them will be asked to make the pet write a thesis to prove it.
+- It will be legal to keep Tapirs. People will be encouraged to keep them as pets because they are very funny and will cheer up the population no end.
+- Anyone keeping crocodiles will have to have their teeth removed. But the crocodiles won't.
+
+---
+
+### OAPs
+
+- We will raise the old age pension to £2,000 a week for every pensioner who, for a period of more than 6 days, manages not to bore everyone witless about how brilliant their grandchildren are. To ease the transition period, special centres will be built where they may go once a week and rattle on about them. Unemployed people will be paid a 'Bore Allowance' of £27.50 a day to sit in front of them pretending to give a damn and saying "Mmm, how interesting" and "Really, well I never" and other statements as determined by the government. Tea and biscuits will be provided and the Samaritans will be on hand to counsel any of the 'Bore Allowance' volunteers.
+- Meals will be served on plates, not on wheels.
+- Norman Wisdom will be made Minister of Pensions. Pensions will be raised by 100% on inflation, because I am nearly at retirement age myself.
+- Old age will be made officially 5 years older than you are.
+- All OAPs will have the luxury of a woolly muff and free electric chairs.
+
+---
+
+### Sport
+
+- All footballers will be made to wear slippers to make the game more interesting.
+- Boxing will be made obligatory for people we don't like.
+- The Olympic Games will only allow British sports people to take part in order to help our gold medal chances.
+- In view of the new sports being introduced into the Olympic Games, we intend to make 'Synchronised Farting' a national sport and to reintroduce cheese rolling.
+
+---
+
+### Final Pledges
+
+To keep up with the present government we promise to introduce many policies that have not been thought through properly, purely for cheap votes.
+
+These include:
+
+- Making everyone a lottery winner
+- Providing beer for school children
+- Giving everyone a quid who votes for us
+
+---
+
+### The Queen
+
+In future the National Anthem will be 'Bring Me Sunshine' as sung by Morecambe and Wise. It is quicker, more tuneful and people know the words. On state occasions Prince Philip will juggle his spectacles up and down and say, "Hey!" before the whole of the Royal Family do the dance off at the end. If the music cannot be found because it was left in the pub then it may be substituted by 'The Hippo Song' by Flanders and Swann.

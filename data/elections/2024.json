@@ -1,0 +1,161 @@
+{
+  "id": "2024",
+  "year": 2024,
+  "displayYear": "2024",
+  "date": "4 July 2024",
+  "winner": "labour",
+  "pm": "Keir Starmer",
+  "outgoingPm": "Rishi Sunak",
+  "totalSeats": 650,
+  "summary": "Keir Starmer led Labour to its second-greatest landslide in history, winning 411 seats and a majority of 172 — the largest since Tony Blair's 1997 triumph. The Conservatives under Rishi Sunak were reduced to just 121 seats — their worst result since 1832. Nigel Farage's Reform UK won 5 seats but 14.3% of the national vote. The Liberal Democrats achieved 72 seats — their best result since 1923.",
+  "highlights": [
+    "Labour wins 411 seats — largest majority since Blair's 1997 landslide",
+    "Conservative catastrophe: 121 seats and 23.7% — worst result since 1832",
+    "Liberal Democrats win 72 seats — their best result since 1923",
+    "Reform UK wins 14.3% of the vote but only 5 seats under Nigel Farage",
+    "SNP collapses from 48 to just 9 seats as Labour sweeps Scotland",
+    "Rishi Sunak concedes defeat in a dawn address outside Downing Street"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [
+    "cooperative",
+    "gpni",
+    "workersparty",
+    "welshcon",
+    "welshlab",
+    "scottishcon",
+    "scottishlab",
+    "scottishlibdem",
+    "scottishgrn"
+  ],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 0,
+      "votes": 0,
+      "percentage": 18.2
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 27,
+      "votes": 0,
+      "percentage": 37
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 6.5
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 5,
+      "votes": 0,
+      "percentage": 12.7
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 37,
+      "votes": 0,
+      "percentage": 35.3
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 9.7
+    },
+    "scottishgrn": {
+      "party": "scottishgrn",
+      "seats": 0,
+      "votes": 0,
+      "percentage": 3.8
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 411,
+      "votes": 9708716,
+      "percentage": 33.7
+    },
+    {
+      "party": "conservative",
+      "seats": 121,
+      "votes": 6828925,
+      "percentage": 23.7
+    },
+    {
+      "party": "libdem",
+      "seats": 72,
+      "votes": 3519143,
+      "percentage": 12.2
+    },
+    {
+      "party": "reform",
+      "seats": 5,
+      "votes": 4117610,
+      "percentage": 14.3
+    },
+    {
+      "party": "snp",
+      "seats": 9,
+      "votes": 724758,
+      "percentage": 2.5
+    },
+    {
+      "party": "green",
+      "seats": 4,
+      "votes": 1843124,
+      "percentage": 6.4
+    },
+    {
+      "party": "plaid",
+      "seats": 4,
+      "votes": 194811,
+      "percentage": 0.7
+    },
+    {
+      "party": "sinnfein",
+      "seats": 7,
+      "votes": 210891,
+      "percentage": 0.7
+    },
+    {
+      "party": "sdlp",
+      "seats": 2,
+      "votes": 86861,
+      "percentage": 0.3
+    },
+    {
+      "party": "alliance",
+      "seats": 1,
+      "votes": 117191,
+      "percentage": 0.4
+    },
+    {
+      "party": "dup",
+      "seats": 5,
+      "votes": 172058,
+      "percentage": 0.6
+    },
+    {
+      "party": "uup",
+      "seats": 1,
+      "votes": 94779,
+      "percentage": 0.3
+    },
+    {
+      "party": "tuv",
+      "seats": 1,
+      "votes": 48685,
+      "percentage": 0.2
+    },
+    {
+      "party": "others",
+      "seats": 7,
+      "votes": 893576,
+      "percentage": 3.2
+    }
+  ]
+}

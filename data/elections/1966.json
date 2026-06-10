@@ -1,0 +1,82 @@
+{
+  "id": "1966",
+  "year": 1966,
+  "displayYear": "1966",
+  "date": "31 March 1966",
+  "winner": "labour",
+  "pm": "Harold Wilson",
+  "outgoingPm": "Harold Wilson",
+  "totalSeats": 630,
+  "summary": "Wilson called a snap election to strengthen his tiny majority and won decisively, giving Labour 363 seats and a majority of 96. The result gave Wilson a mandate to pursue his modernisation agenda. However, sterling devaluation and industrial unrest would soon undermine his second administration.",
+  "highlights": [
+    "Wilson wins decisive mandate; Labour majority increases to 96",
+    "England hosts and wins the FIFA World Cup later that year",
+    "Sterling devaluation crisis would later embarrass Wilson's government"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 27.9
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 32,
+      "votes": 0,
+      "percentage": 60.7
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 6.3
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 20,
+      "votes": 0,
+      "percentage": 37.6
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 46,
+      "votes": 0,
+      "percentage": 49.9
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 5,
+      "votes": 0,
+      "percentage": 6.8
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 363,
+      "votes": 13064951,
+      "percentage": 47.9
+    },
+    {
+      "party": "conservative",
+      "seats": 253,
+      "votes": 11418433,
+      "percentage": 41.9
+    },
+    {
+      "party": "libdem",
+      "seats": 12,
+      "votes": 2327533,
+      "percentage": 8.5
+    },
+    {
+      "party": "others",
+      "seats": 2,
+      "votes": 452689,
+      "percentage": 1.7
+    }
+  ]
+}

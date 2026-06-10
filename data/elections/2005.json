@@ -1,0 +1,141 @@
+{
+  "id": "2005",
+  "year": 2005,
+  "displayYear": "2005",
+  "date": "5 May 2005",
+  "winner": "labour",
+  "pm": "Tony Blair",
+  "outgoingPm": "Tony Blair",
+  "totalSeats": 646,
+  "summary": "Labour won a reduced but still comfortable majority of 66, becoming the first Labour government to win three consecutive terms. However, the Iraq War had severely damaged Blair's authority — Labour's vote share fell from 40.7% to 35.2%, and the party lost 47 seats. The Liberal Democrats, strongly anti-war under Charles Kennedy, advanced to 62 seats — their best result in modern times.",
+  "highlights": [
+    "Labour wins historic third consecutive term",
+    "Iraq War damages Blair's vote share significantly",
+    "Liberal Democrats advance to 62 seats on anti-war platform",
+    "Blair announces he will not serve full term; Brown transition begins",
+    "Lowest Labour vote share since 1987 despite majority win"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [
+    "cooperative",
+    "ukip",
+    "bnp",
+    "respect",
+    "ssp",
+    "alliance",
+    "green",
+    "welshcon",
+    "scottishgrn",
+    "welshlab",
+    "welshlibdem",
+    "scottishcon",
+    "scottishlab",
+    "scottishlibdem"
+  ],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 21.4
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 29,
+      "votes": 0,
+      "percentage": 42.7
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 18.4
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 15.8
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 40,
+      "votes": 0,
+      "percentage": 38.9
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 11,
+      "votes": 0,
+      "percentage": 22.6
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 356,
+      "votes": 9552436,
+      "percentage": 35.2
+    },
+    {
+      "party": "conservative",
+      "seats": 198,
+      "votes": 8784915,
+      "percentage": 32.4
+    },
+    {
+      "party": "libdem",
+      "seats": 62,
+      "votes": 5985454,
+      "percentage": 22
+    },
+    {
+      "party": "snp",
+      "seats": 6,
+      "votes": 412267,
+      "percentage": 1.5
+    },
+    {
+      "party": "plaid",
+      "seats": 3,
+      "votes": 174838,
+      "percentage": 0.6
+    },
+    {
+      "party": "uup",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "dup",
+      "seats": 9,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sdlp",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sinnfein",
+      "seats": 5,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "respect",
+      "seats": 1,
+      "votes": 68094,
+      "percentage": 0.3
+    },
+    {
+      "party": "others",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 8
+    }
+  ]
+}

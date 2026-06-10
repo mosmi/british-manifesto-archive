@@ -1,0 +1,5 @@
+# Cloudflare Pages — static site, no build step.
+# Dashboard: Build command (empty), Build output directory = .
+name = "british-manifesto-archive"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "."

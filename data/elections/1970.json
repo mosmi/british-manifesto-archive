@@ -1,0 +1,83 @@
+{
+  "id": "1970",
+  "year": 1970,
+  "displayYear": "1970",
+  "date": "18 June 1970",
+  "winner": "conservative",
+  "pm": "Edward Heath",
+  "outgoingPm": "Harold Wilson",
+  "totalSeats": 630,
+  "summary": "The 1970 election produced one of the great upsets in British electoral history. Opinion polls had consistently shown Labour ahead, but Edward Heath's Conservatives won a comfortable majority of 30. Heath's government would go on to take the UK into the European Economic Community in 1973 but struggle with industrial unrest, power cuts, and the three-day week.",
+  "highlights": [
+    "Major polling upset — Conservatives win despite trailing in surveys",
+    "Heath takes UK into the European Economic Community in 1973",
+    "First election in which 18-year-olds could vote",
+    "Enoch Powell's \"Rivers of Blood\" speech had influenced the political mood"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 7,
+      "votes": 0,
+      "percentage": 27.7
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 27,
+      "votes": 0,
+      "percentage": 51.6
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 6.8
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 23,
+      "votes": 0,
+      "percentage": 38
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 44,
+      "votes": 0,
+      "percentage": 44.5
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 5.5
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 330,
+      "votes": 13145123,
+      "percentage": 46.4
+    },
+    {
+      "party": "labour",
+      "seats": 287,
+      "votes": 12179341,
+      "percentage": 43
+    },
+    {
+      "party": "libdem",
+      "seats": 6,
+      "votes": 2117035,
+      "percentage": 7.5
+    },
+    {
+      "party": "others",
+      "seats": 7,
+      "votes": 1163704,
+      "percentage": 3.1
+    }
+  ]
+}

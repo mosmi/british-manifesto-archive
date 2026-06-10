@@ -1,0 +1,178 @@
+[
+  {
+    "id": "1945",
+    "available": true,
+    "seats": 601,
+    "matchedHexes": 572,
+    "source": "politicsresources.net (ge45)",
+    "hexLayout": "elections/1945.hexjson"
+  },
+  {
+    "id": "1950",
+    "available": true,
+    "seats": 625,
+    "matchedHexes": 625,
+    "source": "politicsresources.net (ge50)",
+    "hexLayout": "elections/1950.hexjson"
+  },
+  {
+    "id": "1951",
+    "available": true,
+    "seats": 625,
+    "matchedHexes": 625,
+    "source": "politicsresources.net (ge51)",
+    "hexLayout": "elections/1951.hexjson"
+  },
+  {
+    "id": "1955",
+    "available": true,
+    "seats": 630,
+    "matchedHexes": 630,
+    "source": "politicsresources.net (ge55) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1955.hexjson"
+  },
+  {
+    "id": "1959",
+    "available": true,
+    "seats": 630,
+    "matchedHexes": 630,
+    "source": "politicsresources.net (ge59) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1959.hexjson"
+  },
+  {
+    "id": "1964",
+    "available": true,
+    "seats": 630,
+    "matchedHexes": 630,
+    "source": "politicsresources.net (ge64) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1964.hexjson"
+  },
+  {
+    "id": "1966",
+    "available": true,
+    "seats": 630,
+    "matchedHexes": 630,
+    "source": "politicsresources.net (ge66) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1966.hexjson"
+  },
+  {
+    "id": "1970",
+    "available": true,
+    "seats": 630,
+    "matchedHexes": 630,
+    "source": "politicsresources.net (ge70) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1970.hexjson"
+  },
+  {
+    "id": "feb1974",
+    "available": true,
+    "seats": 635,
+    "matchedHexes": 635,
+    "source": "politicsresources.net (ge74a) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1974.hexjson"
+  },
+  {
+    "id": "oct1974",
+    "available": true,
+    "seats": 635,
+    "matchedHexes": 635,
+    "source": "politicsresources.net (ge74b) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1974.hexjson"
+  },
+  {
+    "id": "1979",
+    "available": true,
+    "seats": 635,
+    "matchedHexes": 635,
+    "source": "politicsresources.net (ge79) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1979.hexjson"
+  },
+  {
+    "id": "1983",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "politicsresources.net (ge83) \u00b7 hex layout: historical-uk-hexmaps generated layout (example-map scaffold) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1983.hexjson"
+  },
+  {
+    "id": "1987",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "politicsresources.net (ge87) \u00b7 hex layout: historical-uk-hexmaps generated layout (example-map scaffold) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1987.hexjson"
+  },
+  {
+    "id": "1992",
+    "available": true,
+    "seats": 651,
+    "matchedHexes": 651,
+    "source": "politicsresources.net (ge92) \u00b7 hex layout: historical-uk-hexmaps generated layout (example-map scaffold) \u00b7 hex layout: 2024 UK hexmap scaffold (ODI/open-innovations)",
+    "hexLayout": "elections/1992.hexjson"
+  },
+  {
+    "id": "2005",
+    "available": true,
+    "seats": 646,
+    "matchedHexes": 646,
+    "source": "politicsresources.net (ge05) \u00b7 hex layout: parlconst.org uMap boundaries \u00b7 hex layout: Wikipedia hex cartogram (2005 UK General Election Constituencies.svg)",
+    "hexLayout": "elections/2005.hexjson"
+  },
+  {
+    "id": "2010",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "politicsresources.net (ge10) \u00b7 hex layout: parlconst.org uMap boundaries \u00b7 hex layout: ODI Leeds / BBC (uk-constituencies-2019-BBC.hexjson)",
+    "hexLayout": "elections/2010.hexjson"
+  },
+  {
+    "id": "2015",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "politicsresources.net (ge15) \u00b7 hex layout: ODI Leeds / BBC (uk-constituencies-2019-BBC.hexjson)",
+    "hexLayout": "elections/2015.hexjson"
+  },
+  {
+    "id": "2017",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "House of Commons Research Paper PDF (z House of Commons 2017 election report.pdf, pp. 83-93) \u00b7 hex layout: ODI Leeds / BBC (uk-constituencies-2019-BBC.hexjson)",
+    "hexLayout": "elections/2017.hexjson"
+  },
+  {
+    "id": "1997",
+    "available": true,
+    "seats": 659,
+    "matchedHexes": 659,
+    "source": "House of Commons Research Paper PDF (z House of Commons 1997 election report.pdf, pp. 23-36) \u00b7 hex layout: parlconst.org uMap boundaries \u00b7 hex layout: Wikipedia hex cartogram (1997 UK General Election Constituencies.svg)",
+    "hexLayout": "elections/1997.hexjson"
+  },
+  {
+    "id": "2001",
+    "available": true,
+    "seats": 659,
+    "matchedHexes": 659,
+    "source": "House of Commons Research Paper PDF (z House of Commons 2001 election report.pdf, pp. 42-110) \u00b7 hex layout: parlconst.org uMap boundaries \u00b7 hex layout: Wikipedia hex cartogram (1997 UK General Election Constituencies.svg)",
+    "hexLayout": "elections/2001.hexjson"
+  },
+  {
+    "id": "2019",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "alasdairrae/wpc (2019 flat file) \u00b7 hex layout: ODI Leeds / BBC (uk-constituencies-2019-BBC.hexjson)",
+    "hexLayout": "elections/2019.hexjson"
+  },
+  {
+    "id": "2024",
+    "available": true,
+    "seats": 650,
+    "matchedHexes": 650,
+    "source": "open-innovations/constituencies (2024)",
+    "hexLayout": "elections/2024.hexjson"
+  }
+]

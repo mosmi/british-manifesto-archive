@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The British Manifesto Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a href="#/" class="nav-logo">
+      <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+        <path d="M2 17l10 5 10-5"/>
+        <path d="M2 12l10 5 10-5"/>
+      </svg>
+      <span class="logo-text">The British Manifesto Archive</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <button class="nav-btn" aria-expanded="false">General Elections <span class="caret">▾</span></button>
+        <div class="dropdown-menu" id="elections-dropdown"></div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-btn" aria-expanded="false">Devolved Parliaments <span class="caret">▾</span></button>
+        <div class="dropdown-menu" id="devolved-dropdown"></div>
+      </div>
+      <div class="nav-dropdown nav-mega">
+        <button class="nav-btn" aria-expanded="false">Parties <span class="caret">▾</span></button>
+        <div class="dropdown-mega" id="parties-mega"></div>
+      </div>
+      <a href="#/about" class="nav-btn">About</a>
+      <button type="button" class="nav-search-btn" id="search-toggle" aria-label="Search archive">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span class="nav-search-kbd">⌘K</span>
+      </button>
+    </div>
+    <button class="nav-mobile-btn" id="mobile-menu-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="search-overlay" class="search-overlay" aria-hidden="true">
+    <div class="search-backdrop"></div>
+    <div class="search-panel" role="dialog" aria-label="Search">
+      <div class="search-panel-header">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="search-input" class="search-input" placeholder="Search parties, elections, topics…" autocomplete="off" spellcheck="false">
+        <button type="button" class="search-close" aria-label="Close search">✕</button>
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <div id="app"></div>
+
+  <footer id="main-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">The British Manifesto Archive</p>
+        <p class="footer-tagline">A comprehensive digital archive of UK general election manifestos, 1945–2024</p>
+      </div>
+      <div class="footer-links">
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>For educational and research purposes only. All manifesto documents remain property of their respective political parties.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/parliament.js"></script>
+  <script src="js/hexmap.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

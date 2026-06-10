@@ -1,0 +1,142 @@
+{
+  "id": "2017",
+  "year": 2017,
+  "displayYear": "2017",
+  "date": "8 June 2017",
+  "winner": "conservative",
+  "pm": "Theresa May",
+  "outgoingPm": "Theresa May",
+  "totalSeats": 650,
+  "summary": "Theresa May called a snap election expecting to increase her majority ahead of Brexit negotiations, but misread the public mood. Her campaign — centred on \"strong and stable leadership\" — was widely criticised as wooden. Jeremy Corbyn's Labour gained 30 seats, denying May her majority. May formed a minority government backed by the DUP through a £1 billion Confidence and Supply Agreement.",
+  "highlights": [
+    "May's gamble backfires — \"strong and stable\" becomes a mockery",
+    "Corbyn Labour gains 30 seats, defying expectations",
+    "Hung parliament: May forms minority government backed by DUP",
+    "£1 billion DUP deal causes widespread controversy",
+    "Two terror attacks (Manchester, London Bridge) during the campaign",
+    "Youth turnout rises sharply; \"youthquake\" credited with Labour surge"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [
+    "cooperative",
+    "gpni",
+    "nha",
+    "pirate",
+    "ukip",
+    "uup",
+    "wep",
+    "welshcon",
+    "scottishgrn",
+    "welshlab",
+    "welshlibdem",
+    "scottishcon",
+    "scottishlab",
+    "scottishlibdem"
+  ],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 8,
+      "votes": 0,
+      "percentage": 33.6
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 28,
+      "votes": 0,
+      "percentage": 49
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 0,
+      "votes": 0,
+      "percentage": 4.5
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 13,
+      "votes": 0,
+      "percentage": 28.6
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 7,
+      "votes": 0,
+      "percentage": 27.1
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 6.8
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 317,
+      "votes": 13636684,
+      "percentage": 42.4
+    },
+    {
+      "party": "labour",
+      "seats": 262,
+      "votes": 12877918,
+      "percentage": 40
+    },
+    {
+      "party": "snp",
+      "seats": 35,
+      "votes": 977569,
+      "percentage": 3
+    },
+    {
+      "party": "libdem",
+      "seats": 12,
+      "votes": 2371861,
+      "percentage": 7.4
+    },
+    {
+      "party": "dup",
+      "seats": 10,
+      "votes": 292316,
+      "percentage": 0.9
+    },
+    {
+      "party": "sinnfein",
+      "seats": 7,
+      "votes": 238915,
+      "percentage": 0.7
+    },
+    {
+      "party": "plaid",
+      "seats": 4,
+      "votes": 164466,
+      "percentage": 0.5
+    },
+    {
+      "party": "sdlp",
+      "seats": 0,
+      "votes": 95419,
+      "percentage": 0.3
+    },
+    {
+      "party": "green",
+      "seats": 1,
+      "votes": 525371,
+      "percentage": 1.6
+    },
+    {
+      "party": "alliance",
+      "seats": 0,
+      "votes": 64553,
+      "percentage": 0.2
+    },
+    {
+      "party": "others",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 3.9
+    }
+  ]
+}

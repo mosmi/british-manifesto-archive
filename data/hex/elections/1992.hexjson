@@ -1,0 +1,5217 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "Daventry": {
+      "n": "Daventry",
+      "q": 59,
+      "r": -33,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Brigg & Cleethorpes": {
+      "n": "Brigg & Cleethorpes",
+      "q": 63,
+      "r": -25,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Great Grimsby": {
+      "n": "Great Grimsby",
+      "q": 62,
+      "r": -25,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Northampton S": {
+      "n": "Northampton S",
+      "q": 60,
+      "r": -32,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Northampton N": {
+      "n": "Northampton N",
+      "q": 59,
+      "r": -32,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wellingborough": {
+      "n": "Wellingborough",
+      "q": 61,
+      "r": -32,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gainsborough & Horncastle": {
+      "n": "Gainsborough & Horncastle",
+      "q": 62,
+      "r": -26,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "High Peak": {
+      "n": "High Peak",
+      "q": 58,
+      "r": -26,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lindsey E": {
+      "n": "Lindsey E",
+      "q": 63,
+      "r": -26,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bassetlaw": {
+      "n": "Bassetlaw",
+      "q": 59,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Kettering": {
+      "n": "Kettering",
+      "q": 60,
+      "r": -31,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chesterfield": {
+      "n": "Chesterfield",
+      "q": 59,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Derbyshire NE": {
+      "n": "Derbyshire NE",
+      "q": 60,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Corby": {
+      "n": "Corby",
+      "q": 61,
+      "r": -31,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lincoln": {
+      "n": "Lincoln",
+      "q": 61,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Harborough": {
+      "n": "Harborough",
+      "q": 59,
+      "r": -31,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bolsover": {
+      "n": "Bolsover",
+      "q": 60,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Mansfield": {
+      "n": "Mansfield",
+      "q": 59,
+      "r": -29,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newark": {
+      "n": "Newark",
+      "q": 61,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leicester S": {
+      "n": "Leicester S",
+      "q": 60,
+      "r": -30,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Derbyshire W": {
+      "n": "Derbyshire W",
+      "q": 57,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sherwood": {
+      "n": "Sherwood",
+      "q": 58,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leicester E": {
+      "n": "Leicester E",
+      "q": 61,
+      "r": -30,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leicester W": {
+      "n": "Leicester W",
+      "q": 58,
+      "r": -30,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ashfield": {
+      "n": "Ashfield",
+      "q": 57,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Grantham": {
+      "n": "Grantham",
+      "q": 62,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Amber Valley": {
+      "n": "Amber Valley",
+      "q": 59,
+      "r": -30,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Rutland & Melton": {
+      "n": "Rutland & Melton",
+      "q": 61,
+      "r": -29,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leicestershire NW": {
+      "n": "Leicestershire NW",
+      "q": 60,
+      "r": -29,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Nottingham N": {
+      "n": "Nottingham N",
+      "q": 58,
+      "r": -29,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Broxtowe": {
+      "n": "Broxtowe",
+      "q": 62,
+      "r": -30,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gedling": {
+      "n": "Gedling",
+      "q": 62,
+      "r": -29,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Loughborough": {
+      "n": "Loughborough",
+      "q": 62,
+      "r": -31,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Nottingham E": {
+      "n": "Nottingham E",
+      "q": 63,
+      "r": -28,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Derby N": {
+      "n": "Derby N",
+      "q": 59,
+      "r": -26,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Erewash": {
+      "n": "Erewash",
+      "q": 58,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Nottingham S": {
+      "n": "Nottingham S",
+      "q": 62,
+      "r": -27,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Derby S": {
+      "n": "Derby S",
+      "q": 61,
+      "r": -26,
+      "region": "E12000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Rushcliffe": {
+      "n": "Rushcliffe",
+      "q": 58,
+      "r": -33,
+      "region": "E12000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Worcester": {
+      "n": "Worcester",
+      "q": 55,
+      "r": -36,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Staffordshire Moorlands": {
+      "n": "Staffordshire Moorlands",
+      "q": 55,
+      "r": -27,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stratford-on-Avon": {
+      "n": "Stratford-on-Avon",
+      "q": 56,
+      "r": -35,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stoke-on-Trent N": {
+      "n": "Stoke-on-Trent N",
+      "q": 53,
+      "r": -28,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newcastle-under-Lyme": {
+      "n": "Newcastle-under-Lyme",
+      "q": 52,
+      "r": -28,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Stoke-on-Trent Central": {
+      "n": "Stoke-on-Trent Central",
+      "q": 54,
+      "r": -28,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Crewe & Nantwich": {
+      "n": "Crewe & Nantwich",
+      "q": 51,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Stoke-on-Trent S": {
+      "n": "Stoke-on-Trent S",
+      "q": 55,
+      "r": -28,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Worcestershire Mid": {
+      "n": "Worcestershire Mid",
+      "q": 54,
+      "r": -35,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Warwick & Leamington": {
+      "n": "Warwick & Leamington",
+      "q": 56,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Rugby & Kenilworth": {
+      "n": "Rugby & Kenilworth",
+      "q": 57,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Burton": {
+      "n": "Burton",
+      "q": 55,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Shropshire N": {
+      "n": "Shropshire N",
+      "q": 50,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wyre Forest": {
+      "n": "Wyre Forest",
+      "q": 52,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bromsgrove": {
+      "n": "Bromsgrove",
+      "q": 54,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stafford": {
+      "n": "Stafford",
+      "q": 53,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Coventry SW": {
+      "n": "Coventry SW",
+      "q": 55,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Coventry SE": {
+      "n": "Coventry SE",
+      "q": 57,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Derbyshire S": {
+      "n": "Derbyshire S",
+      "q": 56,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Staffordshire Mid": {
+      "n": "Staffordshire Mid",
+      "q": 54,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Birmingham Northfield": {
+      "n": "Birmingham Northfield",
+      "q": 54,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Meriden": {
+      "n": "Meriden",
+      "q": 55,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Solihull": {
+      "n": "Solihull",
+      "q": 56,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Coventry NE": {
+      "n": "Coventry NE",
+      "q": 57,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Hall Green": {
+      "n": "Birmingham Hall Green",
+      "q": 53,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Birmingham Selly Oak": {
+      "n": "Birmingham Selly Oak",
+      "q": 53,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Coventry NW": {
+      "n": "Coventry NW",
+      "q": 56,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Halesowen & Stourbridge": {
+      "n": "Halesowen & Stourbridge",
+      "q": 52,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Nuneaton": {
+      "n": "Nuneaton",
+      "q": 58,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Sparkbrook": {
+      "n": "Birmingham Sparkbrook",
+      "q": 55,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Edgbaston": {
+      "n": "Birmingham Edgbaston",
+      "q": 54,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Birmingham Yardley": {
+      "n": "Birmingham Yardley",
+      "q": 53,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ludlow": {
+      "n": "Ludlow",
+      "q": 50,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Warley W": {
+      "n": "Warley W",
+      "q": 52,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Hodge Hill": {
+      "n": "Birmingham Hodge Hill",
+      "q": 55,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Small Heath": {
+      "n": "Birmingham Small Heath",
+      "q": 54,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Warley E": {
+      "n": "Warley E",
+      "q": 51,
+      "r": -33,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birmingham Ladywood": {
+      "n": "Birmingham Ladywood",
+      "q": 51,
+      "r": -32,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dudley E": {
+      "n": "Dudley E",
+      "q": 53,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dudley W": {
+      "n": "Dudley W",
+      "q": 52,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Birmingham Perry Barr": {
+      "n": "Birmingham Perry Barr",
+      "q": 56,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Blaby": {
+      "n": "Blaby",
+      "q": 58,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Birmingham Erdington": {
+      "n": "Birmingham Erdington",
+      "q": 57,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "West Bromwich W": {
+      "n": "West Bromwich W",
+      "q": 51,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "West Bromwich E": {
+      "n": "West Bromwich E",
+      "q": 54,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Warwickshire N": {
+      "n": "Warwickshire N",
+      "q": 56,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sutton Coldfield": {
+      "n": "Sutton Coldfield",
+      "q": 55,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cannock & Burntwood": {
+      "n": "Cannock & Burntwood",
+      "q": 53,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wolverhampton SE": {
+      "n": "Wolverhampton SE",
+      "q": 50,
+      "r": -31,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "The Wrekin": {
+      "n": "The Wrekin",
+      "q": 52,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Staffordshire SE": {
+      "n": "Staffordshire SE",
+      "q": 57,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Shrewsbury & Atcham": {
+      "n": "Shrewsbury & Atcham",
+      "q": 51,
+      "r": -30,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Walsall S": {
+      "n": "Walsall S",
+      "q": 51,
+      "r": -34,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wolverhampton SW": {
+      "n": "Wolverhampton SW",
+      "q": 52,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Walsall N": {
+      "n": "Walsall N",
+      "q": 57,
+      "r": -29,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wolverhmapton NE": {
+      "n": "Wolverhmapton NE",
+      "q": 55,
+      "r": -35,
+      "region": "E12000005",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Aldridge-Brownhills": {
+      "n": "Aldridge-Brownhills",
+      "q": 53,
+      "r": -35,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Staffordshire S": {
+      "n": "Staffordshire S",
+      "q": 56,
+      "r": -28,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bosworth": {
+      "n": "Bosworth",
+      "q": 56,
+      "r": -27,
+      "region": "E12000005",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Holland with Boston": {
+      "n": "Holland with Boston",
+      "q": 65,
+      "r": -27,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gllingham": {
+      "n": "Gllingham",
+      "q": 64,
+      "r": -35,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norfolk N": {
+      "n": "Norfolk N",
+      "q": 67,
+      "r": -27,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norfolk NW": {
+      "n": "Norfolk NW",
+      "q": 66,
+      "r": -27,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stamford & Spalding": {
+      "n": "Stamford & Spalding",
+      "q": 63,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Thurrock": {
+      "n": "Thurrock",
+      "q": 65,
+      "r": -34,
+      "region": "E12000006",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Castle Point": {
+      "n": "Castle Point",
+      "q": 68,
+      "r": -35,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norfolk Mid": {
+      "n": "Norfolk Mid",
+      "q": 68,
+      "r": -28,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Southend E": {
+      "n": "Southend E",
+      "q": 66,
+      "r": -34,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Southend W": {
+      "n": "Southend W",
+      "q": 67,
+      "r": -34,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Basildon": {
+      "n": "Basildon",
+      "q": 65,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Billericay": {
+      "n": "Billericay",
+      "q": 66,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norwich N": {
+      "n": "Norwich N",
+      "q": 67,
+      "r": -28,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Rochford": {
+      "n": "Rochford",
+      "q": 67,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norwich S": {
+      "n": "Norwich S",
+      "q": 68,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Great Yarmouth": {
+      "n": "Great Yarmouth",
+      "q": 69,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Peterborough": {
+      "n": "Peterborough",
+      "q": 63,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Epping Forest": {
+      "n": "Epping Forest",
+      "q": 64,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hertfordshire SW": {
+      "n": "Hertfordshire SW",
+      "q": 62,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hertsmere": {
+      "n": "Hertsmere",
+      "q": 63,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Watford": {
+      "n": "Watford",
+      "q": 63,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cambridgeshire NE": {
+      "n": "Cambridgeshire NE",
+      "q": 64,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chelmsford": {
+      "n": "Chelmsford",
+      "q": 68,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norfolk S": {
+      "n": "Norfolk S",
+      "q": 67,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norfolk SW": {
+      "n": "Norfolk SW",
+      "q": 66,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Broxbourne": {
+      "n": "Broxbourne",
+      "q": 64,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Huntingdon": {
+      "n": "Huntingdon",
+      "q": 64,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Harlow": {
+      "n": "Harlow",
+      "q": 65,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "St Albans": {
+      "n": "St Albans",
+      "q": 61,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Colchester S & Maldon": {
+      "n": "Colchester S & Maldon",
+      "q": 68,
+      "r": -34,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Welwyn Hatfield": {
+      "n": "Welwyn Hatfield",
+      "q": 66,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Waveney": {
+      "n": "Waveney",
+      "q": 69,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hertfordshire W": {
+      "n": "Hertfordshire W",
+      "q": 62,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Harwich": {
+      "n": "Harwich",
+      "q": 69,
+      "r": -33,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Braintree": {
+      "n": "Braintree",
+      "q": 67,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hertford & Stortford": {
+      "n": "Hertford & Stortford",
+      "q": 64,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Luton S": {
+      "n": "Luton S",
+      "q": 63,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stevenage": {
+      "n": "Stevenage",
+      "q": 65,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bury St Edmunds": {
+      "n": "Bury St Edmunds",
+      "q": 66,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Colchester N": {
+      "n": "Colchester N",
+      "q": 68,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Luton N": {
+      "n": "Luton N",
+      "q": 66,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Suffolk Central": {
+      "n": "Suffolk Central",
+      "q": 67,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Saffron Walden": {
+      "n": "Saffron Walden",
+      "q": 69,
+      "r": -32,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hertfordshire N": {
+      "n": "Hertfordshire N",
+      "q": 65,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cambridgeshire SE": {
+      "n": "Cambridgeshire SE",
+      "q": 67,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bedfordshire N": {
+      "n": "Bedfordshire N",
+      "q": 65,
+      "r": -29,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cambridge": {
+      "n": "Cambridge",
+      "q": 68,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ipswich": {
+      "n": "Ipswich",
+      "q": 69,
+      "r": -31,
+      "region": "E12000006",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Suffolk S": {
+      "n": "Suffolk S",
+      "q": 68,
+      "r": -30,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bedfordshire Mid": {
+      "n": "Bedfordshire Mid",
+      "q": 65,
+      "r": -28,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cambridgeshire SW": {
+      "n": "Cambridgeshire SW",
+      "q": 66,
+      "r": -28,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Suffolk Coastal": {
+      "n": "Suffolk Coastal",
+      "q": 69,
+      "r": -36,
+      "region": "E12000006",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leominster": {
+      "n": "Leominster",
+      "q": 52,
+      "r": -35,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "St Ives": {
+      "n": "St Ives",
+      "q": 43,
+      "r": -46,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Falmouth and Camborne": {
+      "n": "Falmouth and Camborne",
+      "q": 44,
+      "r": -45,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Worcestershire S": {
+      "n": "Worcestershire S",
+      "q": 53,
+      "r": -36,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Truro": {
+      "n": "Truro",
+      "q": 43,
+      "r": -45,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Hereford": {
+      "n": "Hereford",
+      "q": 51,
+      "r": -37,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "South Hams": {
+      "n": "South Hams",
+      "q": 47,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Plymouth Sutton": {
+      "n": "Plymouth Sutton",
+      "q": 46,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Plymouth Drake": {
+      "n": "Plymouth Drake",
+      "q": 45,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cornwall SE": {
+      "n": "Cornwall SE",
+      "q": 48,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cheltenham": {
+      "n": "Cheltenham",
+      "q": 52,
+      "r": -37,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Gloucestershire W": {
+      "n": "Gloucestershire W",
+      "q": 53,
+      "r": -37,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Plymouth Devonport": {
+      "n": "Plymouth Devonport",
+      "q": 46,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cirencester & Tewkesbury": {
+      "n": "Cirencester & Tewkesbury",
+      "q": 54,
+      "r": -36,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Torbay": {
+      "n": "Torbay",
+      "q": 50,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gloucester": {
+      "n": "Gloucester",
+      "q": 51,
+      "r": -38,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Teignbridge": {
+      "n": "Teignbridge",
+      "q": 48,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stroud": {
+      "n": "Stroud",
+      "q": 52,
+      "r": -38,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dorset S": {
+      "n": "Dorset S",
+      "q": 52,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cornwall N": {
+      "n": "Cornwall N",
+      "q": 45,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Swindon": {
+      "n": "Swindon",
+      "q": 53,
+      "r": -38,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Exeter": {
+      "n": "Exeter",
+      "q": 49,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Poole": {
+      "n": "Poole",
+      "q": 51,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Honiton": {
+      "n": "Honiton",
+      "q": 50,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wiltshire N": {
+      "n": "Wiltshire N",
+      "q": 52,
+      "r": -39,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bournemouth E": {
+      "n": "Bournemouth E",
+      "q": 53,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Northavon": {
+      "n": "Northavon",
+      "q": 51,
+      "r": -39,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bournemouth W": {
+      "n": "Bournemouth W",
+      "q": 52,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bristol NW": {
+      "n": "Bristol NW",
+      "q": 50,
+      "r": -39,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Christchurch": {
+      "n": "Christchurch",
+      "q": 51,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bristol W": {
+      "n": "Bristol W",
+      "q": 49,
+      "r": -39,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Kingswood": {
+      "n": "Kingswood",
+      "q": 53,
+      "r": -39,
+      "region": "E12000009",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tiverton": {
+      "n": "Tiverton",
+      "q": 48,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Devon W & Torridge": {
+      "n": "Devon W & Torridge",
+      "q": 46,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Devizes": {
+      "n": "Devizes",
+      "q": 53,
+      "r": -40,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dorset W": {
+      "n": "Dorset W",
+      "q": 50,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "New Forest": {
+      "n": "New Forest",
+      "q": 53,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bristol E": {
+      "n": "Bristol E",
+      "q": 51,
+      "r": -40,
+      "region": "E12000009",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bristol S": {
+      "n": "Bristol S",
+      "q": 50,
+      "r": -40,
+      "region": "E12000009",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Woodspring": {
+      "n": "Woodspring",
+      "q": 49,
+      "r": -40,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wansdyke": {
+      "n": "Wansdyke",
+      "q": 52,
+      "r": -40,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bath": {
+      "n": "Bath",
+      "q": 51,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Dorset N": {
+      "n": "Dorset N",
+      "q": 52,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Yeovil": {
+      "n": "Yeovil",
+      "q": 49,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Weston-super-Mare": {
+      "n": "Weston-super-Mare",
+      "q": 50,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Taunton": {
+      "n": "Taunton",
+      "q": 49,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Devon N": {
+      "n": "Devon N",
+      "q": 47,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Salisbury": {
+      "n": "Salisbury",
+      "q": 48,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wells": {
+      "n": "Wells",
+      "q": 46,
+      "r": -41,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Westbury": {
+      "n": "Westbury",
+      "q": 47,
+      "r": -42,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Somerton & Frome": {
+      "n": "Somerton & Frome",
+      "q": 47,
+      "r": -43,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bridgwater": {
+      "n": "Bridgwater",
+      "q": 51,
+      "r": -44,
+      "region": "E12000009",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sheffield Heeley": {
+      "n": "Sheffield Heeley",
+      "q": 58,
+      "r": -25,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ryedale": {
+      "n": "Ryedale",
+      "q": 61,
+      "r": -18,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sheffield Hallam": {
+      "n": "Sheffield Hallam",
+      "q": 57,
+      "r": -25,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sheffield Attercliffe": {
+      "n": "Sheffield Attercliffe",
+      "q": 59,
+      "r": -25,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Rother Valley": {
+      "n": "Rother Valley",
+      "q": 60,
+      "r": -26,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sheffield Central": {
+      "n": "Sheffield Central",
+      "q": 58,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sheffield Brightside": {
+      "n": "Sheffield Brightside",
+      "q": 59,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Rotherham": {
+      "n": "Rotherham",
+      "q": 60,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sheffield Hillborough": {
+      "n": "Sheffield Hillborough",
+      "q": 57,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wentworth": {
+      "n": "Wentworth",
+      "q": 60,
+      "r": -25,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Skipton & Ripon": {
+      "n": "Skipton & Ripon",
+      "q": 56,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Barnsley W & Penistone": {
+      "n": "Barnsley W & Penistone",
+      "q": 57,
+      "r": -23,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Don Valley": {
+      "n": "Don Valley",
+      "q": 59,
+      "r": -23,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Doncaster Central": {
+      "n": "Doncaster Central",
+      "q": 60,
+      "r": -23,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Barnsley E": {
+      "n": "Barnsley E",
+      "q": 58,
+      "r": -23,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Barnsley Central": {
+      "n": "Barnsley Central",
+      "q": 56,
+      "r": -23,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glanford & Scunthorpe": {
+      "n": "Glanford & Scunthorpe",
+      "q": 61,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Harrogate": {
+      "n": "Harrogate",
+      "q": 59,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Doncaster N": {
+      "n": "Doncaster N",
+      "q": 60,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "York": {
+      "n": "York",
+      "q": 60,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Colne Valley": {
+      "n": "Colne Valley",
+      "q": 56,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dewsbury": {
+      "n": "Dewsbury",
+      "q": 57,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wakefield": {
+      "n": "Wakefield",
+      "q": 58,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Huddersfield": {
+      "n": "Huddersfield",
+      "q": 59,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Keighley": {
+      "n": "Keighley",
+      "q": 56,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hemsworth": {
+      "n": "Hemsworth",
+      "q": 61,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bridlington": {
+      "n": "Bridlington",
+      "q": 63,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leeds NW": {
+      "n": "Leeds NW",
+      "q": 57,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leeds NE": {
+      "n": "Leeds NE",
+      "q": 58,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Shipley": {
+      "n": "Shipley",
+      "q": 57,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Beverley": {
+      "n": "Beverley",
+      "q": 62,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Selby": {
+      "n": "Selby",
+      "q": 60,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Pontefract & Castleford": {
+      "n": "Pontefract & Castleford",
+      "q": 59,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Normanton": {
+      "n": "Normanton",
+      "q": 61,
+      "r": -21,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Pudsey": {
+      "n": "Pudsey",
+      "q": 58,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Boothferry": {
+      "n": "Boothferry",
+      "q": 61,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Calder Valley": {
+      "n": "Calder Valley",
+      "q": 62,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Elmet": {
+      "n": "Elmet",
+      "q": 58,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Batley & Spen": {
+      "n": "Batley & Spen",
+      "q": 63,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bradford N": {
+      "n": "Bradford N",
+      "q": 57,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Halifax": {
+      "n": "Halifax",
+      "q": 59,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leeds E": {
+      "n": "Leeds E",
+      "q": 62,
+      "r": -20,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hull W": {
+      "n": "Hull W",
+      "q": 64,
+      "r": -22,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leeds S & Morley": {
+      "n": "Leeds S & Morley",
+      "q": 60,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leeds Central": {
+      "n": "Leeds Central",
+      "q": 61,
+      "r": -19,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leeds W": {
+      "n": "Leeds W",
+      "q": 57,
+      "r": -18,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bradford W": {
+      "n": "Bradford W",
+      "q": 58,
+      "r": -18,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hull E": {
+      "n": "Hull E",
+      "q": 63,
+      "r": -24,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hull N": {
+      "n": "Hull N",
+      "q": 61,
+      "r": -25,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bradford S": {
+      "n": "Bradford S",
+      "q": 59,
+      "r": -18,
+      "region": "E12000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Richmond": {
+      "n": "Richmond",
+      "q": 55,
+      "r": -17,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Berwick-upon-Tweed": {
+      "n": "Berwick-upon-Tweed",
+      "q": 55,
+      "r": -12,
+      "region": "E12000001",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Scarborough": {
+      "n": "Scarborough",
+      "q": 59,
+      "r": -17,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stockton S": {
+      "n": "Stockton S",
+      "q": 56,
+      "r": -16,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Darlington": {
+      "n": "Darlington",
+      "q": 55,
+      "r": -16,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Langbaurgh": {
+      "n": "Langbaurgh",
+      "q": 57,
+      "r": -16,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Middlesbrough": {
+      "n": "Middlesbrough",
+      "q": 58,
+      "r": -16,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Redcar": {
+      "n": "Redcar",
+      "q": 57,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Stockton N": {
+      "n": "Stockton N",
+      "q": 56,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sedgefield": {
+      "n": "Sedgefield",
+      "q": 55,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bishop Auckland": {
+      "n": "Bishop Auckland",
+      "q": 54,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wansbeck": {
+      "n": "Wansbeck",
+      "q": 55,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hartlepool": {
+      "n": "Hartlepool",
+      "q": 58,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Blyth Valley": {
+      "n": "Blyth Valley",
+      "q": 56,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "City of Durham": {
+      "n": "City of Durham",
+      "q": 55,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hexham": {
+      "n": "Hexham",
+      "q": 54,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Easington": {
+      "n": "Easington",
+      "q": 57,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Durham NW": {
+      "n": "Durham NW",
+      "q": 56,
+      "r": -17,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tynemouth": {
+      "n": "Tynemouth",
+      "q": 56,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wallsend": {
+      "n": "Wallsend",
+      "q": 54,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newcastle-upon-Tyne N": {
+      "n": "Newcastle-upon-Tyne N",
+      "q": 57,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newcastle-upon-Tyne Central": {
+      "n": "Newcastle-upon-Tyne Central",
+      "q": 58,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "South Shields": {
+      "n": "South Shields",
+      "q": 59,
+      "r": -14,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newcastle-upon-Tyne E": {
+      "n": "Newcastle-upon-Tyne E",
+      "q": 53,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Jarrow": {
+      "n": "Jarrow",
+      "q": 58,
+      "r": -13,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tyne Bridge": {
+      "n": "Tyne Bridge",
+      "q": 59,
+      "r": -15,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Houghton & Washington": {
+      "n": "Houghton & Washington",
+      "q": 59,
+      "r": -16,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Durham N": {
+      "n": "Durham N",
+      "q": 57,
+      "r": -17,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Gateshead E": {
+      "n": "Gateshead E",
+      "q": 56,
+      "r": -12,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sunderland S": {
+      "n": "Sunderland S",
+      "q": 58,
+      "r": -17,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Blaydon": {
+      "n": "Blaydon",
+      "q": 54,
+      "r": -12,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sunderland N": {
+      "n": "Sunderland N",
+      "q": 57,
+      "r": -12,
+      "region": "E12000001",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Eddisbury": {
+      "n": "Eddisbury",
+      "q": 51,
+      "r": -28,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Carlisle": {
+      "n": "Carlisle",
+      "q": 53,
+      "r": -14,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "City of Chester": {
+      "n": "City of Chester",
+      "q": 50,
+      "r": -28,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Congleton": {
+      "n": "Congleton",
+      "q": 54,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Penrith & The Border": {
+      "n": "Penrith & The Border",
+      "q": 52,
+      "r": -15,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ellesmere Port & Neston": {
+      "n": "Ellesmere Port & Neston",
+      "q": 51,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Macclesfield": {
+      "n": "Macclesfield",
+      "q": 56,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Tatton": {
+      "n": "Tatton",
+      "q": 53,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wirral S": {
+      "n": "Wirral S",
+      "q": 50,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Halton": {
+      "n": "Halton",
+      "q": 53,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cheadle": {
+      "n": "Cheadle",
+      "q": 57,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wirral W": {
+      "n": "Wirral W",
+      "q": 52,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Warrington S": {
+      "n": "Warrington S",
+      "q": 54,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Liverpool Garston": {
+      "n": "Liverpool Garston",
+      "q": 52,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Manchester Wythenshawe": {
+      "n": "Manchester Wythenshawe",
+      "q": 55,
+      "r": -26,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Birkendhead": {
+      "n": "Birkendhead",
+      "q": 49,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Altrincham & Sale": {
+      "n": "Altrincham & Sale",
+      "q": 55,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Liverpool Mossley Hill": {
+      "n": "Liverpool Mossley Hill",
+      "q": 52,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Knowsley S": {
+      "n": "Knowsley S",
+      "q": 53,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hazel Grove": {
+      "n": "Hazel Grove",
+      "q": 56,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stockport": {
+      "n": "Stockport",
+      "q": 54,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Liverpool Riverside": {
+      "n": "Liverpool Riverside",
+      "q": 51,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Liverpool Broadgreen": {
+      "n": "Liverpool Broadgreen",
+      "q": 49,
+      "r": -25,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Davyhulme": {
+      "n": "Davyhulme",
+      "q": 54,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Manchester Withington": {
+      "n": "Manchester Withington",
+      "q": 55,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Warrington N": {
+      "n": "Warrington N",
+      "q": 53,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wallasey": {
+      "n": "Wallasey",
+      "q": 48,
+      "r": -27,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Workington": {
+      "n": "Workington",
+      "q": 53,
+      "r": -16,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Liverpool West Derby": {
+      "n": "Liverpool West Derby",
+      "q": 51,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "St Helens S": {
+      "n": "St Helens S",
+      "q": 52,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Liverpool Walton": {
+      "n": "Liverpool Walton",
+      "q": 50,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Denton & Reddish": {
+      "n": "Denton & Reddish",
+      "q": 56,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Stretford": {
+      "n": "Stretford",
+      "q": 55,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Manchester Gorton": {
+      "n": "Manchester Gorton",
+      "q": 54,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Knowsley N": {
+      "n": "Knowsley N",
+      "q": 49,
+      "r": -24,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "St Helens N": {
+      "n": "St Helens N",
+      "q": 52,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Stalybridge & Hyde": {
+      "n": "Stalybridge & Hyde",
+      "q": 53,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bootle": {
+      "n": "Bootle",
+      "q": 50,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Manchester Central": {
+      "n": "Manchester Central",
+      "q": 51,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Worsley": {
+      "n": "Worsley",
+      "q": 49,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ashton-under-Lyne": {
+      "n": "Ashton-under-Lyne",
+      "q": 55,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Salford E": {
+      "n": "Salford E",
+      "q": 54,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Eccles": {
+      "n": "Eccles",
+      "q": 53,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Makerfield": {
+      "n": "Makerfield",
+      "q": 48,
+      "r": -23,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Leigh": {
+      "n": "Leigh",
+      "q": 52,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Oldham W": {
+      "n": "Oldham W",
+      "q": 51,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Manchester Blackley": {
+      "n": "Manchester Blackley",
+      "q": 50,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Crosby": {
+      "n": "Crosby",
+      "q": 49,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Oldham Central & Royton": {
+      "n": "Oldham Central & Royton",
+      "q": 55,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Lancashire W": {
+      "n": "Lancashire W",
+      "q": 48,
+      "r": -22,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bolton SE": {
+      "n": "Bolton SE",
+      "q": 54,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bury S": {
+      "n": "Bury S",
+      "q": 53,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wigan": {
+      "n": "Wigan",
+      "q": 52,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bolton W": {
+      "n": "Bolton W",
+      "q": 51,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bury N": {
+      "n": "Bury N",
+      "q": 50,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Heywood & Middleton": {
+      "n": "Heywood & Middleton",
+      "q": 56,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Littleborough & Saddleworth": {
+      "n": "Littleborough & Saddleworth",
+      "q": 54,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bolton NE": {
+      "n": "Bolton NE",
+      "q": 49,
+      "r": -21,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Southport": {
+      "n": "Southport",
+      "q": 49,
+      "r": -28,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Rochdale": {
+      "n": "Rochdale",
+      "q": 53,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Copeland": {
+      "n": "Copeland",
+      "q": 50,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Chorley": {
+      "n": "Chorley",
+      "q": 52,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Rossendale & Darwen": {
+      "n": "Rossendale & Darwen",
+      "q": 51,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ribble S": {
+      "n": "Ribble S",
+      "q": 50,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Blackburn": {
+      "n": "Blackburn",
+      "q": 49,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Westmorland & Lonsdale": {
+      "n": "Westmorland & Lonsdale",
+      "q": 51,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hyndburn": {
+      "n": "Hyndburn",
+      "q": 55,
+      "r": -20,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Preston": {
+      "n": "Preston",
+      "q": 52,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Burnley": {
+      "n": "Burnley",
+      "q": 55,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Blackpool S": {
+      "n": "Blackpool S",
+      "q": 53,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Fylde": {
+      "n": "Fylde",
+      "q": 52,
+      "r": -18,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Blackpool N": {
+      "n": "Blackpool N",
+      "q": 53,
+      "r": -18,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ribble Valley": {
+      "n": "Ribble Valley",
+      "q": 54,
+      "r": -19,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Pendle": {
+      "n": "Pendle",
+      "q": 55,
+      "r": -18,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wyre": {
+      "n": "Wyre",
+      "q": 56,
+      "r": -18,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Barrow & Furness": {
+      "n": "Barrow & Furness",
+      "q": 54,
+      "r": -17,
+      "region": "E12000002",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Morecambe & Lunesdale": {
+      "n": "Morecambe & Lunesdale",
+      "q": 54,
+      "r": -16,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lancaster": {
+      "n": "Lancaster",
+      "q": 53,
+      "r": -15,
+      "region": "E12000002",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Brentwood & Ongar": {
+      "n": "Brentwood & Ongar",
+      "q": 64,
+      "r": -34,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Surrey E": {
+      "n": "Surrey E",
+      "q": 64,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Enfield N": {
+      "n": "Enfield N",
+      "q": 63,
+      "r": -34,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Enfield Southgate": {
+      "n": "Enfield Southgate",
+      "q": 62,
+      "r": -35,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chipping Barnet": {
+      "n": "Chipping Barnet",
+      "q": 61,
+      "r": -35,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chingford": {
+      "n": "Chingford",
+      "q": 63,
+      "r": -35,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hendon N": {
+      "n": "Hendon N",
+      "q": 61,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Edmonton": {
+      "n": "Edmonton",
+      "q": 63,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Harrow E": {
+      "n": "Harrow E",
+      "q": 60,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Finchley": {
+      "n": "Finchley",
+      "q": 62,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ilford N": {
+      "n": "Ilford N",
+      "q": 65,
+      "r": -35,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Romford": {
+      "n": "Romford",
+      "q": 66,
+      "r": -35,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hornsey & Wood Green": {
+      "n": "Hornsey & Wood Green",
+      "q": 64,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ravensbourne": {
+      "n": "Ravensbourne",
+      "q": 65,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Tottenham": {
+      "n": "Tottenham",
+      "q": 63,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wanstead & Woodford": {
+      "n": "Wanstead & Woodford",
+      "q": 65,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Walthamstow": {
+      "n": "Walthamstow",
+      "q": 64,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Epsom & Ewell": {
+      "n": "Epsom & Ewell",
+      "q": 61,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Harrow W": {
+      "n": "Harrow W",
+      "q": 59,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Brent N": {
+      "n": "Brent N",
+      "q": 60,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ruislip-Northwood": {
+      "n": "Ruislip-Northwood",
+      "q": 58,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hendon S": {
+      "n": "Hendon S",
+      "q": 61,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Upminster": {
+      "n": "Upminster",
+      "q": 66,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Croydon Central": {
+      "n": "Croydon Central",
+      "q": 63,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hackney N & Stoke Newington": {
+      "n": "Hackney N & Stoke Newington",
+      "q": 62,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Surbiton": {
+      "n": "Surbiton",
+      "q": 60,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Leyton": {
+      "n": "Leyton",
+      "q": 65,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Carshalton & Wallington": {
+      "n": "Carshalton & Wallington",
+      "q": 62,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dagenham": {
+      "n": "Dagenham",
+      "q": 66,
+      "r": -36,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Islington N": {
+      "n": "Islington N",
+      "q": 63,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ilford S": {
+      "n": "Ilford S",
+      "q": 65,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Sutton & Cheam": {
+      "n": "Sutton & Cheam",
+      "q": 61,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hampstead & Highgate": {
+      "n": "Hampstead & Highgate",
+      "q": 62,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Brent E": {
+      "n": "Brent E",
+      "q": 59,
+      "r": -37,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Orpington": {
+      "n": "Orpington",
+      "q": 65,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Newham NE": {
+      "n": "Newham NE",
+      "q": 64,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newham NW": {
+      "n": "Newham NW",
+      "q": 66,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hackney S & Shoreditch": {
+      "n": "Hackney S & Shoreditch",
+      "q": 61,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Brent S": {
+      "n": "Brent S",
+      "q": 60,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ealing N": {
+      "n": "Ealing N",
+      "q": 59,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Islington S & Finsbury": {
+      "n": "Islington S & Finsbury",
+      "q": 63,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Barking": {
+      "n": "Barking",
+      "q": 67,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Croydon NW": {
+      "n": "Croydon NW",
+      "q": 63,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Holborn & St Pancras": {
+      "n": "Holborn & St Pancras",
+      "q": 62,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Westminster N": {
+      "n": "Westminster N",
+      "q": 61,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hornchurch": {
+      "n": "Hornchurch",
+      "q": 68,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Mitcham & Morden": {
+      "n": "Mitcham & Morden",
+      "q": 60,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Croydon NE": {
+      "n": "Croydon NE",
+      "q": 64,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Kingston-upon-Thames": {
+      "n": "Kingston-upon-Thames",
+      "q": 59,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bethnal Green & Stepney": {
+      "n": "Bethnal Green & Stepney",
+      "q": 64,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Ealing Acton": {
+      "n": "Ealing Acton",
+      "q": 58,
+      "r": -38,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Beckenham": {
+      "n": "Beckenham",
+      "q": 65,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Kensington": {
+      "n": "Kensington",
+      "q": 59,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Newham S": {
+      "n": "Newham S",
+      "q": 66,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bow & Poplar": {
+      "n": "Bow & Poplar",
+      "q": 67,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Hayes & Harlington": {
+      "n": "Hayes & Harlington",
+      "q": 58,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wimbledon": {
+      "n": "Wimbledon",
+      "q": 58,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hammersmith": {
+      "n": "Hammersmith",
+      "q": 60,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "City of London & Westminster S": {
+      "n": "City of London & Westminster S",
+      "q": 66,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chislehurst": {
+      "n": "Chislehurst",
+      "q": 67,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ealing Southall": {
+      "n": "Ealing Southall",
+      "q": 59,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Southwark & Bermondsey": {
+      "n": "Southwark & Bermondsey",
+      "q": 68,
+      "r": -39,
+      "region": "E12000007",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Old Bexley & Sidcup": {
+      "n": "Old Bexley & Sidcup",
+      "q": 68,
+      "r": -40,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Twickenham": {
+      "n": "Twickenham",
+      "q": 58,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Streatham": {
+      "n": "Streatham",
+      "q": 62,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tooting": {
+      "n": "Tooting",
+      "q": 64,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Chelsea": {
+      "n": "Chelsea",
+      "q": 66,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lewisham W": {
+      "n": "Lewisham W",
+      "q": 67,
+      "r": -41,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Woolwich": {
+      "n": "Woolwich",
+      "q": 65,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Brentford & Isleworth": {
+      "n": "Brentford & Isleworth",
+      "q": 60,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Norwood": {
+      "n": "Norwood",
+      "q": 63,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Lewisham E": {
+      "n": "Lewisham E",
+      "q": 64,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Vauxhall": {
+      "n": "Vauxhall",
+      "q": 62,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Greenwich": {
+      "n": "Greenwich",
+      "q": 66,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Peckham": {
+      "n": "Peckham",
+      "q": 61,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Eltham": {
+      "n": "Eltham",
+      "q": 67,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dulwich": {
+      "n": "Dulwich",
+      "q": 59,
+      "r": -42,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Fulham": {
+      "n": "Fulham",
+      "q": 62,
+      "r": -34,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lewisham Deptford": {
+      "n": "Lewisham Deptford",
+      "q": 63,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Putney": {
+      "n": "Putney",
+      "q": 61,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Feltham & Heston": {
+      "n": "Feltham & Heston",
+      "q": 60,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Richmond & Barnes": {
+      "n": "Richmond & Barnes",
+      "q": 62,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Battersea": {
+      "n": "Battersea",
+      "q": 65,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bexleyheath": {
+      "n": "Bexleyheath",
+      "q": 66,
+      "r": -43,
+      "region": "E12000007",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Eastbourne": {
+      "n": "Eastbourne",
+      "q": 67,
+      "r": -45,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Milton Keynes NE": {
+      "n": "Milton Keynes NE",
+      "q": 58,
+      "r": -34,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Portsmouth S": {
+      "n": "Portsmouth S",
+      "q": 58,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Arundel": {
+      "n": "Arundel",
+      "q": 59,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gosport": {
+      "n": "Gosport",
+      "q": 55,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Brighton Kemptown": {
+      "n": "Brighton Kemptown",
+      "q": 62,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Havant": {
+      "n": "Havant",
+      "q": 57,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Worthing": {
+      "n": "Worthing",
+      "q": 60,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Shoreham": {
+      "n": "Shoreham",
+      "q": 61,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Portsmouth N": {
+      "n": "Portsmouth N",
+      "q": 56,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hove": {
+      "n": "Hove",
+      "q": 59,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Fareham": {
+      "n": "Fareham",
+      "q": 54,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Brighton Pavilion": {
+      "n": "Brighton Pavilion",
+      "q": 58,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Lewes": {
+      "n": "Lewes",
+      "q": 67,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Milton Keynes SW": {
+      "n": "Milton Keynes SW",
+      "q": 59,
+      "r": -34,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hastings & Rye": {
+      "n": "Hastings & Rye",
+      "q": 68,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Southampton Itchen": {
+      "n": "Southampton Itchen",
+      "q": 53,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Banbury": {
+      "n": "Banbury",
+      "q": 57,
+      "r": -35,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Southampton Test": {
+      "n": "Southampton Test",
+      "q": 54,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Eastleigh": {
+      "n": "Eastleigh",
+      "q": 55,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Romsey & Waterside": {
+      "n": "Romsey & Waterside",
+      "q": 56,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chichester": {
+      "n": "Chichester",
+      "q": 58,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bexhill & Battle": {
+      "n": "Bexhill & Battle",
+      "q": 67,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Bedfordshire SW": {
+      "n": "Bedfordshire SW",
+      "q": 59,
+      "r": -35,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Buckingham": {
+      "n": "Buckingham",
+      "q": 58,
+      "r": -35,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sussex Mid": {
+      "n": "Sussex Mid",
+      "q": 68,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Horsham": {
+      "n": "Horsham",
+      "q": 57,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wealden": {
+      "n": "Wealden",
+      "q": 68,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Folkestone & Hythe": {
+      "n": "Folkestone & Hythe",
+      "q": 70,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Winchester": {
+      "n": "Winchester",
+      "q": 55,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hampshire E": {
+      "n": "Hampshire E",
+      "q": 57,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Witney": {
+      "n": "Witney",
+      "q": 54,
+      "r": -37,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Crawley": {
+      "n": "Crawley",
+      "q": 56,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Tunbridge Wells": {
+      "n": "Tunbridge Wells",
+      "q": 68,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ashford": {
+      "n": "Ashford",
+      "q": 69,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Surrey SW": {
+      "n": "Surrey SW",
+      "q": 57,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dover": {
+      "n": "Dover",
+      "q": 72,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Oxford E": {
+      "n": "Oxford E",
+      "q": 55,
+      "r": -37,
+      "region": "E12000008",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Aylesbury": {
+      "n": "Aylesbury",
+      "q": 57,
+      "r": -37,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Maidstone": {
+      "n": "Maidstone",
+      "q": 69,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Mole Valley": {
+      "n": "Mole Valley",
+      "q": 56,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Guildford": {
+      "n": "Guildford",
+      "q": 55,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Oxford W & Abingdon": {
+      "n": "Oxford W & Abingdon",
+      "q": 56,
+      "r": -37,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Sevenoaks": {
+      "n": "Sevenoaks",
+      "q": 69,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Reigate": {
+      "n": "Reigate",
+      "q": 57,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chesham & Amersham": {
+      "n": "Chesham & Amersham",
+      "q": 58,
+      "r": -36,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Basingstoke": {
+      "n": "Basingstoke",
+      "q": 54,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hampshire NW": {
+      "n": "Hampshire NW",
+      "q": 54,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Tonbridge & Malling": {
+      "n": "Tonbridge & Malling",
+      "q": 70,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Henley": {
+      "n": "Henley",
+      "q": 56,
+      "r": -38,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wantage": {
+      "n": "Wantage",
+      "q": 54,
+      "r": -38,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Kent Mid": {
+      "n": "Kent Mid",
+      "q": 70,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Woking": {
+      "n": "Woking",
+      "q": 56,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Canterbury": {
+      "n": "Canterbury",
+      "q": 71,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Aldershot": {
+      "n": "Aldershot",
+      "q": 55,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wycombe": {
+      "n": "Wycombe",
+      "q": 57,
+      "r": -38,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Esher": {
+      "n": "Esher",
+      "q": 54,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Thanet S": {
+      "n": "Thanet S",
+      "q": 72,
+      "r": -40,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Croydon S": {
+      "n": "Croydon S",
+      "q": 69,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Faversham": {
+      "n": "Faversham",
+      "q": 70,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Surrey NW": {
+      "n": "Surrey NW",
+      "q": 55,
+      "r": -38,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Uxbridge": {
+      "n": "Uxbridge",
+      "q": 57,
+      "r": -36,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Beaconsfield": {
+      "n": "Beaconsfield",
+      "q": 56,
+      "r": -36,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Chertsey & Walton": {
+      "n": "Chertsey & Walton",
+      "q": 60,
+      "r": -35,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Thanet N": {
+      "n": "Thanet N",
+      "q": 71,
+      "r": -39,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Gravesham": {
+      "n": "Gravesham",
+      "q": 71,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Slough": {
+      "n": "Slough",
+      "q": 60,
+      "r": -34,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Medway": {
+      "n": "Medway",
+      "q": 72,
+      "r": -41,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Reading E": {
+      "n": "Reading E",
+      "q": 61,
+      "r": -34,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Windsor & Maidenhead": {
+      "n": "Windsor & Maidenhead",
+      "q": 60,
+      "r": -33,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dartford": {
+      "n": "Dartford",
+      "q": 71,
+      "r": -42,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Berkshire E": {
+      "n": "Berkshire E",
+      "q": 69,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Spelthorne": {
+      "n": "Spelthorne",
+      "q": 70,
+      "r": -43,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Newbury": {
+      "n": "Newbury",
+      "q": 69,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Erith & Crayford": {
+      "n": "Erith & Crayford",
+      "q": 70,
+      "r": -44,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Wokingham": {
+      "n": "Wokingham",
+      "q": 68,
+      "r": -45,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Reading W": {
+      "n": "Reading W",
+      "q": 69,
+      "r": -45,
+      "region": "E12000008",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Vale of Glamorgan": {
+      "n": "Vale of Glamorgan",
+      "q": 48,
+      "r": -38,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Clwyd NW": {
+      "n": "Clwyd NW",
+      "q": 49,
+      "r": -29,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Delyn": {
+      "n": "Delyn",
+      "q": 49,
+      "r": -30,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Conwy": {
+      "n": "Conwy",
+      "q": 48,
+      "r": -30,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cardiff S & Penarth": {
+      "n": "Cardiff S & Penarth",
+      "q": 49,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Bridgend": {
+      "n": "Bridgend",
+      "q": 47,
+      "r": -38,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cardiff W": {
+      "n": "Cardiff W",
+      "q": 48,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cardiff Central": {
+      "n": "Cardiff Central",
+      "q": 47,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cardiff N": {
+      "n": "Cardiff N",
+      "q": 49,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ogmore": {
+      "n": "Ogmore",
+      "q": 46,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Alyn & Deeside": {
+      "n": "Alyn & Deeside",
+      "q": 50,
+      "r": -30,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Pontypridd": {
+      "n": "Pontypridd",
+      "q": 48,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Aberavon": {
+      "n": "Aberavon",
+      "q": 47,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newport W": {
+      "n": "Newport W",
+      "q": 50,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Newport E": {
+      "n": "Newport E",
+      "q": 50,
+      "r": -35,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Gower": {
+      "n": "Gower",
+      "q": 45,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Swansea W": {
+      "n": "Swansea W",
+      "q": 46,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Caerphilly": {
+      "n": "Caerphilly",
+      "q": 49,
+      "r": -35,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Rhondda": {
+      "n": "Rhondda",
+      "q": 45,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Islwyn": {
+      "n": "Islwyn",
+      "q": 48,
+      "r": -35,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Swansea E": {
+      "n": "Swansea E",
+      "q": 44,
+      "r": -37,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Torfaen": {
+      "n": "Torfaen",
+      "q": 47,
+      "r": -35,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Clwyd SW": {
+      "n": "Clwyd SW",
+      "q": 49,
+      "r": -31,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Wrexham": {
+      "n": "Wrexham",
+      "q": 48,
+      "r": -31,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cynon Valley": {
+      "n": "Cynon Valley",
+      "q": 46,
+      "r": -35,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Neath": {
+      "n": "Neath",
+      "q": 44,
+      "r": -36,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Llanelli": {
+      "n": "Llanelli",
+      "q": 46,
+      "r": -34,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Merthyr Tydfil & Rhymney": {
+      "n": "Merthyr Tydfil & Rhymney",
+      "q": 49,
+      "r": -34,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Blaenau Gwent": {
+      "n": "Blaenau Gwent",
+      "q": 50,
+      "r": -34,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Monmouth": {
+      "n": "Monmouth",
+      "q": 48,
+      "r": -34,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Caernarfon": {
+      "n": "Caernarfon",
+      "q": 47,
+      "r": -31,
+      "region": "W92000004",
+      "colour": "#008672",
+      "party": "Plaid Cymru"
+    },
+    "Pembroke": {
+      "n": "Pembroke",
+      "q": 47,
+      "r": -34,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Meirionnydd Nant Conwy": {
+      "n": "Meirionnydd Nant Conwy",
+      "q": 49,
+      "r": -32,
+      "region": "W92000004",
+      "colour": "#008672",
+      "party": "Plaid Cymru"
+    },
+    "Carmarthen": {
+      "n": "Carmarthen",
+      "q": 47,
+      "r": -33,
+      "region": "W92000004",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Montgomery": {
+      "n": "Montgomery",
+      "q": 50,
+      "r": -32,
+      "region": "W92000004",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Ceredigion & Pembroke N": {
+      "n": "Ceredigion & Pembroke N",
+      "q": 48,
+      "r": -33,
+      "region": "W92000004",
+      "colour": "#008672",
+      "party": "Plaid Cymru"
+    },
+    "Brecon & Radnor": {
+      "n": "Brecon & Radnor",
+      "q": 49,
+      "r": -33,
+      "region": "W92000004",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Galloway & Upper Nithsdale": {
+      "n": "Galloway & Upper Nithsdale",
+      "q": 49,
+      "r": -13,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Caithness & Sutherland": {
+      "n": "Caithness & Sutherland",
+      "q": 50,
+      "r": -2,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Dumfries": {
+      "n": "Dumfries",
+      "q": 51,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ross, Cromarty & Skye": {
+      "n": "Ross, Cromarty & Skye",
+      "q": 49,
+      "r": -3,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Banff & Buchan": {
+      "n": "Banff & Buchan",
+      "q": 52,
+      "r": -3,
+      "region": "S92000003",
+      "colour": "#FDF38E",
+      "party": "SNP"
+    },
+    "Carrick, Cumnock & Doon Valley": {
+      "n": "Carrick, Cumnock & Doon Valley",
+      "q": 49,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Moray": {
+      "n": "Moray",
+      "q": 51,
+      "r": -3,
+      "region": "S92000003",
+      "colour": "#FDF38E",
+      "party": "SNP"
+    },
+    "Gordon": {
+      "n": "Gordon",
+      "q": 52,
+      "r": -4,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Ayr": {
+      "n": "Ayr",
+      "q": 49,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Clydesdale": {
+      "n": "Clydesdale",
+      "q": 51,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Aberdeen N": {
+      "n": "Aberdeen N",
+      "q": 52,
+      "r": -5,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Cunninghame S": {
+      "n": "Cunninghame S",
+      "q": 49,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Kilmarnock & Loudon": {
+      "n": "Kilmarnock & Loudon",
+      "q": 50,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tweeddale, Ettrick & Lauderdale": {
+      "n": "Tweeddale, Ettrick & Lauderdale",
+      "q": 52,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Aberdeen S": {
+      "n": "Aberdeen S",
+      "q": 53,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Roxburgh & Berwickshire": {
+      "n": "Roxburgh & Berwickshire",
+      "q": 53,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "East Kilbride": {
+      "n": "East Kilbride",
+      "q": 48,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Inverness, Nairn & Lochaber": {
+      "n": "Inverness, Nairn & Lochaber",
+      "q": 49,
+      "r": -5,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Cunninghame N": {
+      "n": "Cunninghame N",
+      "q": 47,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Eastwood": {
+      "n": "Eastwood",
+      "q": 49,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Hamilton": {
+      "n": "Hamilton",
+      "q": 50,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Motherwell S": {
+      "n": "Motherwell S",
+      "q": 51,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Cathcart": {
+      "n": "Glasgow Cathcart",
+      "q": 48,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Rutherglen": {
+      "n": "Glasgow Rutherglen",
+      "q": 52,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Paisley S": {
+      "n": "Paisley S",
+      "q": 47,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Pollok": {
+      "n": "Glasgow Pollok",
+      "q": 50,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Midlothian": {
+      "n": "Midlothian",
+      "q": 53,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Motherwell N": {
+      "n": "Motherwell N",
+      "q": 51,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Kincardine & Deeside": {
+      "n": "Kincardine & Deeside",
+      "q": 52,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Glasgow Shettleston": {
+      "n": "Glasgow Shettleston",
+      "q": 50,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Central": {
+      "n": "Glasgow Central",
+      "q": 49,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Govan": {
+      "n": "Glasgow Govan",
+      "q": 48,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Paisley N": {
+      "n": "Paisley N",
+      "q": 48,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Provan": {
+      "n": "Glasgow Provan",
+      "q": 51,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Renfrew W & Inverclyde": {
+      "n": "Renfrew W & Inverclyde",
+      "q": 47,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Hillhead": {
+      "n": "Glasgow Hillhead",
+      "q": 52,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Springburn": {
+      "n": "Glasgow Springburn",
+      "q": 47,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Edinburgh Pentlands": {
+      "n": "Edinburgh Pentlands",
+      "q": 54,
+      "r": -9,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Livingston": {
+      "n": "Livingston",
+      "q": 54,
+      "r": -10,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Monklands E": {
+      "n": "Monklands E",
+      "q": 52,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Maryhill": {
+      "n": "Glasgow Maryhill",
+      "q": 53,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Glasgow Garscadden": {
+      "n": "Glasgow Garscadden",
+      "q": 49,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Edinburgh S": {
+      "n": "Edinburgh S",
+      "q": 54,
+      "r": -8,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Monklands W": {
+      "n": "Monklands W",
+      "q": 50,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Greenock & Port Glasgow": {
+      "n": "Greenock & Port Glasgow",
+      "q": 48,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Clydebank & Milngavie": {
+      "n": "Clydebank & Milngavie",
+      "q": 51,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Strathkelvin & Bearsden": {
+      "n": "Strathkelvin & Bearsden",
+      "q": 47,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Edinburgh Central": {
+      "n": "Edinburgh Central",
+      "q": 53,
+      "r": -11,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Linlithgow": {
+      "n": "Linlithgow",
+      "q": 52,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Argyll & Bute": {
+      "n": "Argyll & Bute",
+      "q": 48,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Edinburgh E": {
+      "n": "Edinburgh E",
+      "q": 53,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "East Lothian": {
+      "n": "East Lothian",
+      "q": 54,
+      "r": -7,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Edinburgh W": {
+      "n": "Edinburgh W",
+      "q": 52,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Cumbernauld & Kilsyth": {
+      "n": "Cumbernauld & Kilsyth",
+      "q": 50,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Falkirk E": {
+      "n": "Falkirk E",
+      "q": 51,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Edinburgh Leith": {
+      "n": "Edinburgh Leith",
+      "q": 53,
+      "r": -12,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Falkirk W": {
+      "n": "Falkirk W",
+      "q": 50,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dunfermline W": {
+      "n": "Dunfermline W",
+      "q": 49,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dunfermline E": {
+      "n": "Dunfermline E",
+      "q": 48,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dumbarton": {
+      "n": "Dumbarton",
+      "q": 47,
+      "r": -6,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Kirkcaldy": {
+      "n": "Kirkcaldy",
+      "q": 51,
+      "r": -5,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Clackmannan": {
+      "n": "Clackmannan",
+      "q": 50,
+      "r": -5,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Tayside N": {
+      "n": "Tayside N",
+      "q": 48,
+      "r": -5,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Stirling": {
+      "n": "Stirling",
+      "q": 49,
+      "r": -4,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Angus E": {
+      "n": "Angus E",
+      "q": 51,
+      "r": -4,
+      "region": "S92000003",
+      "colour": "#FDF38E",
+      "party": "SNP"
+    },
+    "Fife Central": {
+      "n": "Fife Central",
+      "q": 50,
+      "r": -4,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Fife NE": {
+      "n": "Fife NE",
+      "q": 52,
+      "r": -13,
+      "region": "S92000003",
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Perth & Kinross": {
+      "n": "Perth & Kinross",
+      "q": 51,
+      "r": -13,
+      "region": "S92000003",
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Dundee E": {
+      "n": "Dundee E",
+      "q": 50,
+      "r": -13,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Dundee W": {
+      "n": "Dundee W",
+      "q": 48,
+      "r": -13,
+      "region": "S92000003",
+      "colour": "#E4003B",
+      "party": "Labour"
+    },
+    "Antrim N": {
+      "n": "Antrim N",
+      "q": 45,
+      "r": -15,
+      "region": "N92000002",
+      "colour": "#D46A4C",
+      "party": "DUP"
+    },
+    "Down S": {
+      "n": "Down S",
+      "q": 45,
+      "r": -18,
+      "region": "N92000002",
+      "colour": "#2AA82C",
+      "party": "SDLP"
+    },
+    "Newry & Armagh": {
+      "n": "Newry & Armagh",
+      "q": 44,
+      "r": -18,
+      "region": "N92000002",
+      "colour": "#2AA82C",
+      "party": "SDLP"
+    },
+    "Londonderry E": {
+      "n": "Londonderry E",
+      "q": 43,
+      "r": -15,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Foyle": {
+      "n": "Foyle",
+      "q": 42,
+      "r": -16,
+      "region": "N92000002",
+      "colour": "#2AA82C",
+      "party": "SDLP"
+    },
+    "Fermanagh & S Tyrone": {
+      "n": "Fermanagh & S Tyrone",
+      "q": 42,
+      "r": -17,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Upper Bann": {
+      "n": "Upper Bann",
+      "q": 44,
+      "r": -17,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Antrim E": {
+      "n": "Antrim E",
+      "q": 45,
+      "r": -16,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Strangford": {
+      "n": "Strangford",
+      "q": 46,
+      "r": -17,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Lagan Valley": {
+      "n": "Lagan Valley",
+      "q": 45,
+      "r": -17,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Belfast S": {
+      "n": "Belfast S",
+      "q": 46,
+      "r": -16,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Antrim S": {
+      "n": "Antrim S",
+      "q": 44,
+      "r": -16,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Belfast E": {
+      "n": "Belfast E",
+      "q": 46,
+      "r": -18,
+      "region": "N92000002",
+      "colour": "#D46A4C",
+      "party": "DUP"
+    },
+    "Belfast W": {
+      "n": "Belfast W",
+      "q": 43,
+      "r": -16,
+      "region": "N92000002",
+      "colour": "#2AA82C",
+      "party": "SDLP"
+    },
+    "Ulster Mid": {
+      "n": "Ulster Mid",
+      "q": 43,
+      "r": -18,
+      "region": "N92000002",
+      "colour": "#D46A4C",
+      "party": "DUP"
+    },
+    "Belfast N": {
+      "n": "Belfast N",
+      "q": 44,
+      "r": -15,
+      "region": "N92000002",
+      "colour": "#48A5EE",
+      "party": "UUP"
+    },
+    "Down N": {
+      "n": "Down N",
+      "q": 42,
+      "r": -15,
+      "region": "N92000002",
+      "colour": "#FFDEAD",
+      "party": "Ulster Popular Unionist"
+    },
+    "Isle of Wight": {
+      "n": "Isle of Wight",
+      "q": 54,
+      "r": -45,
+      "region": "E12000008",
+      "island": true,
+      "colour": "#0087DC",
+      "party": "Conservative"
+    },
+    "Ynys Mon": {
+      "n": "Ynys Mon",
+      "q": 46,
+      "r": -29,
+      "region": "W92000004",
+      "island": true,
+      "colour": "#008672",
+      "party": "Plaid Cymru"
+    },
+    "Orkney & Shetland": {
+      "n": "Orkney & Shetland",
+      "q": 51,
+      "r": 0,
+      "region": "S92000003",
+      "island": true,
+      "colour": "#FAA61A",
+      "party": "Liberal Democrats"
+    },
+    "Western Isles": {
+      "n": "Western Isles",
+      "q": 47,
+      "r": -2,
+      "region": "S92000003",
+      "island": true,
+      "colour": "#E4003B",
+      "party": "Labour"
+    }
+  }
+}

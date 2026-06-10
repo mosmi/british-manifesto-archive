@@ -1,0 +1,133 @@
+{
+  "1945": {
+    "labour": { "votes": 11967746, "percentage": 49.7 },
+    "conservative": { "votes": 8716211, "percentage": 36.2 },
+    "libdem": { "votes": 2177938, "percentage": 9.0 },
+    "nationalliberal": { "votes": 686652, "percentage": 2.9 },
+    "independent": { "votes": 133191, "percentage": 0.6 },
+    "national": { "votes": 130513, "percentage": 0.5 },
+    "commonwealth": { "votes": 110634, "percentage": 0.5 },
+    "communist": { "votes": 97945, "percentage": 0.4 },
+    "irishnationalist": { "votes": 92819, "percentage": 0.4 },
+    "nationalindependent": { "votes": 65171, "percentage": 0.3 },
+    "indlabour": { "votes": 63135, "percentage": 0.3 },
+    "indconservative": { "votes": 57823, "percentage": 0.2 },
+    "ilp": { "votes": 46769, "percentage": 0.2 },
+    "indprogressive": { "votes": 45967, "percentage": 0.1 },
+    "indliberal": { "votes": 30450, "percentage": 0.1 }
+  },
+  "1950": {
+    "labour": { "votes": 13266176, "percentage": 46.1 },
+    "conservative": { "votes": 12492404, "percentage": 43.4 },
+    "libdem": { "votes": 2621487, "percentage": 9.1 }
+  },
+  "1951": {
+    "conservative": { "votes": 13717538, "percentage": 48.0 },
+    "labour": { "votes": 13948605, "percentage": 48.8 },
+    "libdem": { "votes": 730546, "percentage": 2.5 }
+  },
+  "1955": {
+    "conservative": { "votes": 13286569, "percentage": 49.7 },
+    "labour": { "votes": 12404970, "percentage": 46.4 },
+    "libdem": { "votes": 722405, "percentage": 2.7 }
+  },
+  "1959": {
+    "conservative": { "votes": 13749830, "percentage": 49.4 },
+    "labour": { "votes": 12215538, "percentage": 43.8 },
+    "libdem": { "votes": 1638571, "percentage": 5.9 }
+  },
+  "1964": {
+    "labour": { "votes": 12205814, "percentage": 44.1 },
+    "conservative": { "votes": 12001396, "percentage": 43.4 },
+    "libdem": { "votes": 3092878, "percentage": 11.2 }
+  },
+  "1966": {
+    "labour": { "votes": 13064951, "percentage": 47.9 },
+    "conservative": { "votes": 11418433, "percentage": 41.9 },
+    "libdem": { "votes": 2327533, "percentage": 8.5 }
+  },
+  "1970": {
+    "conservative": { "votes": 13145123, "percentage": 46.4 },
+    "labour": { "votes": 12175174, "percentage": 43.1 },
+    "libdem": { "votes": 2030611, "percentage": 7.2 }
+  },
+  "feb1974": {
+    "labour": { "votes": 11607044, "percentage": 37.2 },
+    "conservative": { "votes": 11902195, "percentage": 37.9 },
+    "libdem": { "votes": 6042771, "percentage": 19.3 }
+  },
+  "oct1974": {
+    "labour": { "votes": 11431491, "percentage": 39.2 },
+    "conservative": { "votes": 10248856, "percentage": 35.8 },
+    "libdem": { "votes": 5030173, "percentage": 18.3 }
+  },
+  "1979": {
+    "conservative": { "votes": 13069731, "percentage": 43.9 },
+    "labour": { "votes": 11532918, "percentage": 36.9 },
+    "libdem": { "votes": 4285761, "percentage": 13.8 }
+  },
+  "1983": {
+    "conservative": { "votes": 13012316, "percentage": 42.4 },
+    "labour": { "votes": 8271837, "percentage": 27.6 },
+    "libdem": { "votes": 7780486, "percentage": 25.4 }
+  },
+  "1987": {
+    "conservative": { "votes": 13760935, "percentage": 42.2 },
+    "labour": { "votes": 10029027, "percentage": 30.8 },
+    "libdem": { "votes": 7341291, "percentage": 22.6 }
+  },
+  "1992": {
+    "conservative": { "votes": 14093007, "percentage": 41.9 },
+    "labour": { "votes": 11624109, "percentage": 34.4 },
+    "libdem": { "votes": 5990604, "percentage": 17.8 }
+  },
+  "1997": {
+    "labour": { "votes": 16661454, "percentage": 43.2 },
+    "conservative": { "votes": 9571673, "percentage": 30.7 },
+    "libdem": { "votes": 5181677, "percentage": 16.8 }
+  },
+  "2001": {
+    "labour": { "votes": 10834800, "percentage": 40.7 },
+    "conservative": { "votes": 8355683, "percentage": 31.7 },
+    "libdem": { "votes": 4840340, "percentage": 18.3 }
+  },
+  "2005": {
+    "labour": { "votes": 9552589, "percentage": 35.2 },
+    "conservative": { "votes": 8782966, "percentage": 32.4 },
+    "libdem": { "votes": 5961718, "percentage": 22.0 }
+  },
+  "2010": {
+    "conservative": { "votes": 10737068, "percentage": 36.1 },
+    "labour": { "votes": 8578244, "percentage": 29.0 },
+    "libdem": { "votes": 6226587, "percentage": 23.0 }
+  },
+  "2015": {
+    "conservative": { "votes": 11334576, "percentage": 36.8 },
+    "labour": { "votes": 9315310, "percentage": 30.4 },
+    "libdem": { "votes": 2446903, "percentage": 7.9 },
+    "ukip": { "votes": 3883988, "percentage": 12.6 },
+    "snp": { "votes": 1454101, "percentage": 4.7 },
+    "green": { "votes": 1111271, "percentage": 3.6 }
+  },
+  "2017": {
+    "conservative": { "votes": 13636684, "percentage": 42.4 },
+    "labour": { "votes": 12879100, "percentage": 40.0 },
+    "libdem": { "votes": 2244577, "percentage": 7.4 },
+    "snp": { "votes": 977569, "percentage": 3.0 }
+  },
+  "2019": {
+    "conservative": { "votes": 13966454, "percentage": 43.6 },
+    "labour": { "votes": 10269441, "percentage": 32.2 },
+    "libdem": { "votes": 3469961, "percentage": 11.6 },
+    "snp": { "votes": 1241298, "percentage": 3.9 }
+  },
+  "2024": {
+    "labour": { "votes": 9708716, "percentage": 33.7 },
+    "conservative": { "votes": 6828925, "percentage": 23.7 },
+    "libdem": { "votes": 3519143, "percentage": 12.2 },
+    "reform": { "votes": 4125246, "percentage": 14.3 },
+    "green": { "votes": 1945308, "percentage": 6.8 },
+    "snp": { "votes": 724758, "percentage": 2.5 },
+    "plaid": { "votes": 194811, "percentage": 0.7 }
+  }
+}

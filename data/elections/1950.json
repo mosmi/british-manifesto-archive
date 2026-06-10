@@ -1,0 +1,83 @@
+{
+  "id": "1950",
+  "year": 1950,
+  "displayYear": "1950",
+  "date": "23 February 1950",
+  "winner": "labour",
+  "pm": "Clement Attlee",
+  "outgoingPm": "Clement Attlee",
+  "totalSeats": 625,
+  "summary": "Labour retained power in 1950 but with a drastically reduced majority of just 5 seats. The result reflected growing public ambivalence about the pace of nationalisation and the austerity of the postwar years, while the Conservatives had rebuilt under Churchill's continued leadership. New boundary changes disadvantaged Labour.",
+  "highlights": [
+    "Labour majority reduced to just 5 seats — barely workable",
+    "Boundary changes disadvantage Labour in marginal seats",
+    "Conservative Party revitalised under Churchill's continued leadership",
+    "Korean War breaks out months later, complicating Attlee's government"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 27.4
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 27,
+      "votes": 0,
+      "percentage": 58.1
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 5,
+      "votes": 0,
+      "percentage": 12.6
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 31,
+      "votes": 0,
+      "percentage": 44.8
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 37,
+      "votes": 0,
+      "percentage": 46.2
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 6.6
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 315,
+      "votes": 13266592,
+      "percentage": 46.1
+    },
+    {
+      "party": "conservative",
+      "seats": 298,
+      "votes": 12502567,
+      "percentage": 43.5
+    },
+    {
+      "party": "libdem",
+      "seats": 9,
+      "votes": 2621548,
+      "percentage": 9.1
+    },
+    {
+      "party": "others",
+      "seats": 3,
+      "votes": 381964,
+      "percentage": 1.3
+    }
+  ]
+}

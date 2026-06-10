@@ -1,0 +1,151 @@
+{
+  "id": "2015",
+  "year": 2015,
+  "displayYear": "2015",
+  "date": "7 May 2015",
+  "winner": "conservative",
+  "pm": "David Cameron",
+  "outgoingPm": "David Cameron",
+  "totalSeats": 650,
+  "summary": "The 2015 election delivered the second major polling failure of the modern era. Surveys had predicted another hung parliament; instead Cameron won an outright majority of 12. Labour's Ed Miliband lost 26 seats. Most dramatically, the SNP swept Scotland, winning 56 of 59 Scottish seats and virtually wiping out Scottish Labour. The Liberal Democrats were decimated, falling from 57 to 8 seats. UKIP won nearly 4 million votes but only 1 seat. Cameron's victory came with a manifesto commitment to an EU membership referendum.",
+  "highlights": [
+    "Major polling failure — predicted hung parliament becomes Conservative majority",
+    "SNP sweeps Scotland, winning 56 of 59 seats — \"SNP tsunami\"",
+    "Liberal Democrats punished for coalition — fall from 57 to 8 seats",
+    "UKIP wins 3.9 million votes (12.6%) but only 1 seat",
+    "Cameron commits to EU referendum; Brexit vote follows in 2016",
+    "Miliband resigns; Jeremy Corbyn elected Labour leader months later"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [
+    "cooperative",
+    "gpni",
+    "pirate",
+    "tuv",
+    "welshcon",
+    "scottishgrn",
+    "welshlab",
+    "welshlibdem",
+    "scottishcon",
+    "scottishlab",
+    "scottishlibdem"
+  ],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 11,
+      "votes": 0,
+      "percentage": 27.2
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 25,
+      "votes": 0,
+      "percentage": 36.9
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 6.5
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 14.9
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 24.3
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 7.5
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 331,
+      "votes": 11334576,
+      "percentage": 36.9
+    },
+    {
+      "party": "labour",
+      "seats": 232,
+      "votes": 9347304,
+      "percentage": 30.4
+    },
+    {
+      "party": "snp",
+      "seats": 56,
+      "votes": 1454436,
+      "percentage": 4.7
+    },
+    {
+      "party": "libdem",
+      "seats": 8,
+      "votes": 2415888,
+      "percentage": 7.9
+    },
+    {
+      "party": "ukip",
+      "seats": 1,
+      "votes": 3881099,
+      "percentage": 12.6
+    },
+    {
+      "party": "green",
+      "seats": 1,
+      "votes": 1157613,
+      "percentage": 3.8
+    },
+    {
+      "party": "plaid",
+      "seats": 3,
+      "votes": 181704,
+      "percentage": 0.6
+    },
+    {
+      "party": "dup",
+      "seats": 8,
+      "votes": 184260,
+      "percentage": 0.6
+    },
+    {
+      "party": "sdlp",
+      "seats": 3,
+      "votes": 99809,
+      "percentage": 0.3
+    },
+    {
+      "party": "sinnfein",
+      "seats": 4,
+      "votes": 176232,
+      "percentage": 0.6
+    },
+    {
+      "party": "uup",
+      "seats": 2,
+      "votes": 114935,
+      "percentage": 0.4
+    },
+    {
+      "party": "alliance",
+      "seats": 0,
+      "votes": 61556,
+      "percentage": 0.2
+    },
+    {
+      "party": "others",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0.8
+    }
+  ]
+}

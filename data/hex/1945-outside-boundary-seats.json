@@ -1,0 +1,147 @@
+{
+  "election": 1945,
+  "note": "Seats to render OUTSIDE the UK boundary as a separate list, each showing one swatch per member returned.",
+  "university_seats": [
+    {
+      "name": "Cambridge University",
+      "region": "University",
+      "seats": 2,
+      "type": "university"
+    },
+    {
+      "name": "Combined English Universities",
+      "region": "University",
+      "seats": 2,
+      "type": "university"
+    },
+    {
+      "name": "Combined Scottish Universities",
+      "region": "University",
+      "seats": 3,
+      "type": "university"
+    },
+    {
+      "name": "London University",
+      "region": "University",
+      "seats": 1,
+      "type": "university"
+    },
+    {
+      "name": "Oxford University",
+      "region": "University",
+      "seats": 2,
+      "type": "university"
+    },
+    {
+      "name": "Queen'S University Of Belfast",
+      "region": "University",
+      "seats": 1,
+      "type": "university"
+    },
+    {
+      "name": "University Of Wales",
+      "region": "University",
+      "seats": 1,
+      "type": "university"
+    }
+  ],
+  "territorial_multimember_seats": [
+    {
+      "name": "Antrim",
+      "region": "Northern Ireland",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Blackburn",
+      "region": "North West",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Bolton",
+      "region": "North West",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Brighton",
+      "region": "South East",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "City Of London",
+      "region": "London",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Derby",
+      "region": "East Midlands",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Down",
+      "region": "Northern Ireland",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Dundee",
+      "region": "Scotland",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Fermanagh And Tyrone",
+      "region": "Northern Ireland",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Norwich",
+      "region": "Eastern",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Oldham",
+      "region": "North West",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Preston",
+      "region": "North West",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Southampton",
+      "region": "South East",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Stockport",
+      "region": "North West",
+      "seats": 2,
+      "type": "territorial_multimember"
+    },
+    {
+      "name": "Sunderland",
+      "region": "North East",
+      "seats": 2,
+      "type": "territorial_multimember"
+    }
+  ],
+  "counts": {
+    "university_constituencies": 7,
+    "university_mps": 12,
+    "territorial_multimember_constituencies": 15,
+    "territorial_multimember_mps": 30,
+    "single_member_territorial": 598
+  }
+}

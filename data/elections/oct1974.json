@@ -1,0 +1,119 @@
+{
+  "id": "oct1974",
+  "year": 1974,
+  "displayYear": "Oct 1974",
+  "date": "10 October 1974",
+  "winner": "labour",
+  "pm": "Harold Wilson",
+  "outgoingPm": "Harold Wilson",
+  "totalSeats": 635,
+  "summary": "Wilson called a second election within the year to convert his minority government into a workable majority. He succeeded, but only barely — Labour won 319 seats, giving a majority of just 3. This slim margin would erode through by-election losses, leaving Labour in minority government again by 1977.",
+  "highlights": [
+    "Labour secures working majority of 3 — barely sufficient",
+    "SNP wins 11 seats, capitalising on North Sea oil debate",
+    "Liberal vote squeezed by voters wanting a decisive result",
+    "Margaret Thatcher wins Conservative leadership in February 1975"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 8,
+      "votes": 0,
+      "percentage": 23.9
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 23,
+      "votes": 0,
+      "percentage": 49.5
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 15.5
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 16,
+      "votes": 0,
+      "percentage": 24.7
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 41,
+      "votes": 0,
+      "percentage": 36.3
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 8.3
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 319,
+      "votes": 11457079,
+      "percentage": 39.2
+    },
+    {
+      "party": "conservative",
+      "seats": 277,
+      "votes": 10462565,
+      "percentage": 35.8
+    },
+    {
+      "party": "libdem",
+      "seats": 13,
+      "votes": 5346754,
+      "percentage": 18.3
+    },
+    {
+      "party": "snp",
+      "seats": 11,
+      "votes": 839617,
+      "percentage": 2.9
+    },
+    {
+      "party": "plaid",
+      "seats": 3,
+      "votes": 166321,
+      "percentage": 0.6
+    },
+    {
+      "party": "uup",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "dup",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sdlp",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "alliance",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "others",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 1.2
+    }
+  ]
+}

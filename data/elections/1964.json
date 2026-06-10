@@ -1,0 +1,83 @@
+{
+  "id": "1964",
+  "year": 1964,
+  "displayYear": "1964",
+  "date": "15 October 1964",
+  "winner": "labour",
+  "pm": "Harold Wilson",
+  "outgoingPm": "Alec Douglas-Home",
+  "totalSeats": 630,
+  "summary": "Harold Wilson led Labour to a narrow victory after thirteen years of Conservative rule, winning a majority of just 4. Wilson, a moderniser who spoke of the \"white heat of technology,\" tapped into a national mood for change. The Conservative government under Alec Douglas-Home appeared tired and out of touch.",
+  "highlights": [
+    "End of thirteen years of Conservative government",
+    "Wilson's \"white heat of technology\" speech sets tone for modernising agenda",
+    "Labour majority of only 4 — barely workable",
+    "Profumo scandal had damaged the Conservatives in preceding years"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 29.4
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 28,
+      "votes": 0,
+      "percentage": 57.8
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 7.3
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 24,
+      "votes": 0,
+      "percentage": 40.6
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 43,
+      "votes": 0,
+      "percentage": 48.7
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 7.6
+    }
+  },
+  "results": [
+    {
+      "party": "labour",
+      "seats": 317,
+      "votes": 12205814,
+      "percentage": 44.1
+    },
+    {
+      "party": "conservative",
+      "seats": 304,
+      "votes": 12001396,
+      "percentage": 43.4
+    },
+    {
+      "party": "libdem",
+      "seats": 9,
+      "votes": 3092878,
+      "percentage": 11.2
+    },
+    {
+      "party": "others",
+      "seats": 0,
+      "votes": 347905,
+      "percentage": 1.3
+    }
+  ]
+}

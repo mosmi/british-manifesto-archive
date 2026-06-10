@@ -1,0 +1,140 @@
+{
+  "id": "2019",
+  "year": 2019,
+  "displayYear": "2019",
+  "date": "12 December 2019",
+  "winner": "conservative",
+  "pm": "Boris Johnson",
+  "outgoingPm": "Boris Johnson",
+  "totalSeats": 650,
+  "summary": "Boris Johnson's Conservative Party won a majority of 80 — the largest since Thatcher's 1987 landslide — on the slogan \"Get Brexit Done.\" The election, fought after three years of parliamentary paralysis over Britain's departure from the EU, delivered a decisive mandate. Labour, under Jeremy Corbyn, suffered its worst result since 1935. The so-called \"Red Wall\" — traditionally Labour working-class seats across the Midlands and the North — fell to the Conservatives for the first time in many cases.",
+  "highlights": [
+    "\"Get Brexit Done\" — Johnson wins majority of 80",
+    "Red Wall collapses: Labour heartlands in the Midlands and North vote Conservative",
+    "Labour's worst result since 1935 under Jeremy Corbyn",
+    "SNP wins 48 seats, reignites Scottish independence debate",
+    "Brexit completed on 31 January 2020",
+    "Corbyn resigns; Keir Starmer wins Labour leadership in April 2020"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [
+    "cooperative",
+    "gpni",
+    "ukip",
+    "uup",
+    "reform",
+    "welshcon",
+    "scottishgrn",
+    "welshlab",
+    "welshlibdem",
+    "scottishcon",
+    "scottishlab",
+    "scottishlibdem"
+  ],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 14,
+      "votes": 0,
+      "percentage": 36.1
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 22,
+      "votes": 0,
+      "percentage": 40.9
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 0,
+      "votes": 0,
+      "percentage": 6
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 6,
+      "votes": 0,
+      "percentage": 25.1
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 18.6
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 9.5
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 365,
+      "votes": 13966454,
+      "percentage": 43.6
+    },
+    {
+      "party": "labour",
+      "seats": 202,
+      "votes": 10269051,
+      "percentage": 32.1
+    },
+    {
+      "party": "snp",
+      "seats": 48,
+      "votes": 1242380,
+      "percentage": 3.9
+    },
+    {
+      "party": "libdem",
+      "seats": 11,
+      "votes": 3696423,
+      "percentage": 11.6
+    },
+    {
+      "party": "green",
+      "seats": 1,
+      "votes": 835579,
+      "percentage": 2.7
+    },
+    {
+      "party": "dup",
+      "seats": 8,
+      "votes": 244128,
+      "percentage": 0.8
+    },
+    {
+      "party": "sinnfein",
+      "seats": 7,
+      "votes": 181853,
+      "percentage": 0.6
+    },
+    {
+      "party": "sdlp",
+      "seats": 2,
+      "votes": 118737,
+      "percentage": 0.4
+    },
+    {
+      "party": "plaid",
+      "seats": 4,
+      "votes": 153265,
+      "percentage": 0.5
+    },
+    {
+      "party": "alliance",
+      "seats": 1,
+      "votes": 134115,
+      "percentage": 0.4
+    },
+    {
+      "party": "others",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 3.5
+    }
+  ]
+}

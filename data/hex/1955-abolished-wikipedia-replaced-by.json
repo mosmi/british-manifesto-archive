@@ -1,0 +1,1364 @@
+[
+  {
+    "name1955": "Arundel & Shoreham",
+    "wikipediaTitle": "Arundel and Shoreham (UK Parliament constituency)",
+    "replacedBy": "Arundel; Shoreham",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.033,
+    "geoMeanDeg": 0.072,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Barnet",
+    "wikipediaTitle": "Barnet (UK Parliament constituency)",
+    "replacedBy": "Chipping Barnet; South Hertfordshire",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.05,
+    "geoMeanDeg": 0.05,
+    "geoMissingSuccessors": [
+      "South Hertfordshire"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Barons Court",
+    "wikipediaTitle": "Barons Court (UK Parliament constituency)",
+    "replacedBy": "Fulham; Hammersmith North",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.021,
+    "geoMeanDeg": 0.002,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bebington",
+    "wikipediaTitle": "Bebington (UK Parliament constituency)",
+    "replacedBy": "[[Bebington; Ellesmere Port (UK Parliament constituency)|Bebington; Ellesmere Port]]; Birkenhead; Wirral",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.052,
+    "geoMeanDeg": 0.078,
+    "geoMissingSuccessors": [
+      "Bebington",
+      "Ellesmere Port"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Bethnal Green",
+    "wikipediaTitle": "Bethnal Green (UK Parliament constituency)",
+    "replacedBy": "[[Bethnal Green; Bow]]",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Bethnal Green",
+      "Bow"
+    ]
+  },
+  {
+    "name1955": "Bexley",
+    "wikipediaTitle": "Bexley (UK Parliament constituency)",
+    "replacedBy": "Bexleyheath; Sidcup",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.01,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Billericay",
+    "wikipediaTitle": "Billericay (UK Parliament constituency)",
+    "replacedBy": "[[Basildon; Billericay]]; <br />[[South Basildon; East Thurrock]]; <br />[[Rayleigh; Wickford]]; Basildon; [[Brentwood; Ongar]]",
+    "abolished": "2010",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.06,
+    "geoMeanDeg": 0.06,
+    "geoMissingSuccessors": [
+      "Billericay",
+      "South Basildon",
+      "East Thurrock",
+      "Rayleigh",
+      "Wickford",
+      "Brentwood",
+      "Ongar"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Bilston",
+    "wikipediaTitle": "Bilston (UK Parliament constituency)",
+    "replacedBy": "Bilston",
+    "abolished": "1950",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Bilston"
+    ]
+  },
+  {
+    "name1955": "Birmingham All Saints",
+    "wikipediaTitle": "Birmingham All Saints (UK Parliament constituency)",
+    "replacedBy": "Birmingham Ladywood",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.013,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Birmingham Aston",
+    "wikipediaTitle": "Birmingham Aston (UK Parliament constituency)",
+    "replacedBy": "Birmingham Erdington (Majority); Birmingham Handsworth",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.027,
+    "geoMeanDeg": 0.013,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bournemouth East & Christchurch",
+    "wikipediaTitle": "Bournemouth East and Christchurch (UK Parliament constituency)",
+    "replacedBy": "Bournemouth East; [[Christchurch; Lymington (UK Parliament constituency)|Christchurch & Lymington]]",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.033,
+    "geoMeanDeg": 0.058,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bradford East",
+    "wikipediaTitle": "Bradford East (UK Parliament constituency)",
+    "replacedBy": "Bradford North",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.041,
+    "geoMeanDeg": 0.041,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Brentford & Chiswick",
+    "wikipediaTitle": "Brentford & Chiswick (UK Parliament constituency)",
+    "replacedBy": "[[Brentford; Isleworth (UK Parliament constituency)|Brentford; Isleworth]] (newly created seat) (to form eastern part of); Brentford; Chiswick borough constituency; above",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Brentford",
+      "Isleworth",
+      "Brentford",
+      "Chiswick borough constituency",
+      "above"
+    ]
+  },
+  {
+    "name1955": "Brierley Hill",
+    "wikipediaTitle": "Brierley Hill (UK Parliament constituency)",
+    "replacedBy": "Dudley West; Wolverhampton South West; South West Staffordshire & [[Halesowen; Stourbridge (UK Parliament constituency)|Halesowen; Stourbridge]]",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.079,
+    "geoMeanDeg": 0.067,
+    "geoMissingSuccessors": [
+      "South West Staffordshire & Halesowen",
+      "Stourbridge"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Brigg",
+    "wikipediaTitle": "Brigg (UK Parliament constituency)",
+    "replacedBy": "[[Brigg; Scunthorpe (UK Parliament constituency)|Brigg & Scunthorpe]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.0,
+    "geoMeanDeg": 0.0,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bristol Central",
+    "wikipediaTitle": "Bristol Central (UK Parliament constituency)",
+    "replacedBy": "Bristol North East<br/>Bristol South East",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.028,
+    "geoMeanDeg": 0.024,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Brixton",
+    "wikipediaTitle": "Brixton (UK Parliament constituency)",
+    "replacedBy": "Lambeth Central",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.012,
+    "geoMeanDeg": 0.012,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bromley",
+    "wikipediaTitle": "Bromley (UK Parliament constituency)",
+    "replacedBy": "Ravensbourne (Majority); Chislehurst (Part); Beckenham (1950)",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.02,
+    "geoMeanDeg": 0.014,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Bromsgrove",
+    "wikipediaTitle": "Bromsgrove (UK Parliament constituency)",
+    "replacedBy": "[[Bromsgrove; Redditch (UK Parliament constituency)|Bromsgrove & Redditch]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.001,
+    "geoMeanDeg": 0.001,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Buckinghamshire South",
+    "wikipediaTitle": "Buckinghamshire South (UK Parliament constituency)",
+    "replacedBy": "Beaconsfield; [[Chesham; Amersham (UK Parliament constituency)|Chesham & Amersham]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.034,
+    "geoMeanDeg": 0.038,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Chertsey",
+    "wikipediaTitle": "Chertsey (UK Parliament constituency)",
+    "replacedBy": "[[Chertsey; Walton]]<br />North West Surrey; {{ubl|Farnham (Majority; 1918)|Esher (Majority; 1950|Woking (Part; 1950))}}",
+    "abolished": "1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Chertsey",
+      "Walton",
+      "North West Surrey",
+      "Farnham (Majority",
+      "1918)|Esher (Majority",
+      "1950|Woking (Part",
+      "1950))"
+    ]
+  },
+  {
+    "name1955": "Chigwell",
+    "wikipediaTitle": "Chigwell (UK Parliament constituency)",
+    "replacedBy": "[[Brentwood; Ongar (UK Parliament constituency)|Brentwood; Ongar]]; Epping Forest",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.15,
+    "geoMeanDeg": 0.15,
+    "geoMissingSuccessors": [
+      "Brentwood",
+      "Ongar"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Clapham",
+    "wikipediaTitle": "Clapham (UK Parliament constituency)",
+    "replacedBy": "Streatham; Lambeth Central; Battersea South",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.017,
+    "geoMeanDeg": 0.006,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Cleveland",
+    "wikipediaTitle": "Cleveland (UK Parliament constituency)",
+    "replacedBy": "[[Cleveland; Whitby (UK Parliament constituency)|Cleveland; Whitby]]; Redcar",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.111,
+    "geoMeanDeg": 0.111,
+    "geoMissingSuccessors": [
+      "Cleveland",
+      "Whitby"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Coventry East",
+    "wikipediaTitle": "Coventry East (UK Parliament constituency)",
+    "replacedBy": "Coventry North East; <br />Coventry South East",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Coventry North",
+    "wikipediaTitle": "Coventry North (UK Parliament constituency)",
+    "replacedBy": "Coventry North West<br />Coventry North East",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.005,
+    "geoMeanDeg": 0.027,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Coventry South",
+    "wikipediaTitle": "Coventry South (UK Parliament constituency)",
+    "replacedBy": "Coventry South East; <br />Coventry South West",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.007,
+    "geoMeanDeg": 0.029,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Dover",
+    "wikipediaTitle": "Dover (UK Parliament constituency)",
+    "replacedBy": "Dover (County)",
+    "abolished": "1918",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Dover"
+    ]
+  },
+  {
+    "name1955": "Dudley",
+    "wikipediaTitle": "Dudley (UK Parliament constituency)",
+    "replacedBy": "{{ubl|Dudley East|Dudley West}}",
+    "abolished": "1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Dudley East|Dudley West"
+    ]
+  },
+  {
+    "name1955": "Ealing South",
+    "wikipediaTitle": "Ealing South (UK Parliament constituency)",
+    "replacedBy": "Acton (Bulk)<br />Ealing North (Part)<br />Southall (Part)<ref>(S.I. 1970 number 1674); at page 5491 (or 48 of 76)</ref>",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.035,
+    "geoMeanDeg": 0.018,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "East Ham North",
+    "wikipediaTitle": "East Ham North (UK Parliament constituency)",
+    "replacedBy": "Newham North East",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.007,
+    "geoMeanDeg": 0.007,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "East Ham South",
+    "wikipediaTitle": "East Ham South (UK Parliament constituency)",
+    "replacedBy": "Newham North East; Newham South",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.01,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Enfield East",
+    "wikipediaTitle": "Enfield East (UK Parliament constituency)",
+    "replacedBy": "Edmonton; Enfield North",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.038,
+    "geoMeanDeg": 0.032,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Enfield West",
+    "wikipediaTitle": "Enfield West (UK Parliament constituency)",
+    "replacedBy": "Enfield North; South Hertfordshire",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.078,
+    "geoMeanDeg": 0.078,
+    "geoMissingSuccessors": [
+      "South Hertfordshire"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Epping",
+    "wikipediaTitle": "Epping (UK Parliament constituency)",
+    "replacedBy": "Chingford; Epping Forest; Harlow; Woodford; Chigwell",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.047,
+    "geoMeanDeg": 0.047,
+    "geoMissingSuccessors": [
+      "Woodford",
+      "Chigwell"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Epsom",
+    "wikipediaTitle": "Epsom (UK Parliament constituency)",
+    "replacedBy": "[[Epsom; Ewell (UK Parliament constituency)|Epsom; Ewell]] and<br />Mole Valley (as to the former Leatherhead Urban District); [[Sutton; Cheam (UK Parliament constituency)|Sutton; Cheam]]<br />Esher<br />Surbiton",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.055,
+    "geoMeanDeg": 0.952,
+    "geoMissingSuccessors": [
+      "Epsom",
+      "Ewell and",
+      "Sutton",
+      "Cheam"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Feltham",
+    "wikipediaTitle": "Feltham (UK Parliament constituency)",
+    "replacedBy": "[[Feltham; Heston]]",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Feltham",
+      "Heston"
+    ]
+  },
+  {
+    "name1955": "Fife West",
+    "wikipediaTitle": "Fife West (UK Parliament constituency)",
+    "replacedBy": "Central Fife; <br />Dunfermline; <br />Kirkcaldy<ref>{{UK SI",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.137,
+    "geoMeanDeg": 0.062,
+    "geoMissingSuccessors": [
+      "UK SI"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Glasgow Bridgeton",
+    "wikipediaTitle": "Glasgow Bridgeton (UK Parliament constituency)",
+    "replacedBy": "Glasgow Central; <br />Glasgow Shettleston<ref>{{UK SI",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.013,
+    "geoMissingSuccessors": [
+      "Glasgow Shettleston",
+      "UK SI"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Glasgow Gorbals",
+    "wikipediaTitle": "Glasgow Gorbals (UK Parliament constituency)",
+    "replacedBy": "Glasgow Queen's Park; Glasgow Govan<ref>{{UK SI",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.034,
+    "geoMissingSuccessors": [
+      "UK SI"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Glasgow Scotstoun",
+    "wikipediaTitle": "Glasgow Scotstoun (UK Parliament constituency)",
+    "replacedBy": "Glasgow Garscadden",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.004,
+    "geoMeanDeg": 0.004,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Glasgow Woodside",
+    "wikipediaTitle": "Glasgow Woodside (UK Parliament constituency)",
+    "replacedBy": "Glasgow Hillhead<br />Glasgow Maryhill",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.025,
+    "geoMeanDeg": 0.02,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Gosport & Fareham",
+    "wikipediaTitle": "Gosport & Fareham (UK Parliament constituency)",
+    "replacedBy": "Gosport; Fareham",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.021,
+    "geoMeanDeg": 0.019,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Greenock",
+    "wikipediaTitle": "Greenock (UK Parliament constituency)",
+    "replacedBy": "[[Greenock; Port Glasgow (UK Parliament constituency)|Greenock & Port Glasgow]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.022,
+    "geoMeanDeg": 0.022,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Hertford",
+    "wikipediaTitle": "Hertford (UK Parliament constituency)",
+    "replacedBy": "Welwyn Hatfield (Majority)<br>[[Hertford; Stevenage (UK Parliament constituency)|Hertford; Stevenage]] (Part); East Hertfordshire (1955)",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.056,
+    "geoMeanDeg": 1.341,
+    "geoMissingSuccessors": [
+      "Stevenage",
+      "East Hertfordshire"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Heston & Isleworth",
+    "wikipediaTitle": "Heston & Isleworth (UK Parliament constituency)",
+    "replacedBy": "Brentford & Isleworth (newly created seat)<br />Feltham & Heston (newly created seat) (with other contributory seats)",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.036,
+    "geoMeanDeg": 0.01,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Horsham",
+    "wikipediaTitle": "Horsham (UK Parliament constituency)",
+    "replacedBy": "[[Horsham; Crawley]]; [[Horsham; Worthing]]; Horsham",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.241,
+    "geoMeanDeg": 0.241,
+    "geoMissingSuccessors": [
+      "Horsham",
+      "Crawley",
+      "Horsham",
+      "Horsham"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Hull North",
+    "wikipediaTitle": "Hull North (UK Parliament constituency)",
+    "replacedBy": "{{ubl|[[Kingston upon Hull North; Cottingham]]|Kingston upon Hull East (minor part)}}; Kingston upon Hull Central",
+    "abolished": "2024",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "missing_1955_geo"
+  },
+  {
+    "name1955": "Isle of Thanet",
+    "wikipediaTitle": "Isle of Thanet (UK Parliament constituency)",
+    "replacedBy": "Thanet East; Thanet West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.026,
+    "geoMeanDeg": 0.02,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Islington East",
+    "wikipediaTitle": "Islington East (UK Parliament constituency)",
+    "replacedBy": "Islington Central; Islington North",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.004,
+    "geoMeanDeg": 0.017,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Islington South West",
+    "wikipediaTitle": "Islington South West (UK Parliament constituency)",
+    "replacedBy": "Islington Central; [[Islington South; Finsbury]]",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.014,
+    "geoMissingSuccessors": [
+      "Finsbury"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Kensington North",
+    "wikipediaTitle": "Kensington North (UK Parliament constituency)",
+    "replacedBy": "Kensington",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.009,
+    "geoMeanDeg": 0.009,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Kensington South",
+    "wikipediaTitle": "Kensington South (UK Parliament constituency)",
+    "replacedBy": "Kensington",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.018,
+    "geoMeanDeg": 0.018,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "King's Lynn",
+    "wikipediaTitle": "King's Lynn (UK Parliament constituency)",
+    "replacedBy": "North West Norfolk",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "North West Norfolk"
+    ]
+  },
+  {
+    "name1955": "Leicester North East",
+    "wikipediaTitle": "Leicester North East (UK Parliament constituency)",
+    "replacedBy": "Leicester East",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.011,
+    "geoMeanDeg": 0.011,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Leicester North West",
+    "wikipediaTitle": "Leicester North West (UK Parliament constituency)",
+    "replacedBy": "Leicester West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.004,
+    "geoMeanDeg": 0.004,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Leicester South East",
+    "wikipediaTitle": "Leicester South East (UK Parliament constituency)",
+    "replacedBy": "Leicester East; <br />Leicester South",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.034,
+    "geoMeanDeg": 0.027,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Leicester South West",
+    "wikipediaTitle": "Leicester South West (UK Parliament constituency)",
+    "replacedBy": "Leicester South; <br />Leicester West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.02,
+    "geoMeanDeg": 0.018,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Lewisham North",
+    "wikipediaTitle": "Lewisham North (UK Parliament constituency)",
+    "replacedBy": "Lewisham Deptford; Lewisham East",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.011,
+    "geoMeanDeg": 0.023,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Lewisham South",
+    "wikipediaTitle": "Lewisham South (UK Parliament constituency)",
+    "replacedBy": "Lewisham East; Lewisham West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.015,
+    "geoMeanDeg": 0.012,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Liverpool Exchange",
+    "wikipediaTitle": "Liverpool Exchange (UK Parliament constituency)",
+    "replacedBy": "Liverpool Scotland Exchange",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.013,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Liverpool Scotland",
+    "wikipediaTitle": "Liverpool Scotland (UK Parliament constituency)",
+    "replacedBy": "Liverpool Scotland Exchange",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.013,
+    "geoMeanDeg": 0.013,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Llanelly",
+    "wikipediaTitle": "Llanelly (UK Parliament constituency)",
+    "replacedBy": "",
+    "abolished": "",
+    "status": "missing_replaced_by",
+    "geoStatus": "missing_replaced_by"
+  },
+  {
+    "name1955": "London & Westminster - Cities of",
+    "wikipediaTitle": "London & Westminster - Cities of (UK Parliament constituency)",
+    "replacedBy": "",
+    "abolished": "",
+    "status": "page_not_found",
+    "geoStatus": "page_not_found"
+  },
+  {
+    "name1955": "Luton",
+    "wikipediaTitle": "Luton (UK Parliament constituency)",
+    "replacedBy": "Luton East (Majority); Luton West (Part); Mid Bedfordshire (1918)<br />South Bedfordshire (1950)",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.07,
+    "geoMissingSuccessors": [
+      "South Bedfordshire"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Manchester Cheetham",
+    "wikipediaTitle": "Manchester Cheetham (UK Parliament constituency)",
+    "replacedBy": "Manchester Central",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Manchester Exchange",
+    "wikipediaTitle": "Manchester Exchange (UK Parliament constituency)",
+    "replacedBy": "Manchester Central",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.018,
+    "geoMeanDeg": 0.018,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Merton & Mordern",
+    "wikipediaTitle": "Merton & Mordern (UK Parliament constituency)",
+    "replacedBy": "",
+    "abolished": "",
+    "status": "page_not_found",
+    "geoStatus": "page_not_found"
+  },
+  {
+    "name1955": "Middlesbrough East",
+    "wikipediaTitle": "Middlesbrough East (UK Parliament constituency)",
+    "replacedBy": "Middlesbrough",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.019,
+    "geoMeanDeg": 0.019,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Middlesbrough West",
+    "wikipediaTitle": "Middlesbrough West (UK Parliament constituency)",
+    "replacedBy": "Thornaby; <br />Middlesbrough",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.003,
+    "geoMeanDeg": 0.027,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Mitcham",
+    "wikipediaTitle": "Mitcham (UK Parliament constituency)",
+    "replacedBy": "[[Mitcham; Morden (UK Parliament constituency)|Mitcham; Morden]]; with Wallington & Beddington added to the Carshalton seat.",
+    "abolished": "1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Mitcham",
+      "Morden",
+      "with Wallington & Beddington added to the Carshalton seat"
+    ]
+  },
+  {
+    "name1955": "Montgomery",
+    "wikipediaTitle": "Montgomery (UK Parliament constituency)",
+    "replacedBy": "Montgomeryshire",
+    "abolished": "1918",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Montgomeryshire"
+    ]
+  },
+  {
+    "name1955": "Motherwell",
+    "wikipediaTitle": "Motherwell (UK Parliament constituency)",
+    "replacedBy": "[[Motherwell; Wishaw (UK Parliament constituency)|Motherwell; Wishaw]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Motherwell",
+      "Wishaw"
+    ]
+  },
+  {
+    "name1955": "Norfolk Central",
+    "wikipediaTitle": "Norfolk Central (UK Parliament constituency)",
+    "replacedBy": "North Norfolk; <br />South Norfolk",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.183,
+    "geoMeanDeg": 0.183,
+    "geoMissingSuccessors": [
+      "North Norfolk"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Northampton",
+    "wikipediaTitle": "Northampton (UK Parliament constituency)",
+    "replacedBy": "Northampton North; Northampton South",
+    "abolished": "1918",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.015,
+    "geoMeanDeg": 0.009,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Northamptonshire South",
+    "wikipediaTitle": "Northamptonshire South (UK Parliament constituency)",
+    "replacedBy": "Daventry; Daventry",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.051,
+    "geoMeanDeg": 0.051,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Nottingham Central",
+    "wikipediaTitle": "Nottingham Central (UK Parliament constituency)",
+    "replacedBy": "Nottingham East; <br />Nottingham North",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.02,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Nottingham South",
+    "wikipediaTitle": "Nottingham South (UK Parliament constituency)",
+    "replacedBy": "Nottingham East; <br />Nottingham West; <br />Rushcliffe",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.027,
+    "geoMeanDeg": 0.058,
+    "geoMissingSuccessors": [
+      "Nottingham West"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Oldbury & Halesowen",
+    "wikipediaTitle": "Oldbury and Halesowen (UK Parliament constituency)",
+    "replacedBy": "Halesowen & Stourbridge; <br />Warley West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.026,
+    "geoMeanDeg": 0.029,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Paddington North",
+    "wikipediaTitle": "Paddington North (UK Parliament constituency)",
+    "replacedBy": "Paddington",
+    "abolished": "<!-- February -->1974",
+    "status": "ok",
+    "geoNearestDeg": 0.007,
+    "geoMeanDeg": 0.007,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Paddington South",
+    "wikipediaTitle": "Paddington South (UK Parliament constituency)",
+    "replacedBy": "Paddington",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Pontefract",
+    "wikipediaTitle": "Pontefract (UK Parliament constituency)",
+    "replacedBy": "[[Pontefract; Castleford]]",
+    "abolished": "1301",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Pontefract",
+      "Castleford"
+    ]
+  },
+  {
+    "name1955": "Poplar",
+    "wikipediaTitle": "Poplar (UK Parliament constituency)",
+    "replacedBy": "Poplar South; [[Stepney; Poplar (UK Parliament constituency)|Stepney; Poplar]]}}",
+    "abolished": "1918",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Poplar South",
+      "Stepney",
+      "Poplar"
+    ]
+  },
+  {
+    "name1955": "Portsmouth Langstone",
+    "wikipediaTitle": "Portsmouth Langstone (UK Parliament constituency)",
+    "replacedBy": "[[Havant; Waterloo (UK Parliament constituency)|Havant; Waterloo]]; Portsmouth North",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.077,
+    "geoMeanDeg": 0.077,
+    "geoMissingSuccessors": [
+      "Havant",
+      "Waterloo"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Portsmouth West",
+    "wikipediaTitle": "Portsmouth West (UK Parliament constituency)",
+    "replacedBy": "Portsmouth North (Bulk)<br>Portsmouth South (Part)",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.023,
+    "geoMeanDeg": 0.031,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Reading",
+    "wikipediaTitle": "Reading (UK Parliament constituency)",
+    "replacedBy": "Reading North; Reading South; Reading North; Reading South",
+    "abolished": "1950",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.021,
+    "geoMeanDeg": 0.023,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Rhondda East",
+    "wikipediaTitle": "Rhondda East (UK Parliament constituency)",
+    "replacedBy": "Rhondda",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.046,
+    "geoMeanDeg": 0.046,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Rhondda West",
+    "wikipediaTitle": "Rhondda West (UK Parliament constituency)",
+    "replacedBy": "Rhondda",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.032,
+    "geoMeanDeg": 0.032,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Richmond (Surrey)",
+    "wikipediaTitle": "Richmond (Surrey) (UK Parliament constituency)",
+    "replacedBy": "[[Richmond; Barnes (UK Parliament constituency)|Richmond; Barnes]]",
+    "abolished": "1983",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.0,
+    "geoMeanDeg": 0.0,
+    "geoMissingSuccessors": [
+      "Barnes"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Rowley Regis & Tipton",
+    "wikipediaTitle": "Rowley Regis & Tipton (UK Parliament constituency)",
+    "replacedBy": "West Bromwich West; <br />Warley West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.022,
+    "geoMeanDeg": 0.021,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Scarborough & Whitby",
+    "wikipediaTitle": "Scarborough & Whitby (UK Parliament constituency)",
+    "replacedBy": "Scarborough",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.081,
+    "geoMeanDeg": 0.081,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Sedgefield",
+    "wikipediaTitle": "Sedgefield (UK Parliament constituency)",
+    "replacedBy": "{{ubl|[[Newton Aycliffe; Spennymoor]]|Stockton West (minor part)|Easington (minor part)|Darlington (minor part)}}; Bishop Auckland; <br />Durham; <br />Easington",
+    "abolished": "2024",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.11,
+    "geoMeanDeg": 0.134,
+    "geoMissingSuccessors": [
+      "Newton Aycliffe",
+      "Spennymoor|Stockton West|Easington|Darlington"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Shoreditch & Finsbury",
+    "wikipediaTitle": "Shoreditch & Finsbury (UK Parliament constituency)",
+    "replacedBy": "Islington South & Finsbury<br />Hackney South & Shoreditch",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.015,
+    "geoMeanDeg": 0.006,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Smethwick",
+    "wikipediaTitle": "Smethwick (UK Parliament constituency)",
+    "replacedBy": "Warley East",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Southwark",
+    "wikipediaTitle": "Southwark (UK Parliament constituency)",
+    "replacedBy": "Bermondsey <br /> Rotherhithe<br />Southwark West; Bermondsey (abolished 1983)<br />Peckham (abolished 1997)<br />Dulwich (absorbed small parts) (abolished 1997)",
+    "abolished": "1885",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 0.021,
+    "geoMeanDeg": 0.025,
+    "geoMissingSuccessors": [
+      "Southwark West"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Stepney",
+    "wikipediaTitle": "Stepney (UK Parliament constituency)",
+    "replacedBy": "[[Stepney; Poplar]]}}",
+    "abolished": "1918",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Stepney",
+      "Poplar"
+    ]
+  },
+  {
+    "name1955": "Stirling & Falkirk",
+    "wikipediaTitle": "Stirling and Falkirk (UK Parliament constituency)",
+    "replacedBy": "Stirling; Falkirk East; Falkirk West<ref name=\"ElectionWeb74\" />",
+    "abolished": "1983",
+    "status": "ok_unexpected_abolished",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Stirling",
+      "Falkirk East",
+      "Falkirk West"
+    ]
+  },
+  {
+    "name1955": "Stockton-on-Tees",
+    "wikipediaTitle": "Stockton-on-Tees (UK Parliament constituency)",
+    "replacedBy": "Stockton North; Stockton South",
+    "abolished": "1983",
+    "status": "ok_unexpected_abolished",
+    "geoNearestDeg": 1.43,
+    "geoMeanDeg": 1.432,
+    "geoMissingSuccessors": [],
+    "geoStatus": "geo_mismatch"
+  },
+  {
+    "name1955": "Stoke Newington & Hackney North",
+    "wikipediaTitle": "Stoke Newington and Hackney North (UK Parliament constituency)",
+    "replacedBy": "",
+    "abolished": "",
+    "status": "missing_replaced_by",
+    "geoStatus": "missing_replaced_by"
+  },
+  {
+    "name1955": "Stratford",
+    "wikipediaTitle": "Stratford (UK Parliament constituency)",
+    "replacedBy": "",
+    "abolished": "",
+    "status": "missing_replaced_by",
+    "geoStatus": "missing_replaced_by"
+  },
+  {
+    "name1955": "Tavistock",
+    "wikipediaTitle": "Tavistock (UK Parliament constituency)",
+    "replacedBy": "West Devon",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.1,
+    "geoMeanDeg": 0.1,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "The Hartlepools",
+    "wikipediaTitle": "The Hartlepools (UK Parliament constituency)",
+    "replacedBy": "Hartlepool",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.016,
+    "geoMeanDeg": 0.016,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Tonbridge",
+    "wikipediaTitle": "Tonbridge (UK Parliament constituency)",
+    "replacedBy": "[[Tonbridge; Malling (UK Parliament constituency)|Tonbridge; Malling]]",
+    "abolished": "Feb 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "Tonbridge",
+      "Malling"
+    ]
+  },
+  {
+    "name1955": "Torquay",
+    "wikipediaTitle": "Torquay (UK Parliament constituency)",
+    "replacedBy": "Torbay",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.011,
+    "geoMeanDeg": 0.011,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Torrington",
+    "wikipediaTitle": "Torrington (UK Parliament constituency)",
+    "replacedBy": "North Devon; Tiverton & West Devon",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoStatus": "no_1974_geo",
+    "geoMissingSuccessors": [
+      "North Devon",
+      "Tiverton & West Devon"
+    ]
+  },
+  {
+    "name1955": "Walthamstow East",
+    "wikipediaTitle": "Walthamstow East (UK Parliament constituency)",
+    "replacedBy": "Walthamstow; Chingford",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.022,
+    "geoMeanDeg": 0.016,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Walthamstow West",
+    "wikipediaTitle": "Walthamstow West (UK Parliament constituency)",
+    "replacedBy": "Walthamstow",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.008,
+    "geoMeanDeg": 0.008,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Wandsworth Central",
+    "wikipediaTitle": "Wandsworth Central (UK Parliament constituency)",
+    "replacedBy": "Tooting; Battersea South",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.009,
+    "geoMeanDeg": 0.006,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Wednesbury",
+    "wikipediaTitle": "Wednesbury (UK Parliament constituency)",
+    "replacedBy": "Walsall North; Walsall South; West Bromwich West",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.03,
+    "geoMeanDeg": 0.022,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Wembley North",
+    "wikipediaTitle": "Wembley North (UK Parliament constituency)",
+    "replacedBy": "Brent North",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.01,
+    "geoMeanDeg": 0.01,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Wembley South",
+    "wikipediaTitle": "Wembley South (UK Parliament constituency)",
+    "replacedBy": "Brent North (part)<br />Brent South (part) (newly created seats)",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.022,
+    "geoMeanDeg": 0.022,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "West Bromwich",
+    "wikipediaTitle": "West Bromwich (UK Parliament constituency)",
+    "replacedBy": "West Bromwich East; <br />West Bromwich West",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.014,
+    "geoMeanDeg": 0.018,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "West Ham North",
+    "wikipediaTitle": "West Ham North (UK Parliament constituency)",
+    "replacedBy": "Newham North West<br /> Newham North East; Stratford; Upton",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.0,
+    "geoMeanDeg": 0.998,
+    "geoMissingSuccessors": [
+      "Upton"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "West Ham South",
+    "wikipediaTitle": "West Ham South (UK Parliament constituency)",
+    "replacedBy": "Newham South; Plaistow; Silvertown",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.021,
+    "geoMeanDeg": 0.021,
+    "geoMissingSuccessors": [
+      "Plaistow",
+      "Silvertown"
+    ],
+    "geoStatus": "partial_geo"
+  },
+  {
+    "name1955": "Willesden East",
+    "wikipediaTitle": "Willesden East (UK Parliament constituency)",
+    "replacedBy": "Brent East (similar boundaries)<br />Brent South (small part of)",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.005,
+    "geoMeanDeg": 0.026,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Willesden West",
+    "wikipediaTitle": "Willesden West (UK Parliament constituency)",
+    "replacedBy": "Brent East; Brent South",
+    "abolished": "February 1974",
+    "status": "ok",
+    "geoNearestDeg": 0.019,
+    "geoMeanDeg": 0.005,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  },
+  {
+    "name1955": "Windsor",
+    "wikipediaTitle": "Windsor (UK Parliament constituency)",
+    "replacedBy": "[[Windsor; Maidenhead (UK Parliament constituency)|Windsor & Maidenhead]]",
+    "abolished": "1974",
+    "status": "ok",
+    "geoNearestDeg": 0.0,
+    "geoMeanDeg": 0.0,
+    "geoMissingSuccessors": [],
+    "geoStatus": "ok"
+  }
+]

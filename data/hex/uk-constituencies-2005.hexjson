@@ -1,0 +1,3943 @@
+{
+  "layout": "odd-q",
+  "source": "Wikipedia hex cartogram (2005 UK General Election Constituencies.svg)",
+  "boundarySet": "2005",
+  "hexes": {
+    "WIKI-arundeland-south-downs": {
+      "n": "Arundeland South Downs",
+      "q": 23,
+      "r": 1,
+      "svgId": "ArundelandSouthDowns"
+    },
+    "WIKI-chichester": {
+      "n": "Chichester",
+      "q": 22,
+      "r": 2,
+      "svgId": "Chichester"
+    },
+    "WIKI-crawley": {
+      "n": "Crawley",
+      "q": 26,
+      "r": 2,
+      "svgId": "Crawley"
+    },
+    "WIKI-east-worthingand-shoreham": {
+      "n": "East Worthingand Shoreham",
+      "q": 30,
+      "r": 2,
+      "svgId": "EastWorthingandShoreham"
+    },
+    "WIKI-horsham": {
+      "n": "Horsham",
+      "q": 25,
+      "r": 1,
+      "svgId": "Horsham"
+    },
+    "WIKI-mid-sussex": {
+      "n": "Mid Sussex",
+      "q": 31,
+      "r": 1,
+      "svgId": "MidSussex"
+    },
+    "WIKI-worthing-west": {
+      "n": "Worthing West",
+      "q": 29,
+      "r": 1,
+      "svgId": "WorthingWest"
+    },
+    "WIKI-bognor-regisand-littlehampton": {
+      "n": "Bognor Regisand Littlehampton",
+      "q": 27,
+      "r": 1,
+      "svgId": "BognorRegisandLittlehampton"
+    },
+    "WIKI-south-west-surrey": {
+      "n": "South West Surrey",
+      "q": 20,
+      "r": 5,
+      "svgId": "SouthWestSurrey"
+    },
+    "WIKI-woking": {
+      "n": "Woking",
+      "q": 21,
+      "r": 5,
+      "svgId": "Woking"
+    },
+    "WIKI-esherand-walton": {
+      "n": "Esherand Walton",
+      "q": 22,
+      "r": 4,
+      "svgId": "EsherandWalton"
+    },
+    "WIKI-runnymedeand-weybridge": {
+      "n": "Runnymedeand Weybridge",
+      "q": 21,
+      "r": 4,
+      "svgId": "RunnymedeandWeybridge"
+    },
+    "WIKI-spelthorne": {
+      "n": "Spelthorne",
+      "q": 22,
+      "r": 6,
+      "svgId": "Spelthorne"
+    },
+    "WIKI-surrey-heath": {
+      "n": "Surrey Heath",
+      "q": 21,
+      "r": 6,
+      "svgId": "SurreyHeath"
+    },
+    "WIKI-east-surrey": {
+      "n": "East Surrey",
+      "q": 25,
+      "r": 2,
+      "svgId": "EastSurrey"
+    },
+    "WIKI-epsomand-ewell": {
+      "n": "Epsomand Ewell",
+      "q": 25,
+      "r": 3,
+      "svgId": "EpsomandEwell"
+    },
+    "WIKI-mole-valley": {
+      "n": "Mole Valley",
+      "q": 23,
+      "r": 2,
+      "svgId": "MoleValley"
+    },
+    "WIKI-reigate": {
+      "n": "Reigate",
+      "q": 24,
+      "r": 3,
+      "svgId": "Reigate"
+    },
+    "WIKI-henley": {
+      "n": "Henley",
+      "q": 22,
+      "r": 10,
+      "svgId": "Henley"
+    },
+    "WIKI-oxford-east": {
+      "n": "Oxford East",
+      "q": 23,
+      "r": 11,
+      "svgId": "OxfordEast"
+    },
+    "WIKI-oxford-westand-abingdon": {
+      "n": "Oxford Westand Abingdon",
+      "q": 23,
+      "r": 10,
+      "svgId": "OxfordWestandAbingdon"
+    },
+    "WIKI-wantage": {
+      "n": "Wantage",
+      "q": 20,
+      "r": 11,
+      "svgId": "Wantage"
+    },
+    "WIKI-witney": {
+      "n": "Witney",
+      "q": 21,
+      "r": 10,
+      "svgId": "Witney"
+    },
+    "WIKI-banbury": {
+      "n": "Banbury",
+      "q": 23,
+      "r": 9,
+      "svgId": "Banbury"
+    },
+    "WIKI-ashford": {
+      "n": "Ashford",
+      "q": 38,
+      "r": 4,
+      "svgId": "Ashford"
+    },
+    "WIKI-canterbury": {
+      "n": "Canterbury",
+      "q": 39,
+      "r": 4,
+      "svgId": "Canterbury"
+    },
+    "WIKI-chathamand-aylesford": {
+      "n": "Chathamand Aylesford",
+      "q": 37,
+      "r": 5,
+      "svgId": "ChathamandAylesford"
+    },
+    "WIKI-dover": {
+      "n": "Dover",
+      "q": 40,
+      "r": 5,
+      "svgId": "Dover"
+    },
+    "WIKI-favershamand-mid-kent": {
+      "n": "Favershamand Mid Kent",
+      "q": 39,
+      "r": 5,
+      "svgId": "FavershamandMidKent"
+    },
+    "WIKI-folkestoneand-hythe": {
+      "n": "Folkestoneand Hythe",
+      "q": 39,
+      "r": 3,
+      "svgId": "FolkestoneandHythe"
+    },
+    "WIKI-gillingham": {
+      "n": "Gillingham",
+      "q": 38,
+      "r": 6,
+      "svgId": "Gillingham"
+    },
+    "WIKI-maidstoneand-the-weald": {
+      "n": "Maidstoneand The Weald",
+      "q": 37,
+      "r": 4,
+      "svgId": "MaidstoneandTheWeald"
+    },
+    "WIKI-north-thanet": {
+      "n": "North Thanet",
+      "q": 40,
+      "r": 7,
+      "svgId": "NorthThanet"
+    },
+    "WIKI-sevenoaks": {
+      "n": "Sevenoaks",
+      "q": 35,
+      "r": 3,
+      "svgId": "Sevenoaks"
+    },
+    "WIKI-sittingbourneand-sheppey": {
+      "n": "Sittingbourneand Sheppey",
+      "q": 39,
+      "r": 6,
+      "svgId": "SittingbourneandSheppey"
+    },
+    "WIKI-south-thanet": {
+      "n": "South Thanet",
+      "q": 41,
+      "r": 5,
+      "svgId": "SouthThanet"
+    },
+    "WIKI-tonbridgeand-malling": {
+      "n": "Tonbridgeand Malling",
+      "q": 36,
+      "r": 5,
+      "svgId": "TonbridgeandMalling"
+    },
+    "WIKI-tunbridge-wells": {
+      "n": "Tunbridge Wells",
+      "q": 37,
+      "r": 3,
+      "svgId": "TunbridgeWells"
+    },
+    "WIKI-medway": {
+      "n": "Medway",
+      "q": 37,
+      "r": 6,
+      "svgId": "Medway"
+    },
+    "WIKI-dartford": {
+      "n": "Dartford",
+      "q": 35,
+      "r": 5,
+      "svgId": "Dartford"
+    },
+    "WIKI-new-forest-west": {
+      "n": "New Forest West",
+      "q": 15,
+      "r": 4,
+      "svgId": "NewForestWest"
+    },
+    "WIKI-new-forest-east": {
+      "n": "New Forest East",
+      "q": 15,
+      "r": 3,
+      "svgId": "NewForestEast"
+    },
+    "WIKI-eastleigh": {
+      "n": "Eastleigh",
+      "q": 17,
+      "r": 4,
+      "svgId": "Eastleigh"
+    },
+    "WIKI-fareham": {
+      "n": "Fareham",
+      "q": 19,
+      "r": 4,
+      "svgId": "Fareham"
+    },
+    "WIKI-southampton-itchen": {
+      "n": "Southampton Itchen",
+      "q": 17,
+      "r": 3,
+      "svgId": "SouthamptonItchen"
+    },
+    "WIKI-southampton-test": {
+      "n": "Southampton Test",
+      "q": 16,
+      "r": 5,
+      "svgId": "SouthamptonTest"
+    },
+    "WIKI-aldershot": {
+      "n": "Aldershot",
+      "q": 20,
+      "r": 7,
+      "svgId": "Aldershot"
+    },
+    "WIKI-basingstoke": {
+      "n": "Basingstoke",
+      "q": 19,
+      "r": 6,
+      "svgId": "Basingstoke"
+    },
+    "WIKI-east-hampshire": {
+      "n": "East Hampshire",
+      "q": 19,
+      "r": 5,
+      "svgId": "EastHampshire"
+    },
+    "WIKI-gosport": {
+      "n": "Gosport",
+      "q": 18,
+      "r": 4,
+      "svgId": "Gosport"
+    },
+    "WIKI-north-east-hampshire": {
+      "n": "North East Hampshire",
+      "q": 18,
+      "r": 8,
+      "svgId": "NorthEastHampshire"
+    },
+    "WIKI-portsmouth-north": {
+      "n": "Portsmouth North",
+      "q": 19,
+      "r": 3,
+      "svgId": "PortsmouthNorth"
+    },
+    "WIKI-portsmouth-south": {
+      "n": "Portsmouth South",
+      "q": 20,
+      "r": 3,
+      "svgId": "PortsmouthSouth"
+    },
+    "WIKI-winchester": {
+      "n": "Winchester",
+      "q": 18,
+      "r": 6,
+      "svgId": "Winchester"
+    },
+    "WIKI-havant": {
+      "n": "Havant",
+      "q": 21,
+      "r": 2,
+      "svgId": "Havant"
+    },
+    "WIKI-north-west-hampshire": {
+      "n": "North West Hampshire",
+      "q": 17,
+      "r": 6,
+      "svgId": "NorthWestHampshire"
+    },
+    "WIKI-bexhilland-battle": {
+      "n": "Bexhilland Battle",
+      "q": 37,
+      "r": 1,
+      "svgId": "BexhillandBattle"
+    },
+    "WIKI-brighton-kemptown": {
+      "n": "Brighton Kemptown",
+      "q": 35,
+      "r": 2,
+      "svgId": "BrightonKemptown"
+    },
+    "WIKI-brighton-pavilion": {
+      "n": "Brighton Pavilion",
+      "q": 34,
+      "r": 2,
+      "svgId": "BrightonPavilion"
+    },
+    "WIKI-eastbourne": {
+      "n": "Eastbourne",
+      "q": 36,
+      "r": 3,
+      "svgId": "Eastbourne"
+    },
+    "WIKI-hastingsand-rye": {
+      "n": "Hastingsand Rye",
+      "q": 37,
+      "r": 2,
+      "svgId": "HastingsandRye"
+    },
+    "WIKI-hove": {
+      "n": "Hove",
+      "q": 33,
+      "r": 1,
+      "svgId": "Hove"
+    },
+    "WIKI-lewes": {
+      "n": "Lewes",
+      "q": 35,
+      "r": 1,
+      "svgId": "Lewes"
+    },
+    "WIKI-wealden": {
+      "n": "Wealden",
+      "q": 39,
+      "r": 2,
+      "svgId": "Wealden"
+    },
+    "WIKI-beaconsfield": {
+      "n": "Beaconsfield",
+      "q": 25,
+      "r": 10,
+      "svgId": "Beaconsfield"
+    },
+    "WIKI-cheshamand-amersham": {
+      "n": "Cheshamand Amersham",
+      "q": 25,
+      "r": 11,
+      "svgId": "CheshamandAmersham"
+    },
+    "WIKI-wycombe": {
+      "n": "Wycombe",
+      "q": 24,
+      "r": 11,
+      "svgId": "Wycombe"
+    },
+    "WIKI-milton-keynes-south-west": {
+      "n": "Milton Keynes South West",
+      "q": 25,
+      "r": 12,
+      "svgId": "MiltonKeynesSouthWest"
+    },
+    "WIKI-buckingham": {
+      "n": "Buckingham",
+      "q": 27,
+      "r": 10,
+      "svgId": "Buckingham"
+    },
+    "WIKI-aylesbury": {
+      "n": "Aylesbury",
+      "q": 26,
+      "r": 12,
+      "svgId": "Aylesbury"
+    },
+    "WIKI-bracknell": {
+      "n": "Bracknell",
+      "q": 21,
+      "r": 7,
+      "svgId": "Bracknell"
+    },
+    "WIKI-maidenhead": {
+      "n": "Maidenhead",
+      "q": 21,
+      "r": 9,
+      "svgId": "Maidenhead"
+    },
+    "WIKI-reading-west": {
+      "n": "Reading West",
+      "q": 19,
+      "r": 8,
+      "svgId": "ReadingWest"
+    },
+    "WIKI-slough": {
+      "n": "Slough",
+      "q": 20,
+      "r": 9,
+      "svgId": "Slough"
+    },
+    "WIKI-wokingham": {
+      "n": "Wokingham",
+      "q": 19,
+      "r": 7,
+      "svgId": "Wokingham"
+    },
+    "WIKI-windsor": {
+      "n": "Windsor",
+      "q": 21,
+      "r": 8,
+      "svgId": "Windsor"
+    },
+    "WIKI-twickenham": {
+      "n": "Twickenham",
+      "q": 23,
+      "r": 4,
+      "svgId": "Twickenham"
+    },
+    "WIKI-tooting": {
+      "n": "Tooting",
+      "q": 27,
+      "r": 3,
+      "svgId": "Tooting"
+    },
+    "WIKI-suttonand-cheam": {
+      "n": "Suttonand Cheam",
+      "q": 26,
+      "r": 4,
+      "svgId": "SuttonandCheam"
+    },
+    "WIKI-richmond-park": {
+      "n": "Richmond Park",
+      "q": 24,
+      "r": 5,
+      "svgId": "RichmondPark"
+    },
+    "WIKI-mitchamand-morden": {
+      "n": "Mitchamand Morden",
+      "q": 27,
+      "r": 2,
+      "svgId": "MitchamandMorden"
+    },
+    "WIKI-kingstonand-surbiton": {
+      "n": "Kingstonand Surbiton",
+      "q": 23,
+      "r": 3,
+      "svgId": "KingstonandSurbiton"
+    },
+    "WIKI-felthamand-heston": {
+      "n": "Felthamand Heston",
+      "q": 23,
+      "r": 5,
+      "svgId": "FelthamandHeston"
+    },
+    "WIKI-croydon-south": {
+      "n": "Croydon South",
+      "q": 31,
+      "r": 2,
+      "svgId": "CroydonSouth"
+    },
+    "WIKI-croydon-north": {
+      "n": "Croydon North",
+      "q": 29,
+      "r": 3,
+      "svgId": "CroydonNorth"
+    },
+    "WIKI-carshaltonand-wallington": {
+      "n": "Carshaltonand Wallington",
+      "q": 28,
+      "r": 3,
+      "svgId": "CarshaltonandWallington"
+    },
+    "WIKI-brentfordand-isleworth": {
+      "n": "Brentfordand Isleworth",
+      "q": 25,
+      "r": 5,
+      "svgId": "BrentfordandIsleworth"
+    },
+    "WIKI-battersea": {
+      "n": "Battersea",
+      "q": 28,
+      "r": 5,
+      "svgId": "Battersea"
+    },
+    "WIKI-vauxhall": {
+      "n": "Vauxhall",
+      "q": 29,
+      "r": 4,
+      "svgId": "Vauxhall"
+    },
+    "WIKI-streatham": {
+      "n": "Streatham",
+      "q": 30,
+      "r": 4,
+      "svgId": "Streatham"
+    },
+    "WIKI-orpington": {
+      "n": "Orpington",
+      "q": 33,
+      "r": 2,
+      "svgId": "Orpington"
+    },
+    "WIKI-old-bexleyand-sidcup": {
+      "n": "Old Bexleyand Sidcup",
+      "q": 35,
+      "r": 4,
+      "svgId": "OldBexleyandSidcup"
+    },
+    "WIKI-north-southwarkand-bermondsey": {
+      "n": "North Southwarkand Bermondsey",
+      "q": 30,
+      "r": 6,
+      "svgId": "NorthSouthwarkandBermondsey"
+    },
+    "WIKI-lewisham-west": {
+      "n": "Lewisham West",
+      "q": 32,
+      "r": 5,
+      "svgId": "LewishamWest"
+    },
+    "WIKI-lewisham-east": {
+      "n": "Lewisham East",
+      "q": 33,
+      "r": 3,
+      "svgId": "LewishamEast"
+    },
+    "WIKI-lewisham-deptford": {
+      "n": "Lewisham Deptford",
+      "q": 31,
+      "r": 5,
+      "svgId": "LewishamDeptford"
+    },
+    "WIKI-greenwichand-woolwich": {
+      "n": "Greenwichand Woolwich",
+      "q": 33,
+      "r": 5,
+      "svgId": "GreenwichandWoolwich"
+    },
+    "WIKI-erithand-thamesmead": {
+      "n": "Erithand Thamesmead",
+      "q": 34,
+      "r": 6,
+      "svgId": "ErithandThamesmead"
+    },
+    "WIKI-eltham": {
+      "n": "Eltham",
+      "q": 33,
+      "r": 4,
+      "svgId": "Eltham"
+    },
+    "WIKI-dulwichand-west-norwood": {
+      "n": "Dulwichand West Norwood",
+      "q": 31,
+      "r": 3,
+      "svgId": "DulwichandWestNorwood"
+    },
+    "WIKI-camberwelland-peckham": {
+      "n": "Camberwelland Peckham",
+      "q": 31,
+      "r": 4,
+      "svgId": "CamberwellandPeckham"
+    },
+    "WIKI-bromleyand-chislehurst": {
+      "n": "Bromleyand Chislehurst",
+      "q": 34,
+      "r": 4,
+      "svgId": "BromleyandChislehurst"
+    },
+    "WIKI-beckenham": {
+      "n": "Beckenham",
+      "q": 32,
+      "r": 3,
+      "svgId": "Beckenham"
+    },
+    "WIKI-brent-south": {
+      "n": "Brent South",
+      "q": 25,
+      "r": 6,
+      "svgId": "BrentSouth"
+    },
+    "WIKI-brent-east": {
+      "n": "Brent East",
+      "q": 26,
+      "r": 8,
+      "svgId": "BrentEast"
+    },
+    "WIKI-brent-north": {
+      "n": "Brent North",
+      "q": 25,
+      "r": 7,
+      "svgId": "BrentNorth"
+    },
+    "WIKI-chipping-barnet": {
+      "n": "Chipping Barnet",
+      "q": 27,
+      "r": 9,
+      "svgId": "ChippingBarnet"
+    },
+    "WIKI-citiesof-londonand-westminster": {
+      "n": "Citiesof Londonand Westminster",
+      "q": 29,
+      "r": 5,
+      "svgId": "CitiesofLondonandWestminster"
+    },
+    "WIKI-ealingx2-cactonand-shepherds-bush": {
+      "n": "Ealingx2 CActonand Shepherd's Bush",
+      "q": 24,
+      "r": 7,
+      "svgId": "Ealingx2CActonandShepherdx27sBush"
+    },
+    "WIKI-ealing-north": {
+      "n": "Ealing North",
+      "q": 23,
+      "r": 7,
+      "svgId": "EalingNorth"
+    },
+    "WIKI-ealing-southall": {
+      "n": "Ealing Southall",
+      "q": 23,
+      "r": 6,
+      "svgId": "EalingSouthall"
+    },
+    "WIKI-finchleyand-golders-green": {
+      "n": "Finchleyand Golders Green",
+      "q": 27,
+      "r": 8,
+      "svgId": "FinchleyandGoldersGreen"
+    },
+    "WIKI-hampsteadand-highgate": {
+      "n": "Hampsteadand Highgate",
+      "q": 27,
+      "r": 7,
+      "svgId": "HampsteadandHighgate"
+    },
+    "WIKI-harrow-east": {
+      "n": "Harrow East",
+      "q": 25,
+      "r": 8,
+      "svgId": "HarrowEast"
+    },
+    "WIKI-harrow-west": {
+      "n": "Harrow West",
+      "q": 24,
+      "r": 9,
+      "svgId": "HarrowWest"
+    },
+    "WIKI-hayesand-harlington": {
+      "n": "Hayesand Harlington",
+      "q": 22,
+      "r": 8,
+      "svgId": "HayesandHarlington"
+    },
+    "WIKI-hendon": {
+      "n": "Hendon",
+      "q": 26,
+      "r": 10,
+      "svgId": "Hendon"
+    },
+    "WIKI-holbornand-st-pancras": {
+      "n": "Holbornand St Pancras",
+      "q": 28,
+      "r": 7,
+      "svgId": "HolbornandStPancras"
+    },
+    "WIKI-kensingtonand-chelsea": {
+      "n": "Kensingtonand Chelsea",
+      "q": 27,
+      "r": 6,
+      "svgId": "KensingtonandChelsea"
+    },
+    "WIKI-regents-parkand-north-kensington": {
+      "n": "Regent's Parkand North Kensington",
+      "q": 27,
+      "r": 5,
+      "svgId": "Regentx27sParkandNorthKensington"
+    },
+    "WIKI-ruislip-northwood": {
+      "n": "Ruislip-Northwood",
+      "q": 25,
+      "r": 9,
+      "svgId": "Ruislip-Northwood"
+    },
+    "WIKI-uxbridge": {
+      "n": "Uxbridge",
+      "q": 23,
+      "r": 8,
+      "svgId": "Uxbridge"
+    },
+    "WIKI-barking": {
+      "n": "Barking",
+      "q": 35,
+      "r": 7,
+      "svgId": "Barking"
+    },
+    "WIKI-chingfordand-woodford-green": {
+      "n": "Chingfordand Woodford Green",
+      "q": 31,
+      "r": 10,
+      "svgId": "ChingfordandWoodfordGreen"
+    },
+    "WIKI-dagenham": {
+      "n": "Dagenham",
+      "q": 34,
+      "r": 8,
+      "svgId": "Dagenham"
+    },
+    "WIKI-east-ham": {
+      "n": "East Ham",
+      "q": 33,
+      "r": 7,
+      "svgId": "EastHam"
+    },
+    "WIKI-edmonton": {
+      "n": "Edmonton",
+      "q": 30,
+      "r": 10,
+      "svgId": "Edmonton"
+    },
+    "WIKI-enfield-north": {
+      "n": "Enfield North",
+      "q": 29,
+      "r": 10,
+      "svgId": "EnfieldNorth"
+    },
+    "WIKI-hackney-northand-stoke-newington": {
+      "n": "Hackney Northand Stoke Newington",
+      "q": 30,
+      "r": 8,
+      "svgId": "HackneyNorthandStokeNewington"
+    },
+    "WIKI-hackney-southand-shoreditch": {
+      "n": "Hackney Southand Shoreditch",
+      "q": 31,
+      "r": 6,
+      "svgId": "HackneySouthandShoreditch"
+    },
+    "WIKI-ilford-south": {
+      "n": "Ilford South",
+      "q": 32,
+      "r": 9,
+      "svgId": "IlfordSouth"
+    },
+    "WIKI-islington-north": {
+      "n": "Islington North",
+      "q": 29,
+      "r": 7,
+      "svgId": "IslingtonNorth"
+    },
+    "WIKI-islington-southand-finsbury": {
+      "n": "Islington Southand Finsbury",
+      "q": 29,
+      "r": 6,
+      "svgId": "IslingtonSouthandFinsbury"
+    },
+    "WIKI-leytonand-wanstead": {
+      "n": "Leytonand Wanstead",
+      "q": 31,
+      "r": 8,
+      "svgId": "LeytonandWanstead"
+    },
+    "WIKI-poplarand-canning-town": {
+      "n": "Poplarand Canning Town",
+      "q": 33,
+      "r": 6,
+      "svgId": "PoplarandCanningTown"
+    },
+    "WIKI-tottenham": {
+      "n": "Tottenham",
+      "q": 28,
+      "r": 9,
+      "svgId": "Tottenham"
+    },
+    "WIKI-walthamstow": {
+      "n": "Walthamstow",
+      "q": 29,
+      "r": 8,
+      "svgId": "Walthamstow"
+    },
+    "WIKI-west-ham": {
+      "n": "West Ham",
+      "q": 31,
+      "r": 7,
+      "svgId": "WestHam"
+    },
+    "WIKI-devizes": {
+      "n": "Devizes",
+      "q": 16,
+      "r": 7,
+      "svgId": "Devizes"
+    },
+    "WIKI-north-swindon": {
+      "n": "North Swindon",
+      "q": 17,
+      "r": 8,
+      "svgId": "NorthSwindon"
+    },
+    "WIKI-north-wiltshire": {
+      "n": "North Wiltshire",
+      "q": 16,
+      "r": 9,
+      "svgId": "NorthWiltshire"
+    },
+    "WIKI-salisbury": {
+      "n": "Salisbury",
+      "q": 15,
+      "r": 5,
+      "svgId": "Salisbury"
+    },
+    "WIKI-south-swindon": {
+      "n": "South Swindon",
+      "q": 17,
+      "r": 7,
+      "svgId": "SouthSwindon"
+    },
+    "WIKI-westbury": {
+      "n": "Westbury",
+      "q": 15,
+      "r": 7,
+      "svgId": "Westbury"
+    },
+    "WIKI-bath": {
+      "n": "Bath",
+      "q": 15,
+      "r": 6,
+      "svgId": "Bath"
+    },
+    "WIKI-bridgwater": {
+      "n": "Bridgwater",
+      "q": 8,
+      "r": 5,
+      "svgId": "Bridgwater"
+    },
+    "WIKI-somertonand-frome": {
+      "n": "Somertonand Frome",
+      "q": 13,
+      "r": 5,
+      "svgId": "SomertonandFrome"
+    },
+    "WIKI-wansdyke": {
+      "n": "Wansdyke",
+      "q": 14,
+      "r": 6,
+      "svgId": "Wansdyke"
+    },
+    "WIKI-wells": {
+      "n": "Wells",
+      "q": 9,
+      "r": 4,
+      "svgId": "Wells"
+    },
+    "WIKI-woodspring": {
+      "n": "Woodspring",
+      "q": 11,
+      "r": 5,
+      "svgId": "Woodspring"
+    },
+    "WIKI-yeovil": {
+      "n": "Yeovil",
+      "q": 9,
+      "r": 3,
+      "svgId": "Yeovil"
+    },
+    "WIKI-tewkesbury": {
+      "n": "Tewkesbury",
+      "q": 15,
+      "r": 10,
+      "svgId": "Tewkesbury"
+    },
+    "WIKI-stroud": {
+      "n": "Stroud",
+      "q": 17,
+      "r": 9,
+      "svgId": "Stroud"
+    },
+    "WIKI-northavon": {
+      "n": "Northavon",
+      "q": 13,
+      "r": 8,
+      "svgId": "Northavon"
+    },
+    "WIKI-kingswood": {
+      "n": "Kingswood",
+      "q": 15,
+      "r": 8,
+      "svgId": "Kingswood"
+    },
+    "WIKI-gloucester": {
+      "n": "Gloucester",
+      "q": 14,
+      "r": 10,
+      "svgId": "Gloucester"
+    },
+    "WIKI-cotswolds": {
+      "n": "Cotswolds",
+      "q": 16,
+      "r": 11,
+      "svgId": "Cotswolds"
+    },
+    "WIKI-cheltenham": {
+      "n": "Cheltenham",
+      "q": 15,
+      "r": 9,
+      "svgId": "Cheltenham"
+    },
+    "WIKI-bournemouth-east": {
+      "n": "Bournemouth East",
+      "q": 13,
+      "r": 3,
+      "svgId": "BournemouthEast"
+    },
+    "WIKI-bournemouth-west": {
+      "n": "Bournemouth West",
+      "q": 12,
+      "r": 3,
+      "svgId": "BournemouthWest"
+    },
+    "WIKI-christchurch": {
+      "n": "Christchurch",
+      "q": 14,
+      "r": 4,
+      "svgId": "Christchurch"
+    },
+    "WIKI-north-dorset": {
+      "n": "North Dorset",
+      "q": 13,
+      "r": 4,
+      "svgId": "NorthDorset"
+    },
+    "WIKI-poole": {
+      "n": "Poole",
+      "q": 11,
+      "r": 3,
+      "svgId": "Poole"
+    },
+    "WIKI-west-dorset": {
+      "n": "West Dorset",
+      "q": 11,
+      "r": 2,
+      "svgId": "WestDorset"
+    },
+    "WIKI-totnes": {
+      "n": "Totnes",
+      "q": 5,
+      "r": 0,
+      "svgId": "Totnes"
+    },
+    "WIKI-torbay": {
+      "n": "Torbay",
+      "q": 6,
+      "r": 2,
+      "svgId": "Torbay"
+    },
+    "WIKI-tivertonand-honiton": {
+      "n": "Tivertonand Honiton",
+      "q": 9,
+      "r": 2,
+      "svgId": "TivertonandHoniton"
+    },
+    "WIKI-plymouth-devonport": {
+      "n": "Plymouth Devonport",
+      "q": 5,
+      "r": 1,
+      "svgId": "PlymouthDevonport"
+    },
+    "WIKI-plymouth-sutton": {
+      "n": "Plymouth Sutton",
+      "q": 4,
+      "r": 1,
+      "svgId": "PlymouthSutton"
+    },
+    "WIKI-south-west-devon": {
+      "n": "South West Devon",
+      "q": 5,
+      "r": 2,
+      "svgId": "SouthWestDevon"
+    },
+    "WIKI-east-devon": {
+      "n": "East Devon",
+      "q": 8,
+      "r": 3,
+      "svgId": "EastDevon"
+    },
+    "WIKI-exeter": {
+      "n": "Exeter",
+      "q": 7,
+      "r": 3,
+      "svgId": "Exeter"
+    },
+    "WIKI-north-devon": {
+      "n": "North Devon",
+      "q": 7,
+      "r": 4,
+      "svgId": "NorthDevon"
+    },
+    "WIKI-st-ives": {
+      "n": "St Ives",
+      "q": 1,
+      "r": 0,
+      "svgId": "StIves"
+    },
+    "WIKI-south-east-cornwall": {
+      "n": "South East Cornwall",
+      "q": 4,
+      "r": 3,
+      "svgId": "SouthEastCornwall"
+    },
+    "WIKI-north-cornwall": {
+      "n": "North Cornwall",
+      "q": 5,
+      "r": 3,
+      "svgId": "NorthCornwall"
+    },
+    "WIKI-truroand-st-austell": {
+      "n": "Truroand St Austell",
+      "q": 3,
+      "r": 1,
+      "svgId": "TruroandStAustell"
+    },
+    "WIKI-bristol-south": {
+      "n": "Bristol South",
+      "q": 13,
+      "r": 6,
+      "svgId": "BristolSouth"
+    },
+    "WIKI-bristol-north-west": {
+      "n": "Bristol North West",
+      "q": 13,
+      "r": 7,
+      "svgId": "BristolNorthWest"
+    },
+    "WIKI-bristol-east": {
+      "n": "Bristol East",
+      "q": 14,
+      "r": 8,
+      "svgId": "BristolEast"
+    },
+    "WIKI-west-suffolk": {
+      "n": "West Suffolk",
+      "q": 34,
+      "r": 16,
+      "svgId": "WestSuffolk"
+    },
+    "WIKI-waveney": {
+      "n": "Waveney",
+      "q": 35,
+      "r": 17,
+      "svgId": "Waveney"
+    },
+    "WIKI-suffolk-coastal": {
+      "n": "Suffolk Coastal",
+      "q": 36,
+      "r": 17,
+      "svgId": "SuffolkCoastal"
+    },
+    "WIKI-south-suffolk": {
+      "n": "South Suffolk",
+      "q": 37,
+      "r": 15,
+      "svgId": "SouthSuffolk"
+    },
+    "WIKI-ipswich": {
+      "n": "Ipswich",
+      "q": 35,
+      "r": 15,
+      "svgId": "Ipswich"
+    },
+    "WIKI-central-suffolkand-north-ipswich": {
+      "n": "Central Suffolkand North Ipswich",
+      "q": 35,
+      "r": 16,
+      "svgId": "CentralSuffolkandNorthIpswich"
+    },
+    "WIKI-bury-st-edmunds": {
+      "n": "Bury St Edmunds",
+      "q": 35,
+      "r": 14,
+      "svgId": "BuryStEdmunds"
+    },
+    "WIKI-south-west-norfolk": {
+      "n": "South West Norfolk",
+      "q": 32,
+      "r": 17,
+      "svgId": "SouthWestNorfolk"
+    },
+    "WIKI-south-norfolk": {
+      "n": "South Norfolk",
+      "q": 34,
+      "r": 18,
+      "svgId": "SouthNorfolk"
+    },
+    "WIKI-norwich-south": {
+      "n": "Norwich South",
+      "q": 33,
+      "r": 16,
+      "svgId": "NorwichSouth"
+    },
+    "WIKI-norwich-north": {
+      "n": "Norwich North",
+      "q": 33,
+      "r": 17,
+      "svgId": "NorwichNorth"
+    },
+    "WIKI-mid-norfolk": {
+      "n": "Mid Norfolk",
+      "q": 31,
+      "r": 17,
+      "svgId": "MidNorfolk"
+    },
+    "WIKI-great-yarmouth": {
+      "n": "Great Yarmouth",
+      "q": 33,
+      "r": 18,
+      "svgId": "GreatYarmouth"
+    },
+    "WIKI-watford": {
+      "n": "Watford",
+      "q": 32,
+      "r": 11,
+      "svgId": "Watford"
+    },
+    "WIKI-stevenage": {
+      "n": "Stevenage",
+      "q": 31,
+      "r": 12,
+      "svgId": "Stevenage"
+    },
+    "WIKI-south-west-hertfordshire": {
+      "n": "South West Hertfordshire",
+      "q": 29,
+      "r": 12,
+      "svgId": "SouthWestHertfordshire"
+    },
+    "WIKI-north-east-hertfordshire": {
+      "n": "North East Hertfordshire",
+      "q": 30,
+      "r": 14,
+      "svgId": "NorthEastHertfordshire"
+    },
+    "WIKI-hitchinand-harpenden": {
+      "n": "Hitchinand Harpenden",
+      "q": 31,
+      "r": 13,
+      "svgId": "HitchinandHarpenden"
+    },
+    "WIKI-hertsmere": {
+      "n": "Hertsmere",
+      "q": 33,
+      "r": 11,
+      "svgId": "Hertsmere"
+    },
+    "WIKI-hertfordand-stortford": {
+      "n": "Hertfordand Stortford",
+      "q": 32,
+      "r": 15,
+      "svgId": "HertfordandStortford"
+    },
+    "WIKI-broxbourne": {
+      "n": "Broxbourne",
+      "q": 33,
+      "r": 10,
+      "svgId": "Broxbourne"
+    },
+    "WIKI-west-chelmsford": {
+      "n": "West Chelmsford",
+      "q": 35,
+      "r": 12,
+      "svgId": "WestChelmsford"
+    },
+    "WIKI-thurrock": {
+      "n": "Thurrock",
+      "q": 34,
+      "r": 10,
+      "svgId": "Thurrock"
+    },
+    "WIKI-southend-west": {
+      "n": "Southend West",
+      "q": 36,
+      "r": 11,
+      "svgId": "SouthendWest"
+    },
+    "WIKI-saffron-walden": {
+      "n": "Saffron Walden",
+      "q": 33,
+      "r": 14,
+      "svgId": "SaffronWalden"
+    },
+    "WIKI-rochfordand-southend-east": {
+      "n": "Rochfordand Southend East",
+      "q": 37,
+      "r": 11,
+      "svgId": "RochfordandSouthendEast"
+    },
+    "WIKI-rayleigh": {
+      "n": "Rayleigh",
+      "q": 35,
+      "r": 11,
+      "svgId": "Rayleigh"
+    },
+    "WIKI-north-essex": {
+      "n": "North Essex",
+      "q": 36,
+      "r": 15,
+      "svgId": "NorthEssex"
+    },
+    "WIKI-maldonand-east-chelmsford": {
+      "n": "Maldonand East Chelmsford",
+      "q": 36,
+      "r": 13,
+      "svgId": "MaldonandEastChelmsford"
+    },
+    "WIKI-harlow": {
+      "n": "Harlow",
+      "q": 33,
+      "r": 12,
+      "svgId": "Harlow"
+    },
+    "WIKI-epping-forest": {
+      "n": "Epping Forest",
+      "q": 35,
+      "r": 10,
+      "svgId": "EppingForest"
+    },
+    "WIKI-colchester": {
+      "n": "Colchester",
+      "q": 35,
+      "r": 13,
+      "svgId": "Colchester"
+    },
+    "WIKI-brentwoodand-ongar": {
+      "n": "Brentwoodand Ongar",
+      "q": 34,
+      "r": 14,
+      "svgId": "BrentwoodandOngar"
+    },
+    "WIKI-billericay": {
+      "n": "Billericay",
+      "q": 34,
+      "r": 12,
+      "svgId": "Billericay"
+    },
+    "WIKI-basildon": {
+      "n": "Basildon",
+      "q": 35,
+      "r": 9,
+      "svgId": "Basildon"
+    },
+    "WIKI-south-east-cambridgeshire": {
+      "n": "South East Cambridgeshire",
+      "q": 33,
+      "r": 15,
+      "svgId": "SouthEastCambridgeshire"
+    },
+    "WIKI-south-cambridgeshire": {
+      "n": "South Cambridgeshire",
+      "q": 31,
+      "r": 14,
+      "svgId": "SouthCambridgeshire"
+    },
+    "WIKI-north-west-cambridgeshire": {
+      "n": "North West Cambridgeshire",
+      "q": 31,
+      "r": 16,
+      "svgId": "NorthWestCambridgeshire"
+    },
+    "WIKI-north-east-cambridgeshire": {
+      "n": "North East Cambridgeshire",
+      "q": 30,
+      "r": 16,
+      "svgId": "NorthEastCambridgeshire"
+    },
+    "WIKI-huntingdon": {
+      "n": "Huntingdon",
+      "q": 29,
+      "r": 15,
+      "svgId": "Huntingdon"
+    },
+    "WIKI-luton-north": {
+      "n": "Luton North",
+      "q": 27,
+      "r": 11,
+      "svgId": "LutonNorth"
+    },
+    "WIKI-luton-south": {
+      "n": "Luton South",
+      "q": 29,
+      "r": 11,
+      "svgId": "LutonSouth"
+    },
+    "WIKI-bedford": {
+      "n": "Bedford",
+      "q": 29,
+      "r": 13,
+      "svgId": "Bedford"
+    },
+    "WIKI-south-west-bedfordshire": {
+      "n": "South West Bedfordshire",
+      "q": 28,
+      "r": 13,
+      "svgId": "SouthWestBedfordshire"
+    },
+    "WIKI-mid-bedfordshire": {
+      "n": "Mid Bedfordshire",
+      "q": 28,
+      "r": 15,
+      "svgId": "MidBedfordshire"
+    },
+    "WIKI-north-east-bedfordshire": {
+      "n": "North East Bedfordshire",
+      "q": 29,
+      "r": 14,
+      "svgId": "NorthEastBedfordshire"
+    },
+    "WIKI-swansea-west": {
+      "n": "Swansea West",
+      "q": 5,
+      "r": 8,
+      "svgId": "SwanseaWest"
+    },
+    "WIKI-swansea-east": {
+      "n": "Swansea East",
+      "q": 6,
+      "r": 10,
+      "svgId": "SwanseaEast"
+    },
+    "WIKI-ogmore": {
+      "n": "Ogmore",
+      "q": 8,
+      "r": 9,
+      "svgId": "Ogmore"
+    },
+    "WIKI-neath": {
+      "n": "Neath",
+      "q": 7,
+      "r": 9,
+      "svgId": "Neath"
+    },
+    "WIKI-gower": {
+      "n": "Gower",
+      "q": 5,
+      "r": 7,
+      "svgId": "Gower"
+    },
+    "WIKI-bridgend": {
+      "n": "Bridgend",
+      "q": 7,
+      "r": 7,
+      "svgId": "Bridgend"
+    },
+    "WIKI-aberavon": {
+      "n": "Aberavon",
+      "q": 7,
+      "r": 8,
+      "svgId": "Aberavon"
+    },
+    "WIKI-torfaen": {
+      "n": "Torfaen",
+      "q": 11,
+      "r": 11,
+      "svgId": "Torfaen"
+    },
+    "WIKI-newport-west": {
+      "n": "Newport West",
+      "q": 11,
+      "r": 9,
+      "svgId": "NewportWest"
+    },
+    "WIKI-newport-east": {
+      "n": "Newport East",
+      "q": 13,
+      "r": 9,
+      "svgId": "NewportEast"
+    },
+    "WIKI-merthyr-tydfiland-rhymney": {
+      "n": "Merthyr Tydfiland Rhymney",
+      "q": 11,
+      "r": 12,
+      "svgId": "MerthyrTydfilandRhymney"
+    },
+    "WIKI-islwyn": {
+      "n": "Islwyn",
+      "q": 12,
+      "r": 11,
+      "svgId": "Islwyn"
+    },
+    "WIKI-caerphilly": {
+      "n": "Caerphilly",
+      "q": 8,
+      "r": 11,
+      "svgId": "Caerphilly"
+    },
+    "WIKI-valeof-glamorgan": {
+      "n": "Valeof Glamorgan",
+      "q": 9,
+      "r": 7,
+      "svgId": "ValeofGlamorgan"
+    },
+    "WIKI-rhondda": {
+      "n": "Rhondda",
+      "q": 9,
+      "r": 10,
+      "svgId": "Rhondda"
+    },
+    "WIKI-pontypridd": {
+      "n": "Pontypridd",
+      "q": 9,
+      "r": 9,
+      "svgId": "Pontypridd"
+    },
+    "WIKI-cynon-valley": {
+      "n": "Cynon Valley",
+      "q": 10,
+      "r": 12,
+      "svgId": "CynonValley"
+    },
+    "WIKI-cardiff-north": {
+      "n": "Cardiff North",
+      "q": 11,
+      "r": 10,
+      "svgId": "CardiffNorth"
+    },
+    "WIKI-cardiff-west": {
+      "n": "Cardiff West",
+      "q": 9,
+      "r": 8,
+      "svgId": "CardiffWest"
+    },
+    "WIKI-cardiff-southand-penarth": {
+      "n": "Cardiff Southand Penarth",
+      "q": 11,
+      "r": 8,
+      "svgId": "CardiffSouthandPenarth"
+    },
+    "WIKI-wrexham": {
+      "n": "Wrexham",
+      "q": 11,
+      "r": 16,
+      "svgId": "Wrexham"
+    },
+    "WIKI-valeof-clwyd": {
+      "n": "Valeof Clwyd",
+      "q": 9,
+      "r": 16,
+      "svgId": "ValeofClwyd"
+    },
+    "WIKI-delyn": {
+      "n": "Delyn",
+      "q": 9,
+      "r": 17,
+      "svgId": "Delyn"
+    },
+    "WIKI-clwyd-south": {
+      "n": "Clwyd South",
+      "q": 10,
+      "r": 16,
+      "svgId": "ClwydSouth"
+    },
+    "WIKI-conwy": {
+      "n": "Conwy",
+      "q": 7,
+      "r": 16,
+      "svgId": "Conwy"
+    },
+    "WIKI-caernarfon": {
+      "n": "Caernarfon",
+      "q": 6,
+      "r": 16,
+      "svgId": "Caernarfon"
+    },
+    "WIKI-alynand-deeside": {
+      "n": "Alynand Deeside",
+      "q": 10,
+      "r": 18,
+      "svgId": "AlynandDeeside"
+    },
+    "WIKI-llanelli": {
+      "n": "Llanelli",
+      "q": 4,
+      "r": 9,
+      "svgId": "Llanelli"
+    },
+    "WIKI-meirionnydd-nant-conwy": {
+      "n": "Meirionnydd Nant Conwy",
+      "q": 7,
+      "r": 15,
+      "svgId": "MeirionnyddNantConwy"
+    },
+    "WIKI-montgomeryshire": {
+      "n": "Montgomeryshire",
+      "q": 9,
+      "r": 15,
+      "svgId": "Montgomeryshire"
+    },
+    "WIKI-carmarthen-westand-south-pembrokeshire": {
+      "n": "Carmarthen Westand South Pembrokeshire",
+      "q": 3,
+      "r": 8,
+      "svgId": "CarmarthenWestandSouthPembrokeshire"
+    },
+    "WIKI-breconand-radnorshire": {
+      "n": "Breconand Radnorshire",
+      "q": 11,
+      "r": 14,
+      "svgId": "BreconandRadnorshire"
+    },
+    "WIKI-aldridge-brownhills": {
+      "n": "Aldridge-Brownhills",
+      "q": 19,
+      "r": 15,
+      "svgId": "Aldridge-Brownhills"
+    },
+    "WIKI-walsall-north": {
+      "n": "Walsall North",
+      "q": 15,
+      "r": 15,
+      "svgId": "WalsallNorth"
+    },
+    "WIKI-walsall-south": {
+      "n": "Walsall South",
+      "q": 17,
+      "r": 15,
+      "svgId": "WalsallSouth"
+    },
+    "WIKI-wolverhampton-south-east": {
+      "n": "Wolverhampton South East",
+      "q": 15,
+      "r": 14,
+      "svgId": "WolverhamptonSouthEast"
+    },
+    "WIKI-wolverhampton-south-west": {
+      "n": "Wolverhampton South West",
+      "q": 13,
+      "r": 14,
+      "svgId": "WolverhamptonSouthWest"
+    },
+    "WIKI-wolverhampton-north-east": {
+      "n": "Wolverhampton North East",
+      "q": 14,
+      "r": 16,
+      "svgId": "WolverhamptonNorthEast"
+    },
+    "WIKI-dudley-north": {
+      "n": "Dudley North",
+      "q": 14,
+      "r": 14,
+      "svgId": "DudleyNorth"
+    },
+    "WIKI-dudley-south": {
+      "n": "Dudley South",
+      "q": 15,
+      "r": 12,
+      "svgId": "DudleySouth"
+    },
+    "WIKI-halesowenand-rowley-regis": {
+      "n": "Halesowenand Rowley Regis",
+      "q": 15,
+      "r": 13,
+      "svgId": "HalesowenandRowleyRegis"
+    },
+    "WIKI-stourbridge": {
+      "n": "Stourbridge",
+      "q": 16,
+      "r": 13,
+      "svgId": "Stourbridge"
+    },
+    "WIKI-warley": {
+      "n": "Warley",
+      "q": 17,
+      "r": 13,
+      "svgId": "Warley"
+    },
+    "WIKI-west-bromwich-east": {
+      "n": "West Bromwich East",
+      "q": 17,
+      "r": 14,
+      "svgId": "WestBromwichEast"
+    },
+    "WIKI-west-bromwich-west": {
+      "n": "West Bromwich West",
+      "q": 16,
+      "r": 15,
+      "svgId": "WestBromwichWest"
+    },
+    "WIKI-coventry-north-east": {
+      "n": "Coventry North East",
+      "q": 22,
+      "r": 14,
+      "svgId": "CoventryNorthEast"
+    },
+    "WIKI-coventry-north-west": {
+      "n": "Coventry North West",
+      "q": 21,
+      "r": 12,
+      "svgId": "CoventryNorthWest"
+    },
+    "WIKI-coventry-south": {
+      "n": "Coventry South",
+      "q": 22,
+      "r": 12,
+      "svgId": "CoventrySouth"
+    },
+    "WIKI-meriden": {
+      "n": "Meriden",
+      "q": 19,
+      "r": 11,
+      "svgId": "Meriden"
+    },
+    "WIKI-birmingham-edgbaston": {
+      "n": "Birmingham Edgbaston",
+      "q": 18,
+      "r": 14,
+      "svgId": "BirminghamEdgbaston"
+    },
+    "WIKI-birminghamx2-csparkbrookand-small-heath": {
+      "n": "Birminghamx2 CSparkbrookand Small Heath",
+      "q": 21,
+      "r": 11,
+      "svgId": "Birminghamx2CSparkbrookandSmallHeath"
+    },
+    "WIKI-birmingham-erdington": {
+      "n": "Birmingham Erdington",
+      "q": 20,
+      "r": 15,
+      "svgId": "BirminghamErdington"
+    },
+    "WIKI-birmingham-hall-green": {
+      "n": "Birmingham Hall Green",
+      "q": 19,
+      "r": 12,
+      "svgId": "BirminghamHallGreen"
+    },
+    "WIKI-birmingham-hodge-hill": {
+      "n": "Birmingham Hodge Hill",
+      "q": 21,
+      "r": 14,
+      "svgId": "BirminghamHodgeHill"
+    },
+    "WIKI-birmingham-ladywood": {
+      "n": "Birmingham Ladywood",
+      "q": 19,
+      "r": 13,
+      "svgId": "BirminghamLadywood"
+    },
+    "WIKI-birmingham-northfield": {
+      "n": "Birmingham Northfield",
+      "q": 17,
+      "r": 12,
+      "svgId": "BirminghamNorthfield"
+    },
+    "WIKI-birmingham-perry-barr": {
+      "n": "Birmingham Perry Barr",
+      "q": 19,
+      "r": 14,
+      "svgId": "BirminghamPerryBarr"
+    },
+    "WIKI-birmingham-selly-oak": {
+      "n": "Birmingham Selly Oak",
+      "q": 18,
+      "r": 12,
+      "svgId": "BirminghamSellyOak"
+    },
+    "WIKI-sutton-coldfield": {
+      "n": "Sutton Coldfield",
+      "q": 21,
+      "r": 15,
+      "svgId": "SuttonColdfield"
+    },
+    "WIKI-north-shropshire": {
+      "n": "North Shropshire",
+      "q": 12,
+      "r": 17,
+      "svgId": "NorthShropshire"
+    },
+    "WIKI-telford": {
+      "n": "Telford",
+      "q": 13,
+      "r": 15,
+      "svgId": "Telford"
+    },
+    "WIKI-hereford": {
+      "n": "Hereford",
+      "q": 12,
+      "r": 13,
+      "svgId": "Hereford"
+    },
+    "WIKI-leominster": {
+      "n": "Leominster",
+      "q": 13,
+      "r": 13,
+      "svgId": "Leominster"
+    },
+    "WIKI-north-warwickshire": {
+      "n": "North Warwickshire",
+      "q": 22,
+      "r": 16,
+      "svgId": "NorthWarwickshire"
+    },
+    "WIKI-nuneaton": {
+      "n": "Nuneaton",
+      "q": 23,
+      "r": 14,
+      "svgId": "Nuneaton"
+    },
+    "WIKI-stratford-on-avon": {
+      "n": "Stratford-on-Avon",
+      "q": 23,
+      "r": 12,
+      "svgId": "Stratford-on-Avon"
+    },
+    "WIKI-warwickand-leamington": {
+      "n": "Warwickand Leamington",
+      "q": 24,
+      "r": 13,
+      "svgId": "WarwickandLeamington"
+    },
+    "WIKI-bromsgrove": {
+      "n": "Bromsgrove",
+      "q": 19,
+      "r": 10,
+      "svgId": "Bromsgrove"
+    },
+    "WIKI-mid-worcestershire": {
+      "n": "Mid Worcestershire",
+      "q": 17,
+      "r": 11,
+      "svgId": "MidWorcestershire"
+    },
+    "WIKI-redditch": {
+      "n": "Redditch",
+      "q": 17,
+      "r": 10,
+      "svgId": "Redditch"
+    },
+    "WIKI-worcester": {
+      "n": "Worcester",
+      "q": 15,
+      "r": 11,
+      "svgId": "Worcester"
+    },
+    "WIKI-west-worcestershire": {
+      "n": "West Worcestershire",
+      "q": 13,
+      "r": 12,
+      "svgId": "WestWorcestershire"
+    },
+    "WIKI-burton": {
+      "n": "Burton",
+      "q": 19,
+      "r": 17,
+      "svgId": "Burton"
+    },
+    "WIKI-cannock-chase": {
+      "n": "Cannock Chase",
+      "q": 18,
+      "r": 16,
+      "svgId": "CannockChase"
+    },
+    "WIKI-lichfield": {
+      "n": "Lichfield",
+      "q": 20,
+      "r": 17,
+      "svgId": "Lichfield"
+    },
+    "WIKI-newcastle-under-lyme": {
+      "n": "Newcastle-under-Lyme",
+      "q": 17,
+      "r": 17,
+      "svgId": "Newcastle-under-Lyme"
+    },
+    "WIKI-south-staffordshire": {
+      "n": "South Staffordshire",
+      "q": 15,
+      "r": 16,
+      "svgId": "SouthStaffordshire"
+    },
+    "WIKI-stafford": {
+      "n": "Stafford",
+      "q": 17,
+      "r": 16,
+      "svgId": "Stafford"
+    },
+    "WIKI-staffordshire-moorlands": {
+      "n": "Staffordshire Moorlands",
+      "q": 19,
+      "r": 18,
+      "svgId": "StaffordshireMoorlands"
+    },
+    "WIKI-stoke-on-trent-central": {
+      "n": "Stoke-on-Trent Central",
+      "q": 18,
+      "r": 18,
+      "svgId": "Stoke-on-TrentCentral"
+    },
+    "WIKI-stoke-on-trent-north": {
+      "n": "Stoke-on-Trent North",
+      "q": 17,
+      "r": 18,
+      "svgId": "Stoke-on-TrentNorth"
+    },
+    "WIKI-stoke-on-trent-south": {
+      "n": "Stoke-on-Trent South",
+      "q": 19,
+      "r": 16,
+      "svgId": "Stoke-on-TrentSouth"
+    },
+    "WIKI-stone": {
+      "n": "Stone",
+      "q": 16,
+      "r": 17,
+      "svgId": "Stone"
+    },
+    "WIKI-tamworth": {
+      "n": "Tamworth",
+      "q": 21,
+      "r": 16,
+      "svgId": "Tamworth"
+    },
+    "WIKI-amber-valley": {
+      "n": "Amber Valley",
+      "q": 23,
+      "r": 18,
+      "svgId": "AmberValley"
+    },
+    "WIKI-bolsover": {
+      "n": "Bolsover",
+      "q": 23,
+      "r": 19,
+      "svgId": "Bolsover"
+    },
+    "WIKI-derby-north": {
+      "n": "Derby North",
+      "q": 21,
+      "r": 18,
+      "svgId": "DerbyNorth"
+    },
+    "WIKI-derby-south": {
+      "n": "Derby South",
+      "q": 22,
+      "r": 18,
+      "svgId": "DerbySouth"
+    },
+    "WIKI-erewash": {
+      "n": "Erewash",
+      "q": 23,
+      "r": 17,
+      "svgId": "Erewash"
+    },
+    "WIKI-north-east-derbyshire": {
+      "n": "North East Derbyshire",
+      "q": 21,
+      "r": 19,
+      "svgId": "NorthEastDerbyshire"
+    },
+    "WIKI-south-derbyshire": {
+      "n": "South Derbyshire",
+      "q": 21,
+      "r": 17,
+      "svgId": "SouthDerbyshire"
+    },
+    "WIKI-west-derbyshire": {
+      "n": "West Derbyshire",
+      "q": 20,
+      "r": 19,
+      "svgId": "WestDerbyshire"
+    },
+    "WIKI-high-peak": {
+      "n": "High Peak",
+      "q": 19,
+      "r": 19,
+      "svgId": "HighPeak"
+    },
+    "WIKI-ashfield": {
+      "n": "Ashfield",
+      "q": 24,
+      "r": 19,
+      "svgId": "Ashfield"
+    },
+    "WIKI-bassetlaw": {
+      "n": "Bassetlaw",
+      "q": 24,
+      "r": 21,
+      "svgId": "Bassetlaw"
+    },
+    "WIKI-broxtowe": {
+      "n": "Broxtowe",
+      "q": 24,
+      "r": 17,
+      "svgId": "Broxtowe"
+    },
+    "WIKI-gedling": {
+      "n": "Gedling",
+      "q": 27,
+      "r": 18,
+      "svgId": "Gedling"
+    },
+    "WIKI-mansfield": {
+      "n": "Mansfield",
+      "q": 25,
+      "r": 19,
+      "svgId": "Mansfield"
+    },
+    "WIKI-nottingham-east": {
+      "n": "Nottingham East",
+      "q": 26,
+      "r": 18,
+      "svgId": "NottinghamEast"
+    },
+    "WIKI-nottingham-north": {
+      "n": "Nottingham North",
+      "q": 25,
+      "r": 18,
+      "svgId": "NottinghamNorth"
+    },
+    "WIKI-nottingham-south": {
+      "n": "Nottingham South",
+      "q": 25,
+      "r": 17,
+      "svgId": "NottinghamSouth"
+    },
+    "WIKI-rushcliffe": {
+      "n": "Rushcliffe",
+      "q": 28,
+      "r": 19,
+      "svgId": "Rushcliffe"
+    },
+    "WIKI-sherwood": {
+      "n": "Sherwood",
+      "q": 26,
+      "r": 20,
+      "svgId": "Sherwood"
+    },
+    "WIKI-corby": {
+      "n": "Corby",
+      "q": 28,
+      "r": 17,
+      "svgId": "Corby"
+    },
+    "WIKI-daventry": {
+      "n": "Daventry",
+      "q": 25,
+      "r": 13,
+      "svgId": "Daventry"
+    },
+    "WIKI-northampton-north": {
+      "n": "Northampton North",
+      "q": 27,
+      "r": 14,
+      "svgId": "NorthamptonNorth"
+    },
+    "WIKI-blaby": {
+      "n": "Blaby",
+      "q": 24,
+      "r": 15,
+      "svgId": "Blaby"
+    },
+    "WIKI-bosworth": {
+      "n": "Bosworth",
+      "q": 23,
+      "r": 15,
+      "svgId": "Bosworth"
+    },
+    "WIKI-charnwood": {
+      "n": "Charnwood",
+      "q": 27,
+      "r": 16,
+      "svgId": "Charnwood"
+    },
+    "WIKI-harborough": {
+      "n": "Harborough",
+      "q": 29,
+      "r": 17,
+      "svgId": "Harborough"
+    },
+    "WIKI-leicester-east": {
+      "n": "Leicester East",
+      "q": 26,
+      "r": 16,
+      "svgId": "LeicesterEast"
+    },
+    "WIKI-leicester-south": {
+      "n": "Leicester South",
+      "q": 25,
+      "r": 14,
+      "svgId": "LeicesterSouth"
+    },
+    "WIKI-leicester-west": {
+      "n": "Leicester West",
+      "q": 25,
+      "r": 15,
+      "svgId": "LeicesterWest"
+    },
+    "WIKI-loughborough": {
+      "n": "Loughborough",
+      "q": 25,
+      "r": 16,
+      "svgId": "Loughborough"
+    },
+    "WIKI-north-west-leicestershire": {
+      "n": "North West Leicestershire",
+      "q": 23,
+      "r": 16,
+      "svgId": "NorthWestLeicestershire"
+    },
+    "WIKI-rutlandand-melton": {
+      "n": "Rutlandand Melton",
+      "q": 27,
+      "r": 17,
+      "svgId": "RutlandandMelton"
+    },
+    "WIKI-gainsborough": {
+      "n": "Gainsborough",
+      "q": 26,
+      "r": 22,
+      "svgId": "Gainsborough"
+    },
+    "WIKI-granthamand-stamford": {
+      "n": "Granthamand Stamford",
+      "q": 27,
+      "r": 19,
+      "svgId": "GranthamandStamford"
+    },
+    "WIKI-lincoln": {
+      "n": "Lincoln",
+      "q": 27,
+      "r": 21,
+      "svgId": "Lincoln"
+    },
+    "WIKI-louthand-horncastle": {
+      "n": "Louthand Horncastle",
+      "q": 28,
+      "r": 21,
+      "svgId": "LouthandHorncastle"
+    },
+    "WIKI-sleafordand-north-hykeham": {
+      "n": "Sleafordand North Hykeham",
+      "q": 27,
+      "r": 20,
+      "svgId": "SleafordandNorthHykeham"
+    },
+    "WIKI-south-hollandand-the-deepings": {
+      "n": "South Hollandand The Deepings",
+      "q": 29,
+      "r": 19,
+      "svgId": "SouthHollandandTheDeepings"
+    },
+    "WIKI-bostonand-skegness": {
+      "n": "Bostonand Skegness",
+      "q": 29,
+      "r": 18,
+      "svgId": "BostonandSkegness"
+    },
+    "WIKI-weaver-vale": {
+      "n": "Weaver Vale",
+      "q": 13,
+      "r": 18,
+      "svgId": "WeaverVale"
+    },
+    "WIKI-warrington-south": {
+      "n": "Warrington South",
+      "q": 14,
+      "r": 20,
+      "svgId": "WarringtonSouth"
+    },
+    "WIKI-warrington-north": {
+      "n": "Warrington North",
+      "q": 13,
+      "r": 19,
+      "svgId": "WarringtonNorth"
+    },
+    "WIKI-macclesfield": {
+      "n": "Macclesfield",
+      "q": 15,
+      "r": 19,
+      "svgId": "Macclesfield"
+    },
+    "WIKI-halton": {
+      "n": "Halton",
+      "q": 12,
+      "r": 19,
+      "svgId": "Halton"
+    },
+    "WIKI-ellesmere-portand-neston": {
+      "n": "Ellesmere Portand Neston",
+      "q": 11,
+      "r": 17,
+      "svgId": "EllesmerePortandNeston"
+    },
+    "WIKI-eddisbury": {
+      "n": "Eddisbury",
+      "q": 14,
+      "r": 18,
+      "svgId": "Eddisbury"
+    },
+    "WIKI-creweand-nantwich": {
+      "n": "Creweand Nantwich",
+      "q": 15,
+      "r": 17,
+      "svgId": "CreweandNantwich"
+    },
+    "WIKI-congleton": {
+      "n": "Congleton",
+      "q": 16,
+      "r": 19,
+      "svgId": "Congleton"
+    },
+    "WIKI-city-of-chester": {
+      "n": "city of Chester",
+      "q": 13,
+      "r": 17,
+      "svgId": "CityofChester"
+    },
+    "WIKI-barrowand-furness": {
+      "n": "Barrowand Furness",
+      "q": 15,
+      "r": 29,
+      "svgId": "BarrowandFurness"
+    },
+    "WIKI-carlisle": {
+      "n": "Carlisle",
+      "q": 17,
+      "r": 30,
+      "svgId": "Carlisle"
+    },
+    "WIKI-copeland": {
+      "n": "Copeland",
+      "q": 14,
+      "r": 30,
+      "svgId": "Copeland"
+    },
+    "WIKI-penrithand-the-border": {
+      "n": "Penrithand The Border",
+      "q": 17,
+      "r": 31,
+      "svgId": "PenrithandTheBorder"
+    },
+    "WIKI-workington": {
+      "n": "Workington",
+      "q": 16,
+      "r": 31,
+      "svgId": "Workington"
+    },
+    "WIKI-altrinchamand-sale-west": {
+      "n": "Altrinchamand Sale West",
+      "q": 13,
+      "r": 20,
+      "svgId": "AltrinchamandSaleWest"
+    },
+    "WIKI-manchester-blackley": {
+      "n": "Manchester Blackley",
+      "q": 14,
+      "r": 22,
+      "svgId": "ManchesterBlackley"
+    },
+    "WIKI-manchester-central": {
+      "n": "Manchester Central",
+      "q": 15,
+      "r": 21,
+      "svgId": "ManchesterCentral"
+    },
+    "WIKI-manchester-gorton": {
+      "n": "Manchester Gorton",
+      "q": 16,
+      "r": 21,
+      "svgId": "ManchesterGorton"
+    },
+    "WIKI-wythenshaweand-sale-east": {
+      "n": "Wythenshaweand Sale East",
+      "q": 17,
+      "r": 19,
+      "svgId": "WythenshaweandSaleEast"
+    },
+    "WIKI-stockport": {
+      "n": "Stockport",
+      "q": 17,
+      "r": 21,
+      "svgId": "Stockport"
+    },
+    "WIKI-stalybridgeand-hyde": {
+      "n": "Stalybridgeand Hyde",
+      "q": 17,
+      "r": 22,
+      "svgId": "StalybridgeandHyde"
+    },
+    "WIKI-oldham-westand-royton": {
+      "n": "Oldham Westand Royton",
+      "q": 15,
+      "r": 23,
+      "svgId": "OldhamWestandRoyton"
+    },
+    "WIKI-oldham-eastand-saddleworth": {
+      "n": "Oldham Eastand Saddleworth",
+      "q": 17,
+      "r": 23,
+      "svgId": "OldhamEastandSaddleworth"
+    },
+    "WIKI-heywoodand-middleton": {
+      "n": "Heywoodand Middleton",
+      "q": 16,
+      "r": 25,
+      "svgId": "HeywoodandMiddleton"
+    },
+    "WIKI-hazel-grove": {
+      "n": "Hazel Grove",
+      "q": 17,
+      "r": 20,
+      "svgId": "HazelGrove"
+    },
+    "WIKI-dentonand-reddish": {
+      "n": "Dentonand Reddish",
+      "q": 18,
+      "r": 22,
+      "svgId": "DentonandReddish"
+    },
+    "WIKI-ashton-under-lyne": {
+      "n": "Ashton-under-Lyne",
+      "q": 16,
+      "r": 23,
+      "svgId": "Ashton-under-Lyne"
+    },
+    "WIKI-worsley": {
+      "n": "Worsley",
+      "q": 13,
+      "r": 21,
+      "svgId": "Worsley"
+    },
+    "WIKI-wigan": {
+      "n": "Wigan",
+      "q": 13,
+      "r": 24,
+      "svgId": "Wigan"
+    },
+    "WIKI-stretfordand-urmston": {
+      "n": "Stretfordand Urmston",
+      "q": 12,
+      "r": 21,
+      "svgId": "StretfordandUrmston"
+    },
+    "WIKI-salford": {
+      "n": "Salford",
+      "q": 15,
+      "r": 22,
+      "svgId": "Salford"
+    },
+    "WIKI-makerfield": {
+      "n": "Makerfield",
+      "q": 12,
+      "r": 25,
+      "svgId": "Makerfield"
+    },
+    "WIKI-leigh": {
+      "n": "Leigh",
+      "q": 12,
+      "r": 23,
+      "svgId": "Leigh"
+    },
+    "WIKI-eccles": {
+      "n": "Eccles",
+      "q": 14,
+      "r": 26,
+      "svgId": "Eccles"
+    },
+    "WIKI-bury-south": {
+      "n": "Bury South",
+      "q": 15,
+      "r": 24,
+      "svgId": "BurySouth"
+    },
+    "WIKI-bury-north": {
+      "n": "Bury North",
+      "q": 15,
+      "r": 25,
+      "svgId": "BuryNorth"
+    },
+    "WIKI-bolton-west": {
+      "n": "Bolton West",
+      "q": 13,
+      "r": 23,
+      "svgId": "BoltonWest"
+    },
+    "WIKI-bolton-south-east": {
+      "n": "Bolton South East",
+      "q": 13,
+      "r": 22,
+      "svgId": "BoltonSouthEast"
+    },
+    "WIKI-bolton-north-east": {
+      "n": "Bolton North East",
+      "q": 14,
+      "r": 24,
+      "svgId": "BoltonNorthEast"
+    },
+    "WIKI-blackburn": {
+      "n": "Blackburn",
+      "q": 15,
+      "r": 27,
+      "svgId": "Blackburn"
+    },
+    "WIKI-blackpool-northand-fleetwood": {
+      "n": "Blackpool Northand Fleetwood",
+      "q": 13,
+      "r": 28,
+      "svgId": "BlackpoolNorthandFleetwood"
+    },
+    "WIKI-blackpool-south": {
+      "n": "Blackpool South",
+      "q": 13,
+      "r": 27,
+      "svgId": "BlackpoolSouth"
+    },
+    "WIKI-burnley": {
+      "n": "Burnley",
+      "q": 17,
+      "r": 26,
+      "svgId": "Burnley"
+    },
+    "WIKI-chorley": {
+      "n": "Chorley",
+      "q": 14,
+      "r": 28,
+      "svgId": "Chorley"
+    },
+    "WIKI-fylde": {
+      "n": "Fylde",
+      "q": 13,
+      "r": 26,
+      "svgId": "Fylde"
+    },
+    "WIKI-hyndburn": {
+      "n": "Hyndburn",
+      "q": 16,
+      "r": 27,
+      "svgId": "Hyndburn"
+    },
+    "WIKI-morecambeand-lunesdale": {
+      "n": "Morecambeand Lunesdale",
+      "q": 16,
+      "r": 29,
+      "svgId": "MorecambeandLunesdale"
+    },
+    "WIKI-pendle": {
+      "n": "Pendle",
+      "q": 17,
+      "r": 27,
+      "svgId": "Pendle"
+    },
+    "WIKI-preston": {
+      "n": "Preston",
+      "q": 15,
+      "r": 28,
+      "svgId": "Preston"
+    },
+    "WIKI-ribble-valley": {
+      "n": "Ribble Valley",
+      "q": 18,
+      "r": 30,
+      "svgId": "RibbleValley"
+    },
+    "WIKI-rossendaleand-darwen": {
+      "n": "Rossendaleand Darwen",
+      "q": 17,
+      "r": 25,
+      "svgId": "RossendaleandDarwen"
+    },
+    "WIKI-south-ribble": {
+      "n": "South Ribble",
+      "q": 15,
+      "r": 26,
+      "svgId": "SouthRibble"
+    },
+    "WIKI-west-lancashire": {
+      "n": "West Lancashire",
+      "q": 13,
+      "r": 25,
+      "svgId": "WestLancashire"
+    },
+    "WIKI-liverpool-garston": {
+      "n": "Liverpool Garston",
+      "q": 11,
+      "r": 19,
+      "svgId": "LiverpoolGarston"
+    },
+    "WIKI-liverpool-riverside": {
+      "n": "Liverpool Riverside",
+      "q": 9,
+      "r": 20,
+      "svgId": "LiverpoolRiverside"
+    },
+    "WIKI-liverpool-walton": {
+      "n": "Liverpool Walton",
+      "q": 9,
+      "r": 22,
+      "svgId": "LiverpoolWalton"
+    },
+    "WIKI-liverpool-wavertree": {
+      "n": "Liverpool Wavertree",
+      "q": 10,
+      "r": 20,
+      "svgId": "LiverpoolWavertree"
+    },
+    "WIKI-liverpool-west-derby": {
+      "n": "Liverpool West Derby",
+      "q": 10,
+      "r": 22,
+      "svgId": "LiverpoolWestDerby"
+    },
+    "WIKI-southport": {
+      "n": "Southport",
+      "q": 11,
+      "r": 25,
+      "svgId": "Southport"
+    },
+    "WIKI-st-helens-south": {
+      "n": "St Helens South",
+      "q": 11,
+      "r": 20,
+      "svgId": "StHelensSouth"
+    },
+    "WIKI-st-helens-north": {
+      "n": "St Helens North",
+      "q": 11,
+      "r": 21,
+      "svgId": "StHelensNorth"
+    },
+    "WIKI-knowsley-south": {
+      "n": "Knowsley South",
+      "q": 11,
+      "r": 23,
+      "svgId": "KnowsleySouth"
+    },
+    "WIKI-knowsley-northand-sefton-east": {
+      "n": "Knowsley Northand Sefton East",
+      "q": 11,
+      "r": 22,
+      "svgId": "KnowsleyNorthandSeftonEast"
+    },
+    "WIKI-crosby": {
+      "n": "Crosby",
+      "q": 11,
+      "r": 24,
+      "svgId": "Crosby"
+    },
+    "WIKI-bootle": {
+      "n": "Bootle",
+      "q": 10,
+      "r": 24,
+      "svgId": "Bootle"
+    },
+    "WIKI-birkenhead": {
+      "n": "Birkenhead",
+      "q": 9,
+      "r": 18,
+      "svgId": "Birkenhead"
+    },
+    "WIKI-wallasey": {
+      "n": "Wallasey",
+      "q": 9,
+      "r": 19,
+      "svgId": "Wallasey"
+    },
+    "WIKI-wirral-south": {
+      "n": "Wirral South",
+      "q": 11,
+      "r": 18,
+      "svgId": "WirralSouth"
+    },
+    "WIKI-wirral-west": {
+      "n": "Wirral West",
+      "q": 8,
+      "r": 19,
+      "svgId": "WirralWest"
+    },
+    "WIKI-beverleyand-holderness": {
+      "n": "Beverleyand Holderness",
+      "q": 28,
+      "r": 25,
+      "svgId": "BeverleyandHolderness"
+    },
+    "WIKI-briggand-goole": {
+      "n": "Briggand Goole",
+      "q": 26,
+      "r": 24,
+      "svgId": "BriggandGoole"
+    },
+    "WIKI-cleethorpes": {
+      "n": "Cleethorpes",
+      "q": 29,
+      "r": 23,
+      "svgId": "Cleethorpes"
+    },
+    "WIKI-east-yorkshire": {
+      "n": "East Yorkshire",
+      "q": 27,
+      "r": 26,
+      "svgId": "EastYorkshire"
+    },
+    "WIKI-great-grimsby": {
+      "n": "Great Grimsby",
+      "q": 28,
+      "r": 23,
+      "svgId": "GreatGrimsby"
+    },
+    "WIKI-haltempriceand-howden": {
+      "n": "Haltempriceand Howden",
+      "q": 26,
+      "r": 26,
+      "svgId": "HaltempriceandHowden"
+    },
+    "WIKI-kingston-upon-hull-east": {
+      "n": "Kingston Upon Hull East",
+      "q": 27,
+      "r": 23,
+      "svgId": "KingstonUponHullEast"
+    },
+    "WIKI-kingstonupon-hull-north": {
+      "n": "Kingstonupon Hull North",
+      "q": 27,
+      "r": 25,
+      "svgId": "KingstonuponHullNorth"
+    },
+    "WIKI-kingstonupon-hull-westand-hessle": {
+      "n": "Kingstonupon Hull Westand Hessle",
+      "q": 27,
+      "r": 24,
+      "svgId": "KingstonuponHullWestandHessle"
+    },
+    "WIKI-scunthorpe": {
+      "n": "Scunthorpe",
+      "q": 27,
+      "r": 22,
+      "svgId": "Scunthorpe"
+    },
+    "WIKI-valeof-york": {
+      "n": "Valeof York",
+      "q": 22,
+      "r": 28,
+      "svgId": "ValeofYork"
+    },
+    "WIKI-skiptonand-ripon": {
+      "n": "Skiptonand Ripon",
+      "q": 18,
+      "r": 28,
+      "svgId": "SkiptonandRipon"
+    },
+    "WIKI-selby": {
+      "n": "Selby",
+      "q": 25,
+      "r": 27,
+      "svgId": "Selby"
+    },
+    "WIKI-ryedale": {
+      "n": "Ryedale",
+      "q": 25,
+      "r": 26,
+      "svgId": "Ryedale"
+    },
+    "WIKI-richmond-yorks": {
+      "n": "Richmond Yorks",
+      "q": 19,
+      "r": 27,
+      "svgId": "RichmondYorks"
+    },
+    "WIKI-harrogateand-knaresborough": {
+      "n": "Harrogateand Knaresborough",
+      "q": 21,
+      "r": 27,
+      "svgId": "HarrogateandKnaresborough"
+    },
+    "WIKI-city-of-york": {
+      "n": "city of York",
+      "q": 23,
+      "r": 27,
+      "svgId": "CityofYork"
+    },
+    "WIKI-barnsley-central": {
+      "n": "Barnsley Central",
+      "q": 20,
+      "r": 23,
+      "svgId": "BarnsleyCentral"
+    },
+    "WIKI-barnsley-eastand-mexborough": {
+      "n": "Barnsley Eastand Mexborough",
+      "q": 21,
+      "r": 22,
+      "svgId": "BarnsleyEastandMexborough"
+    },
+    "WIKI-barnsley-westand-penistone": {
+      "n": "Barnsley Westand Penistone",
+      "q": 25,
+      "r": 22,
+      "svgId": "BarnsleyWestandPenistone"
+    },
+    "WIKI-doncaster-central": {
+      "n": "Doncaster Central",
+      "q": 24,
+      "r": 23,
+      "svgId": "DoncasterCentral"
+    },
+    "WIKI-doncaster-north": {
+      "n": "Doncaster North",
+      "q": 23,
+      "r": 22,
+      "svgId": "DoncasterNorth"
+    },
+    "WIKI-don-valley": {
+      "n": "Don Valley",
+      "q": 25,
+      "r": 21,
+      "svgId": "DonValley"
+    },
+    "WIKI-rother-valley": {
+      "n": "Rother Valley",
+      "q": 23,
+      "r": 20,
+      "svgId": "RotherValley"
+    },
+    "WIKI-rotherham": {
+      "n": "Rotherham",
+      "q": 23,
+      "r": 21,
+      "svgId": "Rotherham"
+    },
+    "WIKI-sheffield-attercliffe": {
+      "n": "Sheffield Attercliffe",
+      "q": 21,
+      "r": 20,
+      "svgId": "SheffieldAttercliffe"
+    },
+    "WIKI-sheffield-brightside": {
+      "n": "Sheffield Brightside",
+      "q": 21,
+      "r": 21,
+      "svgId": "SheffieldBrightside"
+    },
+    "WIKI-sheffield-central": {
+      "n": "Sheffield Central",
+      "q": 20,
+      "r": 21,
+      "svgId": "SheffieldCentral"
+    },
+    "WIKI-sheffield-hallam": {
+      "n": "Sheffield Hallam",
+      "q": 19,
+      "r": 21,
+      "svgId": "SheffieldHallam"
+    },
+    "WIKI-sheffield-heeley": {
+      "n": "Sheffield Heeley",
+      "q": 19,
+      "r": 20,
+      "svgId": "SheffieldHeeley"
+    },
+    "WIKI-sheffield-hillsborough": {
+      "n": "Sheffield Hillsborough",
+      "q": 19,
+      "r": 22,
+      "svgId": "SheffieldHillsborough"
+    },
+    "WIKI-wentworth": {
+      "n": "Wentworth",
+      "q": 22,
+      "r": 22,
+      "svgId": "Wentworth"
+    },
+    "WIKI-batleyand-spen": {
+      "n": "Batleyand Spen",
+      "q": 21,
+      "r": 24,
+      "svgId": "BatleyandSpen"
+    },
+    "WIKI-bradford-north": {
+      "n": "Bradford North",
+      "q": 21,
+      "r": 25,
+      "svgId": "BradfordNorth"
+    },
+    "WIKI-bradford-west": {
+      "n": "Bradford West",
+      "q": 19,
+      "r": 25,
+      "svgId": "BradfordWest"
+    },
+    "WIKI-bradford-south": {
+      "n": "Bradford South",
+      "q": 20,
+      "r": 25,
+      "svgId": "BradfordSouth"
+    },
+    "WIKI-colne-valley": {
+      "n": "Colne Valley",
+      "q": 18,
+      "r": 24,
+      "svgId": "ColneValley"
+    },
+    "WIKI-dewsbury": {
+      "n": "Dewsbury",
+      "q": 21,
+      "r": 23,
+      "svgId": "Dewsbury"
+    },
+    "WIKI-elmet": {
+      "n": "Elmet",
+      "q": 24,
+      "r": 27,
+      "svgId": "Elmet"
+    },
+    "WIKI-halifax": {
+      "n": "Halifax",
+      "q": 19,
+      "r": 24,
+      "svgId": "Halifax"
+    },
+    "WIKI-hemsworth": {
+      "n": "Hemsworth",
+      "q": 23,
+      "r": 23,
+      "svgId": "Hemsworth"
+    },
+    "WIKI-huddersfield": {
+      "n": "Huddersfield",
+      "q": 19,
+      "r": 23,
+      "svgId": "Huddersfield"
+    },
+    "WIKI-keighley": {
+      "n": "Keighley",
+      "q": 19,
+      "r": 26,
+      "svgId": "Keighley"
+    },
+    "WIKI-leeds-central": {
+      "n": "Leeds Central",
+      "q": 23,
+      "r": 25,
+      "svgId": "LeedsCentral"
+    },
+    "WIKI-leeds-east": {
+      "n": "Leeds East",
+      "q": 25,
+      "r": 24,
+      "svgId": "LeedsEast"
+    },
+    "WIKI-leeds-north-east": {
+      "n": "Leeds North East",
+      "q": 25,
+      "r": 25,
+      "svgId": "LeedsNorthEast"
+    },
+    "WIKI-leeds-west": {
+      "n": "Leeds West",
+      "q": 22,
+      "r": 26,
+      "svgId": "LeedsWest"
+    },
+    "WIKI-morleyand-rothwell": {
+      "n": "Morleyand Rothwell",
+      "q": 23,
+      "r": 24,
+      "svgId": "MorleyandRothwell"
+    },
+    "WIKI-normanton": {
+      "n": "Normanton",
+      "q": 24,
+      "r": 25,
+      "svgId": "Normanton"
+    },
+    "WIKI-calder-valley": {
+      "n": "Calder Valley",
+      "q": 18,
+      "r": 26,
+      "svgId": "CalderValley"
+    },
+    "WIKI-wakefield": {
+      "n": "Wakefield",
+      "q": 22,
+      "r": 24,
+      "svgId": "Wakefield"
+    },
+    "WIKI-pudsey": {
+      "n": "Pudsey",
+      "q": 21,
+      "r": 26,
+      "svgId": "Pudsey"
+    },
+    "WIKI-pontefractand-castleford": {
+      "n": "Pontefractand Castleford",
+      "q": 25,
+      "r": 23,
+      "svgId": "PontefractandCastleford"
+    },
+    "WIKI-jarrow": {
+      "n": "Jarrow",
+      "q": 19,
+      "r": 31,
+      "svgId": "Jarrow"
+    },
+    "WIKI-newcastleupon-tyne-central": {
+      "n": "Newcastleupon Tyne Central",
+      "q": 18,
+      "r": 32,
+      "svgId": "NewcastleuponTyneCentral"
+    },
+    "WIKI-newcastleupon-tyne-eastand-wallsend": {
+      "n": "Newcastleupon Tyne Eastand Wallsend",
+      "q": 20,
+      "r": 33,
+      "svgId": "NewcastleuponTyneEastandWallsend"
+    },
+    "WIKI-newcastleupon-tyne-north": {
+      "n": "Newcastleupon Tyne North",
+      "q": 19,
+      "r": 32,
+      "svgId": "NewcastleuponTyneNorth"
+    },
+    "WIKI-north-tyneside": {
+      "n": "North Tyneside",
+      "q": 21,
+      "r": 32,
+      "svgId": "NorthTyneside"
+    },
+    "WIKI-south-shields": {
+      "n": "South Shields",
+      "q": 23,
+      "r": 32,
+      "svgId": "SouthShields"
+    },
+    "WIKI-tynemouth": {
+      "n": "Tynemouth",
+      "q": 22,
+      "r": 34,
+      "svgId": "Tynemouth"
+    },
+    "WIKI-gateshead-eastand-washington-west": {
+      "n": "Gateshead Eastand Washington West",
+      "q": 21,
+      "r": 31,
+      "svgId": "GatesheadEastandWashingtonWest"
+    },
+    "WIKI-houghtonand-washington-east": {
+      "n": "Houghtonand Washington East",
+      "q": 21,
+      "r": 30,
+      "svgId": "HoughtonandWashingtonEast"
+    },
+    "WIKI-sunderland-north": {
+      "n": "Sunderland North",
+      "q": 23,
+      "r": 31,
+      "svgId": "SunderlandNorth"
+    },
+    "WIKI-sunderland-south": {
+      "n": "Sunderland South",
+      "q": 22,
+      "r": 32,
+      "svgId": "SunderlandSouth"
+    },
+    "WIKI-tyne-bridge": {
+      "n": "Tyne Bridge",
+      "q": 20,
+      "r": 31,
+      "svgId": "TyneBridge"
+    },
+    "WIKI-blaydon": {
+      "n": "Blaydon",
+      "q": 19,
+      "r": 30,
+      "svgId": "Blaydon"
+    },
+    "WIKI-berwick-upon-tweed": {
+      "n": "Berwick-upon-Tweed",
+      "q": 18,
+      "r": 34,
+      "svgId": "Berwick-upon-Tweed"
+    },
+    "WIKI-blyth-valley": {
+      "n": "Blyth Valley",
+      "q": 21,
+      "r": 33,
+      "svgId": "BlythValley"
+    },
+    "WIKI-hexham": {
+      "n": "Hexham",
+      "q": 17,
+      "r": 32,
+      "svgId": "Hexham"
+    },
+    "WIKI-wansbeck": {
+      "n": "Wansbeck",
+      "q": 19,
+      "r": 33,
+      "svgId": "Wansbeck"
+    },
+    "WIKI-bishop-auckland": {
+      "n": "Bishop Auckland",
+      "q": 20,
+      "r": 29,
+      "svgId": "BishopAuckland"
+    },
+    "WIKI-city-of-durham": {
+      "n": "city of Durham",
+      "q": 21,
+      "r": 29,
+      "svgId": "CityofDurham"
+    },
+    "WIKI-darlington": {
+      "n": "Darlington",
+      "q": 21,
+      "r": 28,
+      "svgId": "Darlington"
+    },
+    "WIKI-easington": {
+      "n": "Easington",
+      "q": 23,
+      "r": 30,
+      "svgId": "Easington"
+    },
+    "WIKI-north-durham": {
+      "n": "North Durham",
+      "q": 19,
+      "r": 29,
+      "svgId": "NorthDurham"
+    },
+    "WIKI-north-west-durham": {
+      "n": "North West Durham",
+      "q": 19,
+      "r": 28,
+      "svgId": "NorthWestDurham"
+    },
+    "WIKI-sedgefield": {
+      "n": "Sedgefield",
+      "q": 22,
+      "r": 30,
+      "svgId": "Sedgefield"
+    },
+    "WIKI-hartlepool": {
+      "n": "Hartlepool",
+      "q": 24,
+      "r": 31,
+      "svgId": "Hartlepool"
+    },
+    "WIKI-middlesbrough": {
+      "n": "Middlesbrough",
+      "q": 24,
+      "r": 29,
+      "svgId": "Middlesbrough"
+    },
+    "WIKI-middlesbrough-southand-east-cleveland": {
+      "n": "Middlesbrough Southand East Cleveland",
+      "q": 25,
+      "r": 28,
+      "svgId": "MiddlesbroughSouthandEastCleveland"
+    },
+    "WIKI-redcar": {
+      "n": "Redcar",
+      "q": 25,
+      "r": 29,
+      "svgId": "Redcar"
+    },
+    "WIKI-stockton-north": {
+      "n": "Stockton North",
+      "q": 23,
+      "r": 29,
+      "svgId": "StocktonNorth"
+    },
+    "WIKI-stockton-south": {
+      "n": "Stockton South",
+      "q": 23,
+      "r": 28,
+      "svgId": "StocktonSouth"
+    },
+    "WIKI-mid-ulster": {
+      "n": "Mid Ulster",
+      "q": 0,
+      "r": 31,
+      "svgId": "MidUlster"
+    },
+    "WIKI-foyle": {
+      "n": "Foyle",
+      "q": 1,
+      "r": 31,
+      "svgId": "Foyle"
+    },
+    "WIKI-south-down": {
+      "n": "South Down",
+      "q": 5,
+      "r": 28,
+      "svgId": "SouthDown"
+    },
+    "WIKI-belfast-west": {
+      "n": "Belfast West",
+      "q": 3,
+      "r": 29,
+      "svgId": "BelfastWest"
+    },
+    "WIKI-belfast-east": {
+      "n": "Belfast East",
+      "q": 5,
+      "r": 29,
+      "svgId": "BelfastEast"
+    },
+    "WIKI-north-antrim": {
+      "n": "North Antrim",
+      "q": 3,
+      "r": 31,
+      "svgId": "NorthAntrim"
+    },
+    "WIKI-aberdeen-north": {
+      "n": "Aberdeen North",
+      "q": 18,
+      "r": 42,
+      "svgId": "Aberdeen_North"
+    },
+    "WIKI-aberdeen-south": {
+      "n": "Aberdeen South",
+      "q": 19,
+      "r": 40,
+      "svgId": "Aberdeen_South"
+    },
+    "WIKI-airdrie-and-shotts": {
+      "n": "Airdrie and Shotts",
+      "q": 13,
+      "r": 36,
+      "svgId": "Airdrie_and_Shotts"
+    },
+    "WIKI-angus": {
+      "n": "Angus",
+      "q": 17,
+      "r": 39,
+      "svgId": "Angus"
+    },
+    "WIKI-argyll-and-bute": {
+      "n": "Argyll and Bute",
+      "q": 13,
+      "r": 39,
+      "svgId": "Argyll_and_Bute"
+    },
+    "WIKI-ayr-carrick-and-cumnock": {
+      "n": "Ayr Carrick and Cumnock",
+      "q": 12,
+      "r": 33,
+      "svgId": "Ayr__Carrick_and_Cumnock"
+    },
+    "WIKI-north-ayrshire-and-arran": {
+      "n": "North Ayrshire and Arran",
+      "q": 8,
+      "r": 35,
+      "svgId": "North_Ayrshire_and_Arran"
+    },
+    "WIKI-west-aberdeenshire-and-kincardine": {
+      "n": "West Aberdeenshire and Kincardine",
+      "q": 17,
+      "r": 40,
+      "svgId": "West_Aberdeenshire_and_Kincardine"
+    },
+    "WIKI-banff-and-buchan": {
+      "n": "Banff and Buchan",
+      "q": 16,
+      "r": 41,
+      "svgId": "Banff_and_Buchan"
+    },
+    "WIKI-berwickshire-roxburgh-and-selkirk": {
+      "n": "Berwickshire Roxburgh and Selkirk",
+      "q": 17,
+      "r": 33,
+      "svgId": "Berwickshire__Roxburgh_and_Selkirk"
+    },
+    "WIKI-caithness-sutherland-and-easter-ross": {
+      "n": "Caithness Sutherland and Easter Ross",
+      "q": 15,
+      "r": 42,
+      "svgId": "Caithness__Sutherland_and_Easter_Ross"
+    },
+    "WIKI-central-ayrshire": {
+      "n": "Central Ayrshire",
+      "q": 10,
+      "r": 34,
+      "svgId": "Central_Ayrshire"
+    },
+    "WIKI-coatbridge-chryston-and-bellshill": {
+      "n": "Coatbridge Chryston and Bellshill",
+      "q": 12,
+      "r": 37,
+      "svgId": "Coatbridge__Chryston_and_Bellshill"
+    },
+    "WIKI-cumbernauld-kilsyth-and-kirkintilloch-east": {
+      "n": "Cumbernauld Kilsyth and Kirkintilloch East",
+      "q": 13,
+      "r": 37,
+      "svgId": "Cumbernauld__Kilsyth_and_Kirkintilloch_East"
+    },
+    "WIKI-dumfries-and-galloway": {
+      "n": "Dumfries and Galloway",
+      "q": 15,
+      "r": 32,
+      "svgId": "Dumfries_and_Galloway"
+    },
+    "WIKI-west-dunbartonshire": {
+      "n": "West Dunbartonshire",
+      "q": 11,
+      "r": 38,
+      "svgId": "West_Dunbartonshire"
+    },
+    "WIKI-dundee-west": {
+      "n": "Dundee West",
+      "q": 15,
+      "r": 39,
+      "svgId": "Dundee_West"
+    },
+    "WIKI-dunfermline-and-west-fife": {
+      "n": "Dunfermline and West Fife",
+      "q": 15,
+      "r": 37,
+      "svgId": "Dunfermline_and_West_Fife"
+    },
+    "WIKI-east-kilbride-strathaven-and-lesmahagow": {
+      "n": "East Kilbride Strathaven and Lesmahagow",
+      "q": 13,
+      "r": 33,
+      "svgId": "East_Kilbride__Strathaven_and_Lesmahagow"
+    },
+    "WIKI-east-lothian": {
+      "n": "East Lothian",
+      "q": 17,
+      "r": 34,
+      "svgId": "East_Lothian"
+    },
+    "WIKI-east-renfrewshire": {
+      "n": "East Renfrewshire",
+      "q": 9,
+      "r": 34,
+      "svgId": "East_Renfrewshire"
+    },
+    "WIKI-edinburgh-east": {
+      "n": "Edinburgh East",
+      "q": 17,
+      "r": 35,
+      "svgId": "Edinburgh_East"
+    },
+    "WIKI-edinburgh-north-and-leith": {
+      "n": "Edinburgh North and Leith",
+      "q": 15,
+      "r": 35,
+      "svgId": "Edinburgh_North_and_Leith"
+    },
+    "WIKI-edinburgh-south": {
+      "n": "Edinburgh South",
+      "q": 16,
+      "r": 35,
+      "svgId": "Edinburgh_South"
+    },
+    "WIKI-edinburgh-south-west": {
+      "n": "Edinburgh South West",
+      "q": 15,
+      "r": 34,
+      "svgId": "Edinburgh_South_West"
+    },
+    "WIKI-edinburgh-west": {
+      "n": "Edinburgh West",
+      "q": 14,
+      "r": 36,
+      "svgId": "Edinburgh_West"
+    },
+    "WIKI-falkirk": {
+      "n": "Falkirk",
+      "q": 14,
+      "r": 38,
+      "svgId": "Falkirk"
+    },
+    "WIKI-north-east-fife": {
+      "n": "North East Fife",
+      "q": 18,
+      "r": 40,
+      "svgId": "North_East_Fife"
+    },
+    "WIKI-glasgow-central": {
+      "n": "Glasgow Central",
+      "q": 11,
+      "r": 35,
+      "svgId": "Glasgow_Central"
+    },
+    "WIKI-glasgow-east": {
+      "n": "Glasgow East",
+      "q": 12,
+      "r": 35,
+      "svgId": "Glasgow_East"
+    },
+    "WIKI-glasgow-north": {
+      "n": "Glasgow North",
+      "q": 11,
+      "r": 36,
+      "svgId": "Glasgow_North"
+    },
+    "WIKI-glasgow-north-east": {
+      "n": "Glasgow North East",
+      "q": 11,
+      "r": 37,
+      "svgId": "Glasgow_North_East"
+    },
+    "WIKI-glasgow-north-west": {
+      "n": "Glasgow North West",
+      "q": 10,
+      "r": 38,
+      "svgId": "Glasgow_North_West"
+    },
+    "WIKI-glasgow-south": {
+      "n": "Glasgow South",
+      "q": 11,
+      "r": 34,
+      "svgId": "Glasgow_South"
+    },
+    "WIKI-glasgow-south-west": {
+      "n": "Glasgow South West",
+      "q": 10,
+      "r": 36,
+      "svgId": "Glasgow_South_West"
+    },
+    "WIKI-glenrothes": {
+      "n": "Glenrothes",
+      "q": 17,
+      "r": 38,
+      "svgId": "Glenrothes"
+    },
+    "WIKI-gordon": {
+      "n": "Gordon",
+      "q": 17,
+      "r": 41,
+      "svgId": "Gordon_00000115494029265376112190000002582235752864794011_"
+    },
+    "WIKI-inverclyde": {
+      "n": "Inverclyde",
+      "q": 9,
+      "r": 37,
+      "svgId": "Inverclyde"
+    },
+    "WIKI-kilmarnock-and-loudoun": {
+      "n": "Kilmarnock and Loudoun",
+      "q": 13,
+      "r": 32,
+      "svgId": "Kilmarnock_and_Loudoun"
+    },
+    "WIKI-kirkcaldy-and-cowdenbeath": {
+      "n": "Kirkcaldy and Cowdenbeath",
+      "q": 17,
+      "r": 37,
+      "svgId": "Kirkcaldy_and_Cowdenbeath"
+    },
+    "WIKI-lanark-and-hamilton-east": {
+      "n": "Lanark and Hamilton East",
+      "q": 14,
+      "r": 34,
+      "svgId": "Lanark_and_Hamilton_East"
+    },
+    "WIKI-linlithgow-and-east-falkirk": {
+      "n": "Linlithgow and East Falkirk",
+      "q": 15,
+      "r": 36,
+      "svgId": "Linlithgow_and_East_Falkirk"
+    },
+    "WIKI-livingston": {
+      "n": "Livingston",
+      "q": 13,
+      "r": 34,
+      "svgId": "Livingston_00000013192661166869914410000017545974455746448317_"
+    },
+    "WIKI-midlothian": {
+      "n": "Midlothian",
+      "q": 15,
+      "r": 33,
+      "svgId": "Midlothian_00000098929101672462220690000014576123967510378883_"
+    },
+    "WIKI-moray": {
+      "n": "Moray",
+      "q": 15,
+      "r": 40,
+      "svgId": "Moray"
+    },
+    "WIKI-motherwell-and-wishaw": {
+      "n": "Motherwell and Wishaw",
+      "q": 13,
+      "r": 35,
+      "svgId": "Motherwell_and_Wishaw"
+    },
+    "WIKI-ochil-and-south-perthshire": {
+      "n": "Ochil and South Perthshire",
+      "q": 15,
+      "r": 38,
+      "svgId": "Ochil_and_South_Perthshire"
+    },
+    "WIKI-orkney-and-shetland": {
+      "n": "Orkney and Shetland",
+      "q": 16,
+      "r": 45,
+      "svgId": "Orkney_and_Shetland"
+    },
+    "WIKI-paisley-and-renfrewshire-north": {
+      "n": "Paisley and Renfrewshire North",
+      "q": 9,
+      "r": 36,
+      "svgId": "Paisley_and_Renfrewshire_North"
+    },
+    "WIKI-paisley-and-renfrewshire-south": {
+      "n": "Paisley and Renfrewshire South",
+      "q": 9,
+      "r": 35,
+      "svgId": "Paisley_and_Renfrewshire_South"
+    },
+    "WIKI-perth-and-north-perthshire": {
+      "n": "Perth and North Perthshire",
+      "q": 14,
+      "r": 40,
+      "svgId": "Perth_and_North_Perthshire"
+    },
+    "WIKI-ross-skye-and-lochaber": {
+      "n": "Ross Skye and Lochaber",
+      "q": 13,
+      "r": 40,
+      "svgId": "Ross__Skye_and_Lochaber"
+    },
+    "WIKI-rutherglen-and-hamilton-west": {
+      "n": "Rutherglen and Hamilton West",
+      "q": 11,
+      "r": 33,
+      "svgId": "Rutherglen_and_Hamilton_West"
+    },
+    "WIKI-stirling": {
+      "n": "Stirling",
+      "q": 13,
+      "r": 38,
+      "svgId": "Stirling"
+    },
+    "WIKI-ynys-mon": {
+      "n": "Ynys Mon",
+      "q": 5,
+      "r": 17,
+      "svgId": "YnysMon"
+    },
+    "WIKI-wyre-forest": {
+      "n": "Wyre Forest",
+      "q": 14,
+      "r": 12,
+      "svgId": "WyreForest"
+    },
+    "WIKI-upminster": {
+      "n": "Upminster",
+      "q": 35,
+      "r": 8,
+      "svgId": "Upminster"
+    },
+    "WIKI-west-tyrone": {
+      "n": "West Tyrone",
+      "q": 1,
+      "r": 30,
+      "svgId": "WestTyrone"
+    },
+    "WIKI-teignbridge": {
+      "n": "Teignbridge",
+      "q": 7,
+      "r": 2,
+      "svgId": "Teignbridge"
+    },
+    "WIKI-tatton": {
+      "n": "Tatton",
+      "q": 15,
+      "r": 18,
+      "svgId": "Tatton"
+    },
+    "WIKI-strangford": {
+      "n": "Strangford",
+      "q": 6,
+      "r": 30,
+      "svgId": "Strangford"
+    },
+    "WIKI-romsey": {
+      "n": "Romsey",
+      "q": 17,
+      "r": 5,
+      "svgId": "Romsey"
+    },
+    "WIKI-romford": {
+      "n": "Romford",
+      "q": 33,
+      "r": 9,
+      "svgId": "Romford"
+    },
+    "WIKI-north-down": {
+      "n": "North Down",
+      "q": 5,
+      "r": 30,
+      "svgId": "NorthDown"
+    },
+    "WIKI-north-west-norfolk": {
+      "n": "North West Norfolk",
+      "q": 30,
+      "r": 18,
+      "svgId": "NorthWestNorfolk"
+    },
+    "WIKI-north-norfolk": {
+      "n": "North Norfolk",
+      "q": 32,
+      "r": 19,
+      "svgId": "NorthNorfolk"
+    },
+    "WIKI-newark": {
+      "n": "Newark",
+      "q": 25,
+      "r": 20,
+      "svgId": "Newark"
+    },
+    "WIKI-east-londonderry": {
+      "n": "East Londonderry",
+      "q": 2,
+      "r": 32,
+      "svgId": "EastLondonderry"
+    },
+    "WIKI-isleof-wight": {
+      "n": "Isleof Wight",
+      "q": 17,
+      "r": 1,
+      "svgId": "IsleofWight"
+    },
+    "WIKI-fermanaghand-south-tyrone": {
+      "n": "Fermanaghand South Tyrone",
+      "q": 1,
+      "r": 29,
+      "svgId": "FermanaghandSouthTyrone"
+    },
+    "WIKI-south-dorset": {
+      "n": "South Dorset",
+      "q": 11,
+      "r": 1,
+      "svgId": "SouthDorset"
+    },
+    "WIKI-mid-dorsetand-north-poole": {
+      "n": "Mid Dorsetand North Poole",
+      "q": 12,
+      "r": 5,
+      "svgId": "MidDorsetandNorthPoole"
+    },
+    "WIKI-chesterfield": {
+      "n": "Chesterfield",
+      "q": 22,
+      "r": 20,
+      "svgId": "Chesterfield"
+    },
+    "WIKI-cheadle": {
+      "n": "Cheadle",
+      "q": 18,
+      "r": 20,
+      "svgId": "Cheadle"
+    },
+    "WIKI-castle-point": {
+      "n": "Castle Point",
+      "q": 37,
+      "r": 12,
+      "svgId": "CastlePoint"
+    },
+    "WIKI-carmarthen-eastand-dinefwr": {
+      "n": "Carmarthen Eastand Dinefwr",
+      "q": 5,
+      "r": 9,
+      "svgId": "CarmarthenEastandDinefwr"
+    },
+    "WIKI-belfast-north": {
+      "n": "Belfast North",
+      "q": 4,
+      "r": 31,
+      "svgId": "BelfastNorth"
+    },
+    "WIKI-na-h-eileanan-an-iar": {
+      "n": "Na h-Eileanan an Iar",
+      "q": 12,
+      "r": 43,
+      "svgId": "Na_h-Eileanan_an_Iar"
+    },
+    "WIKI-inverness-nairn-badenoch-and-strathspey": {
+      "n": "Inverness Nairn Badenoch and Strathspey",
+      "q": 14,
+      "r": 42,
+      "svgId": "Inverness__Nairn__Badenoch_and_Strathspey"
+    },
+    "WIKI-dundee-east": {
+      "n": "Dundee East",
+      "q": 16,
+      "r": 39,
+      "svgId": "Dundee_East"
+    },
+    "WIKI-east-dunbartonshire": {
+      "n": "East Dunbartonshire",
+      "q": 12,
+      "r": 39,
+      "svgId": "East_Dunbartonshire"
+    },
+    "WIKI-dumfriesshire-clydesdale-and-tweeddale": {
+      "n": "Dumfriesshire Clydesdale and Tweeddale",
+      "q": 16,
+      "r": 33,
+      "svgId": "Dumfriesshire__Clydesdale_and_Tweeddale"
+    },
+    "WIKI-preseli-pembrokeshire": {
+      "n": "Preseli Pembrokeshire",
+      "q": 3,
+      "r": 9,
+      "svgId": "PreseliPembrokeshire"
+    },
+    "WIKI-monmouth": {
+      "n": "Monmouth",
+      "q": 13,
+      "r": 11,
+      "svgId": "Monmouth"
+    },
+    "WIKI-clwyd-west": {
+      "n": "Clwyd West",
+      "q": 8,
+      "r": 17,
+      "svgId": "ClwydWest"
+    },
+    "WIKI-ceredigion": {
+      "n": "Ceredigion",
+      "q": 7,
+      "r": 10,
+      "svgId": "Ceredigion"
+    },
+    "WIKI-cardiff-central": {
+      "n": "Cardiff Central",
+      "q": 10,
+      "r": 10,
+      "svgId": "CardiffCentral"
+    },
+    "WIKI-blaenau-gwent": {
+      "n": "Blaenau Gwent",
+      "q": 11,
+      "r": 13,
+      "svgId": "BlaenauGwent"
+    },
+    "WIKI-upper-bann": {
+      "n": "Upper Bann",
+      "q": 1,
+      "r": 28,
+      "svgId": "UpperBann"
+    },
+    "WIKI-belfast-south": {
+      "n": "Belfast South",
+      "q": 4,
+      "r": 29,
+      "svgId": "BelfastSouth"
+    },
+    "WIKI-south-antrim": {
+      "n": "South Antrim",
+      "q": 3,
+      "r": 30,
+      "svgId": "SouthAntrim"
+    },
+    "WIKI-newryand-armagh": {
+      "n": "Newryand Armagh",
+      "q": 3,
+      "r": 27,
+      "svgId": "NewryandArmagh"
+    },
+    "WIKI-lagan-valley": {
+      "n": "Lagan Valley",
+      "q": 3,
+      "r": 28,
+      "svgId": "LaganValley"
+    },
+    "WIKI-east-antrim": {
+      "n": "East Antrim",
+      "q": 5,
+      "r": 31,
+      "svgId": "EastAntrim"
+    },
+    "WIKI-wimbledon": {
+      "n": "Wimbledon",
+      "q": 25,
+      "r": 4,
+      "svgId": "Wimbledon"
+    },
+    "WIKI-weston-super-mare": {
+      "n": "Weston-Super-Mare",
+      "q": 11,
+      "r": 4,
+      "svgId": "Weston-Super-Mare"
+    },
+    "WIKI-westmorlandand-lonsdale": {
+      "n": "Westmorlandand Lonsdale",
+      "q": 17,
+      "r": 29,
+      "svgId": "WestmorlandandLonsdale"
+    },
+    "WIKI-welwyn-hatfield": {
+      "n": "Welwyn Hatfield",
+      "q": 32,
+      "r": 13,
+      "svgId": "WelwynHatfield"
+    },
+    "WIKI-wellingborough": {
+      "n": "Wellingborough",
+      "q": 27,
+      "r": 13,
+      "svgId": "Wellingborough"
+    },
+    "WIKI-torridgeand-west-devon": {
+      "n": "Torridgeand West Devon",
+      "q": 6,
+      "r": 4,
+      "svgId": "TorridgeandWestDevon"
+    },
+    "WIKI-the-wrekin": {
+      "n": "The Wrekin",
+      "q": 13,
+      "r": 16,
+      "svgId": "TheWrekin"
+    },
+    "WIKI-taunton": {
+      "n": "Taunton",
+      "q": 10,
+      "r": 4,
+      "svgId": "Taunton"
+    },
+    "WIKI-solihull": {
+      "n": "Solihull",
+      "q": 20,
+      "r": 13,
+      "svgId": "Solihull"
+    },
+    "WIKI-st-albans": {
+      "n": "St Albans",
+      "q": 31,
+      "r": 11,
+      "svgId": "StAlbans"
+    },
+    "WIKI-shrewsburyand-atcham": {
+      "n": "Shrewsburyand Atcham",
+      "q": 11,
+      "r": 15,
+      "svgId": "ShrewsburyandAtcham"
+    },
+    "WIKI-shipley": {
+      "n": "Shipley",
+      "q": 20,
+      "r": 27,
+      "svgId": "Shipley"
+    },
+    "WIKI-scarboroughand-whitby": {
+      "n": "Scarboroughand Whitby",
+      "q": 26,
+      "r": 28,
+      "svgId": "ScarboroughandWhitby"
+    },
+    "WIKI-rugbyand-kenilworth": {
+      "n": "Rugbyand Kenilworth",
+      "q": 23,
+      "r": 13,
+      "svgId": "RugbyandKenilworth"
+    },
+    "WIKI-rochdale": {
+      "n": "Rochdale",
+      "q": 17,
+      "r": 24,
+      "svgId": "Rochdale"
+    },
+    "WIKI-putney": {
+      "n": "Putney",
+      "q": 27,
+      "r": 4,
+      "svgId": "Putney"
+    },
+    "WIKI-reading-east": {
+      "n": "Reading East",
+      "q": 19,
+      "r": 9,
+      "svgId": "ReadingEast"
+    },
+    "WIKI-peterborough": {
+      "n": "Peterborough",
+      "q": 29,
+      "r": 16,
+      "svgId": "Peterborough"
+    },
+    "WIKI-northampton-south": {
+      "n": "Northampton South",
+      "q": 26,
+      "r": 14,
+      "svgId": "NorthamptonSouth"
+    },
+    "WIKI-newbury": {
+      "n": "Newbury",
+      "q": 18,
+      "r": 10,
+      "svgId": "Newbury"
+    },
+    "WIKI-milton-keynes-north-east": {
+      "n": "Milton Keynes North East",
+      "q": 27,
+      "r": 12,
+      "svgId": "MiltonKeynesNorthEast"
+    },
+    "WIKI-manchester-withington": {
+      "n": "Manchester Withington",
+      "q": 15,
+      "r": 20,
+      "svgId": "ManchesterWithington"
+    },
+    "WIKI-ludlow": {
+      "n": "Ludlow",
+      "q": 12,
+      "r": 15,
+      "svgId": "Ludlow"
+    },
+    "WIKI-leeds-north-west": {
+      "n": "Leeds North West",
+      "q": 23,
+      "r": 26,
+      "svgId": "LeedsNorthWest"
+    },
+    "WIKI-lancasterand-wyre": {
+      "n": "Lancasterand Wyre",
+      "q": 17,
+      "r": 28,
+      "svgId": "LancasterandWyre"
+    },
+    "WIKI-kettering": {
+      "n": "Kettering",
+      "q": 27,
+      "r": 15,
+      "svgId": "Kettering"
+    },
+    "WIKI-ilford-north": {
+      "n": "Ilford North",
+      "q": 31,
+      "r": 9,
+      "svgId": "IlfordNorth"
+    },
+    "WIKI-hornseyand-wood-green": {
+      "n": "Hornseyand Wood Green",
+      "q": 29,
+      "r": 9,
+      "svgId": "HornseyandWoodGreen"
+    },
+    "WIKI-hornchurch": {
+      "n": "Hornchurch",
+      "q": 33,
+      "r": 8,
+      "svgId": "Hornchurch"
+    },
+    "WIKI-hemel-hempstead": {
+      "n": "Hemel Hempstead",
+      "q": 30,
+      "r": 12,
+      "svgId": "HemelHempstead"
+    },
+    "WIKI-hammersmithand-fulham": {
+      "n": "Hammersmithand Fulham",
+      "q": 26,
+      "r": 6,
+      "svgId": "HammersmithandFulham"
+    },
+    "WIKI-harwich": {
+      "n": "Harwich",
+      "q": 37,
+      "r": 13,
+      "svgId": "Harwich"
+    },
+    "WIKI-guildford": {
+      "n": "Guildford",
+      "q": 21,
+      "r": 3,
+      "svgId": "Guildford"
+    },
+    "WIKI-gravesham": {
+      "n": "Gravesham",
+      "q": 36,
+      "r": 7,
+      "svgId": "Gravesham"
+    },
+    "WIKI-forestof-dean": {
+      "n": "Forestof Dean",
+      "q": 13,
+      "r": 10,
+      "svgId": "ForestofDean"
+    },
+    "WIKI-falmouthand-camborne": {
+      "n": "Falmouthand Camborne",
+      "q": 3,
+      "r": 0,
+      "svgId": "FalmouthandCamborne"
+    },
+    "WIKI-enfield-southgate": {
+      "n": "Enfield Southgate",
+      "q": 28,
+      "r": 11,
+      "svgId": "EnfieldSouthgate"
+    },
+    "WIKI-croydon-central": {
+      "n": "Croydon Central",
+      "q": 29,
+      "r": 2,
+      "svgId": "CroydonCentral"
+    },
+    "WIKI-cambridge": {
+      "n": "Cambridge",
+      "q": 31,
+      "r": 15,
+      "svgId": "Cambridge"
+    },
+    "WIKI-bristol-west": {
+      "n": "Bristol West",
+      "q": 12,
+      "r": 7,
+      "svgId": "BristolWest"
+    },
+    "WIKI-braintree": {
+      "n": "Braintree",
+      "q": 33,
+      "r": 13,
+      "svgId": "Braintree"
+    },
+    "WIKI-birmingham-yardley": {
+      "n": "Birmingham Yardley",
+      "q": 21,
+      "r": 13,
+      "svgId": "BirminghamYardley"
+    },
+    "WIKI-bexleyheathand-crayford": {
+      "n": "Bexleyheathand Crayford",
+      "q": 35,
+      "r": 6,
+      "svgId": "BexleyheathandCrayford"
+    },
+    "WIKI-bethnal-greenand-bow": {
+      "n": "Bethnal Greenand Bow",
+      "q": 32,
+      "r": 7,
+      "svgId": "BethnalGreenandBow"
+    },
+    "WIKI-path": {
+      "n": "Path",
+      "q": 7,
+      "r": 17,
+      "svgId": "Path"
+    },
+    "WIKI-path1": {
+      "n": "path1",
+      "q": 35,
+      "r": 8,
+      "svgId": "path1"
+    },
+    "WIKI-path2": {
+      "n": "path2",
+      "q": 13,
+      "r": 10,
+      "svgId": "path2"
+    },
+    "WIKI-path3": {
+      "n": "path3",
+      "q": 15,
+      "r": 31,
+      "svgId": "path3"
+    },
+    "WIKI-path4": {
+      "n": "path4",
+      "q": 17,
+      "r": 27,
+      "svgId": "path4"
+    },
+    "WIKI-path5": {
+      "n": "path5",
+      "q": 16,
+      "r": 32,
+      "svgId": "path5"
+    },
+    "WIKI-path6": {
+      "n": "path6",
+      "q": 18,
+      "r": 20,
+      "svgId": "path6"
+    },
+    "WIKI-path7": {
+      "n": "path7",
+      "q": 18,
+      "r": 19,
+      "svgId": "path7"
+    },
+    "WIKI-path8": {
+      "n": "path8",
+      "q": 27,
+      "r": 12,
+      "svgId": "path8"
+    },
+    "WIKI-path9": {
+      "n": "path9",
+      "q": 24,
+      "r": 13,
+      "svgId": "path9"
+    }
+  }
+}

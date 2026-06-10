@@ -1,0 +1,119 @@
+{
+  "id": "1983",
+  "year": 1983,
+  "displayYear": "1983",
+  "date": "9 June 1983",
+  "winner": "conservative",
+  "pm": "Margaret Thatcher",
+  "outgoingPm": "Margaret Thatcher",
+  "totalSeats": 650,
+  "summary": "Thatcher won a landslide majority of 144 seats — the largest since 1945 — buoyed by the \"Falklands Factor.\" Labour, under Michael Foot, campaigned on a left-wing manifesto described by Gerald Kaufman as \"the longest suicide note in history.\" The SDP–Liberal Alliance won 25.4% of the vote — only just below Labour's 27.6% — but won only 23 seats under first-past-the-post.",
+  "highlights": [
+    "Falklands Factor delivers Thatcher a majority of 144",
+    "Labour's manifesto dubbed \"the longest suicide note in history\"",
+    "SDP–Liberal Alliance wins 25.4% of votes but only 23 seats",
+    "Neil Kinnock begins rebuilding Labour in the years following"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 14,
+      "votes": 0,
+      "percentage": 31
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 20,
+      "votes": 0,
+      "percentage": 37.5
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 2,
+      "votes": 0,
+      "percentage": 23.2
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 21,
+      "votes": 0,
+      "percentage": 28.4
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 41,
+      "votes": 0,
+      "percentage": 35.1
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 8,
+      "votes": 0,
+      "percentage": 24.5
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 397,
+      "votes": 13012316,
+      "percentage": 42.4
+    },
+    {
+      "party": "labour",
+      "seats": 209,
+      "votes": 8456934,
+      "percentage": 27.6
+    },
+    {
+      "party": "libdem",
+      "seats": 23,
+      "votes": 7780949,
+      "percentage": 25.4
+    },
+    {
+      "party": "snp",
+      "seats": 2,
+      "votes": 331975,
+      "percentage": 1.1
+    },
+    {
+      "party": "plaid",
+      "seats": 2,
+      "votes": 125309,
+      "percentage": 0.4
+    },
+    {
+      "party": "uup",
+      "seats": 11,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "dup",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sdlp",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sinnfein",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "others",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 3.1
+    }
+  ]
+}

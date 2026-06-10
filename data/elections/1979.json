@@ -1,0 +1,114 @@
+{
+  "id": "1979",
+  "year": 1979,
+  "displayYear": "1979",
+  "date": "3 May 1979",
+  "winner": "conservative",
+  "pm": "Margaret Thatcher",
+  "outgoingPm": "James Callaghan",
+  "totalSeats": 635,
+  "summary": "The 1979 election brought Margaret Thatcher to power and ushered in one of the most ideologically transformative governments of the twentieth century. Labour under James Callaghan had survived the \"Winter of Discontent\" (1978–79) but could not escape the damage to its reputation. Callaghan fell after losing a vote of no confidence by a single vote. Thatcher won a majority of 43, becoming the first female Prime Minister in British history.",
+  "highlights": [
+    "Margaret Thatcher becomes Britain's first female Prime Minister",
+    "Callaghan government falls on vote of no confidence — by one vote",
+    "\"Winter of Discontent\" shapes the election narrative",
+    "Saatchi & Saatchi's \"Labour Isn't Working\" poster becomes iconic",
+    "Beginning of 18 years of Conservative government (1979–1997)"
+  ],
+  "youtubeId": "",
+  "extraManifestoParties": [],
+  "partyResults": {
+    "welshcon": {
+      "party": "welshcon",
+      "seats": 11,
+      "votes": 0,
+      "percentage": 32.2
+    },
+    "welshlab": {
+      "party": "welshlab",
+      "seats": 22,
+      "votes": 0,
+      "percentage": 48.6
+    },
+    "welshlibdem": {
+      "party": "welshlibdem",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 10.6
+    },
+    "scottishcon": {
+      "party": "scottishcon",
+      "seats": 22,
+      "votes": 0,
+      "percentage": 31.4
+    },
+    "scottishlab": {
+      "party": "scottishlab",
+      "seats": 44,
+      "votes": 0,
+      "percentage": 41.5
+    },
+    "scottishlibdem": {
+      "party": "scottishlibdem",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 9
+    }
+  },
+  "results": [
+    {
+      "party": "conservative",
+      "seats": 339,
+      "votes": 13697923,
+      "percentage": 43.9
+    },
+    {
+      "party": "labour",
+      "seats": 268,
+      "votes": 11532218,
+      "percentage": 36.9
+    },
+    {
+      "party": "libdem",
+      "seats": 11,
+      "votes": 4313804,
+      "percentage": 13.8
+    },
+    {
+      "party": "snp",
+      "seats": 2,
+      "votes": 504259,
+      "percentage": 1.6
+    },
+    {
+      "party": "plaid",
+      "seats": 2,
+      "votes": 132544,
+      "percentage": 0.4
+    },
+    {
+      "party": "uup",
+      "seats": 5,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "dup",
+      "seats": 3,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "sdlp",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "others",
+      "seats": 4,
+      "votes": 0,
+      "percentage": 3.4
+    }
+  ]
+}

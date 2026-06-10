@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1945",
+    "year": 1945,
+    "displayYear": "1945",
+    "date": "5 July 1945",
+    "winner": "labour",
+    "pm": "Clement Attlee",
+    "totalSeats": 640
+  },
+  {
+    "id": "1950",
+    "year": 1950,
+    "displayYear": "1950",
+    "date": "23 February 1950",
+    "winner": "labour",
+    "pm": "Clement Attlee",
+    "totalSeats": 625
+  },
+  {
+    "id": "1951",
+    "year": 1951,
+    "displayYear": "1951",
+    "date": "25 October 1951",
+    "winner": "conservative",
+    "pm": "Winston Churchill",
+    "totalSeats": 625
+  },
+  {
+    "id": "1955",
+    "year": 1955,
+    "displayYear": "1955",
+    "date": "26 May 1955",
+    "winner": "conservative",
+    "pm": "Anthony Eden",
+    "totalSeats": 630
+  },
+  {
+    "id": "1959",
+    "year": 1959,
+    "displayYear": "1959",
+    "date": "8 October 1959",
+    "winner": "conservative",
+    "pm": "Harold Macmillan",
+    "totalSeats": 630
+  },
+  {
+    "id": "1964",
+    "year": 1964,
+    "displayYear": "1964",
+    "date": "15 October 1964",
+    "winner": "labour",
+    "pm": "Harold Wilson",
+    "totalSeats": 630
+  },
+  {
+    "id": "1966",
+    "year": 1966,
+    "displayYear": "1966",
+    "date": "31 March 1966",
+    "winner": "labour",
+    "pm": "Harold Wilson",
+    "totalSeats": 630
+  },
+  {
+    "id": "1970",
+    "year": 1970,
+    "displayYear": "1970",
+    "date": "18 June 1970",
+    "winner": "conservative",
+    "pm": "Edward Heath",
+    "totalSeats": 630
+  },
+  {
+    "id": "feb1974",
+    "year": 1974,
+    "displayYear": "Feb 1974",
+    "date": "28 February 1974",
+    "winner": "labour",
+    "pm": "Harold Wilson",
+    "totalSeats": 635
+  },
+  {
+    "id": "oct1974",
+    "year": 1974,
+    "displayYear": "Oct 1974",
+    "date": "10 October 1974",
+    "winner": "labour",
+    "pm": "Harold Wilson",
+    "totalSeats": 635
+  },
+  {
+    "id": "1979",
+    "year": 1979,
+    "displayYear": "1979",
+    "date": "3 May 1979",
+    "winner": "conservative",
+    "pm": "Margaret Thatcher",
+    "totalSeats": 635
+  },
+  {
+    "id": "1983",
+    "year": 1983,
+    "displayYear": "1983",
+    "date": "9 June 1983",
+    "winner": "conservative",
+    "pm": "Margaret Thatcher",
+    "totalSeats": 650
+  },
+  {
+    "id": "1987",
+    "year": 1987,
+    "displayYear": "1987",
+    "date": "11 June 1987",
+    "winner": "conservative",
+    "pm": "Margaret Thatcher",
+    "totalSeats": 650
+  },
+  {
+    "id": "1992",
+    "year": 1992,
+    "displayYear": "1992",
+    "date": "9 April 1992",
+    "winner": "conservative",
+    "pm": "John Major",
+    "totalSeats": 651
+  },
+  {
+    "id": "1997",
+    "year": 1997,
+    "displayYear": "1997",
+    "date": "1 May 1997",
+    "winner": "labour",
+    "pm": "Tony Blair",
+    "totalSeats": 659
+  },
+  {
+    "id": "2001",
+    "year": 2001,
+    "displayYear": "2001",
+    "date": "7 June 2001",
+    "winner": "labour",
+    "pm": "Tony Blair",
+    "totalSeats": 659
+  },
+  {
+    "id": "2005",
+    "year": 2005,
+    "displayYear": "2005",
+    "date": "5 May 2005",
+    "winner": "labour",
+    "pm": "Tony Blair",
+    "totalSeats": 646
+  },
+  {
+    "id": "2010",
+    "year": 2010,
+    "displayYear": "2010",
+    "date": "6 May 2010",
+    "winner": "conservative",
+    "pm": "David Cameron",
+    "totalSeats": 650
+  },
+  {
+    "id": "2015",
+    "year": 2015,
+    "displayYear": "2015",
+    "date": "7 May 2015",
+    "winner": "conservative",
+    "pm": "David Cameron",
+    "totalSeats": 650
+  },
+  {
+    "id": "2017",
+    "year": 2017,
+    "displayYear": "2017",
+    "date": "8 June 2017",
+    "winner": "conservative",
+    "pm": "Theresa May",
+    "totalSeats": 650
+  },
+  {
+    "id": "2019",
+    "year": 2019,
+    "displayYear": "2019",
+    "date": "12 December 2019",
+    "winner": "conservative",
+    "pm": "Boris Johnson",
+    "totalSeats": 650
+  },
+  {
+    "id": "2024",
+    "year": 2024,
+    "displayYear": "2024",
+    "date": "4 July 2024",
+    "winner": "labour",
+    "pm": "Keir Starmer",
+    "totalSeats": 650
+  }
+]

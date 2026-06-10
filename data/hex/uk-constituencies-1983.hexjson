@@ -1,0 +1,3257 @@
+{
+  "layout": "odd-r",
+  "source": "example-map.svg (ODI/BBC hex scaffold)",
+  "boundarySet": "1983",
+  "hexes": {
+    "SCAF-aldershot": {
+      "n": "Aldershot",
+      "q": -3,
+      "r": -11
+    },
+    "SCAF-aldridge-brownhills": {
+      "n": "Aldridge-Brownhills",
+      "q": -3,
+      "r": -1
+    },
+    "SCAF-altrincham-and-sale-west": {
+      "n": "Altrincham and Sale West",
+      "q": -7,
+      "r": 3
+    },
+    "SCAF-amber-valley": {
+      "n": "Amber Valley",
+      "q": 1,
+      "r": 2
+    },
+    "SCAF-ashford": {
+      "n": "Ashford",
+      "q": 12,
+      "r": -13
+    },
+    "SCAF-ashton-under-lyne": {
+      "n": "Ashton-under-Lyne",
+      "q": -5,
+      "r": 6
+    },
+    "SCAF-aylesbury": {
+      "n": "Aylesbury",
+      "q": 2,
+      "r": -6
+    },
+    "SCAF-banbury": {
+      "n": "Banbury",
+      "q": 1,
+      "r": -5
+    },
+    "SCAF-barking": {
+      "n": "Barking",
+      "q": 8,
+      "r": -9
+    },
+    "SCAF-barnsley-central": {
+      "n": "Barnsley Central",
+      "q": -2,
+      "r": 6
+    },
+    "SCAF-barrow-and-furness": {
+      "n": "Barrow and Furness",
+      "q": -5,
+      "r": 13
+    },
+    "SCAF-basildon-and-billericay": {
+      "n": "Basildon and Billericay",
+      "q": 8,
+      "r": -5
+    },
+    "SCAF-basingstoke": {
+      "n": "Basingstoke",
+      "q": -3,
+      "r": -10
+    },
+    "SCAF-bassetlaw": {
+      "n": "Bassetlaw",
+      "q": 2,
+      "r": 4
+    },
+    "SCAF-bath": {
+      "n": "Bath",
+      "q": -6,
+      "r": -9
+    },
+    "SCAF-battersea": {
+      "n": "Battersea",
+      "q": 4,
+      "r": -12
+    },
+    "SCAF-beckenham": {
+      "n": "Beckenham",
+      "q": 7,
+      "r": -14
+    },
+    "SCAF-bedford": {
+      "n": "Bedford",
+      "q": 4,
+      "r": -3
+    },
+    "SCAF-bermondsey-and-old-southwark": {
+      "n": "Bermondsey and Old Southwark",
+      "q": 5,
+      "r": -11
+    },
+    "SCAF-bethnal-green-and-bow": {
+      "n": "Bethnal Green and Bow",
+      "q": 7,
+      "r": -10
+    },
+    "SCAF-beverley-and-holderness": {
+      "n": "Beverley and Holderness",
+      "q": 4,
+      "r": 8
+    },
+    "SCAF-bexhill-and-battle": {
+      "n": "Bexhill and Battle",
+      "q": 10,
+      "r": -15
+    },
+    "SCAF-bexleyheath-and-crayford": {
+      "n": "Bexleyheath and Crayford",
+      "q": 9,
+      "r": -10
+    },
+    "SCAF-birkenhead": {
+      "n": "Birkenhead",
+      "q": -10,
+      "r": 2
+    },
+    "SCAF-birmingham-edgbaston": {
+      "n": "Birmingham, Edgbaston",
+      "q": -4,
+      "r": -3
+    },
+    "SCAF-birmingham-erdington": {
+      "n": "Birmingham, Erdington",
+      "q": -2,
+      "r": -2
+    },
+    "SCAF-birmingham-hall-green": {
+      "n": "Birmingham, Hall Green",
+      "q": -3,
+      "r": -4
+    },
+    "SCAF-birmingham-ladywood": {
+      "n": "Birmingham, Ladywood",
+      "q": -3,
+      "r": -3
+    },
+    "SCAF-birmingham-northfield": {
+      "n": "Birmingham, Northfield",
+      "q": -4,
+      "r": -4
+    },
+    "SCAF-birmingham-perry-barr": {
+      "n": "Birmingham, Perry Barr",
+      "q": -3,
+      "r": -2
+    },
+    "SCAF-birmingham-selly-oak": {
+      "n": "Birmingham, Selly Oak",
+      "q": -3,
+      "r": -5
+    },
+    "SCAF-bishop-auckland": {
+      "n": "Bishop Auckland",
+      "q": -2,
+      "r": 12
+    },
+    "SCAF-blackburn": {
+      "n": "Blackburn",
+      "q": -6,
+      "r": 10
+    },
+    "SCAF-blackley-and-broughton": {
+      "n": "Blackley and Broughton",
+      "q": -6,
+      "r": 6
+    },
+    "SCAF-blackpool-north-and-cleveleys": {
+      "n": "Blackpool North and Cleveleys",
+      "q": -6,
+      "r": 12
+    },
+    "SCAF-blackpool-south": {
+      "n": "Blackpool South",
+      "q": -8,
+      "r": 11
+    },
+    "SCAF-blaydon": {
+      "n": "Blaydon",
+      "q": -3,
+      "r": 14
+    },
+    "SCAF-bognor-regis-and-littlehampton": {
+      "n": "Bognor Regis and Littlehampton",
+      "q": 2,
+      "r": -15
+    },
+    "SCAF-bolsover": {
+      "n": "Bolsover",
+      "q": 1,
+      "r": 3
+    },
+    "SCAF-bolton-north-east": {
+      "n": "Bolton North East",
+      "q": -7,
+      "r": 7
+    },
+    "SCAF-bolton-south-east": {
+      "n": "Bolton South East",
+      "q": -7,
+      "r": 6
+    },
+    "SCAF-bolton-west": {
+      "n": "Bolton West",
+      "q": -8,
+      "r": 7
+    },
+    "SCAF-bootle": {
+      "n": "Bootle",
+      "q": -10,
+      "r": 7
+    },
+    "SCAF-boston-and-skegness": {
+      "n": "Boston and Skegness",
+      "q": 4,
+      "r": 5
+    },
+    "SCAF-bournemouth-east": {
+      "n": "Bournemouth East",
+      "q": -8,
+      "r": -13
+    },
+    "SCAF-bournemouth-west": {
+      "n": "Bournemouth West",
+      "q": -8,
+      "r": -14
+    },
+    "SCAF-bracknell": {
+      "n": "Bracknell",
+      "q": -2,
+      "r": -10
+    },
+    "SCAF-bradford-south": {
+      "n": "Bradford South",
+      "q": -2,
+      "r": 8
+    },
+    "SCAF-bradford-west": {
+      "n": "Bradford West",
+      "q": -3,
+      "r": 9
+    },
+    "SCAF-braintree": {
+      "n": "Braintree",
+      "q": 8,
+      "r": -2
+    },
+    "SCAF-brentford-and-isleworth": {
+      "n": "Brentford and Isleworth",
+      "q": 1,
+      "r": -11
+    },
+    "SCAF-brentwood-and-ongar": {
+      "n": "Brentwood and Ongar",
+      "q": 8,
+      "r": -4
+    },
+    "SCAF-bridgwater-and-west-somerset": {
+      "n": "Bridgwater and West Somerset",
+      "q": -11,
+      "r": -12
+    },
+    "SCAF-brigg-and-goole": {
+      "n": "Brigg and Goole",
+      "q": 1,
+      "r": 7
+    },
+    "SCAF-brighton-pavilion": {
+      "n": "Brighton, Pavilion",
+      "q": 6,
+      "r": -15
+    },
+    "SCAF-bristol-east": {
+      "n": "Bristol East",
+      "q": -7,
+      "r": -9
+    },
+    "SCAF-bristol-north-west": {
+      "n": "Bristol North West",
+      "q": -8,
+      "r": -9
+    },
+    "SCAF-bristol-south": {
+      "n": "Bristol South",
+      "q": -7,
+      "r": -10
+    },
+    "SCAF-bristol-west": {
+      "n": "Bristol West",
+      "q": -8,
+      "r": -10
+    },
+    "SCAF-broadland": {
+      "n": "Broadland",
+      "q": 7,
+      "r": 2
+    },
+    "SCAF-bromley-and-chislehurst": {
+      "n": "Bromley and Chislehurst",
+      "q": 8,
+      "r": -13
+    },
+    "SCAF-bromsgrove": {
+      "n": "Bromsgrove",
+      "q": -4,
+      "r": -5
+    },
+    "SCAF-broxbourne": {
+      "n": "Broxbourne",
+      "q": 8,
+      "r": -6
+    },
+    "SCAF-buckingham": {
+      "n": "Buckingham",
+      "q": 2,
+      "r": -5
+    },
+    "SCAF-burnley": {
+      "n": "Burnley",
+      "q": -4,
+      "r": 10
+    },
+    "SCAF-burton": {
+      "n": "Burton",
+      "q": -3,
+      "r": 1
+    },
+    "SCAF-bury-north": {
+      "n": "Bury North",
+      "q": -6,
+      "r": 9
+    },
+    "SCAF-bury-south": {
+      "n": "Bury South",
+      "q": -6,
+      "r": 8
+    },
+    "SCAF-bury-st-edmunds": {
+      "n": "Bury St Edmunds",
+      "q": 9,
+      "r": -2
+    },
+    "SCAF-calder-valley": {
+      "n": "Calder Valley",
+      "q": -4,
+      "r": 9
+    },
+    "SCAF-camberwell-and-peckham": {
+      "n": "Camberwell and Peckham",
+      "q": 6,
+      "r": -12
+    },
+    "SCAF-camborne-and-redruth": {
+      "n": "Camborne and Redruth",
+      "q": -16,
+      "r": -15
+    },
+    "SCAF-cambridge": {
+      "n": "Cambridge",
+      "q": 6,
+      "r": -1
+    },
+    "SCAF-cannock-chase": {
+      "n": "Cannock Chase",
+      "q": -4,
+      "r": -1
+    },
+    "SCAF-canterbury": {
+      "n": "Canterbury",
+      "q": 12,
+      "r": -12
+    },
+    "SCAF-carlisle": {
+      "n": "Carlisle",
+      "q": -4,
+      "r": 14
+    },
+    "SCAF-carshalton-and-wallington": {
+      "n": "Carshalton and Wallington",
+      "q": 4,
+      "r": -14
+    },
+    "SCAF-castle-point": {
+      "n": "Castle Point",
+      "q": 10,
+      "r": -7
+    },
+    "SCAF-central-devon": {
+      "n": "Central Devon",
+      "q": -13,
+      "r": -13
+    },
+    "SCAF-central-suffolk-and-north-ipswich": {
+      "n": "Central Suffolk and North Ipswich",
+      "q": 9,
+      "r": -1
+    },
+    "SCAF-charnwood": {
+      "n": "Charnwood",
+      "q": 2,
+      "r": -1
+    },
+    "SCAF-chatham-and-aylesford": {
+      "n": "Chatham and Aylesford",
+      "q": 10,
+      "r": -11
+    },
+    "SCAF-cheadle": {
+      "n": "Cheadle",
+      "q": -5,
+      "r": 3
+    },
+    "SCAF-chelsea-and-fulham": {
+      "n": "Chelsea and Fulham",
+      "q": 2,
+      "r": -11
+    },
+    "SCAF-cheltenham": {
+      "n": "Cheltenham",
+      "q": -7,
+      "r": -7
+    },
+    "SCAF-chesham-and-amersham": {
+      "n": "Chesham and Amersham",
+      "q": 1,
+      "r": -8
+    },
+    "SCAF-chesterfield": {
+      "n": "Chesterfield",
+      "q": -1,
+      "r": 3
+    },
+    "SCAF-chichester": {
+      "n": "Chichester",
+      "q": -1,
+      "r": -15
+    },
+    "SCAF-chingford-and-woodford-green": {
+      "n": "Chingford and Woodford Green",
+      "q": 6,
+      "r": -6
+    },
+    "SCAF-chippenham": {
+      "n": "Chippenham",
+      "q": -5,
+      "r": -9
+    },
+    "SCAF-chipping-barnet": {
+      "n": "Chipping Barnet",
+      "q": 3,
+      "r": -7
+    },
+    "SCAF-chorley": {
+      "n": "Chorley",
+      "q": -7,
+      "r": 9
+    },
+    "SCAF-christchurch": {
+      "n": "Christchurch",
+      "q": -7,
+      "r": -13
+    },
+    "SCAF-cities-of-london-and-westminster": {
+      "n": "Cities of London and Westminster",
+      "q": 4,
+      "r": -11
+    },
+    "SCAF-city-of-chester": {
+      "n": "City of Chester",
+      "q": -8,
+      "r": 1
+    },
+    "SCAF-city-of-durham": {
+      "n": "City of Durham",
+      "q": -2,
+      "r": 13
+    },
+    "SCAF-clacton": {
+      "n": "Clacton",
+      "q": 10,
+      "r": -3
+    },
+    "SCAF-cleethorpes": {
+      "n": "Cleethorpes",
+      "q": 2,
+      "r": 7
+    },
+    "SCAF-colchester": {
+      "n": "Colchester",
+      "q": 9,
+      "r": -3
+    },
+    "SCAF-colne-valley": {
+      "n": "Colne Valley",
+      "q": -4,
+      "r": 7
+    },
+    "SCAF-congleton": {
+      "n": "Congleton",
+      "q": -5,
+      "r": 2
+    },
+    "SCAF-copeland": {
+      "n": "Copeland",
+      "q": -6,
+      "r": 13
+    },
+    "SCAF-corby": {
+      "n": "Corby",
+      "q": 4,
+      "r": 1
+    },
+    "SCAF-coventry-north-east": {
+      "n": "Coventry North East",
+      "q": -1,
+      "r": -3
+    },
+    "SCAF-crawley": {
+      "n": "Crawley",
+      "q": 1,
+      "r": -14
+    },
+    "SCAF-crewe-and-nantwich": {
+      "n": "Crewe and Nantwich",
+      "q": -6,
+      "r": 1
+    },
+    "SCAF-croydon-central": {
+      "n": "Croydon Central",
+      "q": 6,
+      "r": -14
+    },
+    "SCAF-croydon-north": {
+      "n": "Croydon North",
+      "q": 6,
+      "r": -13
+    },
+    "SCAF-croydon-south": {
+      "n": "Croydon South",
+      "q": 5,
+      "r": -14
+    },
+    "SCAF-dagenham-and-rainham": {
+      "n": "Dagenham and Rainham",
+      "q": 9,
+      "r": -8
+    },
+    "SCAF-dartford": {
+      "n": "Dartford",
+      "q": 9,
+      "r": -11
+    },
+    "SCAF-daventry": {
+      "n": "Daventry",
+      "q": 1,
+      "r": -3
+    },
+    "SCAF-denton-and-reddish": {
+      "n": "Denton and Reddish",
+      "q": -4,
+      "r": 5
+    },
+    "SCAF-derby-south": {
+      "n": "Derby South",
+      "q": -1,
+      "r": 1
+    },
+    "SCAF-derbyshire-dales": {
+      "n": "Derbyshire Dales",
+      "q": -3,
+      "r": 3
+    },
+    "SCAF-devizes": {
+      "n": "Devizes",
+      "q": -5,
+      "r": -10
+    },
+    "SCAF-dewsbury": {
+      "n": "Dewsbury",
+      "q": -2,
+      "r": 7
+    },
+    "SCAF-don-valley": {
+      "n": "Don Valley",
+      "q": 1,
+      "r": 5
+    },
+    "SCAF-doncaster-north": {
+      "n": "Doncaster North",
+      "q": 1,
+      "r": 6
+    },
+    "SCAF-dover": {
+      "n": "Dover",
+      "q": 13,
+      "r": -12
+    },
+    "SCAF-dudley-north": {
+      "n": "Dudley North",
+      "q": -7,
+      "r": -3
+    },
+    "SCAF-dudley-south": {
+      "n": "Dudley South",
+      "q": -6,
+      "r": -4
+    },
+    "SCAF-dulwich-and-west-norwood": {
+      "n": "Dulwich and West Norwood",
+      "q": 5,
+      "r": -13
+    },
+    "SCAF-ealing-central-and-acton": {
+      "n": "Ealing Central and Acton",
+      "q": 1,
+      "r": -10
+    },
+    "SCAF-ealing-southall": {
+      "n": "Ealing, Southall",
+      "q": 1,
+      "r": -10
+    },
+    "SCAF-easington": {
+      "n": "Easington",
+      "q": 1,
+      "r": 14
+    },
+    "SCAF-east-ham": {
+      "n": "East Ham",
+      "q": 7,
+      "r": -9
+    },
+    "SCAF-east-hampshire": {
+      "n": "East Hampshire",
+      "q": -3,
+      "r": -12
+    },
+    "SCAF-east-worthing-and-shoreham": {
+      "n": "East Worthing and Shoreham",
+      "q": 4,
+      "r": -15
+    },
+    "SCAF-east-yorkshire": {
+      "n": "East Yorkshire",
+      "q": 3,
+      "r": 10
+    },
+    "SCAF-eastbourne": {
+      "n": "Eastbourne",
+      "q": 9,
+      "r": -15
+    },
+    "SCAF-eastleigh": {
+      "n": "Eastleigh",
+      "q": -4,
+      "r": -12
+    },
+    "SCAF-eddisbury": {
+      "n": "Eddisbury",
+      "q": -7,
+      "r": 1
+    },
+    "SCAF-edmonton": {
+      "n": "Edmonton",
+      "q": 5,
+      "r": -7
+    },
+    "SCAF-ellesmere-port-and-neston": {
+      "n": "Ellesmere Port and Neston",
+      "q": -9,
+      "r": 1
+    },
+    "SCAF-eltham": {
+      "n": "Eltham",
+      "q": 8,
+      "r": -12
+    },
+    "SCAF-enfield-north": {
+      "n": "Enfield North",
+      "q": 5,
+      "r": -6
+    },
+    "SCAF-enfield-southgate": {
+      "n": "Enfield, Southgate",
+      "q": 4,
+      "r": -6
+    },
+    "SCAF-epping-forest": {
+      "n": "Epping Forest",
+      "q": 9,
+      "r": -6
+    },
+    "SCAF-epsom-and-ewell": {
+      "n": "Epsom and Ewell",
+      "q": 1,
+      "r": -13
+    },
+    "SCAF-erith-and-thamesmead": {
+      "n": "Erith and Thamesmead",
+      "q": 8,
+      "r": -11
+    },
+    "SCAF-esher-and-walton": {
+      "n": "Esher and Walton",
+      "q": -1,
+      "r": -13
+    },
+    "SCAF-exeter": {
+      "n": "Exeter",
+      "q": -12,
+      "r": -13
+    },
+    "SCAF-fareham": {
+      "n": "Fareham",
+      "q": -4,
+      "r": -14
+    },
+    "SCAF-faversham-and-mid-kent": {
+      "n": "Faversham and Mid Kent",
+      "q": 12,
+      "r": -11
+    },
+    "SCAF-feltham-and-heston": {
+      "n": "Feltham and Heston",
+      "q": 1,
+      "r": -11
+    },
+    "SCAF-filton-and-bradley-stoke": {
+      "n": "Filton and Bradley Stoke",
+      "q": -8,
+      "r": -8
+    },
+    "SCAF-finchley-and-golders-green": {
+      "n": "Finchley and Golders Green",
+      "q": 3,
+      "r": -8
+    },
+    "SCAF-folkestone-and-hythe": {
+      "n": "Folkestone and Hythe",
+      "q": 12,
+      "r": -14
+    },
+    "SCAF-forest-of-dean": {
+      "n": "Forest of Dean",
+      "q": -7,
+      "r": -6
+    },
+    "SCAF-fylde": {
+      "n": "Fylde",
+      "q": -7,
+      "r": 10
+    },
+    "SCAF-gainsborough": {
+      "n": "Gainsborough",
+      "q": 2,
+      "r": 5
+    },
+    "SCAF-garston-and-halewood": {
+      "n": "Garston and Halewood",
+      "q": -9,
+      "r": 3
+    },
+    "SCAF-gateshead": {
+      "n": "Gateshead",
+      "q": -3,
+      "r": 15
+    },
+    "SCAF-gedling": {
+      "n": "Gedling",
+      "q": 3,
+      "r": 2
+    },
+    "SCAF-gloucester": {
+      "n": "Gloucester",
+      "q": -7,
+      "r": -8
+    },
+    "SCAF-gosport": {
+      "n": "Gosport",
+      "q": -3,
+      "r": -14
+    },
+    "SCAF-grantham-and-stamford": {
+      "n": "Grantham and Stamford",
+      "q": 3,
+      "r": 3
+    },
+    "SCAF-gravesham": {
+      "n": "Gravesham",
+      "q": 10,
+      "r": -10
+    },
+    "SCAF-great-grimsby": {
+      "n": "Great Grimsby",
+      "q": 3,
+      "r": 6
+    },
+    "SCAF-great-yarmouth": {
+      "n": "Great Yarmouth",
+      "q": 8,
+      "r": 2
+    },
+    "SCAF-greenwich-and-woolwich": {
+      "n": "Greenwich and Woolwich",
+      "q": 7,
+      "r": -11
+    },
+    "SCAF-guildford": {
+      "n": "Guildford",
+      "q": -2,
+      "r": -13
+    },
+    "SCAF-hackney-north-and-stoke-newington": {
+      "n": "Hackney North and Stoke Newington",
+      "q": 5,
+      "r": -9
+    },
+    "SCAF-hackney-south-and-shoreditch": {
+      "n": "Hackney South and Shoreditch",
+      "q": 6,
+      "r": -10
+    },
+    "SCAF-halesowen-and-rowley-regis": {
+      "n": "Halesowen and Rowley Regis",
+      "q": -6,
+      "r": -3
+    },
+    "SCAF-halifax": {
+      "n": "Halifax",
+      "q": -3,
+      "r": 8
+    },
+    "SCAF-haltemprice-and-howden": {
+      "n": "Haltemprice and Howden",
+      "q": 2,
+      "r": 9
+    },
+    "SCAF-halton": {
+      "n": "Halton",
+      "q": -8,
+      "r": 2
+    },
+    "SCAF-hammersmith": {
+      "n": "Hammersmith",
+      "q": 2,
+      "r": -10
+    },
+    "SCAF-hampstead-and-kilburn": {
+      "n": "Hampstead and Kilburn",
+      "q": 3,
+      "r": -9
+    },
+    "SCAF-harborough": {
+      "n": "Harborough",
+      "q": 3,
+      "r": -1
+    },
+    "SCAF-harlow": {
+      "n": "Harlow",
+      "q": 8,
+      "r": -3
+    },
+    "SCAF-harrow-east": {
+      "n": "Harrow East",
+      "q": 2,
+      "r": -8
+    },
+    "SCAF-harrow-west": {
+      "n": "Harrow West",
+      "q": 1,
+      "r": -8
+    },
+    "SCAF-hartlepool": {
+      "n": "Hartlepool",
+      "q": 1,
+      "r": 14
+    },
+    "SCAF-harwich-and-north-essex": {
+      "n": "Harwich and North Essex",
+      "q": 10,
+      "r": -2
+    },
+    "SCAF-hastings-and-rye": {
+      "n": "Hastings and Rye",
+      "q": 11,
+      "r": -14
+    },
+    "SCAF-havant": {
+      "n": "Havant",
+      "q": -1,
+      "r": -14
+    },
+    "SCAF-hayes-and-harlington": {
+      "n": "Hayes and Harlington",
+      "q": -1,
+      "r": -9
+    },
+    "SCAF-hazel-grove": {
+      "n": "Hazel Grove",
+      "q": -4,
+      "r": 4
+    },
+    "SCAF-hemel-hempstead": {
+      "n": "Hemel Hempstead",
+      "q": 5,
+      "r": -5
+    },
+    "SCAF-hendon": {
+      "n": "Hendon",
+      "q": 2,
+      "r": -7
+    },
+    "SCAF-henley": {
+      "n": "Henley",
+      "q": 1,
+      "r": -6
+    },
+    "SCAF-hereford-and-south-herefordshire": {
+      "n": "Hereford and South Herefordshire",
+      "q": -7,
+      "r": -5
+    },
+    "SCAF-hertford-and-stortford": {
+      "n": "Hertford and Stortford",
+      "q": 7,
+      "r": -3
+    },
+    "SCAF-hexham": {
+      "n": "Hexham",
+      "q": -4,
+      "r": 16
+    },
+    "SCAF-heywood-and-middleton": {
+      "n": "Heywood and Middleton",
+      "q": -5,
+      "r": 8
+    },
+    "SCAF-high-peak": {
+      "n": "High Peak",
+      "q": -3,
+      "r": 4
+    },
+    "SCAF-hitchin-and-harpenden": {
+      "n": "Hitchin and Harpenden",
+      "q": 5,
+      "r": -3
+    },
+    "SCAF-hornchurch-and-upminster": {
+      "n": "Hornchurch and Upminster",
+      "q": 8,
+      "r": -8
+    },
+    "SCAF-hornsey-and-wood-green": {
+      "n": "Hornsey and Wood Green",
+      "q": 4,
+      "r": -7
+    },
+    "SCAF-horsham": {
+      "n": "Horsham",
+      "q": 1,
+      "r": -15
+    },
+    "SCAF-houghton-and-sunderland-south": {
+      "n": "Houghton and Sunderland South",
+      "q": -1,
+      "r": 14
+    },
+    "SCAF-hove": {
+      "n": "Hove",
+      "q": 5,
+      "r": -15
+    },
+    "SCAF-huddersfield": {
+      "n": "Huddersfield",
+      "q": -3,
+      "r": 7
+    },
+    "SCAF-huntingdon": {
+      "n": "Huntingdon",
+      "q": 5,
+      "r": -2
+    },
+    "SCAF-hyndburn": {
+      "n": "Hyndburn",
+      "q": -5,
+      "r": 10
+    },
+    "SCAF-ilford-south": {
+      "n": "Ilford South",
+      "q": 7,
+      "r": -8
+    },
+    "SCAF-ipswich": {
+      "n": "Ipswich",
+      "q": 9,
+      "r": -1
+    },
+    "SCAF-isle-of-wight": {
+      "n": "Isle of Wight",
+      "q": -6,
+      "r": -15
+    },
+    "SCAF-islington-south-and-finsbury": {
+      "n": "Islington South and Finsbury",
+      "q": 5,
+      "r": -10
+    },
+    "SCAF-jarrow": {
+      "n": "Jarrow",
+      "q": -1,
+      "r": 15
+    },
+    "SCAF-keighley": {
+      "n": "Keighley",
+      "q": -3,
+      "r": 10
+    },
+    "SCAF-kenilworth-and-southam": {
+      "n": "Kenilworth and Southam",
+      "q": 1,
+      "r": -4
+    },
+    "SCAF-kettering": {
+      "n": "Kettering",
+      "q": 3,
+      "r": -1
+    },
+    "SCAF-kingston-upon-hull-east": {
+      "n": "Kingston upon Hull East",
+      "q": 3,
+      "r": 7
+    },
+    "SCAF-kingston-upon-hull-north": {
+      "n": "Kingston upon Hull North",
+      "q": 3,
+      "r": 9
+    },
+    "SCAF-kingston-upon-hull-west-and-hessle": {
+      "n": "Kingston upon Hull West and Hessle",
+      "q": 3,
+      "r": 8
+    },
+    "SCAF-kingswood": {
+      "n": "Kingswood",
+      "q": -6,
+      "r": -8
+    },
+    "SCAF-knowsley": {
+      "n": "Knowsley",
+      "q": -9,
+      "r": 6
+    },
+    "SCAF-lancaster-and-fleetwood": {
+      "n": "Lancaster and Fleetwood",
+      "q": -4,
+      "r": 12
+    },
+    "SCAF-leeds-east": {
+      "n": "Leeds East",
+      "q": 1,
+      "r": 9
+    },
+    "SCAF-leeds-north-west": {
+      "n": "Leeds North West",
+      "q": 1,
+      "r": 10
+    },
+    "SCAF-leeds-west": {
+      "n": "Leeds West",
+      "q": -1,
+      "r": 9
+    },
+    "SCAF-leicester-east": {
+      "n": "Leicester East",
+      "q": 2,
+      "r": -1
+    },
+    "SCAF-leicester-south": {
+      "n": "Leicester South",
+      "q": 2,
+      "r": -2
+    },
+    "SCAF-leicester-west": {
+      "n": "Leicester West",
+      "q": 1,
+      "r": -1
+    },
+    "SCAF-leigh": {
+      "n": "Leigh",
+      "q": -8,
+      "r": 6
+    },
+    "SCAF-lewisham-east": {
+      "n": "Lewisham East",
+      "q": 7,
+      "r": -13
+    },
+    "SCAF-lewisham-west-and-penge": {
+      "n": "Lewisham West and Penge",
+      "q": 7,
+      "r": -12
+    },
+    "SCAF-lewisham-deptford": {
+      "n": "Lewisham, Deptford",
+      "q": 6,
+      "r": -11
+    },
+    "SCAF-lichfield": {
+      "n": "Lichfield",
+      "q": -2,
+      "r": 1
+    },
+    "SCAF-lincoln": {
+      "n": "Lincoln",
+      "q": 3,
+      "r": 5
+    },
+    "SCAF-liverpool-riverside": {
+      "n": "Liverpool, Riverside",
+      "q": -10,
+      "r": 4
+    },
+    "SCAF-liverpool-walton": {
+      "n": "Liverpool, Walton",
+      "q": -10,
+      "r": 6
+    },
+    "SCAF-liverpool-wavertree": {
+      "n": "Liverpool, Wavertree",
+      "q": -10,
+      "r": 3
+    },
+    "SCAF-liverpool-west-derby": {
+      "n": "Liverpool, West Derby",
+      "q": -10,
+      "r": 5
+    },
+    "SCAF-loughborough": {
+      "n": "Loughborough",
+      "q": 2,
+      "r": -1
+    },
+    "SCAF-louth-and-horncastle": {
+      "n": "Louth and Horncastle",
+      "q": 4,
+      "r": 6
+    },
+    "SCAF-ludlow": {
+      "n": "Ludlow",
+      "q": -8,
+      "r": -2
+    },
+    "SCAF-luton-north": {
+      "n": "Luton North",
+      "q": 5,
+      "r": -4
+    },
+    "SCAF-luton-south": {
+      "n": "Luton South",
+      "q": 4,
+      "r": -5
+    },
+    "SCAF-macclesfield": {
+      "n": "Macclesfield",
+      "q": -4,
+      "r": 3
+    },
+    "SCAF-makerfield": {
+      "n": "Makerfield",
+      "q": -9,
+      "r": 7
+    },
+    "SCAF-maldon": {
+      "n": "Maldon",
+      "q": 11,
+      "r": -4
+    },
+    "SCAF-manchester-central": {
+      "n": "Manchester Central",
+      "q": -6,
+      "r": 5
+    },
+    "SCAF-manchester-gorton": {
+      "n": "Manchester, Gorton",
+      "q": -5,
+      "r": 5
+    },
+    "SCAF-manchester-withington": {
+      "n": "Manchester, Withington",
+      "q": -6,
+      "r": 4
+    },
+    "SCAF-mansfield": {
+      "n": "Mansfield",
+      "q": 1,
+      "r": 3
+    },
+    "SCAF-meon-valley": {
+      "n": "Meon Valley",
+      "q": -4,
+      "r": -13
+    },
+    "SCAF-mid-bedfordshire": {
+      "n": "Mid Bedfordshire",
+      "q": 4,
+      "r": -4
+    },
+    "SCAF-mid-derbyshire": {
+      "n": "Mid Derbyshire",
+      "q": -2,
+      "r": 2
+    },
+    "SCAF-mid-dorset-and-north-poole": {
+      "n": "Mid Dorset and North Poole",
+      "q": -8,
+      "r": -12
+    },
+    "SCAF-mid-norfolk": {
+      "n": "Mid Norfolk",
+      "q": 6,
+      "r": 1
+    },
+    "SCAF-mid-worcestershire": {
+      "n": "Mid Worcestershire",
+      "q": -5,
+      "r": -5
+    },
+    "SCAF-middlesbrough": {
+      "n": "Middlesbrough",
+      "q": 1,
+      "r": 12
+    },
+    "SCAF-middlesbrough-south-and-east-cleveland": {
+      "n": "Middlesbrough South and East Cleveland",
+      "q": 2,
+      "r": 12
+    },
+    "SCAF-milton-keynes-north": {
+      "n": "Milton Keynes North",
+      "q": 3,
+      "r": -3
+    },
+    "SCAF-milton-keynes-south": {
+      "n": "Milton Keynes South",
+      "q": 3,
+      "r": -4
+    },
+    "SCAF-mitcham-and-morden": {
+      "n": "Mitcham and Morden",
+      "q": 3,
+      "r": -14
+    },
+    "SCAF-mole-valley": {
+      "n": "Mole Valley",
+      "q": 1,
+      "r": -14
+    },
+    "SCAF-morecambe-and-lunesdale": {
+      "n": "Morecambe and Lunesdale",
+      "q": -5,
+      "r": 12
+    },
+    "SCAF-morley-and-outwood": {
+      "n": "Morley and Outwood",
+      "q": 1,
+      "r": 8
+    },
+    "SCAF-new-forest-east": {
+      "n": "New Forest East",
+      "q": -6,
+      "r": -13
+    },
+    "SCAF-new-forest-west": {
+      "n": "New Forest West",
+      "q": -6,
+      "r": -12
+    },
+    "SCAF-newark": {
+      "n": "Newark",
+      "q": 3,
+      "r": 4
+    },
+    "SCAF-newbury": {
+      "n": "Newbury",
+      "q": -4,
+      "r": -7
+    },
+    "SCAF-newcastle-upon-tyne-central": {
+      "n": "Newcastle upon Tyne Central",
+      "q": -4,
+      "r": 15
+    },
+    "SCAF-newcastle-upon-tyne-east": {
+      "n": "Newcastle upon Tyne East",
+      "q": -2,
+      "r": 16
+    },
+    "SCAF-newcastle-upon-tyne-north": {
+      "n": "Newcastle upon Tyne North",
+      "q": -3,
+      "r": 16
+    },
+    "SCAF-newcastle-under-lyme": {
+      "n": "Newcastle-under-Lyme",
+      "q": -5,
+      "r": 1
+    },
+    "SCAF-newton-abbot": {
+      "n": "Newton Abbot",
+      "q": -12,
+      "r": -14
+    },
+    "SCAF-north-cornwall": {
+      "n": "North Cornwall",
+      "q": -14,
+      "r": -14
+    },
+    "SCAF-north-devon": {
+      "n": "North Devon",
+      "q": -12,
+      "r": -12
+    },
+    "SCAF-north-dorset": {
+      "n": "North Dorset",
+      "q": -7,
+      "r": -12
+    },
+    "SCAF-north-durham": {
+      "n": "North Durham",
+      "q": -2,
+      "r": 14
+    },
+    "SCAF-north-east-bedfordshire": {
+      "n": "North East Bedfordshire",
+      "q": 4,
+      "r": -2
+    },
+    "SCAF-north-east-cambridgeshire": {
+      "n": "North East Cambridgeshire",
+      "q": 5,
+      "r": -1
+    },
+    "SCAF-north-east-hampshire": {
+      "n": "North East Hampshire",
+      "q": -3,
+      "r": -9
+    },
+    "SCAF-north-east-hertfordshire": {
+      "n": "North East Hertfordshire",
+      "q": 6,
+      "r": -3
+    },
+    "SCAF-north-east-somerset": {
+      "n": "North East Somerset",
+      "q": -6,
+      "r": -10
+    },
+    "SCAF-north-herefordshire": {
+      "n": "North Herefordshire",
+      "q": -8,
+      "r": -4
+    },
+    "SCAF-north-norfolk": {
+      "n": "North Norfolk",
+      "q": 6,
+      "r": 2
+    },
+    "SCAF-north-shropshire": {
+      "n": "North Shropshire",
+      "q": -8,
+      "r": 1
+    },
+    "SCAF-north-somerset": {
+      "n": "North Somerset",
+      "q": -9,
+      "r": -11
+    },
+    "SCAF-north-swindon": {
+      "n": "North Swindon",
+      "q": -5,
+      "r": -7
+    },
+    "SCAF-north-thanet": {
+      "n": "North Thanet",
+      "q": 13,
+      "r": -10
+    },
+    "SCAF-north-tyneside": {
+      "n": "North Tyneside",
+      "q": -1,
+      "r": 16
+    },
+    "SCAF-north-warwickshire": {
+      "n": "North Warwickshire",
+      "q": -1,
+      "r": -1
+    },
+    "SCAF-north-west-cambridgeshire": {
+      "n": "North West Cambridgeshire",
+      "q": 5,
+      "r": -1
+    },
+    "SCAF-north-west-durham": {
+      "n": "North West Durham",
+      "q": -3,
+      "r": 13
+    },
+    "SCAF-north-west-hampshire": {
+      "n": "North West Hampshire",
+      "q": -4,
+      "r": -10
+    },
+    "SCAF-north-west-leicestershire": {
+      "n": "North West Leicestershire",
+      "q": -1,
+      "r": 1
+    },
+    "SCAF-north-west-norfolk": {
+      "n": "North West Norfolk",
+      "q": 5,
+      "r": 1
+    },
+    "SCAF-north-wiltshire": {
+      "n": "North Wiltshire",
+      "q": -5,
+      "r": -8
+    },
+    "SCAF-northampton-north": {
+      "n": "Northampton North",
+      "q": 3,
+      "r": -2
+    },
+    "SCAF-northampton-south": {
+      "n": "Northampton South",
+      "q": 2,
+      "r": -3
+    },
+    "SCAF-norwich-north": {
+      "n": "Norwich North",
+      "q": 7,
+      "r": 1
+    },
+    "SCAF-norwich-south": {
+      "n": "Norwich South",
+      "q": 7,
+      "r": 1
+    },
+    "SCAF-nottingham-east": {
+      "n": "Nottingham East",
+      "q": 2,
+      "r": 1
+    },
+    "SCAF-nottingham-south": {
+      "n": "Nottingham South",
+      "q": 1,
+      "r": 1
+    },
+    "SCAF-nuneaton": {
+      "n": "Nuneaton",
+      "q": 1,
+      "r": -2
+    },
+    "SCAF-old-bexley-and-sidcup": {
+      "n": "Old Bexley and Sidcup",
+      "q": 9,
+      "r": -12
+    },
+    "SCAF-oldham-east-and-saddleworth": {
+      "n": "Oldham East and Saddleworth",
+      "q": -5,
+      "r": 7
+    },
+    "SCAF-oldham-west-and-royton": {
+      "n": "Oldham West and Royton",
+      "q": -6,
+      "r": 7
+    },
+    "SCAF-orpington": {
+      "n": "Orpington",
+      "q": 8,
+      "r": -14
+    },
+    "SCAF-pendle": {
+      "n": "Pendle",
+      "q": -5,
+      "r": 11
+    },
+    "SCAF-penistone-and-stocksbridge": {
+      "n": "Penistone and Stocksbridge",
+      "q": -3,
+      "r": 6
+    },
+    "SCAF-penrith-and-the-border": {
+      "n": "Penrith and The Border",
+      "q": -5,
+      "r": 15
+    },
+    "SCAF-peterborough": {
+      "n": "Peterborough",
+      "q": 4,
+      "r": 1
+    },
+    "SCAF-plymouth-moor-view": {
+      "n": "Plymouth, Moor View",
+      "q": -13,
+      "r": -15
+    },
+    "SCAF-plymouth-sutton-and-devonport": {
+      "n": "Plymouth, Sutton and Devonport",
+      "q": -13,
+      "r": -16
+    },
+    "SCAF-poole": {
+      "n": "Poole",
+      "q": -9,
+      "r": -13
+    },
+    "SCAF-poplar-and-limehouse": {
+      "n": "Poplar and Limehouse",
+      "q": 8,
+      "r": -10
+    },
+    "SCAF-portsmouth-north": {
+      "n": "Portsmouth North",
+      "q": -3,
+      "r": -13
+    },
+    "SCAF-portsmouth-south": {
+      "n": "Portsmouth South",
+      "q": -2,
+      "r": -14
+    },
+    "SCAF-preston": {
+      "n": "Preston",
+      "q": -7,
+      "r": 11
+    },
+    "SCAF-putney": {
+      "n": "Putney",
+      "q": 3,
+      "r": -12
+    },
+    "SCAF-rayleigh-and-wickford": {
+      "n": "Rayleigh and Wickford",
+      "q": 9,
+      "r": -5
+    },
+    "SCAF-reading-east": {
+      "n": "Reading East",
+      "q": -3,
+      "r": -7
+    },
+    "SCAF-reading-west": {
+      "n": "Reading West",
+      "q": -3,
+      "r": -8
+    },
+    "SCAF-redcar": {
+      "n": "Redcar",
+      "q": 1,
+      "r": 13
+    },
+    "SCAF-redditch": {
+      "n": "Redditch",
+      "q": -4,
+      "r": -6
+    },
+    "SCAF-reigate": {
+      "n": "Reigate",
+      "q": 2,
+      "r": -14
+    },
+    "SCAF-ribble-valley": {
+      "n": "Ribble Valley",
+      "q": -3,
+      "r": 12
+    },
+    "SCAF-richmond-yorks": {
+      "n": "Richmond (Yorks)",
+      "q": -3,
+      "r": 11
+    },
+    "SCAF-richmond-park": {
+      "n": "Richmond Park",
+      "q": 1,
+      "r": -12
+    },
+    "SCAF-rochdale": {
+      "n": "Rochdale",
+      "q": -4,
+      "r": 8
+    },
+    "SCAF-rochester-and-strood": {
+      "n": "Rochester and Strood",
+      "q": 11,
+      "r": -10
+    },
+    "SCAF-rochford-and-southend-east": {
+      "n": "Rochford and Southend East",
+      "q": 10,
+      "r": -5
+    },
+    "SCAF-romford": {
+      "n": "Romford",
+      "q": 7,
+      "r": -7
+    },
+    "SCAF-romsey-and-southampton-north": {
+      "n": "Romsey and Southampton North",
+      "q": -5,
+      "r": -11
+    },
+    "SCAF-rossendale-and-darwen": {
+      "n": "Rossendale and Darwen",
+      "q": -5,
+      "r": 9
+    },
+    "SCAF-rotherham": {
+      "n": "Rotherham",
+      "q": 1,
+      "r": 5
+    },
+    "SCAF-ruislip-northwood-and-pinner": {
+      "n": "Ruislip, Northwood and Pinner",
+      "q": 1,
+      "r": -7
+    },
+    "SCAF-runnymede-and-weybridge": {
+      "n": "Runnymede and Weybridge",
+      "q": -1,
+      "r": -12
+    },
+    "SCAF-rushcliffe": {
+      "n": "Rushcliffe",
+      "q": 3,
+      "r": 1
+    },
+    "SCAF-rutland-and-melton": {
+      "n": "Rutland and Melton",
+      "q": 4,
+      "r": 2
+    },
+    "SCAF-saffron-walden": {
+      "n": "Saffron Walden",
+      "q": 7,
+      "r": -2
+    },
+    "SCAF-salford-and-eccles": {
+      "n": "Salford and Eccles",
+      "q": -7,
+      "r": 5
+    },
+    "SCAF-salisbury": {
+      "n": "Salisbury",
+      "q": -6,
+      "r": -11
+    },
+    "SCAF-scunthorpe": {
+      "n": "Scunthorpe",
+      "q": 2,
+      "r": 6
+    },
+    "SCAF-sedgefield": {
+      "n": "Sedgefield",
+      "q": -1,
+      "r": 13
+    },
+    "SCAF-sefton-central": {
+      "n": "Sefton Central",
+      "q": -9,
+      "r": 8
+    },
+    "SCAF-selby-and-ainsty": {
+      "n": "Selby and Ainsty",
+      "q": 2,
+      "r": 8
+    },
+    "SCAF-sevenoaks": {
+      "n": "Sevenoaks",
+      "q": 9,
+      "r": -13
+    },
+    "SCAF-sheffield-south-east": {
+      "n": "Sheffield South East",
+      "q": 1,
+      "r": 4
+    },
+    "SCAF-sheffield-hallam": {
+      "n": "Sheffield, Hallam",
+      "q": -3,
+      "r": 5
+    },
+    "SCAF-sheffield-heeley": {
+      "n": "Sheffield, Heeley",
+      "q": -2,
+      "r": 4
+    },
+    "SCAF-sherwood": {
+      "n": "Sherwood",
+      "q": 2,
+      "r": 3
+    },
+    "SCAF-shipley": {
+      "n": "Shipley",
+      "q": -2,
+      "r": 10
+    },
+    "SCAF-shrewsbury-and-atcham": {
+      "n": "Shrewsbury and Atcham",
+      "q": -9,
+      "r": -1
+    },
+    "SCAF-skipton-and-ripon": {
+      "n": "Skipton and Ripon",
+      "q": -4,
+      "r": 11
+    },
+    "SCAF-sleaford-and-north-hykeham": {
+      "n": "Sleaford and North Hykeham",
+      "q": 4,
+      "r": 4
+    },
+    "SCAF-slough": {
+      "n": "Slough",
+      "q": -2,
+      "r": -8
+    },
+    "SCAF-solihull": {
+      "n": "Solihull",
+      "q": -2,
+      "r": -4
+    },
+    "SCAF-somerton-and-frome": {
+      "n": "Somerton and Frome",
+      "q": -8,
+      "r": -11
+    },
+    "SCAF-south-basildon-and-east-thurrock": {
+      "n": "South Basildon and East Thurrock",
+      "q": 9,
+      "r": -7
+    },
+    "SCAF-south-cambridgeshire": {
+      "n": "South Cambridgeshire",
+      "q": 6,
+      "r": -2
+    },
+    "SCAF-south-dorset": {
+      "n": "South Dorset",
+      "q": -9,
+      "r": -15
+    },
+    "SCAF-south-east-cambridgeshire": {
+      "n": "South East Cambridgeshire",
+      "q": 7,
+      "r": -1
+    },
+    "SCAF-south-east-cornwall": {
+      "n": "South East Cornwall",
+      "q": -14,
+      "r": -15
+    },
+    "SCAF-south-holland-and-the-deepings": {
+      "n": "South Holland and The Deepings",
+      "q": 4,
+      "r": 3
+    },
+    "SCAF-south-norfolk": {
+      "n": "South Norfolk",
+      "q": 8,
+      "r": 1
+    },
+    "SCAF-south-northamptonshire": {
+      "n": "South Northamptonshire",
+      "q": 2,
+      "r": -4
+    },
+    "SCAF-south-ribble": {
+      "n": "South Ribble",
+      "q": -8,
+      "r": 9
+    },
+    "SCAF-south-shields": {
+      "n": "South Shields",
+      "q": -1,
+      "r": 15
+    },
+    "SCAF-south-staffordshire": {
+      "n": "South Staffordshire",
+      "q": -6,
+      "r": 1
+    },
+    "SCAF-south-swindon": {
+      "n": "South Swindon",
+      "q": -4,
+      "r": -8
+    },
+    "SCAF-south-thanet": {
+      "n": "South Thanet",
+      "q": 13,
+      "r": -11
+    },
+    "SCAF-south-west-bedfordshire": {
+      "n": "South West Bedfordshire",
+      "q": 3,
+      "r": -5
+    },
+    "SCAF-south-west-devon": {
+      "n": "South West Devon",
+      "q": -13,
+      "r": -14
+    },
+    "SCAF-south-west-hertfordshire": {
+      "n": "South West Hertfordshire",
+      "q": 3,
+      "r": -6
+    },
+    "SCAF-south-west-norfolk": {
+      "n": "South West Norfolk",
+      "q": 6,
+      "r": -1
+    },
+    "SCAF-south-west-surrey": {
+      "n": "South West Surrey",
+      "q": -2,
+      "r": -12
+    },
+    "SCAF-south-west-wiltshire": {
+      "n": "South West Wiltshire",
+      "q": -7,
+      "r": -11
+    },
+    "SCAF-southampton-itchen": {
+      "n": "Southampton, Itchen",
+      "q": -5,
+      "r": -13
+    },
+    "SCAF-southampton-test": {
+      "n": "Southampton, Test",
+      "q": -5,
+      "r": -12
+    },
+    "SCAF-southend-west": {
+      "n": "Southend West",
+      "q": 10,
+      "r": -6
+    },
+    "SCAF-southport": {
+      "n": "Southport",
+      "q": -9,
+      "r": 9
+    },
+    "SCAF-spelthorne": {
+      "n": "Spelthorne",
+      "q": -1,
+      "r": -11
+    },
+    "SCAF-st-albans": {
+      "n": "St Albans",
+      "q": 6,
+      "r": -5
+    },
+    "SCAF-st-helens-north": {
+      "n": "St Helens North",
+      "q": -9,
+      "r": 5
+    },
+    "SCAF-st-helens-south-and-whiston": {
+      "n": "St Helens South and Whiston",
+      "q": -9,
+      "r": 4
+    },
+    "SCAF-st-ives": {
+      "n": "St Ives",
+      "q": -16,
+      "r": -16
+    },
+    "SCAF-stafford": {
+      "n": "Stafford",
+      "q": -4,
+      "r": -1
+    },
+    "SCAF-staffordshire-moorlands": {
+      "n": "Staffordshire Moorlands",
+      "q": -3,
+      "r": 2
+    },
+    "SCAF-stalybridge-and-hyde": {
+      "n": "Stalybridge and Hyde",
+      "q": -4,
+      "r": 6
+    },
+    "SCAF-stevenage": {
+      "n": "Stevenage",
+      "q": 6,
+      "r": -4
+    },
+    "SCAF-stockport": {
+      "n": "Stockport",
+      "q": -5,
+      "r": 4
+    },
+    "SCAF-stockton-south": {
+      "n": "Stockton South",
+      "q": 1,
+      "r": 12
+    },
+    "SCAF-stoke-on-trent-central": {
+      "n": "Stoke-on-Trent Central",
+      "q": -4,
+      "r": 1
+    },
+    "SCAF-stoke-on-trent-north": {
+      "n": "Stoke-on-Trent North",
+      "q": -4,
+      "r": 2
+    },
+    "SCAF-stoke-on-trent-south": {
+      "n": "Stoke-on-Trent South",
+      "q": -3,
+      "r": -1
+    },
+    "SCAF-stone": {
+      "n": "Stone",
+      "q": -5,
+      "r": 1
+    },
+    "SCAF-stourbridge": {
+      "n": "Stourbridge",
+      "q": -5,
+      "r": -4
+    },
+    "SCAF-stratford-on-avon": {
+      "n": "Stratford-on-Avon",
+      "q": -3,
+      "r": -6
+    },
+    "SCAF-streatham": {
+      "n": "Streatham",
+      "q": 4,
+      "r": -13
+    },
+    "SCAF-stretford-and-urmston": {
+      "n": "Stretford and Urmston",
+      "q": -7,
+      "r": 4
+    },
+    "SCAF-stroud": {
+      "n": "Stroud",
+      "q": -6,
+      "r": -7
+    },
+    "SCAF-suffolk-coastal": {
+      "n": "Suffolk Coastal",
+      "q": 9,
+      "r": 1
+    },
+    "SCAF-surrey-heath": {
+      "n": "Surrey Heath",
+      "q": -1,
+      "r": -10
+    },
+    "SCAF-sutton-and-cheam": {
+      "n": "Sutton and Cheam",
+      "q": 2,
+      "r": -13
+    },
+    "SCAF-tatton": {
+      "n": "Tatton",
+      "q": -6,
+      "r": 2
+    },
+    "SCAF-taunton-deane": {
+      "n": "Taunton Deane",
+      "q": -10,
+      "r": -13
+    },
+    "SCAF-telford": {
+      "n": "Telford",
+      "q": -8,
+      "r": -1
+    },
+    "SCAF-tewkesbury": {
+      "n": "Tewkesbury",
+      "q": -6,
+      "r": -6
+    },
+    "SCAF-the-cotswolds": {
+      "n": "The Cotswolds",
+      "q": -5,
+      "r": -6
+    },
+    "SCAF-the-wrekin": {
+      "n": "The Wrekin",
+      "q": -7,
+      "r": 1
+    },
+    "SCAF-thirsk-and-malton": {
+      "n": "Thirsk and Malton",
+      "q": 1,
+      "r": 11
+    },
+    "SCAF-thornbury-and-yate": {
+      "n": "Thornbury and Yate",
+      "q": -8,
+      "r": -7
+    },
+    "SCAF-thurrock": {
+      "n": "Thurrock",
+      "q": 8,
+      "r": -7
+    },
+    "SCAF-tiverton-and-honiton": {
+      "n": "Tiverton and Honiton",
+      "q": -11,
+      "r": -13
+    },
+    "SCAF-tonbridge-and-malling": {
+      "n": "Tonbridge and Malling",
+      "q": 10,
+      "r": -12
+    },
+    "SCAF-tooting": {
+      "n": "Tooting",
+      "q": 3,
+      "r": -13
+    },
+    "SCAF-torbay": {
+      "n": "Torbay",
+      "q": -12,
+      "r": -15
+    },
+    "SCAF-totnes": {
+      "n": "Totnes",
+      "q": -12,
+      "r": -16
+    },
+    "SCAF-tottenham": {
+      "n": "Tottenham",
+      "q": 4,
+      "r": -8
+    },
+    "SCAF-truro-and-falmouth": {
+      "n": "Truro and Falmouth",
+      "q": -15,
+      "r": -16
+    },
+    "SCAF-tunbridge-wells": {
+      "n": "Tunbridge Wells",
+      "q": 10,
+      "r": -13
+    },
+    "SCAF-twickenham": {
+      "n": "Twickenham",
+      "q": 1,
+      "r": -12
+    },
+    "SCAF-tynemouth": {
+      "n": "Tynemouth",
+      "q": -1,
+      "r": 17
+    },
+    "SCAF-vauxhall": {
+      "n": "Vauxhall",
+      "q": 5,
+      "r": -12
+    },
+    "SCAF-wakefield": {
+      "n": "Wakefield",
+      "q": -1,
+      "r": 7
+    },
+    "SCAF-wallasey": {
+      "n": "Wallasey",
+      "q": -11,
+      "r": 3
+    },
+    "SCAF-walsall-north": {
+      "n": "Walsall North",
+      "q": -6,
+      "r": -1
+    },
+    "SCAF-walsall-south": {
+      "n": "Walsall South",
+      "q": -5,
+      "r": -1
+    },
+    "SCAF-wantage": {
+      "n": "Wantage",
+      "q": -2,
+      "r": -6
+    },
+    "SCAF-warley": {
+      "n": "Warley",
+      "q": -5,
+      "r": -3
+    },
+    "SCAF-warrington-north": {
+      "n": "Warrington North",
+      "q": -8,
+      "r": 4
+    },
+    "SCAF-warrington-south": {
+      "n": "Warrington South",
+      "q": -8,
+      "r": 3
+    },
+    "SCAF-warwick-and-leamington": {
+      "n": "Warwick and Leamington",
+      "q": -1,
+      "r": -5
+    },
+    "SCAF-washington-and-sunderland-west": {
+      "n": "Washington and Sunderland West",
+      "q": -2,
+      "r": 15
+    },
+    "SCAF-watford": {
+      "n": "Watford",
+      "q": 7,
+      "r": -6
+    },
+    "SCAF-waveney": {
+      "n": "Waveney",
+      "q": 8,
+      "r": 1
+    },
+    "SCAF-wealden": {
+      "n": "Wealden",
+      "q": 11,
+      "r": -13
+    },
+    "SCAF-weaver-vale": {
+      "n": "Weaver Vale",
+      "q": -7,
+      "r": 2
+    },
+    "SCAF-wellingborough": {
+      "n": "Wellingborough",
+      "q": 4,
+      "r": -1
+    },
+    "SCAF-wells": {
+      "n": "Wells",
+      "q": -10,
+      "r": -12
+    },
+    "SCAF-welwyn-hatfield": {
+      "n": "Welwyn Hatfield",
+      "q": 7,
+      "r": -4
+    },
+    "SCAF-wentworth-and-dearne": {
+      "n": "Wentworth and Dearne",
+      "q": -1,
+      "r": 5
+    },
+    "SCAF-west-bromwich-east": {
+      "n": "West Bromwich East",
+      "q": -4,
+      "r": -2
+    },
+    "SCAF-west-bromwich-west": {
+      "n": "West Bromwich West",
+      "q": -5,
+      "r": -2
+    },
+    "SCAF-west-dorset": {
+      "n": "West Dorset",
+      "q": -9,
+      "r": -14
+    },
+    "SCAF-west-ham": {
+      "n": "West Ham",
+      "q": 6,
+      "r": -9
+    },
+    "SCAF-west-lancashire": {
+      "n": "West Lancashire",
+      "q": -8,
+      "r": 8
+    },
+    "SCAF-west-suffolk": {
+      "n": "West Suffolk",
+      "q": 8,
+      "r": -1
+    },
+    "SCAF-west-worcestershire": {
+      "n": "West Worcestershire",
+      "q": -7,
+      "r": -4
+    },
+    "SCAF-westminster-north": {
+      "n": "Westminster North",
+      "q": 3,
+      "r": -11
+    },
+    "SCAF-westmorland-and-lonsdale": {
+      "n": "Westmorland and Lonsdale",
+      "q": -4,
+      "r": 13
+    },
+    "SCAF-weston-super-mare": {
+      "n": "Weston-Super-Mare",
+      "q": -9,
+      "r": -12
+    },
+    "SCAF-wigan": {
+      "n": "Wigan",
+      "q": -7,
+      "r": 8
+    },
+    "SCAF-wimbledon": {
+      "n": "Wimbledon",
+      "q": 2,
+      "r": -12
+    },
+    "SCAF-winchester": {
+      "n": "Winchester",
+      "q": -4,
+      "r": -11
+    },
+    "SCAF-windsor": {
+      "n": "Windsor",
+      "q": -2,
+      "r": -9
+    },
+    "SCAF-wirral-south": {
+      "n": "Wirral South",
+      "q": -9,
+      "r": 2
+    },
+    "SCAF-wirral-west": {
+      "n": "Wirral West",
+      "q": -11,
+      "r": 2
+    },
+    "SCAF-witham": {
+      "n": "Witham",
+      "q": 10,
+      "r": -4
+    },
+    "SCAF-woking": {
+      "n": "Woking",
+      "q": -2,
+      "r": -11
+    },
+    "SCAF-wokingham": {
+      "n": "Wokingham",
+      "q": -4,
+      "r": -9
+    },
+    "SCAF-wolverhampton-north-east": {
+      "n": "Wolverhampton North East",
+      "q": -7,
+      "r": -1
+    },
+    "SCAF-wolverhampton-south-east": {
+      "n": "Wolverhampton South East",
+      "q": -6,
+      "r": -2
+    },
+    "SCAF-wolverhampton-south-west": {
+      "n": "Wolverhampton South West",
+      "q": -7,
+      "r": -2
+    },
+    "SCAF-worcester": {
+      "n": "Worcester",
+      "q": -6,
+      "r": -5
+    },
+    "SCAF-workington": {
+      "n": "Workington",
+      "q": -5,
+      "r": 14
+    },
+    "SCAF-worsley-and-eccles-south": {
+      "n": "Worsley and Eccles South",
+      "q": -8,
+      "r": 5
+    },
+    "SCAF-worthing-west": {
+      "n": "Worthing West",
+      "q": 3,
+      "r": -15
+    },
+    "SCAF-wycombe": {
+      "n": "Wycombe",
+      "q": -1,
+      "r": -7
+    },
+    "SCAF-wyre-and-preston-north": {
+      "n": "Wyre and Preston North",
+      "q": -6,
+      "r": 11
+    },
+    "SCAF-wyre-forest": {
+      "n": "Wyre Forest",
+      "q": -8,
+      "r": -3
+    },
+    "SCAF-wythenshawe-and-sale-east": {
+      "n": "Wythenshawe and Sale East",
+      "q": -6,
+      "r": 3
+    },
+    "SCAF-yeovil": {
+      "n": "Yeovil",
+      "q": -10,
+      "r": -14
+    },
+    "SCAF-york-outer": {
+      "n": "York Outer",
+      "q": -1,
+      "r": 11
+    },
+    "SCAF-belfast-north": {
+      "n": "Belfast North",
+      "q": -14,
+      "r": 14
+    },
+    "SCAF-east-antrim": {
+      "n": "East Antrim",
+      "q": -14,
+      "r": 15
+    },
+    "SCAF-fermanagh-and-south-tyrone": {
+      "n": "Fermanagh and South Tyrone",
+      "q": -17,
+      "r": 13
+    },
+    "SCAF-foyle": {
+      "n": "Foyle",
+      "q": -17,
+      "r": 15
+    },
+    "SCAF-lagan-valley": {
+      "n": "Lagan Valley",
+      "q": -15,
+      "r": 12
+    },
+    "SCAF-mid-ulster": {
+      "n": "Mid Ulster",
+      "q": -16,
+      "r": 14
+    },
+    "SCAF-newry-and-armagh": {
+      "n": "Newry and Armagh",
+      "q": -15,
+      "r": 11
+    },
+    "SCAF-north-down": {
+      "n": "North Down",
+      "q": -13,
+      "r": 14
+    },
+    "SCAF-strangford": {
+      "n": "Strangford",
+      "q": -13,
+      "r": 13
+    },
+    "SCAF-upper-bann": {
+      "n": "Upper Bann",
+      "q": -16,
+      "r": 12
+    },
+    "SCAF-west-tyrone": {
+      "n": "West Tyrone",
+      "q": -17,
+      "r": 14
+    },
+    "SCAF-aberdeen-north": {
+      "n": "Aberdeen North",
+      "q": -4,
+      "r": 25
+    },
+    "SCAF-aberdeen-south": {
+      "n": "Aberdeen South",
+      "q": -3,
+      "r": 24
+    },
+    "SCAF-airdrie-and-shotts": {
+      "n": "Airdrie and Shotts",
+      "q": -7,
+      "r": 20
+    },
+    "SCAF-angus": {
+      "n": "Angus",
+      "q": -5,
+      "r": 23
+    },
+    "SCAF-ayr-carrick-and-cumnock": {
+      "n": "Ayr, Carrick and Cumnock",
+      "q": -8,
+      "r": 16
+    },
+    "SCAF-banff-and-buchan": {
+      "n": "Banff and Buchan",
+      "q": -5,
+      "r": 24
+    },
+    "SCAF-berwickshire-roxburgh-and-selkirk": {
+      "n": "Berwickshire, Roxburgh and Selkirk",
+      "q": -5,
+      "r": 17
+    },
+    "SCAF-caithness-sutherland-and-easter-ross": {
+      "n": "Caithness, Sutherland and Easter Ross",
+      "q": -6,
+      "r": 26
+    },
+    "SCAF-central-ayrshire": {
+      "n": "Central Ayrshire",
+      "q": -10,
+      "r": 17
+    },
+    "SCAF-coatbridge-chryston-and-bellshill": {
+      "n": "Coatbridge, Chryston and Bellshill",
+      "q": -8,
+      "r": 20
+    },
+    "SCAF-cumbernauld-kilsyth-and-kirkintilloch-east": {
+      "n": "Cumbernauld, Kilsyth and Kirkintilloch East",
+      "q": -8,
+      "r": 21
+    },
+    "SCAF-dumfries-and-galloway": {
+      "n": "Dumfries and Galloway",
+      "q": -6,
+      "r": 16
+    },
+    "SCAF-dumfriesshire-clydesdale-and-tweeddale": {
+      "n": "Dumfriesshire, Clydesdale and Tweeddale",
+      "q": -5,
+      "r": 16
+    },
+    "SCAF-dundee-east": {
+      "n": "Dundee East",
+      "q": -5,
+      "r": 22
+    },
+    "SCAF-dunfermline-and-west-fife": {
+      "n": "Dunfermline and West Fife",
+      "q": -6,
+      "r": 21
+    },
+    "SCAF-east-dunbartonshire": {
+      "n": "East Dunbartonshire",
+      "q": -8,
+      "r": 22
+    },
+    "SCAF-east-kilbride-strathaven-and-lesmahagow": {
+      "n": "East Kilbride, Strathaven and Lesmahagow",
+      "q": -8,
+      "r": 17
+    },
+    "SCAF-east-lothian": {
+      "n": "East Lothian",
+      "q": -4,
+      "r": 18
+    },
+    "SCAF-east-renfrewshire": {
+      "n": "East Renfrewshire",
+      "q": -10,
+      "r": 18
+    },
+    "SCAF-edinburgh-east": {
+      "n": "Edinburgh East",
+      "q": -5,
+      "r": 19
+    },
+    "SCAF-edinburgh-north-and-leith": {
+      "n": "Edinburgh North and Leith",
+      "q": -6,
+      "r": 19
+    },
+    "SCAF-edinburgh-south": {
+      "n": "Edinburgh South",
+      "q": -5,
+      "r": 18
+    },
+    "SCAF-edinburgh-south-west": {
+      "n": "Edinburgh South West",
+      "q": -6,
+      "r": 18
+    },
+    "SCAF-edinburgh-west": {
+      "n": "Edinburgh West",
+      "q": -7,
+      "r": 19
+    },
+    "SCAF-na-h-eileanan-an-iar": {
+      "n": "Na h-Eileanan an Iar",
+      "q": -8,
+      "r": 26
+    },
+    "SCAF-falkirk": {
+      "n": "Falkirk",
+      "q": -7,
+      "r": 21
+    },
+    "SCAF-glasgow-central": {
+      "n": "Glasgow Central",
+      "q": -9,
+      "r": 19
+    },
+    "SCAF-glasgow-east": {
+      "n": "Glasgow East",
+      "q": -8,
+      "r": 18
+    },
+    "SCAF-glasgow-north": {
+      "n": "Glasgow North",
+      "q": -9,
+      "r": 20
+    },
+    "SCAF-glasgow-north-east": {
+      "n": "Glasgow North East",
+      "q": -9,
+      "r": 21
+    },
+    "SCAF-glasgow-north-west": {
+      "n": "Glasgow North West",
+      "q": -10,
+      "r": 21
+    },
+    "SCAF-glasgow-south": {
+      "n": "Glasgow South",
+      "q": -9,
+      "r": 18
+    },
+    "SCAF-glasgow-south-west": {
+      "n": "Glasgow South West",
+      "q": -10,
+      "r": 19
+    },
+    "SCAF-glenrothes": {
+      "n": "Glenrothes",
+      "q": -4,
+      "r": 22
+    },
+    "SCAF-gordon": {
+      "n": "Gordon",
+      "q": -5,
+      "r": 25
+    },
+    "SCAF-inverclyde": {
+      "n": "Inverclyde",
+      "q": -11,
+      "r": 21
+    },
+    "SCAF-inverness-nairn-badenoch-and-strathspey": {
+      "n": "Inverness, Nairn, Badenoch and Strathspey",
+      "q": -7,
+      "r": 25
+    },
+    "SCAF-kilmarnock-and-loudoun": {
+      "n": "Kilmarnock and Loudoun",
+      "q": -7,
+      "r": 16
+    },
+    "SCAF-kirkcaldy-and-cowdenbeath": {
+      "n": "Kirkcaldy and Cowdenbeath",
+      "q": -5,
+      "r": 21
+    },
+    "SCAF-lanark-and-hamilton-east": {
+      "n": "Lanark and Hamilton East",
+      "q": -7,
+      "r": 17
+    },
+    "SCAF-linlithgow-and-east-falkirk": {
+      "n": "Linlithgow and East Falkirk",
+      "q": -6,
+      "r": 20
+    },
+    "SCAF-livingston": {
+      "n": "Livingston",
+      "q": -7,
+      "r": 18
+    },
+    "SCAF-midlothian": {
+      "n": "Midlothian",
+      "q": -6,
+      "r": 17
+    },
+    "SCAF-moray": {
+      "n": "Moray",
+      "q": -6,
+      "r": 24
+    },
+    "SCAF-motherwell-and-wishaw": {
+      "n": "Motherwell and Wishaw",
+      "q": -8,
+      "r": 19
+    },
+    "SCAF-north-ayrshire-and-arran": {
+      "n": "North Ayrshire and Arran",
+      "q": -11,
+      "r": 18
+    },
+    "SCAF-north-east-fife": {
+      "n": "North East Fife",
+      "q": -4,
+      "r": 23
+    },
+    "SCAF-ochil-and-south-perthshire": {
+      "n": "Ochil and South Perthshire",
+      "q": -6,
+      "r": 22
+    },
+    "SCAF-orkney-and-shetland": {
+      "n": "Orkney and Shetland",
+      "q": -5,
+      "r": 28
+    },
+    "SCAF-paisley-and-renfrewshire-north": {
+      "n": "Paisley and Renfrewshire North",
+      "q": -10,
+      "r": 20
+    },
+    "SCAF-paisley-and-renfrewshire-south": {
+      "n": "Paisley and Renfrewshire South",
+      "q": -11,
+      "r": 19
+    },
+    "SCAF-perth-and-north-perthshire": {
+      "n": "Perth and North Perthshire",
+      "q": -7,
+      "r": 23
+    },
+    "SCAF-ross-skye-and-lochaber": {
+      "n": "Ross, Skye and Lochaber",
+      "q": -7,
+      "r": 24
+    },
+    "SCAF-rutherglen-and-hamilton-west": {
+      "n": "Rutherglen and Hamilton West",
+      "q": -9,
+      "r": 17
+    },
+    "SCAF-stirling": {
+      "n": "Stirling",
+      "q": -7,
+      "r": 22
+    },
+    "SCAF-west-aberdeenshire-and-kincardine": {
+      "n": "West Aberdeenshire and Kincardine",
+      "q": -4,
+      "r": 24
+    },
+    "SCAF-west-dunbartonshire": {
+      "n": "West Dunbartonshire",
+      "q": -9,
+      "r": 22
+    },
+    "SCAF-ynys-m\u00f4n": {
+      "n": "Ynys M\u00f4n",
+      "q": -14,
+      "r": 1
+    },
+    "SCAF-delyn": {
+      "n": "Delyn",
+      "q": -11,
+      "r": 1
+    },
+    "SCAF-alyn-and-deeside": {
+      "n": "Alyn and Deeside",
+      "q": -10,
+      "r": 1
+    },
+    "SCAF-wrexham": {
+      "n": "Wrexham",
+      "q": -10,
+      "r": 1
+    },
+    "SCAF-llanelli": {
+      "n": "Llanelli",
+      "q": -14,
+      "r": -8
+    },
+    "SCAF-gower": {
+      "n": "Gower",
+      "q": -14,
+      "r": -9
+    },
+    "SCAF-swansea-west": {
+      "n": "Swansea West",
+      "q": -13,
+      "r": -8
+    },
+    "SCAF-swansea-east": {
+      "n": "Swansea East",
+      "q": -13,
+      "r": -7
+    },
+    "SCAF-aberavon": {
+      "n": "Aberavon",
+      "q": -12,
+      "r": -8
+    },
+    "SCAF-cardiff-central": {
+      "n": "Cardiff Central",
+      "q": -9,
+      "r": -8
+    },
+    "SCAF-cardiff-north": {
+      "n": "Cardiff North",
+      "q": -10,
+      "r": -7
+    },
+    "SCAF-rhondda": {
+      "n": "Rhondda",
+      "q": -11,
+      "r": -6
+    },
+    "SCAF-torfaen": {
+      "n": "Torfaen",
+      "q": -9,
+      "r": -5
+    },
+    "SCAF-monmouth": {
+      "n": "Monmouth",
+      "q": -8,
+      "r": -5
+    },
+    "SCAF-newport-east": {
+      "n": "Newport East",
+      "q": -8,
+      "r": -6
+    },
+    "SCAF-newport-west": {
+      "n": "Newport West",
+      "q": -9,
+      "r": -7
+    },
+    "SCAF-arfon": {
+      "n": "Arfon",
+      "q": -13,
+      "r": -1
+    },
+    "SCAF-aberconwy": {
+      "n": "Aberconwy",
+      "q": -13,
+      "r": -1
+    },
+    "SCAF-clwyd-west": {
+      "n": "Clwyd West",
+      "q": -11,
+      "r": 1
+    },
+    "SCAF-vale-of-clwyd": {
+      "n": "Vale of Clwyd",
+      "q": -11,
+      "r": 1
+    },
+    "SCAF-dwyfor-meirionnydd": {
+      "n": "Dwyfor Meirionnydd",
+      "q": -12,
+      "r": -1
+    },
+    "SCAF-clwyd-south": {
+      "n": "Clwyd South",
+      "q": -10,
+      "r": -1
+    },
+    "SCAF-montgomeryshire": {
+      "n": "Montgomeryshire",
+      "q": -11,
+      "r": -1
+    },
+    "SCAF-ceredigion": {
+      "n": "Ceredigion",
+      "q": -12,
+      "r": -6
+    },
+    "SCAF-carmarthen-west-and-south-pembrokeshire": {
+      "n": "Carmarthen West and South Pembrokeshire",
+      "q": -15,
+      "r": -8
+    },
+    "SCAF-carmarthen-east-and-dinefwr": {
+      "n": "Carmarthen East and Dinefwr",
+      "q": -14,
+      "r": -7
+    },
+    "SCAF-brecon-and-radnorshire": {
+      "n": "Brecon and Radnorshire",
+      "q": -9,
+      "r": -2
+    },
+    "SCAF-neath": {
+      "n": "Neath",
+      "q": -12,
+      "r": -7
+    },
+    "SCAF-cynon-valley": {
+      "n": "Cynon Valley",
+      "q": -10,
+      "r": -5
+    },
+    "SCAF-merthyr-tydfil-and-rhymney": {
+      "n": "Merthyr Tydfil and Rhymney",
+      "q": -9,
+      "r": -4
+    },
+    "SCAF-bridgend": {
+      "n": "Bridgend",
+      "q": -12,
+      "r": -9
+    },
+    "SCAF-ogmore": {
+      "n": "Ogmore",
+      "q": -11,
+      "r": -8
+    },
+    "SCAF-pontypridd": {
+      "n": "Pontypridd",
+      "q": -11,
+      "r": -7
+    },
+    "SCAF-caerphilly": {
+      "n": "Caerphilly",
+      "q": -10,
+      "r": -6
+    },
+    "SCAF-islwyn": {
+      "n": "Islwyn",
+      "q": -9,
+      "r": -6
+    },
+    "SCAF-vale-of-glamorgan": {
+      "n": "Vale of Glamorgan",
+      "q": -11,
+      "r": -9
+    },
+    "SCAF-cardiff-west": {
+      "n": "Cardiff West",
+      "q": -10,
+      "r": -8
+    },
+    "SCAF-cardiff-south-and-penarth": {
+      "n": "Cardiff South and Penarth",
+      "q": -10,
+      "r": -9
+    },
+    "SCAF-st-austell-and-newquay": {
+      "n": "St Austell and Newquay",
+      "q": -15,
+      "r": -15
+    },
+    "SCAF-darlington": {
+      "n": "Darlington",
+      "q": -1,
+      "r": 12
+    },
+    "SCAF-harrogate-and-knaresborough": {
+      "n": "Harrogate and Knaresborough",
+      "q": -2,
+      "r": 11
+    },
+    "SCAF-pudsey": {
+      "n": "Pudsey",
+      "q": -1,
+      "r": 10
+    },
+    "SCAF-bradford-east": {
+      "n": "Bradford East",
+      "q": -2,
+      "r": 9
+    },
+    "SCAF-batley-and-spen": {
+      "n": "Batley and Spen",
+      "q": -1,
+      "r": 8
+    },
+    "SCAF-barnsley-east": {
+      "n": "Barnsley East",
+      "q": -1,
+      "r": 6
+    },
+    "SCAF-sheffield-brightside-and-hillsborough": {
+      "n": "Sheffield, Brightside and Hillsborough",
+      "q": -2,
+      "r": 5
+    },
+    "SCAF-sheffield-central": {
+      "n": "Sheffield Central",
+      "q": -1,
+      "r": 4
+    },
+    "SCAF-north-east-derbyshire": {
+      "n": "North East Derbyshire",
+      "q": -2,
+      "r": 3
+    },
+    "SCAF-derby-north": {
+      "n": "Derby North",
+      "q": -1,
+      "r": 2
+    },
+    "SCAF-south-derbyshire": {
+      "n": "South Derbyshire",
+      "q": -2,
+      "r": 1
+    },
+    "SCAF-sutton-coldfield": {
+      "n": "Sutton Coldfield",
+      "q": -2,
+      "r": -1
+    },
+    "SCAF-birmingham-hodge-hill": {
+      "n": "Birmingham, Hodge Hill",
+      "q": -1,
+      "r": -2
+    },
+    "SCAF-birmingham-yardley": {
+      "n": "Birmingham, Yardley",
+      "q": -2,
+      "r": -3
+    },
+    "SCAF-coventry-north-west": {
+      "n": "Coventry North West",
+      "q": -1,
+      "r": -4
+    },
+    "SCAF-meriden": {
+      "n": "Meriden",
+      "q": -2,
+      "r": -5
+    },
+    "SCAF-witney": {
+      "n": "Witney",
+      "q": -1,
+      "r": -6
+    },
+    "SCAF-maidenhead": {
+      "n": "Maidenhead",
+      "q": -2,
+      "r": -7
+    },
+    "SCAF-beaconsfield": {
+      "n": "Beaconsfield",
+      "q": -1,
+      "r": -8
+    },
+    "SCAF-brent-north": {
+      "n": "Brent North",
+      "q": 1,
+      "r": -9
+    },
+    "SCAF-brent-central": {
+      "n": "Brent Central",
+      "q": 2,
+      "r": -9
+    },
+    "SCAF-kensington": {
+      "n": "Kensington",
+      "q": 3,
+      "r": -10
+    },
+    "SCAF-holborn-and-st-pancras": {
+      "n": "Holborn and St Pancras",
+      "q": 4,
+      "r": -10
+    },
+    "SCAF-islington-north": {
+      "n": "Islington North",
+      "q": 4,
+      "r": -9
+    },
+    "SCAF-walthamstow": {
+      "n": "Walthamstow",
+      "q": 5,
+      "r": -8
+    },
+    "SCAF-leyton-and-wanstead": {
+      "n": "Leyton and Wanstead",
+      "q": 6,
+      "r": -8
+    },
+    "SCAF-ilford-north": {
+      "n": "Ilford North",
+      "q": 6,
+      "r": -7
+    },
+    "SCAF-hertsmere": {
+      "n": "Hertsmere",
+      "q": 7,
+      "r": -5
+    },
+    "SCAF-chelmsford": {
+      "n": "Chelmsford",
+      "q": 9,
+      "r": -4
+    },
+    "SCAF-south-suffolk": {
+      "n": "South Suffolk",
+      "q": 10,
+      "r": -1
+    },
+    "SCAF-nottingham-north": {
+      "n": "Nottingham North",
+      "q": 2,
+      "r": 2
+    },
+    "SCAF-tamworth": {
+      "n": "Tamworth",
+      "q": -1,
+      "r": 1
+    },
+    "SCAF-blaenau-gwent": {
+      "n": "Blaenau Gwent",
+      "q": -9,
+      "r": -3
+    },
+    "SCAF-preseli-pembrokeshire": {
+      "n": "Preseli Pembrokeshire",
+      "q": -15,
+      "r": -7
+    },
+    "SCAF-north-antrim": {
+      "n": "North Antrim",
+      "q": -15,
+      "r": 15
+    },
+    "SCAF-belfast-east": {
+      "n": "Belfast East",
+      "q": -14,
+      "r": 13
+    },
+    "SCAF-south-down": {
+      "n": "South Down",
+      "q": -13,
+      "r": 12
+    },
+    "SCAF-belfast-south": {
+      "n": "Belfast South",
+      "q": -14,
+      "r": 12
+    },
+    "SCAF-belfast-west": {
+      "n": "Belfast West",
+      "q": -15,
+      "r": 13
+    },
+    "SCAF-south-antrim": {
+      "n": "South Antrim",
+      "q": -15,
+      "r": 14
+    },
+    "SCAF-east-londonderry": {
+      "n": "East Londonderry",
+      "q": -16,
+      "r": 15
+    },
+    "SCAF-berwick-upon-tweed": {
+      "n": "Berwick-upon-Tweed",
+      "q": -4,
+      "r": 17
+    },
+    "SCAF-wansbeck": {
+      "n": "Wansbeck",
+      "q": -3,
+      "r": 17
+    },
+    "SCAF-blyth-valley": {
+      "n": "Blyth Valley",
+      "q": -2,
+      "r": 17
+    },
+    "SCAF-sittingbourne-and-sheppey": {
+      "n": "Sittingbourne and Sheppey",
+      "q": 12,
+      "r": -10
+    },
+    "SCAF-gillingham-and-rainham": {
+      "n": "Gillingham and Rainham",
+      "q": 11,
+      "r": -11
+    },
+    "SCAF-maidstone-and-the-weald": {
+      "n": "Maidstone and The Weald",
+      "q": 11,
+      "r": -12
+    },
+    "SCAF-mid-sussex": {
+      "n": "Mid Sussex",
+      "q": 10,
+      "r": -14
+    },
+    "SCAF-east-surrey": {
+      "n": "East Surrey",
+      "q": 9,
+      "r": -14
+    },
+    "SCAF-lewes": {
+      "n": "Lewes",
+      "q": 8,
+      "r": -15
+    },
+    "SCAF-brighton-kemptown": {
+      "n": "Brighton, Kemptown",
+      "q": 7,
+      "r": -15
+    },
+    "SCAF-arundel-and-south-downs": {
+      "n": "Arundel and South Downs",
+      "q": 1,
+      "r": -14
+    },
+    "SCAF-kingston-and-surbiton": {
+      "n": "Kingston and Surbiton",
+      "q": 1,
+      "r": -14
+    },
+    "SCAF-ealing-north": {
+      "n": "Ealing North",
+      "q": 1,
+      "r": -10
+    },
+    "SCAF-uxbridge-and-south-ruislip": {
+      "n": "Uxbridge and South Ruislip",
+      "q": 1,
+      "r": -8
+    },
+    "SCAF-oxford-west-and-abingdon": {
+      "n": "Oxford West and Abingdon",
+      "q": 1,
+      "r": -6
+    },
+    "SCAF-oxford-east": {
+      "n": "Oxford East",
+      "q": 1,
+      "r": -5
+    },
+    "SCAF-coventry-south": {
+      "n": "Coventry South",
+      "q": 1,
+      "r": -4
+    },
+    "SCAF-rugby": {
+      "n": "Rugby",
+      "q": 1,
+      "r": -3
+    },
+    "SCAF-south-leicestershire": {
+      "n": "South Leicestershire",
+      "q": 1,
+      "r": -2
+    },
+    "SCAF-bosworth": {
+      "n": "Bosworth",
+      "q": 1,
+      "r": -1
+    },
+    "SCAF-erewash": {
+      "n": "Erewash",
+      "q": 1,
+      "r": -1
+    },
+    "SCAF-broxtowe": {
+      "n": "Broxtowe",
+      "q": 1,
+      "r": 1
+    },
+    "SCAF-ashfield": {
+      "n": "Ashfield",
+      "q": 1,
+      "r": 2
+    },
+    "SCAF-rother-valley": {
+      "n": "Rother Valley",
+      "q": 1,
+      "r": 4
+    },
+    "SCAF-doncaster-central": {
+      "n": "Doncaster Central",
+      "q": 1,
+      "r": 6
+    },
+    "SCAF-hemsworth": {
+      "n": "Hemsworth",
+      "q": 1,
+      "r": 7
+    },
+    "SCAF-normanton-pontefract-and-castleford": {
+      "n": "Normanton, Pontefract and Castleford",
+      "q": 1,
+      "r": 8
+    },
+    "SCAF-leeds-central": {
+      "n": "Leeds Central",
+      "q": 1,
+      "r": 9
+    },
+    "SCAF-leeds-north-east": {
+      "n": "Leeds North East",
+      "q": 1,
+      "r": 10
+    },
+    "SCAF-york-central": {
+      "n": "York Central",
+      "q": 1,
+      "r": 12
+    },
+    "SCAF-stockton-north": {
+      "n": "Stockton North",
+      "q": 1,
+      "r": 14
+    },
+    "SCAF-sunderland-central": {
+      "n": "Sunderland Central",
+      "q": 1,
+      "r": 14
+    },
+    "SCAF-torridge-and-west-devon": {
+      "n": "Torridge and West Devon",
+      "q": -14,
+      "r": -13
+    },
+    "SCAF-east-devon": {
+      "n": "East Devon",
+      "q": -11,
+      "r": -14
+    },
+    "SCAF-elmet-and-rothwell": {
+      "n": "Elmet and Rothwell",
+      "q": 2,
+      "r": 10
+    },
+    "SCAF-scarborough-and-whitby": {
+      "n": "Scarborough and Whitby",
+      "q": 2,
+      "r": 11
+    },
+    "SCAF-argyll-and-bute": {
+      "n": "Argyll and Bute",
+      "q": -8,
+      "r": 23
+    },
+    "SCAF-dundee-west": {
+      "n": "Dundee West",
+      "q": -6,
+      "r": 23
+    }
+  }
+}

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1256" height="1201" viewBox="0 0 1256 1201">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#222}
+.title{font-size:24px;font-weight:700}.note{font-size:11px;fill:#555}.legend{font-size:13px}
+.hex{stroke:#fff;stroke-width:1.2;stroke-linejoin:round}.region{fill:none;stroke:#555;stroke-width:1;opacity:.3}
+</style>
+<text class="title" x="34" y="38">UK general election 1983 hexmap</text>
+<text class="note" x="34" y="58">Approximate hex placement from Wikimedia Commons map geometry; party colours follow Wikipedia UK politics meta attributes.</text>
+<g id="hexes">
+<path class="hex" d="M379.05,82.00L389.88,88.25L389.88,100.75L379.05,107.00L368.23,100.75L368.23,88.25Z" fill="#0087DC"><title>st ives (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,130.00L306.74,136.25L306.74,148.75L295.92,155.00L285.09,148.75L285.09,136.25Z" fill="#FFD700"><title>Caithness_and_Sunderland (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,130.00L362.17,136.25L362.17,148.75L351.34,155.00L340.52,148.75L340.52,136.25Z" fill="#0087DC"><title>falmouth and camborne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,154.00L348.31,160.25L348.31,172.75L337.48,179.00L326.66,172.75L326.66,160.25Z" fill="#0087DC"><title>plymouth drake (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,154.00L403.74,160.25L403.74,172.75L392.91,179.00L382.08,172.75L382.08,160.25Z" fill="#0087DC"><title>south hams (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,154.00L431.45,160.25L431.45,172.75L420.62,179.00L409.80,172.75L409.80,160.25Z" fill="#FFD700"><title>truro and st austell (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,178.00L334.45,184.25L334.45,196.75L323.63,203.00L312.80,196.75L312.80,184.25Z" fill="#0087DC"><title>south east cornwall (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,178.00L362.17,184.25L362.17,196.75L351.34,203.00L340.52,196.75L340.52,184.25Z" fill="#0087DC"><title>torbay (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,178.00L389.88,184.25L389.88,196.75L379.05,203.00L368.23,196.75L368.23,184.25Z" fill="#FFD700"><title>plymouth devonport (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,178.00L417.59,184.25L417.59,196.75L406.77,203.00L395.94,196.75L395.94,184.25Z" fill="#0087DC"><title>plymouth sutton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,178.00L445.30,184.25L445.30,196.75L434.48,203.00L423.65,196.75L423.65,184.25Z" fill="#0087DC"><title>#Banff and Buchan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,202.00L320.60,208.25L320.60,220.75L309.77,227.00L298.95,220.75L298.95,208.25Z" fill="#0087DC"><title>teignbridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,202.00L348.31,208.25L348.31,220.75L337.48,227.00L326.66,220.75L326.66,208.25Z" fill="#0087DC"><title>south dorset (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,202.00L376.02,208.25L376.02,220.75L365.20,227.00L354.37,220.75L354.37,208.25Z" fill="#FFD700"><title>isle of wight (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,202.00L403.74,208.25L403.74,220.75L392.91,227.00L382.08,220.75L382.08,208.25Z" fill="#0087DC"><title>bournemouth east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,202.00L431.45,208.25L431.45,220.75L420.62,227.00L409.80,220.75L409.80,208.25Z" fill="#0087DC"><title>Moray (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,226.00L279.03,232.25L279.03,244.75L268.20,251.00L257.38,244.75L257.38,232.25Z" fill="#0087DC"><title>north cornwall (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,226.00L306.74,232.25L306.74,244.75L295.92,251.00L285.09,244.75L285.09,232.25Z" fill="#0087DC"><title>exeter (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,226.00L334.45,232.25L334.45,244.75L323.63,251.00L312.80,244.75L312.80,232.25Z" fill="#0087DC"><title>poole (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,226.00L362.17,232.25L362.17,244.75L351.34,251.00L340.52,244.75L340.52,232.25Z" fill="#0087DC"><title>bournemouth west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,226.00L389.88,232.25L389.88,244.75L379.05,251.00L368.23,244.75L368.23,232.25Z" fill="#0087DC"><title>portsmouth south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,226.00L417.59,232.25L417.59,244.75L406.77,251.00L395.94,244.75L395.94,232.25Z" fill="#FFD700"><title>Gordon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,250.00L237.46,256.25L237.46,268.75L226.63,275.00L215.81,268.75L215.81,256.25Z" fill="#FDF38E"><title>Western_Isles (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,250.00L265.17,256.25L265.17,268.75L254.35,275.00L243.52,268.75L243.52,256.25Z" fill="#FFD700"><title>#Ross, Cromarty and Skye (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,250.00L292.88,256.25L292.88,268.75L282.06,275.00L271.23,268.75L271.23,256.25Z" fill="#0087DC"><title>torridge and west devon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,250.00L320.60,256.25L320.60,268.75L309.77,275.00L298.95,268.75L298.95,256.25Z" fill="#0087DC"><title>honiton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,250.00L348.31,256.25L348.31,268.75L337.48,275.00L326.66,268.75L326.66,256.25Z" fill="#0087DC"><title>christchurch (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,250.00L376.02,256.25L376.02,268.75L365.20,275.00L354.37,268.75L354.37,256.25Z" fill="#0087DC"><title>eastbourne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,250.00L403.74,256.25L403.74,268.75L392.91,275.00L382.08,268.75L382.08,256.25Z" fill="#0087DC"><title>#Kincardine and Deeside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,274.00L251.32,280.25L251.32,292.75L240.49,299.00L229.66,292.75L229.66,280.25Z" fill="#FFD700"><title>#Inverness, Nairn and Lochaber (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,274.00L279.03,280.25L279.03,292.75L268.20,299.00L257.38,292.75L257.38,280.25Z" fill="#0087DC"><title>tiverton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,274.00L306.74,280.25L306.74,292.75L295.92,299.00L285.09,292.75L285.09,280.25Z" fill="#0087DC"><title>west dorset (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,274.00L334.45,280.25L334.45,292.75L323.63,299.00L312.80,292.75L312.80,280.25Z" fill="#0087DC"><title>gosport (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,274.00L362.17,280.25L362.17,292.75L351.34,299.00L340.52,292.75L340.52,280.25Z" fill="#0087DC"><title>havant (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,298.00L237.46,304.25L237.46,316.75L226.63,323.00L215.81,316.75L215.81,304.25Z" fill="#0087DC"><title>Cunninghame_North (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,298.00L265.17,304.25L265.17,316.75L254.35,323.00L243.52,316.75L243.52,304.25Z" fill="#E4003B"><title>#Paisley South (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,298.00L292.88,304.25L292.88,316.75L282.06,323.00L271.23,316.75L271.23,304.25Z" fill="#E4003B"><title>#Glasgow Govan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,298.00L320.60,304.25L320.60,316.75L309.77,323.00L298.95,316.75L298.95,304.25Z" fill="#E4003B"><title>#Paisley North (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,298.00L348.31,304.25L348.31,316.75L337.48,323.00L326.66,316.75L326.66,304.25Z" fill="#E4003B"><title>path4893 (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,298.00L376.02,304.25L376.02,316.75L365.20,323.00L354.37,316.75L354.37,304.25Z" fill="#0087DC"><title>#North Tayside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,298.00L403.74,304.25L403.74,316.75L392.91,323.00L382.08,316.75L382.08,304.25Z" fill="#0087DC"><title>brighton kemptown (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,322.00L223.60,328.25L223.60,340.75L212.78,347.00L201.95,340.75L201.95,328.25Z" fill="#0087DC"><title>#Argyll and Bute (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,322.00L251.32,328.25L251.32,340.75L240.49,347.00L229.66,340.75L229.66,328.25Z" fill="#0087DC"><title>#Renfrew West and Inverclyde (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,322.00L279.03,328.25L279.03,340.75L268.20,347.00L257.38,340.75L257.38,328.25Z" fill="#E4003B"><title>#Glasgow Garscadden  (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,322.00L306.74,328.25L306.74,340.75L295.92,347.00L285.09,340.75L285.09,328.25Z" fill="#E4003B"><title>#Clydebank and Milngavie (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,322.00L334.45,328.25L334.45,340.75L323.63,347.00L312.80,340.75L312.80,328.25Z" fill="#E4003B"><title>#Monklands West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,322.00L362.17,328.25L362.17,340.75L351.34,347.00L340.52,340.75L340.52,328.25Z" fill="#E4003B"><title>#Glasgow Springburn (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,322.00L389.88,328.25L389.88,340.75L379.05,347.00L368.23,340.75L368.23,328.25Z" fill="#E4003B"><title>#Glasgow Rutherglen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,322.00L417.59,328.25L417.59,340.75L406.77,347.00L395.94,340.75L395.94,328.25Z" fill="#E4003B"><title>#Dundee West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,346.00L265.17,352.25L265.17,364.75L254.35,371.00L243.52,364.75L243.52,352.25Z" fill="#E4003B"><title>#Greenock and Port Glasgow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,346.00L292.88,352.25L292.88,364.75L282.06,371.00L271.23,364.75L271.23,352.25Z" fill="#E4003B"><title>Dumbarton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,346.00L320.60,352.25L320.60,364.75L309.77,371.00L298.95,364.75L298.95,352.25Z" fill="#0087DC"><title>Stirling (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,346.00L348.31,352.25L348.31,364.75L337.48,371.00L326.66,364.75L326.66,352.25Z" fill="#E4003B"><title>#Cumbernauld and Kilsyth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,346.00L376.02,352.25L376.02,364.75L365.20,371.00L354.37,364.75L354.37,352.25Z" fill="#0087DC"><title>Perth_and_Kinross (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,346.00L403.74,352.25L403.74,364.75L392.91,371.00L382.08,364.75L382.08,352.25Z" fill="#E4003B"><title>#Dunfermline_East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,346.00L431.45,352.25L431.45,364.75L420.62,371.00L409.80,364.75L409.80,352.25Z" fill="#FDF38E"><title>#Dundee East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,346.00L459.16,352.25L459.16,364.75L448.34,371.00L437.51,364.75L437.51,352.25Z" fill="#0087DC"><title>#East Angus (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,346.00L486.87,352.25L486.87,364.75L476.05,371.00L465.22,364.75L465.22,352.25Z" fill="#0087DC"><title>#aberdeen south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,346.00L514.59,352.25L514.59,364.75L503.76,371.00L492.94,364.75L492.94,352.25Z" fill="#E4003B"><title>#aberdeen north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,370.00L306.74,376.25L306.74,388.75L295.92,395.00L285.09,388.75L285.09,376.25Z" fill="#0087DC"><title>#Strathkelvin and Bearsden (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,370.00L334.45,376.25L334.45,388.75L323.63,395.00L312.80,388.75L312.80,376.25Z" fill="#E4003B"><title>#Falkirk West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,370.00L362.17,376.25L362.17,388.75L351.34,395.00L340.52,388.75L340.52,376.25Z" fill="#E4003B"><title>Clackmannan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,370.00L389.88,376.25L389.88,388.75L379.05,395.00L368.23,388.75L368.23,376.25Z" fill="#E4003B"><title>#Dunfermline West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,370.00L417.59,376.25L417.59,388.75L406.77,395.00L395.94,388.75L395.94,376.25Z" fill="#E4003B"><title>#Central Fife (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,370.00L445.30,376.25L445.30,388.75L434.48,395.00L423.65,388.75L423.65,376.25Z" fill="#0087DC"><title>#north east fife (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,370.00L473.02,376.25L473.02,388.75L462.19,395.00L451.37,388.75L451.37,376.25Z" fill="#E4003B"><title>#East Lothian (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,370.00L500.73,376.25L500.73,388.75L489.91,395.00L479.08,388.75L479.08,376.25Z" fill="#0087DC"><title>canterbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,370.00L528.44,376.25L528.44,388.75L517.62,395.00L506.79,388.75L506.79,376.25Z" fill="#0087DC"><title>faversham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M88.07,394.00L98.89,400.25L98.89,412.75L88.07,419.00L77.24,412.75L77.24,400.25Z" fill="#48A5EE"><title>#east londonderry (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M115.78,394.00L126.61,400.25L126.61,412.75L115.78,419.00L104.96,412.75L104.96,400.25Z" fill="#d46a4c"><title>#north antrim (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,394.00L154.32,400.25L154.32,412.75L143.49,419.00L132.67,412.75L132.67,400.25Z" fill="#48A5EE"><title>newry and armagh (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,394.00L403.74,400.25L403.74,412.75L392.91,419.00L382.08,412.75L382.08,400.25Z" fill="#E4003B"><title>#Edinburgh Leith (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,394.00L431.45,400.25L431.45,412.75L420.62,419.00L409.80,412.75L409.80,400.25Z" fill="#E4003B"><title>#Kirkcaldy (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,394.00L459.16,400.25L459.16,412.75L448.34,419.00L437.51,412.75L437.51,400.25Z" fill="#E4003B"><title>#Edinburgh East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,394.00L486.87,400.25L486.87,412.75L476.05,419.00L465.22,412.75L465.22,400.25Z" fill="#0087DC"><title>mid kent (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,394.00L514.59,400.25L514.59,412.75L503.76,419.00L492.94,412.75L492.94,400.25Z" fill="#0087DC"><title>north thanet (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,394.00L542.30,400.25L542.30,412.75L531.47,419.00L520.65,412.75L520.65,400.25Z" fill="#0087DC"><title>gravesham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M46.50,418.00L57.33,424.25L57.33,436.75L46.50,443.00L35.67,436.75L35.67,424.25Z" fill="#2AA82C"><title>Foyle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M74.21,418.00L85.04,424.25L85.04,436.75L74.21,443.00L63.39,436.75L63.39,424.25Z" fill="#48A5EE"><title>fermanagh and south tyrone (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M101.93,418.00L112.75,424.25L112.75,436.75L101.93,443.00L91.10,436.75L91.10,424.25Z" fill="#48A5EE"><title>#south down (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M129.64,418.00L140.46,424.25L140.46,436.75L129.64,443.00L118.81,436.75L118.81,424.25Z" fill="#48A5EE"><title>#south antrim (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M157.35,418.00L168.18,424.25L168.18,436.75L157.35,443.00L146.53,436.75L146.53,424.25Z" fill="#48A5EE"><title>#east antrim (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,418.00L389.88,424.25L389.88,436.75L379.05,443.00L368.23,436.75L368.23,424.25Z" fill="#E4003B"><title>#Falkirk East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,418.00L417.59,424.25L417.59,436.75L406.77,443.00L395.94,436.75L395.94,424.25Z" fill="#0087DC"><title>#Edinburgh West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,418.00L445.30,424.25L445.30,436.75L434.48,443.00L423.65,436.75L423.65,424.25Z" fill="#0087DC"><title>#Edinburgh Central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,418.00L473.02,424.25L473.02,436.75L462.19,443.00L451.37,436.75L451.37,424.25Z" fill="#0087DC"><title>south thanet (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,418.00L500.73,424.25L500.73,436.75L489.91,443.00L479.08,436.75L479.08,424.25Z" fill="#0087DC"><title>gillingham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,418.00L528.44,424.25L528.44,436.75L517.62,443.00L506.79,436.75L506.79,424.25Z" fill="#0087DC"><title>medway (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,418.00L556.16,424.25L556.16,436.75L545.33,443.00L534.51,436.75L534.51,424.25Z" fill="#FFD700"><title>#Orkney and Shetland (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M60.36,442.00L71.18,448.25L71.18,460.75L60.36,467.00L49.53,460.75L49.53,448.25Z" fill="#d46a4c"><title>Mid_Ulster (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M115.78,442.00L126.61,448.25L126.61,460.75L115.78,467.00L104.96,460.75L104.96,448.25Z" fill="#326760"><title>#west belfast (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,442.00L154.32,448.25L154.32,460.75L143.49,467.00L132.67,460.75L132.67,448.25Z" fill="#48A5EE"><title>#north belfast (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M171.21,442.00L182.03,448.25L182.03,460.75L171.21,467.00L160.38,460.75L160.38,448.25Z" fill="#FFDEAD"><title>#north down (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,442.00L376.02,448.25L376.02,460.75L365.20,467.00L354.37,460.75L354.37,448.25Z" fill="#E4003B"><title>Linlithgow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,442.00L403.74,448.25L403.74,460.75L392.91,467.00L382.08,460.75L382.08,448.25Z" fill="#E4003B"><title>#Monklands East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,442.00L431.45,448.25L431.45,460.75L420.62,467.00L409.80,460.75L409.80,448.25Z" fill="#0087DC"><title>#Edinburgh South (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,442.00L459.16,448.25L459.16,460.75L448.34,467.00L437.51,460.75L437.51,448.25Z" fill="#E4003B"><title>Midlothian (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,442.00L486.87,448.25L486.87,460.75L476.05,467.00L465.22,460.75L465.22,448.25Z" fill="#FFD700"><title>#Roxburgh and Berwickshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,442.00L514.59,448.25L514.59,460.75L503.76,467.00L492.94,460.75L492.94,448.25Z" fill="#0087DC"><title>#lewisham west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,442.00L542.30,448.25L542.30,460.75L531.47,467.00L520.65,460.75L520.65,448.25Z" fill="#0087DC"><title>eltham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,442.00L570.01,448.25L570.01,460.75L559.19,467.00L548.36,460.75L548.36,448.25Z" fill="#E4003B"><title>greenwich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M74.21,466.00L85.04,472.25L85.04,484.75L74.21,491.00L63.39,484.75L63.39,472.25Z" fill="#48A5EE"><title>upper bann (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M101.93,466.00L112.75,472.25L112.75,484.75L101.93,491.00L91.10,484.75L91.10,472.25Z" fill="#48A5EE"><title>#strangford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M129.64,466.00L140.46,472.25L140.46,484.75L129.64,491.00L118.81,484.75L118.81,472.25Z" fill="#48A5EE"><title>#south belfast (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M157.35,466.00L168.18,472.25L168.18,484.75L157.35,491.00L146.53,484.75L146.53,472.25Z" fill="#d46a4c"><title>east_belfast (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,466.00L362.17,472.25L362.17,484.75L351.34,491.00L340.52,484.75L340.52,472.25Z" fill="#E4003B"><title>#Glasgow Maryhill (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,466.00L389.88,472.25L389.88,484.75L379.05,491.00L368.23,484.75L368.23,472.25Z" fill="#E4003B"><title>Livingston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,466.00L417.59,472.25L417.59,484.75L406.77,491.00L395.94,484.75L395.94,472.25Z" fill="#0087DC"><title>#Edinburgh Pentlands (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,466.00L445.30,472.25L445.30,484.75L434.48,491.00L423.65,484.75L423.65,472.25Z" fill="#FFD700"><title>#Tweeddale__Ettrick_and_Lauderdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,466.00L473.02,472.25L473.02,484.75L462.19,491.00L451.37,484.75L451.37,472.25Z" fill="#0087DC"><title>dartford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,466.00L500.73,472.25L500.73,484.75L489.91,491.00L479.08,484.75L479.08,472.25Z" fill="#0087DC"><title>#lewisham east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,466.00L528.44,472.25L528.44,484.75L517.62,491.00L506.79,484.75L506.79,472.25Z" fill="#FFD700"><title>berwick upon tweed (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,466.00L556.16,472.25L556.16,484.75L545.33,491.00L534.51,484.75L534.51,472.25Z" fill="#FFD700"><title>woolwich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,466.00L583.87,472.25L583.87,484.75L573.04,491.00L562.22,484.75L562.22,472.25Z" fill="#E4003B"><title>thurrock (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M115.78,490.00L126.61,496.25L126.61,508.75L115.78,515.00L104.96,508.75L104.96,496.25Z" fill="#48A5EE"><title>#lagan valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,490.00L320.60,496.25L320.60,508.75L309.77,515.00L298.95,508.75L298.95,496.25Z" fill="#FFD700"><title>#Glasgow Hillhead (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,490.00L348.31,496.25L348.31,508.75L337.48,515.00L326.66,508.75L326.66,496.25Z" fill="#E4003B"><title>#Glasgow Provan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,490.00L376.02,496.25L376.02,508.75L365.20,515.00L354.37,508.75L354.37,496.25Z" fill="#E4003B"><title>#Glasgow Shettleston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,490.00L403.74,496.25L403.74,508.75L392.91,515.00L382.08,508.75L382.08,496.25Z" fill="#E4003B"><title>#Motherwell North (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,490.00L431.45,496.25L431.45,508.75L420.62,515.00L409.80,508.75L409.80,496.25Z" fill="#E4003B"><title>Clydesdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,490.00L459.16,496.25L459.16,508.75L448.34,515.00L437.51,508.75L437.51,496.25Z" fill="#E4003B"><title>tooting (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,490.00L486.87,496.25L486.87,508.75L476.05,515.00L465.22,508.75L465.22,496.25Z" fill="#0087DC"><title>bexleyheath (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,490.00L514.59,496.25L514.59,508.75L503.76,515.00L492.94,508.75L492.94,496.25Z" fill="#0087DC"><title>hexham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,490.00L542.30,496.25L542.30,508.75L531.47,515.00L520.65,508.75L520.65,496.25Z" fill="#0087DC"><title>newcastle central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,490.00L570.01,496.25L570.01,508.75L559.19,515.00L548.36,508.75L548.36,496.25Z" fill="#E4003B"><title>wansbeck (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,490.00L597.73,496.25L597.73,508.75L586.90,515.00L576.07,508.75L576.07,496.25Z" fill="#0087DC"><title>tynemouth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,514.00L334.45,520.25L334.45,532.75L323.63,539.00L312.80,532.75L312.80,520.25Z" fill="#E4003B"><title>#Glasgow Pollok (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,514.00L362.17,520.25L362.17,532.75L351.34,539.00L340.52,532.75L340.52,520.25Z" fill="#E4003B"><title>#Glasgow Cathcart (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,514.00L389.88,520.25L389.88,532.75L379.05,539.00L368.23,532.75L368.23,520.25Z" fill="#E4003B"><title>#Motherwell South (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,514.00L417.59,520.25L417.59,532.75L406.77,539.00L395.94,532.75L395.94,520.25Z" fill="#0087DC"><title>#Dumfries (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,514.00L445.30,520.25L445.30,532.75L434.48,539.00L423.65,532.75L423.65,520.25Z" fill="#E4003B"><title>carlisle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,514.00L473.02,520.25L473.02,532.75L462.19,539.00L451.37,532.75L451.37,520.25Z" fill="#E4003B"><title>peckham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,514.00L500.73,520.25L500.73,532.75L489.91,539.00L479.08,532.75L479.08,520.25Z" fill="#FFD700"><title>southwark and bermondsey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,514.00L528.44,520.25L528.44,532.75L517.62,539.00L506.79,532.75L506.79,520.25Z" fill="#E4003B"><title>blaydon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,514.00L556.16,520.25L556.16,532.75L545.33,539.00L534.51,532.75L534.51,520.25Z" fill="#E4003B"><title>wallsend (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,514.00L583.87,520.25L583.87,532.75L573.04,539.00L562.22,532.75L562.22,520.25Z" fill="#E4003B"><title>blyth valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,514.00L611.58,520.25L611.58,532.75L600.76,539.00L589.93,532.75L589.93,520.25Z" fill="#E4003B"><title>south shields (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,538.00L292.88,544.25L292.88,556.75L282.06,563.00L271.23,556.75L271.23,544.25Z" fill="#E4003B"><title>#East Kilbride (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,538.00L320.60,544.25L320.60,556.75L309.77,563.00L298.95,556.75L298.95,544.25Z" fill="#0087DC"><title>Eastwood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,538.00L348.31,544.25L348.31,556.75L337.48,563.00L326.66,556.75L326.66,544.25Z" fill="#E4003B"><title>#Hamilton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,538.00L376.02,544.25L376.02,556.75L365.20,563.00L354.37,556.75L354.37,544.25Z" fill="#0087DC"><title>#croydon central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,538.00L403.74,544.25L403.74,556.75L392.91,563.00L382.08,556.75L382.08,544.25Z" fill="#0087DC"><title>beckenham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,538.00L431.45,544.25L431.45,556.75L420.62,563.00L409.80,556.75L409.80,544.25Z" fill="#E4003B"><title>battersea (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,538.00L459.16,544.25L459.16,556.75L448.34,563.00L437.51,556.75L437.51,544.25Z" fill="#0087DC"><title>penrith and the border (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,538.00L486.87,544.25L486.87,556.75L476.05,563.00L465.22,556.75L465.22,544.25Z" fill="#E4003B"><title>hammersmith (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,538.00L514.59,544.25L514.59,556.75L503.76,563.00L492.94,556.75L492.94,544.25Z" fill="#E4003B"><title>bethnal green and stepney (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,538.00L542.30,544.25L542.30,556.75L531.47,563.00L520.65,556.75L520.65,544.25Z" fill="#E4003B"><title>tyne bridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,538.00L570.01,544.25L570.01,556.75L559.19,563.00L548.36,556.75L548.36,544.25Z" fill="#E4003B"><title>newcastle north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,538.00L597.73,544.25L597.73,556.75L586.90,563.00L576.07,556.75L576.07,544.25Z" fill="#E4003B"><title>newcastle east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,538.00L625.44,544.25L625.44,556.75L614.61,563.00L603.79,556.75L603.79,544.25Z" fill="#E4003B"><title>sunderland south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,562.00L279.03,568.25L279.03,580.75L268.20,587.00L257.38,580.75L257.38,568.25Z" fill="#E4003B"><title>#Cunninghame South (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,562.00L306.74,568.25L306.74,580.75L295.92,587.00L285.09,580.75L285.09,568.25Z" fill="#E4003B"><title>Kilmarnock (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,562.00L334.45,568.25L334.45,580.75L323.63,587.00L312.80,580.75L312.80,568.25Z" fill="#0087DC"><title>Ayr (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,562.00L362.17,568.25L362.17,580.75L351.34,587.00L340.52,580.75L340.52,568.25Z" fill="#0087DC"><title>carshalton and wallington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,562.00L389.88,568.25L389.88,580.75L379.05,587.00L368.23,580.75L368.23,568.25Z" fill="#0087DC"><title>wimbledon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,562.00L417.59,568.25L417.59,580.75L406.77,587.00L395.94,580.75L395.94,568.25Z" fill="#E4003B"><title>workington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,562.00L445.30,568.25L445.30,580.75L434.48,587.00L423.65,580.75L423.65,568.25Z" fill="#0087DC"><title>erith and crayford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,562.00L473.02,568.25L473.02,580.75L462.19,587.00L451.37,580.75L451.37,568.25Z" fill="#0087DC"><title>city of london and westminster south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,562.00L500.73,568.25L500.73,580.75L489.91,587.00L479.08,580.75L479.08,568.25Z" fill="#E4003B"><title>newham south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,562.00L528.44,568.25L528.44,580.75L517.62,587.00L506.79,580.75L506.79,568.25Z" fill="#E4003B"><title>north west durham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,562.00L556.16,568.25L556.16,580.75L545.33,587.00L534.51,580.75L534.51,568.25Z" fill="#E4003B"><title>gateshead east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,562.00L583.87,568.25L583.87,580.75L573.04,587.00L562.22,580.75L562.22,568.25Z" fill="#E4003B"><title>jarrow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,562.00L611.58,568.25L611.58,580.75L600.76,587.00L589.93,580.75L589.93,568.25Z" fill="#E4003B"><title>sunderland north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,562.00L639.29,568.25L639.29,580.75L628.47,587.00L617.64,580.75L617.64,568.25Z" fill="#E4003B"><title>hartlepool (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,586.00L265.17,592.25L265.17,604.75L254.35,611.00L243.52,604.75L243.52,592.25Z" fill="#0087DC"><title>hastings and rye (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,586.00L292.88,592.25L292.88,604.75L282.06,611.00L271.23,604.75L271.23,592.25Z" fill="#E4003B"><title>Carrick__Cumnock_and_Doon_Valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,586.00L320.60,592.25L320.60,604.75L309.77,611.00L298.95,604.75L298.95,592.25Z" fill="#0087DC"><title>#Galloway and Upper Nithsdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,586.00L348.31,592.25L348.31,604.75L337.48,611.00L326.66,604.75L326.66,592.25Z" fill="#0087DC"><title>orpington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,586.00L376.02,592.25L376.02,604.75L365.20,611.00L354.37,604.75L354.37,592.25Z" fill="#0087DC"><title>chislehurst (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,586.00L403.74,592.25L403.74,604.75L392.91,611.00L382.08,604.75L382.08,592.25Z" fill="#E4003B"><title>copeland (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,586.00L431.45,592.25L431.45,604.75L420.62,611.00L409.80,604.75L409.80,592.25Z" fill="#0087DC"><title>chelsea (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,586.00L459.16,592.25L459.16,604.75L448.34,611.00L437.51,604.75L437.51,592.25Z" fill="#0087DC"><title>westmorland and lonsdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,586.00L486.87,592.25L486.87,604.75L476.05,611.00L465.22,604.75L465.22,592.25Z" fill="#E4003B"><title>stretford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,586.00L514.59,592.25L514.59,604.75L503.76,611.00L492.94,604.75L492.94,592.25Z" fill="#E4003B"><title>bishop auckland (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,586.00L542.30,592.25L542.30,604.75L531.47,611.00L520.65,604.75L520.65,592.25Z" fill="#E4003B"><title>city of durham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,586.00L570.01,592.25L570.01,604.75L559.19,611.00L548.36,604.75L548.36,592.25Z" fill="#E4003B"><title>north durham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,586.00L597.73,592.25L597.73,604.75L586.90,611.00L576.07,604.75L576.07,592.25Z" fill="#E4003B"><title>houghton and washington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,586.00L625.44,592.25L625.44,604.75L614.61,611.00L603.79,604.75L603.79,592.25Z" fill="#E4003B"><title>easington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,610.00L251.32,616.25L251.32,628.75L240.49,635.00L229.66,628.75L229.66,616.25Z" fill="#0087DC"><title>lewes (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,610.00L279.03,616.25L279.03,628.75L268.20,635.00L257.38,628.75L257.38,616.25Z" fill="#0087DC"><title>tunbridge wells (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,610.00L306.74,616.25L306.74,628.75L295.92,635.00L285.09,628.75L285.09,616.25Z" fill="#0087DC"><title>sevenoaks (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,610.00L334.45,616.25L334.45,628.75L323.63,635.00L312.80,628.75L312.80,616.25Z" fill="#0087DC"><title>croydon north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,610.00L362.17,616.25L362.17,628.75L351.34,635.00L340.52,628.75L340.52,616.25Z" fill="#0087DC"><title>old bexley and sidcup (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,610.00L389.88,616.25L389.88,628.75L379.05,635.00L368.23,628.75L368.23,616.25Z" fill="#E4003B"><title>vauxhall (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,610.00L417.59,616.25L417.59,628.75L406.77,635.00L395.94,628.75L395.94,616.25Z" fill="#0087DC"><title>barrow and furness (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,610.00L445.30,616.25L445.30,628.75L434.48,635.00L423.65,628.75L423.65,616.25Z" fill="#E4003B"><title>eccles (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,610.00L473.02,616.25L473.02,628.75L462.19,635.00L451.37,628.75L451.37,616.25Z" fill="#0087DC"><title>bury south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,610.00L500.73,616.25L500.73,628.75L489.91,635.00L479.08,628.75L479.08,616.25Z" fill="#0087DC"><title>bury north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,610.00L528.44,616.25L528.44,628.75L517.62,635.00L506.79,628.75L506.79,616.25Z" fill="#0087DC"><title>dewsbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,610.00L556.16,616.25L556.16,628.75L545.33,635.00L534.51,628.75L534.51,616.25Z" fill="#E4003B"><title>sedgefield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,610.00L583.87,616.25L583.87,628.75L573.04,635.00L562.22,628.75L562.22,616.25Z" fill="#E4003B"><title>stockton north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,610.00L611.58,616.25L611.58,628.75L600.76,635.00L589.93,628.75L589.93,616.25Z" fill="#E4003B"><title>redcar (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,610.00L639.29,616.25L639.29,628.75L628.47,635.00L617.64,628.75L617.64,616.25Z" fill="#E4003B"><title>middlesbrough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,634.00L265.17,640.25L265.17,652.75L254.35,659.00L243.52,652.75L243.52,640.25Z" fill="#0087DC"><title>folkestone and hythe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,634.00L292.88,640.25L292.88,652.75L282.06,659.00L271.23,652.75L271.23,640.25Z" fill="#0087DC"><title>tonbridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,634.00L320.60,640.25L320.60,652.75L309.77,659.00L298.95,652.75L298.95,640.25Z" fill="#0087DC"><title>chertsey and walton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,634.00L348.31,640.25L348.31,652.75L337.48,659.00L326.66,652.75L326.66,640.25Z" fill="#0087DC"><title>streatham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,634.00L376.02,640.25L376.02,652.75L365.20,659.00L354.37,652.75L354.37,640.25Z" fill="#E4003B"><title>halton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,634.00L403.74,640.25L403.74,652.75L392.91,659.00L382.08,652.75L382.08,640.25Z" fill="#E4003B"><title>st helens south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,634.00L431.45,640.25L431.45,652.75L420.62,659.00L409.80,652.75L409.80,640.25Z" fill="#0087DC"><title>blackpool south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,634.00L459.16,640.25L459.16,652.75L448.34,659.00L437.51,652.75L437.51,640.25Z" fill="#0087DC"><title>morecambe and lunesdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,634.00L486.87,640.25L486.87,652.75L476.05,659.00L465.22,652.75L465.22,640.25Z" fill="#E4003B"><title>blackburn (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,634.00L514.59,640.25L514.59,652.75L503.76,659.00L492.94,652.75L492.94,640.25Z" fill="#0087DC"><title>halifax (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,634.00L542.30,640.25L542.30,652.75L531.47,659.00L520.65,652.75L520.65,640.25Z" fill="#0087DC"><title>richmond yorks (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,634.00L570.01,640.25L570.01,652.75L559.19,659.00L548.36,652.75L548.36,640.25Z" fill="#0087DC"><title>darlington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,634.00L597.73,640.25L597.73,652.75L586.90,659.00L576.07,652.75L576.07,640.25Z" fill="#FFD700"><title>stockton south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,634.00L625.44,640.25L625.44,652.75L614.61,659.00L603.79,652.75L603.79,640.25Z" fill="#0087DC"><title>langbaurgh (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,634.00L653.15,640.25L653.15,652.75L642.33,659.00L631.50,652.75L631.50,640.25Z" fill="#0087DC"><title>scarborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,658.00L251.32,664.25L251.32,676.75L240.49,683.00L229.66,676.75L229.66,664.25Z" fill="#0087DC"><title>wealden (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,658.00L279.03,664.25L279.03,676.75L268.20,683.00L257.38,676.75L257.38,664.25Z" fill="#0087DC"><title>reigate (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,658.00L306.74,664.25L306.74,676.75L295.92,683.00L285.09,676.75L285.09,664.25Z" fill="#0087DC"><title>sutton and cheam (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,658.00L334.45,664.25L334.45,676.75L323.63,683.00L312.80,676.75L312.80,664.25Z" fill="#0087DC"><title>twickenham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,658.00L362.17,664.25L362.17,676.75L351.34,683.00L340.52,676.75L340.52,664.25Z" fill="#0087DC"><title>wirral west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,658.00L389.88,664.25L389.88,676.75L379.05,683.00L368.23,676.75L368.23,664.25Z" fill="#E4003B"><title>liverpool west derby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,658.00L417.59,664.25L417.59,676.75L406.77,683.00L395.94,676.75L395.94,664.25Z" fill="#0087DC"><title>wyre (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,658.00L445.30,664.25L445.30,676.75L434.48,683.00L423.65,676.75L423.65,664.25Z" fill="#0087DC"><title>lancaster (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,658.00L473.02,664.25L473.02,676.75L462.19,683.00L451.37,676.75L451.37,664.25Z" fill="#0087DC"><title>ribble valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,658.00L500.73,664.25L500.73,676.75L489.91,683.00L479.08,676.75L479.08,664.25Z" fill="#0087DC"><title>pendle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,658.00L528.44,664.25L528.44,676.75L517.62,683.00L506.79,676.75L506.79,664.25Z" fill="#0087DC"><title>skipton and ripon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,658.00L556.16,664.25L556.16,676.75L545.33,683.00L534.51,676.75L534.51,664.25Z" fill="#0087DC"><title>keighley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,658.00L583.87,664.25L583.87,676.75L573.04,683.00L562.22,676.75L562.22,664.25Z" fill="#0087DC"><title>harrogate (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,658.00L611.58,664.25L611.58,676.75L600.76,683.00L589.93,676.75L589.93,664.25Z" fill="#0087DC"><title>city of york (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,658.00L639.29,664.25L639.29,676.75L628.47,683.00L617.64,676.75L617.64,664.25Z" fill="#0087DC"><title>ryedale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,682.00L237.46,688.25L237.46,700.75L226.63,707.00L215.81,700.75L215.81,688.25Z" fill="#0087DC"><title>mid sussex (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,682.00L265.17,688.25L265.17,700.75L254.35,707.00L243.52,700.75L243.52,688.25Z" fill="#0087DC"><title>maidstone (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,682.00L292.88,688.25L292.88,700.75L282.06,707.00L271.23,700.75L271.23,688.25Z" fill="#0087DC"><title>ravensbourne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,682.00L320.60,688.25L320.60,700.75L309.77,707.00L298.95,700.75L298.95,688.25Z" fill="#0087DC"><title>east berkshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,682.00L348.31,688.25L348.31,700.75L337.48,707.00L326.66,700.75L326.66,688.25Z" fill="#0087DC"><title>wirral south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,682.00L376.02,688.25L376.02,700.75L365.20,707.00L354.37,700.75L354.37,688.25Z" fill="#E4003B"><title>liverpool wavertree (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,682.00L403.74,688.25L403.74,700.75L392.91,707.00L382.08,700.75L382.08,688.25Z" fill="#0087DC"><title>crosby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,682.00L431.45,688.25L431.45,700.75L420.62,707.00L409.80,700.75L409.80,688.25Z" fill="#0087DC"><title>blackpool north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,682.00L459.16,688.25L459.16,700.75L448.34,707.00L437.51,700.75L437.51,688.25Z" fill="#0087DC"><title>fylde (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,682.00L486.87,688.25L486.87,700.75L476.05,707.00L465.22,700.75L465.22,688.25Z" fill="#E4003B"><title>burnley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,682.00L514.59,688.25L514.59,700.75L503.76,707.00L492.94,700.75L492.94,688.25Z" fill="#E4003B"><title>bradford west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,682.00L542.30,688.25L542.30,700.75L531.47,707.00L520.65,700.75L520.65,688.25Z" fill="#0087DC"><title>shipley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,682.00L570.01,688.25L570.01,700.75L559.19,707.00L548.36,700.75L548.36,688.25Z" fill="#0087DC"><title>leeds north west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,682.00L597.73,688.25L597.73,700.75L586.90,707.00L576.07,700.75L576.07,688.25Z" fill="#0087DC"><title>leeds north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,682.00L625.44,688.25L625.44,700.75L614.61,707.00L603.79,700.75L603.79,688.25Z" fill="#0087DC"><title>selby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,682.00L653.15,688.25L653.15,700.75L642.33,707.00L631.50,700.75L631.50,688.25Z" fill="#0087DC"><title>beverley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,706.00L223.60,712.25L223.60,724.75L212.78,731.00L201.95,724.75L201.95,712.25Z" fill="#0087DC"><title>bexhill and battle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,706.00L251.32,712.25L251.32,724.75L240.49,731.00L229.66,724.75L229.66,712.25Z" fill="#0087DC"><title>dover (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,706.00L279.03,712.25L279.03,724.75L268.20,731.00L257.38,724.75L257.38,712.25Z" fill="#0087DC"><title>north west surrey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,706.00L306.74,712.25L306.74,724.75L295.92,731.00L285.09,724.75L285.09,712.25Z" fill="#0087DC"><title>reading east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,706.00L334.45,712.25L334.45,724.75L323.63,731.00L312.80,724.75L312.80,712.25Z" fill="#E4003B"><title>#Alyn and Deeside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,706.00L362.17,712.25L362.17,724.75L351.34,731.00L340.52,724.75L340.52,712.25Z" fill="#0087DC"><title>wallasey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,706.00L389.88,712.25L389.88,724.75L379.05,731.00L368.23,724.75L368.23,712.25Z" fill="#E4003B"><title>bootle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,706.00L417.59,712.25L417.59,724.75L406.77,731.00L395.94,724.75L395.94,712.25Z" fill="#0087DC"><title>southport (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,706.00L445.30,712.25L445.30,724.75L434.48,731.00L423.65,724.75L423.65,712.25Z" fill="#0087DC"><title>south ribble (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,706.00L473.02,712.25L473.02,724.75L462.19,731.00L451.37,724.75L451.37,712.25Z" fill="#E4003B"><title>preston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,706.00L500.73,712.25L500.73,724.75L489.91,731.00L479.08,724.75L479.08,712.25Z" fill="#0087DC"><title>hyndburn (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,706.00L528.44,712.25L528.44,724.75L517.62,731.00L506.79,724.75L506.79,712.25Z" fill="#0087DC"><title>bradford east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,706.00L556.16,712.25L556.16,724.75L545.33,731.00L534.51,724.75L534.51,712.25Z" fill="#0087DC"><title>pudsey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,706.00L583.87,712.25L583.87,724.75L573.04,731.00L562.22,724.75L562.22,712.25Z" fill="#0087DC"><title>elmet (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,706.00L611.58,712.25L611.58,724.75L600.76,731.00L589.93,724.75L589.93,712.25Z" fill="#E4003B"><title>leeds east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,706.00L639.29,712.25L639.29,724.75L628.47,731.00L617.64,724.75L617.64,712.25Z" fill="#0087DC"><title>boothferry (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,706.00L694.72,712.25L694.72,724.75L683.89,731.00L673.07,724.75L673.07,712.25Z" fill="#0087DC"><title>bridlington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,706.00L722.43,712.25L722.43,724.75L711.61,731.00L700.78,724.75L700.78,712.25Z" fill="#E4003B"><title>hull north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,706.00L750.15,712.25L750.15,724.75L739.32,731.00L728.50,724.75L728.50,712.25Z" fill="#E4003B"><title>grimsby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,730.00L154.32,736.25L154.32,748.75L143.49,755.00L132.67,748.75L132.67,736.25Z" fill="#0087DC"><title>arundel (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,730.00L237.46,736.25L237.46,748.75L226.63,755.00L215.81,748.75L215.81,736.25Z" fill="#0087DC"><title>ashford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,730.00L265.17,736.25L265.17,748.75L254.35,755.00L243.52,748.75L243.52,736.25Z" fill="#0087DC"><title>epsom and ewell (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,730.00L292.88,736.25L292.88,748.75L282.06,755.00L271.23,748.75L271.23,736.25Z" fill="#0087DC"><title>#Ynys Mon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,730.00L320.60,736.25L320.60,748.75L309.77,755.00L298.95,748.75L298.95,736.25Z" fill="#0087DC"><title>dulwich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,730.00L348.31,736.25L348.31,748.75L337.48,755.00L326.66,748.75L326.66,736.25Z" fill="#E4003B"><title>birkenhead (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,730.00L376.02,736.25L376.02,748.75L365.20,755.00L354.37,748.75L354.37,736.25Z" fill="#E4003B"><title>liverpool walton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,730.00L403.74,736.25L403.74,748.75L392.91,755.00L382.08,748.75L382.08,736.25Z" fill="#E4003B"><title>worsley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,730.00L431.45,736.25L431.45,748.75L420.62,755.00L409.80,748.75L409.80,736.25Z" fill="#0087DC"><title>west lancashire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,730.00L459.16,736.25L459.16,748.75L448.34,755.00L437.51,748.75L437.51,736.25Z" fill="#0087DC"><title>chorley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,730.00L486.87,736.25L486.87,748.75L476.05,755.00L465.22,748.75L465.22,736.25Z" fill="#0087DC"><title>rossendale and darwen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,730.00L514.59,736.25L514.59,748.75L503.76,755.00L492.94,748.75L492.94,736.25Z" fill="#0087DC"><title>calder valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,730.00L542.30,736.25L542.30,748.75L531.47,755.00L520.65,748.75L520.65,736.25Z" fill="#E4003B"><title>bradford south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,730.00L570.01,736.25L570.01,748.75L559.19,755.00L548.36,748.75L548.36,736.25Z" fill="#FFD700"><title>leeds west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,730.00L597.73,736.25L597.73,748.75L586.90,755.00L576.07,748.75L576.07,736.25Z" fill="#E4003B"><title>leeds central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,730.00L625.44,736.25L625.44,748.75L614.61,755.00L603.79,748.75L603.79,736.25Z" fill="#E4003B"><title>normanton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,730.00L653.15,736.25L653.15,748.75L642.33,755.00L631.50,748.75L631.50,736.25Z" fill="#E4003B"><title>hemsworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,730.00L680.86,736.25L680.86,748.75L670.04,755.00L659.21,748.75L659.21,736.25Z" fill="#E4003B"><title>hull west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,730.00L708.58,736.25L708.58,748.75L697.75,755.00L686.93,748.75L686.93,736.25Z" fill="#E4003B"><title>hull east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,730.00L736.29,736.25L736.29,748.75L725.46,755.00L714.64,748.75L714.64,736.25Z" fill="#0087DC"><title>east lindsey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,730.00L764.00,736.25L764.00,748.75L753.18,755.00L742.35,748.75L742.35,736.25Z" fill="#0087DC"><title>hampstead and highgate (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,730.00L791.71,736.25L791.71,748.75L780.89,755.00L770.06,748.75L770.06,736.25Z" fill="#E4003B"><title>hackney south and shoreditch (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,754.00L195.89,760.25L195.89,772.75L185.06,779.00L174.24,772.75L174.24,760.25Z" fill="#0087DC"><title>chichester (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,754.00L223.60,760.25L223.60,772.75L212.78,779.00L201.95,772.75L201.95,760.25Z" fill="#0087DC"><title>east hampshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,754.00L251.32,760.25L251.32,772.75L240.49,779.00L229.66,772.75L229.66,760.25Z" fill="#0087DC"><title>woking (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,754.00L279.03,760.25L279.03,772.75L268.20,779.00L257.38,772.75L257.38,760.25Z" fill="#0087DC"><title>croydon north west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,754.00L306.74,760.25L306.74,772.75L295.92,779.00L285.09,772.75L285.09,760.25Z" fill="#0087DC"><title>putney (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,754.00L334.45,760.25L334.45,772.75L323.63,779.00L312.80,772.75L312.80,760.25Z" fill="#0087DC"><title>Conway (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,754.00L362.17,760.25L362.17,772.75L351.34,779.00L340.52,772.75L340.52,760.25Z" fill="#FFD700"><title>liverpool mossley hill (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,754.00L389.88,760.25L389.88,772.75L379.05,779.00L368.23,772.75L368.23,760.25Z" fill="#E4003B"><title>knowsley north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,754.00L417.59,760.25L417.59,772.75L406.77,779.00L395.94,772.75L395.94,760.25Z" fill="#E4003B"><title>makerfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,754.00L445.30,760.25L445.30,772.75L434.48,779.00L423.65,772.75L423.65,760.25Z" fill="#0087DC"><title>bolton west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,754.00L473.02,760.25L473.02,772.75L462.19,779.00L451.37,772.75L451.37,760.25Z" fill="#0087DC"><title>bolton north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,754.00L500.73,760.25L500.73,772.75L489.91,779.00L479.08,772.75L479.08,760.25Z" fill="#FFD700"><title>rochdale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,754.00L528.44,760.25L528.44,772.75L517.62,779.00L506.79,772.75L506.79,760.25Z" fill="#E4003B"><title>huddersfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,754.00L556.16,760.25L556.16,772.75L545.33,779.00L534.51,772.75L534.51,760.25Z" fill="#0087DC"><title>batley and spen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,754.00L583.87,760.25L583.87,772.75L573.04,779.00L562.22,772.75L562.22,760.25Z" fill="#E4003B"><title>morley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,754.00L611.58,760.25L611.58,772.75L600.76,779.00L589.93,772.75L589.93,760.25Z" fill="#E4003B"><title>pontefract and castleford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,754.00L639.29,760.25L639.29,772.75L628.47,779.00L617.64,772.75L617.64,760.25Z" fill="#E4003B"><title>doncaster north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,754.00L667.01,760.25L667.01,772.75L656.18,779.00L645.36,772.75L645.36,760.25Z" fill="#0087DC"><title>glanford and scunthorpe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,754.00L694.72,760.25L694.72,772.75L683.89,779.00L673.07,772.75L673.07,760.25Z" fill="#0087DC"><title>brigg and cleethorpes (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,754.00L722.43,760.25L722.43,772.75L711.61,779.00L700.78,772.75L700.78,760.25Z" fill="#0087DC"><title>#gainsborough and horncastle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,754.00L750.15,760.25L750.15,772.75L739.32,779.00L728.50,772.75L728.50,760.25Z" fill="#E4003B"><title>leyton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,754.00L777.86,760.25L777.86,772.75L767.03,779.00L756.21,772.75L756.21,760.25Z" fill="#E4003B"><title>hackney north and stoke newington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,754.00L805.57,760.25L805.57,772.75L794.75,779.00L783.92,772.75L783.92,760.25Z" fill="#E4003B"><title>brent east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M171.21,778.00L182.03,784.25L182.03,796.75L171.21,803.00L160.38,796.75L160.38,784.25Z" fill="#0087DC"><title>fareham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M198.92,778.00L209.75,784.25L209.75,796.75L198.92,803.00L188.10,796.75L188.10,784.25Z" fill="#0087DC"><title>winchester (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,778.00L237.46,784.25L237.46,796.75L226.63,803.00L215.81,796.75L215.81,784.25Z" fill="#0087DC"><title>east surrey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,778.00L265.17,784.25L265.17,796.75L254.35,803.00L243.52,796.75L243.52,784.25Z" fill="#0087DC"><title>surbiton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,778.00L292.88,784.25L292.88,796.75L282.06,803.00L271.23,796.75L271.23,784.25Z" fill="#008672"><title>Caernarfon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,778.00L320.60,784.25L320.60,796.75L309.77,803.00L298.95,796.75L298.95,784.25Z" fill="#008672"><title>#Meirionnydd Nant Conwy (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,778.00L348.31,784.25L348.31,796.75L337.48,803.00L326.66,796.75L326.66,784.25Z" fill="#0087DC"><title>#Clwyd North West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,778.00L376.02,784.25L376.02,796.75L365.20,803.00L354.37,796.75L354.37,784.25Z" fill="#E4003B"><title>liverpool riverside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,778.00L403.74,784.25L403.74,796.75L392.91,803.00L382.08,796.75L382.08,784.25Z" fill="#E4003B"><title>st helens north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,778.00L431.45,784.25L431.45,796.75L420.62,803.00L409.80,796.75L409.80,784.25Z" fill="#E4003B"><title>leigh (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,778.00L459.16,784.25L459.16,796.75L448.34,803.00L437.51,796.75L437.51,784.25Z" fill="#E4003B"><title>wigan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,778.00L486.87,784.25L486.87,796.75L476.05,803.00L465.22,796.75L465.22,784.25Z" fill="#0087DC"><title>littleborough and saddleworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,778.00L514.59,784.25L514.59,796.75L503.76,803.00L492.94,796.75L492.94,784.25Z" fill="#E4003B"><title>heywood and middleton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,778.00L542.30,784.25L542.30,796.75L531.47,803.00L520.65,796.75L520.65,784.25Z" fill="#FFD700"><title>colne valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,778.00L570.01,784.25L570.01,796.75L559.19,803.00L548.36,796.75L548.36,784.25Z" fill="#E4003B"><title>wakefield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,778.00L597.73,784.25L597.73,796.75L586.90,803.00L576.07,796.75L576.07,784.25Z" fill="#E4003B"><title>barnsley central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,778.00L625.44,784.25L625.44,796.75L614.61,803.00L603.79,796.75L603.79,784.25Z" fill="#E4003B"><title>barnsley east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,778.00L653.15,784.25L653.15,796.75L642.33,803.00L631.50,796.75L631.50,784.25Z" fill="#E4003B"><title>doncaster central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,778.00L680.86,784.25L680.86,796.75L670.04,803.00L659.21,796.75L659.21,784.25Z" fill="#E4003B"><title>rother valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,778.00L708.58,784.25L708.58,796.75L697.75,803.00L686.93,796.75L686.93,784.25Z" fill="#0087DC"><title>lincoln (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,778.00L736.29,784.25L736.29,796.75L725.46,803.00L714.64,796.75L714.64,784.25Z" fill="#0087DC"><title>holland with boston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,778.00L764.00,784.25L764.00,796.75L753.18,803.00L742.35,796.75L742.35,784.25Z" fill="#E4003B"><title>walthamstow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,778.00L791.71,784.25L791.71,796.75L780.89,803.00L770.06,796.75L770.06,784.25Z" fill="#0087DC"><title>brent north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,778.00L819.43,784.25L819.43,796.75L808.60,803.00L797.78,796.75L797.78,784.25Z" fill="#0087DC"><title>north norfolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,802.00L279.03,808.25L279.03,820.75L268.20,827.00L257.38,820.75L257.38,808.25Z" fill="#0087DC"><title>spelthorne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,802.00L306.74,808.25L306.74,820.75L295.92,827.00L285.09,820.75L285.09,808.25Z" fill="#E4003B"><title>lewisham deptford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,802.00L334.45,808.25L334.45,820.75L323.63,827.00L312.80,820.75L312.80,808.25Z" fill="#0087DC"><title>#Clwyd South West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,802.00L362.17,808.25L362.17,820.75L351.34,827.00L340.52,820.75L340.52,808.25Z" fill="#0087DC"><title>ellesmere port and neston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,802.00L389.88,808.25L389.88,820.75L379.05,827.00L368.23,820.75L368.23,808.25Z" fill="#E4003B"><title>knowsley south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,802.00L417.59,808.25L417.59,820.75L406.77,827.00L395.94,820.75L395.94,808.25Z" fill="#0087DC"><title>davyhulme (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,802.00L445.30,808.25L445.30,820.75L434.48,827.00L423.65,820.75L423.65,808.25Z" fill="#E4003B"><title>salford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,802.00L473.02,808.25L473.02,820.75L462.19,827.00L451.37,820.75L451.37,808.25Z" fill="#E4003B"><title>manchester blackley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,802.00L500.73,808.25L500.73,820.75L489.91,827.00L479.08,820.75L479.08,808.25Z" fill="#E4003B"><title>bolton south east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,802.00L528.44,808.25L528.44,820.75L517.62,827.00L506.79,820.75L506.79,808.25Z" fill="#E4003B"><title>oldham east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,802.00L556.16,808.25L556.16,820.75L545.33,827.00L534.51,820.75L534.51,808.25Z" fill="#E4003B"><title>oldham west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,802.00L583.87,808.25L583.87,820.75L573.04,827.00L562.22,820.75L562.22,808.25Z" fill="#E4003B"><title>barnsley west and penistone (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,802.00L611.58,808.25L611.58,820.75L600.76,827.00L589.93,820.75L589.93,808.25Z" fill="#E4003B"><title>don valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,802.00L639.29,808.25L639.29,820.75L628.47,827.00L617.64,820.75L617.64,808.25Z" fill="#E4003B"><title>wentworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,802.00L667.01,808.25L667.01,820.75L656.18,827.00L645.36,820.75L645.36,808.25Z" fill="#E4003B"><title>sheffield central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,802.00L694.72,808.25L694.72,820.75L683.89,827.00L673.07,820.75L673.07,808.25Z" fill="#E4003B"><title>bassetlaw (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,802.00L722.43,808.25L722.43,820.75L711.61,827.00L700.78,820.75L700.78,808.25Z" fill="#0087DC"><title>grantham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,802.00L750.15,808.25L750.15,820.75L739.32,827.00L728.50,820.75L728.50,808.25Z" fill="#0087DC"><title>peterborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,802.00L777.86,808.25L777.86,820.75L767.03,827.00L756.21,820.75L756.21,808.25Z" fill="#0087DC"><title>north west norfolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,802.00L805.57,808.25L805.57,820.75L794.75,827.00L783.92,820.75L783.92,808.25Z" fill="#0087DC"><title>norwich south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,826.00L292.88,832.25L292.88,844.75L282.06,851.00L271.23,844.75L271.23,832.25Z" fill="#E4003B"><title>norwood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,826.00L320.60,832.25L320.60,844.75L309.77,851.00L298.95,844.75L298.95,832.25Z" fill="#0087DC"><title>windsor and maidenhead (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,826.00L348.31,832.25L348.31,844.75L337.48,851.00L326.66,844.75L326.66,832.25Z" fill="#E4003B"><title>bow and poplar (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,826.00L376.02,832.25L376.02,844.75L365.20,851.00L354.37,844.75L354.37,832.25Z" fill="#0087DC"><title>Delyn (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,826.00L403.74,832.25L403.74,844.75L392.91,851.00L382.08,844.75L382.08,832.25Z" fill="#E4003B"><title>#liverpool garston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,826.00L431.45,832.25L431.45,844.75L420.62,851.00L409.80,844.75L409.80,832.25Z" fill="#E4003B"><title>warrington north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,826.00L459.16,832.25L459.16,844.75L448.34,851.00L437.51,844.75L437.51,832.25Z" fill="#E4003B"><title>manchester gorton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,826.00L486.87,832.25L486.87,844.75L476.05,851.00L465.22,844.75L465.22,832.25Z" fill="#E4003B"><title>manchester central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,826.00L514.59,832.25L514.59,844.75L503.76,851.00L492.94,844.75L492.94,832.25Z" fill="#E4003B"><title>ashton under lyne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,826.00L542.30,832.25L542.30,844.75L531.47,851.00L520.65,844.75L520.65,832.25Z" fill="#E4003B"><title>stalybridge and hyde (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,826.00L570.01,832.25L570.01,844.75L559.19,851.00L548.36,844.75L548.36,832.25Z" fill="#E4003B"><title>denton and reddish (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,826.00L597.73,832.25L597.73,844.75L586.90,851.00L576.07,844.75L576.07,832.25Z" fill="#E4003B"><title>rotherham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,826.00L625.44,832.25L625.44,844.75L614.61,851.00L603.79,844.75L603.79,832.25Z" fill="#E4003B"><title>sheffield hillsborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,826.00L653.15,832.25L653.15,844.75L642.33,851.00L631.50,844.75L631.50,832.25Z" fill="#E4003B"><title>sheffield attercliffe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,826.00L680.86,832.25L680.86,844.75L670.04,851.00L659.21,844.75L659.21,832.25Z" fill="#E4003B"><title>bolsover (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,826.00L708.58,832.25L708.58,844.75L697.75,851.00L686.93,844.75L686.93,832.25Z" fill="#0087DC"><title>sherwood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,826.00L736.29,832.25L736.29,844.75L725.46,851.00L714.64,844.75L714.64,832.25Z" fill="#0087DC"><title>stamford and spalding (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,826.00L764.00,832.25L764.00,844.75L753.18,851.00L742.35,844.75L742.35,832.25Z" fill="#0087DC"><title>north bedfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,826.00L791.71,832.25L791.71,844.75L780.89,851.00L770.06,844.75L770.06,832.25Z" fill="#0087DC"><title>south west norfolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,826.00L819.43,832.25L819.43,844.75L808.60,851.00L797.78,844.75L797.78,832.25Z" fill="#0087DC"><title>mid norfolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,850.00L279.03,856.25L279.03,868.75L268.20,875.00L257.38,868.75L257.38,856.25Z" fill="#0087DC"><title>richmond and barnes (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,850.00L306.74,856.25L306.74,868.75L295.92,875.00L285.09,868.75L285.09,856.25Z" fill="#0087DC"><title>brentford and isleworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,850.00L334.45,856.25L334.45,868.75L323.63,875.00L312.80,868.75L312.80,856.25Z" fill="#0087DC"><title>kensington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,850.00L362.17,856.25L362.17,868.75L351.34,875.00L340.52,868.75L340.52,856.25Z" fill="#FFD700"><title>Montgomeryshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,850.00L389.88,856.25L389.88,868.75L379.05,875.00L368.23,868.75L368.23,856.25Z" fill="#0087DC"><title>city of chester (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,850.00L417.59,856.25L417.59,868.75L406.77,875.00L395.94,868.75L395.94,856.25Z" fill="#0087DC"><title>warrington south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,850.00L445.30,856.25L445.30,868.75L434.48,875.00L423.65,868.75L423.65,856.25Z" fill="#E4003B"><title>manchester wythenshawe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,850.00L473.02,856.25L473.02,868.75L462.19,875.00L451.37,868.75L451.37,856.25Z" fill="#0087DC"><title>altrincham and sale (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,850.00L500.73,856.25L500.73,868.75L489.91,875.00L479.08,868.75L479.08,856.25Z" fill="#0087DC"><title>manchester withington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,850.00L528.44,856.25L528.44,868.75L517.62,875.00L506.79,868.75L506.79,856.25Z" fill="#0087DC"><title>stockport (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,850.00L556.16,856.25L556.16,868.75L545.33,875.00L534.51,868.75L534.51,856.25Z" fill="#0087DC"><title>hazel grove (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,850.00L583.87,856.25L583.87,868.75L573.04,875.00L562.22,868.75L562.22,856.25Z" fill="#E4003B"><title>sheffield brightside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,850.00L611.58,856.25L611.58,868.75L600.76,875.00L589.93,868.75L589.93,856.25Z" fill="#0087DC"><title>milton keynes south west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,850.00L639.29,856.25L639.29,868.75L628.47,875.00L617.64,868.75L617.64,856.25Z" fill="#E4003B"><title>sheffield heeley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,850.00L667.01,856.25L667.01,868.75L656.18,875.00L645.36,868.75L645.36,856.25Z" fill="#0087DC"><title>newark (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,850.00L694.72,856.25L694.72,868.75L683.89,875.00L673.07,868.75L673.07,856.25Z" fill="#0087DC"><title>gedling (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,850.00L722.43,856.25L722.43,868.75L711.61,875.00L700.78,868.75L700.78,856.25Z" fill="#0087DC"><title>rutland and melton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,850.00L750.15,856.25L750.15,868.75L739.32,875.00L728.50,868.75L728.50,856.25Z" fill="#FFD700"><title>north east cambridgeshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,850.00L777.86,856.25L777.86,868.75L767.03,875.00L756.21,868.75L756.21,856.25Z" fill="#0087DC"><title>#hertford and stortford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,850.00L805.57,856.25L805.57,868.75L794.75,875.00L783.92,868.75L783.92,856.25Z" fill="#0087DC"><title>south norfolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M822.46,850.00L833.28,856.25L833.28,868.75L822.46,875.00L811.63,868.75L811.63,856.25Z" fill="#0087DC"><title>norwich north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,874.00L265.17,880.25L265.17,892.75L254.35,899.00L243.52,892.75L243.52,880.25Z" fill="#0087DC"><title>bristol east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,874.00L292.88,880.25L292.88,892.75L282.06,899.00L271.23,892.75L271.23,880.25Z" fill="#FFD700"><title>#Ceredigion and Pembroke North (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,874.00L320.60,880.25L320.60,892.75L309.77,899.00L298.95,892.75L298.95,880.25Z" fill="#0087DC"><title>slough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,874.00L348.31,880.25L348.31,892.75L337.48,899.00L326.66,892.75L326.66,880.25Z" fill="#0087DC"><title>northavon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,874.00L376.02,880.25L376.02,892.75L365.20,899.00L354.37,892.75L354.37,880.25Z" fill="#0087DC"><title>shrewsbury and atcham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,874.00L403.74,880.25L403.74,892.75L392.91,899.00L382.08,892.75L382.08,880.25Z" fill="#E4003B"><title>Wrexham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,874.00L431.45,880.25L431.45,892.75L420.62,899.00L409.80,892.75L409.80,880.25Z" fill="#0087DC"><title>eddisbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,874.00L459.16,880.25L459.16,892.75L448.34,899.00L437.51,892.75L437.51,880.25Z" fill="#0087DC"><title>macclesfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,874.00L486.87,880.25L486.87,892.75L476.05,899.00L465.22,892.75L465.22,880.25Z" fill="#0087DC"><title>tatton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,874.00L514.59,880.25L514.59,892.75L503.76,899.00L492.94,892.75L492.94,880.25Z" fill="#0087DC"><title>cheadle (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,874.00L542.30,880.25L542.30,892.75L531.47,899.00L520.65,892.75L520.65,880.25Z" fill="#0087DC"><title>high peak (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,874.00L570.01,880.25L570.01,892.75L559.19,899.00L548.36,892.75L548.36,880.25Z" fill="#0087DC"><title>sheffield hallam (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,874.00L597.73,880.25L597.73,892.75L586.90,899.00L576.07,892.75L576.07,880.25Z" fill="#E4003B"><title>north east derbyshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,874.00L625.44,880.25L625.44,892.75L614.61,899.00L603.79,892.75L603.79,880.25Z" fill="#E4003B"><title>chesterfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,874.00L653.15,880.25L653.15,892.75L642.33,899.00L631.50,892.75L631.50,880.25Z" fill="#E4003B"><title>mansfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,874.00L680.86,880.25L680.86,892.75L670.04,899.00L659.21,892.75L659.21,880.25Z" fill="#0087DC"><title>nottingham north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,874.00L708.58,880.25L708.58,892.75L697.75,899.00L686.93,892.75L686.93,880.25Z" fill="#0087DC"><title>rushcliffe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,874.00L736.29,880.25L736.29,892.75L725.46,899.00L714.64,892.75L714.64,880.25Z" fill="#0087DC"><title>huntingdon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,874.00L764.00,880.25L764.00,892.75L753.18,899.00L742.35,892.75L742.35,880.25Z" fill="#0087DC"><title>south east cambridgeshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,874.00L791.71,880.25L791.71,892.75L780.89,899.00L770.06,892.75L770.06,880.25Z" fill="#0087DC"><title>bury st edmunds (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,874.00L819.43,880.25L819.43,892.75L808.60,899.00L797.78,892.75L797.78,880.25Z" fill="#0087DC"><title>great yarmouth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,898.00L195.89,904.25L195.89,916.75L185.06,923.00L174.24,916.75L174.24,904.25Z" fill="#0087DC"><title>south west surrey (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,898.00L223.60,904.25L223.60,916.75L212.78,923.00L201.95,916.75L201.95,904.25Z" fill="#0087DC"><title>esher (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,898.00L251.32,904.25L251.32,916.75L240.49,923.00L229.66,916.75L229.66,904.25Z" fill="#0087DC"><title>kingston upon thames (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,898.00L279.03,904.25L279.03,916.75L268.20,923.00L257.38,916.75L257.38,904.25Z" fill="#0087DC"><title>bristol west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,898.00L306.74,904.25L306.74,916.75L295.92,923.00L285.09,916.75L285.09,904.25Z" fill="#E4003B"><title>Carmarthen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,898.00L334.45,904.25L334.45,916.75L323.63,923.00L312.80,916.75L312.80,904.25Z" fill="#E4003B"><title>Rhondda (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,898.00L362.17,904.25L362.17,916.75L351.34,923.00L340.52,916.75L340.52,904.25Z" fill="#0087DC"><title>#Brecon and Radnorshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,898.00L389.88,904.25L389.88,916.75L379.05,923.00L368.23,916.75L368.23,904.25Z" fill="#0087DC"><title>ludlow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,898.00L417.59,904.25L417.59,916.75L406.77,923.00L395.94,916.75L395.94,904.25Z" fill="#0087DC"><title>north shropshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,898.00L445.30,904.25L445.30,916.75L434.48,923.00L423.65,916.75L423.65,904.25Z" fill="#E4003B"><title>newcastle under lyme (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,898.00L473.02,904.25L473.02,916.75L462.19,923.00L451.37,916.75L451.37,904.25Z" fill="#E4003B"><title>crewe and nantwich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,898.00L500.73,904.25L500.73,916.75L489.91,923.00L479.08,916.75L479.08,904.25Z" fill="#0087DC"><title>congleton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,898.00L528.44,904.25L528.44,916.75L517.62,923.00L506.79,916.75L506.79,904.25Z" fill="#E4003B"><title>stoke north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,898.00L556.16,904.25L556.16,916.75L545.33,923.00L534.51,916.75L534.51,904.25Z" fill="#0087DC"><title>#west derbyshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,898.00L583.87,904.25L583.87,916.75L573.04,923.00L562.22,916.75L562.22,904.25Z" fill="#0087DC"><title>staffordshire moorlands (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,898.00L611.58,904.25L611.58,916.75L600.76,923.00L589.93,916.75L589.93,904.25Z" fill="#E4003B"><title>ashfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,898.00L639.29,904.25L639.29,916.75L628.47,923.00L617.64,916.75L617.64,904.25Z" fill="#0087DC"><title>amber valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,898.00L667.01,904.25L667.01,916.75L656.18,923.00L645.36,916.75L645.36,904.25Z" fill="#0087DC"><title>broxtowe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,898.00L694.72,904.25L694.72,916.75L683.89,923.00L673.07,916.75L673.07,904.25Z" fill="#0087DC"><title>loughborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,898.00L722.43,904.25L722.43,916.75L711.61,923.00L700.78,916.75L700.78,904.25Z" fill="#0087DC"><title>harborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,898.00L750.15,904.25L750.15,916.75L739.32,923.00L728.50,916.75L728.50,904.25Z" fill="#0087DC"><title>cambridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,898.00L777.86,904.25L777.86,916.75L767.03,923.00L756.21,916.75L756.21,904.25Z" fill="#0087DC"><title>south suffolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,898.00L805.57,904.25L805.57,916.75L794.75,923.00L783.92,916.75L783.92,904.25Z" fill="#0087DC"><title>central suffolk (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M115.78,922.00L126.61,928.25L126.61,940.75L115.78,947.00L104.96,940.75L104.96,928.25Z" fill="#0087DC"><title>hove (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,922.00L154.32,928.25L154.32,940.75L143.49,947.00L132.67,940.75L132.67,928.25Z" fill="#0087DC"><title>romsey and waterside (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M171.21,922.00L182.03,928.25L182.03,940.75L171.21,947.00L160.38,940.75L160.38,928.25Z" fill="#0087DC"><title>somerton and frome (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M198.92,922.00L209.75,928.25L209.75,940.75L198.92,947.00L188.10,940.75L188.10,928.25Z" fill="#0087DC"><title>Pembrokeshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,922.00L237.46,928.25L237.46,940.75L226.63,947.00L215.81,940.75L215.81,928.25Z" fill="#0087DC"><title>woodspring (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,922.00L265.17,928.25L265.17,940.75L254.35,947.00L243.52,940.75L243.52,928.25Z" fill="#0087DC"><title>wokingham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,922.00L292.88,928.25L292.88,940.75L282.06,947.00L271.23,940.75L271.23,928.25Z" fill="#E4003B"><title>#Swansea West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,922.00L320.60,928.25L320.60,940.75L309.77,947.00L298.95,940.75L298.95,928.25Z" fill="#E4003B"><title>#Swansea East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,922.00L348.31,928.25L348.31,940.75L337.48,947.00L326.66,940.75L326.66,928.25Z" fill="#E4003B"><title>#Merthyr Tydfil and Rhymney (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,922.00L376.02,928.25L376.02,940.75L365.20,947.00L354.37,940.75L354.37,928.25Z" fill="#0087DC"><title>leominster (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,922.00L403.74,928.25L403.74,940.75L392.91,947.00L382.08,940.75L382.08,928.25Z" fill="#0087DC"><title>dudley west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,922.00L431.45,928.25L431.45,940.75L420.62,947.00L409.80,940.75L409.80,928.25Z" fill="#0087DC"><title>the wrekin (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,922.00L459.16,928.25L459.16,940.75L448.34,947.00L437.51,940.75L437.51,928.25Z" fill="#0087DC"><title>stafford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,922.00L486.87,928.25L486.87,940.75L476.05,947.00L465.22,940.75L465.22,928.25Z" fill="#0087DC"><title>burton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,922.00L514.59,928.25L514.59,940.75L503.76,947.00L492.94,940.75L492.94,928.25Z" fill="#E4003B"><title>stoke central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,922.00L542.30,928.25L542.30,940.75L531.47,947.00L520.65,940.75L520.65,928.25Z" fill="#E4003B"><title>stoke south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,922.00L570.01,928.25L570.01,940.75L559.19,947.00L548.36,940.75L548.36,928.25Z" fill="#0087DC"><title>derby north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,922.00L597.73,928.25L597.73,940.75L586.90,947.00L576.07,940.75L576.07,928.25Z" fill="#0087DC"><title>nottingham south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,922.00L625.44,928.25L625.44,940.75L614.61,947.00L603.79,940.75L603.79,928.25Z" fill="#0087DC"><title>nottingham east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,922.00L653.15,928.25L653.15,940.75L642.33,947.00L631.50,940.75L631.50,928.25Z" fill="#0087DC"><title>erewash (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,922.00L680.86,928.25L680.86,940.75L670.04,947.00L659.21,940.75L659.21,928.25Z" fill="#0087DC"><title>leicester east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,922.00L708.58,928.25L708.58,940.75L697.75,947.00L686.93,940.75L686.93,928.25Z" fill="#0087DC"><title>corby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,922.00L736.29,928.25L736.29,940.75L725.46,947.00L714.64,940.75L714.64,928.25Z" fill="#0087DC"><title>kettering (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,922.00L764.00,928.25L764.00,940.75L753.18,947.00L742.35,940.75L742.35,928.25Z" fill="#0087DC"><title>south west cambridgeshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,922.00L791.71,928.25L791.71,940.75L780.89,947.00L770.06,940.75L770.06,928.25Z" fill="#0087DC"><title>suffolk coastal (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,922.00L819.43,928.25L819.43,940.75L808.60,947.00L797.78,940.75L797.78,928.25Z" fill="#0087DC"><title>waveney (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M101.93,946.00L112.75,952.25L112.75,964.75L101.93,971.00L91.10,964.75L91.10,952.25Z" fill="#0087DC"><title>shoreham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M129.64,946.00L140.46,952.25L140.46,964.75L129.64,971.00L118.81,964.75L118.81,952.25Z" fill="#0087DC"><title>brighton pavillion (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M157.35,946.00L168.18,952.25L168.18,964.75L157.35,971.00L146.53,964.75L146.53,952.25Z" fill="#0087DC"><title>north devon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,946.00L195.89,952.25L195.89,964.75L185.06,971.00L174.24,964.75L174.24,952.25Z" fill="#0087DC"><title>guildford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,946.00L223.60,952.25L223.60,964.75L212.78,971.00L201.95,964.75L201.95,952.25Z" fill="#0087DC"><title>weston-super-mare (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,946.00L251.32,952.25L251.32,964.75L240.49,971.00L229.66,964.75L229.66,952.25Z" fill="#E4003B"><title>bristol south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,946.00L279.03,952.25L279.03,964.75L268.20,971.00L257.38,964.75L257.38,952.25Z" fill="#0087DC"><title>#Cardiff West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,946.00L306.74,952.25L306.74,964.75L295.92,971.00L285.09,964.75L285.09,952.25Z" fill="#E4003B"><title>Llanelli (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,946.00L334.45,952.25L334.45,964.75L323.63,971.00L312.80,964.75L312.80,952.25Z" fill="#E4003B"><title>Neath (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,946.00L362.17,952.25L362.17,964.75L351.34,971.00L340.52,964.75L340.52,952.25Z" fill="#E4003B"><title>#Blaenau Gwent (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,946.00L389.88,952.25L389.88,964.75L379.05,971.00L368.23,964.75L368.23,952.25Z" fill="#0087DC"><title>wyre forest (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,946.00L417.59,952.25L417.59,964.75L406.77,971.00L395.94,964.75L395.94,952.25Z" fill="#E4003B"><title>west bromwich west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,946.00L445.30,952.25L445.30,964.75L434.48,971.00L423.65,964.75L423.65,952.25Z" fill="#0087DC"><title>wolverhampton south west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,946.00L473.02,952.25L473.02,964.75L462.19,971.00L451.37,964.75L451.37,952.25Z" fill="#0087DC"><title>south staffordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,946.00L500.73,952.25L500.73,964.75L489.91,971.00L479.08,964.75L479.08,952.25Z" fill="#0087DC"><title>cannock and burntwood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,946.00L528.44,952.25L528.44,964.75L517.62,971.00L506.79,964.75L506.79,952.25Z" fill="#0087DC"><title>mid staffordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,946.00L556.16,952.25L556.16,964.75L545.33,971.00L534.51,964.75L534.51,952.25Z" fill="#0087DC"><title>south derbyshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,946.00L583.87,952.25L583.87,964.75L573.04,971.00L562.22,964.75L562.22,952.25Z" fill="#E4003B"><title>derby south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,946.00L611.58,952.25L611.58,964.75L600.76,971.00L589.93,964.75L589.93,952.25Z" fill="#0087DC"><title>north west leicestershire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,946.00L639.29,952.25L639.29,964.75L628.47,971.00L617.64,964.75L617.64,952.25Z" fill="#E4003B"><title>leicester west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,946.00L667.01,952.25L667.01,964.75L656.18,971.00L645.36,964.75L645.36,952.25Z" fill="#0087DC"><title>leicester south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,946.00L694.72,952.25L694.72,964.75L683.89,971.00L673.07,964.75L673.07,952.25Z" fill="#0087DC"><title>nuneaton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,946.00L722.43,952.25L722.43,964.75L711.61,971.00L700.78,964.75L700.78,952.25Z" fill="#0087DC"><title>wellingborough (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,946.00L750.15,952.25L750.15,964.75L739.32,971.00L728.50,964.75L728.50,952.25Z" fill="#0087DC"><title>mid bedfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,946.00L777.86,952.25L777.86,964.75L767.03,971.00L756.21,964.75L756.21,952.25Z" fill="#0087DC"><title>saffron walden (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,970.00L154.32,976.25L154.32,988.75L143.49,995.00L132.67,988.75L132.67,976.25Z" fill="#0087DC"><title>eastleigh (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M198.92,970.00L209.75,976.25L209.75,988.75L198.92,995.00L188.10,988.75L188.10,976.25Z" fill="#0087DC"><title>basingstoke (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,970.00L237.46,976.25L237.46,988.75L226.63,995.00L215.81,988.75L215.81,976.25Z" fill="#0087DC"><title>wansdyke (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,970.00L265.17,976.25L265.17,988.75L254.35,995.00L243.52,988.75L243.52,976.25Z" fill="#0087DC"><title>#Vale of Glamorgan (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,970.00L320.60,976.25L320.60,988.75L309.77,995.00L298.95,988.75L298.95,976.25Z" fill="#E4003B"><title>Gower (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,970.00L348.31,976.25L348.31,988.75L337.48,995.00L326.66,988.75L326.66,976.25Z" fill="#E4003B"><title>#Cynon Valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,970.00L376.02,976.25L376.02,988.75L365.20,995.00L354.37,988.75L354.37,976.25Z" fill="#0087DC"><title>hereford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,970.00L403.74,976.25L403.74,988.75L392.91,995.00L382.08,988.75L382.08,976.25Z" fill="#0087DC"><title>birmingham northfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,970.00L431.45,976.25L431.45,988.75L420.62,995.00L409.80,988.75L409.80,976.25Z" fill="#E4003B"><title>dudley east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,970.00L459.16,976.25L459.16,988.75L448.34,995.00L437.51,988.75L437.51,976.25Z" fill="#E4003B"><title>wolverhampton south east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,970.00L486.87,976.25L486.87,988.75L476.05,995.00L465.22,988.75L465.22,976.25Z" fill="#E4003B"><title>walsall north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,970.00L514.59,976.25L514.59,988.75L503.76,995.00L492.94,988.75L492.94,976.25Z" fill="#E4003B"><title>wolverhampton north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,970.00L542.30,976.25L542.30,988.75L531.47,995.00L520.65,988.75L520.65,976.25Z" fill="#0087DC"><title>aldridge-brownhills (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,970.00L570.01,976.25L570.01,988.75L559.19,995.00L548.36,988.75L548.36,976.25Z" fill="#0087DC"><title>south east staffordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,970.00L597.73,976.25L597.73,988.75L586.90,995.00L576.07,988.75L576.07,976.25Z" fill="#0087DC"><title>bosworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,970.00L625.44,976.25L625.44,988.75L614.61,995.00L603.79,988.75L603.79,976.25Z" fill="#0087DC"><title>blaby (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,970.00L653.15,976.25L653.15,988.75L642.33,995.00L631.50,988.75L631.50,976.25Z" fill="#E4003B"><title>birmingham small heath (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,970.00L680.86,976.25L680.86,988.75L670.04,995.00L659.21,988.75L659.21,976.25Z" fill="#E4003B"><title>coventry north west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,970.00L708.58,976.25L708.58,988.75L697.75,995.00L686.93,988.75L686.93,976.25Z" fill="#0087DC"><title>northampton north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,970.00L736.29,976.25L736.29,988.75L725.46,995.00L714.64,988.75L714.64,976.25Z" fill="#0087DC"><title>north hertfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,970.00L764.00,976.25L764.00,988.75L753.18,995.00L742.35,988.75L742.35,976.25Z" fill="#0087DC"><title>stevenage (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,994.00L306.74,1000.25L306.74,1012.75L295.92,1019.00L285.09,1012.75L285.09,1000.25Z" fill="#0087DC"><title>#Cardiff Central (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,994.00L334.45,1000.25L334.45,1012.75L323.63,1019.00L312.80,1012.75L312.80,1000.25Z" fill="#E4003B"><title>Aberavon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,994.00L362.17,1000.25L362.17,1012.75L351.34,1019.00L340.52,1012.75L340.52,1000.25Z" fill="#E4003B"><title>Torfaen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,994.00L389.88,1000.25L389.88,1012.75L379.05,1019.00L368.23,1012.75L368.23,1000.25Z" fill="#0087DC"><title>Monmouth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,994.00L417.59,1000.25L417.59,1012.75L406.77,1019.00L395.94,1012.75L395.94,1000.25Z" fill="#0087DC"><title>bromsgrove (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,994.00L445.30,1000.25L445.30,1012.75L434.48,1019.00L423.65,1012.75L423.65,1000.25Z" fill="#0087DC"><title>birmingham edgbaston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,994.00L473.02,1000.25L473.02,1012.75L462.19,1019.00L451.37,1012.75L451.37,1000.25Z" fill="#E4003B"><title>birmingham perry barr (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,994.00L500.73,1000.25L500.73,1012.75L489.91,1019.00L479.08,1012.75L479.08,1000.25Z" fill="#E4003B"><title>west bromwich east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,994.00L528.44,1000.25L528.44,1012.75L517.62,1019.00L506.79,1012.75L506.79,1000.25Z" fill="#E4003B"><title>walsall south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,994.00L556.16,1000.25L556.16,1012.75L545.33,1019.00L534.51,1012.75L534.51,1000.25Z" fill="#0087DC"><title>sutton coldfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,994.00L583.87,1000.25L583.87,1012.75L573.04,1019.00L562.22,1012.75L562.22,1000.25Z" fill="#0087DC"><title>north warwickshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,994.00L611.58,1000.25L611.58,1012.75L600.76,1019.00L589.93,1012.75L589.93,1000.25Z" fill="#E4003B"><title>birmingham erdington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,994.00L639.29,1000.25L639.29,1012.75L628.47,1019.00L617.64,1012.75L617.64,1000.25Z" fill="#E4003B"><title>birmingham sparkbrook (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,994.00L667.01,1000.25L667.01,1012.75L656.18,1019.00L645.36,1012.75L645.36,1000.25Z" fill="#E4003B"><title>coventry south east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,994.00L694.72,1000.25L694.72,1012.75L683.89,1019.00L673.07,1012.75L673.07,1000.25Z" fill="#0087DC"><title>daventry (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,994.00L722.43,1000.25L722.43,1012.75L711.61,1019.00L700.78,1012.75L700.78,1000.25Z" fill="#0087DC"><title>luton north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,994.00L750.15,1000.25L750.15,1012.75L739.32,1019.00L728.50,1012.75L728.50,1000.25Z" fill="#0087DC"><title>luton south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,994.00L777.86,1000.25L777.86,1012.75L767.03,1019.00L756.21,1012.75L756.21,1000.25Z" fill="#0087DC"><title>braintree (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,994.00L805.57,1000.25L805.57,1012.75L794.75,1019.00L783.92,1012.75L783.92,1000.25Z" fill="#0087DC"><title>#colchester south and maldon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M822.46,994.00L833.28,1000.25L833.28,1012.75L822.46,1019.00L811.63,1012.75L811.63,1000.25Z" fill="#0087DC"><title>colchester_north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M850.17,994.00L861.00,1000.25L861.00,1012.75L850.17,1019.00L839.35,1012.75L839.35,1000.25Z" fill="#E4003B"><title>ipswich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M877.88,994.00L888.71,1000.25L888.71,1012.75L877.88,1019.00L867.06,1012.75L867.06,1000.25Z" fill="#0087DC"><title>harwich (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,1018.00L292.88,1024.25L292.88,1036.75L282.06,1043.00L271.23,1036.75L271.23,1024.25Z" fill="#0087DC"><title>Bridgend (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,1018.00L320.60,1024.25L320.60,1036.75L309.77,1043.00L298.95,1036.75L298.95,1024.25Z" fill="#E4003B"><title>ealing southall (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,1018.00L348.31,1024.25L348.31,1036.75L337.48,1043.00L326.66,1036.75L326.66,1024.25Z" fill="#E4003B"><title>Ogmore (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,1018.00L376.02,1024.25L376.02,1036.75L365.20,1043.00L354.37,1036.75L354.37,1024.25Z" fill="#E4003B"><title>Islwyn (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,1018.00L403.74,1024.25L403.74,1036.75L392.91,1043.00L382.08,1036.75L382.08,1024.25Z" fill="#0087DC"><title>stroud (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,1018.00L431.45,1024.25L431.45,1036.75L420.62,1043.00L409.80,1036.75L409.80,1024.25Z" fill="#0087DC"><title>worcester (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,1018.00L459.16,1024.25L459.16,1036.75L448.34,1043.00L437.51,1036.75L437.51,1024.25Z" fill="#0087DC"><title>halesowen and stourbridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,1018.00L486.87,1024.25L486.87,1036.75L476.05,1043.00L465.22,1036.75L465.22,1024.25Z" fill="#E4003B"><title>warley east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,1018.00L514.59,1024.25L514.59,1036.75L503.76,1043.00L492.94,1036.75L492.94,1024.25Z" fill="#E4003B"><title>warley west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,1018.00L542.30,1024.25L542.30,1036.75L531.47,1043.00L520.65,1036.75L520.65,1024.25Z" fill="#E4003B"><title>birmingham ladywood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,1018.00L570.01,1024.25L570.01,1036.75L559.19,1043.00L548.36,1036.75L548.36,1024.25Z" fill="#E4003B"><title>birmingham hodge hill (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,1018.00L597.73,1024.25L597.73,1036.75L586.90,1043.00L576.07,1036.75L576.07,1024.25Z" fill="#0087DC"><title>birmingham yardley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,1018.00L625.44,1024.25L625.44,1036.75L614.61,1043.00L603.79,1036.75L603.79,1024.25Z" fill="#E4003B"><title>coventry north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,1018.00L653.15,1024.25L653.15,1036.75L642.33,1043.00L631.50,1036.75L631.50,1024.25Z" fill="#0087DC"><title>coventry south west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,1018.00L680.86,1024.25L680.86,1036.75L670.04,1043.00L659.21,1036.75L659.21,1024.25Z" fill="#0087DC"><title>northampton south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,1018.00L708.58,1024.25L708.58,1036.75L697.75,1043.00L686.93,1036.75L686.93,1024.25Z" fill="#0087DC"><title>south west bedfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,1018.00L736.29,1024.25L736.29,1036.75L725.46,1043.00L714.64,1036.75L714.64,1024.25Z" fill="#0087DC"><title>west hertfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,1018.00L764.00,1024.25L764.00,1036.75L753.18,1043.00L742.35,1036.75L742.35,1024.25Z" fill="#0087DC"><title>welwyn hatfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,1018.00L791.71,1024.25L791.71,1036.75L780.89,1043.00L770.06,1036.75L770.06,1024.25Z" fill="#0087DC"><title>harlow (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,1018.00L819.43,1024.25L819.43,1036.75L808.60,1043.00L797.78,1036.75L797.78,1024.25Z" fill="#0087DC"><title>chelmsford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M836.32,1018.00L847.14,1024.25L847.14,1036.75L836.32,1043.00L825.49,1036.75L825.49,1024.25Z" fill="#0087DC"><title>rochford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M864.03,1018.00L874.85,1024.25L874.85,1036.75L864.03,1043.00L853.20,1036.75L853.20,1024.25Z" fill="#0087DC"><title>basildon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M891.74,1018.00L902.57,1024.25L902.57,1036.75L891.74,1043.00L880.92,1036.75L880.92,1024.25Z" fill="#0087DC"><title>southend east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,1042.00L195.89,1048.25L195.89,1060.75L185.06,1067.00L174.24,1060.75L174.24,1048.25Z" fill="#0087DC"><title>wells (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,1042.00L223.60,1048.25L223.60,1060.75L212.78,1067.00L201.95,1060.75L201.95,1048.25Z" fill="#0087DC"><title>croydon south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,1042.00L251.32,1048.25L251.32,1060.75L240.49,1067.00L229.66,1060.75L229.66,1048.25Z" fill="#0087DC"><title>devizes (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,1042.00L279.03,1048.25L279.03,1060.75L268.20,1067.00L257.38,1060.75L257.38,1048.25Z" fill="#0087DC"><title>kingswood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,1042.00L306.74,1048.25L306.74,1060.75L295.92,1067.00L285.09,1060.75L285.09,1048.25Z" fill="#0087DC"><title>bristol north west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M323.63,1042.00L334.45,1048.25L334.45,1060.75L323.63,1067.00L312.80,1060.75L312.80,1048.25Z" fill="#0087DC"><title>#Cardiff North (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M351.34,1042.00L362.17,1048.25L362.17,1060.75L351.34,1067.00L340.52,1060.75L340.52,1048.25Z" fill="#E4003B"><title>Pontypridd (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M379.05,1042.00L389.88,1048.25L389.88,1060.75L379.05,1067.00L368.23,1060.75L368.23,1048.25Z" fill="#E4003B"><title>#Newport East (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,1042.00L417.59,1048.25L417.59,1060.75L406.77,1067.00L395.94,1060.75L395.94,1048.25Z" fill="#E4003B"><title>#Caerphilly (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,1042.00L445.30,1048.25L445.30,1060.75L434.48,1067.00L423.65,1060.75L423.65,1048.25Z" fill="#0087DC"><title>west gloucestershire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,1042.00L473.02,1048.25L473.02,1060.75L462.19,1067.00L451.37,1060.75L451.37,1048.25Z" fill="#0087DC"><title>mid worcestershire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,1042.00L500.73,1048.25L500.73,1060.75L489.91,1067.00L479.08,1060.75L479.08,1048.25Z" fill="#0087DC"><title>birmingham selly oak (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,1042.00L528.44,1048.25L528.44,1060.75L517.62,1067.00L506.79,1060.75L506.79,1048.25Z" fill="#0087DC"><title>birmingham hall green (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,1042.00L556.16,1048.25L556.16,1060.75L545.33,1067.00L534.51,1060.75L534.51,1048.25Z" fill="#0087DC"><title>solihull (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,1042.00L583.87,1048.25L583.87,1060.75L573.04,1067.00L562.22,1060.75L562.22,1048.25Z" fill="#0087DC"><title>meriden (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,1042.00L611.58,1048.25L611.58,1060.75L600.76,1067.00L589.93,1060.75L589.93,1048.25Z" fill="#0087DC"><title>rugby and kenilworth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,1042.00L639.29,1048.25L639.29,1060.75L628.47,1067.00L617.64,1060.75L617.64,1048.25Z" fill="#0087DC"><title>warwick and leamington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,1042.00L667.01,1048.25L667.01,1060.75L656.18,1067.00L645.36,1060.75L645.36,1048.25Z" fill="#0087DC"><title>banbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,1042.00L694.72,1048.25L694.72,1060.75L683.89,1067.00L673.07,1060.75L673.07,1048.25Z" fill="#0087DC"><title>buckingham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,1042.00L722.43,1048.25L722.43,1060.75L711.61,1067.00L700.78,1060.75L700.78,1048.25Z" fill="#0087DC"><title>st albans (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,1042.00L750.15,1048.25L750.15,1060.75L739.32,1067.00L728.50,1060.75L728.50,1048.25Z" fill="#0087DC"><title>broxbourne (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,1042.00L777.86,1048.25L777.86,1060.75L767.03,1067.00L756.21,1060.75L756.21,1048.25Z" fill="#0087DC"><title>brentwood and ongar (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,1042.00L805.57,1048.25L805.57,1060.75L794.75,1067.00L783.92,1060.75L783.92,1048.25Z" fill="#0087DC"><title>enfield north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M822.46,1042.00L833.28,1048.25L833.28,1060.75L822.46,1067.00L811.63,1060.75L811.63,1048.25Z" fill="#0087DC"><title>chingford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M850.17,1042.00L861.00,1048.25L861.00,1060.75L850.17,1067.00L839.35,1060.75L839.35,1048.25Z" fill="#0087DC"><title>upminster (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M877.88,1042.00L888.71,1048.25L888.71,1060.75L877.88,1067.00L867.06,1060.75L867.06,1048.25Z" fill="#E4003B"><title>newham north east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,1066.00L154.32,1072.25L154.32,1084.75L143.49,1091.00L132.67,1084.75L132.67,1072.25Z" fill="#FFD700"><title>yeovil (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M171.21,1066.00L182.03,1072.25L182.03,1084.75L171.21,1091.00L160.38,1084.75L160.38,1072.25Z" fill="#0087DC"><title>bridgwater (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M198.92,1066.00L209.75,1072.25L209.75,1084.75L198.92,1091.00L188.10,1084.75L188.10,1072.25Z" fill="#0087DC"><title>mole valley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M226.63,1066.00L237.46,1072.25L237.46,1084.75L226.63,1091.00L215.81,1084.75L215.81,1072.25Z" fill="#0087DC"><title>bath (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M254.35,1066.00L265.17,1072.25L265.17,1084.75L254.35,1091.00L243.52,1084.75L243.52,1072.25Z" fill="#0087DC"><title>newbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,1066.00L292.88,1072.25L292.88,1084.75L282.06,1091.00L271.23,1084.75L271.23,1072.25Z" fill="#E4003B"><title>#Cardiff South and Penarth (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M309.77,1066.00L320.60,1072.25L320.60,1084.75L309.77,1091.00L298.95,1084.75L298.95,1072.25Z" fill="#0087DC"><title>hayes and harlington (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M337.48,1066.00L348.31,1072.25L348.31,1084.75L337.48,1091.00L326.66,1084.75L326.66,1072.25Z" fill="#0087DC"><title>ealing acton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,1066.00L376.02,1072.25L376.02,1084.75L365.20,1091.00L354.37,1084.75L354.37,1072.25Z" fill="#0087DC"><title>north wiltshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M392.91,1066.00L403.74,1072.25L403.74,1084.75L392.91,1091.00L382.08,1084.75L382.08,1072.25Z" fill="#E4003B"><title>islington south and finsbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M420.62,1066.00L431.45,1072.25L431.45,1084.75L420.62,1091.00L409.80,1084.75L409.80,1072.25Z" fill="#0087DC"><title>#Newport West (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M448.34,1066.00L459.16,1072.25L459.16,1084.75L448.34,1091.00L437.51,1084.75L437.51,1072.25Z" fill="#0087DC"><title>gloucester (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M476.05,1066.00L486.87,1072.25L486.87,1084.75L476.05,1091.00L465.22,1084.75L465.22,1072.25Z" fill="#0087DC"><title>cirencester and tewkesbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,1066.00L514.59,1072.25L514.59,1084.75L503.76,1091.00L492.94,1084.75L492.94,1072.25Z" fill="#0087DC"><title>south worcestershire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,1066.00L542.30,1072.25L542.30,1084.75L531.47,1091.00L520.65,1084.75L520.65,1072.25Z" fill="#0087DC"><title>cheltenham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,1066.00L570.01,1072.25L570.01,1084.75L559.19,1091.00L548.36,1084.75L548.36,1072.25Z" fill="#0087DC"><title>stratford upon avon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,1066.00L597.73,1072.25L597.73,1084.75L586.90,1091.00L576.07,1084.75L576.07,1072.25Z" fill="#0087DC"><title>witney (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,1066.00L625.44,1072.25L625.44,1084.75L614.61,1091.00L603.79,1084.75L603.79,1072.25Z" fill="#0087DC"><title>oxford east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,1066.00L653.15,1072.25L653.15,1084.75L642.33,1091.00L631.50,1084.75L631.50,1072.25Z" fill="#0087DC"><title>oxford west and abingdon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,1066.00L680.86,1072.25L680.86,1084.75L670.04,1091.00L659.21,1084.75L659.21,1072.25Z" fill="#0087DC"><title>aylesbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,1066.00L708.58,1072.25L708.58,1084.75L697.75,1091.00L686.93,1084.75L686.93,1072.25Z" fill="#0087DC"><title>south west hertfordshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,1066.00L736.29,1072.25L736.29,1084.75L725.46,1091.00L714.64,1084.75L714.64,1072.25Z" fill="#0087DC"><title>hertsmere (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,1066.00L764.00,1072.25L764.00,1084.75L753.18,1091.00L742.35,1084.75L742.35,1072.25Z" fill="#0087DC"><title>epping forest (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,1066.00L791.71,1072.25L791.71,1084.75L780.89,1091.00L770.06,1084.75L770.06,1072.25Z" fill="#0087DC"><title>edmonton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,1066.00L819.43,1072.25L819.43,1084.75L808.60,1091.00L797.78,1084.75L797.78,1072.25Z" fill="#0087DC"><title>ilford north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M836.32,1066.00L847.14,1072.25L847.14,1084.75L836.32,1091.00L825.49,1084.75L825.49,1072.25Z" fill="#0087DC"><title>southend west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M864.03,1066.00L874.85,1072.25L874.85,1084.75L864.03,1091.00L853.20,1084.75L853.20,1072.25Z" fill="#E4003B"><title>dagenham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M129.64,1090.00L140.46,1096.25L140.46,1108.75L129.64,1115.00L118.81,1108.75L118.81,1096.25Z" fill="#0087DC"><title>southampton itchen (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M157.35,1090.00L168.18,1096.25L168.18,1108.75L157.35,1115.00L146.53,1108.75L146.53,1096.25Z" fill="#0087DC"><title>taunton (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,1090.00L195.89,1096.25L195.89,1108.75L185.06,1115.00L174.24,1108.75L174.24,1096.25Z" fill="#0087DC"><title>north west hampshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M212.78,1090.00L223.60,1096.25L223.60,1108.75L212.78,1115.00L201.95,1108.75L201.95,1096.25Z" fill="#0087DC"><title>aldershot (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M240.49,1090.00L251.32,1096.25L251.32,1108.75L240.49,1115.00L229.66,1108.75L229.66,1096.25Z" fill="#0087DC"><title>#Mitcham and Morden (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M268.20,1090.00L279.03,1096.25L279.03,1108.75L268.20,1115.00L257.38,1108.75L257.38,1096.25Z" fill="#0087DC"><title>reading west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M295.92,1090.00L306.74,1096.25L306.74,1108.75L295.92,1115.00L285.09,1108.75L285.09,1096.25Z" fill="#0087DC"><title>fulham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M406.77,1090.00L417.59,1096.25L417.59,1108.75L406.77,1115.00L395.94,1108.75L395.94,1096.25Z" fill="#0087DC"><title>ealing north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M434.48,1090.00L445.30,1096.25L445.30,1108.75L434.48,1115.00L423.65,1108.75L423.65,1096.25Z" fill="#0087DC"><title>hornchurch (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M462.19,1090.00L473.02,1096.25L473.02,1108.75L462.19,1115.00L451.37,1108.75L451.37,1096.25Z" fill="#E4003B"><title>holborn and st pancras (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M489.91,1090.00L500.73,1096.25L500.73,1108.75L489.91,1115.00L479.08,1108.75L479.08,1096.25Z" fill="#E4003B"><title>barking (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M517.62,1090.00L528.44,1096.25L528.44,1108.75L517.62,1115.00L506.79,1108.75L506.79,1096.25Z" fill="#0087DC"><title>swindon (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M545.33,1090.00L556.16,1096.25L556.16,1108.75L545.33,1115.00L534.51,1108.75L534.51,1096.25Z" fill="#0087DC"><title>beaconsfield (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M573.04,1090.00L583.87,1096.25L583.87,1108.75L573.04,1115.00L562.22,1108.75L562.22,1096.25Z" fill="#0087DC"><title>wantage (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M600.76,1090.00L611.58,1096.25L611.58,1108.75L600.76,1115.00L589.93,1108.75L589.93,1096.25Z" fill="#0087DC"><title>wycombe (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M628.47,1090.00L639.29,1096.25L639.29,1108.75L628.47,1115.00L617.64,1108.75L617.64,1096.25Z" fill="#0087DC"><title>henley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M656.18,1090.00L667.01,1096.25L667.01,1108.75L656.18,1115.00L645.36,1108.75L645.36,1096.25Z" fill="#0087DC"><title>chesham and amersham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M683.89,1090.00L694.72,1096.25L694.72,1108.75L683.89,1115.00L673.07,1108.75L673.07,1096.25Z" fill="#0087DC"><title>watford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M711.61,1090.00L722.43,1096.25L722.43,1108.75L711.61,1115.00L700.78,1108.75L700.78,1096.25Z" fill="#0087DC"><title>enfield southgate (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M739.32,1090.00L750.15,1096.25L750.15,1108.75L739.32,1115.00L728.50,1108.75L728.50,1096.25Z" fill="#0087DC"><title>chipping barnet (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M767.03,1090.00L777.86,1096.25L777.86,1108.75L767.03,1115.00L756.21,1108.75L756.21,1096.25Z" fill="#0087DC"><title>hendon north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M794.75,1090.00L805.57,1096.25L805.57,1108.75L794.75,1115.00L783.92,1108.75L783.92,1096.25Z" fill="#0087DC"><title>romford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M822.46,1090.00L833.28,1096.25L833.28,1108.75L822.46,1115.00L811.63,1108.75L811.63,1096.25Z" fill="#0087DC"><title>billericay (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M850.17,1090.00L861.00,1096.25L861.00,1108.75L850.17,1115.00L839.35,1108.75L839.35,1096.25Z" fill="#E4003B"><title>islington north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M88.07,1114.00L98.89,1120.25L98.89,1132.75L88.07,1139.00L77.24,1132.75L77.24,1120.25Z" fill="#0087DC"><title>worthing (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M115.78,1114.00L126.61,1120.25L126.61,1132.75L115.78,1139.00L104.96,1132.75L104.96,1120.25Z" fill="#0087DC"><title>north dorset (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M143.49,1114.00L154.32,1120.25L154.32,1132.75L143.49,1139.00L132.67,1132.75L132.67,1120.25Z" fill="#0087DC"><title>southampton test (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M171.21,1114.00L182.03,1120.25L182.03,1132.75L171.21,1139.00L160.38,1132.75L160.38,1120.25Z" fill="#0087DC"><title>salisbury (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M198.92,1114.00L209.75,1120.25L209.75,1132.75L198.92,1139.00L188.10,1132.75L188.10,1120.25Z" fill="#0087DC"><title>south west wiltshire (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M282.06,1114.00L292.88,1120.25L292.88,1132.75L282.06,1139.00L271.23,1132.75L271.23,1120.25Z" fill="#0087DC"><title>feltham and heston (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M365.20,1114.00L376.02,1120.25L376.02,1132.75L365.20,1139.00L354.37,1132.75L354.37,1120.25Z" fill="#0087DC"><title>westminster north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M503.76,1114.00L514.59,1120.25L514.59,1132.75L503.76,1139.00L492.94,1132.75L492.94,1120.25Z" fill="#E4003B"><title>brent south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M531.47,1114.00L542.30,1120.25L542.30,1132.75L531.47,1139.00L520.65,1132.75L520.65,1120.25Z" fill="#E4003B"><title>newham north west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M559.19,1114.00L570.01,1120.25L570.01,1132.75L559.19,1139.00L548.36,1132.75L548.36,1120.25Z" fill="#0087DC"><title>uxbridge (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M586.90,1114.00L597.73,1120.25L597.73,1132.75L586.90,1139.00L576.07,1132.75L576.07,1120.25Z" fill="#0087DC"><title>ruislip northwood (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M614.61,1114.00L625.44,1120.25L625.44,1132.75L614.61,1139.00L603.79,1132.75L603.79,1120.25Z" fill="#0087DC"><title>harrow west (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M642.33,1114.00L653.15,1120.25L653.15,1132.75L642.33,1139.00L631.50,1132.75L631.50,1120.25Z" fill="#0087DC"><title>hendon south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M670.04,1114.00L680.86,1120.25L680.86,1132.75L670.04,1139.00L659.21,1132.75L659.21,1120.25Z" fill="#0087DC"><title>harrow east (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M697.75,1114.00L708.58,1120.25L708.58,1132.75L697.75,1139.00L686.93,1132.75L686.93,1120.25Z" fill="#0087DC"><title>finchley (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M725.46,1114.00L736.29,1120.25L736.29,1132.75L725.46,1139.00L714.64,1132.75L714.64,1120.25Z" fill="#E4003B"><title>tottenham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M753.18,1114.00L764.00,1120.25L764.00,1132.75L753.18,1139.00L742.35,1132.75L742.35,1120.25Z" fill="#0087DC"><title>hornsey and wood green (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M780.89,1114.00L791.71,1120.25L791.71,1132.75L780.89,1139.00L770.06,1132.75L770.06,1120.25Z" fill="#0087DC"><title>wanstead and woodford (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M808.60,1114.00L819.43,1120.25L819.43,1132.75L808.60,1139.00L797.78,1132.75L797.78,1120.25Z" fill="#0087DC"><title>ilford south (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M857.10,1114.00L867.93,1120.25L867.93,1132.75L857.10,1139.00L846.27,1132.75L846.27,1120.25Z" fill="#0087DC"><title>castle point (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M74.21,1138.00L85.04,1144.25L85.04,1156.75L74.21,1163.00L63.39,1156.75L63.39,1144.25Z" fill="#0087DC"><title>portsmouth north (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M101.93,1138.00L112.75,1144.25L112.75,1156.75L101.93,1163.00L91.10,1156.75L91.10,1144.25Z" fill="#0087DC"><title>new forest (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M157.35,1138.00L168.18,1144.25L168.18,1156.75L157.35,1163.00L146.53,1156.75L146.53,1144.25Z" fill="#0087DC"><title>horsham (Wikimedia Commons SVG centroid)</title></path>
+<path class="hex" d="M185.06,1138.00L195.89,1144.25L195.89,1156.75L185.06,1163.00L174.24,1156.75L174.24,1144.25Z" fill="#0087DC"><title>crawley (Wikimedia Commons SVG centroid)</title></path>
+</g>
+<g id="legend" transform="translate(946.2407940936121,82)">
+<text class="legend" x="0" y="0" font-weight="700">Seats shown: 650</text>
+<path d="M10.00,12.00L16.93,16.00L16.93,24.00L10.00,28.00L3.07,24.00L3.07,16.00Z" fill="#0087DC" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="24">Conservative: 397</text>
+<path d="M10.00,34.00L16.93,38.00L16.93,46.00L10.00,50.00L3.07,46.00L3.07,38.00Z" fill="#E4003B" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="46">Labour: 209</text>
+<path d="M10.00,56.00L16.93,60.00L16.93,68.00L10.00,72.00L3.07,68.00L3.07,60.00Z" fill="#FFD700" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="68">Liberal: 23</text>
+<path d="M10.00,78.00L16.93,82.00L16.93,90.00L10.00,94.00L3.07,90.00L3.07,82.00Z" fill="#FDF38E" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="90">SNP: 2</text>
+<path d="M10.00,100.00L16.93,104.00L16.93,112.00L10.00,116.00L3.07,112.00L3.07,104.00Z" fill="#008672" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="112">Plaid Cymru: 2</text>
+<path d="M10.00,122.00L16.93,126.00L16.93,134.00L10.00,138.00L3.07,134.00L3.07,126.00Z" fill="#48A5EE" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="134">Ulster Unionist: 11</text>
+<path d="M10.00,144.00L16.93,148.00L16.93,156.00L10.00,160.00L3.07,156.00L3.07,148.00Z" fill="#d46a4c" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="156">DUP: 3</text>
+<path d="M10.00,166.00L16.93,170.00L16.93,178.00L10.00,182.00L3.07,178.00L3.07,170.00Z" fill="#2AA82C" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="178">SDLP: 1</text>
+<path d="M10.00,188.00L16.93,192.00L16.93,200.00L10.00,204.00L3.07,200.00L3.07,192.00Z" fill="#326760" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="200">Sinn Fein: 1</text>
+<path d="M10.00,210.00L16.93,214.00L16.93,222.00L10.00,226.00L3.07,222.00L3.07,214.00Z" fill="#FFDEAD" stroke="#fff" stroke-width="1"/>
+<text class="legend" x="26" y="222">Ulster Popular Unionist: 1</text>
+<text class="note" x="0" y="256">Generated locally; verify close contests,</text>
+<text class="note" x="0" y="272">insets, and pre-1950 special cases before publication.</text>
+</g>
+</svg>
