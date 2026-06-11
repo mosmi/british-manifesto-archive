@@ -191,6 +191,13 @@ h1, h2, h3, h4 {
   gap: 0.25rem;
 }
 
+.nav-mobile-only { display: none; }
+.nav-desktop-only {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .nav-dropdown { position: relative; }
 
 .nav-btn {
@@ -552,11 +559,35 @@ h1, h2, h3, h4 {
   transition: width 0.6s var(--ease);
 }
 
-/* ── Party strip on homepage ── */
-.parties-section {
-  padding: 4rem var(--page-px) 5rem;
+/* ── Homepage browse sections ── */
+.browse-section {
+  padding: 4rem var(--page-px);
   border-top: 1px solid var(--navy-border);
 }
+.parties-browse-section {
+  padding-bottom: 5rem;
+}
+.browse-section-header {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.browse-section-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--cream);
+  margin: 0;
+}
+.browse-section-link {
+  display: block;
+  max-width: var(--max-w);
+  margin: 1.5rem auto 0;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  transition: color 0.2s;
+}
+.browse-section-link:hover { color: var(--gold-light); }
 
 .parties-grid {
   max-width: var(--max-w);
@@ -1520,7 +1551,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 640px) {
   :root { --page-px: 1.25rem; }
-  .logo-text { display: none; }
+  .logo-text { font-size: 0.95rem; }
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
@@ -1528,32 +1559,24 @@ h1, h2, h3, h4 {
     position: absolute;
     top: var(--nav-h);
     left: 0; right: 0;
+    z-index: 101;
     background: var(--navy-mid);
     border-bottom: 1px solid var(--navy-border);
     padding: 1rem;
     gap: 0.5rem;
   }
+  .nav-desktop-only { display: none; }
+  .nav-mobile-only {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+  }
+  .nav-mobile-only .nav-btn {
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+  }
   .nav-mobile-btn { display: flex; }
-  .dropdown-menu,
-  .dropdown-mega {
-    position: static;
-    opacity: 1;
-    pointer-events: auto;
-    transform: none;
-    border: none;
-    box-shadow: none;
-    background: var(--navy);
-    max-height: none;
-  }
-  .dropdown-mega {
-    display: grid;
-    grid-template-columns: 1fr;
-    top: auto;
-    left: auto;
-    right: auto;
-    box-shadow: none;
-    border-top: none;
-  }
   .parties-grid { grid-template-columns: 1fr; }
   .timeline-header { flex-direction: column; align-items: flex-start; }
   .hero-stats { flex-wrap: wrap; }
@@ -2659,12 +2682,17 @@ h1, h2, h3, h4 {
   background: var(--cream-faint);
 }
 .latest-track-wrap {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
 }
+.latest-track-wrap::-webkit-scrollbar { display: none; }
 .latest-track {
   display: flex;
   gap: 1rem;
-  transition: transform 0.35s var(--ease);
+  width: max-content;
 }
 .latest-card {
   flex: 0 0 180px;
@@ -2673,6 +2701,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--navy-border);
   border-radius: 8px;
   overflow: hidden;
+  scroll-snap-align: start;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .latest-card:hover {
@@ -2729,6 +2758,166 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
   color: var(--text-muted);
   padding: 1rem 0;
+}
+
+/* Hub pages (elections, devolved, parties) */
+.hub-page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem var(--page-px) 5rem;
+}
+.hub-page-header {
+  margin-bottom: 2.5rem;
+}
+.hub-page-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 300;
+  color: var(--cream);
+  margin: 0.5rem 0 1rem;
+}
+.hub-page-header p {
+  max-width: 640px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.hub-filter {
+  margin-bottom: 2rem;
+}
+.hub-elections-grid {
+  margin: 0;
+}
+.hub-devolved-grid,
+.hub-nations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.hub-nation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-top: 3px solid var(--gold-rule);
+  transition: transform 0.2s var(--ease), border-color 0.2s;
+}
+.hub-nation-card:hover {
+  transform: translateY(-2px);
+  border-top-color: var(--gold);
+}
+.hub-nation-icon { font-size: 2rem; line-height: 1; }
+.hub-nation-card strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--cream);
+}
+.hub-nation-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hub-nation-card p {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0.5rem 0 0.75rem;
+}
+.hub-devolved-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-top: 3px solid var(--gold-rule);
+  transition: transform 0.2s var(--ease), border-color 0.2s;
+}
+.hub-devolved-card:hover {
+  transform: translateY(-2px);
+  border-top-color: var(--gold);
+}
+.hub-devolved-card strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--cream);
+}
+.hub-devolved-sub {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hub-devolved-card p {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0.5rem 0 0.75rem;
+}
+.hub-card-cta {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+.hub-parties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem 1.5rem;
+}
+.hub-parties-section {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-top: 3px solid var(--gold-rule);
+}
+.hub-parties-nation-heading {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--gold-rule);
+}
+.hub-parties-nation-heading a {
+  color: var(--gold-light);
+  transition: color 0.18s;
+}
+.hub-parties-nation-heading a:hover { color: var(--gold); }
+.hub-parties-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.hub-party-link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+.hub-party-link:hover {
+  background: var(--cream-faint);
+  color: var(--cream);
+}
+.hub-all-others-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gold);
 }
 
 /* Devolved portal pages */

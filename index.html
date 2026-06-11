@@ -43,19 +43,27 @@
       <span class="logo-text">manifestos.org.uk</span>
     </a>
     <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <button class="nav-btn" id="nav-btn-elections" aria-expanded="false" aria-controls="elections-dropdown">General Elections <span class="caret">▾</span></button>
-        <div class="dropdown-menu" id="elections-dropdown" aria-hidden="true"></div>
+      <div class="nav-mobile-only" id="nav-mobile-only">
+        <a href="/elections" class="nav-btn">General Elections</a>
+        <a href="/devolved" class="nav-btn">Devolved Parliaments</a>
+        <a href="/parties" class="nav-btn">Parties</a>
+        <a href="/about" class="nav-btn">About</a>
       </div>
-      <div class="nav-dropdown">
-        <button class="nav-btn" id="nav-btn-devolved" aria-expanded="false" aria-controls="devolved-dropdown">Devolved Parliaments <span class="caret">▾</span></button>
-        <div class="dropdown-menu" id="devolved-dropdown" aria-hidden="true"></div>
+      <div class="nav-desktop-only" id="nav-desktop-only">
+        <div class="nav-dropdown">
+          <button class="nav-btn" id="nav-btn-elections" aria-expanded="false" aria-controls="elections-dropdown">General Elections <span class="caret">▾</span></button>
+          <div class="dropdown-menu" id="elections-dropdown" aria-hidden="true"></div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-btn" id="nav-btn-devolved" aria-expanded="false" aria-controls="devolved-dropdown">Devolved Parliaments <span class="caret">▾</span></button>
+          <div class="dropdown-menu" id="devolved-dropdown" aria-hidden="true"></div>
+        </div>
+        <div class="nav-dropdown nav-mega">
+          <button class="nav-btn" id="nav-btn-parties" aria-expanded="false" aria-controls="parties-mega">Parties <span class="caret">▾</span></button>
+          <div class="dropdown-mega" id="parties-mega" aria-hidden="true"></div>
+        </div>
+        <a href="/about" class="nav-btn">About</a>
       </div>
-      <div class="nav-dropdown nav-mega">
-        <button class="nav-btn" id="nav-btn-parties" aria-expanded="false" aria-controls="parties-mega">Parties <span class="caret">▾</span></button>
-        <div class="dropdown-mega" id="parties-mega" aria-hidden="true"></div>
-      </div>
-      <a href="/about" class="nav-btn">About</a>
       <button type="button" class="nav-search-btn" id="search-toggle" aria-label="Search archive">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <span class="nav-search-kbd">⌘K</span>

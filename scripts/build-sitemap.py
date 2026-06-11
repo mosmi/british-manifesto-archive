@@ -40,7 +40,7 @@ def main() -> None:
         (ROOT / "data/manifestos-index.json").read_text(encoding="utf-8")
     )
 
-    urls: list[str] = ["/", "/about", "/others"]
+    urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
     urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
     urls.extend(f"/nation/{nid}" for nid in nation_ids)

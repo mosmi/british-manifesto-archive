@@ -309,6 +309,14 @@ function route() {
   } else if (path.startsWith('/manifesto/')) {
     const parts = path.split('/').filter(Boolean);
     renderManifesto(app, parts[1], parts[2]);
+  } else if (path === '/elections') {
+    renderElectionsHub(app);
+  } else if (path === '/devolved') {
+    renderDevolvedHub(app);
+  } else if (path === '/parties') {
+    renderPartiesHub(app);
+  } else if (path === '/nations') {
+    renderNationsHub(app);
   } else if (path === '/about') {
     renderAbout(app);
   } else {
@@ -359,7 +367,7 @@ function buildDevolvedDropdown() {
 }
 
 function setupNavDropdowns() {
-  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+  document.querySelectorAll('#nav-desktop-only .nav-dropdown').forEach(dropdown => {
     const button = dropdown.querySelector('.nav-btn');
     const menu = dropdown.querySelector('.dropdown-menu, .dropdown-mega');
     if (menu) {
@@ -460,12 +468,6 @@ function setupMobileMenu() {
   btn.addEventListener('click', () => {
     const open = links.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (window.matchMedia('(max-width: 640px)').matches) {
-      links.querySelectorAll('.dropdown-menu, .dropdown-mega').forEach(menu => {
-        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-        menu.inert = !open;
-      });
-    }
   });
 
   btn.addEventListener('keydown', e => {
@@ -568,20 +570,32 @@ function renderHome(app) {
       <div class="timeline-grid" id="timeline-grid"></div>
     </section>
 
-    <section class="parties-section">
-      <div style="max-width:var(--max-w);margin:0 auto">
-        <span class="section-label">Browse by Nation</span>
-        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,3.5vw,2.8rem);color:var(--cream)">Political Parties</h2>
+    <section class="browse-section nations-browse-section">
+      <div class="browse-section-header">
+        <span class="section-label">United Kingdom</span>
+        <h2>Browse by Nation</h2>
         <div class="gold-rule"></div>
       </div>
       <div class="nations-grid" id="nations-grid"></div>
+      <a href="/nations" class="browse-section-link">Explore all four nations →</a>
+    </section>
+
+    <section class="browse-section parties-browse-section">
+      <div class="browse-section-header">
+        <span class="section-label">Political Parties</span>
+        <h2>Browse by Party</h2>
+        <div class="gold-rule"></div>
+      </div>
       <div class="parties-grid" id="primary-parties-grid"></div>
+      <div class="more-parties-grid" id="more-parties-grid"></div>
+      <a href="/parties" class="browse-section-link">View all parties →</a>
     </section>
   `;
 
   renderTimelineGrid();
   renderNationsGrid();
   renderPrimaryPartiesGrid();
+  renderMorePartiesGrid();
   setupTimelineFilter();
   initHomeDashboard();
   loadLatestManifestos();
@@ -775,56 +789,57 @@ function setupLatestCarousel() {
   const wrap = track?.parentElement;
   if (!track || !wrap) return;
 
-  let offset = 0;
   const step = () => {
     const card = track.querySelector('.latest-card');
     return card ? card.offsetWidth + 16 : 280;
   };
 
   const scroll = dir => {
-    const max = Math.max(0, track.scrollWidth - wrap.clientWidth);
-    offset = Math.max(0, Math.min(max, offset + dir * step()));
-    track.style.transform = `translateX(-${offset}px)`;
+    wrap.scrollBy({ left: dir * step(), behavior: 'smooth' });
   };
 
   document.getElementById('latest-prev')?.addEventListener('click', () => scroll(-1));
   document.getElementById('latest-next')?.addEventListener('click', () => scroll(1));
 }
 
+function electionCardHtml(e) {
+  const winner = PARTIES[e.winner] || {};
+  const color  = winner.color || 'var(--gold)';
+  const dim    = winner.dim   || 'var(--gold-dim)';
+  const barSegs = e.results.filter(r => r.seats > 0).sort((a, b) => b.seats - a.seats)
+    .map(r => `<div class="seats-segment" style="width:${(r.seats / e.totalSeats * 100).toFixed(1)}%;background:${getPartyColor(r.party)}"></div>`).join('');
+  return `<a href="/election/${e.id}" class="election-card" data-winner="${e.winner}" style="--party-color:${color};--party-dim:${dim}">
+    <div class="card-year">${e.displayYear}</div>
+    <div class="card-date">${e.date}</div>
+    <div class="card-winner"><div class="card-winner-dot"></div>${winner.shortName || ''} victory</div>
+    <div class="card-pm">New PM: <span>${e.pm}</span></div>
+    <div class="card-seats-bar">${barSegs}</div>
+  </a>`;
+}
+
 function renderTimelineGrid() {
   const grid = document.getElementById('timeline-grid');
   if (!grid) return;
-  ELECTIONS.slice().reverse().forEach(e => {
-    const winner = PARTIES[e.winner] || {};
-    const color  = winner.color || 'var(--gold)';
-    const dim    = winner.dim   || 'var(--gold-dim)';
-    const barSegs = e.results.filter(r => r.seats > 0).sort((a,b) => b.seats - a.seats)
-      .map(r => `<div class="seats-segment" style="width:${(r.seats/e.totalSeats*100).toFixed(1)}%;background:${getPartyColor(r.party)}"></div>`).join('');
-    const card = document.createElement('a');
-    card.href = `/election/${e.id}`;
-    card.className = 'election-card';
-    card.setAttribute('data-winner', e.winner);
-    card.style.setProperty('--party-color', color);
-    card.style.setProperty('--party-dim', dim);
-    card.innerHTML = `<div class="card-year">${e.displayYear}</div><div class="card-date">${e.date}</div><div class="card-winner"><div class="card-winner-dot"></div>${winner.shortName || ''} victory</div><div class="card-pm">New PM: <span>${e.pm}</span></div><div class="card-seats-bar">${barSegs}</div>`;
-    grid.appendChild(card);
-  });
+  grid.innerHTML = ELECTIONS.slice().reverse().map(electionCardHtml).join('');
 }
+
+const HOME_NATION_ICONS = {
+  england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+  wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿',
+  scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
+  'northern-ireland': '🇮🇪',
+};
 
 function renderNationsGrid() {
   const grid = document.getElementById('nations-grid');
   if (!grid) return;
-  const nations = [
-    { id: 'england',          name: 'England',          mp: 543, icon: '🏴󠁧󠁢󠁥󠁮󠁧󠁿' },
-    { id: 'wales',            name: 'Wales',            mp: 32,  icon: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
-    { id: 'scotland',         name: 'Scotland',         mp: 57,  icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿' },
-    { id: 'northern-ireland', name: 'Northern Ireland', mp: 18,  icon: '🇮🇪' },
-  ];
-  nations.forEach(n => {
+  Object.keys(HOME_NATION_ICONS).forEach(id => {
+    const nation = NATIONS[id];
+    if (!nation) return;
     const a = document.createElement('a');
-    a.href = `/nation/${n.id}`;
+    a.href = `/nation/${id}`;
     a.className = 'nation-card';
-    a.innerHTML = `<div class="nation-icon">${n.icon}</div><div class="nation-name">${n.name}</div><div class="nation-mp">${n.mp} Westminster MPs</div>`;
+    a.innerHTML = `<div class="nation-icon">${HOME_NATION_ICONS[id]}</div><div class="nation-name">${nation.name}</div><div class="nation-mp">${nation.constituencies} Westminster MPs</div>`;
     grid.appendChild(a);
   });
 }
@@ -832,13 +847,28 @@ function renderNationsGrid() {
 function renderPrimaryPartiesGrid() {
   const grid = document.getElementById('primary-parties-grid');
   if (!grid) return;
-  ['conservative','labour','libdem'].forEach(id => {
+  ['conservative', 'labour', 'libdem'].forEach(id => {
     const p = PARTIES[id];
     const a = document.createElement('a');
     a.href = `/party/${id}`;
     a.className = 'party-card';
     a.style.setProperty('--party-color', p.color);
     a.innerHTML = `<div class="party-card-name">${p.shortName}</div><div class="party-card-founded">Est. ${p.founded}</div><div class="party-card-color-swatch"></div><div class="party-card-desc">${p.description}</div>`;
+    grid.appendChild(a);
+  });
+}
+
+function renderMorePartiesGrid() {
+  const grid = document.getElementById('more-parties-grid');
+  if (!grid) return;
+  ['snp', 'plaid', 'green', 'reform', 'dup', 'sinnfein'].forEach(id => {
+    const p = PARTIES[id];
+    if (!p) return;
+    const a = document.createElement('a');
+    a.href = `/party/${id}`;
+    a.className = 'more-party-card';
+    a.style.setProperty('--party-color', p.color);
+    a.innerHTML = `<span class="more-party-dot"></span><span>${p.shortName}</span>`;
     grid.appendChild(a);
   });
 }
@@ -1447,6 +1477,7 @@ function renderNation(app, id) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
+      { label: 'Nations', href: '/nations' },
       { label: nation.name },
     ])}
     <section class="nation-hero">
@@ -1507,7 +1538,7 @@ function renderDevolved(app, id) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments', href: '/' },
+      { label: 'Devolved Parliaments', href: '/devolved' },
       { label: portal.label },
     ])}
     <section class="devolved-hero">
@@ -1748,6 +1779,184 @@ function parseMarkdown(md) {
     /<a href="(https?:\/\/[^"]+)"/g,
     '<a href="$1" target="_blank" rel="noopener noreferrer"'
   );
+}
+
+// ── HUB PAGES ─────────────────────────────────────────────────
+function renderElectionsHub(app) {
+  setPageMeta({
+    title: 'General Elections',
+    description: 'Browse all UK general elections from 1945 to 2024 — results, manifestos, and electoral records.',
+    path: '/elections',
+  });
+
+  const cards = ELECTIONS.slice().reverse().map(electionCardHtml).join('');
+
+  app.innerHTML = `
+    ${renderBreadcrumb([
+      { label: 'Home', href: '/' },
+      { label: 'General Elections' },
+    ])}
+    <div class="hub-page">
+      <header class="hub-page-header">
+        <span class="section-label">United Kingdom · 1945–2024</span>
+        <h1>General Elections</h1>
+        <div class="gold-rule"></div>
+        <p>Every postwar UK general election — electoral results, manifesto documents, and campaign records.</p>
+      </header>
+      <div class="timeline-filter hub-filter" id="hub-elections-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="labour">Labour</button>
+        <button class="filter-btn" data-filter="conservative">Conservative</button>
+      </div>
+      <div class="timeline-grid hub-elections-grid" id="hub-elections-grid">${cards}</div>
+    </div>
+  `;
+
+  document.querySelectorAll('#hub-elections-filter .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#hub-elections-filter .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.getAttribute('data-filter');
+      document.querySelectorAll('#hub-elections-grid .election-card').forEach(card => {
+        card.style.display = (f === 'all' || card.getAttribute('data-winner') === f) ? '' : 'none';
+      });
+    });
+  });
+}
+
+function renderDevolvedHub(app) {
+  setPageMeta({
+    title: 'Devolved Parliaments',
+    description: 'Devolved legislatures of the United Kingdom — Scottish Parliament, Welsh Parliament, Northern Ireland Assembly, and London Mayor & Assembly.',
+    path: '/devolved',
+  });
+
+  const cards = Object.values(DEVOLVED_PORTALS).map(portal => `
+    <a href="/devolved/${portal.id}" class="hub-devolved-card">
+      <strong>${portal.label}</strong>
+      <span class="hub-devolved-sub">${portal.subtitle}</span>
+      <p>${portal.description}</p>
+      <span class="hub-card-cta">View portal →</span>
+    </a>
+  `).join('');
+
+  app.innerHTML = `
+    ${renderBreadcrumb([
+      { label: 'Home', href: '/' },
+      { label: 'Devolved Parliaments' },
+    ])}
+    <div class="hub-page">
+      <header class="hub-page-header">
+        <span class="section-label">United Kingdom — Devolved Government</span>
+        <h1>Devolved Parliaments</h1>
+        <div class="gold-rule"></div>
+        <p>Legislatures with devolved powers across Scotland, Wales, Northern Ireland, and Greater London.</p>
+      </header>
+      <div class="hub-devolved-grid">${cards}</div>
+    </div>
+  `;
+}
+
+function renderNationsHub(app) {
+  setPageMeta({
+    title: 'The Four Nations',
+    description: 'Browse the four nations of the United Kingdom — England, Wales, Scotland, and Northern Ireland — with Westminster results and devolved government.',
+    path: '/nations',
+  });
+
+  const cards = Object.keys(HOME_NATION_ICONS).map(id => {
+    const nation = NATIONS[id];
+    if (!nation) return '';
+    const devolved = nation.devolvedBody
+      ? nation.devolvedBody
+      : 'No devolved parliament';
+    const excerpt = nation.description.length > 160
+      ? `${nation.description.slice(0, 160).replace(/\s+\S*$/, '')}…`
+      : nation.description;
+    return `<a href="/nation/${id}" class="hub-nation-card">
+      <div class="hub-nation-icon">${HOME_NATION_ICONS[id]}</div>
+      <strong>${nation.name}</strong>
+      <span class="hub-nation-meta">${nation.constituencies} Westminster MPs · ${devolved}</span>
+      <p>${excerpt}</p>
+      <span class="hub-card-cta">View nation →</span>
+    </a>`;
+  }).join('');
+
+  app.innerHTML = `
+    ${renderBreadcrumb([
+      { label: 'Home', href: '/' },
+      { label: 'Nations' },
+    ])}
+    <div class="hub-page">
+      <header class="hub-page-header">
+        <span class="section-label">United Kingdom</span>
+        <h1>The Four Nations</h1>
+        <div class="gold-rule"></div>
+        <p>England, Wales, Scotland, and Northern Ireland — Westminster representation, devolved government, and parties contesting elections in each nation.</p>
+      </header>
+      <div class="hub-nations-grid">${cards}</div>
+    </div>
+  `;
+}
+
+function renderPartiesHub(app) {
+  setPageMeta({
+    title: 'Political Parties',
+    description: 'Browse political parties by nation — England, Wales, Scotland, Northern Ireland, and other parties.',
+    path: '/parties',
+  });
+
+  const nationSections = Object.entries(NAV_PARTIES).map(([nationId, nation]) => {
+    const partyLinks = nation.parties.map(pid => {
+      const p = PARTIES[pid];
+      if (!p) return '';
+      return `<a href="/party/${pid}" class="hub-party-link">
+        <span class="mega-dot" style="background:${p.color}"></span>
+        <span>${p.shortName}</span>
+      </a>`;
+    }).join('');
+    return `<section class="hub-parties-section" aria-labelledby="hub-nation-${nationId}">
+      <h2 class="hub-parties-nation-heading" id="hub-nation-${nationId}">
+        <a href="/nation/${nationId}">${nation.label}</a>
+      </h2>
+      <div class="hub-parties-list">${partyLinks}</div>
+    </section>`;
+  }).join('');
+
+  const featured = typeof OTHERS_FEATURED !== 'undefined' ? OTHERS_FEATURED : OTHERS_PARTIES.slice(0, 6);
+  const othersLinks = featured.map(pid => {
+    const p = PARTIES[pid];
+    if (!p) return '';
+    return `<a href="/party/${pid}" class="hub-party-link">
+      <span class="mega-dot" style="background:${p.color}"></span>
+      <span>${p.shortName}</span>
+    </a>`;
+  }).join('');
+
+  app.innerHTML = `
+    ${renderBreadcrumb([
+      { label: 'Home', href: '/' },
+      { label: 'Parties' },
+    ])}
+    <div class="hub-page">
+      <header class="hub-page-header">
+        <span class="section-label">Browse by Nation</span>
+        <h1>Political Parties</h1>
+        <div class="gold-rule"></div>
+        <p>Parties contesting UK and devolved elections, organised by the four nations of the United Kingdom.</p>
+      </header>
+      <div class="hub-parties-grid">
+        ${nationSections}
+        <section class="hub-parties-section" aria-labelledby="hub-nation-others">
+          <h2 class="hub-parties-nation-heading" id="hub-nation-others">
+            <a href="/others">Others</a>
+          </h2>
+          <div class="hub-parties-list">${othersLinks}</div>
+          <a href="/others" class="hub-all-others-link">All other parties →</a>
+        </section>
+      </div>
+    </div>
+  `;
 }
 
 // ── ABOUT PAGE ────────────────────────────────────────────────
