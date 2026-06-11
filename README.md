@@ -36,7 +36,18 @@ For the classic Pages UI (Framework preset, Build output directory):
 
 ### After connecting Git
 
-Push to `main` (or **Deployments → Retry deployment**). The site will be served from your `*.workers.dev` or `*.pages.dev` URL.
+Push to `main` (or **Deployments → Retry deployment**). The site will be served from your `*.pages.dev` URL.
+
+**Pages build settings must be:**
+
+| Setting | Value |
+|---|---|
+| Framework preset | **None** |
+| Build command | *(empty)* |
+| Build output directory | **`.`** |
+| Deploy command | *(empty — do not use `npx wrangler deploy`)* |
+
+If the deploy command is still `npx wrangler deploy` from an old Workers setup, Git pushes will land on GitHub but **will not update the live site**. Check **Deployments** for failed builds after each push.
 
 ### Before deploying
 
@@ -60,3 +71,5 @@ If you have both a **Workers** project (`npx wrangler deploy`) and a **Pages** p
 ### After deploying
 
 Hard-refresh the site (Shift+Reload) or purge Cloudflare cache so updated `js/*.js` is served. Script tags in `index.html` use a `?v=` query string — bump that date when you need to force browsers to reload JS.
+
+**Verify a deploy succeeded:** open `https://www.manifestos.org.uk/js/app.js?v=…` and search for `renderNationsHub`. If it is missing, the live site is still on an older build even though `main` on GitHub is up to date.
