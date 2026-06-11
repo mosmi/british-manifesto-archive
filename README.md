@@ -70,6 +70,6 @@ If you have both a **Workers** project (`npx wrangler deploy`) and a **Pages** p
 
 ### After deploying
 
-Hard-refresh the site (Shift+Reload) or purge Cloudflare cache so updated `js/*.js` is served. Script tags in `index.html` use a `?v=` query string — bump that date when you need to force browsers to reload JS.
+Hard-refresh the site (Shift+Reload) or purge Cloudflare cache so updated assets are served. `index.html` uses a `?v=` query string on `styles.css` and `js/*.js` — bump that date when you need to force browsers to reload CSS/JS.
 
 **Verify a deploy succeeded:** open `https://www.manifestos.org.uk/js/app.js?v=…` and search for `renderNationsHub`. If it is missing, the live site is still on an older build even though `main` on GitHub is up to date.
