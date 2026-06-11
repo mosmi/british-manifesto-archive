@@ -4,6 +4,19 @@
 
 const _electionCache = new Map();
 
+/** Fetch JSON or markdown; reject SPA HTML fallbacks (Cloudflare 200 + text/html). */
+async function fetchTyped(url, expected) {
+  const r = await fetch(url);
+  const ct = (r.headers.get('content-type') || '').toLowerCase();
+  const okType = expected === 'json'
+    ? ct.includes('json')
+    : ct.includes('markdown') || ct.includes('text/plain');
+  if (!r.ok || !okType) {
+    throw new Error(`Unexpected response for ${url}: ${r.status} ${ct}`);
+  }
+  return expected === 'json' ? r.json() : r.text();
+}
+
 /** @returns {Promise<object|null>} */
 async function loadElection(id) {
   const bundled = typeof getElection === 'function' ? getElection(id) : null;

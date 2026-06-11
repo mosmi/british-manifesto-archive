@@ -1,6 +1,6 @@
 /* ============================================================
    THE BRITISH MANIFESTO ARCHIVE — App
-   Hash-based SPA routing + page rendering
+   History API SPA routing + page rendering
    ============================================================ */
 
 const SITE = {
@@ -30,11 +30,12 @@ function setPageTitle(pageTitle) {
     : `${SITE.name} — ${SITE.domain}`;
 }
 
-function setPageMeta({ title, description } = {}) {
+function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
   const pageTitle = title
     ? `${title} — ${SITE.domain}`
     : `${SITE.name} — ${SITE.domain}`;
   const pageDescription = description || SITE.description;
+  const canonical = path === '/' ? `${SITE.url}/` : `${SITE.url}${path}`;
 
   setPageTitle(title);
 
@@ -48,47 +49,216 @@ function setPageMeta({ title, description } = {}) {
   if (ogDesc) ogDesc.setAttribute('content', pageDescription);
 
   const ogUrl = document.getElementById('og-url');
-  if (ogUrl) ogUrl.setAttribute('content', `${SITE.url}/`);
+  if (ogUrl) ogUrl.setAttribute('content', canonical);
+
+  const canonicalEl = document.getElementById('canonical-link');
+  if (canonicalEl) canonicalEl.setAttribute('href', canonical);
 
   const twitterTitle = document.getElementById('twitter-title');
   if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
 
   const twitterDesc = document.getElementById('twitter-description');
   if (twitterDesc) twitterDesc.setAttribute('content', pageDescription);
+
+  let robotsMeta = document.getElementById('meta-robots');
+  if (noindex) {
+    if (!robotsMeta) {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.id = 'meta-robots';
+      robotsMeta.name = 'robots';
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.setAttribute('content', 'noindex');
+  } else if (robotsMeta) {
+    robotsMeta.remove();
+  }
 }
+
+const HOVER_FINE = window.matchMedia('(hover: hover) and (pointer: fine)');
+let _openNavMenu = null;
+
+function closeAllNavMenus(returnFocusTo = null) {
+  document.querySelectorAll('.dropdown-menu.is-open, .dropdown-mega.is-open').forEach(menu => {
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    menu.inert = true;
+  });
+  document.querySelectorAll('.nav-dropdown .nav-btn[aria-expanded="true"]').forEach(btn => {
+    btn.setAttribute('aria-expanded', 'false');
+  });
+  _openNavMenu = null;
+  if (returnFocusTo) returnFocusTo.focus();
+}
+
+function closeMobileMenu() {
+  const links = document.getElementById('nav-links');
+  const btn = document.getElementById('mobile-menu-btn');
+  if (links) links.classList.remove('open');
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+
+function setupNavMenu(dropdown, button, menu) {
+  if (!dropdown || !button || !menu) return;
+  let hideTimer;
+
+  const show = () => {
+    clearTimeout(hideTimer);
+    if (_openNavMenu && _openNavMenu.menu !== menu) {
+      closeAllNavMenus();
+    }
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    menu.inert = false;
+    button.setAttribute('aria-expanded', 'true');
+    _openNavMenu = { dropdown, button, menu };
+  };
+
+  const hide = (returnFocus = false) => {
+    hideTimer = setTimeout(() => {
+      menu.classList.remove('is-open');
+      menu.setAttribute('aria-hidden', 'true');
+      menu.inert = true;
+      button.setAttribute('aria-expanded', 'false');
+      if (_openNavMenu?.menu === menu) _openNavMenu = null;
+      if (returnFocus) button.focus();
+    }, 150);
+  };
+
+  const toggle = () => {
+    const isOpen = menu.classList.contains('is-open');
+    if (isOpen) hide(true);
+    else show();
+  };
+
+  button.addEventListener('click', e => {
+    e.preventDefault();
+    toggle();
+  });
+
+  button.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+      e.preventDefault();
+      clearTimeout(hideTimer);
+      hide(true);
+    }
+  });
+
+  if (HOVER_FINE.matches) {
+    dropdown.addEventListener('mouseenter', show);
+    dropdown.addEventListener('mouseleave', () => hide(false));
+    menu.addEventListener('mouseenter', show);
+    menu.addEventListener('mouseleave', () => hide(false));
+  }
+
+  dropdown.addEventListener('focusout', e => {
+    if (!dropdown.contains(e.relatedTarget)) hide(false);
+  });
+
+  menu.addEventListener('click', e => {
+    if (e.target.closest('a')) {
+      clearTimeout(hideTimer);
+      closeAllNavMenus();
+    }
+  });
+}
+
+document.addEventListener('click', e => {
+  if (_openNavMenu && !_openNavMenu.dropdown.contains(e.target)) {
+    closeAllNavMenus();
+  }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && _openNavMenu) {
+    const btn = _openNavMenu.button;
+    closeAllNavMenus(btn);
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   buildNav();
   setupMobileMenu();
-  setupMegaMenu();
   setupNavDropdowns();
   setupSearch();
+  setupRouter();
   route();
-  window.addEventListener('hashchange', route);
 });
 
 // ── Router ────────────────────────────────────────────────────
+function getPath() {
+  let path = window.location.pathname || '/';
+  if (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
+  return path || '/';
+}
+
+function navigate(path, { replace = false } = {}) {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  if (replace) {
+    history.replaceState(null, '', normalized);
+  } else if (getPath() !== normalized) {
+    history.pushState(null, '', normalized);
+  }
+  closeAllNavMenus();
+  closeMobileMenu();
+  route();
+}
+
+function migrateHashRoute() {
+  const hash = window.location.hash;
+  if (hash.startsWith('#/')) {
+    const path = hash.slice(1) || '/';
+    history.replaceState(null, '', path);
+    window.location.hash = '';
+  }
+}
+
+function setupRouter() {
+  migrateHashRoute();
+
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (!href) return;
+
+    if (href.startsWith('#/')) {
+      e.preventDefault();
+      navigate(href.slice(1));
+      return;
+    }
+
+    if (!href.startsWith('/') || a.target === '_blank') return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.origin && a.origin !== window.location.origin) return;
+
+    e.preventDefault();
+    navigate(href);
+  });
+
+  window.addEventListener('popstate', route);
+}
+
 function route() {
-  const hash = window.location.hash.replace('#', '') || '/';
+  const path = getPath();
   const app  = document.getElementById('app');
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
 
-  if (hash === '/' || hash === '') {
+  if (path === '/') {
     renderHome(app);
-  } else if (hash.startsWith('/election/')) {
-    renderElection(app, hash.replace('/election/', ''));
-  } else if (hash.startsWith('/party/')) {
-    renderParty(app, hash.replace('/party/', ''));
-  } else if (hash.startsWith('/nation/')) {
-    renderNation(app, hash.replace('/nation/', ''));
-  } else if (hash.startsWith('/devolved/')) {
-    renderDevolved(app, hash.replace('/devolved/', ''));
-  } else if (hash === '/others') {
+  } else if (path.startsWith('/election/')) {
+    renderElection(app, path.replace('/election/', ''));
+  } else if (path.startsWith('/party/')) {
+    renderParty(app, path.replace('/party/', ''));
+  } else if (path.startsWith('/nation/')) {
+    renderNation(app, path.replace('/nation/', ''));
+  } else if (path.startsWith('/devolved/')) {
+    renderDevolved(app, path.replace('/devolved/', ''));
+  } else if (path === '/others') {
     renderOthers(app);
-  } else if (hash.startsWith('/manifesto/')) {
-    const [,, elId, partyId] = hash.split('/');
-    renderManifesto(app, elId, partyId);
-  } else if (hash === '/about') {
+  } else if (path.startsWith('/manifesto/')) {
+    const parts = path.split('/').filter(Boolean);
+    renderManifesto(app, parts[1], parts[2]);
+  } else if (path === '/about') {
     renderAbout(app);
   } else {
     renderNotFound(app);
@@ -103,7 +273,7 @@ function renderBreadcrumb(items) {
     if (isLast || !item.href) {
       return `<span class="breadcrumb-current">${item.label}</span>`;
     }
-    return `<a href="${item.href}">${item.label}</a><span class="breadcrumb-sep">›</span>`;
+    return `<a href="${item.href}" class="breadcrumb-link">${item.label}</a>`;
   }).join('');
   return `<nav class="breadcrumb" aria-label="Breadcrumb">${crumbs}</nav>`;
 }
@@ -111,12 +281,12 @@ function renderBreadcrumb(items) {
 function partyLink(id, label, year) {
   const name = label || getPartyName(id, year);
   if (!id || id === 'others' || !PARTIES[id]) return name;
-  return `<a href="#/party/${id}" class="inline-party-link">${name}</a>`;
+  return `<a href="/party/${id}" class="inline-party-link">${name}</a>`;
 }
 
 function nationLink(id, label) {
   if (!NATIONS[id]) return label;
-  return `<a href="#/nation/${id}" class="inline-nation-link">${label}</a>`;
+  return `<a href="/nation/${id}" class="inline-nation-link">${label}</a>`;
 }
 
 // ── Navigation ────────────────────────────────────────────────
@@ -131,26 +301,21 @@ function buildDevolvedDropdown() {
   if (!el || typeof DEVOLVED_PORTALS === 'undefined') return;
   Object.values(DEVOLVED_PORTALS).forEach(portal => {
     const a = document.createElement('a');
-    a.href = `#/devolved/${portal.id}`;
+    a.href = `/devolved/${portal.id}`;
     a.innerHTML = `<strong>${portal.label}</strong><span class="dropdown-sub">${portal.subtitle}</span>`;
     el.appendChild(a);
   });
 }
 
 function setupNavDropdowns() {
-  document.querySelectorAll('.nav-dropdown:not(.nav-mega)').forEach(dropdown => {
-    const menu = dropdown.querySelector('.dropdown-menu');
-    if (!menu) return;
-    let hideTimer;
-    const show = () => { clearTimeout(hideTimer); menu.classList.add('is-open'); };
-    const hide = () => { hideTimer = setTimeout(() => menu.classList.remove('is-open'), 150); };
-    dropdown.addEventListener('mouseenter', show);
-    dropdown.addEventListener('mouseleave', hide);
-    menu.addEventListener('mouseenter', show);
-    menu.addEventListener('mouseleave', hide);
-    menu.addEventListener('click', e => {
-      if (e.target.closest('a')) { clearTimeout(hideTimer); menu.classList.remove('is-open'); }
-    });
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    const button = dropdown.querySelector('.nav-btn');
+    const menu = dropdown.querySelector('.dropdown-menu, .dropdown-mega');
+    if (menu) {
+      menu.setAttribute('aria-hidden', 'true');
+      menu.inert = true;
+    }
+    setupNavMenu(dropdown, button, menu);
   });
 }
 
@@ -169,7 +334,7 @@ function buildElectionsDropdown() {
     el.appendChild(label);
     decades[dec].forEach(e => {
       const a = document.createElement('a');
-      a.href = `#/election/${e.id}`;
+      a.href = `/election/${e.id}`;
       a.textContent = `${e.displayYear} — ${PARTIES[e.winner]?.shortName || ''}`;
       el.appendChild(a);
     });
@@ -185,7 +350,7 @@ function buildPartiesMega() {
     const col = document.createElement('div');
     col.className = 'mega-col';
     const heading = document.createElement('a');
-    heading.href = `#/nation/${nationId}`;
+    heading.href = `/nation/${nationId}`;
     heading.className = 'mega-nation-heading';
     heading.textContent = nation.label;
     col.appendChild(heading);
@@ -193,7 +358,7 @@ function buildPartiesMega() {
       const p = PARTIES[pid];
       if (!p) return;
       const a = document.createElement('a');
-      a.href = `#/party/${pid}`;
+      a.href = `/party/${pid}`;
       a.className = 'mega-party-link';
       const dot = document.createElement('span');
       dot.className = 'mega-dot';
@@ -209,7 +374,7 @@ function buildPartiesMega() {
   const othersCol = document.createElement('div');
   othersCol.className = 'mega-col';
   const othersHeading = document.createElement('a');
-  othersHeading.href = '#/others';
+  othersHeading.href = '/others';
   othersHeading.className = 'mega-nation-heading';
   othersHeading.textContent = 'Others';
   othersCol.appendChild(othersHeading);
@@ -218,7 +383,7 @@ function buildPartiesMega() {
     const p = PARTIES[pid];
     if (!p) return;
     const a = document.createElement('a');
-    a.href = `#/party/${pid}`;
+    a.href = `/party/${pid}`;
     a.className = 'mega-party-link';
     const dot = document.createElement('span');
     dot.className = 'mega-dot';
@@ -228,7 +393,7 @@ function buildPartiesMega() {
     othersCol.appendChild(a);
   });
   const allOthers = document.createElement('a');
-  allOthers.href = '#/others';
+  allOthers.href = '/others';
   allOthers.className = 'mega-all-link';
   allOthers.textContent = 'All other parties →';
   othersCol.appendChild(allOthers);
@@ -238,22 +403,25 @@ function buildPartiesMega() {
 function setupMobileMenu() {
   const btn = document.getElementById('mobile-menu-btn');
   const links = document.getElementById('nav-links');
-  if (btn && links) btn.addEventListener('click', () => links.classList.toggle('open'));
-}
+  if (!btn || !links) return;
 
-function setupMegaMenu() {
-  const trigger = document.querySelector('.nav-mega');
-  const menu    = document.getElementById('parties-mega');
-  if (!trigger || !menu) return;
-  let hideTimer;
-  const show = () => { clearTimeout(hideTimer); menu.classList.add('is-open'); };
-  const hide = () => { hideTimer = setTimeout(() => menu.classList.remove('is-open'), 150); };
-  trigger.addEventListener('mouseenter', show);
-  trigger.addEventListener('mouseleave', hide);
-  menu.addEventListener('mouseenter', show);
-  menu.addEventListener('mouseleave', hide);
-  menu.addEventListener('click', e => {
-    if (e.target.closest('a')) { clearTimeout(hideTimer); menu.classList.remove('is-open'); }
+  btn.setAttribute('aria-expanded', 'false');
+  btn.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (window.matchMedia('(max-width: 640px)').matches) {
+      links.querySelectorAll('.dropdown-menu, .dropdown-mega').forEach(menu => {
+        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+        menu.inert = !open;
+      });
+    }
+  });
+
+  btn.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      closeMobileMenu();
+      btn.focus();
+    }
   });
 }
 
@@ -261,7 +429,7 @@ function setupMegaMenu() {
 let _homeElectionIndex = null;
 
 function renderHome(app) {
-  setPageMeta();
+  setPageMeta({ path: '/' });
   _homeElectionIndex = ELECTIONS.length - 1;
 
   app.innerHTML = `
@@ -454,7 +622,7 @@ function updateHomeDashboard(idx) {
   }
 
   const link = document.getElementById('dashboard-election-link');
-  if (link) link.href = `#/election/${election.id}`;
+  if (link) link.href = `/election/${election.id}`;
 
   const chart = document.getElementById('home-parliament-chart');
   if (chart) drawParliamentChart(chart, election.results, election.totalSeats);
@@ -502,7 +670,7 @@ function buildDashboardSidebar(idx) {
     const pct = (e.results.find(r => r.party === e.winner) || {}).percentage || 0;
     const highlight = (e.highlights || [])[0] || e.summary.slice(0, 140) + '…';
     const active = role === 'current' ? ' is-active' : '';
-    return `<a href="#/election/${e.id}" class="timeline-card${active}" style="--card-accent:${winner.color}">
+    return `<a href="/election/${e.id}" class="timeline-card${active}" style="--card-accent:${winner.color}">
       <div class="timeline-card-accent"></div>
       <div class="timeline-card-year">${e.displayYear}</div>
       <div class="timeline-card-party" style="color:${winner.color}">${winner.shortName || ''}</div>
@@ -521,8 +689,7 @@ function loadLatestManifestos() {
   const track = document.getElementById('latest-track');
   if (!track) return;
 
-  fetch('data/manifestos-index.json')
-    .then(r => r.ok ? r.json() : [])
+  fetchTyped('data/manifestos-index.json', 'json')
     .catch(() => [])
     .then(items => {
       if (!items.length) {
@@ -536,7 +703,7 @@ function loadLatestManifestos() {
         const cover = `manifestos/${item.electionId}/${item.partyId}/cover.png`;
         const coverFb = `manifestos/${item.electionId}/${item.partyId}/cover.jpg`;
         const title = item.label || `${party.shortName || item.partyId} ${election?.displayYear || item.electionId}`;
-        return `<a href="#/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
+        return `<a href="/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
           <div class="latest-card-cover">
             <img src="${cover}" alt="" onerror="if(this.dataset.fb){this.style.display='none';}else{this.dataset.fb=1;this.src='${coverFb}';}">
             <div class="latest-card-cover-fallback" style="background:${party.color || '#333'}">${election?.displayYear || item.electionId}</div>
@@ -583,7 +750,7 @@ function renderTimelineGrid() {
     const barSegs = e.results.filter(r => r.seats > 0).sort((a,b) => b.seats - a.seats)
       .map(r => `<div class="seats-segment" style="width:${(r.seats/e.totalSeats*100).toFixed(1)}%;background:${getPartyColor(r.party)}"></div>`).join('');
     const card = document.createElement('a');
-    card.href = `#/election/${e.id}`;
+    card.href = `/election/${e.id}`;
     card.className = 'election-card';
     card.setAttribute('data-winner', e.winner);
     card.style.setProperty('--party-color', color);
@@ -604,7 +771,7 @@ function renderNationsGrid() {
   ];
   nations.forEach(n => {
     const a = document.createElement('a');
-    a.href = `#/nation/${n.id}`;
+    a.href = `/nation/${n.id}`;
     a.className = 'nation-card';
     a.innerHTML = `<div class="nation-icon">${n.icon}</div><div class="nation-name">${n.name}</div><div class="nation-mp">${n.mp} Westminster MPs</div>`;
     grid.appendChild(a);
@@ -617,7 +784,7 @@ function renderPrimaryPartiesGrid() {
   ['conservative','labour','libdem'].forEach(id => {
     const p = PARTIES[id];
     const a = document.createElement('a');
-    a.href = `#/party/${id}`;
+    a.href = `/party/${id}`;
     a.className = 'party-card';
     a.style.setProperty('--party-color', p.color);
     a.innerHTML = `<div class="party-card-name">${p.shortName}</div><div class="party-card-founded">Est. ${p.founded}</div><div class="party-card-color-swatch"></div><div class="party-card-desc">${p.description}</div>`;
@@ -643,7 +810,7 @@ function buildManifestoCard(pid, election, opts = {}) {
   const p = PARTIES[pid];
   const displayName  = getPartyName(pid, election.year);
   const pdfPath      = `manifestos/${election.id}/${pid}/manifesto.pdf`;
-  const textPath     = `#/manifesto/${election.id}/${pid}`;
+  const textPath     = `/manifesto/${election.id}/${pid}`;
   const coverPath    = `manifestos/${election.id}/${pid}/cover.png`;
   const coverFallback= `manifestos/${election.id}/${pid}/cover.jpg`;
   const hasPdf       = hasManifestoPdf(election.id, pid);
@@ -713,6 +880,7 @@ function renderElection(app, id) {
   setPageMeta({
     title: `${election.displayYear} General Election`,
     description: `Results, maps, and manifestos from the ${election.displayYear} UK general election.`,
+    path: `/election/${id}`,
   });
 
   const winner   = PARTIES[election.winner] || {};
@@ -780,8 +948,8 @@ function renderElection(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: 'General Elections', href: '#/' },
+      { label: 'Home', href: '/' },
+      { label: 'General Elections', href: '/' },
       { label: election.displayYear },
     ])}
     <section class="election-hero" style="--party-glow:${dim}">
@@ -796,8 +964,8 @@ function renderElection(app, id) {
           </div>
         </div>
         <div class="election-nav-btns">
-          ${prev ? `<a class="election-nav-btn" href="#/election/${prev.id}">← ${prev.displayYear}</a>` : ''}
-          ${next ? `<a class="election-nav-btn" href="#/election/${next.id}">${next.displayYear} →</a>` : ''}
+          ${prev ? `<a class="election-nav-btn" href="/election/${prev.id}">← ${prev.displayYear}</a>` : ''}
+          ${next ? `<a class="election-nav-btn" href="/election/${next.id}">${next.displayYear} →</a>` : ''}
         </div>
       </div>
     </section>
@@ -823,10 +991,10 @@ function renderElection(app, id) {
         <div>
           <div class="viz-panel">
             <div class="viz-tabs" role="tablist" aria-label="Seat visualisations">
-              <button type="button" class="viz-tab active" data-viz="parliament" role="tab" aria-selected="true">Parliament</button>
-              <button type="button" class="viz-tab" data-viz="hexmap" role="tab" aria-selected="false">Constituencies</button>
+              <button type="button" class="viz-tab active" id="viz-tab-parliament" data-viz="parliament" role="tab" aria-selected="true" aria-controls="viz-parliament" tabindex="0">Parliament</button>
+              <button type="button" class="viz-tab" id="viz-tab-hexmap" data-viz="hexmap" role="tab" aria-selected="false" aria-controls="viz-hexmap" tabindex="-1">Constituencies</button>
             </div>
-            <div class="viz-pane active" id="viz-parliament" role="tabpanel">
+            <div class="viz-pane active" id="viz-parliament" role="tabpanel" aria-labelledby="viz-tab-parliament">
               <div class="parliament-card viz-card">
                 <div class="parliament-card-title">House of Commons</div>
                 <div class="parliament-card-sub">${election.totalSeats} seats · majority at ${majority}</div>
@@ -834,7 +1002,7 @@ function renderElection(app, id) {
                 <div class="parliament-legend" id="parliament-legend"></div>
               </div>
             </div>
-            <div class="viz-pane" id="viz-hexmap" role="tabpanel" hidden>
+            <div class="viz-pane" id="viz-hexmap" role="tabpanel" aria-labelledby="viz-tab-hexmap" hidden>
               <div class="hexmap-card viz-card">
                 <div class="parliament-card-title">Constituency Map</div>
                 <div class="parliament-card-sub" id="hexmap-subtitle">Each hexagon is one Westminster seat</div>
@@ -868,30 +1036,43 @@ function renderElection(app, id) {
 }
 
 function setupElectionVizTabs(electionId) {
-  const tabs = document.querySelectorAll('.viz-tab');
+  const tabs = Array.from(document.querySelectorAll('.viz-tab'));
   const panes = {
     parliament: document.getElementById('viz-parliament'),
     hexmap: document.getElementById('viz-hexmap'),
   };
   let hexLoaded = false;
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const viz = tab.getAttribute('data-viz');
-      tabs.forEach(t => {
-        const active = t === tab;
-        t.classList.toggle('active', active);
-        t.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      Object.entries(panes).forEach(([key, pane]) => {
-        if (!pane) return;
-        const show = key === viz;
-        pane.classList.toggle('active', show);
-        pane.hidden = !show;
-      });
-      if (viz === 'hexmap' && !hexLoaded) {
-        hexLoaded = true;
-        initElectionHexmap(electionId);
+  const activateTab = tab => {
+    const viz = tab.getAttribute('data-viz');
+    tabs.forEach(t => {
+      const active = t === tab;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+      t.tabIndex = active ? 0 : -1;
+    });
+    Object.entries(panes).forEach(([key, pane]) => {
+      if (!pane) return;
+      const show = key === viz;
+      pane.classList.toggle('active', show);
+      pane.hidden = !show;
+    });
+    if (viz === 'hexmap' && !hexLoaded) {
+      hexLoaded = true;
+      initElectionHexmap(electionId);
+    }
+  };
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => activateTab(tab));
+    tab.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const next = e.key === 'ArrowRight'
+          ? tabs[(i + 1) % tabs.length]
+          : tabs[(i - 1 + tabs.length) % tabs.length];
+        activateTab(next);
+        next.focus();
       }
     });
   });
@@ -945,6 +1126,7 @@ function renderParty(app, id) {
   setPageMeta({
     title: party.shortName,
     description: `Manifestos and election history for the ${party.shortName} in UK general elections since 1945.`,
+    path: `/party/${id}`,
   });
 
   const color = party.color;
@@ -967,7 +1149,7 @@ function renderParty(app, id) {
     const cls     = isWon ? 'won' : isCoal ? 'coalition' : 'lost';
     const label   = isWon ? '✦ Won' : isCoal ? '⊕ Coalition' : 'Opposition';
     const barW    = ((r.seats / maxSeats) * 100).toFixed(1);
-    return `<a class="party-election-row" href="#/election/${e.id}">
+    return `<a class="party-election-row" href="/election/${e.id}">
       <div class="per-year">${e.displayYear}</div>
       <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${e.pm}</div></div>
       <div class="per-seats-wrap"><div class="per-seats-num">${r.seats}</div><div class="per-seats-label">seats</div></div>
@@ -984,12 +1166,12 @@ function renderParty(app, id) {
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
   const nationCrumb = nationId
-    ? [{ label: getNationLabel(nationId), href: `#/nation/${nationId}` }]
+    ? [{ label: getNationLabel(nationId), href: `/nation/${nationId}` }]
     : [];
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '#/' },
+      { label: 'Home', href: '/' },
       ...nationCrumb,
       { label: party.shortName },
     ])}
@@ -1034,13 +1216,14 @@ function renderNation(app, id) {
   setPageMeta({
     title: nation.name,
     description: `Election results and parties in ${nation.name} at UK general elections since 1945.`,
+    path: `/nation/${id}`,
   });
 
   const navConfig = NAV_PARTIES[id];
   const partyLinks = navConfig ? navConfig.parties.map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
-    return `<a href="#/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
+    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
       <span class="nation-party-dot" style="background:${p.color}"></span>
       <span>${p.shortName}</span>
     </a>`;
@@ -1212,7 +1395,7 @@ function renderNation(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '#/' },
+      { label: 'Home', href: '/' },
       { label: nation.name },
     ])}
     <section class="nation-hero">
@@ -1241,7 +1424,7 @@ function renderNation(app, id) {
           <div class="nation-parties-card">
             <div class="section-label" style="margin-bottom:1rem">Parties in ${nation.name}</div>
             ${partyLinks}
-            ${id === 'england' ? `<a href="#/others" class="nation-party-link" style="--party-color:var(--gold)"><span class="nation-party-dot" style="background:var(--gold)"></span><span>Other parties →</span></a>` : ''}
+            ${id === 'england' ? `<a href="/others" class="nation-party-link" style="--party-color:var(--gold)"><span class="nation-party-dot" style="background:var(--gold)"></span><span>Other parties →</span></a>` : ''}
           </div>
         </div>
       </div>
@@ -1256,6 +1439,7 @@ function renderDevolved(app, id) {
   setPageMeta({
     title: portal.label,
     description: `Devolved election information for ${portal.label}.`,
+    path: `/devolved/${id}`,
   });
 
   const nation = NATIONS[portal.nation];
@@ -1263,7 +1447,7 @@ function renderDevolved(app, id) {
   const partyLinks = navConfig ? navConfig.parties.map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
-    return `<a href="#/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
+    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
       <span class="nation-party-dot" style="background:${p.color}"></span>
       <span>${p.shortName}</span>
     </a>`;
@@ -1271,8 +1455,8 @@ function renderDevolved(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: 'Devolved Parliaments', href: '#/' },
+      { label: 'Home', href: '/' },
+      { label: 'Devolved Parliaments', href: '/' },
       { label: portal.label },
     ])}
     <section class="devolved-hero">
@@ -1286,7 +1470,7 @@ function renderDevolved(app, id) {
           <div class="nation-stat"><div class="nation-stat-num">${portal.members}</div><div class="nation-stat-label">Members</div></div>
           <div class="nation-stat"><div class="nation-stat-num" style="font-size:0.85rem">${portal.system}</div><div class="nation-stat-label">Electoral System</div></div>
         </div>
-        ${nation ? `<a href="#/nation/${portal.nation}" class="devolved-nation-link">View ${nation.name} nation page →</a>` : ''}
+        ${nation ? `<a href="/nation/${portal.nation}" class="devolved-nation-link">View ${nation.name} nation page →</a>` : ''}
       </div>
     </section>
     <div class="devolved-body">
@@ -1311,11 +1495,12 @@ function renderOthers(app) {
   setPageMeta({
     title: 'Other Parties',
     description: 'Minor and regional parties that have won seats at UK general elections since 1945.',
+    path: '/others',
   });
   const cards = OTHERS_PARTIES.map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
-    return `<a href="#/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
+    return `<a href="/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
       <div class="others-party-swatch" style="background:${p.color}"></div>
       <div>
         <div class="others-party-name">${p.name}</div>
@@ -1445,15 +1630,16 @@ function renderManifesto(app, electionId, partyId) {
   setPageMeta({
     title: `${displayName} ${election.displayYear} Manifesto`,
     description: `Read the ${displayName} manifesto from the ${election.displayYear} UK general election.`,
+    path: `/manifesto/${electionId}/${partyId}`,
   });
 
   app.innerHTML = `
     <div class="manifesto-viewer-page">
       <div class="manifesto-viewer-header">
         <div class="manifesto-viewer-breadcrumb">
-          <a href="#/election/${election.id}">${election.displayYear} Election</a>
+          <a href="/election/${election.id}">${election.displayYear} Election</a>
           <span>›</span>
-          <a href="#/party/${partyId}">${displayName}</a>
+          <a href="/party/${partyId}">${displayName}</a>
           <span>›</span>
           <span>Manifesto</span>
         </div>
@@ -1478,12 +1664,7 @@ function renderManifesto(app, electionId, partyId) {
     </div>
   `;
 
-  // Fetch and render the markdown file
-  fetch(`manifestos/${electionId}/${partyId}/manifesto.md`)
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.text();
-    })
+  fetchTyped(`manifestos/${electionId}/${partyId}/manifesto.md`, 'markdown')
     .then(md => {
       const { meta, body } = splitManifestoFrontmatter(md);
       const frontmatterEl = document.getElementById('manifesto-frontmatter');
@@ -1521,6 +1702,7 @@ function renderAbout(app) {
   setPageMeta({
     title: 'About',
     description: 'About manifestos.org.uk — a digital archive of UK general election manifestos, results, and maps from 1945 to 2024.',
+    path: '/about',
   });
   app.innerHTML = `
     <div class="about-section">
@@ -1554,6 +1736,11 @@ manifestos/{election-id}/{party-id}/manifesto.md</pre>
 
 // ── 404 ───────────────────────────────────────────────────────
 function renderNotFound(app) {
-  setPageMeta({ title: 'Not Found', description: 'Page not found on manifestos.org.uk.' });
-  app.innerHTML = `<div class="not-found"><h1>404</h1><p>This page could not be found.</p><a href="#/">Return to home</a></div>`;
+  setPageMeta({
+    title: 'Not Found',
+    description: 'Page not found on manifestos.org.uk.',
+    path: getPath(),
+    noindex: true,
+  });
+  app.innerHTML = `<div class="not-found"><h1>404</h1><p>This page could not be found.</p><a href="/">Return to home</a></div>`;
 }

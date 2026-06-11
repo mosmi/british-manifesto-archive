@@ -17,7 +17,7 @@ function buildSearchIndex() {
         title: p.shortName,
         subtitle: p.spectrum,
         body: `${p.name} ${p.description || ''}`,
-        href: `#/party/${p.id}`,
+        href: `/party/${p.id}`,
         color: p.color,
       });
     });
@@ -32,7 +32,7 @@ function buildSearchIndex() {
         title: `${e.displayYear} General Election`,
         subtitle: winner ? `${winner.shortName} victory · ${e.pm}` : e.pm,
         body: `${e.summary || ''} ${(e.highlights || []).join(' ')}`,
-        href: `#/election/${e.id}`,
+        href: `/election/${e.id}`,
         color: winner?.color || '#c9a84c',
       });
     });
@@ -46,7 +46,7 @@ function buildSearchIndex() {
         title: n.name,
         subtitle: `${n.constituencies} Westminster constituencies`,
         body: n.description || '',
-        href: `#/nation/${n.id}`,
+        href: `/nation/${n.id}`,
         color: '#c9a84c',
       });
     });
@@ -56,6 +56,7 @@ function buildSearchIndex() {
 }
 
 let _searchItems = null;
+let _searchLastToggle = null;
 
 function getSearchItems() {
   if (!_searchItems) _searchItems = buildSearchIndex();
@@ -79,29 +80,113 @@ function runSearch(query) {
     .slice(0, 12);
 }
 
+function getSearchFocusables(overlay) {
+  return Array.from(overlay.querySelectorAll(
+    'input:not([disabled]), button:not([disabled]), a[href]'
+  )).filter(el => el.offsetParent !== null || el === overlay.querySelector('.search-input'));
+}
+
 function setupSearch() {
   const toggle = document.getElementById('search-toggle');
   const overlay = document.getElementById('search-overlay');
+  const panel = overlay?.querySelector('.search-panel');
   const input = document.getElementById('search-input');
   const results = document.getElementById('search-results');
-  if (!toggle || !overlay || !input || !results) return;
+  if (!toggle || !overlay || !panel || !input || !results) return;
+
+  let activeResultIndex = -1;
+
+  const getResultLinks = () => Array.from(results.querySelectorAll('.search-result'));
 
   const open = () => {
+    _searchLastToggle = toggle;
     overlay.classList.add('is-open');
     overlay.setAttribute('aria-hidden', 'false');
+    overlay.inert = false;
+    panel.setAttribute('aria-modal', 'true');
     input.value = '';
-    results.innerHTML = '';
+    results.innerHTML = '<p class="search-hint" id="search-status">Search parties, elections, and archive descriptions.</p>';
+    activeResultIndex = -1;
     setTimeout(() => input.focus(), 50);
   };
 
   const close = () => {
     overlay.classList.remove('is-open');
     overlay.setAttribute('aria-hidden', 'true');
+    overlay.inert = true;
+    panel.removeAttribute('aria-modal');
+    activeResultIndex = -1;
+    if (_searchLastToggle) _searchLastToggle.focus();
+  };
+
+  const updateStatus = count => {
+    let status = document.getElementById('search-status');
+    if (!status) {
+      status = document.createElement('p');
+      status.id = 'search-status';
+      status.className = 'search-sr-status';
+      status.setAttribute('aria-live', 'polite');
+      status.setAttribute('aria-atomic', 'true');
+      panel.appendChild(status);
+    }
+    if (count === null) {
+      status.textContent = '';
+    } else if (count === 0) {
+      status.textContent = 'No results found.';
+    } else {
+      status.textContent = `${count} result${count !== 1 ? 's' : ''}.`;
+    }
+  };
+
+  const highlightResult = index => {
+    const links = getResultLinks();
+    links.forEach((a, i) => a.classList.toggle('is-active', i === index));
+    if (links[index]) links[index].focus();
   };
 
   toggle.addEventListener('click', open);
   overlay.querySelector('.search-backdrop')?.addEventListener('click', close);
   overlay.querySelector('.search-close')?.addEventListener('click', close);
+
+  overlay.addEventListener('keydown', e => {
+    if (!overlay.classList.contains('is-open')) return;
+
+    if (e.key === 'Tab') {
+      const focusables = getSearchFocusables(overlay);
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+      return;
+    }
+
+    if (e.key === 'Escape') {
+      close();
+      return;
+    }
+
+    const links = getResultLinks();
+    if (!links.length) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeResultIndex = Math.min(links.length - 1, activeResultIndex + 1);
+      highlightResult(activeResultIndex);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeResultIndex = Math.max(0, activeResultIndex - 1);
+      highlightResult(activeResultIndex);
+    } else if (e.key === 'Enter' && activeResultIndex >= 0 && document.activeElement === input) {
+      e.preventDefault();
+      links[activeResultIndex].click();
+    }
+  });
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
@@ -113,14 +198,20 @@ function setupSearch() {
 
   input.addEventListener('input', () => {
     const hits = runSearch(input.value);
+    activeResultIndex = -1;
+
     if (!input.value.trim()) {
-      results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions. Manifesto full-text search coming soon.</p>';
+      results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
+      updateStatus(null);
       return;
     }
     if (!hits.length) {
       results.innerHTML = '<p class="search-empty">No results found.</p>';
+      updateStatus(0);
       return;
     }
+
+    updateStatus(hits.length);
     results.innerHTML = hits.map(hit => `
       <a href="${hit.href}" class="search-result" data-close-search>
         <span class="search-result-dot" style="background:${hit.color}"></span>
@@ -138,5 +229,6 @@ function setupSearch() {
     });
   });
 
-  results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions. Manifesto full-text search coming soon.</p>';
+  overlay.inert = true;
+  results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
 }

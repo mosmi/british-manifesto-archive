@@ -164,6 +164,11 @@ function drawHexmap(container, data, options = {}) {
   svg.setAttribute('role', 'img');
   svg.setAttribute('aria-label', `Constituency map, ${constituencies.length} seats`);
 
+  const skipLink = document.createElement('a');
+  skipLink.className = 'skip-link skip-map-link';
+  skipLink.href = '#hexmap-skip-target';
+  skipLink.textContent = 'Skip constituency map';
+
   const tooltip = document.createElement('div');
   tooltip.className = 'hexmap-tooltip';
   tooltip.setAttribute('hidden', '');
@@ -175,15 +180,32 @@ function drawHexmap(container, data, options = {}) {
   const svgWrap = document.createElement('div');
   svgWrap.className = 'hexmap-svg-wrap';
   svgWrap.appendChild(svg);
+
+  const skipTarget = document.createElement('div');
+  skipTarget.id = 'hexmap-skip-target';
+  skipTarget.className = 'hexmap-skip-target';
+  skipTarget.tabIndex = -1;
+
+  container.appendChild(skipLink);
   container.appendChild(svgWrap);
   container.appendChild(tooltip);
   container.appendChild(detail);
+  container.appendChild(skipTarget);
 
   if (options.legendEl) {
     buildHexmapLegend(options.legendEl, constituencies, options.electionYear);
   }
 
   let activeHex = null;
+  const hexElements = [];
+  let focusedHexIndex = 0;
+
+  const focusHexAt = index => {
+    if (!hexElements.length) return;
+    focusedHexIndex = ((index % hexElements.length) + hexElements.length) % hexElements.length;
+    hexElements.forEach((el, i) => el.setAttribute('tabindex', i === focusedHexIndex ? '0' : '-1'));
+    hexElements[focusedHexIndex].focus();
+  };
 
   pixels.forEach(c => {
     const cx = c.px + offsetX;
@@ -192,7 +214,9 @@ function drawHexmap(container, data, options = {}) {
 
     const g = document.createElementNS(NS, 'g');
     g.setAttribute('class', 'hexmap-hex');
-    g.setAttribute('tabindex', '0');
+    g.setAttribute('tabindex', hexElements.length === 0 ? '0' : '-1');
+    g.setAttribute('role', 'button');
+    g.setAttribute('aria-label', `${c.name}, ${c.mp || 'MP unknown'}, ${c.partyLabel || getPartyName(c.party, options.electionYear)}`);
     g.dataset.name = c.name;
     g.dataset.mp = c.mp || '';
     g.dataset.party = c.party || 'others';
@@ -247,10 +271,10 @@ function drawHexmap(container, data, options = {}) {
       const partyId = c.party;
       const hasManifesto = partyId && partyId !== 'others' && PARTIES[partyId];
       const manifestoLink = hasManifesto
-        ? `<a href="#/manifesto/${options.electionId}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`
+        ? `<a href="/manifesto/${options.electionId}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`
         : '';
       const partyPageLink = hasManifesto
-        ? `<a href="#/party/${partyId}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(partyId, options.electionYear)} party page</a>`
+        ? `<a href="/party/${partyId}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(partyId, options.electionYear)} party page</a>`
         : '';
 
       detail.innerHTML = `
@@ -273,13 +297,32 @@ function drawHexmap(container, data, options = {}) {
     g.addEventListener('mousemove', showTip);
     g.addEventListener('mouseleave', hideTip);
     g.addEventListener('click', selectHex);
+    g.addEventListener('focus', () => {
+      const idx = hexElements.indexOf(g);
+      if (idx >= 0) focusedHexIndex = idx;
+      showTip({ clientX: container.getBoundingClientRect().left + container.clientWidth / 2, clientY: container.getBoundingClientRect().top + 40 });
+    });
+    g.addEventListener('blur', hideTip);
     g.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         selectHex();
+      } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        focusHexAt(focusedHexIndex + 1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        focusHexAt(focusedHexIndex - 1);
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        focusHexAt(0);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        focusHexAt(hexElements.length - 1);
       }
     });
 
+    hexElements.push(g);
     svg.appendChild(g);
   });
 }
