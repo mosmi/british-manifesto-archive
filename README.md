@@ -48,4 +48,15 @@ This checks Cloudflare’s **25 MiB per-file** and **20,000 files per site** (fr
 
 ### Custom domain
 
-In the Pages project: **Custom domains → Set up a custom domain**, then follow Cloudflare’s DNS steps.
+Attach **www.manifestos.org.uk** to the **same** Cloudflare project that receives your Git deploys (Workers *or* Pages — not both).
+
+If you have both a **Workers** project (`npx wrangler deploy`) and a **Pages** project (`*.pages.dev`) connected to the same repo, only one will receive each push. Symptoms of a mismatch:
+
+- `british-manifesto-archive.pages.dev` shows new features but `www.manifestos.org.uk` does not
+- Direct URLs like `/election/2024` render a blank page (stale or mismatched JS)
+
+**Fix:** In Cloudflare → **Workers & Pages**, open each project → **Custom domains**. Remove the domain from the stale project and attach it to the one that deploys successfully from Git. Then **Caching → Configuration → Purge Everything**.
+
+### After deploying
+
+Hard-refresh the site (Shift+Reload) or purge Cloudflare cache so updated `js/*.js` is served. Script tags in `index.html` use a `?v=` query string — bump that date when you need to force browsers to reload JS.
