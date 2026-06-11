@@ -8,6 +8,10 @@ const SITE = {
   domain: 'www.manifestos.org.uk',
   url: 'https://www.manifestos.org.uk',
   description: 'A comprehensive digital archive of UK general election manifestos from 1945 to 2024. Browse party manifestos, election results, and constituency maps.',
+  ogImage: 'https://www.manifestos.org.uk/og-image.jpg',
+  ogImageWidth: 1024,
+  ogImageHeight: 537,
+  ogImageAlt: 'The British Manifesto Archive — a digital repository of UK political party manifestos',
 };
 
 // Manifesto text without a PDF scan (electionId/partyId)
@@ -28,6 +32,33 @@ function setPageTitle(pageTitle) {
   document.title = pageTitle
     ? `${pageTitle} — ${SITE.domain}`
     : `${SITE.name} — ${SITE.domain}`;
+}
+
+function setOgImage(show) {
+  const ids = ['og-image', 'og-image-width', 'og-image-height', 'og-image-alt', 'twitter-image'];
+  const twitterCard = document.getElementById('twitter-card');
+
+  if (show) {
+    const ensureMeta = (id, attr, key, value) => {
+      let el = document.getElementById(id);
+      if (!el) {
+        el = document.createElement('meta');
+        el.id = id;
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', value);
+    };
+    ensureMeta('og-image', 'property', 'og:image', SITE.ogImage);
+    ensureMeta('og-image-width', 'property', 'og:image:width', String(SITE.ogImageWidth));
+    ensureMeta('og-image-height', 'property', 'og:image:height', String(SITE.ogImageHeight));
+    ensureMeta('og-image-alt', 'property', 'og:image:alt', SITE.ogImageAlt);
+    ensureMeta('twitter-image', 'name', 'twitter:image', SITE.ogImage);
+    if (twitterCard) twitterCard.setAttribute('content', 'summary_large_image');
+  } else {
+    ids.forEach(id => document.getElementById(id)?.remove());
+    if (twitterCard) twitterCard.setAttribute('content', 'summary');
+  }
 }
 
 function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
@@ -59,6 +90,8 @@ function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
 
   const twitterDesc = document.getElementById('twitter-description');
   if (twitterDesc) twitterDesc.setAttribute('content', pageDescription);
+
+  setOgImage(path === '/');
 
   let robotsMeta = document.getElementById('meta-robots');
   if (noindex) {

@@ -16,6 +16,11 @@
   },
   {
     "electionId": "2024",
+    "partyId": "alba",
+    "label": "Alba Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
     "partyId": "alliance",
     "label": "Alliance Manifesto 2024"
   },

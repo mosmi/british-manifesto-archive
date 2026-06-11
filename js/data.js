@@ -1461,7 +1461,7 @@ const ELECTIONS = [
       'Rishi Sunak concedes defeat in a dawn address outside Downing Street',
     ],
     youtubeId: 'l5Fr8fiNp-Y',
-    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn'],
+    extraManifestoParties: ['alba', 'cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 18.2 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 37.0 },
