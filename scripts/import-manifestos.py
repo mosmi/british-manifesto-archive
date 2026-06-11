@@ -73,6 +73,7 @@ SOURCE_PARTY_TO_SITE: dict[str, str] = {
     "sinn-fein": "sinnfein",
     "tuv": "tuv",
     "uup": "uup",
+    "alba": "alba",
 }
 
 SKIP_SOURCE_PARTIES = {"gwlad-gwlad", "conservative-ni"}

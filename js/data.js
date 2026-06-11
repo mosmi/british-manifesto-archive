@@ -125,7 +125,7 @@ const PARTIES = {
     color: '#005EB8', dim: 'rgba(0,94,184,0.14)',
     founded: 2021, spectrum: 'Left / Scottish independence', isPrimary: false,
     nation: 'scotland',
-    description: 'The Alba Party was founded in 2021 by former First Minister Alex Salmond after he left the SNP. It contests Scottish Parliament elections and advocates for Scottish independence, positioning itself to the left of the SNP on economic policy.',
+    description: 'The Alba Party was founded in 2021 by former First Minister Alex Salmond after he left the SNP. It contested the 2024 UK general election in Scotland and advocates for Scottish independence, positioning itself to the left of the SNP on economic policy. Its 2024 Westminster manifesto, “Yes to Scottish Independence”, is held in this archive.',
   },
 
   /* ── Northern Ireland ────────────────────────────────────── */
@@ -1461,7 +1461,7 @@ const ELECTIONS = [
       'Rishi Sunak concedes defeat in a dawn address outside Downing Street',
     ],
     youtubeId: 'l5Fr8fiNp-Y',
-    extraManifestoParties: ['alba', 'cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn'],
+    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 18.2 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 37.0 },
@@ -1512,12 +1512,12 @@ const NAV_PARTIES = {
 };
 
 const OTHERS_PARTIES = [
-  'commonwealth', 'communist', 'nationalliberal', 'natlibconservative', 'ilp', 'national', 'nationalindependent',
-  'indconservative', 'indliberal', 'indprogressive', 'indlabour', 'independent', 'speaker',
-  'irishnationalist', 'irishlabour', 'irishrepublican', 'antipartition', 'republicanlabour',
-  'indunionist', 'protestantunionist', 'unity', 'uuuc', 'ukup', 'ulsterpopularunionist',
-  'alba', 'bnp', 'cooperative', 'healthconcern', 'mebyon', 'nha', 'omrlp', 'pirate', 'referendumparty',
-  'respect', 'restorebrit', 'ssp', 'tusc', 'wep', 'workersparty', 'yourparty',
+  'alba', 'antipartition', 'bnp', 'cooperative', 'commonwealth', 'communist', 'healthconcern',
+  'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
+  'irishlabour', 'irishnationalist', 'irishrepublican', 'mebyon', 'nha', 'nationalindependent',
+  'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'pirate', 'protestantunionist',
+  'referendumparty', 'republicanlabour', 'respect', 'restorebrit', 'ssp', 'speaker', 'tusc', 'ukup',
+  'ulsterpopularunionist', 'uuuc', 'unity', 'wep', 'workersparty', 'yourparty',
 ];
 
 const OTHERS_FEATURED = [

@@ -25,6 +25,23 @@ function hasManifestoPdf(electionId, partyId) {
   return !MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`);
 }
 
+let MANIFESTO_ARCHIVE = null;
+
+async function initManifestoArchive() {
+  try {
+    const items = await fetchTyped('/data/manifestos-index.json', 'json');
+    MANIFESTO_ARCHIVE = new Set(items.map(i => `${i.electionId}/${i.partyId}`));
+  } catch {
+    MANIFESTO_ARCHIVE = new Set();
+  }
+}
+
+function hasManifestoContent(electionId, partyId) {
+  return hasManifestoPdf(electionId, partyId)
+    || MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`)
+    || (MANIFESTO_ARCHIVE?.has(`${electionId}/${partyId}`) ?? false);
+}
+
 // Not shown in election-page manifesto lists (no manifestos published)
 const MANIFESTO_EXCLUDED_PARTIES = new Set(['speaker', 'independent']);
 
@@ -208,7 +225,8 @@ document.addEventListener('keydown', e => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await initManifestoArchive();
   buildNav();
   setupMobileMenu();
   setupNavDropdowns();
@@ -722,7 +740,7 @@ function loadLatestManifestos() {
   const track = document.getElementById('latest-track');
   if (!track) return;
 
-  fetchTyped('data/manifestos-index.json', 'json')
+  fetchTyped('/data/manifestos-index.json', 'json')
     .catch(() => [])
     .then(items => {
       if (!items.length) {
@@ -733,8 +751,8 @@ function loadLatestManifestos() {
       track.innerHTML = items.map(item => {
         const party = PARTIES[item.partyId] || {};
         const election = getElection(item.electionId);
-        const cover = `manifestos/${item.electionId}/${item.partyId}/cover.png`;
-        const coverFb = `manifestos/${item.electionId}/${item.partyId}/cover.jpg`;
+        const cover = `/manifestos/${item.electionId}/${item.partyId}/cover.png`;
+        const coverFb = `/manifestos/${item.electionId}/${item.partyId}/cover.jpg`;
         const title = item.label || `${party.shortName || item.partyId} ${election?.displayYear || item.electionId}`;
         return `<a href="/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
           <div class="latest-card-cover">
@@ -842,10 +860,10 @@ function setupTimelineFilter() {
 function buildManifestoCard(pid, election, opts = {}) {
   const p = PARTIES[pid];
   const displayName  = getPartyName(pid, election.year);
-  const pdfPath      = `manifestos/${election.id}/${pid}/manifesto.pdf`;
+  const pdfPath      = `/manifestos/${election.id}/${pid}/manifesto.pdf`;
   const textPath     = `/manifesto/${election.id}/${pid}`;
-  const coverPath    = `manifestos/${election.id}/${pid}/cover.png`;
-  const coverFallback= `manifestos/${election.id}/${pid}/cover.jpg`;
+  const coverPath    = `/manifestos/${election.id}/${pid}/cover.png`;
+  const coverFallback= `/manifestos/${election.id}/${pid}/cover.jpg`;
   const hasPdf       = hasManifestoPdf(election.id, pid);
   const thumbHref    = hasPdf ? pdfPath : textPath;
   const thumbTarget  = hasPdf ? ' target="_blank" rel="noopener"' : '';
@@ -1191,7 +1209,7 @@ function renderParty(app, id) {
   }).join('');
 
   const manifestoElections = partyElections.filter(({ election: e }) =>
-    hasManifestoPdf(e.id, id) || MANIFESTO_TEXT_ONLY.has(`${e.id}/${id}`)
+    hasManifestoContent(e.id, id)
   );
   const manifestoItems = manifestoElections.slice().reverse().map(({ election: e, result: r }) =>
     buildManifestoCard(id, e, { result: r, showYearAsTitle: true })
@@ -1530,7 +1548,9 @@ function renderOthers(app) {
     description: 'Minor and regional parties that have won seats at UK general elections since 1945.',
     path: '/others',
   });
-  const cards = OTHERS_PARTIES.map(pid => {
+  const cards = [...OTHERS_PARTIES]
+    .sort((a, b) => (PARTIES[a]?.name || a).localeCompare(PARTIES[b]?.name || b, 'en-GB'))
+    .map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
     return `<a href="/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
@@ -1685,7 +1705,7 @@ function renderManifesto(app, electionId, partyId) {
             <div id="manifesto-frontmatter"></div>
           </div>
           ${hasManifestoPdf(electionId, partyId)
-            ? '<a href="manifestos/' + electionId + '/' + partyId + '/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF</a>'
+            ? '<a href="/manifestos/' + electionId + '/' + partyId + '/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF</a>'
             : ''}
         </div>
       </div>
@@ -1697,7 +1717,7 @@ function renderManifesto(app, electionId, partyId) {
     </div>
   `;
 
-  fetchTyped(`manifestos/${electionId}/${partyId}/manifesto.md`, 'markdown')
+  fetchTyped(`/manifestos/${electionId}/${partyId}/manifesto.md`, 'markdown')
     .then(md => {
       const { meta, body } = splitManifestoFrontmatter(md);
       const frontmatterEl = document.getElementById('manifesto-frontmatter');
@@ -1711,7 +1731,7 @@ function renderManifesto(app, electionId, partyId) {
         <div class="manifesto-placeholder-msg">
           <p>No manifesto text file found at <code>manifestos/${electionId}/${partyId}/manifesto.md</code>.</p>
           ${hasManifestoPdf(electionId, partyId)
-            ? `<p>You can also <a href="manifestos/${electionId}/${partyId}/manifesto.pdf" target="_blank" rel="noopener">view the PDF scan</a> if available.</p>`
+            ? `<p>You can also <a href="/manifestos/${electionId}/${partyId}/manifesto.pdf" target="_blank" rel="noopener">view the PDF scan</a> if available.</p>`
             : ''}
         </div>`;
     });

@@ -381,7 +381,7 @@ const _hexDataCache = new Map();
 async function loadConstituencyData(electionId) {
   if (_hexDataCache.has(electionId)) return _hexDataCache.get(electionId);
   try {
-    const res = await fetch(`data/constituencies/${electionId}.json`);
+    const res = await fetch(`/data/constituencies/${electionId}.json`);
     if (!res.ok) return null;
     const data = await res.json();
     _hexDataCache.set(electionId, data);
@@ -392,7 +392,7 @@ async function loadConstituencyData(electionId) {
 }
 
 async function hasConstituencyData(electionId) {
-  const idx = await fetch('data/constituencies/index.json').then(r => r.ok ? r.json() : []).catch(() => []);
+  const idx = await fetch('/data/constituencies/index.json').then(r => r.ok ? r.json() : []).catch(() => []);
   if (Array.isArray(idx)) {
     const entry = idx.find(e => e.id === electionId);
     if (entry) return entry.available !== false;
@@ -434,7 +434,7 @@ async function loadHexLayoutJson(electionId) {
   if (!year) return null;
   if (_hexLayoutCache.has(year)) return _hexLayoutCache.get(year);
   try {
-    const res = await fetch(`data/hex/elections/${year}.hexjson`);
+    const res = await fetch(`/data/hex/elections/${year}.hexjson`);
     if (!res.ok) return null;
     const data = await res.json();
     _hexLayoutCache.set(year, data);
@@ -446,7 +446,7 @@ async function loadHexLayoutJson(electionId) {
 
 async function load1945OutsideBoundary() {
   try {
-    const res = await fetch('data/hex/1945-outside-boundary.json');
+    const res = await fetch('/data/hex/1945-outside-boundary.json');
     return res.ok ? res.json() : null;
   } catch (_) {
     return null;

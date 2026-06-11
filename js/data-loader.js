@@ -23,7 +23,7 @@ async function loadElection(id) {
   if (_electionCache.has(id)) return _electionCache.get(id);
 
   try {
-    const res = await fetch(`data/elections/${id}.json`);
+    const res = await fetch(`/data/elections/${id}.json`);
     if (res.ok) {
       const data = await res.json();
       _electionCache.set(id, data);
