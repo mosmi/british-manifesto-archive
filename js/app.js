@@ -490,12 +490,8 @@ function renderHome(app) {
       <div class="home-dashboard-bg" id="home-dashboard-bg"></div>
       <div class="home-dashboard-inner">
         <header class="home-dashboard-header">
-          <div class="hero-eyebrow">
-            <div class="hero-eyebrow-line"></div>
-            <span class="hero-eyebrow-text">United Kingdom · 1945–2024</span>
-          </div>
           <h1 class="hero-title">The British<br><em>Manifesto Archive</em></h1>
-          <p class="hero-subtitle">Digital repository of UK political history — manifesto documents, electoral results, and campaign records for every postwar general election.</p>
+          <p class="hero-subtitle">Digital repository of UK political history — manifesto documents, electoral results, and campaign records for every post-war election.</p>
           <div class="hero-stats">
             <div><div class="hero-stat-num">${ELECTIONS.length}</div><div class="hero-stat-label">Elections</div></div>
             <div><div class="hero-stat-num">${Object.keys(PARTIES).filter(k => k !== 'others').length}</div><div class="hero-stat-label">Parties</div></div>
@@ -571,31 +567,33 @@ function renderHome(app) {
     </section>
 
     <section class="browse-section nations-browse-section">
-      <div class="browse-section-header">
-        <span class="section-label">United Kingdom</span>
-        <h2>Browse by Nation</h2>
-        <div class="gold-rule"></div>
+      <div class="browse-section-inner">
+        <div class="browse-section-header">
+          <span class="section-label">United Kingdom</span>
+          <h2>Browse by Nation</h2>
+          <div class="gold-rule"></div>
+        </div>
+        <div class="nations-grid" id="nations-grid"></div>
+        <a href="/nations" class="browse-section-link">Explore all four nations →</a>
       </div>
-      <div class="nations-grid" id="nations-grid"></div>
-      <a href="/nations" class="browse-section-link">Explore all four nations →</a>
     </section>
 
     <section class="browse-section parties-browse-section">
-      <div class="browse-section-header">
-        <span class="section-label">Political Parties</span>
-        <h2>Browse by Party</h2>
-        <div class="gold-rule"></div>
+      <div class="browse-section-inner">
+        <div class="browse-section-header">
+          <span class="section-label">Political Parties</span>
+          <h2>Browse by Party</h2>
+          <div class="gold-rule"></div>
+        </div>
+        <div class="parties-grid" id="featured-parties-grid"></div>
+        <a href="/parties" class="browse-section-link">View all parties →</a>
       </div>
-      <div class="parties-grid" id="primary-parties-grid"></div>
-      <div class="more-parties-grid" id="more-parties-grid"></div>
-      <a href="/parties" class="browse-section-link">View all parties →</a>
     </section>
   `;
 
   renderTimelineGrid();
   renderNationsGrid();
-  renderPrimaryPartiesGrid();
-  renderMorePartiesGrid();
+  renderFeaturedPartiesGrid();
   setupTimelineFilter();
   initHomeDashboard();
   loadLatestManifestos();
@@ -844,31 +842,20 @@ function renderNationsGrid() {
   });
 }
 
-function renderPrimaryPartiesGrid() {
-  const grid = document.getElementById('primary-parties-grid');
+function renderFeaturedPartiesGrid() {
+  const grid = document.getElementById('featured-parties-grid');
   if (!grid) return;
-  ['conservative', 'labour', 'libdem'].forEach(id => {
+  [
+    'conservative', 'labour', 'libdem',
+    'snp', 'plaid', 'green', 'reform', 'dup', 'sinnfein',
+  ].forEach(id => {
     const p = PARTIES[id];
+    if (!p) return;
     const a = document.createElement('a');
     a.href = `/party/${id}`;
     a.className = 'party-card';
     a.style.setProperty('--party-color', p.color);
     a.innerHTML = `<div class="party-card-name">${p.shortName}</div><div class="party-card-founded">Est. ${p.founded}</div><div class="party-card-color-swatch"></div><div class="party-card-desc">${p.description}</div>`;
-    grid.appendChild(a);
-  });
-}
-
-function renderMorePartiesGrid() {
-  const grid = document.getElementById('more-parties-grid');
-  if (!grid) return;
-  ['snp', 'plaid', 'green', 'reform', 'dup', 'sinnfein'].forEach(id => {
-    const p = PARTIES[id];
-    if (!p) return;
-    const a = document.createElement('a');
-    a.href = `/party/${id}`;
-    a.className = 'more-party-card';
-    a.style.setProperty('--party-color', p.color);
-    a.innerHTML = `<span class="more-party-dot"></span><span>${p.shortName}</span>`;
     grid.appendChild(a);
   });
 }

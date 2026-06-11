@@ -191,11 +191,15 @@ h1, h2, h3, h4 {
   gap: 0.25rem;
 }
 
-.nav-mobile-only { display: none; }
-.nav-desktop-only {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+/* Nav menu variants — use min-width so desktop never shows both */
+@media (min-width: 641px) {
+  .nav-mobile-only { display: none !important; }
+  .nav-desktop-only {
+    display: flex !important;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .nav-mobile-btn { display: none !important; }
 }
 
 .nav-dropdown { position: relative; }
@@ -567,9 +571,12 @@ h1, h2, h3, h4 {
 .parties-browse-section {
   padding-bottom: 5rem;
 }
-.browse-section-header {
+.browse-section-inner {
   max-width: var(--max-w);
   margin: 0 auto;
+}
+.browse-section-header {
+  margin-bottom: 0;
 }
 .browse-section-header h2 {
   font-family: var(--font-display);
@@ -578,9 +585,8 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .browse-section-link {
-  display: block;
-  max-width: var(--max-w);
-  margin: 1.5rem auto 0;
+  display: inline-block;
+  margin-top: 1.5rem;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   letter-spacing: 0.04em;
@@ -590,8 +596,7 @@ h1, h2, h3, h4 {
 .browse-section-link:hover { color: var(--gold-light); }
 
 .parties-grid {
-  max-width: var(--max-w);
-  margin: 2rem auto 0;
+  margin: 2rem 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
@@ -1666,8 +1671,7 @@ h1, h2, h3, h4 {
 
 /* ── Nations grid (homepage) ─────────────────────────────────  */
 .nations-grid {
-  max-width: var(--max-w);
-  margin: 2rem auto 1rem;
+  margin: 2rem 0 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
