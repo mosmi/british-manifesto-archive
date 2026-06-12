@@ -12,7 +12,7 @@
     "manifestos": [
       { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Darren Johnson - Green Party manifesto 2004.pdf" },
       { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/SImon Hughes - Liberal Democrats.pdf" },
-      { "party": "cpa", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Ram Gidoomal - 2004 Passion for London manifesto.pdf" }
+      { "party": "cpa", "cover": "spread-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Ram Gidoomal - 2004 Passion for London manifesto.pdf" }
     ]
   },
   {
