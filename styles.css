@@ -3285,3 +3285,144 @@ h1, h2, h3, h4 {
 @media (max-width: 1024px) {
   .viz-panel { position: static; }
 }
+
+/* ============================================================
+   LONDON ELECTIONS
+   ============================================================ */
+
+/* Candidate-booklet promo band (London Elects, 2004+) */
+.london-booklet {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(17,24,39,0.4));
+  border: 1px solid var(--gold-rule);
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 3rem;
+}
+.london-booklet-cover {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  transition: transform 0.2s var(--ease);
+}
+.london-booklet-cover:hover { transform: translateY(-3px); }
+.london-booklet-cover img { display: block; width: 100%; height: auto; }
+.london-booklet-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--cream);
+  margin: 0.3rem 0 0.75rem;
+}
+.london-booklet-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.1rem;
+  max-width: 60ch;
+}
+.london-booklet-btn {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--navy);
+  background: var(--gold);
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.london-booklet-btn:hover { background: var(--gold-light); }
+
+/* Mayoral + Assembly tables */
+.london-cand-name {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+  padding-left: 1.3rem;
+}
+.london-row-winner td { background: rgba(201,168,76,0.07); }
+.london-mayor-table th:last-child,
+.london-mayor-table td:last-child { text-align: right; white-space: nowrap; }
+.london-assembly-table th { white-space: nowrap; }
+
+.london-others {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--navy-border);
+  padding-top: 0.75rem;
+}
+.london-others summary {
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+}
+.london-others table { margin-top: 1rem; }
+
+.london-manifesto-title {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-muted);
+  padding: 0 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.london-sources {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--navy-border);
+}
+.london-sources ul { list-style: none; padding: 0; margin: 0.75rem 0 0; }
+.london-sources li { margin-bottom: 0.4rem; }
+.london-sources a { color: var(--cream-dark); font-size: 0.88rem; }
+.london-sources a:hover { color: var(--gold); }
+
+/* Portal timeline */
+.london-era { max-width: var(--max-w); margin: 0 auto 3rem; }
+.london-era-head h2 {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: var(--cream);
+  margin-bottom: 0.35rem;
+}
+.london-era-head p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem; }
+.london-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.london-timeline-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-left: 4px solid var(--party-color, var(--gold));
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  transition: transform 0.2s var(--ease), border-color 0.2s;
+}
+.london-timeline-card:hover { transform: translateY(-2px); border-color: var(--navy-light); }
+.london-timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--cream);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.london-timeline-title { color: var(--cream); font-size: 0.92rem; font-weight: 500; }
+.london-timeline-sub { color: var(--text-muted); font-size: 0.82rem; margin-top: 0.2rem; }
+
+@media (max-width: 720px) {
+  .london-booklet {
+    grid-template-columns: 110px 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+  .london-booklet-body h2 { font-size: 1.3rem; }
+}

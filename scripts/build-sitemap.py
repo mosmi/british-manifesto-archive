@@ -40,11 +40,19 @@ def main() -> None:
         (ROOT / "data/manifestos-index.json").read_text(encoding="utf-8")
     )
 
+    london_index_path = ROOT / "data/devolved/london/index.json"
+    london_ids = (
+        [e["id"] for e in json.loads(london_index_path.read_text(encoding="utf-8"))]
+        if london_index_path.exists()
+        else []
+    )
+
     urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
     urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
     urls.extend(f"/nation/{nid}" for nid in nation_ids)
     urls.extend(f"/devolved/{did}" for did in devolved_ids)
+    urls.extend(f"/devolved/london/{lid}" for lid in london_ids)
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )

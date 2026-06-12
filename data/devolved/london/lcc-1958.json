@@ -1,0 +1,31 @@
+{
+  "id": "lcc-1958",
+  "body": "lcc",
+  "year": 1958,
+  "displayYear": "1958",
+  "date": "April 1958",
+  "title": "1958 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "Labour won its largest-ever landslide at County Hall, taking 101 of the 126 elected seats on 58.4% of the vote — eight in every ten councillors. The Conservatives were reduced to 25 seats as Labour's dominance of London government reached its peak.",
+  "highlights": [
+    "Labour's biggest LCC landslide: 101 of 126 seats",
+    "Labour wins 58.4% of the vote, its highest LCC share",
+    "Conservatives fall to just 25 seats",
+    "Eight in ten councillors are now Labour"
+  ],
+  "council": {
+    "totalSeats": 126,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 101, "pct": 58.4 },
+      { "party": "conservative", "seats": 25, "pct": 37.5 },
+      { "party": "libdem", "seats": 0, "pct": 3.0 }
+    ],
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}

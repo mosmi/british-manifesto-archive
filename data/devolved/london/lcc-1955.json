@@ -1,0 +1,30 @@
+{
+  "id": "lcc-1955",
+  "body": "lcc",
+  "year": 1955,
+  "displayYear": "1955",
+  "date": "April 1955",
+  "title": "1955 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "Labour retained control of the London County Council, winning 74 of the 126 elected seats. The size of the elected council was trimmed from 129 to 126 for this and the two following elections. Turnout fell to 32.4%.",
+  "highlights": [
+    "Labour holds the LCC with 74 of 126 seats",
+    "The elected council is reduced from 129 to 126 members",
+    "Conservatives recover to 52 seats",
+    "Turnout dips to 32.4%"
+  ],
+  "council": {
+    "totalSeats": 126,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 74, "pct": 50.3 },
+      { "party": "conservative", "seats": 52, "pct": 47.2 }
+    ],
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "lcc-1952",
+  "body": "lcc",
+  "year": 1952,
+  "displayYear": "1952",
+  "date": "April 1952",
+  "title": "1952 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "Labour swept back to a commanding majority at County Hall, winning 92 of the 129 elected seats on 55.1% of the vote, recovering strongly from the near-dead-heat of 1949. Turnout reached 43.4%.",
+  "highlights": [
+    "Labour wins a strong majority of 92 of 129 seats",
+    "Labour's vote share rebounds to 55.1%",
+    "Conservatives fall back to 37 seats",
+    "Turnout climbs to 43.4%"
+  ],
+  "council": {
+    "totalSeats": 129,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 92, "pct": 55.1 },
+      { "party": "conservative", "seats": 37, "pct": 43.5 }
+    ],
+    "note": "129 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}

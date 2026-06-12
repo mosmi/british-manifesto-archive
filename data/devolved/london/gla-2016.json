@@ -1,0 +1,65 @@
+{
+  "id": "gla-2016",
+  "body": "gla",
+  "year": 2016,
+  "displayYear": "2016",
+  "date": "5 May 2016",
+  "title": "2016 London mayoral and Assembly election",
+  "mayorWinner": "labour",
+  "mayorWinnerName": "Sadiq Khan",
+  "turnout": 45.2,
+  "summary": "Labour's Sadiq Khan was elected Mayor of London, succeeding the Conservative Boris Johnson after eight years. Khan won 1,148,716 first-preference votes (44.2%) to Conservative Zac Goldsmith's 909,755 (35.0%), extending his lead to 1,310,143 against 994,614 after second preferences were redistributed. Khan won the highest number and share of first preferences of any mayoral candidate to that point. Labour again took 12 of the 25 Assembly seats and remained the largest party.",
+  "highlights": [
+    "Sadiq Khan becomes the first Muslim mayor of a major Western capital",
+    "Highest first-preference vote (1,148,716) of any London mayor so far",
+    "Labour returns to City Hall after Boris Johnson's two terms",
+    "Turnout climbs to 45.2%, the highest at a London election to date",
+    "UKIP wins two Assembly list seats; the Lib Dems fall to one"
+  ],
+  "mayor": {
+    "system": "Supplementary Vote",
+    "candidates": [
+      { "name": "Sadiq Khan", "party": "labour", "firstVotes": 1148716, "firstPct": 44.2, "finalVotes": 1310143, "finalPct": 56.8, "elected": true },
+      { "name": "Zac Goldsmith", "party": "conservative", "firstVotes": 909755, "firstPct": 35.0, "finalVotes": 994614, "finalPct": 43.2 },
+      { "name": "Siân Berry", "party": "green", "firstVotes": 150673, "firstPct": 5.8 },
+      { "name": "Caroline Pidgeon", "party": "libdem", "firstVotes": 120005, "firstPct": 4.6 },
+      { "name": "Other candidates (8)", "firstVotes": 267812, "firstPct": 10.3 }
+    ]
+  },
+  "assembly": {
+    "totalSeats": 25,
+    "constituencySeats": 14,
+    "listSeats": 11,
+    "system": "Additional Member System",
+    "results": [
+      { "party": "labour", "constituencySeats": 9, "listSeats": 3, "seats": 12, "constituencyVotes": 1138576, "constituencyPct": 43.5, "listVotes": 1054801, "listPct": 40.3 },
+      { "party": "conservative", "constituencySeats": 5, "listSeats": 3, "seats": 8, "constituencyVotes": 812415, "constituencyPct": 31.1, "listVotes": 764230, "listPct": 29.2 },
+      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 207959, "listPct": 8.0 },
+      { "party": "ukip", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 171069, "listPct": 6.5 },
+      { "party": "libdem", "constituencySeats": 0, "listSeats": 1, "seats": 1, "listVotes": 165580, "listPct": 6.3 }
+    ],
+    "otherListVotes": [
+      { "name": "Women's Equality Party", "votes": 91772, "pct": 3.5 },
+      { "name": "Christian Peoples Alliance", "votes": 27172, "pct": 1.0 },
+      { "name": "Animal Welfare Party", "votes": 25810, "pct": 1.0 }
+    ]
+  },
+  "booklet": {
+    "title": "London Elects candidate booklet",
+    "pdf": "/manifestos/london/gla-2016/booklet/booklet.pdf",
+    "cover": "/manifestos/london/gla-2016/booklet/cover.png"
+  },
+  "manifestos": [
+    { "party": "labour", "candidate": "Sadiq Khan", "pdf": "/manifestos/london/gla-2016/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2016/labour/cover.png" },
+    { "party": "conservative", "candidate": "Zac Goldsmith", "pdf": "/manifestos/london/gla-2016/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2016/conservative/cover.png" },
+    { "party": "libdem", "candidate": "Caroline Pidgeon", "pdf": "/manifestos/london/gla-2016/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2016/libdem/cover.png" },
+    { "party": "green", "candidate": "Siân Berry", "pdf": "/manifestos/london/gla-2016/green/manifesto.pdf", "cover": "/manifestos/london/gla-2016/green/cover.png" },
+    { "party": "ukip", "candidate": "Peter Whittle", "pdf": "/manifestos/london/gla-2016/ukip/manifesto.pdf", "cover": "/manifestos/london/gla-2016/ukip/cover.png" },
+    { "party": "respect", "candidate": "George Galloway", "pdf": "/manifestos/london/gla-2016/respect/manifesto.pdf", "cover": "/manifestos/london/gla-2016/respect/cover.png" },
+    { "partyLabel": "Women's Equality Party", "candidate": "Sophie Walker", "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf", "cover": "/manifestos/london/gla-2016/wep/cover.png" }
+  ],
+  "sources": [
+    { "label": "House of Commons Library — London Elections 2016 (CBP-7598)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7598/" },
+    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "glc-1970",
+  "body": "glc",
+  "year": 1970,
+  "displayYear": "1970",
+  "date": "9 April 1970",
+  "title": "1970 Greater London Council election",
+  "control": "conservative",
+  "winnerName": "Conservative control",
+  "summary": "The Conservatives, under Desmond Plummer, held the Greater London Council with a reduced majority, taking 65 of the 100 seats. Labour recovered ground lost in 1967, mainly in working-class areas, regaining several boroughs. Turnout was low at 35.2%.",
+  "highlights": [
+    "Conservatives hold the GLC with 65 of 100 seats",
+    "Labour recovers to 35 seats after its 1967 collapse",
+    "Turnout falls to 35.2%",
+    "Labour's gains helped persuade Harold Wilson to call an early general election"
+  ],
+  "council": {
+    "totalSeats": 100,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "conservative", "seats": 65, "pct": 50.6 },
+      { "party": "labour", "seats": 35, "pct": 39.9 },
+      { "party": "libdem", "seats": 0, "pct": 5.4 }
+    ],
+    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council."
+  },
+  "sources": [
+    { "label": "London Datastore — Greater London Council Election 1970", "url": "https://data.london.gov.uk/elections/" },
+    { "label": "1970 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1970_Greater_London_Council_election" }
+  ]
+}

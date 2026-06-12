@@ -302,6 +302,10 @@ function route() {
     renderParty(app, path.replace('/party/', ''));
   } else if (path.startsWith('/nation/')) {
     renderNation(app, path.replace('/nation/', ''));
+  } else if (path.startsWith('/devolved/london/')) {
+    renderLondonElection(app, path.replace('/devolved/london/', ''));
+  } else if (path === '/devolved/london') {
+    renderLondonPortal(app);
   } else if (path.startsWith('/devolved/')) {
     renderDevolved(app, path.replace('/devolved/', ''));
   } else if (path === '/others') {

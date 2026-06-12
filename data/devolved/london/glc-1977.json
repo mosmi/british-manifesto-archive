@@ -1,0 +1,31 @@
+{
+  "id": "glc-1977",
+  "body": "glc",
+  "year": 1977,
+  "displayYear": "1977",
+  "date": "5 May 1977",
+  "title": "1977 Greater London Council election",
+  "control": "conservative",
+  "winnerName": "Conservative control",
+  "summary": "The Conservatives, led by Horace Cutler, took control of the Greater London Council from Labour in a landslide, winning 64 of the 92 seats on 52.5% of the vote amid a slump in Labour's national fortunes. The Liberals lost both seats won in 1973, and the National Front polled 5.3% across London.",
+  "highlights": [
+    "Conservatives sweep to control with 64 of 92 seats",
+    "Labour falls to 28 seats as its vote drops 14.5 points",
+    "The Liberals lose both of the seats they won in 1973",
+    "The National Front wins 5.3% but no seats"
+  ],
+  "council": {
+    "totalSeats": 92,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "conservative", "seats": 64, "pct": 52.5 },
+      { "party": "labour", "seats": 28, "pct": 32.9 },
+      { "party": "libdem", "seats": 0, "pct": 7.8 }
+    ],
+    "note": "92 single-member electoral divisions. From 1977 all aldermen left office and no further aldermen were appointed."
+  },
+  "sources": [
+    { "label": "London Datastore — Greater London Council Election 1977", "url": "https://data.london.gov.uk/elections/" },
+    { "label": "1977 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1977_Greater_London_Council_election" }
+  ]
+}

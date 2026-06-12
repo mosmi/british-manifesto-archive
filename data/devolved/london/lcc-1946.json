@@ -1,0 +1,30 @@
+{
+  "id": "lcc-1946",
+  "body": "lcc",
+  "year": 1946,
+  "displayYear": "1946",
+  "date": "March 1946",
+  "title": "1946 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "The first London County Council election after the Second World War produced a Labour landslide, mirroring the party's 1945 general election triumph. Labour won 94 of the 124 elected seats on 55.0% of the vote, with the anti-socialist Municipal Reform bloc reduced to 30. Turnout was very low at 26.4% so soon after the war.",
+  "highlights": [
+    "Labour landslide: 94 of 124 seats",
+    "Echoes Labour's 1945 general election victory",
+    "The Municipal Reform (Conservative) bloc falls to 30 seats",
+    "Post-war turnout is just 26.4%"
+  ],
+  "council": {
+    "totalSeats": 124,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 94, "pct": 55.0 },
+      { "party": "conservative", "partyLabel": "Municipal Reform", "seats": 30, "pct": 42.1 }
+    ],
+    "note": "124 directly elected councillors, plus aldermen chosen by the council. The main anti-Labour party at this election was the Municipal Reform Party; the Conservatives stood under their own name from 1949. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}

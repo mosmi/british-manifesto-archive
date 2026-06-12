@@ -1,0 +1,31 @@
+{
+  "id": "lcc-1961",
+  "body": "lcc",
+  "year": 1961,
+  "displayYear": "1961",
+  "date": "April 1961",
+  "title": "1961 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "The final election to the London County Council before it was absorbed into the new Greater London Council. Labour, in power at County Hall since 1934, retained a comfortable majority with 84 of the 126 elected seats. The Liberals enjoyed a modest revival, winning 6.0% of the vote.",
+  "highlights": [
+    "Labour holds the LCC with 84 of 126 seats",
+    "The last-ever London County Council election",
+    "A Liberal revival lifts their vote share to 6.0%",
+    "Labour had controlled County Hall continuously since 1934"
+  ],
+  "council": {
+    "totalSeats": 126,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 84, "pct": 50.4 },
+      { "party": "conservative", "seats": 42, "pct": 42.0 },
+      { "party": "libdem", "seats": 0, "pct": 6.0 }
+    ],
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}

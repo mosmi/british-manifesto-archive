@@ -1,0 +1,31 @@
+{
+  "id": "glc-1981",
+  "body": "glc",
+  "year": 1981,
+  "displayYear": "1981",
+  "date": "7 May 1981",
+  "title": "1981 Greater London Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "Labour regained control of the Greater London Council, winning 50 of the 92 seats. The morning after the result the moderate Labour leader Andrew McIntosh was deposed by the left-winger Ken Livingstone, who became leader of the GLC. It proved to be the final GLC election: Margaret Thatcher's government abolished the council in 1986.",
+  "highlights": [
+    "Labour wins control with 50 of 92 seats",
+    "Ken Livingstone replaces Andrew McIntosh as leader the day after the poll",
+    "The Liberals win a single seat on 14.4% of the vote",
+    "The last election ever held to the Greater London Council"
+  ],
+  "council": {
+    "totalSeats": 92,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "labour", "seats": 50, "pct": 41.8 },
+      { "party": "conservative", "seats": 41, "pct": 39.7 },
+      { "party": "libdem", "seats": 1, "pct": 14.4 }
+    ],
+    "note": "92 single-member electoral divisions, each coterminous with a Greater London parliamentary constituency. The GLC was abolished by the Local Government Act 1985, taking effect in 1986."
+  },
+  "sources": [
+    { "label": "London Datastore — Greater London Council Election 1981", "url": "https://data.london.gov.uk/elections/" },
+    { "label": "1981 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1981_Greater_London_Council_election" }
+  ]
+}

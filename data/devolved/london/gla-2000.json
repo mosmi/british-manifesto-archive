@@ -1,0 +1,50 @@
+{
+  "id": "gla-2000",
+  "body": "gla",
+  "year": 2000,
+  "displayYear": "2000",
+  "date": "4 May 2000",
+  "title": "2000 London mayoral and Assembly election",
+  "mayorWinner": "independent",
+  "mayorWinnerName": "Ken Livingstone",
+  "turnout": 33.7,
+  "summary": "The first elections for the new Greater London Authority created the office of Mayor of London and a 25-member London Assembly. Ken Livingstone, who had been refused the Labour nomination, won as an independent with 667,877 first-preference votes (39.0%), defeating Conservative Steve Norris and pushing the official Labour candidate, Frank Dobson, into third. Livingstone was elected with 776,427 votes (57.9%) after second preferences. Labour and the Conservatives tied on nine Assembly seats each, with the Liberal Democrats on four and the Greens on three.",
+  "highlights": [
+    "First-ever election for the Mayor of London and the London Assembly",
+    "Ken Livingstone wins as an independent after being denied Labour's nomination",
+    "Livingstone elected with 57.9% after second preferences",
+    "Labour and the Conservatives tie on nine Assembly seats each",
+    "Greens enter the Assembly with three list seats on 11.1% of the vote"
+  ],
+  "mayor": {
+    "system": "Supplementary Vote",
+    "candidates": [
+      { "name": "Ken Livingstone", "party": "independent", "firstVotes": 667877, "firstPct": 39.0, "finalVotes": 776427, "finalPct": 57.9, "elected": true },
+      { "name": "Steve Norris", "party": "conservative", "firstVotes": 464434, "firstPct": 27.1, "finalVotes": 564137, "finalPct": 42.1 },
+      { "name": "Frank Dobson", "party": "labour", "firstVotes": 223884, "firstPct": 13.1 },
+      { "name": "Susan Kramer", "party": "libdem", "firstVotes": 203452, "firstPct": 11.9 },
+      { "name": "Other candidates (7)", "firstVotes": 154425, "firstPct": 9.0 }
+    ]
+  },
+  "assembly": {
+    "totalSeats": 25,
+    "constituencySeats": 14,
+    "listSeats": 11,
+    "system": "Additional Member System",
+    "results": [
+      { "party": "labour", "constituencySeats": 6, "listSeats": 3, "seats": 9, "constituencyVotes": 501296, "constituencyPct": 31.6, "listVotes": 502874, "listPct": 30.3 },
+      { "party": "conservative", "constituencySeats": 8, "listSeats": 1, "seats": 9, "constituencyVotes": 526707, "constituencyPct": 33.2, "listVotes": 481053, "listPct": 29.0 },
+      { "party": "libdem", "constituencySeats": 0, "listSeats": 4, "seats": 4, "listVotes": 245555, "listPct": 14.8 },
+      { "party": "green", "constituencySeats": 0, "listSeats": 3, "seats": 3, "listVotes": 183910, "listPct": 11.1 }
+    ],
+    "otherListVotes": [
+      { "name": "Christian Peoples Alliance", "votes": 55192, "pct": 3.3 },
+      { "name": "BNP", "votes": 47670, "pct": 2.9 },
+      { "name": "UKIP", "votes": 34054, "pct": 2.1 }
+    ]
+  },
+  "sources": [
+    { "label": "House of Commons Library — The local elections and elections for a London Mayor and Assembly (RP 00/53)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp00-53/" },
+    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+  ]
+}

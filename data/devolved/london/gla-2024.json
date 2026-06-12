@@ -1,0 +1,78 @@
+{
+  "id": "gla-2024",
+  "body": "gla",
+  "year": 2024,
+  "displayYear": "2024",
+  "date": "2 May 2024",
+  "title": "2024 London mayoral and Assembly election",
+  "mayorWinner": "labour",
+  "mayorWinnerName": "Sadiq Khan",
+  "turnout": 40.5,
+  "summary": "Labour's Sadiq Khan was re-elected for a historic third term as Mayor of London, the first mayoral contest held under first-past-the-post after the Elections Act 2022 abolished the Supplementary Vote. Khan took 44% of the vote, comfortably ahead of Conservative Susan Hall on 33%. Labour remained the largest group on the London Assembly with 11 of the 25 seats, winning a record 10 of the 14 constituencies. The Liberal Democrats took the South West constituency — the first Assembly constituency ever won by a party other than Labour or the Conservatives — and Reform UK won its first London-wide seat.",
+  "highlights": [
+    "Sadiq Khan wins a record third term as Mayor of London",
+    "First mayoral election held under first-past-the-post (replacing the Supplementary Vote)",
+    "Labour wins 10 of 14 constituencies — the most any party has won since 2000",
+    "Lib Dems take South West — first constituency won by neither Labour nor the Conservatives",
+    "Reform UK wins its first London Assembly seat",
+    "Turnout 40.5%, marginally down from 40.9% in 2021"
+  ],
+  "mayor": {
+    "system": "First-past-the-post",
+    "systemNote": "Between 2000 and 2021 the Mayor was elected using the Supplementary Vote. Section 13 of the Elections Act 2022 changed this to first-past-the-post, used for the first time in 2024.",
+    "candidates": [
+      { "name": "Sadiq Khan", "party": "labour", "votes": 1088225, "pct": 43.8, "elected": true },
+      { "name": "Susan Hall", "party": "conservative", "votes": 812397, "pct": 32.7 },
+      { "name": "Rob Blackie", "party": "libdem", "votes": 145184, "pct": 5.8 },
+      { "name": "Zoë Garbett", "party": "green", "votes": 145114, "pct": 5.8 },
+      { "name": "Howard Cox", "party": "reform", "partyLabel": "Reform UK", "votes": 78865, "pct": 3.2 },
+      { "name": "Natalie Campbell", "partyLabel": "Independent", "votes": 47815, "pct": 1.9 },
+      { "name": "Amy Gallagher", "partyLabel": "Social Democratic Party", "votes": 34449, "pct": 1.4 },
+      { "name": "Femy Amin", "partyLabel": "Animal Welfare Party", "votes": 29280, "pct": 1.2 },
+      { "name": "Andreas Michli", "partyLabel": "Independent", "votes": 26121, "pct": 1.1 },
+      { "name": "Tarun Ghulati", "partyLabel": "Independent", "votes": 24702, "pct": 1.0 },
+      { "name": "Count Binface", "partyLabel": "Count Binface for Mayor of London", "votes": 24260, "pct": 1.0 },
+      { "name": "Nick Scanlon", "partyLabel": "Britain First", "votes": 20519, "pct": 0.8 },
+      { "name": "Brian Rose", "partyLabel": "London Real Party", "votes": 7501, "pct": 0.3 }
+    ]
+  },
+  "assembly": {
+    "totalSeats": 25,
+    "constituencySeats": 14,
+    "listSeats": 11,
+    "system": "Additional Member System",
+    "results": [
+      { "party": "labour", "constituencySeats": 10, "listSeats": 1, "seats": 11, "constituencyVotes": 983216, "constituencyPct": 39.7, "listVotes": 951056, "listPct": 38.4 },
+      { "party": "conservative", "constituencySeats": 3, "listSeats": 5, "seats": 8, "constituencyVotes": 673036, "constituencyPct": 27.2, "listVotes": 648269, "listPct": 26.2 },
+      { "party": "green", "constituencySeats": 0, "listSeats": 3, "seats": 3, "constituencyVotes": 319869, "constituencyPct": 12.9, "listVotes": 286746, "listPct": 11.6 },
+      { "party": "libdem", "constituencySeats": 1, "listSeats": 1, "seats": 2, "constituencyVotes": 271049, "constituencyPct": 11.0, "listVotes": 215682, "listPct": 8.7 },
+      { "party": "reform", "constituencySeats": 0, "listSeats": 1, "seats": 1, "constituencyVotes": 183361, "constituencyPct": 7.4, "listVotes": 145409, "listPct": 5.9 }
+    ],
+    "otherListVotes": [
+      { "name": "Rejoin EU", "votes": 62528, "pct": 2.5 },
+      { "name": "Animal Welfare Party", "votes": 41303, "pct": 1.7 },
+      { "name": "Britain First", "votes": 32085, "pct": 1.3 },
+      { "name": "Christian Peoples Alliance", "votes": 26798, "pct": 1.1 },
+      { "name": "Social Democratic Party", "votes": 23021, "pct": 0.9 },
+      { "name": "Laurence Fox", "votes": 13795, "pct": 0.6 },
+      { "name": "Farah London (Independent)", "votes": 13048, "pct": 0.5 },
+      { "name": "Communist Party of Britain", "votes": 10915, "pct": 0.4 },
+      { "name": "Heritage Party", "votes": 4431, "pct": 0.2 }
+    ]
+  },
+  "booklet": {
+    "title": "London Elects candidate booklet",
+    "pdf": "/manifestos/london/gla-2024/booklet/booklet.pdf",
+    "cover": "/manifestos/london/gla-2024/booklet/cover.png"
+  },
+  "manifestos": [
+    { "party": "labour", "candidate": "Sadiq Khan", "title": "A Fairer, Safer, Greener London", "pdf": "/manifestos/london/gla-2024/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2024/labour/cover.png" },
+    { "party": "conservative", "candidate": "Susan Hall", "title": "Contract with London", "pdf": "/manifestos/london/gla-2024/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2024/conservative/cover.png" },
+    { "party": "libdem", "candidate": "Rob Blackie", "title": "Fix the Met, Fix London", "pdf": "/manifestos/london/gla-2024/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2024/libdem/cover.png" },
+    { "party": "green", "candidate": "Zoë Garbett", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2024/green/manifesto.pdf", "cover": "/manifestos/london/gla-2024/green/cover.png" }
+  ],
+  "sources": [
+    { "label": "House of Commons Library — London elections 2024 (CBP-10059)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10059/" },
+    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+  ]
+}

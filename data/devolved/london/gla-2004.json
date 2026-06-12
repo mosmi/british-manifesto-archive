@@ -1,0 +1,60 @@
+{
+  "id": "gla-2004",
+  "body": "gla",
+  "year": 2004,
+  "displayYear": "2004",
+  "date": "10 June 2004",
+  "title": "2004 London mayoral and Assembly election",
+  "mayorWinner": "labour",
+  "mayorWinnerName": "Ken Livingstone",
+  "turnout": 35.9,
+  "summary": "Ken Livingstone was re-elected Mayor of London, this time as the official Labour candidate after rejoining the party he had left to run as an independent in 2000. He won 685,541 first-preference votes (36.8%) and was returned with 828,380 votes (55.4%) after second preferences, ahead of Conservative Steve Norris on 667,178 (44.6%). The Conservatives became the largest Assembly party with nine seats, and UKIP won its first two Assembly seats. This was the first London election to feature an official London Elects candidate booklet.",
+  "highlights": [
+    "Ken Livingstone re-elected, now as Labour's official candidate",
+    "Livingstone beats Steve Norris 55.4% to 44.6% after second preferences",
+    "Conservatives are the largest Assembly party with nine seats",
+    "UKIP wins its first two London Assembly list seats",
+    "First election with a London Elects candidate booklet"
+  ],
+  "mayor": {
+    "system": "Supplementary Vote",
+    "candidates": [
+      { "name": "Ken Livingstone", "party": "labour", "firstVotes": 685541, "firstPct": 36.8, "finalVotes": 828380, "finalPct": 55.4, "elected": true },
+      { "name": "Steve Norris", "party": "conservative", "firstVotes": 542423, "firstPct": 29.1, "finalVotes": 667178, "finalPct": 44.6 },
+      { "name": "Simon Hughes", "party": "libdem", "firstVotes": 284645, "firstPct": 15.3 },
+      { "name": "Frank Maloney", "party": "ukip", "firstVotes": 115665, "firstPct": 6.2 },
+      { "name": "Other candidates (6)", "firstVotes": 235397, "firstPct": 12.6 }
+    ]
+  },
+  "assembly": {
+    "totalSeats": 25,
+    "constituencySeats": 14,
+    "listSeats": 11,
+    "system": "Additional Member System",
+    "results": [
+      { "party": "conservative", "constituencySeats": 9, "listSeats": 0, "seats": 9, "constituencyVotes": 562047, "constituencyPct": 31.2, "listVotes": 533696, "listPct": 28.5 },
+      { "party": "labour", "constituencySeats": 5, "listSeats": 2, "seats": 7, "constituencyVotes": 444808, "constituencyPct": 24.7, "listVotes": 468247, "listPct": 25.0 },
+      { "party": "libdem", "constituencySeats": 0, "listSeats": 5, "seats": 5, "listVotes": 316218, "listPct": 16.9 },
+      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 160445, "listPct": 8.6 },
+      { "party": "ukip", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 156780, "listPct": 8.4 }
+    ],
+    "otherListVotes": [
+      { "name": "BNP", "votes": 90365, "pct": 4.8 },
+      { "name": "Respect", "votes": 87533, "pct": 4.7 },
+      { "name": "Christian Peoples Alliance", "votes": 54914, "pct": 2.9 }
+    ]
+  },
+  "booklet": {
+    "title": "London Elects candidate booklet",
+    "pdf": "/manifestos/london/gla-2004/booklet/booklet.pdf",
+    "cover": "/manifestos/london/gla-2004/booklet/cover.png"
+  },
+  "manifestos": [
+    { "party": "libdem", "candidate": "Simon Hughes", "pdf": "/manifestos/london/gla-2004/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2004/libdem/cover.png" },
+    { "party": "green", "candidate": "Darren Johnson", "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf", "cover": "/manifestos/london/gla-2004/green/cover.png" }
+  ],
+  "sources": [
+    { "label": "House of Commons Library — 2004 London Elections (RP 04/48)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-48/" },
+    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+  ]
+}

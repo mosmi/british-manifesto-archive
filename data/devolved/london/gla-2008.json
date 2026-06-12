@@ -1,0 +1,60 @@
+{
+  "id": "gla-2008",
+  "body": "gla",
+  "year": 2008,
+  "displayYear": "2008",
+  "date": "1 May 2008",
+  "title": "2008 London mayoral and Assembly election",
+  "mayorWinner": "conservative",
+  "mayorWinnerName": "Boris Johnson",
+  "turnout": 44.6,
+  "summary": "Conservative Boris Johnson unseated the two-term incumbent Ken Livingstone (Labour) to become the second Mayor of London. Johnson won 1,044,068 first-preference votes (43.2%) to Livingstone's 894,316 (37.0%), and was elected with 1,168,738 votes (53.2%) to 1,028,966 (46.8%) after second preferences. Turnout jumped almost nine points to 44.6%. The Conservatives became the largest Assembly party with 11 seats, and the BNP won its first — and only — London-wide seat.",
+  "highlights": [
+    "Boris Johnson defeats Ken Livingstone to take City Hall for the Conservatives",
+    "Johnson elected with 53.2% after second preferences",
+    "Turnout rises sharply to 44.6%",
+    "Conservatives become the largest Assembly party with 11 seats",
+    "The BNP wins its first London Assembly seat on 5.4% of the list vote"
+  ],
+  "mayor": {
+    "system": "Supplementary Vote",
+    "candidates": [
+      { "name": "Boris Johnson", "party": "conservative", "firstVotes": 1044068, "firstPct": 43.2, "finalVotes": 1168738, "finalPct": 53.2, "elected": true },
+      { "name": "Ken Livingstone", "party": "labour", "firstVotes": 894316, "firstPct": 37.0, "finalVotes": 1028966, "finalPct": 46.8 },
+      { "name": "Brian Paddick", "party": "libdem", "firstVotes": 236752, "firstPct": 9.8 },
+      { "name": "Siân Berry", "party": "green", "firstVotes": 77396, "firstPct": 3.2 },
+      { "name": "Other candidates (5)", "firstVotes": 164354, "firstPct": 6.8 }
+    ]
+  },
+  "assembly": {
+    "totalSeats": 25,
+    "constituencySeats": 14,
+    "listSeats": 11,
+    "system": "Additional Member System",
+    "results": [
+      { "party": "conservative", "constituencySeats": 8, "listSeats": 3, "seats": 11, "constituencyVotes": 900569, "constituencyPct": 37.4, "listVotes": 835535, "listPct": 34.6 },
+      { "party": "labour", "constituencySeats": 6, "listSeats": 2, "seats": 8, "constituencyVotes": 673855, "constituencyPct": 28.0, "listVotes": 665443, "listPct": 27.6 },
+      { "party": "libdem", "constituencySeats": 0, "listSeats": 3, "seats": 3, "listVotes": 275272, "listPct": 11.4 },
+      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 203465, "listPct": 8.4 },
+      { "party": "bnp", "constituencySeats": 0, "listSeats": 1, "seats": 1, "listVotes": 130714, "listPct": 5.4 }
+    ],
+    "otherListVotes": [
+      { "name": "Christian Peoples Alliance", "votes": 70294, "pct": 2.9 },
+      { "name": "UKIP", "votes": 46617, "pct": 1.9 },
+      { "name": "English Democrats", "votes": 25569, "pct": 1.1 }
+    ]
+  },
+  "booklet": {
+    "title": "London Elects candidate booklet",
+    "pdf": "/manifestos/london/gla-2008/booklet/booklet.pdf",
+    "cover": "/manifestos/london/gla-2008/booklet/cover.png"
+  },
+  "manifestos": [
+    { "party": "labour", "candidate": "Ken Livingstone", "pdf": "/manifestos/london/gla-2008/cooperative/manifesto.pdf", "cover": "/manifestos/london/gla-2008/cooperative/cover.png" },
+    { "party": "green", "candidate": "Siân Berry", "pdf": "/manifestos/london/gla-2008/green/manifesto.pdf", "cover": "/manifestos/london/gla-2008/green/cover.png" }
+  ],
+  "sources": [
+    { "label": "House of Commons Library — London Elections 2008 (RP 08/47)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp08-47/" },
+    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+  ]
+}

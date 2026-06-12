@@ -1,0 +1,31 @@
+{
+  "id": "lcc-1949",
+  "body": "lcc",
+  "year": 1949,
+  "displayYear": "1949",
+  "date": "March 1949",
+  "title": "1949 London County Council election",
+  "control": "labour",
+  "winnerName": "Labour control",
+  "summary": "The closest of the post-war LCC elections. A Conservative recovery left the two main parties level on 64 elected seats each, with the Liberals holding the balance with a single seat. The Conservatives narrowly led the popular vote, but Labour retained control of the council with the help of its majority among the aldermen.",
+  "highlights": [
+    "Labour and the Conservatives tie on 64 elected seats each",
+    "Conservatives narrowly win the popular vote (50.7%)",
+    "The Liberals win a single seat",
+    "Labour keeps control thanks to its majority among the aldermen"
+  ],
+  "council": {
+    "totalSeats": 129,
+    "system": "First-past-the-post",
+    "results": [
+      { "party": "conservative", "seats": 64, "pct": 50.7 },
+      { "party": "labour", "seats": 64, "pct": 46.9 },
+      { "party": "libdem", "seats": 1, "pct": 1.3 }
+    ],
+    "note": "129 directly elected councillors, plus aldermen chosen by the council. With the elected seats tied, Labour retained control through its majority among the aldermen. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+  },
+  "sources": [
+    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
+    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+  ]
+}
