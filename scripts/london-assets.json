@@ -4,13 +4,16 @@
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Mayor-of-London-2004-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Darren Johnson - Green Party manifesto 2004.pdf" },
-      { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/SImon Hughes - Liberal Democrats.pdf" }
+      { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/SImon Hughes - Liberal Democrats.pdf" },
+      { "party": "cpa", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Ram Gidoomal - 2004 Passion for London manifesto.pdf" }
     ]
   },
   {
     "id": "gla-2008",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Mayor-of-London-2008-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
+      { "party": "conservative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Boris Johnson - 2008 Complete Manifesto.pdf" },
+      { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Brian Paddick - The experience to deliver leaflet.pdf" },
       { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Greens 2008 manifesto.pdf" },
       { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Co-operative Party 2008 manifesto.pdf" }
     ]
@@ -20,8 +23,11 @@
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Mayor-of-London-2012-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Ken Livingstone - Manifesto for London 2012.pdf" },
+      { "party": "conservative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Boris Johnson - 2012 Taking Greater London Forward manifesto.pdf" },
       { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Liberal Democrat 2012 manifesto.pdf" },
-      { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Green Party 2012 manifesto.pdf" }
+      { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Green Party 2012 manifesto.pdf" },
+      { "party": "bnp", "cover": "spread-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/BNP gla_manifesto2012.pdf" },
+      { "party": "benita", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Siobhan Benita - 2012 introduction manifesto.pdf" }
     ]
   },
   {
@@ -30,11 +36,13 @@
     "manifestos": [
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Sadiq Khan - A Manifesto for All Londoners.pdf" },
       { "party": "conservative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Zac Goldsmith - My Action Plan for Greater London.pdf" },
-      { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Caroline Pidgeon - Caroline's Plan for London.pdf" },
+      { "party": "libdem", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Caroline Pidgeon - Caroline's Plan for London.pdf" },
       { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/London_Green_Party_Manifesto_2016_Final_Web_Single_Pages.pdf" },
-      { "party": "ukip", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/UKIP London Manifesto 2016.pdf" },
+      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/UKIP London Manifesto 2016.pdf" },
       { "party": "respect", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/George Galloway - Respect Manifesto 2016 (LSE Library scan).pdf" },
-      { "party": "wep", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Women's_Equality_Party_Manifesto_for_London.pdf" }
+      { "party": "wep", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Women's_Equality_Party_Manifesto_for_London.pdf" },
+      { "party": "bnp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/bnp_london_manifesto_2016.pdf" },
+      { "party": "onelove", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/ONE LOVE PARTY MANIFESTO.pdf" }
     ]
   },
   {
@@ -44,7 +52,22 @@
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Sadiq-for-London-Manifesto-.pdf" },
       { "party": "conservative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Shaun BaileyManifesto.pdf" },
       { "party": "libdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/London Liberal Democrat Manifesto 2021.pdf" },
-      { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/SIAN_BERRY_LONDON_GREEN_2021_MANIFESTO_FINAL_8_APR.pdf" }
+      { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/SIAN_BERRY_LONDON_GREEN_2021_MANIFESTO_FINAL_8_APR.pdf" },
+      { "party": "londonreal", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Brian Rose - London Real Party Manifesto 2021.pdf" },
+      { "party": "reclaim", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Laurence Fox Manifesto_FN.pdf" },
+      { "party": "burningpink", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/valerie-brown-manifesto-burning-pink.pdf" },
+      { "party": "maxfosh", "cover": "top-a4", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Max Fosh _ London Mayoral Candidate 2021.pdf" },
+      { "party": "pierscorbyn", "cover": "top-a4", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Piers Corbyn - 14 Point Statement.pdf" },
+      { "party": "binface", "cover": "top-a4", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/London 2021 Manifesto — Count Binface.pdf" }
+    ]
+  },
+  {
+    "id": "gla-2024",
+    "booklet": null,
+    "manifestos": [
+      { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2024 London Devolved Election/Howard Cox - London Needs Reform Manifesto Poster 2024.pdf" },
+      { "party": "londonreal", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2024 London Devolved Election/Brian Rose - London Real Party Manifesto 2024 (LSE Library scan).pdf" },
+      { "party": "binface", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2024 London Devolved Election/Count Binface - Make Earth Great Again Mayoral Manifesto 2024.pdf" }
     ]
   }
 ]

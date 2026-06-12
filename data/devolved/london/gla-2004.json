@@ -51,7 +51,8 @@
   },
   "manifestos": [
     { "party": "libdem", "candidate": "Simon Hughes", "pdf": "/manifestos/london/gla-2004/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2004/libdem/cover.png" },
-    { "party": "green", "candidate": "Darren Johnson", "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf", "cover": "/manifestos/london/gla-2004/green/cover.png" }
+    { "party": "green", "candidate": "Darren Johnson", "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf", "cover": "/manifestos/london/gla-2004/green/cover.png" },
+    { "partyLabel": "Christian Peoples Alliance", "candidate": "Ram Gidoomal", "title": "Passion for London", "pdf": "/manifestos/london/gla-2004/cpa/manifesto.pdf", "cover": "/manifestos/london/gla-2004/cpa/cover.png" }
   ],
   "sources": [
     { "label": "House of Commons Library — 2004 London Elections (RP 04/48)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-48/" },

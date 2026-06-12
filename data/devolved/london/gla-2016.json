@@ -56,7 +56,9 @@
     { "party": "green", "candidate": "Siân Berry", "pdf": "/manifestos/london/gla-2016/green/manifesto.pdf", "cover": "/manifestos/london/gla-2016/green/cover.png" },
     { "party": "ukip", "candidate": "Peter Whittle", "pdf": "/manifestos/london/gla-2016/ukip/manifesto.pdf", "cover": "/manifestos/london/gla-2016/ukip/cover.png" },
     { "party": "respect", "candidate": "George Galloway", "pdf": "/manifestos/london/gla-2016/respect/manifesto.pdf", "cover": "/manifestos/london/gla-2016/respect/cover.png" },
-    { "partyLabel": "Women's Equality Party", "candidate": "Sophie Walker", "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf", "cover": "/manifestos/london/gla-2016/wep/cover.png" }
+    { "partyLabel": "Women's Equality Party", "candidate": "Sophie Walker", "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf", "cover": "/manifestos/london/gla-2016/wep/cover.png" },
+    { "party": "bnp", "candidate": "David Furness", "pdf": "/manifestos/london/gla-2016/bnp/manifesto.pdf", "cover": "/manifestos/london/gla-2016/bnp/cover.png" },
+    { "partyLabel": "One Love Party", "candidate": "Ankit Love", "pdf": "/manifestos/london/gla-2016/onelove/manifesto.pdf", "cover": "/manifestos/london/gla-2016/onelove/cover.png" }
   ],
   "sources": [
     { "label": "House of Commons Library — London Elections 2016 (CBP-7598)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7598/" },

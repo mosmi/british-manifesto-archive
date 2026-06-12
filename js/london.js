@@ -10,7 +10,6 @@ const LONDON_BODY_LABELS = {
   gla: 'Greater London Authority',
 };
 
-const _londonCache = new Map();
 let _londonIndex = null;
 
 async function loadLondonIndex() {
@@ -24,11 +23,8 @@ async function loadLondonIndex() {
 }
 
 async function loadLondonElection(id) {
-  if (_londonCache.has(id)) return _londonCache.get(id);
   try {
-    const data = await fetchTyped(`/data/devolved/london/${id}.json`, 'json');
-    _londonCache.set(id, data);
-    return data;
+    return await fetchTyped(`/data/devolved/london/${id}.json`, 'json');
   } catch {
     return null;
   }

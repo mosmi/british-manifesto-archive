@@ -69,7 +69,10 @@
     { "party": "labour", "candidate": "Sadiq Khan", "title": "A Fairer, Safer, Greener London", "pdf": "/manifestos/london/gla-2024/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2024/labour/cover.png" },
     { "party": "conservative", "candidate": "Susan Hall", "title": "Contract with London", "pdf": "/manifestos/london/gla-2024/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2024/conservative/cover.png" },
     { "party": "libdem", "candidate": "Rob Blackie", "title": "Fix the Met, Fix London", "pdf": "/manifestos/london/gla-2024/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2024/libdem/cover.png" },
-    { "party": "green", "candidate": "Zoë Garbett", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2024/green/manifesto.pdf", "cover": "/manifestos/london/gla-2024/green/cover.png" }
+    { "party": "green", "candidate": "Zoë Garbett", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2024/green/manifesto.pdf", "cover": "/manifestos/london/gla-2024/green/cover.png" },
+    { "party": "reform", "candidate": "Howard Cox", "title": "London Needs Reform", "pdf": "/manifestos/london/gla-2024/reform/manifesto.pdf", "cover": "/manifestos/london/gla-2024/reform/cover.png" },
+    { "partyLabel": "London Real Party", "candidate": "Brian Rose", "title": "London Real Party Manifesto", "pdf": "/manifestos/london/gla-2024/londonreal/manifesto.pdf", "cover": "/manifestos/london/gla-2024/londonreal/cover.png" },
+    { "partyLabel": "Count Binface", "candidate": "Count Binface", "title": "Make Earth Great Again", "pdf": "/manifestos/london/gla-2024/binface/manifesto.pdf", "cover": "/manifestos/london/gla-2024/binface/cover.png" }
   ],
   "sources": [
     { "label": "House of Commons Library — London elections 2024 (CBP-10059)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10059/" },

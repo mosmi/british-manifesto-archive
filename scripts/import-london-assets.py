@@ -37,19 +37,58 @@ MAX_BYTES = 24 * 1024 * 1024  # Cloudflare free-plan per-file ceiling (25 MiB), 
 COVER_WIDTH = 640
 
 
-def make_cover(pdf: Path, out_png: Path) -> None:
+def make_cover(pdf: Path, out_png: Path, mode: str = "page") -> None:
+    """Render a cover thumbnail from page 1 of *pdf*.
+
+    mode="page"     : full first page, scaled to COVER_WIDTH (default).
+    mode="top-a4"   : full-width slice from the top of the page cropped to A4
+                      portrait proportions — best for tall web-screenshot PDFs.
+    mode="landscape": landscape cover centred on a portrait A4 canvas with
+                      transparent letterboxing — matches Westminster manifesto
+                      cards (e.g. 2015 UKIP).
+    mode="spread-right": first page is a two-up spread (e.g. A3); keep only the
+                         right-hand page as the front cover.
+    """
     tmp = out_png.with_suffix("")  # pdftoppm appends -1.png etc.
+    spread = mode == "spread-right"
+    render_w = COVER_WIDTH * 2 if spread else COVER_WIDTH
     subprocess.run(
         ["pdftoppm", "-png", "-f", "1", "-l", "1",
-         "-scale-to-x", str(COVER_WIDTH), "-scale-to-y", "-1", str(pdf), str(tmp)],
+         "-scale-to-x", str(render_w), "-scale-to-y", "-1", str(pdf), str(tmp)],
         check=True,
     )
     produced = sorted(out_png.parent.glob(out_png.stem + "-*.png"))
-    if produced:
-        produced[0].replace(out_png)
+    if not produced:
+        return
+    produced[0].replace(out_png)
+    portrait_h = round(COVER_WIDTH * 297 / 210)  # A4 portrait ratio
+    if spread:
+        info = subprocess.run(
+            ["magick", "identify", "-format", "%w %h", str(out_png)],
+            check=True, capture_output=True, text=True,
+        )
+        w, h = map(int, info.stdout.split())
+        half_w = w // 2
+        subprocess.run(
+            ["magick", str(out_png), "-crop", f"{half_w}x{h}+{half_w}+0",
+             "+repage", "-resize", f"{COVER_WIDTH}x", str(out_png)],
+            check=True,
+        )
+    elif mode == "top-a4":
+        subprocess.run(
+            ["magick", str(out_png), "-crop", f"{COVER_WIDTH}x{portrait_h}+0+0",
+             "+repage", str(out_png)],
+            check=True,
+        )
+    elif mode == "landscape":
+        subprocess.run(
+            ["magick", "-size", f"{COVER_WIDTH}x{portrait_h}", "xc:none",
+             str(out_png), "-gravity", "center", "-composite", str(out_png)],
+            check=True,
+        )
 
 
-def place_pdf(src: Path, dest: Path, dry: bool) -> None:
+def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page") -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     size = src.stat().st_size
     if dry:
@@ -70,7 +109,7 @@ def place_pdf(src: Path, dest: Path, dry: bool) -> None:
             print(f"    WARNING: {dest.name} still over limit ({new/1048576:.1f}MB)")
     else:
         shutil.copy2(src, dest)
-    make_cover(dest, dest.parent / "cover.png")
+    make_cover(dest, dest.parent / "cover.png", cover_mode)
 
 
 def process(entry: dict, dry: bool) -> None:
@@ -79,16 +118,21 @@ def process(entry: dict, dry: bool) -> None:
     booklet = entry.get("booklet")
     if booklet:
         src = Path(booklet)
+        dest = DEST_ROOT / eid / "booklet" / "booklet.pdf"
         if not src.exists():
             print(f"  MISSING booklet: {src}")
+        elif dest.exists():
+            # Some booklets were hand-compressed; never clobber an existing one.
+            print(f"  booklet exists, skipping: {dest.relative_to(ROOT)}")
         else:
-            place_pdf(src, DEST_ROOT / eid / "booklet" / "booklet.pdf", dry)
+            place_pdf(src, dest, dry)
     for m in entry.get("manifestos", []):
         src = Path(m["src"])
         if not src.exists():
             print(f"  MISSING {m['party']}: {src}")
             continue
-        place_pdf(src, DEST_ROOT / eid / m["party"] / "manifesto.pdf", dry)
+        place_pdf(src, DEST_ROOT / eid / m["party"] / "manifesto.pdf", dry,
+                  m.get("cover", "page"))
 
 
 def main() -> None:

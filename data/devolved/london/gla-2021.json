@@ -54,7 +54,13 @@
     { "party": "labour", "candidate": "Sadiq Khan", "title": "A Fairer, Greener, Safer London", "pdf": "/manifestos/london/gla-2021/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2021/labour/cover.png" },
     { "party": "conservative", "candidate": "Shaun Bailey", "title": "Shaun Bailey for London", "pdf": "/manifestos/london/gla-2021/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2021/conservative/cover.png" },
     { "party": "libdem", "candidate": "Luisa Porritt", "title": "London Liberal Democrat Manifesto", "pdf": "/manifestos/london/gla-2021/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2021/libdem/cover.png" },
-    { "party": "green", "candidate": "Siân Berry", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2021/green/manifesto.pdf", "cover": "/manifestos/london/gla-2021/green/cover.png" }
+    { "party": "green", "candidate": "Siân Berry", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2021/green/manifesto.pdf", "cover": "/manifestos/london/gla-2021/green/cover.png" },
+    { "partyLabel": "London Real Party", "candidate": "Brian Rose", "title": "London Real Party Manifesto", "pdf": "/manifestos/london/gla-2021/londonreal/manifesto.pdf", "cover": "/manifestos/london/gla-2021/londonreal/cover.png" },
+    { "partyLabel": "Reclaim Party", "candidate": "Laurence Fox", "title": "Laurence Fox for London", "pdf": "/manifestos/london/gla-2021/reclaim/manifesto.pdf", "cover": "/manifestos/london/gla-2021/reclaim/cover.png" },
+    { "partyLabel": "Independent", "candidate": "Max Fosh", "title": "Max Fosh for London", "pdf": "/manifestos/london/gla-2021/maxfosh/manifesto.pdf", "cover": "/manifestos/london/gla-2021/maxfosh/cover.png" },
+    { "partyLabel": "Let London Live", "candidate": "Piers Corbyn", "title": "14-Point Statement", "pdf": "/manifestos/london/gla-2021/pierscorbyn/manifesto.pdf", "cover": "/manifestos/london/gla-2021/pierscorbyn/cover.png" },
+    { "partyLabel": "Burning Pink", "candidate": "Valerie Brown", "title": "Burning Pink Party Manifesto", "pdf": "/manifestos/london/gla-2021/burningpink/manifesto.pdf", "cover": "/manifestos/london/gla-2021/burningpink/cover.png" },
+    { "partyLabel": "Count Binface", "candidate": "Count Binface", "title": "Manifesto for London", "pdf": "/manifestos/london/gla-2021/binface/manifesto.pdf", "cover": "/manifestos/london/gla-2021/binface/cover.png" }
   ],
   "sources": [
     { "label": "House of Commons Library — London Elections 2021 (CBP-9231)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9231/" },

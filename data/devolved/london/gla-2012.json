@@ -51,8 +51,11 @@
   },
   "manifestos": [
     { "party": "labour", "candidate": "Ken Livingstone", "pdf": "/manifestos/london/gla-2012/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2012/labour/cover.png" },
+    { "party": "conservative", "candidate": "Boris Johnson", "title": "Taking Greater London Forward", "pdf": "/manifestos/london/gla-2012/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2012/conservative/cover.png" },
     { "party": "libdem", "candidate": "Brian Paddick", "pdf": "/manifestos/london/gla-2012/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2012/libdem/cover.png" },
-    { "party": "green", "candidate": "Jenny Jones", "pdf": "/manifestos/london/gla-2012/green/manifesto.pdf", "cover": "/manifestos/london/gla-2012/green/cover.png" }
+    { "party": "green", "candidate": "Jenny Jones", "pdf": "/manifestos/london/gla-2012/green/manifesto.pdf", "cover": "/manifestos/london/gla-2012/green/cover.png" },
+    { "party": "bnp", "candidate": "Carlos Cortiglia", "pdf": "/manifestos/london/gla-2012/bnp/manifesto.pdf", "cover": "/manifestos/london/gla-2012/bnp/cover.png" },
+    { "party": "independent", "candidate": "Siobhan Benita", "title": "Introduction manifesto", "pdf": "/manifestos/london/gla-2012/benita/manifesto.pdf", "cover": "/manifestos/london/gla-2012/benita/cover.png" }
   ],
   "sources": [
     { "label": "House of Commons Library — London Elections 2012 (RP 12/28)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp12-28/" },

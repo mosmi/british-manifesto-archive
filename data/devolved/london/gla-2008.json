@@ -50,7 +50,9 @@
     "cover": "/manifestos/london/gla-2008/booklet/cover.png"
   },
   "manifestos": [
-    { "party": "labour", "candidate": "Ken Livingstone", "pdf": "/manifestos/london/gla-2008/cooperative/manifesto.pdf", "cover": "/manifestos/london/gla-2008/cooperative/cover.png" },
+    { "party": "conservative", "candidate": "Boris Johnson", "title": "Complete Manifesto", "pdf": "/manifestos/london/gla-2008/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2008/conservative/cover.png" },
+    { "party": "libdem", "candidate": "Brian Paddick", "title": "The experience to deliver", "pdf": "/manifestos/london/gla-2008/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2008/libdem/cover.png" },
+    { "party": "cooperative", "title": "London Co-operative Party manifesto", "pdf": "/manifestos/london/gla-2008/cooperative/manifesto.pdf", "cover": "/manifestos/london/gla-2008/cooperative/cover.png" },
     { "party": "green", "candidate": "Siân Berry", "pdf": "/manifestos/london/gla-2008/green/manifesto.pdf", "cover": "/manifestos/london/gla-2008/green/cover.png" }
   ],
   "sources": [

@@ -6,7 +6,7 @@ const _electionCache = new Map();
 
 /** Fetch JSON or markdown; reject SPA HTML fallbacks (Cloudflare 200 + text/html). */
 async function fetchTyped(url, expected) {
-  const r = await fetch(url);
+  const r = await fetch(url, { cache: 'no-cache' });
   const ct = (r.headers.get('content-type') || '').toLowerCase();
   const okType = expected === 'json'
     ? ct.includes('json')
