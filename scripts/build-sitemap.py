@@ -47,12 +47,21 @@ def main() -> None:
         else []
     )
 
+    holyrood_index_path = ROOT / "data/devolved/holyrood/index.json"
+    holyrood_ids = (
+        [e["id"] for e in json.loads(holyrood_index_path.read_text(encoding="utf-8"))]
+        if holyrood_index_path.exists()
+        else []
+    )
+
     urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
     urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
     urls.extend(f"/nation/{nid}" for nid in nation_ids)
     urls.extend(f"/devolved/{did}" for did in devolved_ids)
     urls.extend(f"/devolved/london/{lid}" for lid in london_ids)
+    urls.extend(f"/devolved/holyrood/{hid}" for hid in holyrood_ids)
+    urls.append("/devolved/holyrood/other-parties")
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )

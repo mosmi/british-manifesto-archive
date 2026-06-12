@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sp-1999",
+    "body": "holyrood",
+    "year": 1999,
+    "displayYear": "1999",
+    "date": "6 May 1999",
+    "title": "Scottish Parliament election",
+    "control": "scottishlab",
+    "winnerName": "Donald Dewar",
+    "firstMinister": "Donald Dewar"
+  },
+  {
+    "id": "sp-2003",
+    "body": "holyrood",
+    "year": 2003,
+    "displayYear": "2003",
+    "date": "1 May 2003",
+    "title": "Scottish Parliament election",
+    "control": "scottishlab",
+    "winnerName": "Jack McConnell",
+    "firstMinister": "Jack McConnell"
+  },
+  {
+    "id": "sp-2007",
+    "body": "holyrood",
+    "year": 2007,
+    "displayYear": "2007",
+    "date": "3 May 2007",
+    "title": "Scottish Parliament election",
+    "control": "snp",
+    "winnerName": "Alex Salmond",
+    "firstMinister": "Alex Salmond"
+  },
+  {
+    "id": "sp-2011",
+    "body": "holyrood",
+    "year": 2011,
+    "displayYear": "2011",
+    "date": "5 May 2011",
+    "title": "Scottish Parliament election",
+    "control": "snp",
+    "winnerName": "Alex Salmond",
+    "firstMinister": "Alex Salmond"
+  },
+  {
+    "id": "sp-2016",
+    "body": "holyrood",
+    "year": 2016,
+    "displayYear": "2016",
+    "date": "5 May 2016",
+    "title": "Scottish Parliament election",
+    "control": "snp",
+    "winnerName": "Nicola Sturgeon",
+    "firstMinister": "Nicola Sturgeon"
+  },
+  {
+    "id": "sp-2021",
+    "body": "holyrood",
+    "year": 2021,
+    "displayYear": "2021",
+    "date": "6 May 2021",
+    "title": "Scottish Parliament election",
+    "control": "snp",
+    "winnerName": "Nicola Sturgeon",
+    "firstMinister": "Nicola Sturgeon"
+  },
+  {
+    "id": "sp-2026",
+    "body": "holyrood",
+    "year": 2026,
+    "displayYear": "2026",
+    "date": "7 May 2026",
+    "title": "Scottish Parliament election",
+    "control": "snp",
+    "winnerName": "John Swinney",
+    "firstMinister": "John Swinney"
+  }
+]

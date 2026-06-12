@@ -205,6 +205,33 @@ function classify(path, seo) {
     };
   }
 
+  // /devolved/:portal/:sub (election pages, other-parties, etc.)
+  if (parts[0] === 'devolved' && parts.length >= 3) {
+    const portal = parts[1];
+    const sub = parts[2];
+    if (portal === 'holyrood' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Scottish Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Scottish Parliament elections at Holyrood.',
+        },
+      };
+    }
+    if (portal === 'holyrood' || portal === 'london') {
+      const portalName = seo.devolved && seo.devolved[portal];
+      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
+      return {
+        valid: /^(sp|gla|glc|lcc)-\d{4}$/.test(sub),
+        meta: {
+          title: `${portalName} Election${TITLE_SUFFIX}`,
+          description: `Election results and party manifestos from a ${portalName} election.`,
+        },
+      };
+    }
+    return { valid: false };
+  }
+
   // /devolved/:id
   if (parts[0] === 'devolved' && parts.length === 2) {
     const name = seo.devolved && seo.devolved[parts[1]];

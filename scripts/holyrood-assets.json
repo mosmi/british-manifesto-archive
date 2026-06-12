@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sp-1999",
+    "manifestos": [
+      { "party": "scottishcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/Scottish Conservative Manifesto 1999.pdf" },
+      { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/green-1999.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/scottish-lib-dems-1999.pdf" },
+      { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/snp-1999.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2003",
+    "manifestos": [
+      { "party": "scottishcon", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/Scottish Conservative Manifesto 2003.pdf" },
+      { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/Scottish Greens 2003 manifesto.pdf" },
+      { "party": "scottishlab", "cover": "spread-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/Scottish Labour Manifesto 2003.pdf" },
+      { "party": "bnp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/bnp-2003.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/liberal-democrats-2003.pdf" },
+      { "party": "snp", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/snp-2003.pdf" },
+      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/ssp-2003.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2007",
+    "manifestos": [
+      { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/SNP 2007 manifesto.pdf" },
+      { "party": "scottishcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Scottish Conservative Manifesto 2007.pdf" },
+      { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Scottish Greens 2007 manifesto.pdf" },
+      { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Scottish Labour 2007 manifesto.pdf" },
+      { "party": "scottishlibdem", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Scottish Liberal Democrats 2007 manifesto.pdf" },
+      { "party": "solidarity", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Solidarity 2007 manifesto.pdf" },
+      { "party": "ukip", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/UKIP - 2007 Scottish Parliament and local elections manifesto.pdf" },
+      { "party": "bnp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/bnp-2007.pdf" },
+      { "party": "scottishchristian", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/christian-2007.pdf" },
+      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/ssp-2007.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2011",
+    "manifestos": [
+      { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/SNP 2011 manifesto.pdf" },
+      { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/Scottish Labour 2011 manifesto.pdf" },
+      { "party": "scottishcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/Scottish Conservative 2011 manifesto.pdf" },
+      { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/Scottish Greens 2011 manifesto.pdf" },
+      { "party": "bnp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/bnp-2011.pdf" },
+      { "party": "communist", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/communist-2011.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/liberal-democrats-2011.pdf" },
+      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/ssp-2011.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2016",
+    "manifestos": [
+      { "party": "rise", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/RISE-Manifesto-2016.pdf" },
+      { "party": "snp", "cover": "top-a4", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/SNP_Manifesto2016-web.pdf" },
+      { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/Scottish Co-operative Party 2016 manifesto.pdf" },
+      { "party": "scottishgrn", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/Scottish Greens Manifesto_Online.pdf" },
+      { "party": "scottishlab", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/Scottish Labour Manifesto 2016.pdf" },
+      { "party": "scottishcon", "cover": "spread-left", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/Scottish-Conservative-Manifesto_2016-DIGITAL.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/ScottishLiberalDemocratManifesto2016.pdf" },
+      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/UKIP 2016 manifesto.pdf" },
+      { "party": "wep", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/Women's Equality Party Scotland_Manifesto.pdf" },
+      { "party": "communist", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/communist-2016.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2021",
+    "manifestos": [
+      { "party": "isp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/Independence for Scotland Party 2021 manifesto.pdf" },
+      { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/SNP-MANIFESTO-2021.pdf" },
+      { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/ScottishGreens_2021Manifesto_Full_web_version.pdf" },
+      { "party": "alba", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/alba-2021.pdf" },
+      { "party": "allforunity", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/all-for-unity-2021.pdf" },
+      { "party": "scottishcon", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-conservatives-2021.pdf" },
+      { "party": "scottishfamily", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-family-party-2021.pdf" },
+      { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-labour-2021.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-lib-dems-2021.pdf" },
+      { "party": "scottishlibertarian", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-libertarian-party-2021.pdf" },
+      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/ukip-scotland-2021.pdf" }
+    ]
+  },
+  {
+    "id": "sp-2026",
+    "manifestos": [
+      { "party": "isp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Independence for Scotland Party Manifesto 2026.pdf" },
+      { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Reform UK Scotland Manifesto 2026.pdf" },
+      { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/SNP Manifesto 2026.pdf" },
+      { "party": "scottishcon", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Conservatives Manifesto 2026.pdf" },
+      { "party": "scottishgrn", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Greens Manifesto 2026.pdf" },
+      { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Labour Manifesto 2026.pdf" },
+      { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Liberal Democrats Manifesto 2026.pdf" },
+      { "party": "scottishlibertarian", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Libertarian Party Manifesto 2026.pdf" },
+      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Socialist Party Manifesto 2026.pdf" },
+      { "party": "workersparty", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Workers Party of Britain Manifesto 2026.pdf" },
+      { "party": "sovereignty", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Sovereignty Scotland Manifesto 2026.pdf" }
+    ]
+  }
+]

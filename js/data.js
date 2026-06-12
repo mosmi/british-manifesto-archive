@@ -125,7 +125,63 @@ const PARTIES = {
     color: '#005EB8', dim: 'rgba(0,94,184,0.14)',
     founded: 2021, spectrum: 'Left / Scottish independence', isPrimary: false,
     nation: 'scotland',
-    description: 'The Alba Party was founded in 2021 by former First Minister Alex Salmond after he left the SNP. It contested the 2024 UK general election in Scotland and advocates for Scottish independence, positioning itself to the left of the SNP on economic policy. Its 2024 Westminster manifesto, “Yes to Scottish Independence”, is held in this archive.',
+    description: 'The Alba Party was founded in 2021 by former First Minister Alex Salmond after he left the SNP. It contested the 2021 Scottish Parliament election on a pro-independence platform and the 2024 UK general election in Scotland. Its 2024 Westminster manifesto, “Yes to Scottish Independence”, is held in this archive.',
+  },
+  solidarity: {
+    id: 'solidarity', name: 'Solidarity', shortName: 'Solidarity',
+    color: '#CC0000', dim: 'rgba(204,0,0,0.14)',
+    founded: 2006, spectrum: 'Left / Scottish socialist', isPrimary: false,
+    nation: 'scotland',
+    description: 'Solidarity was a left-wing Scottish socialist party founded in 2006 after a split from the Scottish Socialist Party. It contested the 2007 Scottish Parliament election and was associated with Tommy Sheridan.',
+  },
+  rise: {
+    id: 'rise', name: 'RISE', shortName: 'RISE',
+    color: '#E30613', dim: 'rgba(227,6,19,0.14)',
+    founded: 2015, spectrum: 'Left / Scottish socialist', isPrimary: false,
+    nation: 'scotland',
+    description: 'RISE (Respect, Independence, Socialism and Environmentalism) was a left-wing electoral alliance that contested the 2016 Scottish Parliament election.',
+  },
+  allforunity: {
+    id: 'allforunity', name: 'All for Unity', shortName: 'All for Unity',
+    color: '#1D4ED8', dim: 'rgba(29,78,216,0.14)',
+    founded: 2021, spectrum: 'Centre / Pro-union', isPrimary: false,
+    nation: 'scotland',
+    description: 'All for Unity was a pro-union electoral alliance that contested the 2021 Scottish Parliament election, urging tactical voting against the SNP and Scottish Greens.',
+  },
+  isp: {
+    id: 'isp', name: 'Independence for Scotland Party', shortName: 'ISP',
+    color: '#2E8B57', dim: 'rgba(46,139,87,0.14)',
+    founded: 2020, spectrum: 'Centre-left / Scottish independence', isPrimary: false,
+    nation: 'scotland',
+    description: 'The Independence for Scotland Party (ISP) was founded in 2020 as a pro-independence party advocating a dual-mandate strategy at Holyrood. It has contested Scottish Parliament elections since 2021.',
+  },
+  scottishfamily: {
+    id: 'scottishfamily', name: 'Scottish Family Party', shortName: 'Scottish Family',
+    color: '#7C3AED', dim: 'rgba(124,58,237,0.14)',
+    founded: 2020, spectrum: 'Right / Social conservative', isPrimary: false,
+    nation: 'scotland',
+    description: 'The Scottish Family Party is a socially conservative party that contests Scottish Parliament elections on family-values and pro-life platforms.',
+  },
+  scottishlibertarian: {
+    id: 'scottishlibertarian', name: 'Scottish Libertarian Party', shortName: 'Scottish Libertarian',
+    color: '#F4C430', dim: 'rgba(244,196,48,0.14)',
+    founded: 2012, spectrum: 'Libertarian', isPrimary: false,
+    nation: 'scotland',
+    description: 'The Scottish Libertarian Party advocates minimal government, free markets, and individual liberty. It contests Holyrood elections on the regional lists.',
+  },
+  sovereignty: {
+    id: 'sovereignty', name: 'Sovereignty Scotland', shortName: 'Sovereignty Scotland',
+    color: '#1B365D', dim: 'rgba(27,54,93,0.14)',
+    founded: 2024, spectrum: 'Right / Scottish nationalist', isPrimary: false,
+    nation: 'scotland',
+    description: 'Sovereignty Scotland is a right-wing Scottish nationalist party that contested the 2026 Scottish Parliament election.',
+  },
+  scottishchristian: {
+    id: 'scottishchristian', name: 'Scottish Christian Party', shortName: 'Scottish Christian',
+    color: '#4B0082', dim: 'rgba(75,0,130,0.14)',
+    founded: 2004, spectrum: 'Right / Christian', isPrimary: false,
+    nation: 'scotland',
+    description: 'The Scottish Christian Party contests elections in Scotland on a Christian social-conservative platform, including the 2007 Scottish Parliament election.',
   },
 
   /* ── Northern Ireland ────────────────────────────────────── */
@@ -600,12 +656,13 @@ const NATIONS = {
       'Scottish Green Party entered co-operation agreement with SNP government in 2021',
     ],
     holyroodResults: [
-      { year: 1999, snp: 35, lab: 56, con: 18, ld: 17, grn: 1, others: 2 },
-      { year: 2003, snp: 27, lab: 50, con: 18, ld: 17, grn: 7, others: 10 },
-      { year: 2007, snp: 47, lab: 46, con: 17, ld: 16, grn: 2, others: 1 },
-      { year: 2011, snp: 69, lab: 37, con: 15, ld: 5, grn: 2, others: 1 },
-      { year: 2016, snp: 63, lab: 24, con: 31, ld: 5, grn: 6, others: 0 },
-      { year: 2021, snp: 64, lab: 22, con: 31, ld: 4, grn: 7, others: 1 },
+      { year: 1999, snp: 35, lab: 56, con: 18, ld: 17, grn: 1, reform: 0, others: 2 },
+      { year: 2003, snp: 27, lab: 50, con: 18, ld: 17, grn: 7, reform: 0, others: 10 },
+      { year: 2007, snp: 47, lab: 46, con: 17, ld: 16, grn: 2, reform: 0, others: 1 },
+      { year: 2011, snp: 69, lab: 37, con: 15, ld: 5, grn: 2, reform: 0, others: 1 },
+      { year: 2016, snp: 63, lab: 24, con: 31, ld: 5, grn: 6, reform: 0, others: 0 },
+      { year: 2021, snp: 64, lab: 22, con: 31, ld: 4, grn: 7, reform: 0, others: 1 },
+      { year: 2026, snp: 58, lab: 17, con: 12, ld: 10, grn: 15, reform: 17, others: 0 },
     ],
     westminsterResults: [
       { year: '1918',     con: 30, lab:  6, ld: 33, snp: 0, other: 2, total: 71 },
@@ -1503,7 +1560,7 @@ const NAV_PARTIES = {
   },
   scotland: {
     label: 'Scotland',
-    parties: ['scottishcon', 'scottishlab', 'scottishlibdem', 'snp', 'scottishgrn', 'reform'],
+    parties: ['snp', 'scottishlab', 'scottishcon', 'scottishlibdem', 'scottishgrn', 'reform', 'alba'],
   },
   'northern-ireland': {
     label: 'Northern Ireland',
@@ -1522,6 +1579,12 @@ const OTHERS_PARTIES = [
 
 const OTHERS_FEATURED = [
   'bnp', 'ukip', 'referendumparty', 'respect', 'tusc', 'omrlp',
+];
+
+const HOLYROOD_OTHER_PARTIES = [
+  'ssp', 'solidarity', 'rise', 'allforunity', 'isp', 'scottishfamily',
+  'scottishlibertarian', 'sovereignty', 'scottishchristian', 'bnp', 'ukip',
+  'communist', 'cooperative', 'wep', 'workersparty',
 ];
 
 const DEVOLVED_PORTALS = {

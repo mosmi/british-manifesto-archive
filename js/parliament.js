@@ -54,14 +54,25 @@ function drawParliamentChart(container, results, totalSeats) {
 
   // ── Build flat colour array in political spectrum order ───
   const resultMap = {};
-  results.forEach(r => { resultMap[r.party] = r.seats; });
+  results.forEach(r => {
+    if (r.party) resultMap[r.party] = (resultMap[r.party] || 0) + r.seats;
+  });
 
   const colours = [];
   for (const partyId of SPECTRUM_ORDER) {
     const seats = resultMap[partyId] || 0;
+    if (!seats) continue;
     const colour = getPartyColor(partyId);
     for (let i = 0; i < seats; i++) colours.push(colour);
+    delete resultMap[partyId];
   }
+  Object.entries(resultMap).forEach(([partyId, seats]) => {
+    const colour = getPartyColor(partyId);
+    for (let i = 0; i < seats; i++) colours.push(colour);
+  });
+  results.filter(r => !r.party && r.seats > 0).forEach(r => {
+    for (let i = 0; i < r.seats; i++) colours.push('#6b7280');
+  });
   // safety top-up for "others" or rounding
   while (colours.length < totalSeats) colours.push(getPartyColor('others'));
 
@@ -147,10 +158,10 @@ function buildParliamentLegend(legendEl, results, year) {
 
     const dot = document.createElement('div');
     dot.className = 'legend-dot';
-    dot.style.background = getPartyColor(r.party);
+    dot.style.background = r.party ? getPartyColor(r.party) : '#6b7280';
 
     const label = document.createElement('span');
-    label.textContent = getPartyName(r.party, year);
+    label.textContent = r.partyLabel || getPartyName(r.party, year);
 
     const seats = document.createElement('span');
     seats.className = 'legend-seats';

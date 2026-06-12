@@ -1,0 +1,130 @@
+{
+  "id": "sp-2011",
+  "year": 2011,
+  "displayYear": "2011",
+  "date": "5 May 2011",
+  "title": "2011 Scottish Parliament election",
+  "turnout": 50.3,
+  "control": "snp",
+  "firstMinister": "Alex Salmond",
+  "majority": true,
+  "summary": "The SNP won an outright majority — 69 of 129 seats — with 44.7% of the regional vote, a result thought impossible under the Additional Member System. Alex Salmond's government secured a mandate for an independence referendum. Labour fell to 37 seats; the Liberal Democrats collapsed from 16 to five seats as voters punished the party for its Westminster coalition with the Conservatives.",
+  "highlights": [
+    "SNP wins historic overall majority — 69 of 129 seats",
+    "First majority government at Holyrood under the AMS electoral system",
+    "SNP takes 53 constituency seats including traditional Labour heartlands",
+    "Liberal Democrats lose 11 seats, falling to five MSPs",
+    "Mandate secured for the 2014 independence referendum"
+  ],
+  "parliament": {
+    "totalSeats": 129,
+    "constituencySeats": 73,
+    "listSeats": 56,
+    "majorityThreshold": 65,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "snp",
+        "constituencySeats": 53,
+        "listSeats": 16,
+        "seats": 69,
+        "constituencyPct": 45.4,
+        "listPct": 44.0
+      },
+      {
+        "party": "scottishlab",
+        "constituencySeats": 15,
+        "listSeats": 22,
+        "seats": 37,
+        "constituencyPct": 31.7,
+        "listPct": 26.3
+      },
+      {
+        "party": "scottishcon",
+        "constituencySeats": 3,
+        "listSeats": 12,
+        "seats": 15,
+        "constituencyPct": 13.9,
+        "listPct": 12.4
+      },
+      {
+        "party": "scottishlibdem",
+        "constituencySeats": 2,
+        "listSeats": 3,
+        "seats": 5,
+        "constituencyPct": 7.9,
+        "listPct": 5.2
+      },
+      {
+        "party": "scottishgrn",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listPct": 4.4
+      },
+      {
+        "partyLabel": "Margo MacDonald (Independent)",
+        "constituencySeats": 0,
+        "listSeats": 1,
+        "seats": 1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2011 Scottish Parliament election (RP11-41)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp11-41/"
+    }
+  ],
+  "body": "holyrood",
+  "manifestos": [
+    {
+      "title": "SNP Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/snp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/snp/cover.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Labour Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/scottishlab/cover.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "Scottish Conservative Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/scottishcon/cover.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Greens Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/scottishgrn/cover.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "BNP Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/bnp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/bnp/cover.png",
+      "party": "bnp"
+    },
+    {
+      "title": "Communist Party Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/communist/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/communist/cover.png",
+      "party": "communist"
+    },
+    {
+      "title": "Liberal Democrats Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/scottishlibdem/cover.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "Scottish Socialist Party Manifesto 2011",
+      "pdf": "/manifestos/holyrood/sp-2011/ssp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2011/ssp/cover.png",
+      "party": "ssp"
+    }
+  ]
+}

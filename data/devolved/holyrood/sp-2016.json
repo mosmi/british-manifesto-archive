@@ -1,0 +1,147 @@
+{
+  "id": "sp-2016",
+  "year": 2016,
+  "displayYear": "2016",
+  "date": "5 May 2016",
+  "title": "2016 Scottish Parliament election",
+  "turnout": 55.7,
+  "control": "snp",
+  "firstMinister": "Nicola Sturgeon",
+  "majority": false,
+  "summary": "The SNP won the most seats for a third consecutive election but lost its overall majority, falling to 63 MSPs. The Conservatives under Ruth Davidson more than doubled their representation to 31 seats — their best ever Holyrood result — and became the principal opposition party. Labour lost 13 seats, finishing third with 24 MSPs. Turnout rose to 55.7%, the highest since 1999.",
+  "highlights": [
+    "SNP wins third term but loses overall majority — 63 seats",
+    "Conservatives double representation to 31 seats — best Holyrood result",
+    "Ruth Davidson's Conservatives become the largest opposition party",
+    "Labour falls to third place with 24 seats",
+    "Turnout rises to 55.7% — highest since the inaugural 1999 election"
+  ],
+  "parliament": {
+    "totalSeats": 129,
+    "constituencySeats": 73,
+    "listSeats": 56,
+    "majorityThreshold": 65,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "snp",
+        "constituencySeats": 59,
+        "listSeats": 4,
+        "seats": 63,
+        "constituencyPct": 46.5,
+        "listPct": 41.7
+      },
+      {
+        "party": "scottishcon",
+        "constituencySeats": 7,
+        "listSeats": 24,
+        "seats": 31,
+        "constituencyPct": 22.0,
+        "listPct": 22.9
+      },
+      {
+        "party": "scottishlab",
+        "constituencySeats": 3,
+        "listSeats": 21,
+        "seats": 24,
+        "constituencyPct": 22.6,
+        "listPct": 19.1
+      },
+      {
+        "party": "scottishlibdem",
+        "constituencySeats": 4,
+        "listSeats": 1,
+        "seats": 5,
+        "constituencyPct": 7.8,
+        "listPct": 5.2
+      },
+      {
+        "party": "scottishgrn",
+        "constituencySeats": 0,
+        "listSeats": 6,
+        "seats": 6,
+        "constituencyPct": 0.6,
+        "listPct": 6.6
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "UK Independence Party",
+        "pct": 2.0
+      },
+      {
+        "name": "RISE",
+        "pct": 0.6
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2016 Scottish Parliament election (CBP-7599)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7599/"
+    }
+  ],
+  "body": "holyrood",
+  "manifestos": [
+    {
+      "title": "RISE Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/rise/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/rise/cover.png",
+      "party": "rise"
+    },
+    {
+      "title": "SNP Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/snp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/snp/cover.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Co-operative Party Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/cooperative/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/cooperative/cover.png",
+      "party": "cooperative"
+    },
+    {
+      "title": "Scottish Greens Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/scottishgrn/cover.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "Scottish Labour Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/scottishlab/cover.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "Scottish Conservative Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/scottishcon/cover.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Liberal Democrats Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/scottishlibdem/cover.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "UKIP Scotland Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/ukip/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/ukip/cover.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Women's Equality Party Scotland Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/wep/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/wep/cover.png",
+      "party": "wep"
+    },
+    {
+      "title": "Communist Party Manifesto 2016",
+      "pdf": "/manifestos/holyrood/sp-2016/communist/manifesto.pdf",
+      "cover": "/manifestos/holyrood/sp-2016/communist/cover.png",
+      "party": "communist"
+    }
+  ]
+}

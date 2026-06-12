@@ -3364,6 +3364,27 @@ h1, h2, h3, h4 {
 }
 .london-others table { margin-top: 1rem; }
 
+.holyrood-other-link {
+  display: block;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--navy-border);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+.holyrood-other-link:hover { color: var(--cream); }
+
+.election-meta-chip {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
 .london-manifesto-title {
   font-size: 0.85rem;
   font-style: italic;

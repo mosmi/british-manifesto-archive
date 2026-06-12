@@ -306,6 +306,12 @@ function route() {
     renderLondonElection(app, path.replace('/devolved/london/', ''));
   } else if (path === '/devolved/london') {
     renderLondonPortal(app);
+  } else if (path === '/devolved/holyrood/other-parties') {
+    renderHolyroodOtherParties(app);
+  } else if (path.startsWith('/devolved/holyrood/')) {
+    renderHolyroodElection(app, path.replace('/devolved/holyrood/', ''));
+  } else if (path === '/devolved/holyrood') {
+    renderHolyroodPortal(app);
   } else if (path.startsWith('/devolved/')) {
     renderDevolved(app, path.replace('/devolved/', ''));
   } else if (path === '/others') {
@@ -1192,7 +1198,7 @@ async function initElectionHexmap(electionId) {
 }
 
 // ── PARTY PAGE ────────────────────────────────────────────────
-function renderParty(app, id) {
+async function renderParty(app, id) {
   const party = PARTIES[id];
   if (!party) { renderNotFound(app); return; }
   setPageMeta({
@@ -1236,6 +1242,26 @@ function renderParty(app, id) {
     buildManifestoCard(id, e, { result: r, showYearAsTitle: true })
   ).join('');
 
+  const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
+    ? await getHolyroodPartyHistory(id)
+    : { elections: [], manifestos: [] };
+  const holyroodElections = holyroodHistory.elections;
+  const holyroodManifestos = holyroodHistory.manifestos;
+
+  const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
+  const holyroodElectionRows = holyroodElections.map(pe =>
+    holyroodPartyElectionRow(id, pe, maxHolyroodSeats, color)
+  ).join('');
+
+  const holyroodItems = holyroodManifestos.map(({ election, manifesto }) =>
+    holyroodManifestoCard(manifesto, election.year)
+  ).join('');
+
+  const contestedParts = [];
+  if (partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
+  if (holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
+  const contestedLabel = contestedParts.join(' · ') || '0';
+
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
   const nationCrumb = nationId
     ? [{ label: getNationLabel(nationId), href: `/nation/${nationId}` }]
@@ -1256,7 +1282,7 @@ function renderParty(app, id) {
           <div class="party-hero-meta">
             <div class="party-meta-item">Founded<strong>${party.founded || '—'}</strong></div>
             <div class="party-meta-item">Spectrum<strong>${party.spectrum}</strong></div>
-            <div class="party-meta-item">Elections contested<strong>${partyElections.length}</strong></div>
+            <div class="party-meta-item">Elections contested<strong>${contestedLabel}</strong></div>
           </div>
         </div>
         ${electionsWon > 0 ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${color}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>` : ''}
@@ -1267,16 +1293,30 @@ function renderParty(app, id) {
       <div class="party-description">${party.description}</div>
       <div class="party-elections-section">
         <span class="section-label">Electoral Record</span>
-        <h2>Results by Election</h2>
+        <h2>Westminster Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
         ${electionRows || '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
       </div>
+      ${holyroodElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">Holyrood</span>
+        <h2>Scottish Parliament Results</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.25rem">Results at Scottish Parliament elections since 1999. <a href="/devolved/holyrood">Browse all Holyrood elections →</a></p>
+        ${holyroodElectionRows}
+      </div>` : ''}
       <div class="party-manifestos-section">
         <span class="section-label">Documents</span>
-        <h2>Manifesto Archive</h2>
+        <h2>Westminster Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
-        ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No manifestos on record.</p>'}
+        ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>
+      ${holyroodItems ? `<div class="party-manifestos-section">
+        <span class="section-label">Holyrood</span>
+        <h2>Scottish Parliament Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.25rem">Manifestos from Scottish Parliament elections. <a href="/devolved/holyrood">Browse all Holyrood elections →</a></p>
+        <div class="manifesto-grid">${holyroodItems}</div>
+      </div>` : ''}
     </div>
   `;
 }
@@ -1425,20 +1465,21 @@ function renderNation(app, id) {
 
   if (id === 'scotland' && nation.holyroodResults) {
     const rows = nation.holyroodResults.map(r => `<tr>
-      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem">${r.year}</td>
+      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/holyrood/sp-${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
       <td><span style="color:#FDF38E;font-weight:600">${r.snp}</span></td>
       <td><span style="color:#E4003B;font-weight:600">${r.lab}</span></td>
       <td><span style="color:#0087DC;font-weight:600">${r.con}</span></td>
       <td><span style="color:#FAA61A;font-weight:600">${r.ld}</span></td>
       <td><span style="color:#00B140;font-weight:600">${r.grn}</span></td>
+      <td><span style="color:#12B6CF;font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
     </tr>`).join('');
     devolvedTable = `<div class="devolved-section">
       <span class="section-label">Scottish Parliament Elections</span>
       <h2>Holyrood Results</h2>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">129 MSPs elected by Additional Member System (73 constituency + 56 regional). The SNP has governed Scotland since 2007. Source: HC Library CBP-7529.</p>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">129 MSPs elected by Additional Member System (73 constituency + 56 regional). The SNP has governed Scotland since 2007. <a href="/devolved/holyrood">View full Holyrood archive →</a></p>
       <table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#FDF38E">SNP</th><th style="color:#E4003B">Labour</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#00B140">Greens</th></tr></thead>
+        <thead><tr><th>Year</th><th style="color:#FDF38E">SNP</th><th style="color:#E4003B">Labour</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#00B140">Greens</th><th style="color:#12B6CF">Reform</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -1590,7 +1631,7 @@ function renderOthers(app) {
       <span class="section-label">Parties</span>
       <h1>Other Parties</h1>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);margin-bottom:2.5rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats.</p>
+      <p style="color:var(--text-muted);margin-bottom:2.5rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats. For parties contesting the Scottish Parliament, see <a href="/devolved/holyrood/other-parties">Other Scottish parties</a>.</p>
       <div class="others-grid">${cards}</div>
     </div>
   `;
