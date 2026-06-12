@@ -2071,6 +2071,57 @@ h1, h2, h3, h4 {
   font-style: italic;
   padding: 2rem 0;
 }
+
+/* Reserve vertical space while the manifesto body loads, to limit layout shift
+   (CLS): the footer no longer jumps down by thousands of words on load. */
+.manifesto-content { min-height: 60vh; }
+
+.manifesto-skeleton {
+  padding: 0.5rem 0 2rem;
+}
+.manifesto-skeleton .skeleton-line {
+  height: 0.95rem;
+  margin-bottom: 1.1rem;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--navy-card) 0%,
+    rgba(255, 255, 255, 0.06) 50%,
+    var(--navy-card) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+.manifesto-skeleton .skeleton-title {
+  height: 1.8rem;
+  width: 65%;
+  margin-bottom: 1.6rem;
+}
+.manifesto-skeleton .w-40 { width: 40%; }
+.manifesto-skeleton .w-60 { width: 60%; }
+.manifesto-skeleton .w-85 { width: 85%; }
+.manifesto-skeleton .w-90 { width: 90%; }
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .manifesto-skeleton .skeleton-line { animation: none; }
+}
+
+/* Screen-reader-only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .manifesto-placeholder-msg {
   background: var(--navy-card);
   border: 1px dashed var(--navy-border);

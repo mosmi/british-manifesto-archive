@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/js/*",
+    "/data/*",
+    "/manifestos/*",
+    "/og/*",
+    "/previews/*",
+    "/assets/*"
+  ]
+}

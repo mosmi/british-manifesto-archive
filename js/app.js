@@ -768,7 +768,7 @@ function loadLatestManifestos() {
         const title = item.label || `${party.shortName || item.partyId} ${election?.displayYear || item.electionId}`;
         return `<a href="/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
           <div class="latest-card-cover">
-            <img src="${cover}" alt="" onerror="if(this.dataset.fb){this.style.display='none';}else{this.dataset.fb=1;this.src='${coverFb}';}">
+            <img src="${cover}" alt="Cover of the ${title}" loading="lazy" onerror="if(this.dataset.fb){this.style.display='none';}else{this.dataset.fb=1;this.src='${coverFb}';}">
             <div class="latest-card-cover-fallback" style="background:${party.color || '#333'}">${election?.displayYear || item.electionId}</div>
           </div>
           <div class="latest-card-body">
@@ -1729,7 +1729,17 @@ function renderManifesto(app, electionId, partyId) {
       </div>
       <div class="manifesto-viewer-body">
         <div id="manifesto-content" class="manifesto-content">
-          <div class="manifesto-loading">Loading manifesto…</div>
+          <div class="manifesto-skeleton" role="status" aria-label="Loading manifesto text">
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line w-40"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line w-85"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line w-90"></div>
+            <div class="skeleton-line w-60"></div>
+            <span class="sr-only">Loading manifesto…</span>
+          </div>
         </div>
       </div>
     </div>
