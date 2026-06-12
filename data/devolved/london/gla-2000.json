@@ -43,6 +43,9 @@
       { "name": "UKIP", "votes": 34054, "pct": 2.1 }
     ]
   },
+  "manifestos": [
+    { "party": "independent", "candidate": "Ken Livingstone", "title": "Manifesto for London", "pdf": "/manifestos/london/gla-2000/livingstone/manifesto.pdf", "cover": "/manifestos/london/gla-2000/livingstone/cover.png" }
+  ],
   "sources": [
     { "label": "House of Commons Library — The local elections and elections for a London Mayor and Assembly (RP 00/53)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp00-53/" },
     { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }

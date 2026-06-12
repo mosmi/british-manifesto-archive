@@ -1,5 +1,12 @@
 [
   {
+    "id": "gla-2000",
+    "booklet": null,
+    "manifestos": [
+      { "party": "livingstone", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2000 London Devolved Election/Ken Livingstone - 2000 Manifesto for London (derived from archived HTML).pdf" }
+    ]
+  },
+  {
     "id": "gla-2004",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Mayor-of-London-2004-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
