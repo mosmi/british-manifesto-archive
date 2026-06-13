@@ -1,6 +1,6 @@
 [
   {
-    "id": "sp-1999",
+    "id": "1999",
     "body": "holyrood",
     "year": 1999,
     "displayYear": "1999",
@@ -11,7 +11,7 @@
     "firstMinister": "Donald Dewar"
   },
   {
-    "id": "sp-2003",
+    "id": "2003",
     "body": "holyrood",
     "year": 2003,
     "displayYear": "2003",
@@ -22,7 +22,7 @@
     "firstMinister": "Jack McConnell"
   },
   {
-    "id": "sp-2007",
+    "id": "2007",
     "body": "holyrood",
     "year": 2007,
     "displayYear": "2007",
@@ -33,7 +33,7 @@
     "firstMinister": "Alex Salmond"
   },
   {
-    "id": "sp-2011",
+    "id": "2011",
     "body": "holyrood",
     "year": 2011,
     "displayYear": "2011",
@@ -44,7 +44,7 @@
     "firstMinister": "Alex Salmond"
   },
   {
-    "id": "sp-2016",
+    "id": "2016",
     "body": "holyrood",
     "year": 2016,
     "displayYear": "2016",
@@ -55,7 +55,7 @@
     "firstMinister": "Nicola Sturgeon"
   },
   {
-    "id": "sp-2021",
+    "id": "2021",
     "body": "holyrood",
     "year": 2021,
     "displayYear": "2021",
@@ -66,7 +66,7 @@
     "firstMinister": "Nicola Sturgeon"
   },
   {
-    "id": "sp-2026",
+    "id": "2026",
     "body": "holyrood",
     "year": 2026,
     "displayYear": "2026",

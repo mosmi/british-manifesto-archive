@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1999",
+    "body": "senedd",
+    "year": 1999,
+    "displayYear": "1999",
+    "date": "6 May 1999",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Alun Michael",
+    "firstMinister": "Alun Michael"
+  },
+  {
+    "id": "2003",
+    "body": "senedd",
+    "year": 2003,
+    "displayYear": "2003",
+    "date": "1 May 2003",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Rhodri Morgan",
+    "firstMinister": "Rhodri Morgan"
+  },
+  {
+    "id": "2007",
+    "body": "senedd",
+    "year": 2007,
+    "displayYear": "2007",
+    "date": "3 May 2007",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Rhodri Morgan",
+    "firstMinister": "Rhodri Morgan"
+  },
+  {
+    "id": "2011",
+    "body": "senedd",
+    "year": 2011,
+    "displayYear": "2011",
+    "date": "5 May 2011",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Carwyn Jones",
+    "firstMinister": "Carwyn Jones"
+  },
+  {
+    "id": "2016",
+    "body": "senedd",
+    "year": 2016,
+    "displayYear": "2016",
+    "date": "5 May 2016",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Carwyn Jones",
+    "firstMinister": "Carwyn Jones"
+  },
+  {
+    "id": "2021",
+    "body": "senedd",
+    "year": 2021,
+    "displayYear": "2021",
+    "date": "6 May 2021",
+    "title": "Senedd Cymru election",
+    "control": "welshlab",
+    "winnerName": "Mark Drakeford",
+    "firstMinister": "Mark Drakeford"
+  },
+  {
+    "id": "2026",
+    "body": "senedd",
+    "year": 2026,
+    "displayYear": "2026",
+    "date": "7 May 2026",
+    "title": "Senedd Cymru election",
+    "control": "plaid",
+    "winnerName": "",
+    "firstMinister": null
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "id": "2011",
+  "year": 2011,
+  "displayYear": "2011",
+  "date": "5 May 2011",
+  "title": "2011 National Assembly for Wales election",
+  "turnout": 41.4,
+  "control": "welshlab",
+  "firstMinister": "Carwyn Jones",
+  "majority": false,
+  "summary": "Labour won exactly half the Assembly — 30 of 60 seats — its best Senedd performance by vote share (39.6%). Carwyn Jones continued as First Minister in minority government. The Conservatives recorded their best result to date with 14 seats; Plaid Cymru fell to 11.",
+  "highlights": [
+    "Labour wins 30 seats — half the Assembly",
+    "Best Labour and Conservative performances in any Senedd election",
+    "Worst Plaid Cymru and Liberal Democrat performances to date",
+    "Carwyn Jones continues as First Minister",
+    "Turnout 41.4%"
+  ],
+  "parliament": {
+    "totalSeats": 60,
+    "constituencySeats": 40,
+    "listSeats": 20,
+    "majorityThreshold": 31,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "welshlab",
+        "constituencySeats": 28,
+        "listSeats": 2,
+        "seats": 30,
+        "constituencyPct": 42.3,
+        "listPct": 36.9
+      },
+      {
+        "party": "welshcon",
+        "constituencySeats": 6,
+        "listSeats": 8,
+        "seats": 14,
+        "constituencyPct": 25.0,
+        "listPct": 22.5
+      },
+      {
+        "party": "plaid",
+        "constituencySeats": 5,
+        "listSeats": 6,
+        "seats": 11,
+        "constituencyPct": 19.3,
+        "listPct": 17.9
+      },
+      {
+        "party": "welshlibdem",
+        "constituencySeats": 1,
+        "listSeats": 4,
+        "seats": 5,
+        "constituencyPct": 10.6,
+        "listPct": 8.0
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2011 Welsh Assembly election (RP11-40)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp11-40/"
+    }
+  ],
+  "body": "senedd",
+  "manifestos": [
+    {
+      "title": "Welsh Labour Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/welshlab/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/welshlab/cover.png",
+      "party": "welshlab"
+    },
+    {
+      "title": "Welsh Conservative Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/welshcon/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/welshcon/cover.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Welsh Liberal Democrats Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/welshlibdem/cover.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Plaid Cymru Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/plaid/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/plaid/cover.png",
+      "party": "plaid"
+    },
+    {
+      "title": "Wales Green Party Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/walesgrn/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/walesgrn/cover.png",
+      "party": "walesgrn"
+    },
+    {
+      "title": "UKIP Wales Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/ukip/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/ukip/cover.png",
+      "party": "ukip"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "2026",
+  "year": 2026,
+  "displayYear": "2026",
+  "date": "7 May 2026",
+  "title": "2026 Scottish Parliament election",
+  "turnout": 53.2,
+  "control": "snp",
+  "firstMinister": "John Swinney",
+  "majority": false,
+  "summary": "The SNP remained the largest party with 58 seats but fell seven short of a majority in a dramatically reshaped parliament. Reform UK entered Holyrood for the first time with 17 regional MSPs, matching Scottish Labour's total. The Scottish Greens surged to 15 seats while the Conservatives collapsed from 31 to 12 — their worst result since devolution. The Liberal Democrats recovered to ten seats. Turnout was 53.2%, down ten points from the record high of 2021.",
+  "highlights": [
+    "SNP remains largest party with 58 seats — seven short of a majority",
+    "Reform UK wins 17 regional seats on its first Holyrood contest",
+    "Scottish Greens surge to 15 MSPs — up from eight in 2021",
+    "Conservatives fall from 31 to 12 seats — worst Holyrood result",
+    "Liberal Democrats recover to ten seats",
+    "Turnout 53.2% — down from record 63.5% in 2021"
+  ],
+  "parliament": {
+    "totalSeats": 129,
+    "constituencySeats": 73,
+    "listSeats": 56,
+    "majorityThreshold": 65,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "snp",
+        "constituencySeats": 57,
+        "listSeats": 1,
+        "seats": 58,
+        "constituencyVotes": 877077,
+        "constituencyPct": 38.2,
+        "listVotes": 625949,
+        "listPct": 27.2
+      },
+      {
+        "party": "scottishlab",
+        "constituencySeats": 3,
+        "listSeats": 14,
+        "seats": 17,
+        "constituencyVotes": 440708,
+        "constituencyPct": 19.2,
+        "listVotes": 368785,
+        "listPct": 16.0
+      },
+      {
+        "party": "reform",
+        "constituencySeats": 0,
+        "listSeats": 17,
+        "seats": 17,
+        "constituencyVotes": 361994,
+        "constituencyPct": 15.8,
+        "listVotes": 383425,
+        "listPct": 16.6
+      },
+      {
+        "party": "scottishgrn",
+        "constituencySeats": 2,
+        "listSeats": 13,
+        "seats": 15,
+        "constituencyVotes": 52528,
+        "constituencyPct": 2.3,
+        "listVotes": 321964,
+        "listPct": 14.0
+      },
+      {
+        "party": "scottishcon",
+        "constituencySeats": 4,
+        "listSeats": 8,
+        "seats": 12,
+        "constituencyVotes": 271740,
+        "constituencyPct": 11.8,
+        "listVotes": 271550,
+        "listPct": 11.8
+      },
+      {
+        "party": "scottishlibdem",
+        "constituencySeats": 7,
+        "listSeats": 3,
+        "seats": 10,
+        "constituencyVotes": 261408,
+        "constituencyPct": 11.4,
+        "listVotes": 216224,
+        "listPct": 9.4
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Independence for Scotland Party",
+        "votes": 10246,
+        "pct": 0.4
+      },
+      {
+        "name": "Scottish Family Party",
+        "votes": 17136,
+        "pct": 0.7
+      },
+      {
+        "name": "Scottish Socialist Party",
+        "votes": 8326,
+        "pct": 0.4
+      },
+      {
+        "name": "Scottish Libertarian Party",
+        "votes": 1909,
+        "pct": 0.1
+      },
+      {
+        "name": "Sovereignty Scotland",
+        "pct": 0.1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "BBC News — Scotland election results 2026",
+      "url": "https://www.bbc.com/news/election/2026/scotland/results"
+    }
+  ],
+  "body": "holyrood",
+  "manifestos": [
+    {
+      "title": "Independence for Scotland Party Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/isp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/isp/cover.png",
+      "party": "isp"
+    },
+    {
+      "title": "Reform UK Scotland Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/reform/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/reform/cover.png",
+      "party": "reform"
+    },
+    {
+      "title": "SNP Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/snp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/snp/cover.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Conservatives Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/scottishcon/cover.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Greens Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/scottishgrn/cover.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "Scottish Labour Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/scottishlab/cover.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "Scottish Liberal Democrats Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/scottishlibdem/cover.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "Scottish Libertarian Party Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/scottishlibertarian/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/scottishlibertarian/cover.png",
+      "party": "scottishlibertarian"
+    },
+    {
+      "title": "Scottish Socialist Party Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/ssp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/ssp/cover.png",
+      "party": "ssp"
+    },
+    {
+      "title": "Scottish Workers Party of Britain Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/workersparty/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/workersparty/cover.png",
+      "party": "workersparty"
+    },
+    {
+      "title": "Sovereignty Scotland Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/sovereignty/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/sovereignty/cover.png",
+      "party": "sovereignty"
+    }
+  ]
+}

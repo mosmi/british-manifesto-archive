@@ -1,6 +1,6 @@
 [
   {
-    "id": "sp-1999",
+    "id": "1999",
     "manifestos": [
       { "party": "scottishcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/Scottish Conservative Manifesto 1999.pdf" },
       { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/1999 Scottish Parliament Election/green-1999.pdf" },
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "id": "sp-2003",
+    "id": "2003",
     "manifestos": [
       { "party": "scottishcon", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/Scottish Conservative Manifesto 2003.pdf" },
       { "party": "scottishgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2003 Scottish Parliament Election/Scottish Greens 2003 manifesto.pdf" },
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "id": "sp-2007",
+    "id": "2007",
     "manifestos": [
       { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/SNP 2007 manifesto.pdf" },
       { "party": "scottishcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2007 Scottish Parliament Election/Scottish Conservative Manifesto 2007.pdf" },
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": "sp-2011",
+    "id": "2011",
     "manifestos": [
       { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/SNP 2011 manifesto.pdf" },
       { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/Scottish Labour 2011 manifesto.pdf" },
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "id": "sp-2016",
+    "id": "2016",
     "manifestos": [
       { "party": "rise", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/RISE-Manifesto-2016.pdf" },
       { "party": "snp", "cover": "top-a4", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2016 Scottish Parliament Election/SNP_Manifesto2016-web.pdf" },
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": "sp-2021",
+    "id": "2021",
     "manifestos": [
       { "party": "isp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/Independence for Scotland Party 2021 manifesto.pdf" },
       { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/SNP-MANIFESTO-2021.pdf" },
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": "sp-2026",
+    "id": "2026",
     "manifestos": [
       { "party": "isp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Independence for Scotland Party Manifesto 2026.pdf" },
       { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Reform UK Scotland Manifesto 2026.pdf" },

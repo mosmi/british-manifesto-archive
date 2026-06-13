@@ -7,7 +7,7 @@ Driven by scripts/holyrood-assets.json (same schema as london-assets.json).
 
 Usage:
   python3 scripts/import-holyrood-assets.py
-  python3 scripts/import-holyrood-assets.py sp-2026
+  python3 scripts/import-holyrood-assets.py 2026
   python3 scripts/import-holyrood-assets.py --dry-run
 """
 from __future__ import annotations

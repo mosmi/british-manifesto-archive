@@ -121,6 +121,18 @@
     <loc>https://www.manifestos.org.uk/party/walesgrn</loc>
   </url>
   <url>
+    <loc>https://www.manifestos.org.uk/party/gwlad</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/propel</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/abolish</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/heritage</loc>
+  </url>
+  <url>
     <loc>https://www.manifestos.org.uk/party/snp</loc>
   </url>
   <url>
@@ -385,28 +397,52 @@
     <loc>https://www.manifestos.org.uk/devolved/london/lcc-1946</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-1999</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/1999</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2003</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2003</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2007</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2007</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2011</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2011</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2016</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2016</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2021</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2021</loc>
   </url>
   <url>
-    <loc>https://www.manifestos.org.uk/devolved/holyrood/sp-2026</loc>
+    <loc>https://www.manifestos.org.uk/devolved/holyrood/2026</loc>
   </url>
   <url>
     <loc>https://www.manifestos.org.uk/devolved/holyrood/other-parties</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/1999</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2003</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2007</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2011</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2016</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2021</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/2026</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/senedd/other-parties</loc>
   </url>
   <url>
     <loc>https://www.manifestos.org.uk/manifesto/2024/conservative</loc>

@@ -312,6 +312,12 @@ function route() {
     renderHolyroodElection(app, path.replace('/devolved/holyrood/', ''));
   } else if (path === '/devolved/holyrood') {
     renderHolyroodPortal(app);
+  } else if (path === '/devolved/senedd/other-parties') {
+    renderSeneddOtherParties(app);
+  } else if (path.startsWith('/devolved/senedd/')) {
+    renderSeneddElection(app, path.replace('/devolved/senedd/', ''));
+  } else if (path === '/devolved/senedd') {
+    renderSeneddPortal(app);
   } else if (path.startsWith('/devolved/')) {
     renderDevolved(app, path.replace('/devolved/', ''));
   } else if (path === '/others') {
@@ -436,6 +442,20 @@ function buildPartiesMega() {
       a.appendChild(document.createTextNode(p.shortName));
       col.appendChild(a);
     });
+    if (nationId === 'scotland') {
+      const scottishOthers = document.createElement('a');
+      scottishOthers.href = '/devolved/holyrood/other-parties';
+      scottishOthers.className = 'mega-all-link';
+      scottishOthers.textContent = 'Other Scottish parties →';
+      col.appendChild(scottishOthers);
+    }
+    if (nationId === 'wales') {
+      const welshOthers = document.createElement('a');
+      welshOthers.href = '/devolved/senedd/other-parties';
+      welshOthers.className = 'mega-all-link';
+      welshOthers.textContent = 'Other Welsh parties →';
+      col.appendChild(welshOthers);
+    }
     mega.appendChild(col);
   });
 
@@ -1248,6 +1268,12 @@ async function renderParty(app, id) {
   const holyroodElections = holyroodHistory.elections;
   const holyroodManifestos = holyroodHistory.manifestos;
 
+  const seneddHistory = (typeof getSeneddPartyHistory === 'function')
+    ? await getSeneddPartyHistory(id)
+    : { elections: [], manifestos: [] };
+  const seneddElections = seneddHistory.elections;
+  const seneddManifestos = seneddHistory.manifestos;
+
   const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
   const holyroodElectionRows = holyroodElections.map(pe =>
     holyroodPartyElectionRow(id, pe, maxHolyroodSeats, color)
@@ -1257,9 +1283,19 @@ async function renderParty(app, id) {
     holyroodManifestoCard(manifesto, election.year)
   ).join('');
 
+  const maxSeneddSeats = Math.max(1, ...seneddElections.map(pe => pe.result.seats));
+  const seneddElectionRows = seneddElections.map(pe =>
+    seneddPartyElectionRow(id, pe, maxSeneddSeats, color)
+  ).join('');
+
+  const seneddItems = seneddManifestos.map(({ election, manifesto }) =>
+    seneddManifestoCard(manifesto, election.year)
+  ).join('');
+
   const contestedParts = [];
   if (partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
   if (holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
+  if (seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
   const contestedLabel = contestedParts.join(' · ') || '0';
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
@@ -1295,27 +1331,37 @@ async function renderParty(app, id) {
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
-        ${electionRows || '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
+        ${electionRows ? `<div class="party-results-list">${electionRows}</div>` : '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
       </div>
-      ${holyroodElectionRows ? `<div class="party-elections-section">
-        <span class="section-label">Holyrood</span>
-        <h2>Scottish Parliament Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
-        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.25rem">Results at Scottish Parliament elections since 1999. <a href="/devolved/holyrood">Browse all Holyrood elections →</a></p>
-        ${holyroodElectionRows}
-      </div>` : ''}
       <div class="party-manifestos-section">
         <span class="section-label">Documents</span>
         <h2>Westminster Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>
+      ${holyroodElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">Holyrood</span>
+        <h2>Scottish Parliament Results</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${holyroodElectionRows}</div>
+      </div>` : ''}
       ${holyroodItems ? `<div class="party-manifestos-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
-        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.25rem">Manifestos from Scottish Parliament elections. <a href="/devolved/holyrood">Browse all Holyrood elections →</a></p>
         <div class="manifesto-grid">${holyroodItems}</div>
+      </div>` : ''}
+      ${seneddElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">Senedd Cymru</span>
+        <h2>Welsh Parliament Results</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${seneddElectionRows}</div>
+      </div>` : ''}
+      ${seneddItems ? `<div class="party-manifestos-section">
+        <span class="section-label">Senedd Cymru</span>
+        <h2>Welsh Parliament Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="manifesto-grid">${seneddItems}</div>
       </div>` : ''}
     </div>
   `;
@@ -1444,20 +1490,21 @@ function renderNation(app, id) {
   let devolvedTable = '';
   if (id === 'wales' && nation.seneddResults) {
     const rows = nation.seneddResults.map(r => `<tr>
-      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem">${r.year}</td>
+      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/senedd/${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
       <td><span style="color:#E4003B;font-weight:600">${r.lab}</span></td>
       <td><span style="color:#008672;font-weight:600">${r.pc}</span></td>
       <td><span style="color:#0087DC;font-weight:600">${r.con}</span></td>
       <td><span style="color:#FAA61A;font-weight:600">${r.ld}</span></td>
-      ${r.ukip !== undefined ? `<td><span style="color:#70147A;font-weight:600">${r.ukip}</span></td>` : '<td>—</td>'}
+      ${r.ukip !== undefined ? `<td><span style="color:#70147A;font-weight:600">${r.ukip > 0 ? r.ukip : '—'}</span></td>` : '<td>—</td>'}
+      <td><span style="color:#12B6CF;font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
     </tr>`).join('');
     devolvedTable = `<div class="devolved-section">
       <span class="section-label">Senedd Cymru Elections</span>
       <h2>Welsh Parliament Results</h2>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">60 Members elected by Additional Member System (40 constituency + 20 regional). Labour has been the largest party at every Senedd election since 1999. Source: HC Library CBP-7529.</p>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">60 Members elected by AMS (1999–2021); 96 Members from 2026 under closed-list PR. Labour was the largest party at every election until 2026. <a href="/devolved/senedd">View full Senedd archive →</a></p>
       <table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#E4003B">Labour</th><th style="color:#008672">Plaid</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#70147A">UKIP</th></tr></thead>
+        <thead><tr><th>Year</th><th style="color:#E4003B">Labour</th><th style="color:#008672">Plaid</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#70147A">UKIP</th><th style="color:#12B6CF">Reform</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -1465,7 +1512,7 @@ function renderNation(app, id) {
 
   if (id === 'scotland' && nation.holyroodResults) {
     const rows = nation.holyroodResults.map(r => `<tr>
-      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/holyrood/sp-${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
+      <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/holyrood/${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
       <td><span style="color:#FDF38E;font-weight:600">${r.snp}</span></td>
       <td><span style="color:#E4003B;font-weight:600">${r.lab}</span></td>
       <td><span style="color:#0087DC;font-weight:600">${r.con}</span></td>
@@ -1539,6 +1586,8 @@ function renderNation(app, id) {
             <div class="section-label" style="margin-bottom:1rem">Parties in ${nation.name}</div>
             ${partyLinks}
             ${id === 'england' ? `<a href="/others" class="nation-party-link" style="--party-color:var(--gold)"><span class="nation-party-dot" style="background:var(--gold)"></span><span>Other parties →</span></a>` : ''}
+            ${id === 'scotland' ? `<a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>` : ''}
+            ${id === 'wales' ? `<a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>` : ''}
           </div>
         </div>
       </div>
@@ -1631,7 +1680,11 @@ function renderOthers(app) {
       <span class="section-label">Parties</span>
       <h1>Other Parties</h1>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);margin-bottom:2.5rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats. For parties contesting the Scottish Parliament, see <a href="/devolved/holyrood/other-parties">Other Scottish parties</a>.</p>
+      <p style="color:var(--text-muted);margin-bottom:1rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats.</p>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties contesting the Scottish Parliament:</p>
+      <a href="/devolved/holyrood/other-parties" class="cross-archive-link">Other Scottish Parties →</a>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem;margin-top:1.25rem">For parties contesting the Welsh Parliament:</p>
+      <a href="/devolved/senedd/other-parties" class="cross-archive-link">Other Welsh Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;

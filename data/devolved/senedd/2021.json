@@ -1,0 +1,154 @@
+{
+  "id": "2021",
+  "year": 2021,
+  "displayYear": "2021",
+  "date": "6 May 2021",
+  "title": "2021 Senedd Cymru election",
+  "turnout": 46.5,
+  "control": "welshlab",
+  "firstMinister": "Mark Drakeford",
+  "majority": false,
+  "summary": "Labour won 30 seats again with 38.0% of the combined vote and Mark Drakeford continued as First Minister. The Conservatives became the second-largest party with 16 seats, overtaking Plaid Cymru. UKIP lost all seven seats won in 2016. The Senedd was formally renamed Senedd Cymru / Welsh Parliament in 2020.",
+  "highlights": [
+    "Labour wins 30 seats under Mark Drakeford",
+    "Conservatives second largest with 16 seats — best Tory Senedd result",
+    "UKIP loses all seven seats won in 2016",
+    "Plaid Cymru holds 13 seats despite slight vote share fall",
+    "Turnout 46.5% — highest since 1999 bar 2016"
+  ],
+  "parliament": {
+    "totalSeats": 60,
+    "constituencySeats": 40,
+    "listSeats": 20,
+    "majorityThreshold": 31,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "welshlab",
+        "constituencySeats": 27,
+        "listSeats": 3,
+        "seats": 30,
+        "constituencyPct": 39.9,
+        "listPct": 36.2
+      },
+      {
+        "party": "welshcon",
+        "constituencySeats": 8,
+        "listSeats": 8,
+        "seats": 16,
+        "constituencyPct": 26.1,
+        "listPct": 25.1
+      },
+      {
+        "party": "plaid",
+        "constituencySeats": 5,
+        "listSeats": 8,
+        "seats": 13,
+        "constituencyPct": 20.3,
+        "listPct": 20.7
+      },
+      {
+        "party": "welshlibdem",
+        "constituencySeats": 0,
+        "listSeats": 1,
+        "seats": 1,
+        "listPct": 4.6
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Wales Green Party",
+        "pct": 3.0
+      },
+      {
+        "name": "Abolish the Welsh Assembly Party",
+        "pct": 1.6
+      },
+      {
+        "name": "Reform UK",
+        "pct": 1.6
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2021 Senedd election (CBP-9282)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9282/"
+    }
+  ],
+  "body": "senedd",
+  "manifestos": [
+    {
+      "title": "Welsh Labour Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/welshlab/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/welshlab/cover.png",
+      "party": "welshlab"
+    },
+    {
+      "title": "Welsh Conservative Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/welshcon/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/welshcon/cover.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Welsh Liberal Democrats Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/welshlibdem/cover.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Plaid Cymru Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/plaid/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/plaid/cover.png",
+      "party": "plaid"
+    },
+    {
+      "title": "Wales Green Party Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/walesgrn/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/walesgrn/cover.png",
+      "party": "walesgrn"
+    },
+    {
+      "title": "Reform UK Wales Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/reform/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/reform/cover.png",
+      "party": "reform"
+    },
+    {
+      "title": "UKIP Wales Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/ukip/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/ukip/cover.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Gwlad Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/gwlad/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/gwlad/cover.png",
+      "party": "gwlad"
+    },
+    {
+      "title": "Propel Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/propel/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/propel/cover.png",
+      "party": "propel"
+    },
+    {
+      "title": "Abolish the Welsh Assembly Party Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/abolish/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/abolish/cover.png",
+      "party": "abolish"
+    },
+    {
+      "title": "Welsh Communist Party Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/communist/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/communist/cover.png",
+      "party": "communist"
+    },
+    {
+      "title": "Welsh TUSC Manifesto 2021",
+      "pdf": "/manifestos/senedd/2021/tusc/manifesto.pdf",
+      "cover": "/manifestos/senedd/2021/tusc/cover.png",
+      "party": "tusc"
+    }
+  ]
+}

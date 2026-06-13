@@ -743,6 +743,10 @@ h1, h2, h3, h4 {
   font-style: italic;
 }
 
+.election-date + .election-date {
+  margin-top: 0.25rem;
+}
+
 .election-winner-badge {
   display: inline-flex;
   align-items: center;
@@ -1265,15 +1269,62 @@ h1, h2, h3, h4 {
   font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.85;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 /* Party results timeline */
-.party-elections-section h2 {
+.party-elections-section,
+.party-manifestos-section {
+  margin-top: 2.25rem;
+}
+.party-elections-section h2,
+.party-manifestos-section h2 {
   font-family: var(--font-display);
   font-size: 1.75rem;
   color: var(--cream);
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.party-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.party-results-list .party-election-row {
+  grid-template-columns: 56px 1fr 52px 72px;
+  gap: 0.65rem 0.85rem;
+  padding: 0.45rem 0.65rem;
+}
+.party-results-list .per-year {
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+.party-results-list .per-outcome {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.45rem;
+}
+.party-results-list .party-election-row > div:nth-child(2) > div:last-child {
+  font-size: 0.68rem !important;
+  margin-top: 0.1rem !important;
+  line-height: 1.25;
+}
+.party-results-list .per-seats-num {
+  font-size: 0.95rem;
+  line-height: 1.1;
+}
+.party-results-list .per-seats-label {
+  font-size: 0.62rem;
+}
+.party-results-list .per-bar {
+  height: 3px;
+}
+.party-results-list .per-pct {
+  font-size: 0.68rem;
+  line-height: 1.2;
+}
+.party-results-list .per-bar-wrap {
+  gap: 0.2rem;
 }
 
 .party-election-row {
@@ -1338,16 +1389,6 @@ h1, h2, h3, h4 {
 .per-pct { font-size: 0.78rem; color: var(--text-muted); }
 
 /* Party manifesto list */
-.party-manifestos-section {
-  margin-top: 3.5rem;
-}
-.party-manifestos-section h2 {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  color: var(--cream);
-  margin-bottom: 1.5rem;
-}
-
 .party-manifesto-item {
   display: flex;
   align-items: center;
@@ -1546,8 +1587,9 @@ h1, h2, h3, h4 {
   .parties-grid { grid-template-columns: repeat(2, 1fr); }
   .election-hero-inner { grid-template-columns: 1fr; }
   .election-nav-btns { flex-direction: row; align-items: flex-start; padding-top: 0; margin-top: 1.5rem; }
+  .party-results-list .party-election-row { grid-template-columns: 52px 1fr 48px; }
+  .party-results-list .per-bar-wrap { display: none; }
   .party-election-row { grid-template-columns: 60px 1fr 80px; }
-  .per-bar-wrap { display: none; }
   .hero-stats { gap: 1.5rem; }
 }
 
@@ -1584,8 +1626,9 @@ h1, h2, h3, h4 {
   .hero-stats { flex-wrap: wrap; }
   .results-table th:nth-child(4),
   .results-table td:nth-child(4) { display: none; }
+  .party-results-list .party-election-row { grid-template-columns: 52px 1fr; }
+  .party-results-list .per-seats-wrap { display: none; }
   .party-election-row { grid-template-columns: 60px 1fr; }
-  .per-seats-wrap { display: none; }
 }
 
 /* ============================================================
@@ -2165,7 +2208,8 @@ h1, h2, h3, h4 {
 .breadcrumb {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 1.25rem var(--page-px) 0;
+  padding: 0.7rem var(--page-px);
+  min-height: 2.75rem;
   font-family: var(--font-ui);
   font-size: 0.78rem;
   color: var(--text-faint);
@@ -2173,6 +2217,7 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem;
+  border-bottom: 1px solid var(--navy-border);
 }
 .breadcrumb a {
   color: var(--text-muted);
@@ -3376,13 +3421,27 @@ h1, h2, h3, h4 {
 }
 .holyrood-other-link:hover { color: var(--cream); }
 
-.election-meta-chip {
-  display: inline-block;
-  margin-top: 0.75rem;
+.cross-archive-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1.75rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: 6px;
+  background: rgba(201, 168, 76, 0.08);
   font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.cross-archive-link:hover {
+  background: rgba(201, 168, 76, 0.15);
+  border-color: rgba(201, 168, 76, 0.6);
+  color: var(--cream);
 }
 
 .london-manifesto-title {

@@ -10,13 +10,13 @@ OUT = ROOT / "data" / "devolved" / "holyrood"
 ASSETS = json.loads((ROOT / "scripts" / "holyrood-assets.json").read_text())
 
 MANIFESTO_TITLES = {
-    "sp-1999": {
+    "1999": {
         "scottishcon": "Scottish Conservative Manifesto 1999",
         "scottishgrn": "Scottish Green Party Manifesto 1999",
         "scottishlibdem": "Scottish Liberal Democrats Manifesto 1999",
         "snp": "SNP Manifesto 1999",
     },
-    "sp-2003": {
+    "2003": {
         "scottishcon": "Scottish Conservative Manifesto 2003",
         "scottishgrn": "Scottish Greens Manifesto 2003",
         "scottishlab": "Scottish Labour Manifesto 2003",
@@ -25,7 +25,7 @@ MANIFESTO_TITLES = {
         "snp": "SNP Manifesto 2003",
         "ssp": "Scottish Socialist Party Manifesto 2003",
     },
-    "sp-2007": {
+    "2007": {
         "snp": "SNP Manifesto 2007",
         "scottishcon": "Scottish Conservative Manifesto 2007",
         "scottishgrn": "Scottish Greens Manifesto 2007",
@@ -37,7 +37,7 @@ MANIFESTO_TITLES = {
         "scottishchristian": "Scottish Christian Party Manifesto 2007",
         "ssp": "Scottish Socialist Party Manifesto 2007",
     },
-    "sp-2011": {
+    "2011": {
         "snp": "SNP Manifesto 2011",
         "scottishlab": "Scottish Labour Manifesto 2011",
         "scottishcon": "Scottish Conservative Manifesto 2011",
@@ -47,7 +47,7 @@ MANIFESTO_TITLES = {
         "scottishlibdem": "Liberal Democrats Manifesto 2011",
         "ssp": "Scottish Socialist Party Manifesto 2011",
     },
-    "sp-2016": {
+    "2016": {
         "rise": "RISE Manifesto 2016",
         "snp": "SNP Manifesto 2016",
         "cooperative": "Scottish Co-operative Party Manifesto 2016",
@@ -59,7 +59,7 @@ MANIFESTO_TITLES = {
         "wep": "Women's Equality Party Scotland Manifesto 2016",
         "communist": "Communist Party Manifesto 2016",
     },
-    "sp-2021": {
+    "2021": {
         "isp": "Independence for Scotland Party Manifesto 2021",
         "snp": "SNP Manifesto 2021",
         "scottishgrn": "Scottish Greens Manifesto 2021",
@@ -72,7 +72,7 @@ MANIFESTO_TITLES = {
         "scottishlibertarian": "Scottish Libertarian Party Manifesto 2021",
         "ukip": "UKIP Scotland Manifesto 2021",
     },
-    "sp-2026": {
+    "2026": {
         "isp": "Independence for Scotland Party Manifesto 2026",
         "reform": "Reform UK Scotland Manifesto 2026",
         "snp": "SNP Manifesto 2026",
@@ -93,7 +93,7 @@ PARTY_LABELS = {
 
 ELECTIONS = [
     {
-        "id": "sp-1999", "year": 1999, "displayYear": "1999", "date": "6 May 1999",
+        "id": "1999", "year": 1999, "displayYear": "1999", "date": "6 May 1999",
         "title": "1999 Scottish Parliament election",
         "turnout": 58.0, "control": "scottishlab", "firstMinister": "Donald Dewar",
         "majority": False,
@@ -125,7 +125,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2003", "year": 2003, "displayYear": "2003", "date": "1 May 2003",
+        "id": "2003", "year": 2003, "displayYear": "2003", "date": "1 May 2003",
         "title": "2003 Scottish Parliament election",
         "turnout": 49.0, "control": "scottishlab", "firstMinister": "Jack McConnell",
         "majority": False,
@@ -153,7 +153,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2007", "year": 2007, "displayYear": "2007", "date": "3 May 2007",
+        "id": "2007", "year": 2007, "displayYear": "2007", "date": "3 May 2007",
         "title": "2007 Scottish Parliament election",
         "turnout": 51.7, "control": "snp", "firstMinister": "Alex Salmond",
         "majority": False,
@@ -180,7 +180,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2011", "year": 2011, "displayYear": "2011", "date": "5 May 2011",
+        "id": "2011", "year": 2011, "displayYear": "2011", "date": "5 May 2011",
         "title": "2011 Scottish Parliament election",
         "turnout": 50.3, "control": "snp", "firstMinister": "Alex Salmond",
         "majority": True,
@@ -207,7 +207,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2016", "year": 2016, "displayYear": "2016", "date": "5 May 2016",
+        "id": "2016", "year": 2016, "displayYear": "2016", "date": "5 May 2016",
         "title": "2016 Scottish Parliament election",
         "turnout": 55.7, "control": "snp", "firstMinister": "Nicola Sturgeon",
         "majority": False,
@@ -237,7 +237,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2021", "year": 2021, "displayYear": "2021", "date": "6 May 2021",
+        "id": "2021", "year": 2021, "displayYear": "2021", "date": "6 May 2021",
         "title": "2021 Scottish Parliament election",
         "turnout": 63.5, "control": "snp", "firstMinister": "Nicola Sturgeon",
         "majority": False,
@@ -269,7 +269,7 @@ ELECTIONS = [
         ],
     },
     {
-        "id": "sp-2026", "year": 2026, "displayYear": "2026", "date": "7 May 2026",
+        "id": "2026", "year": 2026, "displayYear": "2026", "date": "7 May 2026",
         "title": "2026 Scottish Parliament election",
         "turnout": 53.2, "control": "snp", "firstMinister": "John Swinney",
         "majority": False,

@@ -218,11 +218,31 @@ function classify(path, seo) {
         },
       };
     }
-    if (portal === 'holyrood' || portal === 'london') {
+    if (portal === 'senedd' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Welsh Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Senedd Cymru elections.',
+        },
+      };
+    }
+    if (portal === 'holyrood' || portal === 'senedd') {
       const portalName = seo.devolved && seo.devolved[portal];
       if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
       return {
-        valid: /^(sp|gla|glc|lcc)-\d{4}$/.test(sub),
+        valid: /^\d{4}$/.test(sub),
+        meta: {
+          title: `${portalName} Election${TITLE_SUFFIX}`,
+          description: `Election results and party manifestos from a ${portalName} election.`,
+        },
+      };
+    }
+    if (portal === 'london') {
+      const portalName = seo.devolved && seo.devolved[portal];
+      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
+      return {
+        valid: /^(gla|glc|lcc)-\d{4}$/.test(sub),
         meta: {
           title: `${portalName} Election${TITLE_SUFFIX}`,
           description: `Election results and party manifestos from a ${portalName} election.`,

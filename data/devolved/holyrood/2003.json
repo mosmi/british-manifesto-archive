@@ -1,0 +1,132 @@
+{
+  "id": "2003",
+  "year": 2003,
+  "displayYear": "2003",
+  "date": "1 May 2003",
+  "title": "2003 Scottish Parliament election",
+  "turnout": 49.0,
+  "control": "scottishlab",
+  "firstMinister": "Jack McConnell",
+  "majority": false,
+  "summary": "Labour remained the largest party but lost six seats, finishing on 50 MSPs. The SNP fell to 27 seats as voters shifted towards smaller parties on the regional lists — the Scottish Greens won seven MSPs and the Scottish Socialist Party six. Jack McConnell continued as First Minister in a renewed Labour–Liberal Democrat coalition. Turnout fell sharply to 49%, down nine points from 1999.",
+  "highlights": [
+    "Labour retains largest party status with 50 seats",
+    "Scottish Greens win seven regional MSPs",
+    "Scottish Socialist Party wins six list seats",
+    "Turnout falls to 49% — down from 58% in 1999",
+    "Dennis Canavan retains Falkirk West as an independent"
+  ],
+  "parliament": {
+    "totalSeats": 129,
+    "constituencySeats": 73,
+    "listSeats": 56,
+    "majorityThreshold": 65,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "scottishlab",
+        "constituencySeats": 46,
+        "listSeats": 4,
+        "seats": 50,
+        "constituencyPct": 34.5,
+        "listPct": 29.4
+      },
+      {
+        "party": "snp",
+        "constituencySeats": 9,
+        "listSeats": 18,
+        "seats": 27,
+        "constituencyPct": 23.7,
+        "listPct": 20.9
+      },
+      {
+        "party": "scottishcon",
+        "constituencySeats": 3,
+        "listSeats": 15,
+        "seats": 18,
+        "constituencyPct": 16.6,
+        "listPct": 15.6
+      },
+      {
+        "party": "scottishlibdem",
+        "constituencySeats": 13,
+        "listSeats": 4,
+        "seats": 17,
+        "constituencyPct": 15.3,
+        "listPct": 11.8
+      },
+      {
+        "party": "scottishgrn",
+        "constituencySeats": 0,
+        "listSeats": 7,
+        "seats": 7,
+        "listPct": 6.9
+      },
+      {
+        "party": "ssp",
+        "constituencySeats": 0,
+        "listSeats": 6,
+        "seats": 6,
+        "listPct": 6.7
+      },
+      {
+        "partyLabel": "Others",
+        "constituencySeats": 2,
+        "listSeats": 2,
+        "seats": 4,
+        "listPct": 4.6
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2003 Scottish Parliament election (RP03-46)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp03-46/"
+    }
+  ],
+  "body": "holyrood",
+  "manifestos": [
+    {
+      "title": "Scottish Conservative Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/scottishcon/cover.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Greens Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/scottishgrn/cover.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "Scottish Labour Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/scottishlab/cover.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "BNP Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/bnp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/bnp/cover.png",
+      "party": "bnp"
+    },
+    {
+      "title": "Liberal Democrats Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/scottishlibdem/cover.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "SNP Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/snp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/snp/cover.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Socialist Party Manifesto 2003",
+      "pdf": "/manifestos/holyrood/2003/ssp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2003/ssp/cover.png",
+      "party": "ssp"
+    }
+  ]
+}

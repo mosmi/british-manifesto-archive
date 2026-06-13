@@ -1,0 +1,163 @@
+{
+  "id": "2021",
+  "year": 2021,
+  "displayYear": "2021",
+  "date": "6 May 2021",
+  "title": "2021 Scottish Parliament election",
+  "turnout": 63.5,
+  "control": "snp",
+  "firstMinister": "Nicola Sturgeon",
+  "majority": false,
+  "summary": "The SNP won 64 seats — one more than in 2016 — but again fell one seat short of an overall majority. The Conservatives held 31 seats; Labour won 22. The Scottish Greens achieved their best result with eight MSPs and later entered a formal co-operation agreement with the SNP government. Alba and All for Unity contested the election on rival constitutional platforms but won no seats. Turnout reached 63.5%, the highest in Holyrood history.",
+  "highlights": [
+    "SNP wins 64 seats — one short of a majority",
+    "Scottish Greens win eight MSPs — their best Holyrood result",
+    "SNP–Green co-operation agreement formed after the election",
+    "Alba Party and All for Unity contest election but win no seats",
+    "Record turnout of 63.5% on the regional ballot"
+  ],
+  "parliament": {
+    "totalSeats": 129,
+    "constituencySeats": 73,
+    "listSeats": 56,
+    "majorityThreshold": 65,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "snp",
+        "constituencySeats": 62,
+        "listSeats": 2,
+        "seats": 64,
+        "constituencyPct": 47.7,
+        "listPct": 43.5
+      },
+      {
+        "party": "scottishcon",
+        "constituencySeats": 5,
+        "listSeats": 26,
+        "seats": 31,
+        "constituencyPct": 22.5,
+        "listPct": 22.7
+      },
+      {
+        "party": "scottishlab",
+        "constituencySeats": 2,
+        "listSeats": 20,
+        "seats": 22,
+        "constituencyPct": 20.8,
+        "listPct": 19.7
+      },
+      {
+        "party": "scottishlibdem",
+        "constituencySeats": 4,
+        "listSeats": 0,
+        "seats": 4,
+        "constituencyPct": 6.5,
+        "listPct": 6.0
+      },
+      {
+        "party": "scottishgrn",
+        "constituencySeats": 0,
+        "listSeats": 8,
+        "seats": 8,
+        "constituencyPct": 3.6,
+        "listPct": 4.7
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Alba Party",
+        "votes": 17932,
+        "pct": 0.8
+      },
+      {
+        "name": "All for Unity",
+        "votes": 17932,
+        "pct": 0.8
+      },
+      {
+        "name": "Independence for Scotland Party",
+        "pct": 0.6
+      },
+      {
+        "name": "Scottish Family Party",
+        "pct": 0.5
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2021 Scottish Parliament election (CBP-9230)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9230/"
+    }
+  ],
+  "body": "holyrood",
+  "manifestos": [
+    {
+      "title": "Independence for Scotland Party Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/isp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/isp/cover.png",
+      "party": "isp"
+    },
+    {
+      "title": "SNP Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/snp/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/snp/cover.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Greens Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishgrn/cover.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "Alba Party Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/alba/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/alba/cover.png",
+      "party": "alba"
+    },
+    {
+      "title": "All for Unity Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/allforunity/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/allforunity/cover.png",
+      "party": "allforunity"
+    },
+    {
+      "title": "Scottish Conservatives Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishcon/cover.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Family Party Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishfamily/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishfamily/cover.png",
+      "party": "scottishfamily"
+    },
+    {
+      "title": "Scottish Labour Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishlab/cover.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "Scottish Liberal Democrats Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishlibdem/cover.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "Scottish Libertarian Party Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/scottishlibertarian/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/scottishlibertarian/cover.png",
+      "party": "scottishlibertarian"
+    },
+    {
+      "title": "UKIP Scotland Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/ukip/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/ukip/cover.png",
+      "party": "ukip"
+    }
+  ]
+}

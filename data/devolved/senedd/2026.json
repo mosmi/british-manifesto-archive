@@ -1,0 +1,159 @@
+{
+  "id": "2026",
+  "year": 2026,
+  "displayYear": "2026",
+  "date": "7 May 2026",
+  "title": "2026 Senedd Cymru election",
+  "turnout": 51.6,
+  "control": "plaid",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "The 2026 election was the first under a reformed Senedd of 96 members elected by closed-list proportional representation across 16 six-member constituencies. Plaid Cymru became the largest party for the first time with 43 seats, ending Labour's quarter-century as the leading party. Reform UK entered the Senedd with 34 seats on its first contest. Labour collapsed from 30 to nine seats.",
+  "highlights": [
+    "First election under closed-list PR with 96 Members",
+    "Plaid Cymru largest party for the first time — 43 seats",
+    "Reform UK wins 34 seats on its first Senedd contest",
+    "Labour falls from 30 to nine seats",
+    "Turnout 51.6% — highest since devolution"
+  ],
+  "parliament": {
+    "system": "Closed list proportional representation",
+    "totalSeats": 96,
+    "majorityThreshold": 49,
+    "results": [
+      {
+        "party": "plaid",
+        "seats": 43,
+        "votes": 444665,
+        "pct": 35.4
+      },
+      {
+        "party": "reform",
+        "seats": 34,
+        "votes": 367985,
+        "pct": 29.3
+      },
+      {
+        "party": "welshlab",
+        "seats": 9,
+        "votes": 139203,
+        "pct": 11.1
+      },
+      {
+        "party": "welshcon",
+        "seats": 7,
+        "votes": 134926,
+        "pct": 10.7
+      },
+      {
+        "party": "walesgrn",
+        "seats": 2,
+        "votes": 84608,
+        "pct": 6.7
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 1,
+        "votes": 56012,
+        "pct": 4.5
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Independent",
+        "votes": 14063,
+        "pct": 1.1
+      },
+      {
+        "name": "Heritage Party",
+        "votes": 5474,
+        "pct": 0.4
+      },
+      {
+        "name": "Propel",
+        "votes": 4032,
+        "pct": 0.3
+      },
+      {
+        "name": "Gwlad",
+        "votes": 2479,
+        "pct": 0.2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "BBC News — Wales election results 2026",
+      "url": "https://www.bbc.com/news/election/2026/wales/results"
+    }
+  ],
+  "body": "senedd",
+  "manifestos": [
+    {
+      "title": "Plaid Cymru Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/plaid/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/plaid/cover.png",
+      "party": "plaid"
+    },
+    {
+      "title": "Reform UK Wales Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/reform/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/reform/cover.png",
+      "party": "reform"
+    },
+    {
+      "title": "Welsh Labour Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/welshlab/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/welshlab/cover.png",
+      "party": "welshlab"
+    },
+    {
+      "title": "Welsh Conservatives Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/welshcon/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/welshcon/cover.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Wales Green Party Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/walesgrn/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/walesgrn/cover.png",
+      "party": "walesgrn"
+    },
+    {
+      "title": "Welsh Liberal Democrats Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/welshlibdem/cover.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Gwlad Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/gwlad/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/gwlad/cover.png",
+      "party": "gwlad"
+    },
+    {
+      "title": "Propel Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/propel/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/propel/cover.png",
+      "party": "propel"
+    },
+    {
+      "title": "Heritage Party Wales Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/heritage/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/heritage/cover.png",
+      "party": "heritage"
+    },
+    {
+      "title": "Communist Party of Britain Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/communist/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/communist/cover.png",
+      "party": "communist"
+    },
+    {
+      "title": "Welsh TUSC Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/tusc/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/tusc/cover.png",
+      "party": "tusc"
+    }
+  ]
+}

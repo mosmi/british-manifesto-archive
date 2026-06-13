@@ -83,6 +83,34 @@ const PARTIES = {
     nation: 'wales',
     description: 'The Wales Green Party is part of the Green Party of England and Wales, contesting elections across Wales.',
   },
+  gwlad: {
+    id: 'gwlad', name: 'Gwlad', shortName: 'Gwlad',
+    color: '#1B4D3E', dim: 'rgba(27,77,62,0.14)',
+    founded: 2018, spectrum: 'Centre / Welsh nationalist', isPrimary: false,
+    nation: 'wales',
+    description: 'Gwlad is a Welsh nationalist party advocating independence and economic reform. It has contested Senedd elections since 2021.',
+  },
+  propel: {
+    id: 'propel', name: 'Propel', shortName: 'Propel',
+    color: '#5B2C6F', dim: 'rgba(91,44,111,0.14)',
+    founded: 2020, spectrum: 'Centre / Welsh nationalist', isPrimary: false,
+    nation: 'wales',
+    description: 'Propel is a Welsh nationalist party that contested Senedd elections in 2021 and 2026.',
+  },
+  abolish: {
+    id: 'abolish', name: 'Abolish the Welsh Assembly Party', shortName: 'Abolish',
+    color: '#B91C1C', dim: 'rgba(185,28,28,0.14)',
+    founded: 2020, spectrum: 'Right / Anti-devolution', isPrimary: false,
+    nation: 'wales',
+    description: 'The Abolish the Welsh Assembly Party campaigned to abolish the Senedd. It contested the 2021 election.',
+  },
+  heritage: {
+    id: 'heritage', name: 'Heritage Party', shortName: 'Heritage',
+    color: '#7C2D12', dim: 'rgba(124,45,18,0.14)',
+    founded: 2020, spectrum: 'Right / Social conservative', isPrimary: false,
+    nation: 'wales',
+    description: 'The Heritage Party contested the 2026 Senedd election on a socially conservative platform.',
+  },
 
   /* ── Scotland ────────────────────────────────────────────── */
   snp: {
@@ -599,12 +627,13 @@ const NATIONS = {
       'In 2003, an equal number of male and female Members were elected to the Assembly',
     ],
     seneddResults: [
-      { year: 1999, lab: 28, pc: 17, con: 9, ld: 6, others: 0 },
-      { year: 2003, lab: 30, pc: 12, con: 11, ld: 6, others: 1 },
-      { year: 2007, lab: 26, pc: 15, con: 12, ld: 6, others: 1 },
-      { year: 2011, lab: 30, pc: 11, con: 14, ld: 5, others: 0 },
-      { year: 2016, lab: 29, pc: 12, con: 11, ld: 1, ukip: 7, others: 0 },
-      { year: 2021, lab: 30, pc: 13, con: 16, ld: 1, others: 0 },
+      { year: 1999, lab: 28, pc: 17, con: 9, ld: 6, reform: 0, others: 0 },
+      { year: 2003, lab: 30, pc: 12, con: 11, ld: 6, reform: 0, others: 1 },
+      { year: 2007, lab: 26, pc: 15, con: 12, ld: 6, reform: 0, others: 1 },
+      { year: 2011, lab: 30, pc: 11, con: 14, ld: 5, reform: 0, others: 0 },
+      { year: 2016, lab: 29, pc: 12, con: 11, ld: 1, ukip: 7, reform: 0, others: 0 },
+      { year: 2021, lab: 30, pc: 13, con: 16, ld: 1, reform: 0, others: 0 },
+      { year: 2026, lab: 9, pc: 43, con: 7, ld: 1, grn: 2, reform: 34, others: 0 },
     ],
     westminsterResults: [
       { year: '1918',     con:  4, lab:  9, ld: 20, pc: 0, other: 2, total: 35 },
@@ -1587,6 +1616,11 @@ const HOLYROOD_OTHER_PARTIES = [
   'communist', 'cooperative', 'wep', 'workersparty',
 ];
 
+const SENEDD_OTHER_PARTIES = [
+  'ukip', 'gwlad', 'propel', 'abolish', 'heritage', 'communist', 'tusc',
+  'cooperative', 'bnp', 'respect', 'omrlp',
+];
+
 const DEVOLVED_PORTALS = {
   holyrood: {
     id: 'holyrood',
@@ -1606,9 +1640,9 @@ const DEVOLVED_PORTALS = {
     nation: 'wales',
     body: 'Senedd Cymru',
     established: 1999,
-    members: 60,
-    system: 'Additional Member System',
-    description: 'The Senedd Cymru — Welsh Parliament — was established in 1999 after a referendum passed by just 6,721 votes. It elects 60 Members and holds legislative powers over devolved Welsh affairs.',
+    members: 96,
+    system: 'Closed list PR (from 2026); AMS (1999–2021)',
+    description: 'The Senedd Cymru — Welsh Parliament — was established in 1999 after a referendum passed by just 6,721 votes. From 2026 it has 96 Members elected by closed-list proportional representation; previously 60 Members were elected under the Additional Member System.',
   },
   stormont: {
     id: 'stormont',

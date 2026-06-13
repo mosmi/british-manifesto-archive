@@ -54,6 +54,13 @@ def main() -> None:
         else []
     )
 
+    senedd_index_path = ROOT / "data/devolved/senedd/index.json"
+    senedd_ids = (
+        [e["id"] for e in json.loads(senedd_index_path.read_text(encoding="utf-8"))]
+        if senedd_index_path.exists()
+        else []
+    )
+
     urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
     urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
@@ -62,6 +69,8 @@ def main() -> None:
     urls.extend(f"/devolved/london/{lid}" for lid in london_ids)
     urls.extend(f"/devolved/holyrood/{hid}" for hid in holyrood_ids)
     urls.append("/devolved/holyrood/other-parties")
+    urls.extend(f"/devolved/senedd/{sid}" for sid in senedd_ids)
+    urls.append("/devolved/senedd/other-parties")
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )

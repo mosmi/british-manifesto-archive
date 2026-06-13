@@ -162,8 +162,8 @@ async function renderHolyroodElection(app, id) {
     ? `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>${fm} — First Minister${majorityNote}</div>`
     : '';
 
-  const turnoutBadge = typeof election.turnout === 'number'
-    ? `<div class="election-meta-chip">Turnout ${election.turnout.toFixed(1)}%</div>` : '';
+  const turnoutLine = typeof election.turnout === 'number'
+    ? `<div class="election-date">Turnout ${election.turnout.toFixed(1)}%</div>` : '';
 
   const manifestosSection = (election.manifestos || []).length
     ? `<div class="manifestos-section">
@@ -196,8 +196,8 @@ async function renderHolyroodElection(app, id) {
           <div class="election-eyebrow">Scottish Parliament</div>
           <h1 class="election-title">${election.displayYear}</h1>
           <div class="election-date">${election.date}</div>
+          ${turnoutLine}
           ${winnerBadge}
-          ${turnoutBadge}
         </div>
         <div class="election-nav-btns">
           ${prev ? `<a class="election-nav-btn" href="/devolved/holyrood/${prev.id}">← ${prev.displayYear}</a>` : ''}
@@ -337,7 +337,9 @@ function renderHolyroodOtherParties(app) {
       <span class="section-label">Holyrood</span>
       <h1>Other Scottish Parties</h1>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);margin-bottom:1.5rem">Parties that have contested Scottish Parliament elections but are not among the principal groups on the Holyrood portal. Many appear only on the regional list under AMS. For parties that have won Westminster seats, see also <a href="/others">Other Parties</a>.</p>
+      <p style="color:var(--text-muted);margin-bottom:1rem">Parties that have contested Scottish Parliament elections but are not among the principal groups on the Holyrood portal. Many appear only on the regional list under AMS.</p>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have won Westminster seats:</p>
+      <a href="/others" class="cross-archive-link">Other Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;

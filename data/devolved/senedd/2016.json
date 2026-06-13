@@ -1,0 +1,124 @@
+{
+  "id": "2016",
+  "year": 2016,
+  "displayYear": "2016",
+  "date": "5 May 2016",
+  "title": "2016 National Assembly for Wales election",
+  "turnout": 45.4,
+  "control": "welshlab",
+  "firstMinister": "Carwyn Jones",
+  "majority": false,
+  "summary": "Labour remained the largest party with 29 seats but fell one short of a majority. UKIP entered the Assembly for the first time with seven regional AMs. Plaid Cymru overtook the Conservatives as the second-largest party. The Liberal Democrats collapsed from five seats to one.",
+  "highlights": [
+    "Labour wins 29 seats — one short of a majority",
+    "UKIP wins seven regional seats on its first Senedd contest",
+    "Plaid Cymru becomes second-largest party with 12 seats",
+    "Liberal Democrats fall from five seats to one",
+    "Turnout rises to 45.4%"
+  ],
+  "parliament": {
+    "totalSeats": 60,
+    "constituencySeats": 40,
+    "listSeats": 20,
+    "majorityThreshold": 31,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "welshlab",
+        "constituencySeats": 27,
+        "listSeats": 2,
+        "seats": 29,
+        "constituencyPct": 34.7,
+        "listPct": 31.5
+      },
+      {
+        "party": "plaid",
+        "constituencySeats": 6,
+        "listSeats": 6,
+        "seats": 12,
+        "constituencyPct": 20.5,
+        "listPct": 20.8
+      },
+      {
+        "party": "welshcon",
+        "constituencySeats": 6,
+        "listSeats": 5,
+        "seats": 11,
+        "constituencyPct": 21.1,
+        "listPct": 18.8
+      },
+      {
+        "party": "ukip",
+        "constituencySeats": 0,
+        "listSeats": 7,
+        "seats": 7,
+        "listPct": 12.7
+      },
+      {
+        "party": "welshlibdem",
+        "constituencySeats": 1,
+        "listSeats": 0,
+        "seats": 1,
+        "constituencyPct": 7.1,
+        "listPct": 7.1
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Wales Green Party",
+        "pct": 2.7
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2016 Welsh Assembly election (CBP-7594)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7594/"
+    }
+  ],
+  "body": "senedd",
+  "manifestos": [
+    {
+      "title": "Welsh Labour Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/welshlab/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/welshlab/cover.png",
+      "party": "welshlab"
+    },
+    {
+      "title": "Welsh Conservatives Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/welshcon/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/welshcon/cover.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Welsh Liberal Democrats Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/welshlibdem/cover.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Plaid Cymru Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/plaid/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/plaid/cover.png",
+      "party": "plaid"
+    },
+    {
+      "title": "Wales Green Party Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/walesgrn/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/walesgrn/cover.png",
+      "party": "walesgrn"
+    },
+    {
+      "title": "UKIP Wales Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/ukip/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/ukip/cover.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Welsh Co-operative Party Manifesto 2016",
+      "pdf": "/manifestos/senedd/2016/cooperative/manifesto.pdf",
+      "cover": "/manifestos/senedd/2016/cooperative/cover.png",
+      "party": "cooperative"
+    }
+  ]
+}

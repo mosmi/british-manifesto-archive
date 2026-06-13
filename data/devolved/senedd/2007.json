@@ -1,0 +1,105 @@
+{
+  "id": "2007",
+  "year": 2007,
+  "displayYear": "2007",
+  "date": "3 May 2007",
+  "title": "2007 National Assembly for Wales election",
+  "turnout": 43.5,
+  "control": "welshlab",
+  "firstMinister": "Rhodri Morgan",
+  "majority": false,
+  "summary": "Labour remained the largest party with 26 seats but fell four short of 2003. After weeks of negotiation, Rhodri Morgan formed a coalition with Plaid Cymru — the One Wales agreement. The Conservatives gained a seat to 12; Plaid Cymru rose to 15.",
+  "highlights": [
+    "Labour wins 26 seats — down four from 2003",
+    "Labour–Plaid Cymru coalition formed under the One Wales agreement",
+    "Plaid Cymru gains three seats to 15",
+    "Mohammad Asghar becomes first minority ethnic AM (Plaid Cymru, regional list)",
+    "Turnout rises to 43.5%"
+  ],
+  "parliament": {
+    "totalSeats": 60,
+    "constituencySeats": 40,
+    "listSeats": 20,
+    "majorityThreshold": 31,
+    "system": "Additional Member System",
+    "results": [
+      {
+        "party": "welshlab",
+        "constituencySeats": 24,
+        "listSeats": 2,
+        "seats": 26,
+        "constituencyPct": 32.2,
+        "listPct": 29.6
+      },
+      {
+        "party": "plaid",
+        "constituencySeats": 7,
+        "listSeats": 8,
+        "seats": 15,
+        "constituencyPct": 22.4,
+        "listPct": 21.0
+      },
+      {
+        "party": "welshcon",
+        "constituencySeats": 5,
+        "listSeats": 7,
+        "seats": 12,
+        "constituencyPct": 22.4,
+        "listPct": 21.5
+      },
+      {
+        "party": "welshlibdem",
+        "constituencySeats": 3,
+        "listSeats": 3,
+        "seats": 6,
+        "constituencyPct": 14.8,
+        "listPct": 11.7
+      },
+      {
+        "partyLabel": "Others",
+        "constituencySeats": 1,
+        "listSeats": 0,
+        "seats": 1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2007 Welsh Assembly election (RP07-45)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp07-45/"
+    }
+  ],
+  "body": "senedd",
+  "manifestos": [
+    {
+      "title": "Welsh Labour Manifesto 2007",
+      "pdf": "/manifestos/senedd/2007/welshlab/manifesto.pdf",
+      "cover": "/manifestos/senedd/2007/welshlab/cover.png",
+      "party": "welshlab"
+    },
+    {
+      "title": "Welsh Conservative Manifesto 2007",
+      "pdf": "/manifestos/senedd/2007/welshcon/manifesto.pdf",
+      "cover": "/manifestos/senedd/2007/welshcon/cover.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Welsh Liberal Democrats Manifesto 2007",
+      "pdf": "/manifestos/senedd/2007/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/senedd/2007/welshlibdem/cover.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Plaid Cymru Manifesto 2007",
+      "pdf": "/manifestos/senedd/2007/plaid/manifesto.pdf",
+      "cover": "/manifestos/senedd/2007/plaid/cover.png",
+      "party": "plaid"
+    },
+    {
+      "title": "UKIP Wales Manifesto 2007",
+      "pdf": "/manifestos/senedd/2007/ukip/manifesto.pdf",
+      "cover": "/manifestos/senedd/2007/ukip/cover.png",
+      "party": "ukip"
+    }
+  ]
+}
