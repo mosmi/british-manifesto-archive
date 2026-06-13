@@ -18,11 +18,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = Path(__file__).resolve().parent / "senedd-assets.json"
 DEST_ROOT = ROOT / "manifestos" / "senedd"
 MAX_BYTES = 24 * 1024 * 1024
 COVER_WIDTH = 640
+PORTRAIT_H = round(COVER_WIDTH * 297 / 210)
+LANDSCAPE_H = round(COVER_WIDTH * 210 / 297)
 
 
 def preprocess_pdf(src: Path, dest: Path, opts: dict) -> None:
@@ -45,142 +49,191 @@ def preprocess_pdf(src: Path, dest: Path, opts: dict) -> None:
     subprocess.run(gs_args, check=True)
 
 
+def _is_dark(rgb: tuple[int, int, int], threshold: int = 240) -> bool:
+    return all(c < threshold for c in rgb)
+
+
+def crop_to_trim_marks(
+    img: Image.Image,
+    *,
+    threshold: int = 240,
+    margin: float = 0.05,
+    inset_frac: float = 0.015,
+) -> Image.Image:
+    """Crop to the trim box inside printer crop marks."""
+    img = img.convert("RGB")
+    w, h = img.size
+    px = img.load()
+    x0, x1 = int(w * margin), int(w * (1 - margin))
+    y0, y1 = int(h * margin), int(h * (1 - margin))
+    left_band = int(w * 0.25)
+    right_band = w - left_band
+
+    def is_dark(x: int, y: int) -> bool:
+        return _is_dark(px[x, y], threshold)
+
+    def row_center(y: int) -> float:
+        return sum(is_dark(x, y) for x in range(x0, x1)) / (x1 - x0)
+
+    def row_full(y: int) -> float:
+        return sum(is_dark(x, y) for x in range(w)) / w
+
+    def row_sides(y: int) -> tuple[float, float]:
+        left = sum(is_dark(x, y) for x in range(left_band)) / left_band
+        right = sum(is_dark(x, y) for x in range(right_band, w)) / (w - right_band)
+        return left, right
+
+    def col_center(x: int) -> float:
+        return sum(is_dark(x, y) for y in range(y0, y1)) / (y1 - y0)
+
+    top = next((y for y in range(h) if row_center(y) >= 0.05), 0)
+    bottom = 0
+    for y in range(h - 1, -1, -1):
+        full = row_full(y)
+        left, right = row_sides(y)
+        if full >= 0.1 or (full >= 0.15 and (left >= 0.1 or right >= 0.1)):
+            bottom = y + 1
+            break
+    else:
+        bottom = h
+
+    left = next((x for x in range(w) if col_center(x) >= 0.05), 0)
+    right = next((x + 1 for x in range(w - 1, -1, -1) if col_center(x) >= 0.05), w)
+
+    inset = max(2, int(min(right - left, bottom - top) * inset_frac))
+    bottom_inset = max(1, inset // 4)
+    left += inset
+    top += inset
+    right -= inset
+    bottom -= bottom_inset
+    if right <= left or bottom <= top:
+        return img
+    return img.crop((left, top, right, bottom))
+
+
+def fit_portrait(img: Image.Image) -> Image.Image:
+    img = img.copy().convert("RGBA")
+    img.thumbnail((COVER_WIDTH, PORTRAIT_H), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGBA", (COVER_WIDTH, PORTRAIT_H), (0, 0, 0, 0))
+    canvas.paste(img, ((COVER_WIDTH - img.width) // 2, (PORTRAIT_H - img.height) // 2))
+    return canvas
+
+
+def fit_landscape(img: Image.Image) -> Image.Image:
+    img = img.copy().convert("RGBA")
+    img.thumbnail((COVER_WIDTH, LANDSCAPE_H), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGBA", (COVER_WIDTH, PORTRAIT_H), (0, 0, 0, 0))
+    canvas.paste(img, ((COVER_WIDTH - img.width) // 2, (PORTRAIT_H - img.height) // 2))
+    return canvas
+
+
+def fit_contain(img: Image.Image) -> Image.Image:
+    return fit_portrait(img)
+
+
+def find_spread_right_panel_left(img: Image.Image, start_frac: float = 0.5) -> int:
+    """Locate the left edge of the right-hand cover on a printer spread."""
+    rgb = img.convert("RGB")
+    w, h = rgb.size
+    px = rgb.load()
+    mid = int(w * start_frac)
+    top_band = int(h * 0.45)
+
+    for x in range(mid, w):
+        dark = sum(_is_dark(px[x, y]) for y in range(top_band)) / top_band
+        if dark >= 0.15:
+            return x
+
+    in_spine = False
+    spine_end = mid
+    for x in range(mid, w):
+        r, g, b = px[x, h // 2]
+        if r > 200 and g < 80 and b < 120:
+            in_spine = True
+            spine_end = x
+        elif in_spine:
+            return x
+    if in_spine:
+        return min(spine_end + 8, w - 1)
+    return mid
+
+
+def postprocess_cover(src_png: Path, out_png: Path, mode: str) -> None:
+    img = Image.open(src_png)
+
+    if mode == "cropmarks":
+        result = fit_portrait(crop_to_trim_marks(img, inset_frac=0.022))
+    elif mode == "cropmarks-landscape":
+        result = fit_landscape(crop_to_trim_marks(img, inset_frac=0.035))
+    elif mode == "spread-right-cropmarks":
+        left = find_spread_right_panel_left(img)
+        panel = img.crop((left, 0, img.width, img.height))
+        result = fit_portrait(crop_to_trim_marks(panel, inset_frac=0.022))
+    elif mode == "spread-two-thirds-cropmarks":
+        third = img.width // 3
+        panel = img.crop((third, 0, img.width, img.height))
+        result = fit_portrait(crop_to_trim_marks(panel, inset_frac=0.022))
+    elif mode == "spread-right":
+        half_w = img.width // 2
+        panel = img.crop((half_w, 0, img.width, img.height))
+        panel = panel.resize((COVER_WIDTH, PORTRAIT_H), Image.Resampling.LANCZOS)
+        result = panel.convert("RGBA")
+    elif mode == "spread-left":
+        half_w = img.width // 2
+        panel = img.crop((0, 0, half_w, img.height))
+        panel = panel.resize((COVER_WIDTH, PORTRAIT_H), Image.Resampling.LANCZOS)
+        result = panel.convert("RGBA")
+    elif mode == "landscape":
+        result = fit_landscape(img)
+    elif mode == "contain":
+        result = fit_contain(img)
+    elif mode == "top-a4":
+        result = img.crop((0, 0, min(img.width, COVER_WIDTH), min(img.height, PORTRAIT_H)))
+        result = fit_portrait(result)
+    else:
+        panel = img.resize((COVER_WIDTH, PORTRAIT_H), Image.Resampling.LANCZOS)
+        result = panel.convert("RGBA")
+
+    result.save(out_png)
+
+
 def make_cover(pdf: Path, out_png: Path, mode: str = "page") -> None:
     """Render a cover thumbnail from page 1 of *pdf*.
 
-    mode="page"           : full first page, scaled to COVER_WIDTH (default).
-    mode="top-a4"         : top slice cropped to A4 portrait proportions.
-    mode="landscape"      : landscape page letterboxed on portrait A4 canvas.
-    mode="contain"        : any aspect ratio fitted inside portrait A4 canvas.
-    mode="spread-right"   : two-up spread; keep the right-hand page as the cover.
-    mode="spread-left"    : two-up spread; keep the left-hand page as the cover.
-    mode="spread-right-trim" : right-hand cover from a spread, then trim crop marks.
-    mode="spread-left-trim"  : left-hand cover from a spread, then trim crop marks.
-    mode="trifold-right"  : printer cover spread; keep the right third (English cover).
-    mode="trim-landscape" : crop to printer trim marks, then letterbox as landscape.
-    mode="trim"           : crop to printer trim marks, then fit on portrait A4 canvas.
+    mode="page"                       : full first page, scaled to COVER_WIDTH.
+    mode="top-a4"                     : top slice cropped to A4 portrait proportions.
+    mode="landscape"                  : landscape page letterboxed on portrait canvas.
+    mode="contain"                    : any aspect ratio fitted inside portrait canvas.
+    mode="spread-right"               : two-up spread; keep the right-hand page.
+    mode="spread-left"                : two-up spread; keep the left-hand page.
+    mode="spread-right-cropmarks"     : right-hand cover from a spread, cropped to trim marks.
+    mode="spread-two-thirds-cropmarks": printer cover spread; keep right two-thirds.
+    mode="cropmarks-landscape"        : crop to printer trim marks, then letterbox landscape.
+    mode="cropmarks"                  : crop to printer trim marks, then fit portrait canvas.
     """
     tmp = out_png.with_suffix("")
-    is_spread = mode in ("spread-right", "spread-left", "spread-left-trim", "spread-right-trim", "trifold-right")
-    render_w = COVER_WIDTH * 2 if is_spread else COVER_WIDTH
-    subprocess.run(
-        ["pdftoppm", "-png", "-f", "1", "-l", "1",
-         "-scale-to-x", str(render_w), "-scale-to-y", "-1", str(pdf), str(tmp)],
-        check=True,
+    spread_modes = {
+        "spread-right",
+        "spread-left",
+        "spread-right-cropmarks",
+        "spread-two-thirds-cropmarks",
+    }
+    landscape_modes = {"landscape", "cropmarks-landscape"}
+    render_w = COVER_WIDTH * 3 if mode == "spread-two-thirds-cropmarks" else (
+        COVER_WIDTH * 2 if mode in spread_modes else COVER_WIDTH
     )
+    ppm_args = ["pdftoppm", "-png", "-f", "1", "-l", "1"]
+    if mode in landscape_modes:
+        ppm_args.extend(["-scale-to-y", str(COVER_WIDTH), "-scale-to-x", "-1"])
+    else:
+        ppm_args.extend(["-scale-to-x", str(render_w), "-scale-to-y", "-1"])
+    ppm_args.extend([str(pdf), str(tmp)])
+    subprocess.run(ppm_args, check=True)
     produced = sorted(out_png.parent.glob(out_png.stem + "-*.png"))
     if not produced:
         return
     produced[0].replace(out_png)
-    portrait_h = round(COVER_WIDTH * 297 / 210)
-
-    if mode == "spread-right":
-        info = subprocess.run(
-            ["magick", "identify", "-format", "%w %h", str(out_png)],
-            check=True, capture_output=True, text=True,
-        )
-        w, h = map(int, info.stdout.split())
-        half_w = w // 2
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{half_w}x{h}+{half_w}+0",
-             "+repage", "-resize", f"{COVER_WIDTH}x", str(out_png)],
-            check=True,
-        )
-    elif mode == "spread-left":
-        info = subprocess.run(
-            ["magick", "identify", "-format", "%w %h", str(out_png)],
-            check=True, capture_output=True, text=True,
-        )
-        w, h = map(int, info.stdout.split())
-        half_w = w // 2
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{half_w}x{h}+0+0",
-             "+repage", "-resize", f"{COVER_WIDTH}x", str(out_png)],
-            check=True,
-        )
-    elif mode == "spread-right-trim":
-        info = subprocess.run(
-            ["magick", "identify", "-format", "%w %h", str(out_png)],
-            check=True, capture_output=True, text=True,
-        )
-        w, h = map(int, info.stdout.split())
-        half_w = w // 2
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{half_w}x{h}+{half_w}+0", "+repage",
-             "-fuzz", "2%", "-trim", "+repage",
-             "-resize", f"{COVER_WIDTH}x{portrait_h}",
-             "-background", "none", "-gravity", "center",
-             "-extent", f"{COVER_WIDTH}x{portrait_h}", str(out_png)],
-            check=True,
-        )
-    elif mode == "spread-left-trim":
-        info = subprocess.run(
-            ["magick", "identify", "-format", "%w %h", str(out_png)],
-            check=True, capture_output=True, text=True,
-        )
-        w, h = map(int, info.stdout.split())
-        half_w = w // 2
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{half_w}x{h}+0+0", "+repage",
-             "-fuzz", "2%", "-trim", "+repage",
-             "-resize", f"{COVER_WIDTH}x{portrait_h}",
-             "-background", "none", "-gravity", "center",
-             "-extent", f"{COVER_WIDTH}x{portrait_h}", str(out_png)],
-            check=True,
-        )
-    elif mode == "trifold-right":
-        info = subprocess.run(
-            ["magick", "identify", "-format", "%w %h", str(out_png)],
-            check=True, capture_output=True, text=True,
-        )
-        w, h = map(int, info.stdout.split())
-        third_w = w // 3
-        crop_x = w - third_w
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{third_w}x{h}+{crop_x}+0",
-             "+repage", "-resize", f"{COVER_WIDTH}x{portrait_h}",
-             "-background", "none", "-gravity", "center",
-             "-extent", f"{COVER_WIDTH}x{portrait_h}", str(out_png)],
-            check=True,
-        )
-    elif mode == "trim-landscape":
-        subprocess.run(
-            ["magick", str(out_png), "-fuzz", "2%", "-trim", "+repage",
-             "-resize", f"{COVER_WIDTH}x", str(out_png)],
-            check=True,
-        )
-        subprocess.run(
-            ["magick", "-size", f"{COVER_WIDTH}x{portrait_h}", "xc:none",
-             str(out_png), "-gravity", "center", "-composite", str(out_png)],
-            check=True,
-        )
-    elif mode == "trim":
-        subprocess.run(
-            ["magick", str(out_png), "-fuzz", "2%", "-trim", "+repage",
-             "-resize", f"{COVER_WIDTH}x{portrait_h}",
-             "-background", "none", "-gravity", "center",
-             "-extent", f"{COVER_WIDTH}x{portrait_h}", str(out_png)],
-            check=True,
-        )
-    elif mode == "top-a4":
-        subprocess.run(
-            ["magick", str(out_png), "-crop", f"{COVER_WIDTH}x{portrait_h}+0+0",
-             "+repage", str(out_png)],
-            check=True,
-        )
-    elif mode == "landscape":
-        subprocess.run(
-            ["magick", "-size", f"{COVER_WIDTH}x{portrait_h}", "xc:none",
-             str(out_png), "-gravity", "center", "-composite", str(out_png)],
-            check=True,
-        )
-    elif mode == "contain":
-        subprocess.run(
-            ["magick", str(out_png), "-resize", f"{COVER_WIDTH}x{portrait_h}",
-             "-background", "none", "-gravity", "center",
-             "-extent", f"{COVER_WIDTH}x{portrait_h}", str(out_png)],
-            check=True,
-        )
+    postprocess_cover(out_png, out_png, mode)
 
 
 def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page",

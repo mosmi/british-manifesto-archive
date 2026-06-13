@@ -493,7 +493,7 @@ const PARTIES = {
     color: '#780021', dim: 'rgba(120,0,33,0.14)',
     founded: 2019, spectrum: 'Left / Populist', isPrimary: false,
     nation: 'others',
-    description: 'The Workers Party of Britain was founded by George Galloway, previously of Respect and UKIP. Galloway won the Rochdale by-election in February 2024 but lost his seat in the general election five months later. The party ran candidates across the country on a socially conservative, anti-war platform.',
+    description: 'The Workers Party of Britain was founded by George Galloway, previously of Respect and the Labour Party. Galloway won the Rochdale by-election in February 2024 but lost his seat in the general election five months later. The party ran candidates across the country on a socially conservative, anti-war platform.',
   },
   restorebrit: {
     id: 'restorebrit', name: 'Restore Britain', shortName: 'Restore Britain',
