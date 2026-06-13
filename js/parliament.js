@@ -173,3 +173,18 @@ function buildParliamentLegend(legendEl, results, year) {
     legendEl.appendChild(item);
   });
 }
+
+/**
+ * Render supplementary / ancillary document links below an election summary.
+ * @param {Array<{title: string, pdf: string}>} docs
+ */
+function renderSupplementaryDocuments(docs) {
+  if (!docs?.length) return '';
+  const buttons = docs.map(d =>
+    `<a class="supplementary-doc-btn" href="${d.pdf}" target="_blank" rel="noopener">${d.title}</a>`
+  ).join('');
+  return `<div class="supplementary-documents">
+    <span class="section-label">Supplementary Documents</span>
+    <div class="supplementary-doc-list">${buttons}</div>
+  </div>`;
+}

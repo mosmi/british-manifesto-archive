@@ -815,6 +815,34 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
+.supplementary-documents {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.supplementary-doc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.65rem;
+}
+.supplementary-doc-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--navy-light);
+  border-radius: 4px;
+  color: var(--cream);
+  font-size: 0.88rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.15s, background 0.15s;
+}
+.supplementary-doc-btn:hover {
+  border-color: var(--gold-rule);
+  background: var(--gold-dim);
+  color: var(--cream);
+}
+
 /* ── Highlights ── */
 .highlights-list {
   margin-top: 2rem;

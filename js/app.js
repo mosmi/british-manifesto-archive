@@ -1073,6 +1073,7 @@ function renderElection(app, id) {
         <div>
           <span class="section-label">Election Summary</span>
           <div class="election-summary">${summaryParas}</div>
+          ${renderSupplementaryDocuments(election.supplementaryDocuments)}
           ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
 
           <div class="results-section">

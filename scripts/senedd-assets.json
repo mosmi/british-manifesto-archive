@@ -9,19 +9,19 @@
   {
     "id": "2003",
     "manifestos": [
-      { "party": "welshlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Labour 2003 manifesto.pdf" },
-      { "party": "welshcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Conservative 2003 manifesto.pdf" },
-      { "party": "welshlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Liberal Democrats 2003 manifesto.pdf" },
-      { "party": "plaid", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Plaid Cymru 2003 manifesto.pdf" }
+      { "party": "welshlab", "cover": "spread-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Labour 2003 manifesto.pdf" },
+      { "party": "welshcon", "cover": "trim-landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Conservative 2003 manifesto.pdf" },
+      { "party": "welshlibdem", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Welsh Liberal Democrats 2003 manifesto.pdf" },
+      { "party": "plaid", "skip_first_page": true, "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2003 Wales Devolved Election/Plaid Cymru 2003 manifesto.pdf" }
     ]
   },
   {
     "id": "2007",
     "manifestos": [
-      { "party": "welshlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Labour 2007 manifesto.pdf" },
-      { "party": "welshcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Conservative 2007 manifesto.pdf" },
-      { "party": "welshlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Liberal Democrats 2007 manifesto.pdf" },
-      { "party": "plaid", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Plaid Cymru 2007 manifesto.pdf" },
+      { "party": "welshlab", "cover": "trim", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Labour 2007 manifesto.pdf" },
+      { "party": "welshcon", "cover": "trim", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Conservative 2007 manifesto.pdf" },
+      { "party": "welshlibdem", "cover": "trim", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Welsh Liberal Democrats 2007 manifesto.pdf" },
+      { "party": "plaid", "rotate": 90, "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/Plaid Cymru 2007 manifesto.pdf" },
       { "party": "ukip", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2007 Wales Devolved Election/UKIP - 2007 Welsh Assembly manifesto.pdf" }
     ]
   },
@@ -39,10 +39,10 @@
   {
     "id": "2016",
     "manifestos": [
-      { "party": "welshlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh-Labour-Manifesto2016.pdf" },
+      { "party": "welshlab", "cover": "trifold-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh-Labour-Manifesto2016.pdf" },
       { "party": "welshcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh Conservatives manifesto 2016.pdf" },
       { "party": "welshlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh Liberal Democrats 2016 manifesto.pdf" },
-      { "party": "plaid", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Plaid Cymru 2016 manifesto.pdf" },
+      { "party": "plaid", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Plaid Cymru 2016 manifesto.pdf" },
       { "party": "walesgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Wales Green Party manifesto 2016.pdf" },
       { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh UKIP Manifesto 2016-EN.compressed.pdf" },
       { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2016 Wales Devolved Election/Welsh Co-operative Party 2016 manifesto.pdf" }
@@ -70,13 +70,13 @@
     "manifestos": [
       { "party": "plaid", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Plaid Cymru For Wales 2026 Manifesto.pdf" },
       { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Reform Party Welsh Manifesto 2026.pdf" },
-      { "party": "welshlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Welsh Labour Manifesto 2026.pdf" },
+      { "party": "welshlab", "cover": "spread-right-trim", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Welsh Labour Manifesto 2026.pdf" },
       { "party": "welshcon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Welsh Conservatives Manifesto 2026 EN.pdf" },
       { "party": "walesgrn", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Wales Green Party Senedd Manifesto 2026.pdf" },
       { "party": "welshlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Welsh Liberal Democrats Manifesto 2026.pdf" },
       { "party": "gwlad", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Gwlad Manifesto 2026.pdf" },
       { "party": "propel", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Propel 2026 manifesto.pdf" },
-      { "party": "heritage", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Heritage Party Wales Manifesto 2026.pdf" },
+      { "party": "heritage", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Heritage Party Wales Manifesto 2026.pdf" },
       { "party": "communist", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Communist Party of Britain senedd manifesto 2026.pdf" },
       { "party": "tusc", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Wales/2026 Wales Devolved Election/Welsh Trade Unionist and Socialist Coalition Manifesto 2026.pdf" }
     ]

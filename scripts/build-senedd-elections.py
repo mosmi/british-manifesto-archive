@@ -157,6 +157,12 @@ ELECTIONS = [
         "sources": [
             {"label": "House of Commons Library — 2007 Welsh Assembly election (RP07-45)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp07-45/"},
         ],
+        "supplementaryDocuments": [
+            {
+                "title": "One Wales agreement",
+                "pdf": "/documents/supplementary/senedd/2007/one-wales-agreement.pdf",
+            },
+        ],
     },
     {
         "id": "2011", "year": 2011, "displayYear": "2011", "date": "5 May 2011",

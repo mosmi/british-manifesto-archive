@@ -1396,6 +1396,12 @@ const ELECTIONS = [
       'First peacetime coalition government since the 1930s',
       'Gordon Brown resigns from Downing Street in televised address',
     ],
+    supplementaryDocuments: [
+      {
+        title: 'Conservative–Liberal Democrat coalition agreement',
+        pdf: '/documents/supplementary/westminster/2010/coalition-programme-for-government.pdf',
+      },
+    ],
     youtubeId: 'R9emO6B8HFE',
     extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'bnp', 'uup', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
     partyResults: {
