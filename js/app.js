@@ -14,7 +14,7 @@ const SITE = {
   ogImageAlt: 'The British Manifesto Archive — a digital repository of UK political party manifestos',
 };
 
-const ASSETS_VERSION = '20260615';
+const ASSETS_VERSION = '2026061501';
 
 // Manifesto text without a PDF scan (electionId/partyId)
 const MANIFESTO_TEXT_ONLY = new Set([
