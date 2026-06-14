@@ -85,7 +85,7 @@
     "id": "2026",
     "manifestos": [
       { "party": "isp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Independence for Scotland Party Manifesto 2026.pdf" },
-      { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Reform UK Scotland Manifesto 2026.pdf" },
+      { "party": "reform", "cover": "spread-left", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Reform UK Scotland Manifesto 2026.pdf" },
       { "party": "snp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/SNP Manifesto 2026.pdf" },
       { "party": "scottishcon", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Conservatives Manifesto 2026.pdf" },
       { "party": "scottishgrn", "cover": "contain", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Greens Manifesto 2026.pdf" },
