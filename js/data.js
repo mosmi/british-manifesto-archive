@@ -276,6 +276,48 @@ const PARTIES = {
     nation: 'northern-ireland',
     description: 'Traditional Unionist Voice was founded in 2007 by Jim Allister MEP, who opposed the DUP\'s participation in power-sharing with Sinn Féin. The party opposes the Northern Ireland Protocol and the Windsor Framework.',
   },
+  niwc: {
+    id: 'niwc', name: "Northern Ireland Women's Coalition", shortName: "Women's Coalition",
+    color: '#D45D79', dim: 'rgba(212,93,121,0.14)',
+    founded: 1996, spectrum: 'Centre / Cross-community / Feminism', isPrimary: false,
+    nation: 'northern-ireland',
+    description: "The Northern Ireland Women's Coalition was a cross-community party active from 1996 to 2006. Founded by Monica McWilliams and Pearl Sagar, it sought to ensure women's representation in the peace talks and the Northern Ireland Assembly, where it held two seats from 1998 to 2003.",
+  },
+  pbp: {
+    id: 'pbp', name: 'People Before Profit Alliance', shortName: 'People Before Profit',
+    color: '#E91D24', dim: 'rgba(233,29,36,0.14)',
+    founded: 2005, spectrum: 'Left / Socialist / Irish Republican', isPrimary: false,
+    nation: 'northern-ireland',
+    description: 'People Before Profit is a democratic socialist and republican party active in both the Republic of Ireland and Northern Ireland. It has won seats in the Northern Ireland Assembly, representing Belfast West and Foyle.',
+  },
+  sea: {
+    id: 'sea', name: 'Socialist Environmental Alliance', shortName: 'Socialist Environmental Alliance',
+    color: '#008080', dim: 'rgba(0,128,128,0.14)',
+    founded: 2003, spectrum: 'Left / Ecosocialist', isPrimary: false,
+    nation: 'northern-ireland',
+    description: 'The Socialist Environmental Alliance was a small ecosocialist party in Northern Ireland formed in 2003, primarily active in Derry. It contested the 2003 and 2007 Assembly elections.',
+  },
+  rsf: {
+    id: 'rsf', name: 'Republican Sinn Féin', shortName: 'Republican Sinn Féin',
+    color: '#006600', dim: 'rgba(0,102,0,0.14)',
+    founded: 1986, spectrum: 'Left / Irish Republican / Abstentionist', isPrimary: false,
+    nation: 'northern-ireland',
+    description: 'Republican Sinn Féin was formed in 1986 following a split in Sinn Féin over the decision to end its policy of abstentionism from Dáil Éireann. It opposes the Good Friday Agreement.',
+  },
+  nicon: {
+    id: 'nicon', name: 'Northern Ireland Conservatives', shortName: 'NI Conservatives',
+    color: '#0087DC', dim: 'rgba(0,135,220,0.14)',
+    founded: 1989, spectrum: 'Centre-right / Unionist', isPrimary: false,
+    nation: 'northern-ireland',
+    description: 'The Northern Ireland Conservatives are the regional branch of the UK Conservative Party. The party has stood candidates in both Westminster and devolved elections in Northern Ireland directly since 1989, campaigning on a centre-right, pro-Union platform.',
+  },
+  workerspartyie: {
+    id: 'workerspartyie', name: "Workers' Party", shortName: "Workers' Party",
+    color: '#D40000', dim: 'rgba(212,0,0,0.14)',
+    founded: 1970, spectrum: 'Left / Democratic Socialist / Irish Republican', isPrimary: false,
+    nation: 'northern-ireland',
+    description: "The Workers' Party is a democratic socialist and Irish republican party active throughout Ireland. Historically emerging from the 1970 split in Sinn Féin (as Official Sinn Féin), the party was renamed the Workers' Party in 1982. It won seats in the 1982 Northern Ireland Assembly and Belfast City Council, and has contested modern Stormont elections across multiple constituencies.",
+  },
 
   /* ── Other / fringe parties ──────────────────────────────── */
   commonwealth: {
@@ -853,7 +895,7 @@ const ELECTIONS = [
       'Conservative Party revitalised under Churchill\'s continued leadership',
       'Korean War breaks out months later, complicating Attlee\'s government',
     ],
-    youtubeId: '',
+    youtubeId: 'QFUu9xbe18M',
     extraManifestoParties: [],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  4, votes: 0, percentage: 27.4 },
@@ -1145,7 +1187,7 @@ const ELECTIONS = [
       'Saatchi & Saatchi\'s "Labour Isn\'t Working" poster becomes iconic',
       'Beginning of 18 years of Conservative government (1979–1997)',
     ],
-    youtubeId: 'TzXf8Gjx-OA',
+    youtubeId: 'MjBTSjG-zuY',
     extraManifestoParties: [],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 11, votes: 0, percentage: 32.2 },
@@ -1587,19 +1629,19 @@ const ELECTIONS = [
 const NAV_PARTIES = {
   england: {
     label: 'England',
-    parties: ['conservative', 'labour', 'libdem', 'green', 'ukip', 'reform'],
+    parties: ['labour', 'conservative', 'libdem', 'reform', 'green', 'ukip'],
   },
   wales: {
     label: 'Wales',
-    parties: ['welshcon', 'welshlab', 'welshlibdem', 'plaid', 'walesgrn', 'reform'],
+    parties: ['plaid', 'reform', 'welshlab', 'welshcon', 'walesgrn', 'welshlibdem'],
   },
   scotland: {
     label: 'Scotland',
-    parties: ['snp', 'scottishlab', 'scottishcon', 'scottishlibdem', 'scottishgrn', 'reform', 'alba'],
+    parties: ['snp', 'scottishlab', 'reform', 'scottishgrn', 'scottishcon', 'scottishlibdem'],
   },
   'northern-ireland': {
     label: 'Northern Ireland',
-    parties: ['dup', 'sinnfein', 'alliance', 'uup', 'sdlp', 'gpni', 'pup', 'tuv'],
+    parties: ['sinnfein', 'dup', 'alliance', 'uup', 'sdlp', 'tuv', 'pbp'],
   },
 };
 
@@ -1613,11 +1655,11 @@ const OTHERS_PARTIES = [
 ];
 
 const OTHERS_FEATURED = [
-  'bnp', 'ukip', 'referendumparty', 'respect', 'tusc', 'omrlp',
+  'bnp', 'restorebrit', 'referendumparty', 'respect', 'tusc', 'omrlp',
 ];
 
 const HOLYROOD_OTHER_PARTIES = [
-  'ssp', 'solidarity', 'rise', 'allforunity', 'isp', 'scottishfamily',
+  'alba', 'ssp', 'solidarity', 'rise', 'allforunity', 'isp', 'scottishfamily',
   'scottishlibertarian', 'sovereignty', 'scottishchristian', 'bnp', 'ukip',
   'communist', 'cooperative', 'wep', 'workersparty',
 ];
@@ -1625,6 +1667,10 @@ const HOLYROOD_OTHER_PARTIES = [
 const SENEDD_OTHER_PARTIES = [
   'ukip', 'gwlad', 'propel', 'abolish', 'heritage', 'communist', 'tusc',
   'cooperative', 'bnp', 'respect', 'omrlp',
+];
+
+const STORMONT_OTHER_PARTIES = [
+  'gpni', 'nicon', 'niwc', 'pup', 'rsf', 'sea', 'ukip', 'ukup', 'ulsterpopularunionist', 'unity', 'vanguard', 'workerspartyie'
 ];
 
 const DEVOLVED_PORTALS = {

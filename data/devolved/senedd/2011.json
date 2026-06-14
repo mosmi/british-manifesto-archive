@@ -100,6 +100,12 @@
       "pdf": "/manifestos/senedd/2011/ukip/manifesto.pdf",
       "cover": "/manifestos/senedd/2011/ukip/cover.png",
       "party": "ukip"
+    },
+    {
+      "title": "Welsh Co-operative Party Manifesto 2011",
+      "pdf": "/manifestos/senedd/2011/cooperative/manifesto.pdf",
+      "cover": "/manifestos/senedd/2011/cooperative/cover.png",
+      "party": "cooperative"
     }
   ]
 }

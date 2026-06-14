@@ -185,6 +185,12 @@
       "pdf": "/manifestos/holyrood/2026/sovereignty/manifesto.pdf",
       "cover": "/manifestos/holyrood/2026/sovereignty/cover.png",
       "party": "sovereignty"
+    },
+    {
+      "title": "Scottish Co-operative Party Manifesto 2026",
+      "pdf": "/manifestos/holyrood/2026/cooperative/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2026/cooperative/cover.png",
+      "party": "cooperative"
     }
   ]
 }

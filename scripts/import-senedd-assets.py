@@ -33,7 +33,10 @@ def preprocess_pdf(src: Path, dest: Path, opts: dict) -> None:
     """Copy or transform *src* into *dest* before cover generation."""
     rotate = opts.get("rotate")
     skip_first = opts.get("skip_first_page")
-    if not rotate and not skip_first:
+    crop_to_trimbox = opts.get("crop_to_trimbox")
+    crop_box = opts.get("crop_box")
+
+    if not rotate and not skip_first and not crop_to_trimbox and not crop_box:
         shutil.copy2(src, dest)
         return
 
@@ -43,8 +46,19 @@ def preprocess_pdf(src: Path, dest: Path, opts: dict) -> None:
     ]
     if skip_first:
         gs_args.append("-dFirstPage=2")
+    if crop_to_trimbox:
+        gs_args.append("-dUseTrimBox")
+
+    c_commands = []
     if rotate:
-        gs_args.extend(["-c", f"<</Rotate {int(rotate)}>> setpagedevice"])
+        c_commands.append(f"<</Rotate {int(rotate)}>> setpagedevice")
+    if crop_box:
+        left, bottom, right, top = crop_box
+        c_commands.append(f"[/CropBox [{left} {bottom} {right} {top}] /PAGES pdfmark")
+
+    if c_commands:
+        gs_args.extend(["-c", " ".join(c_commands)])
+
     gs_args.extend(["-f", str(src)])
     subprocess.run(gs_args, check=True)
 
@@ -158,8 +172,16 @@ def find_spread_right_panel_left(img: Image.Image, start_frac: float = 0.5) -> i
     return mid
 
 
-def postprocess_cover(src_png: Path, out_png: Path, mode: str) -> None:
+def postprocess_cover(src_png: Path, out_png: Path, mode: str, pil_crop: list[float] | None = None) -> None:
     img = Image.open(src_png)
+
+    if pil_crop:
+        w, h = img.size
+        left = round(pil_crop[0] * w)
+        top = round(pil_crop[1] * h)
+        right = round(pil_crop[2] * w)
+        bottom = round(pil_crop[3] * h)
+        img = img.crop((left, top, right, bottom))
 
     if mode == "cropmarks":
         result = fit_portrait(crop_to_trim_marks(img, inset_frac=0.022))
@@ -197,7 +219,7 @@ def postprocess_cover(src_png: Path, out_png: Path, mode: str) -> None:
     result.save(out_png)
 
 
-def make_cover(pdf: Path, out_png: Path, mode: str = "page") -> None:
+def make_cover(pdf: Path, out_png: Path, mode: str = "page", pil_crop: list[float] | None = None, cover_src: Path | None = None) -> None:
     """Render a cover thumbnail from page 1 of *pdf*.
 
     mode="page"                       : full first page, scaled to COVER_WIDTH.
@@ -211,6 +233,9 @@ def make_cover(pdf: Path, out_png: Path, mode: str = "page") -> None:
     mode="cropmarks-landscape"        : crop to printer trim marks, then letterbox landscape.
     mode="cropmarks"                  : crop to printer trim marks, then fit portrait canvas.
     """
+    if cover_src:
+        postprocess_cover(cover_src, out_png, mode, pil_crop)
+        return
     tmp = out_png.with_suffix("")
     spread_modes = {
         "spread-right",
@@ -233,14 +258,19 @@ def make_cover(pdf: Path, out_png: Path, mode: str = "page") -> None:
     if not produced:
         return
     produced[0].replace(out_png)
-    postprocess_cover(out_png, out_png, mode)
+    postprocess_cover(out_png, out_png, mode, pil_crop)
 
 
-def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page",
+def place_pdf(src: Path, dest: Path, dry: bool, m: dict,
               preprocess: dict | None = None) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     size = src.stat().st_size
     preprocess = preprocess or {}
+    cover_mode = m.get("cover", "page")
+    pil_crop = m.get("pil_crop")
+    cover_src_str = m.get("cover_src")
+    cover_src = ROOT / cover_src_str if cover_src_str else None
+
     if dry:
         action = "compress" if size > MAX_BYTES else "copy"
         extras = []
@@ -248,12 +278,16 @@ def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page",
             extras.append("drop page 1")
         if preprocess.get("rotate"):
             extras.append(f"rotate {preprocess['rotate']}°")
+        if preprocess.get("crop_to_trimbox"):
+            extras.append("crop to trimbox")
+        if preprocess.get("crop_box"):
+            extras.append(f"crop to {preprocess['crop_box']}")
         suffix = f" ({', '.join(extras)})" if extras else ""
         print(f"  [{action}] {src.name} -> {dest.relative_to(ROOT)}{suffix}")
         return
 
     tmp = dest
-    if preprocess.get("skip_first_page") or preprocess.get("rotate"):
+    if preprocess.get("skip_first_page") or preprocess.get("rotate") or preprocess.get("crop_to_trimbox") or preprocess.get("crop_box"):
         tmp = dest.with_suffix(".src.pdf")
         preprocess_pdf(src, tmp, preprocess)
         src_for_copy = tmp
@@ -268,7 +302,7 @@ def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page",
              f"-sOutputFile={dest}", str(src_for_copy)],
             check=True,
         )
-    elif preprocess.get("skip_first_page") or preprocess.get("rotate"):
+    elif preprocess.get("skip_first_page") or preprocess.get("rotate") or preprocess.get("crop_to_trimbox") or preprocess.get("crop_box"):
         if size > MAX_BYTES:
             print(f"  compressing {src.name} ({size/1048576:.1f}MB) after preprocess…")
             subprocess.run(
@@ -283,7 +317,7 @@ def place_pdf(src: Path, dest: Path, dry: bool, cover_mode: str = "page",
     else:
         shutil.copy2(src, dest)
 
-    make_cover(dest, dest.parent / "cover.png", cover_mode)
+    make_cover(dest, dest.parent / "cover.png", cover_mode, pil_crop, cover_src)
 
 
 def process(entry: dict, dry: bool) -> None:
@@ -300,11 +334,15 @@ def process(entry: dict, dry: bool) -> None:
             preprocess["skip_first_page"] = True
         if m.get("rotate"):
             preprocess["rotate"] = m["rotate"]
+        if m.get("crop_to_trimbox"):
+            preprocess["crop_to_trimbox"] = True
+        if m.get("crop_box"):
+            preprocess["crop_box"] = m["crop_box"]
         place_pdf(
             src,
             DEST_ROOT / eid / party / "manifesto.pdf",
             dry,
-            m.get("cover", "page"),
+            m,
             preprocess,
         )
 

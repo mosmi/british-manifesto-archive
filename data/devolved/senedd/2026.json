@@ -154,6 +154,12 @@
       "pdf": "/manifestos/senedd/2026/tusc/manifesto.pdf",
       "cover": "/manifestos/senedd/2026/tusc/cover.png",
       "party": "tusc"
+    },
+    {
+      "title": "Welsh Co-operative Party Manifesto 2026",
+      "pdf": "/manifestos/senedd/2026/cooperative/manifesto.pdf",
+      "cover": "/manifestos/senedd/2026/cooperative/cover.png",
+      "party": "cooperative"
     }
   ]
 }

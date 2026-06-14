@@ -1,0 +1,156 @@
+{
+  "id": "2003",
+  "year": 2003,
+  "displayYear": "2003",
+  "date": "26 November 2003",
+  "title": "2003 Northern Ireland Assembly election",
+  "turnout": 64.0,
+  "control": "dup",
+  "firstMinister": "Ian Paisley",
+  "deputyFirstMinister": "Martin McGuinness",
+  "majority": false,
+  "summary": "The 2003 election took place during a period of suspension of the devolved institutions, which had been reinstated under direct rule in October 2002. The DUP overtook the UUP to become the largest unionist party, winning 30 seats to the UUP's 27. Similarly, Sinn Féin overtook the SDLP as the largest nationalist party, winning 24 seats to the SDLP's 18. Because of the deadlock between the DUP (who refused to share power with Sinn Féin without a decommissioning of IRA weapons) and Sinn Féin, the Executive was not restored, and direct rule continued.",
+  "highlights": [
+    "DUP becomes the largest unionist party with 30 seats, overtaking the UUP",
+    "Sinn Féin becomes the largest nationalist party with 24 seats, overtaking the SDLP",
+    "Devolved institutions remain suspended; direct rule from London continues",
+    "Alliance Party holds 6 seats",
+    "Robert McCartney (UKUP) and David Ervine (PUP) hold individual seats"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 108,
+    "majorityThreshold": 55,
+    "results": [
+      {
+        "party": "dup",
+        "seats": 30,
+        "pct": 25.7
+      },
+      {
+        "party": "uup",
+        "seats": 27,
+        "pct": 22.7
+      },
+      {
+        "party": "sinnfein",
+        "seats": 24,
+        "pct": 23.5
+      },
+      {
+        "party": "sdlp",
+        "seats": 18,
+        "pct": 17.0
+      },
+      {
+        "party": "alliance",
+        "seats": 6,
+        "pct": 3.7
+      },
+      {
+        "party": "pup",
+        "seats": 1,
+        "pct": 1.2
+      },
+      {
+        "party": "ukup",
+        "seats": 1,
+        "pct": 0.8
+      },
+      {
+        "partyLabel": "Independent",
+        "seats": 1,
+        "pct": 0.8
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Green Party NI",
+        "pct": 0.4
+      },
+      {
+        "name": "Socialist Environmental Alliance",
+        "pct": 0.4
+      },
+      {
+        "name": "Workers' Party",
+        "pct": 0.2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — Northern Ireland Assembly Elections (RP03-21)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp03-21/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Northern Ireland Conservatives 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/nicon/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/nicon/cover.png",
+      "party": "nicon"
+    },
+    {
+      "title": "Democratic Unionist Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Green Party NI 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/gpni/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/gpni/cover.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Northern Ireland Women's Coalition 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/niwc/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/niwc/cover.png",
+      "party": "niwc"
+    },
+    {
+      "title": "Progressive Unionist Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/pup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/pup/cover.png",
+      "party": "pup"
+    },
+    {
+      "title": "Social Democratic and Labour Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "Workers' Party 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    },
+    {
+      "title": "Socialist Environmental Alliance 2003 Manifesto",
+      "pdf": "/manifestos/stormont/2003/sea/manifesto.pdf",
+      "cover": "/manifestos/stormont/2003/sea/cover.png",
+      "party": "sea"
+    }
+  ]
+}

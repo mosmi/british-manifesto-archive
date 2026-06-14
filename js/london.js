@@ -362,10 +362,12 @@ async function renderLondonPortal(app) {
     ])}
     <section class="devolved-hero">
       <div class="devolved-hero-inner">
-        <span class="section-label">${portal?.subtitle || 'City Hall'}</span>
-        <h1 class="devolved-hero-title">London Mayor &amp; Assembly</h1>
-        <div class="gold-rule"></div>
-        <p class="devolved-hero-desc">London has been governed by a directly elected, London-wide body since 1889 — the London County Council, then the Greater London Council, and, since 2000, the Greater London Authority comprising an elected Mayor and 25-member Assembly.</p>
+        <div>
+          <span class="section-label">${portal?.subtitle || 'City Hall'}</span>
+          <h1 class="devolved-hero-title">London Mayor &amp; Assembly</h1>
+          <div class="gold-rule"></div>
+          <p class="devolved-hero-desc">London has been governed by a directly elected, London-wide body since 1889 — the London County Council, then the Greater London Council, and, since 2000, the Greater London Authority comprising an elected Mayor and 25-member Assembly.</p>
+        </div>
       </div>
     </section>
     <div class="devolved-body">

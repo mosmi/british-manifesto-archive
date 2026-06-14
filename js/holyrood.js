@@ -279,25 +279,24 @@ async function renderHolyroodPortal(app) {
     ])}
     <section class="devolved-hero">
       <div class="devolved-hero-inner">
-        <span class="section-label">${portal?.subtitle || 'Holyrood'}</span>
-        <h1 class="devolved-hero-title">Scottish Parliament</h1>
-        <div class="gold-rule"></div>
-        <p class="devolved-hero-desc">${portal?.description || 'The Scottish Parliament at Holyrood elects 129 MSPs every five years under the Additional Member System.'}</p>
-        ${nation ? `<a href="/nation/${portal?.nation || 'scotland'}" class="devolved-nation-link">View Scotland nation page →</a>` : ''}
+        <div>
+          <span class="section-label">${portal?.subtitle || 'Holyrood'}</span>
+          <h1 class="devolved-hero-title">Scottish Parliament</h1>
+          <div class="gold-rule"></div>
+          <p class="devolved-hero-desc">${portal?.description || 'The Scottish Parliament at Holyrood elects 129 MSPs every five years under the Additional Member System.'}</p>
+          ${nation ? `<a href="/nation/${portal?.nation || 'scotland'}" class="devolved-nation-link">View Scotland nation page →</a>` : ''}
+        </div>
+        <div class="nation-parties-card devolved-hero-parties">
+          <div class="section-label" style="margin-bottom:1rem">Parties in the Scottish Parliament</div>
+          ${partyLinks}
+          <a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>
+        </div>
       </div>
     </section>
     <div class="devolved-body">
       <div class="london-era">
         <div class="london-era-head"><h2>Holyrood elections (1999–)</h2><p>Every Scottish Parliament election since devolution, with results, seat charts, and archived party manifestos.</p></div>
         <div class="london-timeline-grid">${cards}</div>
-      </div>
-      <div class="devolved-grid" style="margin-top:2.5rem">
-        <div></div>
-        <div class="nation-parties-card">
-          <div class="section-label" style="margin-bottom:1rem">Parties in the Scottish Parliament</div>
-          ${partyLinks}
-          <a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>
-        </div>
       </div>
     </div>
   `;

@@ -46,6 +46,7 @@ MANIFESTO_TITLES = {
         "communist": "Communist Party Manifesto 2011",
         "scottishlibdem": "Liberal Democrats Manifesto 2011",
         "ssp": "Scottish Socialist Party Manifesto 2011",
+        "cooperative": "Scottish Co-operative Party Manifesto 2011",
     },
     "2016": {
         "rise": "RISE Manifesto 2016",
@@ -71,6 +72,7 @@ MANIFESTO_TITLES = {
         "scottishlibdem": "Scottish Liberal Democrats Manifesto 2021",
         "scottishlibertarian": "Scottish Libertarian Party Manifesto 2021",
         "ukip": "UKIP Scotland Manifesto 2021",
+        "cooperative": "Scottish Co-operative Party Manifesto 2021",
     },
     "2026": {
         "isp": "Independence for Scotland Party Manifesto 2026",
@@ -84,6 +86,7 @@ MANIFESTO_TITLES = {
         "ssp": "Scottish Socialist Party Manifesto 2026",
         "workersparty": "Scottish Workers Party of Britain Manifesto 2026",
         "sovereignty": "Sovereignty Scotland Manifesto 2026",
+        "cooperative": "Scottish Co-operative Party Manifesto 2026",
     },
 }
 

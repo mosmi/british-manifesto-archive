@@ -45,7 +45,8 @@
       { "party": "bnp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/bnp-2011.pdf" },
       { "party": "communist", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/communist-2011.pdf" },
       { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/liberal-democrats-2011.pdf" },
-      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/ssp-2011.pdf" }
+      { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/ssp-2011.pdf" },
+      { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2011 Scottish Parliament Election/Scottish Co-operative Party 2011 manifesto.pdf" }
     ]
   },
   {
@@ -76,7 +77,8 @@
       { "party": "scottishlab", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-labour-2021.pdf" },
       { "party": "scottishlibdem", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-lib-dems-2021.pdf" },
       { "party": "scottishlibertarian", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/scottish-libertarian-party-2021.pdf" },
-      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/ukip-scotland-2021.pdf" }
+      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/ukip-scotland-2021.pdf" },
+      { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2021 Scottish Parliament Election/Scottish Co-operative Party 2021 manifesto.pdf" }
     ]
   },
   {
@@ -92,7 +94,8 @@
       { "party": "scottishlibertarian", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Libertarian Party Manifesto 2026.pdf" },
       { "party": "ssp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Socialist Party Manifesto 2026.pdf" },
       { "party": "workersparty", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Workers Party of Britain Manifesto 2026.pdf" },
-      { "party": "sovereignty", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Sovereignty Scotland Manifesto 2026.pdf" }
+      { "party": "sovereignty", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Sovereignty Scotland Manifesto 2026.pdf" },
+      { "party": "cooperative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Scotland/2026 Scottish Parliament Election/Scottish Co-operative Party 2026 manifesto.pdf" }
     ]
   }
 ]

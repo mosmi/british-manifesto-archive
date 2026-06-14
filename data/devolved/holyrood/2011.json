@@ -125,6 +125,12 @@
       "pdf": "/manifestos/holyrood/2011/ssp/manifesto.pdf",
       "cover": "/manifestos/holyrood/2011/ssp/cover.png",
       "party": "ssp"
+    },
+    {
+      "title": "Scottish Co-operative Party Manifesto 2011",
+      "pdf": "/manifestos/holyrood/2011/cooperative/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2011/cooperative/cover.png",
+      "party": "cooperative"
     }
   ]
 }

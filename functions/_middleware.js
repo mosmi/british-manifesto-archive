@@ -227,7 +227,16 @@ function classify(path, seo) {
         },
       };
     }
-    if (portal === 'holyrood' || portal === 'senedd') {
+    if (portal === 'stormont' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Northern Irish Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Northern Ireland Assembly elections at Stormont.',
+        },
+      };
+    }
+    if (portal === 'holyrood' || portal === 'senedd' || portal === 'stormont') {
       const portalName = seo.devolved && seo.devolved[portal];
       if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
       return {

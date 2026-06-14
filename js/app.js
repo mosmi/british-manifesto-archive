@@ -181,6 +181,10 @@ function setupNavMenu(dropdown, button, menu) {
   };
 
   button.addEventListener('click', e => {
+    const href = button.getAttribute('href');
+    if (href && HOVER_FINE.matches) {
+      return;
+    }
     e.preventDefault();
     toggle();
   });
@@ -318,6 +322,12 @@ function route() {
     renderSeneddElection(app, path.replace('/devolved/senedd/', ''));
   } else if (path === '/devolved/senedd') {
     renderSeneddPortal(app);
+  } else if (path === '/devolved/stormont/other-parties') {
+    renderNIOtherParties(app);
+  } else if (path.startsWith('/devolved/stormont/')) {
+    renderNIElection(app, path.replace('/devolved/stormont/', ''));
+  } else if (path === '/devolved/stormont') {
+    renderNIPortal(app);
   } else if (path.startsWith('/devolved/')) {
     renderDevolved(app, path.replace('/devolved/', ''));
   } else if (path === '/others') {
@@ -456,6 +466,13 @@ function buildPartiesMega() {
       welshOthers.textContent = 'Other Welsh parties →';
       col.appendChild(welshOthers);
     }
+    if (nationId === 'northern-ireland') {
+      const niOthers = document.createElement('a');
+      niOthers.href = '/devolved/stormont/other-parties';
+      niOthers.className = 'mega-all-link';
+      niOthers.textContent = 'Other NI parties →';
+      col.appendChild(niOthers);
+    }
     mega.appendChild(col);
   });
 
@@ -468,7 +485,12 @@ function buildPartiesMega() {
   othersHeading.textContent = 'Others';
   othersCol.appendChild(othersHeading);
   const featured = typeof OTHERS_FEATURED !== 'undefined' ? OTHERS_FEATURED : OTHERS_PARTIES.slice(0, 6);
-  featured.forEach(pid => {
+  const sortedFeatured = [...featured].sort((a, b) => {
+    const nameA = PARTIES[a]?.shortName || '';
+    const nameB = PARTIES[b]?.shortName || '';
+    return nameA.localeCompare(nameB, 'en-GB');
+  });
+  sortedFeatured.forEach(pid => {
     const p = PARTIES[pid];
     if (!p) return;
     const a = document.createElement('a');
@@ -523,7 +545,7 @@ function renderHome(app) {
           <h1 class="hero-title">The British<br><em>Manifesto Archive</em></h1>
           <p class="hero-subtitle">Digital repository of UK political history — manifesto documents, electoral results, and campaign records for every post-war election.</p>
           <div class="hero-stats">
-            <div><div class="hero-stat-num">${ELECTIONS.length}</div><div class="hero-stat-label">Elections</div></div>
+            <div><div class="hero-stat-num">62</div><div class="hero-stat-label">Elections</div></div>
             <div><div class="hero-stat-num">${Object.keys(PARTIES).filter(k => k !== 'others').length}</div><div class="hero-stat-label">Parties</div></div>
             <div><div class="hero-stat-num">650</div><div class="hero-stat-label">Commons Seats</div></div>
             <div><div class="hero-stat-num">4</div><div class="hero-stat-label">Nations</div></div>
@@ -1218,10 +1240,259 @@ async function initElectionHexmap(electionId) {
   drawHexmap(container, data, { electionId, electionYear: election?.year, legendEl: legend });
 }
 
+// ── CO-OPERATIVE PARTY CUSTOM PAGE ───────────────────────────
+async function renderCooperativePartyPage(app, party) {
+  const color = party.color;
+
+  // Load devolved history to get the manifestos
+  const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
+    ? await getHolyroodPartyHistory('cooperative')
+    : { elections: [], manifestos: [] };
+  const holyroodManifestos = holyroodHistory.manifestos;
+  const holyroodItems = holyroodManifestos.map(({ election, manifesto }) =>
+    holyroodManifestoCard(manifesto, election.year)
+  ).join('');
+
+  const seneddHistory = (typeof getSeneddPartyHistory === 'function')
+    ? await getSeneddPartyHistory('cooperative')
+    : { elections: [], manifestos: [] };
+  const seneddManifestos = seneddHistory.manifestos;
+  const seneddItems = seneddManifestos.map(({ election, manifesto }) =>
+    seneddManifestoCard(manifesto, election.year)
+  ).join('');
+
+  // Load Westminster manifestos from ELECTIONS
+  const partyElections = ELECTIONS.map(e => {
+    if ((e.extraManifestoParties || []).includes('cooperative')) {
+      return { election: e, result: { party: 'cooperative', seats: 0, votes: 0, percentage: 0 } };
+    }
+    return null;
+  }).filter(Boolean);
+
+  const manifestoElections = partyElections.filter(({ election: e }) =>
+    hasManifestoContent(e.id, 'cooperative')
+  );
+  const manifestoItems = manifestoElections.slice().reverse().map(({ election: e, result: r }) =>
+    buildManifestoCard('cooperative', e, { result: r, showYearAsTitle: true })
+  ).join('');
+
+  // Westminster History Table Data
+  const coopWestminsterData = [
+    { id: "1945", label: "1945", count: 23 },
+    { id: "1950", label: "1950", count: 18 },
+    { id: "1951", label: "1951", count: 16 },
+    { id: "1955", label: "1955", count: 19 },
+    { id: "1959", label: "1959", count: 16 },
+    { id: "1964", label: "1964", count: 19 },
+    { id: "1966", label: "1966", count: 18 },
+    { id: "1970", label: "1970", count: 17 },
+    { id: "feb1974", label: "Feb 1974", count: 16 },
+    { id: "oct1974", label: "Oct 1974", count: 16 },
+    { id: "1979", label: "1979", count: 17 },
+    { id: "1983", label: "1983", count: 8 },
+    { id: "1987", label: "1987", count: 10 },
+    { id: "1992", label: "1992", count: 14 },
+    { id: "1997", label: "1997", count: 26 },
+    { id: "2001", label: "2001", count: 30 },
+    { id: "2005", label: "2005", count: 29 },
+    { id: "2010", label: "2010", count: 28 },
+    { id: "2015", label: "2015", count: 24 },
+    { id: "2017", label: "2017", count: 38 },
+    { id: "2019", label: "2019", count: 26 },
+    { id: "2024", label: "2024", count: 43 }
+  ];
+  
+  const maxCoopWestminster = Math.max(...coopWestminsterData.map(d => d.count));
+  const westminsterRows = coopWestminsterData.slice().reverse().map(d => {
+    const barW = ((d.count / maxCoopWestminster) * 100).toFixed(1);
+    return `<a class="party-election-row" href="/election/${d.id}">
+      <div class="per-year">${d.label}</div>
+      <div><div class="per-outcome won">✦ Joint Candidate</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">Labour/Co-op group</div></div>
+      <div class="per-seats-wrap"><div class="per-seats-num">${d.count}</div><div class="per-seats-label">elected</div></div>
+      <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:${barW}%;background:${color}"></div></div></div>
+    </a>`;
+  }).join('');
+
+  // Devolved History Table Data
+  const coopHolyroodData = [
+    { id: "1999", label: "1999", count: 2 },
+    { id: "2003", label: "2003", count: 9 },
+    { id: "2007", label: "2007", count: 9 },
+    { id: "2011", label: "2011", count: 5 },
+    { id: "2016", label: "2016", count: 8 },
+    { id: "2021", label: "2021", count: 11 },
+    { id: "2026", label: "2026", count: 11 }
+  ];
+
+  const coopSeneddData = [
+    { id: "1999", label: "1999", count: 4 },
+    { id: "2003", label: "2003", count: 4 },
+    { id: "2007", label: "2007", count: 4 },
+    { id: "2011", label: "2011", count: 9 },
+    { id: "2016", label: "2016", count: 11 },
+    { id: "2021", label: "2021", count: 16 },
+    { id: "2026", label: "2026", count: 3 }
+  ];
+
+  const maxHolyroodCoop = Math.max(...coopHolyroodData.map(d => d.count || 0));
+  const holyroodRows = coopHolyroodData.slice().reverse().map(d => {
+    if (d.count === null) {
+      return `<div class="party-election-row no-hover">
+        <div class="per-year">${d.label}</div>
+        <div><div class="per-outcome lost">Unknown</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">Data unavailable</div></div>
+        <div class="per-seats-wrap"><div class="per-seats-num">—</div><div class="per-seats-label">elected</div></div>
+        <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:0%;background:${color}"></div></div></div>
+      </div>`;
+    }
+    const barW = ((d.count / maxHolyroodCoop) * 100).toFixed(1);
+    return `<a class="party-election-row" href="/devolved/holyrood/${d.id}">
+      <div class="per-year">${d.label}</div>
+      <div><div class="per-outcome won">✦ Joint Candidate</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">Labour/Co-op group</div></div>
+      <div class="per-seats-wrap"><div class="per-seats-num">${d.count}</div><div class="per-seats-label">elected</div></div>
+      <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:${barW}%;background:${color}"></div></div></div>
+    </a>`;
+  }).join('');
+
+  const maxSeneddCoop = Math.max(...coopSeneddData.map(d => d.count || 0));
+  const seneddRows = coopSeneddData.slice().reverse().map(d => {
+    if (d.count === null) {
+      return `<div class="party-election-row no-hover">
+        <div class="per-year">${d.label}</div>
+        <div><div class="per-outcome lost">Unknown</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">Data unavailable</div></div>
+        <div class="per-seats-wrap"><div class="per-seats-num">—</div><div class="per-seats-label">elected</div></div>
+        <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:0%;background:${color}"></div></div></div>
+      </div>`;
+    }
+    const barW = ((d.count / maxSeneddCoop) * 100).toFixed(1);
+    return `<a class="party-election-row" href="/devolved/senedd/${d.id}">
+      <div class="per-year">${d.label}</div>
+      <div><div class="per-outcome won">✦ Joint Candidate</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">Labour/Co-op group</div></div>
+      <div class="per-seats-wrap"><div class="per-seats-num">${d.count}</div><div class="per-seats-label">elected</div></div>
+      <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:${barW}%;background:${color}"></div></div></div>
+    </a>`;
+  }).join('');
+
+  const contestedLabel = '22 Westminster · 7 Holyrood · 7 Senedd';
+
+  app.innerHTML = `
+    ${renderBreadcrumb([
+      { label: 'Home', href: '/' },
+      { label: party.shortName },
+    ])}
+    <section class="party-hero" style="--party-color:${color};--party-bg:${party.dim}">
+      <div class="party-hero-bg"></div>
+      <div class="party-hero-inner">
+        <div>
+          <div class="party-color-bar" style="background:${color}"></div>
+          <h1 class="party-hero-title">${party.name}</h1>
+          <div class="party-hero-meta">
+            <div class="party-meta-item">Founded<strong>${party.founded || '—'}</strong></div>
+            <div class="party-meta-item">Spectrum<strong>${party.spectrum}</strong></div>
+            <div class="party-meta-item">Elections contested<strong>${contestedLabel}</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="party-body">
+      <div class="party-description">
+        ${party.description}
+      </div>
+
+      <div class="coop-representation-section">
+        <span class="section-label">Current Representation</span>
+        <h2>Elected Representatives</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="coop-rep-grid">
+          <div class="coop-rep-card">
+            <div class="coop-rep-num">41</div>
+            <div class="coop-rep-label">House of Commons</div>
+          </div>
+          <div class="coop-rep-card">
+            <div class="coop-rep-num">11</div>
+            <div class="coop-rep-label">Scottish Parliament</div>
+          </div>
+          <div class="coop-rep-card">
+            <div class="coop-rep-num">3</div>
+            <div class="coop-rep-label">Senedd Cymru</div>
+          </div>
+        </div>
+        <p class="coop-rep-note">
+          <strong>Joint Electoral Alliance Note:</strong> The Co-operative Party does not usually stand against Labour. Candidates normally stand jointly as Labour and Co-operative, or in some devolved/list elections may appear on the ballot under a Labour description while being recognised by the Co-operative Party as part of its parliamentary group.
+        </p>
+      </div>
+
+      <div class="party-elections-section">
+        <span class="section-label">Electoral Record</span>
+        <h2>Westminster Joint Representatives</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${westminsterRows}</div>
+      </div>
+
+      <div class="party-manifestos-section">
+        <span class="section-label">Documents</span>
+        <h2>Westminster Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
+      </div>
+
+      <div class="party-elections-section">
+        <span class="section-label">Holyrood</span>
+        <h2>Scottish Parliament Joint Representatives</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${holyroodRows}</div>
+      </div>
+
+      <div class="party-manifestos-section">
+        <span class="section-label">Holyrood</span>
+        <h2>Scottish Parliament Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        ${holyroodItems ? `<div class="manifesto-grid">${holyroodItems}</div>` : '<p style="color:var(--text-muted)">No Scottish Parliament manifestos on record.</p>'}
+      </div>
+
+      <div class="party-elections-section">
+        <span class="section-label">Senedd Cymru</span>
+        <h2>Welsh Parliament Joint Representatives</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${seneddRows}</div>
+      </div>
+
+      <div class="party-manifestos-section">
+        <span class="section-label">Senedd Cymru</span>
+        <h2>Welsh Parliament Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        ${seneddItems ? `<div class="manifesto-grid">${seneddItems}</div>` : '<p style="color:var(--text-muted)">No Welsh Parliament manifestos on record.</p>'}
+      </div>
+
+      <div class="coop-sources-section" style="margin-top: 3rem; border-top: 1px solid var(--navy-border); padding-top: 1.5rem; font-size: 0.82rem; color: var(--text-faint); line-height: 1.6;">
+        <p>
+          * <strong>Note on Sitting vs Elected Counts:</strong> Counts display the number of joint Labour/Co-operative representatives elected at general or devolved elections. This may differ from sitting numbers due to subsequent by-elections, defections, suspensions, or vacancies (e.g. 43 Labour/Co-operative MPs were elected in the 2024 Westminster general election, while 41 are currently sitting in the House of Commons).
+        </p>
+        <p>
+          <strong>Sources &amp; Metadata:</strong>
+        </p>
+        <ul style="padding-left: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+          <li><a href="https://party.coop/people/mps/" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">Co-operative Party MPs Directory</a> (Current Commons group)</li>
+          <li><a href="https://party.coop/people/msps/" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">Co-operative Party MSPs Directory</a> (Current Holyrood group)</li>
+          <li><a href="https://party.coop/people/ms/" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">Co-operative Party MSs Directory</a> (Current Senedd group)</li>
+          <li><a href="https://senedd.wales/media/oifhgrno/representatives-export.csv" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">Senedd Cymru Official Members List</a></li>
+          <li>Co-operative Party Annual Reports &amp; Accounts (2012, 2016, 2021, 2024)</li>
+          <li>Co-operative Party Historic Westminster Election Results database</li>
+        </ul>
+        <p style="margin-top: 0.5rem;"><em>Data retrieved and verified: June 2026.</em></p>
+      </div>
+    </div>
+  `;
+}
+
 // ── PARTY PAGE ────────────────────────────────────────────────
 async function renderParty(app, id) {
   const party = PARTIES[id];
   if (!party) { renderNotFound(app); return; }
+  if (id === 'cooperative') {
+    await renderCooperativePartyPage(app, party);
+    return;
+  }
   setPageMeta({
     title: party.shortName,
     description: `Manifestos and election history for the ${party.shortName} in UK general elections since 1945.`,
@@ -1275,6 +1546,12 @@ async function renderParty(app, id) {
   const seneddElections = seneddHistory.elections;
   const seneddManifestos = seneddHistory.manifestos;
 
+  const niHistory = (typeof getNIPartyHistory === 'function')
+    ? await getNIPartyHistory(id)
+    : { elections: [], manifestos: [] };
+  const niElections = niHistory.elections;
+  const niManifestos = niHistory.manifestos;
+
   const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
   const holyroodElectionRows = holyroodElections.map(pe =>
     holyroodPartyElectionRow(id, pe, maxHolyroodSeats, color)
@@ -1293,10 +1570,20 @@ async function renderParty(app, id) {
     seneddManifestoCard(manifesto, election.year)
   ).join('');
 
+  const maxNISeats = Math.max(1, ...niElections.map(pe => pe.result.seats));
+  const niElectionRows = niElections.map(pe =>
+    niPartyElectionRow(id, pe, maxNISeats, color)
+  ).join('');
+
+  const niItems = niManifestos.map(({ election, manifesto }) =>
+    niManifestoCard(manifesto, election.year)
+  ).join('');
+
   const contestedParts = [];
   if (partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
   if (holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
   if (seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
+  if (niElections.length) contestedParts.push(`${niElections.length} Stormont`);
   const contestedLabel = contestedParts.join(' · ') || '0';
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
@@ -1363,6 +1650,18 @@ async function renderParty(app, id) {
         <h2>Welsh Parliament Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="manifesto-grid">${seneddItems}</div>
+      </div>` : ''}
+      ${niElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">Stormont</span>
+        <h2>Northern Ireland Assembly Results</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${niElectionRows}</div>
+      </div>` : ''}
+      ${niItems ? `<div class="party-manifestos-section">
+        <span class="section-label">Stormont</span>
+        <h2>Northern Ireland Assembly Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="manifesto-grid">${niItems}</div>
       </div>` : ''}
     </div>
   `;
@@ -1574,11 +1873,11 @@ function renderNation(app, id) {
     </section>
 
     <div class="nation-body">
-      ${westminsterSection}
       <div class="nation-grid">
         <div>
           <p class="nation-description">${nation.description}</p>
           ${keyFacts ? `<div class="highlights-list" style="margin-top:2rem"><h3>Key Facts</h3>${keyFacts}</div>` : ''}
+          ${westminsterSection}
           ${devolvedTable}
           <p style="font-size:0.75rem;color:var(--text-faint);margin-top:1.5rem">Source: ${nation.source}</p>
         </div>
@@ -1589,6 +1888,7 @@ function renderNation(app, id) {
             ${id === 'england' ? `<a href="/others" class="nation-party-link" style="--party-color:var(--gold)"><span class="nation-party-dot" style="background:var(--gold)"></span><span>Other parties →</span></a>` : ''}
             ${id === 'scotland' ? `<a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>` : ''}
             ${id === 'wales' ? `<a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>` : ''}
+            ${id === 'northern-ireland' ? `<a href="/devolved/stormont/other-parties" class="holyrood-other-link">Other Northern Irish parties →</a>` : ''}
           </div>
         </div>
       </div>
@@ -1686,6 +1986,8 @@ function renderOthers(app) {
       <a href="/devolved/holyrood/other-parties" class="cross-archive-link">Other Scottish Parties →</a>
       <p style="color:var(--text-muted);margin-bottom:0.75rem;margin-top:1.25rem">For parties contesting the Welsh Parliament:</p>
       <a href="/devolved/senedd/other-parties" class="cross-archive-link">Other Welsh Parties →</a>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem;margin-top:1.25rem">For parties contesting the Northern Ireland Assembly:</p>
+      <a href="/devolved/stormont/other-parties" class="cross-archive-link">Other Northern Irish Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;
@@ -2011,16 +2313,32 @@ function renderPartiesHub(app) {
         <span>${p.shortName}</span>
       </a>`;
     }).join('');
+
+    let otherLink = '';
+    if (nationId === 'scotland') {
+      otherLink = `<a href="/devolved/holyrood/other-parties" class="hub-all-others-link">Other Scottish parties →</a>`;
+    } else if (nationId === 'wales') {
+      otherLink = `<a href="/devolved/senedd/other-parties" class="hub-all-others-link">Other Welsh parties →</a>`;
+    } else if (nationId === 'northern-ireland') {
+      otherLink = `<a href="/devolved/stormont/other-parties" class="hub-all-others-link">Other Northern Irish parties →</a>`;
+    }
+
     return `<section class="hub-parties-section" aria-labelledby="hub-nation-${nationId}">
       <h2 class="hub-parties-nation-heading" id="hub-nation-${nationId}">
         <a href="/nation/${nationId}">${nation.label}</a>
       </h2>
       <div class="hub-parties-list">${partyLinks}</div>
+      ${otherLink}
     </section>`;
   }).join('');
 
   const featured = typeof OTHERS_FEATURED !== 'undefined' ? OTHERS_FEATURED : OTHERS_PARTIES.slice(0, 6);
-  const othersLinks = featured.map(pid => {
+  const sortedFeatured = [...featured].sort((a, b) => {
+    const nameA = PARTIES[a]?.shortName || '';
+    const nameB = PARTIES[b]?.shortName || '';
+    return nameA.localeCompare(nameB, 'en-GB');
+  });
+  const othersLinks = sortedFeatured.map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';
     return `<a href="/party/${pid}" class="hub-party-link">

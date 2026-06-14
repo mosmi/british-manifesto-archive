@@ -1,0 +1,140 @@
+{
+  "id": "2022",
+  "year": 2022,
+  "displayYear": "2022",
+  "date": "5 May 2022",
+  "title": "2022 Northern Ireland Assembly election",
+  "turnout": 63.6,
+  "control": "sinnfein",
+  "firstMinister": "Michelle O'Neill",
+  "deputyFirstMinister": "Emma Little-Pengelly",
+  "majority": false,
+  "summary": "In a historic result, Sinn Féin became the largest party in the Northern Ireland Assembly for the first time, winning 27 seats to the DUP's 25. This marked the first time a nationalist or republican party had topped the poll in Northern Ireland's history. The Alliance Party recorded a major surge, winning 17 seats and cementing itself as a strong centrist, cross-community third force. Devolution was not restored immediately due to DUP protests over the Northern Ireland Protocol, but was eventually restored in February 2024 with Michelle O'Neill appointed First Minister.",
+  "highlights": [
+    "Sinn Féin becomes the largest party, earning the right to nominate the First Minister",
+    "Alliance Party records a major surge, rising to 17 seats",
+    "DUP collapses to 25 seats amid protests over the post-Brexit Northern Ireland Protocol",
+    "Michelle O'Neill becomes the first nationalist First Minister in February 2024",
+    "Unionist representation continues to fragment, with TUV winning 7.6% of votes but only 1 seat"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 90,
+    "majorityThreshold": 46,
+    "results": [
+      {
+        "party": "sinnfein",
+        "seats": 27,
+        "pct": 29.0
+      },
+      {
+        "party": "dup",
+        "seats": 25,
+        "pct": 21.3
+      },
+      {
+        "party": "alliance",
+        "seats": 17,
+        "pct": 13.5
+      },
+      {
+        "party": "uup",
+        "seats": 9,
+        "pct": 11.2
+      },
+      {
+        "party": "sdlp",
+        "seats": 8,
+        "pct": 9.1
+      },
+      {
+        "party": "tuv",
+        "seats": 1,
+        "pct": 7.6
+      },
+      {
+        "party": "pbp",
+        "seats": 1,
+        "pct": 1.4
+      },
+      {
+        "partyLabel": "Independent",
+        "seats": 2,
+        "pct": 3.7
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Green Party NI",
+        "pct": 2.2
+      },
+      {
+        "name": "Workers' Party",
+        "pct": 0.1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — Northern Ireland Assembly Election 2022 (CBP-9549)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9549/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Democratic Unionist Party 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Green Party NI 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/gpni/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/gpni/cover.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Social Democratic and Labour Party 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "Traditional Unionist Voice 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/tuv/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/tuv/cover.png",
+      "party": "tuv"
+    },
+    {
+      "title": "Workers' Party 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    },
+    {
+      "title": "People Before Profit 2022 Manifesto",
+      "pdf": "/manifestos/stormont/2022/pbp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2022/pbp/cover.png",
+      "party": "pbp"
+    }
+  ]
+}

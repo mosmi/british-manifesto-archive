@@ -38,6 +38,7 @@ MANIFESTO_TITLES = {
         "plaid": "Plaid Cymru Manifesto 2011",
         "walesgrn": "Wales Green Party Manifesto 2011",
         "ukip": "UKIP Wales Manifesto 2011",
+        "cooperative": "Welsh Co-operative Party Manifesto 2011",
     },
     "2016": {
         "welshlab": "Welsh Labour Manifesto 2016",
@@ -61,6 +62,7 @@ MANIFESTO_TITLES = {
         "abolish": "Abolish the Welsh Assembly Party Manifesto 2021",
         "communist": "Welsh Communist Party Manifesto 2021",
         "tusc": "Welsh TUSC Manifesto 2021",
+        "cooperative": "Welsh Co-operative Party Manifesto 2021",
     },
     "2026": {
         "plaid": "Plaid Cymru Manifesto 2026",
@@ -74,6 +76,7 @@ MANIFESTO_TITLES = {
         "heritage": "Heritage Party Wales Manifesto 2026",
         "communist": "Communist Party of Britain Manifesto 2026",
         "tusc": "Welsh TUSC Manifesto 2026",
+        "cooperative": "Welsh Co-operative Party Manifesto 2026",
     },
 }
 

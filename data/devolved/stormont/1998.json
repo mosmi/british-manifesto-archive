@@ -1,0 +1,129 @@
+{
+  "id": "1998",
+  "year": 1998,
+  "displayYear": "1998",
+  "date": "25 June 1998",
+  "title": "1998 Northern Ireland Assembly election",
+  "turnout": 69.9,
+  "control": "uup",
+  "firstMinister": "David Trimble",
+  "deputyFirstMinister": "Seamus Mallon",
+  "majority": false,
+  "summary": "Following the historic signing of the Good Friday Agreement in April 1998 and its subsequent endorsement in a referendum, the 1998 election established the first devolved Northern Ireland Assembly. The Ulster Unionist Party (UUP) emerged as the largest party with 28 seats, closely followed by the Social Democratic and Labour Party (SDLP) with 24. A power-sharing Executive was formed with David Trimble (UUP) as First Minister and Seamus Mallon (SDLP) as deputy First Minister. Hardline unionists opposing the agreement, led by the DUP, won a combined total of 28 seats.",
+  "highlights": [
+    "First elections to the new Northern Ireland Assembly established under the Good Friday Agreement",
+    "UUP wins 28 seats; David Trimble elected First Minister",
+    "SDLP is the largest nationalist party with 24 seats; Seamus Mallon becomes deputy First Minister",
+    "Anti-Agreement unionists win 28 seats, setting up ongoing constitutional tension",
+    "Northern Ireland Women's Coalition wins two seats, representing grassroots cross-community voices"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 108,
+    "majorityThreshold": 55,
+    "results": [
+      {
+        "party": "uup",
+        "seats": 28,
+        "pct": 21.3
+      },
+      {
+        "party": "sdlp",
+        "seats": 24,
+        "pct": 22.0
+      },
+      {
+        "party": "dup",
+        "seats": 20,
+        "pct": 18.1
+      },
+      {
+        "party": "sinnfein",
+        "seats": 18,
+        "pct": 17.7
+      },
+      {
+        "party": "alliance",
+        "seats": 6,
+        "pct": 6.5
+      },
+      {
+        "party": "ukup",
+        "seats": 5,
+        "pct": 4.5
+      },
+      {
+        "party": "pup",
+        "seats": 2,
+        "pct": 2.5
+      },
+      {
+        "party": "niwc",
+        "seats": 2,
+        "pct": 1.6
+      },
+      {
+        "partyLabel": "Independent Unionist",
+        "seats": 3,
+        "pct": 2.8
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — Northern Ireland Assembly Elections: 25 June 1998 (RP98-76)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp98-76/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Northern Ireland Conservatives 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/nicon/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/nicon/cover.png",
+      "party": "nicon"
+    },
+    {
+      "title": "Democratic Unionist Party 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Northern Ireland Women's Coalition 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/niwc/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/niwc/cover.png",
+      "party": "niwc"
+    },
+    {
+      "title": "Social Democratic and Labour Party 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "Workers' Party 1998 Manifesto",
+      "pdf": "/manifestos/stormont/1998/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/1998/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    }
+  ]
+}

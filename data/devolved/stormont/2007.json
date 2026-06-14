@@ -1,0 +1,162 @@
+{
+  "id": "2007",
+  "year": 2007,
+  "displayYear": "2007",
+  "date": "7 March 2007",
+  "title": "2007 Northern Ireland Assembly election",
+  "turnout": 62.3,
+  "control": "dup",
+  "firstMinister": "Ian Paisley",
+  "deputyFirstMinister": "Martin McGuinness",
+  "majority": false,
+  "summary": "Following the St Andrews Agreement in 2006, the DUP and Sinn Féin agreed to enter power-sharing. The election confirmed their positions as the leading unionist and nationalist parties respectively. The DUP grew to 36 seats and Sinn Féin to 28. In May 2007, a historic Executive was formed with Ian Paisley (DUP) as First Minister and Martin McGuinness (Sinn Féin) as deputy First Minister, ushering in a decade of relative political stability under their joint leadership.",
+  "highlights": [
+    "Devolution restored following the St Andrews Agreement and IRA decommissioning",
+    "DUP and Sinn Féin consolidate their positions as the dominant parties",
+    "Historic power-sharing Executive formed by Ian Paisley and Martin McGuinness",
+    "Green Party NI wins its first Assembly seat (Brian Wilson in North Down)",
+    "Alliance Party increases its share, winning 7 seats"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 108,
+    "majorityThreshold": 55,
+    "results": [
+      {
+        "party": "dup",
+        "seats": 36,
+        "pct": 30.1
+      },
+      {
+        "party": "sinnfein",
+        "seats": 28,
+        "pct": 26.2
+      },
+      {
+        "party": "uup",
+        "seats": 18,
+        "pct": 14.9
+      },
+      {
+        "party": "sdlp",
+        "seats": 16,
+        "pct": 15.2
+      },
+      {
+        "party": "alliance",
+        "seats": 7,
+        "pct": 5.2
+      },
+      {
+        "party": "gpni",
+        "seats": 1,
+        "pct": 1.7
+      },
+      {
+        "party": "pup",
+        "seats": 1,
+        "pct": 0.6
+      },
+      {
+        "partyLabel": "Independent",
+        "seats": 1,
+        "pct": 0.8
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "UK Unionist Party",
+        "pct": 1.5
+      },
+      {
+        "name": "Socialist Environmental Alliance",
+        "pct": 0.3
+      },
+      {
+        "name": "Workers' Party",
+        "pct": 0.1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — 2007 Northern Ireland Assembly election results (RP07-32)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp07-32/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Northern Ireland Conservatives 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/nicon/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/nicon/cover.png",
+      "party": "nicon"
+    },
+    {
+      "title": "Democratic Unionist Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Green Party NI 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/gpni/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/gpni/cover.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Progressive Unionist Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/pup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/pup/cover.png",
+      "party": "pup"
+    },
+    {
+      "title": "Social Democratic and Labour Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "UK Unionist Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/ukup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/ukup/cover.png",
+      "party": "ukup"
+    },
+    {
+      "title": "Workers' Party 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    },
+    {
+      "title": "Republican Sinn Féin 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/rsf/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/rsf/cover.png",
+      "party": "rsf"
+    },
+    {
+      "title": "Socialist Environmental Alliance 2007 Manifesto",
+      "pdf": "/manifestos/stormont/2007/sea/manifesto.pdf",
+      "cover": "/manifestos/stormont/2007/sea/cover.png",
+      "party": "sea"
+    }
+  ]
+}

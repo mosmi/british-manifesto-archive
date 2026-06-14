@@ -1,0 +1,140 @@
+{
+  "id": "2011",
+  "year": 2011,
+  "displayYear": "2011",
+  "date": "5 May 2011",
+  "title": "2011 Northern Ireland Assembly election",
+  "turnout": 54.7,
+  "control": "dup",
+  "firstMinister": "Peter Robinson",
+  "deputyFirstMinister": "Martin McGuinness",
+  "majority": false,
+  "summary": "The 2011 election saw the DUP and Sinn Féin remain firmly in control, winning 38 and 29 seats respectively. Peter Robinson (DUP), who had succeeded Paisley as DUP leader and First Minister, continued in office alongside Martin McGuinness. The Alliance Party grew to 8 seats, including a constituency win in East Belfast. Traditional Unionist Voice (TUV), founded in opposition to power-sharing with Sinn Féin, won its first seat via leader Jim Allister in North Antrim.",
+  "highlights": [
+    "First Assembly to complete a full term without suspension since 1998",
+    "DUP holds 38 seats, Sinn Féin holds 29 seats",
+    "Peter Robinson and Martin McGuinness continue as joint heads of the Executive",
+    "Alliance Party rises to 8 seats",
+    "TUV enters the Assembly for the first time with Jim Allister"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 108,
+    "majorityThreshold": 55,
+    "results": [
+      {
+        "party": "dup",
+        "seats": 38,
+        "pct": 30.0
+      },
+      {
+        "party": "sinnfein",
+        "seats": 29,
+        "pct": 26.9
+      },
+      {
+        "party": "uup",
+        "seats": 16,
+        "pct": 13.2
+      },
+      {
+        "party": "sdlp",
+        "seats": 14,
+        "pct": 14.2
+      },
+      {
+        "party": "alliance",
+        "seats": 8,
+        "pct": 7.7
+      },
+      {
+        "party": "tuv",
+        "seats": 1,
+        "pct": 2.5
+      },
+      {
+        "party": "gpni",
+        "seats": 1,
+        "pct": 0.9
+      },
+      {
+        "partyLabel": "Independent Unionist",
+        "seats": 1,
+        "pct": 0.7
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "Workers' Party",
+        "pct": 0.4
+      },
+      {
+        "name": "Progressive Unionist Party",
+        "pct": 0.2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — Northern Ireland Assembly Election 2011 (RP11-42)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp11-42/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Democratic Unionist Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Green Party NI 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/gpni/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/gpni/cover.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Progressive Unionist Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/pup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/pup/cover.png",
+      "party": "pup"
+    },
+    {
+      "title": "Social Democratic and Labour Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "Traditional Unionist Voice 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/tuv/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/tuv/cover.png",
+      "party": "tuv"
+    },
+    {
+      "title": "Workers' Party 2011 Manifesto",
+      "pdf": "/manifestos/stormont/2011/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/2011/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    }
+  ]
+}

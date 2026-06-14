@@ -3052,6 +3052,19 @@ h1, h2, h3, h4 {
 .devolved-hero-inner {
   max-width: var(--max-w);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2.5rem;
+  align-items: start;
+}
+.devolved-hero-parties {
+  position: static;
+}
+@media (max-width: 900px) {
+  .devolved-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 .devolved-hero-title {
   font-family: var(--font-display);
@@ -3533,4 +3546,57 @@ h1, h2, h3, h4 {
     padding: 1.25rem;
   }
   .london-booklet-body h2 { font-size: 1.3rem; }
+}
+
+/* Co-operative Party custom styles */
+.coop-representation-section {
+  margin-bottom: 2.5rem;
+}
+.coop-rep-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 1.25rem;
+}
+.coop-rep-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 8px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.coop-rep-num {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.1;
+}
+.coop-rep-label {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+.coop-rep-note {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  background: rgba(107, 45, 139, 0.08);
+  border-left: 3px solid #6B2D8B;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1.25rem;
+}
+.party-election-row.no-hover {
+  cursor: default;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .coop-rep-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

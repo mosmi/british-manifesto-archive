@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1998",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/Alliance 1998 manifesto (HTML conversion).pdf" },
+      { "party": "nicon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/Conservatives 1998 manifesto (HTML conversion).pdf" },
+      { "party": "dup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/DUP 1998 manifesto.pdf" },
+      { "party": "niwc", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/Northern Ireland Women's Coalition 1998 manifesto (HTML conversion).pdf" },
+      { "party": "sdlp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/SDLP 1998 manifesto (HTML conversion).pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/Sinn Fein 1998 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/UUP 1998 manifesto (HTML conversion).pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/1998 Northern Ireland Assembly election/Workers Party 1998 manifesto (HTML conversion).pdf" }
+    ]
+  },
+  {
+    "id": "2003",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Alliance 2003 manifesto.pdf" },
+      { "party": "nicon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Conservatives 2003 manifesto.pdf" },
+      { "party": "dup", "cover": "spread-left", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/DUP 2003 manifesto.pdf" },
+      { "party": "gpni", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Greens NI 2003 manifesto.pdf" },
+      { "party": "niwc", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Northern Ireland Women's Coalition 2003 manifesto.pdf" },
+      { "party": "pup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/PUP 2003 manifesto.pdf" },
+      { "party": "sdlp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/SDLP 2003 manifesto.pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Sinn Fein 2003 manifesto.pdf" },
+      { "party": "uup", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/UUP 2003 manifesto.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Workers Party 2003 manifesto.pdf" },
+      { "party": "sea", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2003 Northern Ireland Assembly election/Socialist Environmental Alliance 2003 manifesto.pdf" }
+    ]
+  },
+  {
+    "id": "2007",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Alliance 2007 manifesto.pdf" },
+      { "party": "nicon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Conservatives 2007 manifesto.pdf" },
+      { "party": "dup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/DUP 2007 manifesto.pdf" },
+      { "party": "gpni", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Greens NI 2007 manifesto.pdf" },
+      { "party": "pup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/PUP 2007 manifesto.pdf" },
+      { "party": "sdlp", "cover": "page", "pil_crop": [0.0410, 0.0305, 0.9576, 0.9701], "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/SDLP 2007 manifesto.pdf" },
+      { "party": "sinnfein", "cover": "spread-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Sein Fein 2007 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/UUP 2007 manifesto.pdf" },
+      { "party": "ukup", "cover": "third-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/UKUP 2007 candidate manifesto.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Workers Party 2007 manifesto.pdf" },
+      { "party": "rsf", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Republican Sein Fein 2007 manifesto.pdf" },
+      { "party": "sea", "cover": "two-thirds-right", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2007 Northern Ireland Assembly election/Socialist Environmental Alliance 2007 manifesto.pdf" }
+    ]
+  },
+  {
+    "id": "2011",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/Alliance 2011 manifesto.pdf" },
+      { "party": "dup", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/DUP 2011 manifesto.pdf" },
+      { "party": "gpni", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/Green Party NI 2011 manifesto.pdf" },
+      { "party": "pup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/PUP 2011 manifesto.pdf" },
+      { "party": "sdlp", "cover": "cropmarks", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/SDLP 2011 manifesto.pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/Sein Fein 2011 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/UUP 2011 manifesto.pdf" },
+      { "party": "tuv", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/TUV 2011 manifesto.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2011 Northern Ireland Assembly election/Workers Party 2011 manifesto.pdf" }
+    ]
+  },
+  {
+    "id": "2016",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/2016-alliance-assembly-manifesto.pdf" },
+      { "party": "dup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/dup_2016-04-04_nia-man.pdf" },
+      { "party": "gpni", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/GreenPartyNI_Manifesto_2016.pdf" },
+      { "party": "pup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/PUP 2016 manifesto.pdf" },
+      { "party": "sdlp", "cover": "spread-left", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/SDLP 2016 manifesto.pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/Sinn Fein 2016 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/UUP 2016 assembly manifesto.pdf" },
+      { "party": "tuv", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/tuv_2016-04-13_nia-man.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/wp_2016-04-22_nia-man.pdf" },
+      { "party": "ukip", "cover": "landscape", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/ukip ni manifesto 2016.compressed.pdf" },
+      { "party": "nicon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2016 Northern Ireland Assembly election/conservative-manifesto-2016-assembly-elections.pdf" }
+    ]
+  },
+  {
+    "id": "2017",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/Alliance 2017 manifesto.pdf" },
+      { "party": "dup", "cover": "cropmarks", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/DUP 2017 manifesto.pdf" },
+      { "party": "gpni", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/Green Party NI 2017 manifesto.pdf" },
+      { "party": "sdlp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/SDLP 2017 manifesto.pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/Sein Fein 2017 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/UUP 2017 manifesto.pdf" },
+      { "party": "tuv", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/TUV 2017 manifesto.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/Workers Party 2017 manifesto.pdf" },
+      { "party": "pbp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/People Before Profit 2017 manifesto.pdf" },
+      { "party": "nicon", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2017 Northern Ireland Assembly election/Conservatives 2017 manifesto.pdf" }
+    ]
+  },
+  {
+    "id": "2022",
+    "manifestos": [
+      { "party": "alliance", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/Alliance 2022 manifesto.pdf" },
+      { "party": "dup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/DUP 2022 manifesto.pdf" },
+      { "party": "gpni", "cover": "page", "pil_crop": [0.0331, 0.0233, 0.9661, 0.9756], "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/Green Party NI 2022 manifesto.pdf" },
+      { "party": "sdlp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/SDLP 2022 manifesto.pdf" },
+      { "party": "sinnfein", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/Sinn Fein 2022 manifesto.pdf" },
+      { "party": "uup", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/UUP 2022 manifesto.pdf" },
+      { "party": "tuv", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/TUV 2022 manifesto.pdf" },
+      { "party": "workerspartyie", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/Workers Party 2022 manifesto.pdf" },
+      { "party": "pbp", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/Northern Ireland/2022 Northern Ireland Assembly election/People Before Profit 2022 manifesto.pdf" }
+    ]
+  }
+]

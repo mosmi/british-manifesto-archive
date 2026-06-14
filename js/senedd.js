@@ -315,25 +315,24 @@ async function renderSeneddPortal(app) {
     ])}
     <section class="devolved-hero">
       <div class="devolved-hero-inner">
-        <span class="section-label">${portal?.subtitle || 'Senedd Cymru'}</span>
-        <h1 class="devolved-hero-title">Welsh Parliament</h1>
-        <div class="gold-rule"></div>
-        <p class="devolved-hero-desc">${portal?.description || 'The Senedd Cymru elects Members of the Senedd under the Additional Member System (1999–2021) and closed-list proportional representation from 2026.'}</p>
-        ${nation ? `<a href="/nation/${portal?.nation || 'wales'}" class="devolved-nation-link">View Wales nation page →</a>` : ''}
+        <div>
+          <span class="section-label">${portal?.subtitle || 'Senedd Cymru'}</span>
+          <h1 class="devolved-hero-title">Welsh Parliament</h1>
+          <div class="gold-rule"></div>
+          <p class="devolved-hero-desc">${portal?.description || 'The Senedd Cymru elects Members of the Senedd under the Additional Member System (1999–2021) and closed-list proportional representation from 2026.'}</p>
+          ${nation ? `<a href="/nation/${portal?.nation || 'wales'}" class="devolved-nation-link">View Wales nation page →</a>` : ''}
+        </div>
+        <div class="nation-parties-card devolved-hero-parties">
+          <div class="section-label" style="margin-bottom:1rem">Parties in the Senedd</div>
+          ${partyLinks}
+          <a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>
+        </div>
       </div>
     </section>
     <div class="devolved-body">
       <div class="london-era">
         <div class="london-era-head"><h2>Senedd elections (1999–)</h2><p>Every Welsh Parliament election since devolution, with results, seat charts, and archived party manifestos.</p></div>
         <div class="london-timeline-grid">${cards}</div>
-      </div>
-      <div class="devolved-grid" style="margin-top:2.5rem">
-        <div></div>
-        <div class="nation-parties-card">
-          <div class="section-label" style="margin-bottom:1rem">Parties in the Senedd</div>
-          ${partyLinks}
-          <a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>
-        </div>
       </div>
     </div>
   `;

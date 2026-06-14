@@ -158,6 +158,12 @@
       "pdf": "/manifestos/holyrood/2021/ukip/manifesto.pdf",
       "cover": "/manifestos/holyrood/2021/ukip/cover.png",
       "party": "ukip"
+    },
+    {
+      "title": "Scottish Co-operative Party Manifesto 2021",
+      "pdf": "/manifestos/holyrood/2021/cooperative/manifesto.pdf",
+      "cover": "/manifestos/holyrood/2021/cooperative/cover.png",
+      "party": "cooperative"
     }
   ]
 }

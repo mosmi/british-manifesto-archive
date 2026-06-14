@@ -1,0 +1,165 @@
+{
+  "id": "2016",
+  "year": 2016,
+  "displayYear": "2016",
+  "date": "5 May 2016",
+  "title": "2016 Northern Ireland Assembly election",
+  "turnout": 54.9,
+  "control": "dup",
+  "firstMinister": "Arlene Foster",
+  "deputyFirstMinister": "Martin McGuinness",
+  "majority": false,
+  "summary": "Arlene Foster led the DUP into her first election as leader, retaining 38 seats. Sinn Féin won 28 seats. Following the election, Foster became First Minister alongside Martin McGuinness. The election saw People Before Profit (PBP) win two seats in Belfast West and Foyle, while the Green Party increased its representation to two seats. This was the final election before the size of the Assembly was reduced to 90 members.",
+  "highlights": [
+    "Arlene Foster leads DUP to 38 seats in her first election as leader",
+    "People Before Profit wins two seats on a radical left-wing platform",
+    "Green Party NI doubles its seats to two",
+    "UUP and SDLP decide to exit the Executive to form the official Opposition",
+    "Turnout remains steady at 54.9%"
+  ],
+  "parliament": {
+    "system": "Single Transferable Vote",
+    "totalSeats": 108,
+    "majorityThreshold": 55,
+    "results": [
+      {
+        "party": "dup",
+        "seats": 38,
+        "pct": 29.2
+      },
+      {
+        "party": "sinnfein",
+        "seats": 28,
+        "pct": 24.0
+      },
+      {
+        "party": "uup",
+        "seats": 16,
+        "pct": 12.6
+      },
+      {
+        "party": "sdlp",
+        "seats": 12,
+        "pct": 12.0
+      },
+      {
+        "party": "alliance",
+        "seats": 8,
+        "pct": 7.0
+      },
+      {
+        "party": "gpni",
+        "seats": 2,
+        "pct": 2.7
+      },
+      {
+        "party": "pbp",
+        "seats": 2,
+        "pct": 2.0
+      },
+      {
+        "party": "tuv",
+        "seats": 1,
+        "pct": 3.4
+      },
+      {
+        "partyLabel": "Independent",
+        "seats": 1,
+        "pct": 2.2
+      }
+    ],
+    "otherListVotes": [
+      {
+        "name": "UK Independence Party",
+        "pct": 1.5
+      },
+      {
+        "name": "Conservatives",
+        "pct": 0.4
+      },
+      {
+        "name": "Workers' Party",
+        "pct": 0.2
+      },
+      {
+        "name": "Progressive Unionist Party",
+        "pct": 0.9
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — Northern Ireland Assembly Election 2016 (CBP-7575)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7575/"
+    }
+  ],
+  "body": "stormont",
+  "manifestos": [
+    {
+      "title": "Alliance Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/alliance/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/alliance/cover.png",
+      "party": "alliance"
+    },
+    {
+      "title": "Democratic Unionist Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/dup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/dup/cover.png",
+      "party": "dup"
+    },
+    {
+      "title": "Green Party NI 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/gpni/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/gpni/cover.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Progressive Unionist Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/pup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/pup/cover.png",
+      "party": "pup"
+    },
+    {
+      "title": "Social Democratic and Labour Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/sdlp/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/sdlp/cover.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Sinn Féin 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/sinnfein/cover.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Ulster Unionist Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/uup/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/uup/cover.png",
+      "party": "uup"
+    },
+    {
+      "title": "Traditional Unionist Voice 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/tuv/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/tuv/cover.png",
+      "party": "tuv"
+    },
+    {
+      "title": "Workers' Party 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/workerspartyie/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/workerspartyie/cover.png",
+      "party": "workerspartyie"
+    },
+    {
+      "title": "UKIP Northern Ireland 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/ukip/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/ukip/cover.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Northern Ireland Conservatives 2016 Manifesto",
+      "pdf": "/manifestos/stormont/2016/nicon/manifesto.pdf",
+      "cover": "/manifestos/stormont/2016/nicon/cover.png",
+      "party": "nicon"
+    }
+  ]
+}

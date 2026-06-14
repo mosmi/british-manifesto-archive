@@ -61,6 +61,13 @@ def main() -> None:
         else []
     )
 
+    stormont_index_path = ROOT / "data/devolved/stormont/index.json"
+    stormont_ids = (
+        [e["id"] for e in json.loads(stormont_index_path.read_text(encoding="utf-8"))]
+        if stormont_index_path.exists()
+        else []
+    )
+
     urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
     urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
@@ -71,6 +78,8 @@ def main() -> None:
     urls.append("/devolved/holyrood/other-parties")
     urls.extend(f"/devolved/senedd/{sid}" for sid in senedd_ids)
     urls.append("/devolved/senedd/other-parties")
+    urls.extend(f"/devolved/stormont/{sid}" for sid in stormont_ids)
+    urls.append("/devolved/stormont/other-parties")
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )

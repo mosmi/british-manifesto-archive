@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1998",
+    "body": "stormont",
+    "year": 1998,
+    "displayYear": "1998",
+    "date": "25 June 1998",
+    "title": "Northern Ireland Assembly election",
+    "control": "uup",
+    "winnerName": "David Trimble",
+    "firstMinister": "David Trimble",
+    "deputyFirstMinister": "Seamus Mallon"
+  },
+  {
+    "id": "2003",
+    "body": "stormont",
+    "year": 2003,
+    "displayYear": "2003",
+    "date": "26 November 2003",
+    "title": "Northern Ireland Assembly election",
+    "control": "dup",
+    "winnerName": "Ian Paisley",
+    "firstMinister": "Ian Paisley",
+    "deputyFirstMinister": "Martin McGuinness"
+  },
+  {
+    "id": "2007",
+    "body": "stormont",
+    "year": 2007,
+    "displayYear": "2007",
+    "date": "7 March 2007",
+    "title": "Northern Ireland Assembly election",
+    "control": "dup",
+    "winnerName": "Ian Paisley",
+    "firstMinister": "Ian Paisley",
+    "deputyFirstMinister": "Martin McGuinness"
+  },
+  {
+    "id": "2011",
+    "body": "stormont",
+    "year": 2011,
+    "displayYear": "2011",
+    "date": "5 May 2011",
+    "title": "Northern Ireland Assembly election",
+    "control": "dup",
+    "winnerName": "Peter Robinson",
+    "firstMinister": "Peter Robinson",
+    "deputyFirstMinister": "Martin McGuinness"
+  },
+  {
+    "id": "2016",
+    "body": "stormont",
+    "year": 2016,
+    "displayYear": "2016",
+    "date": "5 May 2016",
+    "title": "Northern Ireland Assembly election",
+    "control": "dup",
+    "winnerName": "Arlene Foster",
+    "firstMinister": "Arlene Foster",
+    "deputyFirstMinister": "Martin McGuinness"
+  },
+  {
+    "id": "2017",
+    "body": "stormont",
+    "year": 2017,
+    "displayYear": "2017",
+    "date": "2 March 2017",
+    "title": "Northern Ireland Assembly election",
+    "control": "dup",
+    "winnerName": "Arlene Foster",
+    "firstMinister": "Arlene Foster",
+    "deputyFirstMinister": "Michelle O'Neill"
+  },
+  {
+    "id": "2022",
+    "body": "stormont",
+    "year": 2022,
+    "displayYear": "2022",
+    "date": "5 May 2022",
+    "title": "Northern Ireland Assembly election",
+    "control": "sinnfein",
+    "winnerName": "Michelle O'Neill",
+    "firstMinister": "Michelle O'Neill",
+    "deputyFirstMinister": "Emma Little-Pengelly"
+  }
+]
