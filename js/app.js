@@ -14,6 +14,8 @@ const SITE = {
   ogImageAlt: 'The British Manifesto Archive — a digital repository of UK political party manifestos',
 };
 
+const ASSETS_VERSION = '20260614';
+
 // Manifesto text without a PDF scan (electionId/partyId)
 const MANIFESTO_TEXT_ONLY = new Set([
   '2001/omrlp',
@@ -815,8 +817,8 @@ function loadLatestManifestos() {
       track.innerHTML = items.map(item => {
         const party = PARTIES[item.partyId] || {};
         const election = getElection(item.electionId);
-        const cover = `/manifestos/${item.electionId}/${item.partyId}/cover.png`;
-        const coverFb = `/manifestos/${item.electionId}/${item.partyId}/cover.jpg`;
+        const cover = `/manifestos/${item.electionId}/${item.partyId}/cover.png?v=${ASSETS_VERSION}`;
+        const coverFb = `/manifestos/${item.electionId}/${item.partyId}/cover.jpg?v=${ASSETS_VERSION}`;
         const title = item.label || `${party.shortName || item.partyId} ${election?.displayYear || item.electionId}`;
         return `<a href="/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
           <div class="latest-card-cover">
@@ -931,8 +933,8 @@ function buildManifestoCard(pid, election, opts = {}) {
   const displayName  = getPartyName(pid, election.year);
   const pdfPath      = `/manifestos/${election.id}/${pid}/manifesto.pdf`;
   const textPath     = `/manifesto/${election.id}/${pid}`;
-  const coverPath    = `/manifestos/${election.id}/${pid}/cover.png`;
-  const coverFallback= `/manifestos/${election.id}/${pid}/cover.jpg`;
+  const coverPath    = `/manifestos/${election.id}/${pid}/cover.png?v=${ASSETS_VERSION}`;
+  const coverFallback= `/manifestos/${election.id}/${pid}/cover.jpg?v=${ASSETS_VERSION}`;
   const hasPdf       = hasManifestoPdf(election.id, pid);
   const thumbHref    = hasPdf ? pdfPath : textPath;
   const thumbTarget  = hasPdf ? ' target="_blank" rel="noopener"' : '';
