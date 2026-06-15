@@ -2,6 +2,8 @@
    Lazy election data loader — falls back to bundled ELECTIONS
    ============================================================ */
 
+const ASSETS_VERSION = '2026061503';
+
 const _electionCache = new Map();
 
 /** Fetch JSON or markdown; reject SPA HTML fallbacks (Cloudflare 200 + text/html). */

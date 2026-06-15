@@ -55,7 +55,7 @@ function holyroodManifestoCard(m, year) {
   return `
     <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
       <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${heading} manifesto PDF">
-        <img src="${m.cover}" alt="${heading} manifesto cover"
+        <img src="${m.cover}?v=${ASSETS_VERSION}" alt="${heading} manifesto cover"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="manifesto-thumb-placeholder" style="display:none">
           <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
