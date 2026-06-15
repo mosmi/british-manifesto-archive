@@ -55,6 +55,7 @@
     { "party": "conservative", "candidate": "Shaun Bailey", "title": "Shaun Bailey for London", "pdf": "/manifestos/london/gla-2021/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2021/conservative/cover.png" },
     { "party": "libdem", "candidate": "Luisa Porritt", "title": "London Liberal Democrat Manifesto", "pdf": "/manifestos/london/gla-2021/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2021/libdem/cover.png" },
     { "party": "green", "candidate": "Siân Berry", "title": "London Green Party Manifesto", "pdf": "/manifestos/london/gla-2021/green/manifesto.pdf", "cover": "/manifestos/london/gla-2021/green/cover.png" },
+    { "party": "cooperative", "title": "Common Ground: London Co-operative Party Manifesto 2021", "pdf": "/manifestos/london/gla-2021/cooperative/manifesto.pdf", "cover": "/manifestos/london/gla-2021/cooperative/cover.png" },
     { "partyLabel": "London Real Party", "candidate": "Brian Rose", "title": "London Real Party Manifesto", "pdf": "/manifestos/london/gla-2021/londonreal/manifesto.pdf", "cover": "/manifestos/london/gla-2021/londonreal/cover.png" },
     { "partyLabel": "Reclaim Party", "candidate": "Laurence Fox", "title": "Laurence Fox for London", "pdf": "/manifestos/london/gla-2021/reclaim/manifesto.pdf", "cover": "/manifestos/london/gla-2021/reclaim/cover.png" },
     { "partyLabel": "Independent", "candidate": "Max Fosh", "title": "Max Fosh for London", "pdf": "/manifestos/london/gla-2021/maxfosh/manifesto.pdf", "cover": "/manifestos/london/gla-2021/maxfosh/cover.png" },
