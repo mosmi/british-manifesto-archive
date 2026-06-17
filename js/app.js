@@ -91,20 +91,41 @@ function announceRouteChange(title) {
 }
 
 // ── Progressive image fade-in ─────────────────────────────────
-/**
- * For every `.img-lazy` image inside `container`, add `.img-loaded`
- * once the image has finished loading (or immediately if already cached).
- */
+function initLazyImage(img) {
+  if (img.classList.contains('img-loaded')) return;
+  if (img.complete && img.naturalWidth > 0) {
+    img.classList.add('img-loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('img-loaded'), { once: true });
+    img.addEventListener('error', () => img.classList.add('img-loaded'), { once: true });
+  }
+}
+
 function initLazyImages(container) {
   if (!container) return;
-  container.querySelectorAll('img.img-lazy').forEach(img => {
-    if (img.complete && img.naturalWidth > 0) {
-      img.classList.add('img-loaded');
-    } else {
-      img.addEventListener('load', () => img.classList.add('img-loaded'), { once: true });
-      img.addEventListener('error', () => img.classList.add('img-loaded'), { once: true });
-    }
+  container.querySelectorAll('img.img-lazy').forEach(initLazyImage);
+}
+
+function setupLazyImageObserver() {
+  const app = document.getElementById('app');
+  if (!app) return;
+
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.matches && node.matches('img.img-lazy')) {
+            initLazyImage(node);
+          }
+          if (node.querySelectorAll) {
+            node.querySelectorAll('img.img-lazy').forEach(initLazyImage);
+          }
+        }
+      });
+    });
   });
+
+  observer.observe(app, { childList: true, subtree: true });
 }
 
 // Not shown in election-page manifesto lists (no manifestos published)
@@ -337,6 +358,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupMobileMenu();
   setupNavDropdowns();
   setupSearch();
+  setupLazyImageObserver();
   setupRouter();
   route();
 });
