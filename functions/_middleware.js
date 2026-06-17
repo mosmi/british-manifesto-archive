@@ -21,9 +21,9 @@ const SITE_NAME = 'The British Manifesto Archive';
 const TITLE_SUFFIX = ` — ${SITE_NAME}`;
 const DEFAULT_TITLE = `${SITE_NAME} — www.manifestos.org.uk`;
 const DEFAULT_DESCRIPTION =
-  'A comprehensive digital archive of UK general election manifestos from ' +
-  '1945 to 2024. Browse party manifestos, election results, and ' +
-  'constituency maps.';
+  'A comprehensive digital archive of general, devolved, regional, and ' +
+  'European Parliament election manifestos in the United Kingdom. Browse ' +
+  'party manifestos, election results, and maps.';
 
 // Static (non-parameterised) routes the SPA renders, with bespoke metadata.
 const STATIC_ROUTES = {

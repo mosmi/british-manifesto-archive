@@ -1,0 +1,174 @@
+{
+  "id": "2004",
+  "year": 2004,
+  "displayYear": "2004",
+  "date": "10 June 2004",
+  "title": "2004 European Parliament election",
+  "turnout": 38.5,
+  "control": "conservative",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "The election was marked by a strong performance by UKIP, which won 12 seats (up from 3) to tie with the Liberal Democrats. The Conservatives won the election with 27 seats, while Tony Blair's Labour Party suffered, falling to 19 seats. Sinn Féin won its first EP seat in Northern Ireland.",
+  "highlights": [
+    "UKIP surges to win 12 seats, matching the Liberal Democrats",
+    "Labour drops to 19 seats, reflecting public dissatisfaction over the Iraq War",
+    "Sinn Féin wins its first Northern Ireland seat, overtaking SDLP",
+    "Conservatives win the election with 27 seats under Michael Howard",
+    "Turnout recovers to 38.5% UK-wide, aided by postal voting trials"
+  ],
+  "parliament": {
+    "totalSeats": 78,
+    "majorityThreshold": 40,
+    "system": "Regional list PR (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 27,
+        "pct": 26.7
+      },
+      {
+        "party": "labour",
+        "seats": 19,
+        "pct": 22.6
+      },
+      {
+        "party": "libdem",
+        "seats": 12,
+        "pct": 14.9
+      },
+      {
+        "party": "ukip",
+        "seats": 12,
+        "pct": 16.2
+      },
+      {
+        "party": "green",
+        "seats": 2,
+        "pct": 6.2
+      },
+      {
+        "party": "snp",
+        "seats": 2,
+        "pct": 1.4
+      },
+      {
+        "party": "plaid",
+        "seats": 1,
+        "pct": 1.0
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 32.0
+      },
+      {
+        "party": "sinnfein",
+        "seats": 1,
+        "pct": 26.3
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 16.6
+      },
+      {
+        "party": "sdlp",
+        "seats": 0,
+        "pct": 15.9
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": [
+    {
+      "title": "Conservative European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/conservative/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/conservative/manifesto.png",
+      "party": "conservative"
+    },
+    {
+      "title": "Labour European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/labour/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/labour/manifesto.png",
+      "party": "labour"
+    },
+    {
+      "title": "Green Party European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/green/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/green/manifesto.png",
+      "party": "green"
+    },
+    {
+      "title": "SNP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/snp/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/snp/manifesto.png",
+      "party": "snp"
+    },
+    {
+      "title": "UKIP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/ukip/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/ukip/manifesto.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Sinn Féin European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/sinnfein/manifesto.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "DUP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/dup/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/dup/manifesto.png",
+      "party": "dup"
+    },
+    {
+      "title": "UUP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/uup/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/uup/manifesto.png",
+      "party": "uup"
+    },
+    {
+      "title": "SDLP European Manifesto 2004 (Part 1)",
+      "pdf": "/manifestos/euro/2004/sdlp/manifesto-pt1.pdf",
+      "cover": "/manifestos/euro/2004/sdlp/manifesto-pt1.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "SDLP European Manifesto 2004 (Part 2)",
+      "pdf": "/manifestos/euro/2004/sdlp/manifesto-pt2.pdf",
+      "cover": "/manifestos/euro/2004/sdlp/manifesto-pt2.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Green Party Northern Ireland European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/gpni/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/gpni/manifesto.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Scottish Socialist Party European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/ssp/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/ssp/manifesto.png",
+      "party": "ssp"
+    },
+    {
+      "title": "Socialist Environmental Alliance European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/sea/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/sea/manifesto.png",
+      "party": "sea"
+    },
+    {
+      "title": "PES European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/pes/manifesto.png",
+      "party": "pes"
+    }
+  ]
+}

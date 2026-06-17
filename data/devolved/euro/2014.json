@@ -1,0 +1,173 @@
+{
+  "id": "2014",
+  "year": 2014,
+  "displayYear": "2014",
+  "date": "22 May 2014",
+  "title": "2014 European Parliament election",
+  "turnout": 35.4,
+  "control": "ukip",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "Nigel Farage's UKIP achieved a historic national victory, winning the most seats (24) and topping the poll with 27.5% of the Great Britain vote. This marked the first time since 1906 that a party other than Labour or the Conservatives had won the popular vote in a nationwide UK election. Labour rose to 20 seats, while the Conservatives fell to 19, and the Liberal Democrats were decimated, losing all but one of their 11 seats.",
+  "highlights": [
+    "UKIP tops the national poll with 24 seats, a historic first for a minor party",
+    "Liberal Democrats suffer a catastrophic defeat, losing 10 of their 11 seats",
+    "Labour returns 20 seats to push Conservatives (19) into third place",
+    "Green Party gains a seat to win 3 seats overall",
+    "STV in Northern Ireland returns 1 DUP, 1 Sinn Féin, and 1 UUP"
+  ],
+  "parliament": {
+    "totalSeats": 73,
+    "majorityThreshold": 37,
+    "system": "Regional list PR (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "ukip",
+        "seats": 24,
+        "pct": 26.6
+      },
+      {
+        "party": "labour",
+        "seats": 20,
+        "pct": 24.4
+      },
+      {
+        "party": "conservative",
+        "seats": 19,
+        "pct": 23.0
+      },
+      {
+        "party": "green",
+        "seats": 3,
+        "pct": 7.6
+      },
+      {
+        "party": "snp",
+        "seats": 2,
+        "pct": 2.4
+      },
+      {
+        "party": "libdem",
+        "seats": 1,
+        "pct": 6.6
+      },
+      {
+        "party": "plaid",
+        "seats": 1,
+        "pct": 0.7
+      },
+      {
+        "party": "sinnfein",
+        "seats": 1,
+        "pct": 25.5
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 20.9
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 13.3
+      },
+      {
+        "party": "sdlp",
+        "seats": 0,
+        "pct": 13.0
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 7.1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": [
+    {
+      "title": "UKIP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/ukip/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/ukip/manifesto.png",
+      "party": "ukip"
+    },
+    {
+      "title": "Labour European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/labour/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/labour/manifesto.png",
+      "party": "labour"
+    },
+    {
+      "title": "Conservative European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/conservative/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/conservative/manifesto.png",
+      "party": "conservative"
+    },
+    {
+      "title": "Green Party European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/green/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/green/manifesto.png",
+      "party": "green"
+    },
+    {
+      "title": "Plaid Cymru European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/plaid/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/plaid/manifesto.png",
+      "party": "plaid"
+    },
+    {
+      "title": "SDLP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/sdlp/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/sdlp/manifesto.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Scottish Conservatives European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/scottishcon/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/scottishcon/manifesto.png",
+      "party": "scottishcon"
+    },
+    {
+      "title": "Scottish Greens European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/scottishgrn/manifesto.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "TUV European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/tuv/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/tuv/manifesto.png",
+      "party": "tuv"
+    },
+    {
+      "title": "UUP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/uup/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/uup/manifesto.png",
+      "party": "uup"
+    },
+    {
+      "title": "Welsh Conservatives European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/welshcon/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/welshcon/manifesto.png",
+      "party": "welshcon"
+    },
+    {
+      "title": "Welsh Liberal Democrats European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/welshlibdem/manifesto.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "PES European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/pes/manifesto.png",
+      "party": "pes"
+    }
+  ]
+}

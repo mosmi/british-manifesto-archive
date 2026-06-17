@@ -337,6 +337,27 @@
     <loc>https://www.manifestos.org.uk/party/pirate</loc>
   </url>
   <url>
+    <loc>https://www.manifestos.org.uk/party/changeuk</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/animalpolitics</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/pes</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/eldr</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/englishdemocrats</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/christian</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/party/brexit</loc>
+  </url>
+  <url>
     <loc>https://www.manifestos.org.uk/nation/england</loc>
   </url>
   <url>
@@ -356,6 +377,9 @@
   </url>
   <url>
     <loc>https://www.manifestos.org.uk/devolved/london</loc>
+  </url>
+  <url>
+    <loc>https://www.manifestos.org.uk/devolved/euro</loc>
   </url>
   <url>
     <loc>https://www.manifestos.org.uk/devolved/london/gla-2024</loc>

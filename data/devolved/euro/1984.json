@@ -1,0 +1,84 @@
+{
+  "id": "1984",
+  "year": 1984,
+  "displayYear": "1984",
+  "date": "14 June 1984",
+  "title": "1984 European Parliament election",
+  "turnout": 32.9,
+  "control": "conservative",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "The Conservatives under Margaret Thatcher retained their majority of UK seats, though their share fell as Labour under Neil Kinnock recovered, winning 32 seats (up 15). The SDP-Liberal Alliance failed to win any seats despite taking 19% of the Great Britain vote.",
+  "highlights": [
+    "Conservatives retain overall majority of UK seats (45)",
+    "Labour recovers to win 32 seats under Neil Kinnock",
+    "SDP-Liberal Alliance fails to win any seats despite 19.1% vote share",
+    "SNP retains 1 seat; DUP, SDLP, and UUP hold Northern Ireland seats",
+    "Turnout remains low at 32.9% UK-wide"
+  ],
+  "parliament": {
+    "totalSeats": 81,
+    "majorityThreshold": 41,
+    "system": "First Past the Post (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 45,
+        "pct": 40.8
+      },
+      {
+        "party": "labour",
+        "seats": 32,
+        "pct": 36.5
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 19.1
+      },
+      {
+        "party": "snp",
+        "seats": 1,
+        "pct": 1.7
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 33.6
+      },
+      {
+        "party": "sdlp",
+        "seats": 1,
+        "pct": 22.1
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 21.5
+      },
+      {
+        "party": "plaid",
+        "seats": 0,
+        "pct": 0.8
+      },
+      {
+        "party": "green",
+        "seats": 0,
+        "pct": 0.5
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 5.0
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": []
+}

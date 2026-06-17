@@ -7,7 +7,7 @@ const SITE = {
   name: 'The British Manifesto Archive',
   domain: 'www.manifestos.org.uk',
   url: 'https://www.manifestos.org.uk',
-  description: 'A comprehensive digital archive of UK general election manifestos from 1945 to 2024. Browse party manifestos, election results, and constituency maps.',
+  description: 'A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos in the United Kingdom. Browse party manifestos, election results, and maps.',
   ogImage: 'https://www.manifestos.org.uk/og-image.jpg',
   ogImageWidth: 1024,
   ogImageHeight: 537,
@@ -40,6 +40,71 @@ function hasManifestoContent(electionId, partyId) {
   return hasManifestoPdf(electionId, partyId)
     || MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`)
     || (MANIFESTO_ARCHIVE?.has(`${electionId}/${partyId}`) ?? false);
+}
+
+// ── PDF File Size Index ───────────────────────────────────────
+let _pdfSizes = {};
+
+async function initPdfSizes() {
+  try {
+    _pdfSizes = await fetchTyped('/data/pdf-sizes.json', 'json');
+  } catch {
+    _pdfSizes = {};
+  }
+}
+
+/**
+ * Returns a formatted size string for the given PDF URL path,
+ * e.g. "4.7 MB", or an empty string if unknown.
+ * Exposed globally so devolved modules can call it.
+ */
+function getPdfSize(path) {
+  return _pdfSizes[path] || '';
+}
+window.getPdfSize = getPdfSize;
+
+// ── SPA route-change accessibility ───────────────────────────
+// Creates a visually-hidden live region that announces page titles
+// to screen readers on each SPA navigation.
+let _liveRegion = null;
+function getOrCreateLiveRegion() {
+  if (!_liveRegion) {
+    _liveRegion = document.createElement('div');
+    _liveRegion.setAttribute('aria-live', 'polite');
+    _liveRegion.setAttribute('aria-atomic', 'true');
+    _liveRegion.className = 'sr-only';
+    _liveRegion.id = 'route-announcer';
+    document.body.appendChild(_liveRegion);
+  }
+  return _liveRegion;
+}
+
+function announceRouteChange(title) {
+  const region = getOrCreateLiveRegion();
+  // Brief delay so screen readers pick up the change after DOM settles
+  setTimeout(() => {
+    region.textContent = '';
+    requestAnimationFrame(() => {
+      region.textContent = title || document.title;
+    });
+  }, 100);
+}
+
+// ── Progressive image fade-in ─────────────────────────────────
+/**
+ * For every `.img-lazy` image inside `container`, add `.img-loaded`
+ * once the image has finished loading (or immediately if already cached).
+ */
+function initLazyImages(container) {
+  if (!container) return;
+  container.querySelectorAll('img.img-lazy').forEach(img => {
+    if (img.complete && img.naturalWidth > 0) {
+      img.classList.add('img-loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('img-loaded'), { once: true });
+      img.addEventListener('error', () => img.classList.add('img-loaded'), { once: true });
+    }
+  });
 }
 
 // Not shown in election-page manifesto lists (no manifestos published)
@@ -125,19 +190,59 @@ function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
 }
 
 const HOVER_FINE = window.matchMedia('(hover: hover) and (pointer: fine)');
-let _openNavMenu = null;
+
+function setInert(el, value) {
+  if ('inert' in el) {
+    el.inert = value;
+  } else {
+    if (value) {
+      el.setAttribute('aria-hidden', 'true');
+      el.style.pointerEvents = 'none';
+    } else {
+      el.removeAttribute('aria-hidden');
+      el.style.pointerEvents = '';
+    }
+  }
+}
+
+const NavController = {
+  _open: null,
+
+  open(menu, button, dropdown = null) {
+    this.closeAll();
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    setInert(menu, false);
+    button.setAttribute('aria-expanded', 'true');
+    this._open = { menu, button, dropdown };
+  },
+
+  closeAll(returnFocusTo = null) {
+    if (this._open) {
+      this._open.menu.classList.remove('is-open');
+      this._open.menu.setAttribute('aria-hidden', 'true');
+      setInert(this._open.menu, true);
+      this._open.button.setAttribute('aria-expanded', 'false');
+      this._open = null;
+    }
+    document.querySelectorAll('.dropdown-menu.is-open, .dropdown-mega.is-open').forEach(menu => {
+      menu.classList.remove('is-open');
+      menu.setAttribute('aria-hidden', 'true');
+      setInert(menu, true);
+    });
+    document.querySelectorAll('.nav-dropdown .nav-btn[aria-expanded="true"]').forEach(btn => {
+      btn.setAttribute('aria-expanded', 'false');
+    });
+    if (returnFocusTo) returnFocusTo.focus();
+  },
+
+  isOpen() {
+    return this._open !== null;
+  }
+};
 
 function closeAllNavMenus(returnFocusTo = null) {
-  document.querySelectorAll('.dropdown-menu.is-open, .dropdown-mega.is-open').forEach(menu => {
-    menu.classList.remove('is-open');
-    menu.setAttribute('aria-hidden', 'true');
-    menu.inert = true;
-  });
-  document.querySelectorAll('.nav-dropdown .nav-btn[aria-expanded="true"]').forEach(btn => {
-    btn.setAttribute('aria-expanded', 'false');
-  });
-  _openNavMenu = null;
-  if (returnFocusTo) returnFocusTo.focus();
+  NavController.closeAll(returnFocusTo);
 }
 
 function closeMobileMenu() {
@@ -153,36 +258,27 @@ function setupNavMenu(dropdown, button, menu) {
 
   const show = () => {
     clearTimeout(hideTimer);
-    if (_openNavMenu && _openNavMenu.menu !== menu) {
-      closeAllNavMenus();
-    }
-    menu.classList.add('is-open');
-    menu.setAttribute('aria-hidden', 'false');
-    menu.inert = false;
-    button.setAttribute('aria-expanded', 'true');
-    _openNavMenu = { dropdown, button, menu };
+    NavController.open(menu, button, dropdown);
   };
 
-  const hide = (returnFocus = false) => {
+  const hide = () => {
+    clearTimeout(hideTimer);
     hideTimer = setTimeout(() => {
-      menu.classList.remove('is-open');
-      menu.setAttribute('aria-hidden', 'true');
-      menu.inert = true;
-      button.setAttribute('aria-expanded', 'false');
-      if (_openNavMenu?.menu === menu) _openNavMenu = null;
-      if (returnFocus) button.focus();
+      if (!dropdown.contains(document.activeElement) && !dropdown.matches(':hover') && !menu.matches(':hover')) {
+        NavController.closeAll();
+      }
     }, 150);
   };
 
   const toggle = () => {
     const isOpen = menu.classList.contains('is-open');
-    if (isOpen) hide(true);
+    if (isOpen) NavController.closeAll(button);
     else show();
   };
 
   button.addEventListener('click', e => {
     const href = button.getAttribute('href');
-    if (href && HOVER_FINE.matches) {
+    if (href && HOVER_FINE.matches && window.innerWidth > 640) {
       return;
     }
     e.preventDefault();
@@ -192,45 +288,51 @@ function setupNavMenu(dropdown, button, menu) {
   button.addEventListener('keydown', e => {
     if (e.key === 'Escape' && menu.classList.contains('is-open')) {
       e.preventDefault();
-      clearTimeout(hideTimer);
-      hide(true);
+      NavController.closeAll(button);
     }
   });
 
-  if (HOVER_FINE.matches) {
-    dropdown.addEventListener('mouseenter', show);
-    dropdown.addEventListener('mouseleave', () => hide(false));
-    menu.addEventListener('mouseenter', show);
-    menu.addEventListener('mouseleave', () => hide(false));
-  }
+  const setupHoverHandlers = () => {
+    if (HOVER_FINE.matches && window.innerWidth > 640) {
+      dropdown.addEventListener('mouseenter', show);
+      dropdown.addEventListener('mouseleave', hide);
+      menu.addEventListener('mouseenter', show);
+      menu.addEventListener('mouseleave', hide);
+    }
+  };
+
+  setupHoverHandlers();
 
   dropdown.addEventListener('focusout', e => {
-    if (!dropdown.contains(e.relatedTarget)) hide(false);
+    setTimeout(() => {
+      if (!dropdown.contains(document.activeElement) && NavController._open?.menu === menu) {
+        NavController.closeAll();
+      }
+    }, 10);
   });
 
   menu.addEventListener('click', e => {
     if (e.target.closest('a')) {
-      clearTimeout(hideTimer);
-      closeAllNavMenus();
+      NavController.closeAll();
     }
   });
 }
 
 document.addEventListener('click', e => {
-  if (_openNavMenu && !_openNavMenu.dropdown.contains(e.target)) {
-    closeAllNavMenus();
+  if (NavController.isOpen() && !NavController._open.dropdown?.contains(e.target) && !NavController._open.menu?.contains(e.target)) {
+    NavController.closeAll();
   }
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && _openNavMenu) {
-    const btn = _openNavMenu.button;
-    closeAllNavMenus(btn);
+  if (e.key === 'Escape' && NavController.isOpen()) {
+    const btn = NavController._open.button;
+    NavController.closeAll(btn);
   }
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
-  await initManifestoArchive();
+  await Promise.all([initManifestoArchive(), initPdfSizes()]);
   buildNav();
   setupMobileMenu();
   setupNavDropdowns();
@@ -296,6 +398,11 @@ function setupRouter() {
 function route() {
   const path = getPath();
   const app  = document.getElementById('app');
+  
+  // Close all navigation menus on page transition
+  NavController.closeAll();
+  closeMobileMenu();
+
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
 
   if (path === '/') {
@@ -328,6 +435,12 @@ function route() {
     renderNIElection(app, path.replace('/devolved/stormont/', ''));
   } else if (path === '/devolved/stormont') {
     renderNIPortal(app);
+  } else if (path === '/devolved/euro/other-parties') {
+    renderEuroOtherParties(app);
+  } else if (path.startsWith('/devolved/euro/')) {
+    renderEuroElection(app, path.replace('/devolved/euro/', ''));
+  } else if (path === '/devolved/euro') {
+    renderEuroPortal(app);
   } else if (path.startsWith('/devolved/')) {
     renderDevolved(app, path.replace('/devolved/', ''));
   } else if (path === '/others') {
@@ -349,6 +462,15 @@ function route() {
     renderNotFound(app);
   }
   window.scrollTo({ top: 0, behavior: 'instant' });
+  // Trigger fade-in for any lazy cover images rendered by this route
+  initLazyImages(document.getElementById('app'));
+  // Move focus to main landmark so keyboard/SR users know the page changed
+  const mainEl = document.getElementById('app');
+  if (mainEl) {
+    mainEl.focus();
+  }
+  // Announce the new page title to screen readers
+  announceRouteChange(document.title);
 }
 
 // ── Shared UI helpers ─────────────────────────────────────────
@@ -387,7 +509,8 @@ function buildDevolvedDropdown() {
   Object.values(DEVOLVED_PORTALS).forEach(portal => {
     const a = document.createElement('a');
     a.href = `/devolved/${portal.id}`;
-    a.innerHTML = `<strong>${portal.label}</strong><span class="dropdown-sub">${portal.subtitle}</span>`;
+    a.className = 'dropdown-item-with-dot';
+    a.innerHTML = `<span class="type-dot dot-${portal.id}" aria-hidden="true"></span><div class="dropdown-text"><strong>${portal.label}</strong><span class="dropdown-sub">${portal.subtitle}</span></div>`;
     el.appendChild(a);
   });
 }
@@ -420,7 +543,8 @@ function buildElectionsDropdown() {
     decades[dec].forEach(e => {
       const a = document.createElement('a');
       a.href = `/election/${e.id}`;
-      a.textContent = `${e.displayYear} — ${PARTIES[e.winner]?.shortName || ''}`;
+      a.className = 'dropdown-item-with-dot';
+      a.innerHTML = `<span class="type-dot dot-uk" aria-hidden="true"></span><span>${e.displayYear} — ${PARTIES[e.winner]?.shortName || ''}</span>`;
       el.appendChild(a);
     });
   });
@@ -545,12 +669,17 @@ function renderHome(app) {
           <h1 class="hero-title">The British<br><em>Manifesto Archive</em></h1>
           <p class="hero-subtitle">Digital repository of UK political history — manifesto documents, electoral results, and campaign records for every post-war election.</p>
           <div class="hero-stats">
-            <div><div class="hero-stat-num">62</div><div class="hero-stat-label">Elections</div></div>
+            <div><div class="hero-stat-num">71</div><div class="hero-stat-label">Elections</div></div>
             <div><div class="hero-stat-num">${Object.keys(PARTIES).filter(k => k !== 'others').length}</div><div class="hero-stat-label">Parties</div></div>
             <div><div class="hero-stat-num">650</div><div class="hero-stat-label">Commons Seats</div></div>
             <div><div class="hero-stat-num">4</div><div class="hero-stat-label">Nations</div></div>
           </div>
         </header>
+
+        <!-- Mobile Accordion Selector -->
+        <div class="mobile-accordion-section" id="mobile-accordion-section">
+          <div style="text-align:center;color:var(--text-muted);padding:2rem;">Loading election selector…</div>
+        </div>
 
         <div class="dashboard-layout">
           <div class="dashboard-main-col">
@@ -649,7 +778,144 @@ function renderHome(app) {
   setupTimelineFilter();
   initHomeDashboard();
   loadLatestManifestos();
+
+  // Load devolved and euro indexes in parallel to build the mobile accordion selector
+  const portals = ['holyrood', 'senedd', 'stormont', 'london', 'euro'];
+  Promise.all(portals.map(async id => {
+    try {
+      const idx = await fetchTyped(`/data/devolved/${id}/index.json`, 'json');
+      return idx.map(e => ({ ...e, type: id }));
+    } catch {
+      return [];
+    }
+  })).then(results => {
+    const westminster = ELECTIONS.map(e => ({
+      id: e.id,
+      year: e.year,
+      displayYear: e.displayYear,
+      title: `${e.displayYear} UK General Election`,
+      type: 'uk',
+      url: `/election/${e.id}`
+    }));
+
+    const allElections = [...westminster];
+    results.flat().forEach(e => {
+      let title = '';
+      let url = '';
+      if (e.type === 'holyrood') {
+        title = `${e.displayYear} Scottish Parliament`;
+        url = `/devolved/holyrood/${e.id}`;
+      } else if (e.type === 'senedd') {
+        title = `${e.displayYear} Welsh Parliament`;
+        url = `/devolved/senedd/${e.id}`;
+      } else if (e.type === 'stormont') {
+        title = `${e.displayYear} Northern Ireland Assembly`;
+        url = `/devolved/stormont/${e.id}`;
+      } else if (e.type === 'london') {
+        title = `${e.displayYear} London Mayor & Assembly`;
+        url = `/devolved/london/${e.id}`;
+      } else if (e.type === 'euro') {
+        title = `${e.displayYear} European Parliament`;
+        url = `/devolved/euro/${e.id}`;
+      }
+      allElections.push({
+        id: e.id,
+        year: e.year,
+        displayYear: e.displayYear,
+        title,
+        type: e.type,
+        url
+      });
+    });
+
+    // Group by decade
+    const groups = {};
+    allElections.forEach(e => {
+      const decade = Math.floor(e.year / 10) * 10;
+      const decadeLabel = `${decade}s`;
+      if (!groups[decadeLabel]) groups[decadeLabel] = [];
+      groups[decadeLabel].push(e);
+    });
+
+    const typeOrder = { uk: 0, holyrood: 1, senedd: 2, stormont: 3, london: 4, euro: 5 };
+    Object.keys(groups).forEach(decadeLabel => {
+      groups[decadeLabel].sort((a, b) => {
+        if (b.year !== a.year) return b.year - a.year;
+        return (typeOrder[a.type] ?? 99) - (typeOrder[b.type] ?? 99);
+      });
+    });
+
+    const sortedDecades = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+    const accordionSection = document.getElementById('mobile-accordion-section');
+    if (accordionSection) {
+      accordionSection.innerHTML = sortedDecades.map((dec, i) => {
+        const bodyId = `accordion-body-${dec.replace(/\s/g, '-')}`;
+        const headerId = `accordion-header-${dec.replace(/\s/g, '-')}`;
+        const isOpen = i === 0;
+        const listHtml = groups[dec].map(e => `
+          <a href="${e.url}" class="election-item">
+            <span class="type-dot dot-${e.type}" aria-hidden="true"></span>
+            <span class="election-label">${e.title}</span>
+            <span class="election-arrow" aria-hidden="true">›</span>
+          </a>
+        `).join('');
+
+        return `
+          <div class="accordion-item${isOpen ? ' open' : ''}" data-decade="${dec}">
+            <button type="button"
+              class="accordion-header${isOpen ? ' open' : ''}"
+              id="${headerId}"
+              aria-expanded="${isOpen}"
+              aria-controls="${bodyId}">
+              <span>${dec} <span class="count">(${groups[dec].length} elections)</span></span>
+              <span class="chevron" aria-hidden="true"${isOpen ? ' style="transform:rotate(90deg);color:var(--gold);"' : ''}>▶</span>
+            </button>
+            <div class="accordion-body" id="${bodyId}" role="region" aria-labelledby="${headerId}"${isOpen ? '' : ' hidden'}>
+              ${listHtml}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Add event listeners to toggle accordion
+      accordionSection.querySelectorAll('.accordion-item').forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const chevron = item.querySelector('.chevron');
+        const bodyId = header.getAttribute('aria-controls');
+        const body = document.getElementById(bodyId);
+
+        header.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+
+          // Collapse all other items
+          accordionSection.querySelectorAll('.accordion-item').forEach(el => {
+            el.classList.remove('open');
+            const h = el.querySelector('.accordion-header');
+            const c = el.querySelector('.chevron');
+            const bId = h.getAttribute('aria-controls');
+            const b = document.getElementById(bId);
+            h.classList.remove('open');
+            h.setAttribute('aria-expanded', 'false');
+            c.style.transform = '';
+            c.style.color = '';
+            if (b) b.hidden = true;
+          });
+
+          if (!isOpen) {
+            item.classList.add('open');
+            header.classList.add('open');
+            header.setAttribute('aria-expanded', 'true');
+            chevron.style.transform = 'rotate(90deg)';
+            chevron.style.color = 'var(--gold)';
+            if (body) body.hidden = false;
+          }
+        });
+      });
+    }
+  });
 }
+
 
 function initHomeDashboard() {
   const slider = document.getElementById('election-slider');
@@ -962,9 +1228,19 @@ function buildManifestoCard(pid, election, opts = {}) {
         </a>`
     : '';
 
+  const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
+  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
+  const pdfLinkFinal = hasPdf
+    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document${pdfSizeLabel}</div></div>
+        </a>`
+    : '';
+
   return `<div class="manifesto-card" style="--party-color:${p.color};--party-dim:${p.dim}">
       <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
         <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
+          class="img-lazy" loading="lazy" decoding="async"
           onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFallback}';}">
         <div class="manifesto-thumb-placeholder" style="display:none">
           <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
@@ -984,7 +1260,7 @@ function buildManifestoCard(pid, election, opts = {}) {
         ${seatsTag}
       </div>
       <div class="manifesto-card-body">
-        ${pdfLink}
+        ${pdfLinkFinal}
         <a href="${textPath}" class="manifesto-link">
           <span class="manifesto-link-icon">📝</span>
           <div class="manifesto-link-info"><div class="manifesto-link-title">Read Online</div><div class="manifesto-link-sub">Formatted text version</div></div>
@@ -1552,6 +1828,12 @@ async function renderParty(app, id) {
   const niElections = niHistory.elections;
   const niManifestos = niHistory.manifestos;
 
+  const euroHistory = (typeof getEuroPartyHistory === 'function')
+    ? await getEuroPartyHistory(id)
+    : { elections: [], manifestos: [] };
+  const euroElections = euroHistory.elections;
+  const euroManifestos = euroHistory.manifestos;
+
   const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
   const holyroodElectionRows = holyroodElections.map(pe =>
     holyroodPartyElectionRow(id, pe, maxHolyroodSeats, color)
@@ -1579,11 +1861,21 @@ async function renderParty(app, id) {
     niManifestoCard(manifesto, election.year)
   ).join('');
 
+  const maxEuroSeats = Math.max(1, ...euroElections.map(pe => pe.result.seats));
+  const euroElectionRows = euroElections.map(pe =>
+    euroPartyElectionRow(id, pe, maxEuroSeats, color)
+  ).join('');
+
+  const euroItems = euroManifestos.map(({ election, manifesto }) =>
+    euroManifestoCard(manifesto, election.year)
+  ).join('');
+
   const contestedParts = [];
   if (partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
   if (holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
   if (seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
   if (niElections.length) contestedParts.push(`${niElections.length} Stormont`);
+  if (euroElections.length) contestedParts.push(`${euroElections.length} European Parliament`);
   const contestedLabel = contestedParts.join(' · ') || '0';
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
@@ -1662,6 +1954,18 @@ async function renderParty(app, id) {
         <h2>Northern Ireland Assembly Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="manifesto-grid">${niItems}</div>
+      </div>` : ''}
+      ${euroElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">European Parliament</span>
+        <h2>European Parliament Results</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="party-results-list">${euroElectionRows}</div>
+      </div>` : ''}
+      ${euroItems ? `<div class="party-manifestos-section">
+        <span class="section-label">European Parliament</span>
+        <h2>European Parliament Manifestos</h2>
+        <div class="gold-rule" style="background:${color}"></div>
+        <div class="manifesto-grid">${euroItems}</div>
       </div>` : ''}
     </div>
   `;
@@ -1920,7 +2224,7 @@ function renderDevolved(app, id) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments', href: '/devolved' },
+      { label: 'Beyond Westminster', href: '/devolved' },
       { label: portal.label },
     ])}
     <section class="devolved-hero">
@@ -2124,7 +2428,7 @@ function renderManifesto(app, electionId, partyId) {
             <div id="manifesto-frontmatter"></div>
           </div>
           ${hasManifestoPdf(electionId, partyId)
-            ? '<a href="/manifestos/' + electionId + '/' + partyId + '/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF</a>'
+            ? (() => { const _sz = getPdfSize(`/manifestos/${electionId}/${partyId}/manifesto.pdf`); return `<a href="/manifestos/${electionId}/${partyId}/manifesto.pdf" class="manifesto-pdf-btn" target="_blank" rel="noopener">↓ Download PDF${_sz ? ` (${_sz})` : ''}</a>`; })()
             : ''}
         </div>
       </div>
@@ -2224,7 +2528,7 @@ function renderElectionsHub(app) {
 
 function renderDevolvedHub(app) {
   setPageMeta({
-    title: 'Devolved Parliaments',
+    title: 'Beyond Westminster',
     description: 'Devolved legislatures of the United Kingdom — Scottish Parliament, Welsh Parliament, Northern Ireland Assembly, and London Mayor & Assembly.',
     path: '/devolved',
   });
@@ -2241,12 +2545,12 @@ function renderDevolvedHub(app) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments' },
+      { label: 'Beyond Westminster' },
     ])}
     <div class="hub-page">
       <header class="hub-page-header">
         <span class="section-label">United Kingdom — Devolved Government</span>
-        <h1>Devolved Parliaments</h1>
+        <h1>Beyond Westminster</h1>
         <div class="gold-rule"></div>
         <p>Legislatures with devolved powers across Scotland, Wales, Northern Ireland, and Greater London.</p>
       </header>
@@ -2377,7 +2681,7 @@ function renderPartiesHub(app) {
 function renderAbout(app) {
   setPageMeta({
     title: 'About',
-    description: 'About manifestos.org.uk — a digital archive of UK general election manifestos, results, and maps from 1945 to 2024.',
+    description: 'About manifestos.org.uk — a digital archive of UK general, devolved, regional, and European Parliament election manifestos, results, and maps.',
     path: '/about',
   });
   app.innerHTML = `
@@ -2386,7 +2690,7 @@ function renderAbout(app) {
       <h1>The British<br>Manifesto Archive</h1>
       <p class="about-domain"><a href="https://www.manifestos.org.uk/">www.manifestos.org.uk</a></p>
       <div class="gold-rule"></div>
-      <p>A comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of every UK general election from 1945 to 2024.</p>
+      <p>A comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of UK general, devolved, regional, and European Parliament elections.</p>
       <p>The archive covers all four nations of the United Kingdom — England, Wales, Scotland and Northern Ireland — including their devolved institutions. Statistical data is sourced from the House of Commons Library Research Briefing CBP-7529, <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em>.</p>
 
       <h2>Adding Manifesto Documents</h2>

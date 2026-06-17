@@ -52,10 +52,13 @@ function holyroodManifestoCard(m, year) {
   const color = holyroodPartyColor(m.party);
   const partyName = holyroodPartyName(m, year);
   const heading = m.candidate || partyName;
+  const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
+  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
   return `
     <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
       <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${heading} manifesto PDF">
         <img src="${m.cover}?v=${ASSETS_VERSION}" alt="${heading} manifesto cover"
+          class="img-lazy" loading="lazy" decoding="async"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="manifesto-thumb-placeholder" style="display:none">
           <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
@@ -73,7 +76,7 @@ function holyroodManifestoCard(m, year) {
         ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
         <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
           <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document</div></div>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
         </a>
       </div>
     </div>`;
@@ -185,7 +188,7 @@ async function renderHolyroodElection(app, id) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments', href: '/devolved' },
+      { label: 'Beyond Westminster', href: '/devolved' },
       { label: 'Scottish Parliament', href: '/devolved/holyrood' },
       { label: election.displayYear },
     ])}
@@ -274,7 +277,7 @@ async function renderHolyroodPortal(app) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments', href: '/devolved' },
+      { label: 'Beyond Westminster', href: '/devolved' },
       { label: 'Scottish Parliament' },
     ])}
     <section class="devolved-hero">
@@ -328,7 +331,7 @@ function renderHolyroodOtherParties(app) {
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'Devolved Parliaments', href: '/devolved' },
+      { label: 'Beyond Westminster', href: '/devolved' },
       { label: 'Scottish Parliament', href: '/devolved/holyrood' },
       { label: 'Other Scottish parties' },
     ])}

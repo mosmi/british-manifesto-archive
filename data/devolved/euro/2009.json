@@ -1,0 +1,203 @@
+{
+  "id": "2009",
+  "year": 2009,
+  "displayYear": "2009",
+  "date": "4 June 2009",
+  "title": "2009 European Parliament election",
+  "turnout": 34.5,
+  "control": "conservative",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "Gordon Brown's Labour Party suffered a historic defeat, finishing third in vote share behind UKIP. The Conservatives won the election with 25 seats, while UKIP won 13 and Labour won 13. The British National Party (BNP) won its first-ever European seats, taking 2 in Yorkshire and North West England.",
+  "highlights": [
+    "Labour pushes to third place in vote share, trailing UKIP",
+    "BNP wins its first-ever European Parliament seats (2)",
+    "UKIP wins 13 seats, finishing second in seats and vote share",
+    "Conservatives remain largest party with 25 seats under David Cameron",
+    "Turnout falls slightly to 34.5% UK-wide"
+  ],
+  "parliament": {
+    "totalSeats": 72,
+    "majorityThreshold": 37,
+    "system": "Regional list PR (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 25,
+        "pct": 27.7
+      },
+      {
+        "party": "ukip",
+        "seats": 13,
+        "pct": 15.6
+      },
+      {
+        "party": "labour",
+        "seats": 13,
+        "pct": 15.7
+      },
+      {
+        "party": "libdem",
+        "seats": 11,
+        "pct": 13.7
+      },
+      {
+        "party": "green",
+        "seats": 2,
+        "pct": 8.6
+      },
+      {
+        "party": "bnp",
+        "seats": 2,
+        "pct": 6.2
+      },
+      {
+        "party": "snp",
+        "seats": 2,
+        "pct": 2.1
+      },
+      {
+        "party": "plaid",
+        "seats": 1,
+        "pct": 0.8
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 18.2
+      },
+      {
+        "party": "sinnfein",
+        "seats": 1,
+        "pct": 26.0
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 17.1
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 9.2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": [
+    {
+      "title": "Liberal Democrat European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/libdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/libdem/manifesto.png",
+      "party": "libdem"
+    },
+    {
+      "title": "Green Party European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/green/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/green/manifesto.png",
+      "party": "green"
+    },
+    {
+      "title": "SNP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/snp/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/snp/manifesto.png",
+      "party": "snp"
+    },
+    {
+      "title": "Scottish Labour European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/scottishlab/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/scottishlab/manifesto.png",
+      "party": "scottishlab"
+    },
+    {
+      "title": "Welsh Liberal Democrats European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/welshlibdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/welshlibdem/manifesto.png",
+      "party": "welshlibdem"
+    },
+    {
+      "title": "Sinn Féin European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/sinnfein/manifesto.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "UUP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/uup/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/uup/manifesto.png",
+      "party": "uup"
+    },
+    {
+      "title": "SDLP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/sdlp/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/sdlp/manifesto.png",
+      "party": "sdlp"
+    },
+    {
+      "title": "Green Party Northern Ireland European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/gpni/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/gpni/manifesto.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Scottish Greens European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/scottishgrn/manifesto.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "TUV European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/tuv/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/tuv/manifesto.png",
+      "party": "tuv"
+    },
+    {
+      "title": "BNP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/bnp/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/bnp/manifesto.png",
+      "party": "bnp"
+    },
+    {
+      "title": "BNP England European Election Leaflet 2009",
+      "pdf": "/manifestos/euro/2009/bnp/leaflet.pdf",
+      "cover": "/manifestos/euro/2009/bnp/leaflet.png",
+      "party": "bnp"
+    },
+    {
+      "title": "English Democrats European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/englishdemocrats/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/englishdemocrats/manifesto.png",
+      "party": "englishdemocrats"
+    },
+    {
+      "title": "Christian Party / CPA European Election Leaflet 2009",
+      "pdf": "/manifestos/euro/2009/christian/leaflet.pdf",
+      "cover": "/manifestos/euro/2009/christian/leaflet.png",
+      "party": "christian"
+    },
+    {
+      "title": "PES European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/pes/manifesto.png",
+      "party": "pes"
+    },
+    {
+      "title": "PES European Election Flyer 2009",
+      "pdf": "/manifestos/euro/2009/pes/flyer.pdf",
+      "cover": "/manifestos/euro/2009/pes/flyer.png",
+      "party": "pes"
+    },
+    {
+      "title": "ELDR European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/eldr/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/eldr/manifesto.png",
+      "party": "eldr"
+    }
+  ]
+}

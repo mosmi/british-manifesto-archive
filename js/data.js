@@ -593,6 +593,55 @@ const PARTIES = {
     nation: 'others',
     description: 'Pirate Party UK was founded in 2009 as part of the international Pirate Party movement, which originated in Sweden in 2006. The party campaigns for digital rights, civil liberties, copyright and patent reform, net neutrality, privacy, and government transparency. It fielded candidates in the 2010, 2015 and 2017 general elections, never winning a Westminster seat. The party produced crowd-sourced, openly licensed manifestos — its 2015 document invited public contributions via Reddit, and its 2017 "Open Manifesto" was released under a Creative Commons zero licence. Pirate Party UK was dissolved in 2020.',
   },
+  changeuk: {
+    id: 'changeuk', name: 'Change UK', shortName: 'Change UK',
+    color: '#3B5998', dim: 'rgba(59,89,152,0.14)',
+    founded: 2019, spectrum: 'Centre / Pro-European', isPrimary: false,
+    nation: 'england',
+    description: 'Change UK (originally The Independent Group) was formed in 2019 by MPs who defected from Labour and the Conservatives in opposition to their leaders’ positions on Brexit. It contested the 2019 European Parliament election but failed to win any seats and was dissolved shortly after.',
+  },
+  animalpolitics: {
+    id: 'animalpolitics', name: 'Animal Welfare Party', shortName: 'Animal Welfare',
+    color: '#76B82A', dim: 'rgba(118,184,42,0.14)',
+    founded: 2006, spectrum: 'Left / Animal Rights', isPrimary: false,
+    nation: 'england',
+    description: 'The Animal Welfare Party (contesting as Animal Politics EU in 2019) is a minor party advocating for animal rights, health, and environmental protection.',
+  },
+  pes: {
+    id: 'pes', name: 'Party of European Socialists', shortName: 'PES',
+    color: '#E4003B', dim: 'rgba(228,0,59,0.14)',
+    founded: 1992, spectrum: 'Centre-left / Social Democratic', isPrimary: false,
+    nation: 'england',
+    description: 'The Party of European Socialists (PES) is a European political party representing social democratic and socialist parties across Europe, including the UK Labour Party.',
+  },
+  eldr: {
+    id: 'eldr', name: 'European Liberal Democrat and Reform Party', shortName: 'ELDR',
+    color: '#FAA61A', dim: 'rgba(250,166,26,0.14)',
+    founded: 1976, spectrum: 'Centre / Liberal', isPrimary: false,
+    nation: 'england',
+    description: 'The ELDR party (now ALDE) is a European political party representing liberal and centrist parties across Europe, including the UK Liberal Democrats.',
+  },
+  englishdemocrats: {
+    id: 'englishdemocrats', name: 'English Democrats', shortName: 'English Democrats',
+    color: '#E4003B', dim: 'rgba(228,0,59,0.14)',
+    founded: 2002, spectrum: 'Right-wing / English Nationalist', isPrimary: false,
+    nation: 'england',
+    description: 'The English Democrats are a right-wing English nationalist party campaigning for an independent England or an English Parliament.',
+  },
+  christian: {
+    id: 'christian', name: 'Christian Party / CPA', shortName: 'Christian Party',
+    color: '#0055A5', dim: 'rgba(0,85,165,0.14)',
+    founded: 2004, spectrum: 'Right / Christian', isPrimary: false,
+    nation: 'england',
+    description: 'The Christian Party and Christian People\'s Alliance are social-conservative political parties campaigning on a Christian platform.',
+  },
+  brexit: {
+    id: 'brexit', name: 'Brexit Party', shortName: 'Brexit Party',
+    color: '#12B6CF', dim: 'rgba(18,182,207,0.14)',
+    founded: 2018, spectrum: 'Right / Populist / Eurosceptic', isPrimary: false,
+    nation: 'england',
+    description: 'The Brexit Party was founded in 2018 by Eurosceptics including Nigel Farage. It won 29 seats in the 2019 European Parliament election, becoming the largest party in the delegation. It did not contest seats in the 2019 general election where Conservatives were defending to prevent a split vote. It was later renamed Reform UK.',
+  },
   others: {
     id: 'others', name: 'Others', shortName: 'Others',
     color: '#6b7280', dim: 'rgba(107,114,128,0.14)',
@@ -1673,6 +1722,10 @@ const STORMONT_OTHER_PARTIES = [
   'gpni', 'nicon', 'niwc', 'pup', 'rsf', 'sea', 'ukip', 'ukup', 'ulsterpopularunionist', 'unity', 'vanguard', 'workerspartyie'
 ];
 
+const EURO_OTHER_PARTIES = [
+  'changeuk', 'animalpolitics', 'pes', 'eldr', 'englishdemocrats', 'christian', 'tuv', 'ssp', 'bnp', 'sea'
+];
+
 const DEVOLVED_PORTALS = {
   holyrood: {
     id: 'holyrood',
@@ -1717,6 +1770,17 @@ const DEVOLVED_PORTALS = {
     members: 25,
     system: 'Supplementary Vote / AMS',
     description: 'The Greater London Authority comprises an elected Mayor and 25 Assembly Members. The Mayor holds executive powers over transport, policing, housing, and economic development in the capital.',
+  },
+  euro: {
+    id: 'euro',
+    label: 'European Parliament',
+    subtitle: 'Strasbourg & Brussels',
+    nation: 'uk',
+    body: 'European Parliament (UK MEPs)',
+    established: 1979,
+    members: 73,
+    system: 'Proportional Representation (1999–2019); FPTP (1979–1994)',
+    description: 'The UK participated in European Parliament elections from the first direct elections in 1979 until its departure from the EU in 2020. UK MEPs were elected under First Past the Post (1979–1994) and regional list Proportional Representation (1999–2019).',
   },
 };
 

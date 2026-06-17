@@ -220,7 +220,7 @@ h1, h2, h3, h4 {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%; /* Fix 8px gap issue */
   right: 0;
   min-width: 220px;
   max-height: 420px;
@@ -232,16 +232,15 @@ h1, h2, h3, h4 {
   box-shadow: 0 16px 40px rgba(0,0,0,0.5);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-4px);
-  transition: opacity 0.18s var(--ease), transform 0.18s var(--ease);
+  transform: translateY(0);
+  transition: opacity 0.18s var(--ease);
   scrollbar-width: thin;
   scrollbar-color: var(--gold-dim) transparent;
+  z-index: 150;
 }
-.nav-dropdown:hover .dropdown-menu,
 .dropdown-menu.is-open {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
 }
 
 .dropdown-section-label {
@@ -1567,15 +1566,35 @@ h1, h2, h3, h4 {
 }
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
   flex-shrink: 0;
 }
 .footer-links a {
   font-size: 0.85rem;
   color: var(--text-muted);
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .footer-links a:hover { color: var(--cream); }
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem 1.25rem;
+    width: 100%;
+  }
+  .footer-links a {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+}
 .footer-base {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -1647,6 +1666,9 @@ h1, h2, h3, h4 {
   .nav-mobile-only .nav-btn {
     width: 100%;
     padding: 0.75rem 0.85rem;
+    display: flex !important;
+    align-items: center;
+    gap: 0.75rem;
   }
   .nav-mobile-btn { display: flex; }
   .parties-grid { grid-template-columns: 1fr; }
@@ -1679,7 +1701,7 @@ h1, h2, h3, h4 {
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 150; /* Display above nav bar (z-index 100) */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background: var(--navy-mid);
@@ -3135,6 +3157,14 @@ h1, h2, h3, h4 {
     flex-direction: column;
   }
   .slider-legend { display: none; }
+  .dashboard-layout {
+    display: none !important;
+  }
+  .mobile-accordion-section {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+  }
 }
 
 /* ── Election viz tabs + hexmap ── */
@@ -3600,3 +3630,136 @@ h1, h2, h3, h4 {
     gap: 1rem;
   }
 }
+
+/* ── Election Type Dot Badges ── */
+.type-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.type-dot.dot-uk { background: #ffffff; border: 1px solid rgba(255, 255, 255, 0.4); } /* White (UK General) */
+.type-dot.dot-holyrood { background: #0055A5; } /* Dark Blue (Scotland) */
+.type-dot.dot-senedd { background: #DC2626; } /* Red (Wales) */
+.type-dot.dot-stormont { background: #0D9488; } /* Green (Northern Ireland) */
+.type-dot.dot-london { background: #7C3AED; } /* Purple (London) */
+.type-dot.dot-euro { background: #F59E0B; } /* Amber (EU) */
+
+.dropdown-item-with-dot {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+}
+.dropdown-item-with-dot .dropdown-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Progressive cover image loading ── */
+.img-lazy {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.img-lazy.img-loaded {
+  opacity: 1;
+}
+
+/* ── Mobile Accordion Selector ── */
+.mobile-accordion-section {
+  display: none;
+}
+.accordion-item {
+  border-bottom: 1px solid var(--navy-border);
+}
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  padding: 1.1rem 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--cream);
+  cursor: pointer;
+  user-select: none;
+}
+.accordion-header .count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-family: var(--font-ui);
+}
+.accordion-header .chevron {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  transition: transform 0.2s var(--ease);
+}
+.accordion-header.open .chevron {
+  transform: rotate(90deg);
+  color: var(--gold);
+}
+.accordion-body {
+  padding: 0.25rem 0 1rem 0;
+}
+/* hidden attr handles collapsed state; .open on item kept for CSS chevron state */
+.accordion-body[hidden] {
+  display: none;
+}
+.election-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  gap: 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.election-item:hover {
+  background: var(--navy-light);
+  color: var(--cream);
+}
+.election-label {
+  flex: 1;
+}
+.election-arrow {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+/* ── Scroll Snap and Scrollbar enhancements ── */
+.latest-track-wrap {
+  scroll-snap-type: x mandatory;
+}
+.latest-card {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-sidebar {
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold-dim) var(--navy-mid);
+  }
+  .dashboard-sidebar::-webkit-scrollbar {
+    height: 6px;
+    display: block !important;
+  }
+  .dashboard-sidebar::-webkit-scrollbar-track {
+    background: var(--navy-mid);
+  }
+  .dashboard-sidebar::-webkit-scrollbar-thumb {
+    background: var(--gold-dim);
+    border-radius: 3px;
+  }
+  .timeline-card {
+    scroll-snap-align: start;
+  }
+}
+

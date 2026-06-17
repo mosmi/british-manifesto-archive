@@ -1,0 +1,84 @@
+{
+  "id": "1989",
+  "year": 1989,
+  "displayYear": "1989",
+  "date": "15 June 1989",
+  "title": "1989 European Parliament election",
+  "turnout": 36.8,
+  "control": "labour",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "Labour won a majority of UK seats for the first time, taking 45 seats to the Conservatives' 32. The election was also notable for the Green Party (formerly the Ecology Party) receiving 14.9% of the Great Britain vote, though under the first-past-the-post system they failed to win any seats.",
+  "highlights": [
+    "Labour wins most UK seats (45) under Neil Kinnock",
+    "Green Party achieves historic 14.9% of Great Britain vote but wins no seats",
+    "SDP-Liberal Alliance vote collapses to 6.2% following their split/reorganisation",
+    "Conservatives fall to 32 seats — lowest since direct elections began",
+    "DUP, SDLP, and UUP retain 1 seat each in Northern Ireland"
+  ],
+  "parliament": {
+    "totalSeats": 81,
+    "majorityThreshold": 41,
+    "system": "First Past the Post (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 45,
+        "pct": 40.1
+      },
+      {
+        "party": "conservative",
+        "seats": 32,
+        "pct": 34.7
+      },
+      {
+        "party": "green",
+        "seats": 0,
+        "pct": 14.9
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 6.2
+      },
+      {
+        "party": "snp",
+        "seats": 1,
+        "pct": 2.6
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 29.9
+      },
+      {
+        "party": "sdlp",
+        "seats": 1,
+        "pct": 25.5
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 22.2
+      },
+      {
+        "party": "plaid",
+        "seats": 0,
+        "pct": 0.7
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 5.2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": []
+}

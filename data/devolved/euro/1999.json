@@ -1,0 +1,96 @@
+{
+  "id": "1999",
+  "year": 1999,
+  "displayYear": "1999",
+  "date": "10 June 1999",
+  "title": "1999 European Parliament election",
+  "turnout": 24.0,
+  "control": "conservative",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "The introduction of the regional list proportional representation system changed the political dynamic, allowing smaller parties to win seats. The Conservatives won the most seats (36) while Labour fell to 29. The Liberal Democrats won 10, UKIP won its first 3 seats, and the Greens won 2 seats.",
+  "highlights": [
+    "First EP election held under regional list Proportional Representation in GB",
+    "Conservatives win the most seats (36) under William Hague",
+    "UKIP wins its first 3 European Parliament seats",
+    "Green Party wins its first 2 seats (Caroline Lucas and Jean Lambert)",
+    "Turnout drops to a record low of 24.0% UK-wide (23.1% in GB)"
+  ],
+  "parliament": {
+    "totalSeats": 87,
+    "majorityThreshold": 44,
+    "system": "Regional list PR (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 36,
+        "pct": 35.8
+      },
+      {
+        "party": "labour",
+        "seats": 29,
+        "pct": 28.0
+      },
+      {
+        "party": "libdem",
+        "seats": 10,
+        "pct": 12.7
+      },
+      {
+        "party": "ukip",
+        "seats": 3,
+        "pct": 7.0
+      },
+      {
+        "party": "green",
+        "seats": 2,
+        "pct": 6.3
+      },
+      {
+        "party": "snp",
+        "seats": 2,
+        "pct": 2.7
+      },
+      {
+        "party": "plaid",
+        "seats": 2,
+        "pct": 1.9
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 28.4
+      },
+      {
+        "party": "sdlp",
+        "seats": 1,
+        "pct": 28.1
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 17.6
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 2.1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": [
+    {
+      "title": "PES Manifesto 1999",
+      "pdf": "/manifestos/euro/1999/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/1999/pes/manifesto.png",
+      "party": "pes"
+    }
+  ]
+}

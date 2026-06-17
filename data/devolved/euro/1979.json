@@ -1,0 +1,84 @@
+{
+  "id": "1979",
+  "year": 1979,
+  "displayYear": "1979",
+  "date": "7 June 1979",
+  "title": "1979 European Parliament election",
+  "turnout": 32.7,
+  "control": "conservative",
+  "firstMinister": null,
+  "majority": false,
+  "summary": "The first direct elections to the European Parliament saw a landslide victory for Margaret Thatcher's Conservative Party, which won 60 of the 78 Great Britain seats on 51% of the vote. Labour won 17 seats and the SNP won 1 seat in Scotland. In Northern Ireland, the DUP, SDLP, and UUP won 1 seat each under the STV system.",
+  "highlights": [
+    "First direct elections to the European Parliament",
+    "Conservatives win 60 seats with 51% of Great Britain vote",
+    "Labour wins 17 seats; SNP wins 1 seat in Scotland",
+    "DUP, SDLP, and UUP win 1 seat each in Northern Ireland under STV",
+    "Low turnout in Great Britain (32.1%) compared to Northern Ireland (55.6%)"
+  ],
+  "parliament": {
+    "totalSeats": 81,
+    "majorityThreshold": 41,
+    "system": "First Past the Post (GB) & STV (NI)",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 60,
+        "pct": 50.6
+      },
+      {
+        "party": "labour",
+        "seats": 17,
+        "pct": 33.0
+      },
+      {
+        "party": "snp",
+        "seats": 1,
+        "pct": 1.9
+      },
+      {
+        "party": "dup",
+        "seats": 1,
+        "pct": 29.8
+      },
+      {
+        "party": "sdlp",
+        "seats": 1,
+        "pct": 24.6
+      },
+      {
+        "party": "uup",
+        "seats": 1,
+        "pct": 21.9
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 13.1
+      },
+      {
+        "party": "plaid",
+        "seats": 0,
+        "pct": 0.6
+      },
+      {
+        "party": "green",
+        "seats": 0,
+        "pct": 0.1
+      },
+      {
+        "party": "alliance",
+        "seats": 0,
+        "pct": 6.8
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    }
+  ],
+  "body": "euro",
+  "manifestos": []
+}

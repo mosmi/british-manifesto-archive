@@ -104,6 +104,12 @@ function setupSearch() {
     overlay.setAttribute('aria-hidden', 'false');
     overlay.inert = false;
     panel.setAttribute('aria-modal', 'true');
+    
+    // Set siblings to inert
+    document.getElementById('main-nav')?.setAttribute('inert', '');
+    document.getElementById('app')?.setAttribute('inert', '');
+    document.getElementById('main-footer')?.setAttribute('inert', '');
+
     input.value = '';
     results.innerHTML = '<p class="search-hint" id="search-status">Search parties, elections, and archive descriptions.</p>';
     activeResultIndex = -1;
@@ -114,7 +120,13 @@ function setupSearch() {
     overlay.classList.remove('is-open');
     overlay.setAttribute('aria-hidden', 'true');
     overlay.inert = true;
-    panel.removeAttribute('aria-modal');
+    panel.setAttribute('aria-modal', 'false');
+
+    // Remove inert from siblings
+    document.getElementById('main-nav')?.removeAttribute('inert');
+    document.getElementById('app')?.removeAttribute('inert');
+    document.getElementById('main-footer')?.removeAttribute('inert');
+
     activeResultIndex = -1;
     if (_searchLastToggle) _searchLastToggle.focus();
   };
@@ -231,4 +243,32 @@ function setupSearch() {
 
   overlay.inert = true;
   results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
+  
+  // Asynchronously index EP elections
+  loadSearchExtraItems();
+}
+
+async function loadSearchExtraItems() {
+  if (typeof loadEuroIndex === 'function') {
+    try {
+      const euroIdx = await loadEuroIndex();
+      const items = getSearchItems();
+      euroIdx.forEach(e => {
+        const winner = PARTIES?.[e.control];
+        // Prevent duplicate indexing if already added
+        if (items.some(item => item.id === `euro-${e.id}`)) return;
+        items.push({
+          type: 'election',
+          id: `euro-${e.id}`,
+          title: `${e.displayYear} European Parliament Election`,
+          subtitle: winner ? `${winner.shortName} victory · ${e.winnerName || ''}` : '',
+          body: `${e.title || ''} European Parliament election in the UK`,
+          href: `/devolved/euro/${e.id}`,
+          color: winner?.color || '#F59E0B',
+        });
+      });
+    } catch (err) {
+      console.error('Error indexing Euro elections in search:', err);
+    }
+  }
 }
