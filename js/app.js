@@ -1070,7 +1070,7 @@ function loadLatestManifestos() {
   const track = document.getElementById('latest-track');
   if (!track) return;
 
-  fetchTyped('/data/manifestos-index.json', 'json')
+  fetchTyped('/data/latest-additions.json', 'json')
     .catch(() => [])
     .then(items => {
       if (!items.length) {
@@ -1080,14 +1080,17 @@ function loadLatestManifestos() {
 
       track.innerHTML = items.map(item => {
         const party = PARTIES[item.partyId] || {};
-        const election = getElection(item.electionId);
-        const cover = `/manifestos/${item.electionId}/${item.partyId}/cover.png?v=${ASSETS_VERSION}`;
-        const coverFb = `/manifestos/${item.electionId}/${item.partyId}/cover.jpg?v=${ASSETS_VERSION}`;
-        const title = item.label || `${party.shortName || item.partyId} ${election?.displayYear || item.electionId}`;
-        return `<a href="/manifesto/${item.electionId}/${item.partyId}" class="latest-card" style="--party-color:${party.color || '#c9a84c'}">
+        const displayYear = item.year || item.electionId;
+        const cover = item.cover || `/manifestos/${item.electionId}/${item.partyId}/cover.png?v=${ASSETS_VERSION}`;
+        const coverFb = item.coverFallback || `/manifestos/${item.electionId}/${item.partyId}/cover.jpg?v=${ASSETS_VERSION}`;
+        const title = item.title || item.label || `${party.shortName || item.partyId} ${displayYear}`;
+        const url = item.url || `/manifesto/${item.electionId}/${item.partyId}`;
+        const target = item.isPdf ? ' target="_blank" rel="noopener"' : '';
+
+        return `<a href="${url}" class="latest-card"${target} style="--party-color:${party.color || '#c9a84c'}">
           <div class="latest-card-cover">
-            <img src="${cover}" alt="Cover of the ${title}" loading="lazy" onerror="if(this.dataset.fb){this.style.display='none';}else{this.dataset.fb=1;this.src='${coverFb}';}">
-            <div class="latest-card-cover-fallback" style="background:${party.color || '#333'}">${election?.displayYear || item.electionId}</div>
+            <img src="${cover}" alt="Cover of the ${title}" class="img-lazy" loading="lazy" decoding="async" onerror="if(this.dataset.fb){this.style.display='none';}else{this.dataset.fb=1;this.src='${coverFb}';}">
+            <div class="latest-card-cover-fallback" style="background:${party.color || '#333'}">${displayYear}</div>
           </div>
           <div class="latest-card-body">
             <div class="latest-card-party">${party.shortName || item.partyId}</div>
@@ -1096,6 +1099,7 @@ function loadLatestManifestos() {
         </a>`;
       }).join('');
 
+      initLazyImages(track);
       setupLatestCarousel();
     });
 }
