@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Seating Chart & Timeline Test Sandbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  
+  <style>
+    body {
+      background: var(--navy, #090e1c);
+      color: var(--cream, #f5f2eb);
+      padding: 3rem 2rem;
+      font-family: var(--font-ui, "DM Sans", sans-serif);
+    }
+    
+    .container {
+      max-width: 1440px; /* Sized up to support large desktop viewports */
+      margin: 0 auto;
+    }
+    
+    .preview-header {
+      border-bottom: 1px solid var(--navy-border, #1f2d47);
+      padding-bottom: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .preview-header h1 {
+      font-family: var(--font-display, "Cormorant Garamond", serif);
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: var(--cream, #f5f2eb);
+      margin: 0 0 0.5rem;
+    }
+    .preview-header p {
+      color: var(--text-muted, #9ca3af);
+      font-size: 1.1rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ----------------------------------------------------------------- */
+    /* CHAMBER & RESULTS PANEL STYLE IMPLEMENTATION                     */
+    /* ----------------------------------------------------------------- */
+    
+    .chamber-card {
+      background: rgba(11, 17, 31, 0.65);
+      border: 1px solid var(--navy-border, #1f2d47);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+      position: relative;
+      /* Glow Variables - Saturated Neon Glow Palette based on active winner */
+      --party-color: #0087dc;
+      --party-glow: rgba(0, 135, 220, 0.16);
+    }
+    
+    .chamber-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(31, 45, 71, 0.5);
+      padding-bottom: 1rem;
+    }
+    
+    .chamber-card-head-title h2 {
+      font-family: var(--font-display, "Cormorant Garamond", serif);
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0;
+      color: var(--cream, #f5f2eb);
+    }
+    .chamber-card-head-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted, #9ca3af);
+      margin-top: 0.35rem;
+    }
+    
+    .view-btn {
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid var(--gold-rule, #c9a84c);
+      color: var(--gold-light, #e5cf8f);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .view-btn:hover {
+      background: var(--gold-dim, rgba(201, 168, 76, 0.25));
+      border-color: var(--gold, #c9a84c);
+    }
+    
+    /* Enlarged Parliament Chart wrapper with relative positioning and CSS ambient glow */
+    .chart-container-wrap {
+      position: relative;
+      margin: 1.5rem auto 0.5rem;
+      max-width: 1400px; /* Sized up to 1400px on desktop */
+    }
+    
+    /* Ambient glow behind the seating semicircle */
+    .chart-container-wrap::before {
+      content: '';
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 85%;
+      background: radial-gradient(circle at bottom center, var(--party-glow) 0%, transparent 70%);
+      filter: blur(40px);
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: 0;
+      transition: background 0.3s;
+    }
+    
+    .chart-box {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Percentage stats row below the SVG. Reduced top margin to decrease gap by 20px */
+    .chart-percentage-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -15px; /* Reduced gap by 20px (from 0.75rem/12px to -15px) to pull close to chart */
+      padding: 0 0.5rem;
+      font-family: var(--font-ui, "DM Sans", sans-serif);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted, #9ca3af);
+      position: relative;
+      z-index: 2;
+    }
+    
+    .chart-percentage-left {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .chart-percentage-right {
+      display: flex;
+      gap: 1.25rem;
+    }
+    
+    /* Floating Glass Card (Results & slider unified box) */
+    .results-timeline-box {
+      border: 1px solid var(--navy-border, #1f2d47);
+      border-radius: 12px;
+      background: rgba(17, 24, 39, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 2rem 1.5rem 1.5rem; /* Reduced top padding since title pill is removed */
+      margin-top: 2.5rem;
+      position: relative;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    
+    /* Simplified legend styles */
+    .simplified-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .legend-item-simp {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted, #9ca3af);
+    }
+    .legend-item-simp i {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-right: 0.45rem;
+      box-shadow: 0 0 6px currentColor;
+    }
+    .legend-item-simp span {
+      color: var(--cream, #f5f2eb);
+      margin-left: 0.35rem;
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+    
+    /* Unified slider bar & year badge container */
+    .unified-slider-wrap {
+      position: relative;
+      padding-top: 1rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid rgba(31, 45, 71, 0.5);
+    }
+    
+    /* Flex slider container that restricts alignment exactly to the input width */
+    .slider-input-container {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .slider-step-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-faint, #6b7280);
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.2s, transform 0.2s;
+      user-select: none;
+      z-index: 10;
+    }
+    .slider-step-btn:hover {
+      color: var(--gold, #c9a84c);
+      transform: scale(1.15);
+    }
+    
+    .slider-year-badge {
+      position: absolute;
+      bottom: 30px; /* Increased to 30px to sit cleanly above timeline */
+      transform: translate(-50%, -100%);
+      background: var(--party-color); /* Matches current active government */
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+      pointer-events: none;
+      transition: left 0.1s ease-out, background-color 0.2s;
+      z-index: 10;
+    }
+    .slider-year-badge::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--party-color) transparent transparent transparent; /* Triangle pointer */
+      transition: border-top-color 0.2s;
+    }
+    
+    .custom-range-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      background: var(--navy-light, #1f2d47);
+      border-radius: 2px;
+      outline: none;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .custom-range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--party-color);
+      border: 2px solid var(--cream, #f5f2eb);
+      box-shadow: 0 0 10px var(--party-color);
+      cursor: pointer;
+      transition: transform 0.1s, background-color 0.2s, box-shadow 0.2s;
+    }
+    .custom-range-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.25);
+    }
+    
+    .slider-ticks-container {
+      position: relative;
+      height: 20px;
+      margin-top: 0.25rem;
+      width: 100%;
+    }
+    
+    .slider-tick-btn {
+      position: absolute;
+      transform: translateX(-50%);
+      font-family: var(--font-ui, "DM Sans", sans-serif);
+      font-size: 0.68rem;
+      color: var(--text-faint, #6b7280);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.15s, background 0.15s;
+    }
+    .slider-tick-btn:hover {
+      color: var(--gold, #c9a84c);
+      background: var(--gold-dim, rgba(201, 168, 76, 0.15));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="preview-header">
+      <h1>Chamber Seating Chart & Timeline Sandbox</h1>
+      <p>This test page evaluates the segmented outer glowing arc and unified slider box using the real post-war general election data loader. Verify the visual separation, alignment, and dynamic tooltip colors.</p>
+    </div>
+
+    <!-- MAIN CHAMBER CARD -->
+    <div class="chamber-card" id="chamber-card">
+      
+      <!-- CARD HEADER -->
+      <div class="chamber-card-head">
+        <div class="chamber-card-head-title">
+          <h2 id="election-title">Loading...</h2>
+          <div class="chamber-card-head-meta" id="election-meta"></div>
+        </div>
+        <a href="#" class="view-btn" id="view-election-btn">View election →</a>
+      </div>
+
+      <!-- SEATING CHART & OUTER GLOW RING -->
+      <div class="chart-container-wrap">
+        <div id="home-parliament-chart" class="home-parliament-chart"></div>
+        
+        <div class="chart-percentage-row">
+          <div class="chart-percentage-left" id="pct-left"></div>
+          <div class="chart-percentage-right" id="pct-right"></div>
+        </div>
+      </div>
+ 
+      <!-- FLOATING RESULTS & SLIDER BOX -->
+      <div class="results-timeline-box">
+        <!-- Headline is removed/superfluous -->
+        
+        <div class="simplified-legend" id="home-simplified-legend"></div>
+        
+        <div class="unified-slider-wrap">
+          <div class="slider-input-container">
+            <!-- Step Back Button -->
+            <button type="button" class="slider-step-btn" id="slider-prev" aria-label="Previous election">◀</button>
+            
+            <!-- Slider track wrapper for absolute year badge positioning -->
+            <div class="slider-track-wrap" style="position: relative; flex: 1; margin: 0 10px; padding-top: 20px;">
+              <div class="slider-year-badge" id="slider-year-badge"></div>
+              <input type="range" class="custom-range-slider" id="election-slider" min="0" max="0" value="0" aria-label="Select general election year" style="margin: 0; width: 100%;">
+              <div class="slider-ticks-container" id="slider-ticks" style="margin-top: 6px;"></div>
+            </div>
+            
+            <!-- Step Forward Button -->
+            <button type="button" class="slider-step-btn" id="slider-next" aria-label="Next election">▶</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LOAD MAIN DATABASE SCRIPT -->
+  <script src="/js/data.js"></script>
+  
+  <script>
+    // Historical popular vote shares lookup by election.id to solve missing data
+    const HISTORICAL_SHARES = {
+      snp: {
+        '1970': 1.1,
+        'feb1974': 2.0,
+        'oct1974': 2.9,
+        '1979': 1.6,
+        '1983': 1.1,
+        '1987': 1.3,
+        '1992': 1.9,
+        '1997': 2.0,
+        '2001': 1.8,
+        '2005': 1.5,
+        '2010': 1.7
+      },
+      plaid: {
+        'feb1974': 0.6,
+        'oct1974': 0.6,
+        '1979': 0.4,
+        '1983': 0.4,
+        '1987': 0.4,
+        '1992': 0.5,
+        '1997': 0.5,
+        '2001': 0.6,
+        '2005': 0.6,
+        '2010': 0.6,
+        '2015': 0.6,
+        '2017': 0.5,
+        '2019': 0.5
+      },
+      green: {
+        '2010': 1.0,
+        '2017': 1.6,
+        '2019': 2.7
+      },
+      ukip: {
+        '2015': 12.6
+      }
+    };
+
+    function getHistoricalPercentage(partyId, electionId, dbPct) {
+      if (dbPct > 0) return dbPct; // use DB value if populated
+      return HISTORICAL_SHARES[partyId]?.[electionId] || 0;
+    }
+
+    // pre-1989 Liberal party yellow (#FFD700) helper
+    function getCustomPartyColor(partyId, year) {
+      if ((partyId === 'libdem' || partyId === 'liberal') && year && year < 1988) {
+        return '#FFD700'; // Pre-1989 Liberal Party yellow
+      }
+      return getPartyColor(partyId);
+    }
+
+    // Exact mathematical implementation of segmented outer glowing arc
+    function renderCustomParliamentChart(container, results, totalSeats, year) {
+      container.innerHTML = '';
+
+      // Use a fixed high-resolution vector space (aspect ratio 1000:540) to keep alignment perfect
+      const W = 1000;
+      const H = 540;
+      const cx = 500;
+      const cy = 492;
+
+      // Keep exact spacing from the smaller layout version, scaled up linearly
+      const dotR    = 6.6; 
+      const innerR  = 110;
+      const outerR  = 430; // Sized so that outer arc sits separately
+      const arcR    = 464; // Visual separation radius for glowing arc
+
+      const numRows = 14;
+      const radii   = Array.from({ length: numRows }, (_, i) => innerR + i * ((outerR - innerR) / (numRows - 1)));
+      const totalCirc = radii.reduce((s, r) => s + r, 0);
+
+      let seatsPerRow = radii.map(r => Math.round(totalSeats * r / totalCirc));
+      const assigned  = seatsPerRow.reduce((s, n) => s + n, 0);
+      seatsPerRow[numRows - 1] += totalSeats - assigned;
+
+      const allPositions = [];
+      seatsPerRow.forEach((n, rowIdx) => {
+        const r = radii[rowIdx];
+        for (let i = 0; i < n; i++) {
+          const t = (i + 0.5) / n;
+          const angle = Math.PI * (1 - t);
+          allPositions.push({
+            x: cx + r * Math.cos(angle),
+            y: cy - r * Math.sin(angle),
+            t,
+            rowIdx
+          });
+        }
+      });
+
+      allPositions.sort((a, b) => a.t - b.t);
+
+      const resultMap = {};
+      results.forEach(r => {
+        if (r.party) resultMap[r.party] = (resultMap[r.party] || 0) + r.seats;
+      });
+
+      const colours = [];
+      const orderedParties = [];
+
+      for (const partyId of SPECTRUM_ORDER) {
+        const seats = resultMap[partyId] || 0;
+        if (!seats) continue;
+        const colour = getCustomPartyColor(partyId, year);
+        for (let i = 0; i < seats; i++) colours.push(colour);
+        orderedParties.push({ partyId, color: colour, seats });
+        delete resultMap[partyId];
+      }
+      Object.entries(resultMap).forEach(([partyId, seats]) => {
+        const colour = getCustomPartyColor(partyId, year);
+        for (let i = 0; i < seats; i++) colours.push(colour);
+        orderedParties.push({ partyId, color: colour, seats });
+      });
+      results.filter(r => !r.party && r.seats > 0).forEach(r => {
+        for (let i = 0; i < r.seats; i++) colours.push('#6b7280');
+        orderedParties.push({ partyId: 'none', color: '#6b7280', seats: r.seats });
+      });
+      
+      if (colours.length < totalSeats) {
+        const topupSeats = totalSeats - colours.length;
+        const colour = getCustomPartyColor('others', year);
+        for (let i = 0; i < topupSeats; i++) colours.push(colour);
+        orderedParties.push({ partyId: 'others', color: colour, seats: topupSeats });
+      }
+
+      const NS = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(NS, 'svg');
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', H);
+      svg.style.display = 'block';
+
+      // Background depth arc lines
+      const arcGroup = document.createElementNS(NS, 'g');
+      arcGroup.setAttribute('fill', 'none');
+      arcGroup.setAttribute('stroke', 'rgba(255,255,255,0.06)');
+      arcGroup.setAttribute('stroke-width', '1');
+      radii.forEach(r => {
+        const path = document.createElementNS(NS, 'path');
+        const startX = cx + r * Math.cos(Math.PI);
+        const startY = cy - r * Math.sin(Math.PI);
+        const endX   = cx + r * Math.cos(0);
+        const endY   = cy - r * Math.sin(0);
+        path.setAttribute('d', `M${startX.toFixed(1)},${startY.toFixed(1)} A${r.toFixed(1)},${r.toFixed(1)} 0 0,1 ${endX.toFixed(1)},${endY.toFixed(1)}`);
+        arcGroup.appendChild(path);
+      });
+      svg.appendChild(arcGroup);
+
+      // Outer Glowing Arc - Layered for prominent dual-sided glow
+      const scale = W / 500;
+      const createArcSegmentsGroup = (strokeWidth, blurPx, opacityVal) => {
+        const g = document.createElementNS(NS, 'g');
+        g.setAttribute('fill', 'none');
+        g.setAttribute('stroke-linecap', 'butt');
+        g.setAttribute('stroke-width', Math.max(0.5, strokeWidth).toFixed(2));
+        if (blurPx > 0) {
+          g.style.filter = `blur(${blurPx.toFixed(2)}px)`;
+        }
+        if (opacityVal !== undefined) {
+          g.setAttribute('opacity', opacityVal.toString());
+        }
+
+        let currentSeats = 0;
+        orderedParties.forEach(p => {
+          if (p.seats === 0) return;
+          const seatStart = currentSeats;
+          const seatEnd = currentSeats + p.seats;
+          currentSeats = seatEnd;
+
+          const t_start = seatStart / totalSeats;
+          const t_end = seatEnd / totalSeats;
+
+          const angle_start = Math.PI * (1 - t_start);
+          const angle_end = Math.PI * (1 - t_end);
+
+          const startX = cx + arcR * Math.cos(angle_start);
+          const startY = cy - arcR * Math.sin(angle_start);
+          const endX   = cx + arcR * Math.cos(angle_end);
+          const endY   = cy - arcR * Math.sin(angle_end);
+
+          const path = document.createElementNS(NS, 'path');
+          path.setAttribute('stroke', p.color);
+          path.setAttribute('d', `M ${startX.toFixed(2)} ${startY.toFixed(2)} A ${arcR.toFixed(2)} ${arcR.toFixed(2)} 0 0 1 ${endX.toFixed(2)} ${endY.toFixed(2)}`);
+          g.appendChild(path);
+        });
+        return g;
+      };
+
+      svg.appendChild(createArcSegmentsGroup(28 * scale, 18 * scale, 0.3));
+      svg.appendChild(createArcSegmentsGroup(14 * scale, 6 * scale, 0.55));
+      svg.appendChild(createArcSegmentsGroup(6 * scale, 2 * scale, 0.85));
+      svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95)); // Crisp core line
+
+      // Seat dots
+      const dotsGroup = document.createElementNS(NS, 'g');
+      allPositions.forEach((pos, i) => {
+        const circle = document.createElementNS(NS, 'circle');
+        circle.setAttribute('cx', pos.x.toFixed(1));
+        circle.setAttribute('cy', pos.y.toFixed(1));
+        circle.setAttribute('r',  dotR);
+        circle.setAttribute('fill', colours[i] || '#555');
+        circle.setAttribute('opacity', '0.92');
+        dotsGroup.appendChild(circle);
+      });
+      svg.appendChild(dotsGroup);
+
+      // Center dashed line (Speaker marker)
+      const line = document.createElementNS(NS, 'line');
+      line.setAttribute('x1', cx);
+      line.setAttribute('y1', cy);
+      line.setAttribute('x2', cx);
+      line.setAttribute('y2', cy - innerR * 0.6);
+      line.setAttribute('stroke', 'rgba(201,168,76,0.35)');
+      line.setAttribute('stroke-width', '1.5');
+      line.setAttribute('stroke-dasharray', '3,3');
+      svg.appendChild(line);
+
+      container.appendChild(svg);
+    }
+
+    // Interactive Dashboard timeline updates
+    let activeIdx = 0;
+
+    function initSandbox() {
+      const slider = document.getElementById('election-slider');
+      if (!slider) return;
+
+      activeIdx = ELECTIONS.length - 1;
+      slider.max = ELECTIONS.length - 1;
+      slider.value = activeIdx;
+
+      buildTicks();
+      updateDashboard(activeIdx);
+
+      // Range slider event listener
+      slider.addEventListener('input', (e) => {
+        activeIdx = parseInt(e.target.value, 10);
+        updateDashboard(activeIdx);
+      });
+
+      // Timeline arrow step buttons
+      document.getElementById('slider-prev')?.addEventListener('click', () => {
+        if (activeIdx > 0) {
+          activeIdx--;
+          slider.value = activeIdx;
+          updateDashboard(activeIdx);
+        }
+      });
+
+      document.getElementById('slider-next')?.addEventListener('click', () => {
+        if (activeIdx < ELECTIONS.length - 1) {
+          activeIdx++;
+          slider.value = activeIdx;
+          updateDashboard(activeIdx);
+        }
+      });
+    }
+
+    function updateDashboard(idx) {
+      const election = ELECTIONS[idx];
+      if (!election) return;
+
+      const winner = PARTIES[election.winner] || {};
+      const winnerSeats = (election.results.find(r => r.party === election.winner) || {}).seats || 0;
+      const winnerPct = (election.results.find(r => r.party === election.winner) || {}).percentage || 0;
+
+      // Update Card Theme CSS variables
+      const card = document.getElementById('chamber-card');
+      card.style.setProperty('--party-color', getCustomPartyColor(election.winner, election.year));
+      
+      // Compute correct glow opacity color matching pre-1989 yellow if needed
+      const winnerColorHex = getCustomPartyColor(election.winner, election.year);
+      const winnerGlowColor = winnerColorHex === '#FFD700' ? 'rgba(255, 215, 0, 0.18)' : (winner.dim || 'rgba(201,168,76,0.12)');
+      card.style.setProperty('--party-glow', winnerGlowColor);
+
+      // Header content
+      document.getElementById('election-title').textContent = `${election.displayYear} General Election`;
+      document.getElementById('election-meta').innerHTML = `<span style="color:${winnerColorHex}">${winner.shortName || ''}</span> victory · ${winnerSeats} seats · ${winnerPct > 0 ? winnerPct.toFixed(1) + '% vote' : election.pm}`;
+      document.getElementById('view-election-btn').href = `/election/${election.id}`;
+
+      // Redraw Seating Chart
+      const chartContainer = document.getElementById('home-parliament-chart');
+      renderCustomParliamentChart(chartContainer, election.results, election.totalSeats, election.year);
+
+      // Update Slider Year Badge centered above thumb (using displayYear to call out Feb/Oct 1974)
+      const badge = document.getElementById('slider-year-badge');
+      badge.textContent = election.displayYear || election.year;
+      const pctVal = (idx / (ELECTIONS.length - 1)) * 100;
+      badge.style.left = `calc(${pctVal}% + (${8 - pctVal * 0.16}px))`;
+
+      // Update dynamic percentages
+      updatePercentageRow(election);
+
+      // Update collated legend
+      updateSimplifiedLegend(election);
+    }
+
+    function updatePercentageRow(election) {
+      const pctLeft = document.getElementById('pct-left');
+      const pctRight = document.getElementById('pct-right');
+      if (!pctLeft || !pctRight) return;
+
+      const con = election.results.find(r => r.party === 'conservative');
+      const lab = election.results.find(r => r.party === 'labour');
+      const ld = election.results.find(r => r.party === 'libdem' || r.party === 'liberal');
+
+      const getPct = (partyId) => {
+        const found = election.results.find(r => r.party === partyId);
+        const dbPct = found ? found.percentage : 0;
+        return getHistoricalPercentage(partyId, election.id, dbPct);
+      };
+
+      const snpPct = getPct('snp');
+      const grnPct = getPct('green');
+      const pcPct = getPct('plaid');
+      const ukipPct = getPct('ukip');
+      const reformPct = getPct('reform');
+
+      const conPct = con ? con.percentage : 0;
+      const labPct = lab ? lab.percentage : 0;
+      const ldPct = ld ? ld.percentage : 0;
+
+      // Sum all explicit major shares
+      const sumMajor = conPct + labPct + ldPct + snpPct + grnPct + pcPct + ukipPct + reformPct;
+      const othersPct = Math.max(0, 100 - sumMajor);
+
+      let leftHtml = '';
+      if (conPct > 0) leftHtml += `<span style="color:${getCustomPartyColor('conservative', election.year)}">${conPct.toFixed(1)}%</span>`;
+      if (labPct > 0) leftHtml += `<span style="color:${getCustomPartyColor('labour', election.year)}">${labPct.toFixed(1)}%</span>`;
+      if (ldPct > 0) leftHtml += `<span style="color:${getCustomPartyColor(ld.party, election.year)}">${ldPct.toFixed(1)}%</span>`;
+      pctLeft.innerHTML = leftHtml;
+
+      let rightHtml = '';
+      if (snpPct > 0) rightHtml += `<span style="color:${getCustomPartyColor('snp', election.year)}">${snpPct.toFixed(1)}%</span>`;
+      if (grnPct > 0) rightHtml += `<span style="color:${getCustomPartyColor('green', election.year)}">${grnPct.toFixed(1)}%</span>`;
+      if (pcPct > 0) rightHtml += `<span style="color:${getCustomPartyColor('plaid', election.year)}">${pcPct.toFixed(1)}%</span>`;
+      if (ukipPct > 0) rightHtml += `<span style="color:${getCustomPartyColor('ukip', election.year)}">${ukipPct.toFixed(1)}%</span>`;
+      if (reformPct > 0) rightHtml += `<span style="color:${getCustomPartyColor('reform', election.year)}">${reformPct.toFixed(1)}%</span>`;
+      
+      // Just show the percentage number, rather than "Others" label, in grey color
+      if (othersPct > 0) rightHtml += `<span style="color:#6b7280">${othersPct.toFixed(1)}%</span>`;
+      pctRight.innerHTML = rightHtml;
+    }
+
+    function updateSimplifiedLegend(election) {
+      const legendEl = document.getElementById('home-simplified-legend');
+      if (!legendEl) return;
+
+      const grouped = {
+        conservative: 0,
+        labour: 0,
+        libdem: 0,
+        snp: 0,
+        green: 0,
+        plaid: 0,
+        ukip: 0,
+        reform: 0,
+        brexit: 0,
+        uup: 0,
+        sdlp: 0,
+        dup: 0,
+        sinnfein: 0,
+        others: 0
+      };
+
+      election.results.forEach(r => {
+        if (r.party === 'conservative') {
+          grouped.conservative += r.seats;
+        } else if (r.party === 'labour') {
+          grouped.labour += r.seats;
+        } else if (r.party === 'libdem' || r.party === 'liberal') {
+          grouped.libdem += r.seats;
+        } else if (r.party === 'snp') {
+          grouped.snp += r.seats;
+        } else if (r.party === 'green') {
+          grouped.green += r.seats;
+        } else if (r.party === 'plaid') {
+          grouped.plaid += r.seats;
+        } else if (r.party === 'ukip') {
+          grouped.ukip += r.seats;
+        } else if (r.party === 'reform') {
+          grouped.reform += r.seats;
+        } else if (r.party === 'brexit') {
+          grouped.brexit += r.seats;
+        } else if (r.party === 'uup') {
+          grouped.uup += r.seats;
+        } else if (r.party === 'sdlp') {
+          grouped.sdlp += r.seats;
+        } else if (r.party === 'dup') {
+          grouped.dup += r.seats;
+        } else if (r.party === 'sinnfein') {
+          grouped.sinnfein += r.seats;
+        } else {
+          grouped.others += r.seats;
+        }
+      });
+
+      const displayOrder = [
+        { id: 'conservative', label: 'Conservative' },
+        { id: 'labour', label: 'Labour' },
+        { id: 'libdem', label: election.year < 1988 ? 'Liberal' : 'Lib Dem' }
+      ];
+
+      // Reorder from 2010 onwards: SNP > Plaid Cymru > Green
+      if (election.year >= 2010) {
+        displayOrder.push(
+          { id: 'snp', label: 'SNP' },
+          { id: 'plaid', label: 'Plaid Cymru' },
+          { id: 'green', label: 'Green' }
+        );
+      } else {
+        displayOrder.push(
+          { id: 'snp', label: 'SNP' },
+          { id: 'green', label: 'Green' },
+          { id: 'plaid', label: 'Plaid Cymru' }
+        );
+      }
+
+      // Add Northern Irish parties from 1974 onwards in the legend
+      if (election.year >= 1974) {
+        displayOrder.push(
+          { id: 'uup', label: 'UUP' },
+          { id: 'sdlp', label: 'SDLP' },
+          { id: 'dup', label: 'DUP' },
+          { id: 'sinnfein', label: 'Sinn Féin' }
+        );
+      }
+
+      // Add other relevant timeline parties
+      displayOrder.push(
+        { id: 'ukip', label: 'UKIP' },
+        { id: 'reform', label: 'Reform UK' },
+        { id: 'brexit', label: 'Brexit Party' },
+        { id: 'others', label: 'Others' }
+      );
+
+      legendEl.innerHTML = displayOrder
+        .map(p => {
+          const seats = grouped[p.id];
+          if (seats === 0 && p.id !== 'others') return '';
+          if (p.id === 'others' && seats === 0) return '';
+          
+          const color = p.id === 'others' ? '#6b7280' : getCustomPartyColor(p.id === 'libdem' && election.year < 1988 ? 'liberal' : p.id, election.year);
+          return `<div class="legend-item-simp" style="color:${color}"><i style="background:${color}"></i>${p.label}: <span>${seats}</span></div>`;
+        })
+        .filter(Boolean)
+        .join('');
+    }
+
+    // Positions ticks linearly based on election indices to ensure perfect equal spacing on the timeline track
+    function buildTicks() {
+      const el = document.getElementById('slider-ticks');
+      if (!el) return;
+      
+      const ticks = [
+        { idx: 0, label: '1945' },
+        { idx: 3, label: '1955' },
+        { idx: 6, label: '1966' },
+        { idx: 8, label: '1974' },
+        { idx: 12, label: '1987' },
+        { idx: 15, label: '2001' },
+        { idx: 18, label: '2015' },
+        { idx: 21, label: '2024' }
+      ];
+
+      el.innerHTML = ticks.map(t => {
+        const pct = (t.idx / (ELECTIONS.length - 1)) * 100;
+        return `<button type="button" class="slider-tick-btn" style="left:${pct}%" data-idx="${t.idx}">${t.label}</button>`;
+      }).join('');
+
+      el.querySelectorAll('.slider-tick-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.getAttribute('data-idx'), 10);
+          if (!isNaN(idx)) {
+            activeIdx = idx;
+            document.getElementById('election-slider').value = idx;
+            updateDashboard(idx);
+          }
+        });
+      });
+    }
+
+    // Wait for the data array to load
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof ELECTIONS !== 'undefined') {
+        initSandbox();
+      } else {
+        setTimeout(initSandbox, 100);
+      }
+    });
+  </script>
+</body>
+</html>

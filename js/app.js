@@ -7,10 +7,10 @@ const SITE = {
   name: 'The British Manifesto Archive',
   domain: 'www.manifestos.org.uk',
   url: 'https://www.manifestos.org.uk',
-  description: 'A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos in the United Kingdom. Browse party manifestos, election results, and maps.',
+  description: 'A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos, results, and maps in the UK.',
   ogImage: 'https://www.manifestos.org.uk/og-image.jpg',
-  ogImageWidth: 1024,
-  ogImageHeight: 537,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogImageAlt: 'The British Manifesto Archive — a digital repository of UK political party manifestos',
 };
 
@@ -714,18 +714,23 @@ function renderHome(app) {
                 <a href="#" class="dashboard-election-link" id="dashboard-election-link">View election →</a>
               </div>
               <div id="home-parliament-chart" class="home-parliament-chart"></div>
-              <div class="share-bar" id="home-share-bar"></div>
-              <div class="share-labels" id="home-share-labels"></div>
+              <div class="chart-percentage-row">
+                <div class="chart-percentage-left" id="pct-left"></div>
+                <div class="chart-percentage-right" id="pct-right"></div>
+              </div>
             </div>
 
             <div class="election-slider-panel">
               <div class="slider-legend" id="home-slider-legend"></div>
               <div class="slider-wrap">
                 <button type="button" class="slider-step-btn" id="slider-prev" aria-label="Previous election">◀</button>
-                <input type="range" class="election-slider" id="election-slider" min="0" max="${ELECTIONS.length - 1}" value="${_homeElectionIndex}" aria-label="Select general election year">
+                <div class="slider-track-wrap" style="position: relative; flex: 1; margin: 0 10px; padding-top: 20px;">
+                  <div class="slider-year-badge" id="slider-year-badge"></div>
+                  <input type="range" class="election-slider" id="election-slider" min="0" max="${ELECTIONS.length - 1}" value="${_homeElectionIndex}" aria-label="Select general election year" style="margin: 0; width: 100%;">
+                  <div class="slider-ticks" id="slider-ticks" style="margin-top: 6px;"></div>
+                </div>
                 <button type="button" class="slider-step-btn" id="slider-next" aria-label="Next election">▶</button>
               </div>
-              <div class="slider-ticks" id="slider-ticks"></div>
             </div>
           </div>
 
@@ -737,7 +742,6 @@ function renderHome(app) {
     <section class="latest-section">
       <div class="latest-header">
         <div>
-          <span class="section-label">Archive</span>
           <h2>Latest Additions</h2>
           <div class="gold-rule"></div>
         </div>
@@ -756,8 +760,7 @@ function renderHome(app) {
     <section class="timeline-section">
       <div class="timeline-header">
         <div>
-          <span class="section-label">All General Elections</span>
-          <h2>The Electoral Record</h2>
+          <h2>The Westminster Electoral Record</h2>
           <div class="gold-rule"></div>
         </div>
         <div class="timeline-filter">
@@ -772,7 +775,6 @@ function renderHome(app) {
     <section class="browse-section nations-browse-section">
       <div class="browse-section-inner">
         <div class="browse-section-header">
-          <span class="section-label">United Kingdom</span>
           <h2>Browse by Nation</h2>
           <div class="gold-rule"></div>
         </div>
@@ -784,7 +786,6 @@ function renderHome(app) {
     <section class="browse-section parties-browse-section">
       <div class="browse-section-inner">
         <div class="browse-section-header">
-          <span class="section-label">Political Parties</span>
           <h2>Browse by Party</h2>
           <div class="gold-rule"></div>
         </div>
@@ -944,7 +945,6 @@ function initHomeDashboard() {
   if (!slider) return;
 
   buildSliderTicks();
-  buildSliderLegend();
 
   slider.addEventListener('input', () => {
     _homeElectionIndex = parseInt(slider.value, 10);
@@ -973,13 +973,23 @@ function initHomeDashboard() {
 function buildSliderTicks() {
   const el = document.getElementById('slider-ticks');
   if (!el) return;
-  const marks = [1945, 1964, 1979, 1997, 2010, 2019, 2024];
-  el.innerHTML = marks.map(year => {
-    const idx = ELECTIONS.findIndex(e => e.year === year);
-    if (idx === -1) return '';
-    const pct = (idx / (ELECTIONS.length - 1)) * 100;
-    return `<button type="button" class="slider-tick" style="left:${pct}%" data-idx="${idx}">${year}</button>`;
+  
+  const ticks = [
+    { idx: 0, label: '1945' },
+    { idx: 3, label: '1955' },
+    { idx: 6, label: '1966' },
+    { idx: 8, label: '1974' },
+    { idx: 12, label: '1987' },
+    { idx: 15, label: '2001' },
+    { idx: 18, label: '2015' },
+    { idx: 21, label: '2024' }
+  ];
+
+  el.innerHTML = ticks.map(t => {
+    const pct = (t.idx / (ELECTIONS.length - 1)) * 100;
+    return `<button type="button" class="slider-tick" style="left:${pct}%" data-idx="${t.idx}">${t.label}</button>`;
   }).join('');
+
   el.querySelectorAll('.slider-tick').forEach(btn => {
     btn.addEventListener('click', () => {
       _homeElectionIndex = parseInt(btn.getAttribute('data-idx'), 10);
@@ -990,16 +1000,109 @@ function buildSliderTicks() {
   });
 }
 
-function buildSliderLegend() {
+function buildHomeSliderLegend(election) {
   const el = document.getElementById('home-slider-legend');
   if (!el) return;
-  const ids = ['conservative', 'labour', 'libdem', 'snp', 'green', 'others'];
-  el.innerHTML = ids.map(id => {
-    const p = PARTIES[id];
-    const color = p?.color || '#6b7280';
-    const name = p?.shortName || 'Others';
-    return `<span class="slider-legend-item" data-party="${id}"><i style="background:${color}"></i><span class="slider-legend-label">${name}</span></span>`;
-  }).join('');
+
+  const grouped = {
+    conservative: 0,
+    labour: 0,
+    libdem: 0,
+    snp: 0,
+    green: 0,
+    plaid: 0,
+    ukip: 0,
+    reform: 0,
+    brexit: 0,
+    uup: 0,
+    sdlp: 0,
+    dup: 0,
+    sinnfein: 0,
+    others: 0
+  };
+
+  election.results.forEach(r => {
+    if (r.party === 'conservative') {
+      grouped.conservative += r.seats;
+    } else if (r.party === 'labour') {
+      grouped.labour += r.seats;
+    } else if (r.party === 'libdem' || r.party === 'liberal') {
+      grouped.libdem += r.seats;
+    } else if (r.party === 'snp') {
+      grouped.snp += r.seats;
+    } else if (r.party === 'green') {
+      grouped.green += r.seats;
+    } else if (r.party === 'plaid') {
+      grouped.plaid += r.seats;
+    } else if (r.party === 'ukip') {
+      grouped.ukip += r.seats;
+    } else if (r.party === 'reform') {
+      grouped.reform += r.seats;
+    } else if (r.party === 'brexit') {
+      grouped.brexit += r.seats;
+    } else if (r.party === 'uup') {
+      grouped.uup += r.seats;
+    } else if (r.party === 'sdlp') {
+      grouped.sdlp += r.seats;
+    } else if (r.party === 'dup') {
+      grouped.dup += r.seats;
+    } else if (r.party === 'sinnfein') {
+      grouped.sinnfein += r.seats;
+    } else {
+      grouped.others += r.seats;
+    }
+  });
+
+  const displayOrder = [
+    { id: 'conservative', label: 'Conservative' },
+    { id: 'labour', label: 'Labour' },
+    { id: 'libdem', label: election.year < 1988 ? 'Liberal' : 'Lib Dem' }
+  ];
+
+  // Reorder from 2010 onwards: SNP > Plaid Cymru > Green
+  if (election.year >= 2010) {
+    displayOrder.push(
+      { id: 'snp', label: 'SNP' },
+      { id: 'plaid', label: 'Plaid Cymru' },
+      { id: 'green', label: 'Green' }
+    );
+  } else {
+    displayOrder.push(
+      { id: 'snp', label: 'SNP' },
+      { id: 'green', label: 'Green' },
+      { id: 'plaid', label: 'Plaid Cymru' }
+    );
+  }
+
+  // Add Northern Irish parties from 1974 onwards in the legend
+  if (election.year >= 1974) {
+    displayOrder.push(
+      { id: 'uup', label: 'UUP' },
+      { id: 'sdlp', label: 'SDLP' },
+      { id: 'dup', label: 'DUP' },
+      { id: 'sinnfein', label: 'Sinn Féin' }
+    );
+  }
+
+  // Add other relevant timeline parties
+  displayOrder.push(
+    { id: 'ukip', label: 'UKIP' },
+    { id: 'reform', label: 'Reform UK' },
+    { id: 'brexit', label: 'Brexit Party' },
+    { id: 'others', label: 'Others' }
+  );
+
+  el.innerHTML = displayOrder
+    .map(p => {
+      const seats = grouped[p.id];
+      if (seats === 0 && p.id !== 'others') return '';
+      if (p.id === 'others' && seats === 0) return '';
+      
+      const color = p.id === 'others' ? '#6b7280' : getPartyColor(p.id === 'libdem' && election.year < 1988 ? 'liberal' : p.id, election.year);
+      return `<span class="slider-legend-item" data-party="${p.id}" style="color:${color}"><i style="background:${color};box-shadow:0 0 6px currentColor"></i><span class="slider-legend-label" style="color:inherit">${p.label}</span>: <span>${seats}</span></span>`;
+    })
+    .filter(Boolean)
+    .join('');
 }
 
 function updateHomeDashboard(idx) {
@@ -1012,8 +1115,11 @@ function updateHomeDashboard(idx) {
 
   const dashboard = document.getElementById('home-dashboard');
   if (dashboard) {
-    dashboard.style.setProperty('--party-glow', winner.dim || 'rgba(201,168,76,0.12)');
-    dashboard.style.setProperty('--party-accent', winner.color || '#c9a84c');
+    // pre-1989 Liberal party yellow (#FFD700) helper for theme variables
+    const winnerColorHex = getPartyColor(election.winner, election.year);
+    const winnerGlowColor = winnerColorHex === '#FFD700' ? 'rgba(255, 215, 0, 0.18)' : (winner.dim || 'rgba(201,168,76,0.12)');
+    dashboard.style.setProperty('--party-glow', winnerGlowColor);
+    dashboard.style.setProperty('--party-accent', winnerColorHex);
   }
 
   const label = document.getElementById('dashboard-election-label');
@@ -1021,41 +1127,122 @@ function updateHomeDashboard(idx) {
 
   const meta = document.getElementById('dashboard-election-meta');
   if (meta) {
-    meta.innerHTML = `<span style="color:${winner.color}">${winner.shortName || ''}</span> · ${winnerSeats} seats · ${winnerPct > 0 ? winnerPct.toFixed(1) + '% vote' : election.pm}`;
+    const winnerColorHex = getPartyColor(election.winner, election.year);
+    meta.innerHTML = `<span style="color:${winnerColorHex}">${winner.shortName || ''}</span> victory · ${winnerSeats} seats · ${winnerPct > 0 ? winnerPct.toFixed(1) + '% vote' : election.pm}`;
   }
 
   const link = document.getElementById('dashboard-election-link');
   if (link) link.href = `/election/${election.id}`;
 
   const chart = document.getElementById('home-parliament-chart');
-  if (chart) drawParliamentChart(chart, election.results, election.totalSeats);
+  if (chart) drawParliamentChart(chart, election.results, election.totalSeats, election.year);
 
-  buildHomeShareBar(election);
+  // Update Slider Year Badge centered above thumb (using displayYear to call out Feb/Oct 1974)
+  const badge = document.getElementById('slider-year-badge');
+  if (badge) {
+    badge.textContent = election.displayYear || election.year;
+    const pctVal = (idx / (ELECTIONS.length - 1)) * 100;
+    badge.style.left = `calc(${pctVal}% + (${8 - pctVal * 0.16}px))`;
+    const winnerColorHex = getPartyColor(election.winner, election.year);
+    badge.style.backgroundColor = winnerColorHex;
+    badge.style.setProperty('--party-color', winnerColorHex);
+  }
+
+  buildHomePercentageRow(election);
+  buildHomeSliderLegend(election);
   buildDashboardSidebar(idx);
-
-  const libdemLegend = document.querySelector('#home-slider-legend [data-party="libdem"] .slider-legend-label');
-  if (libdemLegend) libdemLegend.textContent = getPartyName('libdem', election.year);
 }
 
-function buildHomeShareBar(election) {
-  const bar = document.getElementById('home-share-bar');
-  const labels = document.getElementById('home-share-labels');
-  if (!bar || !labels) return;
+// Historical popular vote shares lookup by election.id to solve missing data
+const HISTORICAL_SHARES = {
+  snp: {
+    '1970': 1.1,
+    'feb1974': 2.0,
+    'oct1974': 2.9,
+    '1979': 1.6,
+    '1983': 1.1,
+    '1987': 1.3,
+    '1992': 1.9,
+    '1997': 2.0,
+    '2001': 1.8,
+    '2005': 1.5,
+    '2010': 1.7
+  },
+  plaid: {
+    'feb1974': 0.6,
+    'oct1974': 0.6,
+    '1979': 0.4,
+    '1983': 0.4,
+    '1987': 0.4,
+    '1992': 0.5,
+    '1997': 0.5,
+    '2001': 0.6,
+    '2005': 0.6,
+    '2010': 0.6,
+    '2015': 0.6,
+    '2017': 0.5,
+    '2019': 0.5
+  },
+  green: {
+    '2010': 1.0,
+    '2017': 1.6,
+    '2019': 2.7
+  },
+  ukip: {
+    '2015': 12.6
+  }
+};
 
-  const sorted = [...election.results]
-    .filter(r => r.seats > 0)
-    .sort((a, b) => b.seats - a.seats)
-    .slice(0, 6);
+function getHistoricalPercentage(partyId, electionId, dbPct) {
+  if (dbPct > 0) return dbPct; // use DB value if populated
+  return HISTORICAL_SHARES[partyId]?.[electionId] || 0;
+}
 
-  bar.innerHTML = sorted.map(r => {
-    const pct = (r.seats / election.totalSeats) * 100;
-    return `<div class="share-segment" style="width:${pct.toFixed(2)}%;background:${getPartyColor(r.party)}" title="${getPartyName(r.party, election.year)}: ${r.seats} seats"></div>`;
-  }).join('');
+function buildHomePercentageRow(election) {
+  const pctLeft = document.getElementById('pct-left');
+  const pctRight = document.getElementById('pct-right');
+  if (!pctLeft || !pctRight) return;
 
-  labels.innerHTML = sorted.map(r => {
-    const pct = (r.seats / election.totalSeats * 100).toFixed(1);
-    return `<span class="share-label"><i style="background:${getPartyColor(r.party)}"></i>${pct}%</span>`;
-  }).join('');
+  const con = election.results.find(r => r.party === 'conservative');
+  const lab = election.results.find(r => r.party === 'labour');
+  const ld = election.results.find(r => r.party === 'libdem' || r.party === 'liberal');
+
+  const getPct = (partyId) => {
+    const found = election.results.find(r => r.party === partyId);
+    const dbPct = found ? found.percentage : 0;
+    return getHistoricalPercentage(partyId, election.id, dbPct);
+  };
+
+  const snpPct = getPct('snp');
+  const grnPct = getPct('green');
+  const pcPct = getPct('plaid');
+  const ukipPct = getPct('ukip');
+  const reformPct = getPct('reform');
+
+  const conPct = con ? con.percentage : 0;
+  const labPct = lab ? lab.percentage : 0;
+  const ldPct = ld ? ld.percentage : 0;
+
+  // Sum all explicit major shares
+  const sumMajor = conPct + labPct + ldPct + snpPct + grnPct + pcPct + ukipPct + reformPct;
+  const othersPct = Math.max(0, 100 - sumMajor);
+
+  let leftHtml = '';
+  if (conPct > 0) leftHtml += `<span style="color:${getPartyColor('conservative', election.year)}">${conPct.toFixed(1)}%</span>`;
+  if (labPct > 0) leftHtml += `<span style="color:${getPartyColor('labour', election.year)}">${labPct.toFixed(1)}%</span>`;
+  if (ldPct > 0) leftHtml += `<span style="color:${getPartyColor(ld.party, election.year)}">${ldPct.toFixed(1)}%</span>`;
+  pctLeft.innerHTML = leftHtml;
+
+  let rightHtml = '';
+  if (snpPct > 0) rightHtml += `<span style="color:${getPartyColor('snp', election.year)}">${snpPct.toFixed(1)}%</span>`;
+  if (grnPct > 0) rightHtml += `<span style="color:${getPartyColor('green', election.year)}">${grnPct.toFixed(1)}%</span>`;
+  if (pcPct > 0) rightHtml += `<span style="color:${getPartyColor('plaid', election.year)}">${pcPct.toFixed(1)}%</span>`;
+  if (ukipPct > 0) rightHtml += `<span style="color:${getPartyColor('ukip', election.year)}">${ukipPct.toFixed(1)}%</span>`;
+  if (reformPct > 0) rightHtml += `<span style="color:${getPartyColor('reform', election.year)}">${reformPct.toFixed(1)}%</span>`;
+  
+  // Just show the percentage number, rather than "Others" label, in grey color
+  if (othersPct > 0) rightHtml += `<span style="color:#6b7280">${othersPct.toFixed(1)}%</span>`;
+  pctRight.innerHTML = rightHtml;
 }
 
 function buildDashboardSidebar(idx) {
@@ -1074,7 +1261,6 @@ function buildDashboardSidebar(idx) {
     const highlight = (e.highlights || [])[0] || e.summary.slice(0, 140) + '…';
     const active = role === 'current' ? ' is-active' : '';
     return `<a href="/election/${e.id}" class="timeline-card${active}" style="--card-accent:${winner.color}">
-      <div class="timeline-card-accent"></div>
       <div class="timeline-card-year">${e.displayYear}</div>
       <div class="timeline-card-party" style="color:${winner.color}">${winner.shortName || ''}</div>
       <div class="timeline-card-stats">
@@ -1453,7 +1639,7 @@ function renderElection(app, id) {
   requestAnimationFrame(() => {
     const c = document.getElementById('parliament-svg-container');
     const l = document.getElementById('parliament-legend');
-    if (c) { drawParliamentChart(c, election.results, election.totalSeats); buildParliamentLegend(l, election.results, election.year); }
+    if (c) { drawParliamentChart(c, election.results, election.totalSeats, election.year); buildParliamentLegend(l, election.results, election.year); }
     setupElectionVizTabs(id);
   });
 }

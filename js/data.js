@@ -1788,7 +1788,12 @@ const DEVOLVED_PORTALS = {
 function getNationLabel(id) {
   return NATIONS[id]?.name || NAV_PARTIES[id]?.label || id;
 }
-function getPartyColor(id) { return PARTIES[id]?.color || '#6b7280'; }
+function getPartyColor(id, year) {
+  if ((id === 'libdem' || id === 'liberal') && year && year < 1988) {
+    return '#FFD700'; // Pre-1989 Liberal Party yellow
+  }
+  return PARTIES[id]?.color || '#6b7280';
+}
 function getPartyDim(id)   { return PARTIES[id]?.dim   || 'rgba(107,114,128,0.14)'; }
 
 /** Liberal / SDP Alliance / Liberal Democrats — period-correct labels when year is given. */

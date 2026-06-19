@@ -308,11 +308,12 @@ h1, h2, h3, h4 {
 .section-label {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  text-transform: none;
   color: var(--gold);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 .gold-rule {
   width: 48px; height: 2px;
@@ -488,27 +489,26 @@ h1, h2, h3, h4 {
   position: relative;
   display: block;
   background: var(--navy-card);
-  border: 1px solid var(--navy-border);
-  border-radius: 8px;
-  padding: 1.5rem;
+  border-top: 3.5px solid var(--party-color, var(--gold));
+  border-left: 1px solid var(--navy-border);
+  border-right: 1px solid var(--navy-border);
+  border-bottom: 1px solid var(--navy-border);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1.35rem 1.5rem 1.5rem;
   overflow: hidden;
   transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
   cursor: pointer;
 }
-.election-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 4px; height: 100%;
-  background: var(--party-color, var(--gold));
-  transition: width 0.25s var(--ease);
-}
 .election-card:hover {
   transform: translateY(-3px);
-  border-color: var(--navy-light);
+  border-left-color: var(--navy-light);
+  border-right-color: var(--navy-light);
+  border-bottom-color: var(--navy-light);
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
 }
-.election-card:hover::before { width: 6px; }
 
 .card-year {
   font-family: var(--font-display);
@@ -2540,31 +2540,63 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
 .dashboard-election-label {
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold);
+  font-family: var(--font-display, "Cormorant Garamond", serif);
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--cream, #f5f2eb);
+  margin: 0;
 }
 .dashboard-election-meta {
-  font-family: var(--font-ui);
-  font-size: 0.95rem;
+  font-family: var(--font-ui, "DM Sans", sans-serif);
+  font-size: 0.9rem;
   font-weight: 500;
-  color: var(--cream);
-  margin-top: 0.25rem;
+  color: var(--text-muted, #9ca3af);
+  margin-top: 0.35rem;
 }
 .dashboard-election-link {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--text-muted);
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid var(--gold-rule, #c9a84c);
+  color: var(--gold-light, #e5cf8f);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
   white-space: nowrap;
-  transition: color 0.15s;
+  transition: all 0.2s;
 }
-.dashboard-election-link:hover { color: var(--gold-light); }
+.dashboard-election-link:hover {
+  background: var(--gold-dim, rgba(201, 168, 76, 0.25));
+  border-color: var(--gold, #c9a84c);
+  color: var(--gold-light, #e5cf8f);
+}
 
 .home-parliament-chart {
   min-height: 180px;
   margin: 0.5rem 0 1rem;
+}
+.chart-percentage-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px; /* Pull close to the seating chart */
+  padding: 0 0.5rem;
+  font-family: var(--font-ui, "DM Sans", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted, #9ca3af);
+  position: relative;
+  z-index: 2;
+}
+.chart-percentage-left {
+  display: flex;
+  gap: 1.25rem;
+}
+.chart-percentage-right {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .share-bar {
@@ -2610,22 +2642,30 @@ h1, h2, h3, h4 {
 .slider-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem 1rem;
-  margin-bottom: 0.85rem;
+  justify-content: center;
+  gap: 0.8rem 1.5rem;
+  margin-bottom: 2rem;
 }
 .slider-legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  font-family: var(--font-ui);
-  font-size: 0.68rem;
-  color: var(--text-muted);
-  letter-spacing: 0.02em;
+  font-family: var(--font-ui, "DM Sans", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted, #9ca3af);
 }
 .slider-legend-item i {
+  display: inline-block;
   width: 7px;
   height: 7px;
   border-radius: 50%;
+  margin-right: 0.45rem;
+}
+.slider-legend-item span {
+  color: var(--cream, #f5f2eb);
+  margin-left: 0.35rem;
+  font-weight: 600;
+  font-size: 0.82rem;
 }
 .slider-wrap {
   display: flex;
@@ -2682,6 +2722,32 @@ h1, h2, h3, h4 {
   outline: 2px solid var(--gold-light);
   outline-offset: 2px;
 }
+.slider-year-badge {
+  position: absolute;
+  bottom: 30px;
+  transform: translate(-50%, -100%);
+  background: var(--party-accent, var(--gold));
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  transition: left 0.1s ease-out, background-color 0.2s;
+  z-index: 10;
+}
+.slider-year-badge::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--party-color, var(--party-accent, var(--gold))) transparent transparent transparent;
+  transition: border-top-color 0.2s;
+}
 .slider-ticks {
   position: relative;
   height: 28px;
@@ -2712,22 +2778,22 @@ h1, h2, h3, h4 {
   position: relative;
   display: block;
   background: var(--navy-card);
-  border: 1px solid var(--navy-border);
-  border-radius: 10px;
-  padding: 1.1rem 1.15rem 1.15rem 1.35rem;
+  border-top: 3.5px solid var(--card-accent, var(--gold));
+  border-left: 1px solid var(--navy-border);
+  border-right: 1px solid var(--navy-border);
+  border-bottom: 1px solid var(--navy-border);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem 1.15rem 1.15rem;
   overflow: hidden;
   transition: transform 0.2s var(--ease), border-color 0.2s, box-shadow 0.2s;
 }
-.timeline-card-accent {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--card-accent, var(--gold));
-}
 .timeline-card.is-active {
-  border-color: rgba(201, 168, 76, 0.35);
+  border-left-color: rgba(201, 168, 76, 0.35);
+  border-right-color: rgba(201, 168, 76, 0.35);
+  border-bottom-color: rgba(201, 168, 76, 0.35);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
   transform: scale(1.02);
 }
@@ -3552,13 +3618,23 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 1rem;
   background: var(--navy-card);
-  border: 1px solid var(--navy-border);
-  border-left: 4px solid var(--party-color, var(--gold));
-  border-radius: 8px;
-  padding: 1.1rem 1.25rem;
+  border-top: 3.5px solid var(--party-color, var(--gold));
+  border-left: 1px solid var(--navy-border);
+  border-right: 1px solid var(--navy-border);
+  border-bottom: 1px solid var(--navy-border);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 1.25rem 1.1rem;
   transition: transform 0.2s var(--ease), border-color 0.2s;
 }
-.london-timeline-card:hover { transform: translateY(-2px); border-color: var(--navy-light); }
+.london-timeline-card:hover {
+  transform: translateY(-2px);
+  border-left-color: var(--navy-light);
+  border-right-color: var(--navy-light);
+  border-bottom-color: var(--navy-light);
+}
 .london-timeline-year {
   font-family: var(--font-display);
   font-size: 1.9rem;

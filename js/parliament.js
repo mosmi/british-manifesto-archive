@@ -9,85 +9,91 @@
  * @param {Array} results - [{party, seats, ...}] from election data
  * @param {number} totalSeats - Total seats in parliament
  */
-function drawParliamentChart(container, results, totalSeats) {
+function drawParliamentChart(container, results, totalSeats, year) {
   container.innerHTML = '';
 
-  const W = Math.max(container.clientWidth || 340, 200);
-  const H = Math.round(W * 0.52);
-  const cx = W / 2;
-  const cy = H - 14;
+  // Use a fixed high-resolution vector space (aspect ratio 1000:540) to keep alignment perfect
+  const W = 1000;
+  const H = 540;
+  const cx = 500;
+  const cy = 492;
 
-  // Tune dot radius and row spacing based on seat count
-  const dotR    = W < 300 ? 2.5 : W < 500 ? 3.5 : 4.2;
-  const rowGap  = dotR * 2.75;
-  const innerR  = W * 0.13;
-  const outerR  = W * 0.47;
+  // Spacing and density: 14 rows, dotR = 6.6, innerR = 110, outerR = 430
+  const dotR    = 6.6; 
+  const innerR  = 110;
+  const outerR  = 430; // Sized so that outer arc sits separately
+  const arcR    = 464; // Visual separation radius for glowing arc
 
-  // ── Compute seats per row proportionally ──────────────────
-  const numRows = Math.max(4, Math.round((outerR - innerR) / rowGap));
+  const numRows = 14;
   const radii   = Array.from({ length: numRows }, (_, i) => innerR + i * ((outerR - innerR) / (numRows - 1)));
   const totalCirc = radii.reduce((s, r) => s + r, 0);
 
   let seatsPerRow = radii.map(r => Math.round(totalSeats * r / totalCirc));
   const assigned  = seatsPerRow.reduce((s, n) => s + n, 0);
-  seatsPerRow[numRows - 1] += totalSeats - assigned; // correct rounding
+  seatsPerRow[numRows - 1] += totalSeats - assigned;
 
-  // ── Generate all seat positions ───────────────────────────
   const allPositions = [];
   seatsPerRow.forEach((n, rowIdx) => {
     const r = radii[rowIdx];
     for (let i = 0; i < n; i++) {
-      // t goes 0→1 left→right; add small padding (0.5/n) so dots don't fall exactly at 0° or 180°
       const t = (i + 0.5) / n;
-      const angle = Math.PI * (1 - t); // π (left) → 0 (right)
+      const angle = Math.PI * (1 - t);
       allPositions.push({
-        x:   cx + r * Math.cos(angle),
-        y:   cy - r * Math.sin(angle),
-        t,       // left→right position for colouring
-        rowIdx,
+        x: cx + r * Math.cos(angle),
+        y: cy - r * Math.sin(angle),
+        t,
+        rowIdx
       });
     }
   });
 
-  // ── Sort by t (left → right) for party colouring ─────────
   allPositions.sort((a, b) => a.t - b.t);
 
-  // ── Build flat colour array in political spectrum order ───
   const resultMap = {};
   results.forEach(r => {
     if (r.party) resultMap[r.party] = (resultMap[r.party] || 0) + r.seats;
   });
 
   const colours = [];
+  const orderedParties = [];
+
   for (const partyId of SPECTRUM_ORDER) {
     const seats = resultMap[partyId] || 0;
     if (!seats) continue;
-    const colour = getPartyColor(partyId);
+    const colour = getPartyColor(partyId, year);
     for (let i = 0; i < seats; i++) colours.push(colour);
+    orderedParties.push({ partyId, color: colour, seats });
     delete resultMap[partyId];
   }
   Object.entries(resultMap).forEach(([partyId, seats]) => {
-    const colour = getPartyColor(partyId);
+    const colour = getPartyColor(partyId, year);
     for (let i = 0; i < seats; i++) colours.push(colour);
+    orderedParties.push({ partyId, color: colour, seats });
   });
   results.filter(r => !r.party && r.seats > 0).forEach(r => {
     for (let i = 0; i < r.seats; i++) colours.push('#6b7280');
+    orderedParties.push({ partyId: 'none', color: '#6b7280', seats: r.seats });
   });
-  // safety top-up for "others" or rounding
-  while (colours.length < totalSeats) colours.push(getPartyColor('others'));
+  
+  if (colours.length < totalSeats) {
+    const topupSeats = totalSeats - colours.length;
+    const colour = getPartyColor('others', year);
+    for (let i = 0; i < topupSeats; i++) colours.push(colour);
+    orderedParties.push({ partyId: 'others', color: colour, seats: topupSeats });
+  }
 
-  // ── Build SVG ─────────────────────────────────────────────
-  const NS  = 'http://www.w3.org/2000/svg';
+  const NS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-  svg.setAttribute('width',  '100%');
+  svg.setAttribute('width', '100%');
   svg.setAttribute('height', H);
+  svg.style.height = 'auto';
   svg.style.display = 'block';
 
-  // Subtle background arc lines for depth
+  // Background depth arc lines (rgba(255,255,255,0.06) stroke for better visibility)
   const arcGroup = document.createElementNS(NS, 'g');
   arcGroup.setAttribute('fill', 'none');
-  arcGroup.setAttribute('stroke', 'rgba(255,255,255,0.04)');
+  arcGroup.setAttribute('stroke', 'rgba(255,255,255,0.06)');
   arcGroup.setAttribute('stroke-width', '1');
   radii.forEach(r => {
     const path = document.createElementNS(NS, 'path');
@@ -99,6 +105,51 @@ function drawParliamentChart(container, results, totalSeats) {
     arcGroup.appendChild(path);
   });
   svg.appendChild(arcGroup);
+
+  // Outer Glowing Arc - Layered for prominent dual-sided glow
+  const scale = W / 500;
+  const createArcSegmentsGroup = (strokeWidth, blurPx, opacityVal) => {
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('fill', 'none');
+    g.setAttribute('stroke-linecap', 'butt');
+    g.setAttribute('stroke-width', Math.max(0.5, strokeWidth).toFixed(2));
+    if (blurPx > 0) {
+      g.style.filter = `blur(${blurPx.toFixed(2)}px)`;
+    }
+    if (opacityVal !== undefined) {
+      g.setAttribute('opacity', opacityVal.toString());
+    }
+
+    let currentSeats = 0;
+    orderedParties.forEach(p => {
+      if (p.seats === 0) return;
+      const seatStart = currentSeats;
+      const seatEnd = currentSeats + p.seats;
+      currentSeats = seatEnd;
+
+      const t_start = seatStart / totalSeats;
+      const t_end = seatEnd / totalSeats;
+
+      const angle_start = Math.PI * (1 - t_start);
+      const angle_end = Math.PI * (1 - t_end);
+
+      const startX = cx + arcR * Math.cos(angle_start);
+      const startY = cy - arcR * Math.sin(angle_start);
+      const endX   = cx + arcR * Math.cos(angle_end);
+      const endY   = cy - arcR * Math.sin(angle_end);
+
+      const path = document.createElementNS(NS, 'path');
+      path.setAttribute('stroke', p.color);
+      path.setAttribute('d', `M ${startX.toFixed(2)} ${startY.toFixed(2)} A ${arcR.toFixed(2)} ${arcR.toFixed(2)} 0 0 1 ${endX.toFixed(2)} ${endY.toFixed(2)}`);
+      g.appendChild(path);
+    });
+    return g;
+  };
+
+  svg.appendChild(createArcSegmentsGroup(28 * scale, 18 * scale, 0.3));
+  svg.appendChild(createArcSegmentsGroup(14 * scale, 6 * scale, 0.55));
+  svg.appendChild(createArcSegmentsGroup(6 * scale, 2 * scale, 0.85));
+  svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95)); // Crisp core line
 
   // Seat dots
   const dotsGroup = document.createElementNS(NS, 'g');
@@ -113,7 +164,7 @@ function drawParliamentChart(container, results, totalSeats) {
   });
   svg.appendChild(dotsGroup);
 
-  // Centre line (Speaker's position marker)
+  // Center dashed line (Speaker marker)
   const line = document.createElementNS(NS, 'line');
   line.setAttribute('x1', cx);
   line.setAttribute('y1', cy);
@@ -123,17 +174,6 @@ function drawParliamentChart(container, results, totalSeats) {
   line.setAttribute('stroke-width', '1.5');
   line.setAttribute('stroke-dasharray', '3,3');
   svg.appendChild(line);
-
-  // Majority line (horizontal dashed across at majority threshold)
-  const majAngle = Math.PI / 2; // top of semicircle = 90° = majority point
-  const majRadius = (innerR + outerR) / 2;
-  const majLine = document.createElementNS(NS, 'line');
-  majLine.setAttribute('x1', (cx - majRadius - dotR * 3).toFixed(1));
-  majLine.setAttribute('y1', (cy - majRadius * 0.02).toFixed(1));
-  majLine.setAttribute('x2', (cx + majRadius + dotR * 3).toFixed(1));
-  majLine.setAttribute('y2', (cy - majRadius * 0.02).toFixed(1));
-  majLine.setAttribute('stroke', 'rgba(201,168,76,0)');
-  svg.appendChild(majLine);
 
   container.appendChild(svg);
 }
@@ -158,7 +198,7 @@ function buildParliamentLegend(legendEl, results, year) {
 
     const dot = document.createElement('div');
     dot.className = 'legend-dot';
-    dot.style.background = r.party ? getPartyColor(r.party) : '#6b7280';
+    dot.style.background = r.party ? getPartyColor(r.party, year) : '#6b7280';
 
     const label = document.createElement('span');
     label.textContent = r.partyLabel || getPartyName(r.party, year);

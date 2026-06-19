@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Section Mockup Preview (Revised Glow Alignment)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 3rem 2rem;
+      font-family: var(--font-ui);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .preview-header {
+      border-bottom: 1px solid var(--navy-border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .preview-header h1 {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 0 0 0.5rem;
+    }
+    .preview-header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+    
+    /* ----------------------------------------------------------------- */
+    /* REVISED CHAMBER & RESULTS PANEL STYLE IMPLEMENTATION             */
+    /* ----------------------------------------------------------------- */
+    
+    .chamber-card {
+      background: rgba(11, 17, 31, 0.65);
+      border: 1px solid var(--navy-border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+      position: relative;
+      /* Glow Variables - Highly Saturated Neon Glow Palette */
+      --party-color: #0099ff;
+      --party-glow: rgba(0, 153, 255, 0.16);
+    }
+    
+    .chamber-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(31, 45, 71, 0.5);
+      padding-bottom: 1rem;
+    }
+    
+    .chamber-card-head-title h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0;
+      color: var(--cream);
+    }
+    .chamber-card-head-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+    .chamber-card-head-meta span {
+      font-weight: 600;
+    }
+    
+    .view-btn {
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid var(--gold-rule);
+      color: var(--gold-light);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .view-btn:hover {
+      background: var(--gold-dim);
+      border-color: var(--gold);
+    }
+    
+    /* Parliament Chart wrapper with relative positioning and CSS ambient glow */
+    .chart-container-wrap {
+      position: relative;
+      margin: 1.5rem auto 0.5rem;
+      max-width: 540px;
+    }
+    
+    /* Strong ambient color glow behind the entire seating semicircle */
+    .chart-container-wrap::before {
+      content: '';
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 85%;
+      background: radial-gradient(circle at bottom center, var(--party-glow) 0%, transparent 70%);
+      filter: blur(40px);
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: 0;
+      transition: background 0.3s;
+    }
+    
+    .chart-box {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Percentage stats row below the SVG to avoid clashing with dots */
+    .chart-percentage-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.75rem;
+      padding: 0 0.5rem;
+      font-family: var(--font-ui);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      position: relative;
+      z-index: 2;
+    }
+    
+    .chart-percentage-left {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .chart-percentage-right {
+      display: flex;
+      gap: 1.25rem;
+    }
+    
+    /* Floating Glass Card (Results & slider unified box) */
+    .results-timeline-box {
+      border: 1px solid var(--navy-border);
+      border-radius: 12px;
+      background: rgba(17, 24, 39, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 2.25rem 1.5rem 1.5rem;
+      margin-top: 2.5rem;
+      position: relative;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    
+    .results-timeline-box-header {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #0f172a;
+      border: 1px solid var(--navy-border);
+      border-radius: 99px;
+      padding: 0.4rem 1.5rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--cream);
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      white-space: nowrap;
+    }
+    
+    /* Simplified legend styles */
+    .simplified-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .legend-item-simp {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .legend-item-simp i {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-right: 0.45rem;
+      box-shadow: 0 0 6px currentColor;
+    }
+    .legend-item-simp span {
+      color: var(--cream);
+      margin-left: 0.35rem;
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+    
+    /* Unified slider bar & year badge container */
+    .unified-slider-wrap {
+      position: relative;
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid rgba(31, 45, 71, 0.5);
+    }
+    
+    /* Flex slider container that restricts alignment exactly to the input width */
+    .slider-input-container {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    
+    .slider-year-badge {
+      position: absolute;
+      bottom: 28px; /* Slightly further apart */
+      transform: translate(-50%, -100%);
+      background: var(--party-color); /* Dynamically matching active government */
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+      pointer-events: none;
+      transition: left 0.1s ease-out, background-color 0.2s;
+      z-index: 10;
+    }
+    .slider-year-badge::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--party-color) transparent transparent transparent; /* Arrow matching color */
+      transition: border-top-color 0.2s;
+    }
+    
+    .custom-range-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      background: var(--navy-light);
+      border-radius: 2px;
+      outline: none;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .custom-range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--party-color);
+      border: 2px solid var(--cream);
+      box-shadow: 0 0 10px var(--party-color);
+      cursor: pointer;
+      transition: transform 0.1s, background-color 0.2s, box-shadow 0.2s;
+    }
+    .custom-range-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.25);
+    }
+    
+    .slider-ticks-container {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-faint);
+      font-size: 0.68rem;
+      padding: 0 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="preview-header">
+      <h1>Chamber Section Mockup Preview (Revised Glow Alignment)</h1>
+      <p>Outer glow ring is now expanded to a 232px radius, separating it clearly from the dots with a visual margin. Glow gradients stops update dynamically, aligning exactly with the seats on both 2019 and 2024 selections.</p>
+    </div>
+
+    <!-- MAIN CARD -->
+    <div class="chamber-card" id="chamber-card">
+      
+      <!-- CARD HEADER (Existing working structure at the top) -->
+      <div class="chamber-card-head">
+        <div class="chamber-card-head-title">
+          <h2 id="election-title">2019 General Election</h2>
+          <div class="chamber-card-head-meta" id="election-meta">
+            <span style="color: #0099ff;">Conservative</span> victory · 365 seats · 43.6% vote
+          </div>
+        </div>
+        <a href="/election/2019" class="view-btn" id="view-election-btn">View election →</a>
+      </div>
+
+      <!-- SEATING CHART & OUTER GLOW RING -->
+      <div class="chart-container-wrap">
+        
+        <!-- Live-constructed chart with glowing gradient path -->
+        <svg class="chart-box" viewBox="0 0 500 270" width="100%" height="270" style="display: block;">
+          <defs>
+            <!-- Dynamic spectrum gradient stops representing the actual result shares in high-saturation glowing variants -->
+            <linearGradient id="chamber-glow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <!-- Stops are generated dynamically via script on load/change -->
+            </linearGradient>
+          </defs>
+          
+          <!-- Outer glowing color spectrum ring (Radius 232 provides separation gap, and blur provides glow above and below the line) -->
+          <!-- Deep outer ambient aura -->
+          <path d="M 18 246 A 232 232 0 0 1 482 246" fill="none" stroke="url(#chamber-glow-gradient)" stroke-width="28" style="filter: blur(18px); opacity: 0.3;" />
+          <!-- Saturated mid glow -->
+          <path d="M 18 246 A 232 232 0 0 1 482 246" fill="none" stroke="url(#chamber-glow-gradient)" stroke-width="14" style="filter: blur(6px); opacity: 0.55;" />
+          <!-- Inner core glow -->
+          <path d="M 18 246 A 232 232 0 0 1 482 246" fill="none" stroke="url(#chamber-glow-gradient)" stroke-width="6" style="filter: blur(2px); opacity: 0.85;" />
+          <!-- Sharp core boundary line (Visually separate from dots) -->
+          <path d="M 18 246 A 232 232 0 0 1 482 246" fill="none" stroke="url(#chamber-glow-gradient)" stroke-width="1.5" style="opacity: 0.95;" />
+          
+          <!-- background lines -->
+          <g fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1.2">
+            <path d="M 70 246 A 180 180 0 0 1 430 246" />
+            <path d="M 105 246 A 145 145 0 0 1 395 246" />
+            <path d="M 140 246 A 110 110 0 0 1 360 246" />
+            <path d="M 175 246 A 75 75 0 0 1 325 246" />
+          </g>
+
+          <!-- Semicircular Dots - FULL ROW AND DOT COUNT RESTORED -->
+          <g id="dots-grid"></g>
+          
+          <!-- Speaker line -->
+          <line x1="250" y1="246" x2="250" y2="190" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-dasharray="3,3" />
+        </svg>
+
+        <!-- Semicircle bottom percentages - Rendered below the SVG to avoid overlap -->
+        <div class="chart-percentage-row">
+          <div class="chart-percentage-left" id="pct-left">
+            <span style="color: #0099ff;">43.6%</span>
+            <span style="color: #ff0044;">32.1%</span>
+            <span style="color: #ff9900;">11.5%</span>
+          </div>
+          <div class="chart-percentage-right" id="pct-right">
+            <span style="color: #ffe600;">3.9%</span>
+            <span style="color: #00e65c;">2.7%</span>
+            <span style="color: #4b5563;">Others</span>
+          </div>
+        </div>
+
+      </div>
+ 
+      <!-- FLOATING RESULTS & SLIDER BOX -->
+      <div class="results-timeline-box">
+        
+        <!-- Centered badge tag header -->
+        <div class="results-timeline-box-header" id="results-box-header">
+          General Election 2019
+        </div>
+        
+        <!-- Simplified Legend key (Collatting smaller regional parties into "Others" to keep it readable) -->
+        <div class="simplified-legend" id="simplified-legend">
+          <div class="legend-item-simp" style="color: #0099ff;"><i style="background: #0099ff;"></i>Conservative: <span>365</span></div>
+          <div class="legend-item-simp" style="color: #ff0044;"><i style="background: #ff0044;"></i>Labour: <span>203</span></div>
+          <div class="legend-item-simp" style="color: #ff9900;"><i style="background: #ff9900;"></i>Lib Dem: <span>11</span></div>
+          <div class="legend-item-simp" style="color: #ffe600;"><i style="background: #ffe600;"></i>SNP: <span>48</span></div>
+          <div class="legend-item-simp" style="color: #00e65c;"><i style="background: #00e65c;"></i>Green: <span>1</span></div>
+          <div class="legend-item-simp" style="color: #33cc33;"><i style="background: #33cc33;"></i>Plaid Cymru: <span>4</span></div>
+          <div class="legend-item-simp" style="color: #4b5563;"><i style="background: #4b5563;"></i>Others: <span>18</span></div>
+        </div>
+        
+        <!-- Timeline Slider panel -->
+        <div class="unified-slider-wrap">
+          <div class="slider-input-container">
+            <!-- Tooltip year sliding marker with pointer arrow and dynamic party color -->
+            <div class="slider-year-badge" id="slider-year-badge" style="left: 78.5%;">
+              2019
+            </div>
+            
+            <input type="range" class="custom-range-slider" id="mock-slider" min="0" max="100" value="78.5" aria-label="Select election year">
+          </div>
+          
+          <div class="slider-ticks-container">
+            <span>1945</span>
+            <span>1964</span>
+            <span>1979</span>
+            <span>1997</span>
+            <span>2010</span>
+            <span>2024</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Exact dots calculation logic matching js/parliament.js (many rows and full visual interest)
+    const dotsGrid = document.getElementById('dots-grid');
+    const cx = 250, cy = 246;
+    const totalSeats = 650;
+    
+    // Draw the full visually interesting semicircle (10 rows, same as production)
+    const dotR = 3.5;
+    const rowGap = dotR * 2.75;
+    const innerR = 250 * 0.13; // 32.5
+    const outerR = 250 * 0.85; // 212.5
+    const numRows = 10;
+    
+    const radii = Array.from({ length: numRows }, (_, i) => innerR + i * ((outerR - innerR) / (numRows - 1)));
+    const totalCirc = radii.reduce((s, r) => s + r, 0);
+    let seatsPerRow = radii.map(r => Math.round(totalSeats * r / totalCirc));
+    const assigned = seatsPerRow.reduce((s, n) => s + n, 0);
+    seatsPerRow[numRows - 1] += totalSeats - assigned;
+    
+    let allPositions = [];
+    seatsPerRow.forEach((n, rowIdx) => {
+      const r = radii[rowIdx];
+      for (let i = 0; i < n; i++) {
+        const t = (i + 0.5) / n;
+        const angle = Math.PI * (1 - t);
+        allPositions.push({
+          x: cx + r * Math.cos(angle),
+          y: cy - r * Math.sin(angle),
+          t: t
+        });
+      }
+    });
+    
+    allPositions.sort((a, b) => a.t - b.t);
+
+    // Mock data for years
+    const electionData = {
+      2019: {
+        winner: 'conservative',
+        winnerColor: '#0099ff',
+        winnerGlow: 'rgba(0, 153, 255, 0.22)',
+        winnerMeta: '<span style="color: #0099ff;">Conservative</span> victory · 365 seats · 43.6% vote',
+        pctLeft: '<span style="color: #0099ff;">43.6%</span><span style="color: #ff0044;">32.1%</span><span style="color: #ff9900;">11.5%</span>',
+        pctRight: '<span style="color: #ffe600;">3.9%</span><span style="color: #00e65c;">2.7%</span><span style="color: #4b5563;">Others</span>',
+        shares: [
+          { color: '#0099ff', pct: 0.56 }, // Conservative seats fraction
+          { color: '#ff0044', pct: 0.87 },       // Labour
+          { color: '#ff9900', pct: 0.887 },      // LibDem
+          { color: '#ffe600', pct: 0.96 },          // SNP
+          { color: '#00e65c', pct: 0.962 },       // Green
+          { color: '#33cc33', pct: 0.968 },       // Plaid
+          { color: '#4b5563', pct: 1.0 }         // Others
+        ],
+        legend: `
+          <div class="legend-item-simp" style="color: #0099ff;"><i style="background: #0099ff;"></i>Conservative: <span>365</span></div>
+          <div class="legend-item-simp" style="color: #ff0044;"><i style="background: #ff0044;"></i>Labour: <span>203</span></div>
+          <div class="legend-item-simp" style="color: #ff9900;"><i style="background: #ff9900;"></i>Lib Dem: <span>11</span></div>
+          <div class="legend-item-simp" style="color: #ffe600;"><i style="background: #ffe600;"></i>SNP: <span>48</span></div>
+          <div class="legend-item-simp" style="color: #00e65c;"><i style="background: #00e65c;"></i>Green: <span>1</span></div>
+          <div class="legend-item-simp" style="color: #33cc33;"><i style="background: #33cc33;"></i>Plaid Cymru: <span>4</span></div>
+          <div class="legend-item-simp" style="color: #4b5563;"><i style="background: #4b5563;"></i>Others: <span>18</span></div>
+        `
+      },
+      2024: {
+        winner: 'labour',
+        winnerColor: '#ff0044',
+        winnerGlow: 'rgba(255, 0, 68, 0.22)',
+        winnerMeta: '<span style="color: #ff0044;">Labour</span> victory · 411 seats · 33.7% vote',
+        pctLeft: '<span style="color: #ff0044;">33.7%</span><span style="color: #0099ff;">23.7%</span><span style="color: #ff9900;">12.2%</span>',
+        pctRight: '<span style="color: #ffe600;">2.5%</span><span style="color: #00e65c;">6.4%</span><span style="color: #4b5563;">Others</span>',
+        shares: [
+          { color: '#ff0044', pct: 0.63 },       // Labour majority
+          { color: '#0099ff', pct: 0.82 }, // Conservative
+          { color: '#ff9900', pct: 0.93 },       // LibDem
+          { color: '#ffe600', pct: 0.944 },          // SNP
+          { color: '#00e65c', pct: 0.95 },        // Green
+          { color: '#4b5563', pct: 1.0 }         // Others
+        ],
+        legend: `
+          <div class="legend-item-simp" style="color: #ff0044;"><i style="background: #ff0044;"></i>Labour: <span>411</span></div>
+          <div class="legend-item-simp" style="color: #0099ff;"><i style="background: #0099ff;"></i>Conservative: <span>121</span></div>
+          <div class="legend-item-simp" style="color: #ff9900;"><i style="background: #ff9900;"></i>Lib Dem: <span>72</span></div>
+          <div class="legend-item-simp" style="color: #ffe600;"><i style="background: #ffe600;"></i>SNP: <span>9</span></div>
+          <div class="legend-item-simp" style="color: #00e65c;"><i style="background: #00e65c;"></i>Green: <span>4</span></div>
+          <div class="legend-item-simp" style="color: #4b5563;"><i style="background: #4b5563;"></i>Others: <span>33</span></div>
+        `
+      }
+    };
+
+    function updateChamberGradient(shares) {
+      const gradient = document.getElementById('chamber-glow-gradient');
+      if (!gradient) return;
+      gradient.innerHTML = '';
+      let lastPct = 0;
+      shares.forEach((stop) => {
+        // Add double stops to make the color transitions sharp and clean
+        const s1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+        s1.setAttribute('offset', (lastPct * 100).toFixed(1) + '%');
+        s1.setAttribute('stop-color', stop.color);
+        
+        const s2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+        s2.setAttribute('offset', (stop.pct * 100).toFixed(1) + '%');
+        s2.setAttribute('stop-color', stop.color);
+        
+        gradient.appendChild(s1);
+        gradient.appendChild(s2);
+        lastPct = stop.pct;
+      });
+    }
+
+    function renderDots(yearKey) {
+      dotsGrid.innerHTML = '';
+      const data = electionData[yearKey] || electionData[2019];
+      
+      allPositions.forEach((pos, i) => {
+        const ratio = i / allPositions.length;
+        let color = 'var(--others)';
+        for (const stop of data.shares) {
+          if (ratio < stop.pct) {
+            color = stop.color;
+            break;
+          }
+        }
+        
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('cx', pos.x.toFixed(1));
+        c.setAttribute('cy', pos.y.toFixed(1));
+        c.setAttribute('r', dotR);
+        c.setAttribute('fill', color);
+        c.setAttribute('opacity', '0.9');
+        dotsGrid.appendChild(c);
+      });
+    }
+
+    // Initial render
+    renderDots(2019);
+    updateChamberGradient(electionData[2019].shares);
+
+    // Range slider interaction
+    const mockSlider = document.getElementById('mock-slider');
+    const badge = document.getElementById('slider-year-badge');
+    const card = document.getElementById('chamber-card');
+    
+    mockSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      
+      // Calculate exact mathematical offset to align badge center with slider thumb
+      const inputWidthOffset = 8 - (val * 0.16);
+      badge.style.left = `calc(${val}% + (${inputWidthOffset}px))`;
+      
+      // Toggle between 2019 and 2024 based on slider position
+      const year = val > 50 ? 2024 : 2019;
+      badge.textContent = year;
+      
+      const data = electionData[year];
+      
+      // Update variables on the card container for theme colors
+      card.style.setProperty('--party-color', data.winnerColor);
+      card.style.setProperty('--party-glow', data.winnerGlow);
+      
+      // Update typography
+      document.getElementById('election-title').textContent = `${year} General Election`;
+      document.getElementById('results-box-header').textContent = `General Election ${year}`;
+      document.getElementById('election-meta').innerHTML = data.winnerMeta;
+      document.getElementById('pct-left').innerHTML = data.pctLeft;
+      document.getElementById('pct-right').innerHTML = data.pctRight;
+      document.getElementById('simplified-legend').innerHTML = data.legend;
+      document.getElementById('view-election-btn').href = `/election/${year}`;
+      
+      // Re-render dots
+      renderDots(year);
+      // Re-build and align gradient stops dynamically
+      updateChamberGradient(data.shares);
+    });
+  </script>
+
+</body>
+</html>

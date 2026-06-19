@@ -22,8 +22,7 @@ const TITLE_SUFFIX = ` — ${SITE_NAME}`;
 const DEFAULT_TITLE = `${SITE_NAME} — www.manifestos.org.uk`;
 const DEFAULT_DESCRIPTION =
   'A comprehensive digital archive of general, devolved, regional, and ' +
-  'European Parliament election manifestos in the United Kingdom. Browse ' +
-  'party manifestos, election results, and maps.';
+  'European Parliament election manifestos, results, and maps in the UK.';
 
 // Static (non-parameterised) routes the SPA renders, with bespoke metadata.
 const STATIC_ROUTES = {
