@@ -18,13 +18,33 @@ function drawParliamentChart(container, results, totalSeats, year) {
   const cx = 500;
   const cy = 492;
 
-  // Spacing and density: 14 rows, dotR = 6.6, innerR = 110, outerR = 430
-  const dotR    = 6.6; 
-  const innerR  = 110;
-  const outerR  = 430; // Sized so that outer arc sits separately
-  const arcR    = 464; // Visual separation radius for glowing arc
+  // ── Adaptive layout: small assemblies (≤60 seats) use a compact,
+  //    larger-dot layout suited to bodies like the 25-seat London Assembly.
+  let dotR, innerR, outerR, arcR, numRows;
+  if (totalSeats <= 40) {
+    // 3 rows, large dots — balanced spacing for the 25-seat London Assembly.
+    // Distributes as [5, 8, 12]: ~47px horiz gap, ~37px radial gap, 52px arc clearance.
+    numRows = 3;
+    dotR    = 28;
+    innerR  = 165;
+    outerR  = 350;
+    arcR    = 430;
+  } else if (totalSeats <= 130) {
+    // 6 rows, medium dots — suits 60–130 seat chambers (e.g. Senedd, Holyrood)
+    numRows = 6;
+    dotR    = 10;
+    innerR  = 135;
+    outerR  = 410;
+    arcR    = 448;
+  } else {
+    // 14 rows, small dots — optimised for the 650-seat House of Commons
+    numRows = 14;
+    dotR    = 6.6;
+    innerR  = 110;
+    outerR  = 430;
+    arcR    = 464;
+  }
 
-  const numRows = 14;
   const radii   = Array.from({ length: numRows }, (_, i) => innerR + i * ((outerR - innerR) / (numRows - 1)));
   const totalCirc = radii.reduce((s, r) => s + r, 0);
 
