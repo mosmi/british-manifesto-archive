@@ -1,0 +1,131 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "Newry and Armagh": {
+      "q": 2,
+      "r": 0,
+      "n": "Newry and Armagh",
+      "party": "sinnfein",
+      "seats": 3
+    },
+    "Upper Bann": {
+      "q": 1,
+      "r": 1,
+      "n": "Upper Bann",
+      "party": "uup",
+      "seats": 2
+    },
+    "Lagan Valley": {
+      "q": 2,
+      "r": 1,
+      "n": "Lagan Valley",
+      "party": "dup",
+      "seats": 2
+    },
+    "Belfast South and Mid Down": {
+      "q": 3,
+      "r": 1,
+      "n": "Belfast South and Mid Down",
+      "party": "sdlp",
+      "seats": 2
+    },
+    "South Down": {
+      "q": 4,
+      "r": 1,
+      "n": "South Down",
+      "party": "sinnfein",
+      "seats": 2
+    },
+    "Fermanagh and South Tyrone": {
+      "q": 0,
+      "r": 2,
+      "n": "Fermanagh and South Tyrone",
+      "party": "sinnfein",
+      "seats": 3
+    },
+    "Belfast West": {
+      "q": 2,
+      "r": 2,
+      "n": "Belfast West",
+      "party": "sinnfein",
+      "seats": 4
+    },
+    "Belfast East": {
+      "q": 3,
+      "r": 2,
+      "n": "Belfast East",
+      "party": "dup",
+      "seats": 3
+    },
+    "Strangford": {
+      "q": 4,
+      "r": 2,
+      "n": "Strangford",
+      "party": "dup",
+      "seats": 2
+    },
+    "West Tyrone": {
+      "q": 0,
+      "r": 3,
+      "n": "West Tyrone",
+      "party": "sinnfein",
+      "seats": 3
+    },
+    "Mid Ulster": {
+      "q": 1,
+      "r": 3,
+      "n": "Mid Ulster",
+      "party": "sinnfein",
+      "seats": 3
+    },
+    "South Antrim": {
+      "q": 2,
+      "r": 3,
+      "n": "South Antrim",
+      "party": "dup",
+      "seats": 2
+    },
+    "Belfast North": {
+      "q": 3,
+      "r": 3,
+      "n": "Belfast North",
+      "party": "sinnfein",
+      "seats": 2
+    },
+    "North Down": {
+      "q": 4,
+      "r": 3,
+      "n": "North Down",
+      "party": "alliance",
+      "seats": 2
+    },
+    "Foyle": {
+      "q": 0,
+      "r": 4,
+      "n": "Foyle",
+      "party": "sinnfein",
+      "seats": 3
+    },
+    "East Londonderry": {
+      "q": 1,
+      "r": 4,
+      "n": "East Londonderry",
+      "party": "dup",
+      "seats": 2
+    },
+    "North Antrim": {
+      "q": 2,
+      "r": 4,
+      "n": "North Antrim",
+      "party": "dup",
+      "seats": 3
+    },
+    "East Antrim": {
+      "q": 3,
+      "r": 4,
+      "n": "East Antrim",
+      "party": "dup",
+      "seats": 2
+    }
+  }
+}

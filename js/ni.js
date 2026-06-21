@@ -5,6 +5,21 @@
 
 let _niIndex = null;
 
+/** Load the pre-built NI Assembly constituency hexjson for a given year. */
+const _niHexCache = new Map();
+async function loadNIHexLayout(year) {
+  if (_niHexCache.has(year)) return _niHexCache.get(year);
+  try {
+    const res = await fetch(`/data/hex/stormont/${year}.hexjson`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    _niHexCache.set(year, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
 async function loadNIIndex() {
   if (_niIndex) return _niIndex;
   try {
@@ -218,12 +233,27 @@ async function renderNIElection(app, id) {
           ${niParliamentSection(election)}
         </div>
         <div>
-          ${hasChart ? `<div class="viz-panel">
-            <div class="parliament-card viz-card">
-              <div class="parliament-card-title">Northern Ireland Assembly</div>
-              <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 46}</div>
-              <div id="stormont-chart-container"></div>
-              <div class="parliament-legend" id="stormont-chart-legend"></div>
+          ${hasChart ? `
+          <div class="viz-panel">
+            <div class="viz-tabs" role="tablist">
+              <button type="button" class="viz-tab active" id="ni-tab-parliament" data-viz="parliament" role="tab" aria-selected="true" aria-controls="ni-viz-parliament" tabindex="0">Assembly</button>
+              <button type="button" class="viz-tab" id="ni-tab-hexmap" data-viz="hexmap" role="tab" aria-selected="false" aria-controls="ni-viz-hexmap" tabindex="-1">Constituencies</button>
+            </div>
+            <div class="viz-pane active" id="ni-viz-parliament" role="tabpanel" aria-labelledby="ni-tab-parliament">
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Northern Ireland Assembly</div>
+                <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 46}</div>
+                <div id="stormont-chart-container"></div>
+                <div class="parliament-legend" id="stormont-chart-legend"></div>
+              </div>
+            </div>
+            <div class="viz-pane" id="ni-viz-hexmap" role="tabpanel" aria-labelledby="ni-tab-hexmap" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Constituency Map</div>
+                <div class="parliament-card-sub" id="ni-hexmap-subtitle">Plurality party per constituency (5 MLAs each, STV)</div>
+                <div id="stormont-hexmap-container" class="hexmap-container"></div>
+                <div class="parliament-legend hexmap-legend" id="stormont-hexmap-legend" hidden></div>
+              </div>
             </div>
           </div>` : ''}
         </div>
@@ -235,11 +265,63 @@ async function renderNIElection(app, id) {
   `;
 
   if (hasChart) {
-    requestAnimationFrame(() => {
+    requestAnimationFrame(async () => {
       const cont = document.getElementById('stormont-chart-container');
       const leg = document.getElementById('stormont-chart-legend');
       if (cont) drawParliamentChart(cont, chartResults, chartTotal);
       if (leg) buildParliamentLegend(leg, chartResults, election.year);
+
+      // Wire up tab switching
+      const tabs = document.querySelectorAll('#ni-tab-parliament, #ni-tab-hexmap');
+      const panes = { parliament: document.getElementById('ni-viz-parliament'), hexmap: document.getElementById('ni-viz-hexmap') };
+      let hexmapLoaded = false;
+
+      const switchTab = (targetViz) => {
+        tabs.forEach(t => {
+          const active = t.dataset.viz === targetViz;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', active);
+          t.tabIndex = active ? 0 : -1;
+        });
+        Object.entries(panes).forEach(([viz, pane]) => {
+          if (!pane) return;
+          const active = viz === targetViz;
+          pane.classList.toggle('active', active);
+          pane.hidden = !active;
+        });
+
+        if (targetViz === 'hexmap' && !hexmapLoaded) {
+          hexmapLoaded = true;
+          loadNIHexLayout(election.year).then(hexjson => {
+            const hexCont = document.getElementById('stormont-hexmap-container');
+            const hexLeg = document.getElementById('stormont-hexmap-legend');
+            if (!hexCont) return;
+            if (!hexjson?.hexes) {
+              hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
+              return;
+            }
+            const data = hexjsonToDrawData(hexjson);
+            // Enrich tooltip: show seats won per constituency
+            data.constituencies = data.constituencies.map(c => ({
+              ...c,
+              mp: `${hexjson.hexes[c.name]?.seats || 0} seats won · most by ${c.partyLabel}`,
+            }));
+            drawHexmap(hexCont, data, {
+              legendEl: hexLeg,
+              electionYear: election.year,
+            });
+            if (hexLeg) hexLeg.hidden = false;
+          });
+        }
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.viz));
+        tab.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); tabs[1]?.focus(); switchTab('hexmap'); }
+          if (e.key === 'ArrowLeft')  { e.preventDefault(); tabs[0]?.focus(); switchTab('parliament'); }
+        });
+      });
     });
   }
 }
