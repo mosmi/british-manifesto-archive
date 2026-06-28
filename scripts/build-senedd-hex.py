@@ -181,18 +181,14 @@ def parse_tables(html):
     return parser.tables
 
 def load_grid_coords_1997():
-    path = ROOT / "data" / "hex" / "uk-constituencies-1997.hexjson"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    coords = {}
-    for k, cell in data["hexes"].items():
-        name = normalize_name(cell["n"])
-        q = cell["q"]
-        r = cell["r"]
-        if name in ["caernarfon", "conwy", "vale of clwyd", "clwyd west"]:
-            q += 1
-        coords[name] = {"q": q, "r": r}
-    # Add manual fallback/override for Welsh specific differences
-    coords["meirionnydd nant conwy"] = {"q": 6, "r": 11} # In uk-1997, Meirionnydd Nant Conwy is WIKI-meirionnydd-nant-conwy
+    coords_2010 = load_grid_coords_2010()
+    coords = dict(coords_2010)
+    if "arfon" in coords_2010:
+        coords["caernarfon"] = coords_2010["arfon"]
+    if "aberconwy" in coords_2010:
+        coords["conwy"] = coords_2010["aberconwy"]
+    if "dwyfor meirionnydd" in coords_2010:
+        coords["meirionnydd nant conwy"] = coords_2010["dwyfor meirionnydd"]
     return coords
 
 def load_grid_coords_2010():

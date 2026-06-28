@@ -2,281 +2,281 @@
   "layout": "odd-r",
   "hexes": {
     "Carmarthen East And Dinefwr": {
-      "q": 5,
-      "r": 9,
+      "q": 6,
+      "r": 11,
       "n": "Carmarthen East And Dinefwr",
       "party": "plaid",
       "winner": "Rhodri Glyn Thomas"
     },
     "Carmarthen West And South Pembrokeshire": {
-      "q": 3,
-      "r": 8,
+      "q": 6,
+      "r": 10,
       "n": "Carmarthen West And South Pembrokeshire",
       "party": "welshlab",
       "winner": "Christine Gwyther"
     },
     "Ceredigion": {
-      "q": 7,
-      "r": 10,
+      "q": 11,
+      "r": 13,
       "n": "Ceredigion",
       "party": "plaid",
       "winner": "Elin Jones"
     },
     "Llanelli": {
-      "q": 4,
-      "r": 9,
+      "q": 5,
+      "r": 10,
       "n": "Llanelli",
       "party": "plaid",
       "winner": "Helen Mary Jones"
     },
     "Meirionnydd Nant Conwy": {
-      "q": 6,
-      "r": 11,
+      "q": 11,
+      "r": 15,
       "n": "Meirionnydd Nant Conwy",
       "party": "plaid",
       "winner": "Dafydd Elis-Thomas"
     },
     "Montgomeryshire": {
-      "q": 9,
-      "r": 15,
+      "q": 11,
+      "r": 14,
       "n": "Montgomeryshire",
       "party": "welshlibdem",
       "winner": "Mick Bates"
     },
     "Preseli Pembrokeshire": {
-      "q": 3,
+      "q": 5,
       "r": 9,
       "n": "Preseli Pembrokeshire",
       "party": "welshlab",
       "winner": "Richard Edwards"
     },
     "Brecon And Radnorshire": {
-      "q": 11,
+      "q": 12,
       "r": 14,
       "n": "Brecon And Radnorshire",
       "party": "welshlibdem",
       "winner": "Kirsty Williams"
     },
     "Alyn And Deeside": {
-      "q": 10,
-      "r": 18,
+      "q": 11,
+      "r": 16,
       "n": "Alyn And Deeside",
       "party": "welshlab",
       "winner": "Tom Middlehurst"
     },
     "Caernarfon": {
-      "q": 7,
-      "r": 16,
+      "q": 9,
+      "r": 18,
       "n": "Caernarfon",
       "party": "plaid",
       "winner": "Dafydd Wigley"
     },
     "Clwyd South": {
-      "q": 10,
-      "r": 16,
+      "q": 12,
+      "r": 15,
       "n": "Clwyd South",
       "party": "welshlab",
       "winner": "Karen Sinclair"
     },
     "Clwyd West": {
-      "q": 9,
+      "q": 10,
       "r": 17,
       "n": "Clwyd West",
       "party": "welshlab",
       "winner": "Alun Pugh"
     },
     "Conwy": {
-      "q": 8,
-      "r": 16,
+      "q": 10,
+      "r": 18,
       "n": "Conwy",
       "party": "plaid",
       "winner": "Gareth Jones"
     },
     "Delyn": {
-      "q": 9,
+      "q": 11,
       "r": 17,
       "n": "Delyn",
       "party": "welshlab",
       "winner": "Alison Halford"
     },
     "Vale Of Clwyd": {
-      "q": 10,
-      "r": 16,
+      "q": 11,
+      "r": 18,
       "n": "Vale Of Clwyd",
       "party": "welshlab",
       "winner": "Margaret Ann Jones"
     },
     "Wrexham": {
-      "q": 11,
+      "q": 12,
       "r": 16,
       "n": "Wrexham",
       "party": "welshlab",
       "winner": "John Marek"
     },
     "Ynys Môn": {
-      "q": 5,
-      "r": 17,
+      "q": 7,
+      "r": 19,
       "n": "Ynys Môn",
       "party": "plaid",
       "winner": "Ieuan Wyn Jones"
     },
     "Cardiff South And Penarth": {
-      "q": 11,
-      "r": 8,
+      "q": 12,
+      "r": 10,
       "n": "Cardiff South And Penarth",
       "party": "welshlab",
       "winner": "Lorraine Barrett"
     },
     "Cardiff West": {
       "q": 9,
-      "r": 8,
+      "r": 9,
       "n": "Cardiff West",
       "party": "welshlab",
       "winner": "Rhodri Morgan"
     },
     "Cynon Valley": {
-      "q": 10,
-      "r": 12,
+      "q": 11,
+      "r": 11,
       "n": "Cynon Valley",
       "party": "welshlab",
       "winner": "Christine Chapman"
     },
     "Pontypridd": {
       "q": 9,
-      "r": 9,
+      "r": 10,
       "n": "Pontypridd",
       "party": "welshlab",
       "winner": "Jane Davidson"
     },
     "Rhondda": {
-      "q": 9,
-      "r": 10,
+      "q": 10,
+      "r": 11,
       "n": "Rhondda",
       "party": "plaid",
       "winner": "Geraint Rhys Davies"
     },
     "Vale Of Glamorgan": {
-      "q": 9,
-      "r": 7,
+      "q": 8,
+      "r": 9,
       "n": "Vale Of Glamorgan",
       "party": "welshlab",
       "winner": "Jane Hutt"
     },
     "Cardiff Central": {
-      "q": 10,
-      "r": 10,
+      "q": 11,
+      "r": 9,
       "n": "Cardiff Central",
       "party": "welshlibdem",
       "winner": "Jennifer Elizabeth Randerson"
     },
     "Cardiff North": {
-      "q": 11,
+      "q": 10,
       "r": 10,
       "n": "Cardiff North",
       "party": "welshlab",
       "winner": "Sue Essex"
     },
     "Islwyn": {
-      "q": 12,
-      "r": 11,
+      "q": 10,
+      "r": 12,
       "n": "Islwyn",
       "party": "plaid",
       "winner": "Brian Hancock"
     },
     "Merthyr Tydfil And Rhymney": {
-      "q": 11,
+      "q": 9,
       "r": 12,
       "n": "Merthyr Tydfil And Rhymney",
       "party": "welshlab",
       "winner": "Huw Lewis"
     },
     "Monmouth": {
-      "q": 13,
-      "r": 11,
+      "q": 12,
+      "r": 13,
       "n": "Monmouth",
       "party": "welshcon",
       "winner": "David Thomas Charles Davies"
     },
     "Blaenau Gwent": {
-      "q": 11,
+      "q": 10,
       "r": 13,
       "n": "Blaenau Gwent",
       "party": "welshlab",
       "winner": "Peter Law"
     },
     "Newport East": {
-      "q": 13,
-      "r": 9,
+      "q": 12,
+      "r": 12,
       "n": "Newport East",
       "party": "welshlab",
       "winner": "John Griffiths"
     },
     "Newport West": {
-      "q": 11,
-      "r": 9,
+      "q": 12,
+      "r": 11,
       "n": "Newport West",
       "party": "welshlab",
       "winner": "Rosemary Butler"
     },
     "Torfaen": {
       "q": 11,
-      "r": 11,
+      "r": 12,
       "n": "Torfaen",
       "party": "welshlab",
       "winner": "Lynne Neagle"
     },
     "Caerphilly": {
-      "q": 8,
-      "r": 11,
+      "q": 11,
+      "r": 10,
       "n": "Caerphilly",
       "party": "welshlab",
       "winner": "Ron Davies"
     },
     "Aberavon": {
-      "q": 7,
-      "r": 8,
+      "q": 8,
+      "r": 11,
       "n": "Aberavon",
       "party": "welshlab",
       "winner": "Brian Gibbons"
     },
     "Gower": {
-      "q": 5,
-      "r": 7,
+      "q": 7,
+      "r": 11,
       "n": "Gower",
       "party": "welshlab",
       "winner": "Edwina Hart"
     },
     "Neath": {
-      "q": 7,
-      "r": 9,
+      "q": 9,
+      "r": 11,
       "n": "Neath",
       "party": "welshlab",
       "winner": "Gwenda Thomas"
     },
     "Ogmore": {
       "q": 8,
-      "r": 9,
+      "r": 10,
       "n": "Ogmore",
       "party": "welshlab",
       "winner": "Janice Gregory"
     },
     "Swansea East": {
-      "q": 6,
-      "r": 10,
+      "q": 8,
+      "r": 12,
       "n": "Swansea East",
       "party": "welshlab",
       "winner": "Val Feld"
     },
     "Swansea West": {
-      "q": 5,
-      "r": 8,
+      "q": 7,
+      "r": 10,
       "n": "Swansea West",
       "party": "welshlab",
       "winner": "Andrew David Davies"
     },
     "Bridgend": {
       "q": 7,
-      "r": 7,
+      "r": 9,
       "n": "Bridgend",
       "party": "welshlab",
       "winner": "Carwyn Jones"
