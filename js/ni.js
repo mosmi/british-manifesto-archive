@@ -10,7 +10,7 @@ const _niHexCache = new Map();
 async function loadNIHexLayout(year) {
   if (_niHexCache.has(year)) return _niHexCache.get(year);
   try {
-    const res = await fetch(`/data/hex/stormont/${year}.hexjson`);
+    const res = await fetch(`/data/hex/stormont/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
     if (!res.ok) return null;
     const data = await res.json();
     _niHexCache.set(year, data);
@@ -300,12 +300,36 @@ async function renderNIElection(app, id) {
               hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
               return;
             }
-            const data = hexjsonToDrawData(hexjson);
+            const formatSeatsList = (seatsList, year) => {
+              if (!Array.isArray(seatsList) || seatsList.length === 0) return '';
+              const counts = {};
+              seatsList.forEach(pid => {
+                const pIdNormalized = (pid || 'others').toLowerCase().replace(/\s+/g, '');
+                counts[pIdNormalized] = (counts[pIdNormalized] || 0) + 1;
+              });
+              const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+              return sorted.map(([pid, count]) => {
+                const name = getPartyName(pid, year);
+                return `${name} ${count}`;
+              }).join(' · ');
+            };
+
+            const data = hexjsonToDrawData(hexjson, election.year);
             // Enrich tooltip: show seats won per constituency
-            data.constituencies = data.constituencies.map(c => ({
-              ...c,
-              mp: `${hexjson.hexes[c.name]?.seats || 0} seats won · most by ${c.partyLabel}`,
-            }));
+            data.constituencies = data.constituencies.map(c => {
+              const cell = hexjson.hexes[c.name];
+              const seatsList = cell?.seats_list;
+              let mpText = '';
+              if (Array.isArray(seatsList) && seatsList.length > 0) {
+                mpText = formatSeatsList(seatsList, election.year);
+              } else {
+                mpText = `${cell?.seats || 0} seats won · most by ${c.partyLabel}`;
+              }
+              return {
+                ...c,
+                mp: mpText,
+              };
+            });
             drawHexmap(hexCont, data, {
               legendEl: hexLeg,
               electionYear: election.year,

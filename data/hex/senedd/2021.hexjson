@@ -1,0 +1,392 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "Aberavon": {
+      "q": 8,
+      "r": 11,
+      "n": "Aberavon",
+      "party": "welshlab",
+      "winner": "David Rees"
+    },
+    "Aberconwy": {
+      "q": 10,
+      "r": 18,
+      "n": "Aberconwy",
+      "party": "welshcon",
+      "winner": "Janet Finch-Saunders"
+    },
+    "Alyn And Deeside": {
+      "q": 11,
+      "r": 16,
+      "n": "Alyn And Deeside",
+      "party": "welshlab",
+      "winner": "Jack Sargeant"
+    },
+    "Arfon": {
+      "q": 9,
+      "r": 18,
+      "n": "Arfon",
+      "party": "plaid",
+      "winner": "Siân Gwenllian"
+    },
+    "Blaenau Gwent": {
+      "q": 10,
+      "r": 13,
+      "n": "Blaenau Gwent",
+      "party": "welshlab",
+      "winner": "Alun Davies"
+    },
+    "Brecon And Radnorshire": {
+      "q": 12,
+      "r": 14,
+      "n": "Brecon And Radnorshire",
+      "party": "welshcon",
+      "winner": "James Evans"
+    },
+    "Bridgend": {
+      "q": 7,
+      "r": 9,
+      "n": "Bridgend",
+      "party": "welshlab",
+      "winner": "Sarah Murphy"
+    },
+    "Caerphilly": {
+      "q": 11,
+      "r": 10,
+      "n": "Caerphilly",
+      "party": "welshlab",
+      "winner": "Hefin David"
+    },
+    "Cardiff Central": {
+      "q": 11,
+      "r": 9,
+      "n": "Cardiff Central",
+      "party": "welshlab",
+      "winner": "Jenny Rathbone"
+    },
+    "Cardiff North": {
+      "q": 10,
+      "r": 10,
+      "n": "Cardiff North",
+      "party": "welshlab",
+      "winner": "Julie Morgan"
+    },
+    "Cardiff South And Penarth": {
+      "q": 12,
+      "r": 10,
+      "n": "Cardiff South And Penarth",
+      "party": "welshlab",
+      "winner": "Vaughan Gething"
+    },
+    "Cardiff West": {
+      "q": 9,
+      "r": 9,
+      "n": "Cardiff West",
+      "party": "welshlab",
+      "winner": "Mark Drakeford"
+    },
+    "Carmarthen East And Dinefwr": {
+      "q": 6,
+      "r": 11,
+      "n": "Carmarthen East And Dinefwr",
+      "party": "plaid",
+      "winner": "Adam Price"
+    },
+    "Carmarthen West And South Pembrokeshire": {
+      "q": 6,
+      "r": 10,
+      "n": "Carmarthen West And South Pembrokeshire",
+      "party": "welshcon",
+      "winner": "Samuel Kurtz"
+    },
+    "Ceredigion": {
+      "q": 11,
+      "r": 13,
+      "n": "Ceredigion",
+      "party": "plaid",
+      "winner": "Elin Jones"
+    },
+    "Clwyd South": {
+      "q": 12,
+      "r": 15,
+      "n": "Clwyd South",
+      "party": "welshlab",
+      "winner": "Ken Skates"
+    },
+    "Clwyd West": {
+      "q": 10,
+      "r": 17,
+      "n": "Clwyd West",
+      "party": "welshcon",
+      "winner": "Darren Millar"
+    },
+    "Cynon Valley": {
+      "q": 11,
+      "r": 11,
+      "n": "Cynon Valley",
+      "party": "welshlab",
+      "winner": "Vikki Howells"
+    },
+    "Delyn": {
+      "q": 11,
+      "r": 17,
+      "n": "Delyn",
+      "party": "welshlab",
+      "winner": "Hannah Blythyn"
+    },
+    "Dwyfor Meirionnydd": {
+      "q": 11,
+      "r": 15,
+      "n": "Dwyfor Meirionnydd",
+      "party": "plaid",
+      "winner": "Mabon ap Gwynfor"
+    },
+    "Gower": {
+      "q": 7,
+      "r": 11,
+      "n": "Gower",
+      "party": "welshlab",
+      "winner": "Rebecca Evans"
+    },
+    "Islwyn": {
+      "q": 10,
+      "r": 12,
+      "n": "Islwyn",
+      "party": "welshlab",
+      "winner": "Rhianon Passmore"
+    },
+    "Llanelli": {
+      "q": 5,
+      "r": 10,
+      "n": "Llanelli",
+      "party": "welshlab",
+      "winner": "Lee Waters"
+    },
+    "Merthyr Tydfil And Rhymney": {
+      "q": 9,
+      "r": 12,
+      "n": "Merthyr Tydfil And Rhymney",
+      "party": "welshlab",
+      "winner": "Dawn Bowden"
+    },
+    "Monmouth": {
+      "q": 12,
+      "r": 13,
+      "n": "Monmouth",
+      "party": "welshcon",
+      "winner": "Peter Fox"
+    },
+    "Montgomeryshire": {
+      "q": 11,
+      "r": 14,
+      "n": "Montgomeryshire",
+      "party": "welshcon",
+      "winner": "Russell George"
+    },
+    "Neath": {
+      "q": 9,
+      "r": 11,
+      "n": "Neath",
+      "party": "welshlab",
+      "winner": "Jeremy Miles"
+    },
+    "Newport East": {
+      "q": 12,
+      "r": 12,
+      "n": "Newport East",
+      "party": "welshlab",
+      "winner": "John Griffiths"
+    },
+    "Newport West": {
+      "q": 12,
+      "r": 11,
+      "n": "Newport West",
+      "party": "welshlab",
+      "winner": "Jayne Bryant"
+    },
+    "Ogmore": {
+      "q": 8,
+      "r": 10,
+      "n": "Ogmore",
+      "party": "welshlab",
+      "winner": "Huw Irranca-Davies"
+    },
+    "Pontypridd": {
+      "q": 9,
+      "r": 10,
+      "n": "Pontypridd",
+      "party": "welshlab",
+      "winner": "Mick Antoniw"
+    },
+    "Preseli Pembrokeshire": {
+      "q": 5,
+      "r": 9,
+      "n": "Preseli Pembrokeshire",
+      "party": "welshcon",
+      "winner": "Paul Davies"
+    },
+    "Rhondda": {
+      "q": 10,
+      "r": 11,
+      "n": "Rhondda",
+      "party": "welshlab",
+      "winner": "Buffy Williams"
+    },
+    "Swansea East": {
+      "q": 8,
+      "r": 12,
+      "n": "Swansea East",
+      "party": "welshlab",
+      "winner": "Mike Hedges"
+    },
+    "Swansea West": {
+      "q": 7,
+      "r": 10,
+      "n": "Swansea West",
+      "party": "welshlab",
+      "winner": "Julie James"
+    },
+    "Torfaen": {
+      "q": 11,
+      "r": 12,
+      "n": "Torfaen",
+      "party": "welshlab",
+      "winner": "Lynne Neagle"
+    },
+    "Vale Of Clwyd": {
+      "q": 11,
+      "r": 18,
+      "n": "Vale Of Clwyd",
+      "party": "welshcon",
+      "winner": "Gareth Davies"
+    },
+    "Vale Of Glamorgan": {
+      "q": 8,
+      "r": 9,
+      "n": "Vale Of Glamorgan",
+      "party": "welshlab",
+      "winner": "Jane Hutt"
+    },
+    "Wrexham": {
+      "q": 12,
+      "r": 16,
+      "n": "Wrexham",
+      "party": "welshlab",
+      "winner": "Lesley Griffiths"
+    },
+    "Ynys Môn": {
+      "q": 7,
+      "r": 19,
+      "n": "Ynys Môn",
+      "party": "plaid",
+      "winner": "Rhun ap Iorwerth"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "Mid And West Wales",
+      "members": [
+        {
+          "name": "Eluned Morgan",
+          "party": "welshlab"
+        },
+        {
+          "name": "Cefin Campbell",
+          "party": "plaid"
+        },
+        {
+          "name": "Jane Dodds",
+          "party": "welshlibdem"
+        },
+        {
+          "name": "Joyce Watson",
+          "party": "welshlab"
+        }
+      ]
+    },
+    {
+      "region": "North Wales",
+      "members": [
+        {
+          "name": "Llŷr Gruffydd",
+          "party": "plaid"
+        },
+        {
+          "name": "Mark Isherwood",
+          "party": "welshcon"
+        },
+        {
+          "name": "Sam Rowlands",
+          "party": "welshcon"
+        },
+        {
+          "name": "Carolyn Thomas",
+          "party": "welshlab"
+        }
+      ]
+    },
+    {
+      "region": "South Wales Central",
+      "members": [
+        {
+          "name": "Andrew R. T. Davies",
+          "party": "welshcon"
+        },
+        {
+          "name": "Heledd Fychan",
+          "party": "plaid"
+        },
+        {
+          "name": "Joel James",
+          "party": "welshcon"
+        },
+        {
+          "name": "Rhys ab Owen",
+          "party": "plaid"
+        }
+      ]
+    },
+    {
+      "region": "South Wales East",
+      "members": [
+        {
+          "name": "Natasha Asghar",
+          "party": "welshcon"
+        },
+        {
+          "name": "Peredur Owen Griffiths",
+          "party": "plaid"
+        },
+        {
+          "name": "Delyth Jewell",
+          "party": "plaid"
+        },
+        {
+          "name": "Laura Anne Jones",
+          "party": "welshcon"
+        }
+      ]
+    },
+    {
+      "region": "South Wales West",
+      "members": [
+        {
+          "name": "Luke Fletcher",
+          "party": "plaid"
+        },
+        {
+          "name": "Tom Giffard",
+          "party": "welshcon"
+        },
+        {
+          "name": "Altaf Hussain",
+          "party": "welshcon"
+        },
+        {
+          "name": "Sioned Williams",
+          "party": "plaid"
+        }
+      ]
+    }
+  ]
+}

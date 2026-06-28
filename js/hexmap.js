@@ -115,6 +115,46 @@ function hexPoints(cx, cy, size, layout) {
     : flatTopHexPoints(cx, cy, size);
 }
 
+function getSeatOffsets(cx, cy, size, count) {
+  if (count === 5) {
+    const d = size * 0.26;
+    return [
+      { x: cx - d, y: cy - d },
+      { x: cx + d, y: cy - d },
+      { x: cx, y: cy },
+      { x: cx - d, y: cy + d },
+      { x: cx + d, y: cy + d }
+    ];
+  }
+  if (count === 6) {
+    const dx = size * 0.23;
+    const dy = size * 0.32;
+    return [
+      { x: cx - dx, y: cy - dy },
+      { x: cx + dx, y: cy - dy },
+      { x: cx - dx, y: cy },
+      { x: cx + dx, y: cy },
+      { x: cx - dx, y: cy + dy },
+      { x: cx + dx, y: cy + dy }
+    ];
+  }
+  const offsets = [];
+  const rows = Math.ceil(Math.sqrt(count));
+  const cols = Math.ceil(count / rows);
+  const dx = (size * 0.5) / cols;
+  const dy = (size * 0.5) / rows;
+  let idx = 0;
+  for (let r = 0; r < rows && idx < count; r++) {
+    for (let c = 0; c < cols && idx < count; c++) {
+      const x = cx + (c - (cols - 1) / 2) * dx * 2;
+      const y = cy + (r - (rows - 1) / 2) * dy * 2;
+      offsets.push({ x, y });
+      idx++;
+    }
+  }
+  return offsets;
+}
+
 function drawHexmap(container, data, options = {}) {
   container.innerHTML = '';
   if (!data?.constituencies?.length) {
@@ -145,7 +185,7 @@ function drawHexmap(container, data, options = {}) {
   const minY = Math.min(...pixels.map(p => p.py));
   const maxY = Math.max(...pixels.map(p => p.py));
 
-  const hexPad = size * 0.55;
+  const hexPad = size * 0.95;
   const viewMinX = minX - hexPad;
   const viewMinY = minY - hexPad;
   const viewW = maxX - minX + hexPad * 2;
@@ -210,7 +250,7 @@ function drawHexmap(container, data, options = {}) {
   pixels.forEach(c => {
     const cx = c.px + offsetX;
     const cy = c.py + offsetY;
-    const colour = c.hexColour || getPartyColor(c.party);
+    const colour = c.hexColour || getPartyColor(c.party, options.electionYear);
 
     const g = document.createElementNS(NS, 'g');
     g.setAttribute('class', 'hexmap-hex');
@@ -222,14 +262,35 @@ function drawHexmap(container, data, options = {}) {
     g.dataset.party = c.party || 'others';
     g.dataset.partyLabel = c.partyLabel || getPartyName(c.party, options.electionYear);
 
+    const hasSeatsList = Array.isArray(c.seatsList) && c.seatsList.length > 0;
+    const polyFill = hasSeatsList ? 'var(--navy-light)' : colour;
+
     const poly = document.createElementNS(NS, 'polygon');
     poly.setAttribute('points', hexPoints(cx, cy, size * 0.96, layout));
-    poly.setAttribute('fill', colour);
+    poly.setAttribute('fill', polyFill);
     poly.setAttribute('stroke', 'rgba(255,255,255,0.12)');
     poly.setAttribute('stroke-width', '0.6');
     poly.setAttribute('opacity', '0.92');
 
     g.appendChild(poly);
+
+    if (hasSeatsList) {
+      const offsets = getSeatOffsets(cx, cy, size, c.seatsList.length);
+      const dotRadius = c.seatsList.length <= 5 ? size * 0.12 : size * 0.11;
+
+      c.seatsList.forEach((partyId, idx) => {
+        const offset = offsets[idx] || { x: cx, y: cy };
+        const dot = document.createElementNS(NS, 'circle');
+        dot.setAttribute('cx', offset.x.toFixed(2));
+        dot.setAttribute('cy', offset.y.toFixed(2));
+        dot.setAttribute('r', dotRadius.toFixed(2));
+        const dotColor = getPartyColor(partyId, options.electionYear);
+        dot.setAttribute('fill', dotColor);
+        dot.setAttribute('stroke', 'rgba(0, 0, 0, 0.2)');
+        dot.setAttribute('stroke-width', '0.4');
+        g.appendChild(dot);
+      });
+    }
 
     const showTip = (e) => {
       tooltip.hidden = false;
@@ -268,14 +329,25 @@ function drawHexmap(container, data, options = {}) {
       poly.setAttribute('stroke', 'var(--gold-light)');
       poly.setAttribute('stroke-width', '2');
 
-      const partyId = c.party;
-      const hasManifesto = partyId && partyId !== 'others' && PARTIES[partyId];
-      const manifestoLink = hasManifesto
-        ? `<a href="/manifesto/${options.electionId}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`
-        : '';
-      const partyPageLink = hasManifesto
-        ? `<a href="/party/${partyId}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(partyId, options.electionYear)} party page</a>`
-        : '';
+      let actionLinks = '';
+      if (hasSeatsList) {
+        const uniqueParties = [...new Set(c.seatsList)].filter(pid => pid !== 'others' && PARTIES[pid]);
+        uniqueParties.forEach(pid => {
+          if (options.electionId) {
+            actionLinks += `<a href="/manifesto/${options.electionId}/${pid}" class="hexmap-detail-link">Read ${getPartyName(pid, options.electionYear)} manifesto →</a>`;
+          }
+          actionLinks += `<a href="/party/${pid}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(pid, options.electionYear)} party page</a>`;
+        });
+      } else {
+        const partyId = c.party;
+        const hasManifesto = options.electionId && partyId && partyId !== 'others' && PARTIES[partyId];
+        if (hasManifesto) {
+          actionLinks += `<a href="/manifesto/${options.electionId}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`;
+        }
+        if (partyId && partyId !== 'others' && PARTIES[partyId]) {
+          actionLinks += `<a href="/party/${partyId}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(partyId, options.electionYear)} party page</a>`;
+        }
+      }
 
       detail.innerHTML = `
         <div class="hexmap-detail-inner">
@@ -284,7 +356,7 @@ function drawHexmap(container, data, options = {}) {
             <div class="hexmap-detail-name">${c.name}</div>
             <div class="hexmap-detail-mp">${c.mp || '—'}</div>
             <div class="hexmap-detail-party">${c.partyLabel || getPartyName(c.party, options.electionYear)}</div>
-            <div class="hexmap-detail-actions">${manifestoLink}${partyPageLink}</div>
+            <div class="hexmap-detail-actions">${actionLinks}</div>
           </div>
         </div>`;
 
@@ -338,17 +410,29 @@ function buildHexmapLegend(legendEl, constituencies, electionYear) {
 
   const counts = new Map();
   constituencies.forEach(c => {
-    const pid = c.party || 'others';
-    const defaultLabel = getPartyName(pid, electionYear);
-    if (!counts.has(pid)) {
-      counts.set(pid, { party: pid, seats: 0, label: defaultLabel });
-    }
-    const row = counts.get(pid);
-    row.seats += 1;
-    if (LIBERAL_LINEAGE_NAMES[pid] && electionYear != null) {
-      row.label = defaultLabel;
-    } else if (c.partyLabel) {
-      row.label = c.partyLabel;
+    if (Array.isArray(c.seatsList) && c.seatsList.length > 0) {
+      c.seatsList.forEach(pid => {
+        const pIdNormalized = (pid || 'others').toLowerCase().replace(/\s+/g, '');
+        const defaultLabel = getPartyName(pIdNormalized, electionYear);
+        if (!counts.has(pIdNormalized)) {
+          counts.set(pIdNormalized, { party: pIdNormalized, seats: 0, label: defaultLabel });
+        }
+        const row = counts.get(pIdNormalized);
+        row.seats += 1;
+      });
+    } else {
+      const pid = c.party || 'others';
+      const defaultLabel = getPartyName(pid, electionYear);
+      if (!counts.has(pid)) {
+        counts.set(pid, { party: pid, seats: 0, label: defaultLabel });
+      }
+      const row = counts.get(pid);
+      row.seats += 1;
+      if (LIBERAL_LINEAGE_NAMES[pid] && electionYear != null) {
+        row.label = defaultLabel;
+      } else if (c.partyLabel) {
+        row.label = c.partyLabel;
+      }
     }
   });
 
@@ -454,16 +538,24 @@ async function load1945OutsideBoundary() {
 }
 
 /** Build drawHexmap payload from a coloured hexjson file. */
-function hexjsonToDrawData(hexjson) {
-  const constituencies = Object.entries(hexjson.hexes || {}).map(([key, cell]) => ({
-    name: key,
-    mp: '',
-    party: (cell.party || 'others').toLowerCase().replace(/\s+/g, ''),
-    partyLabel: cell.party || 'Other',
-    q: cell.q,
-    r: cell.r,
-    hexColour: cell.colour,
-  }));
+function hexjsonToDrawData(hexjson, electionYear) {
+  const constituencies = Object.entries(hexjson.hexes || {}).map(([key, cell]) => {
+    const partyId = (cell.party || 'others').toLowerCase().replace(/\s+/g, '');
+    let label = cell.partyLabel || cell.party || 'Other';
+    if (typeof getPartyName === 'function' && PARTIES[partyId]) {
+      label = getPartyName(partyId, electionYear);
+    }
+    return {
+      name: key,
+      mp: '',
+      party: partyId,
+      partyLabel: label,
+      q: cell.q,
+      r: cell.r,
+      hexColour: cell.colour,
+      seatsList: cell.seats_list || null,
+    };
+  });
   return {
     layout: hexjson.layout || 'odd-r',
     constituencies,
@@ -554,7 +646,7 @@ async function draw1945Hexmap(container, options = {}) {
   wrap.appendChild(outsideCol);
   container.appendChild(wrap);
 
-  const data = hexjsonToDrawData(hexjson);
+  const data = hexjsonToDrawData(hexjson, options.electionYear);
   drawHexmap(mapCol, data, { ...options, legendEl: null });
 
   renderOutsideBoundaryPanel(outsideCol, outsideData);

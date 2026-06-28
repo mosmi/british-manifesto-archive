@@ -23,6 +23,72 @@ async function loadSeneddElection(id) {
   }
 }
 
+/** Load Senedd HexJSON files */
+const _seneddHexCache = new Map();
+async function loadSeneddHexLayout(year) {
+  if (_seneddHexCache.has(year)) return _seneddHexCache.get(year);
+  try {
+    const res = await fetch(`/data/hex/senedd/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    _seneddHexCache.set(year, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
+/** Render regional list side panel next to the hexmap (1999–2021) */
+function renderSeneddRegionalPanel(panelEl, regionalList, electionYear) {
+  if (!panelEl || !Array.isArray(regionalList) || regionalList.length === 0) return;
+
+  panelEl.innerHTML = '';
+  panelEl.hidden = false;
+
+  const heading = document.createElement('div');
+  heading.className = 'hexmap-outside-heading';
+  heading.textContent = 'Regional List Seats';
+  panelEl.appendChild(heading);
+
+  const note = document.createElement('p');
+  note.className = 'hexmap-outside-note';
+  note.textContent = 'These 20 regional members are elected via closed party lists in five regions (4 seats each).';
+  panelEl.appendChild(note);
+
+  const rowsWrap = document.createElement('div');
+  rowsWrap.className = 'hexmap-outside-rows';
+
+  regionalList.forEach(reg => {
+    const row = document.createElement('div');
+    row.className = 'hexmap-outside-row';
+
+    const label = document.createElement('div');
+    label.className = 'hexmap-outside-name';
+    label.textContent = reg.region;
+    row.appendChild(label);
+
+    const swatches = document.createElement('div');
+    swatches.className = 'hexmap-outside-swatches';
+    
+    (reg.members || []).forEach(member => {
+      const sw = document.createElement('span');
+      sw.className = 'hexmap-outside-swatch';
+      const colour = getPartyColor(member.party, electionYear);
+      sw.style.background = colour || '#CCCCCC';
+      const partyLabel = getPartyName(member.party, electionYear);
+      sw.title = `${member.name} (${partyLabel})`;
+      sw.setAttribute('aria-label', `${reg.region}: ${member.name}, ${partyLabel}`);
+      swatches.appendChild(sw);
+    });
+
+    row.appendChild(swatches);
+    rowsWrap.appendChild(row);
+  });
+
+  panelEl.appendChild(rowsWrap);
+}
+
+
 function seneddNum(n) {
   return typeof n === 'number' ? n.toLocaleString('en-GB') : '—';
 }
@@ -253,12 +319,27 @@ async function renderSeneddElection(app, id) {
           ${seneddParliamentSection(election)}
         </div>
         <div>
-          ${hasChart ? `<div class="viz-panel">
-            <div class="parliament-card viz-card">
-              <div class="parliament-card-title">Senedd Cymru</div>
-              <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 31}</div>
-              <div id="senedd-chart-container"></div>
-              <div class="parliament-legend" id="senedd-chart-legend"></div>
+          ${hasChart ? `
+          <div class="viz-panel">
+            <div class="viz-tabs" role="tablist">
+              <button type="button" class="viz-tab active" id="senedd-tab-parliament" data-viz="parliament" role="tab" aria-selected="true" aria-controls="senedd-viz-parliament" tabindex="0">Senedd</button>
+              <button type="button" class="viz-tab" id="senedd-tab-hexmap" data-viz="hexmap" role="tab" aria-selected="false" aria-controls="senedd-viz-hexmap" tabindex="-1">Constituencies</button>
+            </div>
+            <div class="viz-pane active" id="senedd-viz-parliament" role="tabpanel" aria-labelledby="senedd-tab-parliament">
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Senedd Cymru</div>
+                <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 31}</div>
+                <div id="senedd-chart-container"></div>
+                <div class="parliament-legend" id="senedd-chart-legend"></div>
+              </div>
+            </div>
+            <div class="viz-pane" id="senedd-viz-hexmap" role="tabpanel" aria-labelledby="senedd-tab-hexmap" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Constituency Map</div>
+                <div class="parliament-card-sub" id="senedd-hexmap-subtitle">Constituency results</div>
+                <div id="senedd-hexmap-container" class="hexmap-container"></div>
+                <div class="parliament-legend hexmap-legend" id="senedd-hexmap-legend" hidden></div>
+              </div>
             </div>
           </div>` : ''}
         </div>
@@ -275,8 +356,143 @@ async function renderSeneddElection(app, id) {
       const leg = document.getElementById('senedd-chart-legend');
       if (cont) drawParliamentChart(cont, chartResults, chartTotal);
       if (leg) buildParliamentLegend(leg, chartResults, election.year);
+
+      // Wire up tab switching
+      const tabs = document.querySelectorAll('#senedd-tab-parliament, #senedd-tab-hexmap');
+      const panes = { parliament: document.getElementById('senedd-viz-parliament'), hexmap: document.getElementById('senedd-viz-hexmap') };
+      let hexmapLoaded = false;
+
+      const switchTab = (targetViz) => {
+        tabs.forEach(t => {
+          const active = t.dataset.viz === targetViz;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', active);
+          t.tabIndex = active ? 0 : -1;
+        });
+        Object.entries(panes).forEach(([viz, pane]) => {
+          if (!pane) return;
+          const active = viz === targetViz;
+          pane.classList.toggle('active', active);
+          pane.hidden = !active;
+        });
+
+        if (targetViz === 'hexmap' && !hexmapLoaded) {
+          hexmapLoaded = true;
+          loadSeneddHexLayout(election.year).then(hexjson => {
+            const hexCont = document.getElementById('senedd-hexmap-container');
+            const hexLeg = document.getElementById('senedd-hexmap-legend');
+            const subtitleEl = document.getElementById('senedd-hexmap-subtitle');
+            if (!hexCont) return;
+            if (!hexjson?.hexes) {
+              hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
+              return;
+            }
+
+            if (subtitleEl) {
+              if (election.year === 2026) {
+                subtitleEl.textContent = 'Constituency results (6 MSs each, closed-list PR)';
+              } else {
+                subtitleEl.textContent = 'Constituency results (first-past-the-post) + regional lists';
+              }
+            }
+
+            const formatSeatsList = (seatsList, year) => {
+              if (!Array.isArray(seatsList) || seatsList.length === 0) return '';
+              const counts = {};
+              seatsList.forEach(pid => {
+                const pIdNormalized = (pid || 'others').toLowerCase().replace(/\s+/g, '');
+                counts[pIdNormalized] = (counts[pIdNormalized] || 0) + 1;
+              });
+              const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+              return sorted.map(([pid, count]) => {
+                const name = getPartyName(pid, year);
+                return `${name} ${count}`;
+              }).join(' · ');
+            };
+
+            const data = hexjsonToDrawData(hexjson, election.year);
+
+            // Enrich constituency tooltip/details
+            data.constituencies = data.constituencies.map(c => {
+              const cell = hexjson.hexes[c.name];
+              let mpText = '';
+              let partyLabel = c.partyLabel;
+              if (election.year === 2026) {
+                mpText = formatSeatsList(cell?.seats_list, election.year);
+                partyLabel = getPartyName(c.party, election.year) + ' plurality';
+              } else {
+                mpText = cell?.winner || 'Winner unknown';
+              }
+              return {
+                ...c,
+                mp: mpText,
+                partyLabel: partyLabel,
+              };
+            });
+
+
+            // If we have regional list seats, wrap in a two-column flex layout just like 1945
+            if (hexjson.regional_list) {
+              hexCont.innerHTML = '';
+              const wrap = document.createElement('div');
+              wrap.className = 'hexmap-1945-wrap';
+
+              const mapCol = document.createElement('div');
+              mapCol.className = 'hexmap-1945-map';
+
+              const outsideCol = document.createElement('div');
+              outsideCol.className = 'hexmap-outside-panel';
+              outsideCol.id = 'senedd-regional-panel';
+
+              wrap.appendChild(mapCol);
+              wrap.appendChild(outsideCol);
+              hexCont.appendChild(wrap);
+
+              drawHexmap(mapCol, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id
+              });
+
+              renderSeneddRegionalPanel(outsideCol, hexjson.regional_list, election.year);
+            } else {
+              drawHexmap(hexCont, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id
+              });
+            }
+
+            // Build aggregated legend
+            if (hexLeg) {
+              const constsForLegend = [...data.constituencies];
+              if (hexjson.regional_list) {
+                hexjson.regional_list.forEach(reg => {
+                  reg.members.forEach(member => {
+                    constsForLegend.push({
+                      party: member.party,
+                      partyLabel: getPartyName(member.party, election.year)
+                    });
+                  });
+                });
+              }
+              buildHexmapLegend(hexLeg, constsForLegend, election.year);
+              hexLeg.hidden = false;
+            }
+          });
+        }
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.viz));
+        tab.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); tabs[1]?.focus(); switchTab('hexmap'); }
+          if (e.key === 'ArrowLeft')  { e.preventDefault(); tabs[0]?.focus(); switchTab('parliament'); }
+        });
+      });
     });
   }
+
 }
 
 async function renderSeneddPortal(app) {

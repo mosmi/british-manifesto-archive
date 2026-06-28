@@ -1,0 +1,229 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "Afan Ogwr Rhondda": {
+      "q": 0,
+      "r": 2,
+      "n": "Afan Ogwr Rhondda",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshlab"
+      ]
+    },
+    "Bangor Conwy Môn": {
+      "q": 0,
+      "r": 5,
+      "n": "Bangor Conwy Môn",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshcon"
+      ]
+    },
+    "Blaenau Gwent Caerffili Rhymni": {
+      "q": 2,
+      "r": 2,
+      "n": "Blaenau Gwent Caerffili Rhymni",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "reform"
+      ]
+    },
+    "Brycheiniog Tawe Nedd": {
+      "q": 3,
+      "r": 3,
+      "n": "Brycheiniog Tawe Nedd",
+      "party": "reform",
+      "seats_list": [
+        "reform",
+        "reform",
+        "reform",
+        "plaid",
+        "plaid",
+        "welshlibdem"
+      ]
+    },
+    "Caerdydd Ffynnon Taf": {
+      "q": 2,
+      "r": 1,
+      "n": "Caerdydd Ffynnon Taf",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "welshlab",
+        "walesgrn"
+      ]
+    },
+    "Caerdydd Penarth": {
+      "q": 1,
+      "r": 1,
+      "n": "Caerdydd Penarth",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "walesgrn",
+        "welshlab"
+      ]
+    },
+    "Casnewydd Islwyn": {
+      "q": 3,
+      "r": 1,
+      "n": "Casnewydd Islwyn",
+      "party": "reform",
+      "seats_list": [
+        "reform",
+        "plaid",
+        "reform",
+        "plaid",
+        "welshlab",
+        "welshcon"
+      ]
+    },
+    "Ceredigion Penfro": {
+      "q": 0,
+      "r": 3,
+      "n": "Ceredigion Penfro",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshcon"
+      ]
+    },
+    "Clwyd": {
+      "q": 1,
+      "r": 5,
+      "n": "Clwyd",
+      "party": "reform",
+      "seats_list": [
+        "reform",
+        "reform",
+        "reform",
+        "plaid",
+        "plaid",
+        "welshcon"
+      ]
+    },
+    "Fflint Wrecsam": {
+      "q": 2,
+      "r": 5,
+      "n": "Fflint Wrecsam",
+      "party": "reform",
+      "seats_list": [
+        "reform",
+        "reform",
+        "plaid",
+        "plaid",
+        "welshlab",
+        "welshcon"
+      ]
+    },
+    "Gwynedd Maldwyn": {
+      "q": 2,
+      "r": 4,
+      "n": "Gwynedd Maldwyn",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform"
+      ]
+    },
+    "Gŵyr Abertawe": {
+      "q": 2,
+      "r": 3,
+      "n": "Gŵyr Abertawe",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshlab"
+      ]
+    },
+    "Pen-y-bont Bro Morgannwg": {
+      "q": 0,
+      "r": 1,
+      "n": "Pen-y-bont Bro Morgannwg",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshcon",
+        "welshlab"
+      ]
+    },
+    "Pontypridd Cynon Merthyr": {
+      "q": 1,
+      "r": 2,
+      "n": "Pontypridd Cynon Merthyr",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshlab"
+      ]
+    },
+    "Sir Fynwy Torfaen": {
+      "q": 3,
+      "r": 2,
+      "n": "Sir Fynwy Torfaen",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "welshcon",
+        "welshlab"
+      ]
+    },
+    "Sir Gaerfyrddin": {
+      "q": 1,
+      "r": 3,
+      "n": "Sir Gaerfyrddin",
+      "party": "plaid",
+      "seats_list": [
+        "plaid",
+        "plaid",
+        "plaid",
+        "reform",
+        "reform",
+        "reform"
+      ]
+    }
+  }
+}

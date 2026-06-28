@@ -3,129 +3,255 @@
   "hexes": {
     "Newry and Armagh": {
       "q": 2,
-      "r": 0,
+      "r": 1,
       "n": "Newry and Armagh",
       "party": "sinnfein",
-      "seats": 3
+      "seats": 3,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sinnfein",
+        "sdlp",
+        "dup"
+      ]
     },
     "Upper Bann": {
       "q": 1,
-      "r": 1,
+      "r": 2,
       "n": "Upper Bann",
       "party": "uup",
-      "seats": 2
+      "seats": 1,
+      "seats_list": [
+        "dup",
+        "dup",
+        "sinnfein",
+        "sinnfein",
+        "uup"
+      ]
     },
     "Lagan Valley": {
       "q": 2,
-      "r": 1,
+      "r": 2,
       "n": "Lagan Valley",
       "party": "dup",
-      "seats": 2
+      "seats": 3,
+      "seats_list": [
+        "dup",
+        "dup",
+        "dup",
+        "uup",
+        "alliance"
+      ]
     },
     "Belfast South and Mid Down": {
       "q": 3,
-      "r": 1,
+      "r": 2,
       "n": "Belfast South and Mid Down",
       "party": "sdlp",
-      "seats": 2
+      "seats": 1,
+      "seats_list": [
+        "dup",
+        "sinnfein",
+        "sdlp",
+        "alliance",
+        "gpni"
+      ]
     },
     "South Down": {
       "q": 4,
-      "r": 1,
+      "r": 2,
       "n": "South Down",
       "party": "sinnfein",
-      "seats": 2
+      "seats": 2,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sdlp",
+        "sdlp",
+        "dup"
+      ]
     },
     "Fermanagh and South Tyrone": {
       "q": 0,
-      "r": 2,
+      "r": 3,
       "n": "Fermanagh and South Tyrone",
       "party": "sinnfein",
-      "seats": 3
+      "seats": 2,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "dup",
+        "dup",
+        "uup"
+      ]
     },
     "Belfast West": {
       "q": 2,
-      "r": 2,
+      "r": 3,
       "n": "Belfast West",
       "party": "sinnfein",
-      "seats": 4
+      "seats": 4,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sinnfein",
+        "sinnfein",
+        "pbp"
+      ]
     },
     "Belfast East": {
       "q": 3,
-      "r": 2,
+      "r": 3,
       "n": "Belfast East",
       "party": "dup",
-      "seats": 3
+      "seats": 3,
+      "seats_list": [
+        "dup",
+        "dup",
+        "dup",
+        "alliance",
+        "uup"
+      ]
     },
     "Strangford": {
       "q": 4,
-      "r": 2,
+      "r": 3,
       "n": "Strangford",
       "party": "dup",
-      "seats": 2
+      "seats": 3,
+      "seats_list": [
+        "dup",
+        "dup",
+        "dup",
+        "uup",
+        "alliance"
+      ]
     },
     "West Tyrone": {
       "q": 0,
-      "r": 3,
+      "r": 4,
       "n": "West Tyrone",
       "party": "sinnfein",
-      "seats": 3
+      "seats": 3,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sinnfein",
+        "dup",
+        "sdlp"
+      ]
     },
     "Mid Ulster": {
       "q": 1,
-      "r": 3,
+      "r": 4,
       "n": "Mid Ulster",
       "party": "sinnfein",
-      "seats": 3
+      "seats": 3,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sinnfein",
+        "dup",
+        "sdlp"
+      ]
     },
     "South Antrim": {
       "q": 2,
-      "r": 3,
+      "r": 4,
       "n": "South Antrim",
       "party": "dup",
-      "seats": 2
+      "seats": 2,
+      "seats_list": [
+        "dup",
+        "dup",
+        "sinnfein",
+        "uup",
+        "alliance"
+      ]
     },
     "Belfast North": {
       "q": 3,
-      "r": 3,
+      "r": 4,
       "n": "Belfast North",
       "party": "sinnfein",
-      "seats": 2
+      "seats": 2,
+      "seats_list": [
+        "dup",
+        "dup",
+        "sinnfein",
+        "sinnfein",
+        "sdlp"
+      ]
     },
     "North Down": {
       "q": 4,
-      "r": 3,
+      "r": 4,
       "n": "North Down",
       "party": "alliance",
-      "seats": 2
+      "seats": 1,
+      "seats_list": [
+        "dup",
+        "dup",
+        "alliance",
+        "uup",
+        "gpni"
+      ]
     },
     "Foyle": {
       "q": 0,
-      "r": 4,
+      "r": 5,
       "n": "Foyle",
       "party": "sinnfein",
-      "seats": 3
+      "seats": 2,
+      "seats_list": [
+        "sinnfein",
+        "sinnfein",
+        "sdlp",
+        "sdlp",
+        "dup"
+      ]
     },
     "East Londonderry": {
       "q": 1,
-      "r": 4,
+      "r": 5,
       "n": "East Londonderry",
       "party": "dup",
-      "seats": 2
+      "seats": 2,
+      "seats_list": [
+        "dup",
+        "dup",
+        "sinnfein",
+        "sdlp",
+        "uup"
+      ]
     },
     "North Antrim": {
       "q": 2,
-      "r": 4,
+      "r": 5,
       "n": "North Antrim",
       "party": "dup",
-      "seats": 3
+      "seats": 2,
+      "seats_list": [
+        "dup",
+        "dup",
+        "sinnfein",
+        "uup",
+        "tuv"
+      ]
     },
     "East Antrim": {
       "q": 3,
-      "r": 4,
+      "r": 5,
       "n": "East Antrim",
       "party": "dup",
-      "seats": 2
+      "seats": 2,
+      "seats_list": [
+        "dup",
+        "dup",
+        "uup",
+        "uup",
+        "alliance"
+      ]
     }
   }
 }
