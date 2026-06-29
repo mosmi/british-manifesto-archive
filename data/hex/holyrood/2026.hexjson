@@ -1,0 +1,782 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "holyrood-2026-paisley": {
+      "n": "Paisley",
+      "q": 1,
+      "r": 6,
+      "winner": "George Adam",
+      "party": "snp"
+    },
+    "holyrood-2026-banffshire-and-buchan-coast": {
+      "n": "Banffshire and Buchan Coast",
+      "q": 7,
+      "r": 12,
+      "winner": "Karen Adam",
+      "party": "snp"
+    },
+    "holyrood-2026-motherwell-and-wishaw": {
+      "n": "Motherwell and Wishaw",
+      "q": 2,
+      "r": 3,
+      "winner": "Clare Adamson",
+      "party": "snp"
+    },
+    "holyrood-2026-dundee-city-west": {
+      "n": "Dundee City West",
+      "q": 4,
+      "r": 9,
+      "winner": "Heather Anderson",
+      "party": "snp"
+    },
+    "holyrood-2026-renfrewshire-west-and-levern-valley": {
+      "n": "Renfrewshire West and Levern Valley",
+      "q": 1,
+      "r": 3,
+      "winner": "Tom Arthur",
+      "party": "snp"
+    },
+    "holyrood-2026-dumbarton": {
+      "n": "Dumbarton",
+      "q": 4,
+      "r": 10,
+      "winner": "Jackie Baillie",
+      "party": "scottishlab"
+    },
+    "holyrood-2026-cowdenbeath": {
+      "n": "Cowdenbeath",
+      "q": 5,
+      "r": 7,
+      "winner": "David Barratt",
+      "party": "snp"
+    },
+    "holyrood-2026-skye-lochaber-and-badenoch": {
+      "n": "Skye, Lochaber and Badenoch",
+      "q": 4,
+      "r": 12,
+      "winner": "Andrew Baxter",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-midlothian-north": {
+      "n": "Midlothian North",
+      "q": 5,
+      "r": 2,
+      "winner": "Colin Beattie",
+      "party": "snp"
+    },
+    "holyrood-2026-angus-north-and-mearns": {
+      "n": "Angus North and Mearns",
+      "q": 7,
+      "r": 10,
+      "winner": "Dawn Black",
+      "party": "snp"
+    },
+    "holyrood-2026-uddingston-and-bellshill": {
+      "n": "Uddingston and Bellshill",
+      "q": 2,
+      "r": 4,
+      "winner": "Steven Bonnar",
+      "party": "snp"
+    },
+    "holyrood-2026-falkirk-west": {
+      "n": "Falkirk West",
+      "q": 4,
+      "r": 8,
+      "winner": "Gary Bouse",
+      "party": "snp"
+    },
+    "holyrood-2026-kilmarnock-and-irvine-valley": {
+      "n": "Kilmarnock and Irvine Valley",
+      "q": 1,
+      "r": 2,
+      "winner": "Alan Brown",
+      "party": "snp"
+    },
+    "holyrood-2026-clackmannanshire-and-dunblane": {
+      "n": "Clackmannanshire and Dunblane",
+      "q": 4,
+      "r": 5,
+      "winner": "Keith Brown",
+      "party": "snp"
+    },
+    "holyrood-2026-ayr": {
+      "n": "Ayr",
+      "q": 0,
+      "r": 2,
+      "winner": "Siobhian Brown",
+      "party": "snp"
+    },
+    "holyrood-2026-glasgow-southside": {
+      "n": "Glasgow Southside",
+      "q": 2,
+      "r": 5,
+      "winner": "Holly Bruce",
+      "party": "scottishgrn"
+    },
+    "holyrood-2026-aberdeenshire-west": {
+      "n": "Aberdeenshire West",
+      "q": 5,
+      "r": 11,
+      "winner": "Alexander Burnett",
+      "party": "scottishcon"
+    },
+    "holyrood-2026-edinburgh-eastern-musselburgh-and-tranent": {
+      "n": "Edinburgh Eastern, Musselburgh and Tranent",
+      "q": 7,
+      "r": 2,
+      "winner": "Kate Campbell",
+      "party": "snp"
+    },
+    "holyrood-2026-renfrewshire-north-and-cardonald": {
+      "n": "Renfrewshire North and Cardonald",
+      "q": 1,
+      "r": 4,
+      "winner": "Michelle Campbell",
+      "party": "snp"
+    },
+    "holyrood-2026-galloway-and-west-dumfries": {
+      "n": "Galloway and West Dumfries",
+      "q": 2,
+      "r": 0,
+      "winner": "Finlay Carson",
+      "party": "scottishcon"
+    },
+    "holyrood-2026-edinburgh-north-western": {
+      "n": "Edinburgh North Western",
+      "q": 5,
+      "r": 4,
+      "winner": "Alex Cole-Hamilton",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-almond-valley": {
+      "n": "Almond Valley",
+      "q": 4,
+      "r": 3,
+      "winner": "Angela Constance",
+      "party": "snp"
+    },
+    "holyrood-2026-falkirk-east-and-linlithgow": {
+      "n": "Falkirk East and Linlithgow",
+      "q": 4,
+      "r": 7,
+      "winner": "Martyn Day",
+      "party": "snp"
+    },
+    "holyrood-2026-edinburgh-northern": {
+      "n": "Edinburgh Northern",
+      "q": 6,
+      "r": 4,
+      "winner": "Sanne Dijkstra-Downie",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-glasgow-kelvin-and-maryhill": {
+      "n": "Glasgow Kelvin and Maryhill",
+      "q": 2,
+      "r": 7,
+      "winner": "Bob Doris",
+      "party": "snp"
+    },
+    "holyrood-2026-aberdeen-donside": {
+      "n": "Aberdeen Donside",
+      "q": 6,
+      "r": 11,
+      "winner": "Jackie Dunbar",
+      "party": "snp"
+    },
+    "holyrood-2026-perthshire-south-and-kinross-shire": {
+      "n": "Perthshire South and Kinross-shire",
+      "q": 3,
+      "r": 9,
+      "winner": "Jim Fairlie",
+      "party": "snp"
+    },
+    "holyrood-2026-aberdeen-deeside-and-north-kincardine": {
+      "n": "Aberdeen Deeside and North Kincardine",
+      "q": 6,
+      "r": 10,
+      "winner": "Stephen Flynn",
+      "party": "snp"
+    },
+    "holyrood-2026-dundee-city-east": {
+      "n": "Dundee City East",
+      "q": 5,
+      "r": 9,
+      "winner": "Stephen Gethins",
+      "party": "snp"
+    },
+    "holyrood-2026-glasgow-cathcart-and-pollok": {
+      "n": "Glasgow Cathcart and Pollok",
+      "q": 1,
+      "r": 5,
+      "winner": "Zen Ghani",
+      "party": "snp"
+    },
+    "holyrood-2026-cunninghame-north": {
+      "n": "Cunninghame North",
+      "q": 0,
+      "r": 5,
+      "winner": "Kenneth Gibson",
+      "party": "snp"
+    },
+    "holyrood-2026-cunninghame-south": {
+      "n": "Cunninghame South",
+      "q": 0,
+      "r": 3,
+      "winner": "Patricia Gibson",
+      "party": "snp"
+    },
+    "holyrood-2026-mid-fife-and-glenrothes": {
+      "n": "Mid Fife and Glenrothes",
+      "q": 6,
+      "r": 8,
+      "winner": "Jenny Gilruth",
+      "party": "snp"
+    },
+    "holyrood-2026-shetland-islands": {
+      "n": "Shetland Islands",
+      "q": 7,
+      "r": 16,
+      "winner": "Hannah Goodlad",
+      "party": "snp"
+    },
+    "holyrood-2026-airdrie": {
+      "n": "Airdrie",
+      "q": 3,
+      "r": 3,
+      "winner": "Neil Gray",
+      "party": "snp"
+    },
+    "holyrood-2026-caithness-sutherland-and-ross": {
+      "n": "Caithness, Sutherland and Ross",
+      "q": 4,
+      "r": 13,
+      "winner": "David Green",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-carrick-cumnock-and-doon-valley": {
+      "n": "Carrick, Cumnock and Doon Valley",
+      "q": 1,
+      "r": 1,
+      "winner": "Katie Hagmann",
+      "party": "snp"
+    },
+    "holyrood-2026-ettrick-roxburgh-and-berwickshire": {
+      "n": "Ettrick, Roxburgh and Berwickshire",
+      "q": 4,
+      "r": 0,
+      "winner": "Rachael Hamilton",
+      "party": "scottishcon"
+    },
+    "holyrood-2026-strathkelvin-and-bearsden": {
+      "n": "Strathkelvin and Bearsden",
+      "q": 3,
+      "r": 8,
+      "winner": "Adam Harley",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-rutherglen-and-cambuslang": {
+      "n": "Rutherglen and Cambuslang",
+      "q": 3,
+      "r": 5,
+      "winner": "Clare Haughey",
+      "party": "snp"
+    },
+    "holyrood-2026-cumbernauld-and-kilsyth": {
+      "n": "Cumbernauld and Kilsyth",
+      "q": 3,
+      "r": 7,
+      "winner": "Jamie Hepburn",
+      "party": "snp"
+    },
+    "holyrood-2026-dumfriesshire": {
+      "n": "Dumfriesshire",
+      "q": 3,
+      "r": 0,
+      "winner": "Craig Hoy",
+      "party": "scottishcon"
+    },
+    "holyrood-2026-edinburgh-southern": {
+      "n": "Edinburgh Southern",
+      "q": 6,
+      "r": 2,
+      "winner": "Daniel Johnson",
+      "party": "scottishlab"
+    },
+    "holyrood-2026-hamilton-larkhall-and-stonehouse": {
+      "n": "Hamilton, Larkhall and Stonehouse",
+      "q": 4,
+      "r": 2,
+      "winner": "Alex Kerr",
+      "party": "snp"
+    },
+    "holyrood-2026-midlothian-south-tweeddale-and-lauderdale": {
+      "n": "Midlothian South, Tweeddale and Lauderdale",
+      "q": 3,
+      "r": 1,
+      "winner": "Calum Kerr",
+      "party": "snp"
+    },
+    "holyrood-2026-edinburgh-south-western": {
+      "n": "Edinburgh South Western",
+      "q": 5,
+      "r": 3,
+      "winner": "Simita Kumar",
+      "party": "snp"
+    },
+    "holyrood-2026-glasgow-baillieston-and-shettleston": {
+      "n": "Glasgow Baillieston and Shettleston",
+      "q": 3,
+      "r": 6,
+      "winner": "David Linden",
+      "party": "snp"
+    },
+    "holyrood-2026-coatbridge-and-chryston": {
+      "n": "Coatbridge and Chryston",
+      "q": 3,
+      "r": 4,
+      "winner": "Fulton MacGregor",
+      "party": "snp"
+    },
+    "holyrood-2026-na-h-eileanan-an-iar": {
+      "n": "Na h-Eileanan an Iar",
+      "q": 1,
+      "r": 11,
+      "winner": "Donald MacKinnon",
+      "party": "scottishlab"
+    },
+    "holyrood-2026-edinburgh-north-eastern-and-leith": {
+      "n": "Edinburgh North Eastern and Leith",
+      "q": 7,
+      "r": 4,
+      "winner": "Ben Macpherson",
+      "party": "snp"
+    },
+    "holyrood-2026-aberdeenshire-east": {
+      "n": "Aberdeenshire East",
+      "q": 8,
+      "r": 12,
+      "winner": "Gillian Martin",
+      "party": "snp"
+    },
+    "holyrood-2026-clydesdale": {
+      "n": "Clydesdale",
+      "q": 2,
+      "r": 1,
+      "winner": "Màiri McAllan",
+      "party": "snp"
+    },
+    "holyrood-2026-orkney-islands": {
+      "n": "Orkney Islands",
+      "q": 5,
+      "r": 15,
+      "winner": "Liam McArthur",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-glasgow-easterhouse-and-springburn": {
+      "n": "Glasgow Easterhouse and Springburn",
+      "q": 4,
+      "r": 6,
+      "winner": "Ivan McKee",
+      "party": "snp"
+    },
+    "holyrood-2026-east-lothian-coast-and-lammermuirs": {
+      "n": "East Lothian Coast and Lammermuirs",
+      "q": 4,
+      "r": 1,
+      "winner": "Paul McLennan",
+      "party": "snp"
+    },
+    "holyrood-2026-inverclyde": {
+      "n": "Inverclyde",
+      "q": 2,
+      "r": 9,
+      "winner": "Stuart McMillan",
+      "party": "snp"
+    },
+    "holyrood-2026-clydebank-and-milngavie": {
+      "n": "Clydebank and Milngavie",
+      "q": 2,
+      "r": 8,
+      "winner": "Marie McNair",
+      "party": "snp"
+    },
+    "holyrood-2026-angus-south": {
+      "n": "Angus South",
+      "q": 6,
+      "r": 9,
+      "winner": "Lloyd Melville",
+      "party": "snp"
+    },
+    "holyrood-2026-glasgow-anniesland": {
+      "n": "Glasgow Anniesland",
+      "q": 1,
+      "r": 7,
+      "winner": "Colm Merrick",
+      "party": "snp"
+    },
+    "holyrood-2026-aberdeen-central": {
+      "n": "Aberdeen Central",
+      "q": 7,
+      "r": 11,
+      "winner": "Jack Middleton",
+      "party": "snp"
+    },
+    "holyrood-2026-argyll-and-bute": {
+      "n": "Argyll and Bute",
+      "q": 3,
+      "r": 11,
+      "winner": "Jenni Minto",
+      "party": "snp"
+    },
+    "holyrood-2026-moray": {
+      "n": "Moray",
+      "q": 6,
+      "r": 12,
+      "winner": "Laura Mitchell",
+      "party": "snp"
+    },
+    "holyrood-2026-eastwood": {
+      "n": "Eastwood",
+      "q": 2,
+      "r": 2,
+      "winner": "Kirsten Oswald",
+      "party": "snp"
+    },
+    "holyrood-2026-fife-north-east": {
+      "n": "Fife North East",
+      "q": 7,
+      "r": 8,
+      "winner": "Willie Rennie",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2026-inverness-and-nairn": {
+      "n": "Inverness and Nairn",
+      "q": 4,
+      "r": 11,
+      "winner": "Emma Roddick",
+      "party": "snp"
+    },
+    "holyrood-2026-edinburgh-central": {
+      "n": "Edinburgh Central",
+      "q": 6,
+      "r": 3,
+      "winner": "Lorna Slater",
+      "party": "scottishgrn"
+    },
+    "holyrood-2026-stirling": {
+      "n": "Stirling",
+      "q": 5,
+      "r": 8,
+      "winner": "Alyn Smith",
+      "party": "snp"
+    },
+    "holyrood-2026-dunfermline": {
+      "n": "Dunfermline",
+      "q": 5,
+      "r": 6,
+      "winner": "Shirley-Anne Somerville",
+      "party": "snp"
+    },
+    "holyrood-2026-bathgate": {
+      "n": "Bathgate",
+      "q": 4,
+      "r": 4,
+      "winner": "Pauline Stafford",
+      "party": "snp"
+    },
+    "holyrood-2026-east-kilbride": {
+      "n": "East Kilbride",
+      "q": 3,
+      "r": 2,
+      "winner": "Collette Stevenson",
+      "party": "snp"
+    },
+    "holyrood-2026-perthshire-north": {
+      "n": "Perthshire North",
+      "q": 5,
+      "r": 10,
+      "winner": "John Swinney",
+      "party": "snp"
+    },
+    "holyrood-2026-glasgow-central": {
+      "n": "Glasgow Central",
+      "q": 2,
+      "r": 6,
+      "winner": "Alison Thewliss",
+      "party": "snp"
+    },
+    "holyrood-2026-kirkcaldy": {
+      "n": "Kirkcaldy",
+      "q": 6,
+      "r": 7,
+      "winner": "David Torrance",
+      "party": "snp"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "Central Scotland and Lothians West",
+      "members": [
+        {
+          "name": "Amanda Bland",
+          "party": "reform"
+        },
+        {
+          "name": "Meghan Gallacher",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Mark Griffin",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Amanda Lindsay",
+          "party": "reform"
+        },
+        {
+          "name": "Gillian Mackay",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Graham Simpson",
+          "party": "reform"
+        },
+        {
+          "name": "Jenny Young",
+          "party": "scottishlab"
+        }
+      ]
+    },
+    {
+      "region": "Edinburgh and Lothians East",
+      "members": [
+        {
+          "name": "Irshad Ahmed",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Miles Briggs",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Kayleigh Kinross-O'Neill",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Kate Nevens",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Q Manivannan",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Angela Ross",
+          "party": "reform"
+        },
+        {
+          "name": "Katherine Sangster",
+          "party": "scottishlab"
+        }
+      ]
+    },
+    {
+      "region": "Glasgow",
+      "members": [
+        {
+          "name": "Iris Duane",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Patrick Harvie",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Thomas Kerr",
+          "party": "reform"
+        },
+        {
+          "name": "Pauline McNeill",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Anas Sarwar",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Kim Schmulian",
+          "party": "reform"
+        },
+        {
+          "name": "Paul Sweeney",
+          "party": "scottishlab"
+        }
+      ]
+    },
+    {
+      "region": "Highlands and Islands",
+      "members": [
+        {
+          "name": "Max Bannerman",
+          "party": "reform"
+        },
+        {
+          "name": "Ariane Burgess",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Vic Currie",
+          "party": "reform"
+        },
+        {
+          "name": "Tim Eagle",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Kristopher Leask",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Morven-May MacCallum",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Maree Todd",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Mid Scotland and Fife",
+      "members": [
+        {
+          "name": "Claire Baker",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Murdo Fraser",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Stephen Kerr",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Joe Long",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Julie MacDougall",
+          "party": "reform"
+        },
+        {
+          "name": "Helen McDade",
+          "party": "reform"
+        },
+        {
+          "name": "Mark Ruskell",
+          "party": "scottishgrn"
+        }
+      ]
+    },
+    {
+      "region": "North East Scotland",
+      "members": [
+        {
+          "name": "Maggie Chapman",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Yi-pei Chou Turvey",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Liam Kerr",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Douglas Lumsden",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Michael Marra",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Duncan Massey",
+          "party": "reform"
+        },
+        {
+          "name": "Mark Simpson",
+          "party": "reform"
+        }
+      ]
+    },
+    {
+      "region": "South Scotland",
+      "members": [
+        {
+          "name": "Senga Beresford",
+          "party": "reform"
+        },
+        {
+          "name": "Duncan Dunlop",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Joe Fagan",
+          "party": "scottishlab"
+        },
+        {
+          "name": "David Kirkwood",
+          "party": "reform"
+        },
+        {
+          "name": "Jamie Langan",
+          "party": "reform"
+        },
+        {
+          "name": "Carol Mochan",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Laura Moodie",
+          "party": "scottishgrn"
+        }
+      ]
+    },
+    {
+      "region": "West Scotland",
+      "members": [
+        {
+          "name": "Neil Bibby",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Katy Clark",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Russell Findlay",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Ross Greer",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Cara McKee",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Malcolm Offord",
+          "party": "reform"
+        },
+        {
+          "name": "David Smith",
+          "party": "reform"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "holyrood-1999-paisley-north": {
+      "n": "Paisley North",
+      "q": 1,
+      "r": 4,
+      "winner": "Wendy Alexander",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-dumbarton": {
+      "n": "Dumbarton",
+      "q": 4,
+      "r": 10,
+      "winner": "Jackie Baillie",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-dunfermline-west": {
+      "n": "Dunfermline West",
+      "q": 5,
+      "r": 6,
+      "winner": "Scott Barrie",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-edinburgh-central": {
+      "n": "Edinburgh Central",
+      "q": 6,
+      "r": 3,
+      "winner": "Sarah Boyack",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-midlothian": {
+      "n": "Midlothian",
+      "q": 5,
+      "r": 2,
+      "winner": "Rhona Brankin",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-anniesland": {
+      "n": "Glasgow Anniesland",
+      "q": 1,
+      "r": 7,
+      "winner": "Bill Butler",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-falkirk-west": {
+      "n": "Falkirk West",
+      "q": 4,
+      "r": 8,
+      "winner": "Dennis Canavan",
+      "party": "independent"
+    },
+    "holyrood-1999-edinburgh-north-and-leith": {
+      "n": "Edinburgh North and Leith",
+      "q": 7,
+      "r": 4,
+      "winner": "Malcolm Chisholm",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-cumbernauld-and-kilsyth": {
+      "n": "Cumbernauld and Kilsyth",
+      "q": 3,
+      "r": 7,
+      "winner": "Cathie Craigie",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-perth": {
+      "n": "Perth",
+      "q": 5,
+      "r": 10,
+      "winner": "Roseanna Cunningham",
+      "party": "snp"
+    },
+    "holyrood-1999-glasgow-baillieston": {
+      "n": "Glasgow Baillieston",
+      "q": 4,
+      "r": 6,
+      "winner": "Margaret Curran",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-edinburgh-east-and-musselburgh": {
+      "n": "Edinburgh East and Musselburgh",
+      "q": 7,
+      "r": 2,
+      "winner": "Susan Deacon",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-dunfermline-east": {
+      "n": "Dunfermline East",
+      "q": 5,
+      "r": 7,
+      "winner": "Helen Eadie",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-inverness-east-nairn-and-lochaber": {
+      "n": "Inverness East, Nairn and Lochaber",
+      "q": 4,
+      "r": 11,
+      "winner": "Fergus Ewing",
+      "party": "snp"
+    },
+    "holyrood-1999-moray": {
+      "n": "Moray",
+      "q": 6,
+      "r": 12,
+      "winner": "Margaret Ewing",
+      "party": "snp"
+    },
+    "holyrood-1999-glasgow-maryhill-and-springburn": {
+      "n": "Glasgow Maryhill and Springburn",
+      "q": 2,
+      "r": 7,
+      "winner": "Patricia Ferguson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-strathkelvin-and-bearsden": {
+      "n": "Strathkelvin and Bearsden",
+      "q": 3,
+      "r": 8,
+      "winner": "Brian Fitzpatrick",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-clydesdale": {
+      "n": "Clydesdale",
+      "q": 2,
+      "r": 1,
+      "winner": "Karen Gillon",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-west-renfrewshire": {
+      "n": "West Renfrewshire",
+      "q": 1,
+      "r": 3,
+      "winner": "Trish Godman",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-edinburgh-pentlands": {
+      "n": "Edinburgh Pentlands",
+      "q": 5,
+      "r": 3,
+      "winner": "Iain Gray",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-paisley-south": {
+      "n": "Paisley South",
+      "q": 1,
+      "r": 6,
+      "winner": "Hugh Henry",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-east-lothian": {
+      "n": "East Lothian",
+      "q": 4,
+      "r": 1,
+      "winner": "John Home Robertson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-rutherglen": {
+      "n": "Glasgow Rutherglen",
+      "q": 3,
+      "r": 5,
+      "winner": "Janis Hughes",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-govan": {
+      "n": "Glasgow Govan",
+      "q": 2,
+      "r": 5,
+      "winner": "Gordon Jackson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-stirling": {
+      "n": "Stirling",
+      "q": 5,
+      "r": 8,
+      "winner": "Sylvia Jackson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-carrick-cumnock-and-doon-valley": {
+      "n": "Carrick, Cumnock and Doon Valley",
+      "q": 1,
+      "r": 1,
+      "winner": "Cathy Jamieson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-kilmarnock-and-loudoun": {
+      "n": "Kilmarnock and Loudoun",
+      "q": 1,
+      "r": 2,
+      "winner": "Margaret Jamieson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-tweeddale-ettrick-and-lauderdale": {
+      "n": "Tweeddale, Ettrick & Lauderdale",
+      "q": 3,
+      "r": 1,
+      "winner": "Ian Jenkins",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-east-kilbride": {
+      "n": "East Kilbride",
+      "q": 3,
+      "r": 2,
+      "winner": "Andy Kerr",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-pollok": {
+      "n": "Glasgow Pollok",
+      "q": 0,
+      "r": 6,
+      "winner": "Johann Lamont",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-kirkcaldy": {
+      "n": "Kirkcaldy",
+      "q": 6,
+      "r": 7,
+      "winner": "Marilyn Livingstone",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-argyll-and-bute": {
+      "n": "Argyll and Bute",
+      "q": 3,
+      "r": 11,
+      "winner": "George Lyon",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-aberdeen-central": {
+      "n": "Aberdeen Central",
+      "q": 7,
+      "r": 11,
+      "winner": "Lewis Macdonald",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-eastwood": {
+      "n": "Eastwood",
+      "q": 2,
+      "r": 2,
+      "winner": "Ken Macintosh",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-edinburgh-south": {
+      "n": "Edinburgh South",
+      "q": 6,
+      "r": 2,
+      "winner": "Angus MacKay",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-dundee-west": {
+      "n": "Dundee West",
+      "q": 4,
+      "r": 9,
+      "winner": "Kate Maclean",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-springburn": {
+      "n": "Glasgow Springburn",
+      "q": 1,
+      "r": 8,
+      "winner": "Paul Martin",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-dundee-east": {
+      "n": "Dundee East",
+      "q": 5,
+      "r": 9,
+      "winner": "John McAllion",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-shettleston": {
+      "n": "Glasgow Shettleston",
+      "q": 3,
+      "r": 6,
+      "winner": "Frank McAveety",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-hamilton-south": {
+      "n": "Hamilton South",
+      "q": 4,
+      "r": 2,
+      "winner": "Tom McCabe",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-motherwell-and-wishaw": {
+      "n": "Motherwell and Wishaw",
+      "q": 2,
+      "r": 3,
+      "winner": "Jack McConnell",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-central-fife": {
+      "n": "Central Fife",
+      "q": 6,
+      "r": 8,
+      "winner": "Henry McLeish",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-hamilton-north-and-bellshill": {
+      "n": "Hamilton North and Bellshill",
+      "q": 2,
+      "r": 4,
+      "winner": "Michael McMahon",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-greenock-and-inverclyde": {
+      "n": "Greenock and Inverclyde",
+      "q": 2,
+      "r": 9,
+      "winner": "Duncan McNeil",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-glasgow-kelvin": {
+      "n": "Glasgow Kelvin",
+      "q": 2,
+      "r": 6,
+      "winner": "Pauline McNeill",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-clydebank-and-milngavie": {
+      "n": "Clydebank and Milngavie",
+      "q": 2,
+      "r": 8,
+      "winner": "Des McNulty",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-galloway-and-upper-nithsdale": {
+      "n": "Galloway and Upper Nithsdale",
+      "q": 2,
+      "r": 0,
+      "winner": "Alasdair Morgan",
+      "party": "snp"
+    },
+    "holyrood-1999-western-isles": {
+      "n": "Western Isles",
+      "q": 1,
+      "r": 11,
+      "winner": "Alasdair Morrison",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-livingston": {
+      "n": "Livingston",
+      "q": 4,
+      "r": 3,
+      "winner": "Bristow Muldoon",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-linlithgow": {
+      "n": "Linlithgow",
+      "q": 4,
+      "r": 4,
+      "winner": "Mary Mulligan",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-ross-skye-and-inverness-west": {
+      "n": "Ross, Skye and Inverness West",
+      "q": 4,
+      "r": 12,
+      "winner": "John Farquhar Munro",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-dumfries": {
+      "n": "Dumfries",
+      "q": 3,
+      "r": 0,
+      "winner": "Elaine Murray",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-cunninghame-south": {
+      "n": "Cunninghame South",
+      "q": 0,
+      "r": 3,
+      "winner": "Irene Oldfather",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-falkirk-east": {
+      "n": "Falkirk East",
+      "q": 4,
+      "r": 7,
+      "winner": "Cathy Peattie",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-gordon": {
+      "n": "Gordon",
+      "q": 8,
+      "r": 12,
+      "winner": "Nora Radcliffe",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-roxburgh-and-berwickshire": {
+      "n": "Roxburgh and Berwickshire",
+      "q": 4,
+      "r": 0,
+      "winner": "Euan Robson",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-west-aberdeenshire-and-kincardine": {
+      "n": "West Aberdeenshire and Kincardine",
+      "q": 5,
+      "r": 11,
+      "winner": "Mike Rumbles",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-ayr": {
+      "n": "Ayr",
+      "q": 0,
+      "r": 2,
+      "winner": "John Scott",
+      "party": "scottishcon"
+    },
+    "holyrood-1999-shetland": {
+      "n": "Shetland",
+      "q": 7,
+      "r": 16,
+      "winner": "Tavish Scott",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-ochil": {
+      "n": "Ochil",
+      "q": 4,
+      "r": 5,
+      "winner": "Richard Simpson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-coatbridge-and-chryston": {
+      "n": "Coatbridge and Chryston",
+      "q": 3,
+      "r": 4,
+      "winner": "Elaine Smith",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-north-east-fife": {
+      "n": "North East Fife",
+      "q": 7,
+      "r": 8,
+      "winner": "Iain Smith",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-edinburgh-west": {
+      "n": "Edinburgh West",
+      "q": 5,
+      "r": 4,
+      "winner": "Margaret Smith",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-aberdeen-south": {
+      "n": "Aberdeen South",
+      "q": 6,
+      "r": 10,
+      "winner": "Nicol Stephen",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-banff-and-buchan": {
+      "n": "Banff and Buchan",
+      "q": 7,
+      "r": 12,
+      "winner": "Stewart Stevenson",
+      "party": "snp"
+    },
+    "holyrood-1999-caithness-sutherland-and-easter-ross": {
+      "n": "Caithness, Sutherland and Easter Ross",
+      "q": 4,
+      "r": 13,
+      "winner": "Jamie Stone",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-north-tayside": {
+      "n": "North Tayside",
+      "q": 6,
+      "r": 9,
+      "winner": "John Swinney",
+      "party": "snp"
+    },
+    "holyrood-1999-aberdeen-north": {
+      "n": "Aberdeen North",
+      "q": 6,
+      "r": 11,
+      "winner": "Elaine Thomson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-orkney": {
+      "n": "Orkney",
+      "q": 5,
+      "r": 15,
+      "winner": "Jim Wallace",
+      "party": "scottishlibdem"
+    },
+    "holyrood-1999-glasgow-cathcart": {
+      "n": "Glasgow Cathcart",
+      "q": 1,
+      "r": 5,
+      "winner": "Mike Watson",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-angus": {
+      "n": "Angus",
+      "q": 7,
+      "r": 10,
+      "winner": "Andrew Welsh",
+      "party": "snp"
+    },
+    "holyrood-1999-airdrie-and-shotts": {
+      "n": "Airdrie and Shotts",
+      "q": 3,
+      "r": 3,
+      "winner": "Karen Whitefield",
+      "party": "scottishlab"
+    },
+    "holyrood-1999-cunninghame-north": {
+      "n": "Cunninghame North",
+      "q": 0,
+      "r": 5,
+      "winner": "Allan Wilson",
+      "party": "scottishlab"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "Central Scotland",
+      "members": [
+        {
+          "name": "Linda Fabiani",
+          "party": "snp"
+        },
+        {
+          "name": "Donald Gorrie",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Michael Matheson",
+          "party": "snp"
+        },
+        {
+          "name": "Lyndsay McIntosh",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Alex Neil",
+          "party": "snp"
+        },
+        {
+          "name": "Gil Paterson",
+          "party": "snp"
+        },
+        {
+          "name": "Andrew Wilson",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Glasgow",
+      "members": [
+        {
+          "name": "Bill Aitken",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Robert Brown",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Dorothy Grace Elder",
+          "party": "snp"
+        },
+        {
+          "name": "Kenneth Gibson",
+          "party": "snp"
+        },
+        {
+          "name": "Tommy Sheridan",
+          "party": "ssp"
+        },
+        {
+          "name": "Nicola Sturgeon",
+          "party": "snp"
+        },
+        {
+          "name": "Sandra White",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Highlands and Islands",
+      "members": [
+        {
+          "name": "Winnie Ewing",
+          "party": "snp"
+        },
+        {
+          "name": "Rhoda Grant",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Duncan Hamilton",
+          "party": "snp"
+        },
+        {
+          "name": "Maureen Macmillan",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Jamie McGrigor",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Peter Peacock",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Mary Scanlon",
+          "party": "scottishcon"
+        }
+      ]
+    },
+    {
+      "region": "Lothians",
+      "members": [
+        {
+          "name": "James Douglas-Hamilton",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Robin Harper",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Fiona Hyslop",
+          "party": "snp"
+        },
+        {
+          "name": "Kenny MacAskill",
+          "party": "snp"
+        },
+        {
+          "name": "Margo MacDonald",
+          "party": "snp"
+        },
+        {
+          "name": "David McLetchie",
+          "party": "scottishcon"
+        },
+        {
+          "name": "David Steel",
+          "party": "scottishlibdem"
+        }
+      ]
+    },
+    {
+      "region": "Mid Scotland and Fife",
+      "members": [
+        {
+          "name": "Bruce Crawford",
+          "party": "snp"
+        },
+        {
+          "name": "Murdo Fraser",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Keith Harding",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Tricia Marwick",
+          "party": "snp"
+        },
+        {
+          "name": "Brian Monteith",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Keith Raffan",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "George Reid",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "North East Scotland",
+      "members": [
+        {
+          "name": "Brian Adam",
+          "party": "snp"
+        },
+        {
+          "name": "David Davidson",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Alex Johnstone",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Richard Lochhead",
+          "party": "snp"
+        },
+        {
+          "name": "Irene McGugan",
+          "party": "snp"
+        },
+        {
+          "name": "Shona Robison",
+          "party": "snp"
+        },
+        {
+          "name": "Ben Wallace",
+          "party": "scottishcon"
+        }
+      ]
+    },
+    {
+      "region": "South of Scotland",
+      "members": [
+        {
+          "name": "Alex Fergusson",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Phil Gallie",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Christine Grahame",
+          "party": "snp"
+        },
+        {
+          "name": "Adam Ingram",
+          "party": "snp"
+        },
+        {
+          "name": "David Mundell",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Michael Russell",
+          "party": "snp"
+        },
+        {
+          "name": "Murray Tosh",
+          "party": "scottishcon"
+        }
+      ]
+    },
+    {
+      "region": "West of Scotland",
+      "members": [
+        {
+          "name": "Colin Campbell",
+          "party": "snp"
+        },
+        {
+          "name": "Ross Finnie",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Annabel Goldie",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Fiona McLeod",
+          "party": "snp"
+        },
+        {
+          "name": "Lloyd Quinan",
+          "party": "snp"
+        },
+        {
+          "name": "Kay Ullrich",
+          "party": "snp"
+        },
+        {
+          "name": "John Young",
+          "party": "scottishcon"
+        }
+      ]
+    }
+  ]
+}

@@ -317,7 +317,7 @@ async function renderNIElection(app, id) {
             const data = hexjsonToDrawData(hexjson, election.year);
             // Enrich tooltip: show seats won per constituency
             data.constituencies = data.constituencies.map(c => {
-              const cell = hexjson.hexes[c.name];
+              const cell = hexjson.hexes[c.key];
               const seatsList = cell?.seats_list;
               let mpText = '';
               if (Array.isArray(seatsList) && seatsList.length > 0) {

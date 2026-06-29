@@ -23,6 +23,71 @@ async function loadHolyroodElection(id) {
   }
 }
 
+/** Load Holyrood HexJSON files */
+const _holyroodHexCache = new Map();
+async function loadHolyroodHexLayout(year) {
+  if (_holyroodHexCache.has(year)) return _holyroodHexCache.get(year);
+  try {
+    const res = await fetch(`/data/hex/holyrood/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    _holyroodHexCache.set(year, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
+/** Render regional list side panel next to the hexmap */
+function renderHolyroodRegionalPanel(panelEl, regionalList, electionYear) {
+  if (!panelEl || !Array.isArray(regionalList) || regionalList.length === 0) return;
+
+  panelEl.innerHTML = '';
+  panelEl.hidden = false;
+
+  const heading = document.createElement('div');
+  heading.className = 'hexmap-outside-heading';
+  heading.textContent = 'Regional List Seats';
+  panelEl.appendChild(heading);
+
+  const note = document.createElement('p');
+  note.className = 'hexmap-outside-note';
+  note.textContent = 'These 56 regional members are elected via closed party lists in eight regions (7 seats each).';
+  panelEl.appendChild(note);
+
+  const rowsWrap = document.createElement('div');
+  rowsWrap.className = 'hexmap-outside-rows';
+
+  regionalList.forEach(reg => {
+    const row = document.createElement('div');
+    row.className = 'hexmap-outside-row';
+
+    const label = document.createElement('div');
+    label.className = 'hexmap-outside-name';
+    label.textContent = reg.region;
+    row.appendChild(label);
+
+    const swatches = document.createElement('div');
+    swatches.className = 'hexmap-outside-swatches';
+
+    (reg.members || []).forEach(member => {
+      const sw = document.createElement('span');
+      sw.className = 'hexmap-outside-swatch';
+      const colour = holyroodPartyColor(member.party);
+      sw.style.background = colour || '#CCCCCC';
+      const partyLabel = getPartyName(member.party, electionYear);
+      sw.title = `${member.name} (${partyLabel})`;
+      sw.setAttribute('aria-label', `${reg.region}: ${member.name}, ${partyLabel}`);
+      swatches.appendChild(sw);
+    });
+
+    row.appendChild(swatches);
+    rowsWrap.appendChild(row);
+  });
+
+  panelEl.appendChild(rowsWrap);
+}
+
 function holyroodNum(n) {
   return typeof n === 'number' ? n.toLocaleString('en-GB') : '—';
 }
@@ -218,11 +283,25 @@ async function renderHolyroodElection(app, id) {
         </div>
         <div>
           ${hasChart ? `<div class="viz-panel">
-            <div class="parliament-card viz-card">
-              <div class="parliament-card-title">Scottish Parliament</div>
-              <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 65}</div>
-              <div id="holyrood-chart-container"></div>
-              <div class="parliament-legend" id="holyrood-chart-legend"></div>
+            <div class="viz-tabs" role="tablist">
+              <button type="button" class="viz-tab active" id="holyrood-tab-parliament" data-viz="parliament" role="tab" aria-selected="true" aria-controls="holyrood-viz-parliament" tabindex="0">Parliament</button>
+              <button type="button" class="viz-tab" id="holyrood-tab-hexmap" data-viz="hexmap" role="tab" aria-selected="false" aria-controls="holyrood-viz-hexmap" tabindex="-1">Constituencies</button>
+            </div>
+            <div class="viz-pane active" id="holyrood-viz-parliament" role="tabpanel" aria-labelledby="holyrood-tab-parliament">
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Scottish Parliament</div>
+                <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 65}</div>
+                <div id="holyrood-chart-container"></div>
+                <div class="parliament-legend" id="holyrood-chart-legend"></div>
+              </div>
+            </div>
+            <div class="viz-pane" id="holyrood-viz-hexmap" role="tabpanel" aria-labelledby="holyrood-tab-hexmap" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Constituency Map</div>
+                <div class="parliament-card-sub" id="holyrood-hexmap-subtitle">Constituency results</div>
+                <div id="holyrood-hexmap-container" class="hexmap-container"></div>
+                <div class="parliament-legend hexmap-legend" id="holyrood-hexmap-legend" hidden></div>
+              </div>
             </div>
           </div>` : ''}
         </div>
@@ -239,6 +318,113 @@ async function renderHolyroodElection(app, id) {
       const leg = document.getElementById('holyrood-chart-legend');
       if (cont) drawParliamentChart(cont, chartResults, chartTotal);
       if (leg) buildParliamentLegend(leg, chartResults, election.year);
+
+      // Wire up tab switching
+      const tabs = document.querySelectorAll('#holyrood-tab-parliament, #holyrood-tab-hexmap');
+      const panes = { parliament: document.getElementById('holyrood-viz-parliament'), hexmap: document.getElementById('holyrood-viz-hexmap') };
+      let hexmapLoaded = false;
+
+      const switchTab = (targetViz) => {
+        tabs.forEach(t => {
+          const active = t.dataset.viz === targetViz;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', active);
+          t.tabIndex = active ? 0 : -1;
+        });
+        Object.entries(panes).forEach(([viz, pane]) => {
+          if (!pane) return;
+          const active = viz === targetViz;
+          pane.classList.toggle('active', active);
+          pane.hidden = !active;
+        });
+
+        if (targetViz === 'hexmap' && !hexmapLoaded) {
+          hexmapLoaded = true;
+          loadHolyroodHexLayout(election.year).then(hexjson => {
+            const hexCont = document.getElementById('holyrood-hexmap-container');
+            const hexLeg = document.getElementById('holyrood-hexmap-legend');
+            const subtitleEl = document.getElementById('holyrood-hexmap-subtitle');
+            if (!hexCont) return;
+            if (!hexjson?.hexes) {
+              hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
+              return;
+            }
+
+            if (subtitleEl) {
+              subtitleEl.textContent = 'Constituency results (first-past-the-post) + regional lists';
+            }
+
+            const data = hexjsonToDrawData(hexjson, election.year);
+
+            // Enrich constituency tooltip/details
+            data.constituencies = data.constituencies.map(c => {
+              const cell = hexjson.hexes[c.key];
+              const mpText = cell?.winner || 'Winner unknown';
+              return {
+                ...c,
+                mp: mpText,
+              };
+            });
+
+            // If we have regional list seats, wrap in a two-column flex layout
+            if (hexjson.regional_list) {
+              hexCont.innerHTML = '';
+              const wrap = document.createElement('div');
+              wrap.className = 'hexmap-1945-wrap';
+
+              const mapCol = document.createElement('div');
+              mapCol.className = 'hexmap-1945-map';
+
+              const outsideCol = document.createElement('div');
+              outsideCol.className = 'hexmap-outside-panel';
+              outsideCol.id = 'holyrood-regional-panel';
+
+              wrap.appendChild(mapCol);
+              wrap.appendChild(outsideCol);
+              hexCont.appendChild(wrap);
+
+              drawHexmap(mapCol, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id
+              });
+
+              renderHolyroodRegionalPanel(outsideCol, hexjson.regional_list, election.year);
+            } else {
+              drawHexmap(hexCont, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id
+              });
+            }
+
+            // Build aggregated legend
+            if (hexLeg) {
+              const constsForLegend = [...data.constituencies];
+              if (hexjson.regional_list) {
+                hexjson.regional_list.forEach(reg => {
+                  reg.members.forEach(member => {
+                    constsForLegend.push({
+                      party: member.party,
+                      partyLabel: getPartyName(member.party, election.year)
+                    });
+                  });
+                });
+              }
+              buildHexmapLegend(hexLeg, constsForLegend, election.year);
+              hexLeg.hidden = false;
+            }
+          });
+        }
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.viz));
+        tab.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); tabs[1]?.focus(); switchTab('hexmap'); }
+          if (e.key === 'ArrowLeft')  { e.preventDefault(); tabs[0]?.focus(); switchTab('parliament'); }
+        });
+      });
     });
   }
 }
