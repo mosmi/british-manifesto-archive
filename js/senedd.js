@@ -414,7 +414,7 @@ async function renderSeneddElection(app, id) {
 
             // Enrich constituency tooltip/details
             data.constituencies = data.constituencies.map(c => {
-              const cell = hexjson.hexes[c.name];
+              const cell = hexjson.hexes[c.key];
               let mpText = '';
               let partyLabel = c.partyLabel;
               if (election.year === 2026) {

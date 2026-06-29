@@ -8,12 +8,12 @@
       "party": "sdlp",
       "seats": 2,
       "seats_list": [
-        "sdlp",
-        "sdlp",
         "sinnfein",
         "sinnfein",
-        "uup",
-        "dup"
+        "sdlp",
+        "sdlp",
+        "dup",
+        "uup"
       ]
     },
     "Upper Bann": {
@@ -26,8 +26,8 @@
         "uup",
         "uup",
         "dup",
-        "sdlp",
         "sinnfein",
+        "sdlp",
         "independent"
       ]
     },
@@ -40,8 +40,8 @@
       "seats_list": [
         "uup",
         "uup",
-        "sdlp",
         "dup",
+        "sdlp",
         "alliance",
         "ukup"
       ]
@@ -57,8 +57,8 @@
         "uup",
         "sdlp",
         "sdlp",
-        "niwc",
-        "dup"
+        "dup",
+        "niwc"
       ]
     },
     "South Down": {
@@ -71,9 +71,9 @@
         "sdlp",
         "sdlp",
         "sdlp",
-        "sinnfein",
+        "dup",
         "uup",
-        "dup"
+        "sinnfein"
       ]
     },
     "Fermanagh and South Tyrone": {
@@ -85,10 +85,10 @@
       "seats_list": [
         "uup",
         "uup",
-        "sdlp",
-        "sdlp",
+        "sinnfein",
+        "sinnfein",
         "dup",
-        "sinnfein"
+        "sdlp"
       ]
     },
     "Belfast West": {
@@ -103,7 +103,7 @@
         "sinnfein",
         "sinnfein",
         "sdlp",
-        "pup"
+        "sdlp"
       ]
     },
     "Belfast East": {
@@ -118,7 +118,7 @@
         "uup",
         "uup",
         "alliance",
-        "ukup"
+        "pup"
       ]
     },
     "Strangford": {
@@ -128,10 +128,10 @@
       "party": "uup",
       "seats": 2,
       "seats_list": [
-        "uup",
-        "uup",
         "dup",
         "dup",
+        "uup",
+        "uup",
         "alliance",
         "ukup"
       ]
@@ -147,8 +147,8 @@
         "sinnfein",
         "sdlp",
         "sdlp",
-        "uup",
-        "dup"
+        "dup",
+        "uup"
       ]
     },
     "Mid Ulster": {
@@ -161,9 +161,9 @@
         "sinnfein",
         "sinnfein",
         "sinnfein",
-        "sdlp",
+        "dup",
         "uup",
-        "dup"
+        "sdlp"
       ]
     },
     "South Antrim": {
@@ -176,9 +176,9 @@
         "uup",
         "uup",
         "dup",
-        "ukup",
         "sdlp",
-        "alliance"
+        "alliance",
+        "ukup"
       ]
     },
     "Belfast North": {
@@ -186,14 +186,14 @@
       "r": 4,
       "n": "Belfast North",
       "party": "uup",
-      "seats": 2,
+      "seats": 1,
       "seats_list": [
-        "uup",
-        "uup",
         "dup",
+        "uup",
         "sinnfein",
         "sdlp",
-        "pup"
+        "pup",
+        "independent"
       ]
     },
     "North Down": {
@@ -222,8 +222,8 @@
         "sdlp",
         "sdlp",
         "sinnfein",
-        "dup",
-        "uup"
+        "sinnfein",
+        "dup"
       ]
     },
     "East Londonderry": {
@@ -266,7 +266,7 @@
         "uup",
         "uup",
         "dup",
-        "dup",
+        "sdlp",
         "alliance",
         "ukup"
       ]

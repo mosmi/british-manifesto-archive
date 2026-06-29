@@ -25,9 +25,9 @@
       "seats_list": [
         "dup",
         "dup",
-        "sinnfein",
-        "sinnfein",
         "uup",
+        "uup",
+        "sinnfein",
         "sdlp"
       ]
     },
@@ -42,7 +42,7 @@
         "dup",
         "dup",
         "uup",
-        "uup",
+        "sinnfein",
         "alliance"
       ]
     },
@@ -51,13 +51,13 @@
       "r": 2,
       "n": "Belfast South and Mid Down",
       "party": "sdlp",
-      "seats": 1,
+      "seats": 2,
       "seats_list": [
         "sdlp",
-        "sinnfein",
-        "uup",
+        "sdlp",
         "dup",
-        "alliance",
+        "uup",
+        "sinnfein",
         "alliance"
       ]
     },
@@ -81,14 +81,14 @@
       "r": 3,
       "n": "Fermanagh and South Tyrone",
       "party": "sinnfein",
-      "seats": 3,
+      "seats": 2,
       "seats_list": [
-        "sinnfein",
-        "sinnfein",
-        "sinnfein",
         "dup",
         "dup",
-        "uup"
+        "sinnfein",
+        "sinnfein",
+        "uup",
+        "sdlp"
       ]
     },
     "Belfast West": {
@@ -126,12 +126,12 @@
       "r": 3,
       "n": "Strangford",
       "party": "dup",
-      "seats": 3,
+      "seats": 4,
       "seats_list": [
         "dup",
         "dup",
         "dup",
-        "uup",
+        "dup",
         "uup",
         "alliance"
       ]
@@ -141,13 +141,13 @@
       "r": 4,
       "n": "West Tyrone",
       "party": "sinnfein",
-      "seats": 2,
+      "seats": 3,
       "seats_list": [
         "sinnfein",
         "sinnfein",
+        "sinnfein",
         "dup",
-        "uup",
-        "sdlp",
+        "dup",
         "independent"
       ]
     },
@@ -162,8 +162,8 @@
         "sinnfein",
         "sinnfein",
         "dup",
-        "dup",
-        "uup"
+        "uup",
+        "sdlp"
       ]
     },
     "South Antrim": {
@@ -177,8 +177,8 @@
         "dup",
         "uup",
         "sinnfein",
-        "alliance",
-        "sdlp"
+        "sdlp",
+        "alliance"
       ]
     },
     "Belfast North": {
@@ -203,10 +203,10 @@
       "party": "uup",
       "seats": 2,
       "seats_list": [
-        "uup",
-        "uup",
         "dup",
         "dup",
+        "uup",
+        "uup",
         "alliance",
         "gpni"
       ]
@@ -236,8 +236,8 @@
         "dup",
         "dup",
         "dup",
-        "sinnfein",
         "uup",
+        "sinnfein",
         "sdlp"
       ]
     },
@@ -246,14 +246,14 @@
       "r": 5,
       "n": "North Antrim",
       "party": "dup",
-      "seats": 4,
+      "seats": 3,
       "seats_list": [
         "dup",
         "dup",
         "dup",
-        "dup",
+        "uup",
         "sinnfein",
-        "uup"
+        "sdlp"
       ]
     },
     "East Antrim": {

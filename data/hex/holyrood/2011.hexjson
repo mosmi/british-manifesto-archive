@@ -1,0 +1,778 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "holyrood-2011-paisley": {
+      "n": "Paisley",
+      "q": 1,
+      "r": 6,
+      "winner": "George Adam",
+      "party": "snp"
+    },
+    "holyrood-2011-na-h-eileanan-an-iar": {
+      "n": "Na h-Eileanan an Iar",
+      "q": 1,
+      "r": 11,
+      "winner": "Alasdair Allan",
+      "party": "snp"
+    },
+    "holyrood-2011-dumbarton": {
+      "n": "Dumbarton",
+      "q": 4,
+      "r": 10,
+      "winner": "Jackie Baillie",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-midlothian-north-and-musselburgh": {
+      "n": "Midlothian North and Musselburgh",
+      "q": 5,
+      "r": 2,
+      "winner": "Colin Beattie",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-central": {
+      "n": "Edinburgh Central",
+      "q": 6,
+      "r": 3,
+      "winner": "Marco Biagi",
+      "party": "snp"
+    },
+    "holyrood-2011-clackmannanshire-and-dunblane": {
+      "n": "Clackmannanshire and Dunblane",
+      "q": 4,
+      "r": 5,
+      "winner": "Keith Brown",
+      "party": "snp"
+    },
+    "holyrood-2011-cunninghame-south": {
+      "n": "Cunninghame South",
+      "q": 0,
+      "r": 3,
+      "winner": "Margaret Burgess",
+      "party": "snp"
+    },
+    "holyrood-2011-clydesdale": {
+      "n": "Clydesdale",
+      "q": 2,
+      "r": 1,
+      "winner": "Aileen Campbell",
+      "party": "snp"
+    },
+    "holyrood-2011-north-east-fife": {
+      "n": "North East Fife",
+      "q": 7,
+      "r": 8,
+      "winner": "Roderick Campbell",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-north-and-leith": {
+      "n": "Edinburgh North and Leith",
+      "q": 7,
+      "r": 4,
+      "winner": "Malcolm Chisholm",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-kilmarnock-and-irvine-valley": {
+      "n": "Kilmarnock and Irvine Valley",
+      "q": 1,
+      "r": 2,
+      "winner": "Willie Coffey",
+      "party": "snp"
+    },
+    "holyrood-2011-almond-valley": {
+      "n": "Almond Valley",
+      "q": 4,
+      "r": 3,
+      "winner": "Angela Constance",
+      "party": "snp"
+    },
+    "holyrood-2011-stirling": {
+      "n": "Stirling",
+      "q": 5,
+      "r": 8,
+      "winner": "Bruce Crawford",
+      "party": "snp"
+    },
+    "holyrood-2011-perthshire-south-and-kinross-shire": {
+      "n": "Perthshire South and Kinross-shire",
+      "q": 3,
+      "r": 9,
+      "winner": "Roseanna Cunningham",
+      "party": "snp"
+    },
+    "holyrood-2011-angus-south": {
+      "n": "Angus South",
+      "q": 6,
+      "r": 9,
+      "winner": "Graeme Dey",
+      "party": "snp"
+    },
+    "holyrood-2011-angus-north-and-mearns": {
+      "n": "Angus North and Mearns",
+      "q": 7,
+      "r": 10,
+      "winner": "Nigel Don",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-cathcart": {
+      "n": "Glasgow Cathcart",
+      "q": 1,
+      "r": 5,
+      "winner": "James Dornan",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-southern": {
+      "n": "Edinburgh Southern",
+      "q": 6,
+      "r": 2,
+      "winner": "Jim Eadie",
+      "party": "snp"
+    },
+    "holyrood-2011-inverness-and-nairn": {
+      "n": "Inverness and Nairn",
+      "q": 4,
+      "r": 11,
+      "winner": "Fergus Ewing",
+      "party": "snp"
+    },
+    "holyrood-2011-east-kilbride": {
+      "n": "East Kilbride",
+      "q": 3,
+      "r": 2,
+      "winner": "Linda Fabiani",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-maryhill-and-springburn": {
+      "n": "Glasgow Maryhill and Springburn",
+      "q": 2,
+      "r": 7,
+      "winner": "Patricia Ferguson",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-galloway-and-west-dumfries": {
+      "n": "Galloway and West Dumfries",
+      "q": 2,
+      "r": 0,
+      "winner": "Alex Fergusson",
+      "party": "scottishcon"
+    },
+    "holyrood-2011-dundee-city-west": {
+      "n": "Dundee City West",
+      "q": 4,
+      "r": 9,
+      "winner": "Joe FitzPatrick",
+      "party": "snp"
+    },
+    "holyrood-2011-cunninghame-north": {
+      "n": "Cunninghame North",
+      "q": 0,
+      "r": 5,
+      "winner": "Kenneth Gibson",
+      "party": "snp"
+    },
+    "holyrood-2011-caithness-sutherland-and-ross": {
+      "n": "Caithness, Sutherland and Ross",
+      "q": 4,
+      "r": 13,
+      "winner": "Rob Gibson",
+      "party": "snp"
+    },
+    "holyrood-2011-midlothian-south-tweeddale-and-lauderdale": {
+      "n": "Midlothian South, Tweeddale and Lauderdale",
+      "q": 3,
+      "r": 1,
+      "winner": "Christine Grahame",
+      "party": "snp"
+    },
+    "holyrood-2011-east-lothian": {
+      "n": "East Lothian",
+      "q": 4,
+      "r": 1,
+      "winner": "Iain Gray",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-renfrewshire-south": {
+      "n": "Renfrewshire South",
+      "q": 1,
+      "r": 4,
+      "winner": "Hugh Henry",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-cumbernauld-and-kilsyth": {
+      "n": "Cumbernauld and Kilsyth",
+      "q": 3,
+      "r": 7,
+      "winner": "Jamie Hepburn",
+      "party": "snp"
+    },
+    "holyrood-2011-dunfermline": {
+      "n": "Dunfermline",
+      "q": 5,
+      "r": 6,
+      "winner": "Bill Walker",
+      "party": "snp"
+    },
+    "holyrood-2011-linlithgow": {
+      "n": "Linlithgow",
+      "q": 4,
+      "r": 4,
+      "winner": "Fiona Hyslop",
+      "party": "snp"
+    },
+    "holyrood-2011-carrick-cumnock-and-doon-valley": {
+      "n": "Carrick, Cumnock and Doon Valley",
+      "q": 1,
+      "r": 1,
+      "winner": "Adam Ingram",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-western": {
+      "n": "Edinburgh Western",
+      "q": 5,
+      "r": 4,
+      "winner": "Colin Keir",
+      "party": "snp"
+    },
+    "holyrood-2011-rutherglen": {
+      "n": "Rutherglen",
+      "q": 3,
+      "r": 5,
+      "winner": "James Kelly",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-glasgow-anniesland": {
+      "n": "Glasgow Anniesland",
+      "q": 1,
+      "r": 7,
+      "winner": "Bill Kidd",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-pollok": {
+      "n": "Glasgow Pollok",
+      "q": 0,
+      "r": 6,
+      "winner": "Johann Lamont",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-ettrick-roxburgh-and-berwickshire": {
+      "n": "Ettrick, Roxburgh and Berwickshire",
+      "q": 4,
+      "r": 0,
+      "winner": "John Lamont",
+      "party": "scottishcon"
+    },
+    "holyrood-2011-moray": {
+      "n": "Moray",
+      "q": 6,
+      "r": 12,
+      "winner": "Richard Lochhead",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-eastern": {
+      "n": "Edinburgh Eastern",
+      "q": 7,
+      "r": 2,
+      "winner": "Kenny MacAskill",
+      "party": "snp"
+    },
+    "holyrood-2011-falkirk-east": {
+      "n": "Falkirk East",
+      "q": 4,
+      "r": 7,
+      "winner": "Angus MacDonald",
+      "party": "snp"
+    },
+    "holyrood-2011-edinburgh-pentlands": {
+      "n": "Edinburgh Pentlands",
+      "q": 5,
+      "r": 3,
+      "winner": "Gordon MacDonald",
+      "party": "snp"
+    },
+    "holyrood-2011-eastwood": {
+      "n": "Eastwood",
+      "q": 2,
+      "r": 2,
+      "winner": "Ken Macintosh",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-renfrewshire-north-and-west": {
+      "n": "Renfrewshire North and West",
+      "q": 1,
+      "r": 3,
+      "winner": "Derek Mackay",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-provan": {
+      "n": "Glasgow Provan",
+      "q": 4,
+      "r": 6,
+      "winner": "Paul Martin",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-mid-fife-and-glenrothes": {
+      "n": "Mid Fife and Glenrothes",
+      "q": 6,
+      "r": 8,
+      "winner": "Tricia Marwick",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-shettleston": {
+      "n": "Glasgow Shettleston",
+      "q": 3,
+      "r": 6,
+      "winner": "John Mason",
+      "party": "snp"
+    },
+    "holyrood-2011-falkirk-west": {
+      "n": "Falkirk West",
+      "q": 4,
+      "r": 8,
+      "winner": "Michael Matheson",
+      "party": "snp"
+    },
+    "holyrood-2011-orkney": {
+      "n": "Orkney",
+      "q": 5,
+      "r": 15,
+      "winner": "Liam McArthur",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2011-aberdeen-donside": {
+      "n": "Aberdeen Donside",
+      "q": 6,
+      "r": 11,
+      "winner": "Brian Adam",
+      "party": "snp"
+    },
+    "holyrood-2011-hamilton-larkhall-and-stonehouse": {
+      "n": "Hamilton, Larkhall and Stonehouse",
+      "q": 4,
+      "r": 2,
+      "winner": "Christina McKelvie",
+      "party": "snp"
+    },
+    "holyrood-2011-strathkelvin-and-bearsden": {
+      "n": "Strathkelvin and Bearsden",
+      "q": 3,
+      "r": 8,
+      "winner": "Fiona McLeod",
+      "party": "snp"
+    },
+    "holyrood-2011-uddingston-and-bellshill": {
+      "n": "Uddingston and Bellshill",
+      "q": 2,
+      "r": 4,
+      "winner": "Michael McMahon",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-greenock-and-inverclyde": {
+      "n": "Greenock and Inverclyde",
+      "q": 2,
+      "r": 9,
+      "winner": "Duncan McNeil",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-dumfriesshire": {
+      "n": "Dumfriesshire",
+      "q": 3,
+      "r": 0,
+      "winner": "Elaine Murray",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-airdrie-and-shotts": {
+      "n": "Airdrie and Shotts",
+      "q": 3,
+      "r": 3,
+      "winner": "Alex Neil",
+      "party": "snp"
+    },
+    "holyrood-2011-clydebank-and-milngavie": {
+      "n": "Clydebank and Milngavie",
+      "q": 2,
+      "r": 8,
+      "winner": "Gil Paterson",
+      "party": "snp"
+    },
+    "holyrood-2011-motherwell-and-wishaw": {
+      "n": "Motherwell and Wishaw",
+      "q": 2,
+      "r": 3,
+      "winner": "John Pentland",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-aberdeenshire-west": {
+      "n": "Aberdeenshire West",
+      "q": 5,
+      "r": 11,
+      "winner": "Dennis Robertson",
+      "party": "snp"
+    },
+    "holyrood-2011-dundee-city-east": {
+      "n": "Dundee City East",
+      "q": 5,
+      "r": 9,
+      "winner": "Shona Robison",
+      "party": "snp"
+    },
+    "holyrood-2011-cowdenbeath": {
+      "n": "Cowdenbeath",
+      "q": 5,
+      "r": 7,
+      "winner": "Helen Eadie",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-argyll-and-bute": {
+      "n": "Argyll and Bute",
+      "q": 3,
+      "r": 11,
+      "winner": "Michael Russell",
+      "party": "snp"
+    },
+    "holyrood-2011-aberdeenshire-east": {
+      "n": "Aberdeenshire East",
+      "q": 8,
+      "r": 12,
+      "winner": "Alex Salmond",
+      "party": "snp"
+    },
+    "holyrood-2011-ayr": {
+      "n": "Ayr",
+      "q": 0,
+      "r": 2,
+      "winner": "John Scott",
+      "party": "scottishcon"
+    },
+    "holyrood-2011-shetland": {
+      "n": "Shetland",
+      "q": 7,
+      "r": 16,
+      "winner": "Tavish Scott",
+      "party": "scottishlibdem"
+    },
+    "holyrood-2011-coatbridge-and-chryston": {
+      "n": "Coatbridge and Chryston",
+      "q": 3,
+      "r": 4,
+      "winner": "Elaine Smith",
+      "party": "scottishlab"
+    },
+    "holyrood-2011-banffshire-and-buchan-coast": {
+      "n": "Banffshire and Buchan Coast",
+      "q": 7,
+      "r": 12,
+      "winner": "Stewart Stevenson",
+      "party": "snp"
+    },
+    "holyrood-2011-aberdeen-central": {
+      "n": "Aberdeen Central",
+      "q": 7,
+      "r": 11,
+      "winner": "Kevin Stewart",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-southside": {
+      "n": "Glasgow Southside",
+      "q": 2,
+      "r": 5,
+      "winner": "Nicola Sturgeon",
+      "party": "snp"
+    },
+    "holyrood-2011-perthshire-north": {
+      "n": "Perthshire North",
+      "q": 5,
+      "r": 10,
+      "winner": "John Swinney",
+      "party": "snp"
+    },
+    "holyrood-2011-skye-lochaber-and-badenoch": {
+      "n": "Skye, Lochaber and Badenoch",
+      "q": 4,
+      "r": 12,
+      "winner": "Dave Thompson",
+      "party": "snp"
+    },
+    "holyrood-2011-kirkcaldy": {
+      "n": "Kirkcaldy",
+      "q": 6,
+      "r": 7,
+      "winner": "David Torrance",
+      "party": "snp"
+    },
+    "holyrood-2011-aberdeen-south-and-north-kincardine": {
+      "n": "Aberdeen South and North Kincardine",
+      "q": 6,
+      "r": 10,
+      "winner": "Maureen Watt",
+      "party": "snp"
+    },
+    "holyrood-2011-glasgow-kelvin": {
+      "n": "Glasgow Kelvin",
+      "q": 2,
+      "r": 6,
+      "winner": "Sandra White",
+      "party": "snp"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "Central Scotland",
+      "members": [
+        {
+          "name": "Clare Adamson",
+          "party": "snp"
+        },
+        {
+          "name": "Mark Griffin",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Richard Lyle",
+          "party": "snp"
+        },
+        {
+          "name": "Margaret McCulloch",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Siobhan McMahon",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Margaret Mitchell",
+          "party": "scottishcon"
+        },
+        {
+          "name": "John Wilson",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Glasgow",
+      "members": [
+        {
+          "name": "Ruth Davidson",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Bob Doris",
+          "party": "snp"
+        },
+        {
+          "name": "Patrick Harvie",
+          "party": "scottishgrn"
+        },
+        {
+          "name": "Hanzala Malik",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Anne McTaggart",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Drew Smith",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Humza Yousaf",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Highlands and Islands",
+      "members": [
+        {
+          "name": "John Finnie",
+          "party": "snp"
+        },
+        {
+          "name": "Rhoda Grant",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Mike MacKenzie",
+          "party": "snp"
+        },
+        {
+          "name": "Sir Jamie McGrigor, Bt",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Mary Scanlon",
+          "party": "scottishcon"
+        },
+        {
+          "name": "David Stewart",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Jean Urquhart",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "Lothian",
+      "members": [
+        {
+          "name": "Sarah Boyack",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Gavin Brown",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Cameron Buchanan",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Kezia Dugdale",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Neil Findlay",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Alison Johnstone",
+          "party": "scottishgrn"
+        }
+      ]
+    },
+    {
+      "region": "Mid Scotland and Fife",
+      "members": [
+        {
+          "name": "Claire Baker",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Jayne Baxter",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Annabelle Ewing",
+          "party": "snp"
+        },
+        {
+          "name": "Murdo Fraser",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Willie Rennie",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Richard Simpson",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Liz Smith",
+          "party": "scottishcon"
+        }
+      ]
+    },
+    {
+      "region": "North East Scotland",
+      "members": [
+        {
+          "name": "Christian Allard",
+          "party": "snp"
+        },
+        {
+          "name": "Lesley Brennan",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Alex Johnstone",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Lewis Macdonald",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Jenny Marra",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Alison McInnes",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Nanette Milne",
+          "party": "scottishcon"
+        }
+      ]
+    },
+    {
+      "region": "South Scotland",
+      "members": [
+        {
+          "name": "Claudia Beamish",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Chic Brodie",
+          "party": "snp"
+        },
+        {
+          "name": "Jim Hume",
+          "party": "scottishlibdem"
+        },
+        {
+          "name": "Joan McAlpine",
+          "party": "snp"
+        },
+        {
+          "name": "Aileen McLeod",
+          "party": "snp"
+        },
+        {
+          "name": "Graeme Pearson",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Paul Wheelhouse",
+          "party": "snp"
+        }
+      ]
+    },
+    {
+      "region": "West Scotland",
+      "members": [
+        {
+          "name": "Neil Bibby",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Jackson Carlaw",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Mary Fee",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Annabel Goldie",
+          "party": "scottishcon"
+        },
+        {
+          "name": "Stewart Maxwell",
+          "party": "snp"
+        },
+        {
+          "name": "Margaret McDougall",
+          "party": "scottishlab"
+        },
+        {
+          "name": "Stuart McMillan",
+          "party": "snp"
+        }
+      ]
+    }
+  ]
+}

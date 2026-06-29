@@ -546,7 +546,8 @@ function hexjsonToDrawData(hexjson, electionYear) {
       label = getPartyName(partyId, electionYear);
     }
     return {
-      name: key,
+      name: cell.n || key,
+      key,
       mp: '',
       party: partyId,
       partyLabel: label,
