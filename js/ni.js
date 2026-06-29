@@ -250,7 +250,7 @@ async function renderNIElection(app, id) {
             <div class="viz-pane" id="ni-viz-hexmap" role="tabpanel" aria-labelledby="ni-tab-hexmap" hidden>
               <div class="parliament-card viz-card">
                 <div class="parliament-card-title">Constituency Map</div>
-                <div class="parliament-card-sub" id="ni-hexmap-subtitle">Plurality party per constituency (5 MLAs each, STV)</div>
+                <div class="parliament-card-sub" id="ni-hexmap-subtitle">Plurality party per constituency (${election.year >= 2017 ? 5 : 6} MLAs each, STV)</div>
                 <div id="stormont-hexmap-container" class="hexmap-container"></div>
                 <div class="parliament-legend hexmap-legend" id="stormont-hexmap-legend" hidden></div>
               </div>
