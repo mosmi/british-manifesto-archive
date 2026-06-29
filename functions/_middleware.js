@@ -90,15 +90,207 @@ function canonicalFor(path) {
   return path === '/' ? `${SITE_URL}/` : `${SITE_URL}${path}`;
 }
 
+// ---------------------------------------------------------------------------
+// Reusable Schema.org graph nodes. We emit a single <script> per page holding
+// an "@graph" array so the document, its publisher, breadcrumbs and item lists
+// reference each other by stable @id.
+// ---------------------------------------------------------------------------
+
+const ORG_ID = `${SITE_URL}/#organization`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+const CATALOG_ID = `${SITE_URL}/#catalog`;
+
+function orgNode() {
+  return {
+    '@type': 'Organization',
+    '@id': ORG_ID,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/og-image.jpg`,
+    description: DEFAULT_DESCRIPTION,
+  };
+}
+
+function websiteNode() {
+  return {
+    '@type': 'WebSite',
+    '@id': WEBSITE_ID,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    inLanguage: 'en-GB',
+    description: DEFAULT_DESCRIPTION,
+    publisher: { '@id': ORG_ID },
+  };
+}
+
+function catalogNode() {
+  return {
+    '@type': 'DataCatalog',
+    '@id': CATALOG_ID,
+    name: `${SITE_NAME} — Catalogue`,
+    url: `${SITE_URL}/`,
+    description:
+      'Machine-readable catalogue of UK election manifestos, results and maps ' +
+      'held in The British Manifesto Archive.',
+    inLanguage: 'en-GB',
+    isAccessibleForFree: true,
+    publisher: { '@id': ORG_ID },
+  };
+}
+
+// Site-level graph for the homepage and /about.
+function siteGraph(extra) {
+  return [websiteNode(), orgNode(), catalogNode(), ...(extra || [])];
+}
+
+// crumbs: [{ name, path }] (path optional for the current page).
+function breadcrumb(crumbs) {
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      ...(c.path ? { item: canonicalFor(c.path) } : {}),
+    })),
+  };
+}
+
+// items: [{ name, url }] -> ItemList of links shown on the page.
+function itemList(name, items) {
+  return {
+    '@type': 'ItemList',
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      url: it.url,
+    })),
+  };
+}
+
+// Manifestos belonging to a general election, in stable id order.
+function manifestosForElection(seo, electionId) {
+  const out = [];
+  for (const [key, rec] of Object.entries(seo.manifestos || {})) {
+    if (rec.electionId !== electionId) continue;
+    const party = seo.parties[rec.partyId];
+    out.push({
+      name: rec.label || (party ? `${party.name} manifesto` : key),
+      url: `${SITE_URL}/manifesto/${key}`,
+    });
+  }
+  return out;
+}
+
+// A devolved / regional / mayoral election page: Event + breadcrumb + the
+// manifestos listed on that page (ItemList).
+function devolvedElection(seo, portal, sub, portalName, path, yearLabel) {
+  const portalMeta = (seo.devolvedPortals && seo.devolvedPortals[portal]) || {};
+  const title = `${yearLabel} ${portalName} Election${TITLE_SUFFIX}`;
+  const description =
+    `Results, seat maps and party manifestos from the ${yearLabel} ${portalName}` +
+    `${portalMeta.subtitle ? ` (${portalMeta.subtitle})` : ''} election.`;
+  const canonical = canonicalFor(path);
+  const event = {
+    '@type': 'Event',
+    '@id': `${canonical}#event`,
+    name: `${yearLabel} ${portalName} election`,
+    description,
+    url: canonical,
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: { '@type': 'Country', name: 'United Kingdom' },
+    organizer: { '@id': ORG_ID },
+  };
+  const mans = (seo.devolvedManifestos && seo.devolvedManifestos[`${portal}/${sub}`]) || [];
+  const items = mans
+    .filter((m) => m && m.pdf)
+    .map((m) => {
+      const party = m.party && seo.parties[m.party];
+      return {
+        name: m.title || (party ? `${party.name} manifesto` : 'Manifesto'),
+        url: `${SITE_URL}${m.pdf}`,
+      };
+    });
+  const graph = [
+    event,
+    orgNode(),
+    breadcrumb([
+      { name: 'Home', path: '/' },
+      { name: 'Devolved Elections', path: '/devolved' },
+      { name: portalName, path: `/devolved/${portal}` },
+      { name: yearLabel },
+    ]),
+    ...(items.length
+      ? [itemList(`${yearLabel} ${portalName} manifestos`, items)]
+      : []),
+  ];
+  return { valid: true, meta: { title, description }, graph };
+}
+
+// Manifestos published by a party, across general elections.
+function manifestosForParty(seo, partyId) {
+  const out = [];
+  for (const [key, rec] of Object.entries(seo.manifestos || {})) {
+    if (rec.partyId !== partyId) continue;
+    out.push({ name: rec.label || key, url: `${SITE_URL}/manifesto/${key}` });
+  }
+  return out;
+}
+
 /*
  * Classify a request path. Returns:
- *   { valid: true,  meta: {title, description}, jsonLd? }  for known pages
+ *   { valid: true,  meta: {title, description}, graph? }   for known pages
  *   { valid: false }                                       for unknown pages
  *   { skip: true }                                         when data is missing
  */
 function classify(path, seo) {
   if (Object.prototype.hasOwnProperty.call(STATIC_ROUTES, path)) {
-    return { valid: true, meta: STATIC_ROUTES[path] };
+    const meta = STATIC_ROUTES[path];
+    let graph = null;
+
+    if (path === '/') {
+      graph = siteGraph();
+    } else if (path === '/about') {
+      graph = siteGraph([breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'About' },
+      ])]);
+    } else if (path === '/elections') {
+      const items = Object.entries(seo.elections || {})
+        .sort((a, b) => b[1].year - a[1].year)
+        .map(([id, e]) => ({
+          name: `${e.displayYear} UK general election`,
+          url: `${SITE_URL}/election/${id}`,
+        }));
+      graph = [
+        breadcrumb([{ name: 'Home', path: '/' }, { name: 'UK General Elections' }]),
+        itemList('UK general elections', items),
+      ];
+    } else if (path === '/parties') {
+      const items = Object.entries(seo.parties || {})
+        .map(([id, p]) => ({ name: p.name, url: `${SITE_URL}/party/${id}` }));
+      graph = [
+        breadcrumb([{ name: 'Home', path: '/' }, { name: 'Political Parties' }]),
+        itemList('UK political parties', items),
+      ];
+    } else if (path === '/devolved') {
+      const items = Object.entries(seo.devolvedPortals || seo.devolved || {})
+        .map(([id, p]) => ({
+          name: (p && p.label) || p,
+          url: `${SITE_URL}/devolved/${id}`,
+        }));
+      graph = [
+        breadcrumb([{ name: 'Home', path: '/' }, { name: 'Devolved Elections' }]),
+        ...(items.length ? [itemList('Devolved & regional legislatures', items)] : []),
+      ];
+    } else {
+      graph = [breadcrumb([{ name: 'Home', path: '/' }, { name: meta.title.replace(TITLE_SUFFIX, '') }])];
+    }
+
+    return { valid: true, meta, graph };
   }
 
   const parts = path.split('/').filter(Boolean);
@@ -115,25 +307,81 @@ function classify(path, seo) {
     const description =
       `Read and search the full text of the ${label} from the ${year} ` +
       `UK general election.`;
-    const jsonLd = {
-      '@context': 'https://schema.org',
+    const canonical = canonicalFor(path);
+    const assetBase = `${SITE_URL}/manifestos/${parts[1]}/${parts[2]}`;
+    const encoding = [
+      {
+        '@type': 'WebPage',
+        encodingFormat: 'text/html',
+        contentUrl: canonical,
+      },
+    ];
+    if (rec.hasPdf) {
+      encoding.push({
+        '@type': 'MediaObject',
+        encodingFormat: 'application/pdf',
+        contentUrl: `${assetBase}/manifesto.pdf`,
+        name: `${label} (PDF)`,
+      });
+    }
+    if (rec.hasMarkdown) {
+      encoding.push({
+        '@type': 'MediaObject',
+        encodingFormat: 'text/markdown',
+        contentUrl: `${assetBase}/manifesto.md`,
+        name: `${label} (Markdown)`,
+      });
+    }
+    const partyNode = party
+      ? {
+          '@type': 'Organization',
+          '@id': `${SITE_URL}/party/${parts[2]}#organization`,
+          name: party.name,
+          ...(party.shortName ? { alternateName: party.shortName } : {}),
+          url: `${SITE_URL}/party/${parts[2]}`,
+        }
+      : null;
+    const doc = {
       '@type': 'DigitalDocument',
+      '@id': `${canonical}#document`,
       name: label,
       description,
-      url: canonicalFor(path),
+      url: canonical,
       inLanguage: 'en-GB',
-      ...(party ? { author: { '@type': 'Organization', name: party.name } } : {}),
-      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-      isPartOf: {
-        '@type': 'CollectionPage',
-        name: SITE_NAME,
-        url: SITE_URL,
-      },
+      isAccessibleForFree: true,
+      ...(rec.hasCover ? { image: `${assetBase}/cover.jpg` } : {}),
+      ...(rec.keywords && rec.keywords.length ? { keywords: rec.keywords } : {}),
+      ...(election && election.isoDate ? { datePublished: election.isoDate } : {}),
+      ...(partyNode ? { author: partyNode, copyrightHolder: partyNode } : {}),
+      encoding,
+      provider: { '@id': ORG_ID },
+      publisher: { '@id': ORG_ID },
+      ...(election
+        ? {
+            about: {
+              '@type': 'Event',
+              '@id': `${SITE_URL}/election/${parts[1]}#event`,
+              name: `${year} UK General Election`,
+              url: `${SITE_URL}/election/${parts[1]}`,
+            },
+          }
+        : {}),
+      isPartOf: { '@id': CATALOG_ID },
     };
+    const graph = [
+      doc,
+      orgNode(),
+      breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'UK General Elections', path: '/elections' },
+        { name: `${year}`, path: `/election/${parts[1]}` },
+        { name: label },
+      ]),
+    ];
     return {
       valid: true,
       meta: { title: `${label}${TITLE_SUFFIX}`, description },
-      jsonLd,
+      graph,
       image: `/og/manifesto/${parts[1]}/${parts[2]}.jpg`,
     };
   }
@@ -147,20 +395,34 @@ function classify(path, seo) {
     const description =
       `Results, seat maps, and party manifestos from the ${year} UK general ` +
       `election${election.date ? ` held on ${election.date}` : ''}.`;
-    const jsonLd = {
-      '@context': 'https://schema.org',
+    const event = {
       '@type': 'Event',
+      '@id': `${canonicalFor(path)}#event`,
       name: `${year} UK General Election`,
       description,
       url: canonicalFor(path),
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       ...(election.isoDate ? { startDate: election.isoDate } : {}),
       location: { '@type': 'Country', name: 'United Kingdom' },
+      organizer: { '@id': ORG_ID },
     };
+    const manifestos = manifestosForElection(seo, parts[1]);
+    const graph = [
+      event,
+      orgNode(),
+      breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'UK General Elections', path: '/elections' },
+        { name: `${year}` },
+      ]),
+      ...(manifestos.length
+        ? [itemList(`${year} UK general election manifestos`, manifestos)]
+        : []),
+    ];
     return {
       valid: true,
       meta: { title, description },
-      jsonLd,
+      graph,
       image: `/og/election/${parts[1]}.jpg`,
     };
   }
@@ -173,17 +435,31 @@ function classify(path, seo) {
     const description =
       `Browse the historical UK general election manifestos and campaign ` +
       `record of ${party.name}.`;
-    const jsonLd = {
-      '@context': 'https://schema.org',
+    const org = {
       '@type': 'Organization',
+      '@id': `${canonicalFor(path)}#organization`,
       name: party.name,
-      alternateName: party.shortName,
+      ...(party.shortName ? { alternateName: party.shortName } : {}),
       url: canonicalFor(path),
+      ...(party.description ? { description: party.description } : {}),
+      ...(party.sameAs && party.sameAs.length ? { sameAs: party.sameAs } : {}),
     };
+    const manifestos = manifestosForParty(seo, parts[1]);
+    const graph = [
+      org,
+      breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Political Parties', path: '/parties' },
+        { name: party.name },
+      ]),
+      ...(manifestos.length
+        ? [itemList(`${party.name} manifestos`, manifestos)]
+        : []),
+    ];
     return {
       valid: true,
       meta: { title, description },
-      jsonLd,
+      graph,
       image: `/og/party/${parts[1]}.jpg`,
     };
   }
@@ -201,6 +477,11 @@ function classify(path, seo) {
         title: `${name} — UK General Election Results${TITLE_SUFFIX}`,
         description: `UK general election results, seat history, and manifestos for ${name}.`,
       },
+      graph: [breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Nations of the UK', path: '/nations' },
+        { name },
+      ])],
     };
   }
 
@@ -238,24 +519,16 @@ function classify(path, seo) {
     if (portal === 'holyrood' || portal === 'senedd' || portal === 'stormont') {
       const portalName = seo.devolved && seo.devolved[portal];
       if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      return {
-        valid: /^\d{4}$/.test(sub),
-        meta: {
-          title: `${portalName} Election${TITLE_SUFFIX}`,
-          description: `Election results and party manifestos from a ${portalName} election.`,
-        },
-      };
+      if (!/^\d{4}$/.test(sub)) return { valid: false };
+      return devolvedElection(seo, portal, sub, portalName, path, sub);
     }
     if (portal === 'london') {
       const portalName = seo.devolved && seo.devolved[portal];
       if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      return {
-        valid: /^(gla|glc|lcc)-\d{4}$/.test(sub),
-        meta: {
-          title: `${portalName} Election${TITLE_SUFFIX}`,
-          description: `Election results and party manifestos from a ${portalName} election.`,
-        },
-      };
+      if (!/^(gla|glc|lcc)-\d{4}$/.test(sub)) return { valid: false };
+      const yearMatch = sub.match(/(\d{4})/);
+      return devolvedElection(
+        seo, portal, sub, portalName, path, yearMatch ? yearMatch[1] : sub);
     }
     return { valid: false };
   }
@@ -265,19 +538,36 @@ function classify(path, seo) {
     const name = seo.devolved && seo.devolved[parts[1]];
     if (!seo.devolved) return { valid: /^[a-z][a-z0-9-]*$/.test(parts[1]), meta: null };
     if (!name) return { valid: false };
+    const years = Object.keys(seo.devolvedManifestos || {})
+      .filter((k) => k.startsWith(`${parts[1]}/`))
+      .map((k) => k.slice(parts[1].length + 1))
+      .sort()
+      .map((sub) => ({
+        name: `${(sub.match(/(\d{4})/) || [sub])[0]} ${name} election`,
+        url: `${SITE_URL}/devolved/${parts[1]}/${sub}`,
+      }));
+    const graph = [
+      breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Devolved Elections', path: '/devolved' },
+        { name },
+      ]),
+      ...(years.length ? [itemList(`${name} elections`, years)] : []),
+    ];
     return {
       valid: true,
       meta: {
         title: `${name} Elections${TITLE_SUFFIX}`,
         description: `Election results and party manifestos for the ${name}.`,
       },
+      graph,
     };
   }
 
   return { valid: false };
 }
 
-function buildRewriter({ meta, jsonLd, canonical, image, noindex }) {
+function buildRewriter({ meta, graph, canonical, image, noindex }) {
   const rewriter = new HTMLRewriter();
 
   if (canonical) {
@@ -331,8 +621,11 @@ function buildRewriter({ meta, jsonLd, canonical, image, noindex }) {
       if (noindex) {
         el.append('<meta name="robots" content="noindex">', { html: true });
       }
-      if (jsonLd) {
-        el.append(jsonLdScript(jsonLd), { html: true });
+      if (graph && graph.length) {
+        el.append(jsonLdScript({
+          '@context': 'https://schema.org',
+          '@graph': graph,
+        }), { html: true });
       }
     },
   });
@@ -390,7 +683,7 @@ export async function onRequest(context) {
 
   const rewriter = buildRewriter({
     meta: result.meta,
-    jsonLd: result.jsonLd,
+    graph: result.graph,
     canonical: canonicalFor(path),
     image: result.image,
     noindex: false,
