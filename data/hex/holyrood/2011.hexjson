@@ -205,11 +205,11 @@
       "party": "snp"
     },
     "holyrood-2011-dunfermline": {
-      "n": "Dunfermline (since 25/10/13)",
+      "n": "Dunfermline",
       "q": 5,
       "r": 6,
-      "winner": "Cara Hilton",
-      "party": "scottishlab"
+      "winner": "Bill Walker",
+      "party": "snp"
     },
     "holyrood-2011-linlithgow": {
       "n": "Linlithgow",
@@ -338,10 +338,10 @@
       "party": "scottishlibdem"
     },
     "holyrood-2011-aberdeen-donside": {
-      "n": "Aberdeen Donside (since 20/06/13)",
+      "n": "Aberdeen Donside",
       "q": 6,
       "r": 11,
-      "winner": "Mark McDonald",
+      "winner": "Brian Adam",
       "party": "snp"
     },
     "holyrood-2011-hamilton-larkhall-and-stonehouse": {
@@ -415,10 +415,10 @@
       "party": "snp"
     },
     "holyrood-2011-cowdenbeath": {
-      "n": "Cowdenbeath (since 23/01/14)",
+      "n": "Cowdenbeath",
       "q": 5,
       "r": 7,
-      "winner": "Alex Rowley",
+      "winner": "Helen Eadie",
       "party": "scottishlab"
     },
     "holyrood-2011-argyll-and-bute": {

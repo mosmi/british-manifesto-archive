@@ -193,6 +193,21 @@ MEMBER_PARTY_OVERRIDES = {
     ("Kenneth Gibson", "2026"): "snp",
 }
 
+# The "Nth Scottish Parliament" Wikipedia pages list each seat's *current* member,
+# so mid-term constituency by-elections contaminate the election-night result
+# (the row shows a "(since dd/mm/yy)" by-election winner, sometimes from another
+# party). Restore the original election winner for those seats here, keyed by
+# (normalized constituency, year). Any "(since ...)" constituency row WITHOUT an
+# entry here is reported as a problem by the build so it can be added.
+CONSTITUENCY_RESULT_OVERRIDES = {
+    # 4th Parliament (2011) by-elections during 2013-2014
+    ("dunfermline", "2011"):       {"winner": "Bill Walker", "party": "snp"},          # by-elec 25/10/13 -> Cara Hilton (Lab)
+    ("aberdeen donside", "2011"):  {"winner": "Brian Adam", "party": "snp"},           # by-elec 20/06/13 -> Mark McDonald (SNP)
+    ("cowdenbeath", "2011"):       {"winner": "Helen Eadie", "party": "scottishlab"},  # by-elec 23/01/14 -> Alex Rowley (Lab)
+    # 6th Parliament (2021) by-election during 2025
+    ("hamilton larkhall and stonehouse", "2021"): {"winner": "Christina McKelvie", "party": "snp"},  # by-elec 06/06/25 -> Davy Russell (Lab)
+}
+
 class TableParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -344,10 +359,26 @@ def build_holyrood_hex():
                 else:
                     q, r = pos
 
+                # Restore the election-night winner for seats that changed hands at
+                # a mid-term by-election (the source page shows the current member).
+                override = CONSTITUENCY_RESULT_OVERRIDES.get((norm_const, year))
+                if override:
+                    name = override["winner"]
+                    party_id = override["party"]
+                elif "(since" in member_for.replace(" ", ""):
+                    problems.append(
+                        f"{year}: BY-ELECTION ROW without result override: "
+                        f"'{member_for}' (norm: '{norm_const}', shows '{name}') — "
+                        f"add to CONSTITUENCY_RESULT_OVERRIDES"
+                    )
+
+                # Strip any "(since dd/mm/yy)" by-election suffix from the display name.
+                display_name = re.sub(r'\s*\([^)]*\)', '', member_for).strip()
+
                 # Build unique code
                 code = f"holyrood-{year}-{norm_const.replace(' ', '-')}"
                 hexes[code] = {
-                    "n": member_for,
+                    "n": display_name,
                     "q": q,
                     "r": r,
                     "winner": name,
