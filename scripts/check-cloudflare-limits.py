@@ -17,6 +17,8 @@ SKIP_DIRS = {
     "previews",
     ".venv",
     "cache",
+    # Vendored dev toolkits — excluded from the deploy via .assetsignore.
+    "tools",
 }
 
 

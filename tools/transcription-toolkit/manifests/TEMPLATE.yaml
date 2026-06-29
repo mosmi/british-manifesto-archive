@@ -1,0 +1,50 @@
+# Page manifest template — copy and rename to match your PDF, e.g.:
+#   manifests/welsh-conservative-2005.yaml
+#
+# All keys are optional.  Omit any key you don't need to override.
+#
+# Top-level keys (apply to the whole document):
+# ─────────────────────────────────────────────
+# title:       "Party Name Election Manifesto YYYY"
+# header_cut:  65      # strip text with top < N pt (running header zone)
+# footer_cut:  760     # strip text with top >= N pt (running footer zone)
+# col_split:   304     # column split x-coordinate (overrides auto-detect)
+# skip_pages:  [0, 1]  # 0-indexed page numbers to skip entirely
+#
+# Per-page overrides (under 'pages:', keyed by 0-indexed page number):
+# ──────────────────────────────────────────────────────────────────────
+# Recognised modes:
+#   skip        — page is skipped entirely (same as adding to skip_pages)
+#   full-width  — extract as single column regardless of global col_split
+#   single-col  — alias for full-width
+#   summary-box — alias for full-width (sidebar-aware extraction is future work;
+#                  currently extracts as single column)
+#   two-col     — force two-column extraction using global col_split
+#
+# Per-page footer_cut: null means "use page height - 20" (the default).
+
+title: "Party Name Manifesto YYYY"
+header_cut: 65
+footer_cut: 760
+# col_split: 304
+skip_pages:
+  - 0   # cover
+  - 1   # back of cover / near-blank
+
+pages:
+  0:
+    mode: skip
+  1:
+    mode: skip
+  # 2:
+  #   mode: full-width
+  #   footer_cut: null    # no footer stripping on this page
+  # 18:
+  #   mode: summary-box
+  # 21:
+  #   mode: full-width
+  # 30:
+  #   mode: full-width
+  #   footer_cut: 826     # this page has an imprint zone higher than usual
+  # 31:
+  #   mode: skip

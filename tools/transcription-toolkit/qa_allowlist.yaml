@@ -1,0 +1,50 @@
+# qa_allowlist.yaml — Allowlist for qa_check.py false positives
+#
+# This file suppresses known-good patterns that the QA checker would otherwise
+# flag.  Add entries here rather than disabling entire check codes.
+#
+# Usage:
+#   python qa_check.py output.md --allowlist qa_allowlist.yaml
+#   (or place this file next to qa_check.py and it will be loaded automatically)
+#
+# ── phrases ───────────────────────────────────────────────────────────────────
+# Exact substrings that should not be flagged.  Use this for compound phrases
+# where a repeated word is correct, or for abbreviations that look suspicious.
+#
+# Examples of real false positives from conversion work:
+#   "in in-work poverty"   — S4 double-word false positive
+#   "ECtHR"                — mixed-case abbreviation for the European Court of Human Rights
+#
+phrases:
+  - "in in-work poverty"
+  - "ECtHR"
+  - "co-operate"
+  - "non-native"
+
+# ── heading_starts_allowed ────────────────────────────────────────────────────
+# First words that are allowed at the start of a heading (suppresses H3).
+# H3 fires when a heading starts with an article or conjunction.
+# Many legitimate manifesto section titles begin with these words.
+#
+heading_starts_allowed:
+  - "The"
+  - "A"
+  - "An"
+  - "Our"
+  - "Your"
+  - "In"
+  - "For"
+  - "And"
+  - "With"
+
+# ── disabled_codes ────────────────────────────────────────────────────────────
+# Check codes to suppress entirely for this document.
+# Use sparingly — prefer phrase-level suppression above.
+# Valid codes: C1, E1, E2, E3, H1–H6, B1–B4, P1–P4, S1–S4, I2, V1–V3, R1–R3
+#
+# Example: disable the "bare page number" check if the document genuinely has
+#          standalone page numbers in the text:
+#   disabled_codes:
+#     - P1
+#
+disabled_codes: []

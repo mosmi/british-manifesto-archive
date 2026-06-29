@@ -20,3 +20,15 @@ data/cache/
 # Source/reference documents kept locally (not deployed)
 General election *.pdf
 Wikipedia*.html
+
+# Vendored dev toolkits (tools/) — track lean code + docs only; the heavy,
+# regenerable inputs/outputs live alongside locally but stay out of git and the
+# Cloudflare deploy. See task-006 / knowledge/pipelines/.
+tools/hexmaps/sources/
+tools/hexmaps/output/
+tools/hexmaps/output copy/
+tools/hexmaps/output_backup_pre_hungariant/
+tools/hexmaps/preview/
+tools/hexmaps/reference/
+tools/transcription-toolkit/lib/
+tools/transcription-toolkit/Markdown versions/
