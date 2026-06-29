@@ -11,22 +11,22 @@
         "sinnfein",
         "sinnfein",
         "sinnfein",
-        "sdlp",
-        "dup"
+        "dup",
+        "sdlp"
       ]
     },
     "Upper Bann": {
       "q": 1,
       "r": 2,
       "n": "Upper Bann",
-      "party": "uup",
-      "seats": 1,
+      "party": "dup",
+      "seats": 2,
       "seats_list": [
         "dup",
         "dup",
+        "uup",
         "sinnfein",
-        "sinnfein",
-        "uup"
+        "sdlp"
       ]
     },
     "Lagan Valley": {
@@ -34,12 +34,12 @@
       "r": 2,
       "n": "Lagan Valley",
       "party": "dup",
-      "seats": 3,
+      "seats": 2,
       "seats_list": [
         "dup",
         "dup",
-        "dup",
         "uup",
+        "sdlp",
         "alliance"
       ]
     },
@@ -76,11 +76,11 @@
       "r": 3,
       "n": "Fermanagh and South Tyrone",
       "party": "sinnfein",
-      "seats": 2,
+      "seats": 3,
       "seats_list": [
         "sinnfein",
         "sinnfein",
-        "dup",
+        "sinnfein",
         "dup",
         "uup"
       ]
@@ -104,11 +104,11 @@
       "r": 3,
       "n": "Belfast East",
       "party": "dup",
-      "seats": 3,
+      "seats": 2,
       "seats_list": [
         "dup",
         "dup",
-        "dup",
+        "alliance",
         "alliance",
         "uup"
       ]
@@ -164,8 +164,8 @@
       "seats_list": [
         "dup",
         "dup",
-        "sinnfein",
         "uup",
+        "sinnfein",
         "alliance"
       ]
     },
@@ -187,13 +187,13 @@
       "q": 4,
       "r": 4,
       "n": "North Down",
-      "party": "alliance",
-      "seats": 1,
+      "party": "dup",
+      "seats": 2,
       "seats_list": [
         "dup",
         "dup",
-        "alliance",
         "uup",
+        "alliance",
         "gpni"
       ]
     },
@@ -222,7 +222,7 @@
         "dup",
         "sinnfein",
         "sdlp",
-        "uup"
+        "independent"
       ]
     },
     "North Antrim": {
@@ -234,8 +234,8 @@
       "seats_list": [
         "dup",
         "dup",
-        "sinnfein",
         "uup",
+        "sinnfein",
         "tuv"
       ]
     },

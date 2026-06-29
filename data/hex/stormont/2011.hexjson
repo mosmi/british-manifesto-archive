@@ -11,9 +11,9 @@
         "sinnfein",
         "sinnfein",
         "sinnfein",
-        "sdlp",
-        "sdlp",
-        "dup"
+        "dup",
+        "uup",
+        "sdlp"
       ]
     },
     "Upper Bann": {
@@ -25,9 +25,9 @@
       "seats_list": [
         "dup",
         "dup",
-        "sinnfein",
-        "sinnfein",
         "uup",
+        "uup",
+        "sinnfein",
         "sdlp"
       ]
     },
@@ -55,10 +55,10 @@
       "seats_list": [
         "sdlp",
         "sdlp",
-        "alliance",
         "dup",
+        "uup",
         "sinnfein",
-        "uup"
+        "alliance"
       ]
     },
     "South Down": {
@@ -68,12 +68,12 @@
       "party": "sinnfein",
       "seats": 2,
       "seats_list": [
-        "sdlp",
-        "sdlp",
-        "sdlp",
         "sinnfein",
         "sinnfein",
-        "dup"
+        "sdlp",
+        "sdlp",
+        "dup",
+        "uup"
       ]
     },
     "Fermanagh and South Tyrone": {
@@ -147,8 +147,8 @@
         "sinnfein",
         "sinnfein",
         "dup",
-        "dup",
-        "uup"
+        "uup",
+        "sdlp"
       ]
     },
     "Mid Ulster": {
@@ -171,13 +171,13 @@
       "r": 4,
       "n": "South Antrim",
       "party": "dup",
-      "seats": 2,
+      "seats": 3,
       "seats_list": [
         "dup",
         "dup",
-        "sinnfein",
+        "dup",
         "uup",
-        "sdlp",
+        "sinnfein",
         "alliance"
       ]
     },
@@ -185,8 +185,8 @@
       "q": 3,
       "r": 4,
       "n": "Belfast North",
-      "party": "sinnfein",
-      "seats": 2,
+      "party": "dup",
+      "seats": 3,
       "seats_list": [
         "dup",
         "dup",
@@ -215,8 +215,8 @@
       "q": 0,
       "r": 5,
       "n": "Foyle",
-      "party": "sinnfein",
-      "seats": 2,
+      "party": "sdlp",
+      "seats": 3,
       "seats_list": [
         "sdlp",
         "sdlp",
@@ -236,9 +236,9 @@
         "dup",
         "dup",
         "dup",
+        "sinnfein",
         "sdlp",
-        "independent",
-        "sinnfein"
+        "independent"
       ]
     },
     "North Antrim": {
@@ -251,8 +251,8 @@
         "dup",
         "dup",
         "dup",
-        "sinnfein",
         "uup",
+        "sinnfein",
         "tuv"
       ]
     },
@@ -267,8 +267,8 @@
         "dup",
         "dup",
         "uup",
-        "alliance",
-        "sinnfein"
+        "sinnfein",
+        "alliance"
       ]
     }
   }
