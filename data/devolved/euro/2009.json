@@ -92,6 +92,18 @@
   "body": "euro",
   "manifestos": [
     {
+      "title": "Conservative European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/conservative/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/conservative/manifesto.png",
+      "party": "conservative"
+    },
+    {
+      "title": "Labour European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/labour/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/labour/manifesto.png",
+      "party": "labour"
+    },
+    {
       "title": "Liberal Democrat European Manifesto 2009",
       "pdf": "/manifestos/euro/2009/libdem/manifesto.pdf",
       "cover": "/manifestos/euro/2009/libdem/manifesto.png",
@@ -102,6 +114,33 @@
       "pdf": "/manifestos/euro/2009/green/manifesto.pdf",
       "cover": "/manifestos/euro/2009/green/manifesto.png",
       "party": "green"
+    },
+    {
+      "title": "BNP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/bnp/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/bnp/manifesto.png",
+      "party": "bnp",
+      "group": "england"
+    },
+    {
+      "title": "UKIP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/ukip/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/ukip/manifesto.png",
+      "party": "ukip"
+    },
+    {
+      "title": "English Democrats European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/englishdemocrats/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/englishdemocrats/manifesto.png",
+      "party": "englishdemocrats",
+      "group": "others"
+    },
+    {
+      "title": "Christian Party / CPA European Election Leaflet 2009",
+      "pdf": "/manifestos/euro/2009/christian/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/christian/manifesto.png",
+      "party": "christian",
+      "group": "others"
     },
     {
       "title": "SNP European Manifesto 2009",
@@ -116,10 +155,28 @@
       "party": "scottishlab"
     },
     {
-      "title": "Welsh Liberal Democrats European Manifesto 2009",
-      "pdf": "/manifestos/euro/2009/welshlibdem/manifesto.pdf",
-      "cover": "/manifestos/euro/2009/welshlibdem/manifesto.png",
-      "party": "welshlibdem"
+      "title": "Scottish Greens European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/scottishgrn/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/scottishgrn/manifesto.png",
+      "party": "scottishgrn"
+    },
+    {
+      "title": "Scottish Liberal Democrats European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/scottishlibdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/scottishlibdem/manifesto.png",
+      "party": "scottishlibdem"
+    },
+    {
+      "title": "Plaid Cymru European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/plaid/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/plaid/manifesto.png",
+      "party": "plaid"
+    },
+    {
+      "title": "DUP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/dup/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/dup/manifesto.png",
+      "party": "dup"
     },
     {
       "title": "Sinn Féin European Manifesto 2009",
@@ -140,16 +197,16 @@
       "party": "sdlp"
     },
     {
+      "title": "Alliance Party European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/alliance/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/alliance/manifesto.png",
+      "party": "alliance"
+    },
+    {
       "title": "Green Party Northern Ireland European Manifesto 2009",
       "pdf": "/manifestos/euro/2009/gpni/manifesto.pdf",
       "cover": "/manifestos/euro/2009/gpni/manifesto.png",
       "party": "gpni"
-    },
-    {
-      "title": "Scottish Greens European Manifesto 2009",
-      "pdf": "/manifestos/euro/2009/scottishgrn/manifesto.pdf",
-      "cover": "/manifestos/euro/2009/scottishgrn/manifesto.png",
-      "party": "scottishgrn"
     },
     {
       "title": "TUV European Manifesto 2009",
@@ -158,46 +215,67 @@
       "party": "tuv"
     },
     {
-      "title": "BNP European Manifesto 2009",
-      "pdf": "/manifestos/euro/2009/bnp/manifesto.pdf",
-      "cover": "/manifestos/euro/2009/bnp/manifesto.png",
-      "party": "bnp"
-    },
-    {
-      "title": "BNP England European Election Leaflet 2009",
-      "pdf": "/manifestos/euro/2009/bnp/leaflet.pdf",
-      "cover": "/manifestos/euro/2009/bnp/leaflet.png",
-      "party": "bnp"
-    },
-    {
-      "title": "English Democrats European Manifesto 2009",
-      "pdf": "/manifestos/euro/2009/englishdemocrats/manifesto.pdf",
-      "cover": "/manifestos/euro/2009/englishdemocrats/manifesto.png",
-      "party": "englishdemocrats"
-    },
-    {
-      "title": "Christian Party / CPA European Election Leaflet 2009",
-      "pdf": "/manifestos/euro/2009/christian/leaflet.pdf",
-      "cover": "/manifestos/euro/2009/christian/leaflet.png",
-      "party": "christian"
-    },
-    {
-      "title": "PES European Manifesto 2009",
-      "pdf": "/manifestos/euro/2009/pes/manifesto.pdf",
-      "cover": "/manifestos/euro/2009/pes/manifesto.png",
-      "party": "pes"
-    },
-    {
-      "title": "PES European Election Flyer 2009",
-      "pdf": "/manifestos/euro/2009/pes/flyer.pdf",
-      "cover": "/manifestos/euro/2009/pes/flyer.png",
-      "party": "pes"
+      "title": "ECR European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/ecr/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/ecr/manifesto.png",
+      "party": "ecr",
+      "group": "alliances"
     },
     {
       "title": "ELDR European Manifesto 2009",
       "pdf": "/manifestos/euro/2009/eldr/manifesto.pdf",
       "cover": "/manifestos/euro/2009/eldr/manifesto.png",
-      "party": "eldr"
+      "party": "eldr",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Free Alliance European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/eurefa/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/eurefa/manifesto.png",
+      "party": "eurefa",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Green Party European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/eurengreens/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/eurengreens/manifesto.png",
+      "party": "eurengreens",
+      "group": "alliances"
+    },
+    {
+      "title": "GUE-NGL European Left European Platform 2009",
+      "pdf": "/manifestos/euro/2009/eurleft/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/eurleft/manifesto.png",
+      "party": "eurleft",
+      "group": "alliances"
+    },
+    {
+      "title": "Independence & Democracy European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/inddem/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/inddem/manifesto.png",
+      "party": "inddem",
+      "group": "alliances"
+    },
+    {
+      "title": "PES European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/pes/manifesto.png",
+      "party": "pes",
+      "group": "alliances"
+    },
+    {
+      "title": "Union for Europe of the Nations European Manifesto 2009",
+      "pdf": "/manifestos/euro/2009/uen/manifesto.pdf",
+      "cover": "/manifestos/euro/2009/uen/manifesto.png",
+      "party": "uen",
+      "group": "alliances"
     }
   ]
 }

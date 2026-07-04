@@ -621,6 +621,111 @@ const PARTIES = {
     nation: 'england',
     description: 'The ELDR party (now ALDE) is a European political party representing liberal and centrist parties across Europe, including the UK Liberal Democrats.',
   },
+  alde: {
+    id: 'alde', name: 'Alliance of Liberals and Democrats for Europe', shortName: 'ALDE',
+    color: '#FFD700', dim: 'rgba(255,215,0,0.14)',
+    founded: 2004, spectrum: 'Centre / Liberal', isPrimary: false,
+    nation: 'england',
+    description: 'ALDE (Alliance of Liberals and Democrats for Europe) is a European political party representing liberal and centrist parties, succeeding ELDR from 2004.',
+  },
+  epp: {
+    id: 'epp', name: "European People's Party", shortName: 'EPP',
+    color: '#003399', dim: 'rgba(0,51,153,0.14)',
+    founded: 1976, spectrum: 'Centre-right / Christian Democratic', isPrimary: false,
+    nation: 'england',
+    description: "The European People's Party (EPP) is a European political party of centre-right and Christian democratic parties, including the UK Conservatives.",
+  },
+  ecr: {
+    id: 'ecr', name: 'European Conservatives and Reformists Group', shortName: 'ECR',
+    color: '#1B3A6B', dim: 'rgba(27,58,107,0.14)',
+    founded: 2009, spectrum: 'Right / Eurosceptic', isPrimary: false,
+    nation: 'england',
+    description: 'The European Conservatives and Reformists (ECR) group in the European Parliament brings together Eurosceptic conservative parties.',
+  },
+  greengroup: {
+    id: 'greengroup', name: 'Green Group in the European Parliament', shortName: 'Green Group',
+    color: '#009639', dim: 'rgba(0,150,57,0.14)',
+    founded: 1984, spectrum: 'Left / Green', isPrimary: false,
+    nation: 'england',
+    description: 'The Green Group in the European Parliament was the forerunner of the Greens/EFA group, representing green parties across Europe.',
+  },
+  eurengreens: {
+    id: 'eurengreens', name: 'European Green Party', shortName: 'European Greens',
+    color: '#009639', dim: 'rgba(0,150,57,0.14)',
+    founded: 2004, spectrum: 'Left / Green', isPrimary: false,
+    nation: 'england',
+    description: 'The European Green Party is the federation of green parties in Europe, a component of the Greens/EFA group in the European Parliament.',
+  },
+  eurefa: {
+    id: 'eurefa', name: 'European Free Alliance', shortName: 'European Free Alliance',
+    color: '#00A651', dim: 'rgba(0,166,81,0.14)',
+    founded: 1981, spectrum: 'Regionalist / Green', isPrimary: false,
+    nation: 'england',
+    description: 'The European Free Alliance (EFA) represents regionalist, autonomist, and stateless nations parties, forming the Greens/EFA group with the European Green Party.',
+  },
+  eurleft: {
+    id: 'eurleft', name: 'Party of the European Left', shortName: 'European Left',
+    color: '#E30613', dim: 'rgba(227,6,19,0.14)',
+    founded: 2004, spectrum: 'Left', isPrimary: false,
+    nation: 'england',
+    description: 'The Party of the European Left (PEL) is associated with the GUE/NGL group in the European Parliament, representing democratic socialist and communist parties.',
+  },
+  inddem: {
+    id: 'inddem', name: 'Independence/Democracy Group', shortName: 'Ind/Dem',
+    color: '#70147A', dim: 'rgba(112,20,122,0.14)',
+    founded: 2004, spectrum: 'Right / Eurosceptic', isPrimary: false,
+    nation: 'england',
+    description: 'The Independence/Democracy group in the European Parliament brought together Eurosceptic parties including UKIP before its dissolution in 2009.',
+  },
+  uen: {
+    id: 'uen', name: 'Union for Europe of the Nations', shortName: 'UEN',
+    color: '#0054A6', dim: 'rgba(0,84,166,0.14)',
+    founded: 1999, spectrum: 'Right / Nationalist', isPrimary: false,
+    nation: 'england',
+    description: 'The Union for Europe of the Nations (UEN) was a nationalist and conservative group in the European Parliament, dissolved in 2009.',
+  },
+  eaf: {
+    id: 'eaf', name: 'European Alliance for Freedom', shortName: 'EAF',
+    color: '#003366', dim: 'rgba(0,51,102,0.14)',
+    founded: 2013, spectrum: 'Right / Populist', isPrimary: false,
+    nation: 'england',
+    description: 'The European Alliance for Freedom was a short-lived Eurosceptic political alliance ahead of the 2014 European Parliament election.',
+  },
+  diem25: {
+    id: 'diem25', name: 'Democracy in Europe Movement 2025', shortName: 'DiEM25',
+    color: '#E30613', dim: 'rgba(227,6,19,0.14)',
+    founded: 2016, spectrum: 'Left / Pro-European', isPrimary: false,
+    nation: 'england',
+    description: 'DiEM25 (Democracy in Europe Movement 2025) is a pan-European political movement founded by Yanis Varoufakis, advocating democratic reform of the EU.',
+  },
+  ecpm: {
+    id: 'ecpm', name: 'European Christian Political Movement', shortName: 'ECPM',
+    color: '#0055A5', dim: 'rgba(0,85,165,0.14)',
+    founded: 2002, spectrum: 'Centre-right / Christian', isPrimary: false,
+    nation: 'england',
+    description: 'The European Christian Political Movement (ECPM) is a European political party of Christian democratic and socially conservative parties.',
+  },
+  ecrp: {
+    id: 'ecrp', name: 'European Conservatives and Reformists Party', shortName: 'ECR Party',
+    color: '#1B3A6B', dim: 'rgba(27,58,107,0.14)',
+    founded: 2009, spectrum: 'Right / Eurosceptic', isPrimary: false,
+    nation: 'england',
+    description: 'The European Conservatives and Reformists Party is the pan-European party associated with the ECR group in the European Parliament.',
+  },
+  eurpirates: {
+    id: 'eurpirates', name: 'European Pirate Party', shortName: 'European Pirates',
+    color: '#592880', dim: 'rgba(89,40,128,0.14)',
+    founded: 2010, spectrum: 'Centre / Pirate', isPrimary: false,
+    nation: 'england',
+    description: 'The European Pirate Party is the federation of pirate parties across Europe, campaigning on civil liberties, transparency, and digital rights.',
+  },
+  volt: {
+    id: 'volt', name: 'Volt Europa', shortName: 'Volt',
+    color: '#502BD5', dim: 'rgba(80,43,213,0.14)',
+    founded: 2017, spectrum: 'Centre / Pro-European', isPrimary: false,
+    nation: 'england',
+    description: 'Volt Europa is a pan-European political movement advocating federal reform of the European Union. It contested the 2019 European Parliament election.',
+  },
   englishdemocrats: {
     id: 'englishdemocrats', name: 'English Democrats', shortName: 'English Democrats',
     color: '#E4003B', dim: 'rgba(228,0,59,0.14)',
@@ -1607,6 +1712,7 @@ const ELECTIONS = [
       'Corbyn resigns; Keir Starmer wins Labour leadership in April 2020',
     ],
     youtubeId: '_mv7HkOx-Hs',
+    manifestoPartyLabels: { reform: 'Brexit Party' },
     extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'uup', 'reform', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 14, votes: 0, percentage: 36.1 },
@@ -1723,7 +1829,9 @@ const STORMONT_OTHER_PARTIES = [
 ];
 
 const EURO_OTHER_PARTIES = [
-  'changeuk', 'animalpolitics', 'pes', 'eldr', 'englishdemocrats', 'christian', 'tuv', 'ssp', 'bnp', 'sea'
+  'changeuk', 'animalpolitics', 'pes', 'eldr', 'alde', 'epp', 'ecr', 'greengroup',
+  'eurengreens', 'eurefa', 'eurleft', 'inddem', 'uen', 'eaf', 'diem25', 'ecpm',
+  'ecrp', 'eurpirates', 'volt', 'englishdemocrats', 'christian', 'tuv', 'ssp', 'bnp', 'sea'
 ];
 
 const DEVOLVED_PORTALS = {

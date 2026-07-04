@@ -99,6 +99,12 @@
       "party": "labour"
     },
     {
+      "title": "Liberal Democrats European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/libdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/libdem/manifesto.png",
+      "party": "libdem"
+    },
+    {
       "title": "Green Party European Manifesto 2004",
       "pdf": "/manifestos/euro/2004/green/manifesto.pdf",
       "cover": "/manifestos/euro/2004/green/manifesto.png",
@@ -117,10 +123,17 @@
       "party": "ukip"
     },
     {
-      "title": "Sinn Féin European Manifesto 2004",
-      "pdf": "/manifestos/euro/2004/sinnfein/manifesto.pdf",
-      "cover": "/manifestos/euro/2004/sinnfein/manifesto.png",
-      "party": "sinnfein"
+      "title": "Scottish Socialist Party European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/ssp/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/ssp/manifesto.png",
+      "party": "ssp",
+      "group": "others"
+    },
+    {
+      "title": "Plaid Cymru European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/plaid/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/plaid/manifesto.png",
+      "party": "plaid"
     },
     {
       "title": "DUP European Manifesto 2004",
@@ -129,22 +142,30 @@
       "party": "dup"
     },
     {
+      "title": "Sinn Féin European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/sinnfein/manifesto.png",
+      "party": "sinnfein"
+    },
+    {
       "title": "UUP European Manifesto 2004",
       "pdf": "/manifestos/euro/2004/uup/manifesto.pdf",
       "cover": "/manifestos/euro/2004/uup/manifesto.png",
       "party": "uup"
     },
     {
-      "title": "SDLP European Manifesto 2004 (Part 1)",
-      "pdf": "/manifestos/euro/2004/sdlp/manifesto-pt1.pdf",
-      "cover": "/manifestos/euro/2004/sdlp/manifesto-pt1.png",
+      "title": "SDLP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/sdlp/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/sdlp/manifesto.png",
       "party": "sdlp"
     },
     {
-      "title": "SDLP European Manifesto 2004 (Part 2)",
-      "pdf": "/manifestos/euro/2004/sdlp/manifesto-pt2.pdf",
-      "cover": "/manifestos/euro/2004/sdlp/manifesto-pt2.png",
-      "party": "sdlp"
+      "title": "John Gilliland European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/gilliland/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/gilliland/manifesto.png",
+      "party": "independent",
+      "partyLabel": "John Gilliland",
+      "group": "northern-ireland"
     },
     {
       "title": "Green Party Northern Ireland European Manifesto 2004",
@@ -153,22 +174,52 @@
       "party": "gpni"
     },
     {
-      "title": "Scottish Socialist Party European Manifesto 2004",
-      "pdf": "/manifestos/euro/2004/ssp/manifesto.pdf",
-      "cover": "/manifestos/euro/2004/ssp/manifesto.png",
-      "party": "ssp"
-    },
-    {
       "title": "Socialist Environmental Alliance European Manifesto 2004",
       "pdf": "/manifestos/euro/2004/sea/manifesto.pdf",
       "cover": "/manifestos/euro/2004/sea/manifesto.png",
       "party": "sea"
     },
     {
+      "title": "ALDE European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/alde/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/alde/manifesto.png",
+      "party": "alde",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Free Alliance European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/eurefa/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/eurefa/manifesto.png",
+      "party": "eurefa",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Green Party European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/eurengreens/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/eurengreens/manifesto.png",
+      "party": "eurengreens",
+      "group": "alliances"
+    },
+    {
+      "title": "GUE-NGL European Left European Manifesto 2004",
+      "pdf": "/manifestos/euro/2004/eurleft/manifesto.pdf",
+      "cover": "/manifestos/euro/2004/eurleft/manifesto.png",
+      "party": "eurleft",
+      "group": "alliances"
+    },
+    {
       "title": "PES European Manifesto 2004",
       "pdf": "/manifestos/euro/2004/pes/manifesto.pdf",
       "cover": "/manifestos/euro/2004/pes/manifesto.png",
-      "party": "pes"
+      "party": "pes",
+      "group": "alliances"
     }
   ]
 }

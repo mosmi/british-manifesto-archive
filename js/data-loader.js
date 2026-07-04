@@ -2,7 +2,7 @@
    Lazy election data loader — falls back to bundled ELECTIONS
    ============================================================ */
 
-const ASSETS_VERSION = '2026070101';
+const ASSETS_VERSION = '2026070505';
 
 const _electionCache = new Map();
 

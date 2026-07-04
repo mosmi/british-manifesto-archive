@@ -126,6 +126,44 @@ function euroManifestosBySeats(election) {
   });
 }
 
+// Manifesto grouping — mirrors the Westminster nation sections, plus a
+// pan-European "Alliances" group for transnational parties (e.g. PES).
+const EURO_GROUP_ORDER = ['england', 'scotland', 'wales', 'northern-ireland', 'others', 'alliances'];
+const EURO_GROUP_LABELS = {
+  england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England & UK-wide',
+  scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland',
+  wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales',
+  'northern-ireland': '🇮🇪 Northern Ireland',
+  others: 'Other parties',
+  alliances: '🇪🇺 Alliances',
+};
+
+function euroManifestoGroupKey(m) {
+  if (m.group) return m.group;
+  const nation = (m.party && typeof PARTIES !== 'undefined' && PARTIES[m.party]) ? PARTIES[m.party].nation : null;
+  return nation || 'others';
+}
+
+function euroManifestoGroupsHtml(election) {
+  const sorted = euroManifestosBySeats(election);
+  const grouped = {};
+  sorted.forEach(m => {
+    const key = euroManifestoGroupKey(m);
+    (grouped[key] = grouped[key] || []).push(m);
+  });
+  const present = EURO_GROUP_ORDER.filter(k => grouped[k]?.length);
+  if (present.length <= 1) {
+    return `<div class="manifesto-grid">${sorted.map(m => euroManifestoCard(m, election.year)).join('')}</div>`;
+  }
+  const headingFor = (k) => (typeof nationLink === 'function' && k !== 'others' && k !== 'alliances')
+    ? nationLink(k, EURO_GROUP_LABELS[k])
+    : EURO_GROUP_LABELS[k];
+  return present.map(k => `<div class="manifesto-nation-group">
+        <h3 class="manifesto-nation-heading">${headingFor(k)}</h3>
+        <div class="manifesto-grid">${grouped[k].map(m => euroManifestoCard(m, election.year)).join('')}</div>
+      </div>`).join('');
+}
+
 async function renderEuroElection(app, id) {
   const election = await loadEuroElection(id);
   if (!election) {
@@ -172,8 +210,8 @@ async function renderEuroElection(app, id) {
     ? `<div class="manifestos-section">
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
-        <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} European Parliament election, ordered by seats won.</p>
-        <div class="manifesto-grid">${euroManifestosBySeats(election).map(m => euroManifestoCard(m, election.year)).join('')}</div>
+        <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} European Parliament election, grouped by nation and by pan-European alliance.</p>
+        ${euroManifestoGroupsHtml(election)}
       </div>`
     : '<div class="manifestos-section"><span class="section-label">Party Manifestos</span><h2>Documents</h2><p style="color:var(--text-muted)">No manifestos currently on record for this election.</p></div>';
 
@@ -264,7 +302,7 @@ async function renderEuroPortal(app) {
   }).join('');
 
   const partyLinks = [
-    'brexit', 'labour', 'conservative', 'libdem', 'green', 'ukip', 'snp', 'plaid', 'alliance', 'sinnfein', 'dup', 'uup', 'sdlp'
+    'reform', 'labour', 'conservative', 'libdem', 'green', 'ukip', 'snp', 'plaid', 'alliance', 'sinnfein', 'dup', 'uup', 'sdlp'
   ].map(pid => {
     const p = PARTIES[pid];
     if (!p) return '';

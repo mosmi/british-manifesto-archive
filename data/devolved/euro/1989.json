@@ -80,5 +80,34 @@
     }
   ],
   "body": "euro",
-  "manifestos": []
+  "manifestos": [
+    {
+      "title": "ELDR European Manifesto 1989",
+      "pdf": "/manifestos/euro/1989/eldr/manifesto.pdf",
+      "cover": "/manifestos/euro/1989/eldr/manifesto.png",
+      "party": "eldr",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 1989",
+      "pdf": "/manifestos/euro/1989/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/1989/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Green Group European Manifesto 1989",
+      "pdf": "/manifestos/euro/1989/greengroup/manifesto.pdf",
+      "cover": "/manifestos/euro/1989/greengroup/manifesto.png",
+      "party": "greengroup",
+      "group": "alliances"
+    },
+    {
+      "title": "PES European Manifesto 1989",
+      "pdf": "/manifestos/euro/1989/pes/manifesto.pdf",
+      "cover": "/manifestos/euro/1989/pes/manifesto.png",
+      "party": "pes",
+      "group": "alliances"
+    }
+  ]
 }

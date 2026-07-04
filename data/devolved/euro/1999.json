@@ -87,10 +87,32 @@
   "body": "euro",
   "manifestos": [
     {
-      "title": "PES Manifesto 1999",
+      "title": "ALDE European Manifesto 1999",
+      "pdf": "/manifestos/euro/1999/alde/manifesto.pdf",
+      "cover": "/manifestos/euro/1999/alde/manifesto.png",
+      "party": "alde",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 1999",
+      "pdf": "/manifestos/euro/1999/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/1999/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Green Party European Manifesto 1999",
+      "pdf": "/manifestos/euro/1999/eurengreens/manifesto.pdf",
+      "cover": "/manifestos/euro/1999/eurengreens/manifesto.png",
+      "party": "eurengreens",
+      "group": "alliances"
+    },
+    {
+      "title": "PES European Manifesto 1999",
       "pdf": "/manifestos/euro/1999/pes/manifesto.pdf",
       "cover": "/manifestos/euro/1999/pes/manifesto.png",
-      "party": "pes"
+      "party": "pes",
+      "group": "alliances"
     }
   ]
 }
