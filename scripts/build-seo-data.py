@@ -27,7 +27,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_JS = ROOT / "js" / "data.js"
 MANIFESTOS_INDEX = ROOT / "data" / "manifestos-index.json"
+PARTY_LINKS = ROOT / "data" / "party-links.json"
+DEVOLVED_DIR = ROOT / "data" / "devolved"
+MANIFESTOS_DIR = ROOT / "manifestos"
 OUT = ROOT / "data" / "seo.json"
+CATALOG_OUT = ROOT / "data" / "catalog.jsonld"
 
 SITE_URL = "https://www.manifestos.org.uk"
 SITE_NAME = "The British Manifesto Archive"
@@ -125,6 +129,202 @@ def parse_elections(text: str) -> dict:
     return elections
 
 
+def humanize(slug: str) -> str:
+    """'foreign-policy' -> 'foreign policy' (for schema.org keywords)."""
+    return slug.replace("-", " ").replace("_", " ").strip()
+
+
+def manifesto_sections(md_path: Path) -> list:
+    """Pull the `sections:` list out of a manifesto.md YAML frontmatter block.
+
+    Hand-parsed (no YAML dependency): read the block between the first two
+    `---` fences, find `sections:`, then collect the following `  - item` lines.
+    """
+    if not md_path.is_file():
+        return []
+    try:
+        text = md_path.read_text(encoding="utf-8")
+    except OSError:
+        return []
+    if not text.startswith("---"):
+        return []
+    end = text.find("\n---", 3)
+    block = text[3:end] if end != -1 else text[3:]
+    lines = block.splitlines()
+    sections = []
+    capturing = False
+    for line in lines:
+        if re.match(r"^\s*sections:\s*$", line):
+            capturing = True
+            continue
+        if capturing:
+            m = re.match(r"^\s*-\s+(.+?)\s*$", line)
+            if m:
+                sections.append(m.group(1).strip().strip("'\""))
+            elif line.strip() and not line.startswith((" ", "\t")):
+                break
+    return sections
+
+
+def enrich_manifesto(item: dict) -> dict:
+    """Add asset flags (pdf/markdown/cover) and topic keywords to a manifesto."""
+    eid, pid = item["electionId"], item["partyId"]
+    folder = MANIFESTOS_DIR / eid / pid
+    out = {
+        "label": item.get("label"),
+        "electionId": eid,
+        "partyId": pid,
+        "hasPdf": (folder / "manifesto.pdf").is_file(),
+        "hasMarkdown": (folder / "manifesto.md").is_file(),
+        "hasCover": (folder / "cover.jpg").is_file(),
+    }
+    keywords = [humanize(s) for s in manifesto_sections(folder / "manifesto.md")]
+    if keywords:
+        out["keywords"] = keywords
+    return out
+
+
+def parse_devolved_portals(text: str) -> dict:
+    """{portal: {label, subtitle, nation, body}} from DEVOLVED_PORTALS."""
+    block = slice_block(text, "const DEVOLVED_PORTALS", "\n};")
+    key_re = re.compile(r"^  ([a-z][a-z0-9-]*):\s*\{", re.M)
+    fields = ("label", "subtitle", "nation", "body")
+    matches = list(key_re.finditer(block))
+    out = {}
+    for i, m in enumerate(matches):
+        seg_end = matches[i + 1].start() if i + 1 < len(matches) else len(block)
+        seg = block[m.end():seg_end]
+        entry = {}
+        for f in fields:
+            fm = re.search(rf"{f}:\s*'([^']*)'", seg)
+            if fm:
+                entry[f] = fm.group(1)
+        out[m.group(1)] = entry
+    return out
+
+
+def build_devolved_manifestos() -> dict:
+    """{`portal/year`: [{party, title, pdf, cover}]} from data/devolved/*/*.json."""
+    out = {}
+    if not DEVOLVED_DIR.is_dir():
+        return out
+    for portal_dir in sorted(DEVOLVED_DIR.iterdir()):
+        if not portal_dir.is_dir():
+            continue
+        for jf in sorted(portal_dir.glob("*.json")):
+            if jf.stem == "index":
+                continue
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            mans = data.get("manifestos") or []
+            items = []
+            for m in mans:
+                if not isinstance(m, dict):
+                    continue
+                items.append({
+                    "party": m.get("party"),
+                    "title": m.get("title"),
+                    "pdf": m.get("pdf"),
+                    "cover": m.get("cover"),
+                })
+            if items:
+                out[f"{portal_dir.name}/{jf.stem}"] = items
+    return out
+
+
+def build_catalog(seo: dict) -> dict:
+    """A DataCatalog feed enumerating the archive's manifesto corpus + datasets."""
+    publisher = {
+        "@type": "Organization",
+        "@id": f"{SITE_URL}/#organization",
+        "name": SITE_NAME,
+        "url": f"{SITE_URL}/",
+    }
+
+    def doc_node(key, rec):
+        node = {
+            "@type": "DigitalDocument",
+            "@id": f"{SITE_URL}/manifesto/{key}#document",
+            "name": rec.get("label") or key,
+            "url": f"{SITE_URL}/manifesto/{key}",
+        }
+        if rec.get("keywords"):
+            node["keywords"] = rec["keywords"]
+        return node
+
+    general_parts = [doc_node(k, r) for k, r in sorted(seo["manifestos"].items())]
+
+    devolved_parts = []
+    for ekey, items in sorted(seo.get("devolvedManifestos", {}).items()):
+        for it in items:
+            if not it.get("pdf"):
+                continue
+            devolved_parts.append({
+                "@type": "DigitalDocument",
+                "name": it.get("title") or f"{it.get('party')} {ekey}",
+                "url": f"{SITE_URL}{it['pdf']}",
+                "encodingFormat": "application/pdf",
+            })
+
+    datasets = [
+        {
+            "@type": "Dataset",
+            "@id": f"{SITE_URL}/#dataset-general-manifestos",
+            "name": "UK general election party manifestos (1945–2024)",
+            "description": "Full-text party manifestos published for UK general "
+                           "elections, with original PDFs and transcribed text.",
+            "url": f"{SITE_URL}/elections",
+            "inLanguage": "en-GB",
+            "isAccessibleForFree": True,
+            "creativeWorkStatus": "Published",
+            "publisher": publisher,
+            "hasPart": general_parts,
+        },
+        {
+            "@type": "Dataset",
+            "@id": f"{SITE_URL}/#dataset-devolved-manifestos",
+            "name": "Devolved, regional and mayoral election manifestos",
+            "description": "Manifestos from Scottish Parliament (Holyrood), Senedd "
+                           "Cymru, Northern Ireland Assembly (Stormont) and London "
+                           "elections.",
+            "url": f"{SITE_URL}/devolved",
+            "inLanguage": "en-GB",
+            "isAccessibleForFree": True,
+            "creativeWorkStatus": "Published",
+            "publisher": publisher,
+            "hasPart": devolved_parts,
+        },
+        {
+            "@type": "Dataset",
+            "@id": f"{SITE_URL}/#dataset-election-results",
+            "name": "UK election results and seat maps",
+            "description": "Party seat totals, vote shares and constituency hex "
+                           "maps for UK general and devolved elections.",
+            "url": f"{SITE_URL}/elections",
+            "inLanguage": "en-GB",
+            "isAccessibleForFree": True,
+            "creativeWorkStatus": "Published",
+            "publisher": publisher,
+        },
+    ]
+
+    return {
+        "@context": "https://schema.org",
+        "@type": "DataCatalog",
+        "@id": f"{SITE_URL}/#catalog",
+        "name": f"{SITE_NAME} — Catalogue",
+        "url": f"{SITE_URL}/",
+        "description": "Machine-readable catalogue of UK election manifestos, "
+                       "results and maps held in The British Manifesto Archive.",
+        "inLanguage": "en-GB",
+        "isAccessibleForFree": True,
+        "publisher": publisher,
+        "dataset": datasets,
+    }
+
+
 def main() -> None:
     text = DATA_JS.read_text(encoding="utf-8")
 
@@ -144,15 +344,27 @@ def main() -> None:
               "Check the regexes in build-seo-data.py.", file=sys.stderr)
         sys.exit(1)
 
+    devolved_portals = parse_devolved_portals(text)
+
+    # Merge curated external identity URLs (schema.org sameAs) into parties.
+    same_as = 0
+    if PARTY_LINKS.is_file():
+        links = json.loads(PARTY_LINKS.read_text(encoding="utf-8"))
+        for pid, urls in links.items():
+            if pid.startswith("_") or pid not in parties:
+                continue
+            clean = [u for u in urls if isinstance(u, str) and u.startswith("http")]
+            if clean:
+                parties[pid]["sameAs"] = clean
+                same_as += 1
+
     manifestos = json.loads(MANIFESTOS_INDEX.read_text(encoding="utf-8"))
     manifesto_map = {
-        f"{item['electionId']}/{item['partyId']}": {
-            "label": item.get("label"),
-            "electionId": item["electionId"],
-            "partyId": item["partyId"],
-        }
+        f"{item['electionId']}/{item['partyId']}": enrich_manifesto(item)
         for item in manifestos
     }
+
+    devolved_manifestos = build_devolved_manifestos()
 
     seo = {
         "site": {"url": SITE_URL, "name": SITE_NAME},
@@ -160,17 +372,33 @@ def main() -> None:
         "elections": elections,
         "nations": nations,
         "devolved": devolved,
+        "devolvedPortals": devolved_portals,
         "manifestos": manifesto_map,
+        "devolvedManifestos": devolved_manifestos,
+        "counts": {
+            "parties": len(parties),
+            "elections": len(elections),
+            "manifestos": len(manifesto_map),
+            "devolvedElections": len(devolved_manifestos),
+        },
     }
 
     OUT.write_text(json.dumps(seo, ensure_ascii=False, separators=(",", ":")),
                    encoding="utf-8")
+
+    catalog = build_catalog(seo)
+    CATALOG_OUT.write_text(
+        json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8")
+
     print(f"Wrote {OUT.relative_to(ROOT)}")
-    print(f"  parties:    {len(parties)}")
+    print(f"  parties:    {len(parties)} ({same_as} with sameAs)")
     print(f"  elections:  {len(elections)}")
     print(f"  nations:    {len(nations)}")
-    print(f"  devolved:   {len(devolved)}")
+    print(f"  devolved:   {len(devolved)} portals, "
+          f"{len(devolved_manifestos)} elections with manifestos")
     print(f"  manifestos: {len(manifesto_map)}")
+    print(f"Wrote {CATALOG_OUT.relative_to(ROOT)}")
+    print(f"  datasets:   {len(catalog['dataset'])}")
 
 
 if __name__ == "__main__":
