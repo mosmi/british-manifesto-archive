@@ -66,28 +66,52 @@ def slice_block(text: str, start_marker: str, end_marker: str) -> str:
     return text[start:end]
 
 
+OBJECT_KEY_RE = re.compile(r"^  (?:'([^']+)'|([a-z][a-z0-9-]*)):\s*\{", re.M)
+
+
+def object_key(match: re.Match) -> str:
+    return match.group(1) or match.group(2)
+
+
 def parse_named_map(block: str, name_field: str) -> dict:
     """Extract {top-level-id: <name_field value>} from a simple object block."""
-    key_re = re.compile(r"^  ([a-z][a-z0-9-]*):\s*\{", re.M)
-    field_re = re.compile(rf"{name_field}:\s*'([^']*)'")
-    matches = list(key_re.finditer(block))
+    field_re = re.compile(rf"{name_field}:\s*'((?:\\'|[^'])*)'")
+    matches = list(OBJECT_KEY_RE.finditer(block))
     out = {}
     for i, m in enumerate(matches):
         seg_end = matches[i + 1].start() if i + 1 < len(matches) else len(block)
         seg = block[m.end():seg_end]
         fm = field_re.search(seg)
-        out[m.group(1)] = fm.group(1) if fm else None
+        out[object_key(m)] = fm.group(1).replace("\\'", "'") if fm else None
+    return out
+
+
+def parse_nations(block: str) -> dict:
+    """Extract {id: {name, description}} from the NATIONS block."""
+    desc_re = re.compile(r"description:\s*'((?:\\'|[^'])*)'")
+    matches = list(OBJECT_KEY_RE.finditer(block))
+    out = {}
+    for i, m in enumerate(matches):
+        seg_end = matches[i + 1].start() if i + 1 < len(matches) else len(block)
+        seg = block[m.end():seg_end]
+        name_m = re.search(r"name:\s*'((?:\\'|[^'])*)'", seg)
+        desc_m = desc_re.search(seg)
+        out[object_key(m)] = {
+            "name": name_m.group(1).replace("\\'", "'") if name_m else object_key(m),
+            "description": desc_m.group(1).replace("\\'", "'") if desc_m else None,
+        }
     return out
 
 
 def parse_parties(text: str) -> dict:
-    """Extract {id: {name, shortName, color}} from the PARTIES block."""
+    """Extract {id: {name, shortName, color, description}} from the PARTIES block."""
     block = slice_block(text, "const PARTIES", "const NATIONS")
     # id, name and shortName appear together (same line) per entry.
     entry_re = re.compile(
         r"id:\s*'([^']+)',\s*name:\s*'([^']*)',\s*shortName:\s*'([^']*)'"
     )
     color_re = re.compile(r"color:\s*'([^']*)'")
+    desc_re = re.compile(r"description:\s*'((?:\\'|[^'])*)'")
     matches = list(entry_re.finditer(block))
     parties = {}
     for i, m in enumerate(matches):
@@ -96,12 +120,72 @@ def parse_parties(text: str) -> dict:
         seg_end = matches[i + 1].start() if i + 1 < len(matches) else len(block)
         seg = block[m.end():seg_end]
         cm = color_re.search(seg)
+        dm = desc_re.search(seg)
         parties[pid] = {
             "name": name,
             "shortName": short,
             "color": cm.group(1) if cm else None,
+            "description": dm.group(1).replace("\\'", "'") if dm else None,
         }
     return parties
+
+
+def parties_in_westminster_segment(seg: str) -> set[str]:
+    """Unique party ids that contested a general election."""
+    parties = {m.group(1) for m in re.finditer(r"party:\s*'([^']+)'", seg)}
+    pr = re.search(r"partyResults:\s*\{([\s\S]*?)\n\s*\},?\s*\n", seg)
+    if pr:
+        parties.update(
+            km.group(1)
+            for km in re.finditer(r"^\s{6}([a-z][a-z0-9]*):\s*\{", pr.group(1), re.M)
+        )
+    em = re.search(r"extraManifestoParties:\s*\[([\s\S]*?)\]", seg)
+    if em:
+        parties.update(re.findall(r"'([^']+)'", em.group(1)))
+    return parties
+
+
+def build_party_chamber_counts(text: str) -> dict[str, dict[str, int]]:
+    """{partyId: {westminster, holyrood, senedd, stormont, euro}} election counts."""
+    counts: dict[str, dict[str, int]] = {}
+
+    block = slice_block(text, "const ELECTIONS", "\n];")
+    entry_starts = list(re.finditer(r"\{\s*\n\s*id: '([^']+)'", block))
+    for i, m in enumerate(entry_starts):
+        seg_end = entry_starts[i + 1].start() if i + 1 < len(entry_starts) else len(block)
+        seg = block[m.start():seg_end]
+        for pid in parties_in_westminster_segment(seg):
+            counts.setdefault(pid, {})
+            counts[pid]["westminster"] = counts[pid].get("westminster", 0) + 1
+
+    portal_keys = {
+        "holyrood": "holyrood",
+        "senedd": "senedd",
+        "stormont": "stormont",
+        "euro": "euro",
+    }
+    for portal, key in portal_keys.items():
+        portal_dir = DEVOLVED_DIR / portal
+        if not portal_dir.is_dir():
+            continue
+        for jf in sorted(portal_dir.glob("*.json")):
+            if jf.stem == "index":
+                continue
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            results = (
+                (data.get("parliament") or {}).get("results")
+                or data.get("results")
+                or []
+            )
+            seen = {r.get("party") for r in results if r.get("party")}
+            for pid in seen:
+                counts.setdefault(pid, {})
+                counts[pid][key] = counts[pid].get(key, 0) + 1
+
+    return counts
 
 
 def parse_elections(text: str) -> dict:
@@ -187,9 +271,8 @@ def enrich_manifesto(item: dict) -> dict:
 def parse_devolved_portals(text: str) -> dict:
     """{portal: {label, subtitle, nation, body}} from DEVOLVED_PORTALS."""
     block = slice_block(text, "const DEVOLVED_PORTALS", "\n};")
-    key_re = re.compile(r"^  ([a-z][a-z0-9-]*):\s*\{", re.M)
     fields = ("label", "subtitle", "nation", "body")
-    matches = list(key_re.finditer(block))
+    matches = list(OBJECT_KEY_RE.finditer(block))
     out = {}
     for i, m in enumerate(matches):
         seg_end = matches[i + 1].start() if i + 1 < len(matches) else len(block)
@@ -199,7 +282,7 @@ def parse_devolved_portals(text: str) -> dict:
             fm = re.search(rf"{f}:\s*'([^']*)'", seg)
             if fm:
                 entry[f] = fm.group(1)
-        out[m.group(1)] = entry
+        out[object_key(m)] = entry
     return out
 
 
@@ -333,10 +416,13 @@ def main() -> None:
     # sitemap, which excludes /party/others).
     parties.pop("others", None)
     elections = parse_elections(text)
-    nations = parse_named_map(
-        slice_block(text, "const NATIONS", "const ELECTIONS"), "name")
+    nations = parse_nations(slice_block(text, "const NATIONS", "const ELECTIONS"))
     devolved = parse_named_map(
         slice_block(text, "const DEVOLVED_PORTALS", "\n};"), "label")
+    chamber_counts = build_party_chamber_counts(text)
+    for pid, counts in chamber_counts.items():
+        if pid in parties and counts:
+            parties[pid]["chamberCounts"] = counts
 
     if not parties or not elections:
         print("ERROR: failed to parse parties/elections from data.js "

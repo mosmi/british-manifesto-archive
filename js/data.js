@@ -1988,6 +1988,50 @@ function normalizeDevolvedElection(electionOrYear) {
   return { year, displayYear: String(year) };
 }
 
+/** Trim copy for meta description tags (~155 characters). */
+function truncateMetaDescription(text, maxLen = 155) {
+  if (!text) return '';
+  if (text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  const sp = cut.lastIndexOf(' ');
+  return `${(sp > 80 ? cut.slice(0, sp) : cut).trimEnd()}…`;
+}
+
+/** First sentence or short excerpt — used as the visible party lede. */
+function partyLedeText(description) {
+  if (!description) return '';
+  const m = description.match(/^[^.!?]+[.!?]/);
+  if (m && m[0].length <= 180) return m[0].trim();
+  return truncateMetaDescription(description, 155);
+}
+
+/** Build chamber labels such as "14 Westminster · 7 Senedd". */
+function formatPartyChamberParts(counts, isAlliance = false) {
+  if (!counts) return [];
+  const parts = [];
+  if (!isAlliance && counts.westminster) parts.push(`${counts.westminster} Westminster`);
+  if (!isAlliance && counts.holyrood) parts.push(`${counts.holyrood} Holyrood`);
+  if (!isAlliance && counts.senedd) parts.push(`${counts.senedd} Senedd`);
+  if (!isAlliance && counts.stormont) parts.push(`${counts.stormont} Stormont`);
+  if (counts.euro) parts.push(`${counts.euro} European Parliament`);
+  return parts;
+}
+
+/** Meta description for party pages — lede plus chamber scope when available. */
+function buildPartyMetaDescription(party, chamberParts) {
+  const lede = partyLedeText(party.description);
+  if (!chamberParts || !chamberParts.length) {
+    return truncateMetaDescription(
+      party.description || `Manifestos and election history for ${party.shortName || party.name}.`,
+      155,
+    );
+  }
+  return truncateMetaDescription(
+    `${lede} Browse manifestos and results across ${chamberParts.join(', ')}.`,
+    155,
+  );
+}
+
 /** Browse-by-party card (homepage and other-parties listings). */
 function buildPartyBrowseCard(pid, opts = {}) {
   const p = PARTIES[pid];

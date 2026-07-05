@@ -1267,6 +1267,13 @@ h1, h2, h3, h4 {
   color: var(--cream);
   line-height: 1.05;
 }
+.party-lede {
+  max-width: 640px;
+  font-size: 1.05rem;
+  color: var(--cream-dark);
+  line-height: 1.7;
+  margin: 1rem 0 0;
+}
 .party-hero-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1278,6 +1285,22 @@ h1, h2, h3, h4 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
+}
+.party-meta-item dt {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+.party-meta-item dd {
+  display: block;
+  color: var(--party-color, var(--gold));
+  font-size: 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0.15rem 0 0;
 }
 .party-meta-item strong {
   display: block;

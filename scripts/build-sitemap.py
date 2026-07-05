@@ -5,10 +5,12 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://www.manifestos.org.uk"
+OBJECT_KEY_RE = re.compile(r"^  (?:'([^']+)'|([a-z][a-z0-9-]*)):\s*\{", re.M)
 
 
 def section(text: str, start: str, end: str) -> str:
@@ -16,57 +18,68 @@ def section(text: str, start: str, end: str) -> str:
     return part.split(end, 1)[0]
 
 
+def object_keys(block: str) -> list[str]:
+    return [m.group(1) or m.group(2) for m in OBJECT_KEY_RE.finditer(block)]
+
+
+def load_index_ids(path: Path) -> list[str]:
+    if not path.exists():
+        return []
+    return [e["id"] for e in json.loads(path.read_text(encoding="utf-8"))]
+
+
+def iso_date(path: Path | None) -> str:
+    if path and path.is_file():
+        ts = path.stat().st_mtime
+        return datetime.fromtimestamp(ts, tz=timezone.utc).date().isoformat()
+    return datetime.now(tz=timezone.utc).date().isoformat()
+
+
+def lastmod_for_path(path: str) -> str:
+    if path == "/":
+        return iso_date(ROOT / "index.html")
+    if path == "/about":
+        return iso_date(ROOT / "js" / "app.js")
+    if path.startswith("/manifesto/"):
+        parts = path.strip("/").split("/")
+        if len(parts) == 3:
+            folder = ROOT / "manifestos" / parts[1] / parts[2]
+            for candidate in (folder / "manifesto.md", folder / "manifesto.pdf"):
+                if candidate.is_file():
+                    return iso_date(candidate)
+    if path.startswith("/devolved/"):
+        parts = path.strip("/").split("/")
+        if len(parts) == 3 and parts[2] != "other-parties":
+            jf = ROOT / "data" / "devolved" / parts[1] / f"{parts[2]}.json"
+            return iso_date(jf)
+        if len(parts) == 2:
+            return iso_date(ROOT / "data" / "devolved" / parts[1] / "index.json")
+    if path.startswith("/election/"):
+        return iso_date(ROOT / "js" / "data.js")
+    if path.startswith("/party/"):
+        return iso_date(ROOT / "js" / "data.js")
+    if path.startswith("/nation/"):
+        return iso_date(ROOT / "js" / "data.js")
+    return iso_date(ROOT / "data" / "seo.json")
+
+
 def main() -> None:
     data_js = (ROOT / "js/data.js").read_text(encoding="utf-8")
 
     election_ids = re.findall(r"id: '([^']+)',\s*year:", data_js)
-    party_ids = re.findall(
-        r"^\s{2}([a-z][a-z0-9]*):\s*\{",
-        section(data_js, "const PARTIES = {", "const NATIONS"),
-        re.M,
-    )
-    nation_ids = re.findall(
-        r"^\s{2}([a-z-]+):\s*\{",
-        section(data_js, "const NATIONS = {", "const ELECTIONS"),
-        re.M,
-    )
-    devolved_ids = re.findall(
-        r"^\s{2}([a-z-]+):\s*\{",
-        section(data_js, "const DEVOLVED_PORTALS = {", ";\n"),
-        re.M,
-    )
+    party_ids = object_keys(section(data_js, "const PARTIES = {", "const NATIONS"))
+    nation_ids = object_keys(section(data_js, "const NATIONS = {", "const ELECTIONS"))
+    devolved_ids = object_keys(section(data_js, "const DEVOLVED_PORTALS = {", ";\n"))
 
     manifestos = json.loads(
         (ROOT / "data/manifestos-index.json").read_text(encoding="utf-8")
     )
 
-    london_index_path = ROOT / "data/devolved/london/index.json"
-    london_ids = (
-        [e["id"] for e in json.loads(london_index_path.read_text(encoding="utf-8"))]
-        if london_index_path.exists()
-        else []
-    )
-
-    holyrood_index_path = ROOT / "data/devolved/holyrood/index.json"
-    holyrood_ids = (
-        [e["id"] for e in json.loads(holyrood_index_path.read_text(encoding="utf-8"))]
-        if holyrood_index_path.exists()
-        else []
-    )
-
-    senedd_index_path = ROOT / "data/devolved/senedd/index.json"
-    senedd_ids = (
-        [e["id"] for e in json.loads(senedd_index_path.read_text(encoding="utf-8"))]
-        if senedd_index_path.exists()
-        else []
-    )
-
-    stormont_index_path = ROOT / "data/devolved/stormont/index.json"
-    stormont_ids = (
-        [e["id"] for e in json.loads(stormont_index_path.read_text(encoding="utf-8"))]
-        if stormont_index_path.exists()
-        else []
-    )
+    london_ids = load_index_ids(ROOT / "data/devolved/london/index.json")
+    holyrood_ids = load_index_ids(ROOT / "data/devolved/holyrood/index.json")
+    senedd_ids = load_index_ids(ROOT / "data/devolved/senedd/index.json")
+    stormont_ids = load_index_ids(ROOT / "data/devolved/stormont/index.json")
+    euro_ids = load_index_ids(ROOT / "data/devolved/euro/index.json")
 
     urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
     urls.extend(f"/election/{eid}" for eid in election_ids)
@@ -80,6 +93,8 @@ def main() -> None:
     urls.append("/devolved/senedd/other-parties")
     urls.extend(f"/devolved/stormont/{sid}" for sid in stormont_ids)
     urls.append("/devolved/stormont/other-parties")
+    urls.extend(f"/devolved/euro/{eid}" for eid in euro_ids)
+    urls.append("/devolved/euro/other-parties")
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )
@@ -89,9 +104,10 @@ def main() -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ]
     for path in urls:
-        loc = BASE if path == "/" else f"{BASE}{path}"
+        loc = f"{BASE}/" if path == "/" else f"{BASE}{path}"
         lines.append("  <url>")
         lines.append(f"    <loc>{loc}</loc>")
+        lines.append(f"    <lastmod>{lastmod_for_path(path)}</lastmod>")
         lines.append("  </url>")
     lines.append("</urlset>")
 

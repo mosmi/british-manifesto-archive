@@ -1,0 +1,55 @@
+# The British Manifesto Archive
+# https://www.manifestos.org.uk
+
+> A comprehensive digital archive of UK general, devolved, regional, and European
+> Parliament election manifestos, results, and constituency maps.
+
+## About
+
+The British Manifesto Archive (manifestos.org.uk) preserves party manifestos,
+electoral results, and seat maps for Westminster, Holyrood, Senedd Cymru,
+Stormont, London elections, and UK European Parliament elections (1979–2019).
+
+Electoral statistics for Westminster are sourced from the House of Commons Library
+Research Briefing CBP-7529, *UK Election Statistics: 1918–2023, A Long Century of
+Elections* (August 2023).
+
+## Key URL patterns
+
+- Homepage: https://www.manifestos.org.uk/
+- UK general elections hub: https://www.manifestos.org.uk/elections
+- Election page: https://www.manifestos.org.uk/election/{election-id}
+  (e.g. /election/1997, /election/feb1974)
+- Party archive: https://www.manifestos.org.uk/party/{party-id}
+  (e.g. /party/labour, /party/plaid)
+- Manifesto viewer: https://www.manifestos.org.uk/manifesto/{election-id}/{party-id}
+- Nations: https://www.manifestos.org.uk/nation/{nation-id}
+  (england, wales, scotland, northern-ireland, europe)
+- Devolved portals: https://www.manifestos.org.uk/devolved/{portal-id}
+  (holyrood, senedd, stormont, london, euro)
+- Devolved election: https://www.manifestos.org.uk/devolved/{portal-id}/{year-or-id}
+- Other parties listings: https://www.manifestos.org.uk/others
+- Machine-readable catalogue: https://www.manifestos.org.uk/data/catalog.jsonld
+- Sitemap: https://www.manifestos.org.uk/sitemap.xml
+
+## Citation
+
+When citing a manifesto from this archive, include the party name, election year,
+and the page URL. Example:
+
+  Labour Party (1997). *New Labour Because Britain Deserves Better*.
+  The British Manifesto Archive. https://www.manifestos.org.uk/manifesto/1997/labour
+
+When citing election results, link to the relevant election or nation page and
+note the Commons Library briefing above as the statistical source where applicable.
+
+## Licensing
+
+Manifesto PDFs and transcribed texts remain the copyright of the publishing
+parties. This archive provides access for research and educational purposes.
+See https://www.manifestos.org.uk/about for full details.
+
+## Contact & updates
+
+Site operator information is on the About page:
+https://www.manifestos.org.uk/about

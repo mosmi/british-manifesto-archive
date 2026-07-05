@@ -18,6 +18,7 @@ Usage:
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -170,7 +171,7 @@ def spaced(text, px):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", help="comma-separated: manifesto,party,election")
+    parser.add_argument("--only", help="comma-separated: manifesto,party,election,nation,devolved,hub")
     parser.add_argument("--sample", action="store_true",
                         help="render a small representative sample only")
     args = parser.parse_args()
@@ -180,8 +181,11 @@ def main():
     elections = seo["elections"]
     manifestos = seo["manifestos"]
 
-    types = set((args.only or "manifesto,party,election").split(","))
+    types = set((args.only or "manifesto,party,election,nation,devolved,hub").split(","))
     count = 0
+    nations = seo.get("nations") or {}
+    devolved_portals = seo.get("devolvedPortals") or {}
+    devolved_manifestos = seo.get("devolvedManifestos") or {}
 
     if "election" in types:
         items = list(elections.items())
@@ -228,6 +232,73 @@ def main():
                 name,
                 f"{year} General Election Manifesto",
                 hex_to_rgb(party.get("color")),
+            )
+            count += 1
+
+    if "nation" in types:
+        items = list(nations.items())
+        if args.sample:
+            items = items[:2]
+        for nid, rec in items:
+            name = rec.get("name") if isinstance(rec, dict) else rec
+            draw_card(
+                OG_DIR / "nation" / f"{nid}.jpg",
+                "Nation",
+                name or nid,
+                "Westminster results & devolved government",
+                GOLD,
+            )
+            count += 1
+
+    if "devolved" in types:
+        portal_items = list(devolved_portals.items())
+        if args.sample:
+            portal_items = portal_items[:2]
+        for pid, portal in portal_items:
+            label = portal.get("label") if isinstance(portal, dict) else portal
+            draw_card(
+                OG_DIR / "devolved" / f"{pid}.jpg",
+                "Devolved Elections",
+                label or pid,
+                (portal.get("subtitle") if isinstance(portal, dict) else "") or "Results & manifestos",
+                GOLD,
+            )
+            count += 1
+        election_keys = sorted(devolved_manifestos.keys())
+        if args.sample:
+            election_keys = election_keys[:4]
+        for key in election_keys:
+            portal, sub = key.split("/", 1)
+            portal_meta = devolved_portals.get(portal, {})
+            label = portal_meta.get("label") if isinstance(portal_meta, dict) else portal
+            year = (re.search(r"(\d{4})", sub) or [sub])[0]
+            draw_card(
+                OG_DIR / "devolved" / portal / f"{sub}.jpg",
+                label or portal,
+                f"{year} Election",
+                "Results, maps & party manifestos",
+                GOLD,
+            )
+            count += 1
+
+    if "hub" in types:
+        hubs = [
+            ("about", "About", "UK election manifesto archive"),
+            ("elections", "UK General Elections", "1945–2024 results & manifestos"),
+            ("parties", "Political Parties", "Historical manifestos by party"),
+            ("devolved", "Beyond Westminster", "Holyrood, Senedd, Stormont & London"),
+            ("nations", "The Four Nations & Europe", "Results by nation"),
+            ("others", "Other Parties", "Smaller & historical parties"),
+        ]
+        if args.sample:
+            hubs = hubs[:3]
+        for slug, title, subtitle in hubs:
+            draw_card(
+                OG_DIR / "hub" / f"{slug}.jpg",
+                "Archive",
+                title,
+                subtitle,
+                GOLD,
             )
             count += 1
 

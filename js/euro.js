@@ -272,8 +272,8 @@ async function renderEuroElection(app, id) {
   }
 
   setPageMeta({
-    title: `${election.displayYear} European Parliament election`,
-    description: `Results and party manifestos for the ${election.displayYear} European Parliament election in the UK.`,
+    title: `${election.displayYear} European Parliament Election`,
+    description: devolvedElectionDescription('euro', election.displayYear, DEVOLVED_PORTALS?.euro),
     path: `/devolved/euro/${id}`,
   });
 
@@ -384,8 +384,8 @@ async function renderEuroElection(app, id) {
 async function renderEuroPortal(app) {
   const portal = (typeof DEVOLVED_PORTALS !== 'undefined') ? DEVOLVED_PORTALS.euro : null;
   setPageMeta({
-    title: 'European Parliament',
-    description: 'UK European Parliament elections from 1979 to 2019 — results, seat breakdowns, and party manifestos.',
+    title: 'European Parliament Elections',
+    description: `Election results and party manifestos for the ${portal?.label || 'European Parliament'}.`,
     path: '/devolved/euro',
   });
 

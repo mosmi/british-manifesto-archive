@@ -4,14 +4,16 @@
    ============================================================ */
 
 const SITE = {
-  name: 'The British Manifesto Archive',
-  domain: 'www.manifestos.org.uk',
-  url: 'https://www.manifestos.org.uk',
-  description: 'A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos, results, and maps in the UK.',
-  ogImage: 'https://www.manifestos.org.uk/og-image.jpg',
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
-  ogImageAlt: 'The British Manifesto Archive — a digital repository of UK political party manifestos',
+  name: SITE_META.name,
+  domain: SITE_META.domain,
+  url: SITE_META.url,
+  description: SITE_META.defaultDescription,
+  ogImage: SITE_META.defaultOgImage,
+  ogImageWidth: SITE_META.defaultOgImageWidth,
+  ogImageHeight: SITE_META.defaultOgImageHeight,
+  ogImageAlt: SITE_META.defaultOgImageAlt,
+  titleSuffix: SITE_META.titleSuffix,
+  homeTitle: SITE_META.homeTitle,
 };
 
 // Manifesto text without a PDF scan (electionId/partyId)
@@ -132,42 +134,33 @@ function setupLazyImageObserver() {
 const MANIFESTO_EXCLUDED_PARTIES = new Set(['speaker', 'independent']);
 
 function setPageTitle(pageTitle) {
-  document.title = pageTitle
-    ? `${pageTitle} — ${SITE.domain}`
-    : `${SITE.name} — ${SITE.domain}`;
+  document.title = formatDocumentTitle(pageTitle);
 }
 
-function setOgImage(show) {
-  const ids = ['og-image', 'og-image-width', 'og-image-height', 'og-image-alt', 'twitter-image'];
+function setOgImage(imageUrl, alt) {
+  const url = imageUrl || SITE.ogImage;
+  const altText = alt || SITE.ogImageAlt;
+  const ensureMeta = (id, attr, key, value) => {
+    let el = document.getElementById(id);
+    if (!el) {
+      el = document.createElement('meta');
+      el.id = id;
+      el.setAttribute(attr, key);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', value);
+  };
+  ensureMeta('og-image', 'property', 'og:image', url);
+  ensureMeta('og-image-width', 'property', 'og:image:width', String(SITE.ogImageWidth));
+  ensureMeta('og-image-height', 'property', 'og:image:height', String(SITE.ogImageHeight));
+  ensureMeta('og-image-alt', 'property', 'og:image:alt', altText);
+  ensureMeta('twitter-image', 'name', 'twitter:image', url);
   const twitterCard = document.getElementById('twitter-card');
-
-  if (show) {
-    const ensureMeta = (id, attr, key, value) => {
-      let el = document.getElementById(id);
-      if (!el) {
-        el = document.createElement('meta');
-        el.id = id;
-        el.setAttribute(attr, key);
-        document.head.appendChild(el);
-      }
-      el.setAttribute('content', value);
-    };
-    ensureMeta('og-image', 'property', 'og:image', SITE.ogImage);
-    ensureMeta('og-image-width', 'property', 'og:image:width', String(SITE.ogImageWidth));
-    ensureMeta('og-image-height', 'property', 'og:image:height', String(SITE.ogImageHeight));
-    ensureMeta('og-image-alt', 'property', 'og:image:alt', SITE.ogImageAlt);
-    ensureMeta('twitter-image', 'name', 'twitter:image', SITE.ogImage);
-    if (twitterCard) twitterCard.setAttribute('content', 'summary_large_image');
-  } else {
-    ids.forEach(id => document.getElementById(id)?.remove());
-    if (twitterCard) twitterCard.setAttribute('content', 'summary');
-  }
+  if (twitterCard) twitterCard.setAttribute('content', 'summary_large_image');
 }
 
 function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
-  const pageTitle = title
-    ? `${title} — ${SITE.domain}`
-    : `${SITE.name} — ${SITE.domain}`;
+  const pageTitle = formatDocumentTitle(title);
   const pageDescription = description || SITE.description;
   const canonical = path === '/' ? `${SITE.url}/` : `${SITE.url}${path}`;
 
@@ -188,13 +181,23 @@ function setPageMeta({ title, description, path = '/', noindex = false } = {}) {
   const canonicalEl = document.getElementById('canonical-link');
   if (canonicalEl) canonicalEl.setAttribute('href', canonical);
 
+  let hreflangEl = document.getElementById('hreflang-link');
+  if (!hreflangEl) {
+    hreflangEl = document.createElement('link');
+    hreflangEl.id = 'hreflang-link';
+    hreflangEl.rel = 'alternate';
+    hreflangEl.hreflang = 'en-GB';
+    document.head.appendChild(hreflangEl);
+  }
+  hreflangEl.href = canonical;
+
   const twitterTitle = document.getElementById('twitter-title');
   if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
 
   const twitterDesc = document.getElementById('twitter-description');
   if (twitterDesc) twitterDesc.setAttribute('content', pageDescription);
 
-  setOgImage(path === '/');
+  setOgImage(ogImageForPath(path), ogImageAltForTitle(title));
 
   let robotsMeta = document.getElementById('meta-robots');
   if (noindex) {
@@ -1484,8 +1487,8 @@ function renderElection(app, id) {
   const election = getElection(id);
   if (!election) { renderNotFound(app); return; }
   setPageMeta({
-    title: `${election.displayYear} General Election`,
-    description: `Results, maps, and manifestos from the ${election.displayYear} UK general election.`,
+    title: `${election.displayYear} UK General Election Results & Manifestos`,
+    description: westminsterElectionDescription(election),
     path: `/election/${id}`,
   });
 
@@ -1729,6 +1732,13 @@ async function initElectionHexmap(electionId) {
 // ── CO-OPERATIVE PARTY CUSTOM PAGE ───────────────────────────
 async function renderCooperativePartyPage(app, party) {
   const color = party.color;
+  const coopChambers = ['22 Westminster', '7 Holyrood', '7 Senedd'];
+  setPageMeta({
+    title: party.shortName,
+    description: buildPartyMetaDescription(party, coopChambers),
+    path: '/party/cooperative',
+  });
+  const partyLede = partyLedeText(party.description);
 
   // Load devolved history to get the manifestos
   const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
@@ -1871,11 +1881,12 @@ async function renderCooperativePartyPage(app, party) {
         <div>
           <div class="party-color-bar" style="background:${color}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
-          <div class="party-hero-meta">
-            <div class="party-meta-item">Founded<strong>${party.founded || '—'}</strong></div>
-            <div class="party-meta-item">Spectrum<strong>${party.spectrum}</strong></div>
-            <div class="party-meta-item">Elections contested<strong>${contestedLabel}</strong></div>
-          </div>
+          ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
+          <dl class="party-hero-meta">
+            <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
+            <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
+            <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
+          </dl>
         </div>
       </div>
     </section>
@@ -1980,11 +1991,6 @@ async function renderParty(app, id) {
     await renderCooperativePartyPage(app, party);
     return;
   }
-  setPageMeta({
-    title: party.shortName,
-    description: `Manifestos and election history for the ${party.shortName} in UK general elections since 1945.`,
-    path: `/party/${partyId}`,
-  });
 
   const color = party.color;
   const isAllianceParty = typeof isEuroAllianceParty === 'function' && isEuroAllianceParty(partyId);
@@ -2089,6 +2095,13 @@ async function renderParty(app, id) {
   if (!isAllianceParty && niElections.length) contestedParts.push(`${niElections.length} Stormont`);
   if (euroElections.length) contestedParts.push(`${euroElections.length} European Parliament`);
   const contestedLabel = contestedParts.join(' · ') || '0';
+  const partyLede = partyLedeText(party.description);
+
+  setPageMeta({
+    title: party.shortName,
+    description: buildPartyMetaDescription(party, contestedParts),
+    path: `/party/${partyId}`,
+  });
 
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
   const nationCrumb = nationId
@@ -2107,11 +2120,12 @@ async function renderParty(app, id) {
         <div>
           <div class="party-color-bar" style="background:${color}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
-          <div class="party-hero-meta">
-            <div class="party-meta-item">Founded<strong>${party.founded || '—'}</strong></div>
-            <div class="party-meta-item">Spectrum<strong>${party.spectrum}</strong></div>
-            <div class="party-meta-item">Elections contested<strong>${contestedLabel}</strong></div>
-          </div>
+          ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
+          <dl class="party-hero-meta">
+            <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
+            <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
+            <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
+          </dl>
         </div>
         ${electionsWon > 0 ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${color}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>` : ''}
       </div>
@@ -2206,9 +2220,11 @@ function renderNation(app, id) {
   if (!nation) { renderNotFound(app); return; }
   setPageMeta({
     title: nation.name,
-    description: id === 'europe'
-      ? 'Pan-European political families that contested European Parliament elections in the United Kingdom from 1979 to 2019.'
-      : `Election results and parties in ${nation.name} at UK general elections since 1945.`,
+    description: nation.description
+      ? truncateMetaDescription(nation.description, 155)
+      : (id === 'europe'
+        ? 'Pan-European political families that contested European Parliament elections in the United Kingdom from 1979 to 2019.'
+        : `UK general election results, seat history, and manifestos for ${nation.name}.`),
     path: `/nation/${id}`,
   });
 
@@ -2492,7 +2508,7 @@ function renderDevolved(app, id) {
   if (!portal) { renderNotFound(app); return; }
   setPageMeta({
     title: portal.label,
-    description: `Devolved election information for ${portal.label}.`,
+    description: `Election results and party manifestos for the ${portal.label}.`,
     path: `/devolved/${id}`,
   });
 
@@ -2548,7 +2564,7 @@ function renderDevolved(app, id) {
 function renderOthers(app) {
   setPageMeta({
     title: 'Other Parties',
-    description: 'Minor and regional parties that have won seats at UK general elections since 1945.',
+    description: 'Smaller and historical UK political parties and the manifestos they published.',
     path: '/others',
   });
   const cards = [...OTHERS_PARTIES]
@@ -2692,8 +2708,8 @@ function renderManifesto(app, electionId, partyId) {
   if (!election || !party) { renderNotFound(app); return; }
   const displayName = getPartyName(partyId, election.year);
   setPageMeta({
-    title: `${displayName} ${election.displayYear} Manifesto`,
-    description: `Read the ${displayName} manifesto from the ${election.displayYear} UK general election.`,
+    title: displayName,
+    description: `Read and search the full text of the ${displayName} manifesto from the ${election.displayYear} UK general election.`,
     path: `/manifesto/${electionId}/${partyId}`,
   });
 
@@ -2774,8 +2790,8 @@ function parseMarkdown(md) {
 // ── HUB PAGES ─────────────────────────────────────────────────
 function renderElectionsHub(app) {
   setPageMeta({
-    title: 'General Elections',
-    description: 'Browse all UK general elections from 1945 to 2024 — results, manifestos, and electoral records.',
+    title: 'UK General Elections',
+    description: 'Browse every UK general election from 1945 to 2024 with results, seat maps, and the party manifestos published for each.',
     path: '/elections',
   });
 
@@ -2895,7 +2911,7 @@ function renderNationsHub(app) {
 function renderPartiesHub(app) {
   setPageMeta({
     title: 'Political Parties',
-    description: 'Browse political parties by nation — England, Wales, Scotland, Northern Ireland, and other parties.',
+    description: 'Browse UK political parties and their historical general election manifestos in The British Manifesto Archive.',
     path: '/parties',
   });
 
@@ -2974,7 +2990,7 @@ function renderPartiesHub(app) {
 function renderAbout(app) {
   setPageMeta({
     title: 'About',
-    description: 'About manifestos.org.uk — a digital archive of UK general, devolved, regional, and European Parliament election manifestos, results, and maps.',
+    description: 'About The British Manifesto Archive: what it is, where the manifesto texts come from, and how to use the collection.',
     path: '/about',
   });
   app.innerHTML = `

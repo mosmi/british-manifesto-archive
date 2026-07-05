@@ -222,7 +222,7 @@ async function renderSeneddElection(app, id) {
 
   setPageMeta({
     title: `${election.displayYear} Senedd Cymru election`,
-    description: `Results and manifestos from the ${election.displayYear} Welsh Parliament election.`,
+    description: devolvedElectionDescription('senedd', election.displayYear, DEVOLVED_PORTALS?.senedd),
     path: `/devolved/senedd/${id}`,
   });
 
@@ -473,8 +473,8 @@ async function renderSeneddElection(app, id) {
 async function renderSeneddPortal(app) {
   const portal = (typeof DEVOLVED_PORTALS !== 'undefined') ? DEVOLVED_PORTALS.senedd : null;
   setPageMeta({
-    title: 'Welsh Parliament',
-    description: 'Senedd Cymru elections from 1999 to 2026 — results, seat breakdowns, and party manifestos.',
+    title: `${portal?.label || 'Welsh Parliament'} Elections`,
+    description: `Election results and party manifestos for the ${portal?.label || 'Welsh Parliament'}.`,
     path: '/devolved/senedd',
   });
 

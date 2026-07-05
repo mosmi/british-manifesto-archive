@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.manifestos.org.uk/sitemap.xml
+
+# Machine-readable site summary for LLM crawlers
+# https://llmstxt.org/
+Llms-Txt: https://www.manifestos.org.uk/llms.txt

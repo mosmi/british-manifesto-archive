@@ -24,6 +24,92 @@ const DEFAULT_DESCRIPTION =
   'A comprehensive digital archive of general, devolved, regional, and ' +
   'European Parliament election manifestos, results, and maps in the UK.';
 
+function truncateMetaDescription(text, maxLen = 155) {
+  if (!text) return '';
+  if (text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  const sp = cut.lastIndexOf(' ');
+  return `${(sp > 80 ? cut.slice(0, sp) : cut).trimEnd()}…`;
+}
+
+function partyLedeText(description) {
+  if (!description) return '';
+  const m = description.match(/^[^.!?]+[.!?]/);
+  if (m && m[0].length <= 180) return m[0].trim();
+  return truncateMetaDescription(description, 155);
+}
+
+function chamberPartsFromCounts(counts, isAlliance = false) {
+  if (!counts) return [];
+  const parts = [];
+  if (!isAlliance && counts.westminster) parts.push(`${counts.westminster} Westminster`);
+  if (!isAlliance && counts.holyrood) parts.push(`${counts.holyrood} Holyrood`);
+  if (!isAlliance && counts.senedd) parts.push(`${counts.senedd} Senedd`);
+  if (!isAlliance && counts.stormont) parts.push(`${counts.stormont} Stormont`);
+  if (counts.euro) parts.push(`${counts.euro} European Parliament`);
+  return parts;
+}
+
+function buildPartyMetaDescription(party, chamberParts) {
+  const lede = partyLedeText(party.description);
+  if (!chamberParts || !chamberParts.length) {
+    return truncateMetaDescription(
+      party.description ||
+        `Manifestos and election history for ${party.shortName || party.name}.`,
+      155,
+    );
+  }
+  return truncateMetaDescription(
+    `${lede} Browse manifestos and results across ${chamberParts.join(', ')}.`,
+    155,
+  );
+}
+
+function nationMetaDescription(nationId, nationRec) {
+  if (typeof nationRec === 'object' && nationRec && nationRec.description) {
+    return truncateMetaDescription(nationRec.description, 155);
+  }
+  const nationName = typeof nationRec === 'string' ? nationRec : nationRec?.name;
+  if (nationId === 'europe') {
+    return 'Pan-European political families that contested European Parliament elections in the United Kingdom from 1979 to 2019.';
+  }
+  return `UK general election results, seat history, and manifestos for ${nationName}.`;
+}
+
+function nationDisplayName(nationRec) {
+  if (typeof nationRec === 'string') return nationRec;
+  return nationRec?.name || '';
+}
+
+function ogImagePathForRoute(path) {
+  if (!path || path === '/') return '/og-image.jpg';
+  const parts = path.split('/').filter(Boolean);
+  if (parts[0] === 'party' && parts[1]) return `/og/party/${parts[1]}.jpg`;
+  if (parts[0] === 'election' && parts[1]) return `/og/election/${parts[1]}.jpg`;
+  if (parts[0] === 'manifesto' && parts[1] && parts[2]) {
+    return `/og/manifesto/${parts[1]}/${parts[2]}.jpg`;
+  }
+  if (parts[0] === 'nation' && parts[1]) return `/og/nation/${parts[1]}.jpg`;
+  if (parts[0] === 'devolved' && parts[1]) {
+    if (parts[2] && parts[2] !== 'other-parties') {
+      return `/og/devolved/${parts[1]}/${parts[2]}.jpg`;
+    }
+    if (['holyrood', 'senedd', 'stormont', 'euro', 'london'].includes(parts[1])) {
+      return `/og/devolved/${parts[1]}.jpg`;
+    }
+  }
+  const hubSlugs = {
+    '/about': 'about',
+    '/elections': 'elections',
+    '/parties': 'parties',
+    '/devolved': 'devolved',
+    '/nations': 'nations',
+    '/others': 'others',
+  };
+  if (hubSlugs[path]) return `/og/hub/${hubSlugs[path]}.jpg`;
+  return '/og-image.jpg';
+}
+
 // Static (non-parameterised) routes the SPA renders, with bespoke metadata.
 const STATIC_ROUTES = {
   '/': { title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
@@ -38,9 +124,10 @@ const STATIC_ROUTES = {
       'results, seat maps, and the party manifestos published for each.',
   },
   '/devolved': {
-    title: `Devolved Parliament & Assembly Elections${TITLE_SUFFIX}`,
-    description: 'Manifestos and results from elections to the Scottish ' +
-      'Parliament, Senedd Cymru, and Northern Ireland Assembly.',
+    title: `Beyond Westminster${TITLE_SUFFIX}`,
+    description: 'Devolved legislatures of the United Kingdom — Scottish ' +
+      'Parliament, Welsh Parliament, Northern Ireland Assembly, and London ' +
+      'Mayor & Assembly.',
   },
   '/parties': {
     title: `Political Parties${TITLE_SUFFIX}`,
@@ -48,9 +135,9 @@ const STATIC_ROUTES = {
       'election manifestos in The British Manifesto Archive.',
   },
   '/nations': {
-    title: `Nations of the UK${TITLE_SUFFIX}`,
-    description: 'Explore UK general election manifestos and results by ' +
-      'nation: England, Scotland, Wales, and Northern Ireland.',
+    title: `The Four Nations & Europe${TITLE_SUFFIX}`,
+    description: 'Browse England, Wales, Scotland, Northern Ireland, and ' +
+      'European political families — Westminster results and devolved government.',
   },
   '/others': {
     title: `Other Parties${TITLE_SUFFIX}`,
@@ -227,7 +314,7 @@ function devolvedElection(seo, portal, sub, portalName, path, yearLabel) {
       ? [itemList(`${yearLabel} ${portalName} manifestos`, items)]
       : []),
   ];
-  return { valid: true, meta: { title, description }, graph };
+  return { valid: true, meta: { title, description }, graph, image: `/og/devolved/${portal}/${sub}.jpg` };
 }
 
 // Manifestos published by a party, across general elections.
@@ -290,7 +377,7 @@ function classify(path, seo) {
       graph = [breadcrumb([{ name: 'Home', path: '/' }, { name: meta.title.replace(TITLE_SUFFIX, '') }])];
     }
 
-    return { valid: true, meta, graph };
+    return { valid: true, meta, graph, image: ogImagePathForRoute(path) };
   }
 
   const parts = path.split('/').filter(Boolean);
@@ -431,10 +518,9 @@ function classify(path, seo) {
   if (parts[0] === 'party' && parts.length === 2) {
     const party = seo.parties[parts[1]];
     if (!party) return { valid: false };
-    const title = `${party.name} — Manifesto Archive${TITLE_SUFFIX}`;
-    const description =
-      `Browse the historical UK general election manifestos and campaign ` +
-      `record of ${party.name}.`;
+    const chamberParts = chamberPartsFromCounts(party.chamberCounts);
+    const title = `${party.shortName || party.name}${TITLE_SUFFIX}`;
+    const description = buildPartyMetaDescription(party, chamberParts);
     const org = {
       '@type': 'Organization',
       '@id': `${canonicalFor(path)}#organization`,
@@ -466,22 +552,25 @@ function classify(path, seo) {
 
   // /nation/:id
   if (parts[0] === 'nation' && parts.length === 2) {
-    const name = seo.nations && seo.nations[parts[1]];
+    const nationRec = seo.nations && seo.nations[parts[1]];
     // Back-compat: if seo.json predates the nations list, accept slug-shaped
     // IDs (canonical fix only) rather than risk 404ing a real page.
     if (!seo.nations) return { valid: /^[a-z][a-z0-9-]*$/.test(parts[1]), meta: null };
-    if (!name) return { valid: false };
+    if (!nationRec) return { valid: false };
+    const name = nationDisplayName(nationRec);
+    const description = nationMetaDescription(parts[1], nationRec);
     return {
       valid: true,
       meta: {
         title: `${name} — UK General Election Results${TITLE_SUFFIX}`,
-        description: `UK general election results, seat history, and manifestos for ${name}.`,
+        description,
       },
       graph: [breadcrumb([
         { name: 'Home', path: '/' },
         { name: 'Nations of the UK', path: '/nations' },
         { name },
       ])],
+      image: `/og/nation/${parts[1]}.jpg`,
     };
   }
 
@@ -530,6 +619,29 @@ function classify(path, seo) {
       return devolvedElection(
         seo, portal, sub, portalName, path, yearMatch ? yearMatch[1] : sub);
     }
+    if (portal === 'euro') {
+      if (sub === 'other-parties') {
+        return {
+          valid: true,
+          meta: {
+            title: `Other EP Parties${TITLE_SUFFIX}`,
+            description:
+              'Smaller, regional, and specialist parties that have contested ' +
+              'European Parliament elections in the UK.',
+          },
+          graph: [breadcrumb([
+            { name: 'Home', path: '/' },
+            { name: 'Devolved Elections', path: '/devolved' },
+            { name: 'European Parliament', path: '/devolved/euro' },
+            { name: 'Other EP parties' },
+          ])],
+        };
+      }
+      const portalName = seo.devolved && seo.devolved[portal];
+      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
+      if (!/^\d{4}$/.test(sub)) return { valid: false };
+      return devolvedElection(seo, portal, sub, portalName, path, sub);
+    }
     return { valid: false };
   }
 
@@ -561,6 +673,7 @@ function classify(path, seo) {
         description: `Election results and party manifestos for the ${name}.`,
       },
       graph,
+      image: `/og/devolved/${parts[1]}.jpg`,
     };
   }
 
@@ -572,6 +685,9 @@ function buildRewriter({ meta, graph, canonical, image, noindex }) {
 
   if (canonical) {
     rewriter.on('link[id="canonical-link"]', {
+      element(el) { el.setAttribute('href', canonical); },
+    });
+    rewriter.on('link[id="hreflang-link"]', {
       element(el) { el.setAttribute('href', canonical); },
     });
     rewriter.on('meta[id="og-url"]', {

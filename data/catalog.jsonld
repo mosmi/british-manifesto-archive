@@ -4799,7 +4799,79 @@
       "hasPart": [
         {
           "@type": "DigitalDocument",
-          "name": "PES Manifesto 1999",
+          "name": "ELDR European Manifesto 1979",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1979/eldr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "ELDR European Manifesto 1984",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1984/eldr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "ELDR European Manifesto 1989",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1989/eldr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 1989",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1989/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Green Group European Manifesto 1989",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1989/greengroup/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "PES European Manifesto 1989",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1989/pes/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "ELDR European Manifesto 1994",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1994/eldr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 1994",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1994/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Green Group European Manifesto 1994",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1994/greengroup/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "ALDE European Manifesto 1999",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1999/alde/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 1999",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1999/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Green Party European Manifesto 1999",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1999/eurengreens/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "PES European Manifesto 1999",
           "url": "https://www.manifestos.org.uk/manifestos/euro/1999/pes/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
@@ -4813,6 +4885,12 @@
           "@type": "DigitalDocument",
           "name": "Labour European Manifesto 2004",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2004/labour/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Liberal Democrats European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4835,8 +4913,14 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "Sinn Féin European Manifesto 2004",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sinnfein/manifesto.pdf",
+          "name": "Scottish Socialist Party European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/ssp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Plaid Cymru European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/plaid/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4847,20 +4931,26 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "Sinn Féin European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sinnfein/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "UUP European Manifesto 2004",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2004/uup/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "SDLP European Manifesto 2004 (Part 1)",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sdlp/manifesto-pt1.pdf",
+          "name": "SDLP European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sdlp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "SDLP European Manifesto 2004 (Part 2)",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sdlp/manifesto-pt2.pdf",
+          "name": "John Gilliland European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/gilliland/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4871,20 +4961,56 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "Scottish Socialist Party European Manifesto 2004",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/ssp/manifesto.pdf",
-          "encodingFormat": "application/pdf"
-        },
-        {
-          "@type": "DigitalDocument",
           "name": "Socialist Environmental Alliance European Manifesto 2004",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2004/sea/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
+          "name": "ALDE European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/alde/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Free Alliance European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/eurefa/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Green Party European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/eurengreens/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GUE-NGL European Left European Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2004/eurleft/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "PES European Manifesto 2004",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2004/pes/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Conservative European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/conservative/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Labour European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4901,6 +5027,30 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "BNP European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/bnp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "UKIP European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/ukip/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "English Democrats European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/englishdemocrats/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Christian Party / CPA European Election Leaflet 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/christian/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "SNP European Manifesto 2009",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2009/snp/manifesto.pdf",
           "encodingFormat": "application/pdf"
@@ -4913,8 +5063,26 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "Welsh Liberal Democrats European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/welshlibdem/manifesto.pdf",
+          "name": "Scottish Greens European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/scottishgrn/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Scottish Liberal Democrats European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/scottishlibdem/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Plaid Cymru European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/plaid/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "DUP European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/dup/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4937,14 +5105,14 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "Green Party Northern Ireland European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/gpni/manifesto.pdf",
+          "name": "Alliance Party European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/alliance/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "Scottish Greens European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/scottishgrn/manifesto.pdf",
+          "name": "Green Party Northern Ireland European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/gpni/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4955,26 +5123,44 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "BNP European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/bnp/manifesto.pdf",
+          "name": "ECR European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/ecr/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "BNP England European Election Leaflet 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/bnp/leaflet.pdf",
+          "name": "ELDR European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/eldr/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "English Democrats European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/englishdemocrats/manifesto.pdf",
+          "name": "EPP European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/epp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "Christian Party / CPA European Election Leaflet 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/christian/leaflet.pdf",
+          "name": "Greens-EFA European Free Alliance European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/eurefa/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Green Party European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/eurengreens/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GUE-NGL European Left European Platform 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/eurleft/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Independence & Democracy European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/inddem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -4985,14 +5171,8 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "PES European Election Flyer 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/pes/flyer.pdf",
-          "encodingFormat": "application/pdf"
-        },
-        {
-          "@type": "DigitalDocument",
-          "name": "ELDR European Manifesto 2009",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/eldr/manifesto.pdf",
+          "name": "Union for Europe of the Nations European Manifesto 2009",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2009/uen/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -5021,6 +5201,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "Liberal Democrats European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/libdem/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "Plaid Cymru European Manifesto 2014",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2014/plaid/manifesto.pdf",
           "encodingFormat": "application/pdf"
@@ -5035,6 +5221,12 @@
           "@type": "DigitalDocument",
           "name": "Scottish Conservatives European Manifesto 2014",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2014/scottishcon/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "SNP European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/snp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -5057,6 +5249,36 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "Alliance Party European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/alliance/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "DUP European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/dup/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Sinn Féin European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/sinnfein/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Green Party NI European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/gpni/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Northern Ireland Conservatives European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/nicon/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "Welsh Conservatives European Manifesto 2014",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2014/welshcon/manifesto.pdf",
           "encodingFormat": "application/pdf"
@@ -5069,8 +5291,56 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "ALDE European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/alde/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "European Alliance for Freedom European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/eaf/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "ECR European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/ecr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Free Alliance European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/eurefa/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Green Party European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/eurengreens/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GUE-NGL European Left European Manifesto 2014",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2014/eurleft/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "PES European Manifesto 2014",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2014/pes/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Brexit Party European Election Pledge Card 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/brexit/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -5099,14 +5369,14 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "Labour European Manifesto 2019",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/labour/manifesto.pdf",
+          "name": "Conservative Party European Election Communication 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "Labour European Manifesto 2019 (Transforming Britain and Europe)",
-          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/labour/manifesto-transforming.pdf",
+          "name": "Labour European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -5141,6 +5411,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "DUP European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/dup/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "English Democrats European Manifesto 2019",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2019/englishdemocrats/manifesto.pdf",
           "encodingFormat": "application/pdf"
@@ -5165,8 +5441,68 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "ALDE European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/alde/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Democracy in Europe Movement (DiEM25) European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/diem25/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "European Christian Political Movement European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/ecpm/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "European Conservatives and Reformists Party European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/ecrp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "EPP European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/epp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Free Alliance European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/eurefa/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Greens-EFA European Green Party European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/eurengreens/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GUE-NGL European Left European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/eurleft/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "European Pirates Party European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/eurpirates/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "PES European Manifesto 2019",
           "url": "https://www.manifestos.org.uk/manifestos/euro/2019/pes/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Volt European Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/2019/volt/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -5789,14 +6125,50 @@
         },
         {
           "@type": "DigitalDocument",
-          "name": "London Real Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/londonreal/manifesto.pdf",
+          "name": "Manifesto for London",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/campbell/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Making London Work for You",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/sdp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "A Vision for London",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/awp/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Make London Strong",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/michli/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Vision Statement and Policy Ideas",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/ghulati/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Make Earth Great Again",
           "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/binface/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Taking Our Country Back",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/britainfirst/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "London Real Party Manifesto",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/londonreal/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

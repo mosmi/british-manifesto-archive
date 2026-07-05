@@ -135,7 +135,7 @@ async function renderNIElection(app, id) {
 
   setPageMeta({
     title: `${election.displayYear} Northern Ireland Assembly election`,
-    description: `Results and manifestos from the ${election.displayYear} Stormont election.`,
+    description: devolvedElectionDescription('stormont', election.displayYear, DEVOLVED_PORTALS?.stormont),
     path: `/devolved/stormont/${id}`,
   });
 
@@ -328,8 +328,8 @@ async function renderNIElection(app, id) {
 async function renderNIPortal(app) {
   const portal = (typeof DEVOLVED_PORTALS !== 'undefined') ? DEVOLVED_PORTALS.stormont : null;
   setPageMeta({
-    title: 'Northern Ireland Assembly',
-    description: 'Northern Ireland Assembly (Stormont) elections from 1998 to 2022 — results, seat breakdowns, and party manifestos.',
+    title: `${portal?.label || 'Northern Ireland Assembly'} Elections`,
+    description: `Election results and party manifestos for the ${portal?.label || 'Northern Ireland Assembly'}.`,
     path: '/devolved/stormont',
   });
 

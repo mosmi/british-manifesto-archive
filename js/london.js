@@ -226,8 +226,8 @@ async function renderLondonElection(app, id) {
   const winnerName = election.mayorWinnerName || election.winnerName || '';
 
   setPageMeta({
-    title: `${election.displayYear} London ${election.body === 'gla' ? 'mayoral & Assembly' : 'election'}`,
-    description: `Results and manifestos from the ${election.displayYear} ${bodyLabel} election.`,
+    title: `${election.displayYear} ${DEVOLVED_PORTALS?.london?.label || 'London'} Election`,
+    description: devolvedElectionDescription('london', election.displayYear, DEVOLVED_PORTALS?.london),
     path: `/devolved/london/${id}`,
   });
 
@@ -327,8 +327,8 @@ async function renderLondonElection(app, id) {
 async function renderLondonPortal(app) {
   const portal = (typeof DEVOLVED_PORTALS !== 'undefined') ? DEVOLVED_PORTALS.london : null;
   setPageMeta({
-    title: 'London Mayor & Assembly',
-    description: 'Elections for the London County Council (1946–61), Greater London Council (1964–85), and the Greater London Authority — Mayor of London and London Assembly (2000–).',
+    title: `${portal?.label || 'London Mayor & Assembly'} Elections`,
+    description: `Election results and party manifestos for the ${portal?.label || 'London Mayor & Assembly'}.`,
     path: '/devolved/london',
   });
 

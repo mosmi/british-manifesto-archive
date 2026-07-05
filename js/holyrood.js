@@ -186,11 +186,7 @@ async function renderHolyroodElection(app, id) {
   const dim = winner.dim || 'var(--gold-dim)';
   const fm = election.firstMinister || '';
 
-  setPageMeta({
-    title: `${election.displayYear} Scottish Parliament election`,
-    description: `Results and manifestos from the ${election.displayYear} Holyrood election.`,
-    path: `/devolved/holyrood/${id}`,
-  });
+  setPageMeta({ title: `${election.displayYear} Scottish Parliament election`, description: devolvedElectionDescription('holyrood', election.displayYear, DEVOLVED_PORTALS?.holyrood), path: `/devolved/holyrood/${id}` });
 
   const sorted = [...index].sort((a, b) => a.year - b.year);
   const pos = sorted.findIndex(e => e.id === id);
@@ -407,8 +403,8 @@ async function renderHolyroodElection(app, id) {
 async function renderHolyroodPortal(app) {
   const portal = (typeof DEVOLVED_PORTALS !== 'undefined') ? DEVOLVED_PORTALS.holyrood : null;
   setPageMeta({
-    title: 'Scottish Parliament',
-    description: 'Scottish Parliament (Holyrood) elections from 1999 to 2026 — results, seat breakdowns, and party manifestos.',
+    title: `${portal?.label || 'Scottish Parliament'} Elections`,
+    description: `Election results and party manifestos for the ${portal?.label || 'Scottish Parliament'}.`,
     path: '/devolved/holyrood',
   });
 
