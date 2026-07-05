@@ -1,0 +1,41 @@
+title: "Scottish Liberal Democrat General Election Manifesto 2017"
+header_cut: 42
+footer_cut: 541
+skip_pages:
+  - 0    # cover (8 words, sparse)
+  - 4    # divider (8 words, sparse)
+  - 15   # divider (6 words, sparse)
+  - 21   # sparse section break (10 words, two-col)
+  - 31   # divider (7 words, sparse)
+  - 37   # divider (7 words, sparse)
+  - 44   # divider (9 words, sparse)
+  - 52   # divider (7 words, sparse)
+  - 59   # divider (7 words, sparse)
+
+pages:
+  0:
+    mode: skip
+  4:
+    mode: skip
+  8:
+    mode: full-width   # three-col summary box, 10 words — extract as single block
+  14:
+    mode: full-width   # low-word single-col (34 words) — chapter intro
+  15:
+    mode: skip
+  20:
+    mode: full-width   # low-word single-col (80 words) — chapter intro/divider
+  21:
+    mode: skip
+  30:
+    mode: full-width   # three-col (24 words) — summary box
+  31:
+    mode: skip
+  37:
+    mode: skip
+  44:
+    mode: skip
+  52:
+    mode: skip
+  59:
+    mode: skip

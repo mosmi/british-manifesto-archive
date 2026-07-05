@@ -1,0 +1,36 @@
+# Python dependencies for the manifesto transcription toolkit
+#
+# ── Quick start ───────────────────────────────────────────────────────────────
+#
+# OPTION A — Use the pre-installed packages in lib/ (Claude/sandbox sessions):
+#   import sys; sys.path.insert(0, 'path/to/transcription-toolkit/lib')
+#   import pdfplumber   # works without any pip install
+#
+# OPTION B — Install system-wide (local development):
+#   pip install -r requirements.txt
+#   # or, if using a system Python without a virtualenv:
+#   pip install -r requirements.txt --break-system-packages
+#
+# ── To add more tools to lib/ in a future session ────────────────────────────
+#   pip install PACKAGE --target transcription-toolkit/lib --break-system-packages
+
+# Core PDF extraction library
+# pdfplumber builds on pdfminer.six and adds table/word/char extraction
+pdfplumber>=0.10.0
+
+# pdfplumber's dependencies (installed automatically, listed here for reference):
+#   pdfminer.six   — low-level PDF text/char extraction
+#   Pillow         — image handling (needed for some PDF features)
+#   Wand           — optional, for PDF rendering to image (not required here)
+
+# ── System-level dependency (not a Python package) ──────────────────────────
+#
+# poppler-utils is needed for the `pdftotext` command used in word-count verification.
+# It is NOT installed via pip — install it via your system package manager:
+#
+#   macOS:   brew install poppler
+#   Ubuntu:  sudo apt install poppler-utils
+#   Fedora:  sudo dnf install poppler-utils
+#
+# If poppler-utils is not installed, the extraction script still works fully —
+# it just skips the PDF word-count verification step.

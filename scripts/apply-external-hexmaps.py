@@ -52,11 +52,13 @@ ELECTION_TO_HEX = {
     "2024": "2024",
 }
 
-# Optional import of battle-tested matchers from the hexmaps project.
+# Optional import of battle-tested matchers from the vendored hexmaps toolkit
+# (tools/hexmaps/, moved in task-006). The legacy ~/Claude path is kept last as
+# a fallback for any environment that hasn't picked up the move yet.
 _COLOUR_MOD = None
 for candidate in [
+    ROOT / "tools" / "hexmaps" / "scripts" / "colour.py",
     Path("/Users/mosmi/Claude/claude-code/hexmaps/scripts/colour.py"),
-    ROOT.parent / "Claude" / "claude-code" / "hexmaps" / "scripts" / "colour.py",
 ]:
     if candidate.exists():
         spec = importlib.util.spec_from_file_location("hex_colour", candidate)

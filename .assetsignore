@@ -6,6 +6,7 @@
 
 # Dev tooling — not part of the public site
 scripts/
+tools/
 .venv*/
 __pycache__/
 *.py[cod]
