@@ -607,110 +607,82 @@ const PARTIES = {
     nation: 'england',
     description: 'The Animal Welfare Party (contesting as Animal Politics EU in 2019) is a minor party advocating for animal rights, health, and environmental protection.',
   },
-  pes: {
-    id: 'pes', name: 'Party of European Socialists', shortName: 'PES',
+  sand: {
+    id: 'sand', name: 'Progressive Alliance of Socialists and Democrats', shortName: 'S&D',
     color: '#E4003B', dim: 'rgba(228,0,59,0.14)',
-    founded: 1992, spectrum: 'Centre-left / Social Democratic', isPrimary: false,
-    nation: 'england',
-    description: 'The Party of European Socialists (PES) is a European political party representing social democratic and socialist parties across Europe, including the UK Labour Party.',
+    founded: 2009, spectrum: 'Centre-left / Social Democratic', isPrimary: false,
+    nation: 'europe',
+    description: 'The Progressive Alliance of Socialists and Democrats (S&D) is the social democratic group in the European Parliament. Its lineage runs from the Socialist Group (1979) through the Party of European Socialists (PES) to S&D from 2009. UK Labour sat in this family throughout direct elections.',
   },
-  eldr: {
-    id: 'eldr', name: 'European Liberal Democrat and Reform Party', shortName: 'ELDR',
-    color: '#FAA61A', dim: 'rgba(250,166,26,0.14)',
-    founded: 1976, spectrum: 'Centre / Liberal', isPrimary: false,
-    nation: 'england',
-    description: 'The ELDR party (now ALDE) is a European political party representing liberal and centrist parties across Europe, including the UK Liberal Democrats.',
-  },
-  alde: {
-    id: 'alde', name: 'Alliance of Liberals and Democrats for Europe', shortName: 'ALDE',
+  renew: {
+    id: 'renew', name: 'Renew Europe', shortName: 'Renew Europe',
     color: '#FFD700', dim: 'rgba(255,215,0,0.14)',
-    founded: 2004, spectrum: 'Centre / Liberal', isPrimary: false,
-    nation: 'england',
-    description: 'ALDE (Alliance of Liberals and Democrats for Europe) is a European political party representing liberal and centrist parties, succeeding ELDR from 2004.',
+    founded: 2019, spectrum: 'Centre / Liberal', isPrimary: false,
+    nation: 'europe',
+    description: 'Renew Europe is the liberal and centrist group in the European Parliament from 2019. Its lineage runs from the Liberal and Democratic Group through LDR, ELDR, and ALDE. UK Liberal Democrats sat in this family throughout direct elections.',
   },
   epp: {
-    id: 'epp', name: "European People's Party", shortName: 'EPP',
+    id: 'epp', name: "European People's Party Group", shortName: 'EPP',
     color: '#003399', dim: 'rgba(0,51,153,0.14)',
     founded: 1976, spectrum: 'Centre-right / Christian Democratic', isPrimary: false,
-    nation: 'england',
-    description: "The European People's Party (EPP) is a European political party of centre-right and Christian democratic parties, including the UK Conservatives.",
+    nation: 'europe',
+    description: "The European People's Party (EPP) group brings together centre-right and Christian democratic parties. From 1999 to 2009 many UK Conservatives sat in the EPP-ED configuration before the conservative split that created ECR.",
+  },
+  greensefa: {
+    id: 'greensefa', name: 'Greens/European Free Alliance Group', shortName: 'Greens/EFA',
+    color: '#009639', dim: 'rgba(0,150,57,0.14)',
+    founded: 1999, spectrum: 'Left / Green / Regionalist', isPrimary: false,
+    nation: 'europe',
+    description: 'Greens/EFA combines green and regionalist parties in the European Parliament from 1999, succeeding earlier Green Group and Rainbow/EFA arrangements. UK Green, SNP, Plaid Cymru, and related parties sat in this family.',
+  },
+  guengl: {
+    id: 'guengl', name: 'The Left group in the European Parliament', shortName: 'GUE/NGL',
+    color: '#E30613', dim: 'rgba(227,6,19,0.14)',
+    founded: 1995, spectrum: 'Left', isPrimary: false,
+    nation: 'europe',
+    description: 'GUE/NGL (The Left) is the radical-left group in the European Parliament, formed from communist and socialist traditions including the Communist and Allies Group, European United Left, and Nordic Green Left.',
   },
   ecr: {
     id: 'ecr', name: 'European Conservatives and Reformists Group', shortName: 'ECR',
     color: '#1B3A6B', dim: 'rgba(27,58,107,0.14)',
     founded: 2009, spectrum: 'Right / Eurosceptic', isPrimary: false,
-    nation: 'england',
-    description: 'The European Conservatives and Reformists (ECR) group in the European Parliament brings together Eurosceptic conservative parties.',
+    nation: 'europe',
+    description: 'The European Conservatives and Reformists (ECR) group was formed in 2009 when British and Czech conservatives broke from the EPP-ED line. It continues the British/Danish conservative Eurosceptic tradition in the Parliament.',
   },
-  greengroup: {
-    id: 'greengroup', name: 'Green Group in the European Parliament', shortName: 'Green Group',
-    color: '#009639', dim: 'rgba(0,150,57,0.14)',
-    founded: 1984, spectrum: 'Left / Green', isPrimary: false,
-    nation: 'england',
-    description: 'The Green Group in the European Parliament was the forerunner of the Greens/EFA group, representing green parties across Europe.',
-  },
-  eurengreens: {
-    id: 'eurengreens', name: 'European Green Party', shortName: 'European Greens',
-    color: '#009639', dim: 'rgba(0,150,57,0.14)',
-    founded: 2004, spectrum: 'Left / Green', isPrimary: false,
-    nation: 'england',
-    description: 'The European Green Party is the federation of green parties in Europe, a component of the Greens/EFA group in the European Parliament.',
-  },
-  eurefa: {
-    id: 'eurefa', name: 'European Free Alliance', shortName: 'European Free Alliance',
-    color: '#00A651', dim: 'rgba(0,166,81,0.14)',
-    founded: 1981, spectrum: 'Regionalist / Green', isPrimary: false,
-    nation: 'england',
-    description: 'The European Free Alliance (EFA) represents regionalist, autonomist, and stateless nations parties, forming the Greens/EFA group with the European Green Party.',
-  },
-  eurleft: {
-    id: 'eurleft', name: 'Party of the European Left', shortName: 'European Left',
-    color: '#E30613', dim: 'rgba(227,6,19,0.14)',
-    founded: 2004, spectrum: 'Left', isPrimary: false,
-    nation: 'england',
-    description: 'The Party of the European Left (PEL) is associated with the GUE/NGL group in the European Parliament, representing democratic socialist and communist parties.',
+  identity: {
+    id: 'identity', name: 'Identity and Democracy', shortName: 'ID',
+    color: '#003366', dim: 'rgba(0,51,102,0.14)',
+    founded: 2019, spectrum: 'Right / Nationalist', isPrimary: false,
+    nation: 'europe',
+    description: 'Identity and Democracy (ID) is the far-right nationalist group in the European Parliament from 2019, succeeding the Europe of Nations and Freedom (ENF) line. Earlier manifestations include the European Right and short-lived alliances such as the European Alliance for Freedom.',
   },
   inddem: {
-    id: 'inddem', name: 'Independence/Democracy Group', shortName: 'Ind/Dem',
+    id: 'inddem', name: 'Hard Eurosceptic / Direct-Democracy Groups', shortName: 'Eurosceptic groups',
     color: '#70147A', dim: 'rgba(112,20,122,0.14)',
-    founded: 2004, spectrum: 'Right / Eurosceptic', isPrimary: false,
-    nation: 'england',
-    description: 'The Independence/Democracy group in the European Parliament brought together Eurosceptic parties including UKIP before its dissolution in 2009.',
+    founded: 1994, spectrum: 'Right / Eurosceptic', isPrimary: false,
+    nation: 'europe',
+    description: 'Hard Eurosceptic groups in the European Parliament evolved through Europe of Nations, EDD, Independence/Democracy, EFD, and EFDD. UKIP and allies sat in this line before it failed to re-form in 2019.',
   },
   uen: {
-    id: 'uen', name: 'Union for Europe of the Nations', shortName: 'UEN',
+    id: 'uen', name: 'Gaullist / National-Conservative Groups', shortName: 'UEN line',
     color: '#0054A6', dim: 'rgba(0,84,166,0.14)',
-    founded: 1999, spectrum: 'Right / Nationalist', isPrimary: false,
-    nation: 'england',
-    description: 'The Union for Europe of the Nations (UEN) was a nationalist and conservative group in the European Parliament, dissolved in 2009.',
-  },
-  eaf: {
-    id: 'eaf', name: 'European Alliance for Freedom', shortName: 'EAF',
-    color: '#003366', dim: 'rgba(0,51,102,0.14)',
-    founded: 2013, spectrum: 'Right / Populist', isPrimary: false,
-    nation: 'england',
-    description: 'The European Alliance for Freedom was a short-lived Eurosceptic political alliance ahead of the 2014 European Parliament election.',
+    founded: 1979, spectrum: 'Right / Nationalist', isPrimary: false,
+    nation: 'europe',
+    description: 'National-conservative groups in the European Parliament ran from European Progressive Democrats and European Democratic Alliance through Union for Europe and Union for Europe of the Nations (UEN), dissolved in 2009.',
   },
   diem25: {
     id: 'diem25', name: 'Democracy in Europe Movement 2025', shortName: 'DiEM25',
     color: '#E30613', dim: 'rgba(227,6,19,0.14)',
     founded: 2016, spectrum: 'Left / Pro-European', isPrimary: false,
-    nation: 'england',
+    nation: 'europe',
     description: 'DiEM25 (Democracy in Europe Movement 2025) is a pan-European political movement founded by Yanis Varoufakis, advocating democratic reform of the EU.',
   },
   ecpm: {
     id: 'ecpm', name: 'European Christian Political Movement', shortName: 'ECPM',
     color: '#0055A5', dim: 'rgba(0,85,165,0.14)',
     founded: 2002, spectrum: 'Centre-right / Christian', isPrimary: false,
-    nation: 'england',
+    nation: 'europe',
     description: 'The European Christian Political Movement (ECPM) is a European political party of Christian democratic and socially conservative parties.',
-  },
-  ecrp: {
-    id: 'ecrp', name: 'European Conservatives and Reformists Party', shortName: 'ECR Party',
-    color: '#1B3A6B', dim: 'rgba(27,58,107,0.14)',
-    founded: 2009, spectrum: 'Right / Eurosceptic', isPrimary: false,
-    nation: 'england',
-    description: 'The European Conservatives and Reformists Party is the pan-European party associated with the ECR group in the European Parliament.',
   },
   eurpirates: {
     id: 'eurpirates', name: 'European Pirate Party', shortName: 'European Pirates',
@@ -723,7 +695,7 @@ const PARTIES = {
     id: 'volt', name: 'Volt Europa', shortName: 'Volt',
     color: '#502BD5', dim: 'rgba(80,43,213,0.14)',
     founded: 2017, spectrum: 'Centre / Pro-European', isPrimary: false,
-    nation: 'england',
+    nation: 'europe',
     description: 'Volt Europa is a pan-European political movement advocating federal reform of the European Union. It contested the 2019 European Parliament election.',
   },
   englishdemocrats: {
@@ -981,6 +953,23 @@ const NATIONS = {
       { year: '2024',     uup: 1, sdlp: 2, dup: 5, sf: 7, other: 3, total: 18 },
     ],
     source: 'HC Library Research Briefing CBP-7529, UK Election Statistics 1918–2023',
+  },
+  europe: {
+    id: 'europe',
+    name: 'Europe',
+    constituencies: 73,
+    electoralSystem: 'Regional list PR (GB) & STV (NI)',
+    devolvedBody: 'European Parliament (UK seats)',
+    devolvedYear: 1979,
+    description: 'Pan-European political families and alliances that contested European Parliament elections in the United Kingdom from 1979 to 2019. UK parties sat in transnational groups — Socialists/PES/S&D, EPP-ED, ELDR/ALDE/Renew, Greens/EFA, and others — rather than as standalone national blocs. The UK held nine direct elections before leaving the EU; the final allocation in 2019 was 73 MEPs.',
+    keyFacts: [
+      'Nine direct European elections in the UK: 1979, 1984, 1989, 1994, 1999, 2004, 2009, 2014, and 2019',
+      '73 UK MEPs at the final 2019 election (70 in Great Britain, 3 in Northern Ireland)',
+      'Great Britain used FPTP (1979–1994) then regional list PR (1999–2019); Northern Ireland always used STV',
+      'Labour MEPs sat in the Socialist/PES/S&D family throughout; Conservatives moved from EPP-ED to ECR in 2009',
+      'Alliance manifestos on this site use 2019 group names; election pages show period-appropriate labels',
+    ],
+    source: 'European Parliament, Review of European and National Elections Results 2019; results.elections.europa.eu constitutive session data',
   },
 };
 
@@ -1798,6 +1787,13 @@ const NAV_PARTIES = {
     label: 'Northern Ireland',
     parties: ['sinnfein', 'dup', 'alliance', 'uup', 'sdlp', 'tuv', 'pbp'],
   },
+  europe: {
+    label: 'Europe',
+    parties: [
+      'sand', 'epp', 'renew', 'greensefa', 'guengl', 'ecr', 'uen', 'inddem', 'identity',
+      'diem25', 'volt', 'ecpm',
+    ],
+  },
 };
 
 const OTHERS_PARTIES = [
@@ -1829,10 +1825,36 @@ const STORMONT_OTHER_PARTIES = [
 ];
 
 const EURO_OTHER_PARTIES = [
-  'changeuk', 'animalpolitics', 'pes', 'eldr', 'alde', 'epp', 'ecr', 'greengroup',
-  'eurengreens', 'eurefa', 'eurleft', 'inddem', 'uen', 'eaf', 'diem25', 'ecpm',
-  'ecrp', 'eurpirates', 'volt', 'englishdemocrats', 'christian', 'tuv', 'ssp', 'bnp', 'sea'
+  'changeuk', 'animalpolitics', 'englishdemocrats', 'christian', 'tuv', 'ssp', 'bnp', 'sea',
+  'eurpirates',
 ];
+
+const EURO_ALLIANCE_PARTIES = [
+  'sand', 'epp', 'renew', 'greensefa', 'guengl', 'ecr', 'uen', 'inddem', 'identity',
+  'diem25', 'volt', 'ecpm',
+];
+
+/** UK MEP seats by alliance family at EP constitutive session, 1979–2019. Source: EP Review 2019 / results.elections.europa.eu */
+const EURO_ALLIANCE_UK_SEATS = {
+  1979: { sand: 18, epp: 61, greensefa: 1, uen: 1 },
+  1984: { sand: 33, epp: 46, greensefa: 1, uen: 1 },
+  1989: { sand: 46, epp: 33, greensefa: 1, uen: 1 },
+  1994: { sand: 63, epp: 19, renew: 2, greensefa: 2, uen: 1 },
+  1999: { sand: 30, epp: 37, renew: 10, greensefa: 6, inddem: 3, uen: 1 },
+  2004: { sand: 19, epp: 28, renew: 12, greensefa: 5, guengl: 1, inddem: 12, uen: 1 },
+  2009: { sand: 13, renew: 11, greensefa: 5, ecr: 25, guengl: 1, inddem: 13, identity: 2, uen: 1, other: 1 },
+  2014: { sand: 20, ecr: 20, renew: 1, greensefa: 6, guengl: 1, inddem: 24, other: 1 },
+  2019: { sand: 10, renew: 17, greensefa: 11, ecr: 4, guengl: 1, inddem: 29, uen: 1 },
+};
+
+function isEuroAllianceParty(partyId) {
+  return EURO_ALLIANCE_PARTIES.includes(resolvePartyId(partyId));
+}
+
+function getEuroAllianceUkSeats(allianceId, year) {
+  const canonical = resolvePartyId(allianceId);
+  return EURO_ALLIANCE_UK_SEATS[year]?.[canonical] ?? 0;
+}
 
 const DEVOLVED_PORTALS = {
   holyrood: {
@@ -1892,17 +1914,44 @@ const DEVOLVED_PORTALS = {
   },
 };
 
+/** Manifesto/party slug → canonical party page (2019 alliance names). */
+const PARTY_ALIASES = {
+  pes: 'sand',
+  eldr: 'renew',
+  alde: 'renew',
+  greengroup: 'greensefa',
+  eurengreens: 'greensefa',
+  eurefa: 'greensefa',
+  eurleft: 'guengl',
+  ecrp: 'ecr',
+  eaf: 'identity',
+};
+
+function resolvePartyId(id) {
+  return PARTY_ALIASES[id] || id;
+}
+
+function euroManifestoSlugsForParty(partyId) {
+  const canonical = resolvePartyId(partyId);
+  const slugs = new Set([partyId, canonical]);
+  Object.entries(PARTY_ALIASES).forEach(([alias, target]) => {
+    if (target === canonical) slugs.add(alias);
+  });
+  return [...slugs];
+}
+
 /* ── Helpers ────────────────────────────────────────────────── */
 function getNationLabel(id) {
   return NATIONS[id]?.name || NAV_PARTIES[id]?.label || id;
 }
 function getPartyColor(id, year) {
-  if ((id === 'libdem' || id === 'liberal') && year && year < 1988) {
+  const pid = resolvePartyId(id);
+  if ((pid === 'libdem' || pid === 'liberal') && year && year < 1988) {
     return '#FFD700'; // Pre-1989 Liberal Party yellow
   }
-  return PARTIES[id]?.color || '#6b7280';
+  return PARTIES[pid]?.color || '#6b7280';
 }
-function getPartyDim(id)   { return PARTIES[id]?.dim   || 'rgba(107,114,128,0.14)'; }
+function getPartyDim(id)   { return PARTIES[resolvePartyId(id)]?.dim   || 'rgba(107,114,128,0.14)'; }
 
 /** Liberal / SDP Alliance / Liberal Democrats — period-correct labels when year is given. */
 const LIBERAL_LINEAGE_NAMES = {
@@ -1912,10 +1961,11 @@ const LIBERAL_LINEAGE_NAMES = {
 };
 
 function getPartyName(id, year) {
-  const p = PARTIES[id];
+  const pid = resolvePartyId(id);
+  const p = PARTIES[pid];
   if (!p) return id;
-  if (year != null && LIBERAL_LINEAGE_NAMES[id]) {
-    const names = LIBERAL_LINEAGE_NAMES[id];
+  if (year != null && LIBERAL_LINEAGE_NAMES[pid]) {
+    const names = LIBERAL_LINEAGE_NAMES[pid];
     if (year < 1983) return names.liberal;
     if (year === 1983 || year === 1987) return names.alliance;
     return names.modern;
@@ -1924,3 +1974,84 @@ function getPartyName(id, year) {
 }
 function getElection(id)   { return ELECTIONS.find(e => e.id === id); }
 function getMajorityThreshold(n) { return Math.floor(n / 2) + 1; }
+
+function devolvedPartyLink(id, label, year) {
+  const canonical = resolvePartyId(id);
+  const name = label || getPartyName(canonical, year);
+  if (!canonical || canonical === 'others' || !PARTIES[canonical]) return name;
+  return `<a href="/party/${canonical}" class="inline-party-link">${name}</a>`;
+}
+
+function normalizeDevolvedElection(electionOrYear) {
+  if (electionOrYear && typeof electionOrYear === 'object') return electionOrYear;
+  const year = electionOrYear;
+  return { year, displayYear: String(year) };
+}
+
+/** Browse-by-party card (homepage and other-parties listings). */
+function buildPartyBrowseCard(pid, opts = {}) {
+  const p = PARTIES[pid];
+  if (!p) return '';
+  const name = opts.fullName ? p.name : (p.shortName || p.name);
+  const subline = opts.meta
+    ? `${p.spectrum}${p.founded ? ` · Est. ${p.founded}` : ''}`
+    : (p.founded ? `Est. ${p.founded}` : '');
+  return `<a href="/party/${pid}" class="party-card" style="--party-color:${p.color}">
+    <div class="party-card-name">${name}</div>
+    <div class="party-card-founded">${subline}</div>
+    <div class="party-card-color-swatch"></div>
+    <div class="party-card-desc">${p.description}</div>
+  </a>`;
+}
+
+/** Shared manifesto card for Holyrood, Senedd, Stormont, and European elections. */
+function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
+  const election = normalizeDevolvedElection(electionOrYear);
+  const pid = m.party;
+  const yearNum = election.year;
+  const yearLabel = election.displayYear || String(yearNum || '');
+  const pageId = opts.partyPageId || resolvePartyId(pid);
+  const color = opts.color || getPartyColor(pageId, yearNum);
+  const dim = opts.dim || getPartyDim(pageId) || 'rgba(0,0,0,0.04)';
+  const partyName = opts.partyName
+    || m.partyLabel
+    || (typeof getEuroAllianceManifestoLabel === 'function'
+      ? getEuroAllianceManifestoLabel(pid, yearNum)
+      : null)
+    || getPartyName(pageId, yearNum);
+  const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
+  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
+  const headerName = pageId && PARTIES[pageId]
+    ? devolvedPartyLink(pageId, partyName, yearNum)
+    : partyName;
+  const altHeading = m.candidate || partyName;
+  const assetsVersion = typeof ASSETS_VERSION !== 'undefined' ? ASSETS_VERSION : '';
+
+  return `
+    <div class="manifesto-card" style="--party-color:${color};--party-dim:${dim}">
+      <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${altHeading} manifesto PDF">
+        <img src="${m.cover}?v=${assetsVersion}" alt="${altHeading} manifesto cover"
+          class="img-lazy" loading="lazy" decoding="async"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="manifesto-thumb-placeholder" style="display:none">
+          <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
+            <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9"/>
+          </svg>
+          <span class="thumb-year">${yearLabel}</span>
+        </div>
+      </a>
+      <div class="manifesto-card-header">
+        <div class="manifesto-party-dot" style="background:${color}"></div>
+        <div class="manifesto-party-name">${headerName}</div>
+        <div class="manifesto-party-tag">${yearLabel}</div>
+      </div>
+      <div class="manifesto-card-body">
+        ${m.candidate ? `<p class="london-manifesto-title">${m.candidate}</p>` : ''}
+        ${m.title && !m.candidate ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
+        <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
+        </a>
+      </div>
+    </div>`;
+}

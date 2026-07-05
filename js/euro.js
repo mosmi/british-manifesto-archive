@@ -31,55 +31,129 @@ function euroPartyColor(id) {
   return (id && typeof getPartyColor === 'function') ? getPartyColor(id) : '#6b7280';
 }
 
+const EURO_ALLIANCE_SLUGS = {
+  pes: {
+    family: 'sand',
+    label(year) {
+      if (year <= 1988) return 'Socialist Group';
+      if (year === 1989) return 'PES';
+      if (year <= 2008) return 'PES';
+      return 'S&D';
+    },
+  },
+  eldr: {
+    family: 'renew',
+    label(year) {
+      if (year <= 1979) return 'Liberal and Democratic Group';
+      if (year <= 1993) return 'LDR';
+      return 'ELDR';
+    },
+  },
+  alde: {
+    family: 'renew',
+    label(year) {
+      if (year >= 2019) return 'Renew Europe';
+      return 'ALDE';
+    },
+  },
+  epp: {
+    family: 'epp',
+    label(year) {
+      if (year >= 1999 && year <= 2008) return 'EPP-ED';
+      return 'EPP';
+    },
+  },
+  greengroup: {
+    family: 'greensefa',
+    label() { return 'Green Group'; },
+  },
+  eurengreens: {
+    family: 'greensefa',
+    label(year) {
+      return year >= 1999 ? 'Greens/EFA' : 'European Green Party';
+    },
+  },
+  eurefa: {
+    family: 'greensefa',
+    label() { return 'Greens/EFA'; },
+  },
+  eurleft: {
+    family: 'guengl',
+    label(year) {
+      return year >= 1995 ? 'GUE/NGL' : 'European United Left';
+    },
+  },
+  ecr: {
+    family: 'ecr',
+    label() { return 'ECR'; },
+  },
+  ecrp: {
+    family: 'ecr',
+    label() { return 'ECR'; },
+  },
+  inddem: {
+    family: 'inddem',
+    label() { return 'Ind/Dem'; },
+  },
+  uen: {
+    family: 'uen',
+    label() { return 'UEN'; },
+  },
+  eaf: {
+    family: 'identity',
+    label() { return 'European Alliance for Freedom'; },
+  },
+};
+
+const EURO_ALLIANCE_FAMILIES = [
+  { id: 'sand', heading: 'Socialists / Social Democrats (S&D)' },
+  { id: 'epp', heading: "Christian Democrats / EPP" },
+  { id: 'renew', heading: 'Liberals / Centrists (Renew Europe)' },
+  { id: 'greensefa', heading: 'Greens / EFA / Regionalists (Greens/EFA)' },
+  { id: 'guengl', heading: 'Communist / Radical Left (GUE/NGL)' },
+  { id: 'ecr', heading: 'British/Danish Conservatives to ECR' },
+  { id: 'uen', heading: 'Gaullist / National-Conservative / UEN line' },
+  { id: 'inddem', heading: 'Hard Eurosceptic / Direct-Democracy line' },
+  { id: 'identity', heading: 'Far-right Nationalist line (ID)' },
+];
+
+function getEuroAllianceManifestoLabel(slug, year) {
+  const meta = EURO_ALLIANCE_SLUGS[slug];
+  return meta ? meta.label(year) : null;
+}
+
+function euroAllianceFamilyKey(m) {
+  const meta = EURO_ALLIANCE_SLUGS[m.party];
+  return meta ? meta.family : '_other';
+}
+
 function euroPartyName(row, year) {
   if (row.partyLabel) return row.partyLabel;
-  if (row.party && typeof PARTIES !== 'undefined' && PARTIES[row.party]) {
-    return getPartyName(row.party, year);
+  const allianceLabel = getEuroAllianceManifestoLabel(row.party, year);
+  if (allianceLabel) return allianceLabel;
+  const pageId = resolvePartyId(row.party);
+  if (pageId && typeof PARTIES !== 'undefined' && PARTIES[pageId]) {
+    return getPartyName(pageId, year);
   }
   return row.name || row.party || '—';
 }
 
 function euroPartyCell(row, year) {
-  const color = euroPartyColor(row.party);
+  const pageId = resolvePartyId(row.party);
+  const color = euroPartyColor(pageId);
   const name = euroPartyName(row, year);
-  const inner = (row.party && PARTIES?.[row.party])
-    ? `<a href="/party/${row.party}" class="inline-party-link">${name}</a>`
+  const inner = (pageId && PARTIES?.[pageId])
+    ? devolvedPartyLink(pageId, name, year)
     : name;
   return `<div class="result-party-name"><div class="result-party-swatch" style="background:${color}"></div>${inner}</div>`;
 }
 
-function euroManifestoCard(m, year) {
-  const color = euroPartyColor(m.party);
-  const partyName = euroPartyName(m, year);
-  const heading = m.candidate || partyName;
-  const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
-  return `
-    <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
-      <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${heading} manifesto PDF">
-        <img src="${m.cover}?v=${ASSETS_VERSION}" alt="${heading} manifesto cover"
-          class="img-lazy" loading="lazy" decoding="async"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="manifesto-thumb-placeholder" style="display:none">
-          <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
-            <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9"/>
-          </svg>
-          <span class="thumb-year">${year}</span>
-        </div>
-      </a>
-      <div class="manifesto-card-header">
-        <div class="manifesto-party-dot" style="background:${color}"></div>
-        <div class="manifesto-party-name">${heading}</div>
-        ${m.party && PARTIES?.[m.party] ? `<div class="manifesto-party-tag">${partyName}</div>` : ''}
-      </div>
-      <div class="manifesto-card-body">
-        ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
-        </a>
-      </div>
-    </div>`;
+function euroManifestoCard(m, electionOrYear) {
+  const election = normalizeDevolvedElection(electionOrYear);
+  return buildDevolvedManifestoCard(m, election, {
+    color: euroPartyColor(m.party),
+    partyName: euroPartyName(m, election.year),
+  });
 }
 
 function euroParliamentSection(election) {
@@ -144,6 +218,27 @@ function euroManifestoGroupKey(m) {
   return nation || 'others';
 }
 
+function euroAlliancesGroupsHtml(manifestos, election) {
+  const byFamily = {};
+  manifestos.forEach(m => {
+    const key = euroAllianceFamilyKey(m);
+    (byFamily[key] = byFamily[key] || []).push(m);
+  });
+  const parts = EURO_ALLIANCE_FAMILIES
+    .filter(f => byFamily[f.id]?.length)
+    .map(f => `<div class="manifesto-nation-group">
+        <h4 class="manifesto-nation-subheading">${f.heading}</h4>
+        <div class="manifesto-grid">${byFamily[f.id].map(m => euroManifestoCard(m, election)).join('')}</div>
+      </div>`);
+  if (byFamily._other?.length) {
+    parts.push(`<div class="manifesto-nation-group">
+        <h4 class="manifesto-nation-subheading">Other European parties</h4>
+        <div class="manifesto-grid">${byFamily._other.map(m => euroManifestoCard(m, election)).join('')}</div>
+      </div>`);
+  }
+  return parts.join('');
+}
+
 function euroManifestoGroupsHtml(election) {
   const sorted = euroManifestosBySeats(election);
   const grouped = {};
@@ -153,15 +248,20 @@ function euroManifestoGroupsHtml(election) {
   });
   const present = EURO_GROUP_ORDER.filter(k => grouped[k]?.length);
   if (present.length <= 1) {
-    return `<div class="manifesto-grid">${sorted.map(m => euroManifestoCard(m, election.year)).join('')}</div>`;
+    return `<div class="manifesto-grid">${sorted.map(m => euroManifestoCard(m, election)).join('')}</div>`;
   }
   const headingFor = (k) => (typeof nationLink === 'function' && k !== 'others' && k !== 'alliances')
     ? nationLink(k, EURO_GROUP_LABELS[k])
     : EURO_GROUP_LABELS[k];
-  return present.map(k => `<div class="manifesto-nation-group">
+  return present.map(k => {
+    const body = k === 'alliances'
+      ? euroAlliancesGroupsHtml(grouped[k], election)
+      : `<div class="manifesto-grid">${grouped[k].map(m => euroManifestoCard(m, election)).join('')}</div>`;
+    return `<div class="manifesto-nation-group">
         <h3 class="manifesto-nation-heading">${headingFor(k)}</h3>
-        <div class="manifesto-grid">${grouped[k].map(m => euroManifestoCard(m, election.year)).join('')}</div>
-      </div>`).join('');
+        ${body}
+      </div>`;
+  }).join('');
 }
 
 async function renderEuroElection(app, id) {
@@ -342,6 +442,13 @@ async function renderEuroPortal(app) {
   `;
 }
 
+function euroOthersPartyCards(ids) {
+  return [...ids]
+    .sort((a, b) => (PARTIES[a]?.name || a).localeCompare(PARTIES[b]?.name || b, 'en-GB'))
+    .map(pid => buildPartyBrowseCard(pid, { fullName: true, meta: true }))
+    .join('');
+}
+
 function renderEuroOtherParties(app) {
   setPageMeta({
     title: 'Other EP Parties',
@@ -349,21 +456,10 @@ function renderEuroOtherParties(app) {
     path: '/devolved/euro/other-parties',
   });
 
-  const ids = (typeof EURO_OTHER_PARTIES !== 'undefined') ? EURO_OTHER_PARTIES : [];
-  const cards = [...ids]
-    .sort((a, b) => (PARTIES[a]?.name || a).localeCompare(PARTIES[b]?.name || b, 'en-GB'))
-    .map(pid => {
-      const p = PARTIES[pid];
-      if (!p) return '';
-      return `<a href="/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
-        <div class="others-party-swatch" style="background:${p.color}"></div>
-        <div>
-          <div class="others-party-name">${p.name}</div>
-          <div class="others-party-meta">${p.spectrum}${p.founded ? ` · Est. ${p.founded}` : ''}</div>
-          <div class="others-party-desc">${p.description}</div>
-        </div>
-      </a>`;
-    }).join('');
+  const entityIds = (typeof EURO_OTHER_PARTIES !== 'undefined') ? EURO_OTHER_PARTIES : [];
+  const allianceIds = (typeof EURO_ALLIANCE_PARTIES !== 'undefined') ? EURO_ALLIANCE_PARTIES : [];
+  const entityCards = euroOthersPartyCards(entityIds);
+  const allianceCards = euroOthersPartyCards(allianceIds);
 
   app.innerHTML = `
     ${renderBreadcrumb([
@@ -376,27 +472,42 @@ function renderEuroOtherParties(app) {
       <span class="section-label">European Parliament</span>
       <h1>Other EP Parties</h1>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);margin-bottom:1rem">Specialist, minor, or pan-European political groups that contested European elections in the UK. This includes transnational groups and regional factions.</p>
-      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that won Westminster seats:</p>
+      <p style="color:var(--text-muted);margin-bottom:1rem">Specialist, minor, or pan-European political groups that contested European elections in the UK.</p>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
       <a href="/others" class="cross-archive-link">Other Parties →</a>
-      <div class="others-grid">${cards}</div>
+      <span class="section-label" style="display:block;margin-top:2rem;margin-bottom:0.75rem">Other parties</span>
+      <div class="others-grid">${entityCards}</div>
+      <span class="section-label" style="display:block;margin-top:2.5rem;margin-bottom:0.75rem">Alliances</span>
+      <p style="color:var(--text-muted);margin-bottom:1rem">Pan-European political families and groups. Party pages use the 2019 group names; election pages show period-appropriate labels.</p>
+      <div class="others-grid">${allianceCards}</div>
     </div>
   `;
 }
 
 async function getEuroPartyHistory(partyId) {
+  const canonical = resolvePartyId(partyId);
+  const slugs = euroManifestoSlugsForParty(partyId);
+  const isAlliance = typeof isEuroAllianceParty === 'function' && isEuroAllianceParty(canonical);
   const index = await loadEuroIndex();
   const elections = [];
   const manifestos = [];
   await Promise.all(index.map(async (meta) => {
     const election = await loadEuroElection(meta.id);
     if (!election) return;
-    const result = election.parliament?.results?.find(r => r.party === partyId);
-    const partyManifestos = (election.manifestos || []).filter(m => m.party === partyId);
+    let result = null;
+    if (isAlliance && typeof getEuroAllianceUkSeats === 'function') {
+      const seats = getEuroAllianceUkSeats(canonical, election.year);
+      if (seats > 0) {
+        result = { party: canonical, seats, pct: null };
+      }
+    } else {
+      result = election.parliament?.results?.find(r => slugs.includes(r.party));
+    }
+    const partyManifestos = (election.manifestos || []).filter(m => slugs.includes(m.party));
     if (result || partyManifestos.length) {
       elections.push({
         election,
-        result: result || { party: partyId, seats: 0, pct: null },
+        result: result || { party: canonical, seats: 0, pct: null },
       });
       partyManifestos.forEach(m => manifestos.push({ election, manifesto: m }));
     }
