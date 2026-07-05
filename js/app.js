@@ -586,7 +586,8 @@ function buildPartiesMega() {
     heading.className = 'mega-nation-heading';
     heading.textContent = nation.label;
     col.appendChild(heading);
-    nation.parties.forEach(pid => {
+    const partyIds = nation.megaParties || nation.parties;
+    partyIds.forEach(pid => {
       const p = PARTIES[pid];
       if (!p) return;
       const a = document.createElement('a');
@@ -621,9 +622,14 @@ function buildPartiesMega() {
       col.appendChild(niOthers);
     }
     if (nationId === 'europe') {
+      const allAlliances = document.createElement('a');
+      allAlliances.href = '/nation/europe';
+      allAlliances.className = 'mega-all-link';
+      allAlliances.textContent = 'All alliance families →';
+      col.appendChild(allAlliances);
       const epOthers = document.createElement('a');
       epOthers.href = '/devolved/euro/other-parties';
-      epOthers.className = 'mega-all-link';
+      epOthers.className = 'mega-all-link mega-all-link-secondary';
       epOthers.textContent = 'Other EP parties →';
       col.appendChild(epOthers);
     }
@@ -2933,7 +2939,8 @@ function renderPartiesHub(app) {
     } else     if (nationId === 'northern-ireland') {
       otherLink = `<a href="/devolved/stormont/other-parties" class="hub-all-others-link">Other Northern Irish parties →</a>`;
     } else if (nationId === 'europe') {
-      otherLink = `<a href="/devolved/euro/other-parties" class="hub-all-others-link">Other EP parties →</a>`;
+      otherLink = `<a href="/nation/europe" class="hub-all-others-link">All alliance families →</a>
+        <a href="/devolved/euro/other-parties" class="hub-all-others-link">Other EP parties →</a>`;
     }
 
     return `<section class="hub-parties-section" aria-labelledby="hub-nation-${nationId}">

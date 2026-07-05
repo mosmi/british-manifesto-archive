@@ -1748,7 +1748,7 @@ h1, h2, h3, h4 {
   right: 0;
   z-index: 150; /* Display above nav bar (z-index 100) */
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   background: var(--navy-mid);
   border-top: 2px solid var(--gold);
   border-bottom: 1px solid var(--navy-border);
@@ -2235,13 +2235,14 @@ h1, h2, h3, h4 {
 /* Responsive additions */
 @media (max-width: 1100px) {
   .dropdown-mega { grid-template-columns: repeat(3, 1fr); }
-  .mega-col:nth-child(4), .mega-col:nth-child(5) { border-top: 1px solid var(--navy-border); }
+  .mega-col:nth-child(n+4) { border-top: 1px solid var(--navy-border); }
 }
 @media (max-width: 900px) {
   .nations-grid { grid-template-columns: repeat(2, 1fr); }
   .nation-grid  { grid-template-columns: 1fr; }
   .nation-parties-card { position: static; }
   .dropdown-mega { grid-template-columns: repeat(2, 1fr); }
+  .mega-col:nth-child(n+3) { border-top: 1px solid var(--navy-border); }
 }
 @media (max-width: 640px) {
   .nations-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2336,6 +2337,11 @@ h1, h2, h3, h4 {
   font-size: 0.78rem;
   color: var(--gold) !important;
   border-top: 1px solid var(--navy-border);
+}
+.mega-all-link-secondary {
+  margin-top: 0.35rem;
+  padding-top: 0.45rem;
+  border-top: none;
 }
 .mega-all-link:hover { background: var(--gold-dim) !important; }
 

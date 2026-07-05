@@ -2,307 +2,173 @@
 """
 build-og-images.py
 
-Generates branded 1200x630 Open Graph / Twitter share cards for every
-manifesto, party and election page, written to /og/... as JPEGs. The edge
-middleware (functions/_middleware.js) points each page's og:image and
-twitter:image at the matching card.
+Generates branded 1200×630 Open Graph / Twitter share cards for every route
+that exposes og:image, written to /og/… (and og-image.jpg for the homepage).
 
-Cards are derived from data/seo.json (run build-seo-data.py first) and use the
-site's own brand palette + fonts (assets/og/fonts).
+Uses the HTML renderer in tools/og-generator/og.html (Puppeteer) with specs
+built from site data by tools/og-generator/build-manifest.mjs. Run
+build-seo-data.py first.
 
 Usage:
   python3 scripts/build-og-images.py                 # all cards
   python3 scripts/build-og-images.py --only manifesto # one type
   python3 scripts/build-og-images.py --sample         # a handful, for preview
+  python3 scripts/build-og-images.py --force          # ignore hash cache
+
+Requires: Node.js, npm install (puppeteer).
 """
 
 import argparse
-import json
-import re
+import shutil
+import subprocess
+import sys
+import zipfile
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
-
 ROOT = Path(__file__).resolve().parent.parent
-SEO = ROOT / "data" / "seo.json"
-OG_DIR = ROOT / "og"
-FONT_SERIF = ROOT / "assets/og/fonts/CormorantGaramond.ttf"
-FONT_SANS = ROOT / "assets/og/fonts/DMSans.ttf"
-
-W, H = 1200, 630
-MARGIN = 90
-
-# Brand palette (from styles.css :root).
-NAVY = (9, 14, 28)
-NAVY2 = (18, 30, 56)
-CREAM = (242, 232, 204)
-CREAM_DIM = (200, 192, 168)
-GOLD = (201, 168, 76)
+GENERATOR = ROOT / "tools" / "og-generator"
+MANIFEST = GENERATOR / "pages.json"
+NODE_MODULES = ROOT / "node_modules"
 
 
-def hex_to_rgb(value, fallback=GOLD):
-    if not value:
-        return fallback
-    value = value.lstrip("#")
-    if len(value) != 6:
-        return fallback
-    try:
-        return tuple(int(value[i:i + 2], 16) for i in (0, 2, 4))
-    except ValueError:
-        return fallback
+def node_install_hint() -> str:
+    return (
+        "Node.js is required for the OG image pipeline (Puppeteer).\n\n"
+        "Install on macOS (pick one):\n"
+        "  brew install node              # Homebrew (recommended if you have brew)\n"
+        "  https://nodejs.org/en/download # official installer\n\n"
+        "Then from the repo root:\n"
+        "  npm install\n"
+        "  python3 scripts/build-og-images.py --sample"
+    )
 
 
-def load_font(path, size, variation=None):
-    font = ImageFont.truetype(str(path), size)
-    if variation:
-        try:
-            font.set_variation_by_name(variation)
-        except Exception:
-            pass
-    return font
+def ensure_deps() -> None:
+    if shutil.which("node") is None:
+        print(f"ERROR: node not found.\n\n{node_install_hint()}", file=sys.stderr)
+        sys.exit(1)
+    if not (NODE_MODULES / "puppeteer").is_dir():
+        npm = shutil.which("npm")
+        if npm is None:
+            print(
+                f"ERROR: npm not found (node is installed but npm is missing).\n\n"
+                f"{node_install_hint()}",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        print("Installing puppeteer (npm install)…")
+        subprocess.run([npm, "install"], cwd=ROOT, check=True)
+    ensure_puppeteer_browser()
 
 
-def background():
-    """Vertical navy gradient with a thin inset gold frame."""
-    img = Image.new("RGB", (W, H), NAVY)
-    px = img.load()
-    for y in range(H):
-        t = y / (H - 1)
-        r = round(NAVY[0] + (NAVY2[0] - NAVY[0]) * t)
-        g = round(NAVY[1] + (NAVY2[1] - NAVY[1]) * t)
-        b = round(NAVY[2] + (NAVY2[2] - NAVY[2]) * t)
-        for x in range(W):
-            px[x, y] = (r, g, b)
-    draw = ImageDraw.Draw(img)
-    inset = 38
-    draw.rectangle([inset, inset, W - inset, H - inset],
-                   outline=(201, 168, 76), width=2)
-    return img, draw
+def chrome_framework_path(extract_dir: Path) -> Path | None:
+    matches = list(extract_dir.glob(
+        "chrome-mac-arm64/Google Chrome for Testing.app/Contents/Frameworks/"
+        "Google Chrome for Testing Framework.framework/Versions/*/"
+        "Google Chrome for Testing Framework"
+    ))
+    return matches[0] if matches and matches[0].is_file() else None
 
 
-def wrap_lines(draw, text, font, max_width):
-    words = text.split()
-    lines, current = [], ""
-    for word in words:
-        trial = f"{current} {word}".strip()
-        if draw.textlength(trial, font=font) <= max_width or not current:
-            current = trial
-        else:
-            lines.append(current)
-            current = word
-    if current:
-        lines.append(current)
-    return lines
+def repair_chrome_cache(cache: Path) -> bool:
+    """Extract Puppeteer Chrome zips when npm blocked the postinstall script."""
+    ok = False
+    for zip_path in sorted(cache.glob("*-chrome-mac-arm64.zip")):
+        version = zip_path.name.removesuffix("-chrome-mac-arm64.zip")
+        extract_dir = cache / f"mac_arm-{version}"
+        if chrome_framework_path(extract_dir):
+            ok = True
+            continue
+        print(f"Extracting Puppeteer Chrome from {zip_path.name}…")
+        extract_dir.mkdir(parents=True, exist_ok=True)
+        with zipfile.ZipFile(zip_path) as zf:
+            zf.extractall(extract_dir)
+        if chrome_framework_path(extract_dir):
+            ok = True
+    return ok
 
 
-def fit_title(draw, text, max_width, start, minimum, variation, max_lines=2):
-    size = start
-    while size >= minimum:
-        font = load_font(FONT_SERIF, size, variation)
-        lines = wrap_lines(draw, text, font, max_width)
-        if len(lines) <= max_lines:
-            return font, lines, size
-        size -= 4
-    font = load_font(FONT_SERIF, minimum, variation)
-    return font, wrap_lines(draw, text, font, max_width)[:max_lines], minimum
+def ensure_puppeteer_browser() -> None:
+    """Download and extract the headless Chrome Puppeteer needs."""
+    install_mjs = NODE_MODULES / "puppeteer" / "install.mjs"
+    if install_mjs.is_file():
+        print("Ensuring Puppeteer browser (install.mjs)…")
+        subprocess.run(["node", str(install_mjs)], cwd=ROOT, check=False)
+
+    npx = shutil.which("npx")
+    if npx:
+        subprocess.run(
+            [npx, "puppeteer", "browsers", "install", "chrome"],
+            cwd=ROOT,
+            check=False,
+        )
+
+    cache = Path.home() / ".cache" / "puppeteer" / "chrome"
+    if cache.is_dir() and repair_chrome_cache(cache):
+        return
+
+    mac_chrome = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
+    if sys.platform == "darwin" and mac_chrome.is_file():
+        print("Warning: bundled Puppeteer Chrome unavailable; will try system Google Chrome.")
+        return
+
+    print(
+        "ERROR: Puppeteer Chrome is missing or incomplete.\n\n"
+        "npm may have blocked Puppeteer's install script. Try:\n"
+        "  npm approve-scripts          # allow puppeteer → install.mjs\n"
+        "  npm install\n"
+        "  npx puppeteer browsers install chrome\n\n"
+        "Or install Google Chrome and rerun — the renderer will fall back to it.\n"
+        "  brew install --cask google-chrome",
+        file=sys.stderr,
+    )
+    sys.exit(1)
 
 
-def draw_card(out_path, kicker, title, subtitle, accent):
-    img, draw = background()
-
-    bar_x = MARGIN
-    text_x = bar_x + 40
-    text_w = (W - MARGIN) - text_x
-
-    # Kicker (uppercase, letter-spaced sans), fixed near the top.
-    kfont = load_font(FONT_SANS, 30, "SemiBold")
-    draw.text((text_x, 150), spaced(kicker.upper(), 4), font=kfont, fill=accent)
-
-    # Footer position (fixed at the bottom).
-    fy = H - 122
-
-    # Title + subtitle are vertically centred in the region between the kicker
-    # and the footer, so 1- and 2-line titles both stay clear of the footer.
-    region_top, region_bottom = 206, fy - 40
-    region_h = region_bottom - region_top
-
-    tfont, lines, tsize = fit_title(draw, title, text_w, 100, 52, "Bold", 2)
-    line_h = int(tsize * 1.06)
-    title_h = len(lines) * line_h
-
-    sfont = load_font(FONT_SANS, 34, "Regular")
-    sub_lines = wrap_lines(draw, subtitle, sfont, text_w)[:1] if subtitle else []
-    sub_gap, sub_line_h = 18, 44
-    sub_h = (sub_gap + sub_line_h) if sub_lines else 0
-
-    block_h = title_h + sub_h
-    y = region_top + max(0, (region_h - block_h) // 2)
-
-    # Accent bar spans the centred text block.
-    draw.rectangle([bar_x, y + 6, bar_x + 8, y + block_h - 6], fill=accent)
-
-    for line in lines:
-        draw.text((text_x, y), line, font=tfont, fill=CREAM)
-        y += line_h
-    if sub_lines:
-        y += sub_gap
-        draw.text((text_x, y), sub_lines[0], font=sfont, fill=CREAM_DIM)
-
-    # Footer: hairline + wordmark.
-    draw.line([(text_x, fy), (W - MARGIN, fy)], fill=GOLD, width=1)
-    ffont = load_font(FONT_SANS, 27, "Medium")
-    draw.text((text_x, fy + 26), spaced("THE BRITISH MANIFESTO ARCHIVE", 2),
-              font=ffont, fill=CREAM)
-    dfont = load_font(FONT_SANS, 27, "Regular")
-    domain = "manifestos.org.uk"
-    dw = draw.textlength(domain, font=dfont)
-    draw.text((W - MARGIN - dw, fy + 26), domain, font=dfont, fill=GOLD)
-
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, "JPEG", quality=86, optimize=True, progressive=True)
+def run_node(script: str, *args: str) -> None:
+    subprocess.run(["node", str(GENERATOR / script), *args], cwd=ROOT, check=True)
 
 
-def spaced(text, px):
-    """Cheap letter-spacing via hair spaces between characters."""
-    if px <= 0:
-        return text
-    return ("\u200a" * max(1, px // 2)).join(list(text))
-
-
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", help="comma-separated: manifesto,party,election,nation,devolved,hub")
-    parser.add_argument("--sample", action="store_true",
-                        help="render a small representative sample only")
+    parser.add_argument(
+        "--only",
+        help="comma-separated: home,hub,election,party,manifesto,nation,devolved",
+    )
+    parser.add_argument(
+        "--sample", action="store_true",
+        help="render a small representative sample only",
+    )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="re-render all cards, ignoring the hash cache",
+    )
     args = parser.parse_args()
 
-    seo = json.loads(SEO.read_text(encoding="utf-8"))
-    parties = seo["parties"]
-    elections = seo["elections"]
-    manifestos = seo["manifestos"]
+    seo = ROOT / "data" / "seo.json"
+    if not seo.is_file():
+        print("ERROR: data/seo.json not found — run python3 scripts/build-seo-data.py first",
+              file=sys.stderr)
+        sys.exit(1)
 
-    types = set((args.only or "manifesto,party,election,nation,devolved,hub").split(","))
-    count = 0
-    nations = seo.get("nations") or {}
-    devolved_portals = seo.get("devolvedPortals") or {}
-    devolved_manifestos = seo.get("devolvedManifestos") or {}
+    ensure_deps()
 
-    if "election" in types:
-        items = list(elections.items())
-        if args.sample:
-            items = items[:3]
-        for eid, e in items:
-            accent = hex_to_rgb(parties.get(e.get("winner"), {}).get("color"))
-            draw_card(
-                OG_DIR / "election" / f"{eid}.jpg",
-                "General Election",
-                f"{e['displayYear']} General Election",
-                "Results, maps & party manifestos",
-                accent,
-            )
-            count += 1
+    manifest_args = ["--out", str(MANIFEST)]
+    if args.only:
+        manifest_args.extend(["--only", args.only])
+    if args.sample:
+        manifest_args.append("--sample")
 
-    if "party" in types:
-        items = list(parties.items())
-        if args.sample:
-            items = items[:3]
-        for pid, p in items:
-            draw_card(
-                OG_DIR / "party" / f"{pid}.jpg",
-                "Party Archive",
-                p["name"],
-                "General election manifestos & history",
-                hex_to_rgb(p.get("color")),
-            )
-            count += 1
+    run_node("build-manifest.mjs", *manifest_args)
 
-    if "manifesto" in types:
-        items = list(manifestos.items())
-        if args.sample:
-            items = items[:5]
-        for key, m in items:
-            eid, pid = m["electionId"], m["partyId"]
-            party = parties.get(pid, {})
-            election = elections.get(eid, {})
-            name = party.get("name") or m.get("label") or pid
-            year = election.get("displayYear", eid)
-            draw_card(
-                OG_DIR / "manifesto" / eid / f"{pid}.jpg",
-                "Manifesto",
-                name,
-                f"{year} General Election Manifesto",
-                hex_to_rgb(party.get("color")),
-            )
-            count += 1
+    render_args = [str(MANIFEST), str(ROOT)]
+    if args.force:
+        render_args.append("--force")
 
-    if "nation" in types:
-        items = list(nations.items())
-        if args.sample:
-            items = items[:2]
-        for nid, rec in items:
-            name = rec.get("name") if isinstance(rec, dict) else rec
-            draw_card(
-                OG_DIR / "nation" / f"{nid}.jpg",
-                "Nation",
-                name or nid,
-                "Westminster results & devolved government",
-                GOLD,
-            )
-            count += 1
+    run_node("generate-og.mjs", *render_args)
 
-    if "devolved" in types:
-        portal_items = list(devolved_portals.items())
-        if args.sample:
-            portal_items = portal_items[:2]
-        for pid, portal in portal_items:
-            label = portal.get("label") if isinstance(portal, dict) else portal
-            draw_card(
-                OG_DIR / "devolved" / f"{pid}.jpg",
-                "Devolved Elections",
-                label or pid,
-                (portal.get("subtitle") if isinstance(portal, dict) else "") or "Results & manifestos",
-                GOLD,
-            )
-            count += 1
-        election_keys = sorted(devolved_manifestos.keys())
-        if args.sample:
-            election_keys = election_keys[:4]
-        for key in election_keys:
-            portal, sub = key.split("/", 1)
-            portal_meta = devolved_portals.get(portal, {})
-            label = portal_meta.get("label") if isinstance(portal_meta, dict) else portal
-            year = (re.search(r"(\d{4})", sub) or [sub])[0]
-            draw_card(
-                OG_DIR / "devolved" / portal / f"{sub}.jpg",
-                label or portal,
-                f"{year} Election",
-                "Results, maps & party manifestos",
-                GOLD,
-            )
-            count += 1
-
-    if "hub" in types:
-        hubs = [
-            ("about", "About", "UK election manifesto archive"),
-            ("elections", "UK General Elections", "1945–2024 results & manifestos"),
-            ("parties", "Political Parties", "Historical manifestos by party"),
-            ("devolved", "Beyond Westminster", "Holyrood, Senedd, Stormont & London"),
-            ("nations", "The Four Nations & Europe", "Results by nation"),
-            ("others", "Other Parties", "Smaller & historical parties"),
-        ]
-        if args.sample:
-            hubs = hubs[:3]
-        for slug, title, subtitle in hubs:
-            draw_card(
-                OG_DIR / "hub" / f"{slug}.jpg",
-                "Archive",
-                title,
-                subtitle,
-                GOLD,
-            )
-            count += 1
-
-    print(f"Wrote {count} OG cards to {OG_DIR.relative_to(ROOT)}/")
+    count = len(__import__("json").loads(MANIFEST.read_text(encoding="utf-8")))
+    print(f"OG pipeline complete — {count} cards → {ROOT / 'og'}/")
 
 
 if __name__ == "__main__":

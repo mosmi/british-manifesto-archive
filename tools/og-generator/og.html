@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>OG image generator — The British Manifesto Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#1a1d24}
+  body.single{width:1200px;height:630px;overflow:hidden}
+  .og-card{width:1200px;height:630px;position:relative;overflow:hidden;font-family:'Public Sans',sans-serif;flex:none}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+/* ============================================================
+   OG image generator — The British Manifesto Archive
+   Usage:  og.html?spec=<encodeURIComponent(JSON)>   → renders one 1200×630 card
+           og.html                                    → sample gallery (visual QA)
+   The page sets window.__ready = true once fonts are loaded and
+   the card is painted; puppeteer waits for that before capture.
+   ============================================================ */
+
+const NAVY = '#090e1c';
+const CREAM = '#f4f1e8';
+const SUB = '#aeb6c4';
+const FOOT = '#6b7484';
+const GOLD = '#d9b76a';
+
+const PARTY_COLOURS = {
+  conservative:'#0087DC', labour:'#E4003B', libdem:'#FAA61A', liberal:'#FFD700',
+  alliance:'#FFD700', snp:'#FDF38E', plaid:'#008672', ukip:'#6D3177',
+  brexit:'#12B6CF', reform:'#1EB8D0', green:'#02A95B', dup:'#D46A4C',
+  uup:'#48A5EE', sinnfein:'#326760', sdlp:'#2AA82C', speaker:'#000000',
+  independent:'#DCDCDC', vanguard:'#FF8C00', ulsterpopularunionist:'#FFDEAD',
+  ukup:'#660066', indunionist:'#AADFFF', tuv:'#0C3A6B', protestantunionist:'#003366',
+  communist:'#EF0000', commonwealth:'#7A1F2E', ilp:'#BF0000', irishlabour:'#E4003B',
+  republicanlabour:'#CC0000', indlabour:'#E4003B', nationalliberal:'#C8B400',
+  respect:'#FF4500',
+  sand:'#E4003B', epp:'#003399', renew:'#FFD700', greensefa:'#009639',
+  guengl:'#E30613', ecr:'#1B3A6B', inddem:'#70147A', identity:'#003366',
+  uen:'#0054A6', diem25:'#E30613', volt:'#502BD5', ecpm:'#0055A5',
+  eurpirates:'#592880',
+  welshlab:'#E4003B', welshcon:'#0087DC', welshlibdem:'#FAA61A', walesgrn:'#00B140',
+  gwlad:'#1B4D3E', propel:'#5B2C6F', abolish:'#B91C1C', heritage:'#7C2D12',
+  scottishlab:'#E4003B', scottishcon:'#0087DC', scottishlibdem:'#FAA61A',
+  scottishgrn:'#00B140', alba:'#005EB8', solidarity:'#CC0000', rise:'#E30613',
+  allforunity:'#1D4ED8', isp:'#2E8B57', scottishfamily:'#7C3AED',
+  scottishlibertarian:'#F4C430', sovereignty:'#1B365D', scottishchristian:'#4B0082',
+  gpni:'#8dc63f', pup:'#2B45A2', niwc:'#D45D79', pbp:'#E91D24', sea:'#008080',
+  rsf:'#006600', nicon:'#0087DC', workerspartyie:'#D40000',
+  irishnationalist:'#008672', irishrepublican:'#006400', antipartition:'#2E8B57',
+  unity:'#708090', uuuc:'#4682B4',
+  natlibconservative:'#B8860B', national:'#9CA3AF', nationalindependent:'#A8A29E',
+  indconservative:'#5B9BD5', indliberal:'#E6C200', indprogressive:'#9370DB',
+  referendumparty:'#bf475c', bnp:'#2e3b74', mebyon:'#d5c229', omrlp:'#FFF000',
+  healthconcern:'#FF69B4', tusc:'#EC008C', workersparty:'#780021',
+  restorebrit:'#062754', yourparty:'#FF3131', ssp:'#c41230', wep:'#582C83',
+  cooperative:'#6B2D8B', nha:'#005EB8', pirate:'#FF6600', changeuk:'#3B5998',
+  animalpolitics:'#76B82A', englishdemocrats:'#E4003B', christian:'#0055A5',
+  others:'#6b7280'
+};
+
+/* ---------- colour math: sRGB hex ⇄ OKLCH ---------- */
+function hexToRgb(hex){
+  const h = hex.replace('#','');
+  const n = parseInt(h.length===3 ? h.split('').map(c=>c+c).join('') : h, 16);
+  return [(n>>16)&255, (n>>8)&255, n&255].map(v=>v/255);
+}
+function srgbToLinear(c){ return c<=0.04045 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4); }
+function linearToSrgb(c){ return c<=0.0031308 ? 12.92*c : 1.055*Math.pow(c,1/2.4)-0.055; }
+function rgbToOklch(rgb){
+  const [r,g,b] = rgb.map(srgbToLinear);
+  const l = Math.cbrt(0.4122214708*r + 0.5363325363*g + 0.0514459929*b);
+  const m = Math.cbrt(0.2119034982*r + 0.6806995451*g + 0.1073969566*b);
+  const s = Math.cbrt(0.0883024619*r + 0.2817188376*g + 0.6299787005*b);
+  const L = 0.2104542553*l + 0.7936177850*m - 0.0040720468*s;
+  const a = 1.9779984951*l - 2.4285922050*m + 0.4505937099*s;
+  const bb= 0.0259040371*l + 0.7827717662*m - 0.8086757660*s;
+  const C = Math.sqrt(a*a + bb*bb);
+  let H = Math.atan2(bb,a)*180/Math.PI; if (H<0) H += 360;
+  return {L, C, H};
+}
+function oklchToHex({L,C,H}){
+  const hr = H*Math.PI/180;
+  const a = C*Math.cos(hr), bb = C*Math.sin(hr);
+  const l = Math.pow(L + 0.3963377774*a + 0.2158037573*bb, 3);
+  const m = Math.pow(L - 0.1055613458*a - 0.0638541728*bb, 3);
+  const s = Math.pow(L - 0.0894841775*a - 1.2914855480*bb, 3);
+  let r =  4.0767416621*l - 3.3077115913*m + 0.2309699292*s;
+  let g = -1.2684380046*l + 2.6097574011*m - 0.3413193965*s;
+  let b = -0.0041960863*l - 0.7034186147*m + 1.7076147010*s;
+  const clamp = v => Math.max(0, Math.min(1, linearToSrgb(v)));
+  return '#' + [r,g,b].map(v=>Math.round(clamp(v)*255).toString(16).padStart(2,'0')).join('');
+}
+function rgba(hex, a){
+  const [r,g,b] = hexToRgb(hex).map(v=>Math.round(v*255));
+  return `rgba(${r},${g},${b},${a})`;
+}
+
+/* ---------- derivation rules (see party-colours.json) ---------- */
+function derive(hex){
+  const lch = rgbToOklch(hexToRgb(hex));
+  const achromatic = lch.C < 0.02;
+  // kicker text: lightness-clamped, chroma capped; achromatic → neutral slate
+  const kicker = achromatic ? '#aab3c0'
+    : oklchToHex({L: Math.max(lch.L, 0.75), C: Math.min(lch.C, 0.15), H: lch.H});
+  // big surface: raw unless it disappears against the navy field
+  const surface = lch.L >= 0.30 ? hex
+    : (achromatic ? '#3d4654' : oklchToHex({L: 0.48, C: Math.max(lch.C, 0.10), H: lch.H}));
+  const surfL = rgbToOklch(hexToRgb(surface)).L;
+  return {
+    raw: hex,
+    surface,
+    kicker,
+    border: rgba(kicker, 0.35),
+    onSurface: surfL >= 0.70 ? NAVY : 'rgba(255,255,255,0.85)'
+  };
+}
+function partyAccent(slug){ return derive(PARTY_COLOURS[slug] || PARTY_COLOURS.others); }
+
+/* ---------- fixed context accents ---------- */
+const CONTEXT = {
+  archive:  derive(GOLD),
+  scotland: derive('#387dcc'),
+  wales:    derive('#e05a64'),
+  england:  derive('#e05a5a'),
+  ni:       derive('#9ec3e6'),
+  europe:   derive('#ffd34d')
+};
+CONTEXT.scotland.kicker='#6ba3e8'; CONTEXT.wales.kicker='#e57582';
+CONTEXT.england.kicker='#e88585'; CONTEXT.ni.kicker='#9ec3e6';
+CONTEXT.europe.kicker='#ffd34d'; CONTEXT.archive.kicker=GOLD;
+const BODY_CTX = { holyrood:'scotland', senedd:'wales', stormont:'archive', london:'archive', euro:'europe' };
+const EURO_BG = `linear-gradient(115deg,#0a1330 0%,${NAVY} 62%)`;
+
+/* ---------- motif library (all absolute-positioned, behind the frame) ---------- */
+const MOTIFS = {
+  saltire: () => `
+    <div style="position:absolute;left:50%;top:50%;width:1700px;height:110px;background:rgba(56,125,204,0.08);transform:translate(-50%,-50%) rotate(27.7deg)"></div>
+    <div style="position:absolute;left:50%;top:50%;width:1700px;height:110px;background:rgba(56,125,204,0.08);transform:translate(-50%,-50%) rotate(-27.7deg)"></div>`,
+  peaks: () => `
+    <div style="position:absolute;left:0;right:0;bottom:0;height:460px;background:rgba(24,145,106,0.06);clip-path:polygon(100% 100%,0% 100%,32% 62%,48% 78%,68% 30%,80% 44%,92% 0%,100% 14%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:320px;background:rgba(24,145,106,0.10);clip-path:polygon(100% 100%,0% 100%,42% 40%,56% 58%,74% 0%,88% 34%,100% 22%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:190px;background:rgba(24,145,106,0.16);clip-path:polygon(100% 100%,0% 100%,50% 34%,66% 62%,84% 0%,100% 44%)"></div>`,
+  stgeorge: () => `
+    <div style="position:absolute;left:0;right:0;top:50%;height:110px;transform:translateY(-50%);background:rgba(224,90,90,0.08)"></div>
+    <div style="position:absolute;top:0;bottom:0;left:71%;width:110px;transform:translateX(-50%);background:rgba(224,90,90,0.08)"></div>`,
+  hexagons: () => `
+    <div style="position:absolute;right:60px;bottom:-90px;width:300px;height:340px;background:rgba(158,195,230,0.07);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)"></div>
+    <div style="position:absolute;right:330px;bottom:-260px;width:300px;height:340px;background:rgba(158,195,230,0.05);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)"></div>
+    <div style="position:absolute;right:-105px;bottom:-260px;width:300px;height:340px;background:rgba(158,195,230,0.05);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)"></div>`,
+  ring: () => `
+    <div style="position:absolute;right:-140px;top:50%;width:560px;height:560px;transform:translateY(-50%);border:60px solid rgba(255,211,77,0.07);border-radius:50%;box-sizing:border-box"></div>`,
+  poles: () => `
+    <div style="position:absolute;right:40px;top:-80px;bottom:-80px;display:flex;gap:56px;transform:rotate(14deg)">
+      ${'<div style="width:22px;background:rgba(107,163,232,0.10)"></div>'.repeat(5)}</div>`,
+  slats: () => `
+    <div style="position:absolute;right:0;top:0;bottom:0;width:420px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+      ${[120,40,160,70,130].map(m=>`<div style="height:18px;background:rgba(229,117,130,0.10);border-radius:9px 0 0 9px;margin-left:${m}px"></div>`).join('')}</div>`,
+  columns: () => `
+    <div style="position:absolute;right:80px;top:0;bottom:0;display:flex;gap:44px">
+      ${'<div style="width:26px;background:rgba(217,183,106,0.09)"></div>'.repeat(6)}</div>`,
+  ellipse: () => `
+    <div style="position:absolute;right:-110px;bottom:-190px;width:480px;height:520px;border:52px solid rgba(217,183,106,0.08);border-radius:50%;transform:rotate(-16deg);box-sizing:border-box"></div>`,
+  hemicycle: () => `
+    <div style="position:absolute;right:60px;bottom:-260px;width:520px;height:520px;border:26px solid rgba(255,211,77,0.08);border-radius:50%;box-sizing:border-box"></div>
+    <div style="position:absolute;right:130px;bottom:-190px;width:380px;height:380px;border:26px solid rgba(255,211,77,0.06);border-radius:50%;box-sizing:border-box"></div>`,
+  spines: () => `
+    <div style="position:absolute;right:90px;bottom:0;display:flex;align-items:flex-end;gap:14px">
+      <div style="width:52px;height:300px;background:rgba(228,0,59,0.10)"></div>
+      <div style="width:46px;height:350px;background:rgba(0,135,220,0.10)"></div>
+      <div style="width:58px;height:270px;background:rgba(250,166,26,0.10)"></div>
+      <div style="width:44px;height:330px;background:rgba(2,169,91,0.10)"></div>
+      <div style="width:52px;height:290px;background:rgba(217,183,106,0.10)"></div></div>`,
+  tiles: () => `
+    <div style="position:absolute;right:70px;top:50%;transform:translateY(-50%);display:grid;grid-template-columns:repeat(2,140px);gap:26px">
+      <div style="height:140px;background:rgba(107,163,232,0.09)"></div>
+      <div style="height:140px;background:rgba(229,117,130,0.09)"></div>
+      <div style="height:140px;background:rgba(158,195,230,0.09)"></div>
+      <div style="height:140px;background:rgba(217,183,106,0.09)"></div></div>`,
+  chips: () => `
+    <div style="position:absolute;right:80px;top:50%;transform:translateY(-50%);width:340px;height:340px">
+      <div style="position:absolute;left:0;top:30px;width:64px;height:64px;background:rgba(228,0,59,0.10)"></div>
+      <div style="position:absolute;left:110px;top:0;width:48px;height:48px;background:rgba(2,169,91,0.10)"></div>
+      <div style="position:absolute;left:220px;top:50px;width:76px;height:76px;background:rgba(250,166,26,0.10)"></div>
+      <div style="position:absolute;left:50px;top:140px;width:56px;height:56px;background:rgba(18,182,207,0.10)"></div>
+      <div style="position:absolute;left:170px;top:170px;width:64px;height:64px;background:rgba(212,106,76,0.10)"></div>
+      <div style="position:absolute;left:280px;top:200px;width:44px;height:44px;background:rgba(0,135,220,0.10)"></div>
+      <div style="position:absolute;left:20px;top:250px;width:48px;height:48px;background:rgba(217,183,106,0.10)"></div>
+      <div style="position:absolute;left:130px;top:280px;width:56px;height:56px;background:rgba(158,195,230,0.10)"></div></div>`,
+  ghostYear: (text, accent) => `
+    <div style="position:absolute;right:-30px;bottom:-118px;font-family:'Playfair Display',serif;font-weight:600;font-size:560px;line-height:1;color:${rgba(accent,0.07)};letter-spacing:-0.02em">${text}</div>`
+};
+
+/* ---------- shared building blocks ---------- */
+const SPECTRUM = [['#e4003b',5],['#0087dc',4],['#faa61a',3],['#fdf38e',2],['#02a95b',2],['#0a6e4f',2],['#d46a4c',1],['#12b6cf',1]];
+function spectrumBar(){
+  return `<div style="display:flex;gap:6px;height:22px">${SPECTRUM.map(([c,f])=>`<div style="flex:${f};background:${c}"></div>`).join('')}</div>`;
+}
+function ticksBar(n=19){
+  const t=[]; for(let i=0;i<n;i++){ const h = (i===0||i===n-1)?44:(i%3===0?32:20); const o=(i===0||i===n-1)?0.55:(i%3===0?0.45:0.35);
+    t.push(`<div style="width:2px;height:${h}px;background:rgba(217,183,106,${o})"></div>`); }
+  return `<div style="display:flex;align-items:flex-end;justify-content:space-between;height:44px;border-bottom:2px solid rgba(217,183,106,0.4)">${t.join('')}</div>`;
+}
+function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// subtitle: allow *text* for cream emphasis
+function sub(s){ return esc(s).replace(/\*([^*]+)\*/g, `<span style="color:${CREAM}">$1</span>`); }
+
+function frame({kicker, kickerColor, title, titleSize=118, subtitle, extra='', footer='THE BRITISH MANIFESTO ARCHIVE', border, padLeft=true}){
+  return `
+  <div style="position:absolute;inset:36px;border:1px solid ${border};display:flex;flex-direction:column;justify-content:space-between;padding:56px 64px;box-sizing:border-box">
+    <div style="display:flex;align-items:center;gap:16px">
+      ${padLeft?`<div style="width:36px;height:2px;background:${kickerColor}"></div>`:''}
+      <div style="color:${kickerColor};font-size:26px;font-weight:600;letter-spacing:0.22em">${esc(kicker)}</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:${extra?'26':'20'}px">
+      <div style="font-family:'Playfair Display',serif;color:${CREAM};font-size:${titleSize}px;line-height:1.04;font-weight:500">${title}</div>
+      ${extra}
+      ${subtitle?`<div style="color:${SUB};font-size:34px;font-weight:400">${sub(subtitle)}</div>`:''}
+    </div>
+    <div style="color:${FOOT};font-size:22px;letter-spacing:0.18em;font-weight:500">${esc(footer)}</div>
+  </div>`;
+}
+
+/* auto-shrink long titles */
+function titleSizeFor(t, base=118){
+  const len = String(t).replace(/<[^>]+>/g,'').length;
+  if (len <= 14) return base;
+  if (len <= 20) return 104;
+  if (len <= 28) return 92;
+  if (len <= 38) return 78;
+  return 64;
+}
+
+/* ---------- card renderers per page type ---------- */
+function renderCard(spec){
+  const type = spec.type;
+  const A = CONTEXT.archive;
+  let bg = NAVY, motif = '', inner = '';
+
+  if (type === 'home'){
+    inner = frame({kicker:'MANIFESTOS.ORG.UK', kickerColor:GOLD, border:A.border,
+      title: esc(spec.title || 'The British<br>Manifesto Archive') === spec.title ? spec.title : 'The British<br>Manifesto Archive',
+      titleSize:96, extra: spectrumBar(),
+      subtitle: spec.subtitle || 'Party manifestos from every UK election since *1945*',
+      footer:'FOR EDUCATION & RESEARCH'});
+  }
+  else if (type === 'about'){
+    motif = MOTIFS.spines();
+    inner = frame({kicker:'ABOUT', kickerColor:GOLD, border:A.border,
+      title: esc(spec.title || 'About the Archive'), titleSize:112,
+      subtitle: spec.subtitle || 'Why it exists, where documents come from & how to help'});
+  }
+  else if (type === 'index'){
+    // slug: elections | devolved | nations | others | parties
+    const m = {elections:null, devolved:'tiles', nations:'tiles', others:'chips', parties:null}[spec.slug];
+    if (m) motif = MOTIFS[m]();
+    const extra = spec.slug==='elections' ? ticksBar()
+                : spec.slug==='parties'   ? spectrumBar() : '';
+    inner = frame({kicker:'INDEX', kickerColor:GOLD, border:A.border,
+      title: esc(spec.title), titleSize: titleSizeFor(spec.title, 112),
+      extra, subtitle: spec.subtitle});
+  }
+  else if (type === 'nation'){
+    const conf = {
+      scotland:{ctx:CONTEXT.scotland, motif:'saltire'},
+      wales:{ctx:CONTEXT.wales, motif:'peaks'},
+      england:{ctx:CONTEXT.england, motif:'stgeorge'},
+      'northern-ireland':{ctx:CONTEXT.ni, motif:'hexagons'},
+      europe:{ctx:CONTEXT.europe, motif:'ring'}
+    }[spec.slug];
+    if (spec.slug==='europe') bg = EURO_BG;
+    motif = MOTIFS[conf.motif]();
+    inner = frame({kicker: spec.kicker || (spec.slug==='europe'?'SUPRANATIONAL':'NATION'),
+      kickerColor: conf.ctx.kicker, border: conf.ctx.border,
+      title: esc(spec.title), titleSize: titleSizeFor(spec.title),
+      subtitle: spec.subtitle});
+  }
+  else if (type === 'body'){
+    const conf = {
+      holyrood:{motif:'poles', kicker:'SCOTTISH PARLIAMENT'},
+      senedd:{motif:'slats', kicker:'WELSH PARLIAMENT'},
+      stormont:{motif:'columns', kicker:'NORTHERN IRELAND ASSEMBLY'},
+      london:{motif:'ellipse', kicker:'MAYOR & ASSEMBLY'},
+      euro:{motif:'hemicycle', kicker:'EUROPEAN PARLIAMENT'}
+    }[spec.slug];
+    const ctx = CONTEXT[BODY_CTX[spec.slug]];
+    if (spec.slug==='euro') bg = EURO_BG;
+    motif = MOTIFS[conf.motif]();
+    inner = frame({kicker: spec.kicker || conf.kicker, kickerColor: ctx.kicker, border: ctx.border,
+      title: esc(spec.title), titleSize: titleSizeFor(spec.title),
+      subtitle: spec.subtitle});
+  }
+  else if (type === 'election'){
+    // spec.body: undefined for UK GE, else holyrood|senedd|stormont|london|euro
+    const ctx = spec.body ? CONTEXT[BODY_CTX[spec.body]] : CONTEXT.archive;
+    if (spec.body==='euro') bg = EURO_BG;
+    const accent = ctx===CONTEXT.archive ? GOLD : ctx.kicker;
+    motif = MOTIFS.ghostYear(esc(spec.ghost ?? String(spec.year||'').slice(-2)), accent);
+    let footer = 'THE BRITISH MANIFESTO ARCHIVE';
+    // optional seat strip: [["#hex", weight], ...] rendered bottom-right
+    let strip = '';
+    if (Array.isArray(spec.strip) && spec.strip.length){
+      strip = `<div style="display:flex;gap:8px;align-items:center">${spec.strip.map(([c,w])=>`<div style="width:${Math.max(8, Math.round(w))}px;height:14px;background:${c}"></div>`).join('')}</div>`;
+    }
+    inner = `
+    <div style="position:absolute;inset:36px;border:1px solid ${ctx.border};display:flex;flex-direction:column;justify-content:space-between;padding:56px 64px;box-sizing:border-box">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div style="width:36px;height:2px;background:${ctx.kicker}"></div>
+        <div style="color:${ctx.kicker};font-size:26px;font-weight:600;letter-spacing:0.22em">${esc(spec.kicker)}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Playfair Display',serif;color:${CREAM};font-size:${titleSizeFor(spec.title)}px;line-height:1.04;font-weight:500">${esc(spec.title)}</div>
+        ${spec.subtitle?`<div style="color:${SUB};font-size:34px;font-weight:400">${sub(spec.subtitle)}</div>`:''}
+      </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between">
+        <div style="color:${FOOT};font-size:22px;letter-spacing:0.18em;font-weight:500">${footer}</div>
+        ${strip}
+      </div>
+    </div>`;
+  }
+  else if (type === 'party'){
+    const d = spec.colour ? derive(spec.colour) : partyAccent(spec.slug);
+    motif = `<div style="position:absolute;left:0;top:0;bottom:0;width:14px;background:${d.surface}"></div>`;
+    inner = frame({kicker: spec.kicker || 'PARTY ARCHIVE', kickerColor: d.kicker, border: d.border,
+      title: esc(spec.title), titleSize: titleSizeFor(spec.title),
+      subtitle: spec.subtitle});
+  }
+  else if (type === 'other-parties'){
+    const ctx = CONTEXT[BODY_CTX[spec.body] || 'archive'];
+    motif = MOTIFS.chips();
+    inner = frame({kicker: spec.kicker, kickerColor: ctx.kicker, border: ctx.border,
+      title: esc(spec.title || 'Other Parties'), titleSize:112,
+      subtitle: spec.subtitle});
+  }
+  else if (type === 'manifesto'){
+    const d = spec.colour ? derive(spec.colour) : partyAccent(spec.slug);
+    const yearLabel = esc(spec.yearLabel || spec.year);
+    return `
+    <div id="card" class="og-card" style="background:${NAVY};display:flex">
+      <div style="width:132px;flex:none;background:${d.surface};display:flex;align-items:flex-end;justify-content:center;padding-bottom:48px;box-sizing:border-box">
+        <div style="color:${d.onSurface};font-size:24px;font-weight:600;letter-spacing:0.3em;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap">MANIFESTO · ${yearLabel}</div>
+      </div>
+      <div style="flex:1;position:relative">
+        <div style="position:absolute;inset:36px 36px 36px 0;border:1px solid ${rgba(d.surface,0.4)};border-left:none;display:flex;flex-direction:column;justify-content:space-between;padding:56px 64px;box-sizing:border-box">
+          <div style="color:${d.kicker};font-size:26px;font-weight:600;letter-spacing:0.22em">${esc(spec.kicker || ('GENERAL ELECTION ' + yearLabel))}</div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <div style="font-family:'Playfair Display',serif;color:${CREAM};font-size:${titleSizeFor(spec.title, 112)}px;line-height:1.05;font-weight:500">${esc(spec.title)}</div>
+            ${spec.subtitle?`<div style="color:${SUB};font-size:34px;font-weight:400">${sub(spec.subtitle)}</div>`:''}
+          </div>
+          <div style="color:${FOOT};font-size:22px;letter-spacing:0.18em;font-weight:500">THE BRITISH MANIFESTO ARCHIVE</div>
+        </div>
+      </div>
+    </div>`;
+  }
+  else {
+    inner = frame({kicker:'MANIFESTOS.ORG.UK', kickerColor:GOLD, border:A.border,
+      title: esc(spec.title || 'The British Manifesto Archive'), titleSize:96, subtitle: spec.subtitle});
+  }
+
+  return `<div id="card" class="og-card" style="background:${bg}">${motif}${inner}</div>`;
+}
+
+/* ---------- boot ---------- */
+const SAMPLES = [
+  {type:'home'},
+  {type:'about'},
+  {type:'index', slug:'elections', title:'General Elections', subtitle:'*21 elections*, 1945 to 2024'},
+  {type:'index', slug:'devolved', title:'Beyond Westminster', subtitle:'Holyrood, the Senedd, Stormont, London & Europe'},
+  {type:'index', slug:'nations', title:'The Four Nations & Europe', subtitle:'Results & manifestos by nation'},
+  {type:'index', slug:'others', title:'Other Parties', subtitle:'Smaller parties & independents'},
+  {type:'index', slug:'parties', title:'The Parties', subtitle:'Every party, every manifesto — 1945 to today'},
+  {type:'election', year:2024, kicker:'GENERAL ELECTION', title:'2024 Election', subtitle:'Results, maps & party manifestos', strip:[['#e4003b',26],['#0087dc',18],['#faa61a',12],['#02a95b',8]]},
+  {type:'election', year:1974, ghost:'74', kicker:'GENERAL ELECTION', title:'February 1974 Election', subtitle:'Results, maps & party manifestos'},
+  {type:'election', body:'holyrood', year:2026, kicker:'SCOTTISH PARLIAMENT', title:'2026 Election', subtitle:'Results, maps & party manifestos'},
+  {type:'election', body:'london', year:1955, ghost:'55', kicker:'LONDON COUNTY COUNCIL', title:'1955 Election', subtitle:'Results & party manifestos'},
+  {type:'nation', slug:'scotland', title:'Scotland', subtitle:'Westminster results & devolved government'},
+  {type:'nation', slug:'wales', title:'Wales', subtitle:'Westminster results & devolved government'},
+  {type:'nation', slug:'england', title:'England', subtitle:'Westminster election results'},
+  {type:'nation', slug:'northern-ireland', title:'Northern Ireland', subtitle:'Westminster results & devolved government'},
+  {type:'nation', slug:'europe', title:'Europe', subtitle:'European Parliament results for the UK'},
+  {type:'body', slug:'holyrood', title:'Holyrood', subtitle:'Elections, results & manifestos since *1999*'},
+  {type:'body', slug:'senedd', title:'Senedd', subtitle:'Elections, results & manifestos since *1999*'},
+  {type:'body', slug:'stormont', title:'Stormont', subtitle:'Elections, results & manifestos since *1998*'},
+  {type:'body', slug:'london', title:'London', subtitle:'Elections, results & manifestos since *2000*'},
+  {type:'body', slug:'euro', title:'Brussels & Strasbourg', subtitle:'UK elections, results & manifestos *1979–2019*'},
+  {type:'other-parties', body:'holyrood', kicker:'SCOTTISH PARLIAMENT', title:'Other Parties', subtitle:'Smaller parties & independents at Holyrood'},
+  {type:'party', slug:'sinnfein', title:'Sinn Féin', subtitle:'Manifestos across *11 Westminster* & *7 Assembly* elections'},
+  {type:'party', slug:'tuv', title:'Traditional Unionist Voice', subtitle:'Manifestos across *5 Westminster* & *4 Assembly* elections'},
+  {type:'party', slug:'snp', title:'Scottish National Party', subtitle:'Manifestos across *21 Westminster* & *7 Holyrood* elections'},
+  {type:'party', slug:'speaker', title:'The Speaker', subtitle:'Seeking re-election, by convention unopposed'},
+  {type:'party', slug:'commonwealth', title:'Common Wealth', subtitle:'Manifestos & results, *1945*'},
+  {type:'party', slug:'epp', kicker:'EUROPEAN GROUP', title:'European People\u2019s Party', subtitle:'Manifestos across European Parliament elections'},
+  {type:'manifesto', slug:'labour', year:2024, title:'The Labour Party', subtitle:'Read the full manifesto — *Change*, 136 pages'},
+  {type:'manifesto', slug:'omrlp', year:2015, title:'Official Monster Raving Loony Party', subtitle:'Read the full manifesto'},
+  {type:'manifesto', slug:'conservative', year:1974, yearLabel:'FEB 1974', kicker:'GENERAL ELECTION · FEBRUARY 1974', title:'The Conservative Party', subtitle:'Read the full manifesto'}
+];
+
+function boot(){
+  const params = new URLSearchParams(location.search);
+  const root = document.getElementById('root');
+  let spec = null;
+  if (params.get('spec')){
+    try { spec = JSON.parse(params.get('spec')); } catch(e){ console.error('Bad spec JSON', e); }
+  }
+  if (spec){
+    document.body.classList.add('single');
+    root.innerHTML = renderCard(spec);
+  } else {
+    // QA gallery
+    root.innerHTML = `<div style="display:flex;flex-wrap:wrap;gap:24px;padding:24px">` +
+      SAMPLES.map(s => `<div style="zoom:0.46">${renderCard(s).replace('id="card" ','')}
+        <div style="font:12px monospace;color:#9aa1ad;padding:6px 2px">${esc(JSON.stringify({type:s.type, slug:s.slug, body:s.body, year:s.year}))}</div></div>`).join('') + `</div>`;
+  }
+  document.fonts.ready.then(()=>{ requestAnimationFrame(()=>{ window.__ready = true; }); });
+}
+boot();
+</script>
+</body>
+</html>

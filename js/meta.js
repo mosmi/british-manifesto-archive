@@ -49,6 +49,9 @@ function ogImageForPath(path) {
     return `${SITE_META.url}/og/nation/${parts[1]}.jpg`;
   }
   if (parts[0] === 'devolved' && parts[1]) {
+    if (parts[2] === 'other-parties') {
+      return `${SITE_META.url}/og/devolved/${parts[1]}/other-parties.jpg`;
+    }
     if (parts[2] && parts[2] !== 'other-parties') {
       return `${SITE_META.url}/og/devolved/${parts[1]}/${parts[2]}.jpg`;
     }

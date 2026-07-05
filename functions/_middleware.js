@@ -91,6 +91,9 @@ function ogImagePathForRoute(path) {
   }
   if (parts[0] === 'nation' && parts[1]) return `/og/nation/${parts[1]}.jpg`;
   if (parts[0] === 'devolved' && parts[1]) {
+    if (parts[2] === 'other-parties') {
+      return `/og/devolved/${parts[1]}/other-parties.jpg`;
+    }
     if (parts[2] && parts[2] !== 'other-parties') {
       return `/og/devolved/${parts[1]}/${parts[2]}.jpg`;
     }
@@ -585,6 +588,7 @@ function classify(path, seo) {
           title: `Other Scottish Parties${TITLE_SUFFIX}`,
           description: 'Smaller parties that have contested Scottish Parliament elections at Holyrood.',
         },
+        image: '/og/devolved/holyrood/other-parties.jpg',
       };
     }
     if (portal === 'senedd' && sub === 'other-parties') {
@@ -594,6 +598,7 @@ function classify(path, seo) {
           title: `Other Welsh Parties${TITLE_SUFFIX}`,
           description: 'Smaller parties that have contested Senedd Cymru elections.',
         },
+        image: '/og/devolved/senedd/other-parties.jpg',
       };
     }
     if (portal === 'stormont' && sub === 'other-parties') {
@@ -603,6 +608,7 @@ function classify(path, seo) {
           title: `Other Northern Irish Parties${TITLE_SUFFIX}`,
           description: 'Smaller parties that have contested Northern Ireland Assembly elections at Stormont.',
         },
+        image: '/og/devolved/stormont/other-parties.jpg',
       };
     }
     if (portal === 'holyrood' || portal === 'senedd' || portal === 'stormont') {
@@ -635,6 +641,7 @@ function classify(path, seo) {
             { name: 'European Parliament', path: '/devolved/euro' },
             { name: 'Other EP parties' },
           ])],
+          image: '/og/devolved/euro/other-parties.jpg',
         };
       }
       const portalName = seo.devolved && seo.devolved[portal];

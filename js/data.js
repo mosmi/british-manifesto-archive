@@ -1789,6 +1789,8 @@ const NAV_PARTIES = {
   },
   europe: {
     label: 'Europe',
+    /** Principal families shown in the Parties mega-menu (matches the nation EP table). */
+    megaParties: ['sand', 'epp', 'renew', 'greensefa', 'guengl', 'ecr', 'inddem'],
     parties: [
       'sand', 'epp', 'renew', 'greensefa', 'guengl', 'ecr', 'uen', 'inddem', 'identity',
       'diem25', 'volt', 'ecpm',

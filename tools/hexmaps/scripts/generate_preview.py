@@ -137,6 +137,9 @@ def make_svg(year: int) -> tuple[str, dict, dict]:
 PARTY_ORDER = [
     "Labour", "Conservative", "Liberal Democrats", "Liberal", "Alliance",
     "SNP", "Plaid Cymru", "Reform UK", "Green", "UKIP", "Brexit Party",
+    "S&D", "EPP", "Renew Europe", "Greens/EFA", "GUE/NGL", "ECR",
+    "Eurosceptic groups", "ID", "UEN line", "DiEM25", "Volt", "ECPM",
+    "European Pirates",
     "ILP", "Communist", "Common Wealth", "National Liberal", "Respect",
     "Democratic Labour",
     "Irish Labour", "Republican Labour", "Independent Labour",

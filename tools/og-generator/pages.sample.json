@@ -1,0 +1,21 @@
+[
+  { "path": "home.jpg",                      "spec": { "type": "home" } },
+  { "path": "about.jpg",                     "spec": { "type": "about" } },
+  { "path": "elections.jpg",                 "spec": { "type": "index", "slug": "elections", "title": "General Elections", "subtitle": "*21 elections*, 1945 to 2024" } },
+  { "path": "devolved.jpg",                  "spec": { "type": "index", "slug": "devolved", "title": "Beyond Westminster", "subtitle": "Holyrood, the Senedd, Stormont, London & Europe" } },
+  { "path": "nations.jpg",                   "spec": { "type": "index", "slug": "nations", "title": "The Four Nations & Europe", "subtitle": "Results & manifestos by nation" } },
+  { "path": "others.jpg",                    "spec": { "type": "index", "slug": "others", "title": "Other Parties", "subtitle": "Smaller parties & independents" } },
+  { "path": "parties.jpg",                   "spec": { "type": "index", "slug": "parties", "title": "The Parties", "subtitle": "Every party, every manifesto — 1945 to today" } },
+  { "path": "election/2024.jpg",             "spec": { "type": "election", "year": 2024, "kicker": "GENERAL ELECTION", "title": "2024 Election", "subtitle": "Results, maps & party manifestos", "strip": [["#e4003b", 26], ["#0087dc", 18], ["#faa61a", 12], ["#02a95b", 8]] } },
+  { "path": "election/feb1974.jpg",          "spec": { "type": "election", "year": 1974, "ghost": "74", "kicker": "GENERAL ELECTION", "title": "February 1974 Election", "subtitle": "Results, maps & party manifestos" } },
+  { "path": "devolved/holyrood/2026.jpg",    "spec": { "type": "election", "body": "holyrood", "year": 2026, "kicker": "SCOTTISH PARLIAMENT", "title": "2026 Election", "subtitle": "Results, maps & party manifestos" } },
+  { "path": "devolved/london/lcc-1955.jpg",  "spec": { "type": "election", "body": "london", "year": 1955, "kicker": "LONDON COUNTY COUNCIL", "title": "1955 Election", "subtitle": "Results & party manifestos" } },
+  { "path": "nation/scotland.jpg",           "spec": { "type": "nation", "slug": "scotland", "title": "Scotland", "subtitle": "Westminster results & devolved government" } },
+  { "path": "nation/europe.jpg",             "spec": { "type": "nation", "slug": "europe", "title": "Europe", "subtitle": "European Parliament results for the UK" } },
+  { "path": "devolved/senedd.jpg",           "spec": { "type": "body", "slug": "senedd", "title": "Senedd", "subtitle": "Elections, results & manifestos since *1999*" } },
+  { "path": "devolved/holyrood/other-parties.jpg", "spec": { "type": "other-parties", "body": "holyrood", "kicker": "SCOTTISH PARLIAMENT", "title": "Other Parties", "subtitle": "Smaller parties & independents at Holyrood" } },
+  { "path": "party/sinnfein.jpg",            "spec": { "type": "party", "slug": "sinnfein", "title": "Sinn Féin", "subtitle": "Manifestos across *11 Westminster* & *7 Assembly* elections" } },
+  { "path": "party/epp.jpg",                 "spec": { "type": "party", "slug": "epp", "kicker": "EUROPEAN GROUP", "title": "European People's Party", "subtitle": "Manifestos across European Parliament elections" } },
+  { "path": "manifesto/2024/labour.jpg",     "spec": { "type": "manifesto", "slug": "labour", "year": 2024, "title": "The Labour Party", "subtitle": "Read the full manifesto — *Change*, 136 pages" } },
+  { "path": "manifesto/feb1974/conservative.jpg", "spec": { "type": "manifesto", "slug": "conservative", "year": 1974, "yearLabel": "FEB 1974", "kicker": "GENERAL ELECTION · FEBRUARY 1974", "title": "The Conservative Party", "subtitle": "Read the full manifesto" } }
+]

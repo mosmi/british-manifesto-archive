@@ -12,7 +12,11 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 
-# Local dev artefacts (not part of the public site)
+# Node (OG image generator)
+node_modules/
+tools/og-generator/pages.json
+og/.og-hashes.json
+
 previews/
 .tmp/
 data/cache/
