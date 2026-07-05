@@ -1406,7 +1406,7 @@ function setupTimelineFilter() {
 // ── MANIFESTO CARD BUILDER ────────────────────────────────────
 function buildManifestoCard(pid, election, opts = {}) {
   const p = PARTIES[pid];
-  const displayName  = getPartyName(pid, election.year);
+  const displayName  = (election.manifestoPartyLabels && election.manifestoPartyLabels[pid]) || getPartyName(pid, election.year);
   const pdfPath      = `/manifestos/${election.id}/${pid}/manifesto.pdf`;
   const textPath     = `/manifesto/${election.id}/${pid}`;
   const coverPath    = `/manifestos/${election.id}/${pid}/cover.png?v=${ASSETS_VERSION}`;

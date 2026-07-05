@@ -80,5 +80,27 @@
     }
   ],
   "body": "euro",
-  "manifestos": []
+  "manifestos": [
+    {
+      "title": "ELDR European Manifesto 1994",
+      "pdf": "/manifestos/euro/1994/eldr/manifesto.pdf",
+      "cover": "/manifestos/euro/1994/eldr/manifesto.png",
+      "party": "eldr",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 1994",
+      "pdf": "/manifestos/euro/1994/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/1994/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Green Group European Manifesto 1994",
+      "pdf": "/manifestos/euro/1994/greengroup/manifesto.pdf",
+      "cover": "/manifestos/euro/1994/greengroup/manifesto.png",
+      "party": "greengroup",
+      "group": "alliances"
+    }
+  ]
 }

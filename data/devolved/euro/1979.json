@@ -80,5 +80,13 @@
     }
   ],
   "body": "euro",
-  "manifestos": []
+  "manifestos": [
+    {
+      "title": "ELDR European Manifesto 1979",
+      "pdf": "/manifestos/euro/1979/eldr/manifesto.pdf",
+      "cover": "/manifestos/euro/1979/eldr/manifesto.png",
+      "party": "eldr",
+      "group": "alliances"
+    }
+  ]
 }

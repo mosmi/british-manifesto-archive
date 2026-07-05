@@ -5,7 +5,8 @@
   "date": "23 May 2019",
   "title": "2019 European Parliament election",
   "turnout": 36.9,
-  "control": "brexit",
+  "control": "reform",
+  "winnerName": "Brexit Party",
   "firstMinister": null,
   "majority": false,
   "summary": "Held during a period of intense parliamentary deadlock over the implementation of the Brexit referendum, the election saw the dramatic rise of the newly-formed Brexit Party, led by Nigel Farage. The Brexit Party won 29 seats and topped the poll. The Liberal Democrats had a major resurgence, taking second place with 16 seats on a strong anti-Brexit message. Labour (10) and the Conservatives (4) both suffered severe losses.",
@@ -22,7 +23,8 @@
     "system": "Regional list PR (GB) & STV (NI)",
     "results": [
       {
-        "party": "brexit",
+        "party": "reform",
+        "partyLabel": "Brexit Party",
         "seats": 29,
         "pct": 31.6
       },
@@ -92,6 +94,13 @@
   "body": "euro",
   "manifestos": [
     {
+      "title": "Brexit Party European Election Pledge Card 2019",
+      "pdf": "/manifestos/euro/2019/brexit/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/brexit/manifesto.png",
+      "party": "reform",
+      "partyLabel": "Brexit Party"
+    },
+    {
       "title": "Alliance Party European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/alliance/manifesto.pdf",
       "cover": "/manifestos/euro/2019/alliance/manifesto.png",
@@ -101,13 +110,15 @@
       "title": "Animal Politics EU European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/animalpolitics/manifesto.pdf",
       "cover": "/manifestos/euro/2019/animalpolitics/manifesto.png",
-      "party": "animalpolitics"
+      "party": "animalpolitics",
+      "group": "others"
     },
     {
       "title": "Change UK European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/changeuk/manifesto.pdf",
       "cover": "/manifestos/euro/2019/changeuk/manifesto.png",
-      "party": "changeuk"
+      "party": "changeuk",
+      "group": "others"
     },
     {
       "title": "Green Party European Manifesto 2019",
@@ -116,15 +127,15 @@
       "party": "green"
     },
     {
+      "title": "Conservative Party European Election Communication 2019",
+      "pdf": "/manifestos/euro/2019/conservative/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/conservative/manifesto.png",
+      "party": "conservative"
+    },
+    {
       "title": "Labour European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/labour/manifesto.pdf",
       "cover": "/manifestos/euro/2019/labour/manifesto.png",
-      "party": "labour"
-    },
-    {
-      "title": "Labour European Manifesto 2019 (Transforming Britain and Europe)",
-      "pdf": "/manifestos/euro/2019/labour/manifesto-transforming.pdf",
-      "cover": "/manifestos/euro/2019/labour/manifesto-transforming.png",
       "party": "labour"
     },
     {
@@ -158,10 +169,17 @@
       "party": "sinnfein"
     },
     {
+      "title": "DUP European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/dup/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/dup/manifesto.png",
+      "party": "dup"
+    },
+    {
       "title": "English Democrats European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/englishdemocrats/manifesto.pdf",
       "cover": "/manifestos/euro/2019/englishdemocrats/manifesto.png",
-      "party": "englishdemocrats"
+      "party": "englishdemocrats",
+      "group": "others"
     },
     {
       "title": "UKIP European Manifesto 2019",
@@ -182,10 +200,81 @@
       "party": "wep"
     },
     {
+      "title": "ALDE European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/alde/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/alde/manifesto.png",
+      "party": "alde",
+      "group": "alliances"
+    },
+    {
+      "title": "Democracy in Europe Movement (DiEM25) European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/diem25/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/diem25/manifesto.png",
+      "party": "diem25",
+      "group": "alliances"
+    },
+    {
+      "title": "European Christian Political Movement European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/ecpm/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/ecpm/manifesto.png",
+      "party": "ecpm",
+      "group": "alliances"
+    },
+    {
+      "title": "European Conservatives and Reformists Party European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/ecrp/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/ecrp/manifesto.png",
+      "party": "ecrp",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Free Alliance European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/eurefa/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/eurefa/manifesto.png",
+      "party": "eurefa",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Green Party European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/eurengreens/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/eurengreens/manifesto.png",
+      "party": "eurengreens",
+      "group": "alliances"
+    },
+    {
+      "title": "GUE-NGL European Left European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/eurleft/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/eurleft/manifesto.png",
+      "party": "eurleft",
+      "group": "alliances"
+    },
+    {
+      "title": "European Pirates Party European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/eurpirates/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/eurpirates/manifesto.png",
+      "party": "eurpirates",
+      "group": "alliances"
+    },
+    {
       "title": "PES European Manifesto 2019",
       "pdf": "/manifestos/euro/2019/pes/manifesto.pdf",
       "cover": "/manifestos/euro/2019/pes/manifesto.png",
-      "party": "pes"
+      "party": "pes",
+      "group": "alliances"
+    },
+    {
+      "title": "Volt European Manifesto 2019",
+      "pdf": "/manifestos/euro/2019/volt/manifesto.pdf",
+      "cover": "/manifestos/euro/2019/volt/manifesto.png",
+      "party": "volt",
+      "group": "alliances"
     }
   ]
 }

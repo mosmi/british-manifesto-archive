@@ -80,5 +80,13 @@
     }
   ],
   "body": "euro",
-  "manifestos": []
+  "manifestos": [
+    {
+      "title": "ELDR European Manifesto 1984",
+      "pdf": "/manifestos/euro/1984/eldr/manifesto.pdf",
+      "cover": "/manifestos/euro/1984/eldr/manifesto.png",
+      "party": "eldr",
+      "group": "alliances"
+    }
+  ]
 }

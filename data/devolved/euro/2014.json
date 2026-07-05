@@ -116,6 +116,12 @@
       "party": "green"
     },
     {
+      "title": "Liberal Democrats European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/libdem/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/libdem/manifesto.png",
+      "party": "libdem"
+    },
+    {
       "title": "Plaid Cymru European Manifesto 2014",
       "pdf": "/manifestos/euro/2014/plaid/manifesto.pdf",
       "cover": "/manifestos/euro/2014/plaid/manifesto.png",
@@ -132,6 +138,12 @@
       "pdf": "/manifestos/euro/2014/scottishcon/manifesto.pdf",
       "cover": "/manifestos/euro/2014/scottishcon/manifesto.png",
       "party": "scottishcon"
+    },
+    {
+      "title": "SNP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/snp/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/snp/manifesto.png",
+      "party": "snp"
     },
     {
       "title": "Scottish Greens European Manifesto 2014",
@@ -152,6 +164,36 @@
       "party": "uup"
     },
     {
+      "title": "Alliance Party European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/alliance/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/alliance/manifesto.png",
+      "party": "alliance"
+    },
+    {
+      "title": "DUP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/dup/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/dup/manifesto.png",
+      "party": "dup"
+    },
+    {
+      "title": "Sinn Féin European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/sinnfein/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/sinnfein/manifesto.png",
+      "party": "sinnfein"
+    },
+    {
+      "title": "Green Party NI European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/gpni/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/gpni/manifesto.png",
+      "party": "gpni"
+    },
+    {
+      "title": "Northern Ireland Conservatives European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/nicon/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/nicon/manifesto.png",
+      "party": "nicon"
+    },
+    {
       "title": "Welsh Conservatives European Manifesto 2014",
       "pdf": "/manifestos/euro/2014/welshcon/manifesto.pdf",
       "cover": "/manifestos/euro/2014/welshcon/manifesto.png",
@@ -164,10 +206,60 @@
       "party": "welshlibdem"
     },
     {
+      "title": "ALDE European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/alde/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/alde/manifesto.png",
+      "party": "alde",
+      "group": "alliances"
+    },
+    {
+      "title": "European Alliance for Freedom European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/eaf/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/eaf/manifesto.png",
+      "party": "eaf",
+      "group": "alliances"
+    },
+    {
+      "title": "ECR European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/ecr/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/ecr/manifesto.png",
+      "party": "ecr",
+      "group": "alliances"
+    },
+    {
+      "title": "EPP European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/epp/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/epp/manifesto.png",
+      "party": "epp",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Free Alliance European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/eurefa/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/eurefa/manifesto.png",
+      "party": "eurefa",
+      "group": "alliances"
+    },
+    {
+      "title": "Greens-EFA European Green Party European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/eurengreens/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/eurengreens/manifesto.png",
+      "party": "eurengreens",
+      "group": "alliances"
+    },
+    {
+      "title": "GUE-NGL European Left European Manifesto 2014",
+      "pdf": "/manifestos/euro/2014/eurleft/manifesto.pdf",
+      "cover": "/manifestos/euro/2014/eurleft/manifesto.png",
+      "party": "eurleft",
+      "group": "alliances"
+    },
+    {
       "title": "PES European Manifesto 2014",
       "pdf": "/manifestos/euro/2014/pes/manifesto.pdf",
       "cover": "/manifestos/euro/2014/pes/manifesto.png",
-      "party": "pes"
+      "party": "pes",
+      "group": "alliances"
     }
   ]
 }

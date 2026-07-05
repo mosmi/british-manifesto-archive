@@ -19,6 +19,7 @@ A set of tools for converting political party manifesto PDFs into clean, complet
 | `finalize_manifesto.py` | **Finalization wrapper** — copies working file to destination, verifies SHA-256 hash, and runs QA on the destination |
 | `spot_check.py` | **Spot checker** — extracts key snippets from both PDF and Markdown for quick side-by-side reading-order verification |
 | `log_conversion.py` | **Conversion metadata logger** — writes and reads `.conversion.json` sidecar records (extractor, coverage, QA counts, notes) |
+| `transcribe_pipeline.py` | **Human-gated orchestration layer** — page-ledger workflow for new transcriptions, retrospective audits, conservative repairs, and batch audit reports |
 | `manifests/` | Per-PDF YAML sidecar files that declare per-page extraction mode, skip pages, and header/footer overrides — see `manifests/TEMPLATE.yaml` |
 | `scripts/` | Bespoke per-manifesto extraction scripts for PDFs too complex for the generic extractor |
 | `requirements.txt` | Python package dependencies |
@@ -115,6 +116,19 @@ python extract_manifesto.py path/to/manifesto.pdf
 ---
 
 ## Recommended workflow for a new manifesto
+
+For difficult PDFs, prefer the page-ledger pipeline first. It creates a
+reviewable draft and records page-level extraction candidates, layout risks,
+rendered page references, and selected local extraction methods without writing
+to the public site:
+
+```bash
+python transcribe_pipeline.py new path/to/manifesto.pdf
+```
+
+The generated artifacts live under `tools/transcription-toolkit/work/` and are
+ignored by git. The draft is intentionally human-gated; finalize only after all
+high-risk pages are accepted or manually repaired.
 
 ### Step 1 — Profile the PDF
 
@@ -226,6 +240,76 @@ pip install pytesseract pdf2image --target transcription-toolkit/lib --break-sys
 ```
 
 Then use `extract_compare.py --ocr` to include OCR in the comparison.
+
+### Cloud OCR / document AI fallbacks
+
+The page-ledger pipeline is designed for hybrid extraction: local tools first,
+then paid/cloud OCR only for pages marked risky. The current orchestrator records
+the preferred fallback order in its ledger (`Mistral OCR 4`, then `Qwen-OCR`) but
+does not call those services yet. Wire API clients only after a small benchmark
+shows which service handles manifesto layouts better.
+
+Qwen3.7-Max should be treated as a review/repair orchestration model rather than
+the primary OCR engine; use an OCR/document model for reading pages.
+
+---
+
+## Retrospective audit and repair
+
+Existing `manifesto.md` files can be checked against sibling source PDFs without
+overwriting published Markdown:
+
+```bash
+python transcribe_pipeline.py audit manifestos/2024/labour/manifesto.md
+```
+
+This writes:
+
+- `<manifesto>.audit.json` next to the Markdown file
+- `work/.../ledger.json`
+- page-level local extraction candidates
+- rendered page PNGs for single-file audits
+
+Run a batch audit over source-backed Markdown files:
+
+```bash
+python transcribe_pipeline.py batch-audit --limit 10
+```
+
+Batch mode does not render page PNGs by default, to avoid producing large local
+artifacts. Add `--render-pages` when you need visual evidence for every page.
+
+Conservative repair mode only writes a reviewed draft and diff. It never edits
+`manifesto.md` directly:
+
+```bash
+python transcribe_pipeline.py repair manifestos/2024/labour/manifesto.md
+```
+
+At present, automatic repair is deliberately limited to Contents/Table of
+Contents cleanup: retain the Contents section as a structural overview, but
+remove dotted leaders, standalone page numbers, and trailing page references.
+Layout-sensitive issues remain `needs-human-review`.
+
+For historical manifestos where there is no source PDF but there is an
+authoritative text source, audit against that golden text instead:
+
+```bash
+python transcribe_pipeline.py audit manifestos/1945/labour/manifesto.md \
+  --source-text /Users/mosmi/Claude/Projects/Manifestos/iain-dale/labour-1945.md
+```
+
+Run a batch golden-text audit for Iain Dale-style split files:
+
+```bash
+python transcribe_pipeline.py batch-audit-text \
+  --source-dir /Users/mosmi/Claude/Projects/Manifestos/iain-dale \
+  --party labour
+```
+
+Golden-text audit compares normalized words and Markdown headings. It does not
+make page-layout claims, so use it for pre-digital source text verification
+rather than PDF layout QA.
 
 ---
 
@@ -2467,4 +2551,3 @@ content = content.replace(old, new)
 ```
 
 **Critical:** run all structural string replacements **before** any other text transformations (hyphenation fixes, ligature joins, etc.). Earlier passes that patch individual hyphenated tokens will change the exact characters in the garbled section, causing subsequent `str.replace()` calls to fail with no match. If you discover structural fixes are needed after other transforms have already run, use `repr()` to inspect the exact current character sequence — including Unicode quotes (`\u201c`, `\u201d`), en-dashes (`\u2013`), and smart apostrophes (`\u2019`) — and match against those.
-
