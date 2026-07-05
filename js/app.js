@@ -508,9 +508,7 @@ function renderBreadcrumb(items) {
 }
 
 function partyLink(id, label, year) {
-  const name = label || getPartyName(id, year);
-  if (!id || id === 'others' || !PARTIES[id]) return name;
-  return `<a href="/party/${id}" class="inline-party-link">${name}</a>`;
+  return devolvedPartyLink(id, label, year);
 }
 
 function nationLink(id, label) {
@@ -618,6 +616,13 @@ function buildPartiesMega() {
       niOthers.className = 'mega-all-link';
       niOthers.textContent = 'Other NI parties →';
       col.appendChild(niOthers);
+    }
+    if (nationId === 'europe') {
+      const epOthers = document.createElement('a');
+      epOthers.href = '/devolved/euro/other-parties';
+      epOthers.className = 'mega-all-link';
+      epOthers.textContent = 'Other EP parties →';
+      col.appendChild(epOthers);
     }
     mega.appendChild(col);
   });
@@ -1357,6 +1362,8 @@ const HOME_NATION_ICONS = {
   scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
   'northern-ireland': '🇮🇪',
 };
+const NATION_ICONS = { ...HOME_NATION_ICONS, europe: '🇪🇺' };
+const NATIONS_HUB_ORDER = ['england', 'wales', 'scotland', 'northern-ireland', 'europe'];
 
 function renderNationsGrid() {
   const grid = document.getElementById('nations-grid');
@@ -1375,19 +1382,10 @@ function renderNationsGrid() {
 function renderFeaturedPartiesGrid() {
   const grid = document.getElementById('featured-parties-grid');
   if (!grid) return;
-  [
+  grid.innerHTML = [
     'conservative', 'labour', 'libdem',
     'snp', 'plaid', 'green', 'reform', 'dup', 'sinnfein',
-  ].forEach(id => {
-    const p = PARTIES[id];
-    if (!p) return;
-    const a = document.createElement('a');
-    a.href = `/party/${id}`;
-    a.className = 'party-card';
-    a.style.setProperty('--party-color', p.color);
-    a.innerHTML = `<div class="party-card-name">${p.shortName}</div><div class="party-card-founded">Est. ${p.founded}</div><div class="party-card-color-swatch"></div><div class="party-card-desc">${p.description}</div>`;
-    grid.appendChild(a);
-  });
+  ].map(id => buildPartyBrowseCard(id)).join('');
 }
 
 function setupTimelineFilter() {
@@ -1738,7 +1736,7 @@ async function renderCooperativePartyPage(app, party) {
     : { elections: [], manifestos: [] };
   const holyroodManifestos = holyroodHistory.manifestos;
   const holyroodItems = holyroodManifestos.map(({ election, manifesto }) =>
-    holyroodManifestoCard(manifesto, election.year)
+    holyroodManifestoCard(manifesto, election)
   ).join('');
 
   const seneddHistory = (typeof getSeneddPartyHistory === 'function')
@@ -1746,7 +1744,7 @@ async function renderCooperativePartyPage(app, party) {
     : { elections: [], manifestos: [] };
   const seneddManifestos = seneddHistory.manifestos;
   const seneddItems = seneddManifestos.map(({ election, manifesto }) =>
-    seneddManifestoCard(manifesto, election.year)
+    seneddManifestoCard(manifesto, election)
   ).join('');
 
   // Load Westminster manifestos from ELECTIONS
@@ -1975,22 +1973,24 @@ async function renderCooperativePartyPage(app, party) {
 
 // ── PARTY PAGE ────────────────────────────────────────────────
 async function renderParty(app, id) {
-  const party = PARTIES[id];
+  const partyId = resolvePartyId(id);
+  const party = PARTIES[partyId];
   if (!party) { renderNotFound(app); return; }
-  if (id === 'cooperative') {
+  if (partyId === 'cooperative') {
     await renderCooperativePartyPage(app, party);
     return;
   }
   setPageMeta({
     title: party.shortName,
     description: `Manifestos and election history for the ${party.shortName} in UK general elections since 1945.`,
-    path: `/party/${id}`,
+    path: `/party/${partyId}`,
   });
 
   const color = party.color;
+  const isAllianceParty = typeof isEuroAllianceParty === 'function' && isEuroAllianceParty(partyId);
 
-  const partyElections = ELECTIONS.map(e => {
-    const r = e.results.find(res => res.party === id);
+  const partyElections = isAllianceParty ? [] : ELECTIONS.map(e => {
+    const r = e.results.find(res => res.party === partyId || res.party === id);
     if (r) return { election: e, result: r };
     const pr = (e.partyResults || {})[id];
     if (pr) return { election: e, result: pr };
@@ -2023,70 +2023,70 @@ async function renderParty(app, id) {
   ).join('');
 
   const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
-    ? await getHolyroodPartyHistory(id)
+    ? await getHolyroodPartyHistory(partyId)
     : { elections: [], manifestos: [] };
   const holyroodElections = holyroodHistory.elections;
   const holyroodManifestos = holyroodHistory.manifestos;
 
   const seneddHistory = (typeof getSeneddPartyHistory === 'function')
-    ? await getSeneddPartyHistory(id)
+    ? await getSeneddPartyHistory(partyId)
     : { elections: [], manifestos: [] };
   const seneddElections = seneddHistory.elections;
   const seneddManifestos = seneddHistory.manifestos;
 
   const niHistory = (typeof getNIPartyHistory === 'function')
-    ? await getNIPartyHistory(id)
+    ? await getNIPartyHistory(partyId)
     : { elections: [], manifestos: [] };
   const niElections = niHistory.elections;
   const niManifestos = niHistory.manifestos;
 
   const euroHistory = (typeof getEuroPartyHistory === 'function')
-    ? await getEuroPartyHistory(id)
+    ? await getEuroPartyHistory(partyId)
     : { elections: [], manifestos: [] };
   const euroElections = euroHistory.elections;
   const euroManifestos = euroHistory.manifestos;
 
   const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
   const holyroodElectionRows = holyroodElections.map(pe =>
-    holyroodPartyElectionRow(id, pe, maxHolyroodSeats, color)
+    holyroodPartyElectionRow(partyId, pe, maxHolyroodSeats, color)
   ).join('');
 
   const holyroodItems = holyroodManifestos.map(({ election, manifesto }) =>
-    holyroodManifestoCard(manifesto, election.year)
+    holyroodManifestoCard(manifesto, election)
   ).join('');
 
   const maxSeneddSeats = Math.max(1, ...seneddElections.map(pe => pe.result.seats));
   const seneddElectionRows = seneddElections.map(pe =>
-    seneddPartyElectionRow(id, pe, maxSeneddSeats, color)
+    seneddPartyElectionRow(partyId, pe, maxSeneddSeats, color)
   ).join('');
 
   const seneddItems = seneddManifestos.map(({ election, manifesto }) =>
-    seneddManifestoCard(manifesto, election.year)
+    seneddManifestoCard(manifesto, election)
   ).join('');
 
   const maxNISeats = Math.max(1, ...niElections.map(pe => pe.result.seats));
   const niElectionRows = niElections.map(pe =>
-    niPartyElectionRow(id, pe, maxNISeats, color)
+    niPartyElectionRow(partyId, pe, maxNISeats, color)
   ).join('');
 
   const niItems = niManifestos.map(({ election, manifesto }) =>
-    niManifestoCard(manifesto, election.year)
+    niManifestoCard(manifesto, election)
   ).join('');
 
   const maxEuroSeats = Math.max(1, ...euroElections.map(pe => pe.result.seats));
   const euroElectionRows = euroElections.map(pe =>
-    euroPartyElectionRow(id, pe, maxEuroSeats, color)
+    euroPartyElectionRow(partyId, pe, maxEuroSeats, color)
   ).join('');
 
   const euroItems = euroManifestos.map(({ election, manifesto }) =>
-    euroManifestoCard(manifesto, election.year)
+    euroManifestoCard(manifesto, election)
   ).join('');
 
   const contestedParts = [];
-  if (partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
-  if (holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
-  if (seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
-  if (niElections.length) contestedParts.push(`${niElections.length} Stormont`);
+  if (!isAllianceParty && partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
+  if (!isAllianceParty && holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
+  if (!isAllianceParty && seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
+  if (!isAllianceParty && niElections.length) contestedParts.push(`${niElections.length} Stormont`);
   if (euroElections.length) contestedParts.push(`${euroElections.length} European Parliament`);
   const contestedLabel = contestedParts.join(' · ') || '0';
 
@@ -2119,7 +2119,7 @@ async function renderParty(app, id) {
 
     <div class="party-body">
       <div class="party-description">${party.description}</div>
-      <div class="party-elections-section">
+      ${!isAllianceParty ? `<div class="party-elections-section">
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
@@ -2130,38 +2130,38 @@ async function renderParty(app, id) {
         <h2>Westminster Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
-      </div>
-      ${holyroodElectionRows ? `<div class="party-elections-section">
+      </div>` : ''}
+      ${!isAllianceParty && holyroodElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="party-results-list">${holyroodElectionRows}</div>
       </div>` : ''}
-      ${holyroodItems ? `<div class="party-manifestos-section">
+      ${!isAllianceParty && holyroodItems ? `<div class="party-manifestos-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="manifesto-grid">${holyroodItems}</div>
       </div>` : ''}
-      ${seneddElectionRows ? `<div class="party-elections-section">
+      ${!isAllianceParty && seneddElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="party-results-list">${seneddElectionRows}</div>
       </div>` : ''}
-      ${seneddItems ? `<div class="party-manifestos-section">
+      ${!isAllianceParty && seneddItems ? `<div class="party-manifestos-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="manifesto-grid">${seneddItems}</div>
       </div>` : ''}
-      ${niElectionRows ? `<div class="party-elections-section">
+      ${!isAllianceParty && niElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Stormont</span>
         <h2>Northern Ireland Assembly Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
         <div class="party-results-list">${niElectionRows}</div>
       </div>` : ''}
-      ${niItems ? `<div class="party-manifestos-section">
+      ${!isAllianceParty && niItems ? `<div class="party-manifestos-section">
         <span class="section-label">Stormont</span>
         <h2>Northern Ireland Assembly Manifestos</h2>
         <div class="gold-rule" style="background:${color}"></div>
@@ -2171,6 +2171,7 @@ async function renderParty(app, id) {
         <span class="section-label">European Parliament</span>
         <h2>European Parliament Results</h2>
         <div class="gold-rule" style="background:${color}"></div>
+        ${isAllianceParty ? '<p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1rem">Seats held by UK parties in this EP political group at the constitutive session after each election.</p>' : ''}
         <div class="party-results-list">${euroElectionRows}</div>
       </div>` : ''}
       ${euroItems ? `<div class="party-manifestos-section">
@@ -2184,12 +2185,30 @@ async function renderParty(app, id) {
 }
 
 // ── NATION PAGE ───────────────────────────────────────────────
+function westminsterYearCell(yearLabel) {
+  const election = ELECTIONS.find(e => e.displayYear === yearLabel);
+  if (!election || election.year < 1945) {
+    return `<td style="font-family:var(--font-display);color:var(--cream)">${yearLabel}</td>`;
+  }
+  return `<td style="font-family:var(--font-display);color:var(--cream)"><a href="/election/${election.id}" class="results-table-link">${yearLabel}</a></td>`;
+}
+
+function nationTablePartyHeading(partyId, label, color) {
+  const style = color ? ` style="color:${color}"` : '';
+  if (!partyId || !PARTIES?.[partyId]) {
+    return `<th${style}>${label}</th>`;
+  }
+  return `<th${style}><a href="/party/${partyId}" class="results-table-link">${label}</a></th>`;
+}
+
 function renderNation(app, id) {
   const nation = NATIONS[id];
   if (!nation) { renderNotFound(app); return; }
   setPageMeta({
     title: nation.name,
-    description: `Election results and parties in ${nation.name} at UK general elections since 1945.`,
+    description: id === 'europe'
+      ? 'Pan-European political families that contested European Parliament elections in the United Kingdom from 1979 to 2019.'
+      : `Election results and parties in ${nation.name} at UK general elections since 1945.`,
     path: `/nation/${id}`,
   });
 
@@ -2205,11 +2224,57 @@ function renderNation(app, id) {
 
   const keyFacts = (nation.keyFacts || []).map(f => `<div class="highlight-item"><div class="highlight-marker"></div><span>${f}</span></div>`).join('');
 
+  let euroSection = '';
+  if (id === 'europe' && typeof EURO_ALLIANCE_UK_SEATS !== 'undefined') {
+    const families = [
+      { id: 'sand', label: 'S&D', color: '#E4003B' },
+      { id: 'epp', label: 'EPP', color: '#003399' },
+      { id: 'renew', label: 'Renew', color: '#FFD700' },
+      { id: 'greensefa', label: 'G/EFA', color: '#009639' },
+      { id: 'guengl', label: 'GUE/NGL', color: '#E30613' },
+      { id: 'ecr', label: 'ECR', color: '#1B3A6B' },
+      { id: 'inddem', label: 'Eurosceptic', color: '#70147A' },
+      { id: '_other', label: 'Other', color: 'var(--text-muted)', keys: ['identity', 'uen', 'other'] },
+    ];
+    const seatCount = (seats, family) => {
+      if (family.keys) return family.keys.reduce((sum, key) => sum + (seats[key] || 0), 0);
+      return seats[family.id] || 0;
+    };
+    const years = Object.keys(EURO_ALLIANCE_UK_SEATS).map(Number).sort((a, b) => a - b);
+    const rows = years.map((year) => {
+      const seats = EURO_ALLIANCE_UK_SEATS[year];
+      const total = Object.values(seats).reduce((sum, n) => sum + n, 0);
+      const cells = families.map(f => {
+        const n = seatCount(seats, f);
+        return `<td style="color:${f.color};font-weight:600">${n > 0 ? n : '—'}</td>`;
+      }).join('');
+      return `<tr>
+        <td style="font-family:var(--font-display);color:var(--cream)"><a href="/devolved/euro/${year}" style="color:inherit;text-decoration:none">${year}</a></td>
+        ${cells}
+        <td style="color:var(--cream-dark);font-size:0.8rem">${total}</td>
+      </tr>`;
+    }).join('');
+    const header = families.map(f => {
+      if (f.id === '_other') return `<th style="color:${f.color}">${f.label}</th>`;
+      return nationTablePartyHeading(f.id, f.label, f.color);
+    }).join('');
+    euroSection = `<div class="devolved-section" style="margin-bottom:2.5rem">
+      <span class="section-label">European Parliament Elections</span>
+      <h2>UK MEPs by Political Family, 1979–2019</h2>
+      <div class="gold-rule"></div>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">Seats held by UK parties in each EP political group at the constitutive session after each election. Includes non-attached MEPs mapped to the closest family line (e.g. Brexit Party 2019, BNP 2009). UK Conservatives sat in the European Democrats and EPP-ED groups before forming ECR in 2009. <a href="/devolved/euro">View full European Parliament archive →</a></p>
+      <div style="overflow-x:auto"><table class="results-table">
+        <thead><tr><th>Year</th>${header}<th>Total</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+    </div>`;
+  }
+
   // Westminster GE results table
   let westminsterSection = '';
   if (id === 'england' && nation.westminsterResults) {
     const rows = nation.westminsterResults.map(r => `<tr>
-      <td style="font-family:var(--font-display);color:var(--cream)">${r.year}</td>
+      ${westminsterYearCell(r.year)}
       <td style="color:#0087DC;font-weight:600">${r.con}</td>
       <td style="color:#E4003B;font-weight:600">${r.lab}</td>
       <td style="color:#FAA61A;font-weight:600">${r.ld}</td>
@@ -2222,13 +2287,13 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). England had 485–524 seats 1918–1992; 529 from 1997; 533 from 2010; 543 from 2024. 2024 "Other" = Reform UK 5, Green 4, five independents, Speaker 1. Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#0087DC">Con</th><th style="color:#E4003B">Lab</th><th style="color:#FAA61A">LD</th><th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th>Year</th>${nationTablePartyHeading('conservative', 'Con', '#0087DC')}${nationTablePartyHeading('labour', 'Lab', '#E4003B')}${nationTablePartyHeading('libdem', 'LD', '#FAA61A')}<th>Other</th><th>Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
   } else if (id === 'wales' && nation.westminsterResults) {
     const rows = nation.westminsterResults.map(r => `<tr>
-      <td style="font-family:var(--font-display);color:var(--cream)">${r.year}</td>
+      ${westminsterYearCell(r.year)}
       <td style="color:#0087DC;font-weight:600">${r.con > 0 ? r.con : '—'}</td>
       <td style="color:#E4003B;font-weight:600">${r.lab}</td>
       <td style="color:#FAA61A;font-weight:600">${r.ld > 0 ? r.ld : '—'}</td>
@@ -2242,13 +2307,13 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). Plaid Cymru first contested Westminster elections in 1929. Wales had 35–40 seats 1918–2019; reduced to 32 from 2024. 2005 "Other" = Peter Law, Independent (Blaenau Gwent). Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#0087DC">Con</th><th style="color:#E4003B">Lab</th><th style="color:#FAA61A">LD</th><th style="color:#008672">Plaid</th><th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th>Year</th>${nationTablePartyHeading('welshcon', 'Con', '#0087DC')}${nationTablePartyHeading('welshlab', 'Lab', '#E4003B')}${nationTablePartyHeading('welshlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('plaid', 'Plaid', '#008672')}<th>Other</th><th>Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
   } else if (id === 'scotland' && nation.westminsterResults) {
     const rows = nation.westminsterResults.map(r => `<tr>
-      <td style="font-family:var(--font-display);color:var(--cream)">${r.year}</td>
+      ${westminsterYearCell(r.year)}
       <td style="color:#0087DC;font-weight:600">${r.con > 0 ? r.con : '—'}</td>
       <td style="color:#E4003B;font-weight:600">${r.lab > 0 ? r.lab : '—'}</td>
       <td style="color:#FAA61A;font-weight:600">${r.ld > 0 ? r.ld : '—'}</td>
@@ -2262,20 +2327,20 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). Scotland had 71–72 seats 1918–2001; reduced to 59 from 2005, and 57 from 2024. "Other" in the interwar period includes ILP MPs (Glasgow). The precise breakdown of "Other" seats is not available in the source document. Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#0087DC">Con</th><th style="color:#E4003B">Lab</th><th style="color:#FAA61A">LD</th><th style="color:#FDF38E">SNP</th><th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th>Year</th>${nationTablePartyHeading('scottishcon', 'Con', '#0087DC')}${nationTablePartyHeading('scottishlab', 'Lab', '#E4003B')}${nationTablePartyHeading('scottishlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('snp', 'SNP', '#FDF38E')}<th>Other</th><th>Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
   } else if (id === 'northern-ireland' && nation.westminsterEarly && nation.westminsterResults) {
     const earlyRows = nation.westminsterEarly.map(r => `<tr>
-      <td style="font-family:var(--font-display);color:var(--cream)">${r.year}</td>
+      ${westminsterYearCell(r.year)}
       <td style="color:#0087DC;font-weight:600">${r.unionist}</td>
       <td style="color:#2AA82C;font-weight:600">${r.nationalist > 0 ? r.nationalist : '—'}</td>
       <td style="color:var(--text-muted)">${r.other > 0 ? r.other : '—'}</td>
       <td style="color:var(--cream-dark);font-size:0.8rem">${r.total}</td>
     </tr>`).join('');
     const modernRows = nation.westminsterResults.map(r => `<tr>
-      <td style="font-family:var(--font-display);color:var(--cream)">${r.year}</td>
+      ${westminsterYearCell(r.year)}
       <td style="color:#48A5EE;font-weight:600">${r.uup > 0 ? r.uup : '—'}</td>
       <td style="color:#2AA82C;font-weight:600">${r.sdlp > 0 ? r.sdlp : '—'}</td>
       <td style="color:#D46A4C;font-weight:600">${r.dup > 0 ? r.dup : '—'}</td>
@@ -2295,7 +2360,7 @@ function renderNation(app, id) {
       </table></div>
       <p style="color:var(--cream-dark);font-size:0.85rem;font-weight:600;margin-bottom:0.5rem">1974–2024</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#48A5EE">UUP</th><th style="color:#2AA82C">SDLP</th><th style="color:#D46A4C">DUP</th><th style="color:#326760">Sinn Féin</th><th>Other²</th><th>Total</th></tr></thead>
+        <thead><tr><th>Year</th>${nationTablePartyHeading('uup', 'UUP', '#48A5EE')}${nationTablePartyHeading('sdlp', 'SDLP', '#2AA82C')}${nationTablePartyHeading('dup', 'DUP', '#D46A4C')}${nationTablePartyHeading('sinnfein', 'Sinn Féin', '#326760')}<th>Other²</th><th>Total</th></tr></thead>
         <tbody>${modernRows}</tbody>
       </table></div>
       <p style="color:var(--text-muted);font-size:0.75rem;margin-top:1rem">¹ Includes all unionist parties; UUPs took the Conservative whip until 1974. ² Includes Alliance, TUV and independents; 2024 Other = Alliance (1), TUV (1), Independent (1). Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
@@ -2377,13 +2442,19 @@ function renderNation(app, id) {
     ])}
     <section class="nation-hero">
       <div class="nation-hero-inner">
-        <span class="section-label">United Kingdom — Four Nations</span>
+        <span class="section-label">${id === 'europe' ? 'United Kingdom — European Alliances' : 'United Kingdom — Four Nations'}</span>
         <h1 class="nation-hero-title">${nation.name}</h1>
         <div class="gold-rule"></div>
         <div class="nation-hero-stats">
+          ${id === 'europe' ? `
+          <div class="nation-stat"><div class="nation-stat-num">73</div><div class="nation-stat-label">UK MEPs (2019)</div></div>
+          <div class="nation-stat"><div class="nation-stat-num">1979–2019</div><div class="nation-stat-label">Nine EP Elections</div></div>
+          <div class="nation-stat"><div class="nation-stat-num" style="font-size:0.85rem;letter-spacing:0.04em">${nation.electoralSystem.split(';')[0].trim()}</div><div class="nation-stat-label">Electoral System</div></div>
+          ` : `
           <div class="nation-stat"><div class="nation-stat-num">${nation.constituencies}</div><div class="nation-stat-label">Westminster Constituencies</div></div>
           ${nation.devolvedBody ? `<div class="nation-stat"><div class="nation-stat-num">${nation.devolvedYear}</div><div class="nation-stat-label">${nation.devolvedBody} Established</div></div>` : '<div class="nation-stat"><div class="nation-stat-num">—</div><div class="nation-stat-label">No Devolved Parliament</div></div>'}
           <div class="nation-stat"><div class="nation-stat-num" style="font-size:0.85rem;letter-spacing:0.04em">${nation.electoralSystem.split(';')[0].trim()}</div><div class="nation-stat-label">Westminster Electoral System</div></div>
+          `}
         </div>
       </div>
     </section>
@@ -2393,19 +2464,22 @@ function renderNation(app, id) {
         <div>
           <p class="nation-description">${nation.description}</p>
           ${keyFacts ? `<div class="highlights-list" style="margin-top:2rem"><h3>Key Facts</h3>${keyFacts}</div>` : ''}
+          ${euroSection}
           ${westminsterSection}
           ${devolvedTable}
           <p style="font-size:0.75rem;color:var(--text-faint);margin-top:1.5rem">Source: ${nation.source}</p>
         </div>
         <div>
           <div class="nation-parties-card">
-            <div class="section-label" style="margin-bottom:1rem">Parties in ${nation.name}</div>
+            <div class="section-label" style="margin-bottom:1rem">${id === 'europe' ? 'Alliance families' : `Parties in ${nation.name}`}</div>
             ${partyLinks}
             ${id === 'england' ? `<a href="/others" class="nation-party-link" style="--party-color:var(--gold)"><span class="nation-party-dot" style="background:var(--gold)"></span><span>Other parties →</span></a>` : ''}
             ${id === 'scotland' ? `<a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>` : ''}
             ${id === 'wales' ? `<a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>` : ''}
             ${id === 'northern-ireland' ? `<a href="/devolved/stormont/other-parties" class="holyrood-other-link">Other Northern Irish parties →</a>` : ''}
+            ${id === 'europe' ? `<a href="/devolved/euro/other-parties" class="holyrood-other-link">Other EP parties →</a>` : ''}
           </div>
+          ${id === 'europe' ? `<a href="/devolved/euro" class="cross-archive-link" style="margin-top:1rem;display:flex">European Parliament archive →</a>` : ''}
         </div>
       </div>
     </div>
@@ -2479,31 +2553,33 @@ function renderOthers(app) {
   });
   const cards = [...OTHERS_PARTIES]
     .sort((a, b) => (PARTIES[a]?.name || a).localeCompare(PARTIES[b]?.name || b, 'en-GB'))
-    .map(pid => {
-    const p = PARTIES[pid];
-    if (!p) return '';
-    return `<a href="/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
-      <div class="others-party-swatch" style="background:${p.color}"></div>
-      <div>
-        <div class="others-party-name">${p.name}</div>
-        <div class="others-party-meta">${p.spectrum}${p.founded ? ` · Est. ${p.founded}` : ''}</div>
-        <div class="others-party-desc">${p.description}</div>
-      </div>
-    </a>`;
-  }).join('');
+    .map(pid => buildPartyBrowseCard(pid, { fullName: true, meta: true }))
+    .join('');
 
   app.innerHTML = `
     <div class="about-section">
       <span class="section-label">Parties</span>
       <h1>Other Parties</h1>
       <div class="gold-rule"></div>
-      <p style="color:var(--text-muted);margin-bottom:1rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats.</p>
-      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties contesting the Scottish Parliament:</p>
-      <a href="/devolved/holyrood/other-parties" class="cross-archive-link">Other Scottish Parties →</a>
-      <p style="color:var(--text-muted);margin-bottom:0.75rem;margin-top:1.25rem">For parties contesting the Welsh Parliament:</p>
-      <a href="/devolved/senedd/other-parties" class="cross-archive-link">Other Welsh Parties →</a>
-      <p style="color:var(--text-muted);margin-bottom:0.75rem;margin-top:1.25rem">For parties contesting the Northern Ireland Assembly:</p>
-      <a href="/devolved/stormont/other-parties" class="cross-archive-link">Other Northern Irish Parties →</a>
+      <p style="color:var(--text-muted);margin-bottom:1.5rem">Smaller, fringe, single-issue, and historical parties that have contested UK general elections. Many have had a disproportionate influence on British politics despite winning few or no seats.</p>
+      <div class="others-devolved-grid">
+        <div class="others-devolved-cell">
+          <div class="others-devolved-label">Scottish Parliament</div>
+          <a href="/devolved/holyrood/other-parties" class="others-devolved-link"><span>Other Scottish Parties</span><span class="others-devolved-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="others-devolved-cell">
+          <div class="others-devolved-label">Welsh Parliament</div>
+          <a href="/devolved/senedd/other-parties" class="others-devolved-link"><span>Other Welsh Parties</span><span class="others-devolved-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="others-devolved-cell">
+          <div class="others-devolved-label">Northern Ireland Assembly</div>
+          <a href="/devolved/stormont/other-parties" class="others-devolved-link"><span>Other Northern Irish Parties</span><span class="others-devolved-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="others-devolved-cell">
+          <div class="others-devolved-label">European Parliament</div>
+          <a href="/devolved/euro/other-parties" class="others-devolved-link"><span>Other European Parliament Parties</span><span class="others-devolved-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
       <div class="others-grid">${cards}</div>
     </div>
   `;
@@ -2773,24 +2849,27 @@ function renderDevolvedHub(app) {
 
 function renderNationsHub(app) {
   setPageMeta({
-    title: 'The Four Nations',
-    description: 'Browse the four nations of the United Kingdom — England, Wales, Scotland, and Northern Ireland — with Westminster results and devolved government.',
+    title: 'The Four Nations & Europe',
+    description: 'Browse England, Wales, Scotland, Northern Ireland, and European political families — Westminster results and devolved government.',
     path: '/nations',
   });
 
-  const cards = Object.keys(HOME_NATION_ICONS).map(id => {
+  const cards = NATIONS_HUB_ORDER.map(id => {
     const nation = NATIONS[id];
     if (!nation) return '';
-    const devolved = nation.devolvedBody
-      ? nation.devolvedBody
-      : 'No devolved parliament';
+    const devolved = id === 'europe'
+      ? 'European Parliament (1979–2019)'
+      : (nation.devolvedBody ? nation.devolvedBody : 'No devolved parliament');
+    const meta = id === 'europe'
+      ? `${nation.constituencies} UK MEPs (2019) · ${devolved}`
+      : `${nation.constituencies} Westminster MPs · ${devolved}`;
     const excerpt = nation.description.length > 160
       ? `${nation.description.slice(0, 160).replace(/\s+\S*$/, '')}…`
       : nation.description;
     return `<a href="/nation/${id}" class="hub-nation-card">
-      <div class="hub-nation-icon">${HOME_NATION_ICONS[id]}</div>
+      <div class="hub-nation-icon">${NATION_ICONS[id]}</div>
       <strong>${nation.name}</strong>
-      <span class="hub-nation-meta">${nation.constituencies} Westminster MPs · ${devolved}</span>
+      <span class="hub-nation-meta">${meta}</span>
       <p>${excerpt}</p>
       <span class="hub-card-cta">View nation →</span>
     </a>`;
@@ -2804,9 +2883,9 @@ function renderNationsHub(app) {
     <div class="hub-page">
       <header class="hub-page-header">
         <span class="section-label">United Kingdom</span>
-        <h1>The Four Nations</h1>
+        <h1>The Four Nations &amp; Europe</h1>
         <div class="gold-rule"></div>
-        <p>England, Wales, Scotland, and Northern Ireland — Westminster representation, devolved government, and parties contesting elections in each nation.</p>
+        <p>England, Wales, Scotland, and Northern Ireland — plus pan-European political families that contested UK European elections.</p>
       </header>
       <div class="hub-nations-grid">${cards}</div>
     </div>
@@ -2835,8 +2914,10 @@ function renderPartiesHub(app) {
       otherLink = `<a href="/devolved/holyrood/other-parties" class="hub-all-others-link">Other Scottish parties →</a>`;
     } else if (nationId === 'wales') {
       otherLink = `<a href="/devolved/senedd/other-parties" class="hub-all-others-link">Other Welsh parties →</a>`;
-    } else if (nationId === 'northern-ireland') {
+    } else     if (nationId === 'northern-ireland') {
       otherLink = `<a href="/devolved/stormont/other-parties" class="hub-all-others-link">Other Northern Irish parties →</a>`;
+    } else if (nationId === 'europe') {
+      otherLink = `<a href="/devolved/euro/other-parties" class="hub-all-others-link">Other EP parties →</a>`;
     }
 
     return `<section class="hub-parties-section" aria-labelledby="hub-nation-${nationId}">
@@ -2873,7 +2954,7 @@ function renderPartiesHub(app) {
         <span class="section-label">Browse by Nation</span>
         <h1>Political Parties</h1>
         <div class="gold-rule"></div>
-        <p>Parties contesting UK and devolved elections, organised by the four nations of the United Kingdom.</p>
+        <p>Parties contesting UK, devolved, and European elections, organised by nation and pan-European alliance families.</p>
       </header>
       <div class="hub-parties-grid">
         ${nationSections}

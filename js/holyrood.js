@@ -105,46 +105,21 @@ function holyroodPartyName(row, year) {
 }
 
 function holyroodPartyCell(row, year) {
-  const color = holyroodPartyColor(row.party);
+  const pageId = resolvePartyId(row.party);
+  const color = holyroodPartyColor(pageId);
   const name = holyroodPartyName(row, year);
-  const inner = (row.party && PARTIES?.[row.party])
-    ? `<a href="/party/${row.party}" class="inline-party-link">${name}</a>`
+  const inner = (pageId && PARTIES?.[pageId])
+    ? devolvedPartyLink(pageId, name, year)
     : name;
   return `<div class="result-party-name"><div class="result-party-swatch" style="background:${color}"></div>${inner}</div>`;
 }
 
-function holyroodManifestoCard(m, year) {
-  const color = holyroodPartyColor(m.party);
-  const partyName = holyroodPartyName(m, year);
-  const heading = m.candidate || partyName;
-  const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
-  return `
-    <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
-      <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${heading} manifesto PDF">
-        <img src="${m.cover}?v=${ASSETS_VERSION}" alt="${heading} manifesto cover"
-          class="img-lazy" loading="lazy" decoding="async"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="manifesto-thumb-placeholder" style="display:none">
-          <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
-            <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9"/>
-          </svg>
-          <span class="thumb-year">${year}</span>
-        </div>
-      </a>
-      <div class="manifesto-card-header">
-        <div class="manifesto-party-dot" style="background:${color}"></div>
-        <div class="manifesto-party-name">${heading}</div>
-        ${m.party && PARTIES?.[m.party] ? `<div class="manifesto-party-tag">${partyName}</div>` : ''}
-      </div>
-      <div class="manifesto-card-body">
-        ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
-        </a>
-      </div>
-    </div>`;
+function holyroodManifestoCard(m, electionOrYear) {
+  const election = normalizeDevolvedElection(electionOrYear);
+  return buildDevolvedManifestoCard(m, election, {
+    color: holyroodPartyColor(m.party),
+    partyName: holyroodPartyName(m, election.year),
+  });
 }
 
 function holyroodParliamentSection(election) {
@@ -238,7 +213,7 @@ async function renderHolyroodElection(app, id) {
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} Scottish Parliament election, ordered by seats won.</p>
-        <div class="manifesto-grid">${holyroodManifestosBySeats(election).map(m => holyroodManifestoCard(m, election.year)).join('')}</div>
+        <div class="manifesto-grid">${holyroodManifestosBySeats(election).map(m => holyroodManifestoCard(m, election)).join('')}</div>
       </div>`
     : '';
 
@@ -501,18 +476,8 @@ function renderHolyroodOtherParties(app) {
   const ids = (typeof HOLYROOD_OTHER_PARTIES !== 'undefined') ? HOLYROOD_OTHER_PARTIES : [];
   const cards = [...ids]
     .sort((a, b) => (PARTIES[a]?.name || a).localeCompare(PARTIES[b]?.name || b, 'en-GB'))
-    .map(pid => {
-      const p = PARTIES[pid];
-      if (!p) return '';
-      return `<a href="/party/${pid}" class="others-party-card" style="--party-color:${p.color}">
-        <div class="others-party-swatch" style="background:${p.color}"></div>
-        <div>
-          <div class="others-party-name">${p.name}</div>
-          <div class="others-party-meta">${p.spectrum}${p.founded ? ` · Est. ${p.founded}` : ''}</div>
-          <div class="others-party-desc">${p.description}</div>
-        </div>
-      </a>`;
-    }).join('');
+    .map(pid => buildPartyBrowseCard(pid, { fullName: true, meta: true }))
+    .join('');
 
   app.innerHTML = `
     ${renderBreadcrumb([
@@ -526,7 +491,7 @@ function renderHolyroodOtherParties(app) {
       <h1>Other Scottish Parties</h1>
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Parties that have contested Scottish Parliament elections but are not among the principal groups on the Holyrood portal. Many appear only on the regional list under AMS.</p>
-      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have won Westminster seats:</p>
+      <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
       <a href="/others" class="cross-archive-link">Other Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
