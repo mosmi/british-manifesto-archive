@@ -110,10 +110,11 @@ function drawParliamentChart(container, results, totalSeats, year) {
   svg.style.height = 'auto';
   svg.style.display = 'block';
 
-  // Background depth arc lines (rgba(255,255,255,0.06) stroke for better visibility)
+  // Background depth arc lines
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
   const arcGroup = document.createElementNS(NS, 'g');
   arcGroup.setAttribute('fill', 'none');
-  arcGroup.setAttribute('stroke', 'rgba(255,255,255,0.06)');
+  arcGroup.setAttribute('stroke', isLight ? 'rgba(20,32,58,0.08)' : 'rgba(255,255,255,0.06)');
   arcGroup.setAttribute('stroke-width', '1');
   radii.forEach(r => {
     const path = document.createElementNS(NS, 'path');
@@ -166,10 +167,14 @@ function drawParliamentChart(container, results, totalSeats, year) {
     return g;
   };
 
-  svg.appendChild(createArcSegmentsGroup(28 * scale, 18 * scale, 0.3));
-  svg.appendChild(createArcSegmentsGroup(14 * scale, 6 * scale, 0.55));
-  svg.appendChild(createArcSegmentsGroup(6 * scale, 2 * scale, 0.85));
-  svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95)); // Crisp core line
+  if (isLight) {
+    svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95));
+  } else {
+    svg.appendChild(createArcSegmentsGroup(28 * scale, 18 * scale, 0.3));
+    svg.appendChild(createArcSegmentsGroup(14 * scale, 6 * scale, 0.55));
+    svg.appendChild(createArcSegmentsGroup(6 * scale, 2 * scale, 0.85));
+    svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95));
+  }
 
   // Seat dots
   const dotsGroup = document.createElementNS(NS, 'g');
@@ -218,7 +223,12 @@ function buildParliamentLegend(legendEl, results, year) {
 
     const dot = document.createElement('div');
     dot.className = 'legend-dot';
-    dot.style.background = r.party ? getPartyColor(r.party, year) : '#6b7280';
+    const raw = r.party ? getPartyColor(r.party, year) : '#6b7280';
+    if (typeof dotStyle === 'function') {
+      dot.setAttribute('style', dotStyle(raw));
+    } else {
+      dot.style.background = raw;
+    }
 
     const label = document.createElement('span');
     label.textContent = r.partyLabel || getPartyName(r.party, year);

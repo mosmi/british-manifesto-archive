@@ -153,6 +153,8 @@ def main() -> None:
 
     ensure_deps()
 
+    subprocess.run(["node", str(ROOT / "scripts" / "build-party-colours.mjs")], cwd=ROOT, check=True)
+
     manifest_args = ["--out", str(MANIFEST)]
     if args.only:
         manifest_args.extend(["--only", args.only])

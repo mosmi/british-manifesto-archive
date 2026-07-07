@@ -282,6 +282,10 @@ function main() {
   const nations = seo.nations || {};
   const portals = seo.devolvedPortals || {};
   const holdings = buildHoldings(seo);
+  const holdingsPath = join(ROOT, 'data', 'party-holdings.json');
+  writeFileSync(holdingsPath, JSON.stringify(holdings, null, 2) + '\n', 'utf8');
+  console.log(`Wrote ${Object.keys(holdings).length} party holdings to ${holdingsPath}`);
+
   const pages = [];
 
   if (opts.only.has('home')) {

@@ -49,7 +49,8 @@ Common fields: `title`, `subtitle` (use `*text*` for cream emphasis), `kicker` (
 | `manifesto` | `slug`/`colour`, `year`, `yearLabel` (e.g. "FEB 1974") | party-colour spine |
 
 ## Colour system
-Palette embedded in `og.html` (same as `../party-colours.json`). Derivation rules,
+Palette loaded from [`data/party-colours.json`](../../data/party-colours.json) via
+`colour.py` (aliases + overrides). Derivation rules,
 applied automatically to every colour:
 - **surface** (spine/edge bar): raw colour; lifted to oklch L≈0.48 if too dark for the navy field; achromatic → slate
 - **kicker text**: lightness clamped to ≥0.75, chroma capped; achromatic → `#aab3c0`

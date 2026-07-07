@@ -1,0 +1,295 @@
+{
+  "conservative": {
+    "westminster": 22,
+    "euro": 4,
+    "london": 5
+  },
+  "labour": {
+    "westminster": 22,
+    "euro": 4,
+    "london": 4
+  },
+  "libdem": {
+    "westminster": 22,
+    "euro": 4,
+    "london": 6
+  },
+  "alba": {
+    "westminster": 1,
+    "holyrood": 1
+  },
+  "alliance": {
+    "westminster": 7,
+    "euro": 3,
+    "stormont": 7
+  },
+  "cooperative": {
+    "westminster": 6,
+    "holyrood": 4,
+    "london": 2,
+    "senedd": 4
+  },
+  "dup": {
+    "westminster": 7,
+    "euro": 4,
+    "stormont": 7
+  },
+  "green": {
+    "westminster": 7,
+    "euro": 4,
+    "london": 6
+  },
+  "gpni": {
+    "westminster": 5,
+    "euro": 3,
+    "stormont": 6
+  },
+  "plaid": {
+    "westminster": 8,
+    "euro": 4,
+    "senedd": 7
+  },
+  "reform": {
+    "westminster": 2,
+    "euro": 1,
+    "holyrood": 1,
+    "london": 1,
+    "senedd": 2
+  },
+  "sdlp": {
+    "westminster": 7,
+    "euro": 3,
+    "stormont": 7
+  },
+  "snp": {
+    "westminster": 9,
+    "euro": 4,
+    "holyrood": 7
+  },
+  "scottishcon": {
+    "westminster": 7,
+    "euro": 1,
+    "holyrood": 7
+  },
+  "scottishgrn": {
+    "westminster": 5,
+    "euro": 3,
+    "holyrood": 7
+  },
+  "scottishlab": {
+    "westminster": 7,
+    "euro": 1,
+    "holyrood": 6
+  },
+  "scottishlibdem": {
+    "westminster": 6,
+    "euro": 1,
+    "holyrood": 7
+  },
+  "sinnfein": {
+    "westminster": 8,
+    "euro": 4,
+    "stormont": 7
+  },
+  "tuv": {
+    "westminster": 3,
+    "euro": 2,
+    "stormont": 4
+  },
+  "uup": {
+    "westminster": 8,
+    "euro": 4,
+    "stormont": 7
+  },
+  "welshcon": {
+    "westminster": 6,
+    "euro": 1,
+    "senedd": 6
+  },
+  "welshlab": {
+    "westminster": 7,
+    "senedd": 7
+  },
+  "workersparty": {
+    "westminster": 1,
+    "holyrood": 1
+  },
+  "ukip": {
+    "westminster": 6,
+    "euro": 4,
+    "holyrood": 3,
+    "london": 1,
+    "senedd": 4,
+    "stormont": 1
+  },
+  "welshlibdem": {
+    "westminster": 5,
+    "euro": 1,
+    "senedd": 6
+  },
+  "nha": {
+    "westminster": 1
+  },
+  "pirate": {
+    "westminster": 2
+  },
+  "wep": {
+    "westminster": 1,
+    "euro": 1,
+    "holyrood": 1
+  },
+  "omrlp": {
+    "westminster": 3
+  },
+  "bnp": {
+    "westminster": 3,
+    "euro": 1,
+    "holyrood": 3,
+    "london": 2
+  },
+  "respect": {
+    "westminster": 1,
+    "london": 1
+  },
+  "ssp": {
+    "westminster": 1,
+    "euro": 1,
+    "holyrood": 4
+  },
+  "eldr": {
+    "euro": 5
+  },
+  "epp": {
+    "euro": 7
+  },
+  "greengroup": {
+    "euro": 2
+  },
+  "pes": {
+    "euro": 6
+  },
+  "alde": {
+    "euro": 4
+  },
+  "eurengreens": {
+    "euro": 5
+  },
+  "independent": {
+    "euro": 1,
+    "london": 2
+  },
+  "sea": {
+    "euro": 1,
+    "stormont": 2
+  },
+  "eurefa": {
+    "euro": 4
+  },
+  "eurleft": {
+    "euro": 4
+  },
+  "englishdemocrats": {
+    "euro": 2
+  },
+  "christian": {
+    "euro": 1
+  },
+  "ecr": {
+    "euro": 2
+  },
+  "inddem": {
+    "euro": 1
+  },
+  "uen": {
+    "euro": 1
+  },
+  "nicon": {
+    "euro": 1,
+    "stormont": 5
+  },
+  "eaf": {
+    "euro": 1
+  },
+  "animalpolitics": {
+    "euro": 1
+  },
+  "changeuk": {
+    "euro": 1
+  },
+  "diem25": {
+    "euro": 1
+  },
+  "ecpm": {
+    "euro": 1
+  },
+  "ecrp": {
+    "euro": 1
+  },
+  "eurpirates": {
+    "euro": 1
+  },
+  "volt": {
+    "euro": 1
+  },
+  "solidarity": {
+    "holyrood": 1
+  },
+  "communist": {
+    "holyrood": 2,
+    "senedd": 2
+  },
+  "rise": {
+    "holyrood": 1
+  },
+  "isp": {
+    "holyrood": 2
+  },
+  "allforunity": {
+    "holyrood": 1
+  },
+  "scottishfamily": {
+    "holyrood": 1
+  },
+  "scottishlibertarian": {
+    "holyrood": 2
+  },
+  "sovereignty": {
+    "holyrood": 1
+  },
+  "walesgrn": {
+    "senedd": 4
+  },
+  "gwlad": {
+    "senedd": 2
+  },
+  "propel": {
+    "senedd": 2
+  },
+  "abolish": {
+    "senedd": 1
+  },
+  "tusc": {
+    "senedd": 2
+  },
+  "heritage": {
+    "senedd": 1
+  },
+  "niwc": {
+    "stormont": 2
+  },
+  "workerspartyie": {
+    "stormont": 7
+  },
+  "pup": {
+    "stormont": 4
+  },
+  "ukup": {
+    "stormont": 1
+  },
+  "rsf": {
+    "stormont": 1
+  },
+  "pbp": {
+    "stormont": 2
+  }
+}

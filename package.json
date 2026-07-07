@@ -4,10 +4,11 @@
   "type": "module",
   "scripts": {
     "postinstall": "node ./node_modules/puppeteer/install.mjs",
-    "og:manifest": "node tools/og-generator/build-manifest.mjs",
+    "party-colours": "node scripts/build-party-colours.mjs",
+    "og:manifest": "node scripts/build-party-colours.mjs && node tools/og-generator/build-manifest.mjs",
     "og:render": "node tools/og-generator/generate-og.mjs tools/og-generator/pages.json .",
-    "og:build": "node tools/og-generator/build-manifest.mjs && node tools/og-generator/generate-og.mjs tools/og-generator/pages.json .",
-    "og:sample": "node tools/og-generator/build-manifest.mjs --sample && node tools/og-generator/generate-og.mjs tools/og-generator/pages.json . --force"
+    "og:build": "node scripts/build-party-colours.mjs && node tools/og-generator/build-manifest.mjs && node tools/og-generator/generate-og.mjs tools/og-generator/pages.json .",
+    "og:sample": "node scripts/build-party-colours.mjs && node tools/og-generator/build-manifest.mjs --sample && node tools/og-generator/generate-og.mjs tools/og-generator/pages.json . --force"
   },
   "devDependencies": {
     "puppeteer": "^24.0.0"

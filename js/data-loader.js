@@ -2,7 +2,7 @@
    Lazy election data loader — falls back to bundled ELECTIONS
    ============================================================ */
 
-const ASSETS_VERSION = '2026070518';
+const ASSETS_VERSION = '2026070602';
 
 const _electionCache = new Map();
 
@@ -10,9 +10,11 @@ const _electionCache = new Map();
 async function fetchTyped(url, expected) {
   const r = await fetch(url, { cache: 'no-cache' });
   const ct = (r.headers.get('content-type') || '').toLowerCase();
+  const path = url.split('?')[0].toLowerCase();
   const okType = expected === 'json'
     ? ct.includes('json')
-    : ct.includes('markdown') || ct.includes('text/plain');
+    : ct.includes('markdown') || ct.includes('text/plain')
+      || (ct.includes('octet-stream') && path.endsWith('.md'));
   if (!r.ok || !okType) {
     throw new Error(`Unexpected response for ${url}: ${r.status} ${ct}`);
   }

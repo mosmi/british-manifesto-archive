@@ -2039,14 +2039,26 @@ function buildPartyBrowseCard(pid, opts = {}) {
   const p = PARTIES[pid];
   if (!p) return '';
   const name = opts.fullName ? p.name : (p.shortName || p.name);
+  const accent = typeof partyAccentDerived === 'function'
+    ? partyAccentDerived(pid)
+    : { surface: p.color, kicker: p.color };
+  const foundedKicker = p.founded ? `EST. ${p.founded}` : '';
   const subline = opts.meta
     ? `${p.spectrum}${p.founded ? ` · Est. ${p.founded}` : ''}`
-    : (p.founded ? `Est. ${p.founded}` : '');
-  return `<a href="/party/${pid}" class="party-card" style="--party-color:${p.color}">
-    <div class="party-card-name">${name}</div>
-    <div class="party-card-founded">${subline}</div>
-    <div class="party-card-color-swatch"></div>
-    <div class="party-card-desc">${p.description}</div>
+    : foundedKicker;
+  const holdingsLine = typeof formatPartyHoldingsLine === 'function'
+    ? formatPartyHoldingsLine(pid)
+    : '';
+  const headerHtml = opts.meta
+    ? `<div class="party-card-name">${name}</div><div class="party-card-founded">${subline}</div>`
+    : `<div><span class="party-card-name">${name}</span>${foundedKicker ? `<span class="party-card-founded">${foundedKicker}</span>` : ''}</div>`;
+  return `<a href="/party/${pid}" class="party-card" style="--party-surface:${accent.surface};--party-kicker:${accent.kicker}">
+    <div class="party-card-edge"></div>
+    <div class="party-card-body">
+      ${headerHtml}
+      <div class="party-card-desc">${p.description}</div>
+      ${holdingsLine ? `<div class="party-card-holdings">${holdingsLine}</div>` : ''}
+    </div>
   </a>`;
 }
 
