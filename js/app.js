@@ -2908,6 +2908,10 @@ function enhanceManifestoHtml(html, accent) {
   wrap.style.setProperty('--manifesto-party-colour', accent.surface);
   wrap.querySelectorAll('h2').forEach((h2, idx) => {
     if (!h2.id) h2.id = `section-${idx + 1}`;
+    const label = h2.textContent.trim();
+    if (!h2.querySelector('.manifesto-section-link')) {
+      h2.innerHTML = `<a href="#${h2.id}" class="manifesto-section-link">${label}</a>`;
+    }
   });
   const firstP = wrap.querySelector('p');
   if (firstP) firstP.classList.add('manifesto-lede');
@@ -2915,9 +2919,59 @@ function enhanceManifestoHtml(html, accent) {
 }
 
 function buildManifestoTocLinks(headings) {
-  return headings.map((h, i) =>
-    `<a href="#${h.id}" class="manifesto-toc-link" data-section-index="${i}">${h.textContent.trim()}</a>`
-  ).join('');
+  return headings.map((h, i) => {
+    const id = h.id || `section-${i + 1}`;
+    const label = h.querySelector('.manifesto-section-link')?.textContent?.trim()
+      || h.textContent.trim();
+    return `<a href="#${id}" class="manifesto-toc-link" data-section-index="${i}">${label}</a>`;
+  }).join('');
+}
+
+function manifestoNavOffset() {
+  const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) || 68;
+  return navH + 24;
+}
+
+function scrollToManifestoSection(id, { smooth = true } = {}) {
+  const el = document.getElementById(id);
+  if (!el) return false;
+  const top = el.getBoundingClientRect().top + window.scrollY - manifestoNavOffset();
+  window.scrollTo({ top: Math.max(0, top), behavior: smooth ? 'smooth' : 'auto' });
+  return true;
+}
+
+function bindManifestoSectionLinks(root, onNavigate) {
+  if (!root) return;
+  root.querySelectorAll('a[href^="#section-"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const id = link.getAttribute('href').slice(1);
+      if (!id) return;
+      e.preventDefault();
+      if (scrollToManifestoSection(id)) {
+        history.replaceState(null, '', `${getPath()}#${id}`);
+        if (typeof onNavigate === 'function') onNavigate(id);
+      }
+    });
+  });
+}
+
+function applyManifestoSectionHash() {
+  const hash = window.location.hash;
+  if (!hash.startsWith('#section-')) return;
+  const id = hash.slice(1);
+  requestAnimationFrame(() => {
+    if (scrollToManifestoSection(id, { smooth: false })) {
+      const headings = [...document.querySelectorAll('#manifesto-content h2[id]')];
+      const idx = headings.findIndex(h => h.id === id);
+      if (idx >= 0) {
+        document.querySelectorAll('.manifesto-toc-link').forEach((link, i) => {
+          link.classList.toggle('is-active', i === idx);
+        });
+        const cur = document.getElementById('manifesto-section-current');
+        if (cur) cur.textContent = String(idx + 1);
+      }
+    }
+  });
 }
 
 function buildManifestoHeaderMetaHtml(election, meta, body) {
@@ -3000,9 +3054,15 @@ function setupManifestoReader(contentEl, paperEl, accent) {
   };
 
   function varNavOffset() {
-    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) || 68;
-    return navH + 24;
+    return manifestoNavOffset();
   }
+
+  bindManifestoSectionLinks(document, (id) => {
+    const idx = headings.findIndex(h => h.id === id);
+    if (idx >= 0) setActive(idx);
+  });
+  applyManifestoSectionHash();
+  window.addEventListener('hashchange', applyManifestoSectionHash);
 
   if (headings.length && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -3243,8 +3303,8 @@ function renderNationsHub(app) {
     const motif = nationCardMotifHtml(id);
     return `<a href="/nation/${id}" class="hub-nation-card nation-card" style="--nation-border:${accent.border}">
       ${motif}
-      <strong>${nation.name}</strong>
       <span class="hub-nation-meta">${meta}</span>
+      <strong>${nation.name}</strong>
       <p>${excerpt}</p>
       <span class="hub-card-cta">View nation →</span>
     </a>`;

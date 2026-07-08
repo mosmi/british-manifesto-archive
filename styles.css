@@ -2268,6 +2268,23 @@ h1, h2, h3, h4 {
   color: #191b20;
   margin: 2.5rem 0 1rem;
 }
+.manifesto-section-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.manifesto-section-link:hover {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+[data-theme="light"] .manifesto-content h2,
+[data-theme="light"] .manifesto-content .manifesto-section-link {
+  color: var(--ink);
+}
+[data-theme="light"] .manifesto-content .manifesto-section-link:hover {
+  color: var(--gold);
+}
 .manifesto-content h3 {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -4434,18 +4451,27 @@ h1, h2, h3, h4 {
 
 /* A5 — nation card motifs */
 .nation-motif-zone {
+  position: absolute;
   right: 0;
   top: 0;
   width: 120px;
   height: 120px;
   overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }
 .nation-card .nation-name,
 .hub-nation-card strong {
   max-width: calc(100% - 130px);
 }
-.nation-card .nation-mp {
+.nation-card .nation-mp,
+.hub-nation-card .hub-nation-meta,
+.hub-nation-card p,
+.hub-nation-card .hub-card-cta {
   max-width: calc(100% - 130px);
+}
+.hub-nation-card .hub-nation-meta {
+  margin-top: 0;
 }
 .nation-motif-england .nation-motif-cross-h,
 .nation-motif-england .nation-motif-cross-v {
@@ -4453,33 +4479,33 @@ h1, h2, h3, h4 {
   background: rgba(224, 90, 90, 0.28);
 }
 .nation-motif-england .nation-motif-cross-h {
-  left: 18px;
+  right: 38px;
   top: 54px;
-  width: 64px;
-  height: 12px;
+  width: 56px;
+  height: 10px;
 }
 .nation-motif-england .nation-motif-cross-v {
-  left: 44px;
-  top: 28px;
-  width: 12px;
-  height: 64px;
+  right: 60px;
+  top: 32px;
+  width: 10px;
+  height: 56px;
 }
 .nation-motif-wales {
   background: rgba(24, 145, 106, 0.14);
-  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 35% 55%, 55% 75%, 75% 20%, 90% 50%, 100% 35%);
+  clip-path: polygon(100% 0%, 100% 100%, 55% 100%, 72% 62%, 88% 78%, 100% 28%);
 }
 .nation-motif-scotland .nation-motif-saltire-a,
 .nation-motif-scotland .nation-motif-saltire-b {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100px;
-  height: 12px;
+  right: 10px;
+  top: 52px;
+  width: 72px;
+  height: 10px;
   background: rgba(107, 163, 232, 0.24);
   transform-origin: center;
 }
-.nation-motif-scotland .nation-motif-saltire-a { transform: translate(-50%, -50%) rotate(35deg); }
-.nation-motif-scotland .nation-motif-saltire-b { transform: translate(-50%, -50%) rotate(-35deg); }
+.nation-motif-scotland .nation-motif-saltire-a { transform: rotate(35deg); }
+.nation-motif-scotland .nation-motif-saltire-b { transform: rotate(-35deg); }
 .nation-motif-ni .nation-motif-hex {
   position: absolute;
   width: 36px;
@@ -4515,7 +4541,19 @@ h1, h2, h3, h4 {
   background: rgba(158, 195, 230, 0.12);
 }
 [data-theme="light"] .nation-motif-ring {
-  border-color: rgba(138, 109, 44, 0.2);
+  border-color: rgba(138, 109, 44, 0.18);
+}
+[data-theme="light"] .hub-nation-card strong {
+  color: var(--ink);
+}
+[data-theme="light"] .hub-nation-card .hub-nation-meta {
+  color: var(--gold);
+}
+[data-theme="light"] .hub-nation-card p {
+  color: var(--ink-body);
+}
+[data-theme="light"] .hub-nation-card .hub-card-cta {
+  color: var(--gold);
 }
 
 /* A7 — placeholder covers + ghost numerals */
