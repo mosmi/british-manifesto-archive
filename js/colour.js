@@ -145,6 +145,12 @@ function ghostTint(hex, theme) {
   return rgbaHex(surface, opacity);
 }
 
+function ghostNumeral(hex, theme) {
+  const resolvedTheme = theme || getCurrentTheme();
+  const kicker = kickerTextColour(hex, resolvedTheme);
+  return rgbaHex(kicker, resolvedTheme === 'light' ? 0.30 : 0.12);
+}
+
 function barColour(hex, theme) {
   const resolvedTheme = theme || getCurrentTheme();
   const lch = rgbToOklch(hexToRgb(hex));

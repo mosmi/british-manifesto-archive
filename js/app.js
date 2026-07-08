@@ -783,6 +783,8 @@ function renderHome(app) {
                 <button type="button" class="slider-step-btn" id="slider-prev" aria-label="Previous election">◀</button>
                 <div class="slider-track-wrap" style="position: relative; flex: 1; margin: 0 10px; padding-top: 20px;">
                   <div class="slider-year-badge" id="slider-year-badge"></div>
+                  <div class="slider-thumb-marker" id="slider-thumb-marker" aria-hidden="true"></div>
+                  <div class="slider-election-ticks" id="slider-election-ticks" aria-hidden="true"></div>
                   <input type="range" class="election-slider" id="election-slider" min="0" max="${ELECTIONS.length - 1}" value="${_homeElectionIndex}" aria-label="Select general election year" style="margin: 0; width: 100%;">
                   <div class="slider-ticks" id="slider-ticks" style="margin-top: 6px;"></div>
                 </div>
@@ -1027,24 +1029,71 @@ function initHomeDashboard() {
   updateHomeDashboard(_homeElectionIndex);
 }
 
+const SLIDER_YEAR_START = 1945;
+const SLIDER_YEAR_END = 2024;
+const SLIDER_YEAR_SPAN = SLIDER_YEAR_END - SLIDER_YEAR_START;
+const SLIDER_LABEL_YEARS = [1945, 1955, 1966, 1974, 1987, 2001, 2015, 2024];
+
+function electionCalendarYear(election) {
+  if (election.id === 'feb1974') return 1974.12;
+  if (election.id === 'oct1974') return 1974.79;
+  return election.year;
+}
+
+function calendarYearToSliderPct(y) {
+  return ((y - SLIDER_YEAR_START) / SLIDER_YEAR_SPAN) * 100;
+}
+
+function electionIndexToSliderPct(idx) {
+  const election = ELECTIONS[idx];
+  return election ? calendarYearToSliderPct(electionCalendarYear(election)) : 0;
+}
+
+function electionIndexForLabelYear(y) {
+  if (y === 1974) return ELECTIONS.findIndex(e => e.id === 'feb1974');
+  if (y === 2024) return ELECTIONS.length - 1;
+  return ELECTIONS.findIndex(e => e.year === y);
+}
+
+function positionSliderThumb(idx) {
+  const pct = electionIndexToSliderPct(idx);
+  const thumbOffset = `calc(${pct}% + (${8 - pct * 0.16}px))`;
+  const badge = document.getElementById('slider-year-badge');
+  const marker = document.getElementById('slider-thumb-marker');
+  if (badge) badge.style.left = thumbOffset;
+  if (marker) marker.style.left = thumbOffset;
+
+  document.querySelectorAll('.slider-election-tick').forEach(el => {
+    el.classList.toggle('is-active', parseInt(el.getAttribute('data-idx'), 10) === idx);
+  });
+}
+
 function buildSliderTicks() {
+  const electionTicksEl = document.getElementById('slider-election-ticks');
+  if (electionTicksEl) {
+    electionTicksEl.innerHTML = ELECTIONS.map((e, idx) => {
+      const pct = electionIndexToSliderPct(idx);
+      return `<button type="button" class="slider-election-tick" style="left:${pct}%" data-idx="${idx}" aria-label="${e.displayYear || e.year} election"></button>`;
+    }).join('');
+
+    electionTicksEl.querySelectorAll('.slider-election-tick').forEach(btn => {
+      btn.addEventListener('click', () => {
+        _homeElectionIndex = parseInt(btn.getAttribute('data-idx'), 10);
+        const slider = document.getElementById('election-slider');
+        if (slider) slider.value = _homeElectionIndex;
+        updateHomeDashboard(_homeElectionIndex);
+      });
+    });
+  }
+
   const el = document.getElementById('slider-ticks');
   if (!el) return;
-  
-  const ticks = [
-    { idx: 0, label: '1945' },
-    { idx: 3, label: '1955' },
-    { idx: 6, label: '1966' },
-    { idx: 8, label: '1974' },
-    { idx: 12, label: '1987' },
-    { idx: 15, label: '2001' },
-    { idx: 18, label: '2015' },
-    { idx: 21, label: '2024' }
-  ];
 
-  el.innerHTML = ticks.map(t => {
-    const pct = (t.idx / (ELECTIONS.length - 1)) * 100;
-    return `<button type="button" class="slider-tick" style="left:${pct}%" data-idx="${t.idx}">${t.label}</button>`;
+  el.innerHTML = SLIDER_LABEL_YEARS.map(y => {
+    const pct = calendarYearToSliderPct(y);
+    const idx = electionIndexForLabelYear(y);
+    const shift = y === SLIDER_YEAR_START ? '0%' : (y === SLIDER_YEAR_END ? '-100%' : '-50%');
+    return `<button type="button" class="slider-tick" style="left:${pct}%;--tick-shift:${shift}" data-idx="${idx}">${y}</button>`;
   }).join('');
 
   el.querySelectorAll('.slider-tick').forEach(btn => {
@@ -1160,7 +1209,7 @@ function buildHomeSliderLegend(election) {
         ? partyTextColour(p.id === 'libdem' && election.year < 1988 ? 'liberal' : p.id, election.year)
         : raw;
       const dotCss = typeof dotStyle === 'function' ? dotStyle(raw) : `background:${raw}`;
-      return `<span class="slider-legend-item" data-party="${p.id}" style="color:${textCol}"><i style="${dotCss};box-shadow:0 0 6px ${textCol}33"></i><span class="slider-legend-label" style="color:inherit">${p.label}</span>: <span>${seats}</span></span>`;
+      return `<span class="slider-legend-item" data-party="${p.id}" style="color:${textCol}"><i style="${dotCss}"></i><span class="slider-legend-label" style="color:inherit">${p.label}</span>: <span>${seats}</span></span>`;
     })
     .filter(Boolean)
     .join('');
@@ -1197,18 +1246,25 @@ function updateHomeDashboard(idx) {
   const chart = document.getElementById('home-parliament-chart');
   if (chart) drawParliamentChart(chart, election.results, election.totalSeats, election.year);
 
-  // Update Slider Year Badge centered above thumb (using displayYear to call out Feb/Oct 1974)
+  // Update slider year badge + thumb at calendar-year position
+  const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
+  const thumbColor = theme === 'light'
+    ? '#e4003b'
+    : (typeof barColour === 'function'
+      ? barColour(getPartyColor(election.winner, election.year), theme)
+      : getPartyColor(election.winner, election.year));
+
   const badge = document.getElementById('slider-year-badge');
   if (badge) {
     badge.textContent = election.displayYear || election.year;
-    const pctVal = (idx / (ELECTIONS.length - 1)) * 100;
-    badge.style.left = `calc(${pctVal}% + (${8 - pctVal * 0.16}px))`;
-    const winnerColorHex = typeof barColour === 'function'
-      ? barColour(getPartyColor(election.winner, election.year))
-      : getPartyColor(election.winner, election.year);
-    badge.style.backgroundColor = winnerColorHex;
-    badge.style.setProperty('--party-color', winnerColorHex);
+    badge.style.backgroundColor = thumbColor;
+    badge.style.setProperty('--party-color', thumbColor);
   }
+
+  const marker = document.getElementById('slider-thumb-marker');
+  if (marker) marker.style.setProperty('--slider-thumb', thumbColor);
+
+  positionSliderThumb(idx);
 
   buildHomePercentageRow(election);
   buildHomeSliderLegend(election);
@@ -1538,10 +1594,10 @@ function buildManifestoCard(pid, election, opts = {}) {
   const partyBar = typeof barColour === 'function'
     ? barColour(getPartyColor(pid, election.year), theme)
     : p.color;
-  const ghostDigits = String(election.displayYear || election.year).replace(/\D/g, '').slice(-2) || String(election.year).slice(-2);
-  const ghostColour = typeof ghostTint === 'function'
-    ? ghostTint(accent.raw, theme)
-    : accent.surface;
+  const ghostYear = String(election.year);
+  const ghostColour = typeof ghostNumeral === 'function'
+    ? ghostNumeral(accent.raw, theme)
+    : (typeof ghostTint === 'function' ? ghostTint(accent.raw, theme) : accent.surface);
   const dotCss = typeof dotStyle === 'function' ? dotStyle(getPartyColor(pid, election.year), theme) : `background:${p.color}`;
   const displayName  = (election.manifestoPartyLabels && election.manifestoPartyLabels[pid]) || getPartyName(pid, election.year);
   const pdfPath      = `/manifestos/${election.id}/${pid}/manifesto.pdf`;
@@ -1586,22 +1642,15 @@ function buildManifestoCard(pid, election, opts = {}) {
         </a>`
     : '';
 
-  return `<div class="manifesto-card" style="--party-color:${partyBar};--party-dim:${accent.border};--party-surface:${accent.surface};--party-ghost:${ghostColour}">
+  return `<div class="manifesto-card" style="--party-color:${partyBar};--party-dim:${accent.border};--party-surface:${accent.surface};--party-ghost:${ghostColour};--party-kicker:${accent.kicker}">
       <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
         <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
           class="img-lazy" loading="lazy" decoding="async"
           onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFallback}';}">
         <div class="manifesto-thumb-placeholder" style="display:none">
-          <div class="manifesto-placeholder-ghost" aria-hidden="true">${ghostDigits}</div>
-          <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
-            <rect x="4" y="2" width="32" height="42" rx="2" fill="currentColor" opacity="0.15"/>
-            <rect x="8" y="6" width="32" height="42" rx="2" fill="currentColor" opacity="0.2"/>
-            <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9" stroke="currentColor" stroke-width="0.5"/>
-            <line x1="19" y1="22" x2="37" y2="22" stroke="white" stroke-width="1.5" opacity="0.4"/>
-            <line x1="19" y1="28" x2="37" y2="28" stroke="white" stroke-width="1.5" opacity="0.4"/>
-            <line x1="19" y1="34" x2="30" y2="34" stroke="white" stroke-width="1.5" opacity="0.4"/>
-          </svg>
-          <span class="thumb-year">${election.displayYear}</span>
+          <div class="manifesto-placeholder-topbar"></div>
+          <div class="manifesto-placeholder-ghost" aria-hidden="true">${ghostYear}</div>
+          <span class="manifesto-placeholder-label">Scan not yet archived</span>
         </div>
       </a>
       <div class="manifesto-card-header">
@@ -1659,9 +1708,12 @@ function renderElection(app, id) {
       const niOnly   = r.votes === 0 && ['uup','vanguard','dup','sdlp','sinnfein','alliance','gpni','pup','tuv'].includes(r.party);
       const votesDisplay   = r.votes   > 0 ? r.votes.toLocaleString()   : '—';
       const pctDisplay     = r.percentage > 0 ? r.percentage.toFixed(1) + '%' : (niOnly ? '<span style="font-size:0.72rem;color:var(--text-faint)">NI only</span>' : '—');
+      const swatchCol = typeof barColour === 'function'
+        ? barColour(getPartyColor(r.party, election.year), theme)
+        : getPartyColor(r.party, election.year);
       return `<tr>
-        <td><div class="result-party-name"><div class="result-party-swatch" style="background:${getPartyColor(r.party)}"></div>${partyLink(r.party, null, election.year)}${isWinner && hasMaj ? ' <span class="majority-badge">✦ Majority</span>' : ''}${isWinner && !hasMaj ? ' <span class="majority-badge">✦ Largest party</span>' : ''}</div></td>
-        <td><div class="result-seats-bar-wrap"><div class="result-seats-bar"><div class="result-seats-fill" style="width:${(r.seats/maxSeats*100).toFixed(1)}%;background:${getPartyColor(r.party)}"></div></div><strong style="color:var(--cream);min-width:32px">${r.seats}</strong></div></td>
+        <td><div class="result-party-name"><div class="result-party-swatch" style="background:${swatchCol}"></div>${partyLink(r.party, null, election.year)}${isWinner && hasMaj ? ' <span class="majority-badge">✦ Majority</span>' : ''}${isWinner && !hasMaj ? ' <span class="majority-badge">✦ Largest party</span>' : ''}</div></td>
+        <td><div class="result-seats-bar-wrap"><div class="result-seats-bar"><div class="result-seats-fill" style="width:${(r.seats/maxSeats*100).toFixed(1)}%;background:${swatchCol}"></div></div><strong style="color:var(--cream);min-width:32px">${r.seats}</strong></div></td>
         <td style="color:var(--text-muted)">${votesDisplay}</td>
         <td style="color:var(--text-muted)">${pctDisplay}</td>
       </tr>`;
@@ -1876,6 +1928,9 @@ async function initElectionHexmap(electionId) {
 // ── CO-OPERATIVE PARTY CUSTOM PAGE ───────────────────────────
 async function renderCooperativePartyPage(app, party) {
   const color = party.color;
+  const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
+  const kickerCol = typeof partyTextColour === 'function' ? partyTextColour('cooperative', null, theme) : color;
+  const barCol = typeof barColour === 'function' ? barColour(color, theme) : color;
   const coopChambers = ['22 Westminster', '7 Holyrood', '7 Senedd'];
   setPageMeta({
     title: party.shortName,
@@ -2019,11 +2074,11 @@ async function renderCooperativePartyPage(app, party) {
       { label: 'Home', href: '/' },
       { label: party.shortName },
     ])}
-    <section class="party-hero" style="--party-color:${color}">
+    <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
       <div class="party-hero-inner">
         <div>
-          <div class="party-color-bar" style="background:${color}"></div>
+          <div class="party-color-bar" style="background:${barCol}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
           ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
           <dl class="party-hero-meta">
@@ -2043,7 +2098,7 @@ async function renderCooperativePartyPage(app, party) {
       <div class="coop-representation-section">
         <span class="section-label">Current Representation</span>
         <h2>Elected Representatives</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="coop-rep-grid">
           <div class="coop-rep-card">
             <div class="coop-rep-num">41</div>
@@ -2066,42 +2121,42 @@ async function renderCooperativePartyPage(app, party) {
       <div class="party-elections-section">
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Joint Representatives</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${westminsterRows}</div>
       </div>
 
       <div class="party-manifestos-section">
         <span class="section-label">Documents</span>
         <h2>Westminster Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>
 
       <div class="party-elections-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Joint Representatives</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${holyroodRows}</div>
       </div>
 
       <div class="party-manifestos-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${holyroodItems ? `<div class="manifesto-grid">${holyroodItems}</div>` : '<p style="color:var(--text-muted)">No Scottish Parliament manifestos on record.</p>'}
       </div>
 
       <div class="party-elections-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Joint Representatives</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${seneddRows}</div>
       </div>
 
       <div class="party-manifestos-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${seneddItems ? `<div class="manifesto-grid">${seneddItems}</div>` : '<p style="color:var(--text-muted)">No Welsh Parliament manifestos on record.</p>'}
       </div>
 
@@ -2137,6 +2192,9 @@ async function renderParty(app, id) {
   }
 
   const color = party.color;
+  const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
+  const kickerCol = typeof partyTextColour === 'function' ? partyTextColour(partyId, null, theme) : color;
+  const barCol = typeof barColour === 'function' ? barColour(color, theme) : color;
   const isAllianceParty = typeof isEuroAllianceParty === 'function' && isEuroAllianceParty(partyId);
 
   const partyElections = isAllianceParty ? [] : ELECTIONS.map(e => {
@@ -2258,11 +2316,11 @@ async function renderParty(app, id) {
       ...nationCrumb,
       { label: party.shortName },
     ])}
-    <section class="party-hero" style="--party-color:${color}">
+    <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
       <div class="party-hero-inner">
         <div>
-          <div class="party-color-bar" style="background:${color}"></div>
+          <div class="party-color-bar" style="background:${barCol}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
           ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
           <dl class="party-hero-meta">
@@ -2271,7 +2329,7 @@ async function renderParty(app, id) {
             <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
           </dl>
         </div>
-        ${electionsWon > 0 ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${typeof partyTextColour === 'function' ? partyTextColour(partyId) : color}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>` : ''}
+        ${electionsWon > 0 ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${kickerCol}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>` : ''}
       </div>
     </section>
 
@@ -2280,62 +2338,62 @@ async function renderParty(app, id) {
       ${!isAllianceParty ? `<div class="party-elections-section">
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${electionRows ? `<div class="party-results-list">${electionRows}</div>` : '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
       </div>
       <div class="party-manifestos-section">
         <span class="section-label">Documents</span>
         <h2>Westminster Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>` : ''}
       ${!isAllianceParty && holyroodElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${holyroodElectionRows}</div>
       </div>` : ''}
       ${!isAllianceParty && holyroodItems ? `<div class="party-manifestos-section">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${holyroodItems}</div>
       </div>` : ''}
       ${!isAllianceParty && seneddElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${seneddElectionRows}</div>
       </div>` : ''}
       ${!isAllianceParty && seneddItems ? `<div class="party-manifestos-section">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${seneddItems}</div>
       </div>` : ''}
       ${!isAllianceParty && niElectionRows ? `<div class="party-elections-section">
         <span class="section-label">Stormont</span>
         <h2>Northern Ireland Assembly Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="party-results-list">${niElectionRows}</div>
       </div>` : ''}
       ${!isAllianceParty && niItems ? `<div class="party-manifestos-section">
         <span class="section-label">Stormont</span>
         <h2>Northern Ireland Assembly Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${niItems}</div>
       </div>` : ''}
       ${euroElectionRows ? `<div class="party-elections-section">
         <span class="section-label">European Parliament</span>
         <h2>European Parliament Results</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         ${isAllianceParty ? '<p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1rem">Seats held by UK parties in this EP political group at the constitutive session after each election.</p>' : ''}
         <div class="party-results-list">${euroElectionRows}</div>
       </div>` : ''}
       ${euroItems ? `<div class="party-manifestos-section">
         <span class="section-label">European Parliament</span>
         <h2>European Parliament Manifestos</h2>
-        <div class="gold-rule" style="background:${color}"></div>
+        <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${euroItems}</div>
       </div>` : ''}
     </div>
@@ -2373,14 +2431,7 @@ function renderNation(app, id) {
   });
 
   const navConfig = NAV_PARTIES[id];
-  const partyLinks = navConfig ? navConfig.parties.map(pid => {
-    const p = PARTIES[pid];
-    if (!p) return '';
-    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
-      <span class="nation-party-dot" style="background:${p.color}"></span>
-      <span>${p.shortName}</span>
-    </a>`;
-  }).join('') : '';
+  const partyLinks = navConfig ? navConfig.parties.map(pid => nationPartyLinkHtml(pid)).join('') : '';
 
   const keyFacts = (nation.keyFacts || []).map(f => `<div class="highlight-item"><div class="highlight-marker"></div><span>${f}</span></div>`).join('');
 
@@ -2658,14 +2709,7 @@ function renderDevolved(app, id) {
 
   const nation = NATIONS[portal.nation];
   const navConfig = NAV_PARTIES[portal.nation];
-  const partyLinks = navConfig ? navConfig.parties.map(pid => {
-    const p = PARTIES[pid];
-    if (!p) return '';
-    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
-      <span class="nation-party-dot" style="background:${p.color}"></span>
-      <span>${p.shortName}</span>
-    </a>`;
-  }).join('') : '';
+  const partyLinks = navConfig ? navConfig.parties.map(pid => nationPartyLinkHtml(pid)).join('') : '';
 
   app.innerHTML = `
     ${renderBreadcrumb([

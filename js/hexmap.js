@@ -443,7 +443,12 @@ function buildHexmapLegend(legendEl, constituencies, electionYear) {
 
     const dot = document.createElement('div');
     dot.className = 'legend-dot';
-    dot.style.background = getPartyColor(r.party);
+    const raw = getPartyColor(r.party, electionYear);
+    if (typeof dotStyle === 'function') {
+      dot.setAttribute('style', dotStyle(raw));
+    } else {
+      dot.style.background = raw;
+    }
 
     const label = document.createElement('span');
     label.textContent = r.label || getPartyName(r.party, electionYear);

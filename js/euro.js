@@ -403,14 +403,7 @@ async function renderEuroPortal(app) {
 
   const partyLinks = [
     'reform', 'labour', 'conservative', 'libdem', 'green', 'ukip', 'snp', 'plaid', 'alliance', 'sinnfein', 'dup', 'uup', 'sdlp'
-  ].map(pid => {
-    const p = PARTIES[pid];
-    if (!p) return '';
-    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
-      <span class="nation-party-dot" style="background:${p.color}"></span>
-      <span>${p.shortName}</span>
-    </a>`;
-  }).join('');
+  ].map(pid => nationPartyLinkHtml(pid)).join('');
 
   app.innerHTML = `
     ${renderBreadcrumb([

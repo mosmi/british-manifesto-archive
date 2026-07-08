@@ -1185,6 +1185,27 @@ h1, h2, h3, h4 {
   background: var(--navy-dark);
   box-shadow: inset 0 0 60px var(--party-dim, rgba(255,255,255,0.04));
   border-top: 3px solid var(--party-color);
+  position: relative;
+  overflow: hidden;
+}
+.manifesto-placeholder-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--party-color);
+}
+.manifesto-placeholder-label {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--party-kicker, var(--party-color, var(--gold)));
+  opacity: 0.75;
 }
 .thumb-doc-icon {
   width: 44px;
@@ -2913,21 +2934,22 @@ h1, h2, h3, h4 {
 }
 .election-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background: var(--party-accent, var(--gold));
-  border: 2px solid var(--cream);
+  background: transparent;
+  border: none;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  opacity: 0;
 }
 .election-slider::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background: var(--party-accent, var(--gold));
-  border: 2px solid var(--cream);
+  background: transparent;
+  border: none;
   cursor: pointer;
+  opacity: 0;
 }
 .election-slider:focus-visible::-webkit-slider-thumb {
   outline: 2px solid var(--gold-light);
@@ -2963,6 +2985,47 @@ h1, h2, h3, h4 {
   border-color: var(--party-color, var(--party-accent, var(--gold))) transparent transparent transparent;
   transition: border-top-color 0.2s;
 }
+.slider-thumb-marker {
+  position: absolute;
+  top: 19px;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  border-radius: 50%;
+  background: var(--slider-thumb, var(--party-accent, var(--gold)));
+  border: 3px solid var(--cream, #fff);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 5;
+  transition: left 0.1s ease-out, background-color 0.2s;
+}
+.slider-election-ticks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 23.5px;
+  height: 8px;
+  z-index: 2;
+}
+.slider-election-tick {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--navy-card, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.slider-election-tick:hover,
+.slider-election-tick.is-active {
+  background: var(--gold);
+  border-color: var(--gold);
+}
 .slider-ticks {
   position: relative;
   height: 28px;
@@ -2970,7 +3033,7 @@ h1, h2, h3, h4 {
 }
 .slider-tick {
   position: absolute;
-  transform: translateX(-50%);
+  transform: translateX(var(--tick-shift, -50%));
   font-family: var(--font-ui);
   font-size: 0.62rem;
   color: var(--text-faint);
@@ -4236,7 +4299,7 @@ h1, h2, h3, h4 {
   color: var(--ink);
 }
 [data-theme="light"] .viz-tabs {
-  background: var(--surface);
+  background: var(--navy-mid);
   border: 1px solid var(--hairline);
 }
 [data-theme="light"] .viz-tab:hover {
@@ -4262,6 +4325,80 @@ h1, h2, h3, h4 {
 }
 [data-theme="light"] .video-placeholder-text {
   color: var(--ink-muted);
+}
+
+/* A1 — election slider panel (legend stays in panel) */
+[data-theme="light"] .election-slider-panel {
+  background: var(--surface);
+  backdrop-filter: none;
+  border: 1px solid var(--hairline);
+  box-shadow: 0 4px 14px rgba(20, 32, 58, 0.05);
+}
+[data-theme="light"] .slider-legend-item {
+  color: var(--ink-muted);
+}
+[data-theme="light"] .slider-legend-item span {
+  color: var(--ink-muted);
+}
+[data-theme="light"] .slider-step-btn {
+  border-color: rgba(20, 32, 58, 0.2);
+  color: var(--ink-muted);
+}
+[data-theme="light"] .slider-step-btn:hover {
+  background: var(--gold-dim);
+  border-color: var(--gold-rule);
+  color: var(--ink);
+}
+[data-theme="light"] .election-slider {
+  background: rgba(20, 32, 58, 0.12);
+}
+[data-theme="light"] .slider-thumb-marker {
+  --slider-thumb: #e4003b;
+  border-color: var(--surface);
+}
+[data-theme="light"] .slider-year-badge {
+  background: #e4003b !important;
+  --party-color: #e4003b;
+}
+[data-theme="light"] .slider-election-tick {
+  background: var(--surface);
+  border-color: rgba(20, 32, 58, 0.35);
+}
+[data-theme="light"] .slider-tick {
+  color: var(--ink-muted);
+}
+[data-theme="light"] .slider-tick:hover {
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+
+/* A2 — party hero legibility */
+[data-theme="light"] .party-lede {
+  color: var(--ink-body);
+}
+[data-theme="light"] .party-meta-item dd,
+[data-theme="light"] .party-meta-item strong {
+  color: var(--party-kicker, var(--party-color, var(--gold)));
+}
+
+/* A7 — breadcrumbs + nation links */
+[data-theme="light"] .breadcrumb-current {
+  color: var(--ink-muted);
+}
+[data-theme="light"] .breadcrumb a:hover {
+  color: var(--gold);
+}
+[data-theme="light"] .nation-party-link:hover {
+  color: var(--ink);
+}
+
+/* Mobile accordion light theme */
+[data-theme="light"] .accordion-header {
+  color: var(--ink);
+}
+[data-theme="light"] .election-item:hover {
+  background: var(--navy-mid);
+  color: var(--ink);
 }
 
 /* A4 — manifesto reading page */
@@ -4305,6 +4442,9 @@ h1, h2, h3, h4 {
 }
 .nation-card .nation-name,
 .hub-nation-card strong {
+  max-width: calc(100% - 130px);
+}
+.nation-card .nation-mp {
   max-width: calc(100% - 130px);
 }
 .nation-motif-england .nation-motif-cross-h,
@@ -4381,20 +4521,28 @@ h1, h2, h3, h4 {
 /* A7 — placeholder covers + ghost numerals */
 .manifesto-thumb-placeholder {
   position: relative;
-  background: color-mix(in srgb, var(--party-surface, var(--party-color)) 18%, var(--field));
+  background: color-mix(in srgb, var(--party-surface, var(--party-color)) 13%, var(--field));
   box-shadow: inset 0 0 60px var(--party-ghost, rgba(255,255,255,0.04));
+  border-top: none;
+  align-items: stretch;
+  justify-content: stretch;
 }
 .manifesto-placeholder-ghost {
   position: absolute;
-  right: -0.15rem;
+  right: 0.75rem;
   bottom: -0.35rem;
   font-family: var(--font-display);
-  font-size: 4.5rem;
+  font-size: clamp(5rem, 18vw, 9.5rem);
   font-weight: 600;
   line-height: 1;
   color: var(--party-ghost, rgba(255,255,255,0.07));
   pointer-events: none;
   user-select: none;
+  letter-spacing: -0.02em;
+}
+[data-theme="light"] .manifesto-placeholder-label {
+  color: var(--party-kicker, var(--gold));
+  opacity: 0.65;
 }
 .latest-card-cover-fallback {
   background: color-mix(in srgb, var(--party-surface, var(--party-color)) 18%, var(--field));

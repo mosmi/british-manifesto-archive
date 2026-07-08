@@ -1955,6 +1955,18 @@ function getPartyColor(id, year) {
 }
 function getPartyDim(id)   { return PARTIES[resolvePartyId(id)]?.dim   || 'rgba(107,114,128,0.14)'; }
 
+function nationPartyLinkHtml(pid) {
+  const p = PARTIES[pid];
+  if (!p) return '';
+  const raw = p.color;
+  const kicker = typeof partyTextColour === 'function' ? partyTextColour(pid) : raw;
+  const dot = typeof dotStyle === 'function' ? dotStyle(raw) : `background:${raw}`;
+  return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${kicker}">
+    <span class="nation-party-dot" style="${dot}"></span>
+    <span>${p.shortName}</span>
+  </a>`;
+}
+
 /** Liberal / SDP Alliance / Liberal Democrats — period-correct labels when year is given. */
 const LIBERAL_LINEAGE_NAMES = {
   libdem:         { liberal: 'Liberal', alliance: 'Alliance', modern: 'Liberal Democrats' },

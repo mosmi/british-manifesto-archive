@@ -422,14 +422,7 @@ async function renderHolyroodPortal(app) {
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS.scotland : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES.scotland : null;
-  const partyLinks = navConfig ? navConfig.parties.map(pid => {
-    const p = PARTIES[pid];
-    if (!p) return '';
-    return `<a href="/party/${pid}" class="nation-party-link" style="--party-color:${p.color}">
-      <span class="nation-party-dot" style="background:${p.color}"></span>
-      <span>${p.shortName}</span>
-    </a>`;
-  }).join('') : '';
+  const partyLinks = navConfig ? navConfig.parties.map(pid => nationPartyLinkHtml(pid)).join('') : '';
 
   app.innerHTML = `
     ${renderBreadcrumb([

@@ -14,3 +14,6 @@ timestamp: 2026-07-05T21:00:00Z
 - [amendments-light-mode](./amendments-light-mode.md) — Phase 4 QA follow-up: stranded
   dark components, theme-aware colour derivation, manifesto page polish, and functional
   fixes (markdown fetch, PDF download).
+- [amendments-light-mode-v2](./amendments-light-mode-v2.md) — Phase B refinements:
+  year-proportional slider, OMRLP hero/placeholder mocks, tooltip and segmented control
+  specs. Mockups: `Light Mode Fixes.dc.html` (ids 1a–1c, 2a–2c).
