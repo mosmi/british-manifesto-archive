@@ -39,7 +39,7 @@ function drawParliamentChart(container, results, totalSeats, year) {
   } else {
     // 14 rows, small dots — optimised for the 650-seat House of Commons
     numRows = 14;
-    dotR    = 6.6;
+    dotR    = 5.5;
     innerR  = 110;
     outerR  = 430;
     arcR    = 464;

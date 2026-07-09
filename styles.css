@@ -1177,14 +1177,10 @@ h1, h2, h3, h4 {
 
 .manifesto-thumb-placeholder {
   width: 100%; height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
+  display: block;
   background: var(--navy-dark);
   box-shadow: inset 0 0 60px var(--party-dim, rgba(255,255,255,0.04));
-  border-top: 3px solid var(--party-color);
+  border-top: none;
   position: relative;
   overflow: hidden;
 }
@@ -1197,15 +1193,21 @@ h1, h2, h3, h4 {
   background: var(--party-color);
 }
 .manifesto-placeholder-label {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--party-kicker, var(--party-color, var(--gold)));
   opacity: 0.75;
+  text-align: center;
+  padding: 0 1rem;
 }
 .thumb-doc-icon {
   width: 44px;
@@ -2829,27 +2831,12 @@ h1, h2, h3, h4 {
 
 .home-parliament-chart {
   min-height: 180px;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 0;
 }
-.chart-percentage-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -15px; /* Pull close to the seating chart */
-  padding: 0 0.5rem;
-  font-family: var(--font-ui, "DM Sans", sans-serif);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted, #9ca3af);
-  position: relative;
-  z-index: 2;
-}
-.chart-percentage-left {
-  display: flex;
-  gap: 1.25rem;
-}
-.chart-percentage-right {
-  display: flex;
-  gap: 1.25rem;
+.home-chart-legend {
+  margin-top: 1.5rem;
+  justify-content: center;
+  gap: 0.5rem 1.375rem;
 }
 
 .share-bar {
@@ -2885,40 +2872,12 @@ h1, h2, h3, h4 {
 }
 
 .election-slider-panel {
-  margin-top: 1rem;
+  margin-top: 1.75rem;
   padding: 1rem 1.25rem;
   background: rgba(17, 24, 39, 0.55);
   backdrop-filter: blur(10px);
   border: 1px solid var(--navy-border);
   border-radius: 10px;
-}
-.slider-legend {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem 1.5rem;
-  margin-bottom: 2rem;
-}
-.slider-legend-item {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-ui, "DM Sans", sans-serif);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-muted, #9ca3af);
-}
-.slider-legend-item i {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin-right: 0.45rem;
-}
-.slider-legend-item span {
-  color: var(--cream, #f5f2eb);
-  margin-left: 0.35rem;
-  font-weight: 600;
-  font-size: 0.82rem;
 }
 .slider-wrap {
   display: flex;
@@ -3297,45 +3256,62 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .hub-devolved-grid,
-.hub-nations-grid {
+.hub-nations-grid,
+.nations-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
+  gap: 1.75rem;
+}
+@media (min-width: 960px) {
+  .hub-nations-grid,
+  .nations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .hub-nation-card {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0;
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  border-top: 3px solid var(--gold-rule);
-  transition: transform 0.2s var(--ease), border-color 0.2s;
+  border-radius: 6px;
+  padding: 2rem 2.125rem;
+  border-top: none;
+  box-shadow: 0 6px 18px rgba(20, 32, 58, 0.06);
+  transition: transform 0.2s var(--ease), border-color 0.2s, box-shadow 0.2s;
 }
 .hub-nation-card:hover {
   transform: translateY(-2px);
-  border-top-color: var(--gold);
+  box-shadow: 0 8px 22px rgba(20, 32, 58, 0.08);
 }
 .hub-nation-icon { font-size: 2rem; line-height: 1; }
 .hub-nation-card strong {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   font-weight: 500;
   color: var(--cream);
+  line-height: 1.15;
 }
 .hub-nation-meta {
   font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold);
+  margin-top: 0.75rem;
+  line-height: 1.6;
 }
 .hub-nation-card p {
   flex: 1;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  line-height: 1.65;
-  margin: 0.5rem 0 0.75rem;
+  line-height: 1.6;
+  margin: 1rem 0 1.375rem;
+}
+.hub-card-cta {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gold);
 }
 .hub-devolved-card {
   display: flex;
@@ -3370,11 +3346,6 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
   line-height: 1.65;
   margin: 0.5rem 0 0.75rem;
-}
-.hub-card-cta {
-  font-family: var(--font-ui);
-  font-size: 0.8rem;
-  color: var(--gold);
 }
 .hub-parties-grid {
   display: grid;
@@ -3517,7 +3488,6 @@ h1, h2, h3, h4 {
   .dashboard-parliament-head {
     flex-direction: column;
   }
-  .slider-legend { display: none; }
   .dashboard-layout {
     display: none !important;
   }
@@ -4229,10 +4199,10 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   min-height: 170px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background: var(--surface);
   border: 1px solid var(--nation-border, var(--hairline));
-  border-radius: 0;
+  border-radius: 6px;
 }
 .hub-nation-card .hub-nation-icon { position: relative; z-index: 1; }
 .hub-nation-card strong,
@@ -4344,18 +4314,26 @@ h1, h2, h3, h4 {
   color: var(--ink-muted);
 }
 
-/* A1 — election slider panel (legend stays in panel) */
+/* A1 — election slider panel */
 [data-theme="light"] .election-slider-panel {
   background: var(--surface);
   backdrop-filter: none;
   border: 1px solid var(--hairline);
   box-shadow: 0 4px 14px rgba(20, 32, 58, 0.05);
 }
-[data-theme="light"] .slider-legend-item {
-  color: var(--ink-muted);
+[data-theme="light"] .home-chart-legend {
+  gap: 8px 22px;
 }
-[data-theme="light"] .slider-legend-item span {
-  color: var(--ink-muted);
+[data-theme="light"] .home-chart-legend .legend-item {
+  font-size: 0.84rem;
+  color: rgba(20, 32, 58, 0.72);
+}
+[data-theme="light"] .home-chart-legend .legend-dot {
+  width: 9px;
+  height: 9px;
+}
+[data-theme="light"] .home-chart-legend .legend-seats {
+  color: rgba(20, 32, 58, 0.45);
 }
 [data-theme="light"] .slider-step-btn {
   border-color: rgba(20, 32, 58, 0.2);
@@ -4424,29 +4402,47 @@ h1, h2, h3, h4 {
   border: 1px solid rgba(20, 32, 58, 0.12);
   box-shadow: 0 12px 32px rgba(20, 32, 58, 0.10);
 }
+.manifesto-paper--empty .manifesto-content,
+.manifesto-content.manifesto-content--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  width: 100%;
+  min-height: min(640px, 70vh);
+  padding: 4rem 2rem;
+}
 .manifesto-empty-state {
   text-align: center;
-  padding: 4rem 2rem 5rem;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
 }
 .manifesto-empty-kicker {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .manifesto-empty-text {
   max-width: 420px;
-  margin: 0 auto 1.75rem;
+  margin: 0;
   color: var(--ink-body);
-  line-height: 1.65;
+  line-height: 1.6;
+  font-size: 1.125rem;
 }
 .manifesto-empty-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.875rem;
   justify-content: center;
+  margin-top: 0.625rem;
 }
 
 /* A5 — nation card motifs */
@@ -4462,86 +4458,75 @@ h1, h2, h3, h4 {
 }
 .nation-card .nation-name,
 .hub-nation-card strong {
-  max-width: calc(100% - 130px);
+  max-width: calc(100% - 110px);
 }
 .nation-card .nation-mp,
 .hub-nation-card .hub-nation-meta,
 .hub-nation-card p,
 .hub-nation-card .hub-card-cta {
-  max-width: calc(100% - 130px);
-}
-.hub-nation-card .hub-nation-meta {
-  margin-top: 0;
+  max-width: calc(100% - 110px);
 }
 .nation-motif-england .nation-motif-cross-h,
 .nation-motif-england .nation-motif-cross-v {
   position: absolute;
-  background: rgba(224, 90, 90, 0.28);
+  background: #e4003b;
 }
 .nation-motif-england .nation-motif-cross-h {
-  right: 38px;
-  top: 54px;
-  width: 56px;
-  height: 10px;
+  left: 8px;
+  top: 50px;
+  width: 104px;
+  height: 20px;
 }
 .nation-motif-england .nation-motif-cross-v {
-  right: 60px;
-  top: 32px;
-  width: 10px;
-  height: 56px;
+  left: 50px;
+  top: 8px;
+  width: 20px;
+  height: 104px;
 }
-.nation-motif-wales {
-  background: rgba(24, 145, 106, 0.14);
-  clip-path: polygon(100% 0%, 100% 100%, 55% 100%, 72% 62%, 88% 78%, 100% 28%);
+.nation-motif-wales-triangle {
+  position: absolute;
+  left: 12px;
+  bottom: 14px;
+  width: 0;
+  height: 0;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-bottom: 76px solid #008672;
 }
 .nation-motif-scotland .nation-motif-saltire-a,
 .nation-motif-scotland .nation-motif-saltire-b {
   position: absolute;
-  right: 10px;
-  top: 52px;
-  width: 72px;
-  height: 10px;
-  background: rgba(107, 163, 232, 0.24);
+  left: 50px;
+  top: 0;
+  width: 20px;
+  height: 120px;
+  background: #0065bf;
   transform-origin: center;
 }
-.nation-motif-scotland .nation-motif-saltire-a { transform: rotate(35deg); }
-.nation-motif-scotland .nation-motif-saltire-b { transform: rotate(-35deg); }
+.nation-motif-scotland .nation-motif-saltire-a { transform: rotate(45deg); }
+.nation-motif-scotland .nation-motif-saltire-b { transform: rotate(-45deg); }
 .nation-motif-ni .nation-motif-hex {
   position: absolute;
-  width: 36px;
-  height: 42px;
-  background: rgba(158, 195, 230, 0.18);
+  width: 44px;
+  height: 50px;
+  background: #326760;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.nation-motif-ni .nation-motif-hex-a { right: 36px; top: 10px; }
-.nation-motif-ni .nation-motif-hex-b { right: 8px; top: 34px; opacity: 0.75; }
-.nation-motif-ni .nation-motif-hex-c { right: 28px; top: 58px; opacity: 0.55; }
+.nation-motif-ni .nation-motif-hex-a { left: 16px; top: 14px; }
+.nation-motif-ni .nation-motif-hex-b { left: 56px; top: 46px; }
 .nation-motif-ring {
   position: absolute;
-  right: 14px;
-  top: 14px;
-  width: 72px;
-  height: 72px;
-  border: 3px solid rgba(217, 183, 106, 0.22);
+  left: 16px;
+  top: 16px;
+  width: 80px;
+  height: 80px;
+  border: 12px solid #8a6d2c;
   border-radius: 50%;
   box-sizing: border-box;
+  background: transparent;
 }
-[data-theme="light"] .nation-motif-england .nation-motif-cross-h,
-[data-theme="light"] .nation-motif-england .nation-motif-cross-v {
-  background: rgba(224, 90, 90, 0.15);
-}
-[data-theme="light"] .nation-motif-wales {
-  background: rgba(24, 145, 106, 0.12);
-}
-[data-theme="light"] .nation-motif-scotland .nation-motif-saltire-a,
-[data-theme="light"] .nation-motif-scotland .nation-motif-saltire-b {
-  background: rgba(107, 163, 232, 0.14);
-}
-[data-theme="light"] .nation-motif-ni .nation-motif-hex {
-  background: rgba(158, 195, 230, 0.12);
-}
-[data-theme="light"] .nation-motif-ring {
-  border-color: rgba(138, 109, 44, 0.18);
+[data-theme="light"] .nation-motif-zone {
+  opacity: 0.15;
 }
 [data-theme="light"] .hub-nation-card strong {
   color: var(--ink);
@@ -4562,25 +4547,28 @@ h1, h2, h3, h4 {
   background: color-mix(in srgb, var(--party-surface, var(--party-color)) 13%, var(--field));
   box-shadow: inset 0 0 60px var(--party-ghost, rgba(255,255,255,0.04));
   border-top: none;
-  align-items: stretch;
-  justify-content: stretch;
 }
 .manifesto-placeholder-ghost {
   position: absolute;
   right: 0.75rem;
-  bottom: -0.35rem;
+  bottom: -2.4rem;
   font-family: var(--font-display);
-  font-size: clamp(5rem, 18vw, 9.5rem);
+  font-size: 9.375rem;
   font-weight: 600;
   line-height: 1;
   color: var(--party-ghost, rgba(255,255,255,0.07));
   pointer-events: none;
   user-select: none;
   letter-spacing: -0.02em;
+  z-index: 0;
 }
 [data-theme="light"] .manifesto-placeholder-label {
   color: var(--party-kicker, var(--gold));
   opacity: 0.65;
+}
+[data-theme="light"] .manifesto-placeholder-ghost {
+  opacity: 1;
+  color: var(--party-ghost, rgba(138, 122, 0, 0.3));
 }
 .latest-card-cover-fallback {
   background: color-mix(in srgb, var(--party-surface, var(--party-color)) 18%, var(--field));
