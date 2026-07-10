@@ -335,22 +335,7 @@ async function renderNIPortal(app) {
 
   const index = await loadNIIndex();
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => {
-    const w = (e.control && PARTIES?.[e.control]) ? PARTIES[e.control] : null;
-    const cColor = w?.color || 'var(--gold)';
-    let sub = '';
-    if (e.firstMinister && e.deputyFirstMinister) {
-      sub = `${e.firstMinister} & ${e.deputyFirstMinister}`;
-    } else if (e.firstMinister) {
-      sub = `${e.firstMinister} (First Minister)`;
-    } else {
-      sub = e.winnerName || PARTIES?.[e.control]?.shortName || '';
-    }
-    return `<a href="/devolved/stormont/${e.id}" class="london-timeline-card" style="--party-color:${cColor}">
-      <div class="london-timeline-year">${e.displayYear}</div>
-      <div class="london-timeline-meta"><div class="london-timeline-title">${e.title || 'Northern Ireland Assembly election'}</div><div class="london-timeline-sub">${sub}</div></div>
-    </a>`;
-  }).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/stormont/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS['northern-ireland'] : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES['northern-ireland'] : null;

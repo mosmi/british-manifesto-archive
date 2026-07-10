@@ -339,18 +339,7 @@ async function renderLondonPortal(app) {
   const eraBlock = (key, title, blurb) => {
     const items = (byEra[key] || []).slice().sort((a, b) => b.year - a.year);
     if (!items.length) return '';
-    const cards = items.map(e => {
-      const w = (e.mayorWinner && PARTIES?.[e.mayorWinner]) ? PARTIES[e.mayorWinner]
-              : (e.control && PARTIES?.[e.control]) ? PARTIES[e.control] : null;
-      const cColor = w?.color || 'var(--gold)';
-      const sub = e.winnerName
-        ? (e.mayorWinner ? `${e.winnerName} (Mayor)` : `${e.winnerName}`)
-        : (e.title || '');
-      return `<a href="/devolved/london/${e.id}" class="london-timeline-card" style="--party-color:${cColor}">
-        <div class="london-timeline-year">${e.displayYear}</div>
-        <div class="london-timeline-meta"><div class="london-timeline-title">${e.title || ''}</div><div class="london-timeline-sub">${sub}</div></div>
-      </a>`;
-    }).join('');
+    const cards = items.map(e => buildDevolvedTimelineCard(`/devolved/london/${e.id}`, e)).join('');
     return `<div class="london-era">
       <div class="london-era-head"><h2>${title}</h2><p>${blurb}</p></div>
       <div class="london-timeline-grid">${cards}</div>

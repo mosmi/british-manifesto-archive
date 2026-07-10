@@ -667,14 +667,9 @@ function buildPartiesMega() {
       col.appendChild(niOthers);
     }
     if (nationId === 'europe') {
-      const allAlliances = document.createElement('a');
-      allAlliances.href = '/nation/europe';
-      allAlliances.className = 'mega-all-link';
-      allAlliances.textContent = 'All alliance families →';
-      col.appendChild(allAlliances);
       const epOthers = document.createElement('a');
       epOthers.href = '/devolved/euro/other-parties';
-      epOthers.className = 'mega-all-link mega-all-link-secondary';
+      epOthers.className = 'mega-all-link';
       epOthers.textContent = 'Other EP parties →';
       col.appendChild(epOthers);
     }
@@ -3261,35 +3256,50 @@ function renderPartiesHub(app) {
 function renderAbout(app) {
   setPageMeta({
     title: 'About',
-    description: 'About The British Manifesto Archive: what it is, where the manifesto texts come from, and how to use the collection.',
+    description: 'What the British Manifesto Archive covers, how to use it, our editorial approach, data sources, and how to report corrections.',
     path: '/about',
   });
   app.innerHTML = `
     <div class="about-section">
       <span class="section-label">About this archive</span>
-      <h1>The British<br>Manifesto Archive</h1>
-      <p class="about-domain"><a href="https://www.manifestos.org.uk/">www.manifestos.org.uk</a></p>
+      <h1>About the British Manifesto Archive</h1>
       <div class="gold-rule"></div>
-      <p>A comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of UK general, devolved, regional, and European Parliament elections.</p>
-      <p>The archive covers all four nations of the United Kingdom — England, Wales, Scotland and Northern Ireland — including their devolved institutions. Statistical data is sourced from the House of Commons Library Research Briefing CBP-7529, <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em>.</p>
+      <p>The British Manifesto Archive is a comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of UK general, devolved, regional, and European Parliament elections.</p>
+      <p>It brings together the founding documents of British democratic politics: what parties promised, how the country voted, and how those results reshaped Parliament and the devolved institutions — in one place, free to read and search.</p>
 
-      <h2>Adding Manifesto Documents</h2>
-      <p>Place files in:</p>
-      <pre style="background:var(--navy-card);border:1px solid var(--navy-border);border-radius:6px;padding:1.25rem;font-size:0.85rem;color:var(--cream-dark);overflow-x:auto;margin:1rem 0">manifestos/{election-id}/{party-id}/manifesto.pdf
-manifestos/{election-id}/{party-id}/manifesto.md</pre>
-      <p>The <code>.md</code> file will be rendered as a formatted page using <a href="https://marked.js.org/" target="_blank" rel="noopener">Marked</a> (GFM). Supports headings, lists, tables, blockquotes, links, and images.</p>
+      <h2>What you'll find here</h2>
+      <p>Every election and party in the archive is built from the same set of materials:</p>
+      <ul>
+        <li><strong>Manifesto documents</strong> — original PDFs alongside readable web versions where a text edition is available.</li>
+        <li><strong>Election result pages</strong> — summaries, seat charts, vote shares, the key moments of each campaign, and the documents that defined it.</li>
+        <li><strong>Party pages</strong> — each party's electoral record over time and the manifestos it published at successive elections.</li>
+        <li><strong>Beyond Westminster hubs</strong> — dedicated sections for the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the European Parliament.</li>
+        <li><strong>Ways in</strong> — browse by year, by party, by nation, or by institution, or search the whole archive from anywhere on the site.</li>
+      </ul>
 
-      <h2>Election IDs</h2>
-      <p><code>1945</code> <code>1950</code> <code>1951</code> <code>1955</code> <code>1959</code> <code>1964</code> <code>1966</code> <code>1970</code> <code>feb1974</code> <code>oct1974</code> <code>1979</code> <code>1983</code> <code>1987</code> <code>1992</code> <code>1997</code> <code>2001</code> <code>2005</code> <code>2010</code> <code>2015</code> <code>2017</code> <code>2019</code> <code>2024</code></p>
+      <h2>Coverage</h2>
+      <p>The archive spans UK general elections from 1945 to the present, and extends beyond Westminster to the devolved and regional institutions: the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the UK's European Parliament elections. It covers parties across all four nations — England, Scotland, Wales, and Northern Ireland — as well as the European parties British voters have elected.</p>
+      <p>Coverage is deliberately broad, and it is still growing. Some elections are more complete than others, and a few manifestos have not survived in any public form. Where a document is missing, the record notes the gap rather than hiding it.</p>
 
-      <h2>Adding YouTube Videos</h2>
-      <p>Add the YouTube video ID (the part after <code>v=</code>) to the <code>youtubeId</code> field in <code>js/data.js</code>.</p>
+      <h2>Using the archive</h2>
+      <p>Start with an election, a party, or a nation. Election pages bring together the results and every available manifesto for that contest. Party pages show how a party's electoral fortunes and published platform change from one election to the next. Manifesto pages give you both the original document and, where available, a readable text version you can search and quote. However you arrive, the cross-links will take you from a result to the parties that contested it, and from a party to the elections that shaped it.</p>
 
-      <h2>Data Source</h2>
-      <p>Electoral statistics sourced from: <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em>, House of Commons Library Research Briefing CBP-7529 (August 2023), by Richard Cracknell, Elise Uberoi and Matthew Burton.</p>
+      <h2>Editorial approach</h2>
+      <p>The archive's purpose is preservation, not persuasion. Documents are reproduced as neutrally as possible: parties are neither endorsed nor criticised, and the claims made inside a manifesto are the party's own, not the archive's. Summaries, seat charts, and contextual notes exist to help you navigate and compare — they are a finding aid, not a substitute for the original text. When a summary and a source document differ, the source document is authoritative.</p>
+
+      <h2>Data sources</h2>
+      <p>The archive draws on three kinds of material:</p>
+      <ul>
+        <li><strong>Core historical election statistics</strong> come from the House of Commons Library Research Briefing CBP-7529, <em>UK Election Statistics: 1918–2023, A Long Century of Elections</em> (August 2023), by Richard Cracknell, Elise Uberoi, and Matthew Burton.</li>
+        <li><strong>Additional election and institutional data</strong> — including 2024, the devolved legislatures, London, and the European Parliament — is compiled from public electoral sources such as official results bodies and institutional election pages.</li>
+        <li><strong>Manifesto documents</strong> are drawn from the parties themselves, archived publications, library collections, and public web sources.</li>
+      </ul>
 
       <h2>Copyright</h2>
-      <p>All manifesto documents remain the copyright of their respective political parties. For educational and research purposes only.</p>
+      <p>Manifestos remain the copyright of their respective political parties or publishers. They are reproduced here for educational, historical, and research purposes. If you hold rights in a document and have a query about its inclusion, please email <a href="mailto:hello@manifestos.org.uk">hello@manifestos.org.uk</a>.</p>
+
+      <h2>Contact and corrections</h2>
+      <p>This is a living archive, and extra pairs of eyes make it better. Spotted an error, a broken link, or a manifesto that should be here but isn't? Email <a href="mailto:hello@manifestos.org.uk">hello@manifestos.org.uk</a> — corrections and leads on missing documents are genuinely welcome and help keep the record accurate and complete. You can also find the archive on <a href="https://bsky.app/profile/manifestos.org.uk" rel="me">Bluesky</a>, <a href="https://mastodon.social/@manifestosuk" rel="me">Mastodon</a>, <a href="https://x.com/manifestosuk" rel="me">X</a>, <a href="https://www.instagram.com/manifestosuk/" rel="me">Instagram</a>, <a href="https://www.threads.net/@manifestosuk" rel="me">Threads</a>, and <a href="https://www.youtube.com/@manifestosuk" rel="me">YouTube</a>.</p>
     </div>
   `;
 }

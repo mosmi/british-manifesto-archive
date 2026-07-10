@@ -480,15 +480,7 @@ async function renderSeneddPortal(app) {
 
   const index = await loadSeneddIndex();
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => {
-    const w = (e.control && PARTIES?.[e.control]) ? PARTIES[e.control] : null;
-    const cColor = w?.color || 'var(--gold)';
-    const sub = e.firstMinister ? `${e.firstMinister} (First Minister)` : (e.winnerName || PARTIES?.[e.control]?.shortName || '');
-    return `<a href="/devolved/senedd/${e.id}" class="london-timeline-card" style="--party-color:${cColor}">
-      <div class="london-timeline-year">${e.displayYear}</div>
-      <div class="london-timeline-meta"><div class="london-timeline-title">${e.title || 'Senedd Cymru election'}</div><div class="london-timeline-sub">${sub}</div></div>
-    </a>`;
-  }).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/senedd/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS.wales : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES.wales : null;

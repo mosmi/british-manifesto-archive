@@ -118,8 +118,8 @@ const STATIC_ROUTES = {
   '/': { title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
   '/about': {
     title: `About${TITLE_SUFFIX}`,
-    description: 'About The British Manifesto Archive: what it is, where the ' +
-      'manifesto texts come from, and how to use the collection.',
+    description: 'What the British Manifesto Archive covers, how to use it, our ' +
+      'editorial approach, data sources, and how to report corrections.',
   },
   '/elections': {
     title: `UK General Elections${TITLE_SUFFIX}`,
@@ -198,6 +198,19 @@ function orgNode() {
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/og-image.jpg`,
     description: DEFAULT_DESCRIPTION,
+    sameAs: [
+      'https://bsky.app/profile/manifestos.org.uk',
+      'https://mastodon.social/@manifestosuk',
+      'https://x.com/manifestosuk',
+      'https://www.instagram.com/manifestosuk/',
+      'https://www.threads.net/@manifestosuk',
+      'https://www.youtube.com/@manifestosuk',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'hello@manifestos.org.uk',
+      contactType: 'customer support',
+    },
   };
 }
 

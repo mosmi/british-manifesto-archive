@@ -410,15 +410,7 @@ async function renderHolyroodPortal(app) {
 
   const index = await loadHolyroodIndex();
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => {
-    const w = (e.control && PARTIES?.[e.control]) ? PARTIES[e.control] : null;
-    const cColor = w?.color || 'var(--gold)';
-    const sub = e.firstMinister ? `${e.firstMinister} (First Minister)` : (e.winnerName || '');
-    return `<a href="/devolved/holyrood/${e.id}" class="london-timeline-card" style="--party-color:${cColor}">
-      <div class="london-timeline-year">${e.displayYear}</div>
-      <div class="london-timeline-meta"><div class="london-timeline-title">${e.title || 'Scottish Parliament election'}</div><div class="london-timeline-sub">${sub}</div></div>
-    </a>`;
-  }).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/holyrood/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS.scotland : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES.scotland : null;

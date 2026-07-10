@@ -2074,6 +2074,42 @@ function buildPartyBrowseCard(pid, opts = {}) {
   </a>`;
 }
 
+/** Leader line + optional role for devolved portal election cards (mock 1e). */
+function devolvedTimelineCardMeta(e) {
+  if (e.firstMinister && e.deputyFirstMinister) {
+    return { name: `${e.firstMinister} & ${e.deputyFirstMinister}`, role: '' };
+  }
+  if (e.firstMinister) {
+    return { name: e.firstMinister, role: '(First Minister)' };
+  }
+  if (e.mayorWinner && e.winnerName) {
+    return { name: e.winnerName, role: '(Mayor)' };
+  }
+  if (e.winnerName) {
+    return { name: e.winnerName, role: '' };
+  }
+  const controlParty = e.control && PARTIES?.[e.control];
+  return { name: controlParty?.shortName || controlParty?.name || '', role: '' };
+}
+
+function devolvedTimelinePartyColor(e) {
+  const pid = e.mayorWinner || e.control;
+  if (!pid || !PARTIES?.[pid]) return 'var(--gold)';
+  return getPartyColor(pid, e.year);
+}
+
+function buildDevolvedTimelineCard(href, e) {
+  const { name, role } = devolvedTimelineCardMeta(e);
+  const partyColor = devolvedTimelinePartyColor(e);
+  const leaderHtml = role
+    ? `<div class="london-timeline-leader">${name}<br><span class="london-timeline-role">${role}</span></div>`
+    : `<div class="london-timeline-leader">${name}</div>`;
+  return `<a href="${href}" class="london-timeline-card" style="--party-color:${partyColor}">
+    <div class="london-timeline-year">${e.displayYear}</div>
+    <div class="london-timeline-meta">${leaderHtml}</div>
+  </a>`;
+}
+
 /** Shared manifesto card for Holyrood, Senedd, Stormont, and European elections. */
 function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
   const election = normalizeDevolvedElection(electionOrYear);
