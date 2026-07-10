@@ -196,7 +196,7 @@ function orgNode() {
     '@id': ORG_ID,
     name: SITE_NAME,
     url: `${SITE_URL}/`,
-    logo: `${SITE_URL}/og-image.jpg`,
+    logo: `${SITE_URL}/icon-512.png`,
     description: DEFAULT_DESCRIPTION,
     sameAs: [
       'https://bsky.app/profile/manifestos.org.uk',
