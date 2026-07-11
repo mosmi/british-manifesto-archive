@@ -9,10 +9,10 @@ async function loadSeneddIndex() {
   if (_seneddIndex) return _seneddIndex;
   try {
     _seneddIndex = await fetchTyped('/data/devolved/senedd/index.json', 'json');
+    return _seneddIndex;
   } catch {
-    _seneddIndex = [];
+    return null;
   }
-  return _seneddIndex;
 }
 
 async function loadSeneddElection(id) {
@@ -143,7 +143,7 @@ function seneddParliamentSection(election) {
     }).join('');
     const others = (p.otherListVotes || []).length
       ? `<details class="london-others"><summary>Other parties (no seats)</summary>
-          <table class="results-table"><thead><tr><th>Party</th><th>Votes</th><th>%</th></tr></thead>
+          <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">Votes</th><th scope="col">%</th></tr></thead>
           <tbody>${p.otherListVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? seneddNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${typeof o.pct === 'number' ? o.pct.toFixed(1) + '%' : '—'}</td></tr>`).join('')}</tbody></table>
         </details>`
       : '';
@@ -152,7 +152,7 @@ function seneddParliamentSection(election) {
         <span class="section-label">Senedd Cymru · ${p.system}</span>
         <h2>Parliament Result</h2>
         <table class="results-table london-assembly-table">
-          <thead><tr><th>Party</th><th>Seats (of ${p.totalSeats})</th><th>Votes</th><th>%</th></tr></thead>
+          <thead><tr><th scope="col">Party</th><th scope="col">Seats (of ${p.totalSeats})</th><th scope="col">Votes</th><th scope="col">%</th></tr></thead>
           <tbody>${rows}</tbody>
         </table>
         <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${p.totalSeats} Members elected across 16 constituencies of six seats each under closed-list proportional representation (D'Hondt). A majority requires ${p.majorityThreshold || 49} seats.</p>
@@ -174,7 +174,7 @@ function seneddParliamentSection(election) {
   }).join('');
   const others = (p.otherListVotes || []).length
     ? `<details class="london-others"><summary>Other parties on the regional list (no seats)</summary>
-        <table class="results-table"><thead><tr><th>Party</th><th>List votes</th><th>%</th></tr></thead>
+        <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">List votes</th><th scope="col">%</th></tr></thead>
         <tbody>${p.otherListVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? seneddNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${typeof o.pct === 'number' ? o.pct.toFixed(1) + '%' : '—'}</td></tr>`).join('')}</tbody></table>
       </details>`
     : '';
@@ -183,7 +183,7 @@ function seneddParliamentSection(election) {
       <span class="section-label">Senedd Cymru · ${p.system || 'Additional Member System'}</span>
       <h2>Parliament Result</h2>
       <table class="results-table london-assembly-table">
-        <thead><tr><th>Party</th><th title="Constituency seats" style="text-align:center">Const.</th><th title="Regional list seats" style="text-align:center">List</th><th>Seats (of ${p.totalSeats})</th><th>Const. %</th><th>List %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col" title="Constituency seats" style="text-align:center">Const.</th><th scope="col" title="Regional list seats" style="text-align:center">List</th><th scope="col">Seats (of ${p.totalSeats})</th><th scope="col">Const. %</th><th scope="col">List %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${p.constituencySeats || 40} constituency MSs elected by first-past-the-post and ${p.listSeats || 20} regional MSs allocated by party-list vote (modified d'Hondt). A majority requires ${p.majorityThreshold || 31} seats.</p>
@@ -211,7 +211,8 @@ async function renderSeneddElection(app, id) {
   setPageMeta({ title: 'Senedd election', description: 'Welsh Parliament election results.', path: `/devolved/senedd/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
-  const [election, index] = await Promise.all([loadSeneddElection(id), loadSeneddIndex()]);
+  const [election, indexRaw] = await Promise.all([loadSeneddElection(id), loadSeneddIndex()]);
+  const index = indexRaw || [];
   if (!election) { renderNotFound(app); return; }
 
   const winnerId = election.control;
@@ -479,6 +480,17 @@ async function renderSeneddPortal(app) {
   });
 
   const index = await loadSeneddIndex();
+  if (!index) {
+    if (typeof renderDataError === 'function') {
+      renderDataError(app, {
+        message: 'Senedd election list failed to load.',
+        onRetry: () => renderSeneddPortal(app),
+      });
+    } else {
+      app.innerHTML = '<p role="alert">Senedd election list failed to load.</p>';
+    }
+    return;
+  }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
   const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/senedd/${e.id}`, e)).join('');
 
@@ -550,7 +562,7 @@ function renderSeneddOtherParties(app) {
 }
 
 async function getSeneddPartyHistory(partyId) {
-  const index = await loadSeneddIndex();
+  const index = (await loadSeneddIndex()) || [];
   const elections = [];
   const manifestos = [];
   await Promise.all(index.map(async (meta) => {

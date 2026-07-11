@@ -4,7 +4,6 @@
   "exclude": [
     "/js/*",
     "/data/*",
-    "/manifestos/*",
     "/og/*",
     "/previews/*",
     "/assets/*"

@@ -1,6 +1,7 @@
 /* ============================================================
    Client search — lightweight index over bundled data.
-   Full manifesto text indexing (FlexSearch) planned for Phase 3.
+   Token AND matching; indexes parties, elections, nations,
+   manifesto documents, and devolved election portals.
    ============================================================ */
 
 const SEARCH_MIN_LEN = 2;
@@ -16,7 +17,7 @@ function buildSearchIndex() {
         id: p.id,
         title: p.shortName,
         subtitle: p.spectrum,
-        body: `${p.name} ${p.description || ''}`,
+        body: `${p.name} ${p.description || ''} manifesto`,
         href: `/party/${p.id}`,
         color: p.color,
       });
@@ -31,7 +32,7 @@ function buildSearchIndex() {
         id: e.id,
         title: `${e.displayYear} General Election`,
         subtitle: winner ? `${winner.shortName} victory · ${e.pm}` : e.pm,
-        body: `${e.summary || ''} ${(e.highlights || []).join(' ')}`,
+        body: `${e.summary || ''} ${(e.highlights || []).join(' ')} manifesto`,
         href: `/election/${e.id}`,
         color: winner?.color || '#c9a84c',
       });
@@ -52,31 +53,88 @@ function buildSearchIndex() {
     });
   }
 
+  if (typeof DEVOLVED_PORTALS !== 'undefined') {
+    Object.values(DEVOLVED_PORTALS).forEach(portal => {
+      items.push({
+        type: 'portal',
+        id: `portal-${portal.id}`,
+        title: portal.label,
+        subtitle: portal.subtitle || 'Beyond Westminster',
+        body: `${portal.description || ''} ${portal.id} devolved election manifestos`,
+        href: `/devolved/${portal.id}`,
+        color: '#c9a84c',
+      });
+    });
+  }
+
   return items;
 }
 
 let _searchItems = null;
 let _searchLastToggle = null;
+let _searchExtrasLoaded = false;
 
 function getSearchItems() {
   if (!_searchItems) _searchItems = buildSearchIndex();
   return _searchItems;
 }
 
+function pushSearchItem(item) {
+  const items = getSearchItems();
+  if (items.some(existing => existing.id === item.id && existing.type === item.type)) return;
+  items.push(item);
+}
+
+/** Split query into tokens; every token must appear (AND). */
+function tokenizeQuery(query) {
+  return query
+    .trim()
+    .toLowerCase()
+    .split(/[^a-z0-9&]+/i)
+    .map(t => t.trim())
+    .filter(t => t.length > 0);
+}
+
+function scoreSearchHit(item, tokens, hay) {
+  const title = (item.title || '').toLowerCase();
+  const subtitle = (item.subtitle || '').toLowerCase();
+  let score = 0;
+  tokens.forEach(t => {
+    if (title.includes(t)) score += 8;
+    else if (subtitle.includes(t)) score += 4;
+    else if (hay.includes(t)) score += 1;
+  });
+  // Prefer manifesto docs when the query mentions manifesto
+  if (item.type === 'manifesto' && tokens.includes('manifesto')) score += 6;
+  if (item.type === 'election' && tokens.some(t => /^\d{4}$/.test(t) && title.includes(t))) score += 3;
+  return score;
+}
+
 function runSearch(query) {
-  const q = query.trim().toLowerCase();
-  if (q.length < SEARCH_MIN_LEN) return [];
+  const tokens = tokenizeQuery(query);
+  if (!tokens.length) return [];
+  if (tokens.join('').length < SEARCH_MIN_LEN && tokens.every(t => t.length < SEARCH_MIN_LEN)) {
+    return [];
+  }
 
   return getSearchItems()
     .map(item => {
       const hay = `${item.title} ${item.subtitle} ${item.body}`.toLowerCase();
-      const idx = hay.indexOf(q);
-      if (idx === -1) return null;
-      const snippetStart = Math.max(0, idx - 40);
-      const snippet = hay.slice(snippetStart, idx + q.length + 60).replace(/\s+/g, ' ').trim();
-      return { ...item, snippet: (snippetStart > 0 ? '…' : '') + snippet + '…' };
+      if (!tokens.every(t => hay.includes(t))) return null;
+      const score = scoreSearchHit(item, tokens, hay);
+      const primary = tokens[0];
+      const idx = hay.indexOf(primary);
+      const snippetStart = Math.max(0, idx === -1 ? 0 : idx - 40);
+      const snippetLen = Math.min(hay.length, snippetStart + primary.length + 80);
+      const snippet = hay.slice(snippetStart, snippetLen).replace(/\s+/g, ' ').trim();
+      return {
+        ...item,
+        score,
+        snippet: (snippetStart > 0 ? '…' : '') + snippet + (snippetLen < hay.length ? '…' : ''),
+      };
     })
     .filter(Boolean)
+    .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, 'en-GB'))
     .slice(0, 12);
 }
 
@@ -104,8 +162,7 @@ function setupSearch() {
     overlay.setAttribute('aria-hidden', 'false');
     overlay.inert = false;
     panel.setAttribute('aria-modal', 'true');
-    
-    // Set siblings to inert
+
     document.getElementById('main-nav')?.setAttribute('inert', '');
     document.getElementById('app')?.setAttribute('inert', '');
     document.getElementById('main-footer')?.setAttribute('inert', '');
@@ -114,6 +171,7 @@ function setupSearch() {
     results.innerHTML = '<p class="search-hint" id="search-status">Search parties, elections, and archive descriptions.</p>';
     activeResultIndex = -1;
     setTimeout(() => input.focus(), 50);
+    loadSearchExtraItems();
   };
 
   const close = () => {
@@ -122,7 +180,6 @@ function setupSearch() {
     overlay.inert = true;
     panel.setAttribute('aria-modal', 'false');
 
-    // Remove inert from siblings
     document.getElementById('main-nav')?.removeAttribute('inert');
     document.getElementById('app')?.removeAttribute('inert');
     document.getElementById('main-footer')?.removeAttribute('inert');
@@ -154,6 +211,39 @@ function setupSearch() {
     const links = getResultLinks();
     links.forEach((a, i) => a.classList.toggle('is-active', i === index));
     if (links[index]) links[index].focus();
+  };
+
+  const renderHits = () => {
+    const hits = runSearch(input.value);
+    activeResultIndex = -1;
+
+    if (!input.value.trim()) {
+      results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
+      updateStatus(null);
+      return;
+    }
+    if (!hits.length) {
+      results.innerHTML = '<p class="search-empty">No results found.</p>';
+      updateStatus(0);
+      return;
+    }
+
+    updateStatus(hits.length);
+    results.innerHTML = hits.map(hit => `
+      <a href="${hit.href}" class="search-result" data-close-search>
+        <span class="search-result-dot" style="background:${hit.color}"></span>
+        <span class="search-result-body">
+          <span class="search-result-title">${hit.title}</span>
+          <span class="search-result-sub">${hit.subtitle || ''}</span>
+          ${hit.snippet ? `<span class="search-result-snippet">${hit.snippet}</span>` : ''}
+        </span>
+        <span class="search-result-type">${hit.type}</span>
+      </a>
+    `).join('');
+
+    results.querySelectorAll('[data-close-search]').forEach(a => {
+      a.addEventListener('click', close);
+    });
   };
 
   toggle.addEventListener('click', open);
@@ -208,67 +298,67 @@ function setupSearch() {
     }
   });
 
-  input.addEventListener('input', () => {
-    const hits = runSearch(input.value);
-    activeResultIndex = -1;
-
-    if (!input.value.trim()) {
-      results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
-      updateStatus(null);
-      return;
-    }
-    if (!hits.length) {
-      results.innerHTML = '<p class="search-empty">No results found.</p>';
-      updateStatus(0);
-      return;
-    }
-
-    updateStatus(hits.length);
-    results.innerHTML = hits.map(hit => `
-      <a href="${hit.href}" class="search-result" data-close-search>
-        <span class="search-result-dot" style="background:${hit.color}"></span>
-        <span class="search-result-body">
-          <span class="search-result-title">${hit.title}</span>
-          <span class="search-result-sub">${hit.subtitle}</span>
-          ${hit.snippet ? `<span class="search-result-snippet">${hit.snippet}</span>` : ''}
-        </span>
-        <span class="search-result-type">${hit.type}</span>
-      </a>
-    `).join('');
-
-    results.querySelectorAll('[data-close-search]').forEach(a => {
-      a.addEventListener('click', close);
-    });
-  });
+  input.addEventListener('input', renderHits);
 
   overlay.inert = true;
   results.innerHTML = '<p class="search-hint">Search parties, elections, and archive descriptions.</p>';
-  
-  // Asynchronously index EP elections
+
   loadSearchExtraItems();
 }
 
-async function loadSearchExtraItems() {
-  if (typeof loadEuroIndex === 'function') {
-    try {
-      const euroIdx = await loadEuroIndex();
-      const items = getSearchItems();
-      euroIdx.forEach(e => {
-        const winner = PARTIES?.[e.control];
-        // Prevent duplicate indexing if already added
-        if (items.some(item => item.id === `euro-${e.id}`)) return;
-        items.push({
-          type: 'election',
-          id: `euro-${e.id}`,
-          title: `${e.displayYear} European Parliament Election`,
-          subtitle: winner ? `${winner.shortName} victory · ${e.winnerName || ''}` : '',
-          body: `${e.title || ''} European Parliament election in the UK`,
-          href: `/devolved/euro/${e.id}`,
-          color: winner?.color || '#F59E0B',
-        });
+async function indexManifestosForSearch() {
+  try {
+    const items = await fetchTyped('/data/manifestos-index.json', 'json');
+    items.forEach(m => {
+      const party = PARTIES?.[m.partyId];
+      const label = m.label || `${party?.shortName || m.partyId} ${m.electionId}`;
+      pushSearchItem({
+        type: 'manifesto',
+        id: `manifesto-${m.electionId}-${m.partyId}`,
+        title: label,
+        subtitle: `${m.electionId} · ${party?.shortName || m.partyId}`,
+        body: `${party?.name || ''} ${m.electionId} manifesto ${label}`,
+        href: `/manifesto/${m.electionId}/${m.partyId}`,
+        color: party?.color || '#c9a84c',
       });
-    } catch (err) {
-      console.error('Error indexing Euro elections in search:', err);
-    }
+    });
+  } catch (err) {
+    console.error('Error indexing manifestos in search:', err);
   }
+}
+
+async function indexDevolvedPortal(loaderName, portalId, label, color) {
+  if (typeof globalThis[loaderName] !== 'function') return;
+  try {
+    const idx = await globalThis[loaderName]();
+    if (!Array.isArray(idx)) return;
+    idx.forEach(e => {
+      const year = e.displayYear || e.year || e.id;
+      pushSearchItem({
+        type: 'election',
+        id: `${portalId}-${e.id}`,
+        title: `${year} ${label}`,
+        subtitle: e.winnerName || e.firstMinister || e.title || '',
+        body: `${e.title || ''} ${label} ${portalId} election manifesto ${year}`,
+        href: `/devolved/${portalId}/${e.id}`,
+        color: color || '#c9a84c',
+      });
+    });
+  } catch (err) {
+    console.error(`Error indexing ${portalId} elections in search:`, err);
+  }
+}
+
+async function loadSearchExtraItems() {
+  if (_searchExtrasLoaded) return;
+  _searchExtrasLoaded = true;
+
+  await Promise.all([
+    indexManifestosForSearch(),
+    indexDevolvedPortal('loadEuroIndex', 'euro', 'European Parliament Election', '#F59E0B'),
+    indexDevolvedPortal('loadHolyroodIndex', 'holyrood', 'Scottish Parliament Election', '#0065BD'),
+    indexDevolvedPortal('loadSeneddIndex', 'senedd', 'Senedd Election', '#C8102E'),
+    indexDevolvedPortal('loadNIIndex', 'stormont', 'Northern Ireland Assembly Election', '#D4AF37'),
+    indexDevolvedPortal('loadLondonIndex', 'london', 'London Election', '#EE3A43'),
+  ]);
 }

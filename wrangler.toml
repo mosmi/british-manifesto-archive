@@ -1,0 +1,9 @@
+# British Manifesto Archive — Cloudflare Workers / Pages assets
+name = "british-manifesto-archive"
+compatibility_date = "2024-11-12"
+
+[assets]
+directory = "./"
+# SPA deep links (extensionless) fall back to index.html.
+# Missing files under /manifestos/ are corrected to real 404s in functions/_middleware.js.
+not_found_handling = "single-page-application"

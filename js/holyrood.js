@@ -9,10 +9,10 @@ async function loadHolyroodIndex() {
   if (_holyroodIndex) return _holyroodIndex;
   try {
     _holyroodIndex = await fetchTyped('/data/devolved/holyrood/index.json', 'json');
+    return _holyroodIndex;
   } catch {
-    _holyroodIndex = [];
+    return null;
   }
-  return _holyroodIndex;
 }
 
 async function loadHolyroodElection(id) {
@@ -139,7 +139,7 @@ function holyroodParliamentSection(election) {
   }).join('');
   const others = (p.otherListVotes || []).length
     ? `<details class="london-others"><summary>Other parties on the regional list (no seats)</summary>
-        <table class="results-table"><thead><tr><th>Party</th><th>List votes</th><th>%</th></tr></thead>
+        <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">List votes</th><th scope="col">%</th></tr></thead>
         <tbody>${p.otherListVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? holyroodNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${typeof o.pct === 'number' ? o.pct.toFixed(1) + '%' : '—'}</td></tr>`).join('')}</tbody></table>
       </details>`
     : '';
@@ -148,7 +148,7 @@ function holyroodParliamentSection(election) {
       <span class="section-label">Scottish Parliament · ${p.system || 'Additional Member System'}</span>
       <h2>Parliament Result</h2>
       <table class="results-table london-assembly-table">
-        <thead><tr><th>Party</th><th title="Constituency seats" style="text-align:center">Const.</th><th title="Regional list seats" style="text-align:center">List</th><th>Seats (of ${p.totalSeats})</th><th>Const. %</th><th>List %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col" title="Constituency seats" style="text-align:center">Const.</th><th scope="col" title="Regional list seats" style="text-align:center">List</th><th scope="col">Seats (of ${p.totalSeats})</th><th scope="col">Const. %</th><th scope="col">List %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${p.constituencySeats || 73} constituency MSPs elected by first-past-the-post and ${p.listSeats || 56} regional MSPs allocated by party-list vote (modified d'Hondt). A majority requires ${p.majorityThreshold || 65} seats.</p>
@@ -177,7 +177,8 @@ async function renderHolyroodElection(app, id) {
   setPageMeta({ title: 'Holyrood election', description: 'Scottish Parliament election results.', path: `/devolved/holyrood/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
-  const [election, index] = await Promise.all([loadHolyroodElection(id), loadHolyroodIndex()]);
+  const [election, indexRaw] = await Promise.all([loadHolyroodElection(id), loadHolyroodIndex()]);
+  const index = indexRaw || [];
   if (!election) { renderNotFound(app); return; }
 
   const winnerId = election.control;
@@ -409,6 +410,17 @@ async function renderHolyroodPortal(app) {
   });
 
   const index = await loadHolyroodIndex();
+  if (!index) {
+    if (typeof renderDataError === 'function') {
+      renderDataError(app, {
+        message: 'Scottish Parliament election list failed to load.',
+        onRetry: () => renderHolyroodPortal(app),
+      });
+    } else {
+      app.innerHTML = '<p role="alert">Scottish Parliament election list failed to load.</p>';
+    }
+    return;
+  }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
   const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/holyrood/${e.id}`, e)).join('');
 
@@ -481,7 +493,7 @@ function renderHolyroodOtherParties(app) {
 
 /** Holyrood manifestos and election results for a party (party pages). */
 async function getHolyroodPartyHistory(partyId) {
-  const index = await loadHolyroodIndex();
+  const index = (await loadHolyroodIndex()) || [];
   const elections = [];
   const manifestos = [];
   await Promise.all(index.map(async (meta) => {

@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=2026071001">
+  <link rel="stylesheet" href="/styles.css?v=2026071107">
 </head>
 <body>
   <a href="#app" class="skip-link">Skip to content</a>
@@ -62,28 +62,31 @@
       </div>
       <div class="nav-desktop-only" id="nav-desktop-only">
         <div class="nav-dropdown">
-          <button class="nav-btn" id="nav-btn-elections" aria-expanded="false" aria-controls="elections-dropdown">General Elections <span class="caret">▾</span></button>
-          <div class="dropdown-menu" id="elections-dropdown" aria-hidden="true"></div>
+          <button type="button" class="nav-btn" id="nav-btn-elections" aria-expanded="false" aria-haspopup="true" aria-controls="elections-dropdown">General Elections <span class="caret" aria-hidden="true">▾</span></button>
+          <div class="dropdown-menu" id="elections-dropdown" role="menu" aria-hidden="true"></div>
         </div>
         <div class="nav-dropdown">
-          <a href="/devolved" class="nav-btn" id="nav-btn-devolved" aria-expanded="false" aria-controls="devolved-dropdown">Beyond Westminster <span class="caret">▾</span></a>
-          <div class="dropdown-menu" id="devolved-dropdown" aria-hidden="true"></div>
+          <button type="button" class="nav-btn" id="nav-btn-devolved" aria-expanded="false" aria-haspopup="true" aria-controls="devolved-dropdown">Beyond Westminster <span class="caret" aria-hidden="true">▾</span></button>
+          <div class="dropdown-menu" id="devolved-dropdown" role="menu" aria-hidden="true"></div>
         </div>
         <div class="nav-dropdown nav-mega">
-          <a href="/parties" class="nav-btn" id="nav-btn-parties" aria-expanded="false" aria-controls="parties-mega">Parties <span class="caret">▾</span></a>
-          <div class="dropdown-mega" id="parties-mega" aria-hidden="true"></div>
+          <button type="button" class="nav-btn" id="nav-btn-parties" aria-expanded="false" aria-haspopup="true" aria-controls="parties-mega">Parties <span class="caret" aria-hidden="true">▾</span></button>
+          <div class="dropdown-mega" id="parties-mega" role="menu" aria-hidden="true"></div>
         </div>
         <a href="/about" class="nav-btn">About</a>
-        <button type="button" class="nav-theme-btn" id="theme-toggle" aria-label="Toggle light or dark theme">☀ Light</button>
       </div>
+    </div>
+    <div class="nav-utils" id="nav-utils">
+      <button type="button" class="nav-theme-btn" id="theme-toggle" aria-label="Toggle light or dark theme">☀ Light</button>
       <button type="button" class="nav-search-btn" id="search-toggle" aria-label="Search archive">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <span class="nav-search-kbd">⌘K</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span class="nav-search-kbd" aria-hidden="true">⌘K</span>
+        <span class="nav-search-label">Search</span>
+      </button>
+      <button class="nav-mobile-btn" id="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
       </button>
     </div>
-    <button class="nav-mobile-btn" id="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
   </nav>
 
   <div id="search-overlay" class="search-overlay" aria-hidden="true">
@@ -159,18 +162,18 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous"></script>
-  <script src="/js/meta.js?v=2026071001"></script>
-  <script src="/js/data.js?v=2026071001"></script>
-  <script src="/js/colour.js?v=2026071001"></script>
-  <script src="/js/data-loader.js?v=2026071001"></script>
-  <script src="/js/parliament.js?v=2026071001"></script>
-  <script src="/js/hexmap.js?v=2026071001"></script>
-  <script src="/js/search.js?v=2026071001"></script>
-  <script src="/js/london.js?v=2026071001"></script>
-  <script src="/js/holyrood.js?v=2026071001"></script>
-  <script src="/js/senedd.js?v=2026071001"></script>
-  <script src="/js/ni.js?v=2026071001"></script>
-  <script src="/js/euro.js?v=2026071001"></script>
-  <script src="/js/app.js?v=2026071001"></script>
+  <script src="/js/meta.js?v=2026071107"></script>
+  <script src="/js/data.js?v=2026071107"></script>
+  <script src="/js/colour.js?v=2026071107"></script>
+  <script src="/js/data-loader.js?v=2026071107"></script>
+  <script src="/js/parliament.js?v=2026071107"></script>
+  <script src="/js/hexmap.js?v=2026071107"></script>
+  <script src="/js/search.js?v=2026071107"></script>
+  <script src="/js/london.js?v=2026071107"></script>
+  <script src="/js/holyrood.js?v=2026071107"></script>
+  <script src="/js/senedd.js?v=2026071107"></script>
+  <script src="/js/ni.js?v=2026071107"></script>
+  <script src="/js/euro.js?v=2026071107"></script>
+  <script src="/js/app.js?v=2026071107"></script>
 </body>
 </html>

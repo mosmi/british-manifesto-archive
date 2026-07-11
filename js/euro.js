@@ -9,10 +9,10 @@ async function loadEuroIndex() {
   if (_euroIndex) return _euroIndex;
   try {
     _euroIndex = await fetchTyped('/data/devolved/euro/index.json', 'json');
+    return _euroIndex;
   } catch {
-    _euroIndex = [];
+    return null;
   }
-  return _euroIndex;
 }
 
 async function loadEuroElection(id) {
@@ -176,9 +176,9 @@ function euroParliamentSection(election) {
       <table class="results-table">
         <thead>
           <tr>
-            <th>Party</th>
-            <th>Seats</th>
-            <th>Vote Share (%)</th>
+            <th scope="col">Party</th>
+            <th scope="col">Seats</th>
+            <th scope="col">Vote Share (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -277,7 +277,7 @@ async function renderEuroElection(app, id) {
     path: `/devolved/euro/${id}`,
   });
 
-  const index = await loadEuroIndex();
+  const index = (await loadEuroIndex()) || [];
   const currIdx = index.findIndex(e => e.id === id);
   const prev = currIdx > 0 ? index[currIdx - 1] : null;
   const next = currIdx < index.length - 1 && currIdx !== -1 ? index[currIdx + 1] : null;
@@ -390,6 +390,17 @@ async function renderEuroPortal(app) {
   });
 
   const index = await loadEuroIndex();
+  if (!index) {
+    if (typeof renderDataError === 'function') {
+      renderDataError(app, {
+        message: 'European Parliament election list failed to load.',
+        onRetry: () => renderEuroPortal(app),
+      });
+    } else {
+      app.innerHTML = '<p role="alert">European Parliament election list failed to load.</p>';
+    }
+    return;
+  }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
   const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/euro/${e.id}`, e)).join('');
 
@@ -473,7 +484,7 @@ async function getEuroPartyHistory(partyId) {
   const canonical = resolvePartyId(partyId);
   const slugs = euroManifestoSlugsForParty(partyId);
   const isAlliance = typeof isEuroAllianceParty === 'function' && isEuroAllianceParty(canonical);
-  const index = await loadEuroIndex();
+  const index = (await loadEuroIndex()) || [];
   const elections = [];
   const manifestos = [];
   await Promise.all(index.map(async (meta) => {

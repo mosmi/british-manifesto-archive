@@ -16,10 +16,10 @@ async function loadLondonIndex() {
   if (_londonIndex) return _londonIndex;
   try {
     _londonIndex = await fetchTyped('/data/devolved/london/index.json', 'json');
+    return _londonIndex;
   } catch {
-    _londonIndex = [];
+    return null;
   }
-  return _londonIndex;
 }
 
 async function loadLondonElection(id) {
@@ -135,13 +135,13 @@ function londonMayorSection(election) {
       <td>${c.elected ? '<span class="majority-badge">✦ Elected</span>' : ''}</td>
     </tr>`;
   }).join('');
-  const runoffHead = isSV ? '<th style="text-align:right">Run-off</th><th>%</th>' : '';
+  const runoffHead = isSV ? '<th scope="col" style="text-align:right">Run-off</th><th scope="col">%</th>' : '';
   return `
     <div class="results-section">
       <span class="section-label">Mayor of London · ${m.system || 'First-past-the-post'}</span>
       <h2>Mayoral Result</h2>
       <table class="results-table london-mayor-table">
-        <thead><tr><th>Candidate</th><th>${isSV ? 'First round' : 'Votes'}</th><th>%</th>${runoffHead}<th></th></tr></thead>
+        <thead><tr><th scope="col">Candidate</th><th scope="col">${isSV ? 'First round' : 'Votes'}</th><th scope="col">%</th>${runoffHead}<th scope="col"></th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       ${isSV ? '<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.5rem">Under the Supplementary Vote, the top two candidates went to a run-off in which second preferences for eliminated candidates were redistributed.</p>' : ''}
@@ -166,7 +166,7 @@ function londonAssemblySection(election) {
   }).join('');
   const others = (a.otherListVotes || []).length
     ? `<details class="london-others"><summary>Other parties on the London-wide list (no seats)</summary>
-        <table class="results-table"><thead><tr><th>Party</th><th>List votes</th><th>%</th></tr></thead>
+        <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">List votes</th><th scope="col">%</th></tr></thead>
         <tbody>${a.otherListVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${londonNum(o.votes)}</td><td style="color:var(--text-muted)">${typeof o.pct === 'number' ? o.pct.toFixed(1) + '%' : '—'}</td></tr>`).join('')}</tbody></table>
       </details>`
     : '';
@@ -175,7 +175,7 @@ function londonAssemblySection(election) {
       <span class="section-label">London Assembly · ${a.system || 'Additional Member System'}</span>
       <h2>Assembly Result</h2>
       <table class="results-table london-assembly-table">
-        <thead><tr><th>Party</th><th title="Constituency seats" style="text-align:center">Const.</th><th title="London-wide list seats" style="text-align:center">List</th><th>Seats (of ${a.totalSeats})</th><th>List vote %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col" title="Constituency seats" style="text-align:center">Const.</th><th scope="col" title="London-wide list seats" style="text-align:center">List</th><th scope="col">Seats (of ${a.totalSeats})</th><th scope="col">List vote %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${a.constituencySeats || 14} constituency members elected by first-past-the-post and ${a.listSeats || 11} London-wide members allocated by party-list vote (modified d'Hondt).</p>
@@ -203,7 +203,7 @@ function londonCouncilSection(election) {
       <span class="section-label">${LONDON_BODY_LABELS[election.body] || 'Council'}</span>
       <h2>Council Composition</h2>
       <table class="results-table">
-        <thead><tr><th>Party</th><th>Councillors (of ${c.totalSeats})</th><th>Vote %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col">Councillors (of ${c.totalSeats})</th><th scope="col">Vote %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       ${c.note ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${c.note}</p>` : ''}
@@ -215,7 +215,8 @@ async function renderLondonElection(app, id) {
   setPageMeta({ title: 'London election', description: 'London election results.', path: `/devolved/london/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
-  const [election, index] = await Promise.all([loadLondonElection(id), loadLondonIndex()]);
+  const [election, indexRaw] = await Promise.all([loadLondonElection(id), loadLondonIndex()]);
+  const index = indexRaw || [];
   if (!election) { renderNotFound(app); return; }
 
   const bodyLabel = LONDON_BODY_LABELS[election.body] || 'London';
@@ -333,6 +334,17 @@ async function renderLondonPortal(app) {
   });
 
   const index = await loadLondonIndex();
+  if (!index) {
+    if (typeof renderDataError === 'function') {
+      renderDataError(app, {
+        message: 'London election list failed to load.',
+        onRetry: () => renderLondonPortal(app),
+      });
+    } else {
+      app.innerHTML = '<p role="alert">London election list failed to load.</p>';
+    }
+    return;
+  }
   const byEra = { lcc: [], glc: [], gla: [] };
   index.forEach(e => { (byEra[e.body] || (byEra[e.body] = [])).push(e); });
 

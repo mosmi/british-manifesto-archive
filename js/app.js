@@ -304,10 +304,6 @@ function setupNavMenu(dropdown, button, menu) {
   };
 
   button.addEventListener('click', e => {
-    const href = button.getAttribute('href');
-    if (href && HOVER_FINE.matches && window.innerWidth > 640) {
-      return;
-    }
     e.preventDefault();
     toggle();
   });
@@ -563,6 +559,19 @@ function nationLink(id, label) {
   return `<a href="/nation/${id}" class="inline-nation-link">${label}</a>`;
 }
 
+function partyBreadcrumbItems(party) {
+  const crumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Parties', href: '/parties' },
+  ];
+  const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
+  if (nationId && typeof getNationLabel === 'function') {
+    crumbs.push({ label: getNationLabel(nationId), href: `/nation/${nationId}` });
+  }
+  crumbs.push({ label: party.shortName });
+  return crumbs;
+}
+
 // ── Navigation ────────────────────────────────────────────────
 function buildNav() {
   buildElectionsDropdown();
@@ -580,6 +589,11 @@ function buildDevolvedDropdown() {
     a.innerHTML = `<span class="type-dot dot-${portal.id}" aria-hidden="true"></span><div class="dropdown-text"><strong>${portal.label}</strong><span class="dropdown-sub">${portal.subtitle}</span></div>`;
     el.appendChild(a);
   });
+  const hub = document.createElement('a');
+  hub.href = '/devolved';
+  hub.className = 'mega-all-link';
+  hub.textContent = 'All elections beyond Westminster →';
+  el.appendChild(hub);
 }
 
 function setupNavDropdowns() {
@@ -615,6 +629,11 @@ function buildElectionsDropdown() {
       el.appendChild(a);
     });
   });
+  const hub = document.createElement('a');
+  hub.href = '/elections';
+  hub.className = 'mega-all-link';
+  hub.textContent = 'All UK general elections →';
+  el.appendChild(hub);
 }
 
 function buildPartiesMega() {
@@ -710,6 +729,12 @@ function buildPartiesMega() {
   allOthers.textContent = 'All other parties →';
   othersCol.appendChild(allOthers);
   mega.appendChild(othersCol);
+
+  const hub = document.createElement('a');
+  hub.href = '/parties';
+  hub.className = 'mega-all-link mega-hub-link';
+  hub.textContent = 'All parties →';
+  mega.appendChild(hub);
 }
 
 function setupMobileMenu() {
@@ -1238,7 +1263,6 @@ function loadLatestManifestos() {
   if (!track) return;
 
   fetchTyped('/data/latest-additions.json', 'json')
-    .catch(() => [])
     .then(items => {
       if (!items.length) {
         track.innerHTML = '<p class="latest-empty">Manifesto documents will appear here as they are added to the archive.</p>';
@@ -1275,6 +1299,16 @@ function loadLatestManifestos() {
 
       initLazyImages(track);
       setupLatestCarousel();
+    })
+    .catch(() => {
+      if (typeof renderDataError === 'function') {
+        renderDataError(track, {
+          message: 'Latest additions failed to load.',
+          onRetry: () => loadLatestManifestos(),
+        });
+      } else {
+        track.innerHTML = '<p class="latest-empty" role="alert">Latest additions failed to load.</p>';
+      }
     });
 }
 
@@ -1606,14 +1640,14 @@ function renderElection(app, id) {
   const videoSection = videoIds.length
     ? `<div class="video-section"><span class="section-label">Election Night</span><h2>Broadcast Recording</h2>${videoIds.map((id, i) => {
         const start = i === 0 && election.youtubeStart ? `?start=${election.youtubeStart}` : '';
-        return `<div class="video-wrap"><iframe src="https://www.youtube.com/embed/${id}${start}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+        return `<div class="video-wrap"><iframe src="https://www.youtube.com/embed/${id}${start}" title="Election night broadcast recording" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
       }).join('')}</div>`
-    : `<div class="video-section"><span class="section-label">Election Night</span><h2>Broadcast Recording</h2><div class="video-wrap" style="min-height:200px"><div class="video-placeholder"><div class="video-placeholder-icon">▶</div><div class="video-placeholder-text">Add a <code>youtubeId</code> to this election in <code>js/data.js</code> to embed the broadcast recording.</div></div></div></div>`;
+    : '';
 
   app.innerHTML = `
     ${renderBreadcrumb([
       { label: 'Home', href: '/' },
-      { label: 'General Elections', href: '/' },
+      { label: 'General Elections', href: '/elections' },
       { label: election.displayYear },
     ])}
     <section class="election-hero">
@@ -1640,13 +1674,13 @@ function renderElection(app, id) {
           <span class="section-label">Election Summary</span>
           <div class="election-summary">${summaryParas}</div>
           ${renderSupplementaryDocuments(election.supplementaryDocuments)}
-          ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
+          ${highlightItems ? `<div class="highlights-list"><h2>Key Moments</h2>${highlightItems}</div>` : ''}
 
           <div class="results-section">
             <span class="section-label">Seat Distribution</span>
             <h2>Results</h2>
             <table class="results-table">
-              <thead><tr><th>Party</th><th>Seats (of ${election.totalSeats})</th><th>Votes</th><th>Vote %</th></tr></thead>
+              <thead><tr><th scope="col">Party</th><th scope="col">Seats (of ${election.totalSeats})</th><th scope="col">Votes</th><th scope="col">Vote %</th></tr></thead>
               <tbody>${resultRows}</tbody>
             </table>
             <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">† Northern Ireland party vote totals shown as NI-wide share and are not included in UK-wide percentage figures.</p>
@@ -1929,10 +1963,7 @@ async function renderCooperativePartyPage(app, party) {
   const contestedLabel = '22 Westminster · 7 Holyrood · 7 Senedd';
 
   app.innerHTML = `
-    ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: party.shortName },
-    ])}
+    ${renderBreadcrumb(partyBreadcrumbItems(party))}
     <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
       <div class="party-hero-inner">
@@ -2164,17 +2195,8 @@ async function renderParty(app, id) {
     path: `/party/${partyId}`,
   });
 
-  const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
-  const nationCrumb = nationId
-    ? [{ label: getNationLabel(nationId), href: `/nation/${nationId}` }]
-    : [];
-
   app.innerHTML = `
-    ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      ...nationCrumb,
-      { label: party.shortName },
-    ])}
+    ${renderBreadcrumb(partyBreadcrumbItems(party))}
     <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
       <div class="party-hero-inner">
@@ -2271,9 +2293,9 @@ function westminsterYearCell(yearLabel) {
 function nationTablePartyHeading(partyId, label, color) {
   const style = color ? ` style="color:${color}"` : '';
   if (!partyId || !PARTIES?.[partyId]) {
-    return `<th${style}>${label}</th>`;
+    return `<th scope="col"${style}>${label}</th>`;
   }
-  return `<th${style}><a href="/party/${partyId}" class="results-table-link">${label}</a></th>`;
+  return `<th scope="col"${style}><a href="/party/${partyId}" class="results-table-link">${label}</a></th>`;
 }
 
 function renderNation(app, id) {
@@ -2325,7 +2347,7 @@ function renderNation(app, id) {
       </tr>`;
     }).join('');
     const header = families.map(f => {
-      if (f.id === '_other') return `<th style="color:${f.color}">${f.label}</th>`;
+      if (f.id === '_other') return `<th scope="col" style="color:${f.color}">${f.label}</th>`;
       return nationTablePartyHeading(f.id, f.label, f.color);
     }).join('');
     euroSection = `<div class="devolved-section" style="margin-bottom:2.5rem">
@@ -2334,7 +2356,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">Seats held by UK parties in each EP political group at the constitutive session after each election. Includes non-attached MEPs mapped to the closest family line (e.g. Brexit Party 2019, BNP 2009). UK Conservatives sat in the European Democrats and EPP-ED groups before forming ECR in 2009. <a href="/devolved/euro">View full European Parliament archive →</a></p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th>${header}<th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${header}<th scope="col">Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -2357,7 +2379,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). England had 485–524 seats 1918–1992; 529 from 1997; 533 from 2010; 543 from 2024. 2024 "Other" = Reform UK 5, Green 4, five independents, Speaker 1. Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th>${nationTablePartyHeading('conservative', 'Con', '#0087DC')}${nationTablePartyHeading('labour', 'Lab', '#E4003B')}${nationTablePartyHeading('libdem', 'LD', '#FAA61A')}<th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('conservative', 'Con', '#0087DC')}${nationTablePartyHeading('labour', 'Lab', '#E4003B')}${nationTablePartyHeading('libdem', 'LD', '#FAA61A')}<th scope="col">Other</th><th scope="col">Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -2377,7 +2399,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). Plaid Cymru first contested Westminster elections in 1929. Wales had 35–40 seats 1918–2019; reduced to 32 from 2024. 2005 "Other" = Peter Law, Independent (Blaenau Gwent). Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th>${nationTablePartyHeading('welshcon', 'Con', '#0087DC')}${nationTablePartyHeading('welshlab', 'Lab', '#E4003B')}${nationTablePartyHeading('welshlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('plaid', 'Plaid', '#008672')}<th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('welshcon', 'Con', '#0087DC')}${nationTablePartyHeading('welshlab', 'Lab', '#E4003B')}${nationTablePartyHeading('welshlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('plaid', 'Plaid', '#008672')}<th scope="col">Other</th><th scope="col">Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -2397,7 +2419,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). Scotland had 71–72 seats 1918–2001; reduced to 59 from 2005, and 57 from 2024. "Other" in the interwar period includes ILP MPs (Glasgow). The precise breakdown of "Other" seats is not available in the source document. Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th>${nationTablePartyHeading('scottishcon', 'Con', '#0087DC')}${nationTablePartyHeading('scottishlab', 'Lab', '#E4003B')}${nationTablePartyHeading('scottishlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('snp', 'SNP', '#FDF38E')}<th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('scottishcon', 'Con', '#0087DC')}${nationTablePartyHeading('scottishlab', 'Lab', '#E4003B')}${nationTablePartyHeading('scottishlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('snp', 'SNP', '#FDF38E')}<th scope="col">Other</th><th scope="col">Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -2425,12 +2447,12 @@ function renderNation(app, id) {
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">Northern Ireland has returned 12 Westminster MPs since partition in 1922 (increased to 17 in 1983, then 18 in 1997). Ulster Unionists took the Conservative whip until 1974. The SDLP was founded in 1970 and the DUP in 1971; the modern party landscape dates from February 1974. Sinn Féin MPs are elected but do not take their seats (abstentionism). 1918 figures covered all of Ireland and are omitted here.</p>
       <p style="color:var(--cream-dark);font-size:0.85rem;font-weight:600;margin-bottom:0.5rem">1922–1970</p>
       <div style="overflow-x:auto;margin-bottom:2rem"><table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#0087DC">Unionist¹</th><th style="color:#2AA82C">Nationalist</th><th>Other</th><th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#0087DC">Unionist¹</th><th scope="col" style="color:#2AA82C">Nationalist</th><th scope="col">Other</th><th scope="col">Total</th></tr></thead>
         <tbody>${earlyRows}</tbody>
       </table></div>
       <p style="color:var(--cream-dark);font-size:0.85rem;font-weight:600;margin-bottom:0.5rem">1974–2024</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th>Year</th>${nationTablePartyHeading('uup', 'UUP', '#48A5EE')}${nationTablePartyHeading('sdlp', 'SDLP', '#2AA82C')}${nationTablePartyHeading('dup', 'DUP', '#D46A4C')}${nationTablePartyHeading('sinnfein', 'Sinn Féin', '#326760')}<th>Other²</th><th>Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('uup', 'UUP', '#48A5EE')}${nationTablePartyHeading('sdlp', 'SDLP', '#2AA82C')}${nationTablePartyHeading('dup', 'DUP', '#D46A4C')}${nationTablePartyHeading('sinnfein', 'Sinn Féin', '#326760')}<th scope="col">Other²</th><th scope="col">Total</th></tr></thead>
         <tbody>${modernRows}</tbody>
       </table></div>
       <p style="color:var(--text-muted);font-size:0.75rem;margin-top:1rem">¹ Includes all unionist parties; UUPs took the Conservative whip until 1974. ² Includes Alliance, TUV and independents; 2024 Other = Alliance (1), TUV (1), Independent (1). Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
@@ -2455,7 +2477,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">60 Members elected by AMS (1999–2021); 96 Members from 2026 under closed-list PR. Labour was the largest party at every election until 2026. <a href="/devolved/senedd">View full Senedd archive →</a></p>
       <table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#E4003B">Labour</th><th style="color:#008672">Plaid</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#70147A">UKIP</th><th style="color:#12B6CF">Reform</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#E4003B">Labour</th><th scope="col" style="color:#008672">Plaid</th><th scope="col" style="color:#0087DC">Cons.</th><th scope="col" style="color:#FAA61A">Lib Dem</th><th scope="col" style="color:#70147A">UKIP</th><th scope="col" style="color:#12B6CF">Reform</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2477,7 +2499,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">129 MSPs elected by Additional Member System (73 constituency + 56 regional). The SNP has governed Scotland since 2007. <a href="/devolved/holyrood">View full Holyrood archive →</a></p>
       <table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#FDF38E">SNP</th><th style="color:#E4003B">Labour</th><th style="color:#0087DC">Cons.</th><th style="color:#FAA61A">Lib Dem</th><th style="color:#00B140">Greens</th><th style="color:#12B6CF">Reform</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#FDF38E">SNP</th><th scope="col" style="color:#E4003B">Labour</th><th scope="col" style="color:#0087DC">Cons.</th><th scope="col" style="color:#FAA61A">Lib Dem</th><th scope="col" style="color:#00B140">Greens</th><th scope="col" style="color:#12B6CF">Reform</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2498,7 +2520,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">90 MLAs elected by Single Transferable Vote (5 per constituency). In 2022 Sinn Féin became the largest party for the first time since partition in 1922. Source: HC Library CBP-7529.</p>
       <table class="results-table">
-        <thead><tr><th>Year</th><th style="color:#D46A4C">DUP</th><th style="color:#326760">Sinn Féin</th><th style="color:#48A5EE">UUP</th><th style="color:#2AA82C">SDLP</th><th style="color:#F6CB2F">Alliance</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#D46A4C">DUP</th><th scope="col" style="color:#326760">Sinn Féin</th><th scope="col" style="color:#48A5EE">UUP</th><th scope="col" style="color:#2AA82C">SDLP</th><th scope="col" style="color:#F6CB2F">Alliance</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2846,6 +2868,17 @@ function buildManifestoHeaderMetaHtml(election, meta, body) {
   return items.join('<span class="meta-sep" aria-hidden="true">·</span>');
 }
 
+function manifestoLoadErrorHtml(pdfPath, hasPdf) {
+  return `<div class="manifesto-empty-state" role="alert">
+    <div class="manifesto-empty-kicker">Couldn’t load manifesto text</div>
+    <p class="manifesto-empty-text">The text file failed to load. Check your connection and try again.</p>
+    <div class="manifesto-empty-actions">
+      <button type="button" class="manifesto-btn-solid" id="manifesto-retry">Try again</button>
+      ${hasPdf ? `<a href="${pdfPath}" class="manifesto-btn-ghost" target="_blank" rel="noopener">View original PDF</a>` : ''}
+    </div>
+  </div>`;
+}
+
 function manifestoEmptyStateHtml(pdfPath, hasPdf) {
   const bodyCopy = hasPdf
     ? "This manifesto hasn't been transcribed yet, but the original scan is available."
@@ -2956,9 +2989,28 @@ function renderManifesto(app, electionId, partyId) {
   const pdfPath = `/manifestos/${electionId}/${partyId}/manifesto.pdf`;
   const hasPdf = hasManifestoPdf(electionId, partyId);
   const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
-  const pdfBtn = hasPdf
-    ? `<a href="${pdfPath}" class="manifesto-btn-ghost" target="_blank" rel="noopener">Original PDF${pdfSize ? ` · ${pdfSize}` : ''}</a><a href="${pdfPath}" class="manifesto-btn-solid" download="manifesto.pdf">Download ↓</a>`
+  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
+  const coverPath = `/manifestos/${electionId}/${partyId}/cover.png?v=${ASSETS_VERSION}`;
+  const coverFallback = `/manifestos/${electionId}/${partyId}/cover.jpg?v=${ASSETS_VERSION}`;
+  const coverThumbOpen = hasPdf
+    ? `<a href="${pdfPath}" class="manifesto-viewer-cover-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">`
+    : `<div class="manifesto-viewer-cover-thumb">`;
+  const coverThumbClose = hasPdf ? '</a>' : '</div>';
+  const pdfDownloadLink = hasPdf
+    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon" aria-hidden="true">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document${pdfSizeLabel}</div></div>
+        </a>`
     : '';
+  const coverPanel = `
+            <div class="manifesto-viewer-cover" id="manifesto-viewer-cover">
+              ${coverThumbOpen}
+                <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
+                  width="148" height="210" decoding="async"
+                  onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='${coverFallback}';}else{const wrap=this.closest('.manifesto-viewer-cover');if(wrap){wrap.classList.add('is-cover-missing');if(!wrap.querySelector('.manifesto-link'))wrap.hidden=true;}}">
+              ${coverThumbClose}
+              ${pdfDownloadLink}
+            </div>`;
   const barSurface = typeof barColour === 'function'
     ? barColour(getPartyColor(partyId, election.year), theme)
     : accent.surface;
@@ -2990,7 +3042,7 @@ function renderManifesto(app, electionId, partyId) {
                 <span>${election.date}</span>
               </div>
             </div>
-            <div class="manifesto-viewer-actions">${pdfBtn}</div>
+            ${coverPanel}
           </div>
         </div>
       </header>
@@ -3051,9 +3103,12 @@ function renderManifesto(app, electionId, partyId) {
       if (metaEl) metaEl.innerHTML = buildManifestoHeaderMetaHtml(election, {}, '');
       const contentEl = document.getElementById('manifesto-content');
       const paperEl = document.getElementById('manifesto-paper');
-      contentEl.innerHTML = manifestoEmptyStateHtml(pdfPath, hasPdf);
+      contentEl.innerHTML = manifestoLoadErrorHtml(pdfPath, hasPdf);
       contentEl.classList.add('manifesto-content--empty');
       paperEl?.classList.add('manifesto-paper--empty');
+      document.getElementById('manifesto-retry')?.addEventListener('click', () => {
+        renderManifesto(app, electionId, partyId);
+      });
       setupManifestoReader(contentEl, paperEl, accent);
     });
 }

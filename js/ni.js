@@ -24,10 +24,10 @@ async function loadNIIndex() {
   if (_niIndex) return _niIndex;
   try {
     _niIndex = await fetchTyped('/data/devolved/stormont/index.json', 'json');
+    return _niIndex;
   } catch {
-    _niIndex = [];
+    return null;
   }
-  return _niIndex;
 }
 
 async function loadNIElection(id) {
@@ -85,7 +85,7 @@ function niParliamentSection(election) {
   }).join('');
   const others = (p.otherListVotes || []).length
     ? `<details class="london-others"><summary>Other parties (no first-preference seats)</summary>
-        <table class="results-table"><thead><tr><th>Party</th><th>First Pref. %</th></tr></thead>
+        <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">First Pref. %</th></tr></thead>
         <tbody>${p.otherListVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.pct === 'number' ? o.pct.toFixed(1) + '%' : '—'}</td></tr>`).join('')}</tbody></table>
       </details>`
     : '';
@@ -94,7 +94,7 @@ function niParliamentSection(election) {
       <span class="section-label">Northern Ireland Assembly · ${p.system || 'Single Transferable Vote'}</span>
       <h2>Assembly Result</h2>
       <table class="results-table london-assembly-table">
-        <thead><tr><th>Party</th><th>Seats (of ${p.totalSeats})</th><th>First Pref. %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col">Seats (of ${p.totalSeats})</th><th scope="col">First Pref. %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">MLAs elected across multi-member constituencies under the Single Transferable Vote (STV) system. Under power-sharing rules, a formal overall majority is not required; instead, the Executive is formed jointly with cross-community support.</p>
@@ -123,7 +123,8 @@ async function renderNIElection(app, id) {
   setPageMeta({ title: 'Northern Ireland Assembly election', description: 'Northern Ireland Assembly election results.', path: `/devolved/stormont/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
-  const [election, index] = await Promise.all([loadNIElection(id), loadNIIndex()]);
+  const [election, indexRaw] = await Promise.all([loadNIElection(id), loadNIIndex()]);
+  const index = indexRaw || [];
   if (!election) { renderNotFound(app); return; }
 
   const winnerId = election.control;
@@ -334,6 +335,17 @@ async function renderNIPortal(app) {
   });
 
   const index = await loadNIIndex();
+  if (!index) {
+    if (typeof renderDataError === 'function') {
+      renderDataError(app, {
+        message: 'Northern Ireland Assembly election list failed to load.',
+        onRetry: () => renderNIPortal(app),
+      });
+    } else {
+      app.innerHTML = '<p role="alert">Northern Ireland Assembly election list failed to load.</p>';
+    }
+    return;
+  }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
   const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/stormont/${e.id}`, e)).join('');
 
@@ -405,7 +417,7 @@ function renderNIOtherParties(app) {
 }
 
 async function getNIPartyHistory(partyId) {
-  const index = await loadNIIndex();
+  const index = (await loadNIIndex()) || [];
   const elections = [];
   const manifestos = [];
   await Promise.all(index.map(async (meta) => {

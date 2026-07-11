@@ -11,6 +11,23 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-11 — Manifesto viewer: scrollable TOC + cover panel
+- Desktop contents sidebar (`.manifesto-toc`) now scrolls within the viewport so long TOCs (e.g. Labour 1983) remain reachable while sticky.
+- Header top-right shows the manifesto front cover when `cover.png`/`cover.jpg` loads, with the same “Original Manifesto” PDF link + size label used on election manifesto cards when a scan exists.
+
+Cache-bust: `?v=2026071104` / `ASSETS_VERSION`.
+
+## 2026-07-11 — Audit remediation (search, PDF 404s, mobile nav, a11y)
+Implemented the prioritised audit action plan:
+- **Search:** token AND matching; indexes manifesto docs + devolved election titles
+- **Missing assets:** middleware returns real 404 (no-store) when `/manifestos/*` SPA-falls back to HTML; `_redirects` lists SPA routes only; `_routes.json` includes `/manifestos/*` for that check; restored `wrangler.toml`
+- **Mobile:** search + theme always visible in `.nav-utils`; touch label “Search” instead of ⌘K
+- **Nav:** Beyond Westminster / Parties are disclosure buttons with hub links; `aria-haspopup`
+- **Errors:** `renderDataError` + retry on portal index / latest-additions / manifesto text fetch failures
+- **Misc:** breadcrumb → `/elections`; hide empty video section; `scope="col"` on results tables; HSTS / frame-ancestors / X-Frame-Options; ink-chrome contrast bump; edge `<noscript>` summaries via middleware
+
+Cache-bust: `?v=2026071102` / `ASSETS_VERSION`.
+
 ## 2026-07-05 — SEO refresh, OG generator pipeline, EP colours & mega-menu
 **SEO (deployed):** Party meta descriptions from `party.description` + chamber counts;
 answer-first `.party-lede` on party pages; shared title suffix via `js/meta.js`;

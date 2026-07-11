@@ -2,7 +2,7 @@
    Lazy election data loader — falls back to bundled ELECTIONS
    ============================================================ */
 
-const ASSETS_VERSION = '2026071001';
+const ASSETS_VERSION = '2026071107';
 
 const _electionCache = new Map();
 
@@ -21,6 +21,27 @@ async function fetchTyped(url, expected) {
   return expected === 'json' ? r.json() : r.text();
 }
 
+/**
+ * Visible error state for failed client-side data fetches.
+ * @param {HTMLElement} container
+ * @param {{ message?: string, onRetry?: () => void }} [opts]
+ */
+function renderDataError(container, opts = {}) {
+  if (!container) return;
+  const message = opts.message
+    || 'This data failed to load. Check your connection and try again.';
+  container.innerHTML = `<div class="data-error" role="alert">
+    <p class="data-error-kicker">Couldn’t load data</p>
+    <p class="data-error-text">${message}</p>
+    ${opts.onRetry ? '<button type="button" class="data-error-retry">Try again</button>' : ''}
+  </div>`;
+  const btn = container.querySelector('.data-error-retry');
+  if (btn && typeof opts.onRetry === 'function') {
+    btn.addEventListener('click', () => opts.onRetry());
+  }
+}
+window.renderDataError = renderDataError;
+
 /** @returns {Promise<object|null>} */
 async function loadElection(id) {
   const bundled = typeof getElection === 'function' ? getElection(id) : null;
@@ -33,7 +54,7 @@ async function loadElection(id) {
       _electionCache.set(id, data);
       return data;
     }
-  } catch (_) { /* offline or missing file */ }
+  } catch (_) { /* offline or missing file — fall back to bundled */ }
 
   if (bundled) _electionCache.set(id, bundled);
   return bundled;

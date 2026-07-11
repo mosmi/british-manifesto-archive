@@ -1,0 +1,13 @@
+# Explicit SPA fallbacks for client-routed paths (extensionless).
+# Do NOT add a catch-all /* → index.html — that turns missing PDFs into 200 HTML.
+/election/*      /index.html  200
+/manifesto/*     /index.html  200
+/party/*         /index.html  200
+/nation/*        /index.html  200
+/devolved/*      /index.html  200
+/elections       /index.html  200
+/parties         /index.html  200
+/devolved        /index.html  200
+/nations         /index.html  200
+/others          /index.html  200
+/about           /index.html  200

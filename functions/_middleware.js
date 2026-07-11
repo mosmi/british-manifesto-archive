@@ -700,7 +700,84 @@ function classify(path, seo) {
   return { valid: false };
 }
 
-function buildRewriter({ meta, graph, canonical, image, noindex }) {
+function escapeHtml(text) {
+  return String(text || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/** Minimal crawlable body for no-JS / answer-engine agents. */
+function buildNoscriptHtml(path, meta, seo) {
+  if (!meta) return '';
+  const title = escapeHtml(meta.title || SITE_NAME);
+  const description = escapeHtml(meta.description || DEFAULT_DESCRIPTION);
+  const links = [];
+  const parts = path.split('/').filter(Boolean);
+
+  if (parts[0] === 'manifesto' && parts[1] && parts[2]) {
+    const key = `${parts[1]}/${parts[2]}`;
+    const rec = seo?.manifestos?.[key];
+    links.push(`<a href="/election/${escapeHtml(parts[1])}">${escapeHtml(parts[1])} election</a>`);
+    links.push(`<a href="/party/${escapeHtml(parts[2])}">Party page</a>`);
+    if (rec?.hasMarkdown) {
+      links.push(`<a href="/manifestos/${escapeHtml(parts[1])}/${escapeHtml(parts[2])}/manifesto.md">Full text (Markdown)</a>`);
+    }
+    if (rec?.hasPdf) {
+      links.push(`<a href="/manifestos/${escapeHtml(parts[1])}/${escapeHtml(parts[2])}/manifesto.pdf">Original PDF</a>`);
+    }
+  } else if (parts[0] === 'election' && parts[1]) {
+    links.push('<a href="/elections">All UK general elections</a>');
+    const election = seo?.elections?.[parts[1]];
+    const manifestoKeys = seo?.manifestos
+      ? Object.keys(seo.manifestos).filter(k => k.startsWith(`${parts[1]}/`))
+      : [];
+    manifestoKeys.slice(0, 8).forEach(k => {
+      const [ey, pid] = k.split('/');
+      const label = seo.manifestos[k]?.label || `${pid} ${ey}`;
+      links.push(`<a href="/manifesto/${escapeHtml(ey)}/${escapeHtml(pid)}">${escapeHtml(label)}</a>`);
+    });
+    if (election?.winner) {
+      links.push(`<a href="/party/${escapeHtml(election.winner)}">Winning party</a>`);
+    }
+  } else if (parts[0] === 'party' && parts[1]) {
+    links.push('<a href="/parties">All parties</a>');
+    links.push(`<a href="/party/${escapeHtml(parts[1])}">${title}</a>`);
+  } else if (parts[0] === 'devolved') {
+    links.push('<a href="/devolved">Beyond Westminster</a>');
+  } else {
+    links.push('<a href="/elections">UK General Elections</a>');
+    links.push('<a href="/devolved">Beyond Westminster</a>');
+    links.push('<a href="/parties">Parties</a>');
+  }
+
+  const linkList = links.length
+    ? `<ul>${links.map(l => `<li>${l}</li>`).join('')}</ul>`
+    : '';
+
+  return `<section class="edge-noscript">
+  <h1>${title}</h1>
+  <p>${description}</p>
+  ${linkList}
+  <p>This archive requires JavaScript for the full interactive experience. Key documents are also linked above as Markdown or PDF where available.</p>
+</section>`;
+}
+
+function missingAssetResponse() {
+  return new Response('Not Found', {
+    status: 404,
+    statusText: 'Not Found',
+    headers: {
+      'content-type': 'text/plain; charset=utf-8',
+      'cache-control': 'no-store',
+      'x-content-type-options': 'nosniff',
+      'referrer-policy': 'strict-origin-when-cross-origin',
+    },
+  });
+}
+
+function buildRewriter({ meta, graph, canonical, image, noindex, noscriptHtml }) {
   const rewriter = new HTMLRewriter();
 
   if (canonical) {
@@ -766,6 +843,14 @@ function buildRewriter({ meta, graph, canonical, image, noindex }) {
     },
   });
 
+  if (noscriptHtml) {
+    rewriter.on('main#app', {
+      element(el) {
+        el.append(noscriptHtml, { html: true });
+      },
+    });
+  }
+
   return rewriter;
 }
 
@@ -780,15 +865,24 @@ export async function onRequest(context) {
   const url = new URL(request.url);
   const path = url.pathname;
 
-  // Bypass assets and anything with a file extension.
+  // Static asset paths: detect SPA HTML fallback for missing files and return a real 404.
+  // /manifestos/* is intentionally included in Functions (_routes.json) for this check.
+  const isManifestAsset = path.startsWith('/manifestos/');
+  const looksLikeFile = /\.[a-z0-9]{2,8}$/i.test(path);
   if (
-    path.startsWith('/js/') ||
-    path.startsWith('/data/') ||
-    path.startsWith('/manifestos/') ||
-    path.startsWith('/previews/') ||
-    path.includes('.')
+    isManifestAsset
+    || path.startsWith('/js/')
+    || path.startsWith('/data/')
+    || path.startsWith('/previews/')
+    || path.startsWith('/og/')
+    || (looksLikeFile && path !== '/index.html')
   ) {
-    return next();
+    const response = await next();
+    const contentType = (response.headers.get('content-type') || '').toLowerCase();
+    if (contentType.includes('text/html')) {
+      return missingAssetResponse();
+    }
+    return response;
   }
 
   const seo = await loadSeo(context);
@@ -817,12 +911,14 @@ export async function onRequest(context) {
     });
   }
 
+  const noscriptHtml = buildNoscriptHtml(path, result.meta, seo);
   const rewriter = buildRewriter({
     meta: result.meta,
     graph: result.graph,
     canonical: canonicalFor(path),
     image: result.image,
     noindex: false,
+    noscriptHtml,
   });
   return rewriter.transform(response);
 }
