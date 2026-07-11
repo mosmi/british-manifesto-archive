@@ -16,6 +16,7 @@ Durable knowledge for the British Manifesto Archive — architecture, data model
 - [data-model](./data-model/index.md) — the shape of everything under `data/` and `manifestos/`
 - [pipelines](./pipelines/index.md) — hexmaps, transcription, covers, PDF sizes, OG cards
 - [content-state](./content-state/index.md) — what's transcribed, what's missing, audit state
+- [content/latest-additions](./content/latest-additions.md) — homepage Latest Additions carousel
 - [page-rules](./page-rules/index.md) — special cases and guardrails for specific pages
 - [design](./design/index.md) — planned visual/UX refresh (implementation plan)
 - [log](./log.md) — chronological project history

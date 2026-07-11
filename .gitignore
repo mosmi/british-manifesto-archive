@@ -37,3 +37,7 @@ tools/hexmaps/reference/
 tools/transcription-toolkit/lib/
 tools/transcription-toolkit/Markdown versions/
 tools/transcription-toolkit/work/
+
+# Local-only bulk trees (not part of the site)
+chrome/
+tools/transcription-toolkit-archive/

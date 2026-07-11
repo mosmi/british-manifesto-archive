@@ -835,6 +835,11 @@
     "label": "SNP Manifesto 1992"
   },
   {
+    "electionId": "1992",
+    "partyId": "green",
+    "label": "Green Party Manifesto 1992"
+  },
+  {
     "electionId": "1987",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 1987"
@@ -848,6 +853,11 @@
     "electionId": "1987",
     "partyId": "libdem",
     "label": "Alliance Manifesto 1987"
+  },
+  {
+    "electionId": "1987",
+    "partyId": "green",
+    "label": "Green Party Manifesto 1987"
   },
   {
     "electionId": "1983",

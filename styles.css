@@ -2241,7 +2241,10 @@ h1, h2, h3, h4 {
   color: var(--ink);
   background: var(--cream-faint, rgba(255, 255, 255, 0.04));
 }
-.manifesto-viewer-cover .manifesto-link-title { color: var(--ink); }
+.manifesto-viewer-cover .manifesto-link-title {
+  color: var(--ink);
+  white-space: nowrap;
+}
 .manifesto-viewer-cover .manifesto-link-sub { color: var(--ink-muted); }
 
 .manifesto-btn-ghost {

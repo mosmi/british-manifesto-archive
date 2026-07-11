@@ -1262,7 +1262,7 @@ function loadLatestManifestos() {
   const track = document.getElementById('latest-track');
   if (!track) return;
 
-  fetchTyped('/data/latest-additions.json', 'json')
+  fetchTyped(`/data/latest-additions.json?v=${ASSETS_VERSION}`, 'json')
     .then(items => {
       if (!items.length) {
         track.innerHTML = '<p class="latest-empty">Manifesto documents will appear here as they are added to the archive.</p>';
@@ -1272,9 +1272,13 @@ function loadLatestManifestos() {
       track.innerHTML = items.map(item => {
         const party = PARTIES[item.partyId] || {};
         const displayYear = item.year || item.electionId;
+        const yearNum = parseInt(String(displayYear).replace(/\D/g, '').slice(0, 4), 10);
+        const partyLabel = (typeof getPartyName === 'function' && item.partyId)
+          ? getPartyName(item.partyId, Number.isFinite(yearNum) ? yearNum : null)
+          : (party.shortName || item.partyId);
         const cover = item.cover || `/manifestos/${item.electionId}/${item.partyId}/cover.png?v=${ASSETS_VERSION}`;
         const coverFb = item.coverFallback || `/manifestos/${item.electionId}/${item.partyId}/cover.jpg?v=${ASSETS_VERSION}`;
-        const title = item.title || item.label || `${party.shortName || item.partyId} ${displayYear}`;
+        const title = item.title || item.label || `${partyLabel} ${displayYear}`;
         const url = item.url || `/manifesto/${item.electionId}/${item.partyId}`;
         const target = item.isPdf ? ' target="_blank" rel="noopener"' : '';
 
@@ -1287,11 +1291,11 @@ function loadLatestManifestos() {
 
         return `<a href="${url}" class="latest-card"${target} style="--party-color:${accent.surface};--party-ghost:${ghostColour}">
           <div class="latest-card-cover">
-            <img src="${cover}" alt="Cover of the ${title}" class="img-lazy" loading="lazy" decoding="async" onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFb}';}">
+            <img src="${cover}?v=${ASSETS_VERSION}" alt="Cover of the ${title}" class="img-lazy" loading="lazy" decoding="async" onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFb}';}">
             <div class="latest-card-cover-fallback" style="--party-surface:${accent.surface};--party-ghost:${ghostColour}"><span class="latest-cover-ghost" aria-hidden="true">${String(displayYear).replace(/\D/g, '').slice(-2)}</span><span class="latest-cover-year">${displayYear}</span></div>
           </div>
           <div class="latest-card-body">
-            <div class="latest-card-party" style="color:${accent.kicker}">${party.shortName || item.partyId}</div>
+            <div class="latest-card-party" style="color:${accent.kicker}">${partyLabel}</div>
             <div class="latest-card-title">${title}</div>
           </div>
         </a>`;
@@ -2999,7 +3003,7 @@ function renderManifesto(app, electionId, partyId) {
   const pdfDownloadLink = hasPdf
     ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
           <span class="manifesto-link-icon" aria-hidden="true">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document${pdfSizeLabel}</div></div>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">PDF${pdfSizeLabel}</div></div>
         </a>`
     : '';
   const coverPanel = `

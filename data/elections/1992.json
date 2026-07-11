@@ -16,7 +16,9 @@
     "Neil Kinnock resigns; John Smith and then Tony Blair reshape the party"
   ],
   "youtubeId": "",
-  "extraManifestoParties": [],
+  "extraManifestoParties": [
+    "green"
+  ],
   "partyResults": {
     "welshcon": {
       "party": "welshcon",

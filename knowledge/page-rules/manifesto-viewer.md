@@ -25,8 +25,8 @@ Top-right of the header shows a cover thumb when `cover.png` / `cover.jpg` loads
 `getPdfSize`):
 
 - Cover thumb links to the PDF.
-- Below it, the same **Original Manifesto** card-style link as election pages,
-  including size (`· 4.1 MB`).
+- Below it, a compact PDF link: **`PDF · {size}`** (e.g. `PDF · 6.3 MB`) — not the
+  longer “Original Manifesto / PDF scan…” copy used on election cards.
 
 If neither cover nor PDF exists, the panel hides. Empty/error body states still use
 `.manifesto-btn-ghost` / `.manifesto-btn-solid` for retry / PDF fallbacks.

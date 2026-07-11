@@ -1,92 +1,122 @@
 [
   {
-    "electionId": "senedd/2026",
-    "partyId": "welshlab",
-    "title": "Welsh Labour Manifesto 2026",
-    "year": "2026",
-    "url": "/manifestos/senedd/2026/welshlab/manifesto.pdf",
-    "isPdf": true,
-    "cover": "/manifestos/senedd/2026/welshlab/cover.png"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "labour",
-    "title": "Labour Manifesto 2024",
-    "year": "2024",
-    "url": "/manifesto/2024/labour",
+    "electionId": "1992",
+    "partyId": "green",
+    "title": "Green Party Manifesto 1992",
+    "year": "1992",
+    "url": "/manifesto/1992/green",
     "isPdf": false,
-    "cover": "/manifestos/2024/labour/cover.png"
+    "added": "2026-07-11T13:23:59+01:00",
+    "cover": "/manifestos/1992/green/cover.png"
   },
   {
-    "electionId": "senedd/2026",
-    "partyId": "plaid",
-    "title": "Plaid Cymru Manifesto 2026",
-    "year": "2026",
-    "url": "/manifestos/senedd/2026/plaid/manifesto.pdf",
-    "isPdf": true,
-    "cover": "/manifestos/senedd/2026/plaid/cover.png"
-  },
-  {
-    "electionId": "euro/2019",
-    "partyId": "libdem",
-    "title": "Liberal Democrats European Manifesto 2019",
-    "year": "2019",
-    "url": "/manifestos/euro/2019/libdem/manifesto.pdf",
-    "isPdf": true,
-    "cover": "/manifestos/euro/2019/libdem/manifesto.png"
-  },
-  {
-    "electionId": "holyrood/2021",
-    "partyId": "snp",
-    "title": "SNP Manifesto 2021",
-    "year": "2021",
-    "url": "/manifestos/holyrood/2021/snp/manifesto.pdf",
-    "isPdf": true,
-    "cover": "/manifestos/holyrood/2021/snp/cover.png"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 2024",
-    "year": "2024",
-    "url": "/manifesto/2024/conservative",
+    "electionId": "1987",
+    "partyId": "green",
+    "title": "Green Party Manifesto 1987",
+    "year": "1987",
+    "url": "/manifesto/1987/green",
     "isPdf": false,
-    "cover": "/manifestos/2024/conservative/cover.png"
+    "added": "2026-07-11T13:23:59+01:00",
+    "cover": "/manifestos/1987/green/cover.png"
   },
   {
-    "electionId": "stormont/2022",
-    "partyId": "gpni",
-    "title": "Green Party NI Manifesto 2022",
-    "year": "2022",
-    "url": "/manifestos/stormont/2022/gpni/manifesto.pdf",
-    "isPdf": true,
-    "cover": "/manifestos/stormont/2022/gpni/cover.png"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "labour",
-    "title": "Labour Manifesto 1997",
-    "year": "1997",
-    "url": "/manifesto/1997/labour",
+    "electionId": "1983",
+    "partyId": "green",
+    "title": "Ecology Party Manifesto 1983",
+    "year": "1983",
+    "url": "/manifesto/1983/green",
     "isPdf": false,
-    "cover": "/manifestos/1997/labour/cover.png"
+    "added": "2026-07-11T12:28:03+01:00",
+    "cover": "/manifestos/1983/green/cover.png"
   },
   {
     "electionId": "1979",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 1979",
+    "partyId": "green",
+    "title": "Ecology Party Manifesto 1979",
     "year": "1979",
-    "url": "/manifesto/1979/conservative",
+    "url": "/manifesto/1979/green",
     "isPdf": false,
-    "cover": "/manifestos/1979/conservative/cover.png"
+    "added": "2026-07-11T12:28:03+01:00",
+    "cover": "/manifestos/1979/green/cover.png"
   },
   {
-    "electionId": "euro/2019",
+    "electionId": "euro/1979",
     "partyId": "green",
-    "title": "Green Party European Manifesto 2019",
-    "year": "2019",
-    "url": "/manifestos/euro/2019/green/manifesto.pdf",
+    "title": "It's Your Europe — Your Future",
+    "year": "1979",
+    "url": "/manifestos/euro/1979/green/manifesto.pdf",
     "isPdf": true,
-    "cover": "/manifestos/euro/2019/green/manifesto.png"
+    "added": "2026-07-11T12:28:03+01:00",
+    "cover": "/manifestos/euro/1979/green/manifesto.png"
+  },
+  {
+    "electionId": "euro/1984",
+    "partyId": "green",
+    "title": "Towards a Green Europe",
+    "year": "1984",
+    "url": "/manifestos/euro/1984/green/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-11T12:28:03+01:00",
+    "cover": "/manifestos/euro/1984/green/manifesto.png"
+  },
+  {
+    "electionId": "euro/1979",
+    "partyId": "eldr",
+    "title": "ELDR European Manifesto 1979",
+    "year": "1979",
+    "url": "/manifestos/euro/1979/eldr/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1979/eldr/manifesto.png"
+  },
+  {
+    "electionId": "euro/1984",
+    "partyId": "eldr",
+    "title": "ELDR European Manifesto 1984",
+    "year": "1984",
+    "url": "/manifestos/euro/1984/eldr/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1984/eldr/manifesto.png"
+  },
+  {
+    "electionId": "euro/1989",
+    "partyId": "eldr",
+    "title": "ELDR European Manifesto 1989",
+    "year": "1989",
+    "url": "/manifestos/euro/1989/eldr/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1989/eldr/manifesto.png"
+  },
+  {
+    "electionId": "euro/1989",
+    "partyId": "epp",
+    "title": "EPP European Manifesto 1989",
+    "year": "1989",
+    "url": "/manifestos/euro/1989/epp/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1989/epp/manifesto.png"
+  },
+  {
+    "electionId": "euro/1989",
+    "partyId": "greengroup",
+    "title": "Green Group European Manifesto 1989",
+    "year": "1989",
+    "url": "/manifestos/euro/1989/greengroup/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1989/greengroup/manifesto.png"
+  },
+  {
+    "electionId": "euro/1989",
+    "partyId": "pes",
+    "title": "PES European Manifesto 1989",
+    "year": "1989",
+    "url": "/manifestos/euro/1989/pes/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-07-05T00:39:24+01:00",
+    "cover": "/manifestos/euro/1989/pes/manifesto.png"
   }
 ]

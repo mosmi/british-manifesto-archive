@@ -15,7 +15,9 @@
     "Peter Mandelson's slick Labour campaign sets template for future professionalism"
   ],
   "youtubeId": "",
-  "extraManifestoParties": [],
+  "extraManifestoParties": [
+    "green"
+  ],
   "partyResults": {
     "welshcon": {
       "party": "welshcon",

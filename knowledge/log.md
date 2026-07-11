@@ -11,6 +11,23 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-11 — Auto-generate Latest Additions
+Homepage carousel now comes from `scripts/build-latest-additions.py`, which ranks
+`manifestos-index.json` + devolved `manifestos[]` by git first-add date of each PDF
+(mtime fallback). No more hand-editing `data/latest-additions.json`.
+
+## 2026-07-11 — Latest Additions + manifesto PDF button
+- Documented and refreshed `data/latest-additions.json` (manual homepage carousel) with
+  Ecology/Green 1979–92 additions; checklist now requires updating that file.
+- Manifesto reader cover panel link shortened to **`PDF · {size}`** (no wrapping subtitle).
+- Superseded the same day by the auto-generator above.
+
+## 2026-07-11 — Green Party GE manifestos 1987 & 1992
+Added `manifestos/1987/green/` and `manifestos/1992/green/` (PDF + transparent A4
+`cover.png`), wired `extraManifestoParties` in `js/data.js` and
+`data/elections/{1987,1992}.json`, index/SEO/sitemap/pdf-sizes/holdings. Labels use
+**Green Party** (post-1985 rename). Cache-bust `?v=2026071110`.
+
 ## 2026-07-11 — Knowledge refresh after Ecology ingest + cover fix
 Documented recent product work so agents cannot miss conventions again:
 - New [pipelines/covers](./pipelines/covers.md) — transparent A4 PNG recipe (canonical)

@@ -61,6 +61,7 @@ Key maintenance scripts (not deployed — excluded via `.assetsignore`):
 - `build-sitemap.py` → `sitemap.xml`
 - `build-og-images.py` → `/og/` (wraps `tools/og-generator/`)
 - `build-pdf-sizes.py` → `data/pdf-sizes.json`
+- `build-latest-additions.py` → `data/latest-additions.json` (homepage carousel)
 - `check-cloudflare-limits.py` — pre-deploy size/file-count guard
 - Many `import-*` and `build-*` scripts for devolved legislatures and hexmaps
 

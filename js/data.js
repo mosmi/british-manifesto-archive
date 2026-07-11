@@ -1401,7 +1401,7 @@ const ELECTIONS = [
     ],
     youtubeId: 'bVahD8xWoxo',
     youtubeStart: 22,
-    extraManifestoParties: [],
+    extraManifestoParties: ['green'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  8, votes: 0, percentage: 29.5 },
       welshlab:    { party: 'welshlab',    seats: 24, votes: 0, percentage: 45.1 },
@@ -1437,7 +1437,7 @@ const ELECTIONS = [
       'Neil Kinnock resigns; John Smith and then Tony Blair reshape the party',
     ],
     youtubeId: 'rXAwSquD4ZU',
-    extraManifestoParties: [],
+    extraManifestoParties: ['green'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  6, votes: 0, percentage: 28.6 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 49.5 },

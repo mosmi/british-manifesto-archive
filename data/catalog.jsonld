@@ -680,6 +680,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1987/green#document",
+          "name": "Green Party Manifesto 1987",
+          "url": "https://www.manifestos.org.uk/manifesto/1987/green"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1987/labour#document",
           "name": "Labour Manifesto 1987",
           "url": "https://www.manifestos.org.uk/manifesto/1987/labour",
@@ -766,6 +772,12 @@
             "energy",
             "science and technology"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1992/green#document",
+          "name": "Green Party Manifesto 1992",
+          "url": "https://www.manifestos.org.uk/manifesto/1992/green"
         },
         {
           "@type": "DigitalDocument",

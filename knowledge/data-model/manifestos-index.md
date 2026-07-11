@@ -42,15 +42,21 @@ Each manifesto lives in its own folder, e.g. `manifestos/2024/labour/`:
 2. Generate **`cover.png`** as a **transparent A4 PNG** — follow
    [pipelines/covers](../pipelines/covers.md). Do not leave white letterboxed JPEGs.
 3. Transcribe → `manifesto.md` when ready (see [transcription](../pipelines/transcription.md)).
-4. Run `python3 scripts/build-pdf-sizes.py` so download links show the PDF size (see
-   [pdf-sizes pipeline](../pipelines/pdf-sizes.md)).
-5. Add an entry to `data/manifestos-index.json` (Westminster / SPA manifesto routes).
-6. Wire the election:
+4. Add an entry to `data/manifestos-index.json` (Westminster / SPA manifesto routes).
+5. Wire the election:
    - Westminster: `extraManifestoParties` in **both** `js/data.js` → `ELECTIONS` and
      `data/elections/<id>.json` (keep them in sync), plus any needed party lists.
    - European: append to `manifestos[]` in `data/devolved/euro/<year>.json`.
-7. Run `python3 scripts/build-seo-data.py` and `python3 scripts/build-sitemap.py`.
-8. Update `data/party-holdings.json` chamber counts (or regenerate via the OG/holdings
+6. Run:
+   ```bash
+   python3 scripts/build-pdf-sizes.py
+   python3 scripts/build-latest-additions.py
+   python3 scripts/build-seo-data.py
+   python3 scripts/build-sitemap.py
+   ```
+   (Carousel: [latest-additions](../content/latest-additions.md); sizes:
+   [pdf-sizes](../pipelines/pdf-sizes.md).)
+7. Update `data/party-holdings.json` chamber counts (or regenerate via the OG/holdings
    path — see [party-holdings](./party-holdings.md)).
-9. Bump `?v=` / `ASSETS_VERSION` when JS/CSS/covers change
+8. Bump `?v=` / `ASSETS_VERSION` when JS/CSS/covers change
    ([cache-busting](../architecture/cache-busting.md)).
