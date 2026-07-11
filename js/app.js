@@ -835,21 +835,6 @@ function renderHome(app) {
       </div>
     </section>
 
-    <section class="timeline-section">
-      <div class="timeline-header">
-        <div>
-          <h2>The Westminster Electoral Record</h2>
-          <div class="gold-rule"></div>
-        </div>
-        <div class="timeline-filter">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="labour">Labour</button>
-          <button class="filter-btn" data-filter="conservative">Conservative</button>
-        </div>
-      </div>
-      <div class="timeline-grid" id="timeline-grid"></div>
-    </section>
-
     <section class="browse-section nations-browse-section">
       <div class="browse-section-inner">
         <div class="browse-section-header">
@@ -873,10 +858,8 @@ function renderHome(app) {
     </section>
   `;
 
-  renderTimelineGrid();
   renderNationsGrid();
   renderFeaturedPartiesGrid();
-  setupTimelineFilter();
   initHomeDashboard();
   loadLatestManifestos();
 
@@ -1278,7 +1261,13 @@ function loadLatestManifestos() {
           : (party.shortName || item.partyId);
         const cover = item.cover || `/manifestos/${item.electionId}/${item.partyId}/cover.png?v=${ASSETS_VERSION}`;
         const coverFb = item.coverFallback || `/manifestos/${item.electionId}/${item.partyId}/cover.jpg?v=${ASSETS_VERSION}`;
-        const title = item.title || item.label || `${partyLabel} ${displayYear}`;
+        const rawTitle = item.title || item.label || `${partyLabel} ${displayYear}`;
+        // Titles from the index often end with the year ("… Manifesto 1992"); euro
+        // slogan titles do not — always render year as its own line for consistency.
+        const yearStr = String(displayYear || '').trim();
+        const title = yearStr && new RegExp(`\\b${yearStr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`).test(rawTitle)
+          ? rawTitle.replace(new RegExp(`\\s*${yearStr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`), '').trim()
+          : rawTitle;
         const url = item.url || `/manifesto/${item.electionId}/${item.partyId}`;
         const target = item.isPdf ? ' target="_blank" rel="noopener"' : '';
 
@@ -1291,12 +1280,13 @@ function loadLatestManifestos() {
 
         return `<a href="${url}" class="latest-card"${target} style="--party-color:${accent.surface};--party-ghost:${ghostColour}">
           <div class="latest-card-cover">
-            <img src="${cover}?v=${ASSETS_VERSION}" alt="Cover of the ${title}" class="img-lazy" loading="lazy" decoding="async" onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFb}';}">
-            <div class="latest-card-cover-fallback" style="--party-surface:${accent.surface};--party-ghost:${ghostColour}"><span class="latest-cover-ghost" aria-hidden="true">${String(displayYear).replace(/\D/g, '').slice(-2)}</span><span class="latest-cover-year">${displayYear}</span></div>
+            <img src="${cover}?v=${ASSETS_VERSION}" alt="Cover of the ${rawTitle}" class="img-lazy" loading="lazy" decoding="async" onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFb}';}">
+            <div class="latest-card-cover-fallback" style="--party-surface:${accent.surface};--party-ghost:${ghostColour}" aria-hidden="true"><span class="latest-cover-label">Scan unavailable</span></div>
           </div>
           <div class="latest-card-body">
             <div class="latest-card-party" style="color:${accent.kicker}">${partyLabel}</div>
             <div class="latest-card-title">${title}</div>
+            ${yearStr ? `<div class="latest-card-year">${yearStr}</div>` : ''}
           </div>
         </a>`;
       }).join('');
@@ -1382,12 +1372,6 @@ function electionCardHtml(e) {
   </a>`;
 }
 
-function renderTimelineGrid() {
-  const grid = document.getElementById('timeline-grid');
-  if (!grid) return;
-  grid.innerHTML = ELECTIONS.slice().reverse().map(electionCardHtml).join('');
-}
-
 const HOME_NATION_ICONS = {
   england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
   wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿',
@@ -1466,19 +1450,6 @@ async function renderFeaturedPartiesGrid() {
     'conservative', 'labour', 'libdem',
     'snp', 'plaid', 'green', 'reform', 'dup', 'sinnfein',
   ].map(id => buildPartyBrowseCard(id)).join('');
-}
-
-function setupTimelineFilter() {
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.getAttribute('data-filter');
-      document.querySelectorAll('.election-card').forEach(card => {
-        card.style.display = (f === 'all' || card.getAttribute('data-winner') === f) ? '' : 'none';
-      });
-    });
-  });
 }
 
 // ── MANIFESTO CARD BUILDER ────────────────────────────────────
