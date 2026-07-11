@@ -522,6 +522,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1979/green#document",
+          "name": "Ecology Party Manifesto 1979",
+          "url": "https://www.manifestos.org.uk/manifesto/1979/green"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1979/labour#document",
           "name": "Labour Manifesto 1979",
           "url": "https://www.manifestos.org.uk/manifesto/1979/labour",
@@ -591,6 +597,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1983/green#document",
+          "name": "Ecology Party Manifesto 1983",
+          "url": "https://www.manifestos.org.uk/manifesto/1983/green"
         },
         {
           "@type": "DigitalDocument",
@@ -4805,8 +4817,20 @@
         },
         {
           "@type": "DigitalDocument",
+          "name": "It's Your Europe — Your Future",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1979/green/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
           "name": "ELDR European Manifesto 1984",
           "url": "https://www.manifestos.org.uk/manifestos/euro/1984/eldr/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Towards a Green Europe",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1984/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

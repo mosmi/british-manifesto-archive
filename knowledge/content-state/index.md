@@ -3,7 +3,7 @@ type: index
 title: Content state
 description: What's transcribed, what's missing, and audit state across the archive.
 tags: [content-state]
-timestamp: 2026-06-29T00:00:00Z
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Content state
@@ -21,6 +21,8 @@ Living record of what the archive contains and what's still outstanding.
   type (General, Devolved, European, Local Government).
 
 ## Cover images
-Front covers are processed with ImageMagick; where needed the source is composited
-centred on a transparent A4-proportioned (1:√2) PNG canvas. Generate from a PDF's
-first page with `pdftoppm`. (See the 2026-04-30 session notes in [log](../log.md).)
+**Source of truth:** [pipelines/covers](../pipelines/covers.md).
+
+Front covers are composited centred on a **transparent** A4-proportioned (1:√2) PNG
+canvas (`cover.png`, typically 1191×1684). Generate from a PDF's first page with
+`pdftoppm` + ImageMagick. Never ship white letterboxed JPEGs as the primary cover.

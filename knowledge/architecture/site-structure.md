@@ -27,14 +27,15 @@ metadata on first paint.
 | `ni.js` | Northern Ireland Assembly (Stormont) views |
 | `euro.js` | European Parliament election views |
 | `london.js` | London Mayor & Assembly views |
-| `search.js` | Client-side search |
+| `search.js` | Client-side search (token AND matching; indexes manifesto docs + devolved election titles) |
 
 ## Edge / Cloudflare
 | Path | Role |
 |---|---|
-| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs) |
-| `_routes.json` | Which paths invoke the middleware |
-| `_headers` | Cache headers for static assets |
+| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs); real 404 when `/manifestos/*` would SPA-fall back to HTML; optional `<noscript>` summary injection |
+| `_routes.json` | Which paths invoke the middleware (includes `/manifestos/*` for the PDF 404 check) |
+| `_redirects` | Explicit SPA fallbacks only — **no** catch-all `/* → index.html` (that turned missing PDFs into 200 HTML) |
+| `_headers` | Cache + security headers (HSTS, frame options, etc.) |
 | `wrangler.toml` | Workers static-assets config |
 
 ## Routing

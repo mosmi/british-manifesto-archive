@@ -28,9 +28,9 @@ const PARTIES = {
   green: {
     id: 'green', name: 'Green Party of England and Wales', shortName: 'Green Party',
     color: '#00B140', dim: 'rgba(0,177,64,0.14)',
-    founded: 1990, spectrum: 'Left / Green', isPrimary: false,
+    founded: 1975, spectrum: 'Left / Green', isPrimary: false,
     nation: 'england',
-    description: 'The Green Party focuses on environmental policy, social justice, and opposition to austerity. The party won its first Westminster seat in 2010 (Brighton Pavilion, Caroline Lucas) and increased its representation to 4 seats in 2024.',
+    description: 'The Ecology Party (1975–85), itself the successor to PEOPLE (founded 1973), was renamed the Green Party in 1985; the Green Party of England and Wales took its present form in 1990 when the Scottish and Northern Ireland parties became separate organisations. The party focuses on environmental policy, social justice, and opposition to austerity. It won its first Westminster seat in 2010 (Brighton Pavilion, Caroline Lucas) and increased its representation to 4 seats in 2024.',
   },
   ukip: {
     id: 'ukip', name: 'UK Independence Party', shortName: 'UKIP',
@@ -1331,7 +1331,7 @@ const ELECTIONS = [
       'Beginning of 18 years of Conservative government (1979–1997)',
     ],
     youtubeId: 'MjBTSjG-zuY',
-    extraManifestoParties: [],
+    extraManifestoParties: ['green'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 11, votes: 0, percentage: 32.2 },
       welshlab:    { party: 'welshlab',    seats: 22, votes: 0, percentage: 48.6 },
@@ -1366,7 +1366,7 @@ const ELECTIONS = [
       'Neil Kinnock begins rebuilding Labour in the years following',
     ],
     youtubeId: 'AZm_TTa8wcI',
-    extraManifestoParties: [],
+    extraManifestoParties: ['green'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 14, votes: 0, percentage: 31.0 },
       welshlab:    { party: 'welshlab',    seats: 20, votes: 0, percentage: 37.5 },
@@ -1974,6 +1974,11 @@ const LIBERAL_LINEAGE_NAMES = {
   scottishlibdem: { liberal: 'Liberal', alliance: 'Alliance', modern: 'Scottish Liberal Democrats' },
 };
 
+/** Green Party of England and Wales — Ecology Party before the 1985 rename. */
+const GREEN_LINEAGE_NAMES = {
+  green: { ecology: 'Ecology Party', modern: 'Green Party' },
+};
+
 function getPartyName(id, year) {
   const pid = resolvePartyId(id);
   const p = PARTIES[pid];
@@ -1982,6 +1987,11 @@ function getPartyName(id, year) {
     const names = LIBERAL_LINEAGE_NAMES[pid];
     if (year < 1983) return names.liberal;
     if (year === 1983 || year === 1987) return names.alliance;
+    return names.modern;
+  }
+  if (year != null && GREEN_LINEAGE_NAMES[pid]) {
+    const names = GREEN_LINEAGE_NAMES[pid];
+    if (year < 1985) return names.ecology;
     return names.modern;
   }
   return p.shortName;

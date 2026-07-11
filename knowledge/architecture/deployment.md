@@ -38,9 +38,14 @@ python3 scripts/check-cloudflare-limits.py   # 25 MiB/file, 20,000 files/site (f
 ```
 
 ## Verify a deploy actually shipped
-Open `https://www.manifestos.org.uk/js/app.js?v=…` and search for the newest function
-name (e.g. `renderNationsHub`). If it's missing, the live site is still on an older
-build even though `main` is up to date.
+Open `https://www.manifestos.org.uk/` and check that `index.html` references the
+latest `?v=` from the commit (e.g. `styles.css?v=2026071109`). Also open
+`https://www.manifestos.org.uk/js/app.js?v=…` and search for a newest symbol if
+needed. If GitHub `main` is ahead but the live HTML still shows an old `?v=`, the
+Cloudflare Git deploy did not update the project attached to the custom domain —
+see the Workers/Pages gotcha above. There may be no Actions workflow; deploy is
+entirely via the Cloudflare Git integration (or a manual `wrangler deploy` with
+auth).
 
 ## After deploying
 Hard-refresh (Shift+Reload) or purge Cloudflare cache. See

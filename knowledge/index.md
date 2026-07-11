@@ -4,20 +4,17 @@ title: Project knowledge base
 description: Durable knowledge for the British Manifesto Archive — architecture, data model, pipelines, content state and page rules.
 resource: https://www.manifestos.org.uk
 tags: [index, overview]
-timestamp: 2026-07-05T00:00:00Z
+timestamp: 2026-07-11T00:00:00Z
 ---
 
-# British Manifesto Archive — knowledge base
+# Project knowledge base
 
-A static archive of UK election manifestos, results and maps. This folder is an
-[OKF-shaped](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)
-bundle: one concept per markdown file, YAML frontmatter, cross-linked with ordinary
-links. Read this index first, then drill in.
+Durable knowledge for the British Manifesto Archive — architecture, data model, pipelines, content state and page rules.
 
 ## Sections
 - [architecture](./architecture/index.md) — how the site is built, deployed and cached
 - [data-model](./data-model/index.md) — the shape of everything under `data/` and `manifestos/`
-- [pipelines](./pipelines/index.md) — hexmaps, transcription and other content build scripts
+- [pipelines](./pipelines/index.md) — hexmaps, transcription, covers, PDF sizes, OG cards
 - [content-state](./content-state/index.md) — what's transcribed, what's missing, audit state
 - [page-rules](./page-rules/index.md) — special cases and guardrails for specific pages
 - [design](./design/index.md) — planned visual/UX refresh (implementation plan)

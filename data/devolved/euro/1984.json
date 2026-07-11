@@ -87,6 +87,12 @@
       "cover": "/manifestos/euro/1984/eldr/manifesto.png",
       "party": "eldr",
       "group": "alliances"
+    },
+    {
+      "title": "Towards a Green Europe",
+      "pdf": "/manifestos/euro/1984/green/manifesto.pdf",
+      "cover": "/manifestos/euro/1984/green/manifesto.png",
+      "party": "green"
     }
   ]
 }

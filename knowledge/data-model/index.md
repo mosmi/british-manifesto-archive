@@ -3,7 +3,7 @@ type: index
 title: Data model
 description: The shape of everything under data/ and manifestos/.
 tags: [data-model]
-timestamp: 2026-07-05T00:00:00Z
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Data model
@@ -16,6 +16,7 @@ All structured data lives under `data/` as JSON; manifesto documents live under
 - [devolved](./devolved.md) — Holyrood, Senedd, Stormont, London, European Parliament
 - [manifestos-index](./manifestos-index.md) — the manifesto catalogue + file layout
 - [party-colours](./party-colours.md) — canonical party ids, colours and eras
+- [party-names](./party-names.md) — period-correct labels (Liberal/Alliance; Ecology/Green)
 - [party-holdings](./party-holdings.md) — per-party manifesto counts by chamber (derived)
 
 ## Quick map of `data/`

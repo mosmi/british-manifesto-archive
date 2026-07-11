@@ -1,17 +1,26 @@
 ---
 type: schema
 title: Elections data
-description: Schema of data/elections/<id>.json — per-election metadata and party results.
+description: Where general-election metadata lives (js/data.js + data/elections/*.json) and how manifesto extras are wired.
 tags: [data-model, elections, schema]
-timestamp: 2026-06-29T00:00:00Z
+timestamp: 2026-07-11T00:00:00Z
 ---
 
-# Elections (`data/elections/<id>.json`)
+# Elections
 
-One file per general election. **Election ids** are the year as a string
-(`"1945"`…`"2024"`), with the two 1974 elections as **`feb1974`** and **`oct1974`**
-(note: some older data/scripts use `1974 (1)`/`1974 (2)` or internal hex year
-`19741` for October — see [pipelines/hexmaps](../pipelines/hexmaps.md)).
+## Two copies — keep in sync
+
+| Source | Role |
+|---|---|
+| `js/data.js` → `ELECTIONS` | **Runtime** for SPA election / party / manifesto pages (`getElection`) |
+| `data/elections/<id>.json` | Per-election JSON on disk; primed into cache / available for fetch; keep aligned with `ELECTIONS` |
+
+**Election ids** are the year as a string (`"1945"`…`"2024"`), with the two 1974
+elections as **`feb1974`** and **`oct1974`**.
+
+When editing manifesto wiring or results, update **both** places (or regenerate one
+from the other deliberately). SEO parsing reads `ELECTIONS` from `js/data.js`
+(`scripts/build-seo-data.py`).
 
 ## Top-level fields (observed)
 ```json
@@ -28,19 +37,21 @@ One file per general election. **Election ids** are the year as a string
   "highlights": ["…", "…"],
   "youtubeId": "",
   "extraManifestoParties": [],
-  "partyResults": [ … ]
+  "partyResults": { },
+  "results": [ … ]
 }
 ```
 
 - `winner`, `pm`, `outgoingPm` use **party ids / names**; party ids are canonical
   across the site (see [party-colours](./party-colours.md)).
 - `extraManifestoParties` lists parties that have a manifesto on file but few/no seats
-  (e.g. `respect`, `ssp` for 2005) so they still surface in the UI. Adding one of these
-  is a multi-touch change — see the worked example in
-  [content-state/manifesto-coverage](../content-state/manifesto-coverage.md) and the
-  log entry for the Respect/SSP additions.
+  (e.g. `green` for 1979/1983 Ecology Party scans) so they still surface in the
+  manifesto grid. Adding one is a multi-touch change — see
+  [manifestos-index](./manifestos-index.md).
+- Display labels for cards must use `getPartyName(pid, election.year)` —
+  [party-names](./party-names.md).
 - `election-vote-totals.json` holds the **national** vote totals/percentages keyed by
-  year then party id; keep it consistent with `partyResults` seat counts.
+  year then party id; keep it consistent with `results` seat counts.
 
 ## Related national tables
 Per-nation Westminster results (England/Wales/Scotland/NI, 1918–2024) live in `data.js`

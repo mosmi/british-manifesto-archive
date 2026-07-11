@@ -865,6 +865,11 @@
     "label": "Alliance Manifesto 1983"
   },
   {
+    "electionId": "1983",
+    "partyId": "green",
+    "label": "Ecology Party Manifesto 1983"
+  },
+  {
     "electionId": "1979",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 1979"
@@ -878,6 +883,11 @@
     "electionId": "1979",
     "partyId": "libdem",
     "label": "Liberal Manifesto 1979"
+  },
+  {
+    "electionId": "1979",
+    "partyId": "green",
+    "label": "Ecology Party Manifesto 1979"
   },
   {
     "electionId": "oct1974",

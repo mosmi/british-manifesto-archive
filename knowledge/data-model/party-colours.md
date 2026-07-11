@@ -73,7 +73,7 @@ Core parties:
 | SNP | `#FDF38E` | 1970+ |
 | Plaid Cymru | `#008672` | 1974+ |
 | UKIP | `#6D3177` | 2015 |
-| Green | `#02A95B` | 2010+ |
+| Green / Ecology | `#02A95B` / site `#00B140` | Ecology Party before 1985; Green thereafter — see [party-names](./party-names.md) |
 | Reform UK | `#1EB8D0` | 2024 |
 | DUP | `#D46A4C` | 1974+ |
 | UUP | `#48A5EE` | 1974+ |

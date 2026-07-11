@@ -87,6 +87,12 @@
       "cover": "/manifestos/euro/1979/eldr/manifesto.png",
       "party": "eldr",
       "group": "alliances"
+    },
+    {
+      "title": "It's Your Europe — Your Future",
+      "pdf": "/manifestos/euro/1979/green/manifesto.pdf",
+      "cover": "/manifestos/euro/1979/green/manifesto.png",
+      "party": "green"
     }
   ]
 }

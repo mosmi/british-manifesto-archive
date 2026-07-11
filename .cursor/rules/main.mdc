@@ -1,0 +1,13 @@
+---
+description: Project entry point for the British Manifesto Archive
+alwaysApply: true
+---
+
+Read `AGENTS.md` at the repo root first, then `knowledge/index.md` and
+`backlog/tasks/`. Record durable facts in `knowledge/` and task progress in the
+relevant `backlog/tasks/` file. This repo is the single source of truth.
+
+Hard conventions often missed:
+- Manifesto covers → `knowledge/pipelines/covers.md` (transparent A4 PNG)
+- Period party names → `knowledge/data-model/party-names.md`
+- Cache-bust `?v=` / `ASSETS_VERSION` when changing JS/CSS/covers

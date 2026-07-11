@@ -11,6 +11,29 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-11 — Knowledge refresh after Ecology ingest + cover fix
+Documented recent product work so agents cannot miss conventions again:
+- New [pipelines/covers](./pipelines/covers.md) — transparent A4 PNG recipe (canonical)
+- New [party-names](./data-model/party-names.md) — Liberal/Alliance + Ecology/Green cutovers
+- New [manifesto-viewer](./page-rules/manifesto-viewer.md) — scrollable TOC + header cover/PDF
+- Updated checklist in [manifestos-index](./data-model/manifestos-index.md); clarified dual
+  election sources in [elections](./data-model/elections.md); EP audit + site-structure
+  (`_redirects`, PDF 404s, search tokens); AGENTS.md + `.cursor/rules` hard rules
+- Synced `data/elections/1979.json` & `1983.json` `extraManifestoParties` to include `green`
+  (had only been updated in `js/data.js`)
+- Ecology covers regenerated as transparent A4 PNGs (`?v=2026071109`)
+
+## 2026-07-11 — Ecology Party manifestos (1979–84) + period name
+Archived four Ecology Party PDFs under the canonical `green` party id:
+- GE 1979 (*The Real Alternative*) and 1983 (*Politics for Life*)
+- EP 1979 (*It's Your Europe — Your Future*) and 1984 (*Towards a Green Europe*)
+Wired into `extraManifestoParties` (1979/1983), euro election `manifestos` arrays,
+`manifestos-index.json`, covers, and `pdf-sizes.json`. `getPartyName('green', year)`
+now returns **Ecology Party** for years before 1985 (mirror of Liberal/Alliance labels).
+Updated Green party founded year/description for the Ecology lineage.
+
+Cache-bust: `?v=2026071108` / `ASSETS_VERSION` (covers later fixed → `2026071109`).
+
 ## 2026-07-11 — Manifesto viewer: scrollable TOC + cover panel
 - Desktop contents sidebar (`.manifesto-toc`) now scrolls within the viewport so long TOCs (e.g. Labour 1983) remain reachable while sticky.
 - Header top-right shows the manifesto front cover when `cover.png`/`cover.jpg` loads, with the same “Original Manifesto” PDF link + size label used on election manifesto cards when a scan exists.
@@ -22,7 +45,7 @@ Implemented the prioritised audit action plan:
 - **Search:** token AND matching; indexes manifesto docs + devolved election titles
 - **Missing assets:** middleware returns real 404 (no-store) when `/manifestos/*` SPA-falls back to HTML; `_redirects` lists SPA routes only; `_routes.json` includes `/manifestos/*` for that check; restored `wrangler.toml`
 - **Mobile:** search + theme always visible in `.nav-utils`; touch label “Search” instead of ⌘K
-- **Nav:** Beyond Westminster / Parties are disclosure buttons with hub links; `aria-haspopup`
+- **Nav:** Beyond Westminster / Parties are disclosure buttons with hub links; `aria-haspopup`; hub link font-size aligned; Beyond Westminster menu min-width 225px so the hub link stays one line
 - **Errors:** `renderDataError` + retry on portal index / latest-additions / manifesto text fetch failures
 - **Misc:** breadcrumb → `/elections`; hide empty video section; `scope="col"` on results tables; HSTS / frame-ancestors / X-Frame-Options; ink-chrome contrast bump; edge `<noscript>` summaries via middleware
 

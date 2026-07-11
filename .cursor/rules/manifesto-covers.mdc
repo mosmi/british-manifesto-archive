@@ -1,0 +1,16 @@
+---
+description: Manifesto PDF covers must be transparent A4 PNGs
+globs: manifestos/**/*
+alwaysApply: false
+---
+
+# Manifesto covers
+
+When adding or regenerating a cover for any `manifestos/**/manifesto.pdf`:
+
+1. Read and follow `knowledge/pipelines/covers.md`.
+2. Output **transparent** `cover.png` on an **A4** canvas (1191×1684) — centre the
+   page; **never** letterbox onto opaque white.
+3. For euro folders that use `manifesto.png` in election JSON, write that path with
+   the same asset.
+4. Bump `ASSETS_VERSION` after cover changes so `?v=` cache-busts.

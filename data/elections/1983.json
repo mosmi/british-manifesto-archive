@@ -15,7 +15,9 @@
     "Neil Kinnock begins rebuilding Labour in the years following"
   ],
   "youtubeId": "",
-  "extraManifestoParties": [],
+  "extraManifestoParties": [
+    "green"
+  ],
   "partyResults": {
     "welshcon": {
       "party": "welshcon",
