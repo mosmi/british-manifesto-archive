@@ -21,6 +21,8 @@ wrangler.toml
 # Local-only files
 previews/
 data/cache/
+chrome/
+backlog/
 General election *.pdf
 Wikipedia*.html
 .DS_Store
