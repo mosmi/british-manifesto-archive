@@ -14,105 +14,49 @@
     "euro": 4,
     "london": 6
   },
-  "alba": {
-    "westminster": 1,
-    "holyrood": 1
-  },
-  "alliance": {
-    "westminster": 7,
-    "euro": 3,
-    "stormont": 7
-  },
-  "cooperative": {
-    "westminster": 6,
-    "holyrood": 4,
-    "london": 2,
-    "senedd": 4
-  },
-  "dup": {
-    "westminster": 7,
-    "euro": 4,
-    "stormont": 7
-  },
   "green": {
     "westminster": 11,
     "euro": 6,
     "london": 6
   },
-  "gpni": {
-    "westminster": 5,
-    "euro": 3,
-    "stormont": 6
-  },
-  "plaid": {
-    "westminster": 8,
-    "euro": 4,
-    "senedd": 7
-  },
-  "reform": {
-    "westminster": 2,
-    "euro": 1,
-    "holyrood": 1,
-    "london": 1,
-    "senedd": 2
-  },
   "sdlp": {
-    "westminster": 7,
+    "westminster": 9,
     "euro": 3,
     "stormont": 7
+  },
+  "bnp": {
+    "westminster": 3,
+    "euro": 1,
+    "holyrood": 3,
+    "london": 2
   },
   "snp": {
     "westminster": 9,
     "euro": 4,
     "holyrood": 7
   },
-  "scottishcon": {
+  "alliance": {
     "westminster": 7,
-    "euro": 1,
-    "holyrood": 7
-  },
-  "scottishgrn": {
-    "westminster": 5,
     "euro": 3,
-    "holyrood": 7
+    "stormont": 7
   },
-  "scottishlab": {
-    "westminster": 7,
-    "euro": 1,
-    "holyrood": 6
+  "niwc": {
+    "westminster": 1,
+    "stormont": 2
   },
-  "scottishlibdem": {
-    "westminster": 6,
-    "euro": 1,
-    "holyrood": 7
+  "plaid": {
+    "westminster": 8,
+    "euro": 4,
+    "senedd": 7
+  },
+  "pup": {
+    "westminster": 1,
+    "stormont": 4
   },
   "sinnfein": {
     "westminster": 8,
     "euro": 4,
     "stormont": 7
-  },
-  "tuv": {
-    "westminster": 3,
-    "euro": 2,
-    "stormont": 4
-  },
-  "uup": {
-    "westminster": 8,
-    "euro": 4,
-    "stormont": 7
-  },
-  "welshcon": {
-    "westminster": 6,
-    "euro": 1,
-    "senedd": 6
-  },
-  "welshlab": {
-    "westminster": 7,
-    "senedd": 7
-  },
-  "workersparty": {
-    "westminster": 1,
-    "holyrood": 1
   },
   "ukip": {
     "westminster": 6,
@@ -122,39 +66,174 @@
     "senedd": 4,
     "stormont": 1
   },
+  "uup": {
+    "westminster": 8,
+    "euro": 4,
+    "stormont": 7
+  },
+  "dup": {
+    "westminster": 7,
+    "euro": 4,
+    "stormont": 7
+  },
+  "omrlp": {
+    "westminster": 3
+  },
+  "scottishcon": {
+    "westminster": 7,
+    "euro": 1,
+    "holyrood": 7
+  },
+  "scottishlab": {
+    "westminster": 7,
+    "euro": 1,
+    "holyrood": 6
+  },
+  "stuckist": {
+    "westminster": 1
+  },
+  "welshlab": {
+    "westminster": 7,
+    "senedd": 7
+  },
   "welshlibdem": {
-    "westminster": 5,
+    "westminster": 6,
     "euro": 1,
     "senedd": 6
   },
-  "nha": {
+  "cooperative": {
+    "westminster": 6,
+    "holyrood": 4,
+    "london": 2,
+    "senedd": 4
+  },
+  "cpa": {
+    "westminster": 3
+  },
+  "englishdemocrats": {
+    "westminster": 1,
+    "euro": 2,
+    "london": 1
+  },
+  "forwardwales": {
     "westminster": 1
+  },
+  "respect": {
+    "westminster": 1,
+    "london": 1
+  },
+  "scottishgrn": {
+    "westminster": 6,
+    "euro": 3,
+    "holyrood": 7
+  },
+  "scottishlibdem": {
+    "westminster": 6,
+    "euro": 1,
+    "holyrood": 7
+  },
+  "sea": {
+    "westminster": 1,
+    "euro": 1,
+    "stormont": 2
+  },
+  "ssp": {
+    "westminster": 2,
+    "euro": 1,
+    "holyrood": 4
+  },
+  "veritas": {
+    "westminster": 1
+  },
+  "welshcon": {
+    "westminster": 6,
+    "euro": 1,
+    "senedd": 6
+  },
+  "gpni": {
+    "westminster": 5,
+    "euro": 3,
+    "stormont": 6
+  },
+  "tuv": {
+    "westminster": 3,
+    "euro": 2,
+    "stormont": 4
+  },
+  "animalpolitics": {
+    "westminster": 4,
+    "euro": 1
+  },
+  "nha": {
+    "westminster": 2
+  },
+  "nicon": {
+    "westminster": 3,
+    "euro": 1,
+    "stormont": 5
   },
   "pirate": {
     "westminster": 2
+  },
+  "socialistalternative": {
+    "westminster": 1
+  },
+  "tusc": {
+    "westminster": 2,
+    "senedd": 2
+  },
+  "workerspartyie": {
+    "westminster": 1,
+    "stormont": 7
   },
   "wep": {
     "westminster": 1,
     "euro": 1,
     "holyrood": 1
   },
-  "omrlp": {
-    "westminster": 3
-  },
-  "bnp": {
-    "westminster": 3,
-    "euro": 1,
-    "holyrood": 3,
-    "london": 2
-  },
-  "respect": {
+  "gwlad": {
     "westminster": 1,
-    "london": 1
+    "senedd": 2
   },
-  "ssp": {
-    "westminster": 1,
+  "reform": {
+    "westminster": 2,
     "euro": 1,
-    "holyrood": 4
+    "holyrood": 1,
+    "london": 1,
+    "senedd": 2
+  },
+  "sdp": {
+    "westminster": 2
+  },
+  "yorkshire": {
+    "westminster": 1
+  },
+  "alba": {
+    "westminster": 1,
+    "holyrood": 1
+  },
+  "aontu": {
+    "westminster": 1
+  },
+  "communist": {
+    "westminster": 1,
+    "holyrood": 2,
+    "senedd": 2
+  },
+  "pbp": {
+    "westminster": 1,
+    "stormont": 2
+  },
+  "rejoin": {
+    "westminster": 1
+  },
+  "walesgrn": {
+    "westminster": 1,
+    "senedd": 4
+  },
+  "workersparty": {
+    "westminster": 1,
+    "holyrood": 1
   },
   "eldr": {
     "euro": 5
@@ -178,18 +257,11 @@
     "euro": 1,
     "london": 2
   },
-  "sea": {
-    "euro": 1,
-    "stormont": 2
-  },
   "eurefa": {
     "euro": 4
   },
   "eurleft": {
     "euro": 4
-  },
-  "englishdemocrats": {
-    "euro": 2
   },
   "christian": {
     "euro": 1
@@ -203,14 +275,7 @@
   "uen": {
     "euro": 1
   },
-  "nicon": {
-    "euro": 1,
-    "stormont": 5
-  },
   "eaf": {
-    "euro": 1
-  },
-  "animalpolitics": {
     "euro": 1
   },
   "changeuk": {
@@ -234,10 +299,6 @@
   "solidarity": {
     "holyrood": 1
   },
-  "communist": {
-    "holyrood": 2,
-    "senedd": 2
-  },
   "rise": {
     "holyrood": 1
   },
@@ -256,40 +317,19 @@
   "sovereignty": {
     "holyrood": 1
   },
-  "walesgrn": {
-    "senedd": 4
-  },
-  "gwlad": {
-    "senedd": 2
-  },
   "propel": {
     "senedd": 2
   },
   "abolish": {
     "senedd": 1
   },
-  "tusc": {
-    "senedd": 2
-  },
   "heritage": {
     "senedd": 1
-  },
-  "niwc": {
-    "stormont": 2
-  },
-  "workerspartyie": {
-    "stormont": 7
-  },
-  "pup": {
-    "stormont": 4
   },
   "ukup": {
     "stormont": 1
   },
   "rsf": {
     "stormont": 1
-  },
-  "pbp": {
-    "stormont": 2
   }
 }

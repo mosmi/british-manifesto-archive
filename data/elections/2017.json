@@ -7,12 +7,12 @@
   "pm": "Theresa May",
   "outgoingPm": "Theresa May",
   "totalSeats": 650,
-  "summary": "Theresa May called a snap election expecting to increase her majority ahead of Brexit negotiations, but misread the public mood. Her campaign — centred on \"strong and stable leadership\" — was widely criticised as wooden. Jeremy Corbyn's Labour gained 30 seats, denying May her majority. May formed a minority government backed by the DUP through a £1 billion Confidence and Supply Agreement.",
+  "summary": "Theresa May called a snap election expecting to increase her majority ahead of Brexit negotiations, but misread the public mood. Her campaign \u2014 centred on \"strong and stable leadership\" \u2014 was widely criticised as wooden. Jeremy Corbyn's Labour gained 30 seats, denying May her majority. May formed a minority government backed by the DUP through a \u00a31 billion Confidence and Supply Agreement.",
   "highlights": [
-    "May's gamble backfires — \"strong and stable\" becomes a mockery",
+    "May's gamble backfires \u2014 \"strong and stable\" becomes a mockery",
     "Corbyn Labour gains 30 seats, defying expectations",
     "Hung parliament: May forms minority government backed by DUP",
-    "£1 billion DUP deal causes widespread controversy",
+    "\u00a31 billion DUP deal causes widespread controversy",
     "Two terror attacks (Manchester, London Bridge) during the campaign",
     "Youth turnout rises sharply; \"youthquake\" credited with Labour surge"
   ],
@@ -31,7 +31,9 @@
     "welshlibdem",
     "scottishcon",
     "scottishlab",
-    "scottishlibdem"
+    "scottishlibdem",
+    "animalpolitics",
+    "nicon"
   ],
   "partyResults": {
     "welshcon": {

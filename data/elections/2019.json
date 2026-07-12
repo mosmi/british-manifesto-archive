@@ -7,9 +7,9 @@
   "pm": "Boris Johnson",
   "outgoingPm": "Boris Johnson",
   "totalSeats": 650,
-  "summary": "Boris Johnson's Conservative Party won a majority of 80 — the largest since Thatcher's 1987 landslide — on the slogan \"Get Brexit Done.\" The election, fought after three years of parliamentary paralysis over Britain's departure from the EU, delivered a decisive mandate. Labour, under Jeremy Corbyn, suffered its worst result since 1935. The so-called \"Red Wall\" — traditionally Labour working-class seats across the Midlands and the North — fell to the Conservatives for the first time in many cases.",
+  "summary": "Boris Johnson's Conservative Party won a majority of 80 \u2014 the largest since Thatcher's 1987 landslide \u2014 on the slogan \"Get Brexit Done.\" The election, fought after three years of parliamentary paralysis over Britain's departure from the EU, delivered a decisive mandate. Labour, under Jeremy Corbyn, suffered its worst result since 1935. The so-called \"Red Wall\" \u2014 traditionally Labour working-class seats across the Midlands and the North \u2014 fell to the Conservatives for the first time in many cases.",
   "highlights": [
-    "\"Get Brexit Done\" — Johnson wins majority of 80",
+    "\"Get Brexit Done\" \u2014 Johnson wins majority of 80",
     "Red Wall collapses: Labour heartlands in the Midlands and North vote Conservative",
     "Labour's worst result since 1935 under Jeremy Corbyn",
     "SNP wins 48 seats, reignites Scottish independence debate",
@@ -32,7 +32,12 @@
     "welshlibdem",
     "scottishcon",
     "scottishlab",
-    "scottishlibdem"
+    "scottishlibdem",
+    "animalpolitics",
+    "cpa",
+    "gwlad",
+    "sdp",
+    "yorkshire"
   ],
   "partyResults": {
     "welshcon": {

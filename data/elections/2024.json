@@ -7,11 +7,11 @@
   "pm": "Keir Starmer",
   "outgoingPm": "Rishi Sunak",
   "totalSeats": 650,
-  "summary": "Keir Starmer led Labour to its second-greatest landslide in history, winning 411 seats and a majority of 172 — the largest since Tony Blair's 1997 triumph. The Conservatives under Rishi Sunak were reduced to just 121 seats — their worst result since 1832. Nigel Farage's Reform UK won 5 seats but 14.3% of the national vote. The Liberal Democrats achieved 72 seats — their best result since 1923.",
+  "summary": "Keir Starmer led Labour to its second-greatest landslide in history, winning 411 seats and a majority of 172 \u2014 the largest since Tony Blair's 1997 triumph. The Conservatives under Rishi Sunak were reduced to just 121 seats \u2014 their worst result since 1832. Nigel Farage's Reform UK won 5 seats but 14.3% of the national vote. The Liberal Democrats achieved 72 seats \u2014 their best result since 1923.",
   "highlights": [
-    "Labour wins 411 seats — largest majority since Blair's 1997 landslide",
-    "Conservative catastrophe: 121 seats and 23.7% — worst result since 1832",
-    "Liberal Democrats win 72 seats — their best result since 1923",
+    "Labour wins 411 seats \u2014 largest majority since Blair's 1997 landslide",
+    "Conservative catastrophe: 121 seats and 23.7% \u2014 worst result since 1832",
+    "Liberal Democrats win 72 seats \u2014 their best result since 1923",
     "Reform UK wins 14.3% of the vote but only 5 seats under Nigel Farage",
     "SNP collapses from 48 to just 9 seats as Labour sweeps Scotland",
     "Rishi Sunak concedes defeat in a dawn address outside Downing Street"
@@ -26,7 +26,18 @@
     "scottishcon",
     "scottishlab",
     "scottishlibdem",
-    "scottishgrn"
+    "scottishgrn",
+    "alba",
+    "animalpolitics",
+    "aontu",
+    "cpa",
+    "communist",
+    "nicon",
+    "pbp",
+    "rejoin",
+    "sdp",
+    "tusc",
+    "walesgrn"
   ],
   "partyResults": {
     "welshcon": {

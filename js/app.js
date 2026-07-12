@@ -367,11 +367,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   route();
 });
 
+const THEME_STORAGE_KEY = 'bma-theme';
+let _refreshThemeToggle = null;
+
+function systemPrefersLight() {
+  return window.matchMedia('(prefers-color-scheme: light)').matches;
+}
+
+/** Explicit localStorage choice wins; otherwise follow the OS. */
+function resolveTheme() {
+  const stored = localStorage.getItem(THEME_STORAGE_KEY);
+  if (stored === 'light' || stored === 'dark') return stored;
+  return systemPrefersLight() ? 'light' : 'dark';
+}
+
 function initTheme() {
-  const stored = localStorage.getItem('bma-theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  const theme = stored || (prefersLight ? 'light' : 'dark');
-  applyTheme(theme);
+  applyTheme(resolveTheme());
+
+  const mq = window.matchMedia('(prefers-color-scheme: light)');
+  const onSystemThemeChange = () => {
+    // Stay out of the way once the user has toggled a preference.
+    if (localStorage.getItem(THEME_STORAGE_KEY)) return;
+    applyTheme(resolveTheme());
+    if (typeof route === 'function') route();
+  };
+  if (typeof mq.addEventListener === 'function') {
+    mq.addEventListener('change', onSystemThemeChange);
+  } else if (typeof mq.addListener === 'function') {
+    mq.addListener(onSystemThemeChange); // older Safari
+  }
 }
 
 function applyTheme(theme) {
@@ -383,6 +407,7 @@ function applyTheme(theme) {
   }
   const meta = document.querySelector('meta[name="theme-color"]');
   if (meta) meta.setAttribute('content', isLight ? '#f7f3ea' : '#090e1c');
+  if (typeof _refreshThemeToggle === 'function') _refreshThemeToggle();
 }
 
 function setupThemeToggle() {
@@ -393,11 +418,12 @@ function setupThemeToggle() {
     btn.textContent = isLight ? '☾ Dark' : '☀ Light';
     btn.setAttribute('aria-pressed', String(isLight));
   };
+  _refreshThemeToggle = refresh;
   refresh();
   btn.addEventListener('click', () => {
     const isLight = document.documentElement.getAttribute('data-theme') === 'light';
     const next = isLight ? 'dark' : 'light';
-    localStorage.setItem('bma-theme', next);
+    localStorage.setItem(THEME_STORAGE_KEY, next);
     applyTheme(next);
     refresh();
     route();
@@ -1601,6 +1627,14 @@ function renderElection(app, id) {
     if (!grouped[n]) grouped[n] = [];
     grouped[n].push(pid);
   });
+  // Minor / "Other Parties" cards follow A–Z by display name (nation groups keep results order)
+  if (grouped.others) {
+    const labelFor = (pid) =>
+      (election.manifestoPartyLabels && election.manifestoPartyLabels[pid])
+      || getPartyName(pid, election.year)
+      || pid;
+    grouped.others.sort((a, b) => labelFor(a).localeCompare(labelFor(b), 'en', { sensitivity: 'base' }));
+  }
   const presentNations = NATION_ORDER.filter(n => grouped[n]?.length);
   const manifestoGridContent = presentNations.length > 1
     ? presentNations.map(n => `<div class="manifesto-nation-group">
@@ -2956,7 +2990,8 @@ function renderManifesto(app, electionId, partyId) {
   const election = getElection(electionId);
   const party    = PARTIES[partyId];
   if (!election || !party) { renderNotFound(app); return; }
-  const displayName = getPartyName(partyId, election.year);
+  const displayName = (election.manifestoPartyLabels && election.manifestoPartyLabels[partyId])
+    || getPartyName(partyId, election.year);
   const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
   const accent = typeof partyAccentDerivedForYear === 'function'
     ? partyAccentDerivedForYear(partyId, election.year, theme)

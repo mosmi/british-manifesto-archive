@@ -38,6 +38,21 @@ Party page hero still uses the modern full name
 (`Green Party of England and Wales`). Founded year on the party record is **1975**
 (Ecology Party), with description covering PEOPLE → Ecology → Green Party → GPEW.
 
+## Reform UK / Brexit Party lineage (`reform`)
+
+The 2019 general-election manifesto is stored under party id `reform` (same
+organisation after the 2021 relaunch). Period label:
+
+| Years | Label |
+|---|---|
+| before 2021 | Brexit Party |
+| 2021 onward | Reform UK |
+
+Election pages may also set `manifestoPartyLabels: { reform: 'Brexit Party' }` as an
+explicit override; `getPartyName` should make that redundant for year-aware UI.
+There is a separate `brexit` party id used for some European Parliament holdings —
+do not confuse the two when auditing “missing” folders.
+
 ## Adding another lineage
 
 1. Add a map beside `LIBERAL_LINEAGE_NAMES` / `GREEN_LINEAGE_NAMES` in `js/data.js`.

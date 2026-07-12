@@ -9,9 +9,9 @@
   "totalSeats": 650,
   "summary": "The 2015 election delivered the second major polling failure of the modern era. Surveys had predicted another hung parliament; instead Cameron won an outright majority of 12. Labour's Ed Miliband lost 26 seats. Most dramatically, the SNP swept Scotland, winning 56 of 59 Scottish seats and virtually wiping out Scottish Labour. The Liberal Democrats were decimated, falling from 57 to 8 seats. UKIP won nearly 4 million votes but only 1 seat. Cameron's victory came with a manifesto commitment to an EU membership referendum.",
   "highlights": [
-    "Major polling failure — predicted hung parliament becomes Conservative majority",
-    "SNP sweeps Scotland, winning 56 of 59 seats — \"SNP tsunami\"",
-    "Liberal Democrats punished for coalition — fall from 57 to 8 seats",
+    "Major polling failure \u2014 predicted hung parliament becomes Conservative majority",
+    "SNP sweeps Scotland, winning 56 of 59 seats \u2014 \"SNP tsunami\"",
+    "Liberal Democrats punished for coalition \u2014 fall from 57 to 8 seats",
     "UKIP wins 3.9 million votes (12.6%) but only 1 seat",
     "Cameron commits to EU referendum; Brexit vote follows in 2016",
     "Miliband resigns; Jeremy Corbyn elected Labour leader months later"
@@ -28,7 +28,15 @@
     "welshlibdem",
     "scottishcon",
     "scottishlab",
-    "scottishlibdem"
+    "scottishlibdem",
+    "omrlp",
+    "animalpolitics",
+    "nicon",
+    "nha",
+    "ssp",
+    "socialistalternative",
+    "tusc",
+    "workerspartyie"
   ],
   "partyResults": {
     "welshcon": {

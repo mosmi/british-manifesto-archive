@@ -7,7 +7,7 @@
   "pm": "Tony Blair",
   "outgoingPm": "Tony Blair",
   "totalSeats": 646,
-  "summary": "Labour won a reduced but still comfortable majority of 66, becoming the first Labour government to win three consecutive terms. However, the Iraq War had severely damaged Blair's authority — Labour's vote share fell from 40.7% to 35.2%, and the party lost 47 seats. The Liberal Democrats, strongly anti-war under Charles Kennedy, advanced to 62 seats — their best result in modern times.",
+  "summary": "Labour won a reduced but still comfortable majority of 66, becoming the first Labour government to win three consecutive terms. However, the Iraq War had severely damaged Blair's authority \u2014 Labour's vote share fell from 40.7% to 35.2%, and the party lost 47 seats. The Liberal Democrats, strongly anti-war under Charles Kennedy, advanced to 62 seats \u2014 their best result in modern times.",
   "highlights": [
     "Labour wins historic third consecutive term",
     "Iraq War damages Blair's vote share significantly",
@@ -30,7 +30,13 @@
     "welshlibdem",
     "scottishcon",
     "scottishlab",
-    "scottishlibdem"
+    "scottishlibdem",
+    "omrlp",
+    "cpa",
+    "englishdemocrats",
+    "forwardwales",
+    "sea",
+    "veritas"
   ],
   "partyResults": {
     "welshcon": {

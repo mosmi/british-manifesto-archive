@@ -1,478 +1,503 @@
 [
   {
-    "electionId": "2024",
+    "electionId": "1945",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 2024"
+    "label": "Conservatives Manifesto 1945"
   },
   {
-    "electionId": "2024",
+    "electionId": "1945",
     "partyId": "labour",
-    "label": "Labour Manifesto 2024"
+    "label": "Labour Manifesto 1945"
   },
   {
-    "electionId": "2024",
+    "electionId": "1945",
     "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2024"
+    "label": "Liberal Manifesto 1945"
   },
   {
-    "electionId": "2024",
-    "partyId": "alba",
-    "label": "Alba Party Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "alliance",
-    "label": "Alliance Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "cooperative",
-    "label": "Co-operative Party Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "dup",
-    "label": "DUP Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "green",
-    "label": "Green Party Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "gpni",
-    "label": "Green Party NI Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "reform",
-    "label": "Reform UK Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "sdlp",
-    "label": "SDLP Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "scottishgrn",
-    "label": "Scottish Greens Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "scottishlibdem",
-    "label": "Scottish Liberal Democrats Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "tuv",
-    "label": "TUV Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "uup",
-    "label": "UUP Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "welshcon",
-    "label": "Welsh Conservatives Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
-    "partyId": "workersparty",
-    "label": "Workers Party Manifesto 2024"
-  },
-  {
-    "electionId": "2019",
+    "electionId": "1950",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 2019"
+    "label": "Conservatives Manifesto 1950"
   },
   {
-    "electionId": "2019",
+    "electionId": "1950",
     "partyId": "labour",
-    "label": "Labour Manifesto 2019"
+    "label": "Labour Manifesto 1950"
   },
   {
-    "electionId": "2019",
+    "electionId": "1950",
     "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2019"
+    "label": "Liberal Manifesto 1950"
   },
   {
-    "electionId": "2019",
-    "partyId": "alliance",
-    "label": "Alliance Manifesto 2019"
+    "electionId": "1951",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1951"
   },
   {
-    "electionId": "2019",
-    "partyId": "cooperative",
-    "label": "Co-operative Party Manifesto 2019"
+    "electionId": "1951",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1951"
   },
   {
-    "electionId": "2019",
-    "partyId": "dup",
-    "label": "DUP Manifesto 2019"
+    "electionId": "1951",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1951"
   },
   {
-    "electionId": "2019",
+    "electionId": "1955",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1955"
+  },
+  {
+    "electionId": "1955",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1955"
+  },
+  {
+    "electionId": "1955",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1955"
+  },
+  {
+    "electionId": "1959",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1959"
+  },
+  {
+    "electionId": "1959",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1959"
+  },
+  {
+    "electionId": "1959",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1959"
+  },
+  {
+    "electionId": "1964",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1964"
+  },
+  {
+    "electionId": "1964",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1964"
+  },
+  {
+    "electionId": "1964",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1964"
+  },
+  {
+    "electionId": "1966",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1966"
+  },
+  {
+    "electionId": "1966",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1966"
+  },
+  {
+    "electionId": "1966",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1966"
+  },
+  {
+    "electionId": "1970",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1970"
+  },
+  {
+    "electionId": "1970",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1970"
+  },
+  {
+    "electionId": "1970",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1970"
+  },
+  {
+    "electionId": "1979",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1979"
+  },
+  {
+    "electionId": "1979",
     "partyId": "green",
-    "label": "Green Party Manifesto 2019"
+    "label": "Ecology Party Manifesto 1979"
   },
   {
-    "electionId": "2019",
-    "partyId": "gpni",
-    "label": "Green Party NI Manifesto 2019"
+    "electionId": "1979",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1979"
   },
   {
-    "electionId": "2019",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2019"
+    "electionId": "1979",
+    "partyId": "libdem",
+    "label": "Liberal Manifesto 1979"
   },
   {
-    "electionId": "2019",
-    "partyId": "reform",
-    "label": "Brexit Party Manifesto 2019"
-  },
-  {
-    "electionId": "2019",
+    "electionId": "1979",
     "partyId": "sdlp",
-    "label": "SDLP Manifesto 2019"
+    "label": "SDLP Manifesto 1979"
   },
   {
-    "electionId": "2019",
+    "electionId": "1983",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1983"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "green",
+    "label": "Ecology Party Manifesto 1983"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1983"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "libdem",
+    "label": "Alliance Manifesto 1983"
+  },
+  {
+    "electionId": "1987",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1987"
+  },
+  {
+    "electionId": "1987",
+    "partyId": "green",
+    "label": "Green Party Manifesto 1987"
+  },
+  {
+    "electionId": "1987",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1987"
+  },
+  {
+    "electionId": "1987",
+    "partyId": "libdem",
+    "label": "Alliance Manifesto 1987"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "bnp",
+    "label": "BNP Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "green",
+    "label": "Green Party Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "libdem",
+    "label": "Liberal Democrats Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 1992"
+  },
+  {
+    "electionId": "1992",
     "partyId": "snp",
-    "label": "SNP Manifesto 2019"
+    "label": "SNP Manifesto 1992"
   },
   {
-    "electionId": "2019",
-    "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2019"
+    "electionId": "1997",
+    "partyId": "alliance",
+    "label": "Alliance Manifesto 1997"
   },
   {
-    "electionId": "2019",
-    "partyId": "scottishgrn",
-    "label": "Scottish Greens Manifesto 2019"
+    "electionId": "1997",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 1997"
   },
   {
-    "electionId": "2019",
-    "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2019"
+    "electionId": "1997",
+    "partyId": "labour",
+    "label": "Labour Manifesto 1997"
   },
   {
-    "electionId": "2019",
-    "partyId": "scottishlibdem",
-    "label": "Scottish Liberal Democrats Manifesto 2019"
+    "electionId": "1997",
+    "partyId": "libdem",
+    "label": "Liberal Democrats Manifesto 1997"
   },
   {
-    "electionId": "2019",
+    "electionId": "1997",
+    "partyId": "niwc",
+    "label": "Northern Ireland Women's Coalition Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
+    "partyId": "pup",
+    "label": "Progressive Unionist Party Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
     "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2019"
+    "label": "Sinn F\u00e9in Manifesto 1997"
   },
   {
-    "electionId": "2019",
+    "electionId": "1997",
+    "partyId": "snp",
+    "label": "SNP Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
     "partyId": "ukip",
-    "label": "UKIP Manifesto 2019"
+    "label": "UKIP Manifesto 1997"
   },
   {
-    "electionId": "2019",
+    "electionId": "1997",
     "partyId": "uup",
-    "label": "UUP Manifesto 2019"
+    "label": "UUP Manifesto 1997"
   },
   {
-    "electionId": "2019",
-    "partyId": "welshcon",
-    "label": "Welsh Conservatives Manifesto 2019"
-  },
-  {
-    "electionId": "2019",
-    "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2019"
-  },
-  {
-    "electionId": "2019",
-    "partyId": "welshlibdem",
-    "label": "Welsh Liberal Democrats Manifesto 2019"
-  },
-  {
-    "electionId": "2017",
+    "electionId": "2001",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 2017"
+    "label": "Conservatives Manifesto 2001"
   },
   {
-    "electionId": "2017",
-    "partyId": "labour",
-    "label": "Labour Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "alliance",
-    "label": "Alliance Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "cooperative",
-    "label": "Co-operative Party Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
+    "electionId": "2001",
     "partyId": "dup",
-    "label": "DUP Manifesto 2017"
+    "label": "DUP Manifesto 2001"
   },
   {
-    "electionId": "2017",
+    "electionId": "2001",
     "partyId": "green",
-    "label": "Green Party Manifesto 2017"
+    "label": "Green Party Manifesto 2001"
   },
   {
-    "electionId": "2017",
-    "partyId": "gpni",
-    "label": "Green Party NI Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "nha",
-    "label": "National Health Action Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "pirate",
-    "label": "Pirate Party UK Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "sdlp",
-    "label": "SDLP Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "scottishlibdem",
-    "label": "Scottish Liberal Democrats Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "ukip",
-    "label": "UKIP Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "uup",
-    "label": "UUP Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "welshcon",
-    "label": "Welsh Conservatives Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "welshlibdem",
-    "label": "Welsh Liberal Democrats Manifesto 2017"
-  },
-  {
-    "electionId": "2017",
-    "partyId": "wep",
-    "label": "Women's Equality Party Manifesto 2017"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "labour",
-    "label": "Labour Manifesto 2015"
+    "label": "Labour Manifesto 2001"
   },
   {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2015"
+    "label": "Liberal Democrats Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "alliance",
-    "label": "Alliance Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "cooperative",
-    "label": "Co-operative Party Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "dup",
-    "label": "DUP Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "green",
-    "label": "Green Party Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "gpni",
-    "label": "Green Party NI Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "omrlp",
-    "label": "Monster Raving Loony Party Manifesto 2015"
+    "label": "Monster Raving Loony Party Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "pirate",
-    "label": "Pirate Party UK Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2015"
+    "label": "Plaid Cymru Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "sdlp",
-    "label": "SDLP Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2015"
+    "label": "Scottish Conservatives Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "scottishgrn",
-    "label": "Scottish Greens Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2015"
+    "label": "Scottish Labour Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "scottishlibdem",
-    "label": "Scottish Liberal Democrats Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2015"
+    "label": "Sinn F\u00e9in Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "tuv",
-    "label": "TUV Manifesto 2015"
+    "electionId": "2001",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "ukip",
-    "label": "UKIP Manifesto 2015"
+    "electionId": "2001",
+    "partyId": "stuckist",
+    "label": "Stuckist Party Manifesto 2001"
   },
   {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "uup",
-    "label": "UUP Manifesto 2015"
+    "label": "UUP Manifesto 2001"
   },
   {
-    "electionId": "2015",
-    "partyId": "welshcon",
-    "label": "Welsh Conservatives Manifesto 2015"
-  },
-  {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2015"
+    "label": "Welsh Labour Manifesto 2001"
   },
   {
-    "electionId": "2015",
+    "electionId": "2001",
     "partyId": "welshlibdem",
-    "label": "Welsh Liberal Democrats Manifesto 2015"
+    "label": "Welsh Liberal Democrats Manifesto 2001"
   },
   {
-    "electionId": "2010",
+    "electionId": "2005",
+    "partyId": "alliance",
+    "label": "Alliance Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "bnp",
+    "label": "BNP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 2010"
+    "label": "Conservatives Manifesto 2005"
   },
   {
-    "electionId": "2010",
+    "electionId": "2005",
+    "partyId": "cooperative",
+    "label": "Co-operative Party Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "cpa",
+    "label": "Christian Peoples Alliance Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "dup",
+    "label": "DUP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "englishdemocrats",
+    "label": "English Democrats Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "forwardwales",
+    "label": "Forward Wales Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "green",
+    "label": "Green Party Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
     "partyId": "labour",
-    "label": "Labour Manifesto 2010"
+    "label": "Labour Manifesto 2005"
   },
   {
-    "electionId": "2010",
+    "electionId": "2005",
     "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2010"
+    "label": "Liberal Democrats Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "omrlp",
+    "label": "Monster Raving Loony Party Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "respect",
+    "label": "Respect Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "scottishcon",
+    "label": "Scottish Conservatives Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "scottishgrn",
+    "label": "Scottish Greens Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "scottishlab",
+    "label": "Scottish Labour Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "scottishlibdem",
+    "label": "Scottish Liberal Democrats Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "sea",
+    "label": "Socialist Environmental Alliance Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "sinnfein",
+    "label": "Sinn F\u00e9in Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "ssp",
+    "label": "Scottish Socialist Party Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "ukip",
+    "label": "UKIP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "uup",
+    "label": "UUP Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "veritas",
+    "label": "Veritas Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "welshlab",
+    "label": "Welsh Labour Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "welshlibdem",
+    "label": "Welsh Liberal Democrats Manifesto 2005"
   },
   {
     "electionId": "2010",
@@ -486,6 +511,11 @@
   },
   {
     "electionId": "2010",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
     "partyId": "cooperative",
     "label": "Co-operative Party Manifesto 2010"
   },
@@ -496,28 +526,28 @@
   },
   {
     "electionId": "2010",
-    "partyId": "green",
-    "label": "Green Party Manifesto 2010"
-  },
-  {
-    "electionId": "2010",
     "partyId": "gpni",
     "label": "Green Party NI Manifesto 2010"
   },
   {
     "electionId": "2010",
+    "partyId": "green",
+    "label": "Green Party Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
+    "partyId": "labour",
+    "label": "Labour Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
+    "partyId": "libdem",
+    "label": "Liberal Democrats Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
     "partyId": "plaid",
     "label": "Plaid Cymru Manifesto 2010"
-  },
-  {
-    "electionId": "2010",
-    "partyId": "sdlp",
-    "label": "SDLP Manifesto 2010"
-  },
-  {
-    "electionId": "2010",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2010"
   },
   {
     "electionId": "2010",
@@ -541,8 +571,18 @@
   },
   {
     "electionId": "2010",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
     "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2010"
+    "label": "Sinn F\u00e9in Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2010"
   },
   {
     "electionId": "2010",
@@ -575,344 +615,589 @@
     "label": "Welsh Liberal Democrats Manifesto 2010"
   },
   {
-    "electionId": "2005",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "labour",
-    "label": "Labour Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "alliance",
-    "label": "Alliance Manifesto 2005"
+    "label": "Alliance Manifesto 2015"
   },
   {
-    "electionId": "2005",
-    "partyId": "bnp",
-    "label": "BNP Manifesto 2005"
+    "electionId": "2015",
+    "partyId": "animalpolitics",
+    "label": "Animal Welfare Party Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "cooperative",
-    "label": "Co-operative Party Manifesto 2005"
+    "label": "Co-operative Party Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "dup",
-    "label": "DUP Manifesto 2005"
+    "label": "DUP Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
+    "partyId": "gpni",
+    "label": "Green Party NI Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "green",
-    "label": "Green Party Manifesto 2005"
+    "label": "Green Party Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
+    "partyId": "labour",
+    "label": "Labour Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "libdem",
+    "label": "Liberal Democrats Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "nha",
+    "label": "National Health Action Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "nicon",
+    "label": "NI Conservatives Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "omrlp",
-    "label": "Monster Raving Loony Party Manifesto 2005"
+    "label": "Monster Raving Loony Party Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
+    "partyId": "pirate",
+    "label": "Pirate Party UK Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2005"
+    "label": "Plaid Cymru Manifesto 2015"
   },
   {
-    "electionId": "2005",
-    "partyId": "respect",
-    "label": "Respect Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "sdlp",
-    "label": "SDLP Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "ssp",
-    "label": "Scottish Socialist Party Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2005"
+    "label": "Scottish Conservatives Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "scottishgrn",
-    "label": "Scottish Greens Manifesto 2005"
+    "label": "Scottish Greens Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2005"
+    "label": "Scottish Labour Manifesto 2015"
   },
   {
-    "electionId": "2005",
+    "electionId": "2015",
     "partyId": "scottishlibdem",
-    "label": "Scottish Liberal Democrats Manifesto 2005"
+    "label": "Scottish Liberal Democrats Manifesto 2015"
   },
   {
-    "electionId": "2005",
-    "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "ukip",
-    "label": "UKIP Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "uup",
-    "label": "UUP Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "welshcon",
-    "label": "Welsh Conservatives Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2005"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "welshlibdem",
-    "label": "Welsh Liberal Democrats Manifesto 2005"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "labour",
-    "label": "Labour Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "dup",
-    "label": "DUP Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "green",
-    "label": "Green Party Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "omrlp",
-    "label": "Monster Raving Loony Party Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "snp",
-    "label": "SNP Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "scottishcon",
-    "label": "Scottish Conservatives Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "scottishlab",
-    "label": "Scottish Labour Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "uup",
-    "label": "UUP Manifesto 2001"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "welshlab",
-    "label": "Welsh Labour Manifesto 2001"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "alliance",
-    "label": "Alliance Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
+    "electionId": "2015",
     "partyId": "sdlp",
-    "label": "SDLP Manifesto 1997"
+    "label": "SDLP Manifesto 2015"
   },
   {
-    "electionId": "1997",
-    "partyId": "snp",
-    "label": "SNP Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
+    "electionId": "2015",
     "partyId": "sinnfein",
-    "label": "Sinn Féin Manifesto 1997"
+    "label": "Sinn F\u00e9in Manifesto 2015"
   },
   {
-    "electionId": "1997",
-    "partyId": "ukip",
-    "label": "UKIP Manifesto 1997"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "uup",
-    "label": "UUP Manifesto 1997"
-  },
-  {
-    "electionId": "1992",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1992"
-  },
-  {
-    "electionId": "1992",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1992"
-  },
-  {
-    "electionId": "1992",
-    "partyId": "libdem",
-    "label": "Liberal Democrats Manifesto 1992"
-  },
-  {
-    "electionId": "1992",
-    "partyId": "bnp",
-    "label": "BNP Manifesto 1992"
-  },
-  {
-    "electionId": "1992",
+    "electionId": "2015",
     "partyId": "snp",
-    "label": "SNP Manifesto 1992"
+    "label": "SNP Manifesto 2015"
   },
   {
-    "electionId": "1992",
-    "partyId": "green",
-    "label": "Green Party Manifesto 1992"
+    "electionId": "2015",
+    "partyId": "socialistalternative",
+    "label": "Socialist Alternative Manifesto 2015"
   },
   {
-    "electionId": "1987",
+    "electionId": "2015",
+    "partyId": "ssp",
+    "label": "Scottish Socialist Party Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "tusc",
+    "label": "TUSC Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "tuv",
+    "label": "TUV Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "ukip",
+    "label": "UKIP Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "uup",
+    "label": "UUP Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "welshlab",
+    "label": "Welsh Labour Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "welshlibdem",
+    "label": "Welsh Liberal Democrats Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "workerspartyie",
+    "label": "Workers' Party Manifesto 2015"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "alliance",
+    "label": "Alliance Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "animalpolitics",
+    "label": "Animal Welfare Party Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 1987"
+    "label": "Conservatives Manifesto 2017"
   },
   {
-    "electionId": "1987",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1987"
+    "electionId": "2017",
+    "partyId": "cooperative",
+    "label": "Co-operative Party Manifesto 2017"
   },
   {
-    "electionId": "1987",
-    "partyId": "libdem",
-    "label": "Alliance Manifesto 1987"
+    "electionId": "2017",
+    "partyId": "dup",
+    "label": "DUP Manifesto 2017"
   },
   {
-    "electionId": "1987",
+    "electionId": "2017",
+    "partyId": "gpni",
+    "label": "Green Party NI Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
     "partyId": "green",
-    "label": "Green Party Manifesto 1987"
+    "label": "Green Party Manifesto 2017"
   },
   {
-    "electionId": "1983",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1983"
-  },
-  {
-    "electionId": "1983",
+    "electionId": "2017",
     "partyId": "labour",
-    "label": "Labour Manifesto 1983"
+    "label": "Labour Manifesto 2017"
   },
   {
-    "electionId": "1983",
+    "electionId": "2017",
     "partyId": "libdem",
-    "label": "Alliance Manifesto 1983"
+    "label": "Liberal Democrats Manifesto 2017"
   },
   {
-    "electionId": "1983",
+    "electionId": "2017",
+    "partyId": "nha",
+    "label": "National Health Action Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "nicon",
+    "label": "NI Conservatives Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "pirate",
+    "label": "Pirate Party UK Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "scottishcon",
+    "label": "Scottish Conservatives Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "scottishgrn",
+    "label": "Scottish Greens Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "scottishlab",
+    "label": "Scottish Labour Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "scottishlibdem",
+    "label": "Scottish Liberal Democrats Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "sinnfein",
+    "label": "Sinn F\u00e9in Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "ukip",
+    "label": "UKIP Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "uup",
+    "label": "UUP Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "welshlab",
+    "label": "Welsh Labour Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "welshlibdem",
+    "label": "Welsh Liberal Democrats Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "wep",
+    "label": "Women's Equality Party Manifesto 2017"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "alliance",
+    "label": "Alliance Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "animalpolitics",
+    "label": "Animal Welfare Party Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "cooperative",
+    "label": "Co-operative Party Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "cpa",
+    "label": "Christian Peoples Alliance Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "dup",
+    "label": "DUP Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "gpni",
+    "label": "Green Party NI Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
     "partyId": "green",
-    "label": "Ecology Party Manifesto 1983"
+    "label": "Green Party Manifesto 2019"
   },
   {
-    "electionId": "1979",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1979"
+    "electionId": "2019",
+    "partyId": "gwlad",
+    "label": "Gwlad Manifesto 2019"
   },
   {
-    "electionId": "1979",
+    "electionId": "2019",
     "partyId": "labour",
-    "label": "Labour Manifesto 1979"
+    "label": "Labour Manifesto 2019"
   },
   {
-    "electionId": "1979",
+    "electionId": "2019",
     "partyId": "libdem",
-    "label": "Liberal Manifesto 1979"
+    "label": "Liberal Democrats Manifesto 2019"
   },
   {
-    "electionId": "1979",
+    "electionId": "2019",
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "reform",
+    "label": "Brexit Party Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "scottishcon",
+    "label": "Scottish Conservatives Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "scottishgrn",
+    "label": "Scottish Greens Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "scottishlab",
+    "label": "Scottish Labour Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "scottishlibdem",
+    "label": "Scottish Liberal Democrats Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "sdp",
+    "label": "Social Democratic Party Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "sinnfein",
+    "label": "Sinn F\u00e9in Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "ukip",
+    "label": "UKIP Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "uup",
+    "label": "UUP Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "welshlab",
+    "label": "Welsh Labour Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "welshlibdem",
+    "label": "Welsh Liberal Democrats Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "yorkshire",
+    "label": "Yorkshire Party Manifesto 2019"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "alba",
+    "label": "Alba Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "alliance",
+    "label": "Alliance Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "animalpolitics",
+    "label": "Animal Welfare Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "aontu",
+    "label": "Aont\u00fa Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "communist",
+    "label": "Communist Party of Britain Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "conservative",
+    "label": "Conservatives Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "cooperative",
+    "label": "Co-operative Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "cpa",
+    "label": "Christian Peoples Alliance Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "dup",
+    "label": "DUP Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "gpni",
+    "label": "Green Party NI Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
     "partyId": "green",
-    "label": "Ecology Party Manifesto 1979"
+    "label": "Green Party Manifesto 2024"
   },
   {
-    "electionId": "oct1974",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1974"
-  },
-  {
-    "electionId": "oct1974",
+    "electionId": "2024",
     "partyId": "labour",
-    "label": "Labour Manifesto 1974"
+    "label": "Labour Manifesto 2024"
   },
   {
-    "electionId": "oct1974",
+    "electionId": "2024",
     "partyId": "libdem",
-    "label": "Liberal Manifesto 1974"
+    "label": "Liberal Democrats Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "nicon",
+    "label": "NI Conservatives Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "pbp",
+    "label": "People Before Profit Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "reform",
+    "label": "Reform UK Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "rejoin",
+    "label": "Rejoin EU Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "scottishcon",
+    "label": "Scottish Conservatives Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "scottishgrn",
+    "label": "Scottish Greens Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "scottishlab",
+    "label": "Scottish Labour Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "scottishlibdem",
+    "label": "Scottish Liberal Democrats Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "sdlp",
+    "label": "SDLP Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "sdp",
+    "label": "Social Democratic Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "sinnfein",
+    "label": "Sinn F\u00e9in Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "snp",
+    "label": "SNP Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "tusc",
+    "label": "TUSC Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "tuv",
+    "label": "TUV Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "uup",
+    "label": "UUP Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "walesgrn",
+    "label": "Wales Green Party Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "welshlab",
+    "label": "Welsh Labour Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "workersparty",
+    "label": "Workers Party Manifesto 2024"
   },
   {
     "electionId": "feb1974",
@@ -930,123 +1215,18 @@
     "label": "Liberal Manifesto 1974"
   },
   {
-    "electionId": "1970",
+    "electionId": "oct1974",
     "partyId": "conservative",
-    "label": "Conservatives Manifesto 1970"
+    "label": "Conservatives Manifesto 1974"
   },
   {
-    "electionId": "1970",
+    "electionId": "oct1974",
     "partyId": "labour",
-    "label": "Labour Manifesto 1970"
+    "label": "Labour Manifesto 1974"
   },
   {
-    "electionId": "1970",
+    "electionId": "oct1974",
     "partyId": "libdem",
-    "label": "Liberal Manifesto 1970"
-  },
-  {
-    "electionId": "1966",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1966"
-  },
-  {
-    "electionId": "1966",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1966"
-  },
-  {
-    "electionId": "1966",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1966"
-  },
-  {
-    "electionId": "1964",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1964"
-  },
-  {
-    "electionId": "1964",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1964"
-  },
-  {
-    "electionId": "1964",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1964"
-  },
-  {
-    "electionId": "1959",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1959"
-  },
-  {
-    "electionId": "1959",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1959"
-  },
-  {
-    "electionId": "1959",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1959"
-  },
-  {
-    "electionId": "1955",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1955"
-  },
-  {
-    "electionId": "1955",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1955"
-  },
-  {
-    "electionId": "1955",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1955"
-  },
-  {
-    "electionId": "1951",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1951"
-  },
-  {
-    "electionId": "1951",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1951"
-  },
-  {
-    "electionId": "1951",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1951"
-  },
-  {
-    "electionId": "1950",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1950"
-  },
-  {
-    "electionId": "1950",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1950"
-  },
-  {
-    "electionId": "1950",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1950"
-  },
-  {
-    "electionId": "1945",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1945"
-  },
-  {
-    "electionId": "1945",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1945"
-  },
-  {
-    "electionId": "1945",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1945"
+    "label": "Liberal Manifesto 1974"
   }
 ]

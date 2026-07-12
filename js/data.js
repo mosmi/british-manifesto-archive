@@ -604,7 +604,7 @@ const PARTIES = {
     id: 'animalpolitics', name: 'Animal Welfare Party', shortName: 'Animal Welfare',
     color: '#76B82A', dim: 'rgba(118,184,42,0.14)',
     founded: 2006, spectrum: 'Left / Animal Rights', isPrimary: false,
-    nation: 'england',
+    nation: 'others',
     description: 'The Animal Welfare Party (contesting as Animal Politics EU in 2019) is a minor party advocating for animal rights, health, and environmental protection.',
   },
   sand: {
@@ -702,7 +702,7 @@ const PARTIES = {
     id: 'englishdemocrats', name: 'English Democrats', shortName: 'English Democrats',
     color: '#E4003B', dim: 'rgba(228,0,59,0.14)',
     founded: 2002, spectrum: 'Right-wing / English Nationalist', isPrimary: false,
-    nation: 'england',
+    nation: 'others',
     description: 'The English Democrats are a right-wing English nationalist party campaigning for an independent England or an English Parliament.',
   },
   christian: {
@@ -711,6 +711,69 @@ const PARTIES = {
     founded: 2004, spectrum: 'Right / Christian', isPrimary: false,
     nation: 'england',
     description: 'The Christian Party and Christian People\'s Alliance are social-conservative political parties campaigning on a Christian platform.',
+  },
+  cpa: {
+    id: 'cpa', name: 'Christian Peoples Alliance', shortName: 'CPA',
+    color: '#0055A5', dim: 'rgba(0,85,165,0.14)',
+    founded: 1999, spectrum: 'Right / Christian', isPrimary: false,
+    nation: 'others',
+    description: 'The Christian Peoples Alliance is a social-conservative party founded in 1999. It contests elections on a Christian-democratic platform and has fielded candidates in Westminster and London elections.',
+  },
+  stuckist: {
+    id: 'stuckist', name: 'Stuckist Party', shortName: 'Stuckist',
+    color: '#C41E3A', dim: 'rgba(196,30,58,0.14)',
+    founded: 2001, spectrum: 'Arts / Anti-establishment', isPrimary: false,
+    nation: 'others',
+    description: 'The Stuckist Party grew out of the Stuckist art movement and contested the 2001 general election with a manifesto opposing conceptual art orthodoxy and championing painting.',
+  },
+  veritas: {
+    id: 'veritas', name: 'Veritas', shortName: 'Veritas',
+    color: '#6B2D8B', dim: 'rgba(107,45,139,0.14)',
+    founded: 2005, spectrum: 'Right / Populist', isPrimary: false,
+    nation: 'others',
+    description: 'Veritas was founded by Robert Kilroy-Silk in 2005 after he left UKIP. The party contested the 2005 general election on a populist, Eurosceptic platform before fading.',
+  },
+  forwardwales: {
+    id: 'forwardwales', name: 'Forward Wales', shortName: 'Forward Wales',
+    color: '#C8102E', dim: 'rgba(200,16,46,0.14)',
+    founded: 2003, spectrum: 'Left / Welsh', isPrimary: false,
+    nation: 'wales',
+    description: 'Forward Wales (Cymru Ymlaen) was a left-wing Welsh party founded by John Marek after leaving Labour. It contested the 2005 general election and the National Assembly before dissolving.',
+  },
+  socialistalternative: {
+    id: 'socialistalternative', name: 'Socialist Alternative', shortName: 'Socialist Alternative',
+    color: '#EB1C23', dim: 'rgba(235,28,35,0.14)',
+    founded: 2014, spectrum: 'Left / Socialist', isPrimary: false,
+    nation: 'others',
+    description: 'Socialist Alternative is a Trotskyist organisation that has contested UK elections, including the 2015 general election, on an anti-austerity socialist platform.',
+  },
+  sdp: {
+    id: 'sdp', name: 'Social Democratic Party', shortName: 'SDP',
+    color: '#E31C79', dim: 'rgba(227,28,121,0.14)',
+    founded: 1990, spectrum: 'Centre / Social Democratic', isPrimary: false,
+    nation: 'others',
+    description: 'The modern Social Democratic Party continues the SDP name after the 1980s party merged into the Liberal Democrats. It contests elections on a social-democratic, culturally conservative platform.',
+  },
+  yorkshire: {
+    id: 'yorkshire', name: 'Yorkshire Party', shortName: 'Yorkshire Party',
+    color: '#00AEEF', dim: 'rgba(0,174,239,0.14)',
+    founded: 2014, spectrum: 'Regionalist', isPrimary: false,
+    nation: 'others',
+    description: 'The Yorkshire Party campaigns for a directly elected parliament for Yorkshire and greater regional devolution. It has contested Westminster, local and European elections.',
+  },
+  rejoin: {
+    id: 'rejoin', name: 'Rejoin EU', shortName: 'Rejoin EU',
+    color: '#003399', dim: 'rgba(0,51,153,0.14)',
+    founded: 2020, spectrum: 'Centre / Pro-European', isPrimary: false,
+    nation: 'others',
+    description: 'Rejoin EU campaigns for the United Kingdom to rejoin the European Union. It contested the 2024 general election on a single-issue pro-European platform.',
+  },
+  aontu: {
+    id: 'aontu', name: 'Aontú', shortName: 'Aontú',
+    color: '#445C2A', dim: 'rgba(68,92,42,0.14)',
+    founded: 2019, spectrum: 'Centre / Irish Republican', isPrimary: false,
+    nation: 'northern-ireland',
+    description: 'Aontú is an all-Ireland republican party founded by Peadar Tóibín after leaving Sinn Féin. It contests elections in Northern Ireland and the Republic on a socially conservative, anti-abortion platform.',
   },
   brexit: {
     id: 'brexit', name: 'Brexit Party', shortName: 'Brexit Party',
@@ -1472,7 +1535,7 @@ const ELECTIONS = [
       'The Referendum Party won over 800,000 votes on an EU referendum platform',
     ],
     youtubeId: 'XoL_tT046tI',
-    extraManifestoParties: ['pup', 'referendumparty', 'ukip', 'alliance', 'scottishlibdem'],
+    extraManifestoParties: ['pup', 'niwc', 'referendumparty', 'ukip', 'alliance', 'scottishlibdem'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 19.6 },
       welshlab:    { party: 'welshlab',    seats: 34, votes: 0, percentage: 54.7 },
@@ -1509,7 +1572,7 @@ const ELECTIONS = [
       'Lib Dems advance to 52 seats under Charles Kennedy',
     ],
     youtubeId: '-HGDplurdMQ',
-    extraManifestoParties: ['ukip', 'green', 'welshlab', 'scottishcon', 'scottishlab', 'omrlp'],
+    extraManifestoParties: ['ukip', 'green', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'omrlp', 'stuckist'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 19.6 },
       welshlab:    { party: 'welshlab',    seats: 34, votes: 0, percentage: 48.6 },
@@ -1545,7 +1608,7 @@ const ELECTIONS = [
       'Lowest Labour vote share since 1987 despite majority win',
     ],
     youtubeId: '-fz6OdDZhT0',
-    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp'],
+    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'cpa', 'englishdemocrats', 'forwardwales', 'sea', 'veritas'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  3, votes: 0, percentage: 21.4 },
       welshlab:    { party: 'welshlab',    seats: 29, votes: 0, percentage: 42.7 },
@@ -1626,7 +1689,7 @@ const ELECTIONS = [
       'Miliband resigns; Jeremy Corbyn elected Labour leader months later',
     ],
     youtubeId: 'VjJDyIAI4SI',
-    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp'],
+    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'animalpolitics', 'nicon', 'nha', 'ssp', 'socialistalternative', 'tusc', 'workerspartyie'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 11, votes: 0, percentage: 27.2 },
       welshlab:    { party: 'welshlab',    seats: 25, votes: 0, percentage: 36.9 },
@@ -1665,7 +1728,7 @@ const ELECTIONS = [
       'Youth turnout rises sharply; "youthquake" credited with Labour surge',
     ],
     youtubeId: '1PXnD5jEa-A',
-    extraManifestoParties: ['cooperative', 'gpni', 'nha', 'pirate', 'ukip', 'uup', 'wep', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
+    extraManifestoParties: ['cooperative', 'gpni', 'nha', 'pirate', 'ukip', 'uup', 'wep', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'nicon'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  8, votes: 0, percentage: 33.6 },
       welshlab:    { party: 'welshlab',    seats: 28, votes: 0, percentage: 49.0 },
@@ -1702,7 +1765,7 @@ const ELECTIONS = [
     ],
     youtubeId: '_mv7HkOx-Hs',
     manifestoPartyLabels: { reform: 'Brexit Party' },
-    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'uup', 'reform', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
+    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'uup', 'reform', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'cpa', 'gwlad', 'sdp', 'yorkshire'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 14, votes: 0, percentage: 36.1 },
       welshlab:    { party: 'welshlab',    seats: 22, votes: 0, percentage: 40.9 },
@@ -1739,7 +1802,7 @@ const ELECTIONS = [
       'Rishi Sunak concedes defeat in a dawn address outside Downing Street',
     ],
     youtubeId: 'l5Fr8fiNp-Y',
-    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba'],
+    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba', 'animalpolitics', 'aontu', 'cpa', 'communist', 'nicon', 'pbp', 'rejoin', 'sdp', 'tusc', 'walesgrn'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 18.2 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 37.0 },
@@ -1799,12 +1862,14 @@ const NAV_PARTIES = {
 };
 
 const OTHERS_PARTIES = [
-  'alba', 'antipartition', 'bnp', 'cooperative', 'commonwealth', 'communist', 'healthconcern',
+  'alba', 'antipartition', 'aontu', 'animalpolitics', 'bnp', 'cooperative', 'commonwealth', 'communist',
+  'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
   'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
   'irishlabour', 'irishnationalist', 'irishrepublican', 'mebyon', 'nha', 'nationalindependent',
   'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'pirate', 'protestantunionist',
-  'referendumparty', 'republicanlabour', 'respect', 'restorebrit', 'ssp', 'speaker', 'tusc', 'ukup',
-  'ulsterpopularunionist', 'uuuc', 'unity', 'wep', 'workersparty', 'yourparty',
+  'referendumparty', 'rejoin', 'republicanlabour', 'respect', 'restorebrit', 'sdp', 'socialistalternative',
+  'ssp', 'speaker', 'stuckist', 'tusc', 'ukup',
+  'ulsterpopularunionist', 'uuuc', 'unity', 'veritas', 'wep', 'workersparty', 'yorkshire', 'yourparty',
 ];
 
 const OTHERS_FEATURED = [
@@ -1818,12 +1883,12 @@ const HOLYROOD_OTHER_PARTIES = [
 ];
 
 const SENEDD_OTHER_PARTIES = [
-  'ukip', 'gwlad', 'propel', 'abolish', 'heritage', 'communist', 'tusc',
+  'ukip', 'gwlad', 'forwardwales', 'propel', 'abolish', 'heritage', 'communist', 'tusc',
   'cooperative', 'bnp', 'respect', 'omrlp',
 ];
 
 const STORMONT_OTHER_PARTIES = [
-  'gpni', 'nicon', 'niwc', 'pup', 'rsf', 'sea', 'ukip', 'ukup', 'ulsterpopularunionist', 'unity', 'vanguard', 'workerspartyie'
+  'aontu', 'gpni', 'nicon', 'niwc', 'pbp', 'pup', 'rsf', 'sea', 'ukip', 'ukup', 'ulsterpopularunionist', 'unity', 'vanguard', 'workerspartyie'
 ];
 
 const EURO_OTHER_PARTIES = [
@@ -1979,6 +2044,11 @@ const GREEN_LINEAGE_NAMES = {
   green: { ecology: 'Ecology Party', modern: 'Green Party' },
 };
 
+/** Reform UK — Brexit Party before the 2021 relaunch. */
+const REFORM_LINEAGE_NAMES = {
+  reform: { brexit: 'Brexit Party', modern: 'Reform UK' },
+};
+
 function getPartyName(id, year) {
   const pid = resolvePartyId(id);
   const p = PARTIES[pid];
@@ -1992,6 +2062,11 @@ function getPartyName(id, year) {
   if (year != null && GREEN_LINEAGE_NAMES[pid]) {
     const names = GREEN_LINEAGE_NAMES[pid];
     if (year < 1985) return names.ecology;
+    return names.modern;
+  }
+  if (year != null && REFORM_LINEAGE_NAMES[pid]) {
+    const names = REFORM_LINEAGE_NAMES[pid];
+    if (year < 2021) return names.brexit;
     return names.modern;
   }
   return p.shortName;

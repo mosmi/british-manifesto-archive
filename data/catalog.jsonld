@@ -576,6 +576,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1979/sdlp#document",
+          "name": "SDLP Manifesto 1979",
+          "url": "https://www.manifestos.org.uk/manifesto/1979/sdlp"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1983/conservative#document",
           "name": "Conservatives Manifesto 1983",
           "url": "https://www.manifestos.org.uk/manifesto/1983/conservative",
@@ -829,6 +835,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1992/sdlp#document",
+          "name": "SDLP Manifesto 1992",
+          "url": "https://www.manifestos.org.uk/manifesto/1992/sdlp"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1992/snp#document",
           "name": "SNP Manifesto 1992",
           "url": "https://www.manifestos.org.uk/manifesto/1992/snp",
@@ -947,6 +959,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1997/niwc#document",
+          "name": "Northern Ireland Women's Coalition Manifesto 1997",
+          "url": "https://www.manifestos.org.uk/manifesto/1997/niwc"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1997/plaid#document",
           "name": "Plaid Cymru Manifesto 1997",
           "url": "https://www.manifestos.org.uk/manifesto/1997/plaid",
@@ -967,6 +985,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1997/pup#document",
+          "name": "Progressive Unionist Party Manifesto 1997",
+          "url": "https://www.manifestos.org.uk/manifesto/1997/pup"
         },
         {
           "@type": "DigitalDocument",
@@ -1338,6 +1362,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2001/stuckist#document",
+          "name": "Stuckist Party Manifesto 2001",
+          "url": "https://www.manifestos.org.uk/manifesto/2001/stuckist"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2001/uup#document",
           "name": "UUP Manifesto 2001",
           "url": "https://www.manifestos.org.uk/manifesto/2001/uup",
@@ -1379,6 +1409,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2001/welshlibdem#document",
+          "name": "Welsh Liberal Democrats Manifesto 2001",
+          "url": "https://www.manifestos.org.uk/manifesto/2001/welshlibdem"
         },
         {
           "@type": "DigitalDocument",
@@ -1474,6 +1510,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/cpa#document",
+          "name": "Christian Peoples Alliance Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/cpa"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2005/dup#document",
           "name": "DUP Manifesto 2005",
           "url": "https://www.manifestos.org.uk/manifesto/2005/dup",
@@ -1491,6 +1533,18 @@
             "devolution",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/englishdemocrats#document",
+          "name": "English Democrats Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/englishdemocrats"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/forwardwales#document",
+          "name": "Forward Wales Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/forwardwales"
         },
         {
           "@type": "DigitalDocument",
@@ -1757,6 +1811,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/sea#document",
+          "name": "Socialist Environmental Alliance Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/sea"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2005/sinnfein#document",
           "name": "Sinn Féin Manifesto 2005",
           "url": "https://www.manifestos.org.uk/manifesto/2005/sinnfein",
@@ -1867,6 +1927,12 @@
             "agriculture",
             "energy"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/veritas#document",
+          "name": "Veritas Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/veritas"
         },
         {
           "@type": "DigitalDocument",
@@ -2524,6 +2590,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/animalpolitics#document",
+          "name": "Animal Welfare Party Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/animalpolitics"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2015/conservative#document",
           "name": "Conservatives Manifesto 2015",
           "url": "https://www.manifestos.org.uk/manifesto/2015/conservative",
@@ -2685,6 +2757,18 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/nha#document",
+          "name": "National Health Action Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/nha"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/nicon#document",
+          "name": "NI Conservatives Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/nicon"
         },
         {
           "@type": "DigitalDocument",
@@ -2911,6 +2995,24 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/socialistalternative#document",
+          "name": "Socialist Alternative Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/socialistalternative"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/ssp#document",
+          "name": "Scottish Socialist Party Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/ssp"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/tusc#document",
+          "name": "TUSC Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/tusc"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2015/tuv#document",
           "name": "TUV Manifesto 2015",
           "url": "https://www.manifestos.org.uk/manifesto/2015/tuv",
@@ -3057,6 +3159,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/workerspartyie#document",
+          "name": "Workers' Party Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/workerspartyie"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2017/alliance#document",
           "name": "Alliance Manifesto 2017",
           "url": "https://www.manifestos.org.uk/manifesto/2017/alliance",
@@ -3078,6 +3186,12 @@
             "devolution",
             "science and technology"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2017/animalpolitics#document",
+          "name": "Animal Welfare Party Manifesto 2017",
+          "url": "https://www.manifestos.org.uk/manifesto/2017/animalpolitics"
         },
         {
           "@type": "DigitalDocument",
@@ -3267,6 +3381,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2017/nicon#document",
+          "name": "NI Conservatives Manifesto 2017",
+          "url": "https://www.manifestos.org.uk/manifesto/2017/nicon"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2017/pirate#document",
           "name": "Pirate Party UK Manifesto 2017",
           "url": "https://www.manifestos.org.uk/manifesto/2017/pirate",
@@ -3337,6 +3457,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2017/scottishgrn#document",
+          "name": "Scottish Greens Manifesto 2017",
+          "url": "https://www.manifestos.org.uk/manifesto/2017/scottishgrn"
         },
         {
           "@type": "DigitalDocument",
@@ -3621,6 +3747,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/animalpolitics#document",
+          "name": "Animal Welfare Party Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/animalpolitics"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2019/conservative#document",
           "name": "Conservatives Manifesto 2019",
           "url": "https://www.manifestos.org.uk/manifesto/2019/conservative",
@@ -3666,6 +3798,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/cpa#document",
+          "name": "Christian Peoples Alliance Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/cpa"
         },
         {
           "@type": "DigitalDocument",
@@ -3738,6 +3876,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/gwlad#document",
+          "name": "Gwlad Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/gwlad"
         },
         {
           "@type": "DigitalDocument",
@@ -3961,6 +4105,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/sdp#document",
+          "name": "Social Democratic Party Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/sdp"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2019/sinnfein#document",
           "name": "Sinn Féin Manifesto 2019",
           "url": "https://www.manifestos.org.uk/manifesto/2019/sinnfein",
@@ -4122,6 +4272,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/yorkshire#document",
+          "name": "Yorkshire Party Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/yorkshire"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2024/alba#document",
           "name": "Alba Party Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/alba",
@@ -4167,6 +4323,24 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/animalpolitics#document",
+          "name": "Animal Welfare Party Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/animalpolitics"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/aontu#document",
+          "name": "Aontú Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/aontu"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/communist#document",
+          "name": "Communist Party of Britain Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/communist"
         },
         {
           "@type": "DigitalDocument",
@@ -4216,6 +4390,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/cpa#document",
+          "name": "Christian Peoples Alliance Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/cpa"
         },
         {
           "@type": "DigitalDocument",
@@ -4345,6 +4525,18 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/nicon#document",
+          "name": "NI Conservatives Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/nicon"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/pbp#document",
+          "name": "People Before Profit Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/pbp"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2024/plaid#document",
           "name": "Plaid Cymru Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/plaid",
@@ -4392,6 +4584,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/rejoin#document",
+          "name": "Rejoin EU Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/rejoin"
         },
         {
           "@type": "DigitalDocument",
@@ -4518,6 +4716,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/sdp#document",
+          "name": "Social Democratic Party Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/sdp"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2024/sinnfein#document",
           "name": "Sinn Féin Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/sinnfein",
@@ -4556,6 +4760,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/tusc#document",
+          "name": "TUSC Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/tusc"
         },
         {
           "@type": "DigitalDocument",
@@ -4603,6 +4813,12 @@
             "devolution",
             "science and technology"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/walesgrn#document",
+          "name": "Wales Green Party Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/walesgrn"
         },
         {
           "@type": "DigitalDocument",
@@ -5971,6 +6187,12 @@
           "@type": "DigitalDocument",
           "name": "green london/gla-2008",
           "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/green/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "English Democrats manifesto",
+          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/englishdemocrats/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

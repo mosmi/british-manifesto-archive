@@ -9,7 +9,7 @@
   "totalSeats": 659,
   "summary": "Labour won a second consecutive landslide, with Blair becoming the first Labour leader to serve two full terms as Prime Minister. Record low turnout at 59.4% reflected widespread satisfaction but also disengagement. Blair's second term would be defined by the invasion of Iraq in 2003, which deeply divided the country and from which Blair's reputation never fully recovered.",
   "highlights": [
-    "Labour wins second consecutive landslide — a first in party history",
+    "Labour wins second consecutive landslide \u2014 a first in party history",
     "Conservative Hague resigns after failing to make inroads",
     "Record low turnout: 59.4%",
     "Iraq War in 2003 would later dominate Blair's legacy",
@@ -20,8 +20,11 @@
     "ukip",
     "green",
     "welshlab",
+    "welshlibdem",
     "scottishcon",
-    "scottishlab"
+    "scottishlab",
+    "omrlp",
+    "stuckist"
   ],
   "partyResults": {
     "welshcon": {
