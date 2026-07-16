@@ -1901,6 +1901,23 @@ const EURO_ALLIANCE_PARTIES = [
   'diem25', 'volt', 'ecpm',
 ];
 
+/**
+ * UK parties that sat in (or were mapped to) each EP political family during
+ * direct elections, 1979–2019. Used on alliance party pages for the
+ * “British member parties” sidebar. Order is display order.
+ */
+const EURO_ALLIANCE_UK_MEMBERS = {
+  sand: ['labour', 'sdlp'],
+  renew: ['libdem', 'alliance'],
+  epp: ['conservative', 'uup'],
+  greensefa: ['green', 'snp', 'plaid', 'scottishgrn'],
+  guengl: ['sinnfein'],
+  ecr: ['conservative', 'uup'],
+  inddem: ['ukip', 'reform'],
+  identity: ['bnp'],
+  uen: ['dup'],
+};
+
 /** UK MEP seats by alliance family at EP constitutive session, 1979–2019. Source: EP Review 2019 / results.elections.europa.eu */
 const EURO_ALLIANCE_UK_SEATS = {
   1979: { sand: 18, epp: 61, greensefa: 1, uen: 1 },
@@ -1921,6 +1938,12 @@ function isEuroAllianceParty(partyId) {
 function getEuroAllianceUkSeats(allianceId, year) {
   const canonical = resolvePartyId(allianceId);
   return EURO_ALLIANCE_UK_SEATS[year]?.[canonical] ?? 0;
+}
+
+function getEuroAllianceUkMembers(allianceId) {
+  const canonical = resolvePartyId(allianceId);
+  const ids = EURO_ALLIANCE_UK_MEMBERS[canonical] || [];
+  return ids.filter(pid => PARTIES[pid]);
 }
 
 const DEVOLVED_PORTALS = {

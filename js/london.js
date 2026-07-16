@@ -73,16 +73,36 @@ function londonBookletBox(booklet) {
     </section>`;
 }
 
-// ── MANIFESTO CARDS (London, PDF-first) ───────────────────────
-function londonManifestoCard(m, year) {
+function londonManifestoCard(m, electionOrYear) {
+  const isObj = electionOrYear && typeof electionOrYear === 'object';
+  const electionId = isObj ? electionOrYear.id : `gla-${electionOrYear}`;
+  const year = isObj ? electionOrYear.year : electionOrYear;
+  
   const color = londonPartyColor(m.party);
   const partyName = londonPartyName(m, year);
   const heading = m.candidate || partyName;
   const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
   const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
+
+  const partyId = m.party || m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const hasText = MANIFESTO_ARCHIVE?.has(`london/${electionId}/${partyId}`) ?? false;
+
+  const textLink = hasText
+    ? `<a href="/manifesto/london/${electionId}/${partyId}" class="manifesto-link">
+         <span class="manifesto-link-icon">📝</span>
+         <div class="manifesto-link-info"><div class="manifesto-link-title">Read Online</div><div class="manifesto-link-sub">Formatted text version</div></div>
+       </a>`
+    : '';
+
+  const thumbHref = hasText ? `/manifesto/london/${electionId}/${partyId}` : m.pdf;
+  const thumbTarget = hasText ? '' : ' target="_blank" rel="noopener"';
+  const thumbLabel = hasText
+    ? `Read ${heading} ${year} manifesto online`
+    : `Open the ${heading} manifesto PDF`;
+
   return `
     <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
-      <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${heading} manifesto PDF">
+      <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
         <img src="${m.cover}?v=${ASSETS_VERSION}" alt="${heading} manifesto cover"
           class="img-lazy" loading="lazy" decoding="async"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -102,8 +122,9 @@ function londonManifestoCard(m, year) {
         ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
         <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
           <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
         </a>
+        ${textLink}
       </div>
     </div>`;
 }
@@ -222,8 +243,9 @@ async function renderLondonElection(app, id) {
   const bodyLabel = LONDON_BODY_LABELS[election.body] || 'London';
   const winnerId = election.mayorWinner || election.control;
   const winner = (winnerId && PARTIES?.[winnerId]) ? PARTIES[winnerId] : {};
-  const color = winner.color || 'var(--gold)';
-  const dim = winner.dim || 'var(--gold-dim)';
+  const badge = typeof winnerBadgeStyle === 'function'
+    ? winnerBadgeStyle(winnerId, election.year)
+    : { dim: winner.dim || 'var(--gold-dim)', css: `--party-color:${winner.color || 'var(--gold)'};--party-dim:${winner.dim || 'var(--gold-dim)'}` };
   const winnerName = election.mayorWinnerName || election.winnerName || '';
 
   setPageMeta({
@@ -242,7 +264,7 @@ async function renderLondonElection(app, id) {
   const highlightItems = (election.highlights || []).map(h => `<div class="highlight-item"><div class="highlight-marker"></div><span>${h}</span></div>`).join('');
 
   const winnerBadge = winnerName
-    ? `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>${election.mayorWinner ? `${winnerName} — Mayor of London` : `${winner.shortName || winnerName} control`}</div>`
+    ? `<div class="election-winner-badge" style="${badge.css}"><div class="winner-dot"></div>${election.mayorWinner ? `${winnerName} — Mayor of London` : `${winner.shortName || winnerName} control`}</div>`
     : '';
 
   const manifestosSection = (election.manifestos || []).length
@@ -250,7 +272,7 @@ async function renderLondonElection(app, id) {
         <span class="section-label">Candidate Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">The principal manifesto published by each major party or mayoral candidate.</p>
-        <div class="manifesto-grid">${election.manifestos.map(m => londonManifestoCard(m, election.year)).join('')}</div>
+        <div class="manifesto-grid">${election.manifestos.map(m => londonManifestoCard(m, election)).join('')}</div>
       </div>`
     : '';
 
@@ -270,7 +292,7 @@ async function renderLondonElection(app, id) {
       { label: 'London Mayor & Assembly', href: '/devolved/london' },
       { label: election.displayYear },
     ])}
-    <section class="election-hero" style="--party-glow:${dim}">
+    <section class="election-hero" style="--party-glow:${badge.dim}">
       <div class="election-hero-bg"></div>
       <div class="election-hero-inner">
         <div>
@@ -287,8 +309,6 @@ async function renderLondonElection(app, id) {
     </section>
 
     <div class="election-body">
-      ${londonBookletBox(election.booklet)}
-
       <div class="election-grid">
         <div>
           ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary">${summaryParas}</div>` : ''}
@@ -309,6 +329,7 @@ async function renderLondonElection(app, id) {
         </div>
       </div>
 
+      ${londonBookletBox(election.booklet)}
       ${manifestosSection}
       ${sources}
     </div>

@@ -19,7 +19,8 @@ A set of tools for converting political party manifesto PDFs into clean, complet
 | `finalize_manifesto.py` | **Finalization wrapper** — copies working file to destination, verifies SHA-256 hash, and runs QA on the destination |
 | `spot_check.py` | **Spot checker** — extracts key snippets from both PDF and Markdown for quick side-by-side reading-order verification |
 | `log_conversion.py` | **Conversion metadata logger** — writes and reads `.conversion.json` sidecar records (extractor, coverage, QA counts, notes) |
-| `transcribe_pipeline.py` | **Human-gated orchestration layer** — page-ledger workflow for new transcriptions, retrospective audits, conservative repairs, and batch audit reports |
+| `transcribe_pipeline.py` | **Human-gated orchestration layer** — page-ledger workflow for new transcriptions, retrospective audits, conservative repairs, batch audit reports, and (`checklist` subcommand) bounded human-review checklists generated from a ledger |
+| `qa_audit_vision.py` | **Layer B vision-model audit** — sends a page image + its extracted text to a Claude vision model to classify structural discrepancies (missing/merged/misordered blocks); never asked to transcribe. Needs `ANTHROPIC_API_KEY`; supports `--dry-run`. See `TRANSCRIPTION_PIPELINE.md` Sec.4 |
 | `manifests/` | Per-PDF YAML sidecar files that declare per-page extraction mode, skip pages, and header/footer overrides — see `manifests/TEMPLATE.yaml` |
 | `scripts/` | Bespoke per-manifesto extraction scripts for PDFs too complex for the generic extractor |
 | `requirements.txt` | Python package dependencies |

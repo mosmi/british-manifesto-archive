@@ -538,7 +538,11 @@ function route() {
     renderOthers(app);
   } else if (path.startsWith('/manifesto/')) {
     const parts = path.split('/').filter(Boolean);
-    renderManifesto(app, parts[1], parts[2]);
+    if (parts.length >= 4) {
+      renderManifesto(app, parts[1] + '/' + parts[2], parts[3]);
+    } else {
+      renderManifesto(app, parts[1], parts[2]);
+    }
   } else if (path === '/elections') {
     renderElectionsHub(app);
   } else if (path === '/devolved') {
@@ -1439,7 +1443,7 @@ function buildNationHubCardHtml(id) {
     <strong>${nation.name}</strong>
     <span class="hub-nation-meta">${meta}</span>
     <p>${excerpt}</p>
-    <span class="hub-card-cta">View nation →</span>
+    <span class="hub-card-cta">${id === 'europe' ? 'View Europe' : 'View nation'} →</span>
   </a>`;
 }
 
@@ -2198,6 +2202,21 @@ async function renderParty(app, id) {
   const contestedLabel = contestedParts.join(' · ') || '0';
   const partyLede = partyLedeText(party.description);
 
+  const ukMembers = isAllianceParty && typeof getEuroAllianceUkMembers === 'function'
+    ? getEuroAllianceUkMembers(partyId)
+    : [];
+  const membersCard = ukMembers.length
+    ? `<div class="nation-parties-card party-hero-members">
+        <div class="section-label" style="margin-bottom:1rem">British member parties</div>
+        ${ukMembers.map(pid => nationPartyLinkHtml(pid)).join('')}
+        <a href="/devolved/euro" class="holyrood-other-link">European Parliament archive →</a>
+      </div>`
+    : '';
+  const heroAside = membersCard
+    || (electionsWon > 0
+      ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${kickerCol}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>`
+      : '');
+
   setPageMeta({
     title: party.shortName,
     description: buildPartyMetaDescription(party, contestedParts),
@@ -2208,7 +2227,7 @@ async function renderParty(app, id) {
     ${renderBreadcrumb(partyBreadcrumbItems(party))}
     <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
-      <div class="party-hero-inner">
+      <div class="party-hero-inner${membersCard ? ' party-hero-inner--with-aside' : ''}">
         <div>
           <div class="party-color-bar" style="background:${barCol}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
@@ -2219,7 +2238,7 @@ async function renderParty(app, id) {
             <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
           </dl>
         </div>
-        ${electionsWon > 0 ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${kickerCol}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>` : ''}
+        ${heroAside}
       </div>
     </section>
 
@@ -2986,22 +3005,40 @@ function setupManifestoReader(contentEl, paperEl, accent) {
   setActive(0);
 }
 
-function renderManifesto(app, electionId, partyId) {
-  const election = getElection(electionId);
-  const party    = PARTIES[partyId];
+async function renderManifesto(app, electionId, partyId) {
+  let election;
+  const isDevolved = electionId.includes('/');
+  
+  if (isDevolved) {
+    try {
+      election = await fetchTyped(`/data/devolved/${electionId}.json`, 'json');
+    } catch {
+      renderNotFound(app);
+      return;
+    }
+  } else {
+    election = getElection(electionId);
+  }
+  
+  const party = PARTIES[partyId];
   if (!election || !party) { renderNotFound(app); return; }
+
   const displayName = (election.manifestoPartyLabels && election.manifestoPartyLabels[partyId])
     || getPartyName(partyId, election.year);
   const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
   const accent = typeof partyAccentDerivedForYear === 'function'
     ? partyAccentDerivedForYear(partyId, election.year, theme)
     : { raw: party.color, surface: party.color, kicker: party.color };
-  const pdfPath = `/manifestos/${electionId}/${partyId}/manifesto.pdf`;
-  const hasPdf = hasManifestoPdf(electionId, partyId);
+
+  const mEntry = election.manifestos?.find(m => m.party === partyId || m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '') === partyId);
+  const pdfPath = mEntry ? mEntry.pdf : `/manifestos/${electionId}/${partyId}/manifesto.pdf`;
+  const hasPdf = isDevolved ? Boolean(pdfPath) : hasManifestoPdf(electionId, partyId);
   const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
   const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
-  const coverPath = `/manifestos/${electionId}/${partyId}/cover.png?v=${ASSETS_VERSION}`;
-  const coverFallback = `/manifestos/${electionId}/${partyId}/cover.jpg?v=${ASSETS_VERSION}`;
+  
+  const coverPath = mEntry ? `${mEntry.cover}?v=${ASSETS_VERSION}` : `/manifestos/${electionId}/${partyId}/cover.png?v=${ASSETS_VERSION}`;
+  const coverFallback = mEntry ? `${mEntry.cover}?v=${ASSETS_VERSION}` : `/manifestos/${electionId}/${partyId}/cover.jpg?v=${ASSETS_VERSION}`;
+  
   const coverThumbOpen = hasPdf
     ? `<a href="${pdfPath}" class="manifesto-viewer-cover-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">`
     : `<div class="manifesto-viewer-cover-thumb">`;
@@ -3025,9 +3062,17 @@ function renderManifesto(app, electionId, partyId) {
     ? barColour(getPartyColor(partyId, election.year), theme)
     : accent.surface;
 
+  const electionUrl = isDevolved ? `/devolved/${electionId}` : `/election/${election.id}`;
+  const electionLabel = isDevolved
+    ? `${election.displayYear} ${DEVOLVED_PORTALS?.[electionId.split('/')[0]]?.label || 'Devolved'} Election`
+    : `${election.displayYear} Election`;
+  const kickerLabel = isDevolved
+    ? `${DEVOLVED_PORTALS?.[electionId.split('/')[0]]?.label?.toUpperCase() || 'DEVOLVED'} ELECTION ${election.displayYear}`
+    : `GENERAL ELECTION ${election.displayYear}`;
+
   setPageMeta({
     title: displayName,
-    description: `Read and search the full text of the ${displayName} manifesto from the ${election.displayYear} UK general election.`,
+    description: `Read and search the full text of the ${displayName} manifesto from the ${election.displayYear} ${isDevolved ? 'devolved' : 'general'} election.`,
     path: `/manifesto/${electionId}/${partyId}`,
   });
 
@@ -3037,7 +3082,7 @@ function renderManifesto(app, electionId, partyId) {
         <div class="manifesto-viewer-header-inner">
           <nav class="manifesto-viewer-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a><span aria-hidden="true">›</span>
-            <a href="/election/${election.id}">${election.displayYear} Election</a><span aria-hidden="true">›</span>
+            <a href="${electionUrl}">${electionLabel}</a><span aria-hidden="true">›</span>
             <a href="/party/${partyId}">${displayName}</a><span aria-hidden="true">›</span>
             <span class="bc-current">Manifesto</span>
           </nav>
@@ -3045,7 +3090,7 @@ function renderManifesto(app, electionId, partyId) {
             <div>
               <div class="manifesto-viewer-kicker">
                 <div class="manifesto-viewer-kicker-rule" style="background:${barSurface}"></div>
-                <div class="manifesto-viewer-kicker-text" style="color:${accent.kicker}">GENERAL ELECTION ${election.displayYear}</div>
+                <div class="manifesto-viewer-kicker-text" style="color:${accent.kicker}">${kickerLabel}</div>
               </div>
               <h1 class="manifesto-viewer-title">${displayName} Manifesto ${election.displayYear}</h1>
               <div class="manifesto-viewer-meta-row" id="manifesto-header-meta">

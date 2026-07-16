@@ -27,6 +27,7 @@ import difflib
 import hashlib
 import json
 import os
+import random
 import re
 import shutil
 import subprocess
@@ -34,6 +35,7 @@ import sys
 from collections import Counter
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -49,6 +51,16 @@ except ImportError:
         import pdfplumber  # type: ignore
     except ImportError:
         pdfplumber = None
+
+sys.path.insert(0, str(TOOLKIT_DIR))
+try:
+    from extract_manifesto import post_process as extract_manifesto_post_process  # type: ignore
+except ImportError:
+    extract_manifesto_post_process = None
+
+# Layout classes classify_page() assigns to pages with no usable text layer.
+# These are the pages Tier 2 OCR (see run_marker_ocr) is responsible for.
+MARKER_OCR_LAYOUT_CLASSES = {"image-only", "sparse"}
 
 
 # -----------------------------------------------------------------------------
@@ -424,14 +436,126 @@ def render_pdf_pages(pdf: Path, image_dir: Path, dpi: int = 144) -> list[Path]:
     return sorted(image_dir.glob("page-*.png"))
 
 
-def build_page_records(pdf: Path, work_dir: Path, render_pages: bool = True) -> list[PageRecord]:
+class _HtmlTextExtractor(HTMLParser):
+    """Collects text content from a Marker block's HTML, dropping all tags."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self._parts: list[str] = []
+
+    def handle_data(self, data: str) -> None:
+        self._parts.append(data)
+
+    def text(self) -> str:
+        return "".join(self._parts)
+
+
+def marker_block_to_text(block: dict[str, Any]) -> str:
+    """
+    Render one Marker `chunks`-format block to plain/lightly-marked-up text.
+
+    SectionHeader blocks keep their heading level as leading '#'s so the
+    result stays consistent with the rest of the ledger's Markdown-ish
+    candidate text; every other block type is flattened to plain text
+    (image tags carry no text content, so they disappear on their own).
+    """
+    html_str = block.get("html", "") or ""
+    extractor = _HtmlTextExtractor()
+    extractor.feed(html_str)
+    extractor.close()
+    text = extractor.text().strip()
+    if not text:
+        return ""
+    # Marker occasionally leaks a literal backslash-n escape sequence into
+    # extracted text instead of a real line break (observed once, on a
+    # mid-word line wrap) - never legitimate manifesto content.
+    text = text.replace("\\n", " ")
+    if block.get("block_type") == "SectionHeader":
+        level_match = re.search(r"<h([1-6])", html_str, re.I)
+        level = int(level_match.group(1)) if level_match else 2
+        return f"{'#' * min(level, 6)} {text}"
+    return text
+
+
+def marker_page_range_arg(page_indices: list[int]) -> str:
+    """Format 0-indexed page numbers as Marker's --page_range spec, e.g. [2,3,4,9] -> '2-4,9'."""
+    indices = sorted(set(page_indices))
+    if not indices:
+        return ""
+    ranges: list[tuple[int, int]] = []
+    start = prev = indices[0]
+    for idx in indices[1:]:
+        if idx == prev + 1:
+            prev = idx
+            continue
+        ranges.append((start, prev))
+        start = prev = idx
+    ranges.append((start, prev))
+    return ",".join(f"{a}" if a == b else f"{a}-{b}" for a, b in ranges)
+
+
+def run_marker_ocr(pdf: Path, page_indices: list[int], work_dir: Path, timeout: int = 3600) -> dict[int, str]:
+    """
+    Run Marker once over the given 0-indexed pages; return {page_index: text}.
+
+    Marker is Tier 2 OCR for pages classify_page() marks image-only/sparse
+    (see TRANSCRIPTION_PIPELINE.md Sec.2/Sec.9 - chosen over Docling and Tesseract
+    after a benchmark against a real scanned manifesto). It is comparatively
+    slow (tens of seconds per page including model load), so it is invoked
+    once per document for exactly the pages that need it, never per page.
+    Returns {} on any failure (missing binary, non-zero exit, unparseable
+    output) so callers can fall back to existing behaviour untouched.
+    """
+    if not page_indices:
+        return {}
+    marker_bin = shutil.which("marker_single")
+    if marker_bin is None:
+        return {}
+
+    ocr_dir = work_dir / "marker_ocr"
+    ocr_dir.mkdir(parents=True, exist_ok=True)
+    cmd = [
+        marker_bin, str(pdf),
+        "--page_range", marker_page_range_arg(page_indices),
+        "--output_format", "chunks",
+        "--output_dir", str(ocr_dir),
+        "--disable_image_extraction",
+    ]
+    code, _out, _err = run_cmd(cmd, timeout=timeout)
+    if code != 0:
+        return {}
+
+    chunks_path = next(
+        (p for p in ocr_dir.rglob("*.json") if not p.name.endswith("_meta.json")),
+        None,
+    )
+    if chunks_path is None:
+        return {}
+    try:
+        data = json.loads(chunks_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    by_page: dict[int, list[str]] = {}
+    for block in data.get("blocks", []):
+        m = re.match(r"^/page/(\d+)/", str(block.get("id", "")))
+        if not m:
+            continue
+        text = marker_block_to_text(block)
+        if text:
+            by_page.setdefault(int(m.group(1)), []).append(text)
+
+    return {idx: "\n\n".join(parts) for idx, parts in by_page.items()}
+
+
+def build_page_records(pdf: Path, work_dir: Path, render_pages: bool = True) -> tuple[list[PageRecord], dict[str, Any]]:
     candidate_dir = work_dir / "pages"
     candidate_dir.mkdir(parents=True, exist_ok=True)
     images = render_pdf_pages(pdf, work_dir / "images") if render_pages else []
     image_by_index = {i: p for i, p in enumerate(images)}
 
     if pdfplumber is None:
-        return [PageRecord(
+        blocked = PageRecord(
             page_index=0,
             width=None,
             height=None,
@@ -444,78 +568,129 @@ def build_page_records(pdf: Path, work_dir: Path, render_pages: bool = True) -> 
             confidence=0,
             status="blocked",
             issues=[{"code": "DEPENDENCY", "detail": "pdfplumber is not installed"}],
-        )]
+        )
+        return [blocked], {"engine": None, "status": "not-needed", "pages_attempted": 0, "pages_succeeded": 0}
 
-    records: list[PageRecord] = []
+    # Phase 1: classify every page cheaply (pdfplumber word geometry only) so
+    # we know up front which pages need Tier 2 OCR, and can send them to
+    # Marker in a single invocation instead of once per page.
+    page_meta: list[dict[str, Any]] = []
     with pdfplumber.open(str(pdf)) as doc:
         for idx, page in enumerate(doc.pages):
             try:
                 words = page.extract_words(keep_blank_chars=False, y_tolerance=3, x_tolerance=3)
             except Exception:
                 words = []
-
             layout, issues = classify_page(page, words)
-            candidates: list[Candidate] = []
-            raw_texts: dict[str, str] = {}
+            page_meta.append({
+                "index": idx,
+                "words": words,
+                "layout": layout,
+                "issues": issues,
+                "width": float(page.width),
+                "height": float(page.height),
+                "rotation": int(page.rotation or 0),
+                "pdfplumber_text": pdfplumber_page_text(page, layout=False),
+                "pdfplumber_layout_text": pdfplumber_page_text(page, layout=True),
+            })
 
-            for method, flag in [
-                ("pdftotext", None),
-                ("pdftotext-layout", "-layout"),
-                ("pdftotext-raw", "-raw"),
-            ]:
-                ok, text, err = pdftotext_page(pdf, idx, flag)
-                if ok:
-                    out = candidate_dir / f"page-{idx:03d}.{method}.txt"
-                    out.write_text(text, encoding="utf-8")
-                    raw_texts[method] = text
-                    candidates.append(Candidate(method, True, word_count(text), artifact_score(text), rel(out)))
-                else:
-                    candidates.append(Candidate(method, False, error=err[:200]))
+    ocr_indices = [m["index"] for m in page_meta if m["layout"] in MARKER_OCR_LAYOUT_CLASSES]
+    marker_bin_available = shutil.which("marker_single") is not None
+    marker_texts: dict[int, str] = {}
+    if ocr_indices and marker_bin_available:
+        marker_texts = run_marker_ocr(pdf, ocr_indices, work_dir)
+    ocr_summary = {
+        "engine": "marker" if ocr_indices else None,
+        "status": (
+            "not-needed" if not ocr_indices
+            else "unavailable" if not marker_bin_available
+            else "ran" if marker_texts
+            else "failed"
+        ),
+        "pages_attempted": len(ocr_indices),
+        "pages_succeeded": len(marker_texts),
+    }
 
-            for method, layout_flag in [("pdfplumber", False), ("pdfplumber-layout", True)]:
-                text = pdfplumber_page_text(page, layout=layout_flag)
+    # Phase 2: build local-extraction candidates per page as before, adding a
+    # marker-ocr candidate (and preferring it) for pages Tier 2 covered.
+    records: list[PageRecord] = []
+    for meta in page_meta:
+        idx = meta["index"]
+        words = meta["words"]
+        layout = meta["layout"]
+        issues = list(meta["issues"])
+        candidates: list[Candidate] = []
+
+        for method, flag in [
+            ("pdftotext", None),
+            ("pdftotext-layout", "-layout"),
+            ("pdftotext-raw", "-raw"),
+        ]:
+            ok, text, err = pdftotext_page(pdf, idx, flag)
+            if ok:
                 out = candidate_dir / f"page-{idx:03d}.{method}.txt"
                 out.write_text(text, encoding="utf-8")
-                raw_texts[method] = text
                 candidates.append(Candidate(method, True, word_count(text), artifact_score(text), rel(out)))
-
-            available = [c for c in candidates if c.available and c.word_count > 0]
-            selected = min(available, key=lambda c: (c.artifact_score, abs(c.word_count - len(words)))) if available else None
-            confidence = 0.0
-            status = "accepted"
-            if selected:
-                confidence = max(0.0, min(1.0, 1.0 - selected.artifact_score / 50.0))
             else:
-                status = "blocked"
-                issues.append({"code": "NO_CANDIDATE", "detail": "No local text candidate produced words"})
+                candidates.append(Candidate(method, False, error=err[:200]))
 
-            if layout in {"three-column", "spread-or-landscape", "sidebar-or-table", "image-only", "blocked"}:
+        for method, key in [("pdfplumber", "pdfplumber_text"), ("pdfplumber-layout", "pdfplumber_layout_text")]:
+            text = meta[key]
+            out = candidate_dir / f"page-{idx:03d}.{method}.txt"
+            out.write_text(text, encoding="utf-8")
+            candidates.append(Candidate(method, True, word_count(text), artifact_score(text), rel(out)))
+
+        marker_text = marker_texts.get(idx)
+        if marker_text:
+            cleaned = extract_manifesto_post_process(marker_text) if extract_manifesto_post_process else marker_text
+            out = candidate_dir / f"page-{idx:03d}.marker-ocr.txt"
+            out.write_text(cleaned, encoding="utf-8")
+            candidates.append(Candidate("marker-ocr", True, word_count(cleaned), artifact_score(cleaned), rel(out)))
+
+        available = [c for c in candidates if c.available and c.word_count > 0]
+        marker_candidate = next((c for c in available if c.method == "marker-ocr"), None)
+        if layout in MARKER_OCR_LAYOUT_CLASSES and marker_candidate:
+            selected = marker_candidate
+        elif available:
+            selected = min(available, key=lambda c: (c.artifact_score, abs(c.word_count - len(words))))
+        else:
+            selected = None
+
+        confidence = 0.0
+        status = "accepted"
+        if selected:
+            confidence = max(0.0, min(1.0, 1.0 - selected.artifact_score / 50.0))
+        else:
+            status = "blocked"
+            issues.append({"code": "NO_CANDIDATE", "detail": "No local text candidate produced words"})
+
+        if layout in {"three-column", "spread-or-landscape", "sidebar-or-table", "image-only", "blocked"}:
+            status = "needs-human"
+        if selected and available:
+            counts = [c.word_count for c in available]
+            if max(counts) > 0 and min(counts) / max(counts) < 0.70:
                 status = "needs-human"
-            if selected and available:
-                counts = [c.word_count for c in available]
-                if max(counts) > 0 and min(counts) / max(counts) < 0.70:
-                    status = "needs-human"
-                    issues.append({"code": "CANDIDATE_DISAGREEMENT", "detail": "Candidate word counts differ by more than 30%"})
-            if selected and selected.artifact_score >= 8:
-                status = "needs-human"
-                issues.append({"code": "ARTIFACT_SCORE", "detail": f"Selected candidate artifact score is {selected.artifact_score}"})
+                issues.append({"code": "CANDIDATE_DISAGREEMENT", "detail": "Candidate word counts differ by more than 30%"})
+        if selected and selected.artifact_score >= 8:
+            status = "needs-human"
+            issues.append({"code": "ARTIFACT_SCORE", "detail": f"Selected candidate artifact score is {selected.artifact_score}"})
 
-            records.append(PageRecord(
-                page_index=idx,
-                width=float(page.width),
-                height=float(page.height),
-                rotation=int(page.rotation or 0),
-                text_layer_words=len(words),
-                layout_class=layout,
-                image_path=rel(image_by_index[idx]) if idx in image_by_index else None,
-                candidates=candidates,
-                selected_candidate=selected.method if selected else None,
-                confidence=round(confidence, 3),
-                status=status,
-                issues=issues,
-            ))
+        records.append(PageRecord(
+            page_index=idx,
+            width=meta["width"],
+            height=meta["height"],
+            rotation=meta["rotation"],
+            text_layer_words=len(words),
+            layout_class=layout,
+            image_path=rel(image_by_index[idx]) if idx in image_by_index else None,
+            candidates=candidates,
+            selected_candidate=selected.method if selected else None,
+            confidence=round(confidence, 3),
+            status=status,
+            issues=issues,
+        ))
 
-    return records
+    return records, ocr_summary
 
 
 def assemble_new_draft(pdf: Path, page_records: list[PageRecord], work_dir: Path) -> Path:
@@ -753,7 +928,7 @@ def audit_markdown(
     work_dir = work_dir_for(md, work_root)
     work_dir.mkdir(parents=True, exist_ok=True)
 
-    page_records = build_page_records(pdf, work_dir, render_pages=render_pages)
+    page_records, ocr_summary = build_page_records(pdf, work_dir, render_pages=render_pages)
     md_text = read_text(md)
     pdf_text = pdftotext_document(pdf)
     adjusted_pdf_text = pdf_text
@@ -842,11 +1017,7 @@ def audit_markdown(
         "qa_issue_count": len(qa_issues),
         "issues": issues,
         "pages": [asdict(p) for p in page_records],
-        "cloud_ocr": {
-            "status": "not-configured",
-            "preferred_order": ["mistral-ocr-4", "qwen-ocr"],
-            "note": "Cloud OCR is intentionally a fallback for risky pages; wire API clients only after benchmark approval.",
-        },
+        "cloud_ocr": ocr_summary,
     }
 
     write_json(work_dir / "ledger.json", ledger)
@@ -901,7 +1072,7 @@ def new_transcription(pdf: Path, work_root: Path = DEFAULT_WORK_ROOT, render_pag
         raise FileNotFoundError(f"PDF not found: {pdf}")
     work_dir = work_dir_for(pdf, work_root)
     work_dir.mkdir(parents=True, exist_ok=True)
-    page_records = build_page_records(pdf, work_dir, render_pages=render_pages)
+    page_records, ocr_summary = build_page_records(pdf, work_dir, render_pages=render_pages)
     draft = assemble_new_draft(pdf, page_records, work_dir)
     ledger = {
         "schema_version": 1,
@@ -913,10 +1084,7 @@ def new_transcription(pdf: Path, work_root: Path = DEFAULT_WORK_ROOT, render_pag
         "work_dir": rel(work_dir),
         "draft": rel(draft),
         "pages": [asdict(p) for p in page_records],
-        "cloud_ocr": {
-            "status": "not-configured",
-            "preferred_order": ["mistral-ocr-4", "qwen-ocr"],
-        },
+        "cloud_ocr": ocr_summary,
     }
     write_json(work_dir / "ledger.json", ledger)
     return ledger
@@ -1073,10 +1241,108 @@ def batch_audit_text(
     return report
 
 
+def generate_checklist(
+    ledger_path: Path,
+    sample_fraction: float = 0.10,
+    seed: int = 0,
+) -> dict[str, Any]:
+    """
+    Build a bounded human-review checklist from an existing per-page ledger.
+
+    Per TRANSCRIPTION_PIPELINE.md Sec.4 Layer C: first page, last page, every
+    page already flagged (status needs-human/blocked), plus a random ~10%
+    sample of the rest. Fast and finite rather than "review everything" or
+    "review nothing." Sampling is seeded so re-running against an unchanged
+    ledger reproduces the same checklist.
+    """
+    ledger_path = ledger_path.resolve()
+    ledger = json.loads(read_text(ledger_path))
+    pages = ledger.get("pages", [])
+    if not pages:
+        raise ValueError(f"Ledger at {ledger_path} has no 'pages' entries to checklist.")
+
+    pages_sorted = sorted(pages, key=lambda p: p["page_index"])
+    first_idx = pages_sorted[0]["page_index"]
+    last_idx = pages_sorted[-1]["page_index"]
+
+    flagged_idx = {
+        p["page_index"] for p in pages_sorted
+        if p.get("status") in {"needs-human", "blocked"}
+    }
+
+    remaining = [
+        p["page_index"] for p in pages_sorted
+        if p["page_index"] not in flagged_idx and p["page_index"] not in {first_idx, last_idx}
+    ]
+    rng = random.Random(seed)
+    sample_size = min(len(remaining), max(0, round(len(pages_sorted) * sample_fraction)))
+    sample_idx = set(rng.sample(remaining, sample_size)) if sample_size else set()
+
+    entries = []
+    for p in pages_sorted:
+        idx = p["page_index"]
+        reasons = []
+        if idx == first_idx:
+            reasons.append("first-page")
+        if idx == last_idx:
+            reasons.append("last-page")
+        if idx in flagged_idx:
+            codes = sorted({i.get("code", "?") for i in p.get("issues", [])})
+            reasons.append(f"flagged:{','.join(codes)}" if codes else f"flagged:{p.get('status')}")
+        if idx in sample_idx:
+            reasons.append("sample")
+        if not reasons:
+            continue
+        entries.append({
+            "page_index": idx,
+            "reasons": reasons,
+            "layout_class": p.get("layout_class"),
+            "selected_candidate": p.get("selected_candidate"),
+            "status": p.get("status"),
+            "image_path": p.get("image_path"),
+        })
+
+    return {
+        "schema_version": 1,
+        "mode": "checklist",
+        "created_at": now_iso(),
+        "source_ledger": rel(ledger_path),
+        "total_pages": len(pages_sorted),
+        "flagged_count": len(flagged_idx),
+        "sample_count": len(sample_idx),
+        "checklist_count": len(entries),
+        "sample_seed": seed,
+        "sample_fraction": sample_fraction,
+        "entries": entries,
+    }
+
+
+def render_checklist_markdown(checklist: dict[str, Any]) -> str:
+    lines = [
+        "# Review checklist",
+        "",
+        f"Source ledger: `{checklist['source_ledger']}`",
+        f"Total pages: {checklist['total_pages']}  |  "
+        f"Flagged: {checklist['flagged_count']}  |  "
+        f"Random sample: {checklist['sample_count']}  |  "
+        f"Checklist size: {checklist['checklist_count']}",
+        "",
+    ]
+    for entry in checklist["entries"]:
+        reasons = ", ".join(entry["reasons"])
+        image = f" — image: `{entry['image_path']}`" if entry.get("image_path") else ""
+        lines.append(
+            f"- [ ] Page {entry['page_index']} ({reasons}) — "
+            f"layout: {entry['layout_class']}, selected: {entry['selected_candidate']}{image}"
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
 def print_summary(result: dict[str, Any]) -> None:
     print(json.dumps({
         k: result.get(k)
-        for k in ("mode", "source_type", "status", "markdown_path", "source_pdf", "source_text", "draft", "reviewed_draft", "diff", "work_dir", "word_counts", "counts", "report_path")
+        for k in ("mode", "source_type", "status", "markdown_path", "source_pdf", "source_text", "draft", "reviewed_draft", "diff", "work_dir", "word_counts", "counts", "report_path", "checklist_json", "checklist_md", "checklist_count", "flagged_count", "sample_count")
         if k in result
     }, ensure_ascii=False, indent=2))
 
@@ -1112,6 +1378,11 @@ def parse_args() -> argparse.Namespace:
     p_batch_text.add_argument("--party", required=True, help="Party slug used in source filenames and manifestos/<year>/<party>/ paths, e.g. labour.")
     p_batch_text.add_argument("--limit", type=int, help="Maximum source files to audit.")
     p_batch_text.add_argument("--no-sidecars", action="store_true", help="Do not write <manifesto>.audit.json sidecars next to Markdown files.")
+
+    p_checklist = sub.add_parser("checklist", help="Generate a bounded human-review checklist from an existing ledger.json (see TRANSCRIPTION_PIPELINE.md Sec.4 Layer C).")
+    p_checklist.add_argument("ledger", help="Path to a ledger.json produced by 'new' or 'audit'.")
+    p_checklist.add_argument("--sample-fraction", type=float, default=0.10, help="Fraction of non-flagged pages to randomly sample (default 0.10).")
+    p_checklist.add_argument("--seed", type=int, default=0, help="Random seed for the sample, for reproducible checklists (default 0).")
 
     return parser.parse_args()
 
@@ -1162,6 +1433,15 @@ def main() -> int:
                 limit=args.limit,
                 write_sidecars=not args.no_sidecars,
             )
+        elif args.mode == "checklist":
+            ledger_path = Path(args.ledger)
+            result = generate_checklist(ledger_path, sample_fraction=args.sample_fraction, seed=args.seed)
+            checklist_json = ledger_path.with_name("checklist.json")
+            checklist_md = ledger_path.with_name("checklist.md")
+            write_json(checklist_json, result)
+            checklist_md.write_text(render_checklist_markdown(result), encoding="utf-8")
+            result["checklist_json"] = rel(checklist_json)
+            result["checklist_md"] = rel(checklist_md)
         else:
             raise ValueError(args.mode)
     except Exception as e:

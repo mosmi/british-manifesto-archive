@@ -44,6 +44,11 @@ def lastmod_for_path(path: str) -> str:
         parts = path.strip("/").split("/")
         if len(parts) == 3:
             folder = ROOT / "manifestos" / parts[1] / parts[2]
+        elif len(parts) == 4:
+            folder = ROOT / "manifestos" / parts[1] / parts[2] / parts[3]
+        else:
+            folder = None
+        if folder:
             for candidate in (folder / "manifesto.md", folder / "manifesto.pdf"):
                 if candidate.is_file():
                     return iso_date(candidate)

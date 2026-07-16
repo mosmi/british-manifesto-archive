@@ -129,8 +129,9 @@ async function renderNIElection(app, id) {
 
   const winnerId = election.control;
   const winner = (winnerId && PARTIES?.[winnerId]) ? PARTIES[winnerId] : {};
-  const color = winner.color || 'var(--gold)';
-  const dim = winner.dim || 'var(--gold-dim)';
+  const badge = typeof winnerBadgeStyle === 'function'
+    ? winnerBadgeStyle(winnerId, election.year)
+    : { dim: winner.dim || 'var(--gold-dim)', css: `--party-color:${winner.color || 'var(--gold)'};--party-dim:${winner.dim || 'var(--gold-dim)'}` };
   const fm = election.firstMinister || '';
   const dfm = election.deputyFirstMinister || '';
 
@@ -150,11 +151,11 @@ async function renderNIElection(app, id) {
 
   let winnerBadge = '';
   if (fm && dfm) {
-    winnerBadge = `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>${fm} (First Minister) & ${dfm} (deputy First Minister)</div>`;
+    winnerBadge = `<div class="election-winner-badge" style="${badge.css}"><div class="winner-dot"></div>${fm} (First Minister) & ${dfm} (deputy First Minister)</div>`;
   } else if (fm) {
-    winnerBadge = `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>${fm} — First Minister</div>`;
+    winnerBadge = `<div class="election-winner-badge" style="${badge.css}"><div class="winner-dot"></div>${fm} — First Minister</div>`;
   } else if (winnerId && PARTIES?.[winnerId]) {
-    winnerBadge = `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>Largest party: ${PARTIES[winnerId].shortName}</div>`;
+    winnerBadge = `<div class="election-winner-badge" style="${badge.css}"><div class="winner-dot"></div>Largest party: ${PARTIES[winnerId].shortName}</div>`;
   }
 
   const turnoutLine = typeof election.turnout === 'number'
@@ -184,7 +185,7 @@ async function renderNIElection(app, id) {
       { label: 'Northern Ireland Assembly', href: '/devolved/stormont' },
       { label: election.displayYear },
     ])}
-    <section class="election-hero" style="--party-glow:${dim}">
+    <section class="election-hero" style="--party-glow:${badge.dim}">
       <div class="election-hero-bg"></div>
       <div class="election-hero-inner">
         <div>

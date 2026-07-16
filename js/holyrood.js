@@ -183,8 +183,9 @@ async function renderHolyroodElection(app, id) {
 
   const winnerId = election.control;
   const winner = (winnerId && PARTIES?.[winnerId]) ? PARTIES[winnerId] : {};
-  const color = winner.color || 'var(--gold)';
-  const dim = winner.dim || 'var(--gold-dim)';
+  const badge = typeof winnerBadgeStyle === 'function'
+    ? winnerBadgeStyle(winnerId, election.year)
+    : { dim: winner.dim || 'var(--gold-dim)', css: `--party-color:${winner.color || 'var(--gold)'};--party-dim:${winner.dim || 'var(--gold-dim)'}` };
   const fm = election.firstMinister || '';
 
   setPageMeta({ title: `${election.displayYear} Scottish Parliament election`, description: devolvedElectionDescription('holyrood', election.displayYear, DEVOLVED_PORTALS?.holyrood), path: `/devolved/holyrood/${id}` });
@@ -199,7 +200,7 @@ async function renderHolyroodElection(app, id) {
 
   const majorityNote = election.majority ? ' — majority government' : election.parliament?.results?.find(r => r.party === winnerId)?.seats >= (election.parliament?.majorityThreshold || 65) - 1 ? '' : ' — minority government';
   const winnerBadge = fm
-    ? `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}"><div class="winner-dot"></div>${fm} — First Minister${majorityNote}</div>`
+    ? `<div class="election-winner-badge" style="${badge.css}"><div class="winner-dot"></div>${fm} — First Minister${majorityNote}</div>`
     : '';
 
   const turnoutLine = typeof election.turnout === 'number'
@@ -229,7 +230,7 @@ async function renderHolyroodElection(app, id) {
       { label: 'Scottish Parliament', href: '/devolved/holyrood' },
       { label: election.displayYear },
     ])}
-    <section class="election-hero" style="--party-glow:${dim}">
+    <section class="election-hero" style="--party-glow:${badge.dim}">
       <div class="election-hero-bg"></div>
       <div class="election-hero-inner">
         <div>

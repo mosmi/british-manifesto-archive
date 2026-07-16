@@ -860,7 +860,8 @@ h1, h2, h3, h4 {
 .winner-dot {
   width: 9px; height: 9px;
   border-radius: 50%;
-  background: currentColor;
+  background: var(--party-surface, currentColor);
+  flex-shrink: 0;
 }
 
 .election-nav-btns {
@@ -994,6 +995,30 @@ h1, h2, h3, h4 {
   border-radius: 6px;
   overflow: hidden;
 }
+.parliament-chart {
+  cursor: default;
+}
+.parliament-seat {
+  cursor: pointer;
+  transition: opacity 0.18s ease;
+}
+.parliament-hit-wedge {
+  cursor: pointer;
+  pointer-events: all;
+}
+.parliament-hover-label {
+  transition: opacity 0.18s ease;
+}
+.parliament-hover-name {
+  fill: var(--cream);
+  paint-order: stroke fill;
+  stroke: rgba(9, 14, 28, 0.72);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.parliament-speaker-line {
+  transition: opacity 0.18s ease;
+}
 .parliament-legend {
   margin-top: 1rem;
   display: flex;
@@ -1006,6 +1031,25 @@ h1, h2, h3, h4 {
   gap: 0.45rem;
   font-size: 0.78rem;
   color: var(--text-muted);
+  transition: opacity 0.18s ease, color 0.18s ease;
+}
+.legend-item-interactive {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.15rem 0.25rem;
+  margin: -0.15rem -0.25rem;
+}
+.legend-item-interactive:hover,
+.legend-item-interactive:focus-visible,
+.legend-item.is-highlighted {
+  color: var(--cream);
+  outline: none;
+}
+.legend-item-interactive:focus-visible {
+  box-shadow: 0 0 0 2px var(--gold-rule);
+}
+.legend-item.is-dimmed {
+  opacity: 0.35;
 }
 .legend-dot {
   width: 8px; height: 8px;
@@ -1015,6 +1059,17 @@ h1, h2, h3, h4 {
 .legend-seats {
   font-size: 0.72rem;
   color: var(--text-faint);
+}
+.legend-party-link {
+  color: inherit;
+  text-decoration: none;
+}
+.legend-party-link:hover,
+.legend-party-link:focus-visible {
+  color: var(--cream);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 168, 76, 0.55);
+  outline: none;
 }
 
 /* ── Results table ── */
@@ -1375,6 +1430,16 @@ h1, h2, h3, h4 {
   grid-template-columns: 1fr auto;
   gap: 2rem;
   align-items: center;
+}
+.party-hero-inner--with-aside {
+  grid-template-columns: 1fr min(280px, 34%);
+  align-items: start;
+  gap: 2.5rem;
+}
+.party-hero-members {
+  position: static;
+  width: 100%;
+  min-width: 0;
 }
 .party-color-bar {
   width: 56px; height: 5px;
@@ -3952,11 +4017,11 @@ h1, h2, h3, h4 {
   grid-template-columns: 168px 1fr;
   gap: 2rem;
   align-items: center;
-  background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(17,24,39,0.4));
+  background: linear-gradient(135deg, rgba(201,168,76,0.10), rgba(201,168,76,0.03) 48%, rgba(17,24,39,0.35));
   border: 1px solid var(--gold-rule);
   border-radius: 10px;
   padding: 1.75rem 2rem;
-  margin-bottom: 3rem;
+  margin: 2.5rem 0 3rem;
 }
 .london-booklet-cover {
   display: block;
@@ -4573,6 +4638,21 @@ h1, h2, h3, h4 {
 [data-theme="light"] .london-timeline-role {
   color: var(--ink-muted);
 }
+[data-theme="light"] .london-booklet {
+  background:
+    linear-gradient(135deg, rgba(138, 109, 44, 0.10), rgba(138, 109, 44, 0.03) 42%, #fffdf8 100%);
+  border-color: var(--gold-rule);
+  box-shadow: 0 2px 14px rgba(20, 32, 58, 0.06);
+}
+[data-theme="light"] .london-booklet-body h2 {
+  color: var(--ink);
+}
+[data-theme="light"] .london-booklet-cover {
+  box-shadow: 0 8px 22px rgba(20, 32, 58, 0.12);
+}
+[data-theme="light"] .london-booklet-btn {
+  color: #fffdf8;
+}
 [data-theme="light"] .video-placeholder {
   border-bottom: 1px solid var(--hairline);
 }
@@ -4590,9 +4670,26 @@ h1, h2, h3, h4 {
 [data-theme="light"] .home-chart-legend {
   gap: 8px 22px;
 }
+[data-theme="light"] .parliament-hover-name {
+  fill: var(--ink);
+  stroke: rgba(255, 255, 255, 0.9);
+}
 [data-theme="light"] .home-chart-legend .legend-item {
   font-size: 0.84rem;
   color: rgba(20, 32, 58, 0.72);
+}
+[data-theme="light"] .home-chart-legend .legend-item-interactive:hover,
+[data-theme="light"] .home-chart-legend .legend-item-interactive:focus-visible,
+[data-theme="light"] .home-chart-legend .legend-item.is-highlighted,
+[data-theme="light"] .legend-item-interactive:hover,
+[data-theme="light"] .legend-item-interactive:focus-visible,
+[data-theme="light"] .legend-item.is-highlighted {
+  color: var(--ink);
+}
+[data-theme="light"] .legend-party-link:hover,
+[data-theme="light"] .legend-party-link:focus-visible {
+  color: var(--ink);
+  text-decoration-color: rgba(138, 109, 44, 0.55);
 }
 [data-theme="light"] .home-chart-legend .legend-dot {
   width: 9px;
@@ -4727,9 +4824,7 @@ h1, h2, h3, h4 {
   max-width: calc(100% - 110px);
 }
 .nation-card .nation-mp,
-.hub-nation-card .hub-nation-meta,
-.hub-nation-card p,
-.hub-nation-card .hub-card-cta {
+.hub-nation-card .hub-nation-meta {
   max-width: calc(100% - 110px);
 }
 .nation-motif-england .nation-motif-cross-h,

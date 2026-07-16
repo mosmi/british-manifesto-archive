@@ -643,7 +643,7 @@ function classify(path, seo) {
         return {
           valid: true,
           meta: {
-            title: `Other EP Parties${TITLE_SUFFIX}`,
+            title: `Other European Parliament parties${TITLE_SUFFIX}`,
             description:
               'Smaller, regional, and specialist parties that have contested ' +
               'European Parliament elections in the UK.',
@@ -652,7 +652,7 @@ function classify(path, seo) {
             { name: 'Home', path: '/' },
             { name: 'Devolved Elections', path: '/devolved' },
             { name: 'European Parliament', path: '/devolved/euro' },
-            { name: 'Other EP parties' },
+            { name: 'Other European Parliament parties' },
           ])],
           image: '/og/devolved/euro/other-parties.jpg',
         };

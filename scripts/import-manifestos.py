@@ -238,6 +238,24 @@ def import_manifestos(dry_run: bool = False) -> dict:
         for item in sorted(imported, key=lambda x: index_sort_key(x, parties))
     ]
 
+    # Preserve devolved election entries from the existing index
+    if INDEX_PATH.exists():
+        try:
+            existing = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+            devolved_entries = [
+                entry for entry in existing
+                if entry.get("electionId") not in SITE_ELECTIONS
+            ]
+            # Merge and avoid duplicates
+            seen = {(e["electionId"], e["partyId"]) for e in index_entries}
+            for entry in devolved_entries:
+                key = (entry["electionId"], entry["partyId"])
+                if key not in seen:
+                    index_entries.append(entry)
+                    seen.add(key)
+        except Exception as e:
+            print(f"WARN: Failed to parse existing index: {e}", file=sys.stderr)
+
     if not dry_run:
         INDEX_PATH.write_text(
             json.dumps(index_entries, indent=2, ensure_ascii=False) + "\n",

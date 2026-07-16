@@ -75,30 +75,43 @@ function drawParliamentChart(container, results, totalSeats, year) {
   });
 
   const colours = [];
+  const partyIds = [];
   const orderedParties = [];
 
   for (const partyId of SPECTRUM_ORDER) {
     const seats = resultMap[partyId] || 0;
     if (!seats) continue;
     const colour = getPartyColor(partyId, year);
-    for (let i = 0; i < seats; i++) colours.push(colour);
+    for (let i = 0; i < seats; i++) {
+      colours.push(colour);
+      partyIds.push(partyId);
+    }
     orderedParties.push({ partyId, color: colour, seats });
     delete resultMap[partyId];
   }
   Object.entries(resultMap).forEach(([partyId, seats]) => {
     const colour = getPartyColor(partyId, year);
-    for (let i = 0; i < seats; i++) colours.push(colour);
+    for (let i = 0; i < seats; i++) {
+      colours.push(colour);
+      partyIds.push(partyId);
+    }
     orderedParties.push({ partyId, color: colour, seats });
   });
   results.filter(r => !r.party && r.seats > 0).forEach(r => {
-    for (let i = 0; i < r.seats; i++) colours.push('#6b7280');
+    for (let i = 0; i < r.seats; i++) {
+      colours.push('#6b7280');
+      partyIds.push('none');
+    }
     orderedParties.push({ partyId: 'none', color: '#6b7280', seats: r.seats });
   });
-  
+
   if (colours.length < totalSeats) {
     const topupSeats = totalSeats - colours.length;
     const colour = getPartyColor('others', year);
-    for (let i = 0; i < topupSeats; i++) colours.push(colour);
+    for (let i = 0; i < topupSeats; i++) {
+      colours.push(colour);
+      partyIds.push('others');
+    }
     orderedParties.push({ partyId: 'others', color: colour, seats: topupSeats });
   }
 
@@ -107,8 +120,12 @@ function drawParliamentChart(container, results, totalSeats, year) {
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   svg.setAttribute('width', '100%');
   svg.setAttribute('height', H);
+  svg.setAttribute('role', 'img');
+  svg.setAttribute('aria-label', `Parliament seat chart, ${totalSeats} seats`);
   svg.style.height = 'auto';
   svg.style.display = 'block';
+  container.classList.add('parliament-chart');
+  container.style.position = 'relative';
 
   // Background depth arc lines
   const isLight = document.documentElement.getAttribute('data-theme') === 'light';
@@ -176,18 +193,95 @@ function drawParliamentChart(container, results, totalSeats, year) {
     svg.appendChild(createArcSegmentsGroup(1.5 * scale, 0, 0.95));
   }
 
-  // Seat dots
+  // Contiguous party ranges along the sorted seat arc (left → right)
+  const partyRanges = [];
+  for (let i = 0; i < partyIds.length;) {
+    const pid = partyIds[i] || 'others';
+    let j = i + 1;
+    while (j < partyIds.length && partyIds[j] === pid) j++;
+    partyRanges.push({
+      partyId: pid,
+      i0: i,
+      i1: j - 1,
+      seats: j - i,
+      t0: allPositions[i].t,
+      t1: allPositions[j - 1].t
+    });
+    i = j;
+  }
+  partyRanges.forEach((range, idx) => {
+    const prev = partyRanges[idx - 1];
+    const next = partyRanges[idx + 1];
+    const pad = Math.max((range.t1 - range.t0) / Math.max(range.seats * 2, 2), 0.002);
+    // Fair Voronoi boundaries between neighbouring parties — no minimum
+    // expansion, or a single-seat wedge (e.g. Common Wealth) swallows
+    // Communist / ILP / Ind. Labour on the outer row.
+    range.hitT0 = prev ? (prev.t1 + range.t0) / 2 : Math.max(0, range.t0 - pad);
+    range.hitT1 = next ? (range.t1 + next.t0) / 2 : Math.min(1, range.t1 + pad);
+  });
+
+  const annularSectorPath = (rInner, rOuter, t0, t1) => {
+    const a0 = Math.PI * (1 - t0);
+    const a1 = Math.PI * (1 - t1);
+    const polar = (r, a) => [cx + r * Math.cos(a), cy - r * Math.sin(a)];
+    const [x0o, y0o] = polar(rOuter, a0);
+    const [x1o, y1o] = polar(rOuter, a1);
+    const [x1i, y1i] = polar(rInner, a1);
+    const [x0i, y0i] = polar(rInner, a0);
+    const large = Math.abs(a0 - a1) > Math.PI ? 1 : 0;
+    return [
+      `M${x0o.toFixed(2)},${y0o.toFixed(2)}`,
+      `A${rOuter.toFixed(2)},${rOuter.toFixed(2)} 0 ${large},1 ${x1o.toFixed(2)},${y1o.toFixed(2)}`,
+      `L${x1i.toFixed(2)},${y1i.toFixed(2)}`,
+      `A${rInner.toFixed(2)},${rInner.toFixed(2)} 0 ${large},0 ${x0i.toFixed(2)},${y0i.toFixed(2)}`,
+      'Z'
+    ].join(' ');
+  };
+
+  // Hover root: seat dots + invisible wedges (multi-seat first, singles on top)
+  const hoverRoot = document.createElementNS(NS, 'g');
+  hoverRoot.setAttribute('class', 'parliament-hover-root');
+
   const dotsGroup = document.createElementNS(NS, 'g');
+  dotsGroup.setAttribute('class', 'parliament-seats');
   allPositions.forEach((pos, i) => {
     const circle = document.createElementNS(NS, 'circle');
+    const pid = partyIds[i] || 'others';
     circle.setAttribute('cx', pos.x.toFixed(1));
     circle.setAttribute('cy', pos.y.toFixed(1));
     circle.setAttribute('r',  dotR);
     circle.setAttribute('fill', colours[i] || '#555');
-    circle.setAttribute('opacity', '0.92');
+    circle.setAttribute('data-party', pid);
+    circle.classList.add('parliament-seat');
+    circle.style.opacity = '0.92';
+    // Wedges handle hit-testing; keep dots visible-only for pointer events
+    circle.style.pointerEvents = 'none';
     dotsGroup.appendChild(circle);
   });
-  svg.appendChild(dotsGroup);
+  hoverRoot.appendChild(dotsGroup);
+
+  const hitGroup = document.createElementNS(NS, 'g');
+  hitGroup.setAttribute('class', 'parliament-hit-wedges');
+  const hitInner = Math.max(innerR - dotR * 2.5, innerR * 0.72);
+  const hitOuter = Math.min(outerR + dotR * 3, arcR - 2);
+
+  const appendWedge = (range) => {
+    if (range.hitT1 <= range.hitT0) return;
+    const wedge = document.createElementNS(NS, 'path');
+    wedge.setAttribute('d', annularSectorPath(hitInner, hitOuter, range.hitT0, range.hitT1));
+    wedge.setAttribute('fill', 'transparent');
+    wedge.setAttribute('data-party', range.partyId);
+    wedge.classList.add('parliament-hit-wedge');
+    if (range.seats === 1) wedge.classList.add('parliament-hit-wedge-single');
+    hitGroup.appendChild(wedge);
+  };
+
+  // Multi-seat wedges underneath, then single-seat wedges on top so
+  // TUV / Common Wealth etc. are not swallowed by DUP / Communist / ILP.
+  partyRanges.filter(r => r.seats >= 2).forEach(appendWedge);
+  partyRanges.filter(r => r.seats === 1).forEach(appendWedge);
+  hoverRoot.appendChild(hitGroup);
+  svg.appendChild(hoverRoot);
 
   // Center dashed line (Speaker marker)
   const line = document.createElementNS(NS, 'line');
@@ -198,7 +292,116 @@ function drawParliamentChart(container, results, totalSeats, year) {
   line.setAttribute('stroke', 'rgba(201,168,76,0.35)');
   line.setAttribute('stroke-width', '1.5');
   line.setAttribute('stroke-dasharray', '3,3');
+  line.setAttribute('class', 'parliament-speaker-line');
   svg.appendChild(line);
+
+  // Flourish-style centre label: seat total in party colour; name in high-contrast ink
+  const labelY = cy - innerR * 0.38;
+  const countSize = totalSeats <= 40 ? 78 : totalSeats <= 130 ? 58 : 52;
+  const nameSize = totalSeats <= 40 ? 26 : totalSeats <= 130 ? 22 : 20;
+
+  const labelGroup = document.createElementNS(NS, 'g');
+  labelGroup.setAttribute('class', 'parliament-hover-label');
+  labelGroup.style.opacity = '0';
+  labelGroup.style.pointerEvents = 'none';
+
+  const seatCountText = document.createElementNS(NS, 'text');
+  seatCountText.setAttribute('class', 'parliament-hover-count');
+  seatCountText.setAttribute('x', cx);
+  seatCountText.setAttribute('y', labelY);
+  seatCountText.setAttribute('text-anchor', 'middle');
+  seatCountText.setAttribute('dominant-baseline', 'middle');
+  seatCountText.setAttribute('font-size', String(countSize));
+  seatCountText.setAttribute('font-weight', '600');
+  seatCountText.style.fontFamily = 'var(--font-display, "Cormorant Garamond", Georgia, serif)';
+
+  const partyNameText = document.createElementNS(NS, 'text');
+  partyNameText.setAttribute('class', 'parliament-hover-name');
+  partyNameText.setAttribute('x', cx);
+  partyNameText.setAttribute('y', labelY + countSize * 0.52);
+  partyNameText.setAttribute('text-anchor', 'middle');
+  partyNameText.setAttribute('dominant-baseline', 'hanging');
+  partyNameText.setAttribute('font-size', String(nameSize));
+  partyNameText.setAttribute('font-weight', '600');
+  partyNameText.style.fontFamily = 'var(--font-ui, "DM Sans", system-ui, sans-serif)';
+
+  labelGroup.appendChild(seatCountText);
+  labelGroup.appendChild(partyNameText);
+  svg.appendChild(labelGroup);
+
+  const partyMeta = {};
+  orderedParties.forEach(p => {
+    partyMeta[p.partyId] = p;
+  });
+
+  const syncLegend = (partyId) => {
+    const legend = container.nextElementSibling;
+    if (!legend || !legend.classList.contains('parliament-legend')) return;
+    legend.querySelectorAll('.legend-item').forEach(item => {
+      const match = item.dataset.party === partyId;
+      item.classList.toggle('is-highlighted', Boolean(partyId) && match);
+      item.classList.toggle('is-dimmed', Boolean(partyId) && !match);
+    });
+  };
+
+  const highlightParty = (partyId) => {
+    if (!partyId || !partyMeta[partyId]) return;
+    const meta = partyMeta[partyId];
+    dotsGroup.querySelectorAll('circle').forEach(c => {
+      const on = c.getAttribute('data-party') === partyId;
+      c.style.opacity = on ? '1' : '0.16';
+    });
+    line.style.opacity = '0.35';
+    seatCountText.textContent = String(meta.seats);
+    seatCountText.setAttribute('fill', meta.color);
+    partyNameText.textContent = partyId === 'none'
+      ? 'Independent'
+      : (typeof getPartyName === 'function' ? getPartyName(partyId, year) : partyId);
+    labelGroup.style.opacity = '1';
+    container.classList.add('is-party-hover');
+    syncLegend(partyId);
+  };
+
+  const clearHighlight = () => {
+    dotsGroup.querySelectorAll('circle').forEach(c => { c.style.opacity = '0.92'; });
+    line.style.opacity = '1';
+    labelGroup.style.opacity = '0';
+    seatCountText.textContent = '';
+    partyNameText.textContent = '';
+    container.classList.remove('is-party-hover');
+    syncLegend(null);
+  };
+
+  let activeParty = null;
+  const partyFromEventTarget = (target) => {
+    if (!target || target === hoverRoot) return null;
+    const el = typeof target.closest === 'function'
+      ? target.closest('[data-party]')
+      : (target.getAttribute?.('data-party') ? target : null);
+    return el?.getAttribute('data-party') || null;
+  };
+
+  hoverRoot.addEventListener('pointerover', (e) => {
+    const pid = partyFromEventTarget(e.target);
+    if (!pid || pid === activeParty) return;
+    activeParty = pid;
+    highlightParty(pid);
+  });
+  hoverRoot.addEventListener('pointerleave', () => {
+    activeParty = null;
+    clearHighlight();
+  });
+
+  container._parliamentInteract = {
+    highlight: (partyId) => {
+      activeParty = partyId;
+      highlightParty(partyId);
+    },
+    clear: () => {
+      activeParty = null;
+      clearHighlight();
+    }
+  };
 
   container.appendChild(svg);
 }
@@ -217,9 +420,14 @@ function buildParliamentLegend(legendEl, results, year) {
     .filter(r => r.seats > 0)
     .sort((a, b) => b.seats - a.seats);
 
+  const chartEl = legendEl.previousElementSibling;
+  const interact = chartEl && chartEl._parliamentInteract;
+
   sorted.forEach(r => {
     const item = document.createElement('div');
     item.className = 'legend-item';
+    const partyId = r.party || 'none';
+    item.dataset.party = partyId;
 
     const dot = document.createElement('div');
     dot.className = 'legend-dot';
@@ -230,8 +438,18 @@ function buildParliamentLegend(legendEl, results, year) {
       dot.style.background = raw;
     }
 
-    const label = document.createElement('span');
-    label.textContent = r.partyLabel || getPartyName(r.party, year);
+    const name = r.partyLabel || getPartyName(r.party, year);
+    const hasPage = partyId && partyId !== 'none' && typeof PARTIES !== 'undefined' && PARTIES[partyId];
+    let label;
+    if (hasPage) {
+      label = document.createElement('a');
+      label.href = `/party/${partyId}`;
+      label.className = 'legend-party-link';
+      label.textContent = name;
+    } else {
+      label = document.createElement('span');
+      label.textContent = name;
+    }
 
     const seats = document.createElement('span');
     seats.className = 'legend-seats';
@@ -240,6 +458,22 @@ function buildParliamentLegend(legendEl, results, year) {
     item.appendChild(dot);
     item.appendChild(label);
     item.appendChild(seats);
+
+    if (interact) {
+      item.classList.add('legend-item-interactive');
+      item.setAttribute('aria-label', `${name}, ${r.seats} seats`);
+      item.addEventListener('pointerenter', () => interact.highlight(partyId));
+      item.addEventListener('pointerleave', () => interact.clear());
+      if (hasPage) {
+        label.addEventListener('focus', () => interact.highlight(partyId));
+        label.addEventListener('blur', () => interact.clear());
+      } else {
+        item.setAttribute('tabindex', '0');
+        item.addEventListener('focus', () => interact.highlight(partyId));
+        item.addEventListener('blur', () => interact.clear());
+      }
+    }
+
     legendEl.appendChild(item);
   });
 }

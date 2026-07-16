@@ -3,6 +3,9 @@
 Thumbs.db
 *.swp
 *~
+.env
+.env.local
+
 
 # Python
 __pycache__/

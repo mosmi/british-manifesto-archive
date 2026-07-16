@@ -167,6 +167,22 @@ function partyTextColour(partyId, year, theme) {
   return kickerTextColour(raw, theme || getCurrentTheme());
 }
 
+/** Inline CSS vars for `.election-winner-badge` — theme-safe text on light/dark. */
+function winnerBadgeStyle(partyId, year) {
+  const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
+  const raw = typeof getPartyColor === 'function'
+    ? getPartyColor(partyId, year)
+    : (typeof PARTIES !== 'undefined' && PARTIES[partyId]?.color) || '#C9A84C';
+  const accent = deriveColour(raw, theme);
+  const surface = typeof barColour === 'function' ? barColour(raw, theme) : accent.surface;
+  return {
+    color: accent.kicker,
+    dim: accent.border,
+    surface,
+    css: `--party-color:${accent.kicker};--party-dim:${accent.border};--party-surface:${surface}`,
+  };
+}
+
 function formatPartyHoldingsLine(pid) {
   const h = PARTY_HOLDINGS[pid] || {};
   const labels = {

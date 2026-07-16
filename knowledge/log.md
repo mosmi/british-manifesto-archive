@@ -11,6 +11,11 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-16 — Convert London devolved election PDFs to markdown
+Batch converted all 147 London devolved election PDFs from 'Original documents/Devolved Elections/London' to markdown versions using Microsoft's MarkItDown. The converted files are saved under 'Markdown versions/London', maintaining the original sub-folder year/materials structure. Resolved unreadable outputs by applying a custom font-based shift decoder (+31/+32 character offset) to rebuild the scrambled 2004 Simon Hughes PDF, and cleaned up bullet/spacer CIDs in the 2008 Boris Johnson PDF. Transcribed the 6 scanned/image-only PDFs from the 2024 London election (including Susan Hall and Brian Rose) using Gemini's OCR vision endpoint.
+
+
+
 ## 2026-07-11 — Auto-generate Latest Additions
 Homepage carousel now comes from `scripts/build-latest-additions.py`, which ranks
 `manifestos-index.json` + devolved `manifestos[]` by git first-add date of each PDF

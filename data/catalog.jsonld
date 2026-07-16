@@ -4961,6 +4961,416 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/cpa#document",
+          "name": "Christian Peoples Alliance London Mayoral Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/cpa",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/green#document",
+          "name": "Green Party London Mayoral Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/libdem#document",
+          "name": "Liberal Democrats London Mayoral Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/libdem",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/binface#document",
+          "name": "Count Binface London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/binface",
+          "keywords": [
+            "transport"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink#document",
+          "name": "Burning Pink London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/conservative#document",
+          "name": "Conservative Party London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/conservative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/green#document",
+          "name": "Green Party London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/labour#document",
+          "name": "Labour Party London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/labour",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/libdem#document",
+          "name": "Liberal Democrats London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/libdem",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/londonreal#document",
+          "name": "London Real Party London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/londonreal",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "democracy and constitution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/maxfosh#document",
+          "name": "Independent London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/maxfosh",
+          "keywords": [
+            "transport"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/pierscorbyn#document",
+          "name": "Let London Live London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/pierscorbyn",
+          "keywords": [
+            "economy",
+            "health",
+            "housing",
+            "foreign policy",
+            "science and technology"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/reclaim#document",
+          "name": "Reclaim Party London Mayoral Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/reclaim",
+          "keywords": [
+            "economy",
+            "taxation",
+            "housing",
+            "defence",
+            "environment",
+            "transport",
+            "law and order"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/awp#document",
+          "name": "Animal Welfare Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/awp",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/binface#document",
+          "name": "Count Binface London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/binface",
+          "keywords": [
+            "health",
+            "housing",
+            "foreign policy",
+            "transport",
+            "energy"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/britainfirst#document",
+          "name": "Britain First London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/britainfirst",
+          "keywords": [
+            "immigration",
+            "law and order"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/campbell#document",
+          "name": "Natalie Campbell London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/campbell",
+          "keywords": [
+            "housing"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/conservative#document",
+          "name": "Conservative Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/conservative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "housing",
+            "environment",
+            "transport",
+            "law and order",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/ghulati#document",
+          "name": "Tarun Ghulati London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/ghulati",
+          "keywords": [
+            "economy",
+            "housing",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/green#document",
+          "name": "Green Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "environment",
+            "transport",
+            "law and order",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/labour#document",
+          "name": "Labour Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/labour",
+          "keywords": [
+            "economy",
+            "health",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/libdem#document",
+          "name": "Liberal Democrats London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/libdem",
+          "keywords": [
+            "economy",
+            "taxation",
+            "education",
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/londonreal#document",
+          "name": "London Real Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/londonreal",
+          "keywords": [
+            "economy",
+            "taxation",
+            "housing",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/michli#document",
+          "name": "Andreas Michli London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/michli",
+          "keywords": [
+            "health",
+            "education",
+            "housing",
+            "environment",
+            "transport",
+            "law and order"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/reform#document",
+          "name": "Reform UK London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/reform",
+          "keywords": [
+            "housing",
+            "transport"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/sdp#document",
+          "name": "Social Democratic Party London Mayoral Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/sdp",
+          "keywords": [
+            "law and order"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/oct1974/conservative#document",
           "name": "Conservatives Manifesto 1974",
           "url": "https://www.manifestos.org.uk/manifesto/oct1974/conservative",

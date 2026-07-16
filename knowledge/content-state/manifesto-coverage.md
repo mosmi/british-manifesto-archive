@@ -3,17 +3,17 @@ type: status
 title: Manifesto transcription coverage
 description: PDF→Markdown coverage by election category, with the largest outstanding gaps.
 tags: [content-state, coverage, manifestos]
-timestamp: 2026-06-29T00:00:00Z
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Manifesto transcription coverage
 
-Snapshot from the **29 March 2026** coverage report (`manifesto-coverage-report.md`):
-**589 PDFs**, **174 Markdown files**, **396 matched (67%)**, 193 unmatched (33%).
+Snapshot from the **16 July 2026** coverage report:
+**589 PDFs**, **200 Markdown files**, **422 matched (72%)**, 167 unmatched (28%).
 A complementary **12 April 2026** report (`pdf-to-markdown-conversion-report.md`)
 breaks down 2001–2024 primary manifestos specifically.
 
-## By category (Mar 2026)
+## By category (Jul 2026)
 | Category | PDFs | Matched | Coverage |
 |---|---:|---:|---:|
 | General elections 1974, 1979, 1987, 1992, 1997, 2001, 2005, 2010, 2015 | — | — | **100%** |
@@ -21,7 +21,7 @@ breaks down 2001–2024 primary manifestos specifically.
 | 2017 General | 36 | 33 | 92% |
 | 2019 General | 58 | 30 | 52% |
 | 2024 General | 43 | 38 | 88% |
-| Devolved Elections | 163 | 66 | **40%** |
+| Devolved Elections | 163 | 92 | **56%** |
 | European Elections | 93 | 48 | 52% |
 | Local Government | 22 | 13 | 59% |
 

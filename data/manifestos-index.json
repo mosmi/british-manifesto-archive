@@ -262,7 +262,7 @@
   {
     "electionId": "1997",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 1997"
+    "label": "Sinn Féin Manifesto 1997"
   },
   {
     "electionId": "1997",
@@ -327,7 +327,7 @@
   {
     "electionId": "2001",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2001"
+    "label": "Sinn Féin Manifesto 2001"
   },
   {
     "electionId": "2001",
@@ -457,7 +457,7 @@
   {
     "electionId": "2005",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2005"
+    "label": "Sinn Féin Manifesto 2005"
   },
   {
     "electionId": "2005",
@@ -577,7 +577,7 @@
   {
     "electionId": "2010",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2010"
+    "label": "Sinn Féin Manifesto 2010"
   },
   {
     "electionId": "2010",
@@ -712,7 +712,7 @@
   {
     "electionId": "2015",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2015"
+    "label": "Sinn Féin Manifesto 2015"
   },
   {
     "electionId": "2015",
@@ -862,7 +862,7 @@
   {
     "electionId": "2017",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2017"
+    "label": "Sinn Féin Manifesto 2017"
   },
   {
     "electionId": "2017",
@@ -997,7 +997,7 @@
   {
     "electionId": "2019",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2019"
+    "label": "Sinn Féin Manifesto 2019"
   },
   {
     "electionId": "2019",
@@ -1052,7 +1052,7 @@
   {
     "electionId": "2024",
     "partyId": "aontu",
-    "label": "Aont\u00fa Manifesto 2024"
+    "label": "Aontú Manifesto 2024"
   },
   {
     "electionId": "2024",
@@ -1157,7 +1157,7 @@
   {
     "electionId": "2024",
     "partyId": "sinnfein",
-    "label": "Sinn F\u00e9in Manifesto 2024"
+    "label": "Sinn Féin Manifesto 2024"
   },
   {
     "electionId": "2024",
@@ -1228,5 +1228,135 @@
     "electionId": "oct1974",
     "partyId": "libdem",
     "label": "Liberal Manifesto 1974"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "sdp",
+    "label": "Social Democratic Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "michli",
+    "label": "Andreas Michli London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "londonreal",
+    "label": "London Real Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "binface",
+    "label": "Count Binface London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "awp",
+    "label": "Animal Welfare Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "reform",
+    "label": "Reform UK London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "campbell",
+    "label": "Natalie Campbell London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "britainfirst",
+    "label": "Britain First London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "libdem",
+    "label": "Liberal Democrats London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "labour",
+    "label": "Labour Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "conservative",
+    "label": "Conservative Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "ghulati",
+    "label": "Tarun Ghulati London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2024",
+    "partyId": "green",
+    "label": "Green Party London Mayoral Manifesto 2024"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "labour",
+    "label": "Labour Party London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "conservative",
+    "label": "Conservative Party London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "libdem",
+    "label": "Liberal Democrats London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "green",
+    "label": "Green Party London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "londonreal",
+    "label": "London Real Party London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "reclaim",
+    "label": "Reclaim Party London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "binface",
+    "label": "Count Binface London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "pierscorbyn",
+    "label": "Let London Live London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "burningpink",
+    "label": "Burning Pink London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2021",
+    "partyId": "maxfosh",
+    "label": "Independent London Mayoral Manifesto 2021"
+  },
+  {
+    "electionId": "london/gla-2004",
+    "partyId": "libdem",
+    "label": "Liberal Democrats London Mayoral Manifesto 2004"
+  },
+  {
+    "electionId": "london/gla-2004",
+    "partyId": "green",
+    "label": "Green Party London Mayoral Manifesto 2004"
+  },
+  {
+    "electionId": "london/gla-2004",
+    "partyId": "cpa",
+    "label": "Christian Peoples Alliance London Mayoral Manifesto 2004"
   }
 ]

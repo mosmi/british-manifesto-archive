@@ -284,13 +284,14 @@ async function renderEuroElection(app, id) {
 
   const winnerId = election.control;
   const winner = PARTIES[winnerId] || {};
-  const color = winner.color || 'var(--gold)';
-  const dim = winner.dim || 'var(--gold-dim)';
+  const badge = typeof winnerBadgeStyle === 'function'
+    ? winnerBadgeStyle(winnerId, election.year)
+    : { dim: winner.dim || 'var(--gold-dim)', css: `--party-color:${winner.color || 'var(--gold)'};--party-dim:${winner.dim || 'var(--gold-dim)'}` };
 
   const winnerName = election.winnerName || winner.shortName || '';
   const winnerBadge = winnerId
-    ? `<div class="election-winner-badge" style="--party-color:${color};--party-dim:${dim}">
-        <div class="winner-dot" style="background:${color}"></div>
+    ? `<div class="election-winner-badge" style="${badge.css}">
+        <div class="winner-dot"></div>
         Largest party: ${winnerName}
        </div>`
     : '';
@@ -330,7 +331,7 @@ async function renderEuroElection(app, id) {
       { label: 'European Parliament', href: '/devolved/euro' },
       { label: election.displayYear },
     ])}
-    <section class="election-hero" style="--party-glow:${dim}">
+    <section class="election-hero" style="--party-glow:${badge.dim}">
       <div class="election-hero-bg"></div>
       <div class="election-hero-inner">
         <div>
@@ -447,7 +448,7 @@ function euroOthersPartyCards(ids) {
 
 function renderEuroOtherParties(app) {
   setPageMeta({
-    title: 'Other EP Parties',
+    title: 'Other European Parliament parties',
     description: 'Smaller, regional, and specialist parties that have contested European Parliament elections in the UK.',
     path: '/devolved/euro/other-parties',
   });
@@ -462,11 +463,11 @@ function renderEuroOtherParties(app) {
       { label: 'Home', href: '/' },
       { label: 'Beyond Westminster', href: '/devolved' },
       { label: 'European Parliament', href: '/devolved/euro' },
-      { label: 'Other EP parties' },
+      { label: 'Other European Parliament parties' },
     ])}
     <div class="about-section">
       <span class="section-label">European Parliament</span>
-      <h1>Other EP Parties</h1>
+      <h1>Other European Parliament parties</h1>
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Specialist, minor, or pan-European political groups that contested European elections in the UK.</p>
       <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
