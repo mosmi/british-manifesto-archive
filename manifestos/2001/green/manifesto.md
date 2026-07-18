@@ -2,7 +2,7 @@
 election_year: 2001
 party_id: green
 party_name: Green Party of England and Wales
-party_leader: null
+party_leader: Darren Johnson and Margaret Wright
 political_spectrum: left-green
 victory: false
 government_outcome: opposition

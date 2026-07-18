@@ -433,7 +433,7 @@ async function renderEuroPortal(app) {
     <div class="devolved-body">
       <div class="london-era">
         <div class="london-era-head"><h2>European elections (1979–2019)</h2><p>Every European election contested by the UK, with full vote shares, seat distributions, and archived party manifestos.</p></div>
-        <div class="london-timeline-grid">${cards}</div>
+        <div class="timeline-grid">${cards}</div>
       </div>
     </div>
   `;

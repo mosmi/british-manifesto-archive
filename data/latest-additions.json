@@ -1,5 +1,85 @@
 [
   {
+    "electionId": "2015",
+    "partyId": "cista",
+    "title": "Cannabis Is Safer Than Alcohol Manifesto 2015",
+    "year": "2015",
+    "url": "/manifesto/2015/cista",
+    "isPdf": false,
+    "added": "2026-07-17T20:56:38Z",
+    "cover": "/manifestos/2015/cista/cover.png"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "scottishcon",
+    "title": "Scottish Conservatives Manifesto 1983",
+    "year": "1983",
+    "url": "/manifesto/1983/scottishcon",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/1983/scottishcon/cover.png"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "welshcon",
+    "title": "Welsh Conservatives Manifesto 1983",
+    "year": "1983",
+    "url": "/manifesto/1983/welshcon",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/1983/welshcon/cover.png"
+  },
+  {
+    "electionId": "2005",
+    "partyId": "socialistlabour",
+    "title": "Socialist Labour Party Manifesto 2005",
+    "year": "2005",
+    "url": "/manifesto/2005/socialistlabour",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/2005/socialistlabour/cover.png"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "socialistlabour",
+    "title": "Socialist Labour Party Manifesto 2015",
+    "year": "2015",
+    "url": "/manifesto/2015/socialistlabour",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/2015/socialistlabour/cover.png"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "liberal1989",
+    "title": "Liberal Party Manifesto 2017",
+    "year": "2017",
+    "url": "/manifesto/2017/liberal1989",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/2017/liberal1989/cover.png"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "liberal1989",
+    "title": "Liberal Party Manifesto 2019",
+    "year": "2019",
+    "url": "/manifesto/2019/liberal1989",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/2019/liberal1989/cover.png"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "liberal1989",
+    "title": "Liberal Party Manifesto 2024",
+    "year": "2024",
+    "url": "/manifesto/2024/liberal1989",
+    "isPdf": false,
+    "added": "2026-07-16T20:45:51Z",
+    "cover": "/manifestos/2024/liberal1989/cover.png"
+  },
+  {
     "electionId": "1992",
     "partyId": "sdlp",
     "title": "SDLP Manifesto 1992",
@@ -38,85 +118,5 @@
     "isPdf": false,
     "added": "2026-07-12T21:36:09+01:00",
     "cover": "/manifestos/2001/welshlibdem/cover.png"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "cpa",
-    "title": "Christian Peoples Alliance Manifesto 2005",
-    "year": "2005",
-    "url": "/manifesto/2005/cpa",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2005/cpa/cover.png"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "englishdemocrats",
-    "title": "English Democrats Manifesto 2005",
-    "year": "2005",
-    "url": "/manifesto/2005/englishdemocrats",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2005/englishdemocrats/cover.png"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "forwardwales",
-    "title": "Forward Wales Manifesto 2005",
-    "year": "2005",
-    "url": "/manifesto/2005/forwardwales",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2005/forwardwales/cover.png"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "sea",
-    "title": "Socialist Environmental Alliance Manifesto 2005",
-    "year": "2005",
-    "url": "/manifesto/2005/sea",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2005/sea/cover.png"
-  },
-  {
-    "electionId": "2005",
-    "partyId": "veritas",
-    "title": "Veritas Manifesto 2005",
-    "year": "2005",
-    "url": "/manifesto/2005/veritas",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2005/veritas/cover.png"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "animalpolitics",
-    "title": "Animal Welfare Party Manifesto 2015",
-    "year": "2015",
-    "url": "/manifesto/2015/animalpolitics",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2015/animalpolitics/cover.png"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "nha",
-    "title": "National Health Action Manifesto 2015",
-    "year": "2015",
-    "url": "/manifesto/2015/nha",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2015/nha/cover.png"
-  },
-  {
-    "electionId": "2015",
-    "partyId": "nicon",
-    "title": "NI Conservatives Manifesto 2015",
-    "year": "2015",
-    "url": "/manifesto/2015/nicon",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2015/nicon/cover.png"
   }
 ]

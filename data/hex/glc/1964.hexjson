@@ -1,0 +1,393 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "glc-1964-barnet": {
+      "n": "Barnet",
+      "q": 2,
+      "r": 5,
+      "party": "conservative",
+      "winner": "P. B. Black, Miss Jean L. Scott, B.Sc., F.R.I.C. ·, Colonel Sir Joseph Haygarth, Reginald Marks, LL.B",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-enfield": {
+      "n": "Enfield",
+      "q": 3,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Sir Graham Rowlandson, M.B.E., J.P., F.C.A, Gordon Dixon, M.A, Thos B. Mitcheson",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-harrow": {
+      "n": "Harrow",
+      "q": 1,
+      "r": 4,
+      "party": "conservative",
+      "winner": "H. W. Cutler, Captain O. J. Galley, Captain W. E. Jones",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-brent": {
+      "n": "Brent",
+      "q": 2,
+      "r": 4,
+      "party": "labour",
+      "winner": "Mrs M. R. Forbes, C.B.E, Peter Otwell, IIItyd Harrington Frank Towell, Labour councillor",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-haringey": {
+      "n": "Haringey",
+      "q": 3,
+      "r": 4,
+      "party": "labour",
+      "winner": "Mrs A. F. Remington, L. A. Vitoria, Mrs Gladys F. Dimson",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-waltham-forest": {
+      "n": "Waltham Forest",
+      "q": 4,
+      "r": 4,
+      "party": "labour",
+      "winner": "J. A. E. Collins, Mrs B. K. Lowton, Mrs M. J. Webster, M.S.R",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-redbridge": {
+      "n": "Redbridge",
+      "q": 5,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Robert Mitchell, M.A, F. H. James, Miss Sylvia Terry",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-havering": {
+      "n": "Havering",
+      "q": 6,
+      "r": 4,
+      "party": "labour",
+      "winner": "W. G. Fiske, W. A. Gillman, B. E. Raycraft",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-hillingdon": {
+      "n": "Hillingdon",
+      "q": 0,
+      "r": 3,
+      "party": "labour",
+      "winner": "W. J. Lipscombe, F. H. Rapley, D. J. Davies",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-ealing": {
+      "n": "Ealing",
+      "q": 1,
+      "r": 3,
+      "party": "labour",
+      "winner": "Peter E. Anderson, Christopher T. Higgins, G. F. Palmer, Mrs E. W. Jones",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-camden": {
+      "n": "Camden",
+      "q": 2,
+      "r": 3,
+      "party": "labour",
+      "winner": "Mrs Leila Campbell, Louis W. Bondy, Mrs Evelyn Denington",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-islington": {
+      "n": "Islington",
+      "q": 3,
+      "r": 3,
+      "party": "labour",
+      "winner": "Edwin Bayliss, O.B.E., 36,051 C.St.J., D.L, Mrs Irene Chaplin, B.A., 35,406, 35,185 Mrs F. E. Cayford",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-hackney": {
+      "n": "Hackney",
+      "q": 4,
+      "r": 3,
+      "party": "labour",
+      "winner": "Ellis S. Hillman, B.Sc., F.G.S, Dr David Pitt, Arthur E. Wicks",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-newham": {
+      "n": "Newham",
+      "q": 5,
+      "r": 3,
+      "party": "labour",
+      "winner": "S. Boyce, E. P. Bell, Arthur F. G. Edwards",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-barking": {
+      "n": "Barking",
+      "q": 6,
+      "r": 3,
+      "party": "labour",
+      "winner": "Charles Prendergast,B.E. M, Mrs Maud Ball",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-hounslow": {
+      "n": "Hounslow",
+      "q": 0,
+      "r": 2,
+      "party": "labour",
+      "winner": "J. J. Dunnett, M.A., LL.B, E. Kinghorn, Frederick W. Powe",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-hammersmith": {
+      "n": "Hammersmith",
+      "q": 1,
+      "r": 2,
+      "party": "labour",
+      "winner": "Labour councillor, Labour councillor, Labour councillor",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-westminster-and-the-city-of-london": {
+      "n": "Westminster and the City of London",
+      "q": 3,
+      "r": 2,
+      "party": "conservative",
+      "winner": "added) Sir Louis Gluckstein, C.B.E., T.D., Q.C., D.L, Harold H. Sebag- Montefiore, Sir Samuel Salmon, Desmond Plummer, T.D., F.A.I",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-tower-hamlets": {
+      "n": "Tower Hamlets",
+      "q": 4,
+      "r": 2,
+      "party": "labour",
+      "winner": "John Branagan, K.S.G, Ashley Bramall, M.A",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-richmond-upon-thames": {
+      "n": "Richmond upon Thames",
+      "q": 0,
+      "r": 1,
+      "party": "conservative",
+      "winner": "F. D. Christian, F.I.B, M. W. Garrett, D.L",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-kensington-and-chelsea": {
+      "n": "Kensington and Chelsea",
+      "q": 2,
+      "r": 2,
+      "party": "conservative",
+      "winner": "(Royal Borough) Sir Percy Rugg, Robert Vigars, Seton Forbes Cockell",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-wandsworth": {
+      "n": "Wandsworth",
+      "q": 1,
+      "r": 1,
+      "party": "labour",
+      "winner": "Mrs Peggy Jay, Norman G. M. Prichard, M.Sc, Geo. F. Rowe, J. S. Samuels",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-southwark": {
+      "n": "Southwark",
+      "q": 3,
+      "r": 1,
+      "party": "labour",
+      "winner": "R. E. Goodwin, C.B.E., D.L, Henry G. Lamborn, M.R.S.H, Edgar E. Reed, A. E. Samuels, LL.B",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-lewisham": {
+      "n": "Lewisham",
+      "q": 4,
+      "r": 1,
+      "party": "labour",
+      "winner": "David Chalkley, Alec A. Grant, John C. Henry, Harold C. Shearman",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-greenwich": {
+      "n": "Greenwich",
+      "q": 5,
+      "r": 2,
+      "party": "labour",
+      "winner": "Mrs Julia A. Johnson, John W. Andrews, James Young",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-bexley": {
+      "n": "Bexley",
+      "q": 6,
+      "r": 2,
+      "party": "labour",
+      "winner": "Edwin Furness, B.A, J. N. Powrie, Robin Thompson",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-kingston-upon-thames": {
+      "n": "Kingston upon Thames",
+      "q": 1,
+      "r": 0,
+      "party": "conservative",
+      "winner": "(Royal Borough) Sydney Ripley, D.L, Geoffrey J. D. Seaton",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-merton": {
+      "n": "Merton",
+      "q": 2,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Thomas W. Scott, F. W. Walker",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-lambeth": {
+      "n": "Lambeth",
+      "q": 2,
+      "r": 1,
+      "party": "labour",
+      "winner": "Robert W. G. Humphreys, Victor Mishcon, D.L, Mrs B. Serota, B.Sc.(Econ), Sidney A. Melman",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1964-bromley": {
+      "n": "Bromley",
+      "q": 5,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Mrs E. G. Beecher-Bryant, V. S. H. Mitchell, Mrs Benita D. Barham, Robert J. Turner",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-sutton": {
+      "n": "Sutton",
+      "q": 3,
+      "r": 0,
+      "party": "conservative",
+      "winner": "G. F. Everitt, Frederick W. Thompson",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1964-croydon": {
+      "n": "Croydon",
+      "q": 4,
+      "r": 0,
+      "party": "conservative",
+      "winner": "John L. Aston, G. W. Aplin, F.R.I.C.S., M.R.S.H, P. A. Saunders Keith A. Edwards, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    }
+  }
+}

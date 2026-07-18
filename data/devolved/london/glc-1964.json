@@ -18,14 +18,65 @@
     "totalSeats": 100,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 64, "pct": 44.6 },
-      { "party": "conservative", "seats": 36, "pct": 40.1 },
-      { "party": "libdem", "seats": 0, "pct": 10.0 }
+      {
+        "party": "labour",
+        "seats": 64,
+        "pct": 44.6
+      },
+      {
+        "party": "conservative",
+        "seats": 36,
+        "pct": 40.1
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 10.0
+      }
     ],
-    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council. The Greater London Council formally took over from the London County Council on 1 April 1965."
+    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council. The Greater London Council formally took over from the London County Council on 1 April 1965.",
+    "otherVotes": [
+      {
+        "name": "Communist",
+        "votes": 102649,
+        "pct": 1.36
+      },
+      {
+        "name": "Independent",
+        "votes": 19983,
+        "pct": 0.26
+      },
+      {
+        "name": "Ratepayers' Association",
+        "votes": 17574,
+        "pct": 0.23
+      },
+      {
+        "name": "New Liberal",
+        "votes": 7421,
+        "pct": 0.1
+      },
+      {
+        "name": "Christian Independent",
+        "votes": 2895,
+        "pct": 0.04
+      },
+      {
+        "name": "Union Movement",
+        "votes": 2353,
+        "pct": 0.03
+      }
+    ],
+    "otherVotesNote": "Multi-member bloc vote: each elector had one vote per seat in their borough, so percentages here are shares of all votes cast, which differ slightly from the single-vote shares in the table above."
   },
   "sources": [
-    { "label": "London Datastore — Greater London Council Election 1964", "url": "https://data.london.gov.uk/elections/" },
-    { "label": "1964 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1964_Greater_London_Council_election" }
+    {
+      "label": "London Datastore — Greater London Council Election 1964",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "1964 Greater London Council election (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1964_Greater_London_Council_election"
+    }
   ]
 }

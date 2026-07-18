@@ -74,6 +74,8 @@ PRICING_PER_MTOK = {
     "claude-opus-4-8": {"input": 5.00, "output": 25.00},
     "claude-sonnet-5": {"input": 3.00, "output": 15.00},
     "claude-haiku-4-5": {"input": 1.00, "output": 5.00},
+    "gemini-2.5-flash": {"input": 0.075, "output": 0.30},
+    "gemini-2.5-pro": {"input": 1.25, "output": 5.00},
 }
 
 PROMPT_TEMPLATE = """You are auditing a machine-generated Markdown transcription of one scanned \
@@ -198,22 +200,45 @@ def call_claude_once(request: dict[str, Any], model: str, client: Any, max_token
     image_bytes, media_type = load_image_bytes(request["image_path"], request["max_image_dim"])
     b64 = base64.standard_b64encode(image_bytes).decode("ascii")
 
-    response = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        messages=[{
-            "role": "user",
-            "content": [
-                {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": b64}},
-                {"type": "text", "text": request["prompt"]},
-            ],
-        }],
-    )
-    text = "".join(block.text for block in response.content if getattr(block, "type", None) == "text").strip()
-    usage = {
-        "input_tokens": response.usage.input_tokens,
-        "output_tokens": response.usage.output_tokens,
-    }
+    is_openai = hasattr(client, "chat")
+    if is_openai:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:{media_type};base64,{b64}"
+                        }
+                    },
+                    {"type": "text", "text": request["prompt"]},
+                ],
+            }],
+        )
+        text = response.choices[0].message.content.strip()
+        usage = {
+            "input_tokens": response.usage.prompt_tokens,
+            "output_tokens": response.usage.completion_tokens,
+        }
+    else:
+        response = client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": b64}},
+                    {"type": "text", "text": request["prompt"]},
+                ],
+            }],
+        )
+        text = "".join(block.text for block in response.content if getattr(block, "type", None) == "text").strip()
+        usage = {
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens,
+        }
     return text, usage
 
 
@@ -358,17 +383,47 @@ def main() -> int:
         print(f"[dry-run] {len(requests)} page(s) would be sent to {args.model}. No API calls made.")
         return 0
 
-    try:
-        import anthropic  # type: ignore
-    except ImportError:
-        print("ERROR: the 'anthropic' package is not installed. pip install anthropic --break-system-packages", file=sys.stderr)
-        return 2
+    import os
+    env_path = REPO_ROOT / ".env"
+    if env_path.exists():
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, val = line.split('=', 1)
+                os.environ.setdefault(key.strip(), val.strip())
 
-    try:
-        client = anthropic.Anthropic()
-    except Exception as e:
-        print(f"ERROR: could not create Anthropic client (is ANTHROPIC_API_KEY set?): {e}", file=sys.stderr)
-        return 2
+    gemini_key = os.environ.get("GEMINI_API_KEY")
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+
+    model_to_use = args.model
+    if model_to_use == DEFAULT_MODEL and gemini_key and not anthropic_key:
+        model_to_use = "gemini-2.5-flash"
+
+    if model_to_use.startswith("gemini-") or (gemini_key and not anthropic_key):
+        if not gemini_key:
+            print("ERROR: GEMINI_API_KEY is not set in environment or .env file", file=sys.stderr)
+            return 2
+        try:
+            from openai import OpenAI
+            client = OpenAI(
+                api_key=gemini_key,
+                base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+            )
+        except ImportError:
+            print("ERROR: the 'openai' package is not installed. pip install openai --break-system-packages", file=sys.stderr)
+            return 2
+    else:
+        try:
+            import anthropic  # type: ignore
+        except ImportError:
+            print("ERROR: the 'anthropic' package is not installed. pip install anthropic --break-system-packages", file=sys.stderr)
+            return 2
+
+        try:
+            client = anthropic.Anthropic()
+        except Exception as e:
+            print(f"ERROR: could not create Anthropic client (is ANTHROPIC_API_KEY set?): {e}", file=sys.stderr)
+            return 2
 
     report_json_path = ledger_path.with_name("vision_audit_report.json")
     report_md_path = ledger_path.with_name("vision_audit_report.md")
@@ -378,16 +433,16 @@ def main() -> int:
     for req in requests:
         print(f"Auditing page {req['page_index']} ({req['source_label']})...", file=sys.stderr)
         try:
-            findings, usage = call_claude(req, args.model, client)
+            findings, usage = call_claude(req, model_to_use, client)
         except Exception as e:
             findings, usage = [{"type": "audit_error", "locator": None, "note": f"API call failed: {e}"}], {"input_tokens": 0, "output_tokens": 0}
-        page_cost = estimate_cost(args.model, usage)
+        page_cost = estimate_cost(model_to_use, usage)
         run_cost += page_cost
         print(f"  {len(findings)} finding(s), ~${page_cost:.4f}", file=sys.stderr)
         merged[req["page_index"]] = {
             "page_index": req["page_index"],
             "source": req["source_label"],
-            "model": args.model,
+            "model": model_to_use,
             "usage": usage,
             "estimated_cost_usd": round(page_cost, 6),
             "findings": findings,

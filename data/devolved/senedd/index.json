@@ -8,7 +8,27 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Alun Michael",
-    "firstMinister": "Alun Michael"
+    "firstMinister": "Alun Michael",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 28
+      },
+      {
+        "party": "plaid",
+        "seats": 17
+      },
+      {
+        "party": "welshcon",
+        "seats": 9
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 6
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2003",
@@ -19,7 +39,27 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Rhodri Morgan",
-    "firstMinister": "Rhodri Morgan"
+    "firstMinister": "Rhodri Morgan",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 30
+      },
+      {
+        "party": "welshcon",
+        "seats": 11
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 6
+      },
+      {
+        "party": "plaid",
+        "seats": 12
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2007",
@@ -30,7 +70,27 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Rhodri Morgan",
-    "firstMinister": "Rhodri Morgan"
+    "firstMinister": "Rhodri Morgan",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 26
+      },
+      {
+        "party": "plaid",
+        "seats": 15
+      },
+      {
+        "party": "welshcon",
+        "seats": 12
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 6
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2011",
@@ -41,7 +101,27 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Carwyn Jones",
-    "firstMinister": "Carwyn Jones"
+    "firstMinister": "Carwyn Jones",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 30
+      },
+      {
+        "party": "welshcon",
+        "seats": 14
+      },
+      {
+        "party": "plaid",
+        "seats": 11
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 5
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2016",
@@ -52,7 +132,31 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Carwyn Jones",
-    "firstMinister": "Carwyn Jones"
+    "firstMinister": "Carwyn Jones",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 29
+      },
+      {
+        "party": "plaid",
+        "seats": 12
+      },
+      {
+        "party": "welshcon",
+        "seats": 11
+      },
+      {
+        "party": "ukip",
+        "seats": 7
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2021",
@@ -63,7 +167,27 @@
     "title": "Senedd Cymru election",
     "control": "welshlab",
     "winnerName": "Mark Drakeford",
-    "firstMinister": "Mark Drakeford"
+    "firstMinister": "Mark Drakeford",
+    "results": [
+      {
+        "party": "welshlab",
+        "seats": 30
+      },
+      {
+        "party": "welshcon",
+        "seats": 16
+      },
+      {
+        "party": "plaid",
+        "seats": 13
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 60,
+    "majorityThreshold": 31
   },
   {
     "id": "2026",
@@ -74,6 +198,34 @@
     "title": "Senedd Cymru election",
     "control": "plaid",
     "winnerName": "",
-    "firstMinister": null
+    "firstMinister": null,
+    "results": [
+      {
+        "party": "plaid",
+        "seats": 43
+      },
+      {
+        "party": "reform",
+        "seats": 34
+      },
+      {
+        "party": "welshlab",
+        "seats": 9
+      },
+      {
+        "party": "welshcon",
+        "seats": 7
+      },
+      {
+        "party": "walesgrn",
+        "seats": 2
+      },
+      {
+        "party": "welshlibdem",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 96,
+    "majorityThreshold": 49
   }
 ]

@@ -1,23 +1,353 @@
 [
-  { "id": "gla-2024", "body": "gla", "year": 2024, "displayYear": "2024", "date": "2 May 2024", "title": "Mayor & Assembly", "mayorWinner": "labour", "winnerName": "Sadiq Khan" },
-  { "id": "gla-2021", "body": "gla", "year": 2021, "displayYear": "2021", "date": "6 May 2021", "title": "Mayor & Assembly", "mayorWinner": "labour", "winnerName": "Sadiq Khan" },
-  { "id": "gla-2016", "body": "gla", "year": 2016, "displayYear": "2016", "date": "5 May 2016", "title": "Mayor & Assembly", "mayorWinner": "labour", "winnerName": "Sadiq Khan" },
-  { "id": "gla-2012", "body": "gla", "year": 2012, "displayYear": "2012", "date": "3 May 2012", "title": "Mayor & Assembly", "mayorWinner": "conservative", "winnerName": "Boris Johnson" },
-  { "id": "gla-2008", "body": "gla", "year": 2008, "displayYear": "2008", "date": "1 May 2008", "title": "Mayor & Assembly", "mayorWinner": "conservative", "winnerName": "Boris Johnson" },
-  { "id": "gla-2004", "body": "gla", "year": 2004, "displayYear": "2004", "date": "10 June 2004", "title": "Mayor & Assembly", "mayorWinner": "labour", "winnerName": "Ken Livingstone" },
-  { "id": "gla-2000", "body": "gla", "year": 2000, "displayYear": "2000", "date": "4 May 2000", "title": "Mayor & Assembly", "mayorWinner": "independent", "winnerName": "Ken Livingstone" },
-
-  { "id": "glc-1981", "body": "glc", "year": 1981, "displayYear": "1981", "date": "7 May 1981", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "glc-1977", "body": "glc", "year": 1977, "displayYear": "1977", "date": "5 May 1977", "title": "Council election", "control": "conservative", "winnerName": "Conservative control" },
-  { "id": "glc-1973", "body": "glc", "year": 1973, "displayYear": "1973", "date": "12 April 1973", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "glc-1970", "body": "glc", "year": 1970, "displayYear": "1970", "date": "9 April 1970", "title": "Council election", "control": "conservative", "winnerName": "Conservative control" },
-  { "id": "glc-1967", "body": "glc", "year": 1967, "displayYear": "1967", "date": "13 April 1967", "title": "Council election", "control": "conservative", "winnerName": "Conservative control" },
-  { "id": "glc-1964", "body": "glc", "year": 1964, "displayYear": "1964", "date": "9 April 1964", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-
-  { "id": "lcc-1961", "body": "lcc", "year": 1961, "displayYear": "1961", "date": "April 1961", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "lcc-1958", "body": "lcc", "year": 1958, "displayYear": "1958", "date": "April 1958", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "lcc-1955", "body": "lcc", "year": 1955, "displayYear": "1955", "date": "April 1955", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "lcc-1952", "body": "lcc", "year": 1952, "displayYear": "1952", "date": "April 1952", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "lcc-1949", "body": "lcc", "year": 1949, "displayYear": "1949", "date": "March 1949", "title": "Council election", "control": "labour", "winnerName": "Labour control" },
-  { "id": "lcc-1946", "body": "lcc", "year": 1946, "displayYear": "1946", "date": "March 1946", "title": "Council election", "control": "labour", "winnerName": "Labour control" }
+  {
+    "id": "gla-2024",
+    "body": "gla",
+    "year": 2024,
+    "displayYear": "2024",
+    "date": "2 May 2024",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "labour",
+    "winnerName": "Sadiq Khan",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 11
+      },
+      {
+        "party": "conservative",
+        "seats": 8
+      },
+      {
+        "party": "green",
+        "seats": 3
+      },
+      {
+        "party": "libdem",
+        "seats": 2
+      },
+      {
+        "party": "reform",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2021",
+    "body": "gla",
+    "year": 2021,
+    "displayYear": "2021",
+    "date": "6 May 2021",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "labour",
+    "winnerName": "Sadiq Khan",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 11
+      },
+      {
+        "party": "conservative",
+        "seats": 9
+      },
+      {
+        "party": "green",
+        "seats": 3
+      },
+      {
+        "party": "libdem",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2016",
+    "body": "gla",
+    "year": 2016,
+    "displayYear": "2016",
+    "date": "5 May 2016",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "labour",
+    "winnerName": "Sadiq Khan",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 12
+      },
+      {
+        "party": "conservative",
+        "seats": 8
+      },
+      {
+        "party": "green",
+        "seats": 2
+      },
+      {
+        "party": "ukip",
+        "seats": 2
+      },
+      {
+        "party": "libdem",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2012",
+    "body": "gla",
+    "year": 2012,
+    "displayYear": "2012",
+    "date": "3 May 2012",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "conservative",
+    "winnerName": "Boris Johnson",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 12
+      },
+      {
+        "party": "conservative",
+        "seats": 9
+      },
+      {
+        "party": "green",
+        "seats": 2
+      },
+      {
+        "party": "libdem",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2008",
+    "body": "gla",
+    "year": 2008,
+    "displayYear": "2008",
+    "date": "1 May 2008",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "conservative",
+    "winnerName": "Boris Johnson",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 11
+      },
+      {
+        "party": "labour",
+        "seats": 8
+      },
+      {
+        "party": "libdem",
+        "seats": 3
+      },
+      {
+        "party": "green",
+        "seats": 2
+      },
+      {
+        "party": "bnp",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2004",
+    "body": "gla",
+    "year": 2004,
+    "displayYear": "2004",
+    "date": "10 June 2004",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "labour",
+    "winnerName": "Ken Livingstone",
+    "results": [
+      {
+        "party": "conservative",
+        "seats": 9
+      },
+      {
+        "party": "labour",
+        "seats": 7
+      },
+      {
+        "party": "libdem",
+        "seats": 5
+      },
+      {
+        "party": "green",
+        "seats": 2
+      },
+      {
+        "party": "ukip",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "gla-2000",
+    "body": "gla",
+    "year": 2000,
+    "displayYear": "2000",
+    "date": "4 May 2000",
+    "title": "Mayor & Assembly",
+    "mayorWinner": "independent",
+    "winnerName": "Ken Livingstone",
+    "results": [
+      {
+        "party": "labour",
+        "seats": 9
+      },
+      {
+        "party": "conservative",
+        "seats": 9
+      },
+      {
+        "party": "libdem",
+        "seats": 4
+      },
+      {
+        "party": "green",
+        "seats": 3
+      }
+    ],
+    "totalSeats": 25
+  },
+  {
+    "id": "glc-1981",
+    "body": "glc",
+    "year": 1981,
+    "displayYear": "1981",
+    "date": "7 May 1981",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "glc-1977",
+    "body": "glc",
+    "year": 1977,
+    "displayYear": "1977",
+    "date": "5 May 1977",
+    "title": "Council election",
+    "control": "conservative",
+    "winnerName": "Conservative control",
+    "results": []
+  },
+  {
+    "id": "glc-1973",
+    "body": "glc",
+    "year": 1973,
+    "displayYear": "1973",
+    "date": "12 April 1973",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "glc-1970",
+    "body": "glc",
+    "year": 1970,
+    "displayYear": "1970",
+    "date": "9 April 1970",
+    "title": "Council election",
+    "control": "conservative",
+    "winnerName": "Conservative control",
+    "results": []
+  },
+  {
+    "id": "glc-1967",
+    "body": "glc",
+    "year": 1967,
+    "displayYear": "1967",
+    "date": "13 April 1967",
+    "title": "Council election",
+    "control": "conservative",
+    "winnerName": "Conservative control",
+    "results": []
+  },
+  {
+    "id": "glc-1964",
+    "body": "glc",
+    "year": 1964,
+    "displayYear": "1964",
+    "date": "9 April 1964",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1961",
+    "body": "lcc",
+    "year": 1961,
+    "displayYear": "1961",
+    "date": "April 1961",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1958",
+    "body": "lcc",
+    "year": 1958,
+    "displayYear": "1958",
+    "date": "April 1958",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1955",
+    "body": "lcc",
+    "year": 1955,
+    "displayYear": "1955",
+    "date": "April 1955",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1952",
+    "body": "lcc",
+    "year": 1952,
+    "displayYear": "1952",
+    "date": "April 1952",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1949",
+    "body": "lcc",
+    "year": 1949,
+    "displayYear": "1949",
+    "date": "March 1949",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  },
+  {
+    "id": "lcc-1946",
+    "body": "lcc",
+    "year": 1946,
+    "displayYear": "1946",
+    "date": "March 1946",
+    "title": "Council election",
+    "control": "labour",
+    "winnerName": "Labour control",
+    "results": []
+  }
 ]

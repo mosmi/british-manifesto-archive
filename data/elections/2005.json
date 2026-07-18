@@ -15,7 +15,7 @@
     "Blair announces he will not serve full term; Brown transition begins",
     "Lowest Labour vote share since 1987 despite majority win"
   ],
-  "youtubeId": "",
+  "youtubeId": "-fz6OdDZhT0",
   "extraManifestoParties": [
     "cooperative",
     "ukip",
@@ -36,7 +36,8 @@
     "englishdemocrats",
     "forwardwales",
     "sea",
-    "veritas"
+    "veritas",
+    "socialistlabour"
   ],
   "partyResults": {
     "welshcon": {
@@ -79,69 +80,75 @@
   "results": [
     {
       "party": "labour",
-      "seats": 356,
-      "votes": 9552436,
+      "seats": 355,
+      "votes": 9552589,
       "percentage": 35.2
     },
     {
       "party": "conservative",
-      "seats": 198,
-      "votes": 8784915,
+      "seats": 199,
+      "votes": 8782966,
       "percentage": 32.4
     },
     {
       "party": "libdem",
       "seats": 62,
-      "votes": 5985454,
+      "votes": 5961718,
       "percentage": 22
-    },
-    {
-      "party": "snp",
-      "seats": 6,
-      "votes": 412267,
-      "percentage": 1.5
-    },
-    {
-      "party": "plaid",
-      "seats": 3,
-      "votes": 174838,
-      "percentage": 0.6
-    },
-    {
-      "party": "uup",
-      "seats": 1,
-      "votes": 0,
-      "percentage": 0
     },
     {
       "party": "dup",
       "seats": 9,
-      "votes": 0,
-      "percentage": 0
+      "votes": 241900,
+      "percentage": 0.9
     },
     {
-      "party": "sdlp",
-      "seats": 3,
-      "votes": 0,
-      "percentage": 0
+      "party": "snp",
+      "seats": 6,
+      "votes": 412300,
+      "percentage": 1.5
     },
     {
       "party": "sinnfein",
       "seats": 5,
-      "votes": 0,
-      "percentage": 0
+      "votes": 174500,
+      "percentage": 0.6
+    },
+    {
+      "party": "sdlp",
+      "seats": 3,
+      "votes": 125600,
+      "percentage": 0.5
+    },
+    {
+      "party": "plaid",
+      "seats": 3,
+      "votes": 174800,
+      "percentage": 0.6
     },
     {
       "party": "respect",
       "seats": 1,
-      "votes": 68094,
-      "percentage": 0.3
+      "votes": 15891,
+      "percentage": 0.1
     },
     {
-      "party": "others",
-      "seats": 2,
-      "votes": 0,
-      "percentage": 8
+      "party": "independent",
+      "seats": 1,
+      "votes": 20505,
+      "percentage": 0.1
+    },
+    {
+      "party": "uup",
+      "seats": 1,
+      "votes": 127400,
+      "percentage": 0.5
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 15153,
+      "percentage": 0.1
     }
   ]
 }

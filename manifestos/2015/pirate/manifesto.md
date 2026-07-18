@@ -2,7 +2,7 @@
 election_year: 2015
 party_id: pirate
 party_name: Pirate Party UK
-party_leader: null
+party_leader: Loz Kaye
 political_spectrum: centre
 victory: false
 government_outcome: opposition

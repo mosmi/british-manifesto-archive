@@ -2,7 +2,7 @@
 election_year: 2024
 party_id: co-operative
 party_name: Co-operative Party
-party_leader: null
+party_leader: Jim McMahon
 political_spectrum: centre-left
 victory: true
 government_outcome: majority

@@ -28,8 +28,6 @@ sections:
 
 # Welsh Labour Manifesto 2001
 
-Here is a corrected, verbatim Markdown transcription based strictly on the provided 12-page PDF document. It restores all the missing paragraphs, sidebars, policy details, and political arguments that were omitted in the previous version, and it ends exactly where the provided PDF ends (at the conclusion of the "Culture and sport" section on internal page 23).
-
 ## Ambitions for Wales
 
 Fulfilling Britain’s great potential

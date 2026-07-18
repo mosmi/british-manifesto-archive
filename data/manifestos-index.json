@@ -165,6 +165,16 @@
     "label": "Alliance Manifesto 1983"
   },
   {
+    "electionId": "1983",
+    "partyId": "scottishcon",
+    "label": "Scottish Conservatives Manifesto 1983"
+  },
+  {
+    "electionId": "1983",
+    "partyId": "welshcon",
+    "label": "Welsh Conservatives Manifesto 1983"
+  },
+  {
     "electionId": "1987",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 1987"
@@ -466,6 +476,11 @@
   },
   {
     "electionId": "2005",
+    "partyId": "socialistlabour",
+    "label": "Socialist Labour Party Manifesto 2005"
+  },
+  {
+    "electionId": "2005",
     "partyId": "ssp",
     "label": "Scottish Socialist Party Manifesto 2005"
   },
@@ -626,6 +641,11 @@
   },
   {
     "electionId": "2015",
+    "partyId": "cista",
+    "label": "Cannabis Is Safer Than Alcohol Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 2015"
   },
@@ -726,6 +746,11 @@
   },
   {
     "electionId": "2015",
+    "partyId": "socialistlabour",
+    "label": "Socialist Labour Party Manifesto 2015"
+  },
+  {
+    "electionId": "2015",
     "partyId": "ssp",
     "label": "Scottish Socialist Party Manifesto 2015"
   },
@@ -813,6 +838,11 @@
     "electionId": "2017",
     "partyId": "libdem",
     "label": "Liberal Democrats Manifesto 2017"
+  },
+  {
+    "electionId": "2017",
+    "partyId": "liberal1989",
+    "label": "Liberal Party Manifesto 2017"
   },
   {
     "electionId": "2017",
@@ -953,6 +983,11 @@
     "electionId": "2019",
     "partyId": "libdem",
     "label": "Liberal Democrats Manifesto 2019"
+  },
+  {
+    "electionId": "2019",
+    "partyId": "liberal1989",
+    "label": "Liberal Party Manifesto 2019"
   },
   {
     "electionId": "2019",
@@ -1098,6 +1133,11 @@
     "electionId": "2024",
     "partyId": "libdem",
     "label": "Liberal Democrats Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "liberal1989",
+    "label": "Liberal Party Manifesto 2024"
   },
   {
     "electionId": "2024",
@@ -1358,5 +1398,10 @@
     "electionId": "london/gla-2004",
     "partyId": "cpa",
     "label": "Christian Peoples Alliance London Mayoral Manifesto 2004"
+  },
+  {
+    "electionId": "london/lcc-1958",
+    "partyId": "spgb",
+    "label": "Socialist Party of Great Britain LCC Manifesto 1958"
   }
 ]

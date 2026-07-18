@@ -7,16 +7,18 @@
   "pm": "Margaret Thatcher",
   "outgoingPm": "Margaret Thatcher",
   "totalSeats": 650,
-  "summary": "Thatcher won a landslide majority of 144 seats — the largest since 1945 — buoyed by the \"Falklands Factor.\" Labour, under Michael Foot, campaigned on a left-wing manifesto described by Gerald Kaufman as \"the longest suicide note in history.\" The SDP–Liberal Alliance won 25.4% of the vote — only just below Labour's 27.6% — but won only 23 seats under first-past-the-post.",
+  "summary": "Thatcher won a landslide majority of 144 seats \u2014 the largest since 1945 \u2014 buoyed by the \"Falklands Factor.\" Labour, under Michael Foot, campaigned on a left-wing manifesto described by Gerald Kaufman as \"the longest suicide note in history.\" The SDP\u2013Liberal Alliance won 25.4% of the vote \u2014 only just below Labour's 27.6% \u2014 but won only 23 seats under first-past-the-post.",
   "highlights": [
     "Falklands Factor delivers Thatcher a majority of 144",
     "Labour's manifesto dubbed \"the longest suicide note in history\"",
-    "SDP–Liberal Alliance wins 25.4% of votes but only 23 seats",
+    "SDP\u2013Liberal Alliance wins 25.4% of votes but only 23 seats",
     "Neil Kinnock begins rebuilding Labour in the years following"
   ],
-  "youtubeId": "",
+  "youtubeId": "AZm_TTa8wcI",
   "extraManifestoParties": [
-    "green"
+    "green",
+    "scottishcon",
+    "welshcon"
   ],
   "partyResults": {
     "welshcon": {
@@ -66,56 +68,56 @@
     {
       "party": "labour",
       "seats": 209,
-      "votes": 8456934,
+      "votes": 8271837,
       "percentage": 27.6
     },
     {
       "party": "libdem",
       "seats": 23,
-      "votes": 7780949,
+      "votes": 7780486,
       "percentage": 25.4
-    },
-    {
-      "party": "snp",
-      "seats": 2,
-      "votes": 331975,
-      "percentage": 1.1
-    },
-    {
-      "party": "plaid",
-      "seats": 2,
-      "votes": 125309,
-      "percentage": 0.4
     },
     {
       "party": "uup",
       "seats": 11,
-      "votes": 0,
-      "percentage": 0
+      "votes": 260000,
+      "percentage": 0.8
     },
     {
       "party": "dup",
       "seats": 3,
-      "votes": 0,
-      "percentage": 0
+      "votes": 152700,
+      "percentage": 0.5
     },
     {
-      "party": "sdlp",
-      "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "party": "plaid",
+      "seats": 2,
+      "votes": 125300,
+      "percentage": 0.4
+    },
+    {
+      "party": "snp",
+      "seats": 2,
+      "votes": 332000,
+      "percentage": 1.1
     },
     {
       "party": "sinnfein",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 102700,
+      "percentage": 0.3
     },
     {
-      "party": "others",
+      "party": "ulsterpopularunionist",
       "seats": 1,
-      "votes": 0,
-      "percentage": 3.1
+      "votes": 22861,
+      "percentage": 0.1
+    },
+    {
+      "party": "sdlp",
+      "seats": 1,
+      "votes": 137000,
+      "percentage": 0.4
     }
   ]
 }

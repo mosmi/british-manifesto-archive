@@ -2,8 +2,8 @@
 election_year: 2024
 party_id: green
 party_name: Green Party
-party_leader: Zoë Garbett
-political_spectrum: left / green
+party_leader: Zoe Garbett
+political_spectrum: left
 victory: false
 government_outcome: opposition
 sections:
@@ -12,4529 +12,2283 @@ sections:
   - health
   - education
   - housing
+  - immigration
+  - foreign-policy
   - environment
   - transport
   - law-and-order
+  - welfare
+  - democracy-and-constitution
+  - agriculture
   - energy
+  - devolution
   - science-and-technology
   - local-government
 ---
 
 # Green Party London Mayoral Manifesto 2024
 
-A plan for a greener,
-more affordable London
-2024 London Green Party manifesto
+ZOË Green Party
+GARBETT
+LONDON
 
-Zoë Garbett -
-your candidate for mayor of london
-| "I  love                                | London.      | From            | the       | park  | of  diverse                             | communities.  |           | And  I’m       |     |     |
-| --------------------------------------- | ------------ | --------------- | --------- | ----- | --------------------------------------- | ------------- | --------- | -------------- | --- | --- |
-| in  Richmond                            |              | to  the         | market    |       | ready to do so much more.               |               |           |                |     |     |
-| in  Haringey,                           |              | from            | theatres  | in    | People deserve to be healthy            |               |           |                |     |     |
-| Camden to pubs in Croydon. Our          |              |                 |           |       | and have the opportunity to thrive.     |               |           |                |     |     |
-| city is incredible - but sadly is just  |              |                 |           |       | I’ve  held                              | senior        | roles     | in  public     |     |     |
-| not working for too many people.        |              |                 |           |       | health, adult social care as well as    |               |           |                |     |     |
-| Our City desperately needs a            |              |                 |           |       | children’s                              | health        | services  | in  the        |     |     |
-| new direction. We must address          |              |                 |           |       | NHS and managed huge budgets            |               |           |                |     |     |
-| inequality, the housing crisis, and     |              |                 |           |       | and  projects                           |               | with      | communities    |     |     |
-| the climate emergency.  I have a        |              |                 |           |       | and I’ve made a difference.             |               |           |                |     |     |
-| clear plan to make London fairer        |              |                 |           |       | This next term of the Mayor is          |               |           |                |     |     |
-| and more affordable.                    |              |                 |           |       | critical to addressing the climate      |               |           |                |     |     |
-| As  a                                   | councillor,  |                 | I  hear   | how   | emergency - we must act now and         |               |           |                |     |     |
-| Londoners                               | need         | better          | housing,  |       | I know what needs to be done.           |               |           |                |     |     |
-| safer streets and reliable, cheaper     |              |                 |           |       | Your                                    | three         | Green     | Assembly       |     |     |
-| transport. I listen to people - and     |              |                 |           |       | members                                 | Siân          | Berry,    | Caroline       |     |     |
-| act on what they tell me. I’m also      |              |                 |           |       | Russell and Zack Polanski do brilliant  |               |           |                |     |     |
-| a renter; I know how insecure and       |              |                 |           |       | work holding the Mayor of London        |               |           |                |     |     |
-| unfair it can feel. I have a strong     |              |                 |           |       | to  account,                            |               | and  I’m  | so  proud  to  |     |     |
-| track  record                           |              | of  delivering  |           | for   | stand alongside them as your Green      |               |           |                |     |     |
-Zoë Garbett with Green London Assembly Members
-| residents - earning me the trust  |     |     |     |     | candidate for Mayor of London. “ |     |     |     |     |     |
-| --------------------------------- | --- | --- | --- | --- | -------------------------------- | --- | --- | --- | --- | --- |
-Siân Berry, Zack Polanski and Caroline Russell
-Support for the Green Party is growing
+# 2024 LONDON GREEN PARTY MANIFESTO
+
+A plan for a greener, more affordable London
+
+## ZOË GARBETT -
+## YOUR CANDIDATE FOR MAYOR OF LONDON
+
+"I love London. From the park in Richmond to the market in Haringey, from theatres in Camden to pubs in Croydon. Our city is incredible - but sadly is just not working for too many people. Our City desperately needs a new direction. We must address inequality, the housing crisis, and the climate emergency. I have a clear plan to make London fairer and more affordable. As a councillor, I hear how Londoners need better housing, safer streets and reliable, cheaper transport. I listen to people - and act on what they tell me. I’m also a renter; I know how insecure and unfair it can feel. I have a strong track record of delivering for residents - earning me the trust of diverse communities. And I’m ready to do so much more.
+
+People deserve to be healthy and have the opportunity to thrive. I’ve held senior roles in public health, adult social care as well as children’s health services in the NHS and managed huge budgets and projects with communities and I’ve made a difference. This next term of the Mayor is critical to addressing the climate emergency - we must act now and I know what needs to be done. Your three Green Assembly members Siân Berry, Caroline Russell and Zack Polanski do brilliant work holding the Mayor of London to account, and I’m so proud to stand alongside them as your Green candidate for Mayor of London. “
+
+Zoë Garbett with Green London Assembly Members Siân Berry, Zack Polanski and Caroline Russell
+
+**SUPPORT FOR THE GREEN PARTY IS GROWING**
+
+**THE TIME FOR A GREEN MAYOR IS NOW**
+
+**PLEASE USE ALL THREE VOTES FOR THE GREENS IN LONDON**
+
 London Assembly – Local
+Green Party
+
 GARBETT, Zoë
-The time for a Green Mayor is now
+Green Party
+
 Assembly – London-wide
-Please use all three votes for the Greens in London
-| ii  |     |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 | 1   |
-| --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- |
+Green Party
 
-The plan London
-needs to thrive
-Zoë Garbett (centre) with Green
-London Assembly candidates
-L
-ondon is an incredible That is exactly what a Green Greens will cut daily living why our elected politicians refuse
-international city in so many Mayor of London can offer. costs, prioritise safe, to do anything to tackle the crisis.
-ways. Just a short walk from Alongside elected Green Assembly Homes are being flooded, water
-affordable housing for all,
-my doorstep in Hackney, cultures members, a Green Mayor will supplies threatened in summer
-and reform the police
-from all over the world mingle, work to a bold plan that tackles droughts and the cost of food
-many from families who came here Londoners’ biggest concerns. We and energy is rising faster than
-generations ago to make a home in have a plan for a better London. the Green Party has called for people’s wages or benefits.
-our welcoming city. Our diversity is Greens will cut daily living costs, a bilateral ceasefire, release of I want London to take
-our strength. prioritise safe, affordable housing all hostages and lasting peace. responsibility for its emissions and
-London desperately needs a for all, and reform the police to Greens work to ensure the safety be a climate leader. We must, and can,
-Mayor that understands the issues create a service we can trust to of our communities and don’t do more. Our future depends on it.
-that most Londoners are facing. It keep us safe. tolerate hate towards anyone. I have a plan to make London
-needs a Mayor who knows that for We know many Londoners have We also know Londoners are work for everyone.
-this city to work, it has to work for been affected by the violence worried about the climate crisis. There has never been a more
-everyone. in both Israel and Palestine - More than that, they want to know important time to vote Green.
-2 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 3
+## THE PLAN LONDON NEEDS TO THRIVE
 
-Mini-manifesto
-the Met and the need for urgent, ` Ensure London’s transport
-system is truly accessible ,
-meaningful reform and will:
-with more public toilets and
-` Create a police service of
-step free access so disabled
-the right people with the
-people, older Londoners,
-right skills who respect
-and people using pushchairs
-London’s diversity, working
-can get around our city
-A fairer,Greener London: to community priorities and a
-supply’, a Green idea, to help safely and conveniently.
-higher level of accountability.
-councils to purchase existing
-We need urgent action on the family-sized homes from the ` Prioritise youth work, Cutting daily living costs
-climate emergency. Greens will act market and acquire market expanding the Young and supporting workers:
-quickly, and put climate at the heart homes from developers where Londoners’ Fund and
-of everything we do. We are the sales and construction are investing in youth workers
-only party who truly understands stalled, by securing grants ` Fully fund support services So many Londoners fear being
-what action is needed. A Green from the government for those affected by sexual priced out of our city. We believe
-Mayor will: ` Demand rent control powers and domestic violence that everyone deserves the chance
-` Develop the current climate for London, and bring in a to thrive. A Green Mayor will:
-Getting around our city:
-budget process with a clear two-year freeze when we get ` Extend universal free school
-timeline and projects to them. Immediately establish meals for secondary school
-meet 2030 commitments a Rent Commission to set We all want clean air, and quick, children, helping families
-` Create at least ten major new a new downward trajectory affordable ways to get around our stretch tight budgets
-parks for people to access, for excessive rents. city. Our transport system needs and supporting the city’s
-children to thrive.
-children to play in and for ` Set up a Cold Homes Strategy to work for everyone. A Green
-nature to thrive, and protect with an insulation and Mayor will: ` Promise a real Living Wage
-our current green spaces ventilation taskforce to deal ` Work towards one single, low for London, estimated at
-` Safeguard our tap water and with cold and damp homes, fare for all public transport £16.14, run pilot schemes
-prioritising those most in journeys in London and for a Universal Basic Income
-rivers by holding Thames
-need such as older people, immediately freeze bus fares, and protect workers’
-Water to account, cutting
-disabled people, and those with free bus travel brought rights and trade unions.
-water pollution and waste.
-with a terminal illness. in for under-22s and asylum
-` Support small businesses,
-seekers. Reinstate 24/7
-Right homes, right price: making independent trading
-A safer city: travel for older Londoners. easier for all of London’s
-London is beyond a housing crisis. ` Consult on smarter, fairer sole traders and taking
-Greens stand up for everyone’s Londoners deserve to live in road pricing and invest steps to revitalise our high
-right to affordable, safe housing. A a safe and healthy city with a in walking and cycling, streets by opening up empty
-including repurposing council-owned spaces.
-Green Mayor will: police service we can trust to
-the Silvertown Tunnel
-` Expand the council housing keep us safe. Greens recognise
-programme to ‘buy the the institutional discrimination in
-4 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 5
+Zoë Garbett (centre) with Green London Assembly candidates
 
-Celebrating London’s
-You have Vote 1: Mayor of London Your Green London wide
-culture:
-Vote 2: Constituency Assembly Assembly Members Siân Berry,
-three votes Member, to represent your local area Caroline Russell and Zack
-Greens will work to put culture on Vote 3: London wide Assembly Polanski have a track record of
-everyone’s doorsteps. A Green in this election Members - vote for the political success for London on a range
-Mayor will: party you want to get Assembly of issues. A Green vote here will
-` Support smaller, local venues Members elected proportionally keep your elected Greens, and
-and events to survive, and to reflect your views. add more.
-implement a Big Venues Levy
-to redistribute funding away
-Your Green Party
-from the big venues that are
-already thriving, and towards London wide Assembly
-the small venues that need
-Candidates
-every penny to survive.
-` Celebrate and support all Siân Caroline Zack Benali
-Berry AM Russell AM Polanski AM Zoë Garbett Hamdache
-London’s diverse communities
-Giving you more power:
-People need more control over their
-lives, homes, and neighbourhoods. Claire
-Sheppard
-Greens want communities to have Scott Nate (Lambeth and
-more say, opening decisions up to Ainslie Ria Patel Higgins Southwark) Shahrar Ali Pete Elliott
-everyone. A Green Mayor will:
-` Share power, giving Londoners
-Your Green
-more of a say over how the
-Mayor’s budget is spent, constituency
-ensuring decisions are
-candidates
-made by the communities
-Barnet and Bexley and Brent and City and East: Croydon and Ealing and
-they affect, and supporting
-Camden: Kate Bromley: Harrow: Nida Joe Hudson- Sutton: Peter Hillingdon:
-community groups Tokley Marley King Al-Fulaij Small Underwood Jess Lee
-` Push for more powers for
-London from the national
-government, to set our
-own policies on housing,
-transport, health and more.
-Enfield and Greenwich Havering and Merton and North East:
-Haringey: and Lewisham: Redbridge: Wandsworth: Antoinette South West: West Central:
-Katie Knight Karin Tearle Kim Arrowsmith Pippa Maslin Fernandez Chas Warlow Rajiv Sinha
-6 LONDON GREEN PARTY 2024 LLOONNDDOONN GGRREEEENN PPAARRTTYY 22002244 77
+London is an incredible international city in so many ways. Just a short walk from my doorstep in Hackney, cultures from all over the world mingle, many from families who came here generations ago to make a home in our welcoming city. Our diversity is our strength.
 
-Climate
-Zoë and the Green Party are the only party ready to
-take the decisive action our climate needs
-F
-or decades, Greens have led the a green light to The City Airport Greens are the only party ready to A Green Mayor will make London
-way making sure we respond to expansion. take decisive action. a green, responsible city, prepared
-climate breakdown. Londoners People across London are Greens know that there is no for the future.
-want to live in a city with clean already feeling the impact of climate justice without racial,
-air and water, and thriving green extreme weather. Wildfires and social and economic justice and
-spaces, and leaders to tackle the floods have closed stations, our climate promises are threaded
-climate emergency. roads, schools and hospitals, shut throughout our manifesto. This
-The current Mayor has failed to down energy supplies and ruined chapter contains the headlines.
-act fast enough. He failed to give us homes. Meanwhile, London is the The Green Party will put climate
-the retrofit revolution he promised. UK’s carbon factory. We must act action at the centre of everything
-He even took steps in the wrong responsibly and stop churning out we do for our citizens and the
-direction, pushing ahead with the greenhouse gases by 2030. The environment. All decisions we
-Silvertown Tunnel, even though it next Mayoral term will be absolutely make will put people and planet
-will make traffic worse, and he gave crucial. The window is closing and before profit.
-8 9
-ETAMILC
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024
+London desperately needs a Mayor that understands the issues that most Londoners are facing. It needs a Mayor who knows that for this city to work, it has to work for everyone.
 
-Climate at the heart of
-everything we do
-` Housing: We will rapidly
-invest in refurbishing
-existing buildings with
-minimal environmental
-impact, so we demolish
-less and need fewer
-new builds. This will
-lower pollution from
-construction, while bills
-will become cheaper once
-houses need less energy
-to regulate temperatures.
-` Transport: We will make
-walking, wheeling and
-cycling safer and easier
-across inner and outer
-London by reclaiming
-public streets for public,
-active use. We will make
-Greens, like Zoë Garbett and Carla Denyer (pictured)
-public transport affordable
-will work at all levels of government to ensure the
-and accessible.
-environment is at the centre of all our work
-` Economy: We will transform
-the economy and create
-fairer green jobs. We will set the best standards a Citizens’ Climate Assembly for London from national
-help small businesses and for all of London for and a Just Transition government and share that
-workers to transition to social and environmental Commission to give power with everyone, so we
-green jobs and businesses, justice. And we will make everyone’s views a platform can target climate mitigation
-while helping high streets London’s food economy as and make our climate plans funding to the areas that
-to thrive. Under our sustainable as possible. reflect everyone’s needs. need it most, and use it in
-stewardship, the GLA will We will demand more power the most effective ways.
-` Democracy: We will set up
-ETAMILC
-10 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 11
+### Greens will cut daily living costs, prioritise safe, affordable housing for all, and reform the police
 
-What greens the global expertise of the ` As chair of the Environment mitigation and adaptation
-Gender Responsive Resilience Committee, Zack Polanski policies in a fair way.
-have achieved and Intersectionality in Policy commissioned the ` Bring all our climate targets
-and Practice (GRRIPP), Zack first investigation into
-and strategies forward to
-has raised awareness of the light pollution who’s
-Elected Green Assembly Members 2030 to limit our contribution
-importance of having diverse recommendations, along with
-have held key roles in City Hall, to ecological overshoot.
-and marginalised communities our Green Newham councillors,
-making sure the climate emergency as decision makers. resulted in the rejection ` Assess and report on the
-is top of the agenda. of the MSG Sphere - which true ecological impact of
-` Greens secured stronger
-` Zack Polanski has campaigned would have been the largest every decision we make
-protections for green space
-hard for the retrofitting of advertising LED screen on the on a quarterly basis to the
-in the last London Plan.
-homes in London, bringing to planet in the Olympic Park - London Assembly and with
-the Mayor’s attention the acute ` Greens have successfully awful for residents and wildlife dedicated time in every Mayor’s
-shortage of people with the used the National Park City Questions Time sessions.
-skills to coordinate and deliver initiative to strengthen our Setting the ` Ensure GLA staff have the
-improvements to our homes, call for a whole-city approach
-carbon and pollution literacy
-like insulation, double-glazing to green infrastructure.
-right targets to develop healthy, low carbon
-and energy efficiencies.
-` Siân Berry won a review of cultures and encourage all local
-` Caroline Russell published a planning restrictions on solar Greens will work with communities authorities to do the same.
-report in 2019 on climate risks panels in conservation areas, and scientists to ensure we set the ` Alongside a Citizens’
-facing London, exposing that which restrict householders
-right targets for climate mitigation, Climate Assembly, create
-London schools, hospitals from generating green power
-and reduce pollution and emissions an independent Climate
-and tube stations are all across large parts of London.
-without further disadvantage to Emergency Alliance from
-at serious risk as global
-` Greens also secured the u-turn the poorest Londoners. climate campaigners,
-temperatures continue to rise.
-on Gatwick expansion, opened In 2024, the Met Office expects community groups and
-` Zack Polanski pushed the up the conversation on a the annual average temperature campaign organisations, to
-Mayor into publishing maps frequent flyer levy, fought the support our target-setting and
-increase to exceed 1.5C for the
-that informed people living expansion of City Airport and to action on climate. The Alliance
-first time. The degree to which
-in basement properties of ban private jets from our city. will be independently run and
-we exceed this average safe limit
-their flooding risk highlighting mandated to advise us and
-` Alongside Fossil Free London, is called ‘ecological overshoot’. A
-the disproportionate hold our work accountable.
-Zack Polanski has worked
-Green Mayor will have the political
-impact on those who
-to keep greenwashing ` Work with councils, the
-will to limit ecological overshoot to
-couldn’t afford insurance.
-corporate sponsorship out Citizens’ Climate Assembly and
-as close to safe levels as possible.
-` Zack Polanski has led work of our community events. Climate Emergency Alliance
-To do this we will:
-to design a gender and to create viable localised
-` Greens have listened to ` Create a Just Transition
-intersectionality responsive strategies and targets for
-and raised the voices of
-Commission in partnership
-climate adaptation plan protecting river networks
-climate campaigners such as
-with Trade Unions and led by
-for London. Working with and smaller, sometimes
-organisations campaigning to
-workers to steer our climate
-University College London and private green spaces, like
-stop incinerator expansion.
-12 13
-ETAMILC
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024
+That is exactly what a Green Mayor of London can offer. Alongside elected Green Assembly members, a Green Mayor will work to a bold plan that tackles Londoners’ biggest concerns. We have a plan for a better London. Greens will cut daily living costs, prioritise safe, affordable housing for all, and reform the police to create a service we can trust to keep us safe.
 
-ETAMILC
-| networks of linked back     |     |     | so people can better  |     |     |     |     |     |
-| --------------------------- | --- | --- | --------------------- | --- | --- | --- | --- | --- |
-| gardens or small parklets,  |     |     | protect their health. |     |     |     |     |     |
-to ensure biodiversity and
-` Raise awareness of the
-natural habitats are not lost.
-damage wood and coal burning
-causes our environment and
-| Clean Air |     |     | help people who rely on them  |     |     |     |     |     |
-| --------- | --- | --- | ----------------------------- | --- | --- | --- | --- | --- |
-transition from open fires
-and woodburners, so we can
-| London  | has  six  airports,  | more  |     |     |     |     |     |     |
-| ------- | -------------------- | ----- | --- | --- | --- | --- | --- | --- |
-phase them out by the end
-car journeys than the rest of the
-of the first term in 2028.
-| country                            | and  huge  | numbers  of  |                                 |     |     |     |     |     |
-| ---------------------------------- | ---------- | ------------ | ------------------------------- | --- | --- | --- | --- | --- |
-| deliveries coming and going every  |            |              | ` Speed up City Hall’s Healthy  |     |     |     |     |     |
-Streets programme.
-day. Thousands of people die from
-air pollution in London every year
-Protecting Nature
-and the most deprived parts of our
-city have the worst air quality. We
-| need to clean up our air now.     |               |                 | London’s ecology is in crisis. Parts  |              |                 |     |     |     |
-| --------------------------------- | ------------- | --------------- | ------------------------------------- | ------------ | --------------- | --- | --- | --- |
-| The                               | Green  Party  | will  work  to  | of London have no decent green        |              |                 |     |     |     |
-| end the environmental and social  |               |                 | spaces                                | for  people  | or  nature  to  |     |     |     |
-Zoë will protect important Green spaces, like the successful
-| injustices  | of  air  pollution.  | We  | enjoy.  | Some  green  | spaces  feel  |     |     |     |
-| ----------- | -------------------- | --- | ------- | ------------ | ------------- | --- | --- | --- |
-campaign to protect Warren Farm in Ealing
-| have a strong, strategic plan for   |     |     | neglected and unsafe, while others  |     |     |     |     |     |
-| ----------------------------------- | --- | --- | ----------------------------------- | --- | --- | --- | --- | --- |
-| reducing pollution from everything  |     |     | are polluted.                       |     |     |     |     |     |
-we do, while increasing London’s  Greens will restore and create  will protect and nurture nature for  to identify, improve and
-protect local green spaces
-green  space.  Our  Transport  and  new  green  spaces  in  London’s  the good of all, capturing carbon
-and nature corridors.
-Housing  chapters  have  more  most  deprived  areas,  so  those  and creating beautiful spaces for
-promises for cleaning up London’s  communities  can  breathe  clean  everyone to enjoy, by:  ` Our plan to increase ecological
-air pollution, as those areas need  air. We will protect existing green  ` Declaring a biodiversity  corridors will link up London’s
-the most change. To achieve this  spaces  against  inappropriate  emergency. outer boroughs through orbital
-active travel routes, as well as
-| fairly,  across  | London’s  | inner  and  | planning  | applications  | that  cut  |     |     |     |
-| ---------------- | --------- | ----------- | --------- | ------------- | ---------- | --- | --- | --- |
-` Convening a network of
-create new, sustainable routes
-outer boroughs, we will: through  the  network,  depriving  ecologists across the city
-in and out of central London.
-plant and animal species of space
-| ` Monitor air pollution, share data  |     |     |     |     |     | to share knowledge and  |     |     |
-| ------------------------------------ | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
-widely and use what we learn  to migrate, breed and thrive. Then,  ` Immediately stopping
-best practice and bringing
-to consult with communities  we will focus on connecting and  together partners to deliver  the use of all pesticides
-and herbicides, including
-and councils to implement  growing what we have, with a huge,  biodiversity net gain.
-better, stricter action plans. glyphosate, on GLA-controlled
-|     |     |     | strategic  | approach  | to  expanding  | ` Creating a Green Grid strategy  |     |     |
-| --- | --- | --- | ---------- | --------- | -------------- | --------------------------------- | --- | --- |
-nature in the city. land and pushing councils
-| ` Give clear warning in advance  |     |     |     |     |     | in partnership with the  |     |     |
-| -------------------------------- | --- | --- | --- | --- | --- | ------------------------ | --- | --- |
-to adopt the same policy for
-| of major air pollution events,  |     |     | Greens will do more than just  |     |     |     |     |     |
-| ------------------------------- | --- | --- | ------------------------------ | --- | --- | --- | --- | --- |
-National Park City initiative
-public spaces, footpaths and
-|     |     |     | reduce emissions in our city. We  |     |     | and numerous local groups,  |     |     |
-| --- | --- | --- | --------------------------------- | --- | --- | --------------------------- | --- | --- |
-estates within two years.
-| 14  |     | LONDON GREEN PARTY 2024 |     |     |     |     | LONDON GREEN PARTY 2024 | 15  |
-| --- | --- | ----------------------- | --- | --- | --- | --- | ----------------------- | --- |
+We know many Londoners have been affected by the violence in both Israel and Palestine - the Green Party has called for a bilateral ceasefire, release of all hostages and lasting peace. Greens work to ensure the safety of our communities and don’t tolerate hate towards anyone.
 
-for Open Spaces and helping ` Support local communities
-communities to create and in designating green spaces
-register their own garden Assets of Community Value.
-streets, street parks and
-` Support communities and
-town and village greens.
-residents to create 1000
-` Create at least ten major new new, traffic-free street parks
-parks for people to access, or garden streets by 2030,
-children to play in and for targeting areas with limited
-nature to thrive, including access to green spaces.
-sites like Leigh Road Sports
-` We will at least double the
-Ground in East Ham.
-grants available from the
-` Prevent property developers Green City Fund and target
-from ‘land banking’; more disadvantaged areas
-fencing off and neglecting and excluded groups, with
-public open spaces. additional staff and resources
-to deliver this promise.
-` Create six large, new nature
-Greens will create ten new major parks
-friendly community farms Trees and Woodland
-in the areas that need them most
-to encourage food growing
-and showcase the benefits
-Trees offer vital support to city
-` Making sure all parks and green minutes walking distance from a gardening brings to wellbeing. infrastructure, offering shade and
-spaces, including roadside green space and many existing ` Encourage local authorities breaking up ground to help water
-planters and verges support spaces are not designed for the and private landowners to drainage. The older they become,
-healthy populations of bees local communities they serve. register more town and village the more they contribute to our
-and other pollinators, alongside greens, to protect these vital
-London has just half of the green air quality and biodiversity and the
-upgrading bus stops with spaces from development.
-spaces needed for a city of almost health of our city.
-solar power generation and
-ten million people. ` Establish a Spaces Czar to ` Following excellent work in
-bee-friendly plants on roofs.
-Greens will put strategic match communities up with Enfield, we will support councils
-Parks and Open Spaces policies in place to protect existing available space, unblock any to plant 1000 new hectares
-parks and dramatically expand the barriers to access, bring more of tree canopy cover by 2030,
-Parks are absolutely vital to availability of green, open spaces, green space into use and expanding existing woodland.
-help with securing funding.
-capturing carbon emissions and making them more inviting, and ` We will bring in strict planning
-creating healthy, beautiful spaces readily available to everyone. ` Share clear advice on how policies to protect all ancient
-for local communities to enjoy. Yet Starting with parts of London with parks can achieve Green Flag woodland and veteran
-access to parks is still too unfair in little or no access, we will: Awards and encourage more trees from any damage.
-London. African, Caribbean, Asian, ` Reinforce protections for councils to work for them. ` We will fund the creation
-Latino, Roma and people from the existing spaces, by endorsing of at least 150 new
-Global South are likely to live five the Parks Charter and Charter community orchards.
-16 17
-ETAMILC
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024
+We also know Londoners are worried about the climate crisis. More than that, they want to know why our elected politicians refuse to do anything to tackle the crisis. Homes are being flooded, water supplies threatened in summer droughts and the cost of food and energy is rising faster than people’s wages or benefits.
 
-` Working with education  ` Rolling out best practice  ETAMILC
-| authorities, we will develop a  |     |     | guidance for street and        |     |     |     |     |
-| ------------------------------- | --- | --- | ------------------------------ | --- | --- | --- | --- |
-| comprehensive environmental     |     |     | development lighting designed  |     |     |     |     |
-| education programme in          |     |     | to reduce light pollution      |     |     |     |     |
-| schools with support for        |     |     | and preserve and extend        |     |     |     |     |
-| outdoor forest schools.         |     |     | dark sky areas for wildlife.   |     |     |     |     |
-` Engaging with universities and
-Animal Welfare
-the science and knowledge
-sectors to make London a
-| As  scavenging  | species  | become  |     |     |     |     |     |
-| --------------- | -------- | ------- | --- | --- | --- | --- | --- |
-world centre for non-animal
-| more  and  | more  dependent  | on  |     |     |     |     |     |
-| ---------- | ---------------- | --- | --- | --- | --- | --- | --- |
-biomedical research.
-| human  | food  waste  | for  survival,  |     |     |     |     |     |
-| ------ | ------------ | --------------- | --- | --- | --- | --- | --- |
-` Encouraging all establishments
-they move closer to where we live.
-in London that conduct
-Greens will act to manage species
-research using animals to
-| like  foxes  | and  seagulls  | naturally  |     |     |     |     |     |
-| ------------ | -------------- | ---------- | --- | --- | --- | --- | --- |
-publicly commit to replacing
-and humanely without threatening
-animal experiments with
-| human  | health.  A  Green  | Mayor  |     |     |     |     |     |
-| ------ | ------------------ | ------ | --- | --- | --- | --- | --- |
-humane alternatives,
-will act to limit harm to London’s
-reducing animal numbers and
-animals, by: ` We will oppose plans to build  Reducing ‘Stuff
-improving animal welfare.
-new incinerators in London
-` Resisting calls for any cull of
-|     |     |     | Reducing Waste | and refuse permission for  |     | Turnover’ |     |
-| --- | --- | --- | -------------- | -------------------------- | --- | --------- | --- |
-urban foxes and other animal
-| populations posing a concern.  |     |     |     | new combined heat and  |     |     |     |
-| ------------------------------ | --- | --- | --- | ---------------------- | --- | --- | --- |
-power installations.
-Instead, we will discourage  Waste  management  is  a  major  To reduce waste and reach zero
-population growth by working
-economic challenge to our climate.  ` We will work with local  emissions in London, we need to
-with shops and residents to
-We need to change the way we  councils and businesses to  consider the carbon embodied in
-take more responsibility for  think  about  consumerism,  and  set waste reduction targets,  the materials we use, as well as the
-fast food waste left on streets.
-learn to reuse, recycle and repair  which we will monitor and  distance the stuff we buy travels
-publicise to share good
-` Supporting the rights of renters  what we buy to reduce our carbon  to reach us. We need these things
-| to keep pets and work to     |     |     |             | practice across all of London.  |     |                                      |     |
-| ---------------------------- | --- | --- | ----------- | ------------------------------- | --- | ------------------------------------ | --- |
-|                              |     |     | footprints. |                                 |     | to last longer and to be able to be  |     |
-| expand school and community- |     |     |             | ` We will use new waste powers  |     |                                      |     |
-Greens  campaigned  against  repaired when they stop working.
-based education programmes  new  incinerators  in  Edmonton  for more consistent recycling  This  will  radically  change  the
-on responsible pet ownership.
-and  Belvedere,  but  sadly  these  collections across all boroughs. way our economy works, helping
-` Supporting the introduction  extremely polluting projects went  ` We will install more public  us  to  meet  many  other  climate-
-of protective measures  ahead,  setting  back  plans  to  water fountains so people  friendly  targets.  Every  business
-for individual key species
-reduce London’s greenhouse gas  can refill their own bottles  and public body will help cut down
-in the new London Plan  to  emissions. A Green Mayor will lead  as well as drink directly,  on ‘stuff turnover’ by encouraging
-mitigate extinction rates.
-on  making  London  a  zero-waste  removing the need for  people to reuse, repair and recycle
-city by 2030.  single use plastic bottles. things we no longer need.
-| 18  |     | LONDON GREEN PARTY 2024 |     |     | LONDON GREEN PARTY 2024 |     | 19  |
-| --- | --- | ----------------------- | --- | --- | ----------------------- | --- | --- |
+I want London to take responsibility for its emissions and be a climate leader. We must, and can, do more. Our future depends on it.
 
-ETAMILC
-Re-use and Repair on repair skills and setting up  ensuring no organic waste goes to  water from drying rivers and supply
-related social enterprises.
-|     |     |     |     |     | landfill or incineration by 2030. On  |     |     | problems are expected from 2025.  |     |
-| --- | --- | --- | --- | --- | ------------------------------------- | --- | --- | --------------------------------- | --- |
-Our new waste reduction strategy  ` We will ensure all GLA  top of this, we will: If we do not act now, our already
-will  focus  on  cutting  back  on  procurement scoring  ` Fund pilot projects for  awful situation will quickly turn into
-what we throw away. This starts  is reviewed to focus on  a crisis.
-up-to-date compost and
-by  encouraging  people  to  return  equipment that can be  waste technologies to build  ` A Green Mayor will safeguard
-repaired and does not become
-things  they  no  longer  need  to  capacity for minimising food  our tap water by holding
-|                                   |     | obsolete every few years. |     |     | waste. We will encourage  |     |     |                          |     |
-| --------------------------------- | --- | ------------------------- | --- | --- | ------------------------- | --- | --- | ------------------------ | --- |
-| common use, so others can borrow  |     |                           |     |     |                           |     |     | Thames Water to account  |     |
-` We will work with the 100  remaining surplus food  so to cut water pollution
-or swap goods through a network
-of local services. largest employers in London to  from schools, restaurants  and supply pipe leakage.
-and the GLA to be used for
-` We will share information on  set targets for reducing their  ` Greens will work with local
-|                            |     | own ‘stuff turnover’ by the end  |     |     | animal feed, community  |     |     |                           |     |
-| -------------------------- | --- | -------------------------------- | --- | --- | ----------------------- | --- | --- | ------------------------- | --- |
-| where Londoners can find,  |     |                                  |     |     |                         |     |     | councils and communities  |     |
-composting or treated to
-of our first year in City Hall.
-| repair, sell or donate pre- |     |     |     |     |     |     |     | to build water security into  |     |
-| --------------------------- | --- | --- | --- | --- | --- | --- | --- | ----------------------------- | --- |
-generate renewable energy.
-| owned goods and create  |     |     |     |     |     |     |     | London’s entire infrastructure.  |     |
-| ----------------------- | --- | --- | --- | --- | --- | --- | --- | -------------------------------- | --- |
-Managing Food Waste
-` Promote awareness to stop
-a new fund to help grow a
-` We will bring together
-people and food businesses
-| reuse and repair network. |     | Many organisations and individuals  |     |     |     |     |     |     |     |
-| ------------------------- | --- | ----------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-relevant agencies and put in
-from throwing edible, healthy
-` Working with campaigners,  have  been  working  with  local  place a delivery orientated
-food away and start donating
-we will fund councils and local  councils to stop good food going  action plan to protect our
-it to local food banks instead.
-businesses to set up repair
-|     |     | to waste, but there is much more  |     |     |     |     |     | homes and businesses  |     |
-| --- | --- | --------------------------------- | --- | --- | --- | --- | --- | --------------------- | --- |
-centres and swap shops on  to do. Tackling food waste in the  ` Launch a sustainable  from flooding, protect
-restaurant award scheme to
-every high street, in empty  right  way  will  help  reduce  food  London’s water and allow the
-shops or council buildings, and  incentivise sustainable food  aquifers beneath our soil to
-poverty and create new economic
-support the establishment  practices, with food waste  recharge while preventing
-opportunities across London.
-of a ‘library of things’ in every  audits as part of the scheme.
-the spread of pollution from
-Greens will strengthen the role
-| borough, where residents  |     |          |               |             |                               |     |     | roads and landfill sites.  |     |
-| ------------------------- | --- | -------- | ------------- | ----------- | ----------------------------- | --- | --- | -------------------------- | --- |
-|                           |     | of  the  | London  Food  | Board  and  | ` Encourage more councils to  |     |     |                            |     |
-can borrow infrequently
-confirm  London’s  commitment  set up more food sharing and  ` We will promote, support and
-needed household items,
-community cooking spaces,
-to  the  C40  Good  Food  Cities  look to invest in nature based
-such as power tools, musical
-|                            |     |                                   |     |     | both digital and physical,  |     |     | water management solutions. |     |
-| -------------------------- | --- | --------------------------------- | --- | --- | --------------------------- | --- | --- | --------------------------- | --- |
-| instruments, cleaning and  |     | Declaration and Milan Urban Food  |     |     |                             |     |     |                             |     |
-where people can share and
-decorating products, camping  Policy Pact. We will promote ways  ` We will work with the Climate
-buy cheap, healthy meals
-|     |     | to  redistribute  | food  | instead  of  |     |     |     | Assembly and relevant  |     |
-| --- | --- | ----------------- | ----- | ------------ | --- | --- | --- | ---------------------- | --- |
-equipment and luggage.
-from ingredients that would
-throwing  it  away  and  encourage  partners to develop a strategy
-| ` As an extension of our libraries  |     |           |              |              | otherwise go to waste. |     |     |                        |     |
-| ----------------------------------- | --- | --------- | ------------ | ------------ | ---------------------- | --- | --- | ---------------------- | --- |
-|                                     |     | councils  | to  include  | food  waste  |                        |     |     | to cut London’s water  |     |
-of things, we will pilot schemes
-|     |     |            |          |                   | Managing Water |     |     | consumption by 30% by 2050. |     |
-| --- | --- | ---------- | -------- | ----------------- | -------------- | --- | --- | --------------------------- | --- |
-|     |     | reduction  | targets  | in  their  local  |                |     |     |                             |     |
-to set up uniform clothing
-| banks in London schools. |     | climate     | action  plans.  | We  will  set     |             |                        |     |     |     |
-| ------------------------ | --- | ----------- | --------------- | ----------------- | ----------- | ---------------------- | --- | --- | --- |
-|                          |     | scientific  | targets,        | which  call  for  | The  state  | of  water  management  |     |     |     |
-` We will found a London Repair
-|     |     | a  50%  | reduction  in  | food  waste  | nationally is an absolute disgrace.  |     |     |     |     |
-| --- | --- | ------- | -------------- | ------------ | ------------------------------------ | --- | --- | --- | --- |
-Academy on GLA property as a
-|     |     | from farm to fork, with the aim of  |     |     | London draws 80% of its drinking  |     |     |     |     |
-| --- | --- | ----------------------------------- | --- | --- | --------------------------------- | --- | --- | --- | --- |
-hub for training and information
-| 20  | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     | 21  |
-| --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
+I have a plan to make London work for everyone.
 
-ETAMILC
-|     |     |     |     |     |     | many  have                          | been         | pronounced   | Fire Brigade has lost as many as        |                 |           |
-| --- | --- | --- | --- | --- | --- | ----------------------------------- | ------------ | ------------ | --------------------------------------- | --------------- | --------- |
-|     |     |     |     |     |     | ecologically dead. A Green Mayor    |              |              | 12,000 fire fighters to funding cuts.   |                 |           |
-|     |     |     |     |     |     | will speak up for the rest of the   |              |              | During the wildfires in 2022, 39 of     |                 |           |
-|     |     |     |     |     |     | country to demand reforms to the    |              |              | London’s fire engines were out of       |                 |           |
-|     |     |     |     |     |     | Environmental                       | Agency       | so  water    | service due to a lack of staff. And it  |                 |           |
-|     |     |     |     |     |     | companies are forced to work with   |              |              | is not a statutory duty to respond      |                 |           |
-|     |     |     |     |     |     | communities, scientists and NGOs    |              |              | to  flooding                            | in  every       | borough,  |
-|     |     |     |     |     |     | to  restore                         | our  rivers  | to  health.  | so  residents                           | are  faced      | with  a   |
-|     |     |     |     |     |     | We will work with and learn from    |              |              | postcode lottery during floods.         |                 |           |
-|     |     |     |     |     |     | others, in technical areas of work  |              |              | Despite                                 | this,  climate  | risk      |
-|     |     |     |     |     |     | on water, sanitation, hygiene and   |              |              | response                                | has  become     | a  major  |
-Greens will restore the health of
-|     |     |     |     |     |     | health. |     |     | part of firefighters’ duties. We will  |     |     |
-| --- | --- | --- | --- | --- | --- | ------- | --- | --- | -------------------------------------- | --- | --- |
-our rivers and water supplies
-|     |     |     |     |     |     | In London we will strive to halt the  |     |     | continue to highlight this nationally  |     |     |
-| --- | --- | --- | --- | --- | --- | ------------------------------------- | --- | --- | -------------------------------------- | --- | --- |
-|     |     |     |     |     |     | decline and restore the ecological    |     |     | and locally, to ensure they remain     |     |     |
-Flooding 2038, in consultation with  health  of  our  rivers,  reservoirs  safe as they work to keep us safe.
-residents and councils. and groundwater sources. We will  A Green Mayor will:
-We  will  look  at  using  transport  ` We will protect natural habitats  stem  the  tide  of  chemicals  and  ` Consult with the Fire Brigades
-funding  to  upgrade  our  streets  in surface water, wetlands  microplastics  entering  London’s  Union and London Fire Brigade
-with  sustainable  urban  drainage  and areas of rainwater  surface and groundwater by: to ensure essential services
-into our streets and restore and  recharge from pollution and  and emergency workers are
-` Strengthening cooperation
-re-wild London’s rivers. Our overall  allow our drinking water  and data collection across  better resourced, with the right
-|     |     |     | aquifers to replenish. |     |     |     |     |     | equipment for tackling extreme  |     |     |
-| --- | --- | --- | ---------------------- | --- | --- | --- | --- | --- | ------------------------------- | --- | --- |
-goal is to introduce 700 hectares  all relevant stakeholders
-weather, whether fire or flood.
-of sustainable drainage systems in  ` We will ensure all new planning  involved in water quality and
-|                                   |     |     |                               |     |     | ensuring action is taken to  |     |     | ` Work with the London Fire  |     |     |
-| --------------------------------- | --- | --- | ----------------------------- | --- | --- | ---------------------------- | --- | --- | ---------------------------- | --- | --- |
-| London by 2038, with an emphasis  |     |     | designs require ecologically- |     |     |                              |     |     |                              |     |     |
-on encouraging people to create  sustainable stormwater and  clean up our fresh water. Commissioner to ensure
-rain gardens and similar features in  flooding prevention elements. ` Establishing a cooperative  co-production is at the
-heart of the policies we
-private gardens. ` We will start work to  and accountable system to
-make on community safety
-We  will  also  introduce  new  establish a GLA team to  manage our water long-term.
-and fire risk awareness.
-| planning  rules  | to  protect  | homes  | coordinate London’s flood risk  |     |     |     |     |     |     |     |     |
-| ---------------- | ------------ | ------ | ------------------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
-against flooding, with embedded  response which will include  Managing Climate  ` Encourage marginalised
-sustainable drainage systems, rain  community engagement. groups to actively
-gardens  and  green,  recreational  Emergencies participate in community
-safety conversations and
-| spaces in every new development. |     |     | Rivers |     |     |     |     |     |     |     |     |
-| -------------------------------- | --- | --- | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
-compensate them fairly for
-` We will develop a strategic  London’s  essential  services
-their time and expertise.
-|     |     |     | National  | water  regulation  | is  | have been underpaid and under- |     |     |     |     |     |
-| --- | --- | --- | --------- | ------------------ | --- | ------------------------------ | --- | --- | --- | --- | --- |
-plan for introducing
-357,000 rain gardens by  disgraceful.  Every  single  river  resourced  for  too  long,  leading
-|     |     |                         | in  England  | is  polluted  | and  too  | to  greater  | risks.  Nationally,  | the                     |     |     |     |
-| --- | --- | ----------------------- | ------------ | ------------- | --------- | ------------ | -------------------- | ----------------------- | --- | --- | --- |
-| 22  |     | LONDON GREEN PARTY 2024 |              |               |           |              |                      | LONDON GREEN PARTY 2024 |     |     | 23  |
+There has never been a more important time to vote Green.
 
-` Develop a London Energy  ETAMILC
-National Asks keep goods reparable for a  biodegradable content in any
-minimum number of years  unavoidable plastic packaging. Plan, which accelerates our
-with available spare parts. clean, renewable energy
-` We continue to push for the  ` We will campaign for rigorous
-supply and work with local
-` We will campaign nationally
-| human right to clean air,  |     |     | minimum standards for  |     |     |     |
-| -------------------------- | --- | --- | ---------------------- | --- | --- | --- |
-councils to develop Local
-demanding the new Clean  to protect citizens’ rights  compostable product labelling.
-Area Energy Plans.
-| Air Act that Jenny Jones has  |     | to protest about climate  |     |     |     |     |
-| ----------------------------- | --- | ------------------------- | --- | --- | --- | --- |
-and social injustices. Climate at the heart ` Support large scale solar
-been calling for from the
-Government for over a decade. deployment as part of multi-
-` We will lobby the Government
-of the London Plan  functional land use and remove
-| ` We will campaign for a  |     | for more funding to  |     |     |     |     |
-| ------------------------- | --- | -------------------- | --- | --- | --- | --- |
-the red-tape to installing solar
-| national Community Right  |     | support climate resilience  |     |     |     |     |
-| ------------------------- | --- | --------------------------- | --- | --- | --- | --- |
-on older buildings or buildings
-to Buy principle on top of the  and nature recovery. A  Green  Mayor  will  use  the
-in conservation areas.
-Right to Bid, to strengthen  ` We will campaign for the  next  London  Plan  to  ensure  we
-local communities’ rights  ` Refuse permission for new
-|     |     | introduction of Extended  | work  to  the  | highest  climate  | and  |     |
-| --- | --- | ------------------------- | -------------- | ----------------- | ---- | --- |
-and protections for  combined heat and power
-|     |     | Producer Responsibility  | environmental standards. We will: |     |     |     |
-| --- | --- | ------------------------ | --------------------------------- | --- | --- | --- |
-local green spaces. installations, solid fuel burning,
-laws to tackle our growing
-` Write new planning rules for
-diesel farms or fracking, and
-` A Green Mayor will call on  waste problems. London to make it easier to
-create plans to close existing
-| the Government to stop the  |     |     | apply to work on insulation  |     |     |     |
-| --------------------------- | --- | --- | ---------------------------- | --- | --- | --- |
-` We will campaign for powers  units by 2030 as we shift to
-practice of routing nuclear
-|     |     | for the Mayor to roll out  | and retrofit projects for  |     |     |     |
-| --- | --- | -------------------------- | -------------------------- | --- | --- | --- |
-sustainable energy supplies.
-| waste trains through London.  |     |     | whole streets at once.  |     |     |     |
-| ----------------------------- | --- | --- | ----------------------- | --- | --- | --- |
-consistent recycling services
-` Ensure newbuilds are built
-It is unacceptable for highly
-|     |     | across London boroughs,  | ` Introduce planning policies to  |     |     |     |
-| --- | --- | ------------------------ | --------------------------------- | --- | --- | --- |
-radioactive nuclear fuel rods  to Passivhaus standards.
-|     |     | and push boroughs to set  | ensure all new developments  |     |     |     |
-| --- | --- | ------------------------- | ---------------------------- | --- | --- | --- |
-to be transported through
-common standards so every  assess climate and ecology  ` Change planning rules to
-densely populated areas.
-home in London has the  account for embodied carbon
-impacts and include green
-` We will lobby for ecocide to  same service for recyclables  spaces with habitats for  in the cost of construction.
-become a crime nationally  and food waste collection. threatened species and  ` Support the introduction
-| and internationally, through  |     |     | pollinators, to achieve  |     |     |     |
-| ----------------------------- | --- | --- | ------------------------ | --- | --- | --- |
-` We will campaign to put  of protective measures
-| the Mayor’s platform as part  |     |     | net biodiversity gains. |     |     |     |
-| ----------------------------- | --- | --- | ----------------------- | --- | --- | --- |
-food waste material into  for individual key species
-of a network of globally- secondary school education. in the new London Plan  to
-` Designate areas as ‘park
-minded city leaders.
-opportunity sites’ in the  mitigate extinction rates.
-` We will lobby for stronger
-| ` We will lobby for a levy  |     |     | London Plan, similar to the  |     |     |     |
-| --------------------------- | --- | --- | ---------------------------- | --- | --- | --- |
-product and packaging  ` Map toxic landfill sites and
-on private jets at London
-regulations and to remove  current opportunity sites  implement bioremediation
-| airports, until our call for  |     |     | for housing, economic  |     |     |     |
-| ----------------------------- | --- | --- | ---------------------- | --- | --- | --- |
-more single-use plastic  strategies for cleaning up
-| a national ban on private  |     |     | development, and add ‘park’  |     |     |     |
-| -------------------------- | --- | --- | ---------------------------- | --- | --- | --- |
-items at source. soil and waterways in nearby
-| jets comes into effect. |     |     | to this list for areas which  |     |     |     |
-| ----------------------- | --- | --- | ----------------------------- | --- | --- | --- |
-areas, as well as implementing
-` We will demand stricter
-need green space for people,
-` We will campaign for a  flooding prevention.
-manufacturing standards
-biodiversity and sustainable
-national Right to Repair
-|     |     | that require a minimum  | drainage to prevent flooding. |     |     |     |
-| --- | --- | ----------------------- | ----------------------------- | --- | --- | --- |
-requiring manufacturers to
-percentage of recycled and
-| 24  | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 | 25  |
-| --- | ----------------------- | --- | --- | --- | ----------------------- | --- |
+# MINI-MANIFESTO
 
-Housing and Planning
-W
-e are beyond a housing crisis. to Buy, demolition and sell-offs. for our Gypsy, Roma and Traveller Our candidate for London
-Rents are out of control. Councils cannot afford to build communities. Mayor, Zoë Garbett, is a renter. Zoë
-Teachers, nurses and artists social housing fast enough With a Green Mayor, demolition knows just how bad the situation is.
-are being driven out because they and affordable housing is not will be our last resort. Demolition Landlords and property developers
-can’t afford to live here. Thousands affordable. destroys communities as well as have too much power and are
-more people are being made Fixing this mess will be hard, homes. We will keep the homes we setting ridiculously high rents with
-homeless each year - more than but we have a plan to make things do have free from damp and mould, no relation to average salaries. The
-4000 in the last quarter of 2023 fairer in every way. We will demand insulate them and bring empty current Mayor has been waiting for
-alone. What homes we have are national government funds so we properties back into use. more power to act while the rental
-often cold, damp and mouldy. can buy the supply and make the Where new homes have to be market gets worse. Greens will act
-Policy after policy at a national right homes available in the right built, we will talk to councils and now.
-level has led to a housing system place and at the right price. This communities through our new A Green Mayor will stand up for
-that is totally broken and unfair. includes more homes with suitable People’s Land Commission to everyone’s right to affordable, safe
-Since 1979, London has lost over disabled access. We need more map the best sites to build on and housing.
-250,000 social homes to Right secure and safe stopping points protect our green belt.
-TROPSNART
-Zoë will bring down housing
-costs and improve standards
-GNISUOH
-26 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 27
+## A FAIRER, GREENER LONDON:
 
-` Greens have been highlighting  GNISUOH
-council and low-rent homes from
-the lack of work on the city’s
-|     |     |     |     |     |     | existing  | housing  and  by  | pushing  |
-| --- | --- | --- | --- | --- | --- | --------- | ----------------- | -------- |
-19th and 20th century homes
-the national government for more
-since a major report was
-funding to deliver the homes we
-produced in the early 2000s
-need.
-by Jean Lambert MEP. Energy
-A Green Mayor will correct how
-saving is as neglected and
-the current Mayor has mistakenly
-urgent as the safety work
-|     |     |     | needed on our homes.  |     |     | used  affordable  | housing     | grants  |
-| --- | --- | --- | --------------------- | --- | --- | ----------------- | ----------- | ------- |
-|     |     |     |                       |     |     | from  national    | government  | for     |
-` Greens saved the London
-|     |     |     |     |     |     | unaffordable  | shared  | ownership  |
-| --- | --- | --- | --- | --- | --- | ------------- | ------- | ---------- |
-Housing Panel from being cut
-|     |     |     |     |     |     | or  ‘affordable’  | rent.  | We  will  |
-| --- | --- | --- | --- | --- | --- | ----------------- | ------ | --------- |
-as it is vital to ensuring housing
-|     |     |     |     |     |     | reserve  | these  grants  | for  new  |
-| --- | --- | --- | --- | --- | --- | -------- | -------------- | --------- |
-meets the needs of Londoners.
-|     |     |     |     |     |     | council  | homes,  social  | housing  |
-| --- | --- | --- | --- | --- | --- | -------- | --------------- | -------- |
-` Caroline Russell led an
-|     |     |     |     |     |     | and  community-led  |     | housing,  |
-| --- | --- | --- | --- | --- | --- | ------------------- | --- | --------- |
-Assembly investigation into
-Green Assembly Members have  made available on a sliding scale
-pushed for the funding to buy  the causes of and remedies for
-|     |     |     |     |     |     | by  number  | of  bedrooms  | so  we  |
-| --- | --- | --- | --- | --- | --- | ----------- | ------------- | ------- |
-cold, damp and mouldy homes.
-existing homes to add to our
-can provide more family housing.
-stock of council housing
-We will also make smaller grants
-Tackling our
-|                     |     |                                  |     |     |     | available  | for  London  Living  | Rent  |
-| ------------------- | --- | -------------------------------- | --- | --- | --- | ---------- | -------------------- | ----- |
-| What Green Assembly |     | residents to  secure ballots so  |     |     |     | homes.     |                      |       |
-that they had the final say.  Housing Shortfall ` Make a strong economic case
-Members have done ` Greens on the Assembly  to the national government
-pushed the current Mayor  In 2022, there were over 300,000  for additional billions in grants
-to use a  council housing
-Our Green Assembly Members can  to start asking for the  people on council housing waiting
-be  proud  of  their  achievements  powers for rent controls.  lists.  With  recent  interest  rates  programme to ‘buy the
-since the last election: slowing  housing  developments,  supply’, helping councils to
-` In the last London Plan -
-purchase existing family-sized
-` Sped up the creation of new  this  already  scandalous  figure  is
-Greens secured community
-homes from the market and
-council homes through ‘buy  involvement in planning,  likely even higher.
-acquire market homes from
-the supply’, pushing the  abolished the dodgy definition  A  Green  Mayor  would  act
-developers where sales and
-current Mayor to put 100s of  of “affordable” housing and  immediately to stop council-owned
-construction are stalled. We
-millions of pounds into buying  abolished the use of ‘poor  homes  from  being  demolished
-will reserve a tenth of these
-existing homes to grow our
-|     |     | doors’ in developments.  | or  sold  | off,  except  | in  special  |     |     |     |
-| --- | --- | ------------------------ | --------- | ------------- | ------------ | --- | --- | --- |
-funds for finding the right
-| council housing stock, faster.  |     | Further, social housing that  |                |     |                  |                                 |     |     |
-| ------------------------------- | --- | ----------------------------- | -------------- | --- | ---------------- | ------------------------------- | --- | --- |
-|                                 |     |                               | circumstances  |     | for  individual  | homes for the right people,     |     |     |
-| ` Before funding was given for  |     | is demolished now needs to    |                |     |                  |                                 |     |     |
-|                                 |     |                               | properties.    |     |                  | including accessible homes for  |     |     |
-be replaced on an ‘identical’
-demolition schemes, Siân  We  will  help  solve  the  crisis
-disabled and older citizens.
-basis in terms of rents, units
-| Berry worked with estate  |     |     | in  temporary  | accommodation  |     |     |     |     |
-| ------------------------- | --- | --- | -------------- | -------------- | --- | --- | --- | --- |
-` We will work with councils,
-and space thanks to Greens.
-|     |     |     | with  our  | policies  | to  create  new  |     |     |     |
-| --- | --- | --- | ---------- | --------- | ---------------- | --- | --- | --- |
-housing associations and
-| 28  | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     |     | 29  |
-| --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- | --- |
+We need urgent action on the climate emergency. Greens will act quickly, and put climate at the heart of everything we do. We are the only party who truly understands what action is needed. A Green Mayor will:
 
-GNISUOH
-pension funds to build up a  needing  more  time  and  help  to  in how social housing is  guidance for local councils
-larger, collaborative revolving  allocated to people in need. across London to build a
-view properties ahead of auction.
-| acquisition fund to expand  |     |     |                                    |     |                |     |                             |     | pathway of accommodation  |     |
-| --------------------------- | --- | --- | ---------------------------------- | --- | -------------- | --- | --------------------------- | --- | ------------------------- | --- |
-|                             |     |     | Meanwhile,                         | we  | will  improve  |     | ` Create a London-wide      |     |                           |     |
-| on our capacity to buy the  |     |     |                                    |     |                |     |                             |     | and support services for  |     |
-|                             |     |     | understanding of the living needs  |     |                |     | register of all wheelchair  |     |                           |     |
-| supply we need. We want to  |     |     |                                    |     |                |     |                             |     | LGBTIQA+ people.          |     |
-|                             |     |     | of LGBTIQA+ people through the     |     |                |     | accessible homes in the     |     |                           |     |
-reach at least 50,000 new
-collection of appropriate data. social housing sector in  ` Work with boroughs across
-social rented homes per year
-|     |     |     |     |             |                 |     | London and lead coordination  |     | London to co-produce suitable,  |     |
-| --- | --- | --- | --- | ----------- | --------------- | --- | ----------------------------- | --- | ------------------------------- | --- |
-|     |     |     | We  | will  make  | sure  councils  |     |                               |     |                                 |     |
-by 2030 and eventually restore
-|                                |     |     |         |               |             |     | among local authorities. |     | high quality sites with Gypsy,  |     |
-| ------------------------------ | --- | --- | ------- | ------------- | ----------- | --- | ------------------------ | --- | ------------------------------- | --- |
-| the social housing proportion  |     |     | secure  | more,  fully  | wheelchair  |     |                          |     |                                 |     |
-Roma and Travellers, and
-to the same as the 1980s. accessible  homes,  built  to  the  ` Work with disabled people’s
-implement a negotiated
-|                             |     |     | highest                           | standards.  | Currently,  | a   | groups to review council        |     |                                 |     |
-| --------------------------- | --- | --- | --------------------------------- | ----------- | ----------- | --- | ------------------------------- | --- | ------------------------------- | --- |
-| ` We will work with local   |     |     |                                   |             |             |     |                                 |     | approach to stopping places in  |     |
-|                             |     |     | very small percentage of planned  |             |             |     | processes and set clear         |     |                                 |     |
-| authorities to help owner   |     |     |                                   |             |             |     |                                 |     | London. Suitable sites will be  |     |
-|                             |     |     | homes                             | are  fully  | wheelchair  |     | standards for them to plan for  |     |                                 |     |
-| occupiers take on lodgers,  |     |     |                                   |             |             |     |                                 |     | strategically assessed so they  |     |
-and adjust to disabled people’s
-accessible and there is an acute
-| and provide GLA advice for  |     |     |     |     |     |     |     |     | do not perpetuate inequalities,  |     |
-| --------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | -------------------------------- | --- |
-needs, including personal
-potential lodgers. We will set  shortage  of  council  homes  for  like health inequalities and are
-emergency evacuation plans.
-|                                |     |     | disabled  | Londoners.  | We  | will  |     |     |                             |     |
-| ------------------------------ | --- | --- | --------- | ----------- | --- | ----- | --- | --- | --------------------------- | --- |
-| up a brokerage service, along  |     |     |           |             |     |       |     |     | located close to amenities. |     |
-with standards and a register  recognise  and  work  to  increase  ` Improve housing needs
-` Work with councils to prioritise
-of hosts, ensuring fair rents  the different types of housing for  projections, so that councils
-people with a terminal illness
-make suitable provision for
-| and decent living conditions. |     |     | older people, including integrated  |     |     |     |     |     |     |     |
-| ----------------------------- | --- | --- | ----------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-for Council Tax Support
-accessible and supported
-` Since 2015 the number of  retirement  communities,  and Discretionary Housing
-housing for young people who
-|                            |     |     | intergenerational  |     | housing  | and  |     |     |                         |     |
-| -------------------------- | --- | --- | ------------------ | --- | -------- | ---- | --- | --- | ----------------------- | --- |
-| empty homes in the UK has  |     |     |                    |     |          |      |     |     | Payments and make sure  |     |
-become adults with disabilities.
-| increased by approximately  |     |     | accessibility designs. |     |     |     |     |     |     |     |
-| --------------------------- | --- | --- | ---------------------- | --- | --- | --- | --- | --- | --- | --- |
-processes are responsive
-30 per cent. A Green Mayor  A Green Mayor will: ` Make sure young people under  and decisions made quickly.
-25 facing homelessness have
-| will prioritise an audit of  |     |     | ` Fund and support more  |     |     |     |     |     |     |     |
-| ---------------------------- | --- | --- | ------------------------ | --- | --- | --- | --- | --- | --- | --- |
-` Use City Hall resources
-| London’s empty homes and  |     |     |                             |     |     |     | dedicated accommodation  |     |                            |     |
-| ------------------------- | --- | --- | --------------------------- | --- | --- | --- | ------------------------ | --- | -------------------------- | --- |
-|                           |     |     | Housing First provision to  |     |     |     |                          |     | to better promote council  |     |
-coordinate London-wide  offer an unconditional, non- and support, with enough GLA
-tax exemptions for people
-| action to bring them into  |     |     |     |     |     |     | funding set aside to help them. |     |     |     |
-| -------------------------- | --- | --- | --- | --- | --- | --- | ------------------------------- | --- | --- | --- |
-institutional home to people
-with dementia, which
-use as soon as possible.
-with additional needs and  ` Convene an Older People’s  often go unclaimed.
-vulnerabilities, such as mental
-| Fairer, Accessible  |     |     |                                 |     |     |     | Housing Forum for London  |     |     |     |
-| ------------------- | --- | --- | ------------------------------- | --- | --- | --- | ------------------------- | --- | --- | --- |
-|                     |     |     | ill health or problematic drug  |     |     |     | Boroughs to develop a     |     |     |     |
-Community Housing
-use, which will give them a
-| Social Housing |     |     |                             |     |     |     | joint strategic vision and  |     |     |     |
-| -------------- | --- | --- | --------------------------- | --- | --- | --- | --------------------------- | --- | --- | --- |
-|                |     |     | better chance at remaining  |     |     |     | best practice guidance for  |     |     |     |
-Greens will work with community-
-|     |     |     | well and independent. |     |     |     | older people’s housing in  |     |     |     |
-| --- | --- | --- | --------------------- | --- | --- | --- | -------------------------- | --- | --- | --- |
-Greens  will  work  to  address  the  led  housing  groups  and
-|     |     |     | ` Commission new and  |     |     |     | London, across boroughs  |     |     |     |
-| --- | --- | --- | --------------------- | --- | --- | --- | ------------------------ | --- | --- | --- |
-unequal access to housing faced  cooperatives to better understand
-and in collaboration with
-extensive research,
-by some groups, such as disabled  the range of housing needed so
-|     |     |     | working with Londoneres,  |     |     |     | local communities and  |     |     |     |
-| --- | --- | --- | ------------------------- | --- | --- | --- | ---------------------- | --- | --- | --- |
-people and young people. Bidding  we can deliver the right homes.
-relevant stakeholders.
-to examine and end any
-for  council  homes  is  far  more  ` A Green Mayor will act
-|            |                |          | systemic discrimination  |     |     |     | ` Produce a LGBTIQA+ Housing  |     |                         |     |
-| ---------- | -------------- | -------- | ------------------------ | --- | --- | --- | ----------------------------- | --- | ----------------------- | --- |
-| difficult  | for  disabled  | people,  |                          |     |     |     |                               |     | immediately to support  |     |
-Strategy for London, providing
-| 30  |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     | 31  |
-| --- | --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
+*   Develop the current climate budget process with a clear timeline and projects to meet 2030 commitments
+*   Create at least ten major new parks for people to access, children to play in and for nature to thrive, and protect our current green spaces
+*   Safeguard our tap water and rivers by holding Thames Water to account, cutting water pollution and waste.
 
-GNISUOH
-| community-led housing and  |     |     | exceeded  | so  often,  | that  people  |     |     |
-| -------------------------- | --- | --- | --------- | ----------- | ------------- | --- | --- |
-cooperatives in the city,
-are forced into fuel or food poverty.
-speeding up the spend of the
-Greens will work with councils
-Community Housing Fund.
-|                               |     |     | across                            | the  city  to  | ensure  staff  |     |     |
-| ----------------------------- | --- | --- | --------------------------------- | -------------- | -------------- | --- | --- |
-| ` We will provide grants and  |     |     | who                               | provide        | housing  and   |     |     |
-| support, including revolving  |     |     | homelessness support are trained  |                |                |     |     |
-loans, for new cooperatives
-|     |     |     | to  deliver  | culturally  | appropriate  |     |     |
-| --- | --- | --- | ------------ | ----------- | ------------ | --- | --- |
-and groups. We will promote
-|     |     |     | services  | and  respect  | people’s  |     |     |
-| --- | --- | --- | --------- | ------------- | --------- | --- | --- |
-these services to key support
-|     |     |     | sexual  | orientation  | and  gender  |     |     |
-| --- | --- | --- | ------- | ------------ | ------------ | --- | --- |
-workers, people living in
-|     |     |     | identity.  | We  will  | also  strive  for  |     |     |
-| --- | --- | --- | ---------- | --------- | ------------------ | --- | --- |
-houses of multiple occupancy
-consistent and fair assessment by
-and African, Caribbean,
-councils of vulnerability and health
-Asian, Latino, Gypsy, Roma
-needs.
-and Travellers, and people
-| from the Global South, who    |     |     | ` Greens will demand rent   |     |     |     |     |
-| ----------------------------- | --- | --- | --------------------------- | --- | --- | --- | --- |
-| wish to have more say in the  |     |     | control powers for London,  |     |     |     |     |
-| management of their homes.    |     |     | and bring in a two-year     |     |     |     |     |
-freeze when we get them. Greens will hold
-` We will use research from
-` We will set up a Rent  landlords to account
-here and abroad to build more
-and support renters’
-| intentional intergenerational  |     |     | Commission to look at  |     |     |     |     |
-| ------------------------------ | --- | --- | ---------------------- | --- | --- | --- | --- |
-unions
-| properties and developments       |     |     | bringing down private rents.   |     |     |     |     |
-| --------------------------------- | --- | --- | ------------------------------ | --- | --- | --- | --- |
-| that better suit the lifecycle    |     |     | The Commission will gather     |     |     |     |     |
-| of families. This will also help  |     |     | evidence in consultation with  |     |     |     |     |
-` We will support groups  applied undemocratically to
-a wide range of community
-support community building  representing students,  residents and businesses,
-| and reduce social care costs. |     |     | groups, councils, landlords  |     |     |     |     |
-| ----------------------------- | --- | --- | ---------------------------- | --- | --- | --- | --- |
-migrants and refugees,  and without transparency on
-and tenants, to decide
-and disabled tenants to  how the money is used. We will
-on a new target level and
-Housing rights and  ensure their housing rights  immediately freeze the charge
-downward trajectory for
-are respected, including  at the 2015 rate and look to
-existing excessive rents. This
-to adapted homes. find alternative, fairer ways to
-affordability
-way, we will be ready to act
-supplement the park’s actual
-` A Green Mayor will continue to
-immediately once powers are
-London is far too expensive for so  costs, so we can phase out
-provided by the Government.  stand up against discriminatory
-the charge completely while
-many  including  our  key  workers  Right to Rent policies aimed
-` We will give our full support  maintaining the extensive
-in the NHS, hospitality and other  at turning landlords into
-recreational value of the
-to the London Renters  immigration officers able
-| areas.  Shelter  | (the  housing  | and  |     |     |     |     |     |
-| ---------------- | -------------- | ---- | --- | --- | --- | --- | --- |
-Union, Acorn and similar  Park for all Londoners.
-to deny people homes.
-| homelessness  | charity)  | states  |     |     |     |     |     |
-| ------------- | --------- | ------- | --- | --- | --- | --- | --- |
-groups organising tenants  ` We will work to close
-that fair rents should be no more
-from the grassroots, by  ` The Queen Elizabeth Park Fixed
-loopholes that leave property
-than 30 per cent of a household’s  Estate Charge is a unique
-providing grants for them to
-guardians in legal limbo and
-income. It is a scandal that this is  and deeply unfair charge
-set up new local groups. propose changes in the law
-| 32  |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 | 33  |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- |
+## RIGHT HOMES, RIGHT PRICE:
 
-GNISUOH
-| to include property guardians  |     |     | poor  standards  | and  | apply  best  |     |     |
-| ------------------------------ | --- | --- | ---------------- | ---- | ------------ | --- | --- |
-in new rights for renters.
-practice from housing associations
-| ` We will review all existing  |     |     | and  councils                      | delivering  | high  |     |     |
-| ------------------------------ | --- | --- | ---------------------------------- | ----------- | ----- | --- | --- |
-| estate ballot exemptions       |     |     | quality housing and maintenance    |             |       |     |     |
-| and prevent any council and    |     |     | services.                          |             |       |     |     |
-| social rented homes being      |     |     | Our housing strategy will set the  |             |       |     |     |
-converted into ‘affordable’
-right targets to meet the current
-rent in new plans.
-and future population needs. We
-` We will continue to support and
-will link our targets with social care
-| fund the London Housing Panel. |     |     | and health policies. We will include  |     |     |     |     |
-| ------------------------------ | --- | --- | ------------------------------------- | --- | --- | --- | --- |
-all tenure options. Our economic
-` After pressure from the Greens,
-|     |     |     | policies  | will  make  sure  | we  have  |     |     |
-| --- | --- | --- | --------- | ----------------- | --------- | --- | --- |
-the current Mayor implemented
-| a requirement for a proportion  |     |     | the  skilled                          | workers  | to  deliver  on  |     |     |
-| ------------------------------- | --- | --- | ------------------------------------- | -------- | ---------------- | --- | --- |
-| of student accommodation        |     |     | housing improvements. We will aim     |          |                  |     |     |
-| to be affordable but, as 55     |     |     | to cut fuel poverty in cold and damp  |          |                  |     |     |
-| percent of the maximum          |     |     | social  homes                         | first,   | before  rolling  |     |     |
-Zoë will deal with cold, damp homes in
-| maintenance loan, this is still  |     |     | out a programme of improvements  |     |     |     |     |
-| -------------------------------- | --- | --- | -------------------------------- | --- | --- | --- | --- |
-London with a Cold Homes strategy
-too high. A Green Mayor will
-to benefit every Londoner by 2030.
-work with student unions and
-We will collect the right data and
-campaign organisations to
-identify where to act, prioritising  ` 10 per cent funding from  struggling to properly staff
-make this proportion fairer.
-the most deprived areas first. our Cold Homes Strategy  energy standards inspections
-will be invested in housing  in private rented housing.
-` A Green Mayor will immediately
-Health and Housing adapted for older people. We will compile data on the
-set up a Cold Homes Strategy
-results of these inspections
-with an insulation and  ` We will work to get more
-and report to councils on their
-Warm,  dry  homes  are  good  for  ventilation taskforce to deal  Environmental Health Officers
-comparative performances.
-our  health.  A  safe  home  makes  with cold and damp homes  into councils to support
-in London, with the aim of  ` We will focus on ‘fabric
-communities  and  people’s  social  tenants and enforce high
-cutting the number of these  standards across council  first’ (insulation and energy
-health stronger, encouraging them
-poor quality houses by at least  and private sector housing. efficiency measures) before
-| to  participate  | in  society  | more.  |     |     |     |     |     |
-| ---------------- | ------------ | ------ | --- | --- | --- | --- | --- |
-a third in 2028, and faster if  adding heat pumps or solar
-Greens are committed to making  ` We will extend the housing
-we can secure more funding. to properties, to reduce
-all London homes safe and fit for  inspection standards to
-` Our Cold Homes taskforce  demand for energy.
-people to live in happily. cover a wider range of
-will prioritise finding people  temporary accommodation  ` We will conduct a borough-
-Too many people are currently
-who have disabilities,  and work with councils to  by-borough assessment of
-| stuck  in  | poor,  neglected  | homes,  |     |     |     |     |     |
-| ---------- | ----------------- | ------- | --- | --- | --- | --- | --- |
-terminal illnesses as  ensure it is delivered.  housing needs to address
-| which  are  | in  desperate  | need  of  |     |     |     |     |     |
-| ----------- | -------------- | --------- | --- | --- | --- | --- | --- |
-well as taking action on  overcrowding in homes. We
-repair.  A  Green  Mayor  will  seek  ` We will create a team of experts
-overcrowded households.  will correct gaps in national
-powers  to  investigate  cases  of  in City Hall to support councils
-government statistics and
-| 34  |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 | 35  |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- |
+London is beyond a housing crisis. Greens stand up for everyone’s right to affordable, safe housing. A Green Mayor will:
 
-more collaboration between ` We will keep track of fines
-local authorities, as many and penalties issued by
-landlords have properties councils to landlords and make
-in multiple council areas. this information public for
-This data already exists but renters and unions to see.
-too much of it is currently
-Fire and Home Safety
-hidden from renters.
-` We will create a compulsory
-Seven years on from the Grenfell
-purchase action fund for
-Disaster, bereaved families are still
-local authorities to respond
-waiting for justice. Meanwhile, the
-to repeat complaints about
-combustible cladding installed by
-specific landlords, enabling
-construction firms in the Grenfell
-them to buy properties and
-Towers has been found in other
-bring them up to acceptable
-renting standards. parts of London. One such block
-in Wembley caught fire in January
-Zoë will support renters, demanding rent ` We will simplify and tighten
-this year. We also have examples of
-control powers for London and ensuring up the Housing Health and
-weak, collapsing balconies.
-action is taken on renters’ concerns Safety Rating System, to
-Far too many Londoners still
-ensure local authorities
-live in dangerous blocks, paying
-dedicate adequate resources
-put together a strategy that everything we can to keep rents to proactively enforce health for waking watches and unable to
-better matches people with affordable. Greens on the London and safety standards. sell or move while facing enormous
-the homes they need.
-Assembly have campaigned for bills for improvement work.
-` Our new renting rules will
-` We will work with older unfair pet clauses to be banned These situations are absolutely
-include a default right for
-Londoners’ representatives since 2016. We also recognise unacceptable, leaving people living
-renters to keep pets.
-to establish new Mayoral some housing associations have in fear while powerful developers
-programmes to find ways become too large and commercial, ` We will work with large, get away with murder.
-to provide people who commercial housing
-at the expense of their members’ A Green Mayor will be a clear and
-wish to downsize with associations to make them
-needs. Housing quality shouldn’t loud voice for residents in making
-genuinely attractive options, more democratic, with a
-be a lottery and we will do what we sure building owners and the
-including co-housing. fundamental shift of power
-can to support every renter in the national government cover all the
-in favour of tenants and
-Holding Landlords to city. increased accountability costs of making homes safe. We
-` We will create a fit-for-purpose to the local community. will act urgently to hold developers
-Account public database to help renters and property managers to account
-` We will share best practice and
-know which landlords to and stop them dragging their feet
-support local authorities in
-A Green Mayor will take the side avoid, so we can hold them to and risking more lives. We will put
-applications for borough wide
-of renters, protecting them from account. Naming and shaming residents at the heart of reforms
-selective licensing schemes.
-bad landlords will encourage
-unscrupulous landlords and doing
-GNISUOH
-36 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 37
+*   Expand the council housing programme to ‘buy the supply’, a Green idea, to help councils to purchase existing family-sized homes from the market and acquire market homes from developers where sales and construction are stalled, by securing grants from the government
+*   Demand rent control powers for London, and bring in a two-year freeze when we get them. Immediately establish a Rent Commission to set a new downward trajectory for excessive rents.
+*   Set up a Cold Homes Strategy with an insulation and ventilation taskforce to deal with cold and damp homes, prioritising those most in need such as older people, disabled people, and those with a terminal illness.
 
-GNISUOH
-| in how these contracts and works  |     |     |     | accessible data on their  |     |     |     |     |     |     |     |
-| --------------------------------- | --- | --- | --- | ------------------------- | --- | --- | --- | --- | --- | --- | --- |
-homes, including major works.
+## A SAFER CITY:
+
+Londoners deserve to live in a safe and healthy city with a police service we can trust to keep us safe. Greens recognise the institutional discrimination in the Met and the need for urgent, meaningful reform and will:
+
+*   Create a police service of the right people with the right skills who respect London’s diversity, working to community priorities and a higher level of accountability.
+*   Prioritise youth work, expanding the Young Londoners’ Fund and investing in youth workers
+*   Fully fund support services for those affected by sexual and domestic violence
+
+## GETTING AROUND OUR CITY:
+
+We all want clean air, and quick, affordable ways to get around our city. Our transport system needs to work for everyone. A Green Mayor will:
+
+*   Work towards one single, low fare for all public transport journeys in London and immediately freeze bus fares, with free bus travel brought in for under-22s and asylum seekers. Reinstate 24/7 travel for older Londoners.
+*   Consult on smarter, fairer road pricing and invest in walking and cycling, including repurposing the Silvertown Tunnel
+*   Ensure London’s transport system is truly accessible, with more public toilets and step free access so disabled people, older Londoners, and people using pushchairs can get around our city safely and conveniently.
+
+## CUTTING DAILY LIVING COSTS AND SUPPORTING WORKERS:
+
+So many Londoners fear being priced out of our city. We believe that everyone deserves the chance to thrive. A Green Mayor will:
+
+*   Extend universal free school meals for secondary school children, helping families stretch tight budgets and supporting the city’s children to thrive.
+*   Promise a real Living Wage for London, estimated at £16.14, run pilot schemes for a Universal Basic Income and protect workers’ rights and trade unions.
+*   Support small businesses, making independent trading easier for all of London’s sole traders and taking steps to revitalise our high streets by opening up empty council-owned spaces.
+
+## CELEBRATING LONDON’S CULTURE:
+Greens will work to put culture on everyone’s doorsteps. A Green Mayor will:
+* Support smaller, local venues and events to survive, and implement a Big Venues Levy to redistribute funding away from the big venues that are already thriving, and towards the small venues that need every penny to survive.
+* Celebrate and support all London’s diverse communities
+
+## GIVING YOU MORE POWER:
+People need more control over their lives, homes, and neighbourhoods. Greens want communities to have more say, opening decisions up to everyone. A Green Mayor will:
+* Share power, giving Londoners more of a say over how the Mayor’s budget is spent, ensuring decisions are made by the communities they affect, and supporting community groups
+* Push for more powers for London from the national government, to set our own policies on housing, transport, health and more.
+
+## YOU HAVE **THREE VOTES** IN THIS ELECTION
+**Vote 1:** Mayor of London
+**Vote 2:** Constituency Assembly Member, to represent your local area
+**Vote 3:** London wide Assembly Members - vote for the political party you want to get Assembly Members elected proportionally to reflect your views.
+
+Your Green London wide Assembly Members Siân Berry, Caroline Russell and Zack Polanski have a track record of success for London on a range of issues. A Green vote here will **keep your elected Greens, and add more.**
+
+## YOUR GREEN PARTY LONDON WIDE ASSEMBLY CANDIDATES
+Siân Berry AM
+Caroline Russell AM
+Zack Polanski AM
+Zoë Garbett
+Benali Hamdache
+Scott Ainslie
+Ria Patel
+Nate Higgins
+Claire Sheppard (Lambeth and Southwark)
+Shahrar Ali
+Pete Elliott
+
+## YOUR GREEN CONSTITUENCY CANDIDATES
+Barnet and Camden: Kate Tokley
+Bexley and Bromley: Marley King
+Brent and Harrow: Nida Al-Fulaij
+City and East: Joe Hudson-Small
+Croydon and Sutton: Peter Underwood
+Ealing and Hillingdon: Jess Lee
+Enfield and Haringey: Katie Knight
+Greenwich and Lewisham: Karin Tearle
+Havering and Redbridge: Kim Arrowsmith
+Merton and Wandsworth: Pippa Maslin
+North East: Antoinette Fernandez
+South West: Chas Warlow
+West Central: Rajiv Sinha
+
+## CLIMATE
+
+Zoë and the Green Party are the only party ready to take the decisive action our climate needs
+
+For decades, Greens have led the way making sure we respond to climate breakdown. Londoners want to live in a city with clean air and water, and thriving green spaces, and leaders to tackle the climate emergency.
+The current Mayor has failed to act fast enough. He failed to give us the retrofit revolution he promised. He even took steps in the wrong direction, pushing ahead with the Silvertown Tunnel, even though it will make traffic worse, and he gave a green light to The City Airport expansion.
+People across London are already feeling the impact of extreme weather. Wildfires and floods have closed stations, roads, schools and hospitals, shut down energy supplies and ruined homes. Meanwhile, London is the UK’s carbon factory. We must act responsibly and stop churning out greenhouse gases by 2030. The next Mayoral term will be absolutely crucial. The window is closing and
+
+Greens are the only party ready to take decisive action.
+Greens know that there is no climate justice without racial, social and economic justice and our climate promises are threaded throughout our manifesto. This chapter contains the headlines. The Green Party will put climate action at the centre of everything we do for our citizens and the environment. All decisions we make will put people and planet before profit.
+A Green Mayor will make London a green, responsible city, prepared for the future.
+
+## CLIMATE AT THE HEART OF EVERYTHING WE DO
+
+*   **Housing:** We will rapidly invest in refurbishing existing buildings with minimal environmental impact, so we demolish less and need fewer new builds. This will lower pollution from construction, while bills will become cheaper once houses need less energy to regulate temperatures.
+*   **Transport:** We will make walking, wheeling and cycling safer and easier across inner and outer London by reclaiming public streets for public, active use. We will make public transport affordable and accessible.
+*   **Economy:** We will transform the economy and create fairer green jobs. We will help small businesses and workers to transition to green jobs and businesses, while helping high streets to thrive. Under our stewardship, the GLA will set the best standards for all of London for social and environmental justice. And we will make London’s food economy as sustainable as possible.
+*   **Democracy:** We will set up a Citizens’ Climate Assembly and a Just Transition Commission to give everyone’s views a platform and make our climate plans reflect everyone’s needs. We will demand more power.
+
+Greens, like Zoë Garbett and Carla Denyer (pictured) will work at all levels of government to ensure the environment is at the centre of all our work
+
+for London from national government and share that power with everyone, so we can target climate mitigation funding to the areas that need it most, and use it in the most effective ways.
+
+## WHAT GREENS HAVE ACHIEVED
+
+Elected Green Assembly Members have held key roles in City Hall, making sure the climate emergency is top of the agenda.
+
+*   Zack Polanski has campaigned hard for the retrofitting of homes in London, bringing to the Mayor's attention the acute shortage of people with the skills to coordinate and deliver improvements to our homes, like insulation, double-glazing and energy efficiencies.
+*   Caroline Russell published a report in 2019 on climate risks facing London, exposing that London schools, hospitals and tube stations are all at serious risk as global temperatures continue to rise.
+*   Zack Polanski pushed the Mayor into publishing maps that informed people living in basement properties of their flooding risk highlighting the disproportionate impact on those who couldn’t afford insurance.
+*   Zack Polanski has led work to design a gender and intersectionality responsive climate adaptation plan for London. Working with University College London and the global expertise of the Gender Responsive Resilience and Intersectionality in Policy and Practice (GRRIPP), Zack has raised awareness of the importance of having diverse and marginalised communities as decision makers.
+*   Greens secured stronger protections for green space in the last London Plan.
+*   Greens have successfully used the National Park City initiative to strengthen our call for a whole-city approach to green infrastructure.
+*   Siân Berry won a review of planning restrictions on solar panels in conservation areas, which restrict householders from generating green power across large parts of London.
+*   Greens also secured the u-turn on Gatwick expansion, opened up the conversation on a frequent flyer levy, fought the expansion of City Airport and to ban private jets from our city.
+*   Alongside Fossil Free London, Zack Polanski has worked to keep greenwashing corporate sponsorship out of our community events.
+*   Greens have listened to and raised the voices of climate campaigners such as organisations campaigning to stop incinerator expansion.
+*   As chair of the Environment Committee, Zack Polanski commissioned the first investigation into light pollution who’s recommendations, along with our Green Newham councillors, resulted in the rejection of the MSG Sphere - which would have been the largest advertising LED screen on the planet in the Olympic Park - awful for residents and wildlife
+
+## SETTING THE RIGHT TARGETS
+
+Greens will work with communities and scientists to ensure we set the right targets for climate mitigation, and reduce pollution and emissions without further disadvantage to the poorest Londoners.
+
+In 2024, the Met Office expects the annual average temperature increase to exceed 1.5C for the first time. The degree to which we exceed this average safe limit is called ‘ecological overshoot’. A Green Mayor will have the political will to limit ecological overshoot to as close to safe levels as possible. To do this we will:
+
+*   Create a Just Transition Commission in partnership with Trade Unions and led by workers to steer our climate mitigation and adaptation policies in a fair way.
+*   Bring all our climate targets and strategies forward to 2030 to limit our contribution to ecological overshoot.
+*   Assess and report on the true ecological impact of every decision we make on a quarterly basis to the London Assembly and with dedicated time in every Mayor’s Questions Time sessions.
+*   Ensure GLA staff have the carbon and pollution literacy to develop healthy, low carbon cultures and encourage all local authorities to do the same.
+*   Alongside a Citizens’ Climate Assembly, create an independent Climate Emergency Alliance from climate campaigners, community groups and campaign organisations, to support our target-setting and action on climate. The Alliance will be independently run and mandated to advise us and hold our work accountable.
+*   Work with councils, the Citizens’ Climate Assembly and Climate Emergency Alliance to create viable localised strategies and targets for protecting river networks and smaller, sometimes private green spaces, like
+
+networks of linked back gardens or small parklets, to ensure biodiversity and natural habitats are not lost.
+
+## Clean Air
+London has six airports, more car journeys than the rest of the country and huge numbers of deliveries coming and going every day. Thousands of people die from air pollution in London every year and the most deprived parts of our city have the worst air quality. We need to clean up our air now.
+The Green Party will work to end the environmental and social injustices of air pollution. We have a strong, strategic plan for reducing pollution from everything we do, while increasing London’s green space. Our Transport and Housing chapters have more promises for cleaning up London’s air pollution, as those areas need the most change. To achieve this fairly, across London’s inner and outer boroughs, we will:
+*   Monitor air pollution, share data widely and use what we learn to consult with communities and councils to implement better, stricter action plans.
+*   Give clear warning in advance of major air pollution events, so people can better protect their health.
+*   Raise awareness of the damage wood and coal burning causes our environment and help people who rely on them transition from open fires and woodburners, so we can phase them out by the end of the first term in 2028.
+*   Speed up City Hall’s Healthy Streets programme.
+
+## Protecting Nature
+London’s ecology is in crisis. Parts of London have no decent green spaces for people or nature to enjoy. Some green spaces feel neglected and unsafe, while others are polluted.
+Zoë will protect important Green spaces, like the successful campaign to protect Warren Farm in Ealing
+Greens will restore and create new green spaces in London’s most deprived areas, so those communities can breathe clean air. We will protect existing green spaces against inappropriate planning applications that cut through the network, depriving plant and animal species of space to migrate, breed and thrive. Then, we will focus on connecting and growing what we have, with a huge, strategic approach to expanding nature in the city.
+Greens will do more than just reduce emissions in our city. We will protect and nurture nature for the good of all, capturing carbon and creating beautiful spaces for everyone to enjoy, by:
+*   Declaring a biodiversity emergency.
+*   Convening a network of ecologists across the city to share knowledge and best practice and bringing together partners to deliver biodiversity net gain.
+*   Creating a Green Grid strategy in partnership with the National Park City initiative and numerous local groups, to identify, improve and protect local green spaces and nature corridors.
+*   Our plan to increase ecological corridors will link up London’s outer boroughs through orbital active travel routes, as well as create new, sustainable routes in and out of central London.
+*   Immediately stopping the use of all pesticides and herbicides, including glyphosate, on GLA-controlled land and pushing councils to adopt the same policy for public spaces, footpaths and estates within two years.
+
+Greens will create ten new major parks in the areas that need them most
+
+* Making sure all parks and green spaces, including roadside planters and verges support healthy populations of bees and other pollinators, alongside upgrading bus stops with solar power generation and bee-friendly plants on roofs.
+
+### PARKS AND OPEN SPACES
+Parks are absolutely vital to capturing carbon emissions and creating healthy, beautiful spaces for local communities to enjoy. Yet access to parks is still too unfair in London. African, Caribbean, Asian, Latino, Roma and people from the Global South are likely to live five minutes walking distance from a green space and many existing spaces are not designed for the local communities they serve. London has just half of the green spaces needed for a city of almost ten million people.
+Greens will put strategic policies in place to protect existing parks and dramatically expand the availability of green, open spaces, making them more inviting, and readily available to everyone. Starting with parts of London with little or no access, we will:
+
+* Reinforce protections for existing spaces, by endorsing the Parks Charter and Charter
+
+for Open Spaces and helping communities to create and register their own garden streets, street parks and town and village greens.
+
+* Create at least ten major new parks for people to access, children to play in and for nature to thrive, including sites like Leigh Road Sports Ground in East Ham.
+* Prevent property developers from ‘land banking’; fencing off and neglecting public open spaces.
+* Create six large, new nature friendly community farms to encourage food growing and showcase the benefits gardening brings to wellbeing.
+* Encourage local authorities and private landowners to register more town and village greens, to protect these vital spaces from development.
+* Establish a Spaces Czar to match communities up with available space, unblock any barriers to access, bring more green space into use and help with securing funding.
+* Share clear advice on how parks can achieve Green Flag Awards and encourage more councils to work for them.
+
+## CLIMATE
+* Support local communities in designating green spaces Assets of Community Value.
+* Support communities and residents to create 1000 new, traffic-free street parks or garden streets by 2030, targeting areas with limited access to green spaces.
+* We will at least double the grants available from the Green City Fund and target more disadvantaged areas and excluded groups, with additional staff and resources to deliver this promise.
+
+### TREES AND WOODLAND
+Trees offer vital support to city infrastructure, offering shade and breaking up ground to help water drainage. The older they become, the more they contribute to our air quality and biodiversity and the health of our city.
+
+* Following excellent work in Enfield, we will support councils to plant 1000 new hectares of tree canopy cover by 2030, expanding existing woodland.
+* We will bring in strict planning policies to protect all ancient woodland and veteran trees from any damage.
+* We will fund the creation of at least 150 new community orchards.
+
+- Working with education authorities, we will develop a comprehensive environmental education programme in schools with support for outdoor forest schools.
+## ANIMAL WELFARE
+As scavenging species become more and more dependent on human food waste for survival, they move closer to where we live. Greens will act to manage species like foxes and seagulls naturally and humanely without threatening human health. A Green Mayor will act to limit harm to London’s animals, by:
+    - Resisting calls for any cull of urban foxes and other animal populations posing a concern. Instead, we will discourage population growth by working with shops and residents to take more responsibility for fast food waste left on streets.
+    - Supporting the rights of renters to keep pets and work to expand school and community-based education programmes on responsible pet ownership.
+    - Supporting the introduction of protective measures for individual key species in the new London Plan to mitigate extinction rates.
+- Rolling out best practice guidance for street and development lighting designed to reduce light pollution and preserve and extend dark sky areas for wildlife.
+- Engaging with universities and the science and knowledge sectors to make London a world centre for non-animal biomedical research.
+- Encouraging all establishments in London that conduct research using animals to publicly commit to replacing animal experiments with humane alternatives, reducing animal numbers and improving animal welfare.
+## REDUCING WASTE
+Waste management is a major economic challenge to our climate. We need to change the way we think about consumerism, and learn to reuse, recycle and repair what we buy to reduce our carbon footprints.
+Greens campaigned against new incinerators in Edmonton and Belvedere, but sadly these extremely polluting projects went ahead, setting back plans to reduce London’s greenhouse gas emissions. A Green Mayor will lead on making London a zero-waste city by 2030.
+## REDUCING ‘STUFF TURNOVER’
+To reduce waste and reach zero emissions in London, we need to consider the carbon embodied in the materials we use, as well as the distance the stuff we buy travels to reach us. We need these things to last longer and to be able to be repaired when they stop working.
+This will radically change the way our economy works, helping us to meet many other climate-friendly targets. Every business and public body will help cut down on ‘stuff turnover’ by encouraging people to reuse, repair and recycle things we no longer need.
+- We will oppose plans to build new incinerators in London and refuse permission for new combined heat and power installations.
+- We will work with local councils and businesses to set waste reduction targets, which we will monitor and publicise to share good practice across all of London.
+- We will use new waste powers for more consistent recycling collections across all boroughs.
+- We will install more public water fountains so people can refill their own bottles as well as drink directly, removing the need for single use plastic bottles.
+
+on repair skills and setting up related social enterprises.
+
+## Re-use and Repair
+Our new waste reduction strategy will focus on cutting back on what we throw away. This starts by encouraging people to return things they no longer need to common use, so others can borrow or swap goods through a network of local services.
+*   We will ensure all GLA procurement scoring is reviewed to focus on equipment that can be repaired and does not become obsolete every few years.
+*   We will work with the 100 largest employers in London to set targets for reducing their own ‘stuff turnover’ by the end of our first year in City Hall.
+*   We will share information on where Londoners can find, repair, sell or donate pre-owned goods and create a new fund to help grow a reuse and repair network.
+*   Working with campaigners, we will fund councils and local businesses to set up repair centres and swap shops on every high street, in empty shops or council buildings, and support the establishment of a ‘library of things’ in every borough, where residents can borrow infrequently needed household items, such as power tools, musical instruments, cleaning and decorating products, camping equipment and luggage.
+*   As an extension of our libraries of things, we will pilot schemes to set up uniform clothing banks in London schools.
+*   We will found a London Repair Academy on GLA property as a hub for training and information
+
+## Managing Food Waste
+Many organisations and individuals have been working with local councils to stop good food going to waste, but there is much more to do. Tackling food waste in the right way will help reduce food poverty and create new economic opportunities across London.
+Greens will strengthen the role of the London Food Board and confirm London’s commitment to the C40 Good Food Cities Declaration and Milan Urban Food Policy Pact. We will promote ways to redistribute food instead of throwing it away and encourage councils to include food waste reduction targets in their local climate action plans. We will set scientific targets, which call for a 50% reduction in food waste from farm to fork, with the aim of ensuring no organic waste goes to landfill or incineration by 2030. On top of this, we will:
+*   Fund pilot projects for up-to-date compost and waste technologies to build capacity for minimising food waste. We will encourage remaining surplus food from schools, restaurants and the GLA to be used for animal feed, community composting or treated to generate renewable energy.
+*   Promote awareness to stop people and food businesses from throwing edible, healthy food away and start donating it to local food banks instead.
+*   Launch a sustainable restaurant award scheme to incentivise sustainable food practices, with food waste audits as part of the scheme.
+*   Encourage more councils to set up more food sharing and community cooking spaces, both digital and physical, where people can share and buy cheap, healthy meals from ingredients that would otherwise go to waste.
+
+**CLIMATE**
+
+## Managing Water
+The state of water management nationally is an absolute disgrace. London draws 80% of its drinking water from drying rivers and supply problems are expected from 2025. If we do not act now, our already awful situation will quickly turn into a crisis.
+*   A Green Mayor will safeguard our tap water by holding Thames Water to account so to cut water pollution and supply pipe leakage.
+*   Greens will work with local councils and communities to build water security into London’s entire infrastructure.
+*   We will bring together relevant agencies and put in place a delivery orientated action plan to protect our homes and businesses from flooding, protect London’s water and allow the aquifers beneath our soil to recharge while preventing the spread of pollution from roads and landfill sites.
+*   We will promote, support and look to invest in nature based water management solutions.
+*   We will work with the Climate Assembly and relevant partners to develop a strategy to cut London’s water consumption by 30% by 2050.
+
+Greens will restore the health of our rivers and water supplies
+
+## FLOODING
+We will look at using transport funding to upgrade our streets with sustainable urban drainage into our streets and restore and re-wild London’s rivers. Our overall goal is to introduce 700 hectares of sustainable drainage systems in London by 2038, with an emphasis on encouraging people to create rain gardens and similar features in private gardens.
+We will also introduce new planning rules to protect homes against flooding, with embedded sustainable drainage systems, rain gardens and green, recreational spaces in every new development.
+* We will develop a strategic plan for introducing 357,000 rain gardens by
+
+2038, in consultation with residents and councils.
+* We will protect natural habitats in surface water, wetlands and areas of rainwater recharge from pollution and allow our drinking water aquifers to replenish.
+* We will ensure all new planning designs require ecologically-sustainable stormwater and flooding prevention elements.
+* We will start work to establish a GLA team to coordinate London’s flood risk response which will include community engagement.
+
+## RIVERS
+National water regulation is disgraceful. Every single river in England is polluted and too many have been pronounced ecologically dead. A Green Mayor will speak up for the rest of the country to demand reforms to the Environmental Agency so water companies are forced to work with communities, scientists and NGOs to restore our rivers to health. We will work with and learn from others, in technical areas of work on water, sanitation, hygiene and health.
+In London we will strive to halt the decline and restore the ecological health of our rivers, reservoirs and groundwater sources. We will stem the tide of chemicals and microplastics entering London’s surface and groundwater by:
+* Strengthening cooperation and data collection across all relevant stakeholders involved in water quality and ensuring action is taken to clean up our fresh water.
+* Establishing a cooperative and accountable system to manage our water long-term.
+
+## MANAGING CLIMATE EMERGENCIES
+London’s essential services have been underpaid and under-resourced for too long, leading to greater risks. Nationally, the Fire Brigade has lost as many as 12,000 fire fighters to funding cuts. During the wildfires in 2022, 39 of London’s fire engines were out of service due to a lack of staff. And it is not a statutory duty to respond to flooding in every borough, so residents are faced with a postcode lottery during floods.
+Despite this, climate risk response has become a major part of firefighters’ duties. We will continue to highlight this nationally and locally, to ensure they remain safe as they work to keep us safe.
+A Green Mayor will:
+* Consult with the Fire Brigades Union and London Fire Brigade to ensure essential services and emergency workers are better resourced, with the right equipment for tackling extreme weather, whether fire or flood.
+* Work with the London Fire Commissioner to ensure co-production is at the heart of the policies we make on community safety and fire risk awareness.
+* Encourage marginalised groups to actively participate in community safety conversations and compensate them fairly for their time and expertise.
+
+## NATIONAL ASKS
+*   We continue to push for the human right to clean air, demanding the new Clean Air Act that Jenny Jones has been calling for from the Government for over a decade.
+*   We will campaign for a national Community Right to Buy principle on top of the Right to Bid, to strengthen local communities’ rights and protections for local green spaces.
+*   A Green Mayor will call on the Government to stop the practice of routing nuclear waste trains through London. It is unacceptable for highly radioactive nuclear fuel rods to be transported through densely populated areas.
+*   We will lobby for ecocide to become a crime nationally and internationally, through the Mayor’s platform as part of a network of globally-minded city leaders.
+*   We will lobby for a levy on private jets at London airports, until our call for a national ban on private jets comes into effect.
+*   We will campaign for a national Right to Repair requiring manufacturers to keep goods reparable for a minimum number of years with available spare parts.
+*   We will campaign nationally to protect citizens’ rights to protest about climate and social injustices.
+*   We will lobby the Government for more funding to support climate resilience and nature recovery.
+*   We will campaign for the introduction of Extended Producer Responsibility laws to tackle our growing waste problems.
+*   We will campaign for powers for the Mayor to roll out consistent recycling services across London boroughs, and push boroughs to set common standards so every home in London has the same service for recyclables and food waste collection.
+*   We will campaign to put food waste material into secondary school education.
+*   We will lobby for stronger product and packaging regulations and to remove more single-use plastic items at source.
+*   We will demand stricter manufacturing standards that require a minimum percentage of recycled and biodegradable content in any unavoidable plastic packaging.
+*   We will campaign for rigorous minimum standards for compostable product labelling.
+
+## CLIMATE AT THE HEART OF THE LONDON PLAN
+A Green Mayor will use the next London Plan to ensure we work to the highest climate and environmental standards. We will:
+*   Write new planning rules for London to make it easier to apply to work on insulation and retrofit projects for whole streets at once.
+*   Introduce planning policies to ensure all new developments assess climate and ecology impacts and include green spaces with habitats for threatened species and pollinators, to achieve net biodiversity gains.
+*   Designate areas as ‘park opportunity sites’ in the London Plan, similar to the current opportunity sites for housing, economic development, and add ‘park’ to this list for areas which need green space for people, biodiversity and sustainable drainage to prevent flooding.
+*   Develop a London Energy Plan, which accelerates our clean, renewable energy supply and work with local councils to develop Local Area Energy Plans.
+*   Support large scale solar deployment as part of multi-functional land use and remove the red-tape to installing solar on older buildings or buildings in conservation areas.
+*   Refuse permission for new combined heat and power installations, solid fuel burning, diesel farms or fracking, and create plans to close existing units by 2030 as we shift to sustainable energy supplies.
+*   Ensure newbuilds are built to Passivhaus standards.
+*   Change planning rules to account for embodied carbon in the cost of construction.
+*   Support the introduction of protective measures for individual key species in the new London Plan to mitigate extinction rates.
+*   Map toxic landfill sites and implement bioremediation strategies for cleaning up soil and waterways in nearby areas, as well as implementing flooding prevention.
+
+## Housing and Planning
+
+Zoë will bring down housing costs and improve standards
+
+We are beyond a housing crisis. Rents are out of control. Teachers, nurses and artists are being driven out because they can’t afford to live here. Thousands more people are being made homeless each year - more than 4000 in the last quarter of 2023 alone. What homes we have are often cold, damp and mouldy.
+
+Policy after policy at a national level has led to a housing system that is totally broken and unfair. Since 1979, London has lost over 250,000 social homes to Right to Buy, demolition and sell-offs. Councils cannot afford to build social housing fast enough and affordable housing is not affordable.
+
+Fixing this mess will be hard, but we have a plan to make things fairer in every way. We will demand national government funds so we can buy the supply and make the right homes available in the right place and at the right price. This includes more homes with suitable disabled access. We need more secure and safe stopping points for our Gypsy, Roma and Traveller communities.
+
+With a Green Mayor, demolition will be our last resort. Demolition destroys communities as well as homes. We will keep the homes we do have free from damp and mould, insulate them and bring empty properties back into use.
+
+Where new homes have to be built, we will talk to councils and communities through our new People’s Land Commission to map the best sites to build on and protect our green belt.
+
+Our candidate for London Mayor, Zoë Garbett, is a renter. Zoë knows just how bad the situation is. Landlords and property developers have too much power and are setting ridiculously high rents with no relation to average salaries. The current Mayor has been waiting for more power to act while the rental market gets worse. Greens will act now.
+
+A Green Mayor will stand up for everyone’s right to affordable, safe housing.
+
+Green Assembly Members have pushed for the funding to buy existing homes to add to our stock of council housing
+
+## WHAT GREEN ASSEMBLY MEMBERS HAVE DONE
+Our Green Assembly Members can be proud of their achievements since the last election:
+- Sped up the creation of new council homes through ‘buy the supply’, pushing the current Mayor to put 100s of millions of pounds into buying existing homes to grow our council housing stock, faster.
+- Before funding was given for demolition schemes, Siân Berry worked with estate residents to secure ballots so that they had the final say.
+- Greens on the Assembly pushed the current Mayor to start asking for the powers for rent controls.
+- In the last London Plan - Greens secured community involvement in planning, abolished the dodgy definition of “affordable” housing and abolished the use of ‘poor doors’ in developments. Further, social housing that is demolished now needs to be replaced on an ‘identical’ basis in terms of rents, units and space thanks to Greens.
+- Greens have been highlighting the lack of work on the city’s 19th and 20th century homes since a major report was produced in the early 2000s by Jean Lambert MEP. Energy saving is as neglected and urgent as the safety work needed on our homes.
+- Greens saved the London Housing Panel from being cut as it is vital to ensuring housing meets the needs of Londoners.
+- Caroline Russell led an Assembly investigation into the causes of and remedies for cold, damp and mouldy homes.
+
+## TACKLING OUR HOUSING SHORTFALL
+In 2022, there were over 300,000 people on council housing waiting lists. With recent interest rates slowing housing developments, this already scandalous figure is likely even higher.
+A Green Mayor would act immediately to stop council-owned homes from being demolished or sold off, except in special circumstances for individual properties.
+We will help solve the crisis in temporary accommodation with our policies to create new council and low-rent homes from existing housing and by pushing the national government for more funding to deliver the homes we need.
+A Green Mayor will correct how the current Mayor has mistakenly used affordable housing grants from national government for unaffordable shared ownership or ‘affordable’ rent. We will reserve these grants for new council homes, social housing and community-led housing, made available on a sliding scale by number of bedrooms so we can provide more family housing. We will also make smaller grants available for London Living Rent homes.
+- Make a strong economic case to the national government for additional billions in grants to use a council housing programme to ‘buy the supply’, helping councils to purchase existing family-sized homes from the market and acquire market homes from developers where sales and construction are stalled. We will reserve a tenth of these funds for finding the right homes for the right people, including accessible homes for disabled and older citizens.
+- We will work with councils, housing associations and
+
+pension funds to build up a larger, collaborative revolving acquisition fund to expand on our capacity to buy the supply we need. We want to reach at least 50,000 new social rented homes per year by 2030 and eventually restore the social housing proportion to the same as the 1980s.
+*   We will work with local authorities to help owner occupiers take on lodgers, and provide GLA advice for potential lodgers. We will set up a brokerage service, along with standards and a register of hosts, ensuring fair rents and decent living conditions.
+*   Since 2015 the number of empty homes in the UK has increased by approximately 30 per cent. A Green Mayor will prioritise an audit of London’s empty homes and coordinate London-wide action to bring them into use as soon as possible.
+
+## FAIRER, ACCESSIBLE SOCIAL HOUSING
+Greens will work to address the unequal access to housing faced by some groups, such as disabled people and young people. Bidding for council homes is far more difficult for disabled people, needing more time and help to view properties ahead of auction.
+Meanwhile, we will improve understanding of the living needs of LGBTIQA+ people through the collection of appropriate data.
+We will make sure councils secure more, fully wheelchair accessible homes, built to the highest standards. Currently, a very small percentage of planned homes are fully wheelchair accessible and there is an acute shortage of council homes for disabled Londoners. We will recognise and work to increase the different types of housing for older people, including integrated retirement communities, intergenerational housing and accessibility designs.
+### A Green Mayor will:
+*   Fund and support more Housing First provision to offer an unconditional, non-institutional home to people with additional needs and vulnerabilities, such as mental ill health or problematic drug use, which will give them a better chance at remaining well and independent.
+*   Commission new and extensive research, working with Londoners, to examine and end any systemic discrimination in how social housing is allocated to people in need.
+*   Create a London-wide register of all wheelchair accessible homes in the social housing sector in London and lead coordination among local authorities.
+*   Work with disabled people’s groups to review council processes and set clear standards for them to plan for and adjust to disabled people’s needs, including personal emergency evacuation plans.
+*   Improve housing needs projections, so that councils make suitable provision for accessible and supported housing for young people who become adults with disabilities.
+*   Make sure young people under 25 facing homelessness have dedicated accommodation and support, with enough GLA funding set aside to help them.
+*   Convene an Older People’s Housing Forum for London Boroughs to develop a joint strategic vision and best practice guidance for older people’s housing in London, across boroughs and in collaboration with local communities and relevant stakeholders.
+*   Produce a LGBTIQA+ Housing Strategy for London, providing
+
+## HOUSING
+guidance for local councils across London to build a pathway of accommodation and support services for LGBTIQA+ people.
+*   Work with boroughs across London to co-produce suitable, high quality sites with Gypsy, Roma and Travellers, and implement a negotiated approach to stopping places in London. Suitable sites will be strategically assessed so they do not perpetuate inequalities, like health inequalities and are located close to amenities.
+*   Work with councils to prioritise people with a terminal illness for Council Tax Support and Discretionary Housing Payments and make sure processes are responsive and decisions made quickly.
+*   Use City Hall resources to better promote council tax exemptions for people with dementia, which often go unclaimed.
+
+## COMMUNITY HOUSING
+Greens will work with community-led housing groups and cooperatives to better understand the range of housing needed so we can deliver the right homes.
+*   A Green Mayor will act immediately to support
+
+community-led housing and cooperatives in the city, speeding up the spend of the Community Housing Fund.
+*   We will provide grants and support, including revolving loans, for new cooperatives and groups. We will promote these services to key support workers, people living in houses of multiple occupancy and African, Caribbean, Asian, Latino, Gypsy, Roma and Travellers, and people from the Global South, who wish to have more say in the management of their homes.
+*   We will use research from here and abroad to build more intentional intergenerational properties and developments that better suit the lifecycle of families. This will also help support community building and reduce social care costs.
+
+## HOUSING RIGHTS AND AFFORDABILITY
+London is far too expensive for so many including our key workers in the NHS, hospitality and other areas. Shelter (the housing and homelessness charity) states that fair rents should be no more than 30 per cent of a household’s income. It is a scandal that this is exceeded so often, that people are forced into fuel or food poverty.
+*   Greens will work with councils across the city to ensure staff who provide housing and homelessness support are trained to deliver culturally appropriate services and respect people’s sexual orientation and gender identity. We will also strive for consistent and fair assessment by councils of vulnerability and health needs.
+*   Greens will demand rent control powers for London, and bring in a two-year freeze when we get them.
+*   We will set up a Rent Commission to look at bringing down private rents. The Commission will gather evidence in consultation with a wide range of community groups, councils, landlords and tenants, to decide on a new target level and downward trajectory for existing excessive rents. This way, we will be ready to act immediately once powers are provided by the Government.
+*   We will give our full support to the London Renters Union, Acorn and similar groups organising tenants from the grassroots, by providing grants for them to set up new local groups.
+
+Greens will hold landlords to account and support renters’ unions
+*   We will support groups representing students, migrants and refugees, and disabled tenants to ensure their housing rights are respected, including to adapted homes.
+*   A Green Mayor will continue to stand up against discriminatory Right to Rent policies aimed at turning landlords into immigration officers able to deny people homes.
+*   The Queen Elizabeth Park Fixed Estate Charge is a unique and deeply unfair charge applied undemocratically to residents and businesses, and without transparency on how the money is used. We will immediately freeze the charge at the 2015 rate and look to find alternative, fairer ways to supplement the park’s actual costs, so we can phase out the charge completely while maintaining the extensive recreational value of the Park for all Londoners.
+*   We will work to close loopholes that leave property guardians in legal limbo and propose changes in the law
+
+to include property guardians in new rights for renters.
+- We will review all existing estate ballot exemptions and prevent any council and social rented homes being converted into ‘affordable’ rent in new plans.
+- We will continue to support and fund the London Housing Panel.
+- After pressure from the Greens, the current Mayor implemented a requirement for a proportion of student accommodation to be affordable but, as 55 percent of the maximum maintenance loan, this is still too high. A Green Mayor will work with student unions and campaign organisations to make this proportion fairer.
+
+## HEALTH AND HOUSING
+Warm, dry homes are good for our health. A safe home makes communities and people’s social health stronger, encouraging them to participate in society more. Greens are committed to making all London homes safe and fit for people to live in happily.
+Too many people are currently stuck in poor, neglected homes, which are in desperate need of repair. A Green Mayor will seek powers to investigate cases of poor standards and apply best practice from housing associations and councils delivering high quality housing and maintenance services.
+Our housing strategy will set the right targets to meet the current and future population needs. We will link our targets with social care and health policies. We will include all tenure options. Our economic policies will make sure we have the skilled workers to deliver on housing improvements. We will aim to cut fuel poverty in cold and damp social homes first, before rolling out a programme of improvements to benefit every Londoner by 2030. We will collect the right data and identify where to act, prioritising the most deprived areas first.
+
+Zoë will deal with cold, damp homes in London with a Cold Homes strategy
+
+- A Green Mayor will immediately set up a Cold Homes Strategy with an insulation and ventilation taskforce to deal with cold and damp homes in London, with the aim of cutting the number of these poor quality houses by at least a third in 2028, and faster if we can secure more funding.
+- Our Cold Homes taskforce will prioritise finding people who have disabilities, terminal illnesses as well as taking action on overcrowded households.
+- 10 per cent funding from our Cold Homes Strategy will be invested in housing adapted for older people.
+- struggling to properly staff energy standards inspections in private rented housing.
+- We will work to get more Environmental Health Officers into councils to support tenants and enforce high standards across council and private sector housing.
+- We will compile data on the results of these inspections and report to councils on their comparative performances.
+- We will extend the housing inspection standards to cover a wider range of temporary accommodation and work with councils to ensure it is delivered.
+- We will focus on ‘fabric first’ (insulation and energy efficiency measures) before adding heat pumps or solar to properties, to reduce demand for energy.
+- We will create a team of experts in City Hall to support councils
+- We will conduct a borough-by-borough assessment of housing needs to address overcrowding in homes. We will correct gaps in national government statistics and
+
+Zoë will support renters, demanding rent control powers for London and ensuring action is taken on renters’ concerns
+
+put together a strategy that better matches people with the homes they need.
+* We will work with older Londoners’ representatives to establish new Mayoral programmes to find ways to provide people who wish to downsize with genuinely attractive options, including co-housing.
+
+### HOLDING LANDLORDS TO ACCOUNT
+A Green Mayor will take the side of renters, protecting them from unscrupulous landlords and doing everything we can to keep rents affordable. Greens on the London Assembly have campaigned for unfair pet clauses to be banned since 2016. We also recognise some housing associations have become too large and commercial, at the expense of their members’ needs. Housing quality shouldn’t be a lottery and we will do what we can to support every renter in the city.
+* We will create a fit-for-purpose public database to help renters know which landlords to avoid, so we can hold them to account. Naming and shaming bad landlords will encourage
+
+## HOUSING
+more collaboration between local authorities, as many landlords have properties in multiple council areas. This data already exists but too much of it is currently hidden from renters.
+* We will keep track of fines and penalties issued by councils to landlords and make this information public for renters and unions to see.
+* We will create a compulsory purchase action fund for local authorities to respond to repeat complaints about specific landlords, enabling them to buy properties and bring them up to acceptable renting standards.
+* We will simplify and tighten up the Housing Health and Safety Rating System, to ensure local authorities dedicate adequate resources to proactively enforce health and safety standards.
+* Our new renting rules will include a default right for renters to keep pets.
+* We will work with large, commercial housing associations to make them more democratic, with a fundamental shift of power in favour of tenants and increased accountability to the local community.
+* We will share best practice and support local authorities in applications for borough wide selective licensing schemes.
+
+### FIRE AND HOME SAFETY
+Seven years on from the Grenfell Disaster, bereaved families are still waiting for justice. Meanwhile, the combustible cladding installed by construction firms in the Grenfell Towers has been found in other parts of London. One such block in Wembley caught fire in January this year. We also have examples of weak, collapsing balconies.
+
+Far too many Londoners still live in dangerous blocks, paying for waking watches and unable to sell or move while facing enormous bills for improvement work. These situations are absolutely unacceptable, leaving people living in fear while powerful developers get away with murder.
+
+A Green Mayor will be a clear and loud voice for residents in making sure building owners and the national government cover all the costs of making homes safe. We will act urgently to hold developers and property managers to account and stop them dragging their feet and risking more lives. We will put residents at the heart of reforms
+
+in how these contracts and works
 are planned and monitored.
-| Greens  | will  | stand  with  | the  | ` We will also implement a panel  |     |     |     |     |     |     |     |
-| ------- | ----- | ------------ | ---- | --------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-to scrutinise fire policy.
-| Justice  for  | Grenfell  | campaigners  |     |     |     |     |     |     |     |     |     |
-| ------------- | --------- | ------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+Greens will stand with the
+Justice for Grenfell campaigners
 to overcome delays in prosecuting
-| those  responsible.             |     | We  will     | keep  | Climate        |            |              |          |        |     |     |     |
-| ------------------------------- | --- | ------------ | ----- | -------------- | ---------- | ------------ | -------- | ------ | --- | --- | --- |
-| those  lost                     | in  | our  hearts  | and   |                |            |              |          |        |     |     |     |
-| commemorate their deaths every  |     |              |       | Our  priority  |            | for  making  |          | more   |     |     |     |
-| year.                           |     |              |       | housing        | available  | is           | to       | adapt  |     |     |     |
-|                                 |     |              |       | existing       | housing    | with         | minimal  |        |     |     |     |
-` A Green Mayor’s online fire and
-| home safety hub will include  |     |     |     | environmental                 |            | impact,   |        | while  |     |     |     |
-| ----------------------------- | --- | --- | --- | ----------------------------- | ---------- | --------- | ------ | ------ | --- | --- | --- |
-| clear advice on rights for    |     |     |     | finding                       | the  best  | possible  | homes  |        |     |     |     |
-| tenants and leaseholders and  |     |     |     | for individuals and families. |            |           |        |        |     |     |     |
-access to find legal advice and
-|                               |     |     |     | Demolishing                        |                | existing  | buildings  |     |     |     |     |
-| ----------------------------- | --- | --- | --- | ---------------------------------- | -------------- | --------- | ---------- | --- | --- | --- | --- |
-| support for mental health.    |     |     |     | for  new                           | constructions  |           | must       | be  |     |     |     |
-| ` We will make sure disaster  |     |     |     | a last resort because it destroys  |                |           |            |     |     |     |     |
-Zoë will stop the loss of valuable council
-| responses are coordinated  |     |     |     | communities,  |     |     | traumatises  |     |     |     |     |
-| -------------------------- | --- | --- | --- | ------------- | --- | --- | ------------ | --- | --- | --- | --- |
-homes through demolition, refurbishing
-| better so that no community  |     |     |     | residents  | and  | causes  | so  | much  |     |     |     |
-| ---------------------------- | --- | --- | --- | ---------- | ---- | ------- | --- | ----- | --- | --- | --- |
-them instead
-ever again feels abandoned,
-|                          |     |     |     | damage  | to         | the      | environment.  |      |     |     |     |
-| ------------------------ | --- | --- | --- | ------- | ---------- | -------- | ------------- | ---- | --- | --- | --- |
-| marginalised or ignored  |     |     |     | People  | are  left  | waiting  | for           | new  |     |     |     |
-if disaster strikes.
-builds while hundreds of existing  We  will  support  initiatives  that  was announced in 2018. We
-will require new, resident-
-` We will carry out a major  homes  stand  empty  for  many  help  residents  and  landlords  to
-led plans for these projects,
-review of the transparency,  years. grow  food.  And  we  will  demand
-governance and quality of  along with new ballots for
-|     |     |     |     | Existing  |     | buildings  | can  | be  | all new developments come with  |     |     |
-| --- | --- | --- | --- | --------- | --- | ---------- | ---- | --- | ------------------------------- | --- | --- |
-schemes that have stalled.
-major works of all kinds on  adapted at lower cost and quickly  good active or bus travel links. We
-social housing buildings. made fit for people to live in, as well  will also campaign nationally for a  ` Where new builds are the
-only option, we will ensure
-` A Green Mayor will make sure  as resilient against climate change.  zero carbon new home standard
-they are built to low energy
-every resident in London  Insulating houses is a triple win,  by  2025  and  a  minimum  energy
-construction and design
-can monitor risks and take  reducing bills and emissions, while  performance rating of C.
-principles, like Passivhaus.
-| action, by collecting all  |     |     |     | creating good green jobs for our  |     |     |     |     |     |     |     |
-| -------------------------- | --- | --- | --- | --------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-` A Green Mayor will stop the
-published fire safety and  economy. loss of council homes through  ` Our policies will require the
-risk assessments, as well as
-More  than  this,  we  will  work  demolition. We will review all  highest standards of insulation
-health and safety reports in  and climate-friendly building
-|     |     |     |     | with  | housing  | associations  |     | to  | funding conditions for estate  |     |     |
-| --- | --- | --- | --- | ----- | -------- | ------------- | --- | --- | ------------------------------ | --- | --- |
-a searchable database.  demolition projects, especially  materials and we will share
+those responsible. We will keep
+those lost in our hearts and
+commemorate their deaths every
+year.
+> A Green Mayor’s online fire and
+  home safety hub will include
+  clear advice on rights for
+  tenants and leaseholders and
+  access to find legal advice and
+  support for mental health.
+> We will make sure disaster
+  responses are coordinated
+  better so that no community
+  ever again feels abandoned,
+  marginalised or ignored
+  if disaster strikes.
+> We will carry out a major
+  review of the transparency,
+  governance and quality of
+  major works of all kinds on
+  social housing buildings.
+> A Green Mayor will make sure
+  every resident in London
+  can monitor risks and take
+  action, by collecting all
+  published fire safety and
+  risk assessments, as well as
+  health and safety reports in
+  a searchable database.
+> We will campaign for every
+  landlord and freeholder to
+  provide residents with fully
+accessible data on their
+homes, including major works.
+> We will also implement a panel
+  to scrutinise fire policy.
+
+## CLIMATE
+Our priority for making more
+housing available is to adapt
+existing housing with minimal
+environmental impact, while
+finding the best possible homes
+for individuals and families.
+Demolishing existing buildings
+for new constructions must be
+a last resort because it destroys
+communities, traumatises
+residents and causes so much
+damage to the environment.
+People are left waiting for new
+builds while hundreds of existing
+homes stand empty for many
+years.
+Existing buildings can be
+adapted at lower cost and quickly
+made fit for people to live in, as well
+as resilient against climate change.
+Insulating houses is a triple win,
+reducing bills and emissions, while
+creating good green jobs for our
+economy.
+More than this, we will work
+with housing associations to
 coordinate and deliver the homes
-best practice with community
-` We will campaign for every  we need, with high quality green  for those schemes that have
-not progressed since being  groups and councils.
-| landlord and freeholder to    |     |     |     | spaces that link to London’s wider  |     |     |     |     |                            |     |     |
-| ----------------------------- | --- | --- | --- | ----------------------------------- | --- | --- | --- | --- | -------------------------- | --- | --- |
-| provide residents with fully  |     |     |     |                                     |     |     |     |     | signed off by the current  |     |     |
+we need, with high quality green
+spaces that link to London’s wider
 network of parks and woodlands.
-Mayor before the ballot policy
-| 38  |     |     | LONDON GREEN PARTY 2024 |     |     |     |     |     |     | LONDON GREEN PARTY 2024 | 39  |
-| --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- | --- | ----------------------- | --- |
 
-` We will object to all new ` We will lobby for more power ` We will campaign with other ` Much higher levels of truly
-property development to order councils to provide city mayors to demand the affordable rented homes
-on green belt land. permanent sites as well as national government invests will be included in new
-stopping sites, for Gypsy, Roma in a huge programme of planning policies for the
-and Traveller communities, and energy saving measures Build to Rent sector.
-National Asks
-see those sites held to higher across the country.
-` 10 per cent of all units to be
-building and living standards.
-` We will continue to campaign fully wheelchair accessible
-` We will demand national
-` We will lobby for funding for Zane’s Law, to address the and prescribe the majority
-reforms to our broken rental
-for councils: crisis of contaminated land of these units to be built in
-system, including abolishing
-across the country, which the social rented sector. We
-no fault evictions (Section ` to buy up incomplete
-poses a serious risk to life. will also develop a London
-21 of the Housing Act), an housing developments
-Accessible Housing Register.
-increased Local Housing that have stalled due to
-Allowance to match rising the construction industry A New, Relevant ` We will amend the London Plan
-rents, scrapping of the benefits downturn, to grow to better control short-term
-cap, and, with evidence social housing stock. lettings in London, with strict
-Strategic Plan
-from our Rent Commission, limits - including prohibition in
-` to protect people’s right
-powers to control rents. areas of high housing need -
-to help ahead of being The London Plan is produced every
-built into lease conditions for
-` A key power needed from evicted, as required few years by the Mayor’s Office
-new buildings and give more
-housing devolution to London by the Homelessness
-and is a key guiding document for
-support to councils in enforcing
-is the ability to stop the loss of Reduction Act.
-shaping our city. A Green Mayor’s time limits and quality of life
-council homes through Right to
-` We will push for parliamentary London plan will include: for surrounding residents.
-Buy. We will campaign fiercely
-legislation that guarantees ` An increase of the 35 per cent
-for an urgent suspension of ` The new London Plan will
-victims of domestic abuse the ‘affordable’ housing threshold
-Right to Buy in London - as require developers to apply
-right to remain in their homes (to 50 per cent) as well as a
-this neutralises any efforts to lease conditions to the
-if they wish, rather than the more up-to-date definition
-build more council homes. homes they build which make
-perpetrator, and for this right of ‘affordable’ which reflects
-sure these are the primary
-` We will campaign for deep to apply across all tenancies. genuine affordability.
-residence of the new owners.
-reforms to leasehold, including
-` We will make the case for ` Many boroughs currently
-caps on ground rents and limits ` Protect local amenities like
-necessary increases to the start to require ‘affordable’
-on charges for major works, play parks. If amenities are
-Building Safety Fund, so housing only for developments
-and campaign for changes demolished and there is delay
-councils, housing associations, of 10 or more homes, which
-to make commonhold and we need a policy from the
-leaseholders and private can incentivise artificially
-the right to manage easier Mayor to get these vital spaces
-landlords have the money low numbers of homes on
-to obtain for leaseholders. reinstated as a priority.
-they need to make homes suitable sites. In a Green
-` We will campaign for a right to safe. We will lobby to see the London Plan there will be no
-co-operative arrangements fund covers buildings of any lower limit to contributions
-for people in shared houses. type or height, and all internal expected from developers
-defects, not just cladding. to truly affordable housing.
-GNISUOH
-40 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 41
+Zoë will stop the loss of valuable council
+homes through demolition, refurbishing
+them instead
 
-Accountable policing
-for a safer city
-Zoë will make London safer for everyone, focusing on
-local policing and a police service we can trust
-L
-ondoners deserve to live in a Greens in City Hall have been No-one should suffer harm from people with respect and care,
-safe and healthy city with a the fiercest voice calling for a contact with the police. A Green not criminalising people for
-police service we can trust to change so that the Met can gain Mayor will focus on preventing experiencing homelessness or
-keep us safe. public trust. We need police reform crime, eliminating the use of poverty. We will invest in protective
-Report after report has shown now - and we will only know we have traumatising tactics and upholding provision like youth services and
-what Londoners have known made meaningful changes when the rights and dignity of Londoners. overdose prevention services and
-for decades — how toxic the our communities say we have. We will work with the Met to not tolerate hate towards anyone.
-Metropolitan Police Service is We will review how the Met hires, improve support for victims of A Green Mayor will prioritise
-and the scale of institutional vets and trains officers, so that the crime. We will change the way police reform, to make sure the
-discrimination. We’ve also seen right people have the right skills crime statistics are gathered so we police are held accountable,
-many officers found guilty of for the job and respect London’s can better understand the serious respect London’s diversity, and
-horrendous crimes. The harm and diversity. The Met needs rigorous impact these crimes have on our that people can report crimes
-disproportionality in the use of stop oversight. Plans must be driven by the communities and our children. to a service they trust. A Green
-and search is well documented - a priorities of London’s communities A Green Mayor will work Mayor will make London safer and
-new approach is needed. with much more accountability. to prevent crime by treating healthier for everyone.
-42 LONDON GREEN PARTY 2024 43
-GNICILOP
-LONDON GREEN PARTY 2024
+We will support initiatives that
+help residents and landlords to
+grow food. And we will demand
+all new developments come with
+good active or bus travel links. We
+will also campaign nationally for a
+zero carbon new home standard
+by 2025 and a minimum energy
+performance rating of C.
+> A Green Mayor will stop the
+  loss of council homes through
+  demolition. We will review all
+  funding conditions for estate
+  demolition projects, especially
+  for those schemes that have
+  not progressed since being
+  signed off by the current
+  Mayor before the ballot policy
+was announced in 2018. We
+will require new, resident-
+led plans for these projects,
+along with new ballots for
+schemes that have stalled.
+> Where new builds are the
+  only option, we will ensure
+  they are built to low energy
+  construction and design
+  principles, like Passivhaus.
+> Our policies will require the
+  highest standards of insulation
+  and climate-friendly building
+  materials and we will share
+  best practice with community
+  groups and councils.
 
-violence, hearing evidence
-During a year of chairing Police
-from youth practitioners
-and Crime Committee Caroline
-and young people who
-Russell AM has:
-emphasised the importance
-` Looked at and reported on of youth workers.
-police investigation of serious
-` Learned about drug diversion
-traffic collisions - finding that
-and non policing approaches
-only the most serious crashes
-to reduce drug harm by
-get investigated thoroughly but
-visiting West Midlands police.
-every serious injury collision
-should be properly investigated ` Looked into the challenges
-to help victims achieve justice. of rolling out the Right Care
-Right Person approach to
-` Carried out year-long scrutiny
-mental health call-outs.
-based on the Casey review
-and the Met’s response ` Explored the scale of money
-to the findings and the laundering in London with
-Commissioner’s plan for £100 billion laundered
-a New Met for London. through the UK each year
-and just tens of millions
-` Investigated and reported
-Green Assembly Members including Caroline Russell recovered by the Met.
-on young people affected by
-have effectively scrutinised the work of the Met
-What Green assembly Caroline Russell’s Zero Murders ` Persuaded the Mayor to get Being accountable
-report exposed how Black Londoners the Deputy Mayor for Police
-members Achieved are disproportionately more likely to and Crime to include road to communities
-be murdered and called for a Zero traffic victims in the remit of
-Siân Berry’s campaign since 2016 to Murder target. Caroline also: the Victims’ Commissioner. The Commissioner’s work to deliver
-expose cuts to youth services and ` Amplified the voices of Young ` As Chair of Health Committee a New Met Plan for London (NMPFL)
-win new funding through the Young Londoners with a report Caroline Russell published is welcome but needs rigorous
-Londoners Fund (YLF) has been and motion calling for knife a report calling for drug oversight and must be driven by
-successful, but the funding so far images not to be shared harm reduction with the priorities of London’s diverse
-does not replace all the cuts that on police social media. recommendations for overdose communities. We will only know we
-have been made under austerity. ` Found more children strip prevention rooms, drug have had meaningful police reform
-Greens have been instrumental in searched than had been checking facilities and for when our communities say we have.
-the Met to carry Naloxone to
-raising issues with the Met, often the disclosed previously and that A Green Mayor will focus
-save lives if they find people
-fiercest lone voice holding the Met to data on 20 per cent of child scrutiny on effective use of data,
-who have overdosed.
-account and pushing for action. strip searches had no location. reducing use of traumatising
-44 LONDON GREEN PARTY 2024 45
-GNICILOP
-LONDON GREEN PARTY 2024
+- We will object to all new property development on green belt land.
 
-GNICILOP
-| tactics  and  | upholding  | the  rights  | needed to stay in control  |     |     |     |     |     |     |
-| ------------- | ---------- | ------------ | -------------------------- | --- | --- | --- | --- | --- | --- |
-in police interactions.
-and dignity of Londoners.   The  shocking  case  in  2020  of  Child  Q,  a  Black  15  year-old
-` A Green Mayor will push for  schoolgirl in Hackney who was strip searched at her school by
-Engagement extensive and meaningful  police officers, brought to light the misuse of police tactics, a lack
-engagement with African,  of safeguarding focus and the potential problems with having
-A  Green  Mayor  will  ensure  local  Caribbean, Asian, Latino  police officers in schools. As a Hackney Councillor, Zoë Garbett
-and Roma communities
-scrutiny of police works well, with  has been holding the local police to account and working to get
-and people from the Global
-diverse  communities  and  young  police out of Hackney schools. On the Assembly, Caroline Russell
-South, ensuring Londoners
-people feeling confident to share  has revealed and worked to improve poor policing practice. At all
-continue to feedback on
-their  views,  and  where  priority- levels, Greens are working hard to minimise children’s contact
-new ways of policing as the
-setting is led by local people.   with the police so we have a police service which puts the welfare
-Met works to deliver the
-| Safer  | Neighbourhood  | Boards  |     | of children first. |     |     |     |     |     |
-| ------ | -------------- | ------- | --- | ------------------ | --- | --- | --- | --- | --- |
-New Met Plan for London.
-| and  panels  | that  represent  | local      |                   |     |     |     |     |     |     |
-| ------------ | ---------------- | ---------- | ----------------- | --- | --- | --- | --- | --- | --- |
-| communities  | at  borough      | and  ward  | Scrutiny and Data |     |     |     |     |     |     |
-level are run by volunteers but need  ` Gypsy, Roma and Travellers  undermining trust and confidence
-and neurodiverse people,
-more funding and support to increase  Police  officers  need  effective  in  the  police.  Greens  on  the
-are not being counted
-their activity and involve a wider range  data systems so that they can do  Assembly  exposed  shocking
-in crime statistics. The
-of Londoners in their work.  their jobs well, improve trust and  numbers  of  children  being  strip
-police need a strategic,
-` We will work through an  confidence and provide Londoners  searched, which led to the number
-compassionate approach to
-with  transparent  data  to  enable  of  strip  searches  decreasing
-| enlarged engagement team  |     |     |     | helping people experiencing  |     |     |     |     |     |
-| ------------------------- | --- | --- | --- | ---------------------------- | --- | --- | --- | --- | --- |
-within the Mayor’s Office  scrutiny of their work. This should  under the current Commissioner.
-intersectional barriers.
-for Policing and Crime and  lead to change in policing practice.  Strip search and stop and search
-` Body Worn Video (BWV)
-provide new funding to double
-` The Met is right to be reviewing  are  tactics  used  to  overpolice
-used consistently provides
-the membership and activity
-their data systems, and the  Black  communities.  Young  black
-an opportunity for
-levels of local scrutiny bodies  new Connect system is not  men in London are six times more
-greater transparency and
-within two years, and find
-yet working well enough. A  likely to be stopped and searched
-accountability but is too
-new ways to measure their
-Green Mayor will push for the  compared  to  other  Londoners.
-| impact and influence. |     |     |     | often just used internally  |     |     |     |     |     |
-| --------------------- | --- | --- | --- | --------------------------- | --- | --- | --- | --- | --- |
-Connect system to prompt
-|                               |     |     |                                   | for evidence. We will ensure  |     |     | Under  the                         | current  Mayor,  | the  |
-| ----------------------------- | --- | --- | --------------------------------- | ----------------------------- | --- | --- | ---------------------------------- | ---------------- | ---- |
-| ` A Green Mayor will restore  |     |     | officers to include all relevant  |                               |     |     |                                    |                  |      |
-|                               |     |     |                                   | BWV works as a tool for       |     |     | number of stops has increased yet  |                  |      |
-data when recording activity
-Community Policing ensuring  external accountability.  crime has also increased. A new
-| local officers are known  |     |     | to better enable scrutiny by  |     |     |     |     |     |     |
-| ------------------------- | --- | --- | ----------------------------- | --- | --- | --- | --- | --- | --- |
-approach is needed.
-| in their communities. |     |     | MOPAC, London Assembly  |                  |     |     |                                 |     |     |
-| --------------------- | --- | --- | ----------------------- | ---------------- | --- | --- | ------------------------------- | --- | --- |
-|                       |     |     |                         | Stop and Search  |     |     | ` A Green Mayor will challenge  |     |     |
-Members, the London Policing
-` Whilst practice improves, we
-the Met to end the use of
-Board and Londoners.
-will work with partners and
-|     |     |     |     | Stop and search, especially strip  |     |     | section 60 powers that allow  |     |     |
-| --- | --- | --- | --- | ---------------------------------- | --- | --- | ----------------------------- | --- | --- |
-` A Green Mayor will keep
-educate young people about  search,  is  an  invasive,  degrading  for suspicionless stop and
-| police practices, equipping  |     |     | data collection and sharing  |           |               |           |                             |     |     |
-| ---------------------------- | --- | --- | ---------------------------- | --------- | ------------- | --------- | --------------------------- | --- | --- |
-|                              |     |     |                              | policing  | tactic  that  | is  well- | search except in emergency  |     |     |
-them with the tools and skills  under constant review to  situations in small areas,
-documented as causing harm and
-improve transparency.
-| 46  |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     |     | 47  |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- | --- |
+## NATIONAL ASKS
 
-GNICILOP
-| and only if authorised by  |     |     | these  | groups  are  | particularly  |     |     |     |
-| -------------------------- | --- | --- | ------ | ------------ | ------------- | --- | --- | --- |
-the most senior officers.
-vulnerable to police harm.
-| ` Where stop and search is     |     |     | ` A Green Mayor will work with   |     |     |     |     |     |
-| ------------------------------ | --- | --- | -------------------------------- | --- | --- | --- | --- | --- |
-| carried out, Home Office Best  |     |     | local authorities and Borough    |     |     |     |     |     |
-| Use of Stop and Search (BUSS)  |     |     | Commanders to assess how         |     |     |     |     |     |
-| guidance will be used with     |     |     | Safer Schools Officers are used  |     |     |     |     |     |
-records and accountability.
-across London and develop
-a model which minimises
-` With a Green Mayor, no child
-their presence in school and
-will be strip searched by the
-their contact with children,
-police, no matter what crime
-prioritising the use of youth
-they are suspected of. In rare,
-| exceptional cases if a child is  |     |     | workers in school settings. |     |     |     |     |     |
-| -------------------------------- | --- | --- | --------------------------- | --- | --- | --- | --- | --- |
-| strip searched, the Met should   |     |     | ` A Green Mayor will work   |     |     |     |     |     |
-Zoë will demand action on police failings and
-| apply rigorous safeguarding with  |     |     | to increase the number of  |     |     |     |     |     |
-| --------------------------------- | --- | --- | -------------------------- | --- | --- | --- | --- | --- |
-an appropriate adult present  youth workers available  stop tactics such as facial recognition that
-disproportionately police some communities
-| and the location of the search  |     |     | to support schools.  |     |     |     |     |     |
-| ------------------------------- | --- | --- | -------------------- | --- | --- | --- | --- | --- |
-should be recorded. Strip search
-Challenging the
-will never happen outside of a
-police use of force (tasers  people. A Green Mayor will
-medical or custody setting.
-and dog bites) should trigger  ensure National Police Chiefs’
-Use of Force
-a safeguarding response and  Council guidance on handcuff
-Police Out of Schools
-a review so police practice  usage is followed and that
-|     |     |     | There  | have  been  | numerous  |     |     |     |
-| --- | --- | --- | ------ | ----------- | --------- | --- | --- | --- |
-is adapted to avoid future  there is transparency with
-| Young people tell us that having  |     |     | investigations,  | inquiries  | and  |     |     |     |
-| --------------------------------- | --- | --- | ---------------- | ---------- | ---- | --- | --- | --- |
-harm. The deployment of  ‘good objective grounds’ for
-| police  officers  | in  | schools  can  | inquests  | into  deaths  | in  police  |     |     |     |
-| ----------------- | --- | ------------- | --------- | ------------- | ----------- | --- | --- | --- |
-youth workers in hospital A&E  usage recorded and published.
-lead  to  the  escalation  of  minor  custody involving the Met police.  forms part of the safeguarding
-issues into criminal justice issues.  Often learnings from the inquiries  Live Facial Recognition
-response to these incidents.
-| Teachers also think having  police  |     |     | are  similar;  | however,  | action  on  |     |     |     |
-| ----------------------------------- | --- | --- | -------------- | --------- | ----------- | --- | --- | --- |
-` The Territorial Support
-in schools can make young people  recommendations is limited.  The Government has allowed the
-Group (TSG) is a constant
-feel unsafe and unwelcome.  ` A Green Mayor will ensure that  Met to use live facial recognition
-cause of concern to
-Liberty’s  ‘Holding  Your  Own’  actions from investigations are  London’s communities. A  software  with  hardly  any  checks
-report  highlighted young people’s  followed up in a systematic way  in place to protect our privacy. No
-Green Mayor will ensure
-experiences  of  discrimination  to prevent any further state- other city in the world has as much
-independent evaluation of
-by  police  in  school,  particularly  related deaths and that the Met  the TSG, looking at their role,  surveillance  as  London  and  we
-apologises for historical trauma
-Black  students,  Gypsy,  Roma  tactics, and effectiveness. urgently need a review of the Met’s
-caused to communities and
-and  Traveller  students,  disabled  ` The excessive use of handcuffs  approach to these technologies.
-families from death in custody.
-| students,  | LGBTQ+  | students,  |     |     |     |     | The Met has recently reported  |     |
-| ---------- | ------- | ---------- | --- | --- | --- | --- | ------------------------------ | --- |
-is causing irrevocable damage
-Muslim students and girls. Young  ` Any hospitalisation of a child  on new calibration of their stop and
-to community relations and
-people  at  the  intersections  of  or young person through  traumatising many young  search  equipment  that  they  say
-| 48  |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     | 49  |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- |
+- We will demand national reforms to our broken rental system, including abolishing no fault evictions (Section 21 of the Housing Act), an increased Local Housing Allowance to match rising rents, scrapping of the benefits cap, and, with evidence from our Rent Commission, powers to control rents.
+- A key power needed from housing devolution to London is the ability to stop the loss of council homes through Right to Buy. We will campaign fiercely for an urgent suspension of Right to Buy in London - as this neutralises any efforts to build more council homes.
+- We will campaign for deep reforms to leasehold, including caps on ground rents and limits on charges for major works, and campaign for changes to make commonhold and the right to manage easier to obtain for leaseholders.
+- We will campaign for a right to co-operative arrangements for people in shared houses.
+- We will lobby for more power to order councils to provide permanent sites as well as stopping sites, for Gypsy, Roma and Traveller communities, and see those sites held to higher building and living standards.
+- We will lobby for funding for councils:
+    - to buy up incomplete housing developments that have stalled due to the construction industry downturn, to grow social housing stock.
+    - to protect people’s right to help ahead of being evicted, as required by the Homelessness Reduction Act.
+- We will push for parliamentary legislation that guarantees victims of domestic abuse the right to remain in their homes if they wish, rather than the perpetrator, and for this right to apply across all tenancies.
+- We will make the case for necessary increases to the Building Safety Fund, so councils, housing associations, leaseholders and private landlords have the money they need to make homes safe. We will lobby to see the fund covers buildings of any type or height, and all internal defects, not just cladding.
+- We will campaign with other city mayors to demand the national government invests in a huge programme of energy saving measures across the country.
+- We will continue to campaign for Zane’s Law, to address the crisis of contaminated land across the country, which poses a serious risk to life.
 
-GNICILOP
-|     |     |     |     |     | to  impose                        | new  conditions  | on              | the use of strip search and stop   |                 |             |
-| --- | --- | --- | --- | --- | --------------------------------- | ---------------- | --------------- | ---------------------------------- | --------------- | ----------- |
-|     |     |     |     |     | a  protest                        | beyond           | its  location,  | and search and ensuring that the   |                 |             |
-|     |     |     |     |     | timing and numbers involved, and  |                  |                 | voices                             | of  Londoners,  | especially  |
-|     |     |     |     |     | do  this                          | for  marches     | and  static     | young Londoners, are heard as the  |                 |             |
-|     |     |     |     |     | demonstrations.                   | There            | are  also       | Met attempts to rebuild trust and  |                 |             |
-|     |     |     |     |     | powers                            | to  criminalise  | trespass,       | confidence.                        |                 |             |
-|     |     |     |     |     | which  threaten                   | the              | way  of  life   |                                    |                 |             |
-|     |     |     |     |     | of  Gypsy,                        | Roma             | and  Traveller  | Police Recruitment and             |                 |             |
-communities,
-Training
-` A Green Mayor will advocate
-strongly for a policing
-|     |     |     |     |     | approach that aims to allow      |     |     | We are committed to ensuring the     |     |     |
-| --- | --- | --- | --- | --- | -------------------------------- | --- | --- | ------------------------------------ | --- | --- |
-|     |     |     |     |     | citizens to express their views  |     |     | diversity of the Met’s officers and  |     |     |
-through protest, that does
-will push for a fairer representation
-|     |     |     |     |     | not criminalise protestors  |     |     | of  officers,  | one  | that  reflects  |
-| --- | --- | --- | --- | --- | --------------------------- | --- | --- | -------------- | ---- | --------------- |
-and that keeps protestors
-|     |     |     |     |     |     |     |     | London’s  | diversity.  | The  Met  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --------- | ----------- | --------- |
-and communities safe.
-|     |     |     |     |     |     |     |     | needs  | to  tackle  | institutional  |
-| --- | --- | --- | --- | --- | --- | --- | --- | ------ | ----------- | -------------- |
-discrimination for diverse officers
+## A NEW, RELEVANT STRATEGIC PLAN
+
+The London Plan is produced every few years by the Mayor's Office and is a key guiding document for shaping our city. A Green Mayor's London plan will include:
+- An increase of the 35 per cent 'affordable' housing threshold (to 50 per cent) as well as a more up-to-date definition of 'affordable' which reflects genuine affordability.
+- Many boroughs currently start to require 'affordable' housing only for developments of 10 or more homes, which can incentivise artificially low numbers of homes on suitable sites. In a Green London Plan there will be no lower limit to contributions expected from developers to truly affordable housing.
+- Much higher levels of truly affordable rented homes will be included in new planning policies for the Build to Rent sector.
+- 10 per cent of all units to be fully wheelchair accessible and prescribe the majority of these units to be built in the social rented sector. We will also develop a London Accessible Housing Register.
+- We will amend the London Plan to better control short-term lettings in London, with strict limits - including prohibition in areas of high housing need - built into lease conditions for new buildings and give more support to councils in enforcing time limits and quality of life for surrounding residents.
+- The new London Plan will require developers to apply lease conditions to the homes they build which make sure these are the primary residence of the new owners.
+- Protect local amenities like play parks. If amenities are demolished and there is delay we need a policy from the Mayor to get these vital spaces reinstated as a priority.
+
+# ACCOUNTABLE POLICING FOR A SAFER CITY
+
+Zoë will make London safer for everyone, focusing on local policing and a police service we can trust
+
+Londoners deserve to live in a safe and healthy city with a police service we can trust to keep us safe.
+Report after report has shown what Londoners have known for decades — how toxic the Metropolitan Police Service is and the scale of institutional discrimination. We’ve also seen many officers found guilty of horrendous crimes. The harm and disproportionality in the use of stop and search is well documented - a new approach is needed.
+
+Greens in City Hall have been the fiercest voice calling for a change so that the Met can gain public trust. We need police reform now - and we will only know we have made meaningful changes when our communities say we have.
+We will review how the Met hires, vets and trains officers, so that the right people have the right skills for the job and respect London’s diversity. The Met needs rigorous oversight. Plans must be driven by the priorities of London’s communities with much more accountability.
+
+No-one should suffer harm from contact with the police. A Green Mayor will focus on preventing crime, eliminating the use of traumatising tactics and upholding the rights and dignity of Londoners.
+We will work with the Met to improve support for victims of crime. We will change the way crime statistics are gathered so we can better understand the serious impact these crimes have on our communities and our children.
+A Green Mayor will work to prevent crime by treating people with respect and care, not criminalising people for experiencing homelessness or poverty. We will invest in protective provision like youth services and overdose prevention services and not tolerate hate towards anyone.
+A Green Mayor will prioritise police reform, to make sure the police are held accountable, respect London’s diversity, and that people can report crimes to a service they trust. A Green Mayor will make London safer and healthier for everyone.
+
+Green Assembly Members including Caroline Russell have effectively scrutinised the work of the Met
+
+During a year of chairing Police and Crime Committee Caroline Russell AM has:
+*   Looked at and reported on police investigation of serious traffic collisions - finding that only the most serious crashes get investigated thoroughly but every serious injury collision should be properly investigated to help victims achieve justice.
+*   Carried out year-long scrutiny based on the Casey review and the Met’s response to the findings and the Commissioner’s plan for a New Met for London.
+*   Investigated and reported on young people affected by violence, hearing evidence from youth practitioners and young people who emphasised the importance of youth workers.
+*   Learned about drug diversion and non policing approaches to reduce drug harm by visiting West Midlands police.
+*   Looked into the challenges of rolling out the Right Care Right Person approach to mental health call-outs.
+*   Explored the scale of money laundering in London with £100 billion laundered through the UK each year and just tens of millions recovered by the Met.
+
+## WHAT GREEN ASSEMBLY MEMBERS ACHIEVED
+Siân Berry’s campaign since 2016 to expose cuts to youth services and win new funding through the Young Londoners Fund (YLF) has been successful, but the funding so far does not replace all the cuts that have been made under austerity.
+Greens have been instrumental in raising issues with the Met, often the fiercest lone voice holding the Met to account and pushing for action.
+
+Caroline Russell’s Zero Murders report exposed how Black Londoners are disproportionately more likely to be murdered and called for a Zero Murder target. Caroline also:
+*   Amplified the voices of Young Londoners with a report and motion calling for knife images not to be shared on police social media.
+*   Found more children strip searched than had been disclosed previously and that data on 20 per cent of child strip searches had no location.
+*   Persuaded the Mayor to get the Deputy Mayor for Police and Crime to include road traffic victims in the remit of the Victims’ Commissioner.
+*   As Chair of Health Committee Caroline Russell published a report calling for drug harm reduction with recommendations for overdose prevention rooms, drug checking facilities and for the Met to carry Naloxone to save lives if they find people who have overdosed.
+
+## BEING ACCOUNTABLE TO COMMUNITIES
+The Commissioner’s work to deliver a New Met Plan for London (NMPFL) is welcome but needs rigorous oversight and must be driven by the priorities of London’s diverse communities. We will only know we have had meaningful police reform when our communities say we have.
+A Green Mayor will focus scrutiny on effective use of data, reducing use of traumatising
+
+tactics and upholding the rights and dignity of Londoners.
+
+## ENGAGEMENT
+A Green Mayor will ensure local scrutiny of police works well, with diverse communities and young people feeling confident to share their views, and where priority-setting is led by local people.
+Safer Neighbourhood Boards and panels that represent local communities at borough and ward level are run by volunteers but need more funding and support to increase their activity and involve a wider range of Londoners in their work.
+* We will work through an enlarged engagement team within the Mayor’s Office for Policing and Crime and provide new funding to double the membership and activity levels of local scrutiny bodies within two years, and find new ways to measure their impact and influence.
+* A Green Mayor will restore Community Policing ensuring local officers are known in their communities.
+* Whilst practice improves, we will work with partners and educate young people about police practices, equipping them with the tools and skills
+
+needed to stay in control in police interactions.
+* A Green Mayor will push for extensive and meaningful engagement with African, Caribbean, Asian, Latino and Roma communities and people from the Global South, ensuring Londoners continue to feedback on new ways of policing as the Met works to deliver the New Met Plan for London.
+
+## SCRUTINY AND DATA
+Police officers need effective data systems so that they can do their jobs well, improve trust and confidence and provide Londoners with transparent data to enable scrutiny of their work. This should lead to change in policing practice.
+* The Met is right to be reviewing their data systems, and the new Connect system is not yet working well enough. A Green Mayor will push for the Connect system to prompt officers to include all relevant data when recording activity to better enable scrutiny by MOPAC, London Assembly Members, the London Policing Board and Londoners.
+* A Green Mayor will keep data collection and sharing under constant review to improve transparency.
+
+The shocking case in 2020 of Child Q, a Black 15 year-old schoolgirl in Hackney who was strip searched at her school by police officers, brought to light the misuse of police tactics, a lack of safeguarding focus and the potential problems with having police officers in schools. As a Hackney Councillor, Zoë Garbett has been holding the local police to account and working to get police out of Hackney schools. On the Assembly, Caroline Russell has revealed and worked to improve poor policing practice. At all levels, Greens are working hard to minimise children’s contact with the police so we have a police service which puts the welfare of children first.
+* Gypsy, Roma and Travellers and neurodiverse people, are not being counted in crime statistics. The police need a strategic, compassionate approach to helping people experiencing intersectional barriers.
+* Body Worn Video (BWV) used consistently provides an opportunity for greater transparency and accountability but is too often just used internally for evidence. We will ensure BWV works as a tool for external accountability.
+
+## STOP AND SEARCH
+Stop and search, especially strip search, is an invasive, degrading policing tactic that is well-documented as causing harm and undermining trust and confidence in the police. Greens on the Assembly exposed shocking numbers of children being strip searched, which led to the number of strip searches decreasing under the current Commissioner. Strip search and stop and search are tactics used to overpolice Black communities. Young black men in London are six times more likely to be stopped and searched compared to other Londoners. Under the current Mayor, the number of stops has increased yet crime has also increased. A new approach is needed.
+* A Green Mayor will challenge the Met to end the use of section 60 powers that allow for suspicionless stop and search except in emergency situations in small areas,
+
+and only if authorised by the most senior officers.
+*   Where stop and search is carried out, Home Office Best Use of Stop and Search (BUSS) guidance will be used with records and accountability.
+*   With a Green Mayor, no child will be strip searched by the police, no matter what crime they are suspected of. In rare, exceptional cases if a child is strip searched, the Met should apply rigorous safeguarding with an appropriate adult present and the location of the search should be recorded. Strip search will never happen outside of a medical or custody setting.
+
+## POLICE OUT OF SCHOOLS
+Young people tell us that having police officers in schools can lead to the escalation of minor issues into criminal justice issues. Teachers also think having police in schools can make young people feel unsafe and unwelcome.
+
+Liberty’s ‘Holding Your Own’ report highlighted young people’s experiences of discrimination by police in school, particularly Black students, Gypsy, Roma and Traveller students, disabled students, LGBTQ+ students, Muslim students and girls. Young people at the intersections of these groups are particularly vulnerable to police harm.
+*   A Green Mayor will work with local authorities and Borough Commanders to assess how Safer Schools Officers are used across London and develop a model which minimises their presence in school and their contact with children, prioritising the use of youth workers in school settings.
+*   A Green Mayor will work to increase the number of youth workers available to support schools.
+
+Zoë will demand action on police failings and stop tactics such as facial recognition that disproportionately police some communities
+
+## CHALLENGING THE USE OF FORCE
+There have been numerous investigations, inquiries and inquests into deaths in police custody involving the Met police. Often learnings from the inquiries are similar; however, action on recommendations is limited.
+*   A Green Mayor will ensure that actions from investigations are followed up in a systematic way to prevent any further state-related deaths and that the Met apologises for historical trauma caused to communities and families from death in custody.
+*   Any hospitalisation of a child or young person through police use of force (tasers and dog bites) should trigger a safeguarding response and a review so police practice is adapted to avoid future harm. The deployment of youth workers in hospital A&E forms part of the safeguarding response to these incidents.
+*   The Territorial Support Group (TSG) is a constant cause of concern to London’s communities. A Green Mayor will ensure independent evaluation of the TSG, looking at their role, tactics, and effectiveness.
+*   The excessive use of handcuffs is causing irrevocable damage to community relations and traumatising many young people. A Green Mayor will ensure National Police Chiefs’ Council guidance on handcuff usage is followed and that there is transparency with ‘good objective grounds’ for usage recorded and published.
+
+## LIVE FACIAL RECOGNITION
+The Government has allowed the Met to use live facial recognition software with hardly any checks in place to protect our privacy. No other city in the world has as much surveillance as London and we urgently need a review of the Met’s approach to these technologies.
+
+The Met has recently reported on new calibration of their stop and search equipment that they say
+
 Republic protestors at the Kings’ Coronation taken by Zoë
-Reforming culture
-to feel and be safe at work.
-|     |     |     |     |     |     |     |     | Officers  | must  receive  | regular,  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --------- | -------------- | --------- |
-removes the disproportionality in  make-up of the watch list  The  Casey  review,  published  continuous  professional
-along with engagement with
-its use because Black, Brown and  over  a  year  ago,  revealed  what  development  to  ensure  they
-communities surveilled.
-white faces are recognised equally  many  Londoners  have  known  uphold  the  highest  standards
-and women are recognised at the  Protest Policing for  decades:  that  the  Met  is  of  inclusion  and  fairness,  whilst
-same rate as men. However, this  institutionally racist, homophobic,  challenging any unconscious bias.
-ignores the unconscious bias that  A Green Mayor will defend the rights  misogynist and disablist. One year  ` All officers need regular
-could  affect  outcomes  coming  of London citizens to protest.  on, the Commissioner’s New Met  diversity training with input
-from decisions about the make-up  When  Extinction  Rebellion  Plan for London (NMPfL) is his route  from community reference
-groups representing women,
-of watch lists and the location for  started their protests in April 2019,  to deliver “more trust, less crime
-deployment. the current Mayor told them the  and high standards”. Greens have  disabled people, LGBTIQA+
-` A Green Mayor will withdraw  city should ‘get back to business  welcomed the work done to  root  people, African, Caribbean,
-Asian, Latino, Gypsy, Roma,
-support for use of live facial  as  usual’  and  since  then  the  out bad officers, refocus resources
-Travellers and people from
-recognition except in extreme  Government has hugely extended  on local policing and reduce the
-the Global South. These
-life-threatening cases and
-|     |     | powers to police protests.  |     |     | use of traumatic tactics such as  |     |     |     |     |     |
-| --- | --- | --------------------------- | --- | --- | --------------------------------- | --- | --- | --- | --- | --- |
-groups should never be
-then only where there is  We are outraged at the Police,  strip  searching  children.  Green
-treated as a risk factor for
-full transparency on the  Crime,  Sentencing  &  Courts  Act  scrutiny in City Hall is focused on
-crime nor result in a higher
-deployment location and
-|     |                         | 2022  which  | allows  the  | police  | challenging  | disproportionality  | in                      |     |     |     |
-| --- | ----------------------- | ------------ | ------------ | ------- | ------------ | ------------------- | ----------------------- | --- | --- | --- |
-| 50  | LONDON GREEN PARTY 2024 |              |              |         |              |                     | LONDON GREEN PARTY 2024 |     |     | 51  |
 
-GNICILOP
-| level of police response on     |     | crimes, has a mental health     |     |     |     |     |     |     |     |
-| ------------------------------- | --- | ------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-| the basis of their ethnicities. |     | condition and/or uses drugs.    |     |     |     |     |     |     |     |
-| ` Police training will include  |     | ` Regular Police training and   |     |     |     |     |     |     |     |
-| focus on the experiences        |     | support will be expanded to     |     |     |     |     |     |     |     |
-| asylum seekers and refugees     |     | make sure officers and victim   |     |     |     |     |     |     |     |
-| may have had as a result        |     | support services refer trauma   |     |     |     |     |     |     |     |
-| of fleeing their countries,     |     | victims to the right support    |     |     |     |     |     |     |     |
-| which can be compounded by      |     | services as a continuation of   |     |     |     |     |     |     |     |
-| negative encounters here.       |     | their duty of care to victims.  |     |     |     |     |     |     |     |
-This could include young
-` Policing practice will be trauma-
-people that witness violent
-informed, with officers able to
-attacks being referred to
-recognise that people at the
-counselling services.
-intersections of marginalised
-` We will support people
-groups are more likely to
-| experience over-policing. |     | wrongly arrested by investing  |     |     |     |     |     |     |     |
-| ------------------------- | --- | ------------------------------ | --- | --- | --- | --- | --- | --- | --- |
-in safe, healing-centred and   Zoë will invest in youth workers and youth services to
-` The Met should never share
-racially literate spaces - to
-keep young Londoners safe
-information on victims with
-address grief, trauma and
-immigration enforcement.
-violence caused by over-
-policing, particularly in  Right Care, Right Person (RCRP) that  Safe and caring
-| Treatment of Victims |     |     |     |     | ensures the right agency responds  |     |     |     |     |
-| -------------------- | --- | --- | --- | --- | ---------------------------------- | --- | --- | --- | --- |
-relation to racism, ableism,
-misogyny and queerphobia. to mental health related calls, instead  society
-Victims of crime need the utmost  of  the  police  being  the  default
-` Victims of road collisions and
-care and respect.  first  responder.  We  recognise  that  A Green Mayor will take a public
-their families will be supported
-` A Green Mayor will embed  as they seek justice. officers will still come across people  health  and  trauma-informed
-|     |     |     |     |     | in mental health distress and need to  |     | approach  | to  tackling  | complex  |
-| --- | --- | --- | --- | --- | -------------------------------------- | --- | --------- | ------------- | -------- |
-psychologists and trauma
-experts to allow people  Mental Health support be trained for this.  challenges faced by Londoners.
-to give their witness and  ` All officers will receive mental  At all levels, Greens are pushing
-victim interviews in a
-People experiencing a mental health  health crisis training.  for  more  investment  into  public
-trauma-informed setting.
-crisis are much more likely to be a  ` While RCRP is bedding in, it  services. We work hard to ensure
-This extends the Forensic  danger to themselves than to others.  that  vulnerable  and  marginalised
-is critical that Mental Health,
-Interviewing Psychology
-They  need  access  to  emergency  people  are  not  stigmatised  or
-Ambulance Service, Police
-(FIP) service currently
-mental  health  services  and  and voluntary sector agencies  criminalised,  but  supported  to
-offered to children who
-sustainable, ongoing care. This help  remain in constant dialogue  have the stability and safety that
-experience sexual violence.
-and  support  can  only  be  provided  to identify gaps in provision  they deserve by investing in care
-This approach is particularly
-appropriately by healthcare workers. that need addressing. and support to deal with the root
-important for anyone who
-|     |     | Greens  | welcome  | the  |     |     | causes  | of  issues  and  | multiple  |
-| --- | --- | ------- | -------- | ---- | --- | --- | ------- | ---------------- | --------- |
-has experienced violent
-|     |                         | Commissioner’s  | commitment  | to  |     |                         | disadvantages. |     |     |
-| --- | ----------------------- | --------------- | ----------- | --- | --- | ----------------------- | -------------- | --- | --- |
-| 52  | LONDON GREEN PARTY 2024 |                 |             |     |     | LONDON GREEN PARTY 2024 |                |     | 53  |
+removes the disproportionality in its use because Black, Brown and white faces are recognised equally and women are recognised at the same rate as men. However, this ignores the unconscious bias that could affect outcomes coming from decisions about the make-up of watch lists and the location for deployment, make-up of the watch list along with engagement with communities surveilled.
 
-GNICILOP
-Keeping Young People  out its work and recommend  motivated  by  or  worsened  by  vital in making sure women
-|     |     |     | changes to policing. |     |     |              |               |           | feel confident in receiving  |     |
-| --- | --- | --- | -------------------- | --- | --- | ------------ | ------------- | --------- | ---------------------------- | --- |
-|     |     |     |                      |     |     | hatred  for  | women.  This  | will  be  |                              |     |
-appropriate and understanding
-Safe  Violence Against Women  backed up by staff training and a
-support when they need
-|     |     |     |     |     |     | wide  communication  |     | campaign  |     |     |
-| --- | --- | --- | --- | --- | --- | -------------------- | --- | --------- | --- | --- |
-help, and we will defend and
-Young  people  should  be  safe  and Girls to women to urge them to report
-promote these services across
-| on our streets. The best way to  |     |     |     |     |     | misogynistic crimes. |     |     |     |     |
-| -------------------------------- | --- | --- | --- | --- | --- | -------------------- | --- | --- | --- | --- |
-London, particularly in the face
-achieve this is through a massive  The departure of the former Met  ` A Green Mayor will institute
-of austerity and any future
-expansion  of  services  and  Commissioner followed a series of  an urgent victim-led review  potential cuts by councils.
-opportunities  for  young  people,  revelations  following  the  murder  of sexual violence in London,
-` We will also dedicate new
-including support for their mental  of  Sarah  Everard,  the  sharing  working from first principles
-resources to support
-health, safe spaces to spend time,  of  photos  of  murdered  sisters  and leading to new resources,
-Independent Domestic
-improved police and support
-| and trusted adults to talk to. |     |     | Bibaa Henry and Nicole Smallman  |     |     |     |     |     |     |     |
-| ------------------------------ | --- | --- | -------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-Violence Advocates (IDVAs)
-practices, calls for changes
-| Work  | by  Siân  Berry  | exposed  | and  shockingly  | misogynist  | and  |     |     |     |     |     |
-| ----- | ---------------- | -------- | ---------------- | ----------- | ---- | --- | --- | --- | --- | --- |
-within A&E and primary
-in the law and any other
-that youth services in London had  homophobic WhatsApp messages  care, and find new housing
-measures needed. London’s
-| been cut by over 50 per cent in a  |     |     | shared by officers at Charing Cross  |     |     |     |     |     |     |     |
-| ---------------------------------- | --- | --- | ------------------------------------ | --- | --- | --- | --- | --- | --- | --- |
-funding to improve options
-Victims’ Commissioner would
-decade,  along  with  hundreds  of  police station. The Met’s response  for move-on accommodation
-take the lead on this work.
-youth workers who had provided  was defensive, characterising the  for women leaving refuges
-` We will redouble efforts, led by
-vital support to young people. officers  involved  as  bad  apples  or leaving prison.
-the Assembly since 2018, to
-` A Green Mayor will expand  rather  than  understanding  that  ` A Green Mayor would
-introduce a national register
-the whole barrel was rotting.
-| the Young Londoners  |     |     |     |     |     |     |     |     | use youth workers, the  |     |
-| -------------------- | --- | --- | --- | --- | --- | --- | --- | --- | ----------------------- | --- |
-of domestic abusers to help
-| Fund further, including  |     |     | The  | recent  Angiolini  | Inquiry  |     |     |     |     |     |
-| ------------------------ | --- | --- | ---- | ------------------ | -------- | --- | --- | --- | --- | --- |
-Violence Reduction Unit,
-women identify and avoid
-funding for neurodiverse- looking into the kidnap, rape and  night time economy venues
-risks from violent partners.
-friendly youth services
-murder of Sarah Everard by a serving  and advertising on TfL to
-where carers don’t have to  ` A Green Mayor will ensure that  communicate that violence
-police officer reveals a devastating
-initiatives through the London
-supervise their children.  list  of  missed  opportunities  to  against women and girls is
-Violence Against Women and
-` A Green Mayor will invest in  address  behaviours  such  as   not tolerated in our city and to
-|                               |     |     |           |            |            | Girls (VAWG) Consortium  |     |     | educate men and boys about  |     |
-| ----------------------------- | --- | --- | --------- | ---------- | ---------- | ------------------------ | --- | --- | --------------------------- | --- |
-| youth workers, ensuring they  |     |     | indecent  | exposure.  | Angiolini  |                          |     |     |                             |     |
-are fully funded to meet the
-| have opportunities to develop  |     |     |             |              |              |                                 |     |     | the harm of misogyny and the  |     |
-| ------------------------------ | --- | --- | ----------- | ------------ | ------------ | ------------------------------- | --- | --- | ----------------------------- | --- |
-|                                |     |     | lays  bare  | a  shocking  | culture  of  |                                 |     |     |                               |     |
-|                                |     |     |             |              |              | needs of survivors of violence  |     |     | importance of being an ally.  |     |
-and progress their careers.
-|     |     |     | unchallenged misogyny in the Met  |              |             | and those facing domestic  |     |     |              |     |
-| --- | --- | --- | --------------------------------- | ------------ | ----------- | -------------------------- | --- | --- | ------------ | --- |
-|     |     |     | and  shows                        | the  extent  | of  police  |                            |     |     | Zero Murders |     |
-` We support the work of the  violence or harm. These include
-| Violence Reduction Unit  |     |     | reform needed. A Green Mayor will  |     |     |     |     |     |     |     |
-| ------------------------ | --- | --- | ---------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-advice and counselling, work
-(VRU) reducing the deep  address this urgently. to end harmful practices  Our  vision  for  London  is  one  of
-causes and adverse childhood  A  Green  Mayor  will  treat  including female genital  zero murders within ten years, like
-| experiences that underlie  |     |     |     |     |     | mutilation and forced marriage,  |     |     |     |     |
-| -------------------------- | --- | --- | --- | --- | --- | -------------------------------- | --- | --- | --- | --- |
-misogyny as a hate crime, following  our vision for zero road death. It
-increases in violence, learning  the  lead  of  Nottinghamshire  to  and integrated support. is  deeply  concerning  to  see  the
-from examples in other cities.
-have the police record, and treat  murder  rate  in  London.  Street
-` Specialist support services
-A Green Mayor will give the
-more  seriously,  crimes  that  are  for different communities are  homicides and domestic murders
-VRU more funding to carry
-| 54  |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     | 55  |
-| --- | --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
+* A Green Mayor will withdraw support for use of live facial recognition except in extreme life-threatening cases and then only where there is full transparency on the deployment location and
 
-GNICILOP
-` Road crime will be better
-| Hit and Run:   | Our  city  | has  seen  | a  worrying  |     |     |
-| -------------- | ---------- | ---------- | ------------ | --- | --- |
-recorded and reported by
-|     | increase  | in  irresponsible  |     | and  |     |
-| --- | --------- | ------------------ | --- | ---- | --- |
-police. Driving offences
-dangerous driving on our roads.
-that kill and injure will be
-|                      | Greens  | have  been  | working  | to  |                         |
-| -------------------- | ------- | ----------- | -------- | --- | ----------------------- |
-| Policing Road Crime  |         |             |          |     | recorded alongside the  |
-make sure hit and run offences
-number of victims and their
-|     | are  clearly                      | reported,  | including  |     | mode of travel and judicial    |
-| --- | --------------------------------- | ---------- | ---------- | --- | ------------------------------ |
-|     | judicial outcomes. Work by Green  |            |            |     | outcomes, ensuring statistics  |
-|     | Assembly                          | member     | Caroline   |     | are reported accurately.       |
-Russell found that in 2021 there
-` We will invest in improved
-were nearly two-and-a-half times
-standards of investigation for
-|     | as  many  | hit-and-run  | casualties  |     |     |
-| --- | --------- | ------------ | ----------- | --- | --- |
-serious collisions, and publish
-|     | on London’s roads as there were  |     |     |     | best practice standards so       |
-| --- | -------------------------------- | --- | --- | --- | -------------------------------- |
-|     | in 2009.                         |     |     |     | that vital data is not lost, to  |
-|     | Not stopping after a collision   |     |     |     | not hinder the legal process     |
-|     | seems to be almost normalised    |     |     |     | as victims seek justice.         |
-and the people that do it appear
-` Online reporting for less
-|     | not to care about their victims or  |     |     |     | serious road offences will be  |
-| --- | ----------------------------------- | --- | --- | --- | ------------------------------ |
-|     | to fear any legal consequences.     |     |     |     | improved, working in a victim- |
-This must change.
-led way to make sure the
-|     | ` A Green Mayor will ensure   |     |     |     | process is simple, that it links  |
-| --- | ----------------------------- | --- | --- | --- | --------------------------------- |
-|     | the Met acts with urgency on  |     |     |     | seamlessly to the retrieval       |
-of CCTV and other footage,
-London’s Vision Zero strategy
-|     | to eliminate road deaths  |     |     |     | and that the outcomes of  |
-| --- | ------------------------- | --- | --- | --- | ------------------------- |
-|     | with a comprehensive set  |     |     |     | case investigations are   |
-reported back promptly.
-of policies and priorities.
-|     | ` We will increase investment  |     |     |     | ` Motorcycle thefts outnumber  |
-| --- | ------------------------------ | --- | --- | --- | ------------------------------ |
-car thefts by 11 to 1 in
-in the Roads and Transport
-|     | Policing Command. |     |     |     | London. We will continue to  |
-| --- | ----------------- | --- | --- | --- | ---------------------------- |
-work with the Metropolitan
-` We will also support
-Police, riders and relevant
-Community Roadwatch and
-agencies to halve motorcycle
-ensure police teams across
-thefts, as well as improve
-London boroughs work
-support for victims of theft.
-together to reduce road
-danger and tackle road crime.
-Greens have worked to reduce road offences and will
-invest in traffic policing
-56 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 57
+### PROTEST POLICING
+A Green Mayor will defend the rights of London citizens to protest.
+When Extinction Rebellion started their protests in April 2019, the current Mayor told them the city should ‘get back to business as usual’ and since then the Government has hugely extended powers to police protests.
+We are outraged at the Police, Crime, Sentencing & Courts Act 2022 which allows the police to impose new conditions on a protest beyond its location, timing and numbers involved, and do this for marches and static demonstrations. There are also powers to criminalise trespass, which threaten the way of life of Gypsy, Roma and Traveller communities,
 
-` Ensure police carry nasal  GNICILOP
-have been falling for the last three  at leisure. Greens oppose racism,  Harm Reduction
-naloxone to prevent
-| years, with the least well off areas  |     | antisemitism,  | Islamophobia,  |     |     |     |     |     |     |     |
-| ------------------------------------- | --- | -------------- | -------------- | --- | --- | --- | --- | --- | --- | --- |
-death from overdose;
-of London affected worst. This is  misogyny,  homophobia,  biphobia,  Approach to Drugs
-` Deprioritise stop &
-| still a crisis, but by pulling together,  |     | transphobia,  | disablism  | and  hate  |     |     |     |     |     |     |
-| ----------------------------------------- | --- | ------------- | ---------- | ---------- | --- | --- | --- | --- | --- | --- |
-using a public health approach as  speech  and  actions  of  all  kinds  The  ‘war  on  drugs’  has  failed.  search for cannabis;
-a city, there is much we can do to  against any minority group.  Today’s  problems  have  been
-` Invest in pre-arrest diversion
-further  bring  down  homicide  in  ` We will make sure all police, TfL  created  by  our  drugs  laws,  to avoid criminalising
-London.  and GLA public service staff are  combined with stigma and a lack  people found with small
-` A Green Mayor will eliminate  trained to recognise all kinds of  of  funding  and  support.  Rising  amounts of drugs;
-|                          |     | hate crime (including disability  |     |     | deaths,  increasing  | availability  | of  |                         |     |     |
-| ------------------------ | --- | --------------------------------- | --- | --- | -------------------- | ------------- | --- | ----------------------- | --- | --- |
-| murders and violence by  |     |                                   |     |     |                      |               |     | ` Expand the number of  |     |     |
-focusing on education and  hate crime which is severely  drugs  and  increased  toxicity  of
-youth workers available
-under-reported and under-
-community level work to reach  supply have come despite billions
-in hospital A&E;
-| potential perpetrators and  |     | recognised) and to assist  |     |     |     |     |     |     |     |     |
-| --------------------------- | --- | -------------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
+* A Green Mayor will advocate strongly for a policing approach that aims to allow citizens to express their views through protest, that does not criminalise protestors and that keeps protestors and communities safe.
+
+### REFORMING CULTURE
+The Casey review, published over a year ago, revealed what many Londoners have known for decades: that the Met is institutionally racist, homophobic, misogynist and disablist. One year on, the Commissioner’s New Met Plan for London (NMPfL) is his route to deliver “more trust, less crime and high standards”. Greens have welcomed the work done to root out bad officers, refocus resources on local policing and reduce the use of traumatic tactics such as strip searching children. Green scrutiny in City Hall is focused on challenging disproportionality in the use of strip search and stop and search and ensuring that the voices of Londoners, especially young Londoners, are heard as the Met attempts to rebuild trust and confidence.
+
+### POLICE RECRUITMENT AND TRAINING
+We are committed to ensuring the diversity of the Met’s officers and will push for a fairer representation of officers, one that reflects London’s diversity. The Met needs to tackle institutional discrimination for diverse officers to feel and be safe at work.
+Officers must receive regular, continuous professional development to ensure they uphold the highest standards of inclusion and fairness, whilst challenging any unconscious bias.
+
+* All officers need regular diversity training with input from community reference groups representing women, disabled people, LGBTIQA+ people, African, Caribbean, Asian, Latino, Gypsy, Roma, Travellers and people from the Global South. These groups should never be treated as a risk factor for crime nor result in a higher
+
+level of police response on the basis of their ethnicities.
+*   Police training will include focus on the experiences asylum seekers and refugees may have had as a result of fleeing their countries, which can be compounded by negative encounters here.
+*   Policing practice will be trauma-informed, with officers able to recognise that people at the intersections of marginalised groups are more likely to experience over-policing.
+*   The Met should never share information on victims with immigration enforcement.
+
+## Treatment of Victims
+Victims of crime need the utmost care and respect.
+*   A Green Mayor will embed psychologists and trauma experts to allow people to give their witness and victim interviews in a trauma-informed setting. This extends the Forensic Interviewing Psychology (FIP) service currently offered to children who experience sexual violence. This approach is particularly important for anyone who has experienced violent crimes, has a mental health condition and/or uses drugs.
+*   Regular Police training and support will be expanded to make sure officers and victim support services refer trauma victims to the right support services as a continuation of their duty of care to victims. This could include young people that witness violent attacks being referred to counselling services.
+*   We will support people wrongly arrested by investing in safe, healing-centred and racially literate spaces - to address grief, trauma and violence caused by over-policing, particularly in relation to racism, ableism, misogyny and queerphobia.
+*   Victims of road collisions and their families will be supported as they seek justice.
+
+## Mental Health Support
+People experiencing a mental health crisis are much more likely to be a danger to themselves than to others. They need access to emergency mental health services and sustainable, ongoing care. This help and support can only be provided appropriately by healthcare workers. Greens welcome the Commissioner’s commitment to Right Care, Right Person (RCRP) that ensures the right agency responds to mental health related calls, instead of the police being the default first responder. We recognise that officers will still come across people in mental health distress and need to be trained for this.
+*   All officers will receive mental health crisis training.
+*   While RCRP is bedding in, it is critical that Mental Health, Ambulance Service, Police and voluntary sector agencies remain in constant dialogue to identify gaps in provision that need addressing.
+
+Zoë will invest in youth workers and youth services to keep young Londoners safe
+
+## Safe and Caring Society
+A Green Mayor will take a public health and trauma-informed approach to tackling complex challenges faced by Londoners.
+At all levels, Greens are pushing for more investment into public services. We work hard to ensure that vulnerable and marginalised people are not stigmatised or criminalised, but supported to have the stability and safety that they deserve by investing in care and support to deal with the root causes of issues and multiple disadvantages.
+
+## KEEPING YOUNG PEOPLE SAFE
+
+Young people should be safe on our streets. The best way to achieve this is through a massive expansion of services and opportunities for young people, including support for their mental health, safe spaces to spend time, and trusted adults to talk to.
+
+Work by Siân Berry exposed that youth services in London had been cut by over 50 per cent in a decade, along with hundreds of youth workers who had provided vital support to young people.
+
+*   A Green Mayor will expand the Young Londoners Fund further, including funding for neurodiverse-friendly youth services where carers don’t have to supervise their children.
+*   A Green Mayor will invest in youth workers, ensuring they have opportunities to develop and progress their careers.
+*   We support the work of the Violence Reduction Unit (VRU) reducing the deep causes and adverse childhood experiences that underlie increases in violence, learning from examples in other cities. A Green Mayor will give the VRU more funding to carry out its work and recommend changes to policing.
+
+## VIOLENCE AGAINST WOMEN AND GIRLS
+
+The departure of the former Met Commissioner followed a series of revelations following the murder of Sarah Everard, the sharing of photos of murdered sisters Bibaa Henry and Nicole Smallman and shockingly misogynist and homophobic WhatsApp messages shared by officers at Charing Cross police station. The Met’s response was defensive, characterising the officers involved as bad apples rather than understanding that the whole barrel was rotting.
+
+The recent Angiolini Inquiry looking into the kidnap, rape and murder of Sarah Everard by a serving police officer reveals a devastating list of missed opportunities to address behaviours such as indecent exposure. Angiolini lays bare a shocking culture of unchallenged misogyny in the Met and shows the extent of police reform needed. A Green Mayor will address this urgently.
+
+A Green Mayor will treat misogyny as a hate crime, following the lead of Nottinghamshire to have the police record, and treat more seriously, crimes that are motivated by or worsened by hatred for women. This will be backed up by staff training and a wide communication campaign to women to urge them to report misogynistic crimes.
+
+*   A Green Mayor will institute an urgent victim-led review of sexual violence in London, working from first principles and leading to new resources, improved police and support practices, calls for changes in the law and any other measures needed. London’s Victims’ Commissioner would take the lead on this work.
+*   We will redouble efforts, led by the Assembly since 2018, to introduce a national register of domestic abusers to help women identify and avoid risks from violent partners.
+*   A Green Mayor will ensure that initiatives through the London Violence Against Women and Girls (VAWG) Consortium are fully funded to meet the needs of survivors of violence and those facing domestic violence or harm. These include advice and counselling, work to end harmful practices including female genital mutilation and forced marriage, and integrated support.
+*   Specialist support services for different communities are vital in making sure women feel confident in receiving appropriate and understanding support when they need help, and we will defend and promote these services across London, particularly in the face of austerity and any future potential cuts by councils.
+*   We will also dedicate new resources to support Independent Domestic Violence Advocates (IDVAs) within A&E and primary care, and find new housing funding to improve options for move-on accommodation for women leaving refuges or leaving prison.
+*   A Green Mayor would use youth workers, the Violence Reduction Unit, night time economy venues and advertising on TfL to communicate that violence against women and girls is not tolerated in our city and to educate men and boys about the harm of misogyny and the importance of being an ally.
+
+## ZERO MURDERS
+
+Our vision for London is one of zero murders within ten years, like our vision for zero road death. It is deeply concerning to see the murder rate in London. Street homicides and domestic murders
+
+## HIT AND RUN:
+POLICING ROAD CRIME
+
+Our city has seen a worrying increase in irresponsible and dangerous driving on our roads. Greens have been working to make sure hit and run offences are clearly reported, including judicial outcomes. Work by Green Assembly member Caroline Russell found that in 2021 there were nearly two-and-a-half times as many hit-and-run casualties on London’s roads as there were in 2009.
+
+Not stopping after a collision seems to be almost normalised and the people that do it appear not to care about their victims or to fear any legal consequences. This must change.
+
+* A Green Mayor will ensure the Met acts with urgency on London’s Vision Zero strategy to eliminate road deaths with a comprehensive set of policies and priorities.
+* We will increase investment in the Roads and Transport Policing Command.
+* We will also support Community Roadwatch and ensure police teams across London boroughs work together to reduce road danger and tackle road crime.
+
+Greens have worked to reduce road offences and will invest in traffic policing
+
+### POLICING
+
+* Road crime will be better recorded and reported by police. Driving offences that kill and injure will be recorded alongside the number of victims and their mode of travel and judicial outcomes, ensuring statistics are reported accurately.
+* We will invest in improved standards of investigation for serious collisions, and publish best practice standards so that vital data is not lost, to not hinder the legal process as victims seek justice.
+* Online reporting for less serious road offences will be improved, working in a victim-led way to make sure the process is simple, that it links seamlessly to the retrieval of CCTV and other footage, and that the outcomes of case investigations are reported back promptly.
+* Motorcycle thefts outnumber car thefts by 11 to 1 in London. We will continue to work with the Metropolitan Police, riders and relevant agencies to halve motorcycle thefts, as well as improve support for victims of theft.
+
+have been falling for the last three
+years, with the least well off areas
+of London affected worst. This is
+still a crisis, but by pulling together,
+using a public health approach as
+a city, there is much we can do to
+further bring down homicide in
+London.
+*   A Green Mayor will eliminate
+    murders and violence by
+    focusing on education and
+    community level work to reach
+    potential perpetrators and
+    encourage them to seek help,
+    creating more opportunities
+    for community and personal
+    conversations about difficult
+    issues such as domestic
+    violence, poverty, prejudice,
+    relationships, masculinity,
+    morality and ethics. And being
+    honest about the limitations
+    of measures that primarily
+    focus on deterrence and fear.
+*   At the beginning of the Policing
+    Plenary each November, a
+    Green Mayor will publicly
+    acknowledge, with a minute
+    of silence, the murder victims
+    in London over the last year,
+    alongside acknowledging the
+    people killed on our roads.
+
+## ENDING HATE CRIME
+Every Londoner has the right to
+be safe at home, on the street, on
+the transport network, at work and
+at leisure. Greens oppose racism,
+antisemitism, Islamophobia,
+misogyny, homophobia, biphobia,
+transphobia, disablism and hate
+speech and actions of all kinds
+against any minority group.
+*   We will make sure all police, TfL
+    and GLA public service staff are
+    trained to recognise all kinds of
+    hate crime (including disability
+    hate crime which is severely
+    under-reported and underrecognised) and to assist
+    victims in reporting crimes to
+    the police or third parties, and
+    give advice on accessing CCTV.
+*   We will ensure MOPAC
+    collects and reports data on
+    Gypsy, Roma and Traveller
+    victims of race hate crime
+    and judicial outcomes, as
+    separate ethnic groups.
+*   We will provide support for
+    faith groups at risk of extremist
+    attacks. Every place of worship
+    that wishes it should have
+    access to appropriate advice,
+    support to improve physical
+    security and a dedicated police
+    contact for reporting concerns.
+*   We will work with the Met and
+    relevant partners to tackle
+    crime looking to exploit older,
+    or any, Londoners, such as
+    telephone and doorstep scams.
+
+## HARM REDUCTION
+### APPROACH TO DRUGS
+The ‘war on drugs’ has failed.
+Today’s problems have been
+created by our drugs laws,
+combined with stigma and a lack
+of funding and support. Rising
+deaths, increasing availability of
+drugs and increased toxicity of
+supply have come despite billions
 of government spending on drug
-` Invest in drug safety
-| encourage them to seek help,  |     | victims in reporting crimes to  |     |     |     |     |     |     |     |     |
-| ----------------------------- | --- | ------------------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 enforcement.
-|                              |     | the police or third parties, and  |     |     |         |            |         | testing facilities to  |     |     |
-| ---------------------------- | --- | --------------------------------- | --- | --- | ------- | ---------- | ------- | ---------------------- | --- | --- |
-| creating more opportunities  |     |                                   |     |     | People  | of  every  | social  |                        |     |     |
-for community and personal  give advice on accessing CCTV.  tackle the increase in
-background use drugs but drug-
-dangerous drug supply;
-| conversations about difficult  |     | ` We will ensure MOPAC  |     |     |     |     |     |     |     |     |
-| ------------------------------ | --- | ----------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
-related deaths are highly linked to
-issues such as domestic
-|     |     | collects and reports data on  |     |     |     |     |     | ` Set up community advisory  |     |     |
-| --- | --- | ----------------------------- | --- | --- | --- | --- | --- | ---------------------------- | --- | --- |
+People of every social
+background use drugs but drugrelated deaths are highly linked to
 social deprivation.
-| violence, poverty, prejudice,  |     |     |     |     |     |     |     | groups to put those  |     |     |
-| ------------------------------ | --- | --- | --- | --- | --- | --- | --- | -------------------- | --- | --- |
-Gypsy, Roma and Traveller
 The current Mayor has dithered
-relationships, masculinity,  victims of race hate crime  most affected by current
 and delayed taking action on drug
-morality and ethics. And being
-|     |     | and judicial outcomes, as  |     |     |     |     |     | policies at the heart of  |     |     |
-| --- | --- | -------------------------- | --- | --- | --- | --- | --- | ------------------------- | --- | --- |
 harm. His drugs commission was
-honest about the limitations  separate ethnic groups. making new ones.
-of measures that primarily  limited in scope and has delayed its
-` We will provide support for
-focus on deterrence and fear. report. Despite growing evidence  support for people
-faith groups at risk of extremist
-` At the beginning of the Policing  of  the  benefits  of  interventions
-attacks. Every place of worship
-|     |     |     |     |     | and progress in other cities, he has  |     |     | sleeping rough |     |     |
-| --- | --- | --- | --- | --- | ------------------------------------- | --- | --- | -------------- | --- | --- |
-Plenary each November, a
-that wishes it should have
+limited in scope and has delayed its
+report. Despite growing evidence
+of the benefits of interventions
+and progress in other cities, he has
 taken no action.
-Green Mayor will publicly
-access to appropriate advice,
-acknowledge, with a minute  ` A Green Mayor will take a  London’s  high  cost  of  living  and
-support to improve physical
-of silence, the murder victims  harm reduction approach,  severe  housing  crisis  together
-security and a dedicated police
-in London over the last year,  contact for reporting concerns. working with the health  are  pushing  more  people  into
-alongside acknowledging the  sector and charities to: homelessness.
-` We will work with the Met and
-| people killed on our roads. |     |     |     |     |     |     |     | Many  | people  sleeping  | rough  |
-| --------------------------- | --- | --- | --- | --- | --- | --- | --- | ----- | ----------------- | ------ |
-` Bring in overdose
-relevant partners to tackle
-|     |     |     |     |     | prevention centres so  |     |     | search for more hidden spots to  |     |     |
-| --- | --- | --- | --- | --- | ---------------------- | --- | --- | -------------------------------- | --- | --- |
-crime looking to exploit older,
-ending Hate Crime that people using drugs  sleep in order to avoid potentially
-or any, Londoners, such as
-|     |     |     |     |     | can do so safely overseen  |     |     | negative  | interactions  | with  the  |
-| --- | --- | --- | --- | --- | -------------------------- | --- | --- | --------- | ------------- | ---------- |
-telephone and doorstep scams.
-Every  Londoner  has  the  right  to  by healthcare workers;  police. This is particularly the case
-be safe at home, on the street, on  for migrants, who can be targeted
-the transport network, at work and  for deportation if they are found to
-| 58  | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     |     | 59  |
-| --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- | --- |
+*   A Green Mayor will take a
+    harm reduction approach,
+    working with the health
+    sector and charities to:
+    *   Bring in overdose
+        prevention centres so
+        that people using drugs
+        can do so safely overseen
+        by healthcare workers;
+*   Ensure police carry nasal
+    naloxone to prevent
+    death from overdose;
+*   Deprioritise stop &
+    search for cannabis;
+*   Invest in pre-arrest diversion
+    to avoid criminalising
+    people found with small
+    amounts of drugs;
+*   Expand the number of
+    youth workers available
+    in hospital A&E;
+*   Invest in drug safety
+    testing facilities to
+    tackle the increase in
+    dangerous drug supply;
+*   Set up community advisory
+    groups to put those
+    most affected by current
+    policies at the heart of
+    making new ones.
 
-have been sleeping rough, making Environment and charities. A Green Mayor provide a comprehensive
-will ensure Dog Legislation programme of youth centres
-it more difficult for outreach
-Officers (DLOs) are able to and youth workers.
-services to find people and offer Animals
-provide support to those
-them support. ` We will lobby for youth
-impacted by the legislation.
-` A Green Mayor will work with It has never been more urgent workers to be granted
-The Police will be encouraged
-the Met and local authorities for the natural environment and equal status to teachers
-to use the Dangerous Dogs
-to avoid the criminalisation wildlife in London to be protected, and other key workers.
-Act in a way that focuses
-of people experiencing as London experiences ever more on animals that genuinely ` A Green Mayor will support the
-homelessness. Instead, extreme weather. We will ramp up pose a risk to people, those case for decriminalisation of
-people who are sleeping wildlife protection. that are dangerously out of sex work and for misogyny to
-rough or begging will receive ` A Green Mayor will establish control or where a reasonable be recognised as a hate crime.
-engagement and support.
-a Habitat Crime Unit to tackle apprehension of injury exists. ` A Green Mayor will lobby the
-Sex Workers’ rights more serious and organised Government to reduce drug
-wildlife crimes up to and National Asks harms through legalisation
-A wealth of international including ecocide; this would and to implement a safer,
-evidence, including from Amnesty also include the prevention and ` Greens will push for a reversal regulated supply.
-investigation of fly tipping on
-International and the World Health of council budget cuts and ` A Green Mayor will seek
-farmland, country lanes and in
-Organisation, has demonstrated for properly funded public devolved powers and funding to
-wildlife sites within London.
-that the full decriminalisation of services including education, make London a centre of good
-sex work is the best way to protect ` A Green Mayor will continue to housing, social services and practice in restorative justice.
-sex workers from harm. ensure adequate resources for the NHS so that people can
-` We will support calls to reform
-the Metropolitan Police Wildlife get the services they need.
-With rents, food prices and
-joint enterprise laws to ensure
-Crime Unit, supporting the
-childcare costs sky high, but wages ` We will call for repeal of the
-fair and just outcomes, avoiding
-investigation and detection
-and benefits failing to keep up, it’s Public Order Act and the Police, the over-policing and over-
-of cruel and ecologically
-likely that more people may turn to Crime and Sentencing Act, charging of certain groups.
-damaging trades in wild
-sex work to support themselves which undermine our rights.
-animals and animal products. ` We will lobby for the end of the
-or their families. Sex workers in ` Call for the end to the Met’s
-Prevent duty, the Government’s
-` We will ensure that the rules
-London need access to services national role in terrorism and
-counter-terrorism strategy
-around puppy selling, as
-and support, not criminalisation. diplomatic protection, to
-which has been found to
-set out in ‘Lucy’s Law,’ are
-` A Green Mayor will work with refocus the Met on London, create an environment
-properly enforced and ensure
-the Met and local authorities to creating separate national (in education, health and
-action is taken against people
-stop issuing fines and cautions, and London services. beyond) in which Muslims,
-selling animals illegally.
-or arresting sex workers ` A Green Mayor will never especially young Muslim men,
-for working on the street or ` Government changes to give up on pushing the are viewed with suspicion.
-working indoors with others. legislation banning XL Government to make youth
-Bully type dogs has placed
-services a statutory service
-additional pressure on local
-and to fund councils to
-authority dog wardens and
-60 LONDON GREEN PARTY 2024 61
-GNICILOP
-LONDON GREEN PARTY 2024
+## SUPPORT FOR PEOPLE
+### SLEEPING ROUGH
+London’s high cost of living and
+severe housing crisis together
+are pushing more people into
+homelessness.
+Many people sleeping rough
+search for more hidden spots to
+sleep in order to avoid potentially
+negative interactions with the
+police. This is particularly the case
+for migrants, who can be targeted
+for deportation if they are found to
 
-Getting around
-our city
-W
-e want a London where that does not punish people who walking routes, and a joined up tube stations across the whole city.
-everyone gets where they depend on cars for their jobs. We network so people feel safer riding on To clean up our air, we will bring
-want to go on time, without the will help people find healthier, roads, or through parks, at any time of forward current targets for reducing
-stress of crawling through traffic. A cleaner ways to travel that suit day or night. We are committed to the pollution from 2041 to 2028. That
-city where cycling is easy and safe, them, whether they live in the outer Vision Zero strategy to end deaths on means getting diesel off our streets
-where wheelchairs and walkers can boroughs or city centre, aiming to our roads (see Policing). and making sure 80% of journeys
-travel down uncluttered pavements reduce overall traffic kilometres We will prioritise stopping the in London are on foot, bicycles or
-and where children walk to school travelled by 40% by 2030. abuse women and LGBTIQA+ public transport. To make travel more
-without worry of dangerous roads. As part of this, we need to help commuters experience on our affordable, we will set an ambition
-A city with clean air. cyclists, wheelchair users and network, including by training TfL to flatten fares with a single travel
-We know this is possible. A walkers get around. That means wider staff, drivers and British Transport zone across the city, starting with
-Green Mayor will champion low pavements, cheaper, safer cycle Police to become more aware of the the DLR, so everyone pays the same
-traffic neighbourhoods, car-free storage and more space on buses for barriers people face. We will speed amount for any journey.
-zones and space for new cyclists. parents with buggies, and wheelchair up the step-free access across A Green Mayor will make travel
-We need a smarter, fairer charging users, so they can travel with friends. tube stations and make sure there in London better and cleaner for
-system for driving in London, one It means more cycle lanes and green are public toilets at more bus and everyone, no matter their needs.
-TROPSNART
-Zoë will make travel cheaper
-and easier for everyone
-62
-TROPSNART
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 63
+have been sleeping rough, making it more difficult for outreach services to find people and offer them support.
 
-TROPSNART
-disabled drivers and a larger
-scrappage scheme to help
-people on low incomes who are
-pushed into car dependency.
-Making Transport
-Fairer
-Prioritising Outer
-London’s Networks
-|     |     |     |     | Our  top  | priority     | is  to  ensure  | a    |
-| --- | --- | --- | --- | --------- | ------------ | --------------- | ---- |
-|     |     |     |     | more      | affordable,  | reliable        | and  |
-sustainable transport network for
-Green Assembly Members
-|     |     |     |     | all  Londoners.  | We  | will  prioritise  |     |
-| --- | --- | --- | --- | ---------------- | --- | ----------------- | --- |
-including Siân Berry and
-funding to areas with the fewest
-Caroline Russell have
-|     |     |     |     | transport  | options.  | On  almost  |     |
-| --- | --- | --- | --- | ---------- | --------- | ----------- | --- |
-championed clean air and
-every count, this means improving
-secured extended scrappage
-London’s outer boroughs.
-schemes for non-ULEZ
-compliant vehicles Change in the outer boroughs
-will cost more. Some areas have
-|     |     |     |     | narrow  | country  | roads  without  |     |
-| --- | --- | --- | --- | ------- | -------- | --------------- | --- |
-What Green AMs ` Caroline Russell pushed the  ` Siân Berry worked with  pavements,  others  have  to
-Mayor to ensure victims of  campaigners to prevent the  contend  with  pollution  from
-Road Traffic collisions and their  one-day paper travelcard
-|  have achieved  |     |     |     | airports or congestion caused by  |     |     |     |
-| --------------- | --- | --- | --- | --------------------------------- | --- | --- | --- |
-families are treated as victims  from being abolished.
-major events. A Green Mayor will
-by the Met not just by TfL and
-` Long-term Assembly work from
-` Caroline Russell’s relentless  work  with  local  authorities  and
-receive the support they need
-|     |     | Siân and Caroline won new 20  |     | residents  | to  create  | relevant  | and  |
-| --- | --- | ----------------------------- | --- | ---------- | ----------- | --------- | ---- |
-campaigning for toilets on
-following a serious collision.
-the tube won initial funding of  mph speed limits on Transport  fair action plans that keep travel
-` With rail campaigners and  for London’s main roads.
-| £3 million a year from 2024. |     |     |     | affordable.  |     |     |     |
-| ---------------------------- | --- | --- | --- | ------------ | --- | --- | --- |
-a national effort, Greens
-| ` Siân Berry’s work chairing  |     | ` Greens were pushing for a  |     |     |     |     |     |
-| ----------------------------- | --- | ---------------------------- | --- | --- | --- | --- | --- |
-helped win a reprieve for
-the cross-party Transport  London-wide clean air zone for  We will:
-hundreds of rail ticket offices
-London with a report in 2017.
-Committee saved buses
-that faced closure in 2023.
-across London from  Siân Berry listened to residents  ` Set an ambition to flatten fares
-and pushed for more help for
-| dramatic cuts in 2022.  |                         |     |                         | and create a single zone for  |     |     |     |
-| ----------------------- | ----------------------- | --- | ----------------------- | ----------------------------- | --- | --- | --- |
-| 64                      | LONDON GREEN PARTY 2024 |     | LONDON GREEN PARTY 2024 |                               |     |     | 65  |
+*   A Green Mayor will work with the Met and local authorities to avoid the criminalisation of people experiencing homelessness. Instead, people who are sleeping rough or begging will receive engagement and support.
 
-TROPSNART
-|     |     | schemes introducing  |     |     | to increase access to bicycles and  |     |     |
-| --- | --- | -------------------- | --- | --- | ----------------------------------- | --- | --- |
-e-bikes to more areas.
-make bus fares affordable.
-|     |     | ` Introduce more car-free zones  |     |     | To fund more affordable public   |                   |           |
-| --- | --- | -------------------------------- | --- | --- | -------------------------------- | ----------------- | --------- |
-|     |     | in areas with lots of walkers,   |     |     | transport                        | we  will  revise  | charging  |
-|     |     | wheelchair users and cyclists.   |     |     | schemes for drivers of the most  |                   |           |
-|     |     |                                  |     |     | expensive                        | and  polluting    | cars,     |
-` Expand cycle and bus lanes.
-|     |     | Where roadspace is tight,        |     |     | while  exempting                       | disabled     | badge           |
-| --- | --- | -------------------------------- | --- | --- | -------------------------------------- | ------------ | --------------- |
-|     |     | we will create new space         |     |     | holders. By the end of our first term  |              |                 |
-|     |     | for these essential facilities   |     |     | in 2028, we will have replaced the     |              |                 |
-|     |     | by reclaiming kerbside           |     |     | current Mayor’s ULEZ scheme with       |              |                 |
-|     |     | locations from private cars.     |     |     | a smarter, fairer road-pricing plan,   |              |                 |
-|     |     | ` Convert 25% of parking spaces  |     |     | which will see cleaner vehicles on     |              |                 |
-|     |     | into parklets and free-standing  |     |     | our  roads,                            | protect      | drivers’  data  |
-|     |     | cycle hire drop-off points,      |     |     | privacy                                | and  reduce  | distances       |
-|     |     | clearing pavement clutter        |     |     | driven.                                |              |                 |
-while protecting spaces for
-disabled badge holders.
-Zoë will ensure transport in the
-More Cycle Hire
-` Install bus-only gates on
-outer boroughs becomes more
-|     |     | priority bus corridors. |     |     | We want all young people, not just  |     |     |
-| --- | --- | ----------------------- | --- | --- | ----------------------------------- | --- | --- |
-reliable and affordable
-students, to have free, sustainable
-` Relocate loading bays from
-travel on hired cycles. Support for
-bus lanes to side streets.
-tube and rail, just like we have  that cross the boundary  cycling needs to be more readily
-on buses and trams, helping  into surrounding areas. ` Tackle the current Mayor’s
-|                           |     |                                |     |     | available,  | with  an  | expanded  |
-| ------------------------- | --- | ------------------------------ | --- | --- | ----------- | --------- | --------- |
-| everyone in outer London  |     | backlog of projects, like the  |     |     |             |           |           |
-` Explore the introduction of  network of hire stands and repair
-West London Orbital, the
-pay less for travel. We will  stations, and support for low paid
-more tram routes, working
-| start with flattening the DLR  |     | Bakerloo line extension, the  |     |     |     |     |     |
-| ------------------------------ | --- | ----------------------------- | --- | --- | --- | --- | --- |
-with TfL’s strategic mapping  workers to buy or lease cycles. We
-DLR Thamesmead, the Tram line
-fares so there is one charge
-to work out where the most  will:
-| for a journey with no zones.  |     | to Sutton and Crossrail links. |     |     |     |     |     |
-| ----------------------------- | --- | ------------------------------ | --- | --- | --- | --- | --- |
-private car journeys can
-` Bring Santander cycle hire
-` Make borough funding  be most conveniently and
-|     |     | Affordable and  |     |     | into the Oyster Card charging  |     |     |
-| --- | --- | --------------- | --- | --- | ------------------------------ | --- | --- |
-contingent on aligning  affordably replaced, such  system, to apply the daily
-schemes to equity indicators  as by repurposing existing
-|     |     | sustainable travel |     |     | cap to users’ travel costs. |     |     |
-| --- | --- | ------------------ | --- | --- | --------------------------- | --- | --- |
-to ensure investment is  infrastructure. We will aim
-` Make cycle hire free for
-targeted to the greatest need. to sign off at least two
-|     |     | We  want  | to  reduce  | private  car  | everyone under 22 and  |     |     |
-| --- | --- | --------- | ----------- | ------------- | ---------------------- | --- | --- |
-new tram lines by the end
-` In consultation with councils
-|     |     | journeys  | and  encourage  | people  | people seeking asylum. |     |     |
-| --- | --- | --------- | --------------- | ------- | ---------------------- | --- | --- |
-of the four-year term.
-and communities, improve  to  walk,  wheel  or  cycle,  or  to
-` Work with local authorities
-orbital connections between  ` Expand cycle hire
-|     |     | take  | public  transport,  | without  |     |     |     |
-| --- | --- | ----- | ------------------- | -------- | --- | --- | --- |
-to regulate and standardise
-town centres around London’s  infrastructure, with pilot
-disadvantaging anyone. We need
-cycle hire across the city
-outer circuit, as well as routes
-| 66  | LONDON GREEN PARTY 2024 |     |     | LONDON GREEN PARTY 2024 |     |     | 67  |
-| --- | ----------------------- | --- | --- | ----------------------- | --- | --- | --- |
+### SEX WORKERS’ RIGHTS
+A wealth of international evidence, including from Amnesty International and the World Health Organisation, has demonstrated that the full decriminalisation of sex work is the best way to protect sex workers from harm.
 
-and make sure bikes are not We will:
-cluttering the pavements.
-` Freeze bus fares at the current
-` Help people on lower incomes level for our first term.
-by introducing accessible
-` Extend free bus travel to
-cycle-to-work schemes for
-all under-22s, emergency
-buying or leasing bicycles
-service workers, and
-and cycle repair projects.
-people seeking asylum.
-` Work with local councils to
-` Restore 24 hour free travel
-create well-signposted parking
-to holders of 60+ London
-spaces for stand-free hire
-Oyster photocards and Older
-cycles to help keep pavements
-Person’s Freedom Passes.
-clear for walking and wheeling.
-Accompanying carers will
-have the same benefits.
-Fairer Buses
-` Consult communities on the
-We want to encourage people to
-introduction of new, direct bus
-use buses if they cannot cycle
-routes that allow safe travel
-or walk. Free bus travel can be a
-between neighbourhoods and
-fantastic way of improving quality give them a say over changes
-of life for groups of people who to existing bus routes, such
-need support. as extending the 210 from
-Greens will freeze bus fares and
-In some cases, current Stamford Hill to Golders Green
-extend free bus travel to under-22s
-restrictions are unfair, like time and the 463 from Coulsdon
-limits on Freedom Passes. Our South Station to Netherne-
-on-the-Hill, to help connect
-older generations should not have encourages some less-polluting more accessible. The scheme
-places in outer London with
-to make up for the revenue TfL cars and does little to relieve will introduce charges based
-public transport options.
-lost during the pandemic. Offering congestion and improve air quality on distances driven, vehicle
-free travel only to students in outer boroughs. emissions, time of day and location
-Smarter road charging
-disadvantages other young Instead, our approach will and with the possibility of sharing
-people. Similarly, asylum seekers Immediately in 2024 we will start discourage the most polluting costs between passengers to
-who cannot work deserve support consultation on a new, pay-per- vehicles from using our roads, encourage car sharing, and cover
-in accessing essential services mile road-charging scheme, which raising money to help us support all of London. It will also protect
-and attending meetings, as do the will be fair for people who drive drivers stuck in car dependency. drivers’ personal data.
-many emergency workers who do outside Central London and at It will allow us to implement a The scheme will cover all of
-so much amazing work for our city. less busy times. We will aim to sustainable travel strategy to London and enforce the emissions
-We will consider expanding access have a new scheme in operation provide a better environment limits set out in our other policies.
-to further groups as our transport by the end of our first term in 2028. for walking, wheeling and Our policies will aim to reduce
-strategies develop. The current Mayor’s scheme only cycling, as well as making buses overall traffic kilometres by 40%
-68
-TROPSNART
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 69
+With rents, food prices and childcare costs sky high, but wages and benefits failing to keep up, it’s likely that more people may turn to sex work to support themselves or their families. Sex workers in London need access to services and support, not criminalisation.
 
-by 2030.It is vital that this scheme people who need to use cars Machinery) by 2030, with people on planning. We will adopt
-or vans but cannot afford to significant progress by 2028.
-is designed in partnership with recommendations from the
-change their vehicles. This
-Londoners who will benefit from Sustrans’ Disabled Citizens’ Inquiry
-will be funded from existing
-it, as well as with those who still Breaking Barriers to make sure public transport is as
-and new charges, but we will
-need to drive. We will begin this accessible as possible.
-also demand that the national
-engagement immediately after the to Mobility We will make London a
-government play its part.
-election. dementia-friendly city by bringing
-` Set standards to restrict
-As boroughs vary in the Everyone should be able to ‘lifetime neighbourhood’ design
-deadly particle pollutants
-types of roads and congestion move around London freely, principles into planning rules for
-from tyre and road wear.
-problems they face, we’ll work easily and safely, but London streets and homes, in consultation
-closely with each council and ` Work with councils to develop can be very unwelcoming for with relevant groups. This will
-with local communities to develop standardised parking charges some communities. Access include improved signage, reduced
-across London to provide
-local solutions to local problems, to our streets and to public pavement clutter and more space
-drivers with a clear and
-and provide funding to start transport is a challenge for many for people to navigate our streets
-consistent picture of costs.
-implementing those solutions people with physical disabilities, and access our city. We will:
-before any charging scheme ` Develop a borough- or neurodiversity, dementia and other
-begins. This will be alongside a London-wide, strategic levy conditions that affect mobility. ` Invest in a wider network of
-permanent, city-wide scrappage on workplace parking spaces Hate crime has been on the well-lit, accessible, local cycle
-programme. to reduce unnecessary rise as well. City Hall needs to routes, inspected by a design
-car commuting. review panel of experts on
-We will: work harder to protect vulnerable
-women’s cycling, so women
-` Set stricter standards for ` Require local councils to people on the move. The level of
-feel safer cycling in London.
-larger, more polluting vehicles, reduce in-borough traffic using abuse women cyclists experience
-such as SUVs and diesel- controlled parking schemes is unacceptable and deters many ` Consult from the beginning
-powered vehicles, basing before they can receive funding other women from active travel. We with disabled people on all
-charges on these factors as for new transport schemes. need to tackle this and all forms of transport policies and plans
-well as distance travelled. ` When Uber’s licence to hate crime by improving ways of that may affect them.
-` Work with councils to phase operate in London comes up reporting and recording incidents, ` We will improve awareness
-out residential parking permits for renewal in late 2024, we as well as improvements to cycling of TfL’s Travel Mentoring
-for diesel cars by 2028. will work with GMB to review and travel infrastructure. We will set service for people that need
-whether the company meets a target for increasing the number help navigating London’s
-` Ensure every part of TfLs’ road
-fair and ethical employment of women cycling in the city from 30 public transport networks.
-network stays within WHO
-standards and use this to
-guidelines for safe pollution per cent to 50 per cent. ` Provide funding to the London
-decide on how to proceed.
-limits as soon as possible, Access Forum to help make
-and at the latest by the end ` Implement best practice Improving Accessibility public transport, especially the
-of the first term in 2028. standards for regulating We will make it easier for all Underground, accessible to
-` Establish a permanent emissions from transportable people to get around London more mobility-impaired people.
-industrial equipment and
-scrappage programme for by properly consulting disabled
-vehicles (Non-Road Mobile
-70
-TROPSNART
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 71
+*   A Green Mayor will work with the Met and local authorities to stop issuing fines and cautions, or arresting sex workers for working on the street or working indoors with others.
 
-|     |     | ` Bring in stricter rules around  |     |     | ` Standardising and clearly  | TROPSNART |
-| --- | --- | --------------------------------- | --- | --- | ---------------------------- | --------- |
-|     |     | pavement clutter, parking         |     |     | communicating CCTV           |           |
-|     |     | across dropped kerbs              |     |     | retention times.             |           |
-and parking spaces.
-` Ensuring night-time services
-|     |     | ` Set a London-wide standard for  |     |     | are frequent and reliable. |     |
-| --- | --- | --------------------------------- | --- | --- | -------------------------- | --- |
-parking hire bicycles so they
-` Stepping up the training
-do not clutter pavements.
-of TfL and railway staff and
-|     |     | ` Make sure there are enough  |     |     | British Transport Police to      |     |
-| --- | --- | ----------------------------- | --- | --- | -------------------------------- | --- |
-|     |     | benches and water fountains   |     |     | give them the skills to support  |     |
-|     |     | to make journeys more         |     |     | everyone travelling in London.   |     |
-|     |     | comfortable for people who    |     |     | This will include improving      |     |
-|     |     | find active travel difficult. |     |     | awareness of our most            |     |
-disadvantaged Londoners’
-Ending Hate Crime and
-intersectional experiences.
-Ensuring Safety
-` Improving data collected
-|     |     | We want to see an end to all hate  |     |     | about people’s experiences  |     |
-| --- | --- | ---------------------------------- | --- | --- | --------------------------- | --- |
-Zoë will work with TfL and the police to end  crime and the targeting of women  of abuse on public transport,
-so we can better understand
-hate crime on our transport networks on our streets and public transport.
-and tackle intersectional
-We will continue to use our powers
-barriers to reporting incidents.
-to raise awareness of how every
-` Upgrade our bus fleet
-more quickly and making
-|     |     | Londoner,  | TfL  staff  | member  and  | ` Working with third party  |     |
-| --- | --- | ---------- | ----------- | ------------ | --------------------------- | --- |
-to include space for  sure more dedicated rest and
-|     |     | the  British  | Transport  | Police  can  | organisations such as Tell  |     |
-| --- | --- | ------------- | ---------- | ------------ | --------------------------- | --- |
-more wheelchair users  toilet facilities are provided
-Mama and Galop, and apps
-to travel together. in a network that provides  prevent, safely react to and report
-like CATCH or Zoteria, which
-for all drivers’ needs. hate crimes and abuse. The Green
-` Dedicate funding to
-|     |     | Party supports the “get me home  |     |     | enable indirect reporting of  |     |
-| --- | --- | -------------------------------- | --- | --- | ----------------------------- | --- |
-maintaining and improving  ` Support, maintain and  hate crimes, to help African,
-safe” campaign across the service
-pavements at crossings  improve transport hire
-Caribbean, Asian, Latino,
-industry and night time economy.
-and at access points  services for disabled people  Roma and people from the
-In partnership with LGBTQIA+ and
-to public transport. such as Dial-a-Ride. Global South, faith groups
-other community organisations, TfL
-` Upgrade more of our transport  ` Design a new standard bus stop  and LGBTQIA+ communities,
-and the police, we will implement a
-who have low trust in the
-network with step-free access  with better shelter and seating
-strategy for eliminating hate crime
-and give priority to disabled  suitable for older and disabled  police, to report hate crimes.
-on London’s transport networks, by:
-and older passengers taking  people, as well as improved  ` Working with the police to
-non-emergency taxi journeys. real-time bus information.  identify hotspots where women
-` Ensuring stations are
-The design will be greener,
-` Support London’s valuable  cyclists experience high levels
-well-lit, fully staffed and
-with solar power generation  of abuse, to target crime
-Black Taxis and their drivers
-and bee-friendly plants. have visible and well-
-prevention and strengthen
-| by expanding fast charging  |     | connected CCTV and wifi. |     |     |     |     |
-| --------------------------- | --- | ------------------------ | --- | --- | --- | --- |
-campaigns against hate crime.
-points into outer London
-| 72  | LONDON GREEN PARTY 2024 |     |     | LONDON GREEN PARTY 2024 |     | 73  |
-| --- | ----------------------- | --- | --- | ----------------------- | --- | --- |
+## ENVIRONMENT AND ANIMALS
+It has never been more urgent for the natural environment and wildlife in London to be protected, as London experiences ever more extreme weather. We will ramp up wildlife protection.
 
-Healthier, ` Put a stop to cyclist and
-Zoom Bike Project
-pedestrian deaths caused
-mode of transport for all.
-safer streets by motor vehicles in London Zoë has volunteered at the
-by 2028, the end of the
-in Hackney project since 2021 and said “I
-upcoming Mayoral term.
-Travelling around London should have had the joy of teaching
-be safe for everyone, but there ` Upgrade pavements to The Zoom Bike Project is a children how to pump up bike
-ensure they are level,
-are still too many collisions on community led zero-waste tyres and watching them help
-ensuring crossings are easily
-our roads. Residents in London’s bike repair workshop, to each other, learning how their
-accessible to all, and add more
-most-deprived postcode areas are make cycling and cycle repair bike works and how to look
-crossing points with dropped
-twice as likely to experience a road accessible to help Hackney after it. I’d love to support
-kerbs and tactile paving.
-collision as people in wealthier become a borough where projects like this across the
-areas. A Green Mayor will make ` Work with councils to develop cycling could be the primary city to grow”.
-action plans for improving
-roads safer for everyone, starting
-safety on challenging
-with the most-deprived areas.
-routes, such as country
-roads without pavements. in collisions, and work with available and well-publicised,
-Vision Zero for Road
-local authorities to set speed so victims of road traffic
-` Install crossings at every
-limits on other roads. collisions and road crimes can
-traffic light junction.
-Deaths get quick and comprehensive
-` Ensure all working vehicles
-` Work to a principle of lowering help, including when there
-like buses and delivery
-waiting times for green is no prosecution.
-lorries on London roads have
-Vision Zero is about stopping crossing lights to 60 seconds.
-intelligent speed assistance ` We will mark the World Day
-anyone on our roads being killed
-` Give people more time to technology fitted by 2028. of Remembrance for Road
-by road traffic. We need to reclaim cross wide roads, reducing Traffic Victims on the third
-` Commission a comprehensive
-public streets for public use and the need for enclosures. Sunday of November each year
-audit of TfL’s road network with
-make it easier for people to cross with a one-minute silence.
-` Roll out 50 Pedestrian Priority the aim of prioritising safety for
-roads safely. A Green Mayor will do
-Crossings where the default walkers, wheelers and cyclists. ` At the beginning of each
-everything possible to make our
-setting is green for people Mayor’s Question Time a
-roads safer and healthier, bringing Helping Road Victims
-crossing, with red lights only Green Mayor will read out the
-forward the deadline for London’s stopping people on foot, names of everyone known to
-Vision Zero from 2041 to 2032. cycles or in wheelchairs when Despite our best efforts to improve have been killed on London
-This chapter focuses on our motor traffic is waiting. safety on our roads, collisions do roads since the last meeting.
-commitment to making roads safer still occur. In such cases we have
-` Commit to a 20mph speed ` We will hold an annual Listening
-for everyone while our Policing to step up support for victims of
-limit across all of Transport Day for crash victims and
-chapter outlines how we will road traffic collisions.
-for London’s Road Network families within City Hall.
-improve handling of road crimes by 2025, reducing pollution ` Greens will ensure dedicated
-and treatment of victims. We will from tyres and roads and support services and
-also: lowering the risk of death organisations are readily
-74
-TROPSNART
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 75
+*   A Green Mayor will establish a Habitat Crime Unit to tackle more serious and organised wildlife crimes up to and including ecocide; this would also include the prevention and investigation of fly tipping on farmland, country lanes and in wildlife sites within London.
+*   A Green Mayor will continue to ensure adequate resources for the Metropolitan Police Wildlife Crime Unit, supporting the investigation and detection of cruel and ecologically damaging trades in wild animals and animal products.
+*   We will ensure that the rules around puppy selling, as set out in ‘Lucy’s Law,’ are properly enforced and ensure action is taken against people selling animals illegally.
+*   Government changes to legislation banning XL Bully type dogs has placed additional pressure on local authority dog wardens and charities. A Green Mayor will ensure Dog Legislation Officers (DLOs) are able to provide support to those impacted by the legislation. The Police will be encouraged to use the Dangerous Dogs Act in a way that focuses on animals that genuinely pose a risk to people, those that are dangerously out of control or where a reasonable apprehension of injury exists.
 
-TROPSNART
-toilets
- Zoë has consulted with
-Londoners on toilet provision
-|     |     | The  decline                       | in        | the  number      | of  Underground stations and bus  |     |
-| --- | --- | ---------------------------------- | --------- | ---------------- | --------------------------------- | --- |
-|     |     | public toilets affects the health  |           |                  | hubs, and improve signage.        |     |
-|     |     | and  mobility                      | of        | all  Londoners.  | ` Share maps of public toilets    |     |
-|     |     | Our  Green                         | Assembly  | Member,          | across the network by             |     |
-Caroline Russell, has worked hard
-upgrading maps on tube
-|     |     | to assess and cost the gaps in  |             |            | carriages, station platforms   |     |
-| --- | --- | ------------------------------- | ----------- | ---------- | ------------------------------ | --- |
-|     |     | TfL’s  toilet                   | provision.  | Following  | and digital apps with symbols  |     |
-indicating availability.
-|     |     | pressure                      | from  the  | Greens,  | the                          |     |
-| --- | --- | ----------------------------- | ---------- | -------- | ---------------------------- | --- |
-|     |     | Mayor of London commissioned  |            |          | ` Work with the NHS to open  |     |
-a feasibility study and eventually
-all their toilets to the public.
-committed funding for toilets on
-` Include an assessment
-Tfl. This is a good start, but lacks
-of toilet availability
-|     |     | ambition.  | An  investment  | of  | just  |     |
-| --- | --- | ---------- | --------------- | --- | ----- | --- |
-in the Healthy Street
-|     |     | £20 million per year would hugely  |          |                  | Scorecard design check. |     |
-| --- | --- | ---------------------------------- | -------- | ---------------- | ----------------------- | --- |
-|     |     | improve                            | comfort  | for  travellers  |                         |     |
-` Appoint a Loo Czar to
-across the Underground network.
-implement our plan
+## NATIONAL ASKS
+*   Greens will push for a reversal of council budget cuts and for properly funded public services including education, housing, social services and the NHS so that people can get the services they need.
+*   We will call for repeal of the Public Order Act and the Police, Crime and Sentencing Act, which undermine our rights.
+*   Call for the end to the Met’s national role in terrorism and diplomatic protection, to refocus the Met on London, creating separate national and London services.
+*   A Green Mayor will never give up on pushing the Government to make youth services a statutory service and to fund councils to
+
+provide a comprehensive programme of youth centres and youth workers.
+
+*   We will lobby for youth workers to be granted equal status to teachers and other key workers.
+*   A Green Mayor will support the case for decriminalisation of sex work and for misogyny to be recognised as a hate crime.
+*   A Green Mayor will lobby the Government to reduce drug harms through legalisation and to implement a safer, regulated supply.
+*   A Green Mayor will seek devolved powers and funding to make London a centre of good practice in restorative justice.
+*   We will support calls to reform joint enterprise laws to ensure fair and just outcomes, avoiding the over-policing and over-charging of certain groups.
+*   We will lobby for the end of the Prevent duty, the Government’s counter-terrorism strategy which has been found to create an environment (in education, health and beyond) in which Muslims, especially young Muslim men, are viewed with suspicion.
+
+## GETTING AROUND OUR CITY
+
+Zoë will make travel cheaper and easier for everyone
+
+We want a London where everyone gets where they want to go on time, without the stress of crawling through traffic. A city where cycling is easy and safe, where wheelchairs and walkers can travel down uncluttered pavements and where children walk to school without worry of dangerous roads. A city with clean air.
+
+We know this is possible. A Green Mayor will champion low traffic neighbourhoods, car-free zones and space for new cyclists. We need a smarter, fairer charging system for driving in London, one that does not punish people who depend on cars for their jobs. We will help people find healthier, cleaner ways to travel that suit them, whether they live in the outer boroughs or city centre, aiming to reduce overall traffic kilometres travelled by 40% by 2030.
+
+As part of this, we need to help cyclists, wheelchair users and walkers get around. That means wider pavements, cheaper, safer cycle storage and more space on buses for parents with buggies, and wheelchair users, so they can travel with friends. It means more cycle lanes and green walking routes, and a joined up network so people feel safer riding on roads, or through parks, at any time of day or night. We are committed to the Vision Zero strategy to end deaths on our roads (see Policing).
+
+We will prioritise stopping the abuse women and LGBTIQA+ commuters experience on our network, including by training TfL staff, drivers and British Transport Police to become more aware of the barriers people face. We will speed up the step-free access across tube stations and make sure there are public toilets at more bus and tube stations across the whole city.
+
+To clean up our air, we will bring forward current targets for reducing pollution from 2041 to 2028. That means getting diesel off our streets and making sure 80% of journeys in London are on foot, bicycles or public transport. To make travel more affordable, we will set an ambition to flatten fares with a single travel zone across the city, starting with the DLR, so everyone pays the same amount for any journey.
+
+A Green Mayor will make travel in London better and cleaner for everyone, no matter their needs.
+
+## WHAT GREEN AMS HAVE ACHIEVED
+
+* Caroline Russell's relentless campaigning for toilets on the tube won initial funding of £3 million a year from 2024.
+* Siân Berry's work chairing the cross-party Transport Committee saved buses across London from dramatic cuts in 2022.
+* Caroline Russell pushed the Mayor to ensure victims of Road Traffic collisions and their families are treated as victims by the Met not just by TfL and receive the support they need following a serious collision.
+* With rail campaigners and a national effort, Greens helped win a reprieve for hundreds of rail ticket offices that faced closure in 2023.
+
+Green Assembly Members including Siân Berry and Caroline Russell have championed clean air and secured extended scrappage schemes for non-ULEZ compliant vehicles
+
+* Siân Berry worked with campaigners to prevent the one-day paper travelcard from being abolished.
+* Long-term Assembly work from Siân and Caroline won new 20 mph speed limits on Transport for London's main roads.
+* Greens were pushing for a London-wide clean air zone for London with a report in 2017. Siân Berry listened to residents and pushed for more help for disabled drivers and a larger scrappage scheme to help people on low incomes who are pushed into car dependency.
+
+## TRANSPORT
+
+## MAKING TRANSPORT FAIRER
+
+### PRIORITISING OUTER LONDON’S NETWORKS
+
+Our top priority is to ensure a more affordable, reliable and sustainable transport network for all Londoners. We will prioritise funding to areas with the fewest transport options. On almost every count, this means improving London’s outer boroughs.
+
+Change in the outer boroughs will cost more. Some areas have narrow country roads without pavements, others have to contend with pollution from airports or congestion caused by major events. A Green Mayor will work with local authorities and residents to create relevant and fair action plans that keep travel affordable.
+
+### We will:
+
+* Set an ambition to flatten fares and create a single zone for
+
+- schemes introducing e-bikes to more areas.
+- Introduce more car-free zones in areas with lots of walkers, wheelchair users and cyclists.
+- Expand cycle and bus lanes. Where roadspace is tight, we will create new space for these essential facilities by reclaiming kerbside locations from private cars.
+- Convert 25% of parking spaces into parklets and free-standing cycle hire drop-off points, clearing pavement clutter while protecting spaces for disabled badge holders.
+- Install bus-only gates on priority bus corridors.
+- Relocate loading bays from bus lanes to side streets.
+- Tackle the current Mayor’s backlog of projects, like the West London Orbital, the Bakerloo line extension, the DLR Thamesmead, the Tram line to Sutton and Crossrail links.
+
+Zoë will ensure transport in the outer boroughs becomes more reliable and affordable
+
+tube and rail, just like we have on buses and trams, helping everyone in outer London pay less for travel. We will start with flattening the DLR fares so there is one charge for a journey with no zones.
+- Make borough funding contingent on aligning schemes to equity indicators to ensure investment is targeted to the greatest need.
+- In consultation with councils and communities, improve orbital connections between town centres around London’s outer circuit, as well as routes that cross the boundary into surrounding areas.
+- Explore the introduction of more tram routes, working with TfL’s strategic mapping to work out where the most private car journeys can be most conveniently and affordably replaced, such as by repurposing existing infrastructure. We will aim to sign off at least two new tram lines by the end of the four-year term.
+- Expand cycle hire infrastructure, with pilot
+
+to increase access to bicycles and make bus fares affordable.
+To fund more affordable public transport we will revise charging schemes for drivers of the most expensive and polluting cars, while exempting disabled badge holders. By the end of our first term in 2028, we will have replaced the current Mayor’s ULEZ scheme with a smarter, fairer road-pricing plan, which will see cleaner vehicles on our roads, protect drivers’ data privacy and reduce distances driven.
+
+## MORE CYCLE HIRE
+
+We want all young people, not just students, to have free, sustainable travel on hired cycles. Support for cycling needs to be more readily available, with an expanded network of hire stands and repair stations, and support for low paid workers to buy or lease cycles. We will:
+- Bring Santander cycle hire into the Oyster Card charging system, to apply the daily cap to users’ travel costs.
+- Make cycle hire free for everyone under 22 and people seeking asylum.
+- Work with local authorities to regulate and standardise cycle hire across the city
+
+## AFFORDABLE AND SUSTAINABLE TRAVEL
+
+We want to reduce private car journeys and encourage people to walk, wheel or cycle, or to take public transport, without disadvantaging anyone. We need
+
+*   ▸ Help people on lower incomes by introducing accessible cycle-to-work schemes for buying or leasing bicycles and cycle repair projects.
+*   ▸ Work with local councils to create well-signposted parking spaces for stand-free hire cycles to help keep pavements clear for walking and wheeling.
+
+## FAIRER BUSES
+
+We want to encourage people to use buses if they cannot cycle or walk. Free bus travel can be a fantastic way of improving quality of life for groups of people who need support.
+In some cases, current restrictions are unfair, like time limits on Freedom Passes. Our older generations should not have to make up for the revenue TfL lost during the pandemic. Offering free travel only to students disadvantages other young people. Similarly, asylum seekers who cannot work deserve support in accessing essential services and attending meetings, as do the many emergency workers who do so much amazing work for our city. We will consider expanding access to further groups as our transport strategies develop.
+
+and make sure bikes are not cluttering the pavements.
+
 We will:
-for more toilets across
-` Set out a standard level
-London and create a Toilet
-|     |     | of public toilet for TfL.   |     |     | Commission for London        |     |
-| --- | --- | --------------------------- | --- | --- | ---------------------------- | --- |
-|     |     | ` Prioritise the provision  |     |     | with wide representation     |     |
-|     |     | of toilets at stations at   |     |     | to help steer their work.    |     |
-|     |     | interchanges and in areas   |     |     | ` Relaunch community toilet  |     |
-with no nearby provision.
-schemes with clearer
-signage and branding as an
-` Set targets for expanding the
-add-on, not a substitute,
-number of toilets available
-Caroline Russell has secured more funding for  outside of barriers at TfL  for free public toilets.
-public toilets and will continue to push for more
-| 76  | LONDON GREEN PARTY 2024 |     |     | LONDON GREEN PARTY 2024 |     | 77  |
-| --- | ----------------------- | --- | --- | ----------------------- | --- | --- |
+*   ▸ Freeze bus fares at the current level for our first term.
+*   ▸ Extend free bus travel to all under-22s, emergency service workers, and people seeking asylum.
+*   ▸ Restore 24 hour free travel to holders of 60+ London Oyster photocards and Older Person’s Freedom Passes. Accompanying carers will have the same benefits.
+*   ▸ Consult communities on the introduction of new, direct bus routes that allow safe travel between neighbourhoods and give them a say over changes to existing bus routes, such as extending the 210 from Stamford Hill to Golders Green and the 463 from Coulsdon South Station to Netherton-on-the-Hill, to help connect places in outer London with public transport options.
 
-TROPSNART
-| Better Walking Routes |          |                   | Better Cycling  |     |     |     |     |     |     |
-| --------------------- | -------- | ----------------- | --------------- | --- | --- | --- | --- | --- | --- |
-| Going  for            | a  walk  | is  one  of  the  | Infrastructure  |     |     |     |     |     |     |
-| best  things          | that     | we  can  do  to   |                 |     |     |     |     |     |     |
-improve our health. London has a
-| large number of open spaces and     |     |     | Cycling                                 | around  London  | is  an        |     |     |     |     |
-| ----------------------------------- | --- | --- | --------------------------------------- | --------------- | ------------- | --- | --- | --- | --- |
-| walking routes open to everyone.    |     |     | enjoyable way to see the city and,      |                 |               |     |     |     |     |
-| We want to get more people out      |     |     | like walking, is great for our health.  |                 |               |     |     |     |     |
-| on our paths and by-ways, both to   |     |     | Despite                                 | the  benefits   | of  cycling,  |     |     |     |     |
-| encourage vehicle-free travel and   |     |     | most London councils charge more        |                 |               |     |     |     |     |
-| to promote public health. A Green   |     |     | for  annual                             | cycle  storage  | passes        |     |     |     |     |
-| Mayor will get more people walking  |     |     | than  for                               | car  parking    | permits.  A   |     |     |     |     |
-| in London, by:                      |     |     | Green Mayor will encourage more         |                 |               |     |     |     |     |
-| ` Developing a strategic            |     |     | people to cycle by:                     |                 |               |     |     |     |     |
-| plan to expand the Walk             |     |     | ` Reclaiming kerbside space             |                 |               |     |     |     |     |
-| London Network.                     |     |     | from car parking for cycling,           |                 |               |     |     |     |     |
-and space for parklets, through
-` Implementing the London
-| Leisure Walking Plan. |     |     | sharing of best practice in  |     |     |     |     |     |     |
-| --------------------- | --- | --- | ---------------------------- | --- | --- | --- | --- | --- | --- |
-kerbside strategies from
-` Rolling out the Footways
-boroughs across London. Zoë will improve walking and cycling routes in London
-Network of green,
-` Working with council’s to
-attractive, low-pollution
-improve local cycling networks
-streets connecting iconic  ` Promoting bicycle repair  a certain size to publish
-and connections between  clubs and options for  travel plans with a target
-destinations and public spaces
-low-traffic neighbourhoods.
-across Greater London. disabled cyclists.  mode shift to sustainable,
-` Encouraging councils  ` Introducing more Cycle  zero emissions routes.
-` Distributing free
-to provide more cycle  Optimised Protected Signal
-neighbourhood walking maps
-|     |     |     | storage hangars and  |     |     |     | A Clean Air Capital |     |     |
-| --- | --- | --- | -------------------- | --- | --- | --- | ------------------- | --- | --- |
-at Underground stations to  junctions, starting with
-requiring boroughs to  junctions where cyclists
-encourage people to make
-make storage cheaper than
-short journeys on foot. are at the greatest risk.
-|     |     |     | car parking charges. |     |     |     | Clean  | air  is  a  human  | right.  Our  |
-| --- | --- | --- | -------------------- | --- | --- | --- | ------ | ------------------ | ------------ |
-` Funding a ‘hub and spoke’
-Green Peer in the House of Lords
-` Making cycle hire schemes  network that makes it easier
-more cost-effective and  has  led  the  way  with  the  Clean
-for people to cycle between
-requiring the companies  Air  Act  within  parliament.  While
-neighbouring town centres
-that manage these schemes  around Greater London, as well  we  have  many  clean  air  policies
-to meet higher standards  in  our  Climate  chapter,  we  know
-as in and out of the centre.
-|     |     |     | for maintenance. |     |     |     | transport is a major source of air  |     |     |
-| --- | --- | --- | ---------------- | --- | --- | --- | ----------------------------------- | --- | --- |
-` Introduce a requirement
-pollution.
-for all organisations above
-| 78  |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     |     | 79  |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- | --- |
+Greens will freeze bus fares and extend free bus travel to under-22s
 
-|     |     |     |     |     |     | ` Publicise the risks of tube dust  |     | Tackling the  |     |     |     | TROPSNART |
-| --- | --- | --- | --- | --- | --- | ----------------------------------- | --- | ------------- | --- | --- | --- | --------- |
-pollution and ways people
-|     |     |     |     |     |     | can protect themselves from  |     | Climate Crisis |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | ---------------------------- | --- | -------------- | --- | --- | --- | --- |
-pollution on the underground.
-|     |     |     |     |     |     | ` Prioritise tackling tube dust.  |     | The traffic on London’s roads is a  |              |                 |     |     |
-| --- | --- | --- | --- | --- | --- | --------------------------------- | --- | ----------------------------------- | ------------ | --------------- | --- | --- |
-|     |     |     |     |     |     | We will take action to identify   |     | major                               | contributor  | to  greenhouse  |     |     |
-any health harm and to reduce
-|     |     |     |     |     |     |     |     | gas  emissions.  |     | Recent  | extreme  |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---------------- | --- | ------- | -------- | --- |
-the exposure of workers and
-temperatures and storms threaten
-passengers to tube dust on
-|     |     |     |     |     |     |     |     | business  | as  | usual.  We  | have  | to  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --------- | --- | ----------- | ----- | --- |
-all underground lines whilst
-|     |     |     |     |     |     |     |     | prepare  | now  | for  climate  | change  |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | -------- | ---- | ------------- | ------- | --- |
-raising awareness of risks.
-and limit climate damage caused
-` Identify local pollution hot-
-by travel and freight.
-spots that need urgent action
-|     |     |     |     |     |     |     |     | Our  | plans  | target  | fair  and  |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---- | ------ | ------- | ---------- | --- |
-from TfL and local councils.
-|     |     |     |     |     |     |                                 |     | just  change                         |         | to  commuting  | and         |     |
-| --- | --- | --- | --- | --- | --- | ------------------------------- | --- | ------------------------------------ | ------- | -------------- | ----------- | --- |
-|     |     |     |     |     |     | ` Tackle London’s remaining     |     | business. The rising cost of petrol- |         |                |             |     |
-|     |     |     |     |     |     | nitrogen dioxide hot-spots by   |     | based                                | energy  | means          | this  will  |     |
-|     |     |     |     |     |     | the end of 2025 and ensure all  |     | save everyone money in the long      |         |                |             |     |
-roads controlled by TfL across
-|     |     |     |     |     |     |     |     | run,  but  | some  | people  | and  small  |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---------- | ----- | ------- | ----------- | --- |
-Greens have campaigned against polluting road  all London boroughs meet
-businesses need support to switch
-projects such as the Silvertown Tunnel and for the  World Health Organisation
-to sustainable transport. We will:
-money to be spent on public transport air pollution limits by 2028.
-` Make London diesel-
-|     |     |     |     |     |     | ` Improve public education  |     | free by 2028. |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --------------------------- | --- | ------------- | --- | --- | --- | --- |
-on air pollution and run a
-| Other  | major  | cities  | around  | the  | help communities create car-free  |     |     |     |     |     |     |     |
-| ------ | ------ | ------- | ------- | ---- | --------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-` Review with TfL how best to
-massive public awareness
-world are reducing traffic pollution  zones which are pleasant to be in.  transition to a zero emissions
-and  improving  residents’  health.  We will: campaign about the
-bus fleet by 2028 and follow
-benefits of active travel.
-| London  | needs  | to  catch  |     | up.  A  | ` Publicise air pollution data  |     |     |     |     |     |     |     |
-| ------- | ------ | ---------- | --- | ------- | ------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-by reviewing how best to
-Green Mayor will accelerate plans  widely, including warning  ` Accelerate action to clean  modernise our trains.
-up air pollution around all
-| to protect our citizens’ health and  |     |     |     |     | people about major pollution  |     |     |     |     |     |     |     |
-| ------------------------------------ | --- | --- | --- | --- | ----------------------------- | --- | --- | --- | --- | --- | --- | --- |
-` Create an action plan for
-|            |       |                   |     |     | incidents that pose a risk to  | schools, colleges, universities,  |     |     |     |     |     |     |
-| ---------- | ----- | ----------------- | --- | --- | ------------------------------ | --------------------------------- | --- | --- | --- | --- | --- | --- |
-| make  our  | city  | more  attractive  |     | to  |                                |                                   |     |     |     |     |     |     |
-making all TfL and GLA
-live in and visit. public health, and track the  prisons, residential care
-electricity purchases
-homes, daycare centres and
-| Making  | London  | travel  |     | more  | progress we make towards  |     |     |     |     |     |     |     |
-| ------- | ------- | ------- | --- | ----- | ------------------------- | --- | --- | --- | --- | --- | --- | --- |
-zero carbon by 2028.
-|     |     |     |     |     | achieving cleaner air. We will  | hospitals, providing them  |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | ------------------------------- | -------------------------- | --- | --- | --- | --- | --- | --- |
-affordable, efficient and accessible
-|     |     |     |     |     |     | with air quality audits and  |     | ` Work with local authorities  |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | ---------------------------- | --- | ------------------------------ | --- | --- | --- | --- |
-install monitoring equipment
-will hugely improve our air quality.
-to display real-time air  funding to create air quality  to develop a clear, strategic
-We will focus resources on helping
-pollution data and provide  and clean travel action plans. roll out of fast, affordable EV
-| people  | understand  | the  | risks  | of  |     |     |     |     |     |     |     |     |
-| ------- | ----------- | ---- | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-charging points across the city.
-|     |     |     |     |     | funding to local communities  | ` Phase in a Central London  |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | ----------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- |
-air pollution and where and when
-so that they can carry out
-|           |               |      |     |       |     | car-free-zone by 2028. |     | ` Require all car clubs and  |     |     |     |     |
-| --------- | ------------- | ---- | --- | ----- | --- | ---------------------- | --- | ---------------------------- | --- | --- | --- | --- |
-| to  take  | precautions,  | and  | we  | will  |     |                        |     |                              |     |     |     |     |
-their own monitoring.
-company salary-sacrifice
-| 80  |     |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     |     |     | 81  |     |
-| --- | --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- |
+## SMARTER ROAD CHARGING
 
-schemes for commuters to walking, wheeling and e-cargo bike solutions. We will who depend on airports for their
-only use electric vehicles. cycling, and explore options
-work with businesses to: livelihoods, by:
-for innovative public
-` Develop new consolidation
-transport services if bus
-Bridges and Tunnels warehouses in locations, ` Campaigning against
-use can’t be restored.
-including outside London, aircraft noise across London,
-` Invest in upgrading all bridges that will encourage bulk water introducing stricter windows
-The current Mayor has pushed for easier walking, wheeling and rail freight and so groups for early morning and late
-and cycling whenever of businesses can use last night flights and opposing
+Immediately in 2024 we will start consultation on a new, pay-per-mile road-charging scheme, which will be fair for people who drive outside Central London and at less busy times. We will aim to have a new scheme in operation by the end of our first term in 2028. The current Mayor’s scheme only encourages some less-polluting cars and does little to relieve congestion and improve air quality in outer boroughs.
+Instead, our approach will discourage the most polluting vehicles from using our roads, raising money to help us support drivers stuck in car dependency. It will allow us to implement a sustainable travel strategy to provide a better environment for walking, wheeling and cycling, as well as making buses more accessible. The scheme will introduce charges based on distances driven, vehicle emissions, time of day and location and with the possibility of sharing costs between passengers to encourage car sharing, and cover all of London. It will also protect drivers’ personal data.
+The scheme will cover all of London and enforce the emissions limits set out in our other policies. Our policies will aim to reduce overall traffic kilometres by 40%
+
+by 2030.It is vital that this scheme
+is designed in partnership with
+Londoners who will benefit from
+it, as well as with those who still
+need to drive. We will begin this
+engagement immediately after the
+election.
+As boroughs vary in the
+types of roads and congestion
+problems they face, we’ll work
+closely with each council and
+with local communities to develop
+local solutions to local problems,
+and provide funding to start
+implementing those solutions
+before any charging scheme
+begins. This will be alongside a
+permanent, city-wide scrappage
+programme.
+We will:
+* Set stricter standards for
+larger, more polluting vehicles,
+such as SUVs and diesel-
+powered vehicles, basing
+charges on these factors as
+well as distance travelled.
+* Work with councils to phase
+out residential parking permits
+for diesel cars by 2028.
+* Ensure every part of TfLs’ road
+network stays within WHO
+guidelines for safe pollution
+limits as soon as possible,
+and at the latest by the end
+of the first term in 2028.
+* Establish a permanent
+scrappage programme for
+people who need to use cars
+or vans but cannot afford to
+change their vehicles. This
+will be funded from existing
+and new charges, but we will
+also demand that the national
+government play its part.
+* Set standards to restrict
+deadly particle pollutants
+from tyre and road wear.
+* Work with councils to develop
+standardised parking charges
+across London to provide
+drivers with a clear and
+consistent picture of costs.
+* Develop a borough- or
+London-wide, strategic levy
+on workplace parking spaces
+to reduce unnecessary
+car commuting.
+* Require local councils to
+reduce in-borough traffic using
+controlled parking schemes
+before they can receive funding
+for new transport schemes.
+* When Uber’s licence to
+operate in London comes up
+for renewal in late 2024, we
+will work with GMB to review
+whether the company meets
+fair and ethical employment
+standards and use this to
+decide on how to proceed.
+* Implement best practice
+standards for regulating
+emissions from transportable
+industrial equipment and
+vehicles (Non-Road Mobile
+Machinery) by 2030, with
+significant progress by 2028.
+
+## Breaking Barriers to Mobility
+
+Everyone should be able to
+move around London freely,
+easily and safely, but London
+can be very unwelcoming for
+some
+communities.
+Access
+to our streets and to public
+transport is a challenge for many
+people with physical disabilities,
+neurodiversity, dementia and other
+conditions that affect mobility.
+Hate crime has been on the
+rise as well. City Hall needs to
+work harder to protect vulnerable
+people on the move. The level of
+abuse women cyclists experience
+is unacceptable and deters many
+other women from active travel. We
+need to tackle this and all forms of
+hate crime by improving ways of
+reporting and recording incidents,
+as well as improvements to cycling
+and travel infrastructure. We will set
+a target for increasing the number
+of women cycling in the city from 30
+per cent to 50 per cent.
+
+## Improving Accessibility
+
+We will make it easier for all
+people to get around London
+by properly consulting disabled
+people on planning. We will adopt
+recommendations
+from
+the
+Sustrans’ Disabled Citizens’ Inquiry
+to make sure public transport is as
+accessible as possible.
+We will make London a
+dementia-friendly city by bringing
+‘lifetime neighbourhood’ design
+principles into planning rules for
+streets and homes, in consultation
+with relevant groups. This will
+include improved signage, reduced
+pavement clutter and more space
+for people to navigate our streets
+and access our city. We will:
+* Invest in a wider network of
+well-lit, accessible, local cycle
+routes, inspected by a design
+review panel of experts on
+women’s cycling, so women
+feel safer cycling in London.
+* Consult from the beginning
+with disabled people on all
+transport policies and plans
+that may affect them.
+* We will improve awareness
+of TfL’s Travel Mentoring
+service for people that need
+help navigating London’s
+public transport networks.
+* Provide funding to the London
+Access Forum to help make
+public transport, especially the
+Underground, accessible to
+more mobility-impaired people.
+
+Zoë will work with TfL and the police to end hate crime on our transport networks
+
+*   Upgrade our bus fleet to include space for more wheelchair users to travel together.
+*   Dedicate funding to maintaining and improving pavements at crossings and at access points to public transport.
+*   Upgrade more of our transport network with step-free access and give priority to disabled and older passengers taking non-emergency taxi journeys.
+*   Support London’s valuable Black Taxis and their drivers by expanding fast charging points into outer London
+*   more quickly and making sure more dedicated rest and toilet facilities are provided in a network that provides for all drivers’ needs.
+*   Support, maintain and improve transport hire services for disabled people such as Dial-a-Ride.
+*   Design a new standard bus stop with better shelter and seating suitable for older and disabled people, as well as improved real-time bus information. The design will be greener, with solar power generation and bee-friendly plants.
+
+*   Bring in stricter rules around pavement clutter, parking across dropped kerbs and parking spaces.
+*   Set a London-wide standard for parking hire bicycles so they do not clutter pavements.
+*   Make sure there are enough benches and water fountains to make journeys more comfortable for people who find active travel difficult.
+*   Standardising and clearly communicating CCTV retention times.
+*   Ensuring night-time services are frequent and reliable.
+*   Stepping up the training of TfL and railway staff and British Transport Police to give them the skills to support everyone travelling in London. This will include improving awareness of our most disadvantaged Londoners’ intersectional experiences.
+*   Improving data collected about people’s experiences of abuse on public transport, so we can better understand and tackle intersectional barriers to reporting incidents.
+*   Working with third party organisations such as Tell Mama and Galop, and apps like CATCH or Zoteria, which enable indirect reporting of hate crimes, to help African, Caribbean, Asian, Latino, Roma and people from the Global South, faith groups and LGBTQIA+ communities, who have low trust in the police, to report hate crimes.
+*   Working with the police to identify hotspots where women cyclists experience high levels of abuse, to target crime prevention and strengthen campaigns against hate crime.
+
+### ENDING HATE CRIME AND ENSURING SAFETY
+We want to see an end to all hate crime and the targeting of women on our streets and public transport. We will continue to use our powers to raise awareness of how every Londoner, TfL staff member and the British Transport Police can prevent, safely react to and report hate crimes and abuse. The Green Party supports the “get me home safe” campaign across the service industry and night time economy. In partnership with LGBTQIA+ and other community organisations, TfL and the police, we will implement a strategy for eliminating hate crime on London’s transport networks, by:
+
+*   Ensuring stations are well-lit, fully staffed and have visible and well-connected CCTV and wifi.
+
+## HEALTHIER, SAFER STREETS
+
+Travelling around London should be safe for everyone, but there are still too many collisions on our roads. Residents in London’s most-deprived postcode areas are twice as likely to experience a road collision as people in wealthier areas. A Green Mayor will make roads safer for everyone, starting with the most-deprived areas.
+
+## VISION ZERO FOR ROAD DEATHS
+
+Vision Zero is about stopping anyone on our roads being killed by road traffic. We need to reclaim public streets for public use and make it easier for people to cross roads safely. A Green Mayor will do everything possible to make our roads safer and healthier, bringing forward the deadline for London’s Vision Zero from 2041 to 2032.
+
+This chapter focuses on our commitment to making roads safer for everyone while our Policing chapter outlines how we will improve handling of road crimes and treatment of victims. We will also:
+
+*   Put a stop to cyclist and pedestrian deaths caused by motor vehicles in London by 2028, the end of the upcoming Mayoral term.
+*   Upgrade pavements to ensure they are level, ensuring crossings are easily accessible to all, and add more crossing points with dropped kerbs and tactile paving.
+*   Work with councils to develop action plans for improving safety on challenging routes, such as country roads without pavements.
+*   Install crossings at every traffic light junction.
+*   Work to a principle of lowering waiting times for green crossing lights to 60 seconds.
+*   Give people more time to cross wide roads, reducing the need for enclosures.
+*   Roll out 50 Pedestrian Priority Crossings where the default setting is green for people crossing, with red lights only stopping people on foot, cycles or in wheelchairs when motor traffic is waiting.
+*   Commit to a 20mph speed limit across all of Transport for London’s Road Network by 2025, reducing pollution from tyres and roads and lowering the risk of death
+*   in collisions, and work with local authorities to set speed limits on other roads.
+*   Ensure all working vehicles like buses and delivery lorries on London roads have intelligent speed assistance technology fitted by 2028.
+*   Commission a comprehensive audit of TfL’s road network with the aim of prioritising safety for walkers, wheelers and cyclists.
+*   available and well-publicised, so victims of road traffic collisions and road crimes can get quick and comprehensive help, including when there is no prosecution.
+*   We will mark the World Day of Remembrance for Road Traffic Victims on the third Sunday of November each year with a one-minute silence.
+*   At the beginning of each Mayor’s Question Time a Green Mayor will read out the names of everyone known to have been killed on London roads since the last meeting.
+*   We will hold an annual Listening Day for crash victims and families within City Hall.
+
+### ZOOM BIKE PROJECT IN HACKNEY
+
+The Zoom Bike Project is a community led zero-waste bike repair workshop, to make cycling and cycle repair accessible to help Hackney become a borough where cycling could be the primary mode of transport for all.
+Zoë has volunteered at the project since 2021 and said “I have had the joy of teaching children how to pump up bike tyres and watching them help each other, learning how their bike works and how to look after it. I’d love to support projects like this across the city to grow”.
+
+## TRANSPORT
+
+### HELPING ROAD VICTIMS
+
+Despite our best efforts to improve safety on our roads, collisions do still occur. In such cases we have to step up support for victims of road traffic collisions.
+
+*   Greens will ensure dedicated support services and organisations are readily
+
+## TOILETS
+
+Caroline Russell has secured more funding for public toilets and will continue to push for more
+
+Zoë has consulted with Londoners on toilet provision
+
+The decline in the number of public toilets affects the health and mobility of all Londoners. Our Green Assembly Member, Caroline Russell, has worked hard to assess and cost the gaps in TfL’s toilet provision. Following pressure from the Greens, the Mayor of London commissioned a feasibility study and eventually committed funding for toilets on TfL. This is a good start, but lacks ambition. An investment of just £20 million per year would hugely improve comfort for travellers across the Underground network.
+
+We will:
+- Set out a standard level of public toilet for TfL.
+- Prioritise the provision of toilets at stations at interchanges and in areas with no nearby provision.
+- Set targets for expanding the number of toilets available outside of barriers at TfL
+
+Underground stations and bus hubs, and improve signage.
+- Share maps of public toilets across the network by upgrading maps on tube carriages, station platforms and digital apps with symbols indicating availability.
+- Work with the NHS to open all their toilets to the public.
+- Include an assessment of toilet availability in the Healthy Street Scorecard design check.
+- Appoint a Loo Czar to implement our plan for more toilets across London and create a Toilet Commission for London with wide representation to help steer their work.
+- Relaunch community toilet schemes with clearer signage and branding as an add-on, not a substitute, for free public toilets.
+
+## BETTER WALKING ROUTES
+Going for a walk is one of the best things that we can do to improve our health. London has a large number of open spaces and walking routes open to everyone. We want to get more people out on our paths and by-ways, both to encourage vehicle-free travel and to promote public health. A Green Mayor will get more people walking in London, by:
+*   Developing a strategic plan to expand the Walk London Network.
+*   Implementing the London Leisure Walking Plan.
+*   Rolling out the Footways Network of green, attractive, low-pollution streets connecting iconic destinations and public spaces across Greater London.
+*   Distributing free neighbourhood walking maps at Underground stations to encourage people to make short journeys on foot.
+
+## BETTER CYCLING INFRASTRUCTURE
+Cycling around London is an enjoyable way to see the city and, like walking, is great for our health. Despite the benefits of cycling, most London councils charge more for annual cycle storage passes than for car parking permits. A Green Mayor will encourage more people to cycle by:
+*   Reclaiming kerbside space from car parking for cycling, and space for parklets, through sharing of best practice in kerbside strategies from boroughs across London.
+*   Working with council’s to improve local cycling networks and connections between low-traffic neighbourhoods.
+*   Encouraging councils to provide more cycle storage hangars and requiring boroughs to make storage cheaper than car parking charges.
+*   Making cycle hire schemes more cost-effective and requiring the companies that manage these schemes to meet higher standards for maintenance.
+
+Zoë will improve walking and cycling routes in London
+*   Promoting bicycle repair clubs and options for disabled cyclists.
+*   Introducing more Cycle Optimised Protected Signal junctions, starting with junctions where cyclists are at the greatest risk.
+*   Funding a ‘hub and spoke’ network that makes it easier for people to cycle between neighbouring town centres around Greater London, as well as in and out of the centre.
+*   Introduce a requirement for all organisations above a certain size to publish travel plans with a target mode shift to sustainable, zero emissions routes.
+
+## A CLEAN AIR CAPITAL
+Clean air is a human right. Our Green Peer in the House of Lords has led the way with the Clean Air Act within parliament. While we have many clean air policies in our Climate chapter, we know transport is a major source of air pollution.
+
+Greens have campaigned against polluting road projects such as the Silvertown Tunnel and for the money to be spent on public transport
+
+Other major cities around the world are reducing traffic pollution and improving residents’ health. London needs to catch up. A Green Mayor will accelerate plans to protect our citizens’ health and make our city more attractive to live in and visit.
+
+Making London travel more affordable, efficient and accessible will hugely improve our air quality. We will focus resources on helping people understand the risks of air pollution and where and when to take precautions, and we will help communities create car-free zones which are pleasant to be in. We will:
+*   Publicise air pollution data widely, including warning people about major pollution incidents that pose a risk to public health, and track the progress we make towards achieving cleaner air. We will install monitoring equipment to display real-time air pollution data and provide funding to local communities so that they can carry out their own monitoring.
+*   Publicise the risks of tube dust pollution and ways people can protect themselves from pollution on the underground.
+*   Prioritise tackling tube dust. We will take action to identify any health harm and to reduce the exposure of workers and passengers to tube dust on all underground lines whilst raising awareness of risks.
+*   Identify local pollution hot-spots that need urgent action from TfL and local councils.
+*   Tackle London’s remaining nitrogen dioxide hot-spots by the end of 2025 and ensure all roads controlled by TfL across all London boroughs meet World Health Organisation air pollution limits by 2028.
+*   Improve public education on air pollution and run a massive public awareness campaign about the benefits of active travel.
+*   Accelerate action to clean up air pollution around all schools, colleges, universities, prisons, residential care homes, daycare centres and hospitals, providing them with air quality audits and funding to create air quality and clean travel action plans.
+*   Phase in a Central London car-free-zone by 2028.
+
+## TACKLING THE CLIMATE CRISIS
+**TRANSPORT**
+
+The traffic on London’s roads is a major contributor to greenhouse gas emissions. Recent extreme temperatures and storms threaten business as usual. We have to prepare now for climate change and limit climate damage caused by travel and freight.
+
+Our plans target fair and just change to commuting and business. The rising cost of petrol-based energy means this will save everyone money in the long run, but some people and small businesses need support to switch to sustainable transport. We will:
+*   Make London diesel-free by 2028.
+*   Review with TfL how best to transition to a zero emissions bus fleet by 2028 and follow by reviewing how best to modernise our trains.
+*   Create an action plan for making all TfL and GLA electricity purchases zero carbon by 2028.
+*   Work with local authorities to develop a clear, strategic roll out of fast, affordable EV charging points across the city.
+*   Require all car clubs and company salary-sacrifice
+
+schemes for commuters to
+only use electric vehicles.
+
+## BRIDGES AND TUNNELS
+
+The current Mayor has pushed
 ahead with the Silvertown Tunnel,
-repair work takes place. mile electric lorries to deliver concentrated flight paths.
 despite the high levels of pollution
-goods to high streets.
-and congestion it will create. Now ` Whilst looking to bring in smart ` Opposing all airport expansion
-the tunnel has been bored, the road charging, introduce a ` Expand e-cargo bike in London and decreasing
-cost of cancelling the project is toll at the Blackwall Tunnel rental schemes for local the number of flights made
-likely to be prohibitive, but it is not to raise money for improving business deliveries. in line with climate targets.
-walking, wheeling and cycling
-too late to use the tunnel for good. ` Pushing for the closure
-routes, including a study for
-In consultation with local Aviation of City Airport and the
-the potential transformation
-groups, Green Assembly Members environmentally sustainable
-of either or both of the
-have worked hard to come up with repurposing of the land for
-Rotherhithe Tunnel and
-alternative, greener uses for the Air traffic generates vast quantities the good of all Londoners.
-Tower Bridge for walking,
-Silvertown Tunnel. At the same wheeling and cycling. of pollution worldwide, contributing ` Working with trade unions and
-time, we have reviewed other to increases in global temperatures our Just Transition Commission
-Thames crossings. We will: with hazardous consequences for to help workers at London’s
-Cleaner Freight our climate. London sits between airports and surrounding
-` Cancel any new tunnel and six major airports, handling millions businesses to secure jobs in
-river-crossing road projects of passengers each year and Green New Deal industries,
-for motor vehicle traffic, Lorry and van deliveries are a thousands of flights per day. The like renewable energy, housing
-diverting the funding to improvements, education
-significant source of pollution and damage this does to our air quality
-projects for sustainable and community support.
-congestion across London. We and to the climate in general is
-transport and cleaner streets.
-need to work with businesses and huge.
-` Make one bore of the logistics firms to reduce freight Greens have campaigned for National Asks
-Silvertown Tunnel exclusively traffic without impacting their years against aviation pollution,
-for walking, wheeling and overheads. aircraft noise and airport
-cycling, and for electric buses, Our new, smarter road-charging expansions, like the expansion ` We will lobby the Crown
-and work with local councils to
-scheme will provide the funds of City Airport approved by the Estate Paving Commission
-use the second bore to extend
-for us to help businesses reduce current Mayor. A Green Mayor to remove all traffic from
-the DLR across the Thames.
-London’s Royal Parks.
-freight miles, use their vehicles will fight to reduce air traffic in
-` Permanently designate more efficiently and invest in London, while protecting workers ` We will bid for London to
-Hammersmith Bridge for
-fully control traffic and
-82
-TROPSNART
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 83
+and congestion it will create. Now
+the tunnel has been bored, the
+cost of cancelling the project is
+likely to be prohibitive, but it is not
+too late to use the tunnel for good.
 
-` We will continue to lobby  ` We will ensure that large  TROPSNART
-parking laws and for powers  40% by 2030 and to help us to reach
-to raise taxes on roads. for a Frequent Flyer Levy,  developments offer free,
-|     |     |     |     |     | an  80%  | target  for  | sustainable  |     |
-| --- | --- | --- | --- | --- | -------- | ------------ | ------------ | --- |
-leading the way on innovative  accessible public toilets.
-` We will lobby for powers  travel journeys. As part of this:
-national policies for reducing
-` We will work with organisations
-| to tax and ultimately ban  |     |     |     |     | ` We will commit to increasing  |     |     |     |
-| -------------------------- | --- | --- | --- | --- | ------------------------------- | --- | --- | --- |
-flying without affecting
-private jets in London and  representing African,
-investment in Healthy
-those who fly the least.
-across UK airports. Streets to over £300m/year,  Caribbean, Asian, Latino, Roma
-` Through devolution  and people from the Global
-| ` Greens will demand traffic  |     |     |     |     | prioritising development in  |     |     |     |
-| ----------------------------- | --- | --- | --- | --- | ---------------------------- | --- | --- | --- |
-discussions with the national  most deprived areas according  South as well as disabled
+In consultation with local
+groups, Green Assembly Members
+have worked hard to come up with
+alternative, greener uses for the
+Silvertown Tunnel. At the same
+time, we have reviewed other
+Thames crossings. We will:
+
+* Cancel any new tunnel and
+  river-crossing road projects
+  for motor vehicle traffic,
+  diverting the funding to
+  projects for sustainable
+  transport and cleaner streets.
+* Make one bore of the
+  Silvertown Tunnel exclusively
+  for walking, wheeling and
+  cycling, and for electric buses,
+  and work with local councils to
+  use the second bore to extend
+  the DLR across the Thames.
+* Permanently designate
+  Hammersmith Bridge for
+
+walking, wheeling and
+cycling, and explore options
+for innovative public
+transport services if bus
+use can’t be restored.
+
+* Invest in upgrading all bridges
+  for easier walking, wheeling
+  and cycling whenever
+  repair work takes place.
+* Whilst looking to bring in smart
+  road charging, introduce a
+  toll at the Blackwall Tunnel
+  to raise money for improving
+  walking, wheeling and cycling
+  routes, including a study for
+  the potential transformation
+  of either or both of the
+  Rotherhithe Tunnel and
+  Tower Bridge for walking,
+  wheeling and cycling.
+
+## CLEANER FREIGHT
+
+Lorry and van deliveries are a
+significant source of pollution and
+congestion across London. We
+need to work with businesses and
+logistics firms to reduce freight
+traffic without impacting their
+overheads.
+Our new, smarter road-charging
+scheme will provide the funds
+for us to help businesses reduce
+freight miles, use their vehicles
+more efficiently and invest in
+
+## AVIATION
+
+Air traffic generates vast quantities
+of pollution worldwide, contributing
+to increases in global temperatures
+with hazardous consequences for
+our climate. London sits between
+six major airports, handling millions
+of passengers each year and
+thousands of flights per day. The
+damage this does to our air quality
+and to the climate in general is
+huge.
+Greens have campaigned for
+years against aviation pollution,
+aircraft noise and airport
+expansions, like the expansion
+of City Airport approved by the
+current Mayor. A Green Mayor
+will fight to reduce air traffic in
+London, while protecting workers
+
+e-cargo bike solutions. We will
+work with businesses to:
+
+* Develop new consolidation
+  warehouses in locations,
+  including outside London,
+  that will encourage bulk water
+  and rail freight and so groups
+  of businesses can use last
+  mile electric lorries to deliver
+  goods to high streets.
+* Expand e-cargo bike
+  rental schemes for local
+  business deliveries.
+
+who depend on airports for their
+livelihoods, by:
+
+* Campaigning against
+  aircraft noise across London,
+  introducing stricter windows
+  for early morning and late
+  night flights and opposing
+  concentrated flight paths.
+* Opposing all airport expansion
+  in London and decreasing
+  the number of flights made
+  in line with climate targets.
+* Pushing for the closure
+  of City Airport and the
+  environmentally sustainable
+  repurposing of the land for
+  the good of all Londoners.
+* Working with trade unions and
+  our Just Transition Commission
+  to help workers at London’s
+  airports and surrounding
+  businesses to secure jobs in
+  Green New Deal industries,
+  like renewable energy, housing
+  improvements, education
+  and community support.
+
+## NATIONAL ASKS
+
+* We will lobby the Crown
+  Estate Paving Commission
+  to remove all traffic from
+  London’s Royal Parks.
+* We will bid for London to
+  fully control traffic and
+
+▶ parking laws and for powers
+to raise taxes on roads.
+▶ We will lobby for powers
+to tax and ultimately ban
+private jets in London and
+across UK airports.
+▶ Greens will demand traffic
 justice reforms nationally,
-government, we will demand  to Vision Zero principles. Londoners and older Londoners
 so that driving offences are
-that funds already paid by  to monitor and report on
-included in criminal data,  ` We will ringfence 10 per cent of
-London’s drivers are given  actions in TfL’s Equity in Motion
-| and incidents that lead to  |     |     |     |     | the Healthy Streets investment  |     |     |     |
-| --------------------------- | --- | --- | --- | --- | ------------------------------- | --- | --- | --- |
-to London. We will press for  and Action on Inclusion plans.
+included in criminal data,
+and incidents that lead to
 death or serious injury are
-for developing outer London’s
-a share of the Roads Fund,
-| treated as violent crimes. |     |     |     |     | Green Belt Network of  |     |     |     |
-| -------------------------- | --- | --- | --- | --- | ---------------------- | --- | --- | --- |
-and a share of fuel duty.
-walking, wheeling and cycling
-` We will fight to make
-` We will lobby the national
-| judicial outcomes focus  |     |                      |     |     | infrastructure, with emphasis  |     |     |     |
-| ------------------------ | --- | -------------------- | --- | --- | ------------------------------ | --- | --- | --- |
-|                          |     | government for long- |     |     | on connecting communities,     |     |     |     |
+treated as violent crimes.
+▶ We will fight to make
+judicial outcomes focus
 on offences that carry the
-term funding for TfL.
-replacing car journeys and
 greatest risks to life.
-improving biodiversity.
-` We will campaign for the right
-` We will support campaigns to
-|     |     | to set standards for all train  |     |     | ` We will make sure leisure  |     |     |     |
-| --- | --- | ------------------------------- | --- | --- | ---------------------------- | --- | --- | --- |
+▶ We will support campaigns to
 improve action against drivers
-services operating in London,
-cycling is a part of
 who park on pavements, and
-|     |     | so we can ensure fair, reliable  |     |     | London’s Cycling Plan. |     |     |     |
-| --- | --- | -------------------------------- | --- | --- | ---------------------- | --- | --- | --- |
 for dangerous driving charges
-services for all Londoners, with
-| to be pursued when speeding  |     |     |     |     | ` We will integrate housing  |     |     |     |
-| ---------------------------- | --- | --- | --- | --- | ---------------------------- | --- | --- | --- |
-a minimum of four trains per
+to be pursued when speeding
 offences take place through
-with local services and jobs
-hour operating on lines north
-| pedestrian crossings. |     |     |     |     | to minimise the need to travel  |     |     |     |
-| --------------------- | --- | --- | --- | --- | ------------------------------- | --- | --- | --- |
-and south of the Thames.
-| ` We will lobby the national  |     |                      |     |     | and strengthen planning to  |     |     |     |
-| ----------------------------- | --- | -------------------- | --- | --- | --------------------------- | --- | --- | --- |
-| government to include         |     |                      |     |     | ensure new developments     |     |     |     |
-|                               |     | Aligning strategies  |     |     | minimise car dependency.    |     |     |     |
+pedestrian crossings.
+▶ We will lobby the national
+government to include
 road crime in the Crime
 Survey of England and
-` Planning policies and new
-Wales and fund London’s  to deliver our goals  funding streams will make
-| Victim’s Commissioner to  |     |     |     |     | sure all buildings have the  |     |     |     |
-| ------------------------- | --- | --- | --- | --- | ---------------------------- | --- | --- | --- |
+Wales and fund London’s
+Victim’s Commissioner to
 survey road crash victims
-|                          |     | Integrated planning, housing and  |                |         | right air filtration systems and  |     |     |     |
-| ------------------------ | --- | --------------------------------- | -------------- | ------- | --------------------------------- | --- | --- | --- |
-| about their experiences  |     |                                   |                |         | protection for people inside      |     |     |     |
-|                          |     | transport                         | policies  are  | needed  |                                   |     |     |     |
+about their experiences
 and publish the results.
-them from the air pollution
-more than ever in the next London
-outside with priority given to
-` We will lobby for a Green Mayor
-plan. A Green Mayor will align the
-settings located on main roads.
-| to have the necessary powers  |     | Transport  | Strategy  and  | the  next  |     |     |     |     |
-| ----------------------------- | --- | ---------- | -------------- | ---------- | --- | --- | --- | --- |
+▶ We will lobby for a Green Mayor
+to have the necessary powers
 to implement zero emissions
-|     |     | London  | Plan  with  our  | goals  to  |     |     |     |     |
-| --- | --- | ------- | ---------------- | ---------- | --- | --- | --- | --- |
 standards in London.
+
+▶ We will continue to lobby
+for a Frequent Flyer Levy,
+leading the way on innovative
+national policies for reducing
+flying without affecting
+those who fly the least.
+▶ Through devolution
+discussions with the national
+government, we will demand
+that funds already paid by
+London’s drivers are given
+to London. We will press for
+a share of the Roads Fund,
+and a share of fuel duty.
+▶ We will lobby the national
+government for long-term funding for TfL.
+▶ We will campaign for the right
+to set standards for all train
+services operating in London,
+so we can ensure fair, reliable
+services for all Londoners, with
+a minimum of four trains per
+hour operating on lines north
+and south of the Thames.
+
+## ALIGNING STRATEGIES TO DELIVER OUR GOALS
+Integrated planning, housing and
+transport policies are needed
+more than ever in the next London
+plan. A Green Mayor will align the
+Transport Strategy and the next
+London Plan with our goals to
 reduce overall traffic kilometres by
-| 84  | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 | 85  |
-| --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- |
+40% by 2030 and to help us to reach
+an 80% target for sustainable
+travel journeys. As part of this:
+▶ We will commit to increasing
+investment in Healthy
+Streets to over £300m/year,
+prioritising development in
+most deprived areas according
+to Vision Zero principles.
+▶ We will ringfence 10 per cent of
+the Healthy Streets investment
+for developing outer London’s
+Green Belt Network of
+walking, wheeling and cycling
+infrastructure, with emphasis
+on connecting communities,
+replacing car journeys and
+improving biodiversity.
+▶ We will make sure leisure
+cycling is a part of
+London’s Cycling Plan.
+▶ We will integrate housing
+with local services and jobs
+to minimise the need to travel
+and strengthen planning to
+ensure new developments
+minimise car dependency.
+▶ Planning policies and new
+funding streams will make
+sure all buildings have the
+right air filtration systems and
+protection for people inside
+them from the air pollution
+outside with priority given to
+settings located on main roads.
 
-economy
-W
-e are not just in a cost of living The current Mayor’s own report needs to lower greenhouse gas Green Mayor will be their champion.
-crisis. We are in an equality suggests a Londonwide basic emissions. We will make insourcing We will help them reduce their
-crisis. The UK is an extremely income will lift 100,000 people out a priority. We will also set the emissions and cut their bills with
-rich country, but our wealth is of poverty and make our economy highest standards of employment funding and scrappage schemes,
-concentrated in just a few people’s fairer. Why are we waiting? This is at City Hall and across the GLA for lowering their overheads and
-pockets. This unfairness is bad for just the first step in giving people flexible, secure and family-friendly securing their futures.
-everyone. Even rich people want to more control over their lives and jobs. We will offer an increased, We will help people to grow their
-pay more tax. We all want a more work. If Wales can do it, so can real Living Wage for London, that own food and eat locally. We will
-equal country, and Londoners London. reflects just how much it costs to also ensure every child gets a free
-want a more equal city. A Green Mayor will stand in live here. school meal.
-The Green Party will narrow the solidarity with unions to protect London’s small businesses A Green Mayor will change
-gap between rich and poor. Our workers’ rights and put them at are the lifeblood of our economy the way London does business
-approach to the economy, and the heart of our green economy. and high streets are the hearts of for the better, making our city
-every decision we make, considers By offering new skills and training communities, but rising overheads fairer, stronger and healthier for
-people and planet before profit. we will create the jobs London are forcing businesses to close - a everyone to live and work in.
-TROPSNART
-Zoë will speak up for Londers’ needs and make
-our city a fairer and more affordable place to live
-86 LONDON GREEN PARTY 2024 87
-YMONOCE
-LONDON GREEN PARTY 2024
+▶ We will ensure that large
+developments offer free,
+accessible public toilets.
+▶ We will work with organisations
+representing African,
+Caribbean, Asian, Latino, Roma
+and people from the Global
+South as well as disabled
+Londoners and older Londoners
+to monitor and report on
+actions in TfL’s Equity in Motion
+and Action on Inclusion plans.
 
-| What Green AMs  |     |     |     |     |     |     |     |     | YMONOCE |
-| --------------- | --- | --- | --- | --- | --- | --- | --- | --- | ------- |
-in business rates to bring  Bank for London tasked with  support they need to remain
-more buildings into use.  providing loans and finance to  community-led, long-term
-Have Achieved small businesses as well as to  and representative enough
-` Zack Polanski worked to
-|     |     |     |     |     | individuals and families in crisis. |     |     | to provide useful results. |     |
-| --- | --- | --- | --- | --- | ----------------------------------- | --- | --- | -------------------------- | --- |
-support a group of migrant
-care workers who unionised  ` We will set up an independent  ` Continue to build the case
-` We exposed the shortage
-of skilled labourers able to  with United Voices of  energy supplier for London,  and lobby Government
-the World. They’re now  investing in clean, green  for equal powers to Wales
-retrofit homes and the urgent
-amongst the highest paid  energy, offering Londoners an  to create a London-wide
-need for more training to
-|     |     | care workers in London. |     |     | ethical and affordable option to  |     |     |     |     |
-| --- | --- | ----------------------- | --- | --- | --------------------------------- | --- | --- | --- | --- |
-improve and refurbish homes.  Universal Basic Income for care
-|     |     |     |     |     | help save money on our bills. |     |     | leavers up to the age of 25. |     |
-| --- | --- | --- | --- | --- | ----------------------------- | --- | --- | ---------------------------- | --- |
-` Zack Polanski pushed hard to
-Equality in the
-| promote and fund Universal  |     |     |     |     |     |     |     | ` Pilot a three-year Universal  |     |
-| --------------------------- | --- | --- | --- | --- | --- | --- | --- | ------------------------------- | --- |
-Basic Income scheme for at
-| Basic Income pilots. |     |           |     |     | Universal Basic |     |     |                               |     |
-| -------------------- | --- | --------- | --- | --- | --------------- | --- | --- | ----------------------------- | --- |
-|                      |     | Workplace |     |     |                 |     |     | least 1,000 Londoners. These  |     |
-` Alongside supporting better
-|     |     |     |     |     |  Income |     |     | guaranteed payments will be  |     |
-| --- | --- | --- | --- | --- | ------- | --- | --- | ---------------------------- | --- |
-pay and conditions for workers,
-unconditional and come with
-There is a huge gap between
-Zack Polanski pushed the
-support and career advice. The
-|                              |     | the  highest  | and  lowest  | paid  | The  Green  | Party  is  | dedicated  to  |                                 |     |
-| ---------------------------- | --- | ------------- | ------------ | ----- | ----------- | ---------- | -------------- | ------------------------------- | --- |
-| current Mayor to urge local  |     |               |              |       |             |            |                | pilot would track and evaluate  |     |
-authorities in London to follow  workers in London. Far too many  making  Universal  Basic  Income
-the wider impacts of the
-City Hall’s lead by ensuring  people  are  struggling  on  low  a  reality.  Following  on  from
-scheme on health, wellbeing
-that not only is no one directly
-wages and in unpleasant working  successful  trials  of  Universal  and the use of other services.
-employed by them paid  environments.  Private  interests  Basic Income in Wales and parts
-` Fund further micro-pilots of
-less than the London Living  cannot  be  trusted  to  arrive  at  of England, a Green Mayor will pilot
-| Wage, but that any service  |     |                                   |     |     |                                   |     |     | universal income support to  |     |
-| --------------------------- | --- | --------------------------------- | --- | --- | --------------------------------- | --- | --- | ---------------------------- | --- |
-|                             |     | social and environmental justice. |     |     | new schemes to show the benefits  |     |     |                              |     |
-evaluate the impacts on the
-providers or contractors
-|                            |     | ` A Green Mayor will promise a  |     |     | of  such  | approaches  | to  different  |                            |     |
-| -------------------------- | --- | ------------------------------- | --- | --- | --------- | ----------- | -------------- | -------------------------- | --- |
-| commissioned by councils.  |     |                                 |     |     |           |             |                | wellbeing and security of  |     |
-real Living Wage for London,  groups of Londoners.  diverse Londoners designed
-` Zack Polanski pushed to  estimated at £16.14, and which  We  need  to  take  every  step
-and led by community and
-secure London Living Wage  we will calculate accurately  we can to end poverty in London.
-worker input. These pilots
-for care workers and all NHS
-for introduction as soon as  We  recognise  such  measures  will focus on clusters of
-| staff (including those on  |     | possible once elected. This  |     |     |         |              |                   |                           |     |
-| -------------------------- | --- | ---------------------------- | --- | --- | ------- | ------------ | ----------------- | ------------------------- | --- |
-|                            |     |                              |     |     | are  a  | start,  not  | a  solution,  to  | different businesses and  |     |
-contracts working within  will reflect the real cost of  their customers, such
-|                              |     |                              |     |     | London’s  | inequalities.   | New  pilots  |                            |     |
-| ---------------------------- | --- | ---------------------------- | --- | --- | --------- | --------------- | ------------ | -------------------------- | --- |
-| hospitals such as cleaners). |     | living, the cost of raising  |     |     |           |                 |              |                            |     |
-|                              |     |                              |     |     | must      | be  introduced  | carefully    | as disabled people, local  |     |
-children and caring for family
-` Siân Berry exposed the huge  to  succeed,  and  they  must  be  retail or manufacturing
-numbers of dead spaces in  members. We will work hard to  business clusters and
-delivered alongside a package of
-influence more organisations
-| communities, left empty when  |     |     |     |     |                |            |             | Black-owned businesses. |     |
-| ----------------------------- | --- | --- | --- | --- | -------------- | ---------- | ----------- | ----------------------- | --- |
-|                               |     |     |     |     | interventions  | to  level  | out  wages  |                         |     |
-in London to make sure every
-they could be used by local
-|     |     | employee earns at list the  |     |     | and give people more control over  |     |     |     |     |
-| --- | --- | --------------------------- | --- | --- | ---------------------------------- | --- | --- | --- | --- |
-people and organisations.
-their working lives.
-new London Living Wage.
-Working with campaigners she
-` We will ensure existing basic
-| is helping to close loopholes  |     | ` We will create an ethical,  |     |     |     |     |     |     |     |
-| ------------------------------ | --- | ----------------------------- | --- | --- | --- | --- | --- | --- | --- |
-income pilots receive the
-sustainable Community
-| 88  | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     | 89  |
-| --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
+## ECONOMY
+We are not just in a cost of living crisis. We are in an equality crisis. The UK is an extremely rich country, but our wealth is concentrated in just a few people’s pockets. This unfairness is bad for everyone. Even rich people want to pay more tax. We all want a more equal country, and Londoners want a more equal city.
+The Green Party will narrow the gap between rich and poor. Our approach to the economy, and every decision we make, considers people and planet before profit.
 
-Protecting Workers’
-Rights
-The Green Party fully recognises
-the central role played by unions
-in advancing the interests of
-their members and protecting
-workers from exploitation. Greens
-proudly stand on the picket lines
-with health, transport, security
-and other workers in their recent
-disputes, fighting for fairer pay and
-conditions. A Green Mayor will:
-` Commit to never using agency
-workers to break strikes.
-` Establish a Just Transition
-Commission in partnership with
-Zoë will protect Londoners’ rights at work
-trade unions to ensure workers
-can secure jobs in Green New
-working with companies who meet our strengthened help them keep the public
-Deal industries without seeing
-treat their workers well. Good Work Standard. safe while they are on duty.
-their livelihoods threatened.
-` Task the Just Transition ` Commit to ensuring flexible, ` Work with poverty campaigners ` Work with the London Fire
-secure, age-friendly job and consumer organisations Brigade to resolve the culture
-Commission to set new safe
-opportunities for older people to create a strategy to reduce of discrimination highlighted
-standards for maximum and
-returning to work or going ‘poverty premiums’ faced by by the Independent Culture
-minimum working temperatures
-into sudden retirement, as those on low incomes, such as Review, to make sure misogyny,
-in workplaces in response to
-well as young people starting the higher cost of energy for racism, and homophobia
-increasing extreme weather
-out, in collaboration with our households on pre-pay meters. are not acceptable. We will
-conditions, and promote union
-Just Transition Commission, put continuous processes
-organising around the issue by ` Work with the Fire Brigades
-our Elders’ Champion and in place so the culture
-supporting their campaigns. Union to ensure London
-our Youth Assembly. remains inclusive, safe
-` Do everything possible to firefighters are well-
-and welcoming for all.
-` Introduce a Jobs Guarantee equipped and fairly paid.
-challenge companies involved
-scheme for London’s most ` Gather and publish
-in blacklisting trade union ` Consult with women
-marginalised groups, data on the intake and
-activists and do all we can firefighters’ to adapt uniforms
-offering 5,000 new one-year experiences of LGBTIQA+
-through our procurement and safety equipment to
-job placements that firefighters’, to improve their
-processes to ensure we are
-inclusion in the service.
-90 LONDON GREEN PARTY 2024 91
-YMONOCE
-LONDON GREEN PARTY 2024
+The current Mayor’s own report suggests a Londonwide basic income will lift 100,000 people out of poverty and make our economy fairer. Why are we waiting? This is just the first step in giving people more control over their lives and work. If Wales can do it, so can London.
+A Green Mayor will stand in solidarity with unions to protect workers’ rights and put them at the heart of our green economy. By offering new skills and training we will create the jobs London
 
-include it all procurement
-Leading by Example Strengthening the
-policies and contracts. workers demand this from
-their employers directly.
-In addition to all the steps we ` Make insourcing a priority for all Good Work Standard
-take to protect workers’ rights London’s public sector areas. ` Guarantee five days of paid
-across the city, Greens will set the City Hall’s Good Work Standard leave each year (based
-` Ensure valid, undisputed
-on full-time hours) for
-highest employment standards encourages best practices
-invoices are paid within
-formal learning and training
-in the GLA. We will make London’s 30 days. Any delays are across London businesses.
-workers wish to undertake.
-public sector world-leading for fair, unacceptable especially for Using our City Hall procurement
-sustainable and healthy work and small businesses who need policies and schemes to support ` Offer minimum parental
-encourage businesses of all sizes to pay their staff on time and small businesses, Greens will leave periods.
-to do the same. We will: cannot rely on reserves. enhance the Standard and ` Include flexible
-` Introduce an 8:1 maximum ` Divest all GLA controlled make working in London fairer, working requests in
-pay ratio at City Hall, rolling investments in climate- healthier, greener and more job advertisements
-this out to all GLA Group damaging fossil fuel and secure. and at interviews.
-organisations by the end high carbon industries by We will collaborate with
-` Commit to age-friendly
-of our first term in 2028. 2025. We will support and relevant groups, such as unions
-employment standards.
-` Work to improve best acknowledge those boroughs through our proposed Just
-` Ensure all employees
-practices in recruitment, already planning to divest their Transition Commission, disabled
-are entitled to 10 days of
-funds and work with other
-careers advice and service people and London’s African,
-bereavement leave at normal
-boroughs to set and meet
-delivery across the GLA. Caribbean, Asian, Latino, Roma
-pay on par with the GLA’s
-their own divestment goals.
-communities and people from
-` Eliminate pay gaps in all own policy, which can be
-GLA organisations by 2026, ` Introduce duty of care the Global South, to ensure taken flexibly according
-including for gender, ethnicity, guidance for all public sector these practices are inclusive. to individual needs and
-creditors in London.
-disability and LGBTIQA+ . We We will encourage all employers cultural beliefs within 56
-will extend the monitoring ` Champion the Plant Based in London to: weeks of bereavement.
-and publication of these pay Treaty, promote a plant- ` Take steps toward ` Implement the Worker
-gaps to all organisations with based diet and remove all standardising a shorter, more Protection Bill, which
-which the GLA has contracts. ultra-processed foods and flexible working week while requires employers
-` Set the highest standards advertising for such products making jobs more secure. to prevent workplace
-at all GLA managed spaces.
-for age-friendly ` Support staff to participate in harassment before it
-employment practices. ` Work with partners to union and collective action. happens, instead of
-integrate accessible, free, waiting for abuse to
-` Redouble efforts to bring ` Adopt an 8:1 pay ratio
-high quality debt and job happen before reacting.
-apprentices into official Living between lowest and highest
-advice into services
-Wage policies, whilst requiring paid employees. We will also
-all GLA group organisations to ` Offer the choice of a four-day work with unions to help
-continue to pay apprentices working week with no loss of
-a London Living Wage and salary, starting with City Hall
-92 LONDON GREEN PARTY 2024
-YMONOCE
-LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 93
+needs to lower greenhouse gas emissions. We will make insourcing a priority. We will also set the highest standards of employment at City Hall and across the GLA for flexible, secure and family-friendly jobs. We will offer an increased, real Living Wage for London, that reflects just how much it costs to live here.
+London’s small businesses are the lifeblood of our economy and high streets are the hearts of communities, but rising overheads are forcing businesses to close - a
+Green Mayor will be their champion. We will help them reduce their emissions and cut their bills with funding and scrappage schemes, lowering their overheads and securing their futures.
+We will help people to grow their own food and eat locally. We will also ensure every child gets a free school meal.
+A Green Mayor will change the way London does business for the better, making our city fairer, stronger and healthier for everyone to live and work in.
 
-` Introduce a fairer procurement to support flexible adult
-system so that small education programmes
-businesses, especially those to close the retrofit skills
-owned by African, Caribbean, gap and support heritage
-Asian, Latino, Roma and people and conservation work.
-from the Global South, have
-` Provide support to ensure
-equal access to contracts
-small businesses can optimise
-as larger businesses.
-access for disabled staff,
-` Set up a dedicated, London- suppliers and customers and
-wide mentoring and business have appropriate facilities in
-strategy forum for realising place and improve wellbeing.
-the full potential of businesses
-` Compile and promote a
-owned by women and
-London-wide directory of
-African, Caribbean, Asian,
-equitable small businesses.
-Latino, Roma and people
-from the Global South. ` Establish a permanent
-business emergencies fund so
-` We will make Social Value
-businesses and communities
-Zoë will support the needs of small businesses Leases a core part of TfL’s
-disrupted by crisis events
-and traders, such as with lower rents affordable workspace policy.
-like the Grenfell disaster or
-` Provide direct support terror attacks can rebuild.
-employees and rolling this from City Hall to areas of
-people. Small, independent traders ` Promote the importance
-out to all GLA employees. emerging heritage where
-are the lifeblood of London’s of shopping locally.
-small businesses have formed
-` Make recruitment anonymous economy and are invaluable to
-distinct, local cultural quarters,
-(name, age, gender removed) our communities. We will make Supporting Working
-such as small markets set up by
-for all services directly
-independent trading easier for all
-ethnic minority communities.
-within the remit of the
-of London’s sole traders and give Parents
-GLA and lobby for other ` Create a new Deputy Mayor for
-them more say in City Hall. We will
-employers to do the same. Small Businesses to oversee
-explore new funding streams and Many parents find it hard to make
-and assess the impact of
-` Make all of the GLA’s energy financing schemes to support ends meet for themselves and
-future policy interventions.
-supply renewable by 2026. them. their children. Working full time and
-` Working in partnership with
-We must also take steps to parents is hard without access to
-London’s further and higher
-Supporting Small keep rents and rates low for small reliable and affordable childcare.
-education providers and
-businesses, so they can stay Recognising that childcare is a vital
-industry, develop a concrete
-Businesses resilient against the rising cost of part of our economic and social
-strategy for ensuring London
-overheads, protecting employees infrastructure, a Green Mayor will
-businesses have the skilled
-Over 99 per cent of businesses in and premises. We will: work together with partners across
-workforce and researchers
-London employ between 0 and 49 they need, plus funding the city to significantly improve the
-94 LONDON GREEN PARTY 2024 95
-YMONOCE
-LONDON GREEN PARTY 2024
+Zoë will speak up for Londers’ needs and make our city a fairer and more affordable place to live
 
-YMONOCE
-| quality and availability of affordable  |     |     | plan  to  tackle                  | inequalities  | and  |     |     |     |     |     |
-| --------------------------------------- | --- | --- | --------------------------------- | ------------- | ---- | --- | --- | --- | --- | --- |
-| childcare. A Green Mayor will:          |     |     | improve access to and experience  |               |      |     |     |     |     |     |
-| ` Lobby large employers to              |     |     | of end of life care.              |               |      |     |     |     |     |     |
-| provide subsidised childcare.           |     |     | ` We will appoint an End          |               |      |     |     |     |     |     |
-| ` Work towards ensuring                 |     |     | of Life Care Champion to          |               |      |     |     |     |     |     |
-lead on improving end of
-childcare support in London
-life care across London.
-starts from the end of paid
-| maternity leave or when         |     |     | ` We will encourage councils  |     |     |     |     |     |     |     |
-| ------------------------------- | --- | --- | ----------------------------- | --- | --- | --- | --- | --- | --- | --- |
-| a child is 9 months old.        |     |     | to embed Compassionate        |     |     |     |     |     |     |     |
-| ` Look to offer paid paternity  |     |     | Communities as the first      |     |     |     |     |     |     |     |
-step in making London a
-leave of 3 months to all
-Compassionate City and
-employees in City Hall and the
-ensure every carer of someone
-GLA at least at minimum wage
-with a terminal illness is
-and on a ‘use it or lose it’ basis.
-offered a carer’s assessment.
-| A Healthier Economy |     |     | ` We will use our strengthened  |     |     |     |     |     |     |     |
-| ------------------- | --- | --- | ------------------------------- | --- | --- | --- | --- | --- | --- | --- |
-Good Work Standard to
-| Some  people  | experience  | poorer  | encourage all employers to  |     |     |     |     |     |     |     |
-| ------------- | ----------- | ------- | --------------------------- | --- | --- | --- | --- | --- | --- | --- |
-adopt clear and compassionate
-health than others due to social and
-Zoë will help our high streets and markets thrive,
-| contextual  | factors  beyond  | their  | bereavement policies. |     |     |     |     |     |     |     |
-| ----------- | ---------------- | ------ | --------------------- | --- | --- | --- | --- | --- | --- | --- |
-with more space opened up for communities
-| control  | including  lower  | incomes.  | ` We will support local  |     |     |     |     |     |     |     |
-| -------- | ----------------- | --------- | ------------------------ | --- | --- | --- | --- | --- | --- | --- |
-A  fairer,  healthier  economy  will  authorities and community  Bringing High Streets
-improve people’s lives. The Green  organisations to provide public  businesses  transform  our  town
-warm spaces for older residents
-Party  will  take  steps  to  improve  Back to Life centres  into  more  welcoming,
-the health of our workers and high  in cold months, while we work  safer places.
-streets. to end fuel poverty for all. London’s  high  streets  are  lined  This  starts  by  opening  up
-` We will improve the  with small businesses and traders  the  many  empty  council-owned
-Compassionate  effectiveness of the GLA’s  who  work  hard  to  create  the  properties  for  temporary  and
-Pension Credit campaign.
-|     |     |     |     |     |     | character  | and  identities  | of  their  | long-term use. We will work with  |     |
-| --- | --- | --- | --- | --- | --- | ---------- | ---------------- | ---------- | --------------------------------- | --- |
-Communities local  communities.  Many  closed  councils already doing this to share
-` Work with NHS and other
-|     |     |     |     |     |     | during the pandemic and are still  |     |     | best practice and promote better  |     |
-| --- | --- | --- | --- | --- | --- | ---------------------------------- | --- | --- | --------------------------------- | --- |
-partners to monitor and report
-We will work to improve quality of  on over-60s involved in the  struggling to recover financially, if  planning for our high streets. We
-life for older Londoners and make  Wellbeing Champion Campaign. these businesses survived. need to encourage a community-
-end of life care a strategic priority  A Green Mayor will convert our  led approach, giving space over to
-` Support mental health
-for the London Health Board and  high streets into friendlier, greener,  local energy for launching positive,
-through partnerships,
-the  Mayor’s  Health  Inequalities  more  accessible,  community-led  healthy  projects,  organising
-e.g. with Thrive LDN.
-Strategy,  and  develop  an  action  environments.  We  will  help  small  gatherings  for  shared  interests
-| 96  |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     | 97  |
-| --- | --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- |
+## WHAT GREEN AMS HAVE ACHIEVED
+* We exposed the shortage of skilled labourers able to retrofit homes and the urgent need for more training to improve and refurbish homes.
+* Zack Polanski pushed hard to promote and fund Universal Basic Income pilots.
+* Alongside supporting better pay and conditions for workers, Zack Polanski pushed the current Mayor to urge local authorities in London to follow City Hall’s lead by ensuring that not only is no one directly employed by them paid less than the London Living Wage, but that any service providers or contractors commissioned by councils.
+* Zack Polanski pushed to secure London Living Wage for care workers and all NHS staff (including those on contracts working within hospitals such as cleaners).
+* Siân Berry exposed the huge numbers of dead spaces in communities, left empty when they could be used by local people and organisations. Working with campaigners she is helping to close loopholes
+in business rates to bring more buildings into use.
+* Zack Polanski worked to support a group of migrant care workers who unionised with United Voices of the World. They’re now amongst the highest paid care workers in London.
 
-|     |     | ` Listen to the needs of  |     |     |     |     | Healthy Food for Children  |     |     |     |     | YMONOCE |
-| --- | --- | ------------------------- | --- | --- | --- | --- | -------------------------- | --- | --- | --- | --- | ------- |
-small businesses and
-|     |     |     |     |     |     |     | More  | than  | 400,000  |     | children  | in  |
-| --- | --- | --- | --- | --- | --- | --- | ----- | ----- | -------- | --- | --------- | --- |
-develop a Business Crime
-|     |     |     |     |     |     |     | London  | face  | food  | insecurity.  |     | A   |
-| --- | --- | --- | --- | --- | --- | --- | ------- | ----- | ----- | ------------ | --- | --- |
-Strategy to address issues
-|     |     |     |     |     |     |     | Green  | Mayor  | will  | commit  | fully  | to  |
-| --- | --- | --- | --- | --- | --- | --- | ------ | ------ | ----- | ------- | ------ | --- |
-facing businesses.
-the London Right2Food Charter.
-|     |     | Healthy, Affordable  |     |     |     |     | Children without enough to eat  |     |     |     |     |     |
-| --- | --- | -------------------- | --- | --- | --- | --- | ------------------------------- | --- | --- | --- | --- | --- |
-can’t focus at school, and it impacts
-|     |     | Food |     |     |     |     | their physical and mental health. A  |     |     |     |     |     |
-| --- | --- | ---- | --- | --- | --- | --- | ------------------------------------ | --- | --- | --- | --- | --- |
-Green Mayor will provide universal
-|     |     | A large part of London’s economy    |         |           |      |          | free                                 | school  | meals     | for      | all  | school  |
-| --- | --- | ----------------------------------- | ------- | --------- | ---- | -------- | ------------------------------------ | ------- | --------- | -------- | ---- | ------- |
-|     |     | revolves                            | around  | food,     | yet  | many     | children (primary and secondary),    |         |           |          |      |         |
-|     |     | people                              | find    | it  hard  | to   | access   | helping                              |         | families  | stretch  |      | tight   |
-|     |     | healthy food at affordable prices.  |         |           |      |          | budgets and supporting the city’s    |         |           |          |      |         |
-|     |     | Our  fresh                          | food    | markets   |      | are  an  | children to thrive. This commitment  |         |           |          |      |         |
-Greens will improve food  essential  part  of  our  food  and  will reduce the burden on schools
-security for Londoners,
-|     |     | cultural  | economy  | but  | have  | been  | having  | to  | administrate  |     | different  |     |
-| --- | --- | --------- | -------- | ---- | ----- | ----- | ------- | --- | ------------- | --- | ---------- | --- |
-including by introducing free
-|     |     | threatened  |     | by  squeezed  |     | local  | meal programmes for children from  |     |     |     |     |     |
-| --- | --- | ----------- | --- | ------------- | --- | ------ | ---------------------------------- | --- | --- | --- | --- | --- |
-school meals for secondary
-|     |     | authority budgets. We desperately  |     |     |     |     | families receiving benefits and do  |     |     |     |     |     |
-| --- | --- | ---------------------------------- | --- | --- | --- | --- | ----------------------------------- | --- | --- | --- | --- | --- |
-age students
-|     |     | need                              | reforms  | to  | restore  | the  | away with any stigma associated     |     |     |     |     |     |
-| --- | --- | --------------------------------- | -------- | --- | -------- | ---- | ----------------------------------- | --- | --- | --- | --- | --- |
-|     |     | balance of power between farmers  |          |     |          |      | with receiving free meals. We will: |     |     |     |     |     |
-access to buildings owned by
-and  to  help  small  businesses,  and  supermarket  chains,  but  we  ` Promote food education and
-TfL, the London Fire Brigade,
-start-ups and community groups  also need to make sure this does  advise schools on procurement
-the Met Police and other
-looking  for  short-term  lets  find  not  force  more  people  into  food  of nutritious meals prioritising
-public bodies in London.
-organic, local, seasonal
-| spaces for their work. We will: |     | poverty.  |     |     |     |     |     |     |     |     |     |     |
-| ------------------------------- | --- | --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-` Reduce the paperwork for  Greens  will  work  towards  ingredients, with limits on
-` Continue to map and
-‘meanwhile use’ licence
-strengthen a London-wide  ending food poverty by making a  how much meat and dairy is
-applications, making it  included in menus each week.
-register of disused public  healthy,  local  and  balanced  diet
-easier for community
-buildings on and near high  more  accessible  for  everyone.  ` Set clear guidelines for
-business groups to use dead
-| streets and help communities  |     |           |          |     |               |     | school food programmes  |     |     |     |     |     |
-| ----------------------------- | --- | --------- | -------- | --- | ------------- | --- | ----------------------- | --- | --- | --- | --- | --- |
-|                               |     | We  will  | develop  | a   | coordinated,  |     |                         |     |     |     |     |     |
-spaces on high streets.
-make use of them, with support  strategic response to reduce the  and staff training needs in
-from the Mayor’s Recovery  ` Promote better neighbourhood
-|     |     | need  | for  food  | banks  | in  | London,  | nutrition and sustainability. |     |     |     |     |     |
-| --- | --- | ----- | ---------- | ------ | --- | -------- | ----------------------------- | --- | --- | --- | --- | --- |
-Fund. Greens in City Hall have  planning in London through
-|     |     | whilst supporting the efforts of the  |     |     |     |     | ` Look to help councils provide  |     |     |     |     |     |
-| --- | --- | ------------------------------------- | --- | --- | --- | --- | -------------------------------- | --- | --- | --- | --- | --- |
-started with the hundreds of  data sharing of best
-|     |     | remaining  | food  | banks  | to  | provide  | summer holiday food support  |     |     |     |     |     |
-| --- | --- | ---------- | ----- | ------ | --- | -------- | ---------------------------- | --- | --- | --- | --- | --- |
-council-owned buildings that  practice and strategic ideas
-|     |     | healthy and nutritious meals. |     |     |     |     | to children from households  |     |     |     |     |     |
-| --- | --- | ----------------------------- | --- | --- | --- | --- | ---------------------------- | --- | --- | --- | --- | --- |
-are currently ‘dead spaces’,  implementation across
-receiving universal credit
-many of which have been  boroughs and departments.
-or equivalent benefits.
-shuttered for 5 years or more.
-Then we will work on opening
-| 98  | LONDON GREEN PARTY 2024 |     |     |     |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | 99  |
-| --- | ----------------------- | --- | --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- | --- |
+## EQUALITY IN THE WORKPLACE
+There is a huge gap between the highest and lowest paid workers in London. Far too many people are struggling on low wages and in unpleasant working environments. Private interests cannot be trusted to arrive at social and environmental justice.
+* A Green Mayor will promise a real Living Wage for London, estimated at £16.14, and which we will calculate accurately for introduction as soon as possible once elected. This will reflect the real cost of living, the cost of raising children and caring for family members. We will work hard to influence more organisations in London to make sure every employee earns at list the new London Living Wage.
+* We will create an ethical, sustainable Community
+
+Bank for London tasked with providing loans and finance to small businesses as well as to individuals and families in crisis.
+* We will set up an independent energy supplier for London, investing in clean, green energy, offering Londoners an ethical and affordable option to help save money on our bills.
+
+## UNIVERSAL BASIC INCOME
+The Green Party is dedicated to making Universal Basic Income a reality. Following on from successful trials of Universal Basic Income in Wales and parts of England, a Green Mayor will pilot new schemes to show the benefits of such approaches to different groups of Londoners.
+We need to take every step we can to end poverty in London. We recognise such measures are a start, not a solution, to London’s inequalities. New pilots must be introduced carefully to succeed, and they must be delivered alongside a package of interventions to level out wages and give people more control over their working lives.
+* We will ensure existing basic income pilots receive the
+* support they need to remain community-led, long-term and representative enough to provide useful results.
+* Continue to build the case and lobby Government for equal powers to Wales to create a London-wide Universal Basic Income for care leavers up to the age of 25.
+* Pilot a three-year Universal Basic Income scheme for at least 1,000 Londoners. These guaranteed payments will be unconditional and come with support and career advice. The pilot would track and evaluate the wider impacts of the scheme on health, wellbeing and the use of other services.
+* Fund further micro-pilots of universal income support to evaluate the impacts on the wellbeing and security of diverse Londoners designed and led by community and worker input. These pilots will focus on clusters of different businesses and their customers, such as disabled people, local retail or manufacturing business clusters and Black-owned businesses.
+
+## PROTECTING WORKERS’ RIGHTS
+The Green Party fully recognises the central role played by unions in advancing the interests of their members and protecting workers from exploitation. Greens proudly stand on the picket lines with health, transport, security and other workers in their recent disputes, fighting for fairer pay and conditions. A Green Mayor will:
+* Commit to never using agency workers to break strikes.
+* Establish a Just Transition Commission in partnership with trade unions to ensure workers can secure jobs in Green New Deal industries without seeing their livelihoods threatened.
+* Task the Just Transition Commission to set new safe standards for maximum and minimum working temperatures in workplaces in response to increasing extreme weather conditions, and promote union organising around the issue by supporting their campaigns.
+* Do everything possible to challenge companies involved in blacklisting trade union activists and do all we can through our procurement processes to ensure we are working with companies who treat their workers well.
+* Commit to ensuring flexible, secure, age-friendly job opportunities for older people returning to work or going into sudden retirement, as well as young people starting out, in collaboration with our Just Transition Commission, our Elders’ Champion and our Youth Assembly.
+* Introduce a Jobs Guarantee scheme for London’s most marginalised groups, offering 5,000 new one-year job placements that meet our strengthened Good Work Standard.
+* Work with poverty campaigners and consumer organisations to create a strategy to reduce ‘poverty premiums’ faced by those on low incomes, such as the higher cost of energy for households on pre-pay meters.
+* Work with the Fire Brigades Union to ensure London firefighters are well-equipped and fairly paid.
+* Consult with women firefighters’ to adapt uniforms and safety equipment to help them keep the public safe while they are on duty.
+* Work with the London Fire Brigade to resolve the culture of discrimination highlighted by the Independent Culture Review, to make sure misogyny, racism, and homophobia are not acceptable. We will put continuous processes in place so the culture remains inclusive, safe and welcoming for all.
+* Gather and publish data on the intake and experiences of LGBTIQA+ firefighters’, to improve their inclusion in the service.
+
+## LEADING BY EXAMPLE
+
+In addition to all the steps we take to protect workers’ rights across the city, Greens will set the highest employment standards in the GLA. We will make London’s public sector world-leading for fair, sustainable and healthy work and encourage businesses of all sizes to do the same. We will:
+*   Introduce an 8:1 maximum pay ratio at City Hall, rolling this out to all GLA Group organisations by the end of our first term in 2028.
+*   Work to improve best practices in recruitment, careers advice and service delivery across the GLA.
+*   Eliminate pay gaps in all GLA organisations by 2026, including for gender, ethnicity, disability and LGBTIQA+. We will extend the monitoring and publication of these pay gaps to all organisations with which the GLA has contracts.
+*   Set the highest standards for age-friendly employment practices.
+*   Redouble efforts to bring apprentices into official Living Wage policies, whilst requiring all GLA group organisations to continue to pay apprentices a London Living Wage and include it all procurement policies and contracts.
+*   Make insourcing a priority for all London’s public sector areas.
+*   Ensure valid, undisputed invoices are paid within 30 days. Any delays are unacceptable especially for small businesses who need to pay their staff on time and cannot rely on reserves.
+*   Divest all GLA controlled investments in climate-damaging fossil fuel and high carbon industries by 2025. We will support and acknowledge those boroughs already planning to divest their funds and work with other boroughs to set and meet their own divestment goals.
+*   Introduce duty of care guidance for all public sector creditors in London.
+*   Champion the Plant Based Treaty, promote a plant-based diet and remove all ultra-processed foods and advertising for such products at all GLA managed spaces.
+*   Work with partners to integrate accessible, free, high quality debt and job advice into services
+*   Offer the choice of a four-day working week with no loss of salary, starting with City Hall
+
+## STRENGTHENING THE GOOD WORK STANDARD
+
+City Hall’s Good Work Standard encourages best practices across London businesses. Using our City Hall procurement policies and schemes to support small businesses, Greens will enhance the Standard and make working in London fairer, healthier, greener and more secure.
+
+We will collaborate with relevant groups, such as unions through our proposed Just Transition Commission, disabled people and London’s African, Caribbean, Asian, Latino, Roma communities and people from the Global South, to ensure these practices are inclusive. We will encourage all employers in London to:
+*   Take steps toward standardising a shorter, more flexible working week while making jobs more secure.
+*   Support staff to participate in union and collective action.
+*   Adopt an 8:1 pay ratio between lowest and highest paid employees. We will also work with unions to help workers demand this from their employers directly.
+*   Guarantee five days of paid leave each year (based on full-time hours) for formal learning and training workers wish to undertake.
+*   Offer minimum parental leave periods.
+*   Include flexible working requests in job advertisements and at interviews.
+*   Commit to age-friendly employment standards.
+*   Ensure all employees are entitled to 10 days of bereavement leave at normal pay on par with the GLA’s own policy, which can be taken flexibly according to individual needs and cultural beliefs within 56 weeks of bereavement.
+*   Implement the Worker Protection Bill, which requires employers to prevent workplace harassment before it happens, instead of waiting for abuse to happen before reacting.
+
+Zoë will support the needs of small businesses and traders, such as with lower rents
+employees and rolling this out to all GLA employees.
+*   Make recruitment anonymous (name, age, gender removed) for all services directly within the remit of the GLA and lobby for other employers to do the same.
+*   Make all of the GLA’s energy supply renewable by 2026.
+
+## Supporting Small Businesses
+Over 99 per cent of businesses in London employ between 0 and 49 people. Small, independent traders are the lifeblood of London’s economy and are invaluable to our communities. We will make independent trading easier for all of London’s sole traders and give them more say in City Hall. We will explore new funding streams and financing schemes to support them.
+We must also take steps to keep rents and rates low for small businesses, so they can stay resilient against the rising cost of overheads, protecting employees and premises. We will:
+*   Introduce a fairer procurement system so that small businesses, especially those owned by African, Caribbean, Asian, Latino, Roma and people from the Global South, have equal access to contracts as larger businesses.
+*   Set up a dedicated, London-wide mentoring and business strategy forum for realising the full potential of businesses owned by women and African, Caribbean, Asian, Latino, Roma and people from the Global South.
+*   We will make Social Value Leases a core part of TfL’s affordable workspace policy.
+*   Provide direct support from City Hall to areas of emerging heritage where small businesses have formed distinct, local cultural quarters, such as small markets set up by ethnic minority communities.
+*   Create a new Deputy Mayor for Small Businesses to oversee and assess the impact of future policy interventions.
+*   Working in partnership with London’s further and higher education providers and industry, develop a concrete strategy for ensuring London businesses have the skilled workforce and researchers they need, plus funding to support flexible adult education programmes to close the retrofit skills gap and support heritage and conservation work.
+
+### ECONOMY
+*   Provide support to ensure small businesses can optimise access for disabled staff, suppliers and customers and have appropriate facilities in place and improve wellbeing.
+*   Compile and promote a London-wide directory of equitable small businesses.
+*   Establish a permanent business emergencies fund so businesses and communities disrupted by crisis events like the Grenfell disaster or terror attacks can rebuild.
+*   Promote the importance of shopping locally.
+
+## Supporting Working Parents
+Many parents find it hard to make ends meet for themselves and their children. Working full time and parents is hard without access to reliable and affordable childcare. Recognising that childcare is a vital part of our economic and social infrastructure, a Green Mayor will work together with partners across the city to significantly improve the
+
+quality and availability of affordable childcare. A Green Mayor will:
+- Lobby large employers to provide subsidised childcare.
+- Work towards ensuring childcare support in London starts from the end of paid maternity leave or when a child is 9 months old.
+- Look to offer paid paternity leave of 3 months to all employees in City Hall and the GLA at least at minimum wage and on a ‘use it or lose it’ basis.
+
+## A HEALTHIER ECONOMY
+
+Some people experience poorer health than others due to social and contextual factors beyond their control including lower incomes. A fairer, healthier economy will improve people’s lives. The Green Party will take steps to improve the health of our workers and high streets.
+
+## COMPASSIONATE COMMUNITIES
+
+We will work to improve quality of life for older Londoners and make end of life care a strategic priority for the London Health Board and the Mayor’s Health Inequalities Strategy, and develop an action plan to tackle inequalities and improve access and experience of end of life care.
+- We will appoint an End of Life Care Champion to lead on improving end of life care across London.
+- We will encourage councils to embed Compassionate Communities as the first step in making London a Compassionate City and ensure every carer of someone with a terminal illness is offered a carer’s assessment.
+- We will use our strengthened Good Work Standard to encourage all employers to adopt clear and compassionate bereavement policies.
+- We will support local authorities and community organisations to provide public warm spaces for older residents in cold months, while we work to end fuel poverty for all.
+- We will improve the effectiveness of the GLA’s Pension Credit campaign.
+- Work with NHS and other partners to monitor and report on over-60s involved in the Wellbeing Champion Campaign.
+- Support mental health through partnerships, e.g. with Thrive LDN.
+
+Zoë will help our high streets and markets thrive, with more space opened up for communities
+
+## BRINGING HIGH STREETS
+### BACK TO LIFE
+
+London’s high streets are lined with small businesses and traders who work hard to create the character and identities of their local communities. Many closed during the pandemic and are still struggling to recover financially, if these businesses survived.
+A Green Mayor will convert our high streets into friendlier, greener, more accessible, community-led environments. We will help small businesses transform our town centres into more welcoming, safer places.
+This starts by opening up the many empty council-owned properties for temporary and long-term use. We will work with councils already doing this to share best practice and promote better planning for our high streets. We need to encourage a community-led approach, giving space over to local energy for launching positive, healthy projects, organising gatherings for shared interests
+
+**Greens will improve food security for Londoners, including by introducing free school meals for secondary age students.**
+
+and to help small businesses, start-ups and community groups looking for short-term lets find spaces for their work. We will:
+* Continue to map and strengthen a London-wide register of disused public buildings on and near high streets and help communities make use of them, with support from the Mayor’s Recovery Fund. Greens in City Hall have started with the hundreds of council-owned buildings that are currently ‘dead spaces’, many of which have been shuttered for 5 years or more. Then we will work on opening
+access to buildings owned by TfL, the London Fire Brigade, the Met Police and other public bodies in London.
+* Reduce the paperwork for ‘meanwhile use’ licence applications, making it easier for community business groups to use dead spaces on high streets.
+* Promote better neighbourhood planning in London through data sharing of best practice and strategic ideas implementation across boroughs and departments.
+
+* Listen to the needs of small businesses and develop a Business Crime Strategy to address issues facing businesses.
+
+## HEALTHY, AFFORDABLE FOOD
+A large part of London’s economy revolves around food, yet many people find it hard to access healthy food at affordable prices. Our fresh food markets are an essential part of our food and cultural economy but have been threatened by squeezed local authority budgets. We desperately need reforms to restore the balance of power between farmers and supermarket chains, but we also need to make sure this does not force more people into food poverty.
+Greens will work towards ending food poverty by making a healthy, local and balanced diet more accessible for everyone. We will develop a coordinated, strategic response to reduce the need for food banks in London, whilst supporting the efforts of the remaining food banks to provide healthy and nutritious meals.
+
+ECONOMY
+### HEALTHY FOOD FOR CHILDREN
+More than 400,000 children in London face food insecurity. A Green Mayor will commit fully to the London Right2Food Charter.
+Children without enough to eat can’t focus at school, and it impacts their physical and mental health. A Green Mayor will provide universal free school meals for all school children (primary and secondary), helping families stretch tight budgets and supporting the city’s children to thrive. This commitment will reduce the burden on schools having to administrate different meal programmes for children from families receiving benefits and do away with any stigma associated with receiving free meals. We will:
+* Promote food education and advise schools on procurement of nutritious meals prioritising organic, local, seasonal ingredients, with limits on how much meat and dairy is included in menus each week.
+* Set clear guidelines for school food programmes and staff training needs in nutrition and sustainability.
+* Look to help councils provide summer holiday food support to children from households receiving universal credit or equivalent benefits.
 
 Greens have supported small sustainable businesses
 such as cargo bike deliveries
 
-|     |     |     |     | ` Working with Energy for  |     |     |     | YMONOCE |
-| --- | --- | --- | --- | -------------------------- | --- | --- | --- | ------- |
-cooking from London’s more than  by 2030. Once our targets  gas emissions from our
-for small businesses are met,  Londoners, ensure citizens  food by more than 60%.
-| 20,000                             | licensed  restaurants  | and        |                               |                                |     |     |                           |     |
-| ---------------------------------- | ---------------------- | ---------- | ----------------------------- | ------------------------------ | --- | --- | ------------------------- | --- |
-|                                    |                        |            | we will seek further funding  | can access advice on services  |     |     |                           |     |
-| pubs, as well as the many outlets  |                        |            |                               |                                |     |     | ` Lead the way in making  |     |
-|                                    |                        |            | to begin making London’s      | and ways to save money         |     |     |                           |     |
-| that  cater                        | for  home              | delivery.  |                               |                                |     |     | London a vegetarian and   |     |
-|                                    |                        |            | arts and cultural heritage    | on essential bills such as     |     |     |                           |     |
-Smoke from their kitchens causes  vegan-friendly city by 2028 by
-|     |     |     | buildings zero emissions. | electricity, water and heating. |     |     |     |     |
-| --- | --- | --- | ------------------------- | ------------------------------- | --- | --- | --- | --- |
-over half of PM2.5 particle pollution  introducing major food reforms
-` Target reductions of pollution  ` We will make sure all buildings  to encourage low carbon, meat
-| in  London.  | We  are  committed  | to  |     |     |     |     |     |     |
-| ------------ | ------------------- | --- | --- | --- | --- | --- | --- | --- |
-from cooking emissions in  where health and safety or  and dairy-free diets across
-| eradicating  | these  emissions  | by  |     |     |     |     |     |     |
-| ------------ | ----------------- | --- | --- | --- | --- | --- | --- | --- |
-restaurant and catering  other duties apply comply  London, with the aim of making
-2030, with significant progress by
-businesses, through  fully with World Health  half of all menus in London
-2028.
-increased regulation and  Organisation (WHO) guidelines  vegetarian by 2028 and half of
-| Scrappage  | schemes  | can  help  |     |     |     |     |     |     |
-| ---------- | -------- | ---------- | --- | --- | --- | --- | --- | --- |
-monitoring, and by piloting an  for indoor air quality. our citizens’ diets by 2030.
-businesses upgrade to expensive
-opt-in scrappage scheme to
-` Reduce the use of meat and
-| equipment, like induction cookers  |     |     |     | Eating Sustainably |     |     |     |     |
-| ---------------------------------- | --- | --- | --- | ------------------ | --- | --- | --- | --- |
-upgrade cooking, ventilation
-dairy produce in the GLA’s
-| and  improved  | air  filters,  | while  | and filtration equipment. |     |     |     |     |     |
-| -------------- | -------------- | ------ | ------------------------- | --- | --- | --- | --- | --- |
-catering procurement and
-saving  our  air  and  their  energy  We spend a lot on food, and the
-|     |     |     | ` Encourage communities to  |     |     |     | monitor the offers in London’s  |     |
-| --- | --- | --- | --------------------------- | --- | --- | --- | ------------------------------- | --- |
-costs in the long run. By making  food  economy  is  a  large  part  of
-|     |     |     | make use of Community Land  |     |     |     | schools, hospitals and prisons. |     |
-| --- | --- | --- | --------------------------- | --- | --- | --- | ------------------------------- | --- |
-our  pollution  monitoring  more  what  makes  London  tick.  But  as
-Trust initiatives so they can
-` Use procurement powers and
-accurate,  we  will  target  support  the price of food increases faster
-take control of buildings and
-advertising to promote diets
-to areas with the worst air quality  spaces and make necessary  than household incomes, and due
-with relatively lower carbon
-first, before rolling out funding to  in part to Brexit we face greater
-changes to infrastructure to
-footprints than meat and dairy-
-the rest of the city. We will: challenges than before in importing
-lower emissions. In addition,
-based diets and that do not
-` Create a Community Energy  we will create London’s first  produce from outside the country.
-impose harm on animals, such
-Kickstart Fund to give loans to  small business-focused  We therefore need to look for more
-as vegetarian and vegan diets.
-Community Land Trust by
-small businesses for feasibility  sustainable consumption patterns
-` Work with London Boroughs
-studies and projects aimed at  transferring ownership of three  that  can  reduce  our  economic
-to double the number signed
-achieving carbon neutrality,  TfL-owned rail arches to the  burden, and at the same time offer
-which will be paid back into  London Trades Guild CLT. up to the Veg Cities campaign
-more climate-friendly alternatives.
-from 11 to 22 by the end of
-the fund to support further
-|     |     |     | ` Help small businesses to  | Our  vision  | is  to  improve  | the  |     |     |
-| --- | --- | --- | --------------------------- | ------------ | ---------------- | ---- | --- | --- |
-our first term in 2028.
-| businesses. We will aim to  |     |     | help employees who need  |     |     |     |     |     |
-| --------------------------- | --- | --- | ------------------------ | --- | --- | --- | --- | --- |
-sustainability of our food economy
-produce 1000 community
-to become ULEZ compliant,  by  encouraging  local  community  ` Introduce more sustainable
-| energy projects by 2030. |     |     |                         |                                  |     |     | eating practices at locally  |     |
-| ------------------------ | --- | --- | ----------------------- | -------------------------------- | --- | --- | ---------------------------- | --- |
-|                          |     |     | by promoting car share  | growing and helping food sector  |     |     |                              |     |
-` Introduce further grants to help  schemes and scrappage. funded events, such as
-|                              |     |     |                             | workers  transition  | to  | sustainable  |                          |     |
-| ---------------------------- | --- | --- | --------------------------- | -------------------- | --- | ------------ | ------------------------ | --- |
-| small businesses transition  |     |     |                             |                      |     |              | only serving vegetarian  |     |
-|                              |     |     | ` Fund training programmes  | food systems.        |     |              |                          |     |
-food at such events.
-to greener, money-saving
-|     |     |     | for small businesses to  | A Green Mayor will:  |     |     |     |     |
-| --- | --- | --- | ------------------------ | -------------------- | --- | --- | --- | --- |
-practices, including reducing
-access skilled workers that
-` Promote sustainable eating
-Scope 1 and 2 emissions in their
-|     |     |     | can help them transition  | practices and reduce food  |     |     |     |     |
-| --- | --- | --- | ------------------------- | -------------------------- | --- | --- | --- | --- |
-buildings, transport and supply
-to carbon neutrality.
-waste, cutting greenhouse
-networks to zero emissions
-| 102 |     | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     | 103 |
-| --- | --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- |
+cooking from London’s more than 20,000 licensed restaurants and pubs, as well as the many outlets that cater for home delivery. Smoke from their kitchens causes over half of PM2.5 particle pollution in London. We are committed to eradicating these emissions by 2030, with significant progress by 2028.
 
-National Asks for everyone, and lobby to The Mayor’s next planning policies. This will
-ensure childcare providers give similar protections
-` We will continue to lobby do not pay business rates. Economic Strategy to conservation areas.
-for progressive taxation to ` We will lobby on behalf of ` Establishing a stronger,
-reduce the gap between households receiving universal A Green Mayor of London will take clearer agent of change
-richest and poorest. credit or equivalent benefits a new approach to the Economic principle in the London Plan.
-for free school meals for every
-` We will demand powers to Development Strategy and the ` Fully implementing ‘Towards
-child up to the age of 16,
-help businesses reduce next London Plan, guided by an Age-Friendly London”
-extended summer holiday food
-their Scope 1 and Scope 2 the values and principles in this - responding to the needs
-support through the Holiday
-emissions to zero by 2030. chapter as well as: of Older Londoners.
-Activity and Food Programme,
-` We will campaign to close the and an increase in the value ` Introducing new standards in ` Collaborating with England’s 12
-‘box shifting’ loophole used by of Healthy Start vouchers. planning and development to regional Mayors to collectively
-landlords to claim rates-free help councils deliver projects coordinate regional economic
-` We will campaign for
-relief on empty properties. that make the best use of needs, lobby for investment
-comprehensive national
-available space, ensuring opportunities and government
-` We will lobby for the changes to our food system,
-that every new house has reforms, and develop strategic
-Worker Protection Bill to including putting nutrition and
-space to grow food, e.g., on solutions to regional skills
-be implemented fully by sustainability on the school
-balconies and rooftops, and gaps and labour shortages.
-Parliament, protecting curriculum, providing funding
-in vertical and urban gardens;
-women from harassment for student-led food waste ` Reviewing the London
-allowing residents access to
-before it happens. reduction projects, limiting City Resilience Strategy to
-equipment; and engaging local
-sales and advertising of understand the needs of public
-` When the UK Shared Prosperity shops and restaurants in the
-unhealthy or ultra-processed services and to support them
-Fund elapses in 2025, we supply of locally-grown food.
-foods and better labelling to be fit for purpose (including
-will work with the London
-of food to signal cruelty- ` Bringing evidence to bear advocating to Government).
-Youth Assembly and relevant
-on reinstating effective
-free welfare practices.
-organisations to develop
-new policies, which were
-effective new funding streams ` We will lobby for a simpler
-removed by the Government,
-to address intersectional Pension Credit application
-to create exclusion zones
-barriers faced by young people. process, while we fight for
-around schools where fast
-a fairer state pension that
-` We will lobby for reforms food shops aren’t allowed,
-does away with the need for
-to the Apprenticeship Levy and allow councils to resist a
-supplementary credits.
-so businesses and youth saturation of fast food shops
-organisations can provide in any part of their borough.
-more flexible opportunities
-` Defining areas of ‘emerging
-to young people.
-heritage’ that have local
-` We will demand reforms to distinctiveness and a
-childcare provision, to make London-wide significance
-support fairer and sustainable and protecting them in
-104 LONDON GREEN PARTY 2024 105
-YMONOCE
-LONDON GREEN PARTY 2024
+Scrappage schemes can help businesses upgrade to expensive equipment, like induction cookers and improved air filters, while saving our air and their energy costs in the long run. By making our pollution monitoring more accurate, we will target support to areas with the worst air quality first, before rolling out funding to the rest of the city. We will:
+*   Create a Community Energy Kickstart Fund to give loans to small businesses for feasibility studies and projects aimed at achieving carbon neutrality, which will be paid back into the fund to support further businesses. We will aim to produce 1000 community energy projects by 2030.
+*   Introduce further grants to help small businesses transition to greener, money-saving practices, including reducing Scope 1 and 2 emissions in their buildings, transport and supply networks to zero emissions
 
-Sharing power for a
-stronger democracy
-Zoë will give Londoners the power to
-make decisions for their communities
-P
-eople need more control over their African, Caribbean, Asian, Latino, to challenge the Mayor directly. will focus on giving everyone a
-lives, homes and neighbourhoods. Roma communities and people We will create new roles to stronger platform to create the
-We want Londoners to be able from the Global South, who are allow people to speak up for change they need responding to
-to change London for the better, by being overpoliced. LGBTIQA+ communities year round, giving the climate crisis together.
-devolving power to the grassroots. communities, older people and them a real stake in planning, We want everyone left out by
-Trust in UK politics is at an all time women need a say in how we make budgeting and decision-making. mainstream politics to have real
-low. Public consultations are box- public spaces safer for them. And we And we will create a new Citizens’ power to direct change for good.
-ticking exercises that leave people need to listen to workers and unions Climate Assembly to put climate at We will demand fairer elections
-out of decisions. The current Mayor’s fighting for fairer conditions while the heart of everything we do. and more power for the Mayor and
-Deaf and Disabled People’s Forum is providing London’s vital services. Real democracy is about having London Assembly over our health,
-an example of how partnership and Young people are more than our the right structures in place to let water, energy, transport, rents and
-engagement isn’t working. Having future, they are here now fighting people lead the decisions made taxes. And we will share that power
-invited people in, City Hall failed to for change. They should not have to about them. Greens believe we by opening City Hall up to everyone.
-engage productively. go on strike to be heard. Our Youth cannot have environmental justice With a Green Mayor you will feel
-We will build trust with London’s Assembly will give them a platform without social justice, means we heard and have more power.
-106 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 107
-YCARCOMED
+by 2030. Once our targets for small businesses are met, we will seek further funding to begin making London’s arts and cultural heritage buildings zero emissions.
+*   Target reductions of pollution from cooking emissions in restaurant and catering businesses, through increased regulation and monitoring, and by piloting an opt-in scrappage scheme to upgrade cooking, ventilation and filtration equipment.
+*   Encourage communities to make use of Community Land Trust initiatives so they can take control of buildings and spaces and make necessary changes to infrastructure to lower emissions. In addition, we will create London’s first small business-focused Community Land Trust by transferring ownership of three TfL-owned rail arches to the London Trades Guild CLT.
+*   Help small businesses to help employees who need to become ULEZ compliant, by promoting car share schemes and scrappage.
+*   Fund training programmes for small businesses to access skilled workers that can help them transition to carbon neutrality.
 
-What Green AMs ` Siân Berry has worked A Fairer Society ` We will increase the London
-with human rights groups Victim Commissioner’s
-Have Achieved concerned about the sharing Bringing Power to resources and influence
-of ULEZ camera data between and involve them fully in
-TfL and the police to ensure new initiatives on hate
-Since the last London Elections People
-privacy is protected. crime, race equality and
-in 2021, our three Green Party
-road crime to make sure
-` Greens in City Hall have
-Assembly Members have been We will collaborate more with the
-victims’ voices are factored
-already helped introduce
-instrumental in making City Hall voluntary and community sector, into all relevant decisions.
-policies that allow for gender
-more accountable. With greater particularly with minority and
-neutral honorifics (including ` We will create a new Deputy
-influence in the London Assembly, disabled communities, as often as
-Mx) in official documents. Mayor role for London’s Voices
-we will achieve even more. possible to bring their concerns
-who, with the Mayor, will
-` Greens on London Assembly ` Following her motion calling and ideas into decision-making. engage representatives from
-for Assembly Members to
-committees have pioneered ` To help boroughs and local diverse local communities at
-publish their diary records
-new ways of bringing community groups make regular open-mic forums.
-as part of our commitment
-community-level evidence spending plans, we will
-to transparency, Caroline
-into investigations, introduce participatory, citizen- Holding the Mayor
-Russell and Green colleagues
-conducting research and determined budgeting for the
-have started making these
-holding open-mic sessions. GLA: Mayor budget (excluding
-to Account
-disclosures quarterly and still
-devolved national government
-` Caroline Russell has brought hope to persuade AMs from
-funding), aiming for 5 per cent
-older Londoners from all other parties to follow suit. Greens advocate for strengthening
-by 2026 and increasing by 5 per
-over the city to City Hall to the role of the London Assembly in
-` Working with trans Londoners, cent per year up to 20 per cent.
-shape policy to increase the holding the Mayor to account, and
-Caroline Russell led a Health
-availability of public toilets. ` We will reform the boards for more checks and balances on
-Committee report examining
-of all GLA organisations so
-` Green AMs regularly engage barriers to accessing everyday our own governance. We would
-they involve a wide range
-with Gypsy, Roma and Traveller health care for trans and campaign for more accountability
-of citizen representatives,
-community attending network gender diverse Londoners. by:
-not just those from expert
-meetings to hear views and ` Strengthening the power
-` Zack Polanski held a bodies and industry.
-put questions to the current
-of the Assembly to veto or
-workshop with Basic Income
-Mayor on issues like health ` Greens in City Hall will work amend Mayoral strategies.
-Conversations so that people
-inequalities, housing and with voluntary and community
-from across the city could ` Pressing for the Assembly
-disproportionality in policing. organisations to ensure their
-engage and ask questions to have the legal power to
-vital contributions to London
-` Zack Polanski commissioned about what a Basic Income summon people responsible
-are properly documented and
-a playwright to work with would do for them. Zack for policies and services
-financed, and that up-to-date
-residents to find out what then commissioned a report that affect Londoners to
-service information is available
-they love about our city and to inform best practice appear before them.
-to all public bodies, including
-would like to see changed. community engagement.
-GLA group organisations.
-“Hello London” was performed
-in City Hall in February 2024.
-108 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 109
-YCARCOMED
+*   Working with Energy for Londoners, ensure citizens can access advice on services and ways to save money on essential bills such as electricity, water and heating.
+*   We will make sure all buildings where health and safety or other duties apply comply fully with World Health Organisation (WHO) guidelines for indoor air quality.
 
-Opening Access to ` We will work with London’s
-diverse communities and
-New Roles and London Living Wage for their
-with public, private, charity
-London’s Governance time, to ensure participation is
-and community partners
-Commissions inclusive.
-to share and update data
-Transparency and easy access There will be more appointed
-on pollution and other
-to information are vital for advisors and champions to
-environmental issues.
-accountability and engaging and Valued as experts in their own make democracy in the GLA
-` We will require all technology
-empowering citizens. Greens in lives, homes and communities, better. We name new and
-projects across the GLA group
-City Hall will promote the highest a Green Mayor will establish new strengthened roles throughout
-meet open, ethical standards,
-standards possible in managing citizen representative roles the manifesto which will join up
-and encourage the use of
-and publishing the data we collect and develop more structures strategy, policy and standards
-open source software to aid
-about London and Londoners and for engagement. We will use across different areas of our
-enterprise and innovation.
-how we use it. We will properly sortition to draw people from work and across London such
-` We will establish a coordinated
-take into account the views as wide a range of backgrounds as a Deputy Mayor for Small
-approach to data collection
-and experiences of London’s and identities as possible. Businesses, Disability Equality
-to ensure that the needs
-marginalised communities, and Every citizen who participates Champion, Social Housing
-of Londoners are clearly
-will ensure we only gather and in our Assemblies, Forums and Commissioner and Spaces
-understood, so that we can
-keep the data necessary to inform Commissions will be paid a Czar.
-properly assess the impact of
+### EATING SUSTAINABLY
+We spend a lot on food, and the food economy is a large part of what makes London tick. But as the price of food increases faster than household incomes, and due in part to Brexit we face greater challenges than before in importing produce from outside the country. We therefore need to look for more sustainable consumption patterns that can reduce our economic burden, and at the same time offer more climate-friendly alternatives.
+
+Our vision is to improve the sustainability of our food economy by encouraging local community growing and helping food sector workers transition to sustainable food systems.
+
+A Green Mayor will:
+*   Promote sustainable eating practices and reduce food waste, cutting greenhouse gas emissions from our food by more than 60%.
+*   Lead the way in making London a vegetarian and vegan-friendly city by 2028 by introducing major food reforms to encourage low carbon, meat and dairy-free diets across London, with the aim of making half of all menus in London vegetarian by 2028 and half of our citizens’ diets by 2030.
+*   Reduce the use of meat and dairy produce in the GLA’s catering procurement and monitor the offers in London’s schools, hospitals and prisons.
+*   Use procurement powers and advertising to promote diets with relatively lower carbon footprints than meat and dairy-based diets and that do not impose harm on animals, such as vegetarian and vegan diets.
+*   Work with London Boroughs to double the number signed up to the Veg Cities campaign from 11 to 22 by the end of our first term in 2028.
+*   Introduce more sustainable eating practices at locally funded events, such as only serving vegetarian food at such events.
+
+## NATIONAL ASKS
+- We will continue to lobby for progressive taxation to reduce the gap between richest and poorest.
+- We will demand powers to help businesses reduce their Scope 1 and Scope 2 emissions to zero by 2030.
+- We will campaign to close the ‘box shifting’ loophole used by landlords to claim rates-free relief on empty properties.
+- We will lobby for the Worker Protection Bill to be implemented fully by Parliament, protecting women from harassment before it happens.
+- When the UK Shared Prosperity Fund elapses in 2025, we will work with the London Youth Assembly and relevant organisations to develop effective new funding streams to address intersectional barriers faced by young people.
+- We will lobby for reforms to the Apprenticeship Levy so businesses and youth organisations can provide more flexible opportunities to young people.
+- We will demand reforms to childcare provision, to make support fairer and sustainable for everyone, and lobby to ensure childcare providers do not pay business rates.
+- We will lobby on behalf of households receiving universal credit or equivalent benefits for free school meals for every child up to the age of 16, extended summer holiday food support through the Holiday Activity and Food Programme, and an increase in the value of Healthy Start vouchers.
+- We will campaign for comprehensive national changes to our food system, including putting nutrition and sustainability on the school curriculum, providing funding for student-led food waste reduction projects, limiting sales and advertising of unhealthy or ultra-processed foods and better labelling of food to signal cruelty-free welfare practices.
+- We will lobby for a simpler Pension Credit application process, while we fight for a fairer state pension that does away with the need for supplementary credits.
+
+## THE MAYOR'S NEXT ECONOMIC STRATEGY
+A Green Mayor of London will take a new approach to the Economic Development Strategy and the next London Plan, guided by the values and principles in this chapter as well as:
+- Introducing new standards in planning and development to help councils deliver projects that make the best use of available space, ensuring that every new house has space to grow food, e.g., on balconies and rooftops, and in vertical and urban gardens; allowing residents access to equipment; and engaging local shops and restaurants in the supply of locally-grown food.
+- Bringing evidence to bear on reinstating effective new policies, which were removed by the Government, to create exclusion zones around schools where fast food shops aren’t allowed, and allow councils to resist a saturation of fast food shops in any part of their borough.
+- Defining areas of ‘emerging heritage’ that have local distinctiveness and a London-wide significance and protecting them in planning policies. This will give similar protections to conservation areas.
+- Establishing a stronger, clearer agent of change principle in the London Plan.
+- Fully implementing ‘Towards an Age-Friendly London” - responding to the needs of Older Londoners.
+- Collaborating with England’s 12 regional Mayors to collectively coordinate regional economic needs, lobby for investment opportunities and government reforms, and develop strategic solutions to regional skills gaps and labour shortages.
+- Reviewing the London City Resilience Strategy to understand the needs of public services and to support them to be fit for purpose (including advocating to Government).
+
+# SHARING POWER FOR A STRONGER DEMOCRACY
+
+Zoë will give Londoners the power to make decisions for their communities
+
+People need more control over their lives, homes and neighbourhoods. We want Londoners to be able to change London for the better, by devolving power to the grassroots. Trust in UK politics is at an all time low. Public consultations are box-ticking exercises that leave people out of decisions. The current Mayor’s Deaf and Disabled People’s Forum is an example of how partnership and engagement isn’t working. Having invited people in, City Hall failed to engage productively. We will build trust with London’s African, Caribbean, Asian, Latino, Roma communities and people from the Global South, who are being overpoliced. LGBTIQA+ communities, older people and women need a say in how we make public spaces safer for them. And we need to listen to workers and unions fighting for fairer conditions while providing London’s vital services. Young people are more than our future, they are here now fighting for change. They should not have to go on strike to be heard. Our Youth Assembly will give them a platform to challenge the Mayor directly.
+
+We will create new roles to allow people to speak up for communities year round, giving them a real stake in planning, budgeting and decision-making. And we will create a new Citizens’ Climate Assembly to put climate at the heart of everything we do. Real democracy is about having the right structures in place to let people lead the decisions made about them. Greens believe we cannot have environmental justice without social justice, means we will focus on giving everyone a stronger platform to create the change they need responding to the climate crisis together. We want everyone left out by mainstream politics to have real power to direct change for good. We will demand fairer elections and more power for the Mayor and London Assembly over our health, water, energy, transport, rents and taxes. And we will share that power by opening City Hall up to everyone. With a Green Mayor you will feel heard and have more power.
+
+## WHAT GREEN AMS HAVE ACHIEVED
+
+Since the last London Elections in 2021, our three Green Party Assembly Members have been instrumental in making City Hall more accountable. With greater influence in the London Assembly, we will achieve even more.
+
+*   Siân Berry has worked with human rights groups concerned about the sharing of ULEZ camera data between TfL and the police to ensure privacy is protected.
+*   Greens in City Hall have already helped introduce policies that allow for gender neutral honorifics (including Mx) in official documents.
+*   Greens on London Assembly committees have pioneered new ways of bringing community-level evidence into investigations, conducting research and holding open-mic sessions.
+*   Following her motion calling for Assembly Members to publish their diary records as part of our commitment to transparency, Caroline Russell and Green colleagues have started making these disclosures quarterly and still hope to persuade AMs from other parties to follow suit.
+*   Caroline Russell has brought older Londoners from all over the city to City Hall to shape policy to increase the availability of public toilets.
+*   Working with trans Londoners, Caroline Russell led a Health Committee report examining barriers to accessing everyday health care for trans and gender diverse Londoners.
+*   Green AMs regularly engage with Gypsy, Roma and Traveller community attending network meetings to hear views and put questions to the current Mayor on issues like health inequalities, housing and disproportionality in policing.
+*   Zack Polanski commissioned a playwright to work with residents to find out what they love about our city and would like to see changed. “Hello London” was performed in City Hall in February 2024.
+*   Zack Polanski held a workshop with Basic Income Conversations so that people from across the city could engage and ask questions about what a Basic Income would do for them. Zack then commissioned a report to inform best practice community engagement.
+
+## A FAIRER SOCIETY
+### BRINGING POWER TO PEOPLE
+
+We will collaborate more with the voluntary and community sector, particularly with minority and disabled communities, as often as possible to bring their concerns and ideas into decision-making.
+
+*   To help boroughs and local community groups make spending plans, we will introduce participatory, citizen-determined budgeting for the GLA: Mayor budget (excluding devolved national government funding), aiming for 5 per cent by 2026 and increasing by 5 per cent per year up to 20 per cent.
+*   We will reform the boards of all GLA organisations so they involve a wide range of citizen representatives, not just those from expert bodies and industry.
+*   Greens in City Hall will work with voluntary and community organisations to ensure their vital contributions to London are properly documented and financed, and that up-to-date service information is available to all public bodies, including GLA group organisations.
+*   We will increase the London Victim Commissioner’s resources and influence and involve them fully in new initiatives on hate crime, race equality and road crime to make sure victims’ voices are factored into all relevant decisions.
+*   We will create a new Deputy Mayor role for London’s Voices who, with the Mayor, will engage representatives from diverse local communities at regular open-mic forums.
+
+### HOLDING THE MAYOR TO ACCOUNT
+
+Greens advocate for strengthening the role of the London Assembly in holding the Mayor to account, and for more checks and balances on our own governance. We would campaign for more accountability by:
+
+*   Strengthening the power of the Assembly to veto or amend Mayoral strategies.
+*   Pressing for the Assembly to have the legal power to summon people responsible for policies and services that affect Londoners to appear before them.
+
+## OPENING ACCESS TO LONDON'S GOVERNANCE
+Transparency and easy access
+to information are vital for
+accountability and engaging and
+empowering citizens. Greens in
+City Hall will promote the highest
+standards possible in managing
+and publishing the data we collect
+about London and Londoners and
+how we use it. We will properly
+take into account the views
+and experiences of London’s
+marginalised communities, and
+will ensure we only gather and
+keep the data necessary to inform
 decision making.
-GLA policy work on Londoners.
 We will publish any meetings or
-funding agreements between City a healthier
+funding agreements between City
 Hall with private interests, such
 as the current Mayor’s undeclared
-sponsorship arrangement with Democracy
-United Airlines. power in the hands of citizens from Bringing People to
-` We will make City Hall A healthy democracy does more all walks of life, especially people
-decision making easily than just listen. Real democratic who have lost trust in politics or Power
-accessible to Londoners, power gives people a clear sense been ignored.
-sharing Mayoral Decisions of how much influence they have We will hold elected A Green Mayor will increase and
-and encouraging people to in decision making processes, representatives accountable to monitor the representation in City
-` We will publish the information from start to finish, so they can live citizens through new democratic Hall of London’s vibrant, diverse
-and models underpinning healthy, fulfilled lives. structures and we will appoint communities to ensure people from
-strategies and key decisions Yes, we will listen to people people to oversee our processes all backgrounds can participate in
-in the London Datastore, and give them the respect they and hold us accountable to decision making processes. We will
-including live tables and deserve. More than that, we will citizens’ decisions throughout the put better processes in place:
-data wherever possible. give Londoners more control over year. ` Ensuring GLA public meetings
-the decisions we make, by putting include a broad base of
-110 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 111
-YCARCOMED
+sponsorship arrangement with
+United Airlines.
+*   We will make City Hall
+    decision making easily
+    accessible to Londoners,
+    sharing Mayoral Decisions
+    and encouraging people to
+*   We will publish the information
+    and models underpinning
+    strategies and key decisions
+    in the London Datastore,
+    including live tables and
+    data wherever possible.
+*   We will work with London’s
+    diverse communities and
+    with public, private, charity
+    and community partners
+    to share and update data
+    on pollution and other
+    environmental issues.
+*   We will require all technology
+    projects across the GLA group
+    meet open, ethical standards,
+    and encourage the use of
+    open source software to aid
+    enterprise and innovation.
+*   We will establish a coordinated
+    approach to data collection
+    to ensure that the needs
+    of Londoners are clearly
+    understood, so that we can
+    properly assess the impact of
+    GLA policy work on Londoners.
 
-YCARCOMED
-| community knowledge  |     |     |     | affecting their members, upholding  |     |     |     |     |     |     |
-| -------------------- | --- | --- | --- | ----------------------------------- | --- | --- | --- | --- | --- | --- |
-and experience.
-|                                |     |     |     | their  right                         | to  | protest  | and  strike  |     |     |     |
-| ------------------------------ | --- | --- | --- | ------------------------------------ | --- | -------- | ------------ | --- | --- | --- |
-| ` Green Assembly members will  |     |     |     | when they are ignored, nationally    |     |          |              |     |     |     |
-| continue to ensure that their  |     |     |     | and locally. We outline our support  |     |          |              |     |     |     |
-| scrutiny work fully involves   |     |     |     | for workers more thoroughly in our   |     |          |              |     |     |     |
-| relevant communities and       |     |     |     | Economy chapter.                     |     |          |              |     |     |     |
-groups when setting the
-| scope of investigations and  |     |     |     | Power over where and how you live  |     |     |     |     |     |     |
-| ---------------------------- | --- | --- | --- | ---------------------------------- | --- | --- | --- | --- | --- | --- |
-in hearing evidence directly
-|     |     |     |     | Many  | London  | councils  | have  |     |     |     |
-| --- | --- | --- | --- | ----- | ------- | --------- | ----- | --- | --- | --- |
-from people affected.
-|                                   |     |     |     | struggled                           | to  | build  | the  social  |     |     |     |
-| --------------------------------- | --- | --- | --- | ----------------------------------- | --- | ------ | ------------ | --- | --- | --- |
-| ` Improving training, mentoring,  |     |     |     | housing people need. Instead, they  |     |        |              |     |     |     |
-promotion, and recruitment
-|     |     |     |     | have  allowed  |     | private  | developers  |     |     |     |
-| --- | --- | --- | --- | -------------- | --- | -------- | ----------- | --- | --- | --- |
-practices to ensure people
-|     |     |     |     | to  build  | for-profit  |     | investment  |     |     |     |
-| --- | --- | --- | --- | ---------- | ----------- | --- | ----------- | --- | --- | --- |
-from all backgrounds have
-properties for private landlords.
-the opportunity to work
-We will ensure residents can call
-at all levels of the GLA.
-for the housing their communities
-Greens will champion the rights of all
-| We  | will  focus  | on  | rebuilding  | need  while  | protecting  |     | existing  |     |     |     |
-| --- | ------------ | --- | ----------- | ------------ | ----------- | --- | --------- | --- | --- | --- |
-groups in society, including Gypsy, Roma
-| trust  with  | people  | from  | different  | social  | housing  | from  | being  |     |     |     |
-| ------------ | ------- | ----- | ---------- | ------- | -------- | ----- | ------ | --- | --- | --- |
-and Traveller communities
-| faiths and ethnicities, particularly  |     |     |     | demolished without consultation. |     |     |     |     |     |     |
-| ------------------------------------- | --- | --- | --- | -------------------------------- | --- | --- | --- | --- | --- | --- |
-Black and global majority cultures,
-` A Green Mayor will support
-young and old people, people with  the expansion of independent  requirements to include a  ` We will allocate more City
-disabilities, recent migrants to this  renters’ unions with grants  final say from residents as  Hall funding to back new
-part of the decision-making  co-operatives and community-
-| country, people experiencing or at  |     |     |     | for London-wide and  |     |     |     |     |     |     |
-| ----------------------------------- | --- | --- | --- | -------------------- | --- | --- | --- | --- | --- | --- |
-local groups supporting  process for planning policies. led housing projects.
-risk of homelessness and people
-from  LGBTQIA+  communities.  We  private renters’ rights. ` We will appoint a Social  ` A Green Mayor will give councils
-will  give  them  a  say  in  directing  ` We will make the guidance  Housing Commissioner,  and community land trusts
-how  City  Hall  supports  their  for new estate proposals  who is also a tenant, to  the first option on GLA land
-support tenants’ rights  earmarked for new homes.
-| communities. |     |     |     | more democratic, with fewer  |     |     |     |     |     |     |
-| ------------ | --- | --- | --- | ---------------------------- | --- | --- | --- | --- | --- | --- |
-exception rules, better  and be an advocate.
-| We  | recognise  | that  | trades  |     |     |     |     |     | ` We will help residents  |     |
-| --- | ---------- | ----- | ------- | --- | --- | --- | --- | --- | ------------------------- | --- |
-unions  are  some  of  the  largest  appraisals of available options  ` We will set up a People’s
-produce credible People’s
-and strong requirements for
-independent,  democratic  Land Commission to identify  Plans for their estates and
-resident-led planning from
-institutions  in  the  country  brownfield sites and other  towns with a funded expert
-the start of every proposal. land suitable for community- team in City Hall to help.
-| advocating  | for  | the  interests  |     | of  |     |     |     |     |     |     |
-| ----------- | ---- | --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
-` We will review all existing  led developments, such as
-| groups  | who  otherwise  |     | do  | not  |     |     |     |     |     |     |
-| ------- | --------------- | --- | --- | ---- | --- | --- | --- | --- | --- | --- |
-have  a  representative  voice.  We  ballot exemptions in estate  playgrounds, open green space
-and community gardens.
-| will ensure City Hall listens to their  |     |     |     | developments and amend  |     |     |     |     |     |     |
-| --------------------------------------- | --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- | --- |
-the London Plan to extend
-views on the wide range of issues
-| 112 |     |     | LONDON GREEN PARTY 2024 |     |     |     |     | LONDON GREEN PARTY 2024 |     | 113 |
-| --- | --- | --- | ----------------------- | --- | --- | --- | --- | ----------------------- | --- | --- |
+## A HEALTHIER DEMOCRACY
+A healthy democracy does more
+than just listen. Real democratic
+power gives people a clear sense
+of how much influence they have
+in decision making processes,
+from start to finish, so they can live
+healthy, fulfilled lives.
+Yes, we will listen to people
+and give them the respect they
+deserve. More than that, we will
+give Londoners more control over
+the decisions we make, by putting power in the hands of citizens from
+all walks of life, especially people
+who have lost trust in politics or
+been ignored.
+We will hold elected
+representatives accountable to
+citizens through new democratic
+structures and we will appoint
+people to oversee our processes
+and hold us accountable to
+citizens’ decisions throughout the
+year.
 
-Faith and Diverse Communities ` We will expand the categories  ` We will expand London’s Youth  YCARCOMED
-acknowledge the importance
-of ethnicity data used  Assembly through established  of their contributions.
-| A  Green  | Mayor    | and  Green     |                            |     |     |                           |     |     |     |     |
-| --------- | -------- | -------------- | -------------------------- | --- | --- | ------------------------- | --- | --- | --- | --- |
-|           |          |                | for monitoring and policy  |     |     | local borough democratic  |     |     |     |     |
-| Assembly  | Members  | will  promote  |                            |     |     |                           |     |     |     |     |
-development to ensure all  processes, allowing six  supporting Older People
-| understanding  | between  | people  |                           |     |     |                             |     |     |     |     |
-| -------------- | -------- | ------- | ------------------------- | --- | --- | --------------------------- | --- | --- | --- | --- |
-|                |          |         | communities are properly  |     |     | additional nominations. By  |     |     |     |     |
-of  different  faiths  and  none  by  We  will  properly  value  the
-|     |     |     | recognised, for example, the  |     |     | raising the age limit for these  |     |     |     |     |
-| --- | --- | --- | ----------------------------- | --- | --- | -------------------------------- | --- | --- | --- | --- |
-supporting inter-faith forums and  experience and knowledge of older
-|     |     |     | Latin American community,  |     |     | members to 25 we will include  |     |     |     |     |
-| --- | --- | --- | -------------------------- | --- | --- | ------------------------------ | --- | --- | --- | --- |
-encouraging  open  collaboration  generations in London life.
-|     |     |     | and Gypsy, Roma and Traveller  |     |     | students at London colleges  |     |     |     |     |
-| --- | --- | --- | ------------------------------ | --- | --- | ---------------------------- | --- | --- | --- | --- |
-between faith groups, the police,  communities, which will be  and universities and young  ` A Green Mayor will appoint an
-schools,  voluntary  groups  and  treated as separate groups for  people with Special Educational  Elders’ Champion to monitor
-| community organisations.  |                 |      |                                  |     |     |                               |     | the effects of City Hall’s  |     |     |
-| ------------------------- | --------------- | ---- | -------------------------------- | --- | --- | ----------------------------- | --- | --------------------------- | --- | --- |
-|                           |                 |      | the purposes of data collection. |     |     | Needs and Disabilities.       |     |                             |     |     |
-| We                        | will  champion  | the  | rights                           |     |     |                               |     | policies on older people.   |     |     |
-|                           |                 |      | ` We will improve the lives of   |     |     | ` We will establish a Deputy  |     |                             |     |     |
-of  Gypsy,  Roma  and  Traveller  ` We will work with older citizens
-|                                   |     |     | Gypsies, Roma and Travellers  |     |     | Mayor for Young People to  |     |                            |     |     |
-| --------------------------------- | --- | --- | ----------------------------- | --- | --- | -------------------------- | --- | -------------------------- | --- | --- |
-| communities. Whilst we recognise  |     |     |                               |     |     |                            |     | to develop a strategy for  |     |     |
-|                                   |     |     | in London and promote their   |     |     | convene a forum with the   |     |                            |     |     |
-similarities  in  experiences  right to equal treatment. London Youth Assembly,  improving flexible, secure
-| within  | Gypsy,  | Roma  | and  |     |     |     |     | and part-time working  |     |     |
-| ------- | ------- | ----- | ---- | --- | --- | --- | --- | ---------------------- | --- | --- |
-youth organisations and
-` We will work to address the
-Traveller  communities,  there  are  related community networks  opportunities for people
-workplace discrimination that
-important  cultural  distinctions  to develop a fair and effective  returning to work or going into
-Gypsy, Roma and Traveller
-sudden retirement, as outlined
-| and  | differences  | in  terms  | of  |     |     | strategy for statutory and  |     |     |     |     |
-| ---- | ------------ | ---------- | --- | --- | --- | --------------------------- | --- | --- | --- | --- |
-people face from many
-|                      |     |             |                                     |     |     | voluntary youth service  |     | in the Economy chapter. |     |     |
-| -------------------- | --- | ----------- | ----------------------------------- | --- | --- | ------------------------ | --- | ----------------------- | --- | --- |
-| lived  experiences.  |     |   We  will  | also  employers and apprenticeship  |     |     |                          |     |                         |     |     |
-champion  our  Windrush  elders,  provision across all of London  ` As local authorities move more
-providers, and ensure police
-that can address intersectional
-fight government policies causing  of their services online, we will
-and the Mayor’s Office for
-inequalities, mental health
-them hardship and push for justice  Policing and Crime (MOPAC)  improve training and access
-|           |     |     |                           |     |     | support and equal access. |     | to digital services for older  |     |     |
-| --------- | --- | --- | ------------------------- | --- | --- | ------------------------- | --- | ------------------------------ | --- | --- |
-| for them. |     |     | record and act upon data  |     |     |                           |     |                                |     |     |
-on hate crime faced by each  ` We will ensure young  people including through home
-` We will ensure grants to
-of these communities.  carers and young people  broadband and mobile devices
-voluntary, civic, youth,
-|                              |     |     |                                |     |     | in care are represented  |     | and work with London Internet  |     |     |
-| ---------------------------- | --- | --- | ------------------------------ | --- | --- | ------------------------ | --- | ------------------------------ | --- | --- |
-| community and faith          |     |     | ` We will include Gypsy, Roma  |     |     |                          |     |                                |     |     |
-|                              |     |     |                                |     |     | on the Youth Assembly.   |     | Service Providers to promote   |     |     |
-| organisations last at least  |     |     | and Traveller health and       |     |     |                          |     |                                |     |     |
-social tariffs. And we will never
-five years and cover full, core
-|     |     |     | mental health in the Mayor’s  |     |     | ` We will empower the Youth  |     |     |     |     |
-| --- | --- | --- | ----------------------------- | --- | --- | ---------------------------- | --- | --- | --- | --- |
-exclude people by moving
-costs (including premises) and  Health Inequality Strategy. Assembly to hold the
-services completely online.
-| match inflation. We will use  |     |     |     |     |     | Mayor to account through  |     |     |     |     |
-| ----------------------------- | --- | --- | --- | --- | --- | ------------------------- | --- | --- | --- | --- |
-grants where possible as the
-a minimum of six Youth
-supporting Deaf and
-preferred funding method over  supporting Young People Assembly Mayor’s Question
-| any other approach. We will  |     |     |     |     |     |     |     | Disabled People |     |     |
-| ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --------------- | --- | --- |
-Time sessions every year.
-|     |     |     | Greens  will  | further  embed  | the  |     |     |     |     |     |
-| --- | --- | --- | ------------- | --------------- | ---- | --- | --- | --- | --- | --- |
-embed good practice, value-
-` As with all our citizen
-voices of young people in City Hall  The  Green  Party  recognises
-for-money and social impact
-policy-making, with the power to  participants, we will pay Youth  the  social  model  of  disability
-assessments into all our work
-propose budget amendments and  Assembly Members a London  and  a  Green  Mayor  will  ensure
-with such organisations.
-Living Wage for their time to
-|     |     |                         | influence decisions. |     |     |     |                         | that  everyone  | can  benefit  | from  |
-| --- | --- | ----------------------- | -------------------- | --- | --- | --- | ----------------------- | --------------- | ------------- | ----- |
-| 114 |     | LONDON GREEN PARTY 2024 |                      |     |     |     | LONDON GREEN PARTY 2024 |                 |               | 115   |
+## NEW ROLES AND COMMISSIONS
+Valued as experts in their own
+lives, homes and communities,
+a Green Mayor will establish new
+citizen representative roles
+and develop more structures
+for engagement. We will use
+sortition to draw people from
+as wide a range of backgrounds
+and identities as possible.
+Every citizen who participates
+in our Assemblies, Forums and
+Commissions will be paid a London Living Wage for their
+time, to ensure participation is
+inclusive.
+There will be more appointed
+advisors and champions to
+make democracy in the GLA
+better. We name new and
+strengthened roles throughout
+the manifesto which will join up
+strategy, policy and standards
+across different areas of our
+work and across London such
+as a Deputy Mayor for Small
+Businesses, Disability Equality
+Champion, Social Housing
+Commissioner and Spaces
+Czar.
 
-|     |     |     |     |     |     |          |                   |        | supporting LGBTIQA+  |     |     |     | YCARCOMED |
-| --- | --- | --- | --- | --- | --- | -------- | ----------------- | ------ | -------------------- | --- | --- | --- | --------- |
-|     |     |     |     |     |     | wishing  | to  make  London  | their  |                      |     |     |     |           |
-Communities
-home feels welcome.
-|     |     |     |     |     |     | ` We will work to regularise  |     |     | Greens in City Hall will implement  |           |           |              |      |
-| --- | --- | --- | --- | --- | --- | ----------------------------- | --- | --- | ----------------------------------- | --------- | --------- | ------------ | ---- |
-|     |     |     |     |     |     | and confirm the residency     |     |     | policies                            | to        | make      | London       | as   |
-|     |     |     |     |     |     | status of all young people    |     |     | inclusive                           | a         | city  as  | possible     | for  |
-|     |     |     |     |     |     | in London currently without   |     |     | the  whole                          | LGBTIQA+  |           | community.   |      |
-|     |     |     |     |     |     | documentation and, where      |     |     | We  recognise                       |           | that      | transgender  |      |
-necessary, help families with
-|     |     |     |     |     |     |     |     |     | people  | have  | experienced  |     | a   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | ------- | ----- | ------------ | --- | --- |
-the cost of applications.
-|     |     |     |     |     |     |                                |     |     | disproportionate                      |      |          | level  of  | hate   |
-| --- | --- | --- | --- | --- | --- | ------------------------------ | --- | --- | ------------------------------------- | ---- | -------- | ---------- | ------ |
-|     |     |     |     |     |     | ` We will set up a service to  |     |     | crime and exclusion. We will make     |      |          |            |        |
-|     |     |     |     |     |     | help migrants with refugee     |     |     | London                                | one  | of  the  | most       | trans- |
-|     |     |     |     |     |     | status move into secure        |     |     | inclusive cities in the world, along  |      |          |            |        |
-housing in London.
-Zoë will make London as an inclusive a  with the work of the Green Party
-city as possible, including supporting  ` To help recent migrants to  in  Bristol,  Brighton  and  across
-| the rights of trans people and ensuring  |     |     |     |     |     |     |     |     | England and Wales. |     |     |     |     |
-| ---------------------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------ | --- | --- | --- | --- |
-participate fully in London life,
-LGBTIQA+ voices are heard we will work with voluntary  ` We will do everything we can
-|     |     |     |     |     |     | groups to draw up a plan that  |     |     | to allow LGBTIQA+ voices to  |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | ------------------------------ | --- | --- | ---------------------------- | --- | --- | --- | --- |
-enables naturalisation for
-be heard in changing policy
-organisations that tackle
-|                                         |     |                          |     |     |     | more Londoners who do not  |     |     | to make their lives better.      |     |     |     |     |
-| --------------------------------------- | --- | ------------------------ | --- | --- | --- | -------------------------- | --- | --- | -------------------------------- | --- | --- | --- | --- |
-| inclusion, jobs, homes, skills and all  |     | inequality, poverty and  |     |     |     |                            |     |     |                                  |     |     |     |     |
-| the other opportunities.                |     |                          |     |     |     | yet have UK citizenship.   |     |     |                                  |     |     |     |     |
-|                                         |     | discrimination faced by  |     |     |     |                            |     |     | ` We will tackle discrimination  |     |     |     |     |
-` We will appoint a Disability  deaf and disabled people. ` To promote engagement
-and violence against trans
-Equality Champion and  with recent migrants, we will  people through a new
-create a new forum for  improve access to training  Commission into the Needs
-supporting Migrants
-London Deaf and Disabled  in English for Speakers of  of Trans Londoners, which
-People’s Organisations to  Greens  believe  in  freedom  of  Other Languages across  will develop a trans rights
-London with support for
-feed into policy development  movement.  London  has  been  strategy for London in
-and decision making year  concessionary fees for asylum  consultation with trans people.
-|                             |     | enriched  | by  | people  | who  have  |                       |     |     |     |     |     |     |     |
-| --------------------------- | --- | --------- | --- | ------- | ---------- | --------------------- | --- | --- | --- | --- | --- | --- | --- |
-| round and not just through  |     |           |     |         |            | seekers and refugees. |     |     |     |     |     |     |     |
-come to make a life here. Current  ` We will implement training
-quarterly consultation.
-` We will block immigration
-policies are forcing new arrivals to  across the GLA to increase
-` We will convene more  our city into intolerable hardships.  enforcement agencies and  sensitivity to the needs
-related services, such as
-regular meetings of this  We will fight locally and nationally  of trans and non-binary
-forum and make sure City  homelessness services and the  people and ensure
-for better conditions for migrants
-Hall provides the capacity  police, from sharing information  discrimination is rooted out.
-|                              |     | and  asylum  | seekers  |           | and  we  will  |                           |     |     |     |     |     |     |     |
-| ---------------------------- | --- | ------------ | -------- | --------- | -------------- | ------------------------- | --- | --- | --- | --- | --- | --- | --- |
-| to follow up on initiatives  |     |              |          |           |                | about immigrants’ status. |     |     |     |     |     |     |     |
-|                              |     | work  with   | public   | services  | and            |                           |     |     |     |     |     |     |     |
-arising from these meetings.
-|                             |     | civil  society   |     | in  London  | to  build  |     |     |     |     |     |     |     |     |
-| --------------------------- | --- | ---------------- | --- | ----------- | ---------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ` We will invest long-term  |     | an  environment  |     | where       | everyone   |     |     |     |     |     |     |     |     |
-in community-based
-| 116 | LONDON GREEN PARTY 2024 |     |     |     |     |     |     | LONDON GREEN PARTY 2024 |     |     |     |     | 117 |
-| --- | ----------------------- | --- | --- | --- | --- | --- | --- | ----------------------- | --- | --- | --- | --- | --- |
+## BRINGING PEOPLE TO POWER
+A Green Mayor will increase and
+monitor the representation in City
+Hall of London’s vibrant, diverse
+communities to ensure people from
+all backgrounds can participate in
+decision making processes. We will
+put better processes in place:
+*   Ensuring GLA public meetings
+    include a broad base of
 
-|     |     |     | ` A Green Mayor will prioritise  |     | ` A Green Mayor will challenge  | YCARCOMED |
-| --- | --- | --- | -------------------------------- | --- | ------------------------------- | --------- |
-|     |     |     | biodiversity taking advice       |     | deportation flights and the     |           |
-|     |     |     | from a biodiversity officer      |     | detention of asylum seekers,    |           |
-|     |     |     | when making decisions on         |     | and push to allow councils      |           |
-|     |     |     | all policies and development     |     | and the GLA to claim housing    |           |
-|     |     |     | plans affecting housing,         |     | support for people with No      |           |
-|     |     |     | infrastructure, transport,       |     | Recourse to Public Funds.       |           |
-parks and green spaces.
-` We will campaign for reforms to
-` A Green Mayor will develop
-protect immigrants, including
-|     |     |     | the current Climate Budget       |     | restoring the amnesty for     |     |
-| --- | --- | --- | -------------------------------- | --- | ----------------------------- | --- |
-|     |     |     | process to ensure a pipeline of  |     | undocumented migrants in      |     |
-|     |     |     | proposals for scope 1, scope     |     | London, lobbying for more     |     |
-|     |     |     | 2 and scope 3 emissions          |     | ethical data management,      |     |
-|     |     |     | ready for implementation         |     | pushing for better, faster    |     |
-|     |     |     | as funds become available        |     | citizenship routes for young  |     |
-|     |     |     | with a clear timeline to meet    |     | Londoners with insecure       |     |
-|     |     |     | 2030 commitments.                |     | status, extending the 7 day   |     |
-accommodation limit and
-National Asks
-ID-free access to healthcare
-for undocumented migrants.
-|     |     |     | ` To support devolution of      |     | ` We will work with businesses  |     |
-| --- | --- | --- | ------------------------------- | --- | ------------------------------- | --- |
-|     |     |     | power including for health and  |     | to oppose the national          |     |
-Greens will involve Londoners in the decisions
-|     |     |     | transport. We will campaign  |     | government’s points-based  |     |
-| --- | --- | --- | ---------------------------- | --- | -------------------------- | --- |
-needed to tackle the climate crisis
-|     |     |     | for tax-raising powers for  |     | immigration system and     |     |
-| --- | --- | --- | --------------------------- | --- | -------------------------- | --- |
-|     |     |     | London so we are no longer  |     | excessively-high earnings  |     |
-Tackling the Climate  Assembly to address the  dependent on National  threshold for skilled workers,
-|     |     |     | Funding Settlements. |     | while fighting for freedom of  |     |
-| --- | --- | --- | -------------------- | --- | ------------------------------ | --- |
-climate and ecological
-emergency with the resources  movement in the EU, as well as
-| Crisis Together |     |                             | ` A Green Mayor will stand  |     |                               |     |
-| --------------- | --- | --------------------------- | --------------------------- | --- | ----------------------------- | --- |
-|                 |     | to educate Londoners about  |                             |     | equal rights for London’s EU  |     |
-up for fair, inclusive
-residents in all areas of society.
-|     |     | the climate emergency and  | proportional representation  |     |     |     |
-| --- | --- | -------------------------- | ---------------------------- | --- | --- | --- |
-The Green Party is the only major
-build links with communities
-political  party  fully  committed  in all UK elections and for  ` We will oppose national
-|     |     | taking action across London.  | the right to vote from the  |     |     |     |
-| --- | --- | ----------------------------- | --------------------------- | --- | --- | --- |
-to  tackling  the  climate  crisis.  government plans to increase
-` We will partner with Trade  age of 16 in all elections. enforcement powers and
-| We  will  empower                | Londoners  | to                       |                             |     |                            |     |
-| -------------------------------- | ---------- | ------------------------ | --------------------------- | --- | -------------------------- | --- |
-|                                  |            | Unions to create a Just  |                             |     | criminalise trespass, and  |     |
-| have a say in how we change our  |            |                          | ` A Green Mayor will lobby  |     |                            |     |
-support a London-wide
-|     |     | Transition Commission, which  | national government to create  |     |     |     |
-| --- | --- | ----------------------------- | ------------------------------ | --- | --- | --- |
-dependency on fossil fuels without
-will steer our climate mitigation  standard for site management
-| compromising social justice. |     |                                    | residence-based voting rights  |     |                      |     |
-| ---------------------------- | --- | ---------------------------------- | ------------------------------ | --- | -------------------- | --- |
-|                              |     | and adaptation policies in a fair  |                                |     | and tenants’ rights. |     |
-` We will set up an independent  for London elections, General
-|     |     | way for workers, their families  | Elections and referendums. |     |     |     |
-| --- | --- | -------------------------------- | -------------------------- | --- | --- | --- |
-and diverse Citizens’ Climate
-and their communities.
-| 118 | LONDON GREEN PARTY 2024 |     |     | LONDON GREEN PARTY 2024 |     | 119 |
-| --- | ----------------------- | --- | --- | ----------------------- | --- | --- |
+### community knowledge and experience.
+*   ▶ Green Assembly members will continue to ensure that their scrutiny work fully involves relevant communities and groups when setting the scope of investigations and in hearing evidence directly from people affected.
+*   ▶ Improving training, mentoring, promotion, and recruitment practices to ensure people from all backgrounds have the opportunity to work at all levels of the GLA.
+We will focus on rebuilding trust with people from different faiths and ethnicities, particularly Black and global majority cultures, young and old people, people with disabilities, recent migrants to this country, people experiencing or at risk of homelessness and people from LGBTQIA+ communities. We will give them a say in directing how City Hall supports their communities.
+We recognise that trades unions are some of the largest independent, democratic institutions in the country advocating for the interests of groups who otherwise do not have a representative voice. We will ensure City Hall listens to their views on the wide range of issues
 
-Culture and Sport
-L
-ondon is a city that lets people in the city in 2022. We host some of the inequalities in London, people use our cultural energy to reclaim
-be who they want to be. After the biggest international sporting in the most deprived postcodes spaces for public good.
-generations of welcoming events, music, fashion and film have less access to opportunities We will help young people set up
-African, Caribbean, Asian, Latino, festivals. We also have incredible for entertainment and exercise. new, creative businesses. We will
-Roma and people from the Global local events, from music nights to Even free culture, like central open our public spaces for people
-South, this city has become host artists’ open studios, comedy and London’s museums and galleries, to exercise, play and perform. We
-to thriving cultural quarters, street spoken word events and a huge has an access cost. People in the will help local groups take control
-markets, foods, festivals and range of sports clubs. outer boroughs have to travel of forgotten fields and buildings
-traditions. We welcome LGBTIQA+ Yet most of the money from longer to get to central London and transform them into new
-communities and people of tourism does not reach local and spend more on travel and food venues and grounds for gathering,
-different cultures, faiths and communities. Cuts to national meaning people miss out. rehearsing and practising.
-beliefs. funding have led to council culture Too much of London’s public A Green Mayor will work at every
-London is also one of the world’s budgets being slashed. Many space is not truly public. We need level we can to make it easier for
-top tourist destinations. Visitors grassroots venues are hanging to rethink our public freedoms and Londoners to access the creative
-spent more than 100 million nights from a thread. As with so many of and physical activities they want.
-TROPSNART
-Zoë will put culture on everyone’s doorsteps,
-improving access and supporting grassroots venues
-120 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 121
-ERUTLUC
+affecting their members, upholding their right to protest and strike when they are ignored, nationally and locally. We outline our support for workers more thoroughly in our Economy chapter.
 
-| What Green AMs  |     | ` Siân Berry worked with  |     |     |     |     |     | ERUTLUC |
-| --------------- | --- | ------------------------- | --- | --- | --- | --- | --- | ------- |
-campaigners to secure an
-| Have Achieved |     | AIDS memorial in London. |     |     |     |     |     |     |
-| ------------- | --- | ------------------------ | --- | --- | --- | --- | --- | --- |
-` Green AMs attend Notting
-Hill Carnival to observe the
-` Greens in City Hall have
-| supported the protection of  |     | Policing operation asking  |     |     |     |     |     |     |
-| ---------------------------- | --- | -------------------------- | --- | --- | --- | --- | --- | --- |
-Mayor’s Questions on use of
-our grassroots music venues
-policing tactics such as stop
-by working to change planning
-and search or deployment of
-rules in the current London
-knife arches at the event to
-Plan to ensure that existing
-| venues are not threatened  |     | understand who is stopped,  |     |     |     |     |     |     |
-| -------------------------- | --- | --------------------------- | --- | --- | --- | --- | --- | --- |
-any criminal justice outcomes
-by noise complaints from
-and any disproportionality
-new developments.
-in policing of the event.
-` Greens have campaigned in
-` Siân Berry improved protection
-local boroughs to protect
-| historically important  |     | for sports facilities in the  |     |     |     |     |     |     |
-| ----------------------- | --- | ----------------------------- | --- | --- | --- | --- | --- | --- |
-last London Plan - so they
-venues. Zack Polanski is
-cannot be lost if there is an
-a founding director of the
-| successful Save the Black     |     | assessed local need for them.   |     |     |     |     |     |     |
-| ----------------------------- | --- | ------------------------------- | --- | --- | --- | --- | --- | --- |
-| Cap campaign in Camden.       |     | ` Zack has proposed with        |     |     |     |     |     |     |
-| ` Greens successfully called  |     | cross party backing that        |     |     |     |     |     |     |
-on the current Mayor to  a London playwright is  Green Assembly Members and councillors have
-|     |     | commissioned annually to  |     |     | campaigned to save sports facilities |     |     |     |
-| --- | --- | ------------------------- | --- | --- | ------------------------------------ | --- | --- | --- |
-intervene to protect the
-| Curzon Cinema in Mayfair. |     | be an artist in residence  |     |     |     |     |     |     |
-| ------------------------- | --- | -------------------------- | --- | --- | --- | --- | --- | --- |
-and create art centred on
-` Alongside Fossil Free London,  grassroots  venues  with  local  make  their  programmes  equally
-London performed in London’s
-Zack Polanski has worked  community  groups,  schools,  accessible to everyone, regardless
-Living Room (at City Hall).
-to keep greenwashing
-funders and freelancers, but cuts  of background or spending power.
-corporate sponsorship out
-Supporting  to  national  funding  have  broken  ` We will ask hotels and bed and
-of our community events
-these bridges. Greens will fight to  breakfasts to opt in to a modest
-like London Pride.
-Grassroots Culture restore links between grassroots  nightly levy of 50p, with the
-` Caroline Russell asked  venues and their communities so  potential of raising £50 million
-the Night Czar to assess
-We will help grassroots venues to  they remain vital parts of their local  annually. This funding would
-the number of night time  be dedicated to supporting
-|     |     | thrive, by helping them to connect  |     |     | areas. |     |     |     |
-| --- | --- | ----------------------------------- | --- | --- | ------ | --- | --- | --- |
-workers paid the Living Wage  initiatives throughout our
-|     |     | their work with local communities  |     |     | Our  policies  | will  share  | profits  |     |
-| --- | --- | ---------------------------------- | --- | --- | -------------- | ------------ | -------- | --- |
-which exposed that people  manifesto, aiming to enrich
-|     |     | and  funding.  | Organisations  | like  | concentrated  | in  major  | venues  |     |
-| --- | --- | -------------- | -------------- | ----- | ------------- | ---------- | ------- | --- |
-working at night are less  and equalise access to arts,
-|     |     | The  Bridge  | Network  | provided  | and tours. We will make it easier  |     |     |     |
-| --- | --- | ------------ | -------- | --------- | ---------------------------------- | --- | --- | --- |
-likely to be paid Living Wage
-sports, and culture, beginning
-|     |     | excellent  | support  | to  connect  | for  London’s  | arts  | venues  to  |     |
-| --- | --- | ---------- | -------- | ------------ | -------------- | ----- | ----------- | --- |
-than day time workers.
-| 122 | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 | 123 |
-| --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- |
+### **POWER OVER WHERE AND HOW YOU LIVE**
 
-ERUTLUC
-|     |     |     | Levelling the Venues  |     |     | LGBTIQA+ venues and places  |     |
-| --- | --- | --- | --------------------- | --- | --- | --------------------------- | --- |
-of cultural importance as
-assets of community value.
-Landscape
-` We will create a London-
-|     |     |     | Grassroots                           | venues  | are  the  | wide registry of all venues  |     |
-| --- | --- | --- | ------------------------------------ | ------- | --------- | ---------------------------- | --- |
-|     |     |     | lifeblood of our culture, launching  |         |           | designated assets of         |     |
-community value and review
-new artists and bringing affordable
-how well planning rules are
-|     |     |     | events  | to  people’s  | doorsteps.  |     |     |
-| --- | --- | --- | ------- | ------------- | ----------- | --- | --- |
-working for these sites.
-|     |     |     | We  want                          | to  celebrate      | the  value  |                                 |     |
-| --- | --- | --- | --------------------------------- | ------------------ | ----------- | ------------------------------- | --- |
-|     |     |     | London’s                          | independently-run  |             | ` Overseen by the Spaces Czar,  |     |
-|     |     |     | spaces bring to London’s diverse  |                    |             | our register of ‘meanwhile      |     |
-use’ spaces (including empty
-|     |     |     | communities,  | both  | in  providing  |     |     |
-| --- | --- | --- | ------------- | ----- | -------------- | --- | --- |
-commercial properties) will
-work and serving up entertainment.
-make it easier for communities
-Greens will help venues become
-and organisations to find
-|     |     |     | more  | sustainable  | by  offering  |     |     |
-| --- | --- | --- | ----- | ------------ | ------------- | --- | --- |
-temporary venues for their
-|     |     |     | dedicated  | support  | for  venue  |     |     |
-| --- | --- | --- | ---------- | -------- | ----------- | --- | --- |
-arts, sporting and cultural
-managers to get advice on not-for-
-events, such as meeting
-|     |     |     | profit  | business  models,  | licensing  |     |     |
-| --- | --- | --- | ------- | ------------------ | ---------- | --- | --- |
-points for clubs and band
-|     |     |     | and planning support. Rising rents  |       |                | rehearsals, while we  |     |
-| --- | --- | --- | ----------------------------------- | ----- | -------------- | --------------------- | --- |
-|     |     |     | are  forcing                        | many  | tenancy-based  |                       |     |
-support groups in finding
-venues to close, so will also help
-permanent, secure venues.
-Zoë will work with small venue
-|     |     |     | venue  | managers  | find  permanent  |     |     |
-| --- | --- | --- | ------ | --------- | ---------------- | --- | --- |
-` A Green Mayor will require
-owners, helping them to thrive
-venues.
-all new developments to
-|                            |     |                              | We will continue to support the  |              |          | include arts, sports or cultural  |     |
-| -------------------------- | --- | ---------------------------- | -------------------------------- | ------------ | -------- | --------------------------------- | --- |
-|                            |     | ` We will convene a Culture  | London-wide                      | designation  | of  our  |                                   |     |
-| with areas with the least  |     |                              |                                  |              |          | venues in their plans, and        |     |
-access to local activities. Forum of grassroots venue  emerging  heritage  through  the
-that developers work with
-managers, local community  London Plan. We will also support  communities to determine
-` We will commit to and
-representatives, freelancers
-|     |     |     | London’s  | boroughs  | in  applying  | what is needed in each area. |     |
-| --- | --- | --- | --------- | --------- | ------------- | ---------------------------- | --- |
-implement the Creative
-and creative educators to
-Workforce Pledge to foster a  other  planning  protections  to  ` We will work with local
-|                                |     | share practices and connect  | prevent  | the  closure  | of  culturally  |                              |     |
-| ------------------------------ | --- | ---------------------------- | -------- | ------------- | --------------- | ---------------------------- | --- |
-| diverse and thriving creative  |     |                              |          |               |                 | authorities to explore ways  |     |
-with a network of educational
-| community across London. |     |     | significant venues. |     |     |     |     |
-| ------------------------ | --- | --- | ------------------- | --- | --- | --- | --- |
-of implementing measures
-organisations, funding, and
-|                                 |     |                              | ` We will convene regular  |     |     | to reform ticketing as part of  |     |
-| ------------------------------- | --- | ---------------------------- | -------------------------- | --- | --- | ------------------------------- | --- |
-| ` We will introduce a Creative  |     | employment standards across  |                            |     |     |                                 |     |
-|                                 |     |                              | roundtable meetings for    |     |     | licensing for major stadium     |     |
-| Autonomy Allowance to           |     | other areas of the GLA.      |                            |     |     |                                 |     |
-encourage more young people  venue managers to share best  events, to ensure profits
-|     |     |     | practice and raise concerns. |     |     | from major touring events  |     |
-| --- | --- | --- | ---------------------------- | --- | --- | -------------------------- | --- |
-to start arts-related businesses
-are shared with grassroots
-and pursue careers in the arts. ` We will help communities and
-local authorities designate
-| 124 | LONDON GREEN PARTY 2024 |     |     |     | LONDON GREEN PARTY 2024 |     | 125 |
-| --- | ----------------------- | --- | --- | --- | ----------------------- | --- | --- |
+Many London councils have struggled to build the social housing people need. Instead, they have allowed private developers to build for-profit investment properties for private landlords.
+We will ensure residents can call for the housing their communities need while protecting existing social housing from being demolished without consultation.
 
-ERUTLUC
-|     |     |     |     |     |     | culture and local communities.  |     |     | also  support  | all  | our  community  |
-| --- | --- | --- | --- | --- | --- | ------------------------------- | --- | --- | -------------- | ---- | --------------- |
-These measures will include:
-|     |     |     |     |     |     |                                  |     |     | groups                          | to  celebrate  | champions    |
-| --- | --- | --- | --- | --- | --- | -------------------------------- | --- | --- | ------------------------------- | -------------- | ------------ |
-|     |     |     |     |     |     | ` a levy on ticket prices to be  |     |     | and  commemorate                |                | losses  and  |
-|     |     |     |     |     |     | redistributed to grassroots      |     |     | historical injustices. We will: |                |              |
-community ventures, projects,
-` Let communities lead on
-|     |     |     |     |     |     | artists and venues.               |     |     | erecting statues and renaming  |     |     |
-| --- | --- | --- | --- | --- | --- | --------------------------------- | --- | --- | ------------------------------ | --- | --- |
-|     |     |     |     |     |     | ` a minimum proportion of sales   |     |     | streets and areas that         |     |     |
-|     |     |     |     |     |     | to be held for free distribution  |     |     | celebrate people and events    |     |     |
-that represent their cultures
-via lottery to residents in
-|     |     |     |     |     |     | the venue’s local borough. |     |     | and histories, with priority  |     |     |
-| --- | --- | --- | --- | --- | --- | -------------------------- | --- | --- | ----------------------------- | --- | --- |
-given to representing women
-` a minimum proportion of
-Greens support all London’s communities and figures from London’s
-concessionary tickets
-African, Caribbean, Asian,
-available per event at a
-Latino, Roma communities and
-Recognising
-|     |     |     | ` Pride |     |     | minimum concessionary  |     |     |     |     |     |
-| --- | --- | --- | ------- | --- | --- | ---------------------- | --- | --- | --- | --- | --- |
-people from the Global South.
-rates, set in discussion
-` Salamat Festival
-` Promote a positive narrative
-| London’s  |     |     |                    |     |     | with grassroots music  |     |     |                                 |     |     |
-| --------- | --- | --- | ------------------ | --- | --- | ---------------------- | --- | --- | ------------------------------- | --- | --- |
-|           |     |     | ` Shubbak Festival |     |     |                        |     |     | about the experience, history,  |     |     |
-venues, organisations and
-Communities communities near to stadiums. cultural celebrations, diversity
-` Ukraine Independence Day
-and value that people of
-` Windrush Day
-African, Caribbean, Asian,
-Celebrations and
-Latino, Roma and people from
-` World AIDS Day
-| Greens  | will  celebrate  | a  wide  |     |     |     |     |     |     |     |     |     |
-| ------- | ---------------- | -------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-the Global South communities
-range  of  cultural  events  and  ` World Day of Remembrance  Festivals
-and cultures bring to our city.
-| holidays,  | as  well  | as  under- | for Road Traffic Victims |     |     |     |     |     |     |     |     |
-| ---------- | --------- | ---------- | ------------------------ | --- | --- | --- | --- | --- | --- | --- | --- |
-` Strengthen support for
-recognised  commemorative  ` World Refugee Day London is host to a wide range of
-citizenship ceremonies and
-days  each  year  in  City  Hall,  celebrations  and  festivals  that
-do more to celebrate these
-including: We will also support the rights  reflect the diversity of our city and
-occasions with all Londoners.
-` Black History Month and  identities  of  marginalised  the creativity of our people. They
-` Publish ethical sponsorship
-|     |     |     | groups year-round, not just on  |     |     | contribute  | to  our  economy  | and  |     |     |     |
-| --- | --- | --- | ------------------------------- | --- | --- | ----------- | ----------------- | ---- | --- | --- | --- |
-` Black Pride
-guidelines and require
-|     |     |     | specific  days  | or  months,  | and  | strengthen the social and cultural  |     |     |     |     |     |
-| --- | --- | --- | --------------- | ------------ | ---- | ----------------------------------- | --- | --- | --- | --- | --- |
-celebration and festival
-` Gypsy, Roma and  we  will  look  into  providing  a  bonds within our communities.
-| Traveller Month |     |     |                                 |     |     |           |              |          | organisers adhere to them. |     |     |
-| --------------- | --- | --- | ------------------------------- | --- | --- | --------- | ------------ | -------- | -------------------------- | --- | --- |
-|                 |     |     | Culture Growth Fund to sustain  |     |     | A  Green  | Mayor  will  | promote  |                            |     |     |
-` Replace all of the GLA’s
-` International Older  London’s emerging heritage and  and  support  celebrations  and
-annual firework displays with
-People’s Day  histories. We will work with local  festivals  that  allow  Londoners
-cleaner drone and laser light
-` International Women’s Day  communities, councils and arts  and  visitors  alike  to  enjoy  taking
-displays by 2028, and we will
-|                         |     |     | funders to help people choose  |     |     | part  in      | events  that  are  | colourful    |                               |     |     |
-| ----------------------- | --- | --- | ------------------------------ | --- | --- | ------------- | ------------------ | ------------ | ----------------------------- | --- | --- |
-| ` Notting Hill Carnival |     |     |                                |     |     |               |                    |              | encourage all public display  |     |     |
-|                         |     |     | what they celebrate locally.   |     |     | and  dynamic  | whilst             | also  being  |                               |     |     |
-organisers to do the same.
-safe and accessible to all. We will
-| 126 |     | LONDON GREEN PARTY 2024 |     |     |     |     |     | LONDON GREEN PARTY 2024 |     |     | 127 |
-| --- | --- | ----------------------- | --- | --- | --- | --- | --- | ----------------------- | --- | --- | --- |
+Greens will champion the rights of all groups in society, including Gypsy, Roma and Traveller communities
 
-` Use GLA funding as leverage
-to make London Fashion Week
-completely fur free and more
-sustainable, and work to end
-London’s horrific fur trade, by
-asking all councils to follow
-Islington’s lead and declare
-an official ban on fur trade.
-Healthy Culture
-and Sport
-Nightlife
-London’s nightlife has long been
-an integral part of our culture. The
-pandemic and the cost of living
-crisis forced many of our night-
-time venues to shut. Creating a
-` We will strengthen and ` We will encourage boroughs best practice examples from
-healthy nightlife culture means
-protect the important role across London to use the Late boroughs preventing harm.
-supporting venues to provide
-of Night Czar, to oversee Night Levy to provide medical
-safe, sustainable and enjoyable Families
-the safety and accessibility support in the night time
-spaces for Londoners and visitors,
-of London’s night time economy as a first response
-as well as safe transportation Children deserve culture as much
-entertainment for everyone. to health needs, modelled on
-and proportionate, appropriate as everyone else, to help them play,
-Hackney’s pioneering scheme.
-` City Hall will provide
-policing. socialise and develop in healthy
-dedicated support to help ` We will work with Transport
-Many Londoners work at night ways. Making events accessible
-venue operators with for London to ensure safe,
-outside of the hospitality and to families means focusing on the
-licensing, accessibility accessible public transport
-entertainment industries. For things that parents need to get out
-and planning issues. is available to and from
-example, people working in public and about comfortably, like easy
-nighttime venues and events.
-` The Night Czar will host regular
-transport, for the NHS, in security travel, affordable food and baby
-roundtable meetings with ` The Night Czar will work with
-or cleaning jobs need a safe night- changing facilities. Older children,
-venue operators to share providers, local authorities,
-time economy where affordable too, deserve the chance to start
-sustainable models and best organisations, the police and
-food is available along with safe making their own choices about
-practices on nightlife safety other partners to significantly
-and convenient options for travel the kinds of culture they want to
-and inclusion across the city. improve the safety of the night-
-home at the end of a shift. participate in.
-time economy learning from
-128 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 129
-ERUTLUC
+*   ▶ A Green Mayor will support the expansion of independent renters’ unions with grants for London-wide and local groups supporting private renters’ rights.
+*   ▶ We will make the guidance for new estate proposals more democratic, with fewer exception rules, better appraisals of available options and strong requirements for resident-led planning from the start of every proposal.
+*   ▶ We will review all existing ballot exemptions in estate developments and amend the London Plan to extend requirements to include a final say from residents as part of the decision-making process for planning policies.
+*   ▶ We will appoint a Social Housing Commissioner, who is also a tenant, to support tenants’ rights and be an advocate.
+*   ▶ We will set up a People’s Land Commission to identify brownfield sites and other land suitable for community-led developments, such as playgrounds, open green space and community gardens.
+*   ▶ We will allocate more City Hall funding to back new co-operatives and community-led housing projects.
+*   ▶ A Green Mayor will give councils and community land trusts the first option on GLA land earmarked for new homes.
+*   ▶ We will help residents produce credible People’s Plans for their estates and towns with a funded expert team in City Hall to help.
 
-` We will work to promote a proficiency badge, prioritising
-better standard of comfort
-London’s deprived areas.
-and accessibility at venues
-` We will help schools to manage
-offering family entertainment.
-their sports infrastructure and
-` We will look to introduce equipment, improving access
-Cultural Vouchers for families to facilities and skilled coaches.
-and teenagers aged 14-18
-` We will create high-quality
-to spend on admission and
-apprenticeship schemes to
-refreshments at venues.
-grow the number of coaches
-` Our Culture Forum will support available to schools.
-local libraries to set up regular,
-` We will provide a bursary
-long-running events for families
-budget for councils to
-and teenagers, in collaboration
-train local sports and
-with local community groups
-recreation instructors.
-and creative facilitators.
-` We will implement a London-
-Active Lives
-wide recognition scheme Greens will improve access to sport for all,
-for children’s participation, particularly children’s sport provision
-Being active is so important for
-not competition, in sports,
-health, allowing people of all ages modelled on Wales’ Youth
-to socialise and play. Greens will Academy schemes. ` We will push local councils to a positive climate of culture,
-ensure all Londoners can access ensure there are sufficient health and creativity across our
-` We will review the management
-safe and well-managed sports and sports and recreational city. We will reserve space for
-of sports and recreation
-facilities to meet community
-play areas, where they can take arts organisations to promote
-venues, and green and public
-needs (including disabled
-part in the activities they want to. creative work, and for charities
-spaces to ensure that they
-children and children from
-To do this, we will protect are delivering safe access for to raise awareness of campaigns
-Gypsy, Roma and Traveller
-London’s green spaces and open women and girls to be active. to encourage better health and
-communities), and encourage
-up new opportunities and spaces wellbeing, promote awareness
-` We will require new major and support local communities
-for local groups, indoors and of how to tackle hate crime and
-residential and commercial to make use of dead spaces.
-outside. celebrate London’s diverse cultural
-projects to have physical
-One of London’s major heritage.
-activity, mental health
-challenges is how easy it is for and wellbeing written into Promoting Positivity ` One in twenty advertisement
-primary school children to learn to their planning conditions, spaces, in both physical and
-swim. We will campaign to ensure such as through play Advertising digital media, will be reserved
-swimming pools stay open and areas for children or open, for creative work produced by
-that there are enough swimming biodiverse green spaces or We will use advertising on Londoners, with no commercial
-instructors available to give every allotments for residents. Transport for London and across value, extending the principle
-behind the Poems on the
-child a chance to attain their 25m all GLA holdings to promote
-130 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 131
-ERUTLUC
+## FAITH AND DIVERSE COMMUNITIES
+A Green Mayor and Green Assembly Members will promote understanding between people of different faiths and none by supporting inter-faith forums and encouraging open collaboration between faith groups, the police, schools, voluntary groups and community organisations.
+We will champion the rights of Gypsy, Roma and Traveller communities. Whilst we recognise similarities in experiences within Gypsy, Roma and Traveller communities, there are important cultural distinctions and differences in terms of lived experiences. We will also champion our Windrush elders, fight government policies causing them hardship and push for justice for them.
+* We will ensure grants to voluntary, civic, youth, community and faith organisations last at least five years and cover full, core costs (including premises) and match inflation. We will use grants where possible as the preferred funding method over any other approach. We will embed good practice, value-for-money and social impact assessments into all our work with such organisations.
+* We will expand the categories of ethnicity data used for monitoring and policy development to ensure all communities are properly recognised, for example, the Latin American community, and Gypsy, Roma and Traveller communities, which will be treated as separate groups for the purposes of data collection.
+* We will improve the lives of Gypsies, Roma and Travellers in London and promote their right to equal treatment.
+* We will work to address the workplace discrimination that Gypsy, Roma and Traveller people face from many employers and apprenticeship providers, and ensure police and the Mayor’s Office for Policing and Crime (MOPAC) record and act upon data on hate crime faced by each of these communities.
+* We will include Gypsy, Roma and Traveller health and mental health in the Mayor’s Health Inequality Strategy.
 
-Underground and Art on the transport and host gatherings
-Underground series into more for the initiative in City Hall
-areas of the arts, including to celebrate every season.
-music, visual arts, digital
-` Westminster Station, where
-creativity and theatre.
-high profile lobbying campaigns
-` We will create a tiered aimed at MPs frequently
-charging policy for advertising, takeover large areas of space
-beginning with low cost to including ticket barriers and
-public bodies, charitable escalators, will no longer be
-organisations and local available for this purpose.
-small businesses.
-` We will help small arts National Asks
-organisations and existing
-and emerging artists to
-` We will lobby for an increase in
-benefit fully from our new
-arts funding to support workers
-tiered cost system for Greens will ensure advertising is used to
-and individual artists as well
-advertising on London’s promote health, wellbeing and creativity, and
-as organisations, including
-transport network, addressing not products that damage our environment
-extra funds for Creative
-any further barriers to
-Autonomy Allowance pilots.
-promotion for smaller creative
-businesses that emerge. ` We will call on Government achieves their 25m swimming
-to put expressive arts and badge as part of their statutory
-` We will ban advertising on
-physical education on the educational entitlement.
-Transport for London that
-national curriculum, so every ` Greens will campaign for the
-promotes environmentally
-schoolchild can participate
-Government to expand our
-harmful, high carbon products
-in at least an hour each
-Creative Autonomy Allowance
-such as air travel and private
-per school day of creative
-pilot with additional funding
-cars, wood and coal burning,
-and physical activities.
-so that more Londoners can
-cryptocurrency, unhealthy
-and ultra-processed food, ` We will lobby for national benefit from support while we
-arms companies, alcohol and reforms of the gambling prove the benefits and push
-gambling, replacing these industry, banning advertising for national policy change.
-with positive promotions. We and sponsorship nationally ` We will lobby for a 5% VAT
-will also restrict advertising and calling for a statutory rate on all admissions sales
-aimed at children. levy to fund more charities to live cultural events.
-and NHS gambling clinics
-` A Green Mayor will boost
-across England and Wales.
-support for National Park City
-work, increase its promotion ` We will campaign to ensure
-through advertising on public every London school child
-132 LONDON GREEN PARTY 2024 LONDON GREEN PARTY 2024 133
-ERUTLUC
+## SUPPORTING YOUNG PEOPLE
+Greens will further embed the voices of young people in City Hall policy-making, with the power to propose budget amendments and influence decisions.
+* We will expand London’s Youth Assembly through established local borough democratic processes, allowing six additional nominations. By raising the age limit for these members to 25 we will include students at London colleges and universities and young people with Special Educational Needs and Disabilities.
+* We will establish a Deputy Mayor for Young People to convene a forum with the London Youth Assembly, youth organisations and related community networks to develop a fair and effective strategy for statutory and voluntary youth service provision across all of London that can address intersectional inequalities, mental health support and equal access.
+* We will ensure young carers and young people in care are represented on the Youth Assembly.
+* We will empower the Youth Assembly to hold the Mayor to account through a minimum of six Youth Assembly Mayor’s Question Time sessions every year.
+* As with all our citizen participants, we will pay Youth Assembly Members a London Living Wage for their time to acknowledge the importance of their contributions.
 
-Join our campaign:
-To get involved in our campaign to
-transform London contact:
-office.zoegarbett@greenparty.org.uk
+## SUPPORTING OLDER PEOPLE
+We will properly value the experience and knowledge of older generations in London life.
+* A Green Mayor will appoint an Elders’ Champion to monitor the effects of City Hall’s policies on older people.
+* We will work with older citizens to develop a strategy for improving flexible, secure and part-time working opportunities for people returning to work or going into sudden retirement, as outlined in the Economy chapter.
+* As local authorities move more of their services online, we will improve training and access to digital services for older people including through home broadband and mobile devices and work with London Internet Service Providers to promote social tariffs. And we will never exclude people by moving services completely online.
+
+## SUPPORTING DEAF AND DISABLED PEOPLE
+The Green Party recognises the social model of disability and a Green Mayor will ensure that everyone can benefit from
+
+Zoë will make London as an inclusive a city as possible, including supporting the rights of trans people and ensuring LGBTIQA+ voices are heard
+
+inclusion, jobs, homes, skills and all the other opportunities.
+*   We will appoint a Disability Equality Champion and create a new forum for London Deaf and Disabled People’s Organisations to feed into policy development and decision making year round and not just through quarterly consultation.
+*   We will convene more regular meetings of this forum and make sure City Hall provides the capacity to follow up on initiatives arising from these meetings.
+*   We will invest long-term in community-based organisations that tackle inequality, poverty and discrimination faced by deaf and disabled people.
+
+## SUPPORTING MIGRANTS
+
+Greens believe in freedom of movement. London has been enriched by people who have come to make a life here. Current policies are forcing new arrivals to our city into intolerable hardships. We will fight locally and nationally for better conditions for migrants and asylum seekers and we will work with public services and civil society in London to build an environment where everyone wishing to make London their home feels welcome.
+*   We will work to regularise and confirm the residency status of all young people in London currently without documentation and, where necessary, help families with the cost of applications.
+*   We will set up a service to help migrants with refugee status move into secure housing in London.
+*   To help recent migrants to participate fully in London life, we will work with voluntary groups to draw up a plan that enables naturalisation for more Londoners who do not yet have UK citizenship.
+*   To promote engagement with recent migrants, we will improve access to training in English for Speakers of Other Languages across London with support for concessionary fees for asylum seekers and refugees.
+*   We will block immigration enforcement agencies and related services, such as homelessness services and the police, from sharing information about immigrants’ status.
+
+## SUPPORTING LGBTIQA+ COMMUNITIES
+
+Greens in City Hall will implement policies to make London as inclusive a city as possible for the whole LGBTIQA+ community. We recognise that transgender people have experienced a disproportionate level of hate crime and exclusion. We will make London one of the most trans-inclusive cities in the world, along with the work of the Green Party in Bristol, Brighton and across England and Wales.
+*   We will do everything we can to allow LGBTIQA+ voices to be heard in changing policy to make their lives better.
+*   We will tackle discrimination and violence against trans people through a new Commission into the Needs of Trans Londoners, which will develop a trans rights strategy for London in consultation with trans people.
+*   We will implement training across the GLA to increase sensitivity to the needs of trans and non-binary people and ensure discrimination is rooted out.
+
+Greens will involve Londoners in the decisions needed to tackle the climate crisis
+
+## TACKLING THE CLIMATE CRISIS TOGETHER
+The Green Party is the only major political party fully committed to tackling the climate crisis. We will empower Londoners to have a say in how we change our dependency on fossil fuels without compromising social justice.
+*   We will set up an independent and diverse Citizens' Climate Assembly to address the climate and ecological emergency with the resources to educate Londoners about the climate emergency and build links with communities taking action across London.
+*   We will partner with Trade Unions to create a Just Transition Commission, which will steer our climate mitigation and adaptation policies in a fair way for workers, their families and their communities.
+*   A Green Mayor will prioritise biodiversity taking advice from a biodiversity officer when making decisions on all policies and development plans affecting housing, infrastructure, transport, parks and green spaces.
+*   A Green Mayor will develop the current Climate Budget process to ensure a pipeline of proposals for scope 1, scope 2 and scope 3 emissions ready for implementation as funds become available with a clear timeline to meet 2030 commitments.
+
+## NATIONAL ASKS
+*   To support devolution of power including for health and transport. We will campaign for tax-raising powers for London so we are no longer dependent on National Funding Settlements.
+*   A Green Mayor will stand up for fair, inclusive proportional representation in all UK elections and for the right to vote from the age of 16 in all elections.
+*   A Green Mayor will lobby national government to create residence-based voting rights for London elections, General Elections and referendums.
+
+### DEMOCRACY
+*   A Green Mayor will challenge deportation flights and the detention of asylum seekers, and push to allow councils and the GLA to claim housing support for people with No Recourse to Public Funds.
+*   We will campaign for reforms to protect immigrants, including restoring the amnesty for undocumented migrants in London, lobbying for more ethical data management, pushing for better, faster citizenship routes for young Londoners with insecure status, extending the 7 day accommodation limit and ID-free access to healthcare for undocumented migrants.
+*   We will work with businesses to oppose the national government’s points-based immigration system and excessively-high earnings threshold for skilled workers, while fighting for freedom of movement in the EU, as well as equal rights for London’s EU residents in all areas of society.
+*   We will oppose national government plans to increase enforcement powers and criminalise trespass, and support a London-wide standard for site management and tenants’ rights.
+
+## CULTURE AND SPORT
+
+London is a city that lets people be who they want to be. After generations of welcoming African, Caribbean, Asian, Latino, Roma and people from the Global South, this city has become host to thriving cultural quarters, street markets, foods, festivals and traditions. We welcome LGBTIQA+ communities and people of different cultures, faiths and beliefs.
+
+London is also one of the world’s top tourist destinations. Visitors spent more than 100 million nights in the city in 2022. We host some of the biggest international sporting events, music, fashion and film festivals. We also have incredible local events, from music nights to artists’ open studios, comedy and spoken word events and a huge range of sports clubs.
+
+Yet most of the money from tourism does not reach local communities. Cuts to national funding have led to council culture budgets being slashed. Many grassroots venues are hanging from a thread. As with so many of the inequalities in London, people in the most deprived postcodes have less access to opportunities for entertainment and exercise.
+
+Even free culture, like central London’s museums and galleries, has an access cost. People in the outer boroughs have to travel longer to get to central London and spend more on travel and food meaning people miss out.
+
+Too much of London’s public space is not truly public. We need to rethink our public freedoms and use our cultural energy to reclaim spaces for public good.
+
+Zoë will put culture on everyone’s doorsteps, improving access and supporting grassroots venues.
+
+We will help young people set up new, creative businesses. We will open our public spaces for people to exercise, play and perform. We will help local groups take control of forgotten fields and buildings and transform them into new venues and grounds for gathering, rehearsing and practising.
+
+A Green Mayor will work at every level we can to make it easier for Londoners to access the creative and physical activities they want.
+
+## WHAT GREEN AMS HAVE ACHIEVED
+* Greens in City Hall have supported the protection of our grassroots music venues by working to change planning rules in the current London Plan to ensure that existing venues are not threatened by noise complaints from new developments.
+* Greens have campaigned in local boroughs to protect historically important venues. Zack Polanski is a founding director of the successful Save the Black Cap campaign in Camden.
+* Greens successfully called on the current Mayor to intervene to protect the Curzon Cinema in Mayfair.
+* Alongside Fossil Free London, Zack Polanski has worked to keep greenwashing corporate sponsorship out of our community events like London Pride.
+* Caroline Russell asked the Night Czar to assess the number of night time workers paid the Living Wage which exposed that people working at night are less likely to be paid Living Wage than day time workers.
+* Siân Berry worked with campaigners to secure an AIDS memorial in London.
+* Green AMs attend Notting Hill Carnival to observe the Policing operation asking Mayor’s Questions on use of policing tactics such as stop and search or deployment of knife arches at the event to understand who is stopped, any criminal justice outcomes and any disproportionality in policing of the event.
+* Siân Berry improved protection for sports facilities in the last London Plan – so they cannot be lost if there is an assessed local need for them.
+* Zack has proposed with cross party backing that a London playwright is commissioned annually to be an artist in residence and create art centred on London performed in London’s Living Room (at City Hall).
+
+Green Assembly Members and councillors have campaigned to save sports facilities
+
+## SUPPORTING GRASSROOTS CULTURE
+We will help grassroots venues to thrive, by helping them to connect their work with local communities and funding. Organisations like The Bridge Network provided excellent support to connect grassroots venues with local community groups, schools, funders and freelancers, but cuts to national funding have broken these bridges. Greens will fight to restore links between grassroots venues and their communities so they remain vital parts of their local areas.
+Our policies will share profits concentrated in major venues and tours. We will make it easier for London’s arts venues to make their programmes equally accessible to everyone, regardless of background or spending power.
+* We will ask hotels and bed and breakfasts to opt in to a modest nightly levy of 50p, with the potential of raising £50 million annually. This funding would be dedicated to supporting initiatives throughout our manifesto, aiming to enrich and equalise access to arts, sports, and culture, beginning
+
+Zoë will work with small venue owners, helping them to thrive
+
+with areas with the least access to local activities.
+- We will commit to and implement the Creative Workforce Pledge to foster a diverse and thriving creative community across London.
+- We will introduce a Creative Autonomy Allowance to encourage more young people to start arts-related businesses and pursue careers in the arts.
+- We will convene a Culture Forum of grassroots venue managers, local community representatives, freelancers and creative educators to share practices and connect with a network of educational organisations, funding, and employment standards across other areas of the GLA.
+
+CULTURE
+
+## LEVELLING THE VENUES LANDSCAPE
+
+Grassroots venues are the lifeblood of our culture, launching new artists and bringing affordable events to people’s doorsteps. We want to celebrate the value London’s independently-run spaces bring to London’s diverse communities, both in providing work and serving up entertainment.
+Greens will help venues become more sustainable by offering dedicated support for venue managers to get advice on not-for-profit business models, licensing and planning support. Rising rents are forcing many tenancy-based venues to close, so will also help venue managers find permanent venues.
+We will continue to support the London-wide designation of our emerging heritage through the London Plan. We will also support London’s boroughs in applying other planning protections to prevent the closure of culturally significant venues.
+- We will convene regular roundtable meetings for venue managers to share best practice and raise concerns.
+- We will help communities and local authorities designate LGBTIQA+ venues and places of cultural importance as assets of community value.
+- We will create a London-wide registry of all venues designated assets of community value and review how well planning rules are working for these sites.
+- Overseen by the Spaces Czar, our register of ‘meanwhile use’ spaces (including empty commercial properties) will make it easier for communities and organisations to find temporary venues for their arts, sporting and cultural events, such as meeting points for clubs and band rehearsals, while we support groups in finding permanent, secure venues.
+- A Green Mayor will require all new developments to include arts, sports or cultural venues in their plans, and that developers work with communities to determine what is needed in each area.
+- We will work with local authorities to explore ways of implementing measures to reform ticketing as part of licensing for major stadium events, to ensure profits from major touring events are shared with grassroots
+
+Greens support all London’s communities
+
+## RECOGNISING LONDON’S COMMUNITIES
+
+Greens will celebrate a wide range of cultural events and holidays, as well as under-recognised commemorative days each year in City Hall, including:
+*   Black History Month
+*   Black Pride
+*   Gypsy, Roma and Traveller Month
+*   International Older People’s Day
+*   International Women’s Day
+*   Notting Hill Carnival
+*   Pride
+*   Salamat Festival
+*   Shubbak Festival
+*   Ukraine Independence Day
+*   Windrush Day
+*   World AIDS Day
+*   World Day of Remembrance for Road Traffic Victims
+*   World Refugee Day
+
+We will also support the rights and identities of marginalised groups year-round, not just on specific days or months, and we will look into providing a Culture Growth Fund to sustain London’s emerging heritage and histories. We will work with local communities, councils and arts funders to help people choose what they celebrate locally.
+
+culture and local communities. These measures will include:
+*   a levy on ticket prices to be redistributed to grassroots community ventures, projects, artists and venues.
+*   a minimum proportion of sales to be held for free distribution via lottery to residents in the venue’s local borough.
+*   a minimum proportion of concessionary tickets available per event at a minimum concessionary rates, set in discussion with grassroots music venues, organisations and communities near to stadiums.
+
+also support all our community groups to celebrate champions and commemorate losses and historical injustices. We will:
+*   Let communities lead on erecting statues and renaming streets and areas that celebrate people and events that represent their cultures and histories, with priority given to representing women and figures from London’s African, Caribbean, Asian, Latino, Roma communities and people from the Global South.
+*   Promote a positive narrative about the experience, history, cultural celebrations, diversity and value that people of African, Caribbean, Asian, Latino, Roma and people from the Global South communities and cultures bring to our city.
+*   Strengthen support for citizenship ceremonies and do more to celebrate these occasions with all Londoners.
+*   Publish ethical sponsorship guidelines and require celebration and festival organisers adhere to them.
+*   Replace all of the GLA’s annual firework displays with cleaner drone and laser light displays by 2028, and we will encourage all public display organisers to do the same.
+
+## CELEBRATIONS AND FESTIVALS
+
+London is host to a wide range of celebrations and festivals that reflect the diversity of our city and the creativity of our people. They contribute to our economy and strengthen the social and cultural bonds within our communities.
+
+A Green Mayor will promote and support celebrations and festivals that allow Londoners and visitors alike to enjoy taking part in events that are colourful and dynamic whilst also being safe and accessible to all. We will
+
+* Use GLA funding as leverage to make London Fashion Week completely fur free and more sustainable, and work to end London’s horrific fur trade, by asking all councils to follow Islington’s lead and declare an official ban on fur trade.
+
+## HEALTHY CULTURE AND SPORT
+
+### NIGHTLIFE
+London’s nightlife has long been an integral part of our culture. The pandemic and the cost of living crisis forced many of our nighttime venues to shut. Creating a healthy nightlife culture means supporting venues to provide safe, sustainable and enjoyable spaces for Londoners and visitors, as well as safe transportation and proportionate, appropriate policing.
+Many Londoners work at night outside of the hospitality and entertainment industries. For example, people working in public transport, for the NHS, in security or cleaning jobs need a safe nighttime economy where affordable food is available along with safe and convenient options for travel home at the end of a shift.
+
+* We will strengthen and protect the important role of Night Czar, to oversee the safety and accessibility of London’s night time entertainment for everyone.
+* City Hall will provide dedicated support to help venue operators with licensing, accessibility and planning issues.
+* The Night Czar will host regular roundtable meetings with venue operators to share sustainable models and best practices on nightlife safety and inclusion across the city.
+* We will encourage boroughs across London to use the Late Night Levy to provide medical support in the night time economy as a first response to health needs, modelled on Hackney’s pioneering scheme.
+* We will work with Transport for London to ensure safe, accessible public transport is available to and from nighttime venues and events.
+* The Night Czar will work with providers, local authorities, organisations, the police and other partners to significantly improve the safety of the nighttime economy learning from best practice examples from boroughs preventing harm.
+
+## FAMILIES
+Children deserve culture as much as everyone else, to help them play, socialise and develop in healthy ways. Making events accessible to families means focusing on the things that parents need to get out and about comfortably, like easy travel, affordable food and baby changing facilities. Older children, too, deserve the chance to start making their own choices about the kinds of culture they want to participate in.
+
+- We will work to promote a better standard of comfort and accessibility at venues offering family entertainment.
+- We will look to introduce Cultural Vouchers for families and teenagers aged 14-18 to spend on admission and refreshments at venues.
+- Our Culture Forum will support local libraries to set up regular, long-running events for families and teenagers, in collaboration with local community groups and creative facilitators.
+
+proficiency badge, prioritising London’s deprived areas.
+- We will help schools to manage their sports infrastructure and equipment, improving access to facilities and skilled coaches.
+- We will create high-quality apprenticeship schemes to grow the number of coaches available to schools.
+- We will provide a bursary budget for councils to train local sports and recreation instructors.
+- We will implement a London-wide recognition scheme for children’s participation, not competition, in sports, modelled on Wales’ Youth Academy schemes.
+- We will review the management of sports and recreation venues, and green and public spaces to ensure that they are delivering safe access for women and girls to be active.
+- We will require new major residential and commercial projects to have physical activity, mental health and wellbeing written into their planning conditions, such as through play areas for children or open, biodiverse green spaces or allotments for residents.
+
+## Active Lives
+Being active is so important for health, allowing people of all ages to socialise and play. Greens will ensure all Londoners can access safe and well-managed sports and play areas, where they can take part in the activities they want to.
+To do this, we will protect London’s green spaces and open up new opportunities and spaces for local groups, indoors and outside.
+One of London’s major challenges is how easy it is for primary school children to learn to swim. We will campaign to ensure swimming pools stay open and that there are enough swimming instructors available to give every child a chance to attain their 25m
+
+Greens will improve access to sport for all, particularly children’s sport provision.
+- We will push local councils to ensure there are sufficient sports and recreational facilities to meet community needs (including disabled children and children from Gypsy, Roma and Traveller communities), and encourage and support local communities to make use of dead spaces.
+
+a positive climate of culture, health and creativity across our city. We will reserve space for arts organisations to promote creative work, and for charities to raise awareness of campaigns to encourage better health and wellbeing, promote awareness of how to tackle hate crime and celebrate London’s diverse cultural heritage.
+
+## Promoting Positivity
+### Advertising
+We will use advertising on Transport for London and across all GLA holdings to promote
+- One in twenty advertisement spaces, in both physical and digital media, will be reserved for creative work produced by Londoners, with no commercial value, extending the principle behind the Poems on the
+
+Underground and Art on the Underground series into more areas of the arts, including music, visual arts, digital creativity and theatre.
+*   We will create a tiered charging policy for advertising, beginning with low cost to public bodies, charitable organisations and local small businesses.
+*   We will help small arts organisations and existing and emerging artists to benefit fully from our new tiered cost system for advertising on London’s transport network, addressing any further barriers to promotion for smaller creative businesses that emerge.
+*   We will ban advertising on Transport for London that promotes environmentally harmful, high carbon products such as air travel and private cars, wood and coal burning, cryptocurrency, unhealthy and ultra-processed food, arms companies, alcohol and gambling, replacing these with positive promotions. We will also restrict advertising aimed at children.
+*   A Green Mayor will boost support for National Park City work, increase its promotion through advertising on public
+
+transport and host gatherings for the initiative in City Hall to celebrate every season.
+*   Westminster Station, where high profile lobbying campaigns aimed at MPs frequently takeover large areas of space including ticket barriers and escalators, will no longer be available for this purpose.
+
+Greens will ensure advertising is used to promote health, wellbeing and creativity, and not products that damage our environment
+
+## NATIONAL ASKS
+*   We will lobby for an increase in arts funding to support workers and individual artists as well as organisations, including extra funds for Creative Autonomy Allowance pilots.
+*   We will call on Government to put expressive arts and physical education on the national curriculum, so every schoolchild can participate in at least an hour each per school day of creative and physical activities.
+*   We will lobby for national reforms of the gambling industry, banning advertising and sponsorship nationally and calling for a statutory levy to fund more charities and NHS gambling clinics across England and Wales.
+*   We will campaign to ensure every London school child achieves their 25m swimming badge as part of their statutory educational entitlement.
+*   Greens will campaign for the Government to expand our Creative Autonomy Allowance pilot with additional funding so that more Londoners can benefit from support while we prove the benefits and push for national policy change.
+*   We will lobby for a 5% VAT rate on all admissions sales to live cultural events.
+
+## JOIN OUR CAMPAIGN:
+TO GET INVOLVED IN OUR CAMPAIGN TO
+TRANSFORM LONDON CONTACT:
+OFFICE.ZOEGARBETT@GREENPARTY.ORG.UK
+WWW.ZOEGARBETT.LONDON
+
 Published and promoted by Danny Keeling on behalf of Zoë Garbett, Siân Berry, Caroline Russell,
 Zack Polanski and London Green Party all c/o PO Box 78066, London SE16 9GQ.
-134

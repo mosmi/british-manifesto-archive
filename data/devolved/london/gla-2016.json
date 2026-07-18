@@ -19,11 +19,83 @@
   "mayor": {
     "system": "Supplementary Vote",
     "candidates": [
-      { "name": "Sadiq Khan", "party": "labour", "firstVotes": 1148716, "firstPct": 44.2, "finalVotes": 1310143, "finalPct": 56.8, "elected": true },
-      { "name": "Zac Goldsmith", "party": "conservative", "firstVotes": 909755, "firstPct": 35.0, "finalVotes": 994614, "finalPct": 43.2 },
-      { "name": "Siân Berry", "party": "green", "firstVotes": 150673, "firstPct": 5.8 },
-      { "name": "Caroline Pidgeon", "party": "libdem", "firstVotes": 120005, "firstPct": 4.6 },
-      { "name": "Other candidates (8)", "firstVotes": 267812, "firstPct": 10.3 }
+      {
+        "name": "Sadiq Khan",
+        "party": "labour",
+        "firstVotes": 1148716,
+        "firstPct": 44.2,
+        "finalVotes": 1310143,
+        "finalPct": 56.8,
+        "elected": true
+      },
+      {
+        "name": "Zac Goldsmith",
+        "party": "conservative",
+        "firstVotes": 909755,
+        "firstPct": 35.0,
+        "finalVotes": 994614,
+        "finalPct": 43.2
+      },
+      {
+        "name": "Si\u00e2n Berry",
+        "party": "green",
+        "firstVotes": 150673,
+        "firstPct": 5.8
+      },
+      {
+        "name": "Caroline Pidgeon",
+        "party": "libdem",
+        "firstVotes": 120005,
+        "firstPct": 4.6
+      },
+      {
+        "name": "Peter Whittle",
+        "party": "ukip",
+        "firstVotes": 94373,
+        "firstPct": 3.6
+      },
+      {
+        "name": "Sophie Walker",
+        "party": "wep",
+        "firstVotes": 53055,
+        "firstPct": 2.0
+      },
+      {
+        "name": "George Galloway",
+        "party": "respect",
+        "firstVotes": 37007,
+        "firstPct": 1.4
+      },
+      {
+        "name": "Paul Golding",
+        "partyLabel": "Britain First",
+        "firstVotes": 31372,
+        "firstPct": 1.2
+      },
+      {
+      "name": "Lee Harris",
+      "party": "cista",
+      "firstVotes": 20537,
+      "firstPct": 0.8
+    },
+      {
+        "name": "David Furness",
+        "party": "bnp",
+        "firstVotes": 13325,
+        "firstPct": 0.5
+      },
+      {
+        "name": "Prince Zylinski",
+        "party": "independent",
+        "firstVotes": 13202,
+        "firstPct": 0.5
+      },
+      {
+        "name": "Ankit Love",
+        "partyLabel": "One Love Party",
+        "firstVotes": 4941,
+        "firstPct": 0.2
+      }
     ]
   },
   "assembly": {
@@ -32,16 +104,67 @@
     "listSeats": 11,
     "system": "Additional Member System",
     "results": [
-      { "party": "labour", "constituencySeats": 9, "listSeats": 3, "seats": 12, "constituencyVotes": 1138576, "constituencyPct": 43.5, "listVotes": 1054801, "listPct": 40.3 },
-      { "party": "conservative", "constituencySeats": 5, "listSeats": 3, "seats": 8, "constituencyVotes": 812415, "constituencyPct": 31.1, "listVotes": 764230, "listPct": 29.2 },
-      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 207959, "listPct": 8.0 },
-      { "party": "ukip", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 171069, "listPct": 6.5 },
-      { "party": "libdem", "constituencySeats": 0, "listSeats": 1, "seats": 1, "listVotes": 165580, "listPct": 6.3 }
+      {
+        "party": "labour",
+        "constituencySeats": 9,
+        "listSeats": 3,
+        "seats": 12,
+        "constituencyVotes": 1138576,
+        "constituencyPct": 43.5,
+        "listVotes": 1054801,
+        "listPct": 40.3
+      },
+      {
+        "party": "conservative",
+        "constituencySeats": 5,
+        "listSeats": 3,
+        "seats": 8,
+        "constituencyVotes": 812415,
+        "constituencyPct": 31.1,
+        "listVotes": 764230,
+        "listPct": 29.2
+      },
+      {
+        "party": "green",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 207959,
+        "listPct": 8.0
+      },
+      {
+        "party": "ukip",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 171069,
+        "listPct": 6.5
+      },
+      {
+        "party": "libdem",
+        "constituencySeats": 0,
+        "listSeats": 1,
+        "seats": 1,
+        "listVotes": 165580,
+        "listPct": 6.3
+      }
     ],
     "otherListVotes": [
-      { "name": "Women's Equality Party", "votes": 91772, "pct": 3.5 },
-      { "name": "Christian Peoples Alliance", "votes": 27172, "pct": 1.0 },
-      { "name": "Animal Welfare Party", "votes": 25810, "pct": 1.0 }
+      {
+        "name": "Women's Equality Party",
+        "votes": 91772,
+        "pct": 3.5
+      },
+      {
+        "name": "Christian Peoples Alliance",
+        "votes": 27172,
+        "pct": 1.0
+      },
+      {
+        "name": "Animal Welfare Party",
+        "votes": 25810,
+        "pct": 1.0
+      }
     ]
   },
   "booklet": {
@@ -50,18 +173,69 @@
     "cover": "/manifestos/london/gla-2016/booklet/cover.png"
   },
   "manifestos": [
-    { "party": "labour", "candidate": "Sadiq Khan", "pdf": "/manifestos/london/gla-2016/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2016/labour/cover.png" },
-    { "party": "conservative", "candidate": "Zac Goldsmith", "pdf": "/manifestos/london/gla-2016/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2016/conservative/cover.png" },
-    { "party": "libdem", "candidate": "Caroline Pidgeon", "pdf": "/manifestos/london/gla-2016/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2016/libdem/cover.png" },
-    { "party": "green", "candidate": "Siân Berry", "pdf": "/manifestos/london/gla-2016/green/manifesto.pdf", "cover": "/manifestos/london/gla-2016/green/cover.png" },
-    { "party": "ukip", "candidate": "Peter Whittle", "pdf": "/manifestos/london/gla-2016/ukip/manifesto.pdf", "cover": "/manifestos/london/gla-2016/ukip/cover.png" },
-    { "party": "respect", "candidate": "George Galloway", "pdf": "/manifestos/london/gla-2016/respect/manifesto.pdf", "cover": "/manifestos/london/gla-2016/respect/cover.png" },
-    { "partyLabel": "Women's Equality Party", "candidate": "Sophie Walker", "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf", "cover": "/manifestos/london/gla-2016/wep/cover.png" },
-    { "party": "bnp", "candidate": "David Furness", "pdf": "/manifestos/london/gla-2016/bnp/manifesto.pdf", "cover": "/manifestos/london/gla-2016/bnp/cover.png" },
-    { "partyLabel": "One Love Party", "candidate": "Ankit Love", "pdf": "/manifestos/london/gla-2016/onelove/manifesto.pdf", "cover": "/manifestos/london/gla-2016/onelove/cover.png" }
+    {
+      "party": "labour",
+      "candidate": "Sadiq Khan",
+      "pdf": "/manifestos/london/gla-2016/labour/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/labour/cover.png"
+    },
+    {
+      "party": "conservative",
+      "candidate": "Zac Goldsmith",
+      "pdf": "/manifestos/london/gla-2016/conservative/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/conservative/cover.png"
+    },
+    {
+      "party": "libdem",
+      "candidate": "Caroline Pidgeon",
+      "pdf": "/manifestos/london/gla-2016/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/libdem/cover.png"
+    },
+    {
+      "party": "green",
+      "candidate": "Si\u00e2n Berry",
+      "pdf": "/manifestos/london/gla-2016/green/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/green/cover.png"
+    },
+    {
+      "party": "ukip",
+      "candidate": "Peter Whittle",
+      "pdf": "/manifestos/london/gla-2016/ukip/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/ukip/cover.png"
+    },
+    {
+      "party": "respect",
+      "candidate": "George Galloway",
+      "pdf": "/manifestos/london/gla-2016/respect/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/respect/cover.png"
+    },
+    {
+      "partyLabel": "Women's Equality Party",
+      "candidate": "Sophie Walker",
+      "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/wep/cover.png"
+    },
+    {
+      "party": "bnp",
+      "candidate": "David Furness",
+      "pdf": "/manifestos/london/gla-2016/bnp/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/bnp/cover.png"
+    },
+    {
+      "partyLabel": "One Love Party",
+      "candidate": "Ankit Love",
+      "pdf": "/manifestos/london/gla-2016/onelove/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2016/onelove/cover.png"
+    }
   ],
   "sources": [
-    { "label": "House of Commons Library — London Elections 2016 (CBP-7598)", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7598/" },
-    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+    {
+      "label": "House of Commons Library \u2014 London Elections 2016 (CBP-7598)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7598/"
+    },
+    {
+      "label": "London Elects \u2014 election results",
+      "url": "https://www.londonelects.org.uk/im-voter/election-results/"
+    }
   ]
 }

@@ -2143,13 +2143,24 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
 
+.nation-aside {
+  position: sticky;
+  top: calc(var(--nav-h) + 1.5rem);
+  align-self: start;
+}
 .nation-parties-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
   border-radius: 8px;
   padding: 1.25rem;
-  position: sticky;
-  top: calc(var(--nav-h) + 1.5rem);
+}
+.nation-aside .cross-archive-link {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  justify-content: center;
 }
 .nation-party-link {
   display: flex;
@@ -2705,7 +2716,7 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) {
   .nations-grid { grid-template-columns: repeat(2, 1fr); }
   .nation-grid  { grid-template-columns: 1fr; }
-  .nation-parties-card { position: static; }
+  .nation-aside { position: static; }
   .dropdown-mega { grid-template-columns: repeat(2, 1fr); }
   .mega-col:nth-child(n+3) { border-top: 1px solid var(--navy-border); }
 }
@@ -4540,6 +4551,7 @@ h1, h2, h3, h4 {
   --navy-border:     rgba(20, 32, 58, 0.12);
   --navy-mid:        #f2ecdf;
   --navy-light:      #ebe4d6;
+  --cream-dark:      #5b6478;
   --cream-dim:       rgba(20, 32, 58, 0.72);
   --hero-glow:       rgba(138, 109, 44, 0.05);
 }

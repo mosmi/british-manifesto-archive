@@ -2,7 +2,7 @@
 election_year: 2019
 party_id: co-operative
 party_name: Co-operative Party
-party_leader: null
+party_leader: Anna Turley
 political_spectrum: centre-left
 victory: false
 government_outcome: opposition

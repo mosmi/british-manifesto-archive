@@ -1,0 +1,393 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "glc-1967-barnet": {
+      "n": "Barnet",
+      "q": 2,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Reginald Marks, P. B. Black, Miss Jean L. Scott, Arthur S. Peacock",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-enfield": {
+      "n": "Enfield",
+      "q": 3,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Sir Graham Rowlandson, M.B.E, Gordon Dixon, Thos B. Mitcheson",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-harrow": {
+      "n": "Harrow",
+      "q": 1,
+      "r": 4,
+      "party": "conservative",
+      "winner": "H. T. Mote, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-brent": {
+      "n": "Brent",
+      "q": 2,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Mrs Ruby G. N. Taylor, Alfred A. Berney, Alan Hardy, Mrs Ann Forbes Cockell",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-haringey": {
+      "n": "Haringey",
+      "q": 3,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Lawrence A. Bains, A. R. D. Gilbey, M. P. R. Malynn",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-waltham-forest": {
+      "n": "Waltham Forest",
+      "q": 4,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Norman S. Munday, George E. Mynatt, Gordon A. Webb",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-redbridge": {
+      "n": "Redbridge",
+      "q": 5,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Robert Mitchell, F. H. James, Neil G. Thorne",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-havering": {
+      "n": "Havering",
+      "q": 6,
+      "r": 4,
+      "party": "conservative",
+      "winner": "B. Brook-Partridge, David Thornton, Jeffrey H. Archer",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-hillingdon": {
+      "n": "Hillingdon",
+      "q": 0,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-ealing": {
+      "n": "Ealing",
+      "q": 1,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Antony T. R. Fletcher, Maurice P. Gaffney, John Graham, Robin Leach",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-camden": {
+      "n": "Camden",
+      "q": 2,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Richard Butterfield, Mrs Lena Townsend, Miss Clare Mansel",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-islington": {
+      "n": "Islington",
+      "q": 3,
+      "r": 3,
+      "party": "labour",
+      "winner": "Mrs Evelyn Denington, 2,765 C.B.E., Han. F.R.I.B.A, 2,377 Mrs Hazel Rose, LL.B, Arthur E. Wicks",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-hackney": {
+      "n": "Hackney",
+      "q": 4,
+      "r": 3,
+      "party": "labour",
+      "winner": "Ellis S. Hillman, B.Sc., F.G.S, Dr. David Pitt, Mrs Irene Chaplin, B.A",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-newham": {
+      "n": "Newham",
+      "q": 5,
+      "r": 3,
+      "party": "labour",
+      "winner": "S. Boyce, O.B.E, E. P. Bell, Arthur F. G. Edwards",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-barking": {
+      "n": "Barking",
+      "q": 6,
+      "r": 3,
+      "party": "labour",
+      "winner": "Mrs Maud Ball, R. J. Crane",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-hounslow": {
+      "n": "Hounslow",
+      "q": 0,
+      "r": 2,
+      "party": "conservative",
+      "winner": "G. Chase Gardner, D. C. L. Usher, C.B.E, Lieut-Colonel Andrew Jardine, D.L",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-hammersmith": {
+      "n": "Hammersmith",
+      "q": 1,
+      "r": 2,
+      "party": "conservative",
+      "winner": "William C. Smith, Jeremy J. Wagg, John S. Collins",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-westminster-and-the-city-of-london": {
+      "n": "Westminster and the City of London",
+      "q": 3,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Temples added) Harold H. Sebag-Montifiore, Desmond Plummer, T.D, Roland Freeman, Michael Grylls",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-tower-hamlets": {
+      "n": "Tower Hamlets",
+      "q": 4,
+      "r": 2,
+      "party": "labour",
+      "winner": "John Branagan, K.S.G. Ashley Bramall, M.A, Labour councillor",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-richmond-upon-thames": {
+      "n": "Richmond upon Thames",
+      "q": 0,
+      "r": 1,
+      "party": "conservative",
+      "winner": "The Countess of Dartmouth, Toby Jessel",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-kensington-and-chelsea": {
+      "n": "Kensington and Chelsea",
+      "q": 2,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-wandsworth": {
+      "n": "Wandsworth",
+      "q": 1,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Frank L. Abbott, Anthony Bradbury, William J. M. Shelton, J. Elmer Swanson",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-southwark": {
+      "n": "Southwark",
+      "q": 3,
+      "r": 1,
+      "party": "labour",
+      "winner": "R. E. Goodwin, C.B.E., D.L, Henry G. Lamborn, M.R.S.H, The Rev. H. W. Hinds, M.A, Edgar E. Reed",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1967-lewisham": {
+      "n": "Lewisham",
+      "q": 4,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Christopher Bland, Michael J. Wheeler, Arthur J. Hichisson, Frederick W. Weyer",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-greenwich": {
+      "n": "Greenwich",
+      "q": 5,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Mrs Peggy A. Middleton, Mrs Sheila Bradley, C. H. Miles",
+      "seats_list": [
+        "labour",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-bexley": {
+      "n": "Bexley",
+      "q": 6,
+      "r": 2,
+      "party": "conservative",
+      "winner": "D. M. Fielding, J.P•, Victor R. M. Langton, John Mason",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-kingston-upon-thames": {
+      "n": "Kingston upon Thames",
+      "q": 1,
+      "r": 0,
+      "party": "conservative",
+      "winner": "(Royal Borough) Geoffrey J. D. Seaton, Sydney Ripley, D.L",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-merton": {
+      "n": "Merton",
+      "q": 2,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Thomas W. Scott, F. W. Walker",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-lambeth": {
+      "n": "Lambeth",
+      "q": 2,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Mrs Muriel Gumbel, William W.livingston, Dr. G. F. Vaughan, Geoffrey Pattie",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-bromley": {
+      "n": "Bromley",
+      "q": 5,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Mrs Benita D. Barham, Mrs E. G. Beecher-Bryant, Frank W. Smith, Robert J.Turner",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-sutton": {
+      "n": "Sutton",
+      "q": 3,
+      "r": 0,
+      "party": "conservative",
+      "winner": "G. F. Everitt, Alan Leach",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1967-croydon": {
+      "n": "Croydon",
+      "q": 4,
+      "r": 0,
+      "party": "conservative",
+      "winner": "John L. Aston, G. W.Aplin, Stephen J. Stewart, Miss G. E. Morgan",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    }
+  }
+}

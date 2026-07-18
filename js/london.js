@@ -30,6 +30,86 @@ async function loadLondonElection(id) {
   }
 }
 
+/** Load London Assembly HexJSON (GLA constituency map). */
+const _londonHexCache = new Map();
+async function loadLondonHexLayout(year) {
+  if (_londonHexCache.has(year)) return _londonHexCache.get(year);
+  try {
+    const res = await fetch(`/data/hex/london/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    _londonHexCache.set(year, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
+/** Load Greater London Council HexJSON (borough or single-member divisions). */
+const _glcHexCache = new Map();
+async function loadGlcHexLayout(year) {
+  if (_glcHexCache.has(year)) return _glcHexCache.get(year);
+  try {
+    const res = await fetch(`/data/hex/glc/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    _glcHexCache.set(year, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
+/** Side panel for the 11 London-wide list Assembly members. */
+function renderLondonListPanel(panelEl, regionalList, electionYear) {
+  if (!panelEl || !Array.isArray(regionalList) || regionalList.length === 0) return;
+
+  panelEl.innerHTML = '';
+  panelEl.hidden = false;
+
+  const heading = document.createElement('div');
+  heading.className = 'hexmap-outside-heading';
+  heading.textContent = 'London-wide List Seats';
+  panelEl.appendChild(heading);
+
+  const note = document.createElement('p');
+  note.className = 'hexmap-outside-note';
+  note.textContent = 'These 11 additional members are elected from a closed London-wide party list (d\'Hondt), topping up the 14 constituency seats.';
+  panelEl.appendChild(note);
+
+  const rowsWrap = document.createElement('div');
+  rowsWrap.className = 'hexmap-outside-rows';
+
+  regionalList.forEach(reg => {
+    const row = document.createElement('div');
+    row.className = 'hexmap-outside-row';
+
+    const label = document.createElement('div');
+    label.className = 'hexmap-outside-name';
+    label.textContent = reg.region;
+    row.appendChild(label);
+
+    const swatches = document.createElement('div');
+    swatches.className = 'hexmap-outside-swatches';
+
+    (reg.members || []).forEach(member => {
+      const sw = document.createElement('span');
+      sw.className = 'hexmap-outside-swatch';
+      const colour = londonPartyColor(member.party);
+      sw.style.background = colour || '#CCCCCC';
+      const partyLabel = getPartyName(member.party, electionYear);
+      sw.title = `${member.name} (${partyLabel})`;
+      sw.setAttribute('aria-label', `${reg.region}: ${member.name}, ${partyLabel}`);
+      swatches.appendChild(sw);
+    });
+
+    row.appendChild(swatches);
+    rowsWrap.appendChild(row);
+  });
+
+  panelEl.appendChild(rowsWrap);
+}
+
 function londonNum(n) {
   return typeof n === 'number' ? n.toLocaleString('en-GB') : '—';
 }
@@ -120,10 +200,10 @@ function londonManifestoCard(m, electionOrYear) {
       </div>
       <div class="manifesto-card-body">
         ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
+        ${m.pdf ? `<a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
           <span class="manifesto-link-icon">📄</span>
           <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
-        </a>
+        </a>` : ''}
         ${textLink}
       </div>
     </div>`;
@@ -219,6 +299,15 @@ function londonCouncilSection(election) {
       <td style="color:var(--text-muted)">${pct}</td>
     </tr>`;
   }).join('');
+  const otherPct = o => typeof o.pct !== 'number' ? '—'
+    : (o.pct > 0 && o.pct < 0.05 ? '&lt;0.1%' : o.pct.toFixed(1) + '%');
+  const others = (c.otherVotes || []).length
+    ? `<details class="london-others"><summary>Other parties (no seats)</summary>
+        <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">Votes</th><th scope="col">%</th></tr></thead>
+        <tbody>${c.otherVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? londonNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${otherPct(o)}</td></tr>`).join('')}</tbody></table>
+        ${c.otherVotesNote ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.5rem">${c.otherVotesNote}</p>` : ''}
+      </details>`
+    : '';
   return `
     <div class="results-section">
       <span class="section-label">${LONDON_BODY_LABELS[election.body] || 'Council'}</span>
@@ -228,6 +317,7 @@ function londonCouncilSection(election) {
         <tbody>${rows}</tbody>
       </table>
       ${c.note ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${c.note}</p>` : ''}
+      ${others}
     </div>`;
 }
 
@@ -284,6 +374,42 @@ async function renderLondonElection(app, id) {
   const chartResults = election.assembly?.results || election.council?.results || [];
   const chartTotal = election.assembly?.totalSeats || election.council?.totalSeats || 0;
   const chartTitle = election.assembly ? 'London Assembly' : bodyLabel;
+  const isGla = election.body === 'gla' && !!election.assembly?.results?.length;
+  const isGlc = election.body === 'glc' && !!election.council?.results?.length;
+  const hasHexmap = isGla || isGlc;
+  const primaryTabLabel = isGlc ? 'Council' : 'Assembly';
+  const primaryTabId = 'london-tab-primary';
+  const primaryPaneId = 'london-viz-primary';
+
+  const vizPanel = !hasChart ? '' : hasHexmap ? `<div class="viz-panel">
+            <div class="viz-tabs" role="tablist">
+              <button type="button" class="viz-tab active" id="${primaryTabId}" data-viz="primary" role="tab" aria-selected="true" aria-controls="${primaryPaneId}" tabindex="0">${primaryTabLabel}</button>
+              <button type="button" class="viz-tab" id="london-tab-hexmap" data-viz="hexmap" role="tab" aria-selected="false" aria-controls="london-viz-hexmap" tabindex="-1">Constituencies</button>
+            </div>
+            <div class="viz-pane active" id="${primaryPaneId}" role="tabpanel" aria-labelledby="${primaryTabId}">
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">${chartTitle}</div>
+                <div class="parliament-card-sub">${chartTotal} seats · majority ${Math.floor(chartTotal / 2) + 1}</div>
+                <div id="london-chart-container"></div>
+                <div class="parliament-legend" id="london-chart-legend"></div>
+              </div>
+            </div>
+            <div class="viz-pane" id="london-viz-hexmap" role="tabpanel" aria-labelledby="london-tab-hexmap" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Constituency Map</div>
+                <div class="parliament-card-sub" id="london-hexmap-subtitle">Constituency results</div>
+                <div id="london-hexmap-container" class="hexmap-container"></div>
+                <div class="parliament-legend hexmap-legend" id="london-hexmap-legend" hidden></div>
+              </div>
+            </div>
+          </div>` : `<div class="viz-panel">
+            <div class="parliament-card viz-card">
+              <div class="parliament-card-title">${chartTitle}</div>
+              <div class="parliament-card-sub">${chartTotal} seats</div>
+              <div id="london-chart-container"></div>
+              <div class="parliament-legend" id="london-chart-legend"></div>
+            </div>
+          </div>`;
 
   app.innerHTML = `
     ${renderBreadcrumb([
@@ -318,14 +444,7 @@ async function renderLondonElection(app, id) {
           ${londonCouncilSection(election)}
         </div>
         <div>
-          ${hasChart ? `<div class="viz-panel">
-            <div class="parliament-card viz-card">
-              <div class="parliament-card-title">${chartTitle}</div>
-              <div class="parliament-card-sub">${chartTotal} seats</div>
-              <div id="london-chart-container"></div>
-              <div class="parliament-legend" id="london-chart-legend"></div>
-            </div>
-          </div>` : ''}
+          ${vizPanel}
         </div>
       </div>
 
@@ -341,6 +460,136 @@ async function renderLondonElection(app, id) {
       const leg = document.getElementById('london-chart-legend');
       if (cont) drawParliamentChart(cont, chartResults, chartTotal);
       if (leg) buildParliamentLegend(leg, chartResults, election.year);
+
+      if (!hasHexmap) return;
+
+      const tabs = document.querySelectorAll('#london-tab-primary, #london-tab-hexmap');
+      const panes = {
+        primary: document.getElementById('london-viz-primary'),
+        hexmap: document.getElementById('london-viz-hexmap'),
+      };
+      let hexmapLoaded = false;
+
+      const formatGlcSeatsList = (seatsList) => {
+        if (!Array.isArray(seatsList) || seatsList.length === 0) return '';
+        const counts = {};
+        seatsList.forEach(pid => {
+          const key = (pid || 'others').toLowerCase().replace(/\s+/g, '');
+          counts[key] = (counts[key] || 0) + 1;
+        });
+        return Object.entries(counts)
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+          .map(([pid, count]) => `${getPartyName(pid, election.year)} ${count}`)
+          .join(' · ');
+      };
+
+      const switchTab = (targetViz) => {
+        tabs.forEach(t => {
+          const active = t.dataset.viz === targetViz;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', active);
+          t.tabIndex = active ? 0 : -1;
+        });
+        Object.entries(panes).forEach(([viz, pane]) => {
+          if (!pane) return;
+          const active = viz === targetViz;
+          pane.classList.toggle('active', active);
+          pane.hidden = !active;
+        });
+
+        if (targetViz === 'hexmap' && !hexmapLoaded) {
+          hexmapLoaded = true;
+          const loadHex = isGlc ? loadGlcHexLayout : loadLondonHexLayout;
+          loadHex(election.year).then(hexjson => {
+            const hexCont = document.getElementById('london-hexmap-container');
+            const hexLeg = document.getElementById('london-hexmap-legend');
+            const subtitleEl = document.getElementById('london-hexmap-subtitle');
+            if (!hexCont) return;
+            if (!hexjson?.hexes) {
+              hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
+              return;
+            }
+
+            if (subtitleEl) {
+              if (isGlc) {
+                const y = election.year;
+                subtitleEl.textContent = y <= 1970
+                  ? 'Borough multi-member divisions (bloc vote)'
+                  : 'Single-member divisions (same as parliamentary constituencies)';
+              } else {
+                subtitleEl.textContent = 'Constituency results (first-past-the-post) + London-wide list';
+              }
+            }
+
+            const data = hexjsonToDrawData(hexjson, election.year);
+            data.constituencies = data.constituencies.map(c => {
+              const cell = hexjson.hexes[c.key];
+              let mp = cell?.winner || 'Winner unknown';
+              if (isGlc && Array.isArray(cell?.seats_list) && cell.seats_list.length > 0) {
+                const seatSummary = formatGlcSeatsList(cell.seats_list);
+                mp = seatSummary
+                  ? (cell.winner ? `${seatSummary} — ${cell.winner}` : seatSummary)
+                  : mp;
+              }
+              return { ...c, mp };
+            });
+
+            if (isGla && hexjson.regional_list) {
+              hexCont.innerHTML = '';
+              const wrap = document.createElement('div');
+              wrap.className = 'hexmap-1945-wrap';
+
+              const mapCol = document.createElement('div');
+              mapCol.className = 'hexmap-1945-map';
+
+              const outsideCol = document.createElement('div');
+              outsideCol.className = 'hexmap-outside-panel';
+              outsideCol.id = 'london-list-panel';
+
+              wrap.appendChild(mapCol);
+              wrap.appendChild(outsideCol);
+              hexCont.appendChild(wrap);
+
+              drawHexmap(mapCol, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id,
+              });
+              renderLondonListPanel(outsideCol, hexjson.regional_list, election.year);
+            } else {
+              drawHexmap(hexCont, data, {
+                legendEl: null,
+                electionYear: election.year,
+                electionId: election.id,
+              });
+            }
+
+            if (hexLeg) {
+              const constsForLegend = [...data.constituencies];
+              if (isGla && hexjson.regional_list) {
+                hexjson.regional_list.forEach(reg => {
+                  (reg.members || []).forEach(member => {
+                    constsForLegend.push({
+                      party: member.party,
+                      partyLabel: getPartyName(member.party, election.year),
+                    });
+                  });
+                });
+              }
+              buildHexmapLegend(hexLeg, constsForLegend, election.year);
+              hexLeg.hidden = false;
+            }
+          });
+        }
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.viz));
+        tab.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); tabs[1]?.focus(); switchTab('hexmap'); }
+          if (e.key === 'ArrowLeft')  { e.preventDefault(); tabs[0]?.focus(); switchTab('primary'); }
+        });
+      });
     });
   }
 }
@@ -375,7 +624,7 @@ async function renderLondonPortal(app) {
     const cards = items.map(e => buildDevolvedTimelineCard(`/devolved/london/${e.id}`, e)).join('');
     return `<div class="london-era">
       <div class="london-era-head"><h2>${title}</h2><p>${blurb}</p></div>
-      <div class="london-timeline-grid">${cards}</div>
+      <div class="timeline-grid">${cards}</div>
     </div>`;
   };
 
@@ -401,4 +650,64 @@ async function renderLondonPortal(app) {
       ${eraBlock('lcc', 'London County Council (1889–1965)', 'The first directly elected authority for London; post-war elections from 1946.')}
     </div>
   `;
+}
+
+// ── PARTY-PAGE HISTORY (used by renderParty in app.js) ────────
+/** Party id slug from a manifesto entry (fringe candidates carry only partyLabel). */
+function londonManifestoPartySlug(m) {
+  if (m.party) return m.party;
+  const path = m.pdf || m.md || m.cover || '';
+  const segs = path.split('/').filter(Boolean);
+  return segs.length >= 2 ? segs[segs.length - 2] : null;
+}
+
+/** Elections contested + manifestos held across LCC / GLC / GLA for one party. */
+async function getLondonPartyHistory(partyId) {
+  const canonical = typeof resolvePartyId === 'function' ? resolvePartyId(partyId) : partyId;
+  const index = (await loadLondonIndex()) || [];
+  const elections = [];
+  const manifestos = [];
+  await Promise.all(index.map(async (meta) => {
+    const election = await loadLondonElection(meta.id);
+    if (!election) return;
+    let result = election.council?.results?.find(r => r.party === canonical)
+      || election.assembly?.results?.find(r => r.party === canonical)
+      || null;
+    if (result) {
+      result = {
+        party: canonical,
+        seats: result.seats ?? 0,
+        pct: (typeof result.pct === 'number' ? result.pct
+          : (typeof result.listPct === 'number' ? result.listPct : null)),
+      };
+    }
+    const partyManifestos = (election.manifestos || []).filter(m =>
+      londonManifestoPartySlug(m) === canonical
+      || (m.party && typeof resolvePartyId === 'function' && resolvePartyId(m.party) === canonical));
+    const isMayorWinner = election.mayorWinner === canonical;
+    if (result || partyManifestos.length || isMayorWinner) {
+      elections.push({ election, result: result || { party: canonical, seats: 0, pct: null } });
+      partyManifestos.forEach(m => manifestos.push({ election, manifesto: m }));
+    }
+  }));
+  elections.sort((a, b) => b.election.year - a.election.year);
+  manifestos.sort((a, b) => b.election.year - a.election.year);
+  return { elections, manifestos };
+}
+
+/** Result row for the party page's London section. */
+function londonPartyElectionRow(partyId, { election, result }, maxSeats, color) {
+  const isMayor = election.mayorWinner === partyId;
+  const isControl = election.control === partyId;
+  const cls = (isMayor || isControl) ? 'won' : 'lost';
+  const label = isMayor ? '✦ Mayor' : isControl ? '✦ Control' : result.seats > 0 ? 'Opposition' : 'No seats';
+  const sub = LONDON_BODY_LABELS[election.body] || 'London';
+  const barW = ((result.seats / maxSeats) * 100).toFixed(1);
+  const pct = typeof result.pct === 'number' ? result.pct : null;
+  return `<a class="party-election-row" href="/devolved/london/${election.id}">
+    <div class="per-year">${election.displayYear}</div>
+    <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${sub}</div></div>
+    <div class="per-seats-wrap"><div class="per-seats-num">${result.seats}</div><div class="per-seats-label">seats</div></div>
+    <div class="per-bar-wrap"><div class="per-bar"><div class="per-bar-fill" style="width:${barW}%;background:${color}"></div></div><div class="per-pct">${pct != null ? pct.toFixed(1) + '% vote' : '—'}</div></div>
+  </a>`;
 }

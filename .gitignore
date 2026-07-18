@@ -44,3 +44,6 @@ tools/transcription-toolkit/work/
 # Local-only bulk trees (not part of the site)
 chrome/
 tools/transcription-toolkit-archive/
+
+# Local pip target installs
+.pip/

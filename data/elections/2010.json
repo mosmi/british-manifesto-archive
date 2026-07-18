@@ -7,15 +7,21 @@
   "pm": "David Cameron",
   "outgoingPm": "Gordon Brown",
   "totalSeats": 650,
-  "summary": "The 2010 election produced Britain's first hung parliament since February 1974. Gordon Brown's Labour, battered by the 2008 global financial crisis, lost 91 seats. David Cameron's Conservatives fell 20 seats short of an outright majority. After five days of negotiation, the Conservatives and Liberal Democrats formed a formal Coalition Government — the first peacetime coalition since the 1930s. Nick Clegg became Deputy Prime Minister.",
+  "summary": "The 2010 election produced Britain's first hung parliament since February 1974. Gordon Brown's Labour, battered by the 2008 global financial crisis, lost 91 seats. David Cameron's Conservatives fell 20 seats short of an outright majority. After five days of negotiation, the Conservatives and Liberal Democrats formed a formal Coalition Government \u2014 the first peacetime coalition since the 1930s. Nick Clegg became Deputy Prime Minister.",
   "highlights": [
     "First hung parliament since February 1974",
-    "Cleggmania — Lib Dem surge in polls after first-ever televised leaders' debates",
-    "Conservative–Liberal Democrat Coalition formed after five days of negotiations",
+    "Cleggmania \u2014 Lib Dem surge in polls after first-ever televised leaders' debates",
+    "Conservative\u2013Liberal Democrat Coalition formed after five days of negotiations",
     "First peacetime coalition government since the 1930s",
     "Gordon Brown resigns from Downing Street in televised address"
   ],
-  "youtubeId": "",
+  "supplementaryDocuments": [
+    {
+      "title": "Conservative\u2013Liberal Democrat coalition agreement",
+      "pdf": "/documents/supplementary/westminster/2010/coalition-programme-for-government.pdf"
+    }
+  ],
+  "youtubeId": "R9emO6B8HFE",
   "extraManifestoParties": [
     "cooperative",
     "gpni",
@@ -73,20 +79,26 @@
     {
       "party": "conservative",
       "seats": 306,
-      "votes": 10703754,
+      "votes": 10703654,
       "percentage": 36.1
     },
     {
       "party": "labour",
       "seats": 258,
       "votes": 8606517,
-      "percentage": 29
+      "percentage": 29.0
     },
     {
       "party": "libdem",
       "seats": 57,
-      "votes": 6836824,
-      "percentage": 23
+      "votes": 6836248,
+      "percentage": 23.0
+    },
+    {
+      "party": "dup",
+      "seats": 8,
+      "votes": 168216,
+      "percentage": 0.6
     },
     {
       "party": "snp",
@@ -95,15 +107,9 @@
       "percentage": 1.7
     },
     {
-      "party": "plaid",
-      "seats": 3,
-      "votes": 165394,
-      "percentage": 0.6
-    },
-    {
-      "party": "dup",
-      "seats": 8,
-      "votes": 168216,
+      "party": "sinnfein",
+      "seats": 5,
+      "votes": 171942,
       "percentage": 0.6
     },
     {
@@ -113,16 +119,10 @@
       "percentage": 0.4
     },
     {
-      "party": "sinnfein",
-      "seats": 5,
-      "votes": 171942,
+      "party": "plaid",
+      "seats": 3,
+      "votes": 165394,
       "percentage": 0.6
-    },
-    {
-      "party": "green",
-      "seats": 1,
-      "votes": 285616,
-      "percentage": 1
     },
     {
       "party": "alliance",
@@ -131,10 +131,22 @@
       "percentage": 0.1
     },
     {
-      "party": "others",
-      "seats": 2,
-      "votes": 0,
-      "percentage": 6.9
+      "party": "green",
+      "seats": 1,
+      "votes": 265243,
+      "percentage": 0.9
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 22860,
+      "percentage": 0.1
+    },
+    {
+      "party": "independent",
+      "seats": 1,
+      "votes": 21181,
+      "percentage": 0.1
     }
   ]
 }

@@ -524,7 +524,7 @@ async function renderSeneddPortal(app) {
     <div class="devolved-body">
       <div class="london-era">
         <div class="london-era-head"><h2>Senedd elections (1999–)</h2><p>Every Welsh Parliament election since devolution, with results, seat charts, and archived party manifestos.</p></div>
-        <div class="london-timeline-grid">${cards}</div>
+        <div class="timeline-grid">${cards}</div>
       </div>
     </div>
   `;

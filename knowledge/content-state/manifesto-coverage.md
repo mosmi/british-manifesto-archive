@@ -3,7 +3,7 @@ type: status
 title: Manifesto transcription coverage
 description: PDF→Markdown coverage by election category, with the largest outstanding gaps.
 tags: [content-state, coverage, manifestos]
-timestamp: 2026-07-16T00:00:00Z
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Manifesto transcription coverage
@@ -26,8 +26,7 @@ breaks down 2001–2024 primary manifestos specifically.
 | Local Government | 22 | 13 | 59% |
 
 ## Largest outstanding gaps
-- **Devolved elections (97 unmatched)** — the single biggest hole, especially NI
-  Assembly (Greens NI, Sinn Féin variants, PUP, TUV, Workers' Party across 2003–2016).
+- **Devolved elections** — All 26 London mayoral manifestos (2024, 2021, and 2004) have been fully transcribed, visually repaired, and finalized. Gaps remain in NI Assembly elections (Greens NI, Sinn Féin variants, PUP, TUV, Workers' Party across 2003–2016).
 - **2019 General (28 unmatched)** — mostly Labour supplementary/regional manifestos
   (9 regional, plus easy-read, animal welfare, housing, environment, arts) and Green
   youth/digital manifestos.

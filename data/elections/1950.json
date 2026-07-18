@@ -9,12 +9,12 @@
   "totalSeats": 625,
   "summary": "Labour retained power in 1950 but with a drastically reduced majority of just 5 seats. The result reflected growing public ambivalence about the pace of nationalisation and the austerity of the postwar years, while the Conservatives had rebuilt under Churchill's continued leadership. New boundary changes disadvantaged Labour.",
   "highlights": [
-    "Labour majority reduced to just 5 seats — barely workable",
+    "Labour majority reduced to just 5 seats \u2014 barely workable",
     "Boundary changes disadvantage Labour in marginal seats",
     "Conservative Party revitalised under Churchill's continued leadership",
     "Korean War breaks out months later, complicating Attlee's government"
   ],
-  "youtubeId": "",
+  "youtubeId": "QFUu9xbe18M",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -58,26 +58,50 @@
     {
       "party": "labour",
       "seats": 315,
-      "votes": 13266592,
+      "votes": 13266176,
       "percentage": 46.1
     },
     {
       "party": "conservative",
-      "seats": 298,
-      "votes": 12502567,
-      "percentage": 43.5
+      "seats": 277,
+      "votes": 11482357,
+      "percentage": 39.9
+    },
+    {
+      "party": "uup",
+      "seats": 10,
+      "votes": 352300,
+      "percentage": 1.2
     },
     {
       "party": "libdem",
       "seats": 9,
-      "votes": 2621548,
+      "votes": 2621487,
       "percentage": 9.1
     },
     {
-      "party": "others",
-      "seats": 3,
-      "votes": 381964,
-      "percentage": 1.3
+      "party": "natlibconservative",
+      "seats": 9,
+      "votes": 815118,
+      "percentage": 2.8
+    },
+    {
+      "party": "nationalliberal",
+      "seats": 2,
+      "votes": 181137,
+      "percentage": 0.6
+    },
+    {
+      "party": "irishnationalist",
+      "seats": 2,
+      "votes": 65200,
+      "percentage": 0.2
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 24703,
+      "percentage": 0.1
     }
   ]
 }

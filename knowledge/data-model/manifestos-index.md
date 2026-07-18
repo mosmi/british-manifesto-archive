@@ -36,6 +36,13 @@ Each manifesto lives in its own folder, e.g. `manifestos/2024/labour/`:
 - Euro folders may also expose `manifesto.png` when the euro election JSON `cover`
   field points there (same transparent A4 asset)
 
+### Frontmatter: `party_leader`
+Use the party’s head **on polling day**. Co-operative Party → NEC **Chair**. Where the
+party had dual Principal Speakers (Green E&W before 2008), join both names with
+`and`. If the formal post was vacant, prefer the acting head with `(acting)`. Use
+YAML `null` only when no head of party existed (the YAML parser treats `null`/`~`
+as empty so the Leader chip is omitted).
+
 ## Adding a manifesto — checklist
 1. Drop `manifesto.pdf` into `manifestos/<electionId>/<partyId>/` (or
    `manifestos/euro/<year>/<partyId>/` for EP).

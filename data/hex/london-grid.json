@@ -1,0 +1,20 @@
+{
+  "_comment": "Hex grid for the 14 London Assembly constituencies (stable since 2000). odd-r layout; q increases east, r increases north. Laid out to match Greater London geography (northern tier Brent→North East; central Ealing→Havering; south of Thames South West→Greenwich; far south Croydon / Bexley).",
+  "layout": "odd-r",
+  "hexes": {
+    "brent and harrow": { "q": 1, "r": 4, "n": "Brent and Harrow" },
+    "barnet and camden": { "q": 2, "r": 4, "n": "Barnet and Camden" },
+    "enfield and haringey": { "q": 3, "r": 4, "n": "Enfield and Haringey" },
+    "north east": { "q": 4, "r": 4, "n": "North East" },
+    "ealing and hillingdon": { "q": 1, "r": 3, "n": "Ealing and Hillingdon" },
+    "west central": { "q": 2, "r": 3, "n": "West Central" },
+    "city and east": { "q": 3, "r": 3, "n": "City and East" },
+    "havering and redbridge": { "q": 4, "r": 3, "n": "Havering and Redbridge" },
+    "south west": { "q": 1, "r": 2, "n": "South West" },
+    "merton and wandsworth": { "q": 2, "r": 2, "n": "Merton and Wandsworth" },
+    "lambeth and southwark": { "q": 3, "r": 2, "n": "Lambeth and Southwark" },
+    "greenwich and lewisham": { "q": 4, "r": 2, "n": "Greenwich and Lewisham" },
+    "croydon and sutton": { "q": 2, "r": 1, "n": "Croydon and Sutton" },
+    "bexley and bromley": { "q": 4, "r": 1, "n": "Bexley and Bromley" }
+  }
+}

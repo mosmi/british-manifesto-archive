@@ -16,7 +16,7 @@
     "Cameron commits to EU referendum; Brexit vote follows in 2016",
     "Miliband resigns; Jeremy Corbyn elected Labour leader months later"
   ],
-  "youtubeId": "",
+  "youtubeId": "VjJDyIAI4SI",
   "extraManifestoParties": [
     "cooperative",
     "gpni",
@@ -36,7 +36,10 @@
     "ssp",
     "socialistalternative",
     "tusc",
-    "workerspartyie"
+    "workerspartyie",
+    "alliance",
+    "socialistlabour",
+    "cista"
   ],
   "partyResults": {
     "welshcon": {
@@ -79,14 +82,14 @@
   "results": [
     {
       "party": "conservative",
-      "seats": 331,
-      "votes": 11334576,
-      "percentage": 36.9
+      "seats": 330,
+      "votes": 11299609,
+      "percentage": 36.8
     },
     {
       "party": "labour",
       "seats": 232,
-      "votes": 9347304,
+      "votes": 9347273,
       "percentage": 30.4
     },
     {
@@ -96,33 +99,27 @@
       "percentage": 4.7
     },
     {
+      "party": "dup",
+      "seats": 8,
+      "votes": 184260,
+      "percentage": 0.6
+    },
+    {
       "party": "libdem",
       "seats": 8,
-      "votes": 2415888,
+      "votes": 2415916,
       "percentage": 7.9
     },
     {
-      "party": "ukip",
-      "seats": 1,
-      "votes": 3881099,
-      "percentage": 12.6
-    },
-    {
-      "party": "green",
-      "seats": 1,
-      "votes": 1157613,
-      "percentage": 3.8
+      "party": "sinnfein",
+      "seats": 4,
+      "votes": 176232,
+      "percentage": 0.6
     },
     {
       "party": "plaid",
       "seats": 3,
       "votes": 181704,
-      "percentage": 0.6
-    },
-    {
-      "party": "dup",
-      "seats": 8,
-      "votes": 184260,
       "percentage": 0.6
     },
     {
@@ -132,28 +129,34 @@
       "percentage": 0.3
     },
     {
-      "party": "sinnfein",
-      "seats": 4,
-      "votes": 176232,
-      "percentage": 0.6
-    },
-    {
       "party": "uup",
       "seats": 2,
       "votes": 114935,
       "percentage": 0.4
     },
     {
-      "party": "alliance",
-      "seats": 0,
-      "votes": 61556,
-      "percentage": 0.2
+      "party": "green",
+      "seats": 1,
+      "votes": 1111603,
+      "percentage": 3.6
     },
     {
-      "party": "others",
+      "party": "speaker",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0.8
+      "votes": 34617,
+      "percentage": 0.1
+    },
+    {
+      "party": "ukip",
+      "seats": 1,
+      "votes": 3881099,
+      "percentage": 12.6
+    },
+    {
+      "party": "independent",
+      "seats": 1,
+      "votes": 17689,
+      "percentage": 0.1
     }
   ]
 }

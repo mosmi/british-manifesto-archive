@@ -1,0 +1,393 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "glc-1970-barnet": {
+      "n": "Barnet",
+      "q": 2,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Black Peter, Marks Reginald, Scott Jean L. Miss, Peacock Arthur S",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-enfield": {
+      "n": "Enfield",
+      "q": 3,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Rowlandson SirGraham, M.B.E, Mitcheson Tom, Hudson T. C",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-harrow": {
+      "n": "Harrow",
+      "q": 1,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-brent": {
+      "n": "Brent",
+      "q": 2,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-haringey": {
+      "n": "Haringey",
+      "q": 3,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Bains Lawrence A, Gilbey A. R. D, Malynn Peter",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-waltham-forest": {
+      "n": "Waltham Forest",
+      "q": 4,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Munday Norman S, Williams Des, Webb Gordon A",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-redbridge": {
+      "n": "Redbridge",
+      "q": 5,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Hammond John, Mitchell Robert, Thorne Neil G., T.D",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-havering": {
+      "n": "Havering",
+      "q": 6,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Brook-Partridge Bernard, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-hillingdon": {
+      "n": "Hillingdon",
+      "q": 0,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-ealing": {
+      "n": "Ealing",
+      "q": 1,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Dobson J. C, Farrow Michael, Patterson Mark Dr, Young Sir George, Bt",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-camden": {
+      "n": "Camden",
+      "q": 2,
+      "r": 3,
+      "party": "labour",
+      "winner": "O'Connor L. P, Collins Richard, Kazantzis Alec",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-islington": {
+      "n": "Islington",
+      "q": 3,
+      "r": 3,
+      "party": "labour",
+      "winner": "Bondy Louis, 37,113 Han F.R.I.B.A, 36,867 Wicks Arthur E",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-hackney": {
+      "n": "Hackney",
+      "q": 4,
+      "r": 3,
+      "party": "labour",
+      "winner": "Pitt David Dr, 682 Hillman Ellis S, 417 Chaplin Irene Mrs",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-newham": {
+      "n": "Newham",
+      "q": 5,
+      "r": 3,
+      "party": "labour",
+      "winner": "Labour councillor, Labour councillor, Labour councillor",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-barking": {
+      "n": "Barking",
+      "q": 6,
+      "r": 3,
+      "party": "labour",
+      "winner": "Crane R. J, Ward John",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-hounslow": {
+      "n": "Hounslow",
+      "q": 0,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Chase Gardner G. Con Jardine Andrew Lt-Col. D.L., J.P. Can Usher D. C. L., C.B.E, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-hammersmith": {
+      "n": "Hammersmith",
+      "q": 1,
+      "r": 2,
+      "party": "labour",
+      "winner": "Bonham Iris Mrs, Banks A. L, Edwards Arthur G",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-westminster-and-the-city-of-london": {
+      "n": "Westminster and the City of London",
+      "q": 3,
+      "r": 2,
+      "party": "conservative",
+      "winner": "TEMPLES ADDED) Plummer Desmond T.D, Sebag-Montefiore Harold H, Gaffney Maurice P, Scorgie Mervyn",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-tower-hamlets": {
+      "n": "Tower Hamlets",
+      "q": 4,
+      "r": 2,
+      "party": "labour",
+      "winner": "Branagan John, K.S.G, Bramall Ashley",
+      "seats_list": [
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-richmond-upon-thames": {
+      "n": "Richmond upon Thames",
+      "q": 0,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-kensington-and-chelsea": {
+      "n": "Kensington and Chelsea",
+      "q": 2,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-wandsworth": {
+      "n": "Wandsworth",
+      "q": 1,
+      "r": 1,
+      "party": "labour",
+      "winner": "Jenkins Marie Mrs, Prichard Sir Norman, Dimson Gladys F. Mrs, Samuels J. S",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-southwark": {
+      "n": "Southwark",
+      "q": 3,
+      "r": 1,
+      "party": "labour",
+      "winner": "Goodwin Sir Reginald, C.B.E., D.l, Francis Fred, Lamborn Henry G, Hinds The Rev. Canon H",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-lewisham": {
+      "n": "Lewisham",
+      "q": 4,
+      "r": 1,
+      "party": "labour",
+      "winner": "Henry John C, Bastin Brian, Chalkley David, Grant Alec",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-greenwich": {
+      "n": "Greenwich",
+      "q": 5,
+      "r": 2,
+      "party": "labour",
+      "winner": "Labour councillor, Labour councillor, Labour councillor",
+      "seats_list": [
+        "labour",
+        "labour",
+        "labour"
+      ]
+    },
+    "glc-1970-bexley": {
+      "n": "Bexley",
+      "q": 6,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Fielding Douglas M, Langton Victor R. M, Mason John",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-kingston-upon-thames": {
+      "n": "Kingston upon Thames",
+      "q": 1,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Conservative councillor, Conservative councillor",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-merton": {
+      "n": "Merton",
+      "q": 2,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Walker F. W, Bolton Stanley C",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-lambeth": {
+      "n": "Lambeth",
+      "q": 2,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Jones D. A. N, Crofton Sir Malby, Bt, Livingston William W, Gumbel M. Mrs",
+      "seats_list": [
+        "labour",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-bromley": {
+      "n": "Bromley",
+      "q": 5,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Harris David, Smith Frank W, Pratt Charles H. E, Beecher Bryant R. C",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-sutton": {
+      "n": "Sutton",
+      "q": 3,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Everitt George, Leach Alan",
+      "seats_list": [
+        "conservative",
+        "conservative"
+      ]
+    },
+    "glc-1970-croydon": {
+      "n": "Croydon",
+      "q": 4,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Bendall Vivian W. H, Morgan G. E. Miss, Stewart Stephen J, Aplin G. W",
+      "seats_list": [
+        "conservative",
+        "conservative",
+        "conservative",
+        "conservative"
+      ]
+    }
+  }
+}

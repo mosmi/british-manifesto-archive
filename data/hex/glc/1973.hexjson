@@ -1,0 +1,649 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "glc-1973-acton": {
+      "n": "Acton",
+      "q": 2,
+      "r": 5,
+      "winner": "Dobson, J.C",
+      "party": "conservative"
+    },
+    "glc-1973-barking": {
+      "n": "Barking",
+      "q": 10,
+      "r": 5,
+      "winner": "Ward, J.B",
+      "party": "labour"
+    },
+    "glc-1973-battersea-north": {
+      "n": "Battersea North",
+      "q": 4,
+      "r": 2,
+      "winner": "Dimson, Mrs. G.F",
+      "party": "labour"
+    },
+    "glc-1973-battersea-south": {
+      "n": "Battersea South",
+      "q": 3,
+      "r": 2,
+      "winner": "Hatch, S.R",
+      "party": "labour"
+    },
+    "glc-1973-beckenham": {
+      "n": "Beckenham",
+      "q": 7,
+      "r": 0,
+      "winner": "Smith, F.W",
+      "party": "conservative"
+    },
+    "glc-1973-bermondsey": {
+      "n": "Bermondsey",
+      "q": 6,
+      "r": 3,
+      "winner": "Goodwin, Sir Reginald",
+      "party": "labour"
+    },
+    "glc-1973-bethnal-green-and-bow": {
+      "n": "Bethnal Green and Bow",
+      "q": 8,
+      "r": 5,
+      "winner": "Bramall, E.A",
+      "party": "labour"
+    },
+    "glc-1973-bexleyheath": {
+      "n": "Bexleyheath",
+      "q": 9,
+      "r": 2,
+      "winner": "Langton, V.R.M",
+      "party": "conservative"
+    },
+    "glc-1973-brent-east": {
+      "n": "Brent East",
+      "q": 3,
+      "r": 6,
+      "winner": "Howard, N",
+      "party": "labour"
+    },
+    "glc-1973-brent-north": {
+      "n": "Brent North",
+      "q": 2,
+      "r": 7,
+      "winner": "Hardy, A",
+      "party": "conservative"
+    },
+    "glc-1973-brent-south": {
+      "n": "Brent South",
+      "q": 2,
+      "r": 6,
+      "winner": "Harrington, I",
+      "party": "labour"
+    },
+    "glc-1973-brentford-and-isleworth": {
+      "n": "Brentford and Isleworth",
+      "q": 2,
+      "r": 4,
+      "winner": "Daly, J",
+      "party": "labour"
+    },
+    "glc-1973-carshalton": {
+      "n": "Carshalton",
+      "q": 4,
+      "r": 0,
+      "winner": "Bassett, P.J",
+      "party": "labour"
+    },
+    "glc-1973-chelsea": {
+      "n": "Chelsea",
+      "q": 4,
+      "r": 3,
+      "winner": "Bell, W.A.O.J",
+      "party": "conservative"
+    },
+    "glc-1973-chingford": {
+      "n": "Chingford",
+      "q": 7,
+      "r": 8,
+      "winner": "Brew, R.M",
+      "party": "conservative"
+    },
+    "glc-1973-chipping-barnet": {
+      "n": "Chipping Barnet",
+      "q": 3,
+      "r": 9,
+      "winner": "Marks, R",
+      "party": "conservative"
+    },
+    "glc-1973-chislehurst": {
+      "n": "Chislehurst",
+      "q": 8,
+      "r": 0,
+      "winner": "Wykes, Mrs. J.K",
+      "party": "conservative"
+    },
+    "glc-1973-city-of-london-and-westminster-south": {
+      "n": "City of London and Westminster South",
+      "q": 5,
+      "r": 4,
+      "winner": "Scorgie, M.N",
+      "party": "conservative"
+    },
+    "glc-1973-croydon-central": {
+      "n": "Croydon Central",
+      "q": 5,
+      "r": -1,
+      "winner": "White, D.F",
+      "party": "labour"
+    },
+    "glc-1973-croydon-north-east": {
+      "n": "Croydon North East",
+      "q": 6,
+      "r": 0,
+      "winner": "Simpson, D.H",
+      "party": "labour"
+    },
+    "glc-1973-croydon-north-west": {
+      "n": "Croydon North West",
+      "q": 5,
+      "r": 0,
+      "winner": "Barker, D.E.R",
+      "party": "labour"
+    },
+    "glc-1973-croydon-south": {
+      "n": "Croydon South",
+      "q": 4,
+      "r": -1,
+      "winner": "Aplin, G.W",
+      "party": "conservative"
+    },
+    "glc-1973-dagenham": {
+      "n": "Dagenham",
+      "q": 11,
+      "r": 5,
+      "winner": "Crane, R.J",
+      "party": "labour"
+    },
+    "glc-1973-deptford": {
+      "n": "Deptford",
+      "q": 7,
+      "r": 2,
+      "winner": "Chalkley, D.W",
+      "party": "labour"
+    },
+    "glc-1973-dulwich": {
+      "n": "Dulwich",
+      "q": 6,
+      "r": 1,
+      "winner": "Balfe, R.A",
+      "party": "labour"
+    },
+    "glc-1973-ealing-north": {
+      "n": "Ealing North",
+      "q": 1,
+      "r": 6,
+      "winner": "Mason, The Rev. D.M",
+      "party": "labour"
+    },
+    "glc-1973-edmonton": {
+      "n": "Edmonton",
+      "q": 6,
+      "r": 8,
+      "winner": "Mason, B.S",
+      "party": "labour"
+    },
+    "glc-1973-enfield-north": {
+      "n": "Enfield North",
+      "q": 5,
+      "r": 9,
+      "winner": "White, Dr. J.H",
+      "party": "labour"
+    },
+    "glc-1973-erith-and-crayford": {
+      "n": "Erith and Crayford",
+      "q": 9,
+      "r": 3,
+      "winner": "Archer, F.W",
+      "party": "labour"
+    },
+    "glc-1973-feltham-and-heston": {
+      "n": "Feltham and Heston",
+      "q": 1,
+      "r": 4,
+      "winner": "Eden, D",
+      "party": "labour"
+    },
+    "glc-1973-finchley": {
+      "n": "Finchley",
+      "q": 4,
+      "r": 8,
+      "winner": "Scott, Miss J.L",
+      "party": "conservative"
+    },
+    "glc-1973-fulham": {
+      "n": "Fulham",
+      "q": 3,
+      "r": 3,
+      "winner": "Banks, A",
+      "party": "labour"
+    },
+    "glc-1973-greenwich": {
+      "n": "Greenwich",
+      "q": 7,
+      "r": 3,
+      "winner": "Middleton, Mrs. P.A",
+      "party": "labour"
+    },
+    "glc-1973-hackney-central": {
+      "n": "Hackney Central",
+      "q": 7,
+      "r": 5,
+      "winner": "Hillman, E.S",
+      "party": "labour"
+    },
+    "glc-1973-hackney-north-and-stoke-newington": {
+      "n": "Hackney North and Stoke Newington",
+      "q": 7,
+      "r": 6,
+      "winner": "Pitt, Dr. D.T",
+      "party": "labour"
+    },
+    "glc-1973-hackney-south-and-shoreditch": {
+      "n": "Hackney South and Shoreditch",
+      "q": 7,
+      "r": 4,
+      "winner": "Chaplin, Mrs. I",
+      "party": "labour"
+    },
+    "glc-1973-hammersmith-north": {
+      "n": "Hammersmith North",
+      "q": 3,
+      "r": 4,
+      "winner": "Bonham, Mrs. I.M.C",
+      "party": "labour"
+    },
+    "glc-1973-hampstead": {
+      "n": "Hampstead",
+      "q": 4,
+      "r": 6,
+      "winner": "Wistrich, Mrs. E.B",
+      "party": "labour"
+    },
+    "glc-1973-harrow-central": {
+      "n": "Harrow Central",
+      "q": 1,
+      "r": 7,
+      "winner": "Clack, W.S",
+      "party": "conservative"
+    },
+    "glc-1973-harrow-east": {
+      "n": "Harrow East",
+      "q": 2,
+      "r": 8,
+      "winner": "Mote, H.T",
+      "party": "conservative"
+    },
+    "glc-1973-harrow-west": {
+      "n": "Harrow West",
+      "q": 1,
+      "r": 8,
+      "winner": "Cutler, H.W",
+      "party": "conservative"
+    },
+    "glc-1973-hayes-and-harlington": {
+      "n": "Hayes and Harlington",
+      "q": 0,
+      "r": 5,
+      "winner": "Russell, P.F.N",
+      "party": "labour"
+    },
+    "glc-1973-hendon-north": {
+      "n": "Hendon North",
+      "q": 3,
+      "r": 8,
+      "winner": "Cooper, F.A",
+      "party": "labour"
+    },
+    "glc-1973-hendon-south": {
+      "n": "Hendon South",
+      "q": 3,
+      "r": 7,
+      "winner": "Black, P.B",
+      "party": "conservative"
+    },
+    "glc-1973-holborn-and-st-pancras-south": {
+      "n": "Holborn and St Pancras South",
+      "q": 5,
+      "r": 5,
+      "winner": "Kazantzis, A.J",
+      "party": "labour"
+    },
+    "glc-1973-hornchurch": {
+      "n": "Hornchurch",
+      "q": 11,
+      "r": 6,
+      "winner": "Lourie, A.S",
+      "party": "labour"
+    },
+    "glc-1973-hornsey": {
+      "n": "Hornsey",
+      "q": 4,
+      "r": 7,
+      "winner": "Bains, L.A",
+      "party": "conservative"
+    },
+    "glc-1973-ilford-north": {
+      "n": "Ilford North",
+      "q": 9,
+      "r": 7,
+      "winner": "Ridoutt, T.J",
+      "party": "labour"
+    },
+    "glc-1973-ilford-south": {
+      "n": "Ilford South",
+      "q": 9,
+      "r": 6,
+      "winner": "Carradice, D.A",
+      "party": "labour"
+    },
+    "glc-1973-islington-central": {
+      "n": "Islington Central",
+      "q": 6,
+      "r": 5,
+      "winner": "Denington, Mrs. E.J",
+      "party": "labour"
+    },
+    "glc-1973-islington-north": {
+      "n": "Islington North",
+      "q": 6,
+      "r": 6,
+      "winner": "Bondy, L",
+      "party": "labour"
+    },
+    "glc-1973-islington-south-and-finsbury": {
+      "n": "Islington South and Finsbury",
+      "q": 6,
+      "r": 4,
+      "winner": "Wicks, A.E",
+      "party": "labour"
+    },
+    "glc-1973-kensington": {
+      "n": "Kensington",
+      "q": 4,
+      "r": 4,
+      "winner": "Vigars, R.L",
+      "party": "conservative"
+    },
+    "glc-1973-kingston-upon-thames": {
+      "n": "Kingston upon Thames",
+      "q": 1,
+      "r": 1,
+      "winner": "Ripley, S.W.L",
+      "party": "conservative"
+    },
+    "glc-1973-lambeth-central": {
+      "n": "Lambeth Central",
+      "q": 5,
+      "r": 2,
+      "winner": "Grieves, Mrs. A.L",
+      "party": "labour"
+    },
+    "glc-1973-lewisham-east": {
+      "n": "Lewisham East",
+      "q": 8,
+      "r": 1,
+      "winner": "Henry, J.C",
+      "party": "labour"
+    },
+    "glc-1973-lewisham-west": {
+      "n": "Lewisham West",
+      "q": 7,
+      "r": 1,
+      "winner": "Simson, W.C",
+      "party": "labour"
+    },
+    "glc-1973-leyton": {
+      "n": "Leyton",
+      "q": 8,
+      "r": 6,
+      "winner": "Walsh, J.J",
+      "party": "labour"
+    },
+    "glc-1973-mitcham-and-morden": {
+      "n": "Mitcham and Morden",
+      "q": 2,
+      "r": 0,
+      "winner": "Judge, A.R",
+      "party": "labour"
+    },
+    "glc-1973-newham-north-east": {
+      "n": "Newham North East",
+      "q": 10,
+      "r": 6,
+      "winner": "Jenkinson, T.A",
+      "party": "labour"
+    },
+    "glc-1973-newham-north-west": {
+      "n": "Newham North West",
+      "q": 9,
+      "r": 5,
+      "winner": "Edwards, A.F.G",
+      "party": "labour"
+    },
+    "glc-1973-newham-south": {
+      "n": "Newham South",
+      "q": 9,
+      "r": 4,
+      "winner": "Bell, E.P",
+      "party": "labour"
+    },
+    "glc-1973-norwood": {
+      "n": "Norwood",
+      "q": 5,
+      "r": 1,
+      "winner": "Livingstone, K.R",
+      "party": "labour"
+    },
+    "glc-1973-orpington": {
+      "n": "Orpington",
+      "q": 7,
+      "r": -1,
+      "winner": "Tatham, Mrs. J",
+      "party": "conservative"
+    },
+    "glc-1973-paddington": {
+      "n": "Paddington",
+      "q": 3,
+      "r": 5,
+      "winner": "Merriton, Mrs. J",
+      "party": "labour"
+    },
+    "glc-1973-peckham": {
+      "n": "Peckham",
+      "q": 6,
+      "r": 2,
+      "winner": "Hinds, H.W",
+      "party": "labour"
+    },
+    "glc-1973-putney": {
+      "n": "Putney",
+      "q": 2,
+      "r": 2,
+      "winner": "Jenkins, Mrs. E.M",
+      "party": "labour"
+    },
+    "glc-1973-ravensbourne": {
+      "n": "Ravensbourne",
+      "q": 6,
+      "r": -1,
+      "winner": "Harris, D.A",
+      "party": "conservative"
+    },
+    "glc-1973-richmond": {
+      "n": "Richmond",
+      "q": 2,
+      "r": 3,
+      "winner": "Rundle, Dr. S",
+      "party": "libdem"
+    },
+    "glc-1973-romford": {
+      "n": "Romford",
+      "q": 10,
+      "r": 7,
+      "winner": "Brook-Partridge, B",
+      "party": "conservative"
+    },
+    "glc-1973-ruislip-northwood": {
+      "n": "Ruislip-Northwood",
+      "q": 0,
+      "r": 7,
+      "winner": "Brown, B.J",
+      "party": "conservative"
+    },
+    "glc-1973-sidcup": {
+      "n": "Sidcup",
+      "q": 9,
+      "r": 1,
+      "winner": "Fielding, D.M",
+      "party": "conservative"
+    },
+    "glc-1973-southall": {
+      "n": "Southall",
+      "q": 1,
+      "r": 5,
+      "winner": "Sieve, Mrs. Y",
+      "party": "labour"
+    },
+    "glc-1973-southgate": {
+      "n": "Southgate",
+      "q": 5,
+      "r": 8,
+      "winner": "Mitcheson, T.B",
+      "party": "conservative"
+    },
+    "glc-1973-st-marylebone": {
+      "n": "St Marylebone",
+      "q": 4,
+      "r": 5,
+      "winner": "Plummer, Sir Desmond",
+      "party": "conservative"
+    },
+    "glc-1973-st-pancras-north": {
+      "n": "St Pancras North",
+      "q": 5,
+      "r": 6,
+      "winner": "Hacker, Mrs. R",
+      "party": "labour"
+    },
+    "glc-1973-stepney-and-poplar": {
+      "n": "Stepney and Poplar",
+      "q": 8,
+      "r": 4,
+      "winner": "Branagan",
+      "party": "labour"
+    },
+    "glc-1973-streatham": {
+      "n": "Streatham",
+      "q": 4,
+      "r": 1,
+      "winner": "Geddes, The Hon. Mrs. D.E",
+      "party": "conservative"
+    },
+    "glc-1973-surbiton": {
+      "n": "Surbiton",
+      "q": 1,
+      "r": 0,
+      "winner": "Seaton, G.J.D",
+      "party": "conservative"
+    },
+    "glc-1973-sutton-and-cheam": {
+      "n": "Sutton and Cheam",
+      "q": 3,
+      "r": 0,
+      "winner": "Shaw, Mrs. R.M",
+      "party": "libdem"
+    },
+    "glc-1973-tooting": {
+      "n": "Tooting",
+      "q": 3,
+      "r": 1,
+      "winner": "Gillies, Mrs. LG",
+      "party": "labour"
+    },
+    "glc-1973-tottenham": {
+      "n": "Tottenham",
+      "q": 6,
+      "r": 7,
+      "winner": "McIntosh, A.R",
+      "party": "labour"
+    },
+    "glc-1973-twickenham": {
+      "n": "Twickenham",
+      "q": 1,
+      "r": 3,
+      "winner": "Tremlett, G.W",
+      "party": "conservative"
+    },
+    "glc-1973-upminster": {
+      "n": "Upminster",
+      "q": 11,
+      "r": 7,
+      "winner": "Roberts, Miss S.M",
+      "party": "conservative"
+    },
+    "glc-1973-uxbridge": {
+      "n": "Uxbridge",
+      "q": 0,
+      "r": 6,
+      "winner": "Lemkin, J.A",
+      "party": "conservative"
+    },
+    "glc-1973-vauxhall": {
+      "n": "Vauxhall",
+      "q": 5,
+      "r": 3,
+      "winner": "Carr, E.G",
+      "party": "labour"
+    },
+    "glc-1973-walthamstow": {
+      "n": "Walthamstow",
+      "q": 7,
+      "r": 7,
+      "winner": "Young, R.A.R",
+      "party": "labour"
+    },
+    "glc-1973-wanstead-and-woodford": {
+      "n": "Wanstead and Woodford",
+      "q": 8,
+      "r": 7,
+      "winner": "Mitchell, R",
+      "party": "conservative"
+    },
+    "glc-1973-wimbledon": {
+      "n": "Wimbledon",
+      "q": 2,
+      "r": 1,
+      "winner": "Bolton, S.C",
+      "party": "conservative"
+    },
+    "glc-1973-wood-green": {
+      "n": "Wood Green",
+      "q": 5,
+      "r": 7,
+      "winner": "Haseler, Dr. S",
+      "party": "labour"
+    },
+    "glc-1973-woolwich-east": {
+      "n": "Woolwich East",
+      "q": 8,
+      "r": 3,
+      "winner": "Garside, Mrs. M.E",
+      "party": "labour"
+    },
+    "glc-1973-woolwich-west": {
+      "n": "Woolwich West",
+      "q": 8,
+      "r": 2,
+      "winner": "Rees, Mrs. M",
+      "party": "labour"
+    }
+  }
+}

@@ -7,14 +7,14 @@
   "pm": "Winston Churchill",
   "outgoingPm": "Clement Attlee",
   "totalSeats": 625,
-  "summary": "The Conservatives won the 1951 election with a majority of 17 seats, returning Winston Churchill to Downing Street at the age of 76. Paradoxically, Labour won more votes than the Conservatives — 13.9 million to 13.7 million — making it one of the few British elections where the party winning fewer votes won more seats. The Liberal collapse left voters little choice but Conservative or Labour.",
+  "summary": "The Conservatives won the 1951 election with a majority of 17 seats, returning Winston Churchill to Downing Street at the age of 76. Paradoxically, Labour won more votes than the Conservatives \u2014 13.9 million to 13.7 million \u2014 making it one of the few British elections where the party winning fewer votes won more seats. The Liberal collapse left voters little choice but Conservative or Labour.",
   "highlights": [
     "Churchill returns to No. 10 at age 76",
     "Labour wins more votes than Conservatives but fewer seats",
     "Liberal Party collapses to just 6 MPs",
-    "Beginning of 13 years of Conservative government (1951–1964)"
+    "Beginning of 13 years of Conservative government (1951\u20131964)"
   ],
-  "youtubeId": "",
+  "youtubeId": "P1415icoA2U",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -57,9 +57,9 @@
   "results": [
     {
       "party": "conservative",
-      "seats": 321,
-      "votes": 13717538,
-      "percentage": 48
+      "seats": 297,
+      "votes": 12574037,
+      "percentage": 44.0
     },
     {
       "party": "labour",
@@ -68,16 +68,46 @@
       "percentage": 48.8
     },
     {
+      "party": "natlibconservative",
+      "seats": 14,
+      "votes": 986942,
+      "percentage": 3.5
+    },
+    {
+      "party": "uup",
+      "seats": 9,
+      "votes": 274900,
+      "percentage": 1.0
+    },
+    {
       "party": "libdem",
       "seats": 6,
-      "votes": 730556,
+      "votes": 730546,
       "percentage": 2.5
     },
     {
-      "party": "others",
-      "seats": 3,
-      "votes": 198969,
-      "percentage": 0.7
+      "party": "irishlabour",
+      "seats": 1,
+      "votes": 33714,
+      "percentage": 0.1
+    },
+    {
+      "party": "nationalliberal",
+      "seats": 1,
+      "votes": 70496,
+      "percentage": 0.2
+    },
+    {
+      "party": "antipartition",
+      "seats": 1,
+      "votes": 32717,
+      "percentage": 0.1
+    },
+    {
+      "party": "irishrepublican",
+      "seats": 1,
+      "votes": 33094,
+      "percentage": 0.1
     }
   ]
 }

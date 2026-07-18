@@ -7,15 +7,15 @@
   "pm": "John Major",
   "outgoingPm": "John Major",
   "totalSeats": 651,
-  "summary": "The 1992 election produced another major polling failure. John Major's Conservatives won 14.1 million votes — the highest total ever cast for a single party in British history. Labour under Neil Kinnock suffered a fourth consecutive defeat. \"It's the Sun wot won it,\" claimed Rupert Murdoch's newspaper. \"Black Wednesday\" in September would destroy Conservative economic credibility.",
+  "summary": "The 1992 election produced another major polling failure. John Major's Conservatives won 14.1 million votes \u2014 the highest total ever cast for a single party in British history. Labour under Neil Kinnock suffered a fourth consecutive defeat. \"It's the Sun wot won it,\" claimed Rupert Murdoch's newspaper. \"Black Wednesday\" in September would destroy Conservative economic credibility.",
   "highlights": [
-    "Major wins record 14.1 million votes — highest for any party in British history",
+    "Major wins record 14.1 million votes \u2014 highest for any party in British history",
     "Fourth consecutive Labour defeat despite confident polling predictions",
     "\"Kinnock's Sheffield rally\" becomes byword for overconfidence",
     "\"Black Wednesday\" ERM crisis follows in September, destroying Conservative economic credibility",
     "Neil Kinnock resigns; John Smith and then Tony Blair reshape the party"
   ],
-  "youtubeId": "",
+  "youtubeId": "rXAwSquD4ZU",
   "extraManifestoParties": [
     "green"
   ],
@@ -67,50 +67,50 @@
     {
       "party": "labour",
       "seats": 271,
-      "votes": 11560484,
+      "votes": 11624109,
       "percentage": 34.4
     },
     {
       "party": "libdem",
       "seats": 20,
-      "votes": 5999606,
+      "votes": 5990604,
       "percentage": 17.8
-    },
-    {
-      "party": "snp",
-      "seats": 3,
-      "votes": 629564,
-      "percentage": 1.9
-    },
-    {
-      "party": "plaid",
-      "seats": 4,
-      "votes": 156796,
-      "percentage": 0.5
     },
     {
       "party": "uup",
       "seats": 9,
-      "votes": 0,
-      "percentage": 0
-    },
-    {
-      "party": "dup",
-      "seats": 3,
-      "votes": 0,
-      "percentage": 0
+      "votes": 271000,
+      "percentage": 0.8
     },
     {
       "party": "sdlp",
       "seats": 4,
-      "votes": 0,
-      "percentage": 0
+      "votes": 154400,
+      "percentage": 0.5
     },
     {
-      "party": "others",
+      "party": "plaid",
+      "seats": 4,
+      "votes": 154900,
+      "percentage": 0.5
+    },
+    {
+      "party": "snp",
+      "seats": 3,
+      "votes": 629600,
+      "percentage": 1.9
+    },
+    {
+      "party": "dup",
+      "seats": 3,
+      "votes": 103000,
+      "percentage": 0.3
+    },
+    {
+      "party": "ulsterpopularunionist",
       "seats": 1,
-      "votes": 0,
-      "percentage": 3.5
+      "votes": 19305,
+      "percentage": 0.1
     }
   ]
 }

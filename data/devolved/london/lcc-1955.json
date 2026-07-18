@@ -18,13 +18,54 @@
     "totalSeats": 126,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 74, "pct": 50.3 },
-      { "party": "conservative", "seats": 52, "pct": 47.2 }
+      {
+        "party": "labour",
+        "seats": 74,
+        "pct": 50.3
+      },
+      {
+        "party": "conservative",
+        "seats": 52,
+        "pct": 47.2
+      }
     ],
-    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
+    "otherVotes": [
+      {
+        "name": "Liberal",
+        "votes": 27615,
+        "pct": 1.2
+      },
+      {
+        "name": "Communist",
+        "votes": 11473,
+        "pct": 0.5
+      },
+      {
+        "name": "Union Movement",
+        "votes": 5053,
+        "pct": 0.2
+      },
+      {
+        "name": "Independent",
+        "votes": 2160,
+        "pct": 0.1
+      }
+    ],
+    "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."
   },
   "sources": [
-    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
-    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+    {
+      "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)",
+      "url": "https://www.electionscentre.co.uk/"
+    },
+    {
+      "label": "London Datastore — historic London elections",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "Wikipedia — 1955 London County Council election",
+      "url": "https://en.wikipedia.org/wiki/1955_London_County_Council_election"
+    }
   ]
 }

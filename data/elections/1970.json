@@ -9,12 +9,12 @@
   "totalSeats": 630,
   "summary": "The 1970 election produced one of the great upsets in British electoral history. Opinion polls had consistently shown Labour ahead, but Edward Heath's Conservatives won a comfortable majority of 30. Heath's government would go on to take the UK into the European Economic Community in 1973 but struggle with industrial unrest, power cuts, and the three-day week.",
   "highlights": [
-    "Major polling upset — Conservatives win despite trailing in surveys",
+    "Major polling upset \u2014 Conservatives win despite trailing in surveys",
     "Heath takes UK into the European Economic Community in 1973",
     "First election in which 18-year-olds could vote",
     "Enoch Powell's \"Rivers of Blood\" speech had influenced the political mood"
   ],
-  "youtubeId": "",
+  "youtubeId": "cq8PMfpA-6g",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -57,27 +57,63 @@
   "results": [
     {
       "party": "conservative",
-      "seats": 330,
-      "votes": 13145123,
-      "percentage": 46.4
+      "seats": 322,
+      "votes": 12723123,
+      "percentage": 44.9
     },
     {
       "party": "labour",
       "seats": 287,
-      "votes": 12179341,
-      "percentage": 43
+      "votes": 12175174,
+      "percentage": 43.1
+    },
+    {
+      "party": "uup",
+      "seats": 8,
+      "votes": 422000,
+      "percentage": 1.5
     },
     {
       "party": "libdem",
       "seats": 6,
-      "votes": 2117035,
-      "percentage": 7.5
+      "votes": 2030611,
+      "percentage": 7.2
     },
     {
-      "party": "others",
-      "seats": 7,
-      "votes": 1163704,
-      "percentage": 3.1
+      "party": "unity",
+      "seats": 2,
+      "votes": 71521,
+      "percentage": 0.3
+    },
+    {
+      "party": "protestantunionist",
+      "seats": 1,
+      "votes": 24130,
+      "percentage": 0.1
+    },
+    {
+      "party": "republicanlabour",
+      "seats": 1,
+      "votes": 30649,
+      "percentage": 0.1
+    },
+    {
+      "party": "indlabour",
+      "seats": 1,
+      "votes": 16701,
+      "percentage": 0.1
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 29417,
+      "percentage": 0.1
+    },
+    {
+      "party": "snp",
+      "seats": 1,
+      "votes": 306800,
+      "percentage": 1.1
     }
   ]
 }

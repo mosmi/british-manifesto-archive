@@ -11,10 +11,10 @@
   "highlights": [
     "End of thirteen years of Conservative government",
     "Wilson's \"white heat of technology\" speech sets tone for modernising agenda",
-    "Labour majority of only 4 — barely workable",
+    "Labour majority of only 4 \u2014 barely workable",
     "Profumo scandal had damaged the Conservatives in preceding years"
   ],
-  "youtubeId": "",
+  "youtubeId": "QiUkyAS-fSs",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -63,9 +63,15 @@
     },
     {
       "party": "conservative",
-      "seats": 304,
-      "votes": 12001396,
-      "percentage": 43.4
+      "seats": 291,
+      "votes": 11577908,
+      "percentage": 41.9
+    },
+    {
+      "party": "uup",
+      "seats": 12,
+      "votes": 401900,
+      "percentage": 1.5
     },
     {
       "party": "libdem",
@@ -74,10 +80,10 @@
       "percentage": 11.2
     },
     {
-      "party": "others",
-      "seats": 0,
-      "votes": 347905,
-      "percentage": 1.3
+      "party": "speaker",
+      "seats": 1,
+      "votes": 21588,
+      "percentage": 0.1
     }
   ]
 }

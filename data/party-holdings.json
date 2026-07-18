@@ -24,6 +24,16 @@
     "euro": 3,
     "stormont": 7
   },
+  "scottishcon": {
+    "westminster": 8,
+    "euro": 1,
+    "holyrood": 7
+  },
+  "welshcon": {
+    "westminster": 7,
+    "euro": 1,
+    "senedd": 6
+  },
   "bnp": {
     "westminster": 3,
     "euro": 1,
@@ -79,11 +89,6 @@
   "omrlp": {
     "westminster": 3
   },
-  "scottishcon": {
-    "westminster": 7,
-    "euro": 1,
-    "holyrood": 7
-  },
   "scottishlab": {
     "westminster": 7,
     "euro": 1,
@@ -108,7 +113,8 @@
     "senedd": 4
   },
   "cpa": {
-    "westminster": 3
+    "westminster": 3,
+    "london": 1
   },
   "englishdemocrats": {
     "westminster": 1,
@@ -137,6 +143,9 @@
     "euro": 1,
     "stormont": 2
   },
+  "socialistlabour": {
+    "westminster": 2
+  },
   "ssp": {
     "westminster": 2,
     "euro": 1,
@@ -144,11 +153,6 @@
   },
   "veritas": {
     "westminster": 1
-  },
-  "welshcon": {
-    "westminster": 6,
-    "euro": 1,
-    "senedd": 6
   },
   "gpni": {
     "westminster": 5,
@@ -163,6 +167,9 @@
   "animalpolitics": {
     "westminster": 4,
     "euro": 1
+  },
+  "cista": {
+    "westminster": 1
   },
   "nha": {
     "westminster": 2
@@ -186,10 +193,14 @@
     "westminster": 1,
     "stormont": 7
   },
+  "liberal1989": {
+    "westminster": 3
+  },
   "wep": {
     "westminster": 1,
     "euro": 1,
-    "holyrood": 1
+    "holyrood": 1,
+    "london": 1
   },
   "gwlad": {
     "westminster": 1,
@@ -203,7 +214,8 @@
     "senedd": 2
   },
   "sdp": {
-    "westminster": 2
+    "westminster": 2,
+    "london": 1
   },
   "yorkshire": {
     "westminster": 1
@@ -299,6 +311,9 @@
   "solidarity": {
     "holyrood": 1
   },
+  "scottishchristian": {
+    "holyrood": 1
+  },
   "rise": {
     "holyrood": 1
   },
@@ -316,6 +331,45 @@
   },
   "sovereignty": {
     "holyrood": 1
+  },
+  "onelove": {
+    "london": 1
+  },
+  "londonreal": {
+    "london": 2
+  },
+  "reclaim": {
+    "london": 1
+  },
+  "maxfosh": {
+    "london": 1
+  },
+  "pierscorbyn": {
+    "london": 1
+  },
+  "burningpink": {
+    "london": 1
+  },
+  "binface": {
+    "london": 2
+  },
+  "campbell": {
+    "london": 1
+  },
+  "awp": {
+    "london": 1
+  },
+  "michli": {
+    "london": 1
+  },
+  "ghulati": {
+    "london": 1
+  },
+  "britainfirst": {
+    "london": 1
+  },
+  "spgb": {
+    "london": 1
   },
   "propel": {
     "senedd": 2

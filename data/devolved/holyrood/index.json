@@ -8,7 +8,31 @@
     "title": "Scottish Parliament election",
     "control": "scottishlab",
     "winnerName": "Donald Dewar",
-    "firstMinister": "Donald Dewar"
+    "firstMinister": "Donald Dewar",
+    "results": [
+      {
+        "party": "scottishlab",
+        "seats": 56
+      },
+      {
+        "party": "snp",
+        "seats": 35
+      },
+      {
+        "party": "scottishcon",
+        "seats": 18
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 17
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2003",
@@ -19,7 +43,35 @@
     "title": "Scottish Parliament election",
     "control": "scottishlab",
     "winnerName": "Jack McConnell",
-    "firstMinister": "Jack McConnell"
+    "firstMinister": "Jack McConnell",
+    "results": [
+      {
+        "party": "scottishlab",
+        "seats": 50
+      },
+      {
+        "party": "snp",
+        "seats": 27
+      },
+      {
+        "party": "scottishcon",
+        "seats": 18
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 17
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 7
+      },
+      {
+        "party": "ssp",
+        "seats": 6
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2007",
@@ -30,7 +82,31 @@
     "title": "Scottish Parliament election",
     "control": "snp",
     "winnerName": "Alex Salmond",
-    "firstMinister": "Alex Salmond"
+    "firstMinister": "Alex Salmond",
+    "results": [
+      {
+        "party": "snp",
+        "seats": 47
+      },
+      {
+        "party": "scottishlab",
+        "seats": 46
+      },
+      {
+        "party": "scottishcon",
+        "seats": 17
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 16
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2011",
@@ -41,7 +117,31 @@
     "title": "Scottish Parliament election",
     "control": "snp",
     "winnerName": "Alex Salmond",
-    "firstMinister": "Alex Salmond"
+    "firstMinister": "Alex Salmond",
+    "results": [
+      {
+        "party": "snp",
+        "seats": 69
+      },
+      {
+        "party": "scottishlab",
+        "seats": 37
+      },
+      {
+        "party": "scottishcon",
+        "seats": 15
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 5
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2016",
@@ -52,7 +152,31 @@
     "title": "Scottish Parliament election",
     "control": "snp",
     "winnerName": "Nicola Sturgeon",
-    "firstMinister": "Nicola Sturgeon"
+    "firstMinister": "Nicola Sturgeon",
+    "results": [
+      {
+        "party": "snp",
+        "seats": 63
+      },
+      {
+        "party": "scottishcon",
+        "seats": 31
+      },
+      {
+        "party": "scottishlab",
+        "seats": 24
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 5
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 6
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2021",
@@ -63,7 +187,31 @@
     "title": "Scottish Parliament election",
     "control": "snp",
     "winnerName": "Nicola Sturgeon",
-    "firstMinister": "Nicola Sturgeon"
+    "firstMinister": "Nicola Sturgeon",
+    "results": [
+      {
+        "party": "snp",
+        "seats": 64
+      },
+      {
+        "party": "scottishcon",
+        "seats": 31
+      },
+      {
+        "party": "scottishlab",
+        "seats": 22
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 4
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 8
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   },
   {
     "id": "2026",
@@ -74,6 +222,34 @@
     "title": "Scottish Parliament election",
     "control": "snp",
     "winnerName": "John Swinney",
-    "firstMinister": "John Swinney"
+    "firstMinister": "John Swinney",
+    "results": [
+      {
+        "party": "snp",
+        "seats": 58
+      },
+      {
+        "party": "scottishlab",
+        "seats": 17
+      },
+      {
+        "party": "reform",
+        "seats": 17
+      },
+      {
+        "party": "scottishgrn",
+        "seats": 15
+      },
+      {
+        "party": "scottishcon",
+        "seats": 12
+      },
+      {
+        "party": "scottishlibdem",
+        "seats": 10
+      }
+    ],
+    "totalSeats": 129,
+    "majorityThreshold": 65
   }
 ]

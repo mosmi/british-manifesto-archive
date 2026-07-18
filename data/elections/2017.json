@@ -16,7 +16,7 @@
     "Two terror attacks (Manchester, London Bridge) during the campaign",
     "Youth turnout rises sharply; \"youthquake\" credited with Labour surge"
   ],
-  "youtubeId": "",
+  "youtubeId": "1PXnD5jEa-A",
   "extraManifestoParties": [
     "cooperative",
     "gpni",
@@ -33,7 +33,10 @@
     "scottishlab",
     "scottishlibdem",
     "animalpolitics",
-    "nicon"
+    "nicon",
+    "alliance",
+    "sdlp",
+    "liberal1989"
   ],
   "partyResults": {
     "welshcon": {
@@ -78,19 +81,19 @@
       "party": "conservative",
       "seats": 317,
       "votes": 13636684,
-      "percentage": 42.4
+      "percentage": 42.3
     },
     {
       "party": "labour",
       "seats": 262,
       "votes": 12877918,
-      "percentage": 40
+      "percentage": 40.0
     },
     {
       "party": "snp",
       "seats": 35,
-      "votes": 977569,
-      "percentage": 3
+      "votes": 977568,
+      "percentage": 3.0
     },
     {
       "party": "libdem",
@@ -117,28 +120,22 @@
       "percentage": 0.5
     },
     {
-      "party": "sdlp",
-      "seats": 0,
-      "votes": 95419,
-      "percentage": 0.3
-    },
-    {
       "party": "green",
       "seats": 1,
-      "votes": 525371,
+      "votes": 512327,
       "percentage": 1.6
     },
     {
-      "party": "alliance",
-      "seats": 0,
-      "votes": 64553,
-      "percentage": 0.2
+      "party": "speaker",
+      "seats": 1,
+      "votes": 34299,
+      "percentage": 0.1
     },
     {
-      "party": "others",
-      "seats": 2,
-      "votes": 0,
-      "percentage": 3.9
+      "party": "independent",
+      "seats": 1,
+      "votes": 16148,
+      "percentage": 0.1
     }
   ]
 }

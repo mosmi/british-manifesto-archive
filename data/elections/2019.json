@@ -16,7 +16,7 @@
     "Brexit completed on 31 January 2020",
     "Corbyn resigns; Keir Starmer wins Labour leadership in April 2020"
   ],
-  "youtubeId": "",
+  "youtubeId": "_mv7HkOx-Hs",
   "manifestoPartyLabels": {
     "reform": "Brexit Party"
   },
@@ -37,7 +37,8 @@
     "cpa",
     "gwlad",
     "sdp",
-    "yorkshire"
+    "yorkshire",
+    "liberal1989"
   ],
   "partyResults": {
     "welshcon": {
@@ -99,14 +100,8 @@
     {
       "party": "libdem",
       "seats": 11,
-      "votes": 3696423,
-      "percentage": 11.6
-    },
-    {
-      "party": "green",
-      "seats": 1,
-      "votes": 835579,
-      "percentage": 2.7
+      "votes": 3696419,
+      "percentage": 11.5
     },
     {
       "party": "dup",
@@ -121,28 +116,34 @@
       "percentage": 0.6
     },
     {
-      "party": "sdlp",
-      "seats": 2,
-      "votes": 118737,
-      "percentage": 0.4
-    },
-    {
       "party": "plaid",
       "seats": 4,
       "votes": 153265,
       "percentage": 0.5
     },
     {
+      "party": "sdlp",
+      "seats": 2,
+      "votes": 118737,
+      "percentage": 0.4
+    },
+    {
+      "party": "green",
+      "seats": 1,
+      "votes": 835597,
+      "percentage": 2.6
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 26831,
+      "percentage": 0.1
+    },
+    {
       "party": "alliance",
       "seats": 1,
       "votes": 134115,
       "percentage": 0.4
-    },
-    {
-      "party": "others",
-      "seats": 1,
-      "votes": 0,
-      "percentage": 3.5
     }
   ]
 }

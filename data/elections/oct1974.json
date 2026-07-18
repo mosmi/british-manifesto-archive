@@ -7,14 +7,14 @@
   "pm": "Harold Wilson",
   "outgoingPm": "Harold Wilson",
   "totalSeats": 635,
-  "summary": "Wilson called a second election within the year to convert his minority government into a workable majority. He succeeded, but only barely — Labour won 319 seats, giving a majority of just 3. This slim margin would erode through by-election losses, leaving Labour in minority government again by 1977.",
+  "summary": "Wilson called a second election within the year to convert his minority government into a workable majority. He succeeded, but only barely \u2014 Labour won 319 seats, giving a majority of just 3. This slim margin would erode through by-election losses, leaving Labour in minority government again by 1977.",
   "highlights": [
-    "Labour secures working majority of 3 — barely sufficient",
+    "Labour secures working majority of 3 \u2014 barely sufficient",
     "SNP wins 11 seats, capitalising on North Sea oil debate",
     "Liberal vote squeezed by voters wanting a decisive result",
     "Margaret Thatcher wins Conservative leadership in February 1975"
   ],
-  "youtubeId": "",
+  "youtubeId": "oGlLs2fpLk0",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -58,62 +58,68 @@
     {
       "party": "labour",
       "seats": 319,
-      "votes": 11457079,
+      "votes": 11431491,
       "percentage": 39.2
     },
     {
       "party": "conservative",
-      "seats": 277,
-      "votes": 10462565,
-      "percentage": 35.8
+      "seats": 276,
+      "votes": 10213151,
+      "percentage": 35.0
     },
     {
       "party": "libdem",
       "seats": 13,
-      "votes": 5346754,
+      "votes": 5030173,
       "percentage": 18.3
     },
     {
       "party": "snp",
       "seats": 11,
-      "votes": 839617,
+      "votes": 839600,
       "percentage": 2.9
-    },
-    {
-      "party": "plaid",
-      "seats": 3,
-      "votes": 166321,
-      "percentage": 0.6
     },
     {
       "party": "uup",
       "seats": 6,
-      "votes": 0,
-      "percentage": 0
+      "votes": 256100,
+      "percentage": 0.9
     },
     {
-      "party": "dup",
-      "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "party": "plaid",
+      "seats": 3,
+      "votes": 166300,
+      "percentage": 0.6
+    },
+    {
+      "party": "vanguard",
+      "seats": 3,
+      "votes": 126598,
+      "percentage": 0.4
     },
     {
       "party": "sdlp",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 154200,
+      "percentage": 0.5
     },
     {
-      "party": "alliance",
+      "party": "dup",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 59500,
+      "percentage": 0.2
     },
     {
-      "party": "others",
-      "seats": 3,
-      "votes": 0,
-      "percentage": 1.2
+      "party": "speaker",
+      "seats": 1,
+      "votes": 35705,
+      "percentage": 0.1
+    },
+    {
+      "party": "independent",
+      "seats": 1,
+      "votes": 32980,
+      "percentage": 0.1
     }
   ]
 }

@@ -7,15 +7,15 @@
   "pm": "Harold Wilson",
   "outgoingPm": "Edward Heath",
   "totalSeats": 635,
-  "summary": "Edward Heath called this election against the backdrop of the miners' strike and the three-day working week, posing the question \"Who governs Britain?\" The answer was a hung parliament — the first since 1929. Labour won the most seats (301) but not a majority. Heath attempted to form a coalition with the Liberals but negotiations failed. Wilson returned to Downing Street leading a minority government.\n\nNote: Ulster Unionist MPs had previously taken the Conservative whip at Westminster, but following the Sunningdale Agreement dispute the whip was removed in 1974. UUP seats are listed separately from this election onwards.",
+  "summary": "Edward Heath called this election against the backdrop of the miners' strike and the three-day working week, posing the question \"Who governs Britain?\" The answer was a hung parliament \u2014 the first since 1929. Labour won the most seats (301) but not a majority. Heath attempted to form a coalition with the Liberals but negotiations failed. Wilson returned to Downing Street leading a minority government.\n\nNote: Ulster Unionist MPs had previously taken the Conservative whip at Westminster, but following the Sunningdale Agreement dispute the whip was removed in 1974. UUP seats are listed separately from this election onwards.",
   "highlights": [
-    "Hung parliament — first since 1929",
+    "Hung parliament \u2014 first since 1929",
     "Heath's \"Who governs Britain?\" election backfires",
     "Miners' strike and three-day week dominate campaign",
     "Liberal Party wins 14 seats and 19.3% of the vote",
-    "UUP breaks from Conservative whip — listed separately from this election"
+    "UUP breaks from Conservative whip \u2014 listed separately from this election"
   ],
-  "youtubeId": "",
+  "youtubeId": "Tcw05fhSyQg",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -59,62 +59,68 @@
     {
       "party": "labour",
       "seats": 301,
-      "votes": 11639243,
-      "percentage": 37.1
+      "votes": 11607044,
+      "percentage": 37.2
     },
     {
       "party": "conservative",
-      "seats": 297,
-      "votes": 11872180,
+      "seats": 296,
+      "votes": 11902195,
       "percentage": 37.9
     },
     {
       "party": "libdem",
-      "seats": 14,
-      "votes": 6063470,
+      "seats": 15,
+      "votes": 6042771,
       "percentage": 19.3
     },
     {
       "party": "snp",
       "seats": 7,
-      "votes": 632032,
-      "percentage": 2
-    },
-    {
-      "party": "plaid",
-      "seats": 2,
-      "votes": 171364,
-      "percentage": 0.6
+      "votes": 633200,
+      "percentage": 2.0
     },
     {
       "party": "uup",
       "seats": 7,
-      "votes": 0,
-      "percentage": 0
+      "votes": 326400,
+      "percentage": 1.0
     },
     {
-      "party": "dup",
-      "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "party": "vanguard",
+      "seats": 3,
+      "votes": 172100,
+      "percentage": 0.5
+    },
+    {
+      "party": "plaid",
+      "seats": 2,
+      "votes": 171400,
+      "percentage": 0.5
     },
     {
       "party": "sdlp",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 160400,
+      "percentage": 0.5
     },
     {
-      "party": "alliance",
+      "party": "dup",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 58700,
+      "percentage": 0.2
     },
     {
-      "party": "others",
-      "seats": 4,
-      "votes": 0,
-      "percentage": 2.5
+      "party": "speaker",
+      "seats": 1,
+      "votes": 38452,
+      "percentage": 0.1
+    },
+    {
+      "party": "indlabour",
+      "seats": 1,
+      "votes": 22918,
+      "percentage": 0.1
     }
   ]
 }

@@ -9,7 +9,43 @@
     "control": "uup",
     "winnerName": "David Trimble",
     "firstMinister": "David Trimble",
-    "deputyFirstMinister": "Seamus Mallon"
+    "deputyFirstMinister": "Seamus Mallon",
+    "results": [
+      {
+        "party": "uup",
+        "seats": 28
+      },
+      {
+        "party": "sdlp",
+        "seats": 24
+      },
+      {
+        "party": "dup",
+        "seats": 20
+      },
+      {
+        "party": "sinnfein",
+        "seats": 18
+      },
+      {
+        "party": "alliance",
+        "seats": 6
+      },
+      {
+        "party": "ukup",
+        "seats": 5
+      },
+      {
+        "party": "pup",
+        "seats": 2
+      },
+      {
+        "party": "niwc",
+        "seats": 2
+      }
+    ],
+    "totalSeats": 108,
+    "majorityThreshold": 55
   },
   {
     "id": "2003",
@@ -21,7 +57,39 @@
     "control": "dup",
     "winnerName": "Ian Paisley",
     "firstMinister": "Ian Paisley",
-    "deputyFirstMinister": "Martin McGuinness"
+    "deputyFirstMinister": "Martin McGuinness",
+    "results": [
+      {
+        "party": "dup",
+        "seats": 30
+      },
+      {
+        "party": "uup",
+        "seats": 27
+      },
+      {
+        "party": "sinnfein",
+        "seats": 24
+      },
+      {
+        "party": "sdlp",
+        "seats": 18
+      },
+      {
+        "party": "alliance",
+        "seats": 6
+      },
+      {
+        "party": "pup",
+        "seats": 1
+      },
+      {
+        "party": "ukup",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 108,
+    "majorityThreshold": 55
   },
   {
     "id": "2007",
@@ -33,7 +101,39 @@
     "control": "dup",
     "winnerName": "Ian Paisley",
     "firstMinister": "Ian Paisley",
-    "deputyFirstMinister": "Martin McGuinness"
+    "deputyFirstMinister": "Martin McGuinness",
+    "results": [
+      {
+        "party": "dup",
+        "seats": 36
+      },
+      {
+        "party": "sinnfein",
+        "seats": 28
+      },
+      {
+        "party": "uup",
+        "seats": 18
+      },
+      {
+        "party": "sdlp",
+        "seats": 16
+      },
+      {
+        "party": "alliance",
+        "seats": 7
+      },
+      {
+        "party": "gpni",
+        "seats": 1
+      },
+      {
+        "party": "pup",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 108,
+    "majorityThreshold": 55
   },
   {
     "id": "2011",
@@ -45,7 +145,39 @@
     "control": "dup",
     "winnerName": "Peter Robinson",
     "firstMinister": "Peter Robinson",
-    "deputyFirstMinister": "Martin McGuinness"
+    "deputyFirstMinister": "Martin McGuinness",
+    "results": [
+      {
+        "party": "dup",
+        "seats": 38
+      },
+      {
+        "party": "sinnfein",
+        "seats": 29
+      },
+      {
+        "party": "uup",
+        "seats": 16
+      },
+      {
+        "party": "sdlp",
+        "seats": 14
+      },
+      {
+        "party": "alliance",
+        "seats": 8
+      },
+      {
+        "party": "tuv",
+        "seats": 1
+      },
+      {
+        "party": "gpni",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 108,
+    "majorityThreshold": 55
   },
   {
     "id": "2016",
@@ -57,7 +189,43 @@
     "control": "dup",
     "winnerName": "Arlene Foster",
     "firstMinister": "Arlene Foster",
-    "deputyFirstMinister": "Martin McGuinness"
+    "deputyFirstMinister": "Martin McGuinness",
+    "results": [
+      {
+        "party": "dup",
+        "seats": 38
+      },
+      {
+        "party": "sinnfein",
+        "seats": 28
+      },
+      {
+        "party": "uup",
+        "seats": 16
+      },
+      {
+        "party": "sdlp",
+        "seats": 12
+      },
+      {
+        "party": "alliance",
+        "seats": 8
+      },
+      {
+        "party": "gpni",
+        "seats": 2
+      },
+      {
+        "party": "pbp",
+        "seats": 2
+      },
+      {
+        "party": "tuv",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 108,
+    "majorityThreshold": 55
   },
   {
     "id": "2017",
@@ -69,7 +237,43 @@
     "control": "dup",
     "winnerName": "Arlene Foster",
     "firstMinister": "Arlene Foster",
-    "deputyFirstMinister": "Michelle O'Neill"
+    "deputyFirstMinister": "Michelle O'Neill",
+    "results": [
+      {
+        "party": "dup",
+        "seats": 28
+      },
+      {
+        "party": "sinnfein",
+        "seats": 27
+      },
+      {
+        "party": "sdlp",
+        "seats": 12
+      },
+      {
+        "party": "uup",
+        "seats": 10
+      },
+      {
+        "party": "alliance",
+        "seats": 8
+      },
+      {
+        "party": "gpni",
+        "seats": 2
+      },
+      {
+        "party": "tuv",
+        "seats": 1
+      },
+      {
+        "party": "pbp",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 90,
+    "majorityThreshold": 46
   },
   {
     "id": "2022",
@@ -81,6 +285,38 @@
     "control": "sinnfein",
     "winnerName": "Michelle O'Neill",
     "firstMinister": "Michelle O'Neill",
-    "deputyFirstMinister": "Emma Little-Pengelly"
+    "deputyFirstMinister": "Emma Little-Pengelly",
+    "results": [
+      {
+        "party": "sinnfein",
+        "seats": 27
+      },
+      {
+        "party": "dup",
+        "seats": 25
+      },
+      {
+        "party": "alliance",
+        "seats": 17
+      },
+      {
+        "party": "uup",
+        "seats": 9
+      },
+      {
+        "party": "sdlp",
+        "seats": 8
+      },
+      {
+        "party": "tuv",
+        "seats": 1
+      },
+      {
+        "party": "pbp",
+        "seats": 1
+      }
+    ],
+    "totalSeats": 90,
+    "majorityThreshold": 46
   }
 ]

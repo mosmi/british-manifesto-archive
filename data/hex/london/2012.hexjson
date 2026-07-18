@@ -1,0 +1,154 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "london-2012-brent-and-harrow": {
+      "n": "Brent and Harrow",
+      "q": 1,
+      "r": 4,
+      "winner": "Navin Shah",
+      "party": "labour"
+    },
+    "london-2012-barnet-and-camden": {
+      "n": "Barnet and Camden",
+      "q": 2,
+      "r": 4,
+      "winner": "Andrew Dismore",
+      "party": "labour"
+    },
+    "london-2012-enfield-and-haringey": {
+      "n": "Enfield and Haringey",
+      "q": 3,
+      "r": 4,
+      "winner": "Joanne McCartney",
+      "party": "labour"
+    },
+    "london-2012-north-east": {
+      "n": "North East",
+      "q": 4,
+      "r": 4,
+      "winner": "Jennette Arnold",
+      "party": "labour"
+    },
+    "london-2012-ealing-and-hillingdon": {
+      "n": "Ealing and Hillingdon",
+      "q": 1,
+      "r": 3,
+      "winner": "Onkar Sahota",
+      "party": "labour"
+    },
+    "london-2012-west-central": {
+      "n": "West Central",
+      "q": 2,
+      "r": 3,
+      "winner": "Kit Malthouse",
+      "party": "conservative"
+    },
+    "london-2012-city-and-east": {
+      "n": "City and East",
+      "q": 3,
+      "r": 3,
+      "winner": "John Biggs",
+      "party": "labour"
+    },
+    "london-2012-havering-and-redbridge": {
+      "n": "Havering and Redbridge",
+      "q": 4,
+      "r": 3,
+      "winner": "Roger Evans",
+      "party": "conservative"
+    },
+    "london-2012-south-west": {
+      "n": "South West",
+      "q": 1,
+      "r": 2,
+      "winner": "Tony Arbour",
+      "party": "conservative"
+    },
+    "london-2012-merton-and-wandsworth": {
+      "n": "Merton and Wandsworth",
+      "q": 2,
+      "r": 2,
+      "winner": "Richard Tracey",
+      "party": "conservative"
+    },
+    "london-2012-lambeth-and-southwark": {
+      "n": "Lambeth and Southwark",
+      "q": 3,
+      "r": 2,
+      "winner": "Val Shawcross",
+      "party": "labour"
+    },
+    "london-2012-greenwich-and-lewisham": {
+      "n": "Greenwich and Lewisham",
+      "q": 4,
+      "r": 2,
+      "winner": "Len Duvall",
+      "party": "labour"
+    },
+    "london-2012-croydon-and-sutton": {
+      "n": "Croydon and Sutton",
+      "q": 2,
+      "r": 1,
+      "winner": "Steve O'Connell",
+      "party": "conservative"
+    },
+    "london-2012-bexley-and-bromley": {
+      "n": "Bexley and Bromley",
+      "q": 4,
+      "r": 1,
+      "winner": "James Cleverly",
+      "party": "conservative"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "London-wide",
+      "members": [
+        {
+          "name": "Jenny Jones",
+          "party": "green"
+        },
+        {
+          "name": "Caroline Pidgeon",
+          "party": "libdem"
+        },
+        {
+          "name": "Nicky Gavron",
+          "party": "labour"
+        },
+        {
+          "name": "Andrew Boff",
+          "party": "conservative"
+        },
+        {
+          "name": "Darren Johnson",
+          "party": "green"
+        },
+        {
+          "name": "Murad Qureshi",
+          "party": "labour"
+        },
+        {
+          "name": "Gareth Bacon",
+          "party": "conservative"
+        },
+        {
+          "name": "Fiona Twycross",
+          "party": "labour"
+        },
+        {
+          "name": "Victoria Borwick",
+          "party": "conservative"
+        },
+        {
+          "name": "Tom Copley",
+          "party": "labour"
+        },
+        {
+          "name": "Stephen Knight",
+          "party": "libdem"
+        }
+      ]
+    }
+  ]
+}

@@ -120,9 +120,13 @@ function push(pages, path, spec) {
 
 function buildHoldings(seo) {
   const holdings = {};
-  for (const m of Object.values(seo.manifestos || {})) {
+  for (const [key, m] of Object.entries(seo.manifestos || {})) {
     const pid = m.partyId;
     if (!pid) continue;
+    // Skip devolved entries that appear in the flat manifests index
+    // (keys like "london/gla-2024/green") — counted via devolvedManifestos below.
+    const eid = m.electionId || key.split('/').slice(0, -1).join('/');
+    if (eid.includes('/')) continue;
     holdings[pid] ??= {};
     holdings[pid].westminster = (holdings[pid].westminster || 0) + 1;
   }
@@ -130,7 +134,11 @@ function buildHoldings(seo) {
     const portal = key.split('/')[0];
     if (!['holyrood', 'senedd', 'stormont', 'euro', 'london'].includes(portal)) continue;
     for (const item of items) {
-      const pid = item.party;
+      // Fringe candidates carry only partyLabel; derive the id from the pdf path
+      // (/manifestos/london/gla-2021/binface/manifesto.pdf -> binface).
+      const pid = item.party
+        || (item.pdf || item.md || '').split('/').filter(Boolean).slice(-2, -1)[0]
+        || null;
       if (!pid) continue;
       holdings[pid] ??= {};
       holdings[pid][portal] = (holdings[pid][portal] || 0) + 1;

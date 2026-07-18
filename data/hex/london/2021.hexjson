@@ -1,0 +1,154 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "london-2021-brent-and-harrow": {
+      "n": "Brent and Harrow",
+      "q": 1,
+      "r": 4,
+      "winner": "Krupesh Hirani",
+      "party": "labour"
+    },
+    "london-2021-barnet-and-camden": {
+      "n": "Barnet and Camden",
+      "q": 2,
+      "r": 4,
+      "winner": "Anne Clarke",
+      "party": "labour"
+    },
+    "london-2021-enfield-and-haringey": {
+      "n": "Enfield and Haringey",
+      "q": 3,
+      "r": 4,
+      "winner": "Joanne McCartney",
+      "party": "labour"
+    },
+    "london-2021-north-east": {
+      "n": "North East",
+      "q": 4,
+      "r": 4,
+      "winner": "Sem Moema",
+      "party": "labour"
+    },
+    "london-2021-ealing-and-hillingdon": {
+      "n": "Ealing and Hillingdon",
+      "q": 1,
+      "r": 3,
+      "winner": "Onkar Sahota",
+      "party": "labour"
+    },
+    "london-2021-west-central": {
+      "n": "West Central",
+      "q": 2,
+      "r": 3,
+      "winner": "Tony Devenish",
+      "party": "conservative"
+    },
+    "london-2021-city-and-east": {
+      "n": "City and East",
+      "q": 3,
+      "r": 3,
+      "winner": "Unmesh Desai",
+      "party": "labour"
+    },
+    "london-2021-havering-and-redbridge": {
+      "n": "Havering and Redbridge",
+      "q": 4,
+      "r": 3,
+      "winner": "Keith Prince",
+      "party": "conservative"
+    },
+    "london-2021-south-west": {
+      "n": "South West",
+      "q": 1,
+      "r": 2,
+      "winner": "Nicholas Rogers",
+      "party": "conservative"
+    },
+    "london-2021-merton-and-wandsworth": {
+      "n": "Merton and Wandsworth",
+      "q": 2,
+      "r": 2,
+      "winner": "Leonie Cooper",
+      "party": "labour"
+    },
+    "london-2021-lambeth-and-southwark": {
+      "n": "Lambeth and Southwark",
+      "q": 3,
+      "r": 2,
+      "winner": "Marina Ahmad",
+      "party": "labour"
+    },
+    "london-2021-greenwich-and-lewisham": {
+      "n": "Greenwich and Lewisham",
+      "q": 4,
+      "r": 2,
+      "winner": "Len Duvall",
+      "party": "labour"
+    },
+    "london-2021-croydon-and-sutton": {
+      "n": "Croydon and Sutton",
+      "q": 2,
+      "r": 1,
+      "winner": "Neil Garratt",
+      "party": "conservative"
+    },
+    "london-2021-bexley-and-bromley": {
+      "n": "Bexley and Bromley",
+      "q": 4,
+      "r": 1,
+      "winner": "Peter Fortune",
+      "party": "conservative"
+    }
+  },
+  "regional_list": [
+    {
+      "region": "London-wide",
+      "members": [
+        {
+          "name": "Siân Berry",
+          "party": "green"
+        },
+        {
+          "name": "Caroline Pidgeon",
+          "party": "libdem"
+        },
+        {
+          "name": "Caroline Russell",
+          "party": "green"
+        },
+        {
+          "name": "Shaun Bailey",
+          "party": "conservative"
+        },
+        {
+          "name": "Zack Polanski",
+          "party": "green"
+        },
+        {
+          "name": "Susan Hall",
+          "party": "conservative"
+        },
+        {
+          "name": "Elly Baker",
+          "party": "labour"
+        },
+        {
+          "name": "Hina Bokhari",
+          "party": "libdem"
+        },
+        {
+          "name": "Sakina Sheikh",
+          "party": "labour"
+        },
+        {
+          "name": "Emma Best",
+          "party": "conservative"
+        },
+        {
+          "name": "Andrew Boff",
+          "party": "conservative"
+        }
+      ]
+    }
+  ]
+}

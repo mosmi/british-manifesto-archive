@@ -8,7 +8,7 @@
   "mayorWinner": "conservative",
   "mayorWinnerName": "Boris Johnson",
   "turnout": 37.4,
-  "summary": "Conservative Boris Johnson was re-elected Mayor of London in a rematch with Labour's Ken Livingstone. Johnson won 971,931 first-preference votes (44.0%) to Livingstone's 889,918 (40.3%), and led 1,054,811 to 992,273 after second preferences. It was the closest mayoral contest since the office was created. Labour won 12 Assembly seats — four more than in 2008 — to become the largest party in the chamber for the first time, while the BNP lost their only seat.",
+  "summary": "Conservative Boris Johnson was re-elected Mayor of London in a rematch with Labour's Ken Livingstone. Johnson won 971,931 first-preference votes (44.0%) to Livingstone's 889,918 (40.3%), and led 1,054,811 to 992,273 after second preferences. It was the closest mayoral contest since the office was created. Labour won 12 Assembly seats \u2014 four more than in 2008 \u2014 to become the largest party in the chamber for the first time, while the BNP lost their only seat.",
   "highlights": [
     "Boris Johnson wins a second term in the closest mayoral race yet",
     "Johnson beats Livingstone 51.5% to 48.5% after second preferences",
@@ -19,11 +19,53 @@
   "mayor": {
     "system": "Supplementary Vote",
     "candidates": [
-      { "name": "Boris Johnson", "party": "conservative", "firstVotes": 971931, "firstPct": 44.0, "finalVotes": 1054811, "finalPct": 51.5, "elected": true },
-      { "name": "Ken Livingstone", "party": "labour", "firstVotes": 889918, "firstPct": 40.3, "finalVotes": 992273, "finalPct": 48.5 },
-      { "name": "Jenny Jones", "party": "green", "firstVotes": 98913, "firstPct": 4.5 },
-      { "name": "Brian Paddick", "party": "libdem", "firstVotes": 91774, "firstPct": 4.2 },
-      { "name": "Other candidates (3)", "firstVotes": 155939, "firstPct": 7.1 }
+      {
+        "name": "Boris Johnson",
+        "party": "conservative",
+        "firstVotes": 971931,
+        "firstPct": 44.0,
+        "finalVotes": 1054811,
+        "finalPct": 51.5,
+        "elected": true
+      },
+      {
+        "name": "Ken Livingstone",
+        "party": "labour",
+        "firstVotes": 889918,
+        "firstPct": 40.3,
+        "finalVotes": 992273,
+        "finalPct": 48.5
+      },
+      {
+        "name": "Jenny Jones",
+        "party": "green",
+        "firstVotes": 98913,
+        "firstPct": 4.5
+      },
+      {
+        "name": "Brian Paddick",
+        "party": "libdem",
+        "firstVotes": 91774,
+        "firstPct": 4.2
+      },
+      {
+        "name": "Siobhan Benita",
+        "party": "independent",
+        "firstVotes": 83914,
+        "firstPct": 3.8
+      },
+      {
+        "name": "Lawrence Webb",
+        "party": "ukip",
+        "firstVotes": 43274,
+        "firstPct": 2.0
+      },
+      {
+        "name": "Carlos Cortiglia",
+        "party": "bnp",
+        "firstVotes": 28751,
+        "firstPct": 1.3
+      }
     ]
   },
   "assembly": {
@@ -32,16 +74,64 @@
     "listSeats": 11,
     "system": "Additional Member System",
     "results": [
-      { "party": "labour", "constituencySeats": 8, "listSeats": 4, "seats": 12, "constituencyVotes": 933438, "constituencyPct": 42.3, "listVotes": 911204, "listPct": 41.1 },
-      { "party": "conservative", "constituencySeats": 6, "listSeats": 3, "seats": 9, "constituencyVotes": 722280, "constituencyPct": 32.7, "listVotes": 708528, "listPct": 32.0 },
-      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 189215, "listPct": 8.5 },
-      { "party": "libdem", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 150447, "listPct": 6.8 }
+      {
+        "party": "labour",
+        "constituencySeats": 8,
+        "listSeats": 4,
+        "seats": 12,
+        "constituencyVotes": 933438,
+        "constituencyPct": 42.3,
+        "listVotes": 911204,
+        "listPct": 41.1
+      },
+      {
+        "party": "conservative",
+        "constituencySeats": 6,
+        "listSeats": 3,
+        "seats": 9,
+        "constituencyVotes": 722280,
+        "constituencyPct": 32.7,
+        "listVotes": 708528,
+        "listPct": 32.0
+      },
+      {
+        "party": "green",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 189215,
+        "listPct": 8.5
+      },
+      {
+        "party": "libdem",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 150447,
+        "listPct": 6.8
+      }
     ],
     "otherListVotes": [
-      { "name": "UKIP", "votes": 100040, "pct": 4.5 },
-      { "name": "BNP", "votes": 47024, "pct": 2.1 },
-      { "name": "Christian Peoples Alliance", "votes": 38758, "pct": 1.7 },
-      { "name": "English Democrats", "votes": 22025, "pct": 1.0 }
+      {
+        "name": "UKIP",
+        "votes": 100040,
+        "pct": 4.5
+      },
+      {
+        "name": "BNP",
+        "votes": 47024,
+        "pct": 2.1
+      },
+      {
+        "name": "Christian Peoples Alliance",
+        "votes": 38758,
+        "pct": 1.7
+      },
+      {
+        "name": "English Democrats",
+        "votes": 22025,
+        "pct": 1.0
+      }
     ]
   },
   "booklet": {
@@ -50,15 +140,53 @@
     "cover": "/manifestos/london/gla-2012/booklet/cover.png"
   },
   "manifestos": [
-    { "party": "labour", "candidate": "Ken Livingstone", "pdf": "/manifestos/london/gla-2012/labour/manifesto.pdf", "cover": "/manifestos/london/gla-2012/labour/cover.png" },
-    { "party": "conservative", "candidate": "Boris Johnson", "title": "Taking Greater London Forward", "pdf": "/manifestos/london/gla-2012/conservative/manifesto.pdf", "cover": "/manifestos/london/gla-2012/conservative/cover.png" },
-    { "party": "libdem", "candidate": "Brian Paddick", "pdf": "/manifestos/london/gla-2012/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2012/libdem/cover.png" },
-    { "party": "green", "candidate": "Jenny Jones", "pdf": "/manifestos/london/gla-2012/green/manifesto.pdf", "cover": "/manifestos/london/gla-2012/green/cover.png" },
-    { "party": "bnp", "candidate": "Carlos Cortiglia", "pdf": "/manifestos/london/gla-2012/bnp/manifesto.pdf", "cover": "/manifestos/london/gla-2012/bnp/cover.png" },
-    { "party": "independent", "candidate": "Siobhan Benita", "title": "Introduction manifesto", "pdf": "/manifestos/london/gla-2012/benita/manifesto.pdf", "cover": "/manifestos/london/gla-2012/benita/cover.png" }
+    {
+      "party": "labour",
+      "candidate": "Ken Livingstone",
+      "pdf": "/manifestos/london/gla-2012/labour/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/labour/cover.png"
+    },
+    {
+      "party": "conservative",
+      "candidate": "Boris Johnson",
+      "title": "Taking Greater London Forward",
+      "pdf": "/manifestos/london/gla-2012/conservative/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/conservative/cover.png"
+    },
+    {
+      "party": "libdem",
+      "candidate": "Brian Paddick",
+      "pdf": "/manifestos/london/gla-2012/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/libdem/cover.png"
+    },
+    {
+      "party": "green",
+      "candidate": "Jenny Jones",
+      "pdf": "/manifestos/london/gla-2012/green/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/green/cover.png"
+    },
+    {
+      "party": "bnp",
+      "candidate": "Carlos Cortiglia",
+      "pdf": "/manifestos/london/gla-2012/bnp/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/bnp/cover.png"
+    },
+    {
+      "party": "independent",
+      "candidate": "Siobhan Benita",
+      "title": "Introduction manifesto",
+      "pdf": "/manifestos/london/gla-2012/benita/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2012/benita/cover.png"
+    }
   ],
   "sources": [
-    { "label": "House of Commons Library — London Elections 2012 (RP 12/28)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp12-28/" },
-    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+    {
+      "label": "House of Commons Library \u2014 London Elections 2012 (RP 12/28)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp12-28/"
+    },
+    {
+      "label": "London Elects \u2014 election results",
+      "url": "https://www.londonelects.org.uk/im-voter/election-results/"
+    }
   ]
 }

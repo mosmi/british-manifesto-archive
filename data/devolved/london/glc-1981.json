@@ -18,14 +18,219 @@
     "totalSeats": 92,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 50, "pct": 41.8 },
-      { "party": "conservative", "seats": 41, "pct": 39.7 },
-      { "party": "libdem", "seats": 1, "pct": 14.4 }
+      {
+        "party": "labour",
+        "seats": 50,
+        "pct": 41.8
+      },
+      {
+        "party": "conservative",
+        "seats": 41,
+        "pct": 39.7
+      },
+      {
+        "party": "libdem",
+        "seats": 1,
+        "pct": 14.4
+      }
     ],
-    "note": "92 single-member electoral divisions, each coterminous with a Greater London parliamentary constituency. The GLC was abolished by the Local Government Act 1985, taking effect in 1986."
+    "note": "92 single-member electoral divisions, each coterminous with a Greater London parliamentary constituency. The GLC was abolished by the Local Government Act 1985, taking effect in 1986.",
+    "otherVotes": [
+      {
+        "name": "National Front",
+        "votes": 21582,
+        "pct": 0.96
+      },
+      {
+        "name": "Ecology",
+        "votes": 17515,
+        "pct": 0.78
+      },
+      {
+        "name": "Social Democrat",
+        "votes": 12738,
+        "pct": 0.57
+      },
+      {
+        "name": "New National Front",
+        "votes": 5877,
+        "pct": 0.26
+      },
+      {
+        "name": "Communist",
+        "votes": 5275,
+        "pct": 0.23
+      },
+      {
+        "name": "Constitutional Movement",
+        "votes": 4041,
+        "pct": 0.18
+      },
+      {
+        "name": "Social Democratic Alliance",
+        "votes": 3068,
+        "pct": 0.14
+      },
+      {
+        "name": "Workers Revolutionary Party",
+        "votes": 2753,
+        "pct": 0.12
+      },
+      {
+        "name": "Independent — Southall's Mr. Clean",
+        "votes": 2619,
+        "pct": 0.12
+      },
+      {
+        "name": "Social Democrat for Paddington",
+        "votes": 1845,
+        "pct": 0.08
+      },
+      {
+        "name": "Social Democrat (Labour Moderate)",
+        "votes": 1737,
+        "pct": 0.08
+      },
+      {
+        "name": "Enoch Powell is Right",
+        "votes": 1731,
+        "pct": 0.08
+      },
+      {
+        "name": "Save London Action Group",
+        "votes": 1727,
+        "pct": 0.08
+      },
+      {
+        "name": "Social Democratic Party",
+        "votes": 1544,
+        "pct": 0.07
+      },
+      {
+        "name": "Abolish the GLC",
+        "votes": 1158,
+        "pct": 0.05
+      },
+      {
+        "name": "East London Workers Against Racism",
+        "votes": 867,
+        "pct": 0.04
+      },
+      {
+        "name": "National Front Constitutional Movement",
+        "votes": 816,
+        "pct": 0.04
+      },
+      {
+        "name": "Irish National Party",
+        "votes": 793,
+        "pct": 0.04
+      },
+      {
+        "name": "Council for Social Democracy",
+        "votes": 650,
+        "pct": 0.03
+      },
+      {
+        "name": "Fellowship Party and Anti-Pollution",
+        "votes": 637,
+        "pct": 0.03
+      },
+      {
+        "name": "Independent",
+        "votes": 622,
+        "pct": 0.03
+      },
+      {
+        "name": "Abolition of Rates",
+        "votes": 503,
+        "pct": 0.02
+      },
+      {
+        "name": "Independent Conservative",
+        "votes": 362,
+        "pct": 0.02
+      },
+      {
+        "name": "New Britain Party",
+        "votes": 346,
+        "pct": 0.02
+      },
+      {
+        "name": "Ratepayers Watchdog",
+        "votes": 317,
+        "pct": 0.01
+      },
+      {
+        "name": "Full Employment and Anti-Common Market",
+        "votes": 201,
+        "pct": 0.01
+      },
+      {
+        "name": "Independent — Protect Rights of the Individual",
+        "votes": 164,
+        "pct": 0.01
+      },
+      {
+        "name": "Teacher",
+        "votes": 162,
+        "pct": 0.01
+      },
+      {
+        "name": "Workers Party",
+        "votes": 145,
+        "pct": 0.01
+      },
+      {
+        "name": "Save London Alliance",
+        "votes": 126,
+        "pct": 0.01
+      },
+      {
+        "name": "Revolutionary Communist",
+        "votes": 116,
+        "pct": 0.01
+      },
+      {
+        "name": "Republican Party",
+        "votes": 111,
+        "pct": 0.0
+      },
+      {
+        "name": "Independent (Abolitionist)",
+        "votes": 103,
+        "pct": 0.0
+      },
+      {
+        "name": "Socialist Party of Great Britain",
+        "votes": 83,
+        "pct": 0.0
+      },
+      {
+        "name": "Abolitionist",
+        "votes": 82,
+        "pct": 0.0
+      },
+      {
+        "name": "Public Safety, Democratic Monarchist, White Resident",
+        "votes": 82,
+        "pct": 0.0
+      },
+      {
+        "name": "Fair Rates, Anti-Corruption",
+        "votes": 73,
+        "pct": 0.0
+      }
+    ]
   },
   "sources": [
-    { "label": "London Datastore — Greater London Council Election 1981", "url": "https://data.london.gov.uk/elections/" },
-    { "label": "1981 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1981_Greater_London_Council_election" }
+    {
+      "label": "London Datastore — Greater London Council Election 1981",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "1981 Greater London Council election (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1981_Greater_London_Council_election"
+    }
   ]
 }

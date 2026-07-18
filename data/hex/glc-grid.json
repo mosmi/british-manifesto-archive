@@ -1,0 +1,466 @@
+{
+  "_comment": "92 GLC single-member electoral divisions (1973-1981). Geography-faithful odd-r cartogram designed against the GLCE 'Political representation of constituencies' diagrams: borough clusters kept contiguous and placed at true compass positions (Hillingdon west edge, Havering east wing, Bexley SE, Croydon/Bromley south, Barnet/Enfield north). q east, r north; r ranges -1..9.",
+  "layout": "odd-r",
+  "hexes": {
+    "acton": {
+      "q": 2,
+      "r": 5,
+      "n": "Acton"
+    },
+    "barking": {
+      "q": 10,
+      "r": 5,
+      "n": "Barking"
+    },
+    "battersea-north": {
+      "q": 4,
+      "r": 2,
+      "n": "Battersea North"
+    },
+    "battersea-south": {
+      "q": 3,
+      "r": 2,
+      "n": "Battersea South"
+    },
+    "beckenham": {
+      "q": 7,
+      "r": 0,
+      "n": "Beckenham"
+    },
+    "bermondsey": {
+      "q": 6,
+      "r": 3,
+      "n": "Bermondsey"
+    },
+    "bethnal-green-and-bow": {
+      "q": 8,
+      "r": 5,
+      "n": "Bethnal Green and Bow"
+    },
+    "bexleyheath": {
+      "q": 9,
+      "r": 2,
+      "n": "Bexleyheath"
+    },
+    "brent-east": {
+      "q": 3,
+      "r": 6,
+      "n": "Brent East"
+    },
+    "brent-north": {
+      "q": 2,
+      "r": 7,
+      "n": "Brent North"
+    },
+    "brent-south": {
+      "q": 2,
+      "r": 6,
+      "n": "Brent South"
+    },
+    "brentford-and-isleworth": {
+      "q": 2,
+      "r": 4,
+      "n": "Brentford and Isleworth"
+    },
+    "carshalton": {
+      "q": 4,
+      "r": 0,
+      "n": "Carshalton"
+    },
+    "chelsea": {
+      "q": 4,
+      "r": 3,
+      "n": "Chelsea"
+    },
+    "chingford": {
+      "q": 7,
+      "r": 8,
+      "n": "Chingford"
+    },
+    "chipping-barnet": {
+      "q": 3,
+      "r": 9,
+      "n": "Chipping Barnet"
+    },
+    "chislehurst": {
+      "q": 8,
+      "r": 0,
+      "n": "Chislehurst"
+    },
+    "city-of-london-and-westminster-south": {
+      "q": 5,
+      "r": 4,
+      "n": "City of London and Westminster South"
+    },
+    "croydon-central": {
+      "q": 5,
+      "r": -1,
+      "n": "Croydon Central"
+    },
+    "croydon-north-east": {
+      "q": 6,
+      "r": 0,
+      "n": "Croydon North East"
+    },
+    "croydon-north-west": {
+      "q": 5,
+      "r": 0,
+      "n": "Croydon North West"
+    },
+    "croydon-south": {
+      "q": 4,
+      "r": -1,
+      "n": "Croydon South"
+    },
+    "dagenham": {
+      "q": 11,
+      "r": 5,
+      "n": "Dagenham"
+    },
+    "deptford": {
+      "q": 7,
+      "r": 2,
+      "n": "Deptford"
+    },
+    "dulwich": {
+      "q": 6,
+      "r": 1,
+      "n": "Dulwich"
+    },
+    "ealing-north": {
+      "q": 1,
+      "r": 6,
+      "n": "Ealing North"
+    },
+    "edmonton": {
+      "q": 6,
+      "r": 8,
+      "n": "Edmonton"
+    },
+    "enfield-north": {
+      "q": 5,
+      "r": 9,
+      "n": "Enfield North"
+    },
+    "erith-and-crayford": {
+      "q": 9,
+      "r": 3,
+      "n": "Erith and Crayford"
+    },
+    "feltham-and-heston": {
+      "q": 1,
+      "r": 4,
+      "n": "Feltham and Heston"
+    },
+    "finchley": {
+      "q": 4,
+      "r": 8,
+      "n": "Finchley"
+    },
+    "fulham": {
+      "q": 3,
+      "r": 3,
+      "n": "Fulham"
+    },
+    "greenwich": {
+      "q": 7,
+      "r": 3,
+      "n": "Greenwich"
+    },
+    "hackney-central": {
+      "q": 7,
+      "r": 5,
+      "n": "Hackney Central"
+    },
+    "hackney-north-and-stoke-newington": {
+      "q": 7,
+      "r": 6,
+      "n": "Hackney North and Stoke Newington"
+    },
+    "hackney-south-and-shoreditch": {
+      "q": 7,
+      "r": 4,
+      "n": "Hackney South and Shoreditch"
+    },
+    "hammersmith-north": {
+      "q": 3,
+      "r": 4,
+      "n": "Hammersmith North"
+    },
+    "hampstead": {
+      "q": 4,
+      "r": 6,
+      "n": "Hampstead"
+    },
+    "harrow-central": {
+      "q": 1,
+      "r": 7,
+      "n": "Harrow Central"
+    },
+    "harrow-east": {
+      "q": 2,
+      "r": 8,
+      "n": "Harrow East"
+    },
+    "harrow-west": {
+      "q": 1,
+      "r": 8,
+      "n": "Harrow West"
+    },
+    "hayes-and-harlington": {
+      "q": 0,
+      "r": 5,
+      "n": "Hayes and Harlington"
+    },
+    "hendon-north": {
+      "q": 3,
+      "r": 8,
+      "n": "Hendon North"
+    },
+    "hendon-south": {
+      "q": 3,
+      "r": 7,
+      "n": "Hendon South"
+    },
+    "holborn-and-st-pancras-south": {
+      "q": 5,
+      "r": 5,
+      "n": "Holborn and St Pancras South"
+    },
+    "hornchurch": {
+      "q": 11,
+      "r": 6,
+      "n": "Hornchurch"
+    },
+    "hornsey": {
+      "q": 4,
+      "r": 7,
+      "n": "Hornsey"
+    },
+    "ilford-north": {
+      "q": 9,
+      "r": 7,
+      "n": "Ilford North"
+    },
+    "ilford-south": {
+      "q": 9,
+      "r": 6,
+      "n": "Ilford South"
+    },
+    "islington-central": {
+      "q": 6,
+      "r": 5,
+      "n": "Islington Central"
+    },
+    "islington-north": {
+      "q": 6,
+      "r": 6,
+      "n": "Islington North"
+    },
+    "islington-south-and-finsbury": {
+      "q": 6,
+      "r": 4,
+      "n": "Islington South and Finsbury"
+    },
+    "kensington": {
+      "q": 4,
+      "r": 4,
+      "n": "Kensington"
+    },
+    "kingston-upon-thames": {
+      "q": 1,
+      "r": 1,
+      "n": "Kingston upon Thames"
+    },
+    "lambeth-central": {
+      "q": 5,
+      "r": 2,
+      "n": "Lambeth Central"
+    },
+    "lewisham-east": {
+      "q": 8,
+      "r": 1,
+      "n": "Lewisham East"
+    },
+    "lewisham-west": {
+      "q": 7,
+      "r": 1,
+      "n": "Lewisham West"
+    },
+    "leyton": {
+      "q": 8,
+      "r": 6,
+      "n": "Leyton"
+    },
+    "mitcham-and-morden": {
+      "q": 2,
+      "r": 0,
+      "n": "Mitcham and Morden"
+    },
+    "newham-north-east": {
+      "q": 10,
+      "r": 6,
+      "n": "Newham North East"
+    },
+    "newham-north-west": {
+      "q": 9,
+      "r": 5,
+      "n": "Newham North West"
+    },
+    "newham-south": {
+      "q": 9,
+      "r": 4,
+      "n": "Newham South"
+    },
+    "norwood": {
+      "q": 5,
+      "r": 1,
+      "n": "Norwood"
+    },
+    "orpington": {
+      "q": 7,
+      "r": -1,
+      "n": "Orpington"
+    },
+    "paddington": {
+      "q": 3,
+      "r": 5,
+      "n": "Paddington"
+    },
+    "peckham": {
+      "q": 6,
+      "r": 2,
+      "n": "Peckham"
+    },
+    "putney": {
+      "q": 2,
+      "r": 2,
+      "n": "Putney"
+    },
+    "ravensbourne": {
+      "q": 6,
+      "r": -1,
+      "n": "Ravensbourne"
+    },
+    "richmond": {
+      "q": 2,
+      "r": 3,
+      "n": "Richmond"
+    },
+    "romford": {
+      "q": 10,
+      "r": 7,
+      "n": "Romford"
+    },
+    "ruislip-northwood": {
+      "q": 0,
+      "r": 7,
+      "n": "Ruislip-Northwood"
+    },
+    "sidcup": {
+      "q": 9,
+      "r": 1,
+      "n": "Sidcup"
+    },
+    "southall": {
+      "q": 1,
+      "r": 5,
+      "n": "Southall"
+    },
+    "southgate": {
+      "q": 5,
+      "r": 8,
+      "n": "Southgate"
+    },
+    "st-marylebone": {
+      "q": 4,
+      "r": 5,
+      "n": "St Marylebone"
+    },
+    "st-pancras-north": {
+      "q": 5,
+      "r": 6,
+      "n": "St Pancras North"
+    },
+    "stepney-and-poplar": {
+      "q": 8,
+      "r": 4,
+      "n": "Stepney and Poplar"
+    },
+    "streatham": {
+      "q": 4,
+      "r": 1,
+      "n": "Streatham"
+    },
+    "surbiton": {
+      "q": 1,
+      "r": 0,
+      "n": "Surbiton"
+    },
+    "sutton-and-cheam": {
+      "q": 3,
+      "r": 0,
+      "n": "Sutton and Cheam"
+    },
+    "tooting": {
+      "q": 3,
+      "r": 1,
+      "n": "Tooting"
+    },
+    "tottenham": {
+      "q": 6,
+      "r": 7,
+      "n": "Tottenham"
+    },
+    "twickenham": {
+      "q": 1,
+      "r": 3,
+      "n": "Twickenham"
+    },
+    "upminster": {
+      "q": 11,
+      "r": 7,
+      "n": "Upminster"
+    },
+    "uxbridge": {
+      "q": 0,
+      "r": 6,
+      "n": "Uxbridge"
+    },
+    "vauxhall": {
+      "q": 5,
+      "r": 3,
+      "n": "Vauxhall"
+    },
+    "walthamstow": {
+      "q": 7,
+      "r": 7,
+      "n": "Walthamstow"
+    },
+    "wanstead-and-woodford": {
+      "q": 8,
+      "r": 7,
+      "n": "Wanstead and Woodford"
+    },
+    "wimbledon": {
+      "q": 2,
+      "r": 1,
+      "n": "Wimbledon"
+    },
+    "wood-green": {
+      "q": 5,
+      "r": 7,
+      "n": "Wood Green"
+    },
+    "woolwich-east": {
+      "q": 8,
+      "r": 3,
+      "n": "Woolwich East"
+    },
+    "woolwich-west": {
+      "q": 8,
+      "r": 2,
+      "n": "Woolwich West"
+    }
+  }
+}

@@ -15,7 +15,7 @@
     "Iraq War in 2003 would later dominate Blair's legacy",
     "Lib Dems advance to 52 seats under Charles Kennedy"
   ],
-  "youtubeId": "",
+  "youtubeId": "-HGDplurdMQ",
   "extraManifestoParties": [
     "ukip",
     "green",
@@ -68,62 +68,68 @@
     {
       "party": "labour",
       "seats": 412,
-      "votes": 10724953,
+      "votes": 10834800,
       "percentage": 40.7
     },
     {
       "party": "conservative",
       "seats": 166,
-      "votes": 8357615,
+      "votes": 8355683,
       "percentage": 31.7
     },
     {
       "party": "libdem",
       "seats": 52,
-      "votes": 4814321,
+      "votes": 4840340,
       "percentage": 18.3
-    },
-    {
-      "party": "snp",
-      "seats": 5,
-      "votes": 464314,
-      "percentage": 1.8
-    },
-    {
-      "party": "plaid",
-      "seats": 4,
-      "votes": 195892,
-      "percentage": 0.7
     },
     {
       "party": "uup",
       "seats": 6,
-      "votes": 0,
-      "percentage": 0
+      "votes": 216800,
+      "percentage": 0.8
+    },
+    {
+      "party": "snp",
+      "seats": 5,
+      "votes": 464300,
+      "percentage": 1.8
     },
     {
       "party": "dup",
       "seats": 5,
-      "votes": 0,
-      "percentage": 0
-    },
-    {
-      "party": "sdlp",
-      "seats": 3,
-      "votes": 0,
-      "percentage": 0
+      "votes": 182000,
+      "percentage": 0.7
     },
     {
       "party": "sinnfein",
       "seats": 4,
-      "votes": 0,
-      "percentage": 0
+      "votes": 175900,
+      "percentage": 0.7
+    },
+    {
+      "party": "plaid",
+      "seats": 4,
+      "votes": 195900,
+      "percentage": 0.7
+    },
+    {
+      "party": "sdlp",
+      "seats": 3,
+      "votes": 169900,
+      "percentage": 0.6
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 16053,
+      "percentage": 0.1
     },
     {
       "party": "others",
-      "seats": 2,
-      "votes": 0,
-      "percentage": 6.8
+      "seats": 1,
+      "votes": 28487,
+      "percentage": 0.1
     }
   ]
 }

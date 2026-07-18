@@ -19,11 +19,77 @@
   "mayor": {
     "system": "Supplementary Vote",
     "candidates": [
-      { "name": "Ken Livingstone", "party": "independent", "firstVotes": 667877, "firstPct": 39.0, "finalVotes": 776427, "finalPct": 57.9, "elected": true },
-      { "name": "Steve Norris", "party": "conservative", "firstVotes": 464434, "firstPct": 27.1, "finalVotes": 564137, "finalPct": 42.1 },
-      { "name": "Frank Dobson", "party": "labour", "firstVotes": 223884, "firstPct": 13.1 },
-      { "name": "Susan Kramer", "party": "libdem", "firstVotes": 203452, "firstPct": 11.9 },
-      { "name": "Other candidates (7)", "firstVotes": 154425, "firstPct": 9.0 }
+      {
+        "name": "Ken Livingstone",
+        "party": "independent",
+        "firstVotes": 667877,
+        "firstPct": 39.0,
+        "finalVotes": 776427,
+        "finalPct": 57.9,
+        "elected": true
+      },
+      {
+        "name": "Steve Norris",
+        "party": "conservative",
+        "firstVotes": 464434,
+        "firstPct": 27.1,
+        "finalVotes": 564137,
+        "finalPct": 42.1
+      },
+      {
+        "name": "Frank Dobson",
+        "party": "labour",
+        "firstVotes": 223884,
+        "firstPct": 13.1
+      },
+      {
+        "name": "Susan Kramer",
+        "party": "libdem",
+        "firstVotes": 203452,
+        "firstPct": 11.9
+      },
+      {
+        "name": "Ram Gidoomal",
+        "party": "cpa",
+        "firstVotes": 42060,
+        "firstPct": 2.5
+      },
+      {
+        "name": "Darren Johnson",
+        "party": "green",
+        "firstVotes": 38121,
+        "firstPct": 2.2
+      },
+      {
+        "name": "Michael Newland",
+        "party": "bnp",
+        "firstVotes": 33569,
+        "firstPct": 2.0
+      },
+      {
+        "name": "Damian Hockney",
+        "party": "ukip",
+        "firstVotes": 16324,
+        "firstPct": 1.0
+      },
+      {
+        "name": "Geoffrey Ben-Nathan",
+        "partyLabel": "Pro-Motorist Small Shop",
+        "firstVotes": 9956,
+        "firstPct": 0.6
+      },
+      {
+        "name": "Ashwin Kumar",
+        "party": "independent",
+        "firstVotes": 9015,
+        "firstPct": 0.5
+      },
+      {
+        "name": "Geoffrey Clements",
+        "partyLabel": "Natural Law Party",
+        "firstVotes": 5470,
+        "firstPct": 0.3
+      }
     ]
   },
   "assembly": {
@@ -32,22 +98,78 @@
     "listSeats": 11,
     "system": "Additional Member System",
     "results": [
-      { "party": "labour", "constituencySeats": 6, "listSeats": 3, "seats": 9, "constituencyVotes": 501296, "constituencyPct": 31.6, "listVotes": 502874, "listPct": 30.3 },
-      { "party": "conservative", "constituencySeats": 8, "listSeats": 1, "seats": 9, "constituencyVotes": 526707, "constituencyPct": 33.2, "listVotes": 481053, "listPct": 29.0 },
-      { "party": "libdem", "constituencySeats": 0, "listSeats": 4, "seats": 4, "listVotes": 245555, "listPct": 14.8 },
-      { "party": "green", "constituencySeats": 0, "listSeats": 3, "seats": 3, "listVotes": 183910, "listPct": 11.1 }
+      {
+        "party": "labour",
+        "constituencySeats": 6,
+        "listSeats": 3,
+        "seats": 9,
+        "constituencyVotes": 501296,
+        "constituencyPct": 31.6,
+        "listVotes": 502874,
+        "listPct": 30.3
+      },
+      {
+        "party": "conservative",
+        "constituencySeats": 8,
+        "listSeats": 1,
+        "seats": 9,
+        "constituencyVotes": 526707,
+        "constituencyPct": 33.2,
+        "listVotes": 481053,
+        "listPct": 29.0
+      },
+      {
+        "party": "libdem",
+        "constituencySeats": 0,
+        "listSeats": 4,
+        "seats": 4,
+        "listVotes": 245555,
+        "listPct": 14.8
+      },
+      {
+        "party": "green",
+        "constituencySeats": 0,
+        "listSeats": 3,
+        "seats": 3,
+        "listVotes": 183910,
+        "listPct": 11.1
+      }
     ],
     "otherListVotes": [
-      { "name": "Christian Peoples Alliance", "votes": 55192, "pct": 3.3 },
-      { "name": "BNP", "votes": 47670, "pct": 2.9 },
-      { "name": "UKIP", "votes": 34054, "pct": 2.1 }
+      {
+        "name": "Christian Peoples Alliance",
+        "votes": 55192,
+        "pct": 3.3
+      },
+      {
+        "name": "BNP",
+        "votes": 47670,
+        "pct": 2.9
+      },
+      {
+        "name": "UKIP",
+        "votes": 34054,
+        "pct": 2.1
+      }
     ]
   },
   "manifestos": [
-    { "party": "independent", "candidate": "Ken Livingstone", "title": "Manifesto for London", "pdf": "/manifestos/london/gla-2000/livingstone/manifesto.pdf", "cover": "/manifestos/london/gla-2000/livingstone/cover.png" }
+    {
+      "party": "independent",
+      "candidate": "Ken Livingstone",
+      "title": "Manifesto for London",
+      "pdf": "/manifestos/london/gla-2000/livingstone/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2000/livingstone/cover.png"
+    }
   ],
   "sources": [
-    { "label": "House of Commons Library — The local elections and elections for a London Mayor and Assembly (RP 00/53)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp00-53/" },
-    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+    {
+      "label": "House of Commons Library \u2014 The local elections and elections for a London Mayor and Assembly (RP 00/53)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp00-53/"
+    },
+    {
+      "label": "London Elects \u2014 election results",
+      "url": "https://www.londonelects.org.uk/im-voter/election-results/"
+    }
   ]
 }

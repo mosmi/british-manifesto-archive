@@ -18,14 +18,70 @@
     "totalSeats": 126,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 101, "pct": 58.4 },
-      { "party": "conservative", "seats": 25, "pct": 37.5 },
-      { "party": "libdem", "seats": 0, "pct": 3.0 }
+      {
+        "party": "labour",
+        "seats": 101,
+        "pct": 58.4
+      },
+      {
+        "party": "conservative",
+        "seats": 25,
+        "pct": 37.5
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 3.0
+      }
     ],
-    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
+    "otherVotes": [
+      {
+        "name": "Communist",
+        "votes": 4772,
+        "pct": 0.7
+      },
+      {
+        "name": "Independent Labour Party",
+        "votes": 1382,
+        "pct": 0.2
+      },
+      {
+        "name": "Independent",
+        "votes": 1334,
+        "pct": 0.2
+      },
+      {
+        "name": "Socialist Party of Great Britain",
+        "votes": 995,
+        "pct": 0.1
+      }
+    ],
+    "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."
   },
   "sources": [
-    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
-    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+    {
+      "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)",
+      "url": "https://www.electionscentre.co.uk/"
+    },
+    {
+      "label": "London Datastore — historic London elections",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "Wikipedia — 1958 London County Council election",
+      "url": "https://en.wikipedia.org/wiki/1958_London_County_Council_election"
+    },
+    {
+      "label": "Socialist Standard No. 644 (April 1958) — SPGB election manifesto",
+      "url": "https://www.worldsocialism.org/spgb/socialist-standard/1958/1950s/no-644-april-1958/london-county-council-elections-party-manifesto/"
+    }
+  ],
+  "manifestos": [
+    {
+      "party": "spgb",
+      "title": "London County Council Elections: Party Manifesto",
+      "md": "/manifestos/london/lcc-1958/spgb/manifesto.md"
+    }
   ]
 }

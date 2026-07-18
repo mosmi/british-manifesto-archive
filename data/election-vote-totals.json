@@ -1,133 +1,994 @@
 {
   "1945": {
-    "labour": { "votes": 11967746, "percentage": 49.7 },
-    "conservative": { "votes": 8716211, "percentage": 36.2 },
-    "libdem": { "votes": 2177938, "percentage": 9.0 },
-    "nationalliberal": { "votes": 686652, "percentage": 2.9 },
-    "independent": { "votes": 133191, "percentage": 0.6 },
-    "national": { "votes": 130513, "percentage": 0.5 },
-    "commonwealth": { "votes": 110634, "percentage": 0.5 },
-    "communist": { "votes": 97945, "percentage": 0.4 },
-    "irishnationalist": { "votes": 92819, "percentage": 0.4 },
-    "nationalindependent": { "votes": 65171, "percentage": 0.3 },
-    "indlabour": { "votes": 63135, "percentage": 0.3 },
-    "indconservative": { "votes": 57823, "percentage": 0.2 },
-    "ilp": { "votes": 46769, "percentage": 0.2 },
-    "indprogressive": { "votes": 45967, "percentage": 0.1 },
-    "indliberal": { "votes": 30450, "percentage": 0.1 }
+    "labour": {
+      "votes": 11967746,
+      "percentage": 49.7
+    },
+    "conservative": {
+      "votes": 8699780,
+      "percentage": 36.1
+    },
+    "libdem": {
+      "votes": 2177938,
+      "percentage": 9.0
+    },
+    "nationalliberal": {
+      "votes": 686652,
+      "percentage": 2.9
+    },
+    "independent": {
+      "votes": 133191,
+      "percentage": 0.6
+    },
+    "national": {
+      "votes": 130513,
+      "percentage": 0.5
+    },
+    "commonwealth": {
+      "votes": 110634,
+      "percentage": 0.5
+    },
+    "communist": {
+      "votes": 97945,
+      "percentage": 0.4
+    },
+    "irishnationalist": {
+      "votes": 92819,
+      "percentage": 0.4
+    },
+    "nationalindependent": {
+      "votes": 65171,
+      "percentage": 0.3
+    },
+    "indlabour": {
+      "votes": 63135,
+      "percentage": 0.3
+    },
+    "indconservative": {
+      "votes": 57823,
+      "percentage": 0.2
+    },
+    "ilp": {
+      "votes": 46769,
+      "percentage": 0.2
+    },
+    "indprogressive": {
+      "votes": 45967,
+      "percentage": 0.1
+    },
+    "indliberal": {
+      "votes": 30450,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 16431,
+      "percentage": 0.1
+    }
   },
   "1950": {
-    "labour": { "votes": 13266176, "percentage": 46.1 },
-    "conservative": { "votes": 12492404, "percentage": 43.4 },
-    "libdem": { "votes": 2621487, "percentage": 9.1 }
+    "labour": {
+      "votes": 13266176,
+      "percentage": 46.1
+    },
+    "conservative": {
+      "votes": 11482357,
+      "percentage": 39.9
+    },
+    "libdem": {
+      "votes": 2621487,
+      "percentage": 9.1
+    },
+    "uup": {
+      "votes": 352300,
+      "percentage": 1.2
+    },
+    "irishnationalist": {
+      "votes": 65200,
+      "percentage": 0.2
+    },
+    "natlibconservative": {
+      "votes": 815118,
+      "percentage": 2.8
+    },
+    "nationalliberal": {
+      "votes": 181137,
+      "percentage": 0.6
+    },
+    "speaker": {
+      "votes": 24703,
+      "percentage": 0.1
+    }
   },
   "1951": {
-    "conservative": { "votes": 13717538, "percentage": 48.0 },
-    "labour": { "votes": 13948605, "percentage": 48.8 },
-    "libdem": { "votes": 730546, "percentage": 2.5 }
+    "conservative": {
+      "votes": 12574037,
+      "percentage": 44.0
+    },
+    "labour": {
+      "votes": 13948605,
+      "percentage": 48.8
+    },
+    "libdem": {
+      "votes": 730546,
+      "percentage": 2.5
+    },
+    "uup": {
+      "votes": 274900,
+      "percentage": 1.0
+    },
+    "natlibconservative": {
+      "votes": 986942,
+      "percentage": 3.5
+    },
+    "nationalliberal": {
+      "votes": 70496,
+      "percentage": 0.2
+    },
+    "irishlabour": {
+      "votes": 33714,
+      "percentage": 0.1
+    },
+    "antipartition": {
+      "votes": 32717,
+      "percentage": 0.1
+    },
+    "irishrepublican": {
+      "votes": 33094,
+      "percentage": 0.1
+    }
   },
   "1955": {
-    "conservative": { "votes": 13286569, "percentage": 49.7 },
-    "labour": { "votes": 12404970, "percentage": 46.4 },
-    "libdem": { "votes": 722405, "percentage": 2.7 }
+    "conservative": {
+      "votes": 12843969,
+      "percentage": 48.0
+    },
+    "labour": {
+      "votes": 12404970,
+      "percentage": 46.4
+    },
+    "libdem": {
+      "votes": 722405,
+      "percentage": 2.7
+    },
+    "uup": {
+      "votes": 442600,
+      "percentage": 1.7
+    },
+    "sinnfein": {
+      "votes": 168400,
+      "percentage": 0.6
+    },
+    "speaker": {
+      "votes": 25372,
+      "percentage": 0.1
+    }
   },
   "1959": {
-    "conservative": { "votes": 13749830, "percentage": 49.4 },
-    "labour": { "votes": 12215538, "percentage": 43.8 },
-    "libdem": { "votes": 1638571, "percentage": 5.9 }
+    "conservative": {
+      "votes": 13304830,
+      "percentage": 47.8
+    },
+    "labour": {
+      "votes": 12215538,
+      "percentage": 43.8
+    },
+    "libdem": {
+      "votes": 1638571,
+      "percentage": 5.9
+    },
+    "uup": {
+      "votes": 445000,
+      "percentage": 1.6
+    },
+    "indunionist": {
+      "votes": 12163,
+      "percentage": 0.0
+    }
   },
   "1964": {
-    "labour": { "votes": 12205814, "percentage": 44.1 },
-    "conservative": { "votes": 12001396, "percentage": 43.4 },
-    "libdem": { "votes": 3092878, "percentage": 11.2 }
+    "labour": {
+      "votes": 12205814,
+      "percentage": 44.1
+    },
+    "conservative": {
+      "votes": 11577908,
+      "percentage": 41.9
+    },
+    "libdem": {
+      "votes": 3092878,
+      "percentage": 11.2
+    },
+    "uup": {
+      "votes": 401900,
+      "percentage": 1.5
+    },
+    "speaker": {
+      "votes": 21588,
+      "percentage": 0.1
+    }
   },
   "1966": {
-    "labour": { "votes": 13064951, "percentage": 47.9 },
-    "conservative": { "votes": 11418433, "percentage": 41.9 },
-    "libdem": { "votes": 2327533, "percentage": 8.5 }
+    "labour": {
+      "votes": 13064951,
+      "percentage": 47.9
+    },
+    "conservative": {
+      "votes": 11049833,
+      "percentage": 40.5
+    },
+    "libdem": {
+      "votes": 2327533,
+      "percentage": 8.5
+    },
+    "uup": {
+      "votes": 368600,
+      "percentage": 1.4
+    },
+    "republicanlabour": {
+      "votes": 26292,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 30463,
+      "percentage": 0.1
+    }
   },
   "1970": {
-    "conservative": { "votes": 13145123, "percentage": 46.4 },
-    "labour": { "votes": 12175174, "percentage": 43.1 },
-    "libdem": { "votes": 2030611, "percentage": 7.2 }
+    "conservative": {
+      "votes": 12723123,
+      "percentage": 44.9
+    },
+    "labour": {
+      "votes": 12175174,
+      "percentage": 43.1
+    },
+    "libdem": {
+      "votes": 2030611,
+      "percentage": 7.2
+    },
+    "snp": {
+      "votes": 306800,
+      "percentage": 1.1
+    },
+    "uup": {
+      "votes": 422000,
+      "percentage": 1.5
+    },
+    "unity": {
+      "votes": 71521,
+      "percentage": 0.3
+    },
+    "protestantunionist": {
+      "votes": 24130,
+      "percentage": 0.1
+    },
+    "republicanlabour": {
+      "votes": 30649,
+      "percentage": 0.1
+    },
+    "indlabour": {
+      "votes": 16701,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 29417,
+      "percentage": 0.1
+    }
   },
   "feb1974": {
-    "labour": { "votes": 11607044, "percentage": 37.2 },
-    "conservative": { "votes": 11902195, "percentage": 37.9 },
-    "libdem": { "votes": 6042771, "percentage": 19.3 }
+    "labour": {
+      "votes": 11607044,
+      "percentage": 37.2
+    },
+    "conservative": {
+      "votes": 11902195,
+      "percentage": 37.9
+    },
+    "libdem": {
+      "votes": 6042771,
+      "percentage": 19.3
+    },
+    "snp": {
+      "votes": 633200,
+      "percentage": 2.0
+    },
+    "plaid": {
+      "votes": 171400,
+      "percentage": 0.5
+    },
+    "uup": {
+      "votes": 326400,
+      "percentage": 1.0
+    },
+    "sdlp": {
+      "votes": 160400,
+      "percentage": 0.5
+    },
+    "dup": {
+      "votes": 58700,
+      "percentage": 0.2
+    },
+    "vanguard": {
+      "votes": 172100,
+      "percentage": 0.5
+    },
+    "indlabour": {
+      "votes": 22918,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 38452,
+      "percentage": 0.1
+    }
   },
   "oct1974": {
-    "labour": { "votes": 11431491, "percentage": 39.2 },
-    "conservative": { "votes": 10248856, "percentage": 35.8 },
-    "libdem": { "votes": 5030173, "percentage": 18.3 }
+    "labour": {
+      "votes": 11431491,
+      "percentage": 39.2
+    },
+    "conservative": {
+      "votes": 10213151,
+      "percentage": 35.0
+    },
+    "libdem": {
+      "votes": 5030173,
+      "percentage": 18.3
+    },
+    "snp": {
+      "votes": 839600,
+      "percentage": 2.9
+    },
+    "plaid": {
+      "votes": 166300,
+      "percentage": 0.6
+    },
+    "uup": {
+      "votes": 256100,
+      "percentage": 0.9
+    },
+    "sdlp": {
+      "votes": 154200,
+      "percentage": 0.5
+    },
+    "dup": {
+      "votes": 59500,
+      "percentage": 0.2
+    },
+    "vanguard": {
+      "votes": 126598,
+      "percentage": 0.4
+    },
+    "independent": {
+      "votes": 32980,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 35705,
+      "percentage": 0.1
+    }
   },
   "1979": {
-    "conservative": { "votes": 13069731, "percentage": 43.9 },
-    "labour": { "votes": 11532918, "percentage": 36.9 },
-    "libdem": { "votes": 4285761, "percentage": 13.8 }
+    "conservative": {
+      "votes": 13069731,
+      "percentage": 43.9
+    },
+    "labour": {
+      "votes": 11505883,
+      "percentage": 36.9
+    },
+    "libdem": {
+      "votes": 4285761,
+      "percentage": 13.8
+    },
+    "snp": {
+      "votes": 504300,
+      "percentage": 1.6
+    },
+    "plaid": {
+      "votes": 132500,
+      "percentage": 0.4
+    },
+    "uup": {
+      "votes": 254600,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 126300,
+      "percentage": 0.4
+    },
+    "dup": {
+      "votes": 71000,
+      "percentage": 0.2
+    },
+    "independent": {
+      "votes": 22398,
+      "percentage": 0.1
+    },
+    "uuuc": {
+      "votes": 29249,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 27035,
+      "percentage": 0.1
+    }
   },
   "1983": {
-    "conservative": { "votes": 13012316, "percentage": 42.4 },
-    "labour": { "votes": 8271837, "percentage": 27.6 },
-    "libdem": { "votes": 7780486, "percentage": 25.4 }
+    "conservative": {
+      "votes": 13012316,
+      "percentage": 42.4
+    },
+    "labour": {
+      "votes": 8271837,
+      "percentage": 27.6
+    },
+    "libdem": {
+      "votes": 7780486,
+      "percentage": 25.4
+    },
+    "snp": {
+      "votes": 332000,
+      "percentage": 1.1
+    },
+    "plaid": {
+      "votes": 125300,
+      "percentage": 0.4
+    },
+    "uup": {
+      "votes": 260000,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 137000,
+      "percentage": 0.4
+    },
+    "dup": {
+      "votes": 152700,
+      "percentage": 0.5
+    },
+    "sinnfein": {
+      "votes": 102700,
+      "percentage": 0.3
+    },
+    "ulsterpopularunionist": {
+      "votes": 22861,
+      "percentage": 0.1
+    }
   },
   "1987": {
-    "conservative": { "votes": 13760935, "percentage": 42.2 },
-    "labour": { "votes": 10029027, "percentage": 30.8 },
-    "libdem": { "votes": 7341291, "percentage": 22.6 }
+    "conservative": {
+      "votes": 13736747,
+      "percentage": 42.2
+    },
+    "labour": {
+      "votes": 10029027,
+      "percentage": 30.8
+    },
+    "libdem": {
+      "votes": 7341291,
+      "percentage": 22.6
+    },
+    "snp": {
+      "votes": 416500,
+      "percentage": 1.3
+    },
+    "plaid": {
+      "votes": 123600,
+      "percentage": 0.4
+    },
+    "uup": {
+      "votes": 276200,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 154100,
+      "percentage": 0.5
+    },
+    "dup": {
+      "votes": 85600,
+      "percentage": 0.3
+    },
+    "sinnfein": {
+      "votes": 83400,
+      "percentage": 0.3
+    },
+    "ulsterpopularunionist": {
+      "votes": 18420,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 24188,
+      "percentage": 0.1
+    }
   },
   "1992": {
-    "conservative": { "votes": 14093007, "percentage": 41.9 },
-    "labour": { "votes": 11624109, "percentage": 34.4 },
-    "libdem": { "votes": 5990604, "percentage": 17.8 }
+    "conservative": {
+      "votes": 14093007,
+      "percentage": 41.9
+    },
+    "labour": {
+      "votes": 11624109,
+      "percentage": 34.4
+    },
+    "libdem": {
+      "votes": 5990604,
+      "percentage": 17.8
+    },
+    "snp": {
+      "votes": 629600,
+      "percentage": 1.9
+    },
+    "plaid": {
+      "votes": 154900,
+      "percentage": 0.5
+    },
+    "uup": {
+      "votes": 271000,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 154400,
+      "percentage": 0.5
+    },
+    "dup": {
+      "votes": 103000,
+      "percentage": 0.3
+    },
+    "sinnfein": {
+      "votes": 78300,
+      "percentage": 0.2
+    },
+    "ulsterpopularunionist": {
+      "votes": 19305,
+      "percentage": 0.1
+    }
   },
   "1997": {
-    "labour": { "votes": 16661454, "percentage": 43.2 },
-    "conservative": { "votes": 9571673, "percentage": 30.7 },
-    "libdem": { "votes": 5181677, "percentage": 16.8 }
+    "labour": {
+      "votes": 16661454,
+      "percentage": 43.2
+    },
+    "conservative": {
+      "votes": 9571673,
+      "percentage": 30.7
+    },
+    "libdem": {
+      "votes": 5181677,
+      "percentage": 16.8
+    },
+    "snp": {
+      "votes": 621600,
+      "percentage": 2.0
+    },
+    "plaid": {
+      "votes": 161000,
+      "percentage": 0.5
+    },
+    "uup": {
+      "votes": 258300,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 190800,
+      "percentage": 0.6
+    },
+    "dup": {
+      "votes": 107300,
+      "percentage": 0.3
+    },
+    "sinnfein": {
+      "votes": 126900,
+      "percentage": 0.4
+    },
+    "ukup": {
+      "votes": 107300,
+      "percentage": 0.3
+    },
+    "independent": {
+      "votes": 29354,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 23969,
+      "percentage": 0.1
+    }
   },
   "2001": {
-    "labour": { "votes": 10834800, "percentage": 40.7 },
-    "conservative": { "votes": 8355683, "percentage": 31.7 },
-    "libdem": { "votes": 4840340, "percentage": 18.3 }
+    "labour": {
+      "votes": 10834800,
+      "percentage": 40.7
+    },
+    "conservative": {
+      "votes": 8355683,
+      "percentage": 31.7
+    },
+    "libdem": {
+      "votes": 4840340,
+      "percentage": 18.3
+    },
+    "snp": {
+      "votes": 464300,
+      "percentage": 1.8
+    },
+    "plaid": {
+      "votes": 195900,
+      "percentage": 0.7
+    },
+    "uup": {
+      "votes": 216800,
+      "percentage": 0.8
+    },
+    "sdlp": {
+      "votes": 169900,
+      "percentage": 0.6
+    },
+    "dup": {
+      "votes": 182000,
+      "percentage": 0.7
+    },
+    "sinnfein": {
+      "votes": 175900,
+      "percentage": 0.7
+    },
+    "speaker": {
+      "votes": 16053,
+      "percentage": 0.1
+    },
+    "others": {
+      "votes": 28487,
+      "percentage": 0.1
+    }
   },
   "2005": {
-    "labour": { "votes": 9552589, "percentage": 35.2 },
-    "conservative": { "votes": 8782966, "percentage": 32.4 },
-    "libdem": { "votes": 5961718, "percentage": 22.0 }
+    "labour": {
+      "votes": 9552589,
+      "percentage": 35.2
+    },
+    "conservative": {
+      "votes": 8782966,
+      "percentage": 32.4
+    },
+    "libdem": {
+      "votes": 5961718,
+      "percentage": 22.0
+    },
+    "snp": {
+      "votes": 412300,
+      "percentage": 1.5
+    },
+    "plaid": {
+      "votes": 174800,
+      "percentage": 0.6
+    },
+    "uup": {
+      "votes": 127400,
+      "percentage": 0.5
+    },
+    "sdlp": {
+      "votes": 125600,
+      "percentage": 0.5
+    },
+    "dup": {
+      "votes": 241900,
+      "percentage": 0.9
+    },
+    "sinnfein": {
+      "votes": 174500,
+      "percentage": 0.6
+    },
+    "respect": {
+      "votes": 15891,
+      "percentage": 0.1
+    },
+    "independent": {
+      "votes": 20505,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 15153,
+      "percentage": 0.1
+    }
   },
   "2010": {
-    "conservative": { "votes": 10737068, "percentage": 36.1 },
-    "labour": { "votes": 8578244, "percentage": 29.0 },
-    "libdem": { "votes": 6226587, "percentage": 23.0 }
+    "conservative": {
+      "votes": 10703654,
+      "percentage": 36.1
+    },
+    "labour": {
+      "votes": 8606517,
+      "percentage": 29.0
+    },
+    "libdem": {
+      "votes": 6836248,
+      "percentage": 23.0
+    },
+    "dup": {
+      "votes": 168216,
+      "percentage": 0.6
+    },
+    "snp": {
+      "votes": 491386,
+      "percentage": 1.7
+    },
+    "sinnfein": {
+      "votes": 171942,
+      "percentage": 0.6
+    },
+    "plaid": {
+      "votes": 165394,
+      "percentage": 0.6
+    },
+    "sdlp": {
+      "votes": 110970,
+      "percentage": 0.4
+    },
+    "green": {
+      "votes": 265243,
+      "percentage": 0.9
+    },
+    "alliance": {
+      "votes": 42762,
+      "percentage": 0.1
+    },
+    "ukip": {
+      "votes": 919471,
+      "percentage": 3.1
+    },
+    "tuv": {
+      "votes": 26300,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 22860,
+      "percentage": 0.1
+    },
+    "independent": {
+      "votes": 21181,
+      "percentage": 0.1
+    }
   },
   "2015": {
-    "conservative": { "votes": 11334576, "percentage": 36.8 },
-    "labour": { "votes": 9315310, "percentage": 30.4 },
-    "libdem": { "votes": 2446903, "percentage": 7.9 },
-    "ukip": { "votes": 3883988, "percentage": 12.6 },
-    "snp": { "votes": 1454101, "percentage": 4.7 },
-    "green": { "votes": 1111271, "percentage": 3.6 }
+    "conservative": {
+      "votes": 11299609,
+      "percentage": 36.8
+    },
+    "labour": {
+      "votes": 9347273,
+      "percentage": 30.4
+    },
+    "libdem": {
+      "votes": 2415916,
+      "percentage": 7.9
+    },
+    "ukip": {
+      "votes": 3881099,
+      "percentage": 12.6
+    },
+    "snp": {
+      "votes": 1454436,
+      "percentage": 4.7
+    },
+    "green": {
+      "votes": 1111603,
+      "percentage": 3.6
+    },
+    "dup": {
+      "votes": 184260,
+      "percentage": 0.6
+    },
+    "sinnfein": {
+      "votes": 176232,
+      "percentage": 0.6
+    },
+    "plaid": {
+      "votes": 181704,
+      "percentage": 0.6
+    },
+    "sdlp": {
+      "votes": 99809,
+      "percentage": 0.3
+    },
+    "uup": {
+      "votes": 114935,
+      "percentage": 0.4
+    },
+    "alliance": {
+      "votes": 61556,
+      "percentage": 0.2
+    },
+    "tuv": {
+      "votes": 16538,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 34617,
+      "percentage": 0.1
+    },
+    "independent": {
+      "votes": 17689,
+      "percentage": 0.1
+    }
   },
   "2017": {
-    "conservative": { "votes": 13636684, "percentage": 42.4 },
-    "labour": { "votes": 12879100, "percentage": 40.0 },
-    "libdem": { "votes": 2244577, "percentage": 7.4 },
-    "snp": { "votes": 977569, "percentage": 3.0 }
+    "conservative": {
+      "votes": 13636684,
+      "percentage": 42.3
+    },
+    "labour": {
+      "votes": 12877918,
+      "percentage": 40.0
+    },
+    "libdem": {
+      "votes": 2371861,
+      "percentage": 7.4
+    },
+    "snp": {
+      "votes": 977568,
+      "percentage": 3.0
+    },
+    "dup": {
+      "votes": 292316,
+      "percentage": 0.9
+    },
+    "sinnfein": {
+      "votes": 238915,
+      "percentage": 0.7
+    },
+    "plaid": {
+      "votes": 164466,
+      "percentage": 0.5
+    },
+    "green": {
+      "votes": 512327,
+      "percentage": 1.6
+    },
+    "ukip": {
+      "votes": 594068,
+      "percentage": 1.8
+    },
+    "sdlp": {
+      "votes": 95419,
+      "percentage": 0.3
+    },
+    "uup": {
+      "votes": 83280,
+      "percentage": 0.3
+    },
+    "alliance": {
+      "votes": 64553,
+      "percentage": 0.2
+    },
+    "tuv": {
+      "votes": 3282,
+      "percentage": 0.0
+    },
+    "speaker": {
+      "votes": 34299,
+      "percentage": 0.1
+    },
+    "independent": {
+      "votes": 16148,
+      "percentage": 0.1
+    }
   },
   "2019": {
-    "conservative": { "votes": 13966454, "percentage": 43.6 },
-    "labour": { "votes": 10269441, "percentage": 32.2 },
-    "libdem": { "votes": 3469961, "percentage": 11.6 },
-    "snp": { "votes": 1241298, "percentage": 3.9 }
+    "conservative": {
+      "votes": 13966454,
+      "percentage": 43.6
+    },
+    "labour": {
+      "votes": 10269051,
+      "percentage": 32.1
+    },
+    "libdem": {
+      "votes": 3696419,
+      "percentage": 11.5
+    },
+    "snp": {
+      "votes": 1242380,
+      "percentage": 3.9
+    },
+    "dup": {
+      "votes": 244128,
+      "percentage": 0.8
+    },
+    "sinnfein": {
+      "votes": 181853,
+      "percentage": 0.6
+    },
+    "plaid": {
+      "votes": 153265,
+      "percentage": 0.5
+    },
+    "sdlp": {
+      "votes": 118737,
+      "percentage": 0.4
+    },
+    "green": {
+      "votes": 835597,
+      "percentage": 2.6
+    },
+    "alliance": {
+      "votes": 134115,
+      "percentage": 0.4
+    },
+    "uup": {
+      "votes": 93123,
+      "percentage": 0.3
+    },
+    "ukip": {
+      "votes": 22817,
+      "percentage": 0.1
+    },
+    "speaker": {
+      "votes": 26831,
+      "percentage": 0.1
+    }
   },
   "2024": {
-    "labour": { "votes": 9708716, "percentage": 33.7 },
-    "conservative": { "votes": 6828925, "percentage": 23.7 },
-    "libdem": { "votes": 3519143, "percentage": 12.2 },
-    "reform": { "votes": 4125246, "percentage": 14.3 },
-    "green": { "votes": 1945308, "percentage": 6.8 },
-    "snp": { "votes": 724758, "percentage": 2.5 },
-    "plaid": { "votes": 194811, "percentage": 0.7 }
+    "labour": {
+      "votes": 9708716,
+      "percentage": 33.7
+    },
+    "conservative": {
+      "votes": 6828925,
+      "percentage": 23.7
+    },
+    "libdem": {
+      "votes": 3519143,
+      "percentage": 12.2
+    },
+    "reform": {
+      "votes": 4117610,
+      "percentage": 14.3
+    },
+    "green": {
+      "votes": 1843124,
+      "percentage": 6.4
+    },
+    "snp": {
+      "votes": 724758,
+      "percentage": 2.5
+    },
+    "plaid": {
+      "votes": 194811,
+      "percentage": 0.7
+    },
+    "sinnfein": {
+      "votes": 210891,
+      "percentage": 0.7
+    },
+    "dup": {
+      "votes": 172058,
+      "percentage": 0.6
+    },
+    "sdlp": {
+      "votes": 86861,
+      "percentage": 0.3
+    },
+    "alliance": {
+      "votes": 117191,
+      "percentage": 0.4
+    },
+    "uup": {
+      "votes": 94779,
+      "percentage": 0.3
+    },
+    "tuv": {
+      "votes": 48685,
+      "percentage": 0.2
+    },
+    "ukip": {
+      "votes": 6530,
+      "percentage": 0.0
+    },
+    "speaker": {
+      "votes": 25238,
+      "percentage": 0.1
+    },
+    "independent": {
+      "votes": 99234,
+      "percentage": 0.3
+    }
   }
 }

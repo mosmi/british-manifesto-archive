@@ -13,12 +13,7 @@ sections:
 
 # Reform UK London Mayoral Manifesto 2024
 
-### Page 1
-
-## Foreword
-FOR MAYOR OF LONDON
-
-London needs Reform:
+## London needs Reform:
 
 *   **SCRAP ALL OF ULEZ**
     I will scrap all ULEZ charges throughout the whole of London.
@@ -32,7 +27,3 @@ London needs Reform:
     I will triple affordable housing builds, particularly on GLA and TfL owned land.
 *   **PROTECT LONDON'S HERITAGE**
     I will commission a statue of Queen Elizabeth II to be placed in Hyde Park.
-
-REFORM UK
-**COX**
-**4 LONDON**

@@ -379,7 +379,7 @@ async function renderNIPortal(app) {
     <div class="devolved-body">
       <div class="london-era">
         <div class="london-era-head"><h2>Stormont elections (1998–)</h2><p>Every Northern Ireland Assembly election since devolution, with results, seat charts, and archived party manifestos.</p></div>
-        <div class="london-timeline-grid">${cards}</div>
+        <div class="timeline-grid">${cards}</div>
       </div>
     </div>
   `;

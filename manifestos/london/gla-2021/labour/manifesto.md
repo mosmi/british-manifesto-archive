@@ -5,236 +5,105 @@ party_name: Labour Party
 party_leader: Sadiq Khan
 political_spectrum: centre-left
 victory: true
-government_outcome: winner
+government_outcome: majority
 sections:
   - economy
   - taxation
   - health
   - education
   - housing
+  - immigration
+  - defence
   - foreign-policy
   - environment
   - transport
   - law-and-order
+  - welfare
+  - democracy-and-constitution
   - energy
+  - devolution
   - science-and-technology
   - local-government
 ---
 
 # Labour Party London Mayoral Manifesto 2021
 
-CONTENTS
+FOR LONDON
 
+Labour
+
+SADIQ
+FOR
+LONDON
+2021
+
+## CONTENTS
 TOP COMMITMENTS .....................................................................................04
-
-INTRODUCTION ............................................................................................ 06
-
-IN THE LAST FIVE YEARS ............................................................................. 16
-
-LEADING LONDON'S RECOVERY ............................................................. 20
-
-LONDON AS A GLOBAL CITY ...................................................................... 22
-
+INTRODUCTION ............................................................................................06
+IN THE LAST FIVE YEARS .............................................................................16
+LEADING LONDON'S RECOVERY .............................................................20
+LONDON AS A GLOBAL CITY ......................................................................22
 SAFER COMMUNITIES ...................................................................................38
-
-A GREEN NEW DEAL FOR LONDON ......................................................... 52
-
-SUPPORTING THE NEXT GENERATION OF LONDONERS ................ 60
-
+A GREEN NEW DEAL FOR LONDON .........................................................52
+SUPPORTING THE NEXT GENERATION OF LONDONERS ................60
 EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER
+AND MORE EQUAL LONDON .....................................................................68
+LONDON’S LOCAL COMMUNITIES ............................................................90
 
-AND MORE EQUAL LONDON ..................................................................... 68
+## TOP COMMITMENTS
 
-LONDON’S LOCAL COMMUNITIES ............................................................ 90
+### THE CITY’S RECOVERY
+Leading from the front in shaping London’s recovery from the pandemic, and ensuring we capture the spirit of 1945 in building a greener, fairer, safer and more prosperous city.
 
-TOP COMMITMENTS
+### JOBS, BUSINESSES AND SKILLS
+Protecting and creating jobs, supporting new and growing businesses, promoting fair and inclusive workplaces and giving Londoners the skills they need to prosper.
 
-THE CITY’S RECOVERY
+### GLOBAL LONDON
+Reviving central London, supporting our hospitality, night-time, retail, culture and creative sectors to recover from the pandemic and ensuring London continues to attract investment, trade and visitors from across the world.
 
-Leading from the front in shaping London’s recovery from the
-pandemic, and ensuring we capture the spirit of 1945 in building a
-greener, fairer, safer and more prosperous city.
+### TACKLING CRIME AND KEEPING COMMUNITIES SAFE
+Continuing to invest in the police to keep out streets safe, fighting for the Government funding London needs to recruit more police officer, renewing our focus on the safety of women and girls, supporting the victims of crime, and taking a public health approach to reducing violence by investing to tackle the causes of crime.
 
-JOBS, BUSINESSES AND SKILLS
+### INVESTING IN YOUNG PEOPLE
+Building on the work done with young Londoners to give them the positive opportunities they deserve and investing in community activities and support to help young people fulfill their potential.
 
-Protecting and creating jobs, supporting new and growing businesses,
-promoting fair and inclusive workplaces and giving Londoners the
-skills they need to prosper.
+## A GREEN NEW DEAL
+A Green New Deal for the city, with cleaner air, improved open spaces, green jobs and tackling climate change at its heart, including extending the ULEZ in October 2021.
 
-GLOBAL LONDON
+## TRANSPORT
+Continuing to invest in public transport to ensure it is safe, affordable and reliable, keeping fares as low as possible, working to put TfL on a sound, sustainable financial footing after the pandemic, and supporting a revolution in walking and cycling.
 
-Reviving central London, supporting our hospitality, night-time,
-retail, culture and creative sectors to recover from the pandemic and
-ensuring London continues to attract investment, trade and visitors
-from across the world.
+## PROMOTING FAIRNESS AND EQUALITY
+Creating a fairer city, with a mission to tackle deprivation, inequality and discrimination; celebrating our rich diversity and rooting out health inequality.
 
-TACKLING CRIME AND KEEPING COMMUNITIES SAFE
+## AFFORDABLE HOUSING
+Continuing the record-breaking progress made on increasing the numbers of genuinely affordable homes being built across London, standing up for the city's hard-pressed renters and working to eradicate rough sleeping.
 
-Continuing to invest in the police to keep out streets safe, fighting for
-the Government funding London needs to recruit more police officer,
-renewing our focus on the safety of women and girls, supporting the
-victims of crime, and taking a public health approach to reducing
-violence by investing to tackle the causes of crime.
+## STANDING UP FOR LONDON
+Proudly standing up for London's liberal, open values and fighting for the extra powers and the resources the city needs and deserves, all in the face of the most anti-London Government in recent history.
 
-INVESTING IN YOUNG PEOPLE
+# INTRODUCTION
 
-Building on the work done with young Londoners to give them the
-positive opportunities they deserve and investing in community
-activities and support to help young people fulfill their potential.
+### MAYOR OF A CITY I LOVE
+Every single day for the last five years, I’ve woken up with the same excitement and passion about being Mayor of London as I had on day one. And I’m still humbled by the responsibilities that come with the role.
 
-4
+I love London. Being the Mayor of the city in which I was born, where my parents moved to make a better life for our family, where I studied, raised a family, made a home and led a business is a privilege.
 
-SADIQ FOR LONDON 2021
+There are so many reasons to love this city, it’s hard to know where to begin. From the bright lights of the West End, to our amazing green spaces like Richmond Park, Beckenham Place Park and Hampstead Heath, to the cultural vibrancy of Brixton, Camden, Hackney and my very own Tooting.
 
-TOP COMMITMENTS
+And no matter where I go in the world, I’m always drawn back to London. I love its dynamism, diversity and magnetism. There is nowhere else on Earth quite like it, where people of all faiths, backgrounds, ethnicities, nationalities and sexual orientation live together, free to be whoever they want to be. It really is the only truly global city, with cultures from every corner of the world found in some part of London. I’m proud that to the rest of the world our city is rightly seen as liberal, outward-facing and open — a beacon to those seeking a better life.
 
-A GREEN NEW DEAL
+At its heart, London remains very much an English and a British city. It’s the home of Wimbledon, Wembley, the Boat Race, the Royal Albert Hall, Buckingham Palace and the Mother of all Parliaments — not to mention of Pearly Kings and Queens, the red bus and the red telephone box. It’s a sprawling metropolis, but a city of countless villages, each with its own character and identity. And I love its local quirks — the banter between north and south London, and the strictest rule that no true Londoner dares contravene — only standing on the right on tube escalators. >>
 
-A Green New Deal for the city, with cleaner air, improved open
-spaces, green jobs and tackling climate change at its heart, including
-extending the ULEZ in October 2021.
+INTRODUCTION   7
 
-TRANSPORT
+## MUCH ACHIEVED, MORE TO DO
 
-Continuing to invest in public transport to ensure it is safe, affordable
-and reliable, keeping fares as low as possible, working to put TfL on a
-sound, sustainable financial footing after the pandemic, and supporting
-a revolution in walking and cycling.
+Back in May 2016, I was under no illusion about the scale of the task ahead. It’s true that to many, London is code for success, and prosperity, a dynamo of ingenuity and creativity, and of gleaming skyscrapers and expensive West End shops. But, to many, that version of our city is completely alien. London is home to some of the poorest communities in the UK. Overcrowded and unsuitable housing is still all too common. Life expectancy for the unhealthiest Londoners is decades less than for the healthiest. Filthy air still blights some areas. Thousands struggle every day to make ends meet — a decent day’s wage with good working conditions is still out of reach for far too many in twenty-first century London.
 
-PROMOTING FAIRNESS AND EQUALITY
+These were the challenges that motivated me run to be Mayor first time round, and I’ve always been honest that the job was going to be huge and take time. However, it has been made more difficult by inheriting a dormant mayoralty from my predecessor, Boris Johnson. Add to this the severely restricted powers of the Mayor, continuing austerity and an increasingly anti-London Tory Government, and it has often felt like pushing water uphill.
 
-Creating a fairer city, with a mission to tackle deprivation, inequality
-and discrimination; celebrating our rich diversity and rooting out
-health inequality.
-
-AFFORDABLE HOUSING
-
-Continuing the record-breaking progress made on increasing the
-numbers of genuinely affordable homes being built across London,
-standing up for the city's hard-pressed renters and working to
-eradicate rough sleeping.
-
-STANDING UP FOR LONDON
-
-Proudly standing up for London's liberal, open values and fighting for
-the extra powers and the resources the city needs and deserves, all in
-the face of the most anti-London Government in recent history.
-
-INTRODUCTION
-
-5
-
- INTRODUCTION
-
-MAYOR OF A CITY I LOVE
-Every single day for the last five years,
-I’ve woken up with the same excitement
-and passion about being Mayor of
-London as I had on day one. And I’m
-still humbled by the responsibilities that
-come with the role.
-
-I love London. Being the Mayor of the
-city in which I was born, where my
-parents moved to make a better life
-for our family, where I studied, raised a
-family, made a home and led a business
-is a privilege.
-
-There are so many reasons to love this
-city, it’s hard to know where to begin.
-From the bright lights of the West
-End, to our amazing green spaces like
-Richmond Park, Beckenham Place Park
-and Hampstead Heath, to the cultural
-vibrancy of Brixton, Camden, Hackney
-and my very own Tooting.
-
-And no matter where I go in the world,
-I’m always drawn back to London. I love
-its dynamism, diversity and magnetism.
-There is nowhere else on Earth quite
-
-like it, where people of all faiths,
-backgrounds, ethnicities, nationalities
-and sexual orientation live together,
-free to be whoever they want to be. It
-really is the only truly global city, with
-cultures from every corner of the world
-found in some part of London. I’m
-proud that to the rest of the world our
-city is rightly seen as liberal, outward-
-facing and open — a beacon to those
-seeking a better life.
-
-At its heart, London remains very
-much an English and a British city. It’s
-the home of Wimbledon, Wembley,
-the Boat Race, the Royal Albert Hall,
-Buckingham Palace and the Mother
-of all Parliaments — not to mention
-of Pearly Kings and Queens, the red
-bus and the red telephone box. It’s
-a sprawling metropolis, but a city of
-countless villages, each with its own
-character and identity. And I love its
-local quirks — the banter between north
-and south London, and the strictest
-rule that no true Londoner dares
-contravene — only standing on the right
-on tube escalators. >>
-
-6
-
-SADIQ FOR LONDON 2021
-
-INTRODUCTION
-
-7
-
-MUCH ACHIEVED, MORE TO DO
-Back in May 2016, I was under no
-illusion about the scale of the task
-ahead. It’s true that to many, London
-is code for success, and prosperity, a
-dynamo of ingenuity and creativity,
-and of gleaming skyscrapers and
-expensive West End shops. But,
-to many, that version of our city is
-completely alien. London is home to
-some of the poorest communities in
-the UK. Overcrowded and unsuitable
-housing is still all too common. Life
-expectancy for the unhealthiest
-Londoners is decades less than for the
-healthiest. Filthy air still blights some
-areas. Thousands struggle every day
-to make ends meet — a decent day’s
-wage with good working conditions
-
-is still out of reach for far too many in
-twenty-first century London.
-
-These were the challenges that
-motivated me run to be Mayor first
-time round, and I’ve always been
-honest that the job was going to
-be huge and take time. However,
-it has been made more difficult by
-inheriting a dormant mayoralty from
-my predecessor, Boris Johnson. Add
-to this the severely restricted powers
-of the Mayor, continuing austerity
-and an increasingly anti-London Tory
-Government, and it has often felt like
-pushing water uphill.
-
-In spite of this, I’m immensely proud
-we’ve achieved so much of what I
-
-8
-
-SADIQ FOR LONDON 2021
+In spite of this, I’m immensely proud we’ve achieved so much of what I
 
 told Londoners I would do back in
 2016 — laying the foundations to
@@ -248,7 +117,7 @@ transforming our city for walkers and
 cyclists and making our transport
 system more affordable.
 
-A TUMULTUOUS FIVE YEARS
+## A TUMULTUOUS FIVE YEARS
 I knew that being Mayor of a major
 city like London, I had to expect the
 unexpected. No two days are ever
@@ -259,6 +128,20 @@ imagined the sheer scale and scope
 of the challenges that London has
 faced over the past five years.
 
+In May 2016, I didn’t expect that,
+within weeks, the UK would vote
+for Brexit, and London would be
+wrenched out of the European
+Union against its will. I never foresaw
+that, in my term as Mayor, there
+would be two general elections
+and three Prime Ministers, with the
+political instability in Westminster
+that this created. I would never
+have predicted that levelling down
+London would become a deliberate
+policy objective for Tory politicians.
+And I didn’t expect that, within
 months, Donald Trump would be
 elected President of the United
 States, unleashing a rise of nativist
@@ -282,22 +165,7 @@ innocent Londoners would lose their
 lives to murderous fanatics who hate
 our open, liberal and diverse city.
 
-In May 2016, I didn’t expect that,
-within weeks, the UK would vote
-for Brexit, and London would be
-wrenched out of the European
-Union against its will. I never foresaw
-that, in my term as Mayor, there
-would be two general elections
-and three Prime Ministers, with the
-political instability in Westminster
-that this created. I would never
-have predicted that levelling down
-London would become a deliberate
-policy objective for Tory politicians.
-And I didn’t expect that, within
-
-A MICROSCOPIC ENEMY
+## A MICROSCOPIC ENEMY
 To cap it all, if I’d been told back in
 May 2016 that there’d be months on
 end when we were restricted to our
@@ -311,10 +179,6 @@ the flesh, or that I’d be running a city
 via a computer monitor, I’d question
 their sanity. I would never for one
 minute have thought that thousands
-
-INTRODUCTION
-
-9
 
 of Londoners — including some dear
 to me — would lose their lives to a
@@ -349,18 +213,15 @@ period, and that’s why I support an
 independent public inquiry at the
 earliest appropriate time.
 
-A CITY THAT HAS RISEN
+## A CITY THAT HAS RISEN
 MAGNIFICENTLY TO FACE
 THE CRISIS
+
 I didn’t think it was possible for me
 to feel any prouder to be Mayor of
 this city, but the last five years — and
 in particular the last twelve months
 — have proved me wrong. Much has
-
-10
-
-SADIQ FOR LONDON 2021
 
 been asked of Londoners as we fight
 this terrible virus. Sacrifices have
@@ -400,13 +261,13 @@ physical effects of the illness,
 even months after they were first
 infected. Enforced isolation and fears
 
- I didn’t think it was possible
-for me to feel any prouder
-to be Mayor of this city, but
-the last five years — and in
-particular the last twelve
-months — have proved me
-wrong.
+> I didn’t think it was possible
+> for me to feel any prouder
+> to be Mayor of this city, but
+> the last five years — and in
+> particular the last twelve
+> months — have proved me
+> wrong.
 
 about the future risk replacing the
 coronavirus pandemic with a mental
@@ -431,15 +292,11 @@ matters, and what’s important to us.
 Our friends and family, our health,
 access to green space, where we live
 
-INTRODUCTION
-
-11
-
 and work, more walking and cycling,
 quieter streets and better air quality,
 and hugging loved ones.
 
-THE SPIRIT OF 1945
+## THE SPIRIT OF 1945
 But it’s these very things which we’ve
 grown to realise are so precious
 which must form the basis of a better
@@ -472,18 +329,6 @@ towards health in all policies.
 
 I’m not going to sugarcoat the task
 ahead — the job of recovery is huge
-
-12
-
-SADIQ FOR LONDON 2021
-
-By working together, through
-shared endeavour, the best
-possible memorial for those
-we’ve lost is that our city is
-the very best it can be for all
-its residents.
-
 and the whole city needs to draw on
 all its energy. It will take time and
 considerable resources. But I commit
@@ -500,7 +345,9 @@ memorial for those we’ve lost is that
 our city is the very best it can be for
 all its residents.
 
-STANDING UP FOR LONDON
+**By working together, through shared endeavour, the best possible memorial for those we’ve lost is that our city is the very best it can be for all its residents.**
+
+## STANDING UP FOR LONDON
 City Hall is already facing severe
 pressure on budgets because of
 ongoing Tory austerity and the
@@ -512,7 +359,6 @@ the economic downturn. This Tory
 austerity creates a huge challenge
 for delivering on the things London
 desperately needs.
-
 This election is a two-horse race. As
 your Labour candidate I’ll fearlessly
 stand up for the city, oppose further
@@ -528,7 +374,6 @@ focus would be on the few, not the
 many, and with them it’ll be more
 austerity and a return to the failed
 way of doing things.
-
 There are some in the Tory Party
 who give the impression of hating
 London and all it stands for. Many of
@@ -543,503 +388,148 @@ stoked up divisions to try to prop up
 their new parliamentary gains in the
 red wall seats of the Midlands and
 the North.
-
 The dangerous game of bashing
 London has to stop. Otherwise, we’ll
 all be left worse off and the social
 fabric of the country will be stretched
 to breaking point. I’m losing patience,
 
-INTRODUCTION
+as I know Londoners are. As your Mayor, I’ll use City Hall to face down the fake news and lies levelled against London, I’ll speak truth to the rest of the country about why our success matters to them at the same time as helping other parts of the country be more successful, and I’ll continue to be vocal in defending London’s interests.
 
-13
+London is the UK’s economic powerhouse, providing the Government in 2019 with £38.8 billion more in tax revenues than was spent within our city. Our critics might not like it, but the wealth generated in this city pays for public services across the UK and funds new hospitals, schools, roads and railways across our country.
 
-as I know Londoners are. As your
-Mayor, I’ll use City Hall to face down
-the fake news and lies levelled
-against London, I’ll speak truth to
-the rest of the country about why
-our success matters to them at the
-same time as helping other parts of
-the country be more successful, and
-I’ll continue to be vocal in defending
-London’s interests.
+I believe we desperately need a national mission to raise standards of living in every part of the UK. But you can’t achieve this by dragging down the successful parts of the country, or by attacking the many Londoners out of work or living in poverty.
 
-London is the UK’s economic
-powerhouse, providing the
-Government in 2019 with £38.8 billion
-more in tax revenues than was spent
-within our city. Our critics might
-not like it, but the wealth generated
+That’s why, as Mayor, I will continue to shout from the rooftops about how great London is, and I will challenge those who knock our city.
 
-in this city pays for public services
-across the UK and funds new
-hospitals, schools, roads and railways
-across our country.
+Londoners should not be made to feel guilty just because the city is successful — instead it should be a source of national pride. I’ll also remind the Government that when London succeeds, the whole country succeeds and that there’s no route to a national recovery that doesn’t see London recover. At the same time, I will bang the drum for London — here and around the globe — to attract more jobs and investment.
 
-I believe we desperately need a
-national mission to raise standards of
-living in every part of the UK. But you
-can’t achieve this by dragging down
-the successful parts of the country,
-or by attacking the many Londoners
-out of work or living in poverty.
+That’s also why it’s more important than ever that London has more say over its own affairs. If there’s one thing the pandemic has shown it’s that too much has been done for too long from Whitehall, and the crisis has at times overwhelmed the Government. Decisions over economic development, skills, planning, business support, transport, housing and how best to rehabilitate offenders should be left to London — just as they should be for other cities and regions. How a range of local taxes are best levied and spent should be decisions for the city.
 
-That’s why, as Mayor, I will continue
-to shout from the rooftops about
-how great London is, and I will
-challenge those who knock our city.
+This election should be a referendum against the failed way this country is run — a vote for me and for Labour sends a strong message to the Tory Government that we’re sick of our city being run, and being run poorly, from Whitehall. Give us the responsibility over our own affairs a great city like London deserves. A vote for me is a vote for London.
 
-14
+## A RECOVERY FOR ALL LONDONERS
 
-SADIQ FOR LONDON 2021
+London’s sweeping story spans two thousand years — originally a favourable trading location on a wide estuary, through to today and a city sat at the heart of a vast international network of trade, people and ideas, and the world’s only truly global city. Chapter after chapter tells the tale of good times and bad times, challenges and successes. But throughout all, the city has prevailed, just as it will prevail through this current crisis.
 
-responsibility over our own affairs
-a great city like London deserves. A
-vote for me is a vote for London.
-
-A RECOVERY FOR ALL
-LONDONERS
-London’s sweeping story spans
-two thousand years — originally a
-favourable trading location on a wide
-estuary, through to today and a city
-sat at the heart of a vast international
-network of trade, people and ideas,
-and the world’s only truly global city.
-Chapter after chapter tells the tale of
-good times and bad times, challenges
-and successes. But throughout all,
-the city has prevailed, just as it will
-prevail through this current crisis.
-
-This manifesto is my offer to you
-as Londoners. It is my binding
-document, the commitments I
-promise to fulfil if re-elected. But it
-is also a blueprint for recovery — a
-plan for a better London. Because I
-promise to lead London’s recovery
-to build a city that is better for all its
-residents. I promise a recovery for all
-Londoners.
+This manifesto is my offer to you as Londoners. It is my binding document, the commitments I promise to fulfil if re-elected. But it is also a blueprint for recovery — a plan for a better London. Because I promise to lead London’s recovery to build a city that is better for all its residents. I promise a recovery for all Londoners.
 
 This is my manifesto for London.
 
 Thank you.
 
-Londoners should not be made to
-feel guilty just because the city is
-successful — instead it should be
-a source of national pride. I’ll also
-remind the Government that when
-London succeeds, the whole country
-succeeds and that there’s no route to
-a national recovery that doesn’t see
-London recover. At the same time, I
-will bang the drum for London — here
-and around the globe — to attract
-more jobs and investment.
+Sadiq
 
-That’s also why it’s more important
-than ever that London has more say
-over its own affairs. If there’s one
-thing the pandemic has shown it’s
-that too much has been done for
-too long from Whitehall, and the
-crisis has at times overwhelmed
-the Government. Decisions over
-economic development, skills,
-planning, business support, transport,
-housing and how best to rehabilitate
-offenders should be left to London
-— just as they should be for other
-cities and regions. How a range of
-local taxes are best levied and spent
-should be decisions for the city.
+## IN THE LAST FIVE YEARS…
 
-This election should be a referendum
-against the failed way this country is
-run — a vote for me and for Labour
-sends a strong message to the
-Tory Government that we’re sick
-of our city being run, and being run
-poorly, from Whitehall. Give us the
+### LEADERSHIP FOR LONDON DURING TOUGH TIMES
+*   A voice for the city through the Grenfell fire, Croydon tram crash, terrorist attacks and Covid-19, and stood up for London’s values against Brexit, native populism and Donald Trump.
+*   At the forefront of the city’s efforts to defeat Covid-19, working closely with our NHS, local authorities and health experts to keep Londoners as safe as possible throughout the pandemic.
+*   Leading the city’s recovery from the pandemic by bringing together local authorities, NHS, colleges, universities, trade unions, businesses, and voluntary and community groups under a shared plan of action to build back better.
 
-INTRODUCTION
+### MAKING PUBLIC TRANSPORT MORE AFFORDABLE AND RELIABLE
+*   Made public transport more affordable, with TfL fares being frozen over five years and through the introduction of the Hopper Fare, saving London households up to £200.
+*   Reduced days lost to strikes on the Underground under the Tories by more than 75%, by talking and engaging with the unions rather than the confrontation and hostility under the previous Tory Mayor.
+*   Before the pandemic, reducing TfL’s deficit by 71% while increasing cash balances by 13%; reducing like-for-like operating costs every year for four years for the first time ever; and reducing agency staff and back office costs for TfL.
 
-15
+## A CITY THAT IS SAFER FOR ALL ITS RESIDENTS
+- Working hard to reduce crime by investing more than any other Mayor in policing and tackling crime; putting 1,000 extra police officers onto the street; funding the Metropolitan Police Service’s new dedicated Violent Crime Taskforce of nearly 300 police officers focusing on the areas worst affected by violent crime; investing a record £60.7m in tackling violence against women and girls; taking a ‘public health’ approach to tackling the root causes of violence; and setting up England’s first Violence Reduction Unit which has benefitted over 80,000 Londoners.
+- Supporting young Londoners to to fulfill their potential by investing £70 million in youth services and sports projects including through the Young Londoners Fund, benefitting over 110,000 young people.
+- Invested extra money in the London Fire Brigade to make sure firefighters have the resources they need to keep London safe, including introducing the most advanced fire-fighting equipment in the country, new fire escape smoke hoods, three new 64m ladders and aerial drone technology.
 
-IN THE LAST FIVE YEARS…
+## IN THE LAST FIVE YEARS
 
-LEADERSHIP FOR LONDON DURING TOUGH TIMES
-   A voice for the city through the Grenfell fire, Croydon tram crash,
-terrorist attacks and Covid-19, and stood up for London’s values
-against Brexit, native populism and Donald Trump.
+### A CLEANER, GREENER LONDON
+*   Leading the world in tackling toxic air pollution: the new Ultra Low Emission Zone has cut toxic air pollution by more than a third in the zone already; all 9,000 of London’s dirty buses cleaned up; introducing Europe’s largest fleet of electric buses; boosted funding to clean up London’s taxi fleet by licensing nearly 4,000 zero-emission capable taxis; launched an air quality alert system so Londoners know when pollution is particularly bad; and made available almost £53 million to low income Londoners, businesses and charities to scrap older polluting vehicles.
+*   Making London a greener city by planting a record 330,000 trees, protected the green belt, parks and open spaces through a new London Plan and produced one of the world’s first zero-carbon city pathways that will keep London in line with the ambitious global 1.5°C degree plan.
 
-   At the forefront of the city’s efforts to defeat Covid-19, working
-
-closely with our NHS, local authorities and health experts to keep
-Londoners as safe as possible throughout the pandemic.
-   Leading the city’s recovery from the pandemic by bringing
-
-together local authorities, NHS, colleges, universities, trade unions,
-businesses, and voluntary and community groups under a shared
-plan of action to build back better.
-
-MAKING PUBLIC TRANSPORT MORE AFFORDABLE AND
-RELIABLE
-   Made public transport more affordable, with TfL fares being frozen
-over five years and through the introduction of the Hopper Fare,
-saving London households up to £200.
-
-   Reduced days lost to strikes on the Underground under the Tories by
-more than 75%, by talking and engaging with the unions rather than
-the confrontation and hostility under the previous Tory Mayor.
-
-   Before the pandemic, reducing TfL’s deficit by 71% while increasing
-cash balances by 13%; reducing like-for-like operating costs every
-year for four years for the first time ever; and reducing agency staff
-and back office costs for TfL.
-
-16
-
-SADIQ FOR LONDON 2021
-
-IN THE LAST FIVE YEARS…
-
-A CITY THAT IS SAFER FOR ALL ITS RESIDENTS
-   Working hard to reduce crime by investing more than any other
-Mayor in policing and tackling crime; putting 1,000 extra police
-officers onto the street; funding the Metropolitan Police Service’s
-new dedicated Violent Crime Taskforce of nearly 300 police officers
-focusing on the areas worst affected by violent crime; investing a
-record £60.7m in tackling violence against women and girls; taking
-a ‘public health’ approach to tackling the root causes of violence;
-and setting up England’s first Violence Reduction Unit which has
-benefitted over 80,000 Londoners.
-
-   Supporting young Londoners to to fulfill their potential by investing
-£70 million in youth services and sports projects including through
-the Young Londoners Fund, benefitting over 110,000 young people.
-
-   Invested extra money in the London Fire Brigade to make sure
-firefighters have the resources they need to keep London safe,
-including introducing the most advanced fire-fighting equipment in
-the country, new fire escape smoke hoods, three new 64m ladders
-and aerial drone technology.
-
-Achievements continued overleaf  >>
-
-ACHIEVEMENTS
-
-17
-
-IN THE LAST FIVE YEARS
-
-A CLEANER, GREENER LONDON
-   Leading the world in tackling toxic air pollution: the new Ultra Low
-Emission Zone has cut toxic air pollution by more than a third
-in the zone already; all 9,000 of London’s dirty buses cleaned
-up; introducing Europe’s largest fleet of electric buses; boosted
-funding to clean up London’s taxi fleet by licensing nearly 4,000
-zero-emission capable taxis; launched an air quality alert system
-so Londoners know when pollution is particularly bad; and made
-available almost £53 million to low income Londoners, businesses
-and charities to scrap older polluting vehicles.
-
-   Making London a greener city by planting a record 330,000 trees,
-protected the green belt, parks and open spaces through a new
-London Plan and produced one of the world’s first zero-carbon city
-pathways that will keep London in line with the ambitious global
-1.5°C degree plan.
-
-GETTING TO GRIPS WITH THE HOUSING CRISIS
-   Funding record-breaking numbers of genuinely affordable homes,
-
-including starting more new council homes than in any year since 1983
-as part of a programme to build 10,000 council homes across London.
-   Standing up for London's renters by leading the campaign for rent
-controls for our city to make renting more affordable and secure
-for the millions of Londoners who rent their home from a private
-landlord, setting up a new Rogue Landlord and Agent Checker and
-successfully lobbying the Government for a ban on tenant fees and
-a commitment to the end of ‘no fault' evictions.
-
-   Supporting 11,000 rough sleepers through City Hall programmes since
-2016 by increasing funding for rough sleeping services, with 80% of
-those helped no longer on the streets, helping double the number of
-full-time outreach workers and leading the national response to get
-rough sleepers off the streets in the face of coronavirus.
-
-18
-
-SADIQ FOR LONDON 2021
+### GETTING TO GRIPS WITH THE HOUSING CRISIS
+*   Funding record-breaking numbers of genuinely affordable homes, including starting more new council homes than in any year since 1983 as part of a programme to build 10,000 council homes across London.
+*   Standing up for London’s renters by leading the campaign for rent controls for our city to make renting more affordable and secure for the millions of Londoners who rent their home from a private landlord, setting up a new Rogue Landlord and Agent Checker and successfully lobbying the Government for a ban on tenant fees and a commitment to the end of ‘no fault' evictions.
+*   Supporting 11,000 rough sleepers through City Hall programmes since 2016 by increasing funding for rough sleeping services, with 80% of those helped no longer on the streets, helping double the number of full-time outreach workers and leading the national response to get rough sleepers off the streets in the face of coronavirus.
 
 BOOSTING JOBS AND SKILLS, AND SUPPORTING BUSINESSES
 TO THRIVE
-   More than doubled the number of London Living Wage employers
+	More than doubled the number of London Living Wage employers
+   since 2016 — to over 2,000.
+	Launching the EU Londoners Hub and #LondonIsOpen campaign
+   to support the 1 million EU Londoners access the support they need
+   so they can stay and feel welcome in London.
+	Investing a record amount in skills including in the Mayor’s
+   Construction Academy and launched Skills for Londoners to help
+   Londoners who have lost their jobs to retrain and find work.
+	Launched London’s first-ever Creative Enterprise Zones and the
+   £100 million Greater London Investment Fund.
+	Created the London Borough of Culture and stepped in to help
+   struggling venues during the pandemic with a £2.3m Culture At
+   Risk Fund.
 
-since 2016 — to over 2,000.
-
-   Launching the EU Londoners Hub and #LondonIsOpen campaign
-
-to support the 1 million EU Londoners access the support they need
-so they can stay and feel welcome in London.
-
-   Investing a record amount in skills including in the Mayor’s
-
-Construction Academy and launched Skills for Londoners to help
-Londoners who have lost their jobs to retrain and find work.
-   Launched London’s first-ever Creative Enterprise Zones and the
-
-£100 million Greater London Investment Fund.
-
-   Created the London Borough of Culture and stepped in to help
-struggling venues during the pandemic with a £2.3m Culture At
-Risk Fund.
 
 MAKING LONDON A FAIRER AND HEALTHIER CITY
-   Launched the ‘Our Time’ initiative to address the lack of women in
+	Launched the ‘Our Time’ initiative to address the lack of women in
+   senior leadership positions in all sectors in our city.
+	Set up the Workforce Integration Network (WIN) to help improve
+   pathways for young Black men aged 16 to 24 years into living wage
+   employment in London, focusing on the digital and construction
+   sectors.
+	Supporting Londoners to lead healthier lives through the roll out
+   of water fountains and banning junk food advertising on the TfL
+   network to help tackle unacceptable levels of childhood obesity.
+	Promoting improved mental health, and established a programme
+   so that mental health first aid trainers will be in every state school
+   in London.
 
-senior leadership positions in all sectors in our city.
 
-   Set up the Workforce Integration Network (WIN) to help improve
 
-pathways for young Black men aged 16 to 24 years into living wage
-employment in London, focusing on the digital and construction
-sectors.
+                                                              ACHIEVEMENTS   19
 
-   Supporting Londoners to lead healthier lives through the roll out
-of water fountains and banning junk food advertising on the TfL
-network to help tackle unacceptable levels of childhood obesity.
-   Promoting improved mental health, and established a programme
-so that mental health first aid trainers will be in every state school
-in London.
+# LEADING LONDON'S RECOVERY
 
-ACHIEVEMENTS
+The coming years are going to be dominated by how London responds to the pandemic and the damage it has caused to the city. That’s why I’ve written a manifesto focused on the recovery needs of the city.
 
-19
+The Tories don’t want to do anything any differently - they think our city can bounce back on its own. Not only is this untrue and is taking a big risk with people’s jobs and livelihoods, it does nothing to get to grips with the things about London which we know made the spread of the virus worse, such as existing inequalities caused by overcrowded housing and poverty. Instead, the Tories will take London for granted, and their obsession with actively rejecting London will probably make the situation in our city worse.
 
-LEADING LONDON´S
-RECOVERY
+That’s why the Tories can’t be trusted to lead London’s recovery. They don’t care about London, and a Tory Mayor won’t stand up for the investment the city needs. In contrast, I am determined to be a Mayor who builds back better, making our city a greener, fairer and safer place to live and work. I will provide the leadership the whole city needs, steering it through the coming tricky years, towards a better London.
 
-The coming years are going to be
-dominated by how London responds
-to the pandemic and the damage it
-has caused to the city. That’s why I’ve
-written a manifesto focused on the
-recovery needs of the city.
+Already, under my leadership, an unprecedented citywide recovery programme has been established. The London Recovery Board, which I as Mayor jointly chair with Councillor Georgia Gould (Leader of Camden Council, and Chair of London Councils), has pulled together for the very first time the most powerful and important organisations and community representatives under one umbrella. The Board includes representatives from the public sector (including local authorities, the NHS, universities and colleges), trade unions, business, voluntary sector, faith and community groups.
 
-The Tories don’t want to do anything
-any differently - they think our city
-can bounce back on its own. Not only
-is this untrue and is taking a big risk
-with people’s jobs and livelihoods, it
-does nothing to get to grips with the
-things about London which we know
-made the spread of the virus worse,
-such as existing inequalities caused
-by overcrowded housing and poverty.
-Instead, the Tories will take London
-for granted, and their obsession with
-actively rejecting London will probably
-make the situation in our city worse.
+This is a citizen-powered recovery programme and everything that the Recovery Board has done has been built on in-depth citizen and community engagement so that the work to build a better, fairer and greener city is grounded in the lived experiences of Londoners during this pandemic.
 
-the whole city needs, steering it
-through the coming tricky years,
-towards a better London.
+The Recovery Board has five overall aims. To:
+- reverse the pattern of rising unemployment and lost economic growth caused by the economic scarring of Covid-19
+- support our communities, including those most impacted by the virus
+- help young people to flourish with access to support and opportunities
+- narrow social, economic and health inequalities
+- accelerate delivery of a cleaner, greener London
 
-Already, under my leadership, an
-unprecedented citywide recovery
-programme has been established.
-The London Recovery Board,
-which I as Mayor jointly chair with
-Councillor Georgia Gould (Leader of
-Camden Council, and Chair of London
-Councils), has pulled together for
-the very first time the most powerful
-and important organisations and
-community representatives under
-one umbrella. The Board includes
-representatives from the public
-sector (including local authorities, the
-NHS, universities and colleges), trade
-unions, business, voluntary sector,
-faith and community groups.
+Underneath this, the recovery work has identified nine missions, which will be the focus for partners and agencies across the city over coming years. These nine are:
+- High streets for all
+- Building strong communities
+- Digital access for all
+- A green new deal
+- A robust safety net
+- A new deal for young people
+- Healthy food, healthy weight
+- Helping Londoners into good work
+- Mental health and wellbeing
 
-That’s why the Tories can’t be
-trusted to lead London’s recovery.
-They don’t care about London, and
-a Tory Mayor won’t stand up for the
-investment the city needs. In contrast,
-I am determined to be a Mayor who
-builds back better, making our city a
-greener, fairer and safer place to live
-and work. I will provide the leadership
+Delivery of each mission has to abide by a set of principles that focus on key aims like recognising and fighting structural racism and all forms of inequality, delivering a greener city, protecting and improving health and always involving London’s diverse communities in the work that we do. It also has to recognise that safe communities are fundamental to a fair recovery that works for all.
 
-This is a citizen-powered recovery
-programme and everything that
-the Recovery Board has done has
-been built on in-depth citizen and
-community engagement so that
-the work to build a better, fairer and
-greener city is grounded in the lived
-experiences of Londoners during
-this pandemic.
+In addition, a group of the city’s major anchor institutions - the NHS, the Metropolitan Police Service (MPS), London Fire Brigade (LFB), local authorities, universities, colleges, faith groups, City Hall and others - are working on how to drive change across the city through their power of procurement, recruitment and their general presence in their local communities. The independent and robust research I have commissioned - looking at both the impact of the pandemic on central London and how to have a rapid recovery - will be used by me to shape our city’s future.
 
-20
+If re-elected Mayor, I will keep the London Recovery Board, and build on its successes, so that the city’s anchor institutions, major employers, civil society groups and local communities can continue to contribute to the city’s recovery.
 
-SADIQ FOR LONDON 2021
+Throughout this manifesto you will see how it is built around the recovery programme, and you will see how it fits with the missions and contributes to the overall aims of the Recovery Board. ■
 
-LEADING LONDON´S
+## LONDON AS A GLOBAL CITY
 
-RECOVERY
+London is a truly global economic powerhouse. But the city’s economy arguably faces its most difficult period since the end of World War II. Fallout from Covid-19 is wreaking havoc on the city’s economy and Brexit is harming our global reputation and competitiveness. But London has survived catastrophic events in the past, and is well placed to make a swift recovery from the current crisis, if the right choices are made.
 
-The Recovery Board has five
-overall aims. To:
-  reverse the pattern of rising
+First and foremost, our economic recovery cannot succeed if we don’t get the hundreds of thousands who have lost their jobs during the pandemic back into work. Protecting, preserving and helping to create jobs will be my economic priority. I’ll use all the levers I have to ensure that during my second term we support those Londoners to return to work. A successful recovery also relies on safe and secure communities and institutions, and that’s why I’ll continue to fight against crime, terrorism, extremism, cyber-crime and fraud, which all pose a threat to London’s economy and jobs.
 
-unemployment and lost economic
-growth caused by the economic
-scarring of Covid-19
+But the recovery is also going to take a level of ambition from the Government, equal to that which characterised the post-war rebuilding policies of the 1945 Labour Government, to get our economy back on track. I want to see the furlough scheme evolve into a national jobs guarantee, providing a swift return to employment and the possibility of links with training and apprenticeships. >>
 
-  support our communities,
-
-including those most impacted by
-the virus
-
-  help young people to flourish
-with access to support and
-opportunities
-
-  narrow social, economic and
-
-health inequalities
-
-  accelerate delivery of a cleaner,
-
-greener London
-
-Underneath this, the recovery work
-has identified nine missions, which
-will be the focus for partners and
-agencies across the city over coming
-years. These nine are:
-
- High streets for all
- Building strong communities
- Digital access for all
- A green new deal
- A robust safety net
- A new deal for young people
- Healthy food, healthy weight
- Helping Londoners into good work
- Mental health and wellbeing
-
-Delivery of each mission has to abide
-by a set of principles that focus on
-key aims like recognising and fighting
-structural racism and all forms of
-inequality, delivering a greener city,
-
-protecting and improving health and
-always involving London’s diverse
-communities in the work that we
-do. It also has to recognise that safe
-communities are fundamental to a
-fair recovery that works for all.
-
-In addition, a group of the city’s major
-anchor institutions - the NHS, the
-Metropolitan Police Service (MPS),
-London Fire Brigade (LFB), local
-authorities, universities, colleges,
-faith groups, City Hall and others -
-are working on how to drive change
-across the city through their power
-of procurement, recruitment and
-their general presence in their local
-communities. The independent and
-robust research I have commissioned
-- looking at both the impact of the
-pandemic on central London and
-how to have a rapid recovery - will be
-used by me to shape our city’s future.
-
-If re-elected Mayor, I will keep
-the London Recovery Board, and
-build on its successes, so that the
-city’s anchor institutions, major
-employers, civil society groups and
-local communities can continue to
-contribute to the city’s recovery.
-
-Throughout this manifesto you
-will see how it is built around the
-recovery programme, and you will
-see how it fits with the missions and
-contributes to the overall aims of the
-Recovery Board. n
-
-LEADING LONDON'S RECOVERY
-
-21
-
- LONDON AS A
- GLOBAL CITY
-
-London is a truly global economic
-powerhouse. But the city’s economy
-arguably faces its most difficult
-period since the end of World War
-II. Fallout from Covid-19 is wreaking
-havoc on the city’s economy
-and Brexit is harming our global
-reputation and competitiveness.
-But London has survived
-catastrophic events in the past,
-and is well placed to make a swift
-recovery from the current crisis, if
-the right choices are made.
-
-First and foremost, our economic
-recovery cannot succeed if we don’t get
-the hundreds of thousands who have
-lost their jobs during the pandemic
-back into work. Protecting, preserving
-and helping to create jobs will be my
-economic priority. I’ll use all the levers I
-
-have to ensure that during my second
-term we support those Londoners
-to return to work. A successful
-recovery also relies on safe and secure
-communities and institutions, and
-that’s why I’ll continue to fight against
-crime, terrorism, extremism, cyber-
-crime and fraud, which all pose a threat
-to London’s economy and jobs.
-
-But the recovery is also going to take a
-level of ambition from the Government,
-equal to that which characterised the
-post-war rebuilding policies of the
-1945 Labour Government, to get our
-economy back on track. I want to see
-the furlough scheme evolve into a
-national jobs guarantee, providing a
-swift return to employment and the
-possibility of links with training and
-apprenticeships. >>
-
-22
-
-SADIQ FOR LONDON 2021
-
-LONDON AS A GLOBAL CITY
-
-23
+LONDON AS A GLOBAL CITY   23
 
 London’s strengths provide solid
 foundations for recovery: our
@@ -1060,7 +550,6 @@ In my first term, I have striven to
 project London globally, attracting
 investment, business, and tourists.
 This task becomes even more
-
 important as our economy recovers
 from the pandemic, and in the
 aftermath of a Brexit that has left
@@ -1081,12 +570,8 @@ in embracing new technologies
 and ways of working that benefit
 Londoners, as well as uses of space.
 
-24
-
-SADIQ FOR LONDON 2021
-
-PROTECTING, PRESERVING
-AND CREATING JOBS
+## PROTECTING, PRESERVING
+## AND CREATING JOBS
 I will continue to call for a national
 recovery plan equal to the challenge,
 with major investments in vital
@@ -1100,7 +585,6 @@ growth sectors where London, often
 working collaboratively with other
 regions of the UK, is emerging as a
 global leader.
-
 Working with the London Recovery
 Board, I will lead on delivering a
 recovery plan for London. And
@@ -1111,7 +595,7 @@ the city that reflects the new reality,
 working closely with local authorities,
 trade unions and business.
 
-A GLOBAL ECONOMIC CAPITAL
+## A GLOBAL ECONOMIC CAPITAL
 As we work towards recovery,
 I’ll continue being the most pro-
 business mayor London has had,
@@ -1130,7 +614,6 @@ including setting up a
 new financing facility to
 bring more investment for
 infrastructure in London.
-
 businessmen and women, leaders
 and groups I’ve forged strong
 relationships with in my first term
@@ -1139,7 +622,6 @@ and the London Covid-19 Business
 Forum, which I formed to produce
 a roadmap to the full and safe
 reopening of London’s economy.
-
 Financial and professional services
 remain at the heart of the UK
 economy. The Government’s
@@ -1153,114 +635,28 @@ innovative regulatory system, access
 to global talent and its reputation
 as a secure and honest place to
 
-LONDON AS A GLOBAL CITY
+do business. I will support the City to be the world leading centre for green finance, including setting up a new financing facility to bring more investment for infrastructure in London. I will reject and fight against misguided suggestions that the key to future prosperity is a race to the bottom on regulation, and I’ll press the Government to pursue stronger arrangements with the EU for London’s world-leading financial services based on our shared high standards.
 
-25
+## CENTRAL LONDON
+Central London is a global economic and cultural hub in its own right, and it contributes more to the UK economy and the Exchequer than many whole regions of the country. But the pandemic has left it in crisis.
 
-do business. I will support the City
-to be the world leading centre for
-green finance, including setting
-up a new financing facility to bring
-more investment for infrastructure
-in London.  I will reject and fight
-against misguided suggestions that
-the key to future prosperity is a race
-to the bottom on regulation, and
-I’ll press the Government to pursue
-stronger arrangements with the EU
-for London’s world-leading financial
-services based on our shared high
-standards.
-
-CENTRAL LONDON
-Central London is a global economic
-and cultural hub in its own right,
-
-and it contributes more to the UK
-economy and the Exchequer than
-many whole regions of the country.
-But the pandemic has left it in crisis.
-
-Reviving central London will be a
-priority for my second term. That’s
-why I’ve recently announced £6
-million for a major promotion
-campaign to support the reopening
-of London’s economy, encouraging
-Londoners and visitors back to
-London’s hospitality, shopping and
-cultural destinations when it is safe
-to return. London is also the gateway
-for the overwhelming majority of
-foreign tourists coming to the UK,
-so it’s in the interests of the whole
-
-26
-
-SADIQ FOR LONDON 2021
+Reviving central London will be a priority for my second term. That’s why I’ve recently announced £6 million for a major promotion campaign to support the reopening of London’s economy, encouraging Londoners and visitors back to London’s hospitality, shopping and cultural destinations when it is safe to return. London is also the gateway for the overwhelming majority of foreign tourists coming to the UK, so it’s in the interests of the whole
 
 I’ll work with partners to ensure that London’s
 centre adapts to meet the challenges and
 needs of our future economy and society
 sustainably.
 
-country to support it through this
-crisis and help revive it as the
-economy reopens. That’s why I’ll call
-upon the Government to join me and
-businesses in contributing towards
-these efforts.
+country to support it through this crisis and help revive it as the economy reopens. That’s why I’ll call upon the Government to join me and businesses in contributing towards these efforts.
 
-match the scale of the challenge, and
-I will work with those organisations
-prepared to be bold. I’ll continue to
-back efforts to transform Parliament
-Square into the world-class space it
-deserves to be.
+match the scale of the challenge, and I will work with those organisations prepared to be bold. I’ll continue to back efforts to transform Parliament Square into the world-class space it deserves to be.
 
-In the longer term, it’s inevitable
-that central London will need to
-evolve, as it has in the past. Late
-last year I commissioned a major
-piece of research into the impact of
-emerging trends on central London
-and the Canary Wharf area. Following
-its recommendations, I’ll work with
-partners to ensure that London’s
-centre adapts to meet the challenges
-and needs of our future economy
-and society sustainably.
+In the longer term, it’s inevitable that central London will need to evolve, as it has in the past. Late last year I commissioned a major piece of research into the impact of emerging trends on central London and the Canary Wharf area. Following its recommendations, I’ll work with partners to ensure that London’s centre adapts to meet the challenges and needs of our future economy and society sustainably.
 
-I will also seek to partner with local
-authorities, landowners, businesses
-and residents to develop better
-public spaces, safer streets and more
-walking and cycling-friendly schemes.
-London’s ambitions will need to
+### 24-HOUR LONDON
+London at night is a vital part of what makes our city an attractive place in which to live, work, study and go out. The night-time economy provides 1.6 million jobs across all sectors, from the NHS to logistics, professional services to culture, transport to hospitality. Two-thirds of Londoners are regularly active at night, and before Covid-19 our economy was growing faster at night than during the day. London’s vibrancy around the clock — done in a sustainable and safe way, balancing the wellbeing and needs of all Londoners at night — is crucial to the city’s recovery. To reflect the growing importance of the night time, I appointed London’s first Night Czar.
 
-24-HOUR LONDON
-London at night is a vital part of what
-makes our city an attractive place in
-which to live, work, study and go out.
-The night-time economy provides
-1.6 million jobs across all sectors, from
-the NHS to logistics, professional
-services to culture, transport to
-hospitality. Two-thirds of Londoners
-are regularly active at night, and before
-Covid-19 our economy was growing
-faster at night than during the day.
-London’s vibrancy around the clock
-— done in a sustainable and safe way,
-balancing the wellbeing and needs
-of all Londoners at night — is crucial
-to the city’s recovery. To reflect the
-growing importance of the night time, I
-appointed London’s first Night Czar.
-
-LONDON AS A GLOBAL CITY
-
-27
+I will also seek to partner with local authorities, landowners, businesses and residents to develop better public spaces, safer streets and more walking and cycling-friendly schemes. London’s ambitions will need to
 
 I will continue to support London’s
 growth as a 24-hour city and
@@ -1275,7 +671,6 @@ Zones programme, which proved
 a success as a pilot scheme in
 Walthamstow, boosting evening high
 street footfall by 22%.
-
 An integrated and positive approach
 to London at night requires planning
 and partnership, which is why my
@@ -1296,11 +691,9 @@ also includes the cutting-edge agent
 of change principle, which is providing
 increased protections for cultural and
 night-time venues.
-
 As we build back our economy at
-night, we must create good jobs. I
-
-will work to ensure those with jobs at
+night, we must create good jobs.
+I will work to ensure those with jobs at
 night have equal access to fair pay,
 conditions and in-work support as
 those that work during the day. To
@@ -1316,7 +709,6 @@ collaborate with local authorities
 on plans for lighting to ensure
 Londoners can get around the city
 safely and securely at night.
-
 Our city at night must be inclusive
 and accessible to all, regardless of
 age, gender, ethnicity, economic
@@ -1333,60 +725,14 @@ Culture at Risk office and the dedicated
 support I currently provide. I am proud
 of the £2.3m Covid Emergency Fund
 I established to help our most at-risk
-cultural venues — to date this has
+cultural venues – to date this has
 supported 82 artist workspaces, 20
 grassroots music venues, 11 LGBTQ+
 venues and 15 independent cinemas.
 
-28
-
-SADIQ FOR LONDON 2021
-
-SUPPORTING OUR SMALL
-BUSINESSES AND FREELANCERS
-London’s small businesses and
-self-employed have borne the brunt
-of the economic impact of the
-pandemic. Their survival is key to our
-city’s economy — small and medium-
-sized enterprises (SMEs) account for
-more than half the jobs in our city,
-bring diversity and vibrancy to its
-neighbourhoods, and provide the
-services and facilities that bigger
-businesses and their employees
-depend upon.
-
-With the limited resources I have, I
-will continue supporting London’s
-SMEs. Since the beginning of the
-pandemic, I’ve launched the Pay
-it Forward London crowdfunding
-
-platform, the Back to Business
-Fund and the Culture at Risk Fund.
-We have delivered £1.5m of Covid
-Business Recovery Grants, £4.3
-million in Covid Business Interruption
-Loans (CBILS) have been secured
-via Funding London, and more
-than 2,400 businesses have been
-supported by the London Business
-Hub since the pandemic began.
-I’ve also used £11m of our Adult
-Education Budget in the Skills for
-Londoners Covid Response Fund to
-support learners to develop digital
-skills and help providers deliver
-increased and better-quality digital
-learning. I’ll continue pressuring the
-Government to provide the financial
-support needed to weather the storm
-for as long as restrictions continue,
-
-LONDON AS A GLOBAL CITY
-
-29
+## SUPPORTING OUR SMALL BUSINESSES AND FREELANCERS
+London’s small businesses and self-employed have borne the brunt of the economic impact of the pandemic. Their survival is key to our city’s economy — small and medium-sized enterprises (SMEs) account for more than half the jobs in our city, bring diversity and vibrancy to its neighbourhoods, and provide the services and facilities that bigger businesses and their employees depend upon.
+With the limited resources I have, I will continue supporting London’s SMEs. Since the beginning of the pandemic, I’ve launched the Pay it Forward London crowdfunding platform, the Back to Business Fund and the Culture at Risk Fund. We have delivered £1.5m of Covid Business Recovery Grants, £4.3 million in Covid Business Interruption Loans (CBILS) have been secured via Funding London, and more than 2,400 businesses have been supported by the London Business Hub since the pandemic began. I’ve also used £11m of our Adult Education Budget in the Skills for Londoners Covid Response Fund to support learners to develop digital skills and help providers deliver increased and better-quality digital learning. I’ll continue pressuring the Government to provide the financial support needed to weather the storm for as long as restrictions continue,
 
 including the business rates holiday
 and VAT reductions for the worst-
@@ -1409,7 +755,7 @@ front door so business owners and
 aspiring entrepreneurs can easily
 access the right advice and support.
 I’ll also work to improve provision for
-diverse needs and types of business —
+diverse needs and types of business –
 including specialised offers for social
 enterprises and community-owned or
 cooperative business models.
@@ -1436,8 +782,8 @@ that small and growing enterprises
 need, and work to ensure the best use
 of industrial land.
 
-THE WORLD’S CULTURAL
-CAPITAL
+## THE WORLD’S CULTURAL CAPITAL
+
 London’s world-leading cultural
 institutions, creative industries and
 artistic talent are central to our
@@ -1464,81 +810,17 @@ our night-time economy. I’ve also
 funded the British Fashion Council
 helping to deliver London Fashion
 
-30
+Week to the tune of more than £1m since I became Mayor, with over £2m for Film London, more than £1m for the London Design Festival and over £2m for the London Games Festival, all of which contribute to London’s global reputation in the creative industries, and create more jobs and opportunities for Londoners.
 
-SADIQ FOR LONDON 2021
+Key investments, such as the £70m I’ve allocated towards a world-class new Museum of London in West Smithfield, will boost confidence. Similarly, the East Bank culture and education district will bring exciting new institutions such as V&A East, Sadler’s Wells East, UCL, London College of Fashion and BBC Music Studios to Stratford.
 
-Week to the tune of more than £1m
-since I became Mayor, with over £2m
-for Film London, more than £1m for
-the London Design Festival and over
-£2m for the London Games Festival,
-all of which contribute to London’s
-global reputation in the creative
-industries, and create more jobs and
-opportunities for Londoners.
+It’s more important than ever that London’s cultural scene has workspaces that creatives can afford. So I’ll look to establish more Creative Enterprise Zones and expand my Creative Land Trusts programme, seeking further investment from commercial and philanthropic partners to shore up creative affordable workspace across the capital. I will continue championing London’s flagship creative economy
 
-Key investments, such as the £70m
-I’ve allocated towards a world-class
-new Museum of London in West
-Smithfield, will boost confidence.
-Similarly, the East Bank culture and
-education district will bring exciting
-new institutions such as V&A East,
-Sadler’s Wells East, UCL, London
-College of Fashion and BBC Music
-Studios to Stratford. Ongoing work
-will focus on creating a world-class
-creative and cultural sector in the east
-of the city and beyond through the
-Thames Gateway Production Corridor.
+> **Ongoing work will focus on creating a world-class creative and cultural sector in the east of the city and beyond through the Thames Gateway Production Corridor.**
 
-It’s more important than ever
-that London’s cultural scene has
-workspaces that creatives can afford.
-So I’ll look to establish more Creative
-Enterprise Zones and expand my
-Creative Land Trusts programme,
-seeking further investment from
-commercial and philanthropic
-partners to shore up creative
-affordable workspace across the
-capital. I will continue championing
-London’s flagship creative economy
+from London Fashion Week and the London Design Festival to the newly established London Games Festival. I want our city to become the global capital of content and my film agency, Film London will support the growth of film and TV, helping to establish more studios to meet demand and generating thousands of new jobs for Londoners. I am proud that with my backing a brand-new film studio is coming to Dagenham. To promote London’s international competitiveness further, I will back an International Centre for Creative Industries in London.
 
-Ongoing work will focus
-on creating a world-class
-creative and cultural
-sector in the east of the
-city and beyond through
-the Thames Gateway
-Production Corridor.
-
-from London Fashion Week and
-the London Design Festival to the
-newly established London Games
-Festival. I want our city to become
-the global capital of content and my
-film agency, Film London will support
-the growth of film and TV, helping
-to establish more studios to meet
-demand and generating thousands of
-new jobs for Londoners. I am proud
-that with my backing a brand-new
-film studio is coming to Dagenham.
-To promote London’s international
-competitiveness further, I will back
-an International Centre for Creative
-Industries in London.
-
-Hosting major global sporting events
-will do much to boost the city over
-the coming years. I’ll look to make the
-most of the opportunity presented
-
-LONDON AS A GLOBAL CITY
-
-31
+Hosting major global sporting events will do much to boost the city over the coming years. I’ll look to make the most of the opportunity presented
 
 by holding the delayed UEFA Euro
 2020 fixtures in London this summer,
@@ -1559,8 +841,7 @@ annual sporting events including
 continuing to back the London
 Marathon and Ride London.
 
-LONDON IN EUROPE AND THE
-WORLD
+### LONDON IN EUROPE AND THE WORLD
 London has the soft power to
 influence and convene across the
 globe. I’m proud to have used this
@@ -1577,7 +858,6 @@ emergency. Where things don’t fit
 our values, I will call them out. This
 includes the DSEI (Defence & Security
 Equipment International) arms fair,
-
 which has no place in London, and
 I’ll explore all possible options to end
 it being hosted in the city. I’ll take
@@ -1616,10 +896,6 @@ from across the globe will continue
 to be welcome too. The EU citizens
 who came to make London their
 
-32
-
-SADIQ FOR LONDON 2021
-
 home and contribute to our economy,
 culture and society in myriad ways,
 are Londoners. They will always
@@ -1635,10 +911,9 @@ visas so that the system works for our
 city, including the ability to create our
 own dynamic shortage occupation list.
 
-A WORLD-CLASS TRANSPORT
-NETWORK FOR LONDON
-Transport for London (TfL) is a world-
-class integrated transport authority,
+## A WORLD-CLASS TRANSPORT NETWORK FOR LONDON
+
+Transport for London (TfL) is a worldclass integrated transport authority,
 showing devolution works and must
 be protected. But there’s no denying
 that the pandemic has been a
@@ -1648,8 +923,7 @@ responded and the heroic efforts of
 London’s transport workers.
 
 The Tories left TfL in 2016 in a
-precarious position — a £1.5 billion-a-
-year deficit and no plan to get this to
+precarious position — a £1.5 billion-ayear deficit and no plan to get this to
 zero. I’ve focused on improving TfL’s
 finances, making it more efficient and
 reducing expenditure on consultants.
@@ -1674,8 +948,7 @@ TfL that didn’t punish Londoners. The
 Tories tried to force an extension to
 the Congestion Charge to the North
 and South Circulars and to strip free
-travel from children and the over-
-60s. But I stood firm and stopped
+travel from children and the over60s. But I stood firm and stopped
 these from happening.
 
 I won’t give up fighting for the fairest
@@ -1695,10 +968,7 @@ As part of achieving long-term
 financial sustainability, I’ll ensure
 TfL continues to be lean and
 efficient, minimising expenditure on
-
-LONDON AS A GLOBAL CITY
-
-33
+consultants.
 
 consultants and agency workers,
 which we have reduced by 72% in my
@@ -1725,7 +995,6 @@ fare pricing. And I’ll help to protect
 the Freedom Pass, and continue to
 ensure that concessions are focused
 on those who need them most.
-
 Londoners pay £500m of Vehicle
 Excise Duty (VED) to the Government
 every year, only for that money
@@ -1751,10 +1020,6 @@ completion of major upgrades to
 the District, Circle, Hammersmith
 and City and Metropolitan Lines.
 The Piccadilly Line and DLR will see
-
-34
-
-SADIQ FOR LONDON 2021
 
 new trains built, Bank station will be
 upgraded, and the extensions of the
@@ -1793,7 +1058,6 @@ made in the last five years on rail
 devolution and I am working with
 the Department for Transport for
 the Great Northern services from
-
 Moorgate to be transferred to TfL.
 Where other suburban rail services
 haven’t performed for commuters,
@@ -1832,10 +1096,6 @@ in ridership and huge growth in
 the cycle network. I’ll go further,
 lobbying the Government for funding
 
-LONDON AS A GLOBAL CITY
-
-35
-
 to electrify buses, working with
 businesses to support greener last-
 mile alternatives such as cargo bike
@@ -1857,6 +1117,21 @@ at them, as they’ve been hit hard
 by the collapse in air travel and
 have a crucial role in our economic
 recovery.
+
+## HARNESSING DATA AND EMERGING TECHNOLOGIES FOR OUR CITY
+
+I appointed London’s first Chief
+Digital Officer with the goal of
+making London a truly smart city,
+in which technology and data are
+harnessed to improve the lives of all
+Londoners. I developed a Smarter
+London roadmap to promote
+citizen-centred design, city data-
+sharing, better connectivity, a local
+talent pipeline and new forms of
+collaboration between public bodies,
+the tech sector and Londoners.
 
 In my second term, I’ll rebuild the
 London Datastore to be the central
@@ -1880,22 +1155,6 @@ services arising from 5G and artificial
 intelligence and make their use
 transparent to the public.
 
-HARNESSING DATA AND
-EMERGING TECHNOLOGIES FOR
-OUR CITY
-I appointed London’s first Chief
-Digital Officer with the goal of
-making London a truly smart city,
-in which technology and data are
-harnessed to improve the lives of all
-Londoners. I developed a Smarter
-London roadmap to promote
-citizen-centred design, city data-
-sharing, better connectivity, a local
-talent pipeline and new forms of
-collaboration between public bodies,
-the tech sector and Londoners.
-
 High-quality digital connectivity is an
 essential utility. As the first Mayor to
 establish and fund a comprehensive
@@ -1912,429 +1171,115 @@ of fibre across the city and advancing
 5G connectivity. Mobile connectivity,
 currently available in stations and
 
-36
+sections of the Jubilee Line, will be extended across the tube network.
 
-SADIQ FOR LONDON 2021
+My Civic Innovation Challenges demonstrated how the talents of London’s world-leading tech sector can be brought to bear on issues like housing, congestion, safety and green transport. In my second term I’ll expand open innovation challenges for public services, research institutions and the tech sector to come together to make our city fairer, cleaner, healthier and easier to get around.
 
-sections of the Jubilee Line, will be
-extended across the tube network.
+## GOVERNANCE FIT FOR A GLOBAL CITY
+For a city of its size and importance, London has little power over its own affairs. Other major global cities control considerably more, and decide on how local taxes are best levied.
 
-My Civic Innovation Challenges
-demonstrated how the talents of
-London’s world-leading tech sector
-can be brought to bear on issues like
-housing, congestion, safety and green
-transport. In my second term I’ll expand
-open innovation challenges for public
-services, research institutions and the
-tech sector to come together to make
-our city fairer, cleaner, healthier and
-easier to get around.
+The pandemic has brutally exposed the failings of a country that is over-centralised. The Tories’ own manifesto from 2019 said the days of Whitehall knows best are over, and if ‘taking back control’ means anything, it shouldn’t be the hoarding of powers within central Government. That’s why I will work with business groups to argue for London getting its fair share of the UK Shared Prosperity Fund.
 
-GOVERNANCE FIT FOR A
-GLOBAL CITY
-For a city of its size and importance,
-London has little power over its own
-affairs. Other major global cities
-control considerably more, and decide
-on how local taxes are best levied.
+I will continue to advocate for major constitutional reform and push for
 
-The pandemic has brutally exposed
-the failings of a country that is over-
-centralised. The Tories’ own manifesto
-from 2019 said the days of Whitehall
-knows best are over, and if ‘taking back
-control’ means anything, it shouldn’t be
-the hoarding of powers within central
-Government. That’s why I will work with
-business groups to argue for London
-getting its fair share of the UK Shared
-Prosperity Fund.
+much more devolution to London of the things that matter. I will work with other Metro Mayors to make this election a referendum on devolution, and make the case that mayors are best placed to determine strategic priorities for recovery, investment and growth, not politicians in Whitehall.
 
-I will continue to advocate for major
-constitutional reform and push for
+The Mayor possesses some powers to bring forward legislation in Parliament, and in the absence of movement from the Government, I will explore producing a Devolution Bill on behalf of all Metro Mayors.
 
-much more devolution to London
-of the things that matter. I will work
-with other Metro Mayors to make this
-election a referendum on devolution,
-and make the case that mayors are
-best placed to determine strategic
-priorities for recovery, investment and
-growth, not politicians in Whitehall.
+The relationship with London’s 32 local authorities and the City of London is crucial to the success of the city, and during the pandemic we have worked better together than ever. I will seek to build on this, and continue to work together on the issues that matter for the city.
 
-The Mayor possesses some powers to
-bring forward legislation in Parliament,
-and in the absence of movement
-from the Government, I will explore
-producing a Devolution Bill on behalf
-of all Metro Mayors.
+Government ministers have increasingly opted to use language designed to create division between the rest of the country and the capital, and even taken decisions which could damage growth in London.
 
-The relationship with London’s 32 local
-authorities and the City of London is
-crucial to the success of the city, and
-during the pandemic we have worked
-better together than ever. I will seek
-to build on this, and continue to work
-together on the issues that matter for
-the city.
+I’ll mobilise London’s government, business groups and civil society to make the case that London’s success isn’t to the detriment of the rest of the country, but to its benefit. n
 
-Government ministers have
-increasingly opted to use language
-designed to create division between
-the rest of the country and the capital,
-and even taken decisions which could
-damage growth in London.
+3388 SSAADDIIQQ FFOORR LLOONNDDOONN 22002201
 
-I’ll mobilise London’s government,
-business groups and civil society to
-make the case that London’s success
-isn’t to the detriment of the rest of the
-country, but to its benefit. n
+## SAFER COMMUNITIES
 
-LONDON AS A GLOBAL CITY
+Keeping Londoners safe is a top priority but a complex challenge in a large metropolitan area that’s home to more than nine million people with millions of visitors every year. I want London to be as safe as possible for every Londoner, and for all of the city’s diverse communities. Even before the pandemic, London faced a range of unique social and economic challenges that placed huge demands on the city’s emergency services. It’s a focal point for protests, serious and organised crime, violent extremism and terrorism, international fraud and modern slavery. Against this backdrop, violent crime has been on the rise nationally and in London since 2014, with serious youth violence on the increase since 2012.
 
-37
+However, Covid-19 brought with it a variety of unprecedented challenges. As the virus began to spread across the city,
 
-38
-38
+I called together London’s NHS, public health officials, councils, emergency services, business leaders and others to work on the emergency response for our city. This joint working has continued over the last year. I’m proud that as well as working tirelessly every day to keep everyone in our city safe during the pandemic, the Metropolitan Police Service (MPS) and London Fire Brigade (LFB) joined together with the London Ambulance Service to drive ambulances and assist medics to help boost the emergency response.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+But it is a disgrace that on top of a decade’s worth of cuts to the police and our public services, the Tory Government is now implementing a new era of austerity by freezing public-sector pay, refusing to refund the money spent on tackling the pandemic and the income lost as a result. >>
 
- SAFER
- COMMUNITIES
+## FIGHTING FOR THE RESOURCES LONDON NEEDS
 
-Keeping Londoners safe is a top
-priority but a complex challenge in a
-large metropolitan area that’s home
-to more than nine million people with
-millions of visitors every year. I want
-London to be as safe as possible for
-every Londoner, and for all of the city’s
-diverse communities. Even before the
-pandemic, London faced a range of
-unique social and economic challenges
-that placed huge demands on the city’s
-emergency services. It’s a focal point
-for protests, serious and organised
-crime, violent extremism and terrorism,
-international fraud and modern slavery.
-Against this backdrop, violent crime
-has been on the rise nationally and in
-London since 2014, with serious youth
-violence on the increase since 2012.
+Over the last five years, I’ve met communities whose lives have been devastated by crime, anti-social behaviour, drug dealing, violence and robbery. I’ve met families who’ve needlessly lost children or siblings to violence and met victims of domestic abuse or sexual violence whose experiences have been so painful to listen to that I know I’ll never forget them. In addition to the human cost, there’s also an economic cost to the city – violent incidents cost London £3 billion in 2018/19.
 
-However, Covid-19 brought with it a
-variety of unprecedented challenges. As
-the virus began to spread across the city,
+That’s why I’m determined to redouble my efforts. A difficult job at the best of times has been made more difficult by a hostile Government – ministers have forced £850 million of cuts on the MPS, which has spread the police too thinly. Now a whole new financial crisis is threatening the safety of Londoners – policing the pandemic has cost the MPS an extra £58 million.
 
-I called together London’s NHS, public
-health officials, councils, emergency
-services, business leaders and others to
-work on the emergency response for our
-city. This joint working has continued
-over the last year. I’m proud that as
-well as working tirelessly every day to
-keep everyone in our city safe during
-the pandemic, the Metropolitan Police
-Service (MPS) and London Fire Brigade
-(LFB) joined together with the London
-Ambulance Service to drive ambulances
-and assist medics to help boost the
-emergency response.
+The National and International Capital Cities (NICC) grant, funding for the extra challenges London faces as a global city, is woefully under-resourced. By the Home Office’s own estimates, London should get an additional £159 million a year. As Mayor, I’ll lobby hard for a NICC grant which truly reflects the demands of policing London.
 
-But it is a disgrace that on top of a
-decade’s worth of cuts to the police
-and our public services, the Tory
-Government is now implementing a
-new era of austerity by freezing public-
-sector pay, refusing to refund the
-money spent on tackling the pandemic
-and the income lost as a result. >>
+Crucial public services and youth centres have been starved of cash — local authority spending on youth services is down 71% since 2010/11. Community groups and youth organisations that work so hard tackling the causes of crime are at risk of folding. As your Mayor, I’ll continue to fight hard for the preventative services that provide positive opportunities for young people.
 
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
+Given Tory cuts to policing and preventive services, it’s hardly surprising that crime rose nationally. Despite this, we’ve made some progress — gun crime offences are down, as are moped-enabled crimes and attacks, burglary, lethal barrelled gun charges, homicide and knife crime with injuries involving people under 25 years of age. But I’m far from complacent and will not waver from efforts to make our city safer.
 
-39
-39
+I’ve taken tough decisions on council tax since 2016, and diverted business rates, allowing me to invest record amounts in policing, paying for over 1,000 police officers who, otherwise, would not have been on the streets. I will continue to fund these officers and want to reassure Londoners that over the next term I won’t play electoral politics with people’s safety — I want council tax to be as low as possible but I’ll not apologise for having to increase the council tax precept to keep Londoners safe.
 
-FIGHTING FOR THE RESOURCES
-LONDON NEEDS
-Over the last five years, I’ve met
-communities whose lives have been
-devastated by crime, anti-social
-behaviour, drug dealing, violence
-and robbery. I’ve met families
-who’ve needlessly lost children or
-siblings to violence and met victims
-of domestic abuse or sexual violence
-whose experiences have been so
-painful to listen to that I know I’ll
-never forget them. In addition to
-the human cost, there’s also an
-economic cost to the city — violent
-incidents cost London £3 billion in
-2018/19.
+> Given Tory cuts to policing and preventive services, it’s hardly surprising that crime rose nationally. Despite this, we’ve made some progress – gun crime offences are down, as are moped-enabled crimes and attacks, burglary, lethal barrelled gun charges, homicide and knife crime with injuries involving people under 25 years of age.
 
-That’s why I’m determined to
-redouble my efforts. A difficult
+I will also continue lobbying the Government to deliver on its promise of 20,000 new officers nationwide and continue to make the case for London to receive the additional 6,000 officers the Commissioner and I both agree are needed. I will increase visible neighbourhood policing — bobbies on the beat — in high crime areas and town centres.
 
-job at the best of times has been
-made more difficult by a hostile
-Government — ministers have forced
-£850 million of cuts on the MPS,
-which has spread the police too
-thinly. Now a whole new financial
-crisis is threatening the safety of
-Londoners — policing the pandemic
-has cost the MPS an extra £58 million.
+## TOUGH ON CRIME
+Londoners feel safer when they have confidence that criminals will be caught and punished. But detection rates remain too low. As your Mayor I will continue to do everything in my power to bring crime down and bring criminals to justice, whilst holding the MPS to account. Since being elected Mayor in May 2016, my tough choices and extra investment meant the MPS were able to create the Violent Crime Taskforce (VCTF). Formed of dedicated officers concentrating on the highest crime areas, the VCTF has carried out over 21,200 weapons sweeps, recovered thousands of knives and offensive weapons and arrested more than 10,000 suspects. I’ll continue to support the crucial work of the VCTF, and the new Violence Suppression Units which work alongside them to tackle violent activity at a neighbourhood level.
 
-The National and International
-Capital Cities (NICC) grant, funding
-for the extra challenges London
-faces as a global city, is woefully
-under-resourced. By the Home
-Office’s own estimates, London
-should get an additional £159 million
-a year. As Mayor, I’ll lobby hard for a
-NICC grant which truly reflects the
-demands of policing London.
+I will use my role as Mayor to hold the MPS to account on their performance, how efficiently extra income is used and how they serve London’s diverse communities. My investment has ensured that every borough in London has at least one police station front counter, every school a school liaison officer and future policing priorities will reflect current and emerging crime trends
 
-40
-40
+with a focus on reducing them, including knife crime and other violent crime, drug dealing, burglary and antisocial behaviour.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+To ensure the MPS can keep up with developing crime trends, investment in new technology to make policing more efficient and safe will be a priority, including providing the resources to develop their capabilities for dealing with serious and organised crime, online fraud and cybercrime. This includes a £187 million investment in transforming MPS tech.
 
-Crucial public services and youth
-centres have been starved of
-cash — local authority spending on
-youth services is down 71% since
-2010/11. Community groups and
-youth organisations that work so
-hard tackling the causes of crime
-are at risk of folding. As your Mayor,
-I’ll continue to fight hard for the
-preventative services that provide
-positive opportunities for young
-people.
+But I know people’s privacy is important if we are to retain community confidence. That’s why the police must ensure any new technology is legal, used with as much transparency as possible and that communities are fully engaged. I will ensure that use of data by the police complies with the law and that the recommendations from the review of the Gangs Violence Matrix are fully implemented while also taking action to tackle the gang-related violence which still accounts for some of the most serious crime in London.
 
-Given Tory cuts to policing and
-preventive services, it’s hardly
-surprising that crime rose nationally.
-Despite this, we’ve made some
-progress — gun crime offences are
-down, as are moped-enabled crimes
-and attacks, burglary, lethal barrelled
-gun charges, homicide and knife
-crime with injuries involving people
-under 25 years of age. But I’m far
-from complacent and will not waver
-from efforts to make our city safer.
+Beyond the police, the wider criminal justice service is failing Londoners. Courts, prosecution services, prisons and probation — none of which are
 
-I’ve taken tough decisions on council
-tax since 2016, and diverted business
-rates, allowing me to invest record
-amounts in policing, paying for over
-1,000 police officers who, otherwise,
-would not have been on the streets.
-I will continue to fund these officers
-and want to reassure Londoners
-that over the next term I won’t play
-electoral politics with people’s safety
-— I want council tax to be as low as
+I will also press the Government to properly fund our criminal justice system – you cannot keep people safe on the cheap.
 
-Given Tory cuts to policing
-and preventive services, it’s
-hardly surprising that crime
-rose nationally. Despite this,
-we’ve made some progress
-— gun crime offences are
-down, as are moped-enabled
-crimes and attacks, burglary,
-lethal barrelled gun charges,
-homicide and knife crime
-with injuries involving people
-under 25 years of age.
+under my control — are failing to punish and rehabilitate criminals, and the public are losing confidence.
 
-possible but I’ll not apologise for
-having to increase the council tax
-precept to keep Londoners safe.
+The pandemic has significantly compounded the existing backlog of cases — increasing delays are effectively denying justice to victims and witnesses and eroding public confidence yet further. I will continue to fight to increase court capacity whilst protecting victims and witnesses. I will push for the victims of rape and other serious cases to have the option to pre-record evidence before a trial is held so they are less likely to withdraw from cases and enable them to access the support they need.
 
-I will also continue lobbying the
-Government to deliver on its promise
-of 20,000 new officers nationwide
-and continue to make the case for
-London to receive the additional
-6,000 officers the Commissioner
-and I both agree are needed. I will
-increase visible neighbourhood
-policing — bobbies on the beat — in
-high crime areas and town centres.
+Serious and violent offenders are being released from prison unreformed and if it wasn’t for the successful legal action brought by myself and others the serial rapist John Worboys would have been free to wander the streets. I’ll not be shy to intervene in similar ways in the future if the Government’s failings put at risk the safety of Londoners. I will also press the Government to properly fund our criminal justice system — you cannot keep people safe on the cheap.
 
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
+There is often a cliff-edge of support for young people as they transition from youth offending teams to adult probation, resulting in reoffending. To address this, we are piloting a Young Adults Hub.
 
-41
-41
+I have done more than any London Mayor to tackle hate crime, but during the pandemic racist — particularly sinophobic — and anti-LGBTQ+ hate crime rates have risen. It will remain a priority to continue to support victims, tackle these appalling crimes and encourage the police to report incidents to the Crown Prosecution Service.
 
-TOUGH ON CRIME
-Londoners feel safer when they have
-confidence that criminals will be
-caught and punished. But detection
-rates remain too low.  As your Mayor
-I will continue to do everything in
-my power to bring crime down and
-bring criminals to justice, whilst
-holding the MPS to account.  Since
-being elected Mayor in May 2016, my
-tough choices and extra investment
-meant the MPS were able to create
-the Violent Crime Taskforce (VCTF).
-Formed of dedicated officers
-concentrating on the highest crime
-areas, the VCTF has carried out over
-21,200 weapons sweeps, recovered
-thousands of knives and offensive
-weapons and arrested more than
-10,000 suspects. I’ll continue to
-support the crucial work of the VCTF,
-and the new Violence Suppression
-Units which work alongside them
-to tackle violent activity at a
-neighbourhood level.
+The pandemic has horrifically led to a doubling of the rate of incidents of abuse against retail staff, who have done such a fantastic job during the pandemic. That’s why, I back the campaign to introduce legislation which would classify attacking a retail
 
-I will use my role as Mayor to
-hold the MPS to account on their
-performance, how efficiently extra
-income is used and how they serve
-London’s diverse communities. My
-investment has ensured that every
-borough in London has at least one
-police station front counter, every
-school a school liaison officer and
-future policing priorities will reflect
-current and emerging crime trends
+As a Londoner from a
+minority ethnic background,
+I’ve experienced first-hand
+the impact that structural
+racism here has on society
+— and I'm committed to
+stamping it out.
 
-with a focus on reducing them,
-including knife crime and other
-violent crime, drug dealing, burglary
-and antisocial behaviour.
+worker as an aggravated assault to
+help ensure that those convicted face
+tougher criminal sanctions.
 
-To ensure the MPS can keep up with
-developing crime trends, investment
-in new technology to make policing
-more efficient and safe will be
-a priority, including providing
-the resources to develop their
-capabilities for dealing with serious
-and organised crime, online fraud
-and cybercrime. This includes a £187
-million investment in transforming
-MPS tech.
+The pandemic has provided fertile
+breeding grounds for extremism,
+as those who seek to divide our
+communities have taken advantage
+of more people being at home and
+online to prey on the vulnerable
+and isolated. Through the Shared
+Endeavour Fund, we will provide
+even more grants to projects that
+counter violent extremism. I will
+also continue to work closely with
+the police, security partners and
+communities to tackle this threat
+and commission an update of
+the Harris Review into London’s
+Preparedness to Respond to a Major
+Terrorist Incident.
 
-But I know people’s privacy is
-important if we are to retain
-community confidence. That’s why
-the police must ensure any new
-technology is legal, used with as much
-transparency as possible and that
-communities are fully engaged. I will
-ensure that use of data by the police
-complies with the law and that the
-recommendations from the review of
-the Gangs Violence Matrix are fully
-implemented while also taking action
-to tackle the gang-related violence
-which still accounts for some of the
-most serious crime in London.
-
-Beyond the police, the wider criminal
-justice service is failing Londoners.
-Courts, prosecution services, prisons
-and probation — none of which are
-
-42
-42
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
-I will also press the
-Government to properly
-fund our criminal justice
-system — you cannot keep
-people safe on the cheap.
-
-under my control — are failing to
-punish and rehabilitate criminals,
-and the public are losing confidence.
-The pandemic has significantly
-compounded the existing backlog
-of cases — increasing delays are
-effectively denying justice to
-victims and witnesses and eroding
-public confidence yet further. I will
-continue to fight to increase court
-capacity whilst protecting victims and
-witnesses. I will push for the victims
-of rape and other serious cases
-to have the option to pre-record
-evidence before a trial is held so
-they are less likely to withdraw from
-cases and enable them to access the
-support they need.
-
-Serious and violent offenders
-are being released from prison
-unreformed and if it wasn’t for the
-
-successful legal action brought by
-myself and others the serial rapist
-John Worboys would have been free
-to wander the streets. I’ll not be shy
-to intervene in similar ways in the
-future if the Government’s failings
-put at risk the safety of Londoners.
-I will also press the Government to
-properly fund our criminal justice
-system — you cannot keep people
-safe on the cheap.
-
-There is often a cliff-edge of support
-for young people as they transition
-from youth offending teams to adult
-probation, resulting in reoffending. To
-address this, we are piloting a Young
-Adults Hub.
-
-I have done more than any London
-Mayor to tackle hate crime, but
-during the pandemic racist —
-particularly sinophobic — and anti-
-LGBTQ+ hate crime rates have risen.
-It will remain a priority to continue
-to support victims, tackle these
-appalling crimes and encourage
-the police to report incidents to the
-Crown Prosecution Service.
-
-The pandemic has horrifically led to
-a doubling of the rate of incidents of
-abuse against retail staff, who have
-done such a fantastic job during the
-pandemic. That’s why, I back the
-campaign to introduce legislation
-which would classify attacking a retail
-
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
-
-43
-43
-
-TRUST AND CONFIDENCE
+## TRUST AND CONFIDENCE
 Keeping the city safe relies on the
 strength of relationships between
 the police and all of London’s diverse
@@ -2368,45 +1313,9 @@ markedly since I was growing up.
 There is still more to do, and I’m
 determined to further improve
 trust and confidence among Black
-communities in the police. That's
+communities in the police. That’s
 why, working closely with London’s
 communities and the MPS, I published
-
-As a Londoner from a
-minority ethnic background,
-I’ve experienced first-hand
-the impact that structural
-racism here has on society
-— and I'm committed to
-stamping it out.
-
-worker as an aggravated assault to
-help ensure that those convicted face
-tougher criminal sanctions.
-
-The pandemic has provided fertile
-breeding grounds for extremism,
-as those who seek to divide our
-communities have taken advantage
-of more people being at home and
-online to prey on the vulnerable
-and isolated. Through the Shared
-Endeavour Fund, we will provide
-even more grants to projects that
-counter violent extremism. I will
-also continue to work closely with
-the police, security partners and
-communities to tackle this threat
-and commission an update of
-the Harris Review into London's
-Preparedness to Respond to a Major
-Terrorist Incident.
-
-44
-44
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
 
 a groundbreaking Action Plan to
 improve transparency, accountability
@@ -2471,8 +1380,8 @@ through the criminal justice system
 and fight for further devolution to
 London of victims’ services.
 
-TACKLING THE CAUSES OF
-CRIME
+## TACKLING THE CAUSES OF CRIME
+
 Being tough on crime is a priority
 but I believe that keeping London
 safe requires also being tough on
@@ -2484,93 +1393,21 @@ alienation and deprivation, many
 of which are in the gift of national
 Government to address.
 
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
+I set up England’s first Violence Reduction Unit (VRU) to tackle the underlying causes of all violence by adopting a long-term, public health approach. If re-elected, I remain committed to championing its groundbreaking work that paved the way for the Home Office to roll out VRUs across England and Wales.
 
-45
-45
+The VRU has primarily focused on supporting young people to cope with adverse childhood experiences and provide routes to protect young people from exposure to violence. Investment of £35 million has reached more than 80,000 young people through peer-to-peer schemes, programmes for youth workers and parents, and by empowering local communities and supporting inclusive schools.
 
-I set up England’s first Violence
-Reduction Unit (VRU) to tackle the
-underlying causes of all violence by
-adopting a long-term, public health
-approach. If re-elected, I remain
-committed to championing its
-groundbreaking work that paved the
-way for the Home Office to roll out
-VRUs across England and Wales.
+I have prioritised intervening at critical moments in a young person’s life by investing in specialist youth workers in custody suites as well as in accident and emergency departments. This has helped thousands of vulnerable young people.
 
-The VRU has primarily focused on
-supporting young people to cope
-with adverse childhood experiences
-and provide routes to protect
-young people from exposure to
-violence. Investment of £35 million
-has reached more than 80,000
-young people through peer-to-
-peer schemes, programmes for
-youth workers and parents, and by
-empowering local communities and
-supporting inclusive schools.
+As Mayor, I have already invested £3.7 million in a three-year Rescue and Response programme to better understand, target and respond to County Lines offending and victimisation and will continue to invest a further £1.8 million into this programme.
 
-I have prioritised intervening at critical
-moments in a young person’s life by
-investing in specialist youth workers
-in custody suites as well as in accident
-and emergency departments. This
-has helped thousands of vulnerable
-young people.
+I’ll also continue to explore new and innovative ways of tackling other types of illegal drug-related crime and crack down on the criminals who are distributing and selling these drugs. A £5.6 million investment in London Gang Exit services will continue to support hundreds of young people at risk of, or engaged in, serious violence.
 
-As Mayor, I have already invested
-£3.7 million in a three-year Rescue
-and Response programme to better
-understand, target and respond
-to County Lines offending and
-victimisation and will continue to
+Government austerity has impacted on youth activities. As Mayor, I set up the Young Londoners Fund, prioritising investment in young Londoners and stepping in where the Government cut money. Through it, I have supported over 300 organisations to provide meaningful activities for more than 110,000 young people. I intend to build on this work and the collaboration forged between leading funders during the pandemic, to create a longer-term, multi-million-pound fund to support young Londoners with positive opportunities and provide a mentor for those Londoners most in need.
 
-invest a further £1.8 million into this
-programme
+## VIOLENCE AGAINST WOMEN AND GIRLS
 
-I’ll also continue to explore new and
-innovative ways of tackling other
-types of illegal drug-related crime
-and crack down on the criminals who
-are distributing and selling these
-drugs. A £5.6 million investment
-in London Gang Exit services will
-continue to support hundreds of
-young people at risk of, or engaged
-in, serious violence.
-
-Government austerity has impacted
-on youth activities. As Mayor, I set
-up the Young Londoners Fund,
-prioritising investment in young
-Londoners and stepping in where the
-Government cut money. Through
-it, I have supported over 300
-organisations to provide meaningful
-activities for more than 110,000
-young people. I intend to build on this
-work and the collaboration forged
-between leading funders during the
-pandemic, to create a longer-term,
-multi-million-pound fund to support
-young Londoners with positive
-opportunities and provide a mentor
-for those Londoners most in need.
-
-VIOLENCE AGAINST WOMEN
-AND GIRLS
-Recent tragic events surrounding the
-murder of Sarah Everard are a stark
-reminder that many women and
-
-46
-46
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+Recent tragic events surrounding the murder of Sarah Everard are a stark reminder that many women and
 
 girls do not feel safe in our city. This
 is simply unacceptable, and I totally
@@ -2602,47 +1439,24 @@ behaviours. That’s why I’m a firm
 supporter of relationship and sex
 education in schools, teaching young
 people about respect, dignity and
-healthy relationships.  It is why I will
+healthy relationships. ​It is why I will
 continue to invest in programmes
 to change the behaviour of the
 perpetrators of domestic abuse. It’s
 also why I believe we have a duty to
 tackle misogyny — an unacceptable
-attitude towards women and girls
-
-So, I fully support extending
-hate crime laws to that
-based on someone’s gender
-— including misogyny — and
-for all hate crimes based on
-protected characteristics to
-be treated equally, and I will
-continue to campaign to
-get this into law.
-
-which, left unchecked, can escalate
+attitude towards women and girls which, left unchecked, can escalate
 into more worrying and violent
-behaviours. So, I fully support
-extending hate crime laws to that
-based on someone’s gender —
-including misogyny — and for all
-hate crimes based on protected
-characteristics to be treated equally,
-and I will continue to campaign to
-get this into law. We also need much
-better data on experiences of women
-and girls, and I will work to achieve this.
+behaviours.
+
+> So, I fully support extending hate crime laws to that based on someone’s gender – including misogyny – and for all hate crimes based on protected characteristics to be treated equally, and I will continue to campaign to get this into law.
+
+So, I fully support extending hate crime laws to that based on someone’s gender – including misogyny – and for all hate crimes based on protected characteristics to be treated equally, and I will continue to campaign to get this into law. We also need much better data on experiences of women and girls, and I will work to achieve this.
 
 My appointment of London’s first
 independent Victims’ Commissioner
 has been crucial to our work in
 improving support and services
-
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
-
-47
-47
 
 for the city’s victims of crime. The
 Victims Commissioner will continue
@@ -2720,300 +1534,77 @@ the Women’s Night Safety Charter
 which has already seen almost 400
 organisations sign up to it.
 
-48
-48
+Whilst the right to peaceful protest must be respected, I also support the right of women to choose to have an abortion free of intimidation. I oppose any harassment around clinics and will back buffer zones to prevent threatening behaviour.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+The scourge of modern-day slavery and the despicable practice of female genital mutilation (FGM) have no place in our city. As Mayor, I will press the MPS hard to prosecute those guilty of these disgusting crimes, and – working with communities and charities – provide support to the victims.
 
-Whilst the right to peaceful protest
-must be respected, I also support the
-right of women to choose to have an
-abortion free of intimidation. I oppose
-any harassment around clinics and
-will back buffer zones to prevent
-threatening behaviour.
+### FIRE AND RESCUE SERVICES
+The devastating fire at Grenfell Tower in June 2017 showed just how important fire prevention and safety
 
-The scourge of modern-day slavery
-and the despicable practice of female
-genital mutilation (FGM) have no place
-in our city. As Mayor, I will press the
-MPS hard to prosecute those guilty of
-these disgusting crimes, and — working
-with communities and charities —
-provide support to the victims.
+is for all Londoners, particularly the most vulnerable. There remains much to learn from the tragedy, and I will ensure that the London Fire Brigade (LFB) strengthens relations with all of London’s communities, is more transparent and learns from all official inspections and inquiries. It remains the case that London’s firefighters are saving lives every single day across the city.
 
-FIRE AND RESCUE SERVICES
-The devastating fire at Grenfell
-Tower in June 2017 showed just how
-important fire prevention and safety
+In spite of Tory austerity, I have protected the LFB’s budgets and, even in this time of stretched resources, provided extra resources needed to keep London safe. On my watch, the LFB has introduced the most advanced fire-fighting equipment in the country including new fire escape smoke hoods, three
 
-is for all Londoners, particularly the
-most vulnerable. There remains
-much to learn from the tragedy, and
-I will ensure that the London Fire
-Brigade (LFB) strengthens relations
-with all of London’s communities, is
-more transparent and learns from
-all official inspections and inquiries.
-It remains the case that London’s
-firefighters are saving lives every
-single day across the city.
+new 64-metre ladders, and aerial drone technology. I will continue to fight hard for the right levels of Government funding so there are no frontline cuts to the LFB, and thereby ensure the brigade has the funding, tools and equipment it needs to keep the city safe.
 
-In spite of Tory austerity, I have
-protected the LFB’s budgets and,
-even in this time of stretched
-resources, provided extra resources
-needed to keep London safe. On
-my watch, the LFB has introduced
-the most advanced fire-fighting
-equipment in the country including
-new fire escape smoke hoods, three
+I will continue to push for LFB’s workforce to reflect London’s diversity. No matter who you are or what your background is, LFB should be a safe and welcoming place to work. This is why the LFB is undertaking a review of its own workplace culture. I support this move but there is much more to do, which is why I am committed to ensuring that the LFB is an attractive and inclusive employer for people from all backgrounds.
 
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
+In the past few years considerable progress has been made by LFB. This will continue and I’ll ensure the LFB fully implements all of the Grenfell Tower Inquiry Phase 1 recommendations aimed at them, continuing to publish regular reports on their progress. I will do everything in my power to make sure the other agencies named in the Inquiry Phase 1 report, including the Government, implement the recommendations aimed at them and will act on any further recommendations from
 
-49
-49
+**I will continue to fight hard for the right levels of Government funding so there are no frontline cuts to the LFB, and thereby ensure the brigade has the funding, tools and equipment it needs to keep the city safe.**
 
-new 64-metre ladders, and aerial
-drone technology. I will continue
-to fight hard for the right levels of
-Government funding so there are no
-frontline cuts to the LFB, and thereby
-ensure the brigade has the funding,
-tools and equipment it needs to keep
-the city safe.
+Phase 2. And I will continue to support the Grenfell community in their fight for truth and justice.
 
-I will continue to push for LFB’s
-workforce to reflect London’s
-diversity. No matter who you are
-or what your background is, LFB
-should be a safe and welcoming
-place to work. This is why the LFB
-is undertaking a review of its own
-workplace culture. I support this
-move but there is much more to
-do, which is why I am committed to
-ensuring that the LFB is an attractive
-and inclusive employer for people
-from all backgrounds.
+### RESILIENCE
+Even before the pandemic, I was very aware of the many major risks that our city could face. That is why I appointed the city’s first Deputy Mayor for Fire and Resilience.
 
-In the past few years considerable
-progress has been made by LFB.
-This will continue and I’ll ensure
-the LFB fully implements all of
-the Grenfell Tower Inquiry Phase 1
-recommendations aimed at them,
-continuing to publish regular reports
-on their progress. I will do everything
-in my power to make sure the other
-agencies named in the Inquiry Phase
-1 report, including the Government,
-implement the recommendations
-aimed at them and will act on any
-further recommendations from
-
-I will continue to fight
-hard for the right levels of
-Government funding so
-there are no frontline cuts
-to the LFB, and thereby
-ensure the brigade has
-the funding, tools and
-equipment it needs to
-keep the city safe.
-
-Phase 2. And I will continue to
-support the Grenfell community in
-their fight for truth and justice.
-
-RESILIENCE
-Even before the pandemic, I was
-very aware of the many major risks
-that our city could face. That is why
-I appointed the city’s first Deputy
-Mayor for Fire and Resilience.
-
-I published London’s first ever City
-Resilience Strategy, to help make
-sure London is prepared for future
-challenges, including the impact of
-climate change and extreme weather.
-The strategy sets out collaborative
-projects to support resilience in
-London’s communities, and the
-
-50
-50
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+I published London’s first ever City Resilience Strategy, to help make sure London is prepared for future challenges, including the impact of climate change and extreme weather. The strategy sets out collaborative projects to support resilience in London’s communities, and the
 
 mitigating activity needed to ensure
 London is able to thrive in the face of
 disruption.
-
 As Mayor, I am committed to making
 sure that London continues to be
 not only prepared for short-term
 disruptions but also long-term
-chronic incidents. n
+chronic incidents.
 
-SAFER COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
+# A GREEN NEW DEAL FOR LONDON
 
-51
-51
+Throughout lockdown, our wonderful local parks and green spaces have been a lifeline, particularly for those without their own outside space. They’ve provided somewhere to exercise or meet friends in a socially distant way, and we’ve all appreciated cleaner air and the outdoors.
 
- A GREEN
- NEW DEAL
- FOR LONDON
+But long before coronavirus, London was facing a climate and ecological emergency and suffered from the blight of air pollution. However, the effects haven’t been felt equally, and existing social inequalities within our cities are being exacerbated. Air pollution, prematurely killing thousands of Londoners every year, hits the poorest hardest and evidence mounts by the day that those exposed to filthy air are more susceptible to coronavirus.
 
-Throughout lockdown, our wonderful
-local parks and green spaces have
-been a lifeline, particularly for those
-without their own outside space.
-They’ve provided somewhere to
-exercise or meet friends in a socially
-distant way, and we’ve all appreciated
-cleaner air and the outdoors.
+That’s why environmentalism is a battle for social justice. Already, I’ve led the way by implementing the boldest plans of any major city to tackle air pollution by introducing the world’s first Ultra Low Emission Zone (ULEZ). Together with Londoners I’ve planted more trees in one term than the previous Mayor did in two. I’m installing a new generation of free water fountains to reduce plastic waste and I’ve published an environment strategy for the city outlining how London will become more resilient to extreme weather and adapt to longer term climate change impacts. »
 
-But long before coronavirus, London
-was facing a climate and ecological
-emergency and suffered from the blight
-of air pollution. However, the effects
-haven’t been felt equally, and existing
-social inequalities within our cities
-are being exacerbated. Air pollution,
-prematurely killing thousands of
-Londoners every year, hits the poorest
-hardest and evidence mounts by the
+LOW
+EMISSION
+NEIGHBOURHOOD
+CITY FRINGE
 
-day that those exposed to filthy air are
-more susceptible to coronavirus.
+UK's First
+Ultra Low
+Emission
+Streets
 
-That’s why environmentalism is a battle
-for social justice. Already, I’ve led the
-way by implementing the boldest plans
-of any major city to tackle air pollution
-by introducing the world’s first Ultra
-Low Emission Zone (ULEZ). Together
-with Londoners I’ve planted more
-trees in one term than the previous
-Mayor did in two. I’m installing a new
-generation of free water fountains to
-reduce plastic waste and I’ve published
-an environment strategy for the city
-outlining how London will become
-more resilient to extreme weather and
-adapt to longer term climate change
-impacts. >>
+ISLINGTON CITY OF LONDON CORPORATION H Hackney
 
-52
-52
-52
+SUPPORTED BY
+MAYOR OF LONDON
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-SADIQ FOR LONDON 2020
+Record investment in greener travel, including my recent Streetspace plan, has led to the biggest increase in cycling on record. We’re defending the Green Belt, have become the world’s first National Park City, and greened over 400 hectares through improvements to parks and green spaces. I declared a climate emergency in London, setting out my ambition to be zero-carbon by 2030, and we became one of the world’s first cities to set out a clear plan to comply with the Paris Climate Agreement.
 
- A GREEN
+In a year of vital UN conferences for climate and nature, we need to go much further and faster. I’ll use the unique opportunity of COP26 in the UK this year to showcase London’s leadership on climate action and work with other cities, globally and nationally, to increase our combined ambitions.
 
- NEW DEAL
+## MY TEN POINT PLAN
 
- FOR LONDON
+At the heart of the London Recovery Board’s work is environmental sustainability, with a specific mission to deliver a green new deal for the city. To succeed, we need to marshal all of the city’s innovation and energy, and I will throw my full weight behind a green recovery, and commit in my next term to a 10-point Green New Deal.
 
-A GREEN NEW DEAL FOR LONDON
-A GREEN NEW DEAL FOR LONDON
-LONDON’S LOCAL COMMUNITIES
+First, London will have the right level of ambition and urgency for the scale of the problems we face. That’s why I’m aiming for London to be carbon-neutral by 2030. There’s no doubt this is an ambitious target that is hard for our city to meet. But unless London is really stretched, we’ll never make the changes we desperately need. To try, and risk missing, is better than not trying at all.
 
-53
-53
-53
+Second, I’ll continue working with the city’s major public, private and voluntary institutions to do all we can to reduce carbon emissions. Many of these have come together in the London Recovery Board, and I will mobilise this energy and leadership to ensure London moves faster towards being healthier, greener and fairer.
 
-Record investment in greener travel,
-including my recent Streetspace plan,
-has led to the biggest increase in
-cycling on record. We’re defending
-the Green Belt, have become the
-world’s first National Park City,
-and greened over 400 hectares
-through improvements to parks and
-green spaces. I declared a climate
-emergency in London, setting out my
-ambition to be zero-carbon by 2030,
-and we became one of the world’s first
-cities to set out a clear plan to comply
-with the Paris Climate Agreement.
-
-In a year of vital UN conferences for
-climate and nature, we need to go
-much further and faster. I’ll use the
-unique opportunity of COP26 in the
-UK this year to showcase London’s
-leadership on climate action and
-work with other cities, globally and
-nationally, to increase our combined
-ambitions.
-
-MY TEN POINT PLAN
-At the heart of the London Recovery
-Board’s work is environmental
-sustainability, with a specific mission
-to deliver a green new deal for the
-city. To succeed, we need to marshal
-all of the city’s innovation and energy,
-and I will throw my full weight behind
-a green recovery, and commit in my
-next term to a 10-point Green New
-Deal.
-
-First, London will have the right level
-of ambition and urgency for the scale
-of the problems we face. That’s why
-I’m aiming for London to be carbon-
-neutral by 2030. There’s no doubt
-this is an ambitious target that is
-hard for our city to meet. But unless
-London is really stretched, we’ll never
-make the changes we desperately
-need. To try, and risk missing, is
-better than not trying at all.
-
-Second, I’ll continue working with
-the city’s major public, private and
-voluntary institutions to do all we can
-to reduce carbon emissions. Many
-of these have come together in the
-London Recovery Board, and I will
-mobilise this energy and leadership to
-ensure London moves faster towards
-being healthier, greener and fairer.
-
-London’s financial institutions have
-a crucial role to play. I’ll continue to
-develop the tools that make it as
-easy as possible for them to invest in
-green projects. And I’ll do my bit — the
-LPFA has made massive progress
-since I was first elected in divesting
-its £6 billion fund from fossil fuels into
-green investments and is now down
-to 0.06%, I will work to get this down
-to zero. I’ll undertake similar work
-with TfL to push their independent
-£10.6 billion pension fund to achieve
-the same objective, and seek to
-maximise investments that support
-
-54
-54
-54
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-SADIQ FOR LONDON 2020
+London’s financial institutions have a crucial role to play. I’ll continue to develop the tools that make it as easy as possible for them to invest in green projects. And I’ll do my bit — the LPFA has made massive progress since I was first elected in divesting its £6 billion fund from fossil fuels into green investments and is now down to 0.06%, I will work to get this down to zero. I’ll undertake similar work with TfL to push their independent £10.6 billion pension fund to achieve the same objective, and seek to maximise investments that support
 
 this 10-point plan from pension funds
 and other appropriate investors.
@@ -3052,18 +1643,17 @@ institutions to join.
 Fourth, I promise even more world-
 leading action on tackling air
 pollution. The central London ULEZ I
-
-Our £52.5m scheme has
-helped take almost 9,000
-polluting vehicles off the
-road.
-
 introduced in 2019 in the face of Tory
 opposition has seen toxic emissions
 slashed by over 40%. But I want
 more Londoners to benefit from
 cleaner air, so I’ll expand the ULEZ in
 October 2021.
+
+> Our £52.5m scheme has
+> helped take almost 9,000
+> polluting vehicles off the
+> road.
 
 My London scrappage schemes
 are proving extremely popular
@@ -3085,14 +1675,6 @@ and introduce zero-emission zones.
 Beyond the expansion of ULEZ, I’ll
 monitor all existing road-charging
 
-A GREEN NEW DEAL FOR LONDON
-A GREEN NEW DEAL FOR LONDON
-LONDON’S LOCAL COMMUNITIES
-
-55
-55
-55
-
 schemes to ensure they continue
 to bring the maximum benefits of
 improved air quality and reduced
@@ -3113,7 +1695,6 @@ air, particularly to those who work
 at airports. I’ll also fight for updated
 legislation that introduces a national
 target of WHO-recommended
-
 standard for PM2.5 by 2030, and
 also gives London additional powers
 to clean up London’s air pollution
@@ -3135,382 +1716,77 @@ why all Londoners should live no more
 than a 10-minute walk from green
 space. Currently this isn't the case,
 
-56
-56
-56
+so I’ll improve London’s network of green corridors and open spaces that connect with town centres, public transport, places of work and people’s homes. London has a thriving web of nature on people’s doorstep and I’ll support schools and local communities who wish to create or enhance nearby green space. Environment groups, local authorities and housing associations that retrofit housing estates with poor access to green spaces will also be supported. I’ll work with private and charitable donations to create the investment we need to fund mass tree-planting, rewilding, pocket parks and greening projects.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-SADIQ FOR LONDON 2020
+I want to see more green walls and roofs across the city, and I commit TfL to continue greening bus shelter roofs and planting wildflowers on central reservations and embankments. TfL will also support The Royal Parks in its ambition to reduce polluting traffic rat-running through our city’s most famous green spaces.
 
-so I’ll improve London’s network of
-green corridors and open spaces that
-connect with town centres, public
-transport, places of work and people’s
-homes. London has a thriving web of
-nature on people’s doorstep and I’ll
-support schools and local communities
-who wish to create or enhance nearby
-green space. Environment groups, local
-authorities and housing associations
-that retrofit housing estates with poor
-access to green spaces will also be
-supported. I’ll work with private and
-charitable donations to create the
-investment we need to fund mass tree-
-planting, rewilding, pocket parks and
-greening projects.
+Sixth, the Green Belt remains important for endangered wildlife and biodiversity, as well as being our city’s lungs. I’ll continue to oppose building on the Green Belt, which is as important today as it was when it was created and, other than in exceptional circumstances, protect London’s playing fields from development. I’ve already banned fracking, and will defend this ban should the Government try to overturn it.
 
-I want to see more green walls and
-roofs across the city, and I commit TfL
-to continue greening bus shelter roofs
-and planting wildflowers on central
-reservations and embankments. TfL
-will also support The Royal Parks in
-its ambition to reduce polluting traffic
-rat-running through our city’s most
-famous green spaces.
+> **the Green Belt remains**
+> **important for endangered**
+> **wildlife and biodiversity,**
+> **as well as being our city’s**
+> **lungs.**
 
-the Green Belt remains
-important for endangered
-wildlife and biodiversity,
-as well as being our city’s
-lungs.
+Some Green Belt constitutes poor quality green space and is under threat, so I’ll work on rewilding, planting orchards and forests to strengthen the Green Belt’s defence against development. I’ll promote increased access to the city’s green fringes to raise awareness of the nature that is on Londoners’ doorsteps.
 
-development. I’ve already banned
-fracking, and will defend this ban
-should the Government try to
-overturn it.
+Seventh, I’ll lead a clean energy revolution in London. As customer number one, I’m proud London Power is up and running, and challenging traditional energy suppliers with my commitment to provide 100% clean electricity at fair prices. I want more Londoners to benefit from clean affordable energy
 
-Some Green Belt constitutes poor
-quality green space and is under
-threat, so I’ll work on rewilding,
-planting orchards and forests to
-strengthen the Green Belt’s defence
-against development. I’ll promote
-increased access to the city’s
-green fringes to raise awareness
-of the nature that is on Londoners’
-doorsteps.
+and I’ll also explore new ways to help people cut carbon in the home and save money.
 
-Sixth, the Green Belt remains
-important for endangered wildlife
-and biodiversity, as well as being
-our city’s lungs. I’ll continue to
-oppose building on the Green Belt,
-which is as important today as it
-was when it was created and, other
-than in exceptional circumstances,
-protect London’s playing fields from
+I will use the combined energy buying power of the GLA, TfL, and other Mayoral bodies to obtain the cleanest bulk purchase agreements, attracting new investment and increasingly powering the Tube from renewable sources. I’ll extend this offer to boroughs, and also make sure TfL is using its land to support renewable energy generation.
 
-Seventh, I’ll lead a clean energy
-revolution in London. As customer
-number one, I’m proud London
-Power is up and running, and
-challenging traditional energy
-suppliers with my commitment to
-provide 100% clean electricity at fair
-prices. I want more Londoners to
-benefit from clean affordable energy
+I will continue to support London as a solar energy city, helping residents join up with other solar buyers and using group-buying models to unlock savings and make solar more affordable for all Londoners. Additionally, I’ll continue to fund the installation of solar panels on schools, community centres and industrial estates as well as supporting other community energy groups that are helping their neighbourhoods transition to clean, local energy.
 
-A GREEN NEW DEAL FOR LONDON
-A GREEN NEW DEAL FOR LONDON
-LONDON’S LOCAL COMMUNITIES
+Eighth, I’ll lead the country on carbon standards for housing. Because I strengthened the planning process, London is already ahead of national building regulations in the amount of carbon saved when building new homes. There will be no weakening
 
-57
-57
-57
+> I’ll lead a clean energy revolution in London.
 
-and I’ll also explore new ways to help
-people cut carbon in the home and
-save money.
+of these high standards, and I want to go further, exploring opportunities to set up a leading centre which will accelerate the piloting of innovative and deep approaches to retrofitting properties to meet our climate targets, and making sure housing on GLA land is of the highest standards.
 
-I will use the combined energy
-buying power of the GLA, TfL, and
-other Mayoral bodies to obtain the
-cleanest bulk purchase agreements,
-attracting new investment and
-increasingly powering the Tube from
-renewable sources. I’ll extend this
-offer to boroughs, and also make
-sure TfL is using its land to support
-renewable energy generation.
+I’ll lobby the government for the funds London needs to retrofit millions of homes, ensuring a targeted approach for those residents who need warm, healthy houses the most. I’ll fight for the powers to mandate minimum energy efficiency standards in existing homes — essential in meeting London’s 2030 carbon-neutral target. And I will build on policies in the London Plan that require developers to count the cost of their embodied carbon as well as their emissions, ensuring the accounting of the full impact of our built environment.
 
-I will continue to support London
-as a solar energy city, helping
-residents join up with other solar
-buyers and using group-buying
-models to unlock savings and
-make solar more affordable for all
-Londoners. Additionally, I’ll continue
-to fund the installation of solar
-panels on schools, community
-centres and industrial estates as
-well as supporting other community
-energy groups that are helping their
-neighbourhoods transition to clean,
-local energy.
+Ninth, I’ll lead efforts to make London a zero-waste city by
 
-Eighth, I’ll lead the country on carbon
-standards for housing. Because I
-strengthened the planning process,
-London is already ahead of national
-building regulations in the amount
-of carbon saved when building new
-homes. There will be no weakening
+working with local authorities and communities to prevent, re-use, recycle or recover waste. My powers over local authorities are limited, but I’ll push all 32 boroughs to provide the full range of doorstep waste collections, including food waste. I’ll work with London’s food sector to reduce waste as part of London’s status as one of three flagship global cities looking at a circular economy. And I’ll ensure that the London Recovery Board’s mission to create healthier diets includes a focus on those that are sustainable and good for the planet.
 
-I’ll lead a clean energy
-revolution in London.
+A zero-waste city also means investing in the circular economy, supporting small businesses that can turn waste into new sustainable products. Where we cannot reuse food waste we should seek to use it to generate energy through anaerobic digestion. I’ll continue to oppose new incineration in London and ensure that where it already exists, it is working to the highest standards and capturing energy from waste to heat local houses.
 
-of these high standards, and I want
-to go further, exploring opportunities
-to set up a leading centre which will
-accelerate the piloting of innovative
-and deep approaches to retrofitting
-properties to meet our climate
-targets, and making sure housing on
-GLA land is of the highest standards.
+To reduce the number of single-use plastic bottles, my network of water fountains will continue to expand across the city. I’ll also continue to grow my Refill London scheme, growing the 3,300 refill points that already exist across the city. At City Hall, I have ensured free drinking water is available and ended the use of plastic cutlery, and I want to source as much of our food from London as possible.
 
-I’ll lobby the government for the
-funds London needs to retrofit
-millions of homes, ensuring a
-targeted approach for those
-residents who need warm, healthy
-houses the most. I’ll fight for the
-powers to mandate minimum energy
-efficiency standards in existing
-homes — essential in meeting
-London’s 2030 carbon-neutral target.
-And I will build on policies in the
-London Plan that require developers
-to count the cost of their embodied
-carbon as well as their emissions,
-ensuring the accounting of the full
-impact of our built environment.
+London should be allowed to decide for itself whether a disposable coffee cup tax or a glass bottle deposit scheme works for the city. I’ll fight for the powers to positively influence behaviour, reduce waste and clean up our streets.
 
-Ninth, I’ll lead efforts to make
-London a zero-waste city by
+Finally, I want to support the London Recovery Board’s ambitious target to double the size of London’s green economy sector by 2030, developing the green jobs and skills that the city needs. London’s transition must be a just one, developed in collaboration with unions to assist those sectors and communities that have been hardest hit by the pandemic and enabling them to thrive in a future zero-carbon economy. My Green New Deal will support green jobs that are diverse, sustainable, meaningful and well-paid.
 
-58
-58
+Building on the work of my Green Spaces Commission, I will support a green skills academy that will help Londoners from all backgrounds into new green jobs and apprenticeships. n
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+6600 SSAADDIIQQ FFOORR LLOONNDDOONN 22002201
 
-working with local authorities and
-communities to prevent, re-use,
-recycle or recover waste. My powers
-over local authorities are limited, but
-I’ll push all 32 boroughs to provide
-the full range of doorstep waste
-collections, including food waste. I’ll
-work with London’s food sector to
-reduce waste as part of London’s
-status as one of three flagship global
-cities looking at a circular economy.
-And I’ll ensure that the London
-Recovery Board’s mission to create
-healthier diets includes a focus on
-those that are sustainable and good
-for the planet.
+## SUPPORTING THE NEXT GENERATION OF LONDONERS
 
-A zero-waste city also means
-investing in the circular economy,
-supporting small businesses that
-can turn waste into new sustainable
-products. Where we cannot reuse
-food waste we should seek to
-use it to generate energy through
-anaerobic digestion. I’ll continue to
-oppose new incineration in London
-and ensure that where it already
-exists, it is working to the highest
-standards and capturing energy from
-waste to heat local houses.
+A generation of young Londoners failed by successive Tory Governments is now being hit hard by the pandemic. Inequalities between young Londoners, that affect their chances in life and the opportunities that come their way, are being made worse by the pandemic.
 
-already exist across the city. At City
-Hall, I have ensured free drinking
-water is available and ended the
-use of plastic cutlery, and I want to
-source as much of our food from
-London as possible.
+Those out of work as a result of the economic fallout from coronavirus are disproportionately young Londoners. Having lived through the mass unemployment of the 1980s, I’m determined to do all I can to avoid a repeat.
 
-London should be allowed to decide
-for itself whether a disposable coffee
-cup tax or a glass bottle deposit
-scheme works for the city. I’ll fight
-for the powers to positively influence
-behaviour, reduce waste and clean
-up our streets.
+Mental health services, already inadequate and struggling to cope with demand prior to the pandemic, are having to cope with an explosion of mental ill-health caused by isolation of young people from their friends, and anxiety about the future.
 
-Finally, I want to support the London
-Recovery Board’s ambitious target
-to double the size of London’s green
-economy sector by 2030, developing
-the green jobs and skills that the city
-needs. London’s transition must be a
-just one, developed in collaboration
-with unions to assist those sectors
-and communities that have been
-hardest hit by the pandemic and
-enabling them to thrive in a future
-zero-carbon economy. My Green
-New Deal will support green jobs that
-are diverse, sustainable, meaningful
-and well-paid.
+I’ll do everything within my powers as Mayor to support the next generation of young Londoners. The London Recovery Board has placed young people at the heart of our work, covering mental health, the digital divide, skills, mentoring and youth services. >>
 
-To reduce the number of single-use
-plastic bottles, my network of water
-fountains will continue to expand
-across the city. I’ll also continue
-to grow my Refill London scheme,
-growing the 3,300 refill points that
+This includes using the recruitment and procurement power of London’s anchor institutions to give new opportunities to young people and I will ensure City Hall, TfL, the MPS and LFB play their full role in this work. I will also ensure that the work City Hall is doing is communicated to young people in a clear and transparent way, involving young people in helping to design this.
 
-Building on the work of my Green
-Spaces Commission, I will support a
-green skills academy that will help
-Londoners from all backgrounds
-into new green jobs and
-apprenticeships. n
+## MY AMBITION FOR YOUNG LONDONERS
+Growing up, my childhood wasn’t always easy but I was fortunate to grow up in a council home and to attend good state schools. Sport played a crucial role in my younger years – with cricket, football and the local boxing club providing me with positive opportunities. That’s why I’m determined to fight for current and future generations to get the support and opportunities that I enjoyed as a child in London.
 
-A GREEN NEW DEAL FOR LONDON
-A GREEN NEW DEAL FOR LONDON
-LONDON’S LOCAL COMMUNITIES
+I now have the perspective of a dad and, as with other parents, I want the best for my children. I want them to grow up in a safe, green and healthy city that nurtures and supports them to fulfill their potential, with positive meaningful opportunities for everyone regardless of who they are or where they live.
 
-59
-59
-59
+Even before the pandemic, London still had some way to go to meet my ambition. Many young people grow up in poverty, facing obstacles all through their formative years. Some are exposed to violence in the home and in their local community, scarring lives and leaving potential unfulfilled. It’s absolutely heartbreaking that some have had their lives tragically cut short – leaving families and communities devastated and meaning they never get the chance to go on to achieve their potential.
 
-60
-60
+A decade of Tory austerity has torn at the social fabric of our city – crucial public services like schools, hospitals, mental health services, youth services and affordable housing have all had their budgets slashed. For some young Londoners success feels like a distant reality.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+Yet I’ve met many young Londoners throughout the last few years and I’m always bowled over by their energy and dynamism. They are an asset to London, and I know they’ll contribute enormously to the future success of the city. We must ensure they get the right support.
 
- SUPPORTING THE
- NEXT GENERATION
- OF LONDONERS
-
-A generation of young Londoners
-failed by successive Tory
-Governments is now being hit hard by
-the pandemic. Inequalities between
-young Londoners, that affect their
-chances in life and the opportunities
-that come their way, are being made
-worse by the pandemic.
-
-Mental health services, already
-inadequate and struggling to cope
-with demand prior to the pandemic,
-are having to cope with an explosion
-of mental ill-health caused by isolation
-of young people from their friends, and
-anxiety about the future.
-
-Those out of work as a result of the
-economic fallout from coronavirus are
-disproportionately young Londoners.
-Having lived through the mass
-unemployment of the 1980s, I’m
-determined to do all I can to avoid
-a repeat.
-
-I’ll do everything within my powers as
-Mayor to support the next generation
-of young Londoners. The London
-Recovery Board has placed young
-people at the heart of our work,
-covering mental health, the digital
-divide, skills, mentoring and youth
-services. >>
-
-SUPPORTING THE NEXT GENERATION OF LONDONERS
-LONDON’S LOCAL COMMUNITIES
-
-61
-61
-
-This includes using the recruitment
-and procurement power of London’s
-anchor institutions to give new
-opportunities to young people and
-I will ensure City Hall, TfL, the MPS
-and LFB play their full role in this
-work. I will also ensure that the work
-City Hall is doing is communicated
-to young people in a clear and
-transparent way, involving young
-people in helping to design this.
-
-MY AMBITION FOR YOUNG
-LONDONERS
-Growing up, my childhood wasn’t
-always easy but I was fortunate to
-grow up in a council home and to
-attend good state schools. Sport
-played a crucial role in my younger
-years — with cricket, football and the
-local boxing club providing me with
-positive opportunities. That’s why I’m
-determined to fight for current and
-future generations to get the support
-and opportunities that I enjoyed as a
-child in London.
-
-I now have the perspective of a dad
-and, as with other parents, I want the
-best for my children. I want them to
-grow up in a safe, green and healthy
-city that nurtures and supports
-them to fulfill their potential, with
-positive meaningful opportunities for
-everyone regardless of who they are
-or where they live.
-
-Even before the pandemic, London
-still had some way to go to meet my
-ambition. Many young people grow
-up in poverty, facing obstacles all
-through their formative years. Some
-are exposed to violence in the home
-and in their local community, scarring
-lives and leaving potential unfulfilled.
-It’s absolutely heartbreaking that
-some have had their lives tragically
-cut short — leaving families and
-communities devastated and
-meaning they never get the chance
-to go on to achieve their potential.
-
-A decade of Tory austerity has torn at
-the social fabric of our city — crucial
-public services like schools, hospitals,
-mental health services, youth
-services and affordable housing have
-all had their budgets slashed. For
-some young Londoners success feels
-like a distant reality.
-
-Yet I’ve met many young Londoners
-throughout the last few years and I’m
-always bowled over by their energy
-and dynamism. They are an asset to
-London, and I know they’ll contribute
-enormously to the future success of
-the city. We must ensure they get the
-right support.
-
-THE BEST START IN LIFE
-All Londoners should have a healthy
-start in life — it’s vital for health and
-success in adulthood. It’s a matter
-
-62
-62
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+## THE BEST START IN LIFE
+All Londoners should have a healthy start in life – it’s vital for health and success in adulthood. It’s a matter
 
 of shame that our city has some
 of the biggest health inequalities
@@ -3531,8 +1807,7 @@ food vouchers has meant it is more
 difficult to make sure children have
 access to fresh nutritious food.
 
-Already, I’ve established the world-
-leading London Childhood Obesity
+Already, I’ve established the world-leading London Childhood Obesity
 Taskforce, whose purpose is to
 ensure that every child has the
 chance to grow up eating healthily,
@@ -3550,12 +1825,12 @@ help give under-5s the best start
 in life with almost 1700 nurseries
 and children’s centres now signed
 
-I’ll work with councils to
-support more play streets
-throughout the year so
-that children can have the
-opportunities to play safely
-in the streets of London.
+**I’ll work with councils to**
+**support more play streets**
+**throughout the year so**
+**that children can have the**
+**opportunities to play safely**
+**in the streets of London.**
 
 up and, I will roll out my plan that
 by 2025 every Londoner lives in
@@ -3564,15 +1839,14 @@ with an expanded role for School
 Superzones.
 
 But I want to do more. I’ll lead the
-drive to expand the number of water-
-only schools, reducing consumption
+drive to expand the number of water-only schools, reducing consumption
 of sugary drinks by children. Some
 Labour-controlled local authorities in
 London already provide free healthy
 school meals for all primary school
 pupils, and I’ll lobby the Government
 to provide the funding for this to be
-universal.  I’ll also continue to support
+universal. I’ll also continue to support
 more School Streets — enabling more
 young people to walk to school while
 cleaning up the air at the same time.
@@ -3580,22 +1854,11 @@ I’ll work with councils to support
 more play streets throughout the
 year so that children can have the
 
-SUPPORTING THE NEXT GENERATION OF LONDONERS
-LONDON’S LOCAL COMMUNITIES
-
-6363
-
 opportunities to play safely in the
 streets of London. I will work with
 partners to encourage every school
 and college governing body to
 include a health professional.
-
-work to ensure that by 2025 London
-will have a quarter of a million
-wellbeing ambassadors, supporting
-Londoners where they learn, live,
-work and play.
 
 The early years of a child’s life are
 crucial to their future development
@@ -3628,9 +1891,13 @@ schools and also work with the NHS
 to ensure every London school and
 young person’s setting has a mental
 health worker. I’ve already started
+work to ensure that by 2025 London
+will have a quarter of a million
+wellbeing ambassadors, supporting
+Londoners where they learn, live,
+work and play.
 
-EDUCATING, PROTECTING AND
-EMPOWERING YOUNG PEOPLE
+## **EDUCATING, PROTECTING AND EMPOWERING YOUNG PEOPLE**
 I’m working to close the digital divide,
 allocating £1.5m towards school
 children accessing the equipment they
@@ -3661,63 +1928,18 @@ I’ll stand up for children with
 special educational needs (SEND)
 so that provision matches demand
 
-64
-64
+and I’ll lobby the Government to increase the overall funding for SEND Londoners. Through our responsibilities on adult skills and employment I’ll invest in building the capacity and expertise of teachers to create a more inclusive education and skills system.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+I’ll work with local authorities better to support inclusive education across London, so that we can improve the promotion of opportunities for young people, and tackle the growing problem of exclusions. My VRU will continue its innovative work supporting young people most at risk of violence through the provision of meaningful and positive opportunities. The Government’s
 
-and I’ll lobby the Government to
-increase the overall funding for
-SEND Londoners. Through our
-responsibilities on adult skills and
-employment I’ll invest in building the
-capacity and expertise of teachers
-to create a more inclusive education
-and skills system.
+National Citizen Service (NCS) is currently a disappointment in London. I’ll call on the Government to devolve funding and responsibility for the NCS in London to City Hall, so that it can be aligned with existing activities and be more effective at supporting young people.
 
-National Citizen Service (NCS)
-is currently a disappointment in
-London. I’ll call on the Government
-to devolve funding and responsibility
-for the NCS in London to City Hall, so
-that it can be aligned with existing
-activities and be more effective at
-supporting young people.
-
-I’ll work with local authorities better
-to support inclusive education across
-London, so that we can improve
-the promotion of opportunities
-for young people, and tackle the
-growing problem of exclusions. My
-VRU will continue its innovative
-work supporting young people
-most at risk of violence through the
-provision of meaningful and positive
-opportunities. The Government’s
-
-I will support young Londoners
-into good work to give them and
-our economy the best chance of
-recovery and will work with local
-authorities and the Government
-to bring unemployment for young
-people down. I’ll provide more
-information and support on future
-job options across key growth
-sectors, and lobby for further
-devolution of careers support from
-
-SUPPORTING THE NEXT GENERATION OF LONDONERS
-LONDON’S LOCAL COMMUNITIES
-
-6565
+I will support young Londoners into good work to give them and our economy the best chance of recovery and will work with local authorities and the Government to bring unemployment for young people down. I’ll provide more information and support on future job options across key growth sectors, and lobby for further devolution of careers support from
 
 the Government so that London
 can have an all-age careers service.
 Apprenticeships are crucial for
-many Londoners — I’ll continue to
+many Londoners – I’ll continue to
 champion them, ensuring they are
 available for all Londoners regardless
 of background, as well as promoting
@@ -3752,11 +1974,7 @@ opportunities, I have protected
 young people’s travel concessions
 despite the Tory Government
 
-I remain committed to
-supporting young people
-in playing an active role in
-civil society and the way our
-country is run.
+**I remain committed to supporting young people in playing an active role in civil society and the way our country is run.**
 
 threatening to take them away. I
 commit to maintain young people’s
@@ -3771,10 +1989,10 @@ role in civil society and the way
 our country is run. To ensure as
 many eligible young people as
 possible are on the electoral register
-— a group which is historically
+– a group which is historically
 underrepresented particularly by
 those from minority ethnic and low-
-income backgrounds — I’ll continue
+income backgrounds – I’ll continue
 to support targeted electoral
 registration programmes working
 with young Londoners and campaign
@@ -3782,19 +2000,12 @@ groups. I continue to back lowering
 the voting age to 16 to give young
 people power over their futures.
 
-66
-66
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
 I’ll continue to campaign for the
 Government to reduce the exorbitant
 fees charged by the Home Office to
 gain UK citizenship and I’ll support
 efforts to regularise the immigration
 status of young Londoners.
-
 I will prioritise opportunities and
 support for young Londoners
 by building on the success of
@@ -3812,143 +2023,43 @@ Education Budget to Londoners on
 low incomes and those who face
 significant barriers with life-changing
 provision such as free English as a
-Second Language (ESOL) classes. n
+Second Language (ESOL) classes.
 
-SUPPORTING THE NEXT GENERATION OF LONDONERS
-LONDON’S LOCAL COMMUNITIES
+MAYOR OF LONDON
+WE ARE ALL LONDONERS
+#Lond
 
-6767
+...Londoners
+Gla...
+...śmy Londoners
+...unt
 
-68
-68
+## EMERGING FROM
+## THE PANDEMIC
+## A FAIRER,
+## HEALTHIER AND
+## MORE EQUAL
+## LONDON
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+My vision is of a city that is fairer and more equal. I’m not prepared to accept that inequality and prejudice are inevitable or that we are powerless to do anything about it. Bringing to bear the full power of the Mayor, we can make progress. However, without a government prepared to deploy its vastly superior resources to take on the ingrained and deep-rooted structural causes of inequality, there’s always a limit to what we can do from City Hall. So, I’ll push for the policies we need at a national level and for the funding needed to tackle inequality in London.
 
- EMERGING FROM
- THE PANDEMIC
- A FAIRER,
- HEALTHIER AND
- MORE EQUAL
- LONDON
+Despite what many believe, London faces similar, if not worse, social problems to many other parts of the UK. When housing costs are taken into account, London has more households and children living in relative poverty than anywhere else in the country. One in nine households is in fuel poverty in London, unable to meet the cost of heating their home. >>
 
-My vision is of a city that is fairer
-and more equal. I’m not prepared
-to accept that inequality and
-prejudice are inevitable or that we
-are powerless to do anything about
-it. Bringing to bear the full power of
-the Mayor, we can make progress.
-However, without a government
-prepared to deploy its vastly superior
-resources to take on the ingrained
-and deep-rooted structural causes of
-inequality, there’s always a limit to
-what we can do from City Hall.
-So, I’ll push for the policies we
+Even before Covid-19, it was clear that our city’s prosperity has not been shared by all Londoners. Many have seen the wealthiest grow wealthier still, while communities become poorer, high streets deteriorate and local independent businesses suffer.
 
-need at a national level and for the
-funding needed to tackle inequality
-in London.
+In the past year, the pandemic has highlighted and exacerbated inequalities that have long existed in London. The proportionately highest death tolls from the virus have been among people from Black, Asian and minority ethnic communities, older people and disabled people. Londoners losing their jobs due to the fallout from coronavirus and the highest concentrations of those furloughed have mainly been in low-paid sectors, from the most disadvantaged neighbourhoods.
 
-Despite what many believe, London
-faces similar, if not worse, social
-problems to many other parts of the
-UK. When housing costs are taken into
-account, London has more households
-and children living in relative poverty
-than anywhere else in the country. One
-in nine households is in fuel poverty
-in London, unable to meet the cost of
-heating their home. >>
+Simultaneously, the eruption of anger at the murder of George Floyd showed us that, despite the progress that has been made, the push for racial equality is as urgent as ever. I support the Black Lives Matter movement and I’m determined that London’s government and public institutions will be open to learning from it and challenging ourselves to do better.
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
+As we emerge from the pandemic, I’ll put equality and fairness at the heart of the London recovery programme. I’ll fight for a more cohesive and socially integrated London that is safer, healthier and happier, and stand up for London’s values and to those who threaten them.
 
-69
-69
+Now is also the right time to look afresh at how we measure our success as a city. For years, we’ve measured prosperity — like most cities and countries — in terms of material wealth that is generated by our economic activity. But the strength, sustainability and wellbeing of our economy and society are not currently properly reflected. So I’ll work with others to establish a new measure of wellbeing in London as the core indicator of our city’s success as a place to work and live for all its residents.
 
-Even before Covid-19, it was clear that
-our city’s prosperity has not been
-shared by all Londoners. Many have
-seen the wealthiest grow wealthier
-still, while communities become
-poorer, high streets deteriorate and
-local independent businesses suffer.
+## RECOGNISING AND CELEBRATING LONDON’S DIVERSITY
 
-of the London recovery programme.
-I’ll fight for a more cohesive and
-socially integrated London that is
-safer, healthier and happier, and
-stand up for London’s values and to
-those who threaten them.
+London’s diversity is one of its greatest assets and I’ll use every opportunity as Mayor to be its champion.
 
-In the past year, the pandemic
-has highlighted and exacerbated
-inequalities that have long existed in
-London. The proportionately highest
-death tolls from the virus have been
-among people from Black, Asian
-and minority ethnic communities,
-older people and disabled people.
-Londoners losing their jobs due to
-the fallout from coronavirus and
-the highest concentrations of those
-furloughed have mainly been in
-low-paid sectors, from the most
-disadvantaged neighbourhoods.
-
-Simultaneously, the eruption of
-anger at the murder of George Floyd
-showed us that, despite the progress
-that has been made, the push for
-racial equality is as urgent as ever.
-I support the Black Lives Matter
-movement and I’m determined that
-London’s government and public
-institutions will be open to learning
-from it and challenging ourselves to
-do better.
-
-As we emerge from the pandemic, I’ll
-put equality and fairness at the heart
-
-Now is also the right time to look
-afresh at how we measure our success
-as a city. For years, we’ve measured
-prosperity — like most cities and
-countries — in terms of material wealth
-that is generated by our economic
-activity. But the strength, sustainability
-and wellbeing of our economy and
-society are not currently properly
-reflected. So I’ll work with others to
-establish a new measure of wellbeing
-in London as the core indicator of our
-city’s success as a place to work and
-live for all its residents.
-
-RECOGNISING AND
-CELEBRATING LONDON’S
-DIVERSITY
-London’s diversity is one of its greatest
-assets and I’ll use every opportunity as
-Mayor to be its champion.
-
-We are one of the most diverse cities
-in the world, yet hugely symbolic parts
-of our public realm — including our
-statues, plaques and street names —
-largely reflect a bygone era, and leave
-many Londoners feeling that people
-like them are not visible or celebrated
-in our city. I have established a
-
-70
-70
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+We are one of the most diverse cities in the world, yet hugely symbolic parts of our public realm — including our statues, plaques and street names — largely reflect a bygone era, and leave many Londoners feeling that people like them are not visible or celebrated in our city. I have established a
 
 Commission for Diversity in the
 Public Realm to lead work to increase
@@ -3979,7 +2090,7 @@ altogether. As we emerge from the
 pandemic I want them back, better
 and more colourful than ever. So
 when it is safe, I will support religious
-and cultural festivals  once more
+and cultural festivals once more
 taking their place as centrepieces
 in the city’s calendar of events,
 including Christmas, St George’s Day,
@@ -3992,85 +2103,19 @@ in collaboration with London's Black
 communities, an event to celebrate
 Black culture.
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
+I stand firm in my solidarity with London’s LGBTQ+ community. I’ll continue to provide support to Pride, and to use my influence to strengthen Pride’s links with those groups and communities that gave birth to the movement. I’ll also support plans for a new LGBTQ+ community centre for London. Trans rights are human rights and I’ll proudly stand up against any abuse directed against Trans people and the wider LGBTQ+ community.
 
-7171
+I’ll continue to provide support from City Hall to the many EU citizens who continue to make their home in London. I’ll also fight for all foreign nationals who contribute to our city by living, working and paying tax to be properly recognised and to be allowed to vote in elections. And I’ll also continue to press the Government for an amnesty for undocumented migrants, so as to avoid any repeat of the Windrush scandal. I want to ensure undocumented migrants feel confident enough to come forward and access the Covid-19 vaccines on offer.
 
-I stand firm in my solidarity with
-London’s LGBTQ+ community.
-I’ll continue to provide support to
-Pride, and to use my influence to
-strengthen Pride’s links with those
-groups and communities that gave
-birth to the movement. I’ll also
-support plans for a new LGBTQ+
-community centre for London.
-Trans rights are human rights and I’ll
-proudly stand up against any abuse
-directed against Trans people and
-the wider LGBTQ+ community.
+Nobody should be put off seeking protection, justice or care because of their immigration status. I will resist attempts by the Government to use frontline workers such as NHS staff, the police and rough sleeping outreach teams to enforce their hostile environment immigration rules.
 
-I’ll continue to provide support from
-City Hall to the many EU citizens
-who continue to make their home in
-London. I’ll also fight for all foreign
-nationals who contribute to our city
-by living, working and paying tax to be
-properly recognised and to be allowed
-to vote in elections. And I’ll also
-continue to press the Government
-for an amnesty for undocumented
-migrants, so as to avoid any repeat
-of the Windrush scandal. I want to
-ensure undocumented migrants feel
-confident enough to come forward
-and access the Covid-19 vaccines
-on offer.
+“To commemorate those Londoners, including key workers, who have lost their lives to Covid-19, I’ll plant a new garden of blossoming trees in the Queen Elizabeth Olympic Park.”
 
-Nobody should be put off seeking
-protection, justice or care because
-of their immigration status. I will
-resist attempts by the Government
-to use frontline workers such as NHS
-staff, the police and rough sleeping
+To commemorate those Londoners, including key workers, who have lost their lives to Covid-19, I’ll plant a new garden of blossoming trees in the Queen Elizabeth Olympic Park. And TfL will also create a memorial in honour of the transport workers within the wider TfL family who tragically lost their lives.
 
-To commemorate those
-Londoners, including key
-workers, who have lost their
-lives to Covid-19, I’ll plant a
-new garden of blossoming
-trees in the Queen Elizabeth
-Olympic Park.
+## TACKLING DISCRIMINATION
 
-outreach teams to enforce their
-hostile environment immigration rules.
-
-To commemorate those Londoners,
-including key workers, who have
-lost their lives to Covid-19, I’ll plant a
-new garden of blossoming trees in
-the Queen Elizabeth Olympic Park.
-And TfL will also create a memorial
-in honour of the transport workers
-within the wider TfL family who
-tragically lost their lives.
-
-TACKLING DISCRIMINATION
-I know from experience what it’s
-like to be on the end of racial
-abuse — having brown skin and a
-different religion affected the way I
-was treated when I was growing up.
-But it’s a sad reality that Londoners
-today still face discrimination and
-prejudice because of who they are
-
-72
-72
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+I know from experience what it’s like to be on the end of racial abuse — having brown skin and a different religion affected the way I was treated when I was growing up. But it’s a sad reality that Londoners today still face discrimination and prejudice because of who they are.
 
 or what they look like. Much of this
 is ingrained and embedded in the
@@ -4098,9 +2143,9 @@ working closely with communities and
 campaign groups to make Londoner a
 more pleasant place.
 
-TRUST AND CONFIDENCE
-IN LONDON’S PUBLIC
-INSTITUTIONS
+## **TRUST AND CONFIDENCE**
+## **IN LONDON’S PUBLIC**
+## **INSTITUTIONS**
 Public institutions charged with
 looking after, protecting and
 supporting us should always deliver
@@ -4115,7 +2160,7 @@ community confidence in the police
 but challenges still remain. With the
 Action Plan written with the help
 of London’s communities and the
-MPS — we have sought to build on
+MPS – we have sought to build on
 the work of the Stephen Lawrence
 Inquiry Report to further improve
 people’s confidence in the police.
@@ -4123,7 +2168,7 @@ people’s confidence in the police.
 Community confidence also goes
 much wider than just the police.
 Similar lack of trust and confidence
-can affect other public institutions —
+can affect other public institutions –
 vaccine hesitancy affecting certain
 communities more than others has
 been the most recent high-profile
@@ -4135,7 +2180,7 @@ duties equally and fairly, so that all
 communities can have trust and
 confidence in them.
 
-LEADING BY EXAMPLE
+## **LEADING BY EXAMPLE**
 With an increasingly tight budget,
 I will work ever harder to ensure
 every penny of taxpayers’ money is
@@ -4147,11 +2192,6 @@ social and environmental benefits
 contracts can deliver, as part of a
 wider community wealth building
 agenda, making the most of the
-
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-7373
 
 Public Services (Social Value) Act
 2012. I’ll ensure the GLA Group
@@ -4174,7 +2214,6 @@ the failing Woolwich Ferry back in
 house. I will instruct TfL to review its
 cleaning contract with ABM, including
 an assessment of extending the free
-
 travel cleaners receive whilst at work
 to their journeys to and from work.
 
@@ -4197,92 +2236,17 @@ for London and retention payment
 scheme. Installing toilets at the end
 of bus routes is providing dignity
 
-74
-74
+for hard-working bus drivers and I’ll continue with this investment. In addition, after I personally commissioned a report on bus driver fatigue which raised worrying concerns, I’m committed to working with the trade unions and bus operators fully to address its findings – including action relating to facilities, scheduling and workplace culture.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+All frontline workers on our transport network must be safe to go about their jobs – working with the unions, I’ll do all I can to improve safety and ensure zero tolerance of physical or verbal abuse.
 
-for hard-working bus drivers and
-I’ll continue with this investment.
-In addition, after I personally
-commissioned a report on bus
-driver fatigue which raised worrying
-concerns, I’m committed to working
-with the trade unions and bus
-operators fully to address its findings
-— including action relating to facilities,
-scheduling and workplace culture.
+I’ll demand the highest standards in employment practices and focus recruitment on ensuring that City Hall, TfL, the MPS and the LFB look like the city they serve. I’m the first Mayor to publish gender and ethnicity pay audits and have action plans in place on how we plan to end the gaps – and I’ll extend these to include disability pay audits. I’m proud that as a result of action brought in since I became Mayor, we’ve substantially reduced City Hall’s gender pay gap and I’m determined to repeat this across the rest of the GLA Group.
 
-All frontline workers on our transport
-network must be safe to go about
-their jobs — working with the unions,
-I’ll do all I can to improve safety and
-ensure zero tolerance of physical or
-verbal abuse.
+My innovative ‘Our Time’ programme is supporting more women into leadership roles and I will explore ways to build on this success. I will continue to demand a gender balance in all my appointments to Mayoral boards and expect them to reflect the full diversity of London. Women have been disproportionately impacted by the pandemic and I’ll launch a cross-sector policy forum to coordinate efforts to advance gender equality after Covid-19. I’ll also bring greater coordination to City Hall’s work supporting older Londoners, as part of our work on social integration and communities.
 
-I’ll demand the highest standards
-in employment practices and focus
-recruitment on ensuring that City Hall,
-TfL, the MPS and the LFB look like
-the city they serve. I’m the first Mayor
-to publish gender and ethnicity pay
-audits and have action plans in place
-on how we plan to end the gaps — and
-I’ll extend these to include disability
-pay audits. I’m proud that as a result
-of action brought in since I became
-Mayor, we’ve substantially reduced
-City Hall’s gender pay gap and I’m
-determined to repeat this across the
-rest of the GLA Group.
+The GLA will be a workplace that is welcoming and supportive for everyone. Major progress since 2016 has seen City Hall make the top 25 LGBTQ+ workplaces in the country in the Stonewall Index. But I’m determined to see further improvement, and will work with the trade unions and staff networks in continually seeking new ways of driving up standards, starting with a new workplace policy for people going through the menopause transition.
 
-My innovative ‘Our Time’ programme
-is supporting more women into
-leadership roles and I will explore
-
-ways to build on this success. I
-will continue to demand a gender
-balance in all my appointments to
-Mayoral boards and expect them to
-reflect the full diversity of London.
-Women have been disproportionately
-impacted by the pandemic and I’ll
-launch a cross-sector policy forum to
-coordinate efforts to advance gender
-equality after Covid-19.  I’ll also bring
-greater coordination to City Hall’s
-work supporting older Londoners, as
-part of our work on social integration
-and communities.
-
-The GLA will be a workplace that
-is welcoming and supportive for
-everyone. Major progress since
-2016 has seen City Hall make the
-top 25 LGBTQ+ workplaces in the
-country in the Stonewall Index.
-But I’m determined to see further
-improvement, and will work with
-the trade unions and staff networks
-in continually seeking new ways of
-driving up standards, starting with
-a new workplace policy for people
-going through the menopause
-transition.
-
-I also know the important role the
-trade union movement plays in
-improving fairness and equality in
-the workplace, having seen at an
-early age how my dad benefitted
-from being a trade union member.
-I’m proud to sit down regularly with
-
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-7575
+I also know the important role the trade union movement plays in improving fairness and equality in the workplace, having seen at an early age how my dad benefitted from being a trade union member. I’m proud to sit down regularly with
 
 the unions representing workers
 across the GLA family. This positive
@@ -4313,8 +2277,8 @@ include ensuring toilets on the TfL
 network are as accessible as possible
 and, where possible, free to use.
 
-EMPOWERING DISABLED
-LONDONERS
+## EMPOWERING DISABLED LONDONERS
+
 I will work with disabled people’s
 organisations to ensure that I am
 doing everything in my power to
@@ -4322,19 +2286,7 @@ fight for equal access and equal
 opportunities for deaf and disabled
 Londoners. At the same time, I
 
-76
-76
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
-I will work with disabled
-people’s organisations to
-ensure that I am doing
-everything in my power to
-fight for equal access and
-equal opportunities for deaf
-and disabled Londoners.
+> I will work with disabled people’s organisations to ensure that I am doing everything in my power to fight for equal access and equal opportunities for deaf and disabled Londoners.
 
 will ensure that the GLA involves
 disabled Londoners — and considers
@@ -4386,8 +2338,8 @@ trained in how to support people who
 have dementia, autism and other
 hidden disabilities.
 
-DRIVING CHANGE ACROSS
-LONDON
+## DRIVING CHANGE ACROSS LONDON
+
 I proudly tell global audiences that
 London is the best place in the
 world in which to do business but I
@@ -4395,7 +2347,6 @@ also want to make it the best place
 in the world in which to work. Given
 how many of the people who kept
 our city moving during the pandemic
-
 struggle to get by on what they are
 paid, this is increasingly urgent.
 
@@ -4434,11 +2385,6 @@ in London’s labour market. In the
 right circumstances, it can be
 empowering and can allow workers
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-7777
-
 desired flexibility. But when abused
 by unscrupulous businesses it
 creates a race to the bottom in low
@@ -4457,12 +2403,10 @@ excluded from Government support
 and consequently faced devastating
 financial circumstances during the
 pandemic.
-
 As well as working with good
 employers, I will not hesitate to speak
 out against unscrupulous employment
 practices and bad employers.
-
 Having secured devolution of the
 Adult Education Budget, I’ll tailor
 adult skills funding towards what our
@@ -4476,11 +2420,9 @@ workplace. Building on the success
 of my Digital Talent Programme
 and as part of my Digital Access for
 All recovery mission, I’ll do more
-
 to equip Londoners and London
 businesses with digital skills they’ll
 need in the future.
-
 To support greater social integration,
 I’ll use my new responsibilities for
 skills to expand access — including to
@@ -4493,7 +2435,6 @@ the boroughs. I’ll also seek to develop
 partnerships with employers to
 support routes into employment for
 ex-offenders.
-
 But it’s also more than just skills — I
 want all employers to do more to
 make sure their workforces reflect
@@ -4501,7 +2442,7 @@ the diversity of the city. I’m leading by
 example across the GLA family with
 initiatives to increase diversity, and I will
 champion and challenge employers
-across the city to do the same.  My
+across the city to do the same. My
 Workforce Integration Network (WIN)
 initiative — focusing on increasing
 ethnic diversity in the construction
@@ -4514,12 +2455,6 @@ starting with culture and creative
 industries, and use similar initiatives to
 focus on other groups that are under-
 represented in the workplace.
-
-78
-78
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
 
 I know many Londoners in need
 of help do not know where to turn
@@ -4559,10 +2494,10 @@ to bring forward any legislative
 changes required to implement
 recommendations arising from this
 
-I want all employers to do
-more to make sure their
-workforces reflect the
-diversity of the city.
+> I want all employers to do
+> more to make sure their
+> workforces reflect the
+> diversity of the city.
 
 work. The Government’s recent
 decision to abolish the university
@@ -4571,7 +2506,7 @@ shows its intentions towards the
 city, and I will oppose any attacks on
 other London weightings.
 
-FAIRER HOUSE BUILDING
+### FAIRER HOUSE BUILDING
 I was fortunate to grow up in a
 council home which gave my family
 security and an affordable rent. After
@@ -4590,131 +2525,25 @@ investing in new genuinely affordable
 homes and supporting those who
 need it, we can help our city recover.
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
+Over the last five years, in the face of a Tory Government failing to tackle the housing crisis, we’ve shown how things can be done differently. I’ve used the full force of the powers and funding available to me to make a difference and get London building the council and genuinely affordable homes our city needs.
 
-7979
+When I became Mayor in May 2016, we were starting from rock bottom. A dodgy definition of ‘affordable housing’ totally detached from the incomes of Londoners. Not a penny from the Government to fund the most affordable homes for social rent. In the year when I took over, the previous Mayor had only started work on just three homes for social rent funded by City Hall.
 
-Over the last five years, in the face of
-a Tory Government failing to tackle
-the housing crisis, we’ve shown how
-things can be done differently. I’ve
-used the full force of the powers and
-funding available to me to make a
-difference and get London building
-the council and genuinely affordable
-homes our city needs.
+Five years later, after enormous efforts across our city, we are turning things around. I have ditched the Tories’ dodgy definition of ‘affordable’ which allowed rents at up to 80% of the market rate. In 2019/20 alone, we started building over 17,000 genuinely affordable homes, more than in any year since City Hall records began. This includes over 7,000 homes for social rent, and more than 3,000 new council homes – the highest level since 1983.
 
-When I became Mayor in May 2016,
-we were starting from rock bottom.
-A dodgy definition of ‘affordable
-housing’ totally detached from the
-incomes of Londoners. Not a penny
-from the Government to fund the
-most affordable homes for social
-rent. In the year when I took over,
-the previous Mayor had only started
+I’ve met some of those moving into the new genuinely affordable homes
 
-work on just three homes for social
-rent funded by City Hall.
+built since 2016 – seeing their joy is a reminder of how much this means to people. But I know this is unfinished business and I want your support to carry on the progress that’s being made. We mustn’t allow the Tories to wind the clock back to letting developers get away with focusing on building luxury flats which Londoners on ordinary incomes can’t afford. My relentless focus will be on building more council and other genuinely affordable homes.
 
-Five years later, after enormous
-efforts across our city, we are
-turning things around. I have ditched
-the Tories’ dodgy definition of
-‘affordable’ which allowed rents at
-up to 80% of the market rate. In
-2019/20 alone, we started building
-over 17,000 genuinely affordable
-homes, more than in any year since
-City Hall records began. This includes
-over 7,000 homes for social rent,
-and more than 3,000 new council
-homes — the highest level since 1983.
+My target is for 10,000 new council homes through my landmark council housing programme and I’ll also explore the creation of a new 'right to buy back' fund, supporting councils to purchase homes previously sold through the right to buy. I’ll commit my new affordable homes programme to building a majority of homes at social rent, with new space, safety and quality standards to show that social housing can deliver homes that are not just more affordable than the private market, but better quality too. I’ll expand my pioneering land fund to intervene in the land market and deliver more genuinely affordable homes.
 
-I’ve met some of those moving into
-the new genuinely affordable homes
+In recognition of the huge efforts by London’s key workers during the pandemic, I’ll back frontline health workers, firefighters, transport
 
-80
-80
+> **My relentless focus will be on building more council and other genuinely affordable homes.**
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+workers and others to get priority for new intermediate homes, such as for shared ownership and London Living Rent. In developing a new list of key worker occupations, I’ll continue to engage and consult with trade unions, councils and others and encourage more uniformity across the city. I’ll build on the work already started to expand the number of community-led homes in our city.
 
-built since 2016 — seeing their joy is a
-reminder of how much this means to
-people. But I know this is unfinished
-business and I want your support to
-carry on the progress that’s being
-made. We mustn’t allow the Tories
-to wind the clock back to letting
-developers get away with focusing on
-building luxury flats which Londoners
-on ordinary incomes can’t afford. My
-relentless focus will be on building
-more council and other genuinely
-affordable homes.
-
-My target is for 10,000 new council
-homes through my landmark council
-housing programme and I’ll also
-explore the creation of a new 'right to
-buy back' fund, supporting councils
-to purchase homes previously
-sold through the right to buy. I’ll
-commit my new affordable homes
-programme to building a majority of
-homes at social rent, with new space,
-safety and quality standards to show
-that social housing can deliver homes
-that are not just more affordable
-than the private market, but better
-quality too. I’ll expand my pioneering
-land fund to intervene in the land
-market and deliver more genuinely
-affordable homes.
-
-In recognition of the huge efforts
-by London’s key workers during the
-pandemic, I’ll back frontline health
-workers, firefighters, transport
-
-My relentless focus will be
-on building more council
-and other genuinely
-affordable homes.
-
-workers and others to get priority
-for new intermediate homes, such
-as for shared ownership and London
-Living Rent. In developing a new
-list of key worker occupations, I’ll
-continue to engage and consult with
-trade unions, councils and others and
-encourage more uniformity across
-the city. I’ll build on the work already
-started to expand the number of
-community-led homes in our city.
-
-I’ll build more genuinely affordable
-homes on surplus public land,
-and maximise the number of
-these homes being built on land
-owned by the GLA. I’ll give my
-Housing and Land directorate first
-refusal on TfL land suitable for
-housing development above and
-beyond TfL’s current development
-programme, as part of a plan to
-transfer more TfL land to the GLA
-so we can prioritise the building of
-genuinely affordable homes while
-delivering a fair return to TfL.
-
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-8181
+I’ll build more genuinely affordable homes on surplus public land, and maximise the number of these homes being built on land owned by the GLA. I’ll give my Housing and Land directorate first refusal on TfL land suitable for housing development above and beyond TfL’s current development programme, as part of a plan to transfer more TfL land to the GLA so we can prioritise the building of genuinely affordable homes while delivering a fair return to TfL.
 
 I'll commission an independent
 review to streamline housing
@@ -4734,7 +2563,6 @@ such as modular housing, including
 looking at City Hall backing for a
 new MMC factory or logistics hub in
 our city.
-
 And because I’m determined to do
 everything in my power to tackle
 the shortfall in genuinely affordable
@@ -4743,7 +2571,6 @@ seen for a generation in London and
 pilot a new City Hall developer to
 start directly building the low-cost
 homes Londoners need.
-
 Since becoming your Mayor, I have
 ripped up my Tory predecessor’s
 planning rules which failed to deliver
@@ -4754,18 +2581,12 @@ turn, has a strategic target for 50%
 of all new homes to be genuinely
 affordable. Every development is
 
-82
-82
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
-I’ll take action not seen for
-a generation in London
-and pilot a new City Hall
-developer to start directly
-building the low-cost homes
-Londoners need.
+> I’ll take action not seen for
+> a generation in London
+> and pilot a new City Hall
+> developer to start directly
+> building the low-cost homes
+> Londoners need.
 
 expected to include at least 35%
 genuinely affordable housing. My
@@ -4776,7 +2597,6 @@ to 37%. The Tories oppose this
 policy and will drop it if they get the
 chance, meaning fewer genuinely
 affordable homes being built.
-
 I’ll continue to stand up for
 London by fighting for the reforms
 and investment in housing we
@@ -4791,221 +2611,44 @@ developers don’t sit on their hands
 instead of building new homes that
 already have planning permission.
 
-I’ll work to ensure London leads
-the way in ending the leasehold
-scandal which leaves too many
-people feeling like they’ve bought a
-home but still don’t own it: I’ll expect
-new shared-ownership homes I
-fund through my new affordable
-homes programme to come with
-999-year leases, work to end ground
-rents on GLA land, and I’ll pilot a
-commonhold scheme to show how
-this form of ownership can become
-the new national standard for new
-flats. I’ll also work with council and
-housing association landlords across
-London to reduce the charges
-leaseholders face.
+I’ll work to ensure London leads the way in ending the leasehold scandal which leaves too many people feeling like they’ve bought a home but still don’t own it: I’ll expect new shared-ownership homes I fund through my new affordable homes programme to come with 999-year leases, work to end ground rents on GLA land, and I’ll pilot a commonhold scheme to show how this form of ownership can become the new national standard for new flats. I’ll also work with council and housing association landlords across London to reduce the charges leaseholders face.
 
-needed to ensure no leaseholder
-has to pay to fix fire-safety defects
-in their homes that they had no part
-in creating, including pressing for
-the swift introduction of a levy on
-major developers which could raise
-more than £3bn to help pay for the
-work. The former residents, local
-community and families of those
-who lost their lives in the terrible
-fire can count on me as Mayor to
-continue to support their fight for
-justice and accountability. I will
-act on all Grenfell Tower Inquiry
-recommendations that fall within my
-control, and do all I can to ensure
-others do the same.
+After the horrific Grenfell Tower fire, and the slow and often inadequate Government response, I’ll continue to lobby hard for the systemic changes needed so a tragedy like Grenfell can never happen again and for the transparency needed for people to feel safe in their homes. This includes fighting for sprinklers and other fire suppression systems in all blocks of flats, and a ban on combustible materials on all buildings — measures which I’ve introduced as requirements for my new affordable homes programme. I’ll fight for improved fire safety in care homes and for smoke alarms to be fitted in all schools. I’ll continue to press for the decisive action
 
-After the horrific Grenfell Tower fire,
-and the slow and often inadequate
-Government response, I’ll continue
-to lobby hard for the systemic
-changes needed so a tragedy like
-Grenfell can never happen again
-and for the transparency needed
-for people to feel safe in their
-homes. This includes fighting for
-sprinklers and other fire suppression
-systems in all blocks of flats, and a
-ban on combustible materials on
-all buildings — measures which I’ve
-introduced as requirements for my
-new affordable homes programme.
-I’ll fight for improved fire safety in
-care homes and for smoke alarms to
-be fitted in all schools. I’ll continue
-to press for the decisive action
+needed to ensure no leaseholder has to pay to fix fire-safety defects in their homes that they had no part in creating, including pressing for the swift introduction of a levy on major developers which could raise more than £3bn to help pay for the work. The former residents, local community and families of those who lost their lives in the terrible fire can count on me as Mayor to continue to support their fight for justice and accountability. I will act on all Grenfell Tower Inquiry recommendations that fall within my control, and do all I can to ensure others do the same.
 
-STANDING UP FOR RENTERS
-I will stand up for renters. More
-Londoners rent than own their homes,
-and the lack of security and high costs
-are affecting millions of people. The
-status quo is simply not acceptable,
-yet we have a government refusing
-to act. Despite having no formal
-powers in this area, I’ve still managed
-to make a difference, including
-introducing the first-ever city-wide
-rogue landlord checker, and a tool
-for tenants to check if their landlord
-has an appropriate licence, with a
-chance to reclaim rent if they don’t.
-And I’ve successfully campaigned to
-force Ministers to ban tenant fees,
-and commit to scrapping ‘no fault’
-evictions.
+## STANDING UP FOR RENTERS
+I will stand up for renters. More Londoners rent than own their homes, and the lack of security and high costs are affecting millions of people. The status quo is simply not acceptable, yet we have a government refusing to act. Despite having no formal powers in this area, I’ve still managed to make a difference, including introducing the first-ever city-wide rogue landlord checker, and a tool for tenants to check if their landlord has an appropriate licence, with a chance to reclaim rent if they don’t. And I’ve successfully campaigned to force Ministers to ban tenant fees, and commit to scrapping ‘no fault’ evictions.
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
+But to get to grips properly with the inequalities in the rental market which have been exacerbated by coronavirus, we need an overhaul of legal protections for renters and for London to have the powers to establish a system of private-sector rent control that works for our city, something I’ll continue to fight for as your Mayor.
 
-8383
+City Hall should also have the power to approve requests from local authorities who wish to drive up standards in the private rental sector by bringing in a landlord licensing scheme. While impacted by coronavirus, the long-term growth of short-term lets has also led to pressures on housing, particularly concentrated in some parts of the city. Current legislation isn’t fit for purpose, so I’ll lobby the Government for a proper registration scheme to help manage the growth of short-term lets.
 
-But to get to grips properly with
-the inequalities in the rental market
-which have been exacerbated by
-coronavirus, we need an overhaul
-of legal protections for renters and
-for London to have the powers to
-establish a system of private-sector
-rent control that works for our city,
-something I’ll continue to fight for as
-your Mayor.
+I’ll also continue to back Londoners who rent from a council or housing association. Since being elected, I’ve insisted social tenants must have a ballot before major estate regeneration plans get funding from City Hall, with residents receiving independent support during the process funded by the developer. I’ll review how this is working to make sure ways aren’t being deliberately
 
-City Hall should also have the
-power to approve requests from
-local authorities who wish to drive
-up standards in the private rental
-sector by bringing in a landlord
-licensing scheme. While impacted by
-coronavirus, the long-term growth
-of short-term lets has also led to
-pressures on housing, particularly
-concentrated in some parts of the city.
-Current legislation isn’t fit for purpose,
-so I’ll lobby the Government for a
-proper registration scheme to help
-manage the growth of short-term lets.
+found to avoid having a ballot. I know that the quality of service some tenants of social landlords receive is unacceptable so I’ll continue to demand higher standards.
 
-I’ll also continue to back Londoners
-who rent from a council or housing
-association. Since being elected,
-I’ve insisted social tenants must
-have a ballot before major estate
-regeneration plans get funding from
-City Hall, with residents receiving
-independent support during the
-process funded by the developer. I’ll
-review how this is working to make
-sure ways aren’t being deliberately
+Given how many renters have fallen into arrears as a result of the pandemic, I will continue fighting for this group to receive special financial support and oppose the unnecessary use of debt collectors and bailiffs to collect arrears.
 
-found to avoid having a ballot. I know
-that the quality of service some
-tenants of social landlords receive
-is unacceptable so I’ll continue to
-demand higher standards.
+## TAKING ACTION ON ROUGH SLEEPING
 
-Given how many renters have
-fallen into arrears as a result of the
-pandemic, I will continue fighting for
-this group to receive special financial
-support and oppose the unnecessary
-use of debt collectors and bailiffs to
-collect arrears.
+We must put an end to the scandal of people sleeping rough on our city’s streets, and I won’t rest for a minute until this is achieved. I’m so proud that my team at City Hall led the country in getting people off the streets during the first wave of coronavirus, helping hundreds of people move out of homelessness, and showing the national Government what needed to be done.
 
-TAKING ACTION ON ROUGH
-SLEEPING
-We must put an end to the scandal
-of people sleeping rough on our city’s
-streets, and I won’t rest for a minute
-until this is achieved. I’m so proud that
-my team at City Hall led the country
-in getting people off the streets
-during the first wave of coronavirus,
-helping hundreds of people move out
-of homelessness, and showing the
-national Government what needed to
-be done.
+Over the last five years, I’ve massively increased the amount of money going into helping people off the streets, with the result that programmes I’ve administered since becoming Mayor have helped nearly 11,000 rough sleepers. I’ve launched groundbreaking additional services such as a new ‘rapid response’
 
-Over the last five years, I’ve
-massively increased the amount of
-money going into helping people
-off the streets, with the result that
-programmes I’ve administered since
-becoming Mayor have helped nearly
-11,000 rough sleepers. I’ve launched
-groundbreaking additional services
-such as a new ‘rapid response’
+outreach team which has helped find accommodation for over 1,500 rough sleepers, and a winter programme and additional winter shelter places for the hardest months of the year. I’ve also helped coordinate support for rough sleepers across London, with a new pan-London trigger point to make emergency accommodation available when temperatures are forecast to fall below freezing on any one night.
 
-84
-84
+I’ll continue to work closely with local councils and charities to help those who need it, including young LGBTQ+ Londoners. To build on the huge efforts made by City Hall under my mayoralty, in my next term I’ll work to provide at least 1,000 new homes to allow rough sleepers to move on to more settled accommodation. I will lead efforts to substantially reduce numbers of rough sleepers discharged back to the streets from the NHS.
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
-outreach team which has helped find
-accommodation for over 1,500 rough
-sleepers, and a winter programme
-and additional winter shelter places
-for the hardest months of the year.
-I’ve also helped coordinate support
-for rough sleepers across London,
-with a new pan-London trigger point
-to make emergency accommodation
-available when temperatures are
-forecast to fall below freezing on any
-one night.
-
-I’ll continue to work closely with local
-councils and charities to help those
-who need it, including young LGBTQ+
-Londoners. To build on the huge
-efforts made by City Hall under my
-mayoralty, in my next term I’ll work to
-
-provide at least 1,000 new homes to
-allow rough sleepers to move on to
-more settled accommodation. I will
-lead efforts to substantially reduce
-numbers of rough sleepers discharged
-back to the streets from the NHS..
-
-But, the truth is, to end homelessness
-in our city we need a change
-of approach from the national
-Government, and I’ll continue to fight
-for this. Ministers must recognise
-that their policies have led to higher
-homelessness in London, and that
-only a change of policy will stop more
-people being forced onto the streets.
-I will be a constant thorn in the side
-of the Tory Government, pressing
-ministers to reverse their austerity
-
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-8585
+But, the truth is, to end homelessness in our city we need a change of approach from the national Government, and I’ll continue to fight for this. Ministers must recognise that their policies have led to higher homelessness in London, and that only a change of policy will stop more people being forced onto the streets. I will be a constant thorn in the side of the Tory Government, pressing ministers to reverse their austerity
 
 and unpick their draconian benefit
 changes. And I’ll fight hard for the
 money London needs to help those
 who find themselves on the streets.
 
-TACKLING HEALTH
-INEQUALITIES
+## TACKLING HEALTH INEQUALITIES
+
 The pandemic has also highlighted
 and exacerbated health inequalities.
 Despite the magnificent work of our
@@ -5037,17 +2680,11 @@ against my six tests which have been
 developed after work with the world-
 respected King’s Fund and designed
 
-86
-86
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
-As we recover from the
+**As we recover from the
 health and social impacts of
 the pandemic, I will support
 Londoners to be healthier
-and more active.
+and more active.**
 
 to protect the quality of service
 offered to patients. I’ll only support
@@ -5098,6 +2735,19 @@ health of all Londoners. City Hall will
 support the #zerosuicideLondon
 campaign.
 
+While we’ve made
+enormous progress
+in ensuring London is
+a Dementia Friendly
+City, I’ll push further so
+that London is an age-
+friendly city whatever
+your circumstances.
+I’ll work with the city’s
+cultural institutions on
+a dementia-friendly
+venue charter.
+
 By working with close partners since
 2016, London is in touching distance
 of ending the spread of new HIV
@@ -5121,153 +2771,29 @@ disease we can stop from spreading.
 So, I commit to work with the NHS
 with a target of ending all new
 
-While we’ve made
-enormous progress
-in ensuring London is
-a Dementia Friendly
-City, I’ll push further so
-that London is an age-
-friendly city whatever
-your circumstances.
-I’ll work with the city’s
-cultural institutions on
-a dementia-friendly
-venue charter.
+Hepatitis C infections in London by 2025.
+Bad air quality disproportionately affects the poorest Londoners. As someone who developed asthma as an adult, I know first-hand just what effect poor air can have on health. Already, we’ve made huge progress with the ULEZ and cleaning up buses and taxis. That’s why I have an ambitious plan to do more to tackle filthy air.
 
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
+The chances of surviving a heart attack increase because of access to defibrillators. Using the planning system, City Hall’s regeneration programmes and the TfL estate, I’ll work with charities and the NHS to make sure we maximise the numbers in place across the city.
+I’ve already banned body-shaming advertisements and advertisements for foods high in fat, salt and sugar on the TfL network because of their impact on the health of Londoners.
 
-87
+Given the devastating way gambling addiction can destroy lives and families, I’ll instruct TfL to bring forward plans to extend the ban to harmful gambling advertisements on the network.
 
-Hepatitis C infections in London by
-2025.
+## STARTING A DEBATE ABOUT DRUGS
 
-Bad air quality disproportionately
-affects the poorest Londoners. As
-someone who developed asthma as
-an adult, I know first-hand just what
-effect poor air can have on health.
-Already, we’ve made huge progress
-with the ULEZ and cleaning up
-buses and taxis. That’s why I have an
-ambitious plan to do more to tackle
-filthy air.
+One big factor in the health of some Londoners is drugs. But I also realise that this goes further than being just about health — their worst effects ravage communities, and the supply chain drives organised crime and serious violence.
 
-The chances of surviving a heart
-attack increase because of access
-to defibrillators. Using the planning
-system, City Hall’s regeneration
-programmes and the TfL estate, I’ll
-work with charities and the NHS to
-make sure we maximise the numbers
-in place across the city.
+I recognise that there’s a growing demand for a debate on our drug laws. Scarce police resources are spread thinly dealing with all illegal drugs and might be better focused on the drugs causing the most harm. Systems in place to help rehabilitate those addicted to drugs are not fit for purpose.
 
-I’ve already banned body-shaming
-advertisements and advertisements
-for foods high in fat, salt and sugar
-on the TfL network because of their
-impact on the health of Londoners.
+There is no sign the Government is prepared even to have a debate. This is, I believe, a mistake. In the absence of any action at the national level, I will establish a London Drugs Commission comprising independent experts and leading figures from the fields of criminal justice, public health, politics, community relations and academia. The Commission will pull together the latest evidence on the effectiveness of our drugs laws, but with particular focus on cannabis. Looking at the evidence in the round, and from across the globe, the Commission will come forward with policy recommendations. In the absence of any powers as Mayor to change the law, I hope that the work of the Commission will provoke an overdue national debate.
 
-88
-88
+9900 SSAADDIIQQ FFOORR LLOONNDDOONN 22002201
 
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+## LONDON'S LOCAL COMMUNITIES
 
-Given the devastating way gambling
-addiction can destroy lives and
-families, I’ll instruct TfL to bring
-forward plans to extend the ban to
-harmful gambling advertisements on
-the network.
+London is a global city, but it is also a local one — a community of communities, a city of villages. From Barking to Bromley, Mill Hill to Mitcham, Willesden Green to Woolwich, these are the places where we live, work, play and study, spend time with our families, enjoy old friendships and develop new ones.
 
-STARTING A DEBATE ABOUT
-DRUGS
-One big factor in the health of some
-Londoners is drugs. But I also realise
-that this goes further than being just
-about health — their worst effects
-ravage communities, and the supply
-chain drives organised crime and
-serious violence.
-
-I recognise that there’s a growing
-demand for a debate on our drug
-laws. Scarce police resources are
-spread thinly dealing with all illegal
-drugs and might be better focused
-on the drugs causing the most harm.
-Systems in place to help rehabilitate
-
-those addicted to drugs are not fit
-for purpose.
-
-There is no sign the Government is
-prepared even to have a debate. This
-is, I believe, a mistake. In the absence
-of any action at the national level, I will
-establish a London Drugs Commission
-comprising independent experts and
-leading figures from the fields of
-criminal justice, public health, politics,
-community relations and academia.
-The Commission will pull together the
-latest evidence on the effectiveness
-of our drugs laws, but with particular
-focus on cannabis. Looking at the
-evidence in the round, and from
-across the globe, the Commission
-will come forward with policy
-recommendations. In the absence
-of any powers as Mayor to change
-the law, I hope that the work of the
-Commission will provoke an overdue
-national debate. n
-
-EMERGING FROM THE PANDEMIC A FAIRER, HEALTHIER AND MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-8989
-
-90
-90
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
-
- LONDON´S LOCAL
- COMMUNITIES
-
-London is a global city, but it is
-also a local one — a community
-of communities, a city of villages.
-From Barking to Bromley, Mill Hill
-to Mitcham, Willesden Green to
-Woolwich, these are the places
-where we live, work, play and study,
-spend time with our families, enjoy
-old friendships and develop new
-ones.
-
-Our local communities have become
-even more important since the pandemic
-hit. Many of us have found times hard,
-and have relied on support from local
-community and faith groups and youth
-services. And our worlds have shrunk —
-leaving home only for essential shopping,
-work and exercise, Londoners have
-developed a new appreciation for the
-places right outside their front doors.  >>
-
-91
-
-SADIQ FOR LONDON 2020
-
-LONDON’S LOCAL COMMUNITIES
-LONDON’S LOCAL COMMUNITIES
-
-91
-91
+Our local communities have become even more important since the pandemic hit. Many of us have found times hard, and have relied on support from local community and faith groups and youth services. And our worlds have shrunk — leaving home only for essential shopping, work and exercise, Londoners have developed a new appreciation for the places right outside their front doors. >>
 
 While we’ve needed these
 communities more than ever, the
@@ -5279,17 +2805,6 @@ on the edge. And the pandemic and
 lockdown measures have tested the
 fabric of London's communities and
 neighbourhoods like never before.
-
-BUILDING STRONG
-COMMUNITIES
-Charity, voluntary, faith and
-community groups are the heart and
-soul of communities across London.
-We’ve seen this more clearly than
-ever during the pandemic, with
-people coming together to ensure
-food, medicine, support and vital
-services have reached those in need.
 
 But, as ever, Londoners have shown
 huge support for each other, through
@@ -5318,6 +2833,16 @@ the unique spirit of its place and
 people, celebrating old traditions and
 developing new ones.
 
+## **BUILDING STRONG** COMMUNITIES
+Charity, voluntary, faith and
+community groups are the heart and
+soul of communities across London.
+We’ve seen this more clearly than
+ever during the pandemic, with
+people coming together to ensure
+food, medicine, support and vital
+services have reached those in need.
+
 These groups are an essential part of
 community life, but even before the
 pandemic they were under pressure.
@@ -5345,11 +2870,7 @@ impacted by the crisis.
 I’ve also helped community groups
 to adapt to change through my
 
-92
-92
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+## A FAIRER, HEALTHIER, MORE EQUAL LONDON
 
 £1 million London Resilience Fund,
 and I’ve worked with Locality to
@@ -5357,7 +2878,6 @@ create a £750,000 fund to protect
 community-led spaces that have
 been supporting those worst affected
 by the pandemic.
-
 As the city recovers from the
 pandemic, I will work with partners
 on the London Recovery Board to
@@ -5368,16 +2888,13 @@ to turn to, or another means of
 accessing the support, knowledge
 and resources they need to
 participate in their local community.
-
 Beginning by mapping out what
 needs to happen where to support
 communities across London, I will
-
 look to build on the success of the
 Civil Society Roots Incubator and
 other Covid-19 response funds to
-develop a new Community Micro-
-grants programme, funding activities
+develop a new Community Microgrants programme, funding activities
 that help Londoners influence their
 local communities, particularly those
 Londoners such as the disabled who
@@ -5386,7 +2903,6 @@ that can leave them frozen out of
 local decision making. I will ensure
 this work allows the vast array of
 London’s voices to be heard.
-
 I know how decent venues for
 community groups and charities are
 always at a premium. So I’ll develop
@@ -5394,14 +2910,6 @@ a new framework for the temporary,
 meanwhile and flexible use of open
 space, empty premises, temporary
 development space and underused
-
-LONDON’S LOCAL COMMUNITIES
-A FAIRER, HEALTHIER, MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-93
-93
-93
 
 community buildings, supporting
 local authorities and other land
@@ -5434,6 +2942,13 @@ London's deaf and disabled
 people's organisations and groups
 representing older Londoners.
 
+One thing we’ve learnt through
+the pandemic is that small, local
+businesses are at the heart of our
+communities, and it’s important
+for London’s successful recovery
+that more of the prosperity created
+
 locally is captured within the local
 community. To drive this forward,
 I’ll provide support for democratic
@@ -5448,8 +2963,8 @@ approaches that will help local
 communities to thrive, now and in
 the future.
 
-HIGH STREETS AND TOWN
-CENTRES
+## HIGH STREETS AND TOWN CENTRES
+
 Strong local communities need
 at their heart a thriving town
 centre providing a place to meet,
@@ -5465,25 +2980,12 @@ high streets is played out across
 London, helping to make our city the
 best in the world.
 
-One thing we’ve learnt through
-the pandemic is that small, local
-businesses are at the heart of our
-communities, and it’s important
-for London’s successful recovery
-that more of the prosperity created
-
 We have a duty to help support
 our high streets, now more than
 ever — the pandemic has increased
 our appreciation of our high street
 businesses, but they are under
 increasing pressure. Even before
-
-94
-94
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
 
 the lockdowns, pressures from
 rising rents and business rates and
@@ -5503,9 +3005,7 @@ support, London’s high streets will
 reinvent themselves as we rebuild.
 
 The London Recovery Board is
-focusing on high streets, and I’ll
-
-throw the resources of the GLA
+focusing on high streets, and I’ll throw the resources of the GLA
 behind their work. I’ll ensure that
 activity in teams across City Hall is
 coordinated to develop approaches
@@ -5525,26 +3025,16 @@ on the success of my Crowdfund
 London and Culture Seeds grants,
 I will use my new Make London
 
-LONDON’S LOCAL COMMUNITIES
-A FAIRER, HEALTHIER, MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-95
-95
-95
-
 programme to support creative,
 locally led proposals that bring
 people together, improve public
 spaces and support community hubs
 and high streets.
-
 I’ll produce guidance on social
 infrastructure, helping local
 authorities to realise the potential it
 has to support social integration and
 community resilience.
-
 And I’ll continue to focus on the
 importance of culture to local places,
 with my hugely successful London
@@ -5554,7 +3044,7 @@ and helping to celebrate and
 transform Lewisham in 2022 and
 Croydon in 2023.
 
-PLANNING LOCAL PLACES
+## PLANNING LOCAL PLACES
 London is a growing city, with high
 demand for land for new housing
 and development. With those
@@ -5564,13 +3054,11 @@ my vision for the capital in my new
 London Plan, which will help better
 balance change with the existing
 character of local areas.
-
 The challenges of the last year have
 shown us the importance of vibrant,
 accessible and inclusive public
 spaces, affordable and spacious
 new homes and easy and accessible
-
 active travel. My Plan will deliver
 the safer, healthier, greener, fairer
 London I promised in 2016 and goes
@@ -5578,7 +3066,6 @@ further in meeting the challenges
 of climate change, clean air, better
 connectivity and places we are proud
 to live, work and socialise in.
-
 Poorly planned and built
 development threatens London’s
 unique mix of different communities
@@ -5596,7 +3083,6 @@ planning reforms, which threaten to
 remove local decision making from
 Londoners and hoard them in an out-
 of-touch Whitehall.
-
 I will ensure that any regeneration
 projects funded by City Hall must
 contribute to a more socially-
@@ -5607,12 +3093,6 @@ community cultural and night-time
 assets aren’t lost to development,
 planning changes or the impacts of
 the pandemic.
-
-96
-96
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
 
 Many people have concerns that
 spaces in London appear to be
@@ -5651,7 +3131,6 @@ from City Hall to make London one
 of the most accessible capital cities
 in the world for disabled people. I will
 work with disabled Londoners in a
-
 new Access Initiative that addresses
 obstacles to access in our public
 places, local high streets and beyond,
@@ -5671,8 +3150,8 @@ of 60,000 new jobs within the next
 20 years, supported by the arrival of
 the Elizabeth line.
 
-GETTING AROUND YOUR
-LOCAL AREA
+## GETTING AROUND YOUR LOCAL AREA
+
 The pandemic has shown the urgency
 of some of the big challenges London
 faces — cleaning up our air, tackling
@@ -5690,14 +3169,6 @@ as usual, I am determined to build
 on the work done during lockdown.
 The concept of the 15-minute city has
 
-LONDON’S LOCAL COMMUNITIES
-A FAIRER, HEALTHIER, MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
-
-97
-97
-97
-
 gained traction and many Londoners
 have enjoyed spending much more
 time in their local neighbourhood. To
@@ -5708,7 +3179,6 @@ been heartening to see the surge in
 cycling, and I cannot remember a
 time when I have been on a bike as
 much as I have this last year.
-
 Last year, TfL and the London
 boroughs rapidly rolled out measures
 to make our streets safer for walking,
@@ -5724,7 +3194,6 @@ on these schemes, refining them
 where necessary, and making
 them permanent where they are
 successful.
-
 I will also ensure that bus routes
 are properly planned into local
 communities. Building on the
@@ -5735,10 +3204,8 @@ improving reliability of the bus
 network across the city. I will also
 continue work to reduce traffic
 through better coordination of
-
 roadworks and via the work of the
 Infrastructure Coordination Group.
-
 The pandemic has shown more than
 ever just how essential some journeys
 are, and we must do everything
@@ -5751,7 +3218,6 @@ lanes in central London. If adopted,
 this could reduce the number of
 missed appointments and delays in
 the NHS.
-
 I recognise that outer London has
 unique challenges when it comes
 to transport, so I will work with
@@ -5765,7 +3231,6 @@ Outer London Town Centres Fund to
 improve public transport and walking
 and cycling options in boroughs on
 London’s outskirts.
-
 My Walking and Cycling Commissioner
 has led a step change in making our
 roads cleaner, greener, and healthier
@@ -5773,12 +3238,6 @@ by pushing forward with my Healthy
 Streets agenda. I have gone far
 beyond my promise of tripling the
 amount of segregated cycle lanes
-
-98
-98
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
 
 in the last five years, which has
 contributed to the highest growth in
@@ -5816,7 +3275,11 @@ online cycle skills training.
 
 With the record growth in cycling,
 London also needs more cycle
-parking. I will continue to deliver
+parking. I will continue to deliver my cycle parking plan, providing
+5,000 new residential cycle hangars,
+parking hubs at stations, including in
+partnership with Network Rail, and
+more parking on our high streets.
 
 I recognise that outer
 London has unique
@@ -5824,12 +3287,6 @@ challenges when it comes to
 transport, so I will work with
 TfL on a strategy for the
 suburbs.
-
-my cycle parking plan, providing
-5,000 new residential cycle hangars,
-parking hubs at stations, including in
-partnership with Network Rail, and
-more parking on our high streets.
 
 Walking with a friend or taking
 the kids out for some fresh air has
@@ -5848,72 +3305,18 @@ back exciting new schemes like the
 Camden High Line and the Peckham
 Coal Line.
 
-LONDON’S LOCAL COMMUNITIES
-A FAIRER, HEALTHIER, MORE EQUAL LONDON
-LONDON’S LOCAL COMMUNITIES
+I will continue to support the innovative use of timed changes to streets across the capital through ‘School Streets’, ‘Summer Streeteries’ and ‘Lunchtime Streets’ – supporting the return of the hospitality sector. Play Streets in residential areas will be important in helping tackle isolation, improving mental health in our communities. I will explore options for future car-free days in central London.
 
-99
-99
-99
+Sadly, too many people are killed and seriously injured on London’s roads. My bold Vision Zero Plan aims to end this tragic loss of life. I will accelerate the roll out of 20mph speed limits on the TfL road network and improve the safety of the most dangerous junctions, including a programme of new pedestrian crossings at those junctions currently lacking them. This builds on my introduction of tighter standards for lorry safety and a reduction in collisions and injuries involving London buses. I will also increase support for victims of road danger, as well as continuing joint work with the MPS to increase enforcement.
 
-Black cabs and private hire vehicles
-continue to play an important role in
-London’s transport offer, and I know
-how difficult the last 12 months have
-been for the sector. I will work with
-them while expecting the highest
-safety and environmental standards.
-I will continue to seek a law change
-that would allow me to regulate the
-number of private hire vehicles that
-operate in London.
+Black cabs and private hire vehicles continue to play an important role in London’s transport offer, and I know how difficult the last 12 months have been for the sector. I will work with them while expecting the highest safety and environmental standards. I will continue to seek a law change that would allow me to regulate the number of private hire vehicles that operate in London.
 
-London is rolling out the UK’s largest
-trial of e-scooters, so we can see
-how this new form of transport can
-best fit into our existing network. The
-trial will carefully assess safety and
-environmental impacts and ensure
-this new mode of travel is inclusive of
-everyone’s needs. n
+London is rolling out the UK’s largest trial of e-scooters, so we can see how this new form of transport can best fit into our existing network. The trial will carefully assess safety and environmental impacts and ensure this new mode of travel is inclusive of everyone’s needs. ■
 
-I will continue to support the
-innovative use of timed changes to
-streets across the capital through
-‘School Streets’, ‘Summer Streeteries’
-and ‘Lunchtime Streets’ — supporting
-the return of the hospitality sector.
-Play Streets in residential areas will be
-important in helping tackle isolation,
-improving mental health in our
-communities. I will explore options
-for future car-free days in central
-London.
-
-Sadly, too many people are killed and
-seriously injured on London’s roads.
-My bold Vision Zero Plan aims to end
-this tragic loss of life. I will accelerate
-the roll out of 20mph speed limits on
-the TfL road network and improve
-the safety of the most dangerous
-junctions, including a programme of
-new pedestrian crossings at those
-junctions currently lacking them.
-This builds on my introduction of
-tighter standards for lorry safety
-and a reduction in collisions and
-injuries involving London buses. I will
-also increase support for victims of
-road danger, as well as continuing
-joint work with the MPS to increase
-enforcement.
-
-100
-100
-
-SADIQ FOR LONDON 2021
-SADIQ FOR LONDON 2020
+SADIQ
+FOR
+LONDON
+2021
 
 14415_21 Reproduced from electronic media, promoted by Amy Fode
 on behalf of London Labour Party both at 2nd floor, Southside, Victoria

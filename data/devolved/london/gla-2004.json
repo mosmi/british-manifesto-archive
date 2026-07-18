@@ -19,11 +19,71 @@
   "mayor": {
     "system": "Supplementary Vote",
     "candidates": [
-      { "name": "Ken Livingstone", "party": "labour", "firstVotes": 685541, "firstPct": 36.8, "finalVotes": 828380, "finalPct": 55.4, "elected": true },
-      { "name": "Steve Norris", "party": "conservative", "firstVotes": 542423, "firstPct": 29.1, "finalVotes": 667178, "finalPct": 44.6 },
-      { "name": "Simon Hughes", "party": "libdem", "firstVotes": 284645, "firstPct": 15.3 },
-      { "name": "Frank Maloney", "party": "ukip", "firstVotes": 115665, "firstPct": 6.2 },
-      { "name": "Other candidates (6)", "firstVotes": 235397, "firstPct": 12.6 }
+      {
+        "name": "Ken Livingstone",
+        "party": "labour",
+        "firstVotes": 685541,
+        "firstPct": 36.8,
+        "finalVotes": 828380,
+        "finalPct": 55.4,
+        "elected": true
+      },
+      {
+        "name": "Steve Norris",
+        "party": "conservative",
+        "firstVotes": 542423,
+        "firstPct": 29.1,
+        "finalVotes": 667178,
+        "finalPct": 44.6
+      },
+      {
+        "name": "Simon Hughes",
+        "party": "libdem",
+        "firstVotes": 284645,
+        "firstPct": 15.3
+      },
+      {
+        "name": "Frank Maloney",
+        "party": "ukip",
+        "firstVotes": 115665,
+        "firstPct": 6.2
+      },
+      {
+        "name": "Lindsey German",
+        "party": "respect",
+        "firstVotes": 61731,
+        "firstPct": 3.3
+      },
+      {
+        "name": "Julian Leppert",
+        "party": "bnp",
+        "firstVotes": 58407,
+        "firstPct": 3.1
+      },
+      {
+        "name": "Darren Johnson",
+        "party": "green",
+        "firstVotes": 57332,
+        "firstPct": 3.1
+      },
+      {
+        "name": "Ram Gidoomal",
+        "party": "cpa",
+        "firstVotes": 41698,
+        "firstPct": 2.2
+      },
+      {
+        "name": "Lorna Reid",
+        "partyLabel": "Independent Working Class Action",
+        "firstVotes": 9542,
+        "firstPct": 0.5
+      },
+      {
+        "name": "Tammy Nagalingam",
+        "party": "independent",
+        "firstVotes": 6692,
+        "firstPct": 0.4
+      }
     ]
   },
   "assembly": {
@@ -32,16 +92,67 @@
     "listSeats": 11,
     "system": "Additional Member System",
     "results": [
-      { "party": "conservative", "constituencySeats": 9, "listSeats": 0, "seats": 9, "constituencyVotes": 562047, "constituencyPct": 31.2, "listVotes": 533696, "listPct": 28.5 },
-      { "party": "labour", "constituencySeats": 5, "listSeats": 2, "seats": 7, "constituencyVotes": 444808, "constituencyPct": 24.7, "listVotes": 468247, "listPct": 25.0 },
-      { "party": "libdem", "constituencySeats": 0, "listSeats": 5, "seats": 5, "listVotes": 316218, "listPct": 16.9 },
-      { "party": "green", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 160445, "listPct": 8.6 },
-      { "party": "ukip", "constituencySeats": 0, "listSeats": 2, "seats": 2, "listVotes": 156780, "listPct": 8.4 }
+      {
+        "party": "conservative",
+        "constituencySeats": 9,
+        "listSeats": 0,
+        "seats": 9,
+        "constituencyVotes": 562047,
+        "constituencyPct": 31.2,
+        "listVotes": 533696,
+        "listPct": 28.5
+      },
+      {
+        "party": "labour",
+        "constituencySeats": 5,
+        "listSeats": 2,
+        "seats": 7,
+        "constituencyVotes": 444808,
+        "constituencyPct": 24.7,
+        "listVotes": 468247,
+        "listPct": 25.0
+      },
+      {
+        "party": "libdem",
+        "constituencySeats": 0,
+        "listSeats": 5,
+        "seats": 5,
+        "listVotes": 316218,
+        "listPct": 16.9
+      },
+      {
+        "party": "green",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 160445,
+        "listPct": 8.6
+      },
+      {
+        "party": "ukip",
+        "constituencySeats": 0,
+        "listSeats": 2,
+        "seats": 2,
+        "listVotes": 156780,
+        "listPct": 8.4
+      }
     ],
     "otherListVotes": [
-      { "name": "BNP", "votes": 90365, "pct": 4.8 },
-      { "name": "Respect", "votes": 87533, "pct": 4.7 },
-      { "name": "Christian Peoples Alliance", "votes": 54914, "pct": 2.9 }
+      {
+        "name": "BNP",
+        "votes": 90365,
+        "pct": 4.8
+      },
+      {
+        "name": "Respect",
+        "votes": 87533,
+        "pct": 4.7
+      },
+      {
+        "name": "Christian Peoples Alliance",
+        "votes": 54914,
+        "pct": 2.9
+      }
     ]
   },
   "booklet": {
@@ -50,12 +161,34 @@
     "cover": "/manifestos/london/gla-2004/booklet/cover.png"
   },
   "manifestos": [
-    { "party": "libdem", "candidate": "Simon Hughes", "pdf": "/manifestos/london/gla-2004/libdem/manifesto.pdf", "cover": "/manifestos/london/gla-2004/libdem/cover.png" },
-    { "party": "green", "candidate": "Darren Johnson", "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf", "cover": "/manifestos/london/gla-2004/green/cover.png" },
-    { "partyLabel": "Christian Peoples Alliance", "candidate": "Ram Gidoomal", "title": "Passion for London", "pdf": "/manifestos/london/gla-2004/cpa/manifesto.pdf", "cover": "/manifestos/london/gla-2004/cpa/cover.png" }
+    {
+      "party": "libdem",
+      "candidate": "Simon Hughes",
+      "pdf": "/manifestos/london/gla-2004/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2004/libdem/cover.png"
+    },
+    {
+      "party": "green",
+      "candidate": "Darren Johnson",
+      "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2004/green/cover.png"
+    },
+    {
+      "partyLabel": "Christian Peoples Alliance",
+      "candidate": "Ram Gidoomal",
+      "title": "Passion for London",
+      "pdf": "/manifestos/london/gla-2004/cpa/manifesto.pdf",
+      "cover": "/manifestos/london/gla-2004/cpa/cover.png"
+    }
   ],
   "sources": [
-    { "label": "House of Commons Library — 2004 London Elections (RP 04/48)", "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-48/" },
-    { "label": "London Elects — election results", "url": "https://www.londonelects.org.uk/im-voter/election-results/" }
+    {
+      "label": "House of Commons Library \u2014 2004 London Elections (RP 04/48)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-48/"
+    },
+    {
+      "label": "London Elects \u2014 election results",
+      "url": "https://www.londonelects.org.uk/im-voter/election-results/"
+    }
   ]
 }

@@ -7,16 +7,17 @@ political_spectrum: satirical
 victory: false
 government_outcome: opposition
 sections:
+  - taxation
   - health
   - housing
   - foreign-policy
+  - environment
   - transport
+  - law-and-order
   - energy
 ---
 
 # Count Binface London Mayoral Manifesto 2024
-
-## Page 1
 
 1. Thames Water bosses to be made to take a dip in the Thames, to see how they like it.
 2. Claudia Winkleman's fringe to be Grade 1 listed.
@@ -42,5 +43,3 @@ sections:
 22. Loud snacks to be banned from theatres.
 23. Unnecessary Voter ID legislation to be scrapped.
 24. Ceefax to be reintroduced for all homes within the M25.
-
-COUNT BINFACE FOR MAYOR OF LONDON

@@ -18,14 +18,95 @@
     "totalSeats": 100,
     "system": "First-past-the-post",
     "results": [
-      { "party": "conservative", "seats": 82, "pct": 52.6 },
-      { "party": "labour", "seats": 18, "pct": 34.0 },
-      { "party": "libdem", "seats": 0, "pct": 8.8 }
+      {
+        "party": "conservative",
+        "seats": 82,
+        "pct": 52.6
+      },
+      {
+        "party": "labour",
+        "seats": 18,
+        "pct": 34.0
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 8.8
+      }
     ],
-    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council."
+    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council.",
+    "otherVotes": [
+      {
+        "name": "Communist",
+        "votes": 78958,
+        "pct": 1.15
+      },
+      {
+        "name": "Independent",
+        "votes": 14614,
+        "pct": 0.21
+      },
+      {
+        "name": "Socialist Party of Great Britain",
+        "votes": 13021,
+        "pct": 0.19
+      },
+      {
+        "name": "National Union of Council Tenants",
+        "votes": 7909,
+        "pct": 0.12
+      },
+      {
+        "name": "National Front",
+        "votes": 5519,
+        "pct": 0.08
+      },
+      {
+        "name": "Union Movement",
+        "votes": 5127,
+        "pct": 0.07
+      },
+      {
+        "name": "Islington Tenants and Ratepayers Political Association",
+        "votes": 3733,
+        "pct": 0.05
+      },
+      {
+        "name": "Unionist",
+        "votes": 3019,
+        "pct": 0.04
+      },
+      {
+        "name": "Commonwealth Party of Great Britain",
+        "votes": 2854,
+        "pct": 0.04
+      },
+      {
+        "name": "Independent Carnaby",
+        "votes": 1640,
+        "pct": 0.02
+      },
+      {
+        "name": "John Hampden New Freedom Party",
+        "votes": 1580,
+        "pct": 0.02
+      },
+      {
+        "name": "European Labour Party",
+        "votes": 664,
+        "pct": 0.01
+      }
+    ],
+    "otherVotesNote": "Multi-member bloc vote: each elector had one vote per seat in their borough, so percentages here are shares of all votes cast, which differ slightly from the single-vote shares in the table above."
   },
   "sources": [
-    { "label": "London Datastore — Greater London Council Election 1967", "url": "https://data.london.gov.uk/elections/" },
-    { "label": "1967 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1967_Greater_London_Council_election" }
+    {
+      "label": "London Datastore — Greater London Council Election 1967",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "1967 Greater London Council election (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1967_Greater_London_Council_election"
+    }
   ]
 }

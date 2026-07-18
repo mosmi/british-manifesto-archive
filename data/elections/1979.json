@@ -7,15 +7,15 @@
   "pm": "Margaret Thatcher",
   "outgoingPm": "James Callaghan",
   "totalSeats": 635,
-  "summary": "The 1979 election brought Margaret Thatcher to power and ushered in one of the most ideologically transformative governments of the twentieth century. Labour under James Callaghan had survived the \"Winter of Discontent\" (1978–79) but could not escape the damage to its reputation. Callaghan fell after losing a vote of no confidence by a single vote. Thatcher won a majority of 43, becoming the first female Prime Minister in British history.",
+  "summary": "The 1979 election brought Margaret Thatcher to power and ushered in one of the most ideologically transformative governments of the twentieth century. Labour under James Callaghan had survived the \"Winter of Discontent\" (1978\u201379) but could not escape the damage to its reputation. Callaghan fell after losing a vote of no confidence by a single vote. Thatcher won a majority of 43, becoming the first female Prime Minister in British history.",
   "highlights": [
     "Margaret Thatcher becomes Britain's first female Prime Minister",
-    "Callaghan government falls on vote of no confidence — by one vote",
+    "Callaghan government falls on vote of no confidence \u2014 by one vote",
     "\"Winter of Discontent\" shapes the election narrative",
     "Saatchi & Saatchi's \"Labour Isn't Working\" poster becomes iconic",
-    "Beginning of 18 years of Conservative government (1979–1997)"
+    "Beginning of 18 years of Conservative government (1979\u20131997)"
   ],
-  "youtubeId": "",
+  "youtubeId": "MjBTSjG-zuY",
   "extraManifestoParties": [
     "green"
   ],
@@ -61,56 +61,68 @@
     {
       "party": "conservative",
       "seats": 339,
-      "votes": 13697923,
+      "votes": 13069731,
       "percentage": 43.9
     },
     {
       "party": "labour",
       "seats": 268,
-      "votes": 11532218,
+      "votes": 11505883,
       "percentage": 36.9
     },
     {
       "party": "libdem",
       "seats": 11,
-      "votes": 4313804,
+      "votes": 4285761,
       "percentage": 13.8
     },
     {
-      "party": "snp",
-      "seats": 2,
-      "votes": 504259,
-      "percentage": 1.6
-    },
-    {
-      "party": "plaid",
-      "seats": 2,
-      "votes": 132544,
-      "percentage": 0.4
-    },
-    {
       "party": "uup",
-      "seats": 5,
-      "votes": 0,
-      "percentage": 0
+      "seats": 6,
+      "votes": 254600,
+      "percentage": 0.8
     },
     {
       "party": "dup",
       "seats": 3,
-      "votes": 0,
-      "percentage": 0
+      "votes": 71000,
+      "percentage": 0.2
+    },
+    {
+      "party": "plaid",
+      "seats": 2,
+      "votes": 132500,
+      "percentage": 0.4
+    },
+    {
+      "party": "snp",
+      "seats": 2,
+      "votes": 504300,
+      "percentage": 1.6
     },
     {
       "party": "sdlp",
       "seats": 1,
-      "votes": 0,
-      "percentage": 0
+      "votes": 126300,
+      "percentage": 0.4
     },
     {
-      "party": "others",
-      "seats": 4,
-      "votes": 0,
-      "percentage": 3.4
+      "party": "speaker",
+      "seats": 1,
+      "votes": 27035,
+      "percentage": 0.1
+    },
+    {
+      "party": "independent",
+      "seats": 1,
+      "votes": 22398,
+      "percentage": 0.1
+    },
+    {
+      "party": "uuuc",
+      "seats": 1,
+      "votes": 29249,
+      "percentage": 0.1
     }
   ]
 }

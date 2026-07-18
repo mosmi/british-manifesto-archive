@@ -13,7 +13,7 @@
     "England hosts and wins the FIFA World Cup later that year",
     "Sterling devaluation crisis would later embarrass Wilson's government"
   ],
-  "youtubeId": "",
+  "youtubeId": "6lBbSSIv9Ww",
   "extraManifestoParties": [],
   "partyResults": {
     "welshcon": {
@@ -62,9 +62,9 @@
     },
     {
       "party": "conservative",
-      "seats": 253,
-      "votes": 11418433,
-      "percentage": 41.9
+      "seats": 241,
+      "votes": 11049833,
+      "percentage": 40.5
     },
     {
       "party": "libdem",
@@ -73,10 +73,28 @@
       "percentage": 8.5
     },
     {
-      "party": "others",
-      "seats": 2,
-      "votes": 452689,
-      "percentage": 1.7
+      "party": "uup",
+      "seats": 11,
+      "votes": 368600,
+      "percentage": 1.4
+    },
+    {
+      "party": "republicanlabour",
+      "seats": 1,
+      "votes": 26292,
+      "percentage": 0.1
+    },
+    {
+      "party": "natlibconservative",
+      "seats": 1,
+      "votes": 0,
+      "percentage": 0
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 30463,
+      "percentage": 0.1
     }
   ]
 }

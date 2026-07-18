@@ -18,14 +18,134 @@
     "totalSeats": 92,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 58, "pct": 47.4 },
-      { "party": "conservative", "seats": 32, "pct": 38.0 },
-      { "party": "libdem", "seats": 2, "pct": 12.5 }
+      {
+        "party": "labour",
+        "seats": 58,
+        "pct": 47.4
+      },
+      {
+        "party": "conservative",
+        "seats": 32,
+        "pct": 38.0
+      },
+      {
+        "party": "libdem",
+        "seats": 2,
+        "pct": 12.5
+      }
     ],
-    "note": "From 1973 the GLC was elected from 92 single-member divisions coterminous with the Greater London parliamentary constituencies, replacing the earlier borough-based multi-member areas."
+    "note": "From 1973 the GLC was elected from 92 single-member divisions coterminous with the Greater London parliamentary constituencies, replacing the earlier borough-based multi-member areas.",
+    "otherVotes": [
+      {
+        "name": "Communist",
+        "votes": 12319,
+        "pct": 0.63
+      },
+      {
+        "name": "National Front",
+        "votes": 9536,
+        "pct": 0.49
+      },
+      {
+        "name": "Independent Ratepayers and Citizens Association",
+        "votes": 5110,
+        "pct": 0.26
+      },
+      {
+        "name": "Action Party for Britain First",
+        "votes": 3063,
+        "pct": 0.16
+      },
+      {
+        "name": "National Independence Party",
+        "votes": 2924,
+        "pct": 0.15
+      },
+      {
+        "name": "Independent",
+        "votes": 2923,
+        "pct": 0.15
+      },
+      {
+        "name": "Non-Party Conservationist",
+        "votes": 1908,
+        "pct": 0.1
+      },
+      {
+        "name": "Socialist Party of Great Britain",
+        "votes": 1612,
+        "pct": 0.08
+      },
+      {
+        "name": "Unofficial Conservative",
+        "votes": 485,
+        "pct": 0.02
+      },
+      {
+        "name": "Independent Parent Action Group for Education",
+        "votes": 325,
+        "pct": 0.02
+      },
+      {
+        "name": "Surbiton Residents and Ratepayers",
+        "votes": 303,
+        "pct": 0.02
+      },
+      {
+        "name": "The Ratepayers Representative",
+        "votes": 234,
+        "pct": 0.01
+      },
+      {
+        "name": "Independent Labour",
+        "votes": 227,
+        "pct": 0.01
+      },
+      {
+        "name": "Independent Centre Party",
+        "votes": 202,
+        "pct": 0.01
+      },
+      {
+        "name": "Anti-Mass Redevelopment",
+        "votes": 195,
+        "pct": 0.01
+      },
+      {
+        "name": "Anti-Motorway, Support Community Involvement in Planning",
+        "votes": 143,
+        "pct": 0.01
+      },
+      {
+        "name": "Lambeth Residents for Democratic Local Government",
+        "votes": 103,
+        "pct": 0.01
+      },
+      {
+        "name": "Independent Anti-Redevelopment",
+        "votes": 72,
+        "pct": 0.0
+      },
+      {
+        "name": "Great Joint Happiness Homes for All",
+        "votes": 60,
+        "pct": 0.0
+      },
+      {
+        "name": "Air Road Public Safety White Resident",
+        "votes": 57,
+        "pct": 0.0
+      }
+    ]
   },
   "sources": [
-    { "label": "London Datastore — Greater London Council Election 1973", "url": "https://data.london.gov.uk/elections/" },
-    { "label": "1973 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1973_Greater_London_Council_election" }
+    {
+      "label": "London Datastore — Greater London Council Election 1973",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "1973 Greater London Council election (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1973_Greater_London_Council_election"
+    }
   ]
 }

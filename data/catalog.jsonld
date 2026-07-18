@@ -661,6 +661,18 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1983/scottishcon#document",
+          "name": "Scottish Conservatives Manifesto 1983",
+          "url": "https://www.manifestos.org.uk/manifesto/1983/scottishcon"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1983/welshcon#document",
+          "name": "Welsh Conservatives Manifesto 1983",
+          "url": "https://www.manifestos.org.uk/manifesto/1983/welshcon"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1987/conservative#document",
           "name": "Conservatives Manifesto 1987",
           "url": "https://www.manifestos.org.uk/manifesto/1987/conservative",
@@ -1856,6 +1868,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2005/socialistlabour#document",
+          "name": "Socialist Labour Party Manifesto 2005",
+          "url": "https://www.manifestos.org.uk/manifesto/2005/socialistlabour"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2005/ssp#document",
           "name": "Scottish Socialist Party Manifesto 2005",
           "url": "https://www.manifestos.org.uk/manifesto/2005/ssp",
@@ -2596,6 +2614,17 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/cista#document",
+          "name": "Cannabis Is Safer Than Alcohol Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/cista",
+          "keywords": [
+            "law and order",
+            "health",
+            "democracy and constitution"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2015/conservative#document",
           "name": "Conservatives Manifesto 2015",
           "url": "https://www.manifestos.org.uk/manifesto/2015/conservative",
@@ -3001,6 +3030,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2015/socialistlabour#document",
+          "name": "Socialist Labour Party Manifesto 2015",
+          "url": "https://www.manifestos.org.uk/manifesto/2015/socialistlabour"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2015/ssp#document",
           "name": "Scottish Socialist Party Manifesto 2015",
           "url": "https://www.manifestos.org.uk/manifesto/2015/ssp"
@@ -3355,6 +3390,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2017/liberal1989#document",
+          "name": "Liberal Party Manifesto 2017",
+          "url": "https://www.manifestos.org.uk/manifesto/2017/liberal1989"
         },
         {
           "@type": "DigitalDocument",
@@ -3931,6 +3972,12 @@
             "science and technology",
             "local government"
           ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2019/liberal1989#document",
+          "name": "Liberal Party Manifesto 2019",
+          "url": "https://www.manifestos.org.uk/manifesto/2019/liberal1989"
         },
         {
           "@type": "DigitalDocument",
@@ -4525,6 +4572,12 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/liberal1989#document",
+          "name": "Liberal Party Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/liberal1989"
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2024/nicon#document",
           "name": "NI Conservatives Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/nicon"
@@ -4970,12 +5023,16 @@
             "health",
             "education",
             "housing",
+            "immigration",
             "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5001,6 +5058,7 @@
             "democracy and constitution",
             "agriculture",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5014,12 +5072,19 @@
             "economy",
             "taxation",
             "health",
+            "education",
             "housing",
+            "immigration",
+            "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
             "welfare",
+            "democracy and constitution",
+            "energy",
+            "devolution",
+            "science and technology",
             "local government"
           ]
         },
@@ -5029,14 +5094,27 @@
           "name": "Count Binface London Mayoral Manifesto 2021",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/binface",
           "keywords": [
-            "transport"
+            "economy",
+            "health",
+            "housing",
+            "foreign policy",
+            "transport",
+            "law and order",
+            "science and technology"
           ]
         },
         {
           "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink#document",
           "name": "Burning Pink London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink"
+          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink",
+          "keywords": [
+            "health",
+            "education",
+            "environment",
+            "transport",
+            "law and order"
+          ]
         },
         {
           "@type": "DigitalDocument",
@@ -5049,12 +5127,16 @@
             "health",
             "education",
             "housing",
+            "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
             "welfare",
+            "democracy and constitution",
+            "agriculture",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5072,11 +5154,15 @@
             "housing",
             "immigration",
             "defence",
+            "foreign policy",
             "environment",
             "transport",
             "law and order",
             "welfare",
+            "democracy and constitution",
+            "agriculture",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5092,11 +5178,16 @@
             "health",
             "education",
             "housing",
+            "immigration",
+            "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5112,10 +5203,14 @@
             "health",
             "education",
             "housing",
+            "immigration",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
             "science and technology",
             "local government"
           ]
@@ -5129,12 +5224,15 @@
             "economy",
             "taxation",
             "health",
+            "education",
             "housing",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
             "democracy and constitution",
+            "energy",
             "science and technology",
             "local government"
           ]
@@ -5145,7 +5243,11 @@
           "name": "Independent London Mayoral Manifesto 2021",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/maxfosh",
           "keywords": [
-            "transport"
+            "housing",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order"
           ]
         },
         {
@@ -5157,7 +5259,10 @@
             "economy",
             "health",
             "housing",
+            "defence",
             "foreign policy",
+            "environment",
+            "welfare",
             "science and technology"
           ]
         },
@@ -5169,11 +5274,16 @@
           "keywords": [
             "economy",
             "taxation",
+            "education",
             "housing",
-            "defence",
             "environment",
             "transport",
-            "law and order"
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
+            "science and technology",
+            "local government"
           ]
         },
         {
@@ -5187,12 +5297,16 @@
             "health",
             "education",
             "housing",
+            "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
             "welfare",
+            "democracy and constitution",
+            "agriculture",
             "energy",
+            "science and technology",
             "local government"
           ]
         },
@@ -5202,10 +5316,13 @@
           "name": "Count Binface London Mayoral Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/binface",
           "keywords": [
+            "taxation",
             "health",
             "housing",
             "foreign policy",
+            "environment",
             "transport",
+            "law and order",
             "energy"
           ]
         },
@@ -5215,7 +5332,9 @@
           "name": "Britain First London Mayoral Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/britainfirst",
           "keywords": [
+            "housing",
             "immigration",
+            "defence",
             "law and order"
           ]
         },
@@ -5225,7 +5344,11 @@
           "name": "Natalie Campbell London Mayoral Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/campbell",
           "keywords": [
-            "housing"
+            "economy",
+            "housing",
+            "transport",
+            "law and order",
+            "local government"
           ]
         },
         {
@@ -5237,10 +5360,12 @@
             "economy",
             "taxation",
             "health",
+            "education",
             "housing",
             "environment",
             "transport",
             "law and order",
+            "welfare",
             "science and technology",
             "local government"
           ]
@@ -5252,7 +5377,9 @@
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/ghulati",
           "keywords": [
             "economy",
+            "education",
             "housing",
+            "foreign policy",
             "environment",
             "transport",
             "law and order",
@@ -5272,10 +5399,16 @@
             "health",
             "education",
             "housing",
+            "immigration",
+            "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5290,11 +5423,16 @@
             "health",
             "education",
             "housing",
+            "immigration",
+            "defence",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5307,13 +5445,18 @@
           "keywords": [
             "economy",
             "taxation",
+            "health",
             "education",
             "housing",
+            "immigration",
             "foreign policy",
             "environment",
             "transport",
             "law and order",
+            "welfare",
+            "democracy and constitution",
             "energy",
+            "devolution",
             "science and technology",
             "local government"
           ]
@@ -5326,12 +5469,15 @@
           "keywords": [
             "economy",
             "taxation",
+            "education",
             "housing",
+            "foreign policy",
             "environment",
             "transport",
             "law and order",
             "welfare",
             "democracy and constitution",
+            "energy",
             "science and technology",
             "local government"
           ]
@@ -5342,12 +5488,16 @@
           "name": "Andreas Michli London Mayoral Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/michli",
           "keywords": [
+            "economy",
+            "taxation",
             "health",
             "education",
             "housing",
             "environment",
             "transport",
-            "law and order"
+            "law and order",
+            "agriculture",
+            "local government"
           ]
         },
         {
@@ -5366,7 +5516,30 @@
           "name": "Social Democratic Party London Mayoral Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/sdp",
           "keywords": [
-            "law and order"
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "democracy and constitution",
+            "science and technology"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/lcc-1958/spgb#document",
+          "name": "Socialist Party of Great Britain LCC Manifesto 1958",
+          "url": "https://www.manifestos.org.uk/manifesto/london/lcc-1958/spgb",
+          "keywords": [
+            "housing",
+            "education",
+            "health",
+            "economy"
           ]
         },
         {

@@ -1397,7 +1397,7 @@ function electionCardHtml(e) {
     <div class="card-year${longLabel ? ' long-label' : ''}">${e.displayYear}</div>
     <div class="card-date">${e.date}</div>
     <div class="card-winner"><div class="card-winner-dot"></div>${electionWinnerLabel(e)}</div>
-    <div class="card-pm">New PM: <span>${e.pm}</span></div>
+    <div class="card-pm">PM: <span>${e.pm}</span></div>
     <div class="card-seats-bar">${electionSeatBarHtml(e)}</div>
   </a>`;
 }
@@ -1483,6 +1483,50 @@ async function renderFeaturedPartiesGrid() {
 }
 
 // ── MANIFESTO CARD BUILDER ────────────────────────────────────
+/** Scottish/Welsh editions whose seats are nested inside UK Lab/Con/LD totals. */
+const TERRITORIAL_SEAT_CHILDREN = {
+  labour: ['scottishlab', 'welshlab'],
+  conservative: ['scottishcon', 'welshcon'],
+  libdem: ['scottishlibdem', 'welshlibdem'],
+};
+
+function getElectionPartyResult(election, pid) {
+  const fromResults = (election.results || []).find(r => r.party === pid);
+  if (fromResults) return fromResults;
+  const pr = (election.partyResults || {})[pid];
+  return pr || null;
+}
+
+/** Party ids shown on this election’s manifesto grid (same set as the cards). */
+function manifestoPartiesOnPage(election) {
+  return [
+    ...(election.results || []).filter(r => r.seats > 0).map(r => r.party),
+    ...(election.extraManifestoParties || []),
+  ].filter((v, i, a) => a.indexOf(v) === i && v !== 'others' && PARTIES[v] && !MANIFESTO_EXCLUDED_PARTIES.has(v));
+}
+
+function electionHasTerritorialSeatEditions(election) {
+  const shown = manifestoPartiesOnPage(election);
+  return Object.values(TERRITORIAL_SEAT_CHILDREN).some(children =>
+    children.some(c => shown.includes(c))
+  );
+}
+
+/** Seat count for a manifesto card badge; England-only for Lab/Con/LD when territorial editions are shown. */
+function getManifestoCardSeatCount(election, pid) {
+  const result = getElectionPartyResult(election, pid);
+  const seats = result?.seats ?? 0;
+  const children = TERRITORIAL_SEAT_CHILDREN[pid];
+  if (!children) return seats;
+  const shown = manifestoPartiesOnPage(election);
+  if (!children.some(c => shown.includes(c))) return seats;
+  const subtract = children.reduce(
+    (n, c) => n + (getElectionPartyResult(election, c)?.seats || 0),
+    0
+  );
+  return Math.max(0, seats - subtract);
+}
+
 function buildManifestoCard(pid, election, opts = {}) {
   const p = PARTIES[pid];
   const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
@@ -1509,20 +1553,16 @@ function buildManifestoCard(pid, election, opts = {}) {
     ? `Open ${displayName} ${election.displayYear} manifesto PDF`
     : `Read ${displayName} ${election.displayYear} manifesto online`;
 
-  const result = opts.result;
-  const noSeats = result
-    ? result.seats === 0
-    : !election.results.find(r => r.party === pid && r.seats > 0);
+  // Party pages pass opts.result (full UK or territorial history). Election pages use the helper.
+  const seats = opts.result
+    ? (opts.result.seats ?? 0)
+    : getManifestoCardSeatCount(election, pid);
   const headerName = opts.showYearAsTitle
     ? election.displayYear
     : partyLink(pid, displayName, election.year);
-  const seatsTag = result
-    ? (result.seats === 0
-      ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
-      : `<div class="manifesto-party-tag">${result.seats} seat${result.seats !== 1 ? 's' : ''}</div>`)
-    : (noSeats
-      ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
-      : `<div class="manifesto-party-tag">${election.displayYear}</div>`);
+  const seatsTag = seats === 0
+    ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
+    : `<div class="manifesto-party-tag">${seats} seat${seats !== 1 ? 's' : ''}</div>`;
 
   const pdfLink = hasPdf
     ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
@@ -1598,12 +1638,16 @@ function renderElection(app, id) {
 
   // Results table — show all named parties, flag NI-only rows, show '—' for 0 votes
   const maxSeats   = Math.max(...election.results.map(r => r.seats));
+  const hasNiOnlyPlaceholder = election.results.some(
+    r => (r.seats > 0 || r.votes > 0) && r.votes === 0 && PARTIES[r.party]?.nation === 'northern-ireland'
+  );
   const resultRows = election.results
     .filter(r => r.seats > 0 || r.votes > 0)
     .sort((a, b) => b.seats - a.seats)
     .map(r => {
       const isWinner = r.party === election.winner;
-      const niOnly   = r.votes === 0 && ['uup','vanguard','dup','sdlp','sinnfein','alliance','gpni','pup','tuv'].includes(r.party);
+      // NI parties with no vote total yet — mark Vote % as NI-only (not a hard-coded slug list)
+      const niOnly   = r.votes === 0 && PARTIES[r.party]?.nation === 'northern-ireland';
       const votesDisplay   = r.votes   > 0 ? r.votes.toLocaleString()   : '—';
       const pctDisplay     = r.percentage > 0 ? r.percentage.toFixed(1) + '%' : (niOnly ? '<span style="font-size:0.72rem;color:var(--text-faint)">NI only</span>' : '—');
       const swatchCol = typeof barColour === 'function'
@@ -1616,12 +1660,15 @@ function renderElection(app, id) {
         <td style="color:var(--text-muted)">${pctDisplay}</td>
       </tr>`;
     }).join('');
+  const resultsFootnote = hasNiOnlyPlaceholder
+    ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">† Where a UK-wide vote total is not yet recorded for a Northern Ireland party, Vote % is marked NI only.</p>`
+    : (election.year >= 2010
+      ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">Vote totals from the House of Commons Library <a href="https://electionresults.parliament.uk/" target="_blank" rel="noopener">UK Parliament election results</a> (UK-wide shares).</p>`
+      : '');
+
 
   // Manifesto section — results parties + extraManifestoParties (deduplicated)
-  const manifestoPartyIds = [
-    ...election.results.filter(r => r.seats > 0).map(r => r.party),
-    ...(election.extraManifestoParties || []),
-  ].filter((v, i, a) => a.indexOf(v) === i && v !== 'others' && PARTIES[v] && !MANIFESTO_EXCLUDED_PARTIES.has(v));
+  const manifestoPartyIds = manifestoPartiesOnPage(election);
 
   const NATION_ORDER  = ['england', 'scotland', 'wales', 'northern-ireland', 'others'];
   const NATION_LABELS = { england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England & UK-wide', scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland', wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales', 'northern-ireland': '🇮🇪 Northern Ireland', others: 'Other Parties' };
@@ -1646,7 +1693,9 @@ function renderElection(app, id) {
         <div class="manifesto-grid">${grouped[n].map(pid => buildManifestoCard(pid, election)).join('')}</div>
       </div>`).join('')
     : `<div class="manifesto-grid">${manifestoPartyIds.map(pid => buildManifestoCard(pid, election)).join('')}</div>`;
-
+  const territorialSeatsNote = electionHasTerritorialSeatEditions(election)
+    ? `<p class="manifestos-intro" style="margin-top:0.5rem">Seat counts on Scottish/Welsh party cards are for that nation; Labour, Conservative and Liberal Democrat cards show England only so totals are not double-counted. The results table above is UK-wide.</p>`
+    : '';
   const videoIds = Array.isArray(election.youtubeId)
     ? election.youtubeId.filter(Boolean)
     : (election.youtubeId ? [election.youtubeId] : []);
@@ -1696,7 +1745,7 @@ function renderElection(app, id) {
               <thead><tr><th scope="col">Party</th><th scope="col">Seats (of ${election.totalSeats})</th><th scope="col">Votes</th><th scope="col">Vote %</th></tr></thead>
               <tbody>${resultRows}</tbody>
             </table>
-            <p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">† Northern Ireland party vote totals shown as NI-wide share and are not included in UK-wide percentage figures.</p>
+            ${resultsFootnote}
           </div>
         </div>
 
@@ -1732,6 +1781,7 @@ function renderElection(app, id) {
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Parties marked "No seats won" contested the election but did not win representation.</p>
+        ${territorialSeatsNote}
         ${manifestoGridContent}
       </div>
 
@@ -2157,6 +2207,12 @@ async function renderParty(app, id) {
   const euroElections = euroHistory.elections;
   const euroManifestos = euroHistory.manifestos;
 
+  const londonHistory = (!isAllianceParty && typeof getLondonPartyHistory === 'function')
+    ? await getLondonPartyHistory(partyId)
+    : { elections: [], manifestos: [] };
+  const londonElections = londonHistory.elections;
+  const londonManifestos = londonHistory.manifestos;
+
   const maxHolyroodSeats = Math.max(1, ...holyroodElections.map(pe => pe.result.seats));
   const holyroodElectionRows = holyroodElections.map(pe =>
     holyroodPartyElectionRow(partyId, pe, maxHolyroodSeats, color)
@@ -2193,12 +2249,22 @@ async function renderParty(app, id) {
     euroManifestoCard(manifesto, election)
   ).join('');
 
+  const maxLondonSeats = Math.max(1, ...londonElections.map(pe => pe.result.seats));
+  const londonElectionRows = londonElections.map(pe =>
+    londonPartyElectionRow(partyId, pe, maxLondonSeats, color)
+  ).join('');
+
+  const londonItems = londonManifestos.map(({ election, manifesto }) =>
+    londonManifestoCard(manifesto, election)
+  ).join('');
+
   const contestedParts = [];
   if (!isAllianceParty && partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
   if (!isAllianceParty && holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
   if (!isAllianceParty && seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
   if (!isAllianceParty && niElections.length) contestedParts.push(`${niElections.length} Stormont`);
   if (euroElections.length) contestedParts.push(`${euroElections.length} European Parliament`);
+  if (!isAllianceParty && londonElections.length) contestedParts.push(`${londonElections.length} London`);
   const contestedLabel = contestedParts.join(' · ') || '0';
   const partyLede = partyLedeText(party.description);
 
@@ -2305,6 +2371,18 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${euroItems}</div>
       </div>` : ''}
+      ${londonElectionRows ? `<div class="party-elections-section">
+        <span class="section-label">London · LCC / GLC / GLA</span>
+        <h2>London Results</h2>
+        <div class="gold-rule" style="background:${barCol}"></div>
+        <div class="party-results-list">${londonElectionRows}</div>
+      </div>` : ''}
+      ${londonItems ? `<div class="party-manifestos-section">
+        <span class="section-label">London</span>
+        <h2>London Manifestos</h2>
+        <div class="gold-rule" style="background:${barCol}"></div>
+        <div class="manifesto-grid">${londonItems}</div>
+      </div>` : ''}
     </div>
   `;
 }
@@ -2318,12 +2396,33 @@ function westminsterYearCell(yearLabel) {
   return `<td style="font-family:var(--font-display);color:var(--cream)"><a href="/election/${election.id}" class="results-table-link">${yearLabel}</a></td>`;
 }
 
+/** Theme-safe party text colour for nation-page tables (SNP yellow etc.). */
+function nationPartyTextColor(partyId, fallbackHex) {
+  if (partyId && typeof partyTextColour === 'function' && PARTIES?.[partyId]) {
+    return partyTextColour(partyId);
+  }
+  return fallbackHex || '#6b7280';
+}
+
 function nationTablePartyHeading(partyId, label, color) {
-  const style = color ? ` style="color:${color}"` : '';
+  const resolved = partyId ? nationPartyTextColor(partyId, color) : color;
+  const style = resolved ? ` style="color:${resolved}"` : '';
   if (!partyId || !PARTIES?.[partyId]) {
     return `<th scope="col"${style}>${label}</th>`;
   }
   return `<th scope="col"${style}><a href="/party/${partyId}" class="results-table-link">${label}</a></th>`;
+}
+
+function nationArchiveLink(id) {
+  const links = {
+    scotland: { href: '/devolved/holyrood', label: 'Scottish Parliament results →' },
+    wales: { href: '/devolved/senedd', label: 'Senedd results →' },
+    'northern-ireland': { href: '/devolved/stormont', label: 'Northern Ireland Assembly results →' },
+    europe: { href: '/devolved/euro', label: 'European Parliament results →' },
+  };
+  const link = links[id];
+  if (!link) return '';
+  return `<a href="${link.href}" class="cross-archive-link">${link.label}</a>`;
 }
 
 function renderNation(app, id) {
@@ -2432,12 +2531,13 @@ function renderNation(app, id) {
       </table></div>
     </div>`;
   } else if (id === 'scotland' && nation.westminsterResults) {
+    const snpCol = nationPartyTextColor('snp', '#FDF38E');
     const rows = nation.westminsterResults.map(r => `<tr>
       ${westminsterYearCell(r.year)}
-      <td style="color:#0087DC;font-weight:600">${r.con > 0 ? r.con : '—'}</td>
-      <td style="color:#E4003B;font-weight:600">${r.lab > 0 ? r.lab : '—'}</td>
-      <td style="color:#FAA61A;font-weight:600">${r.ld > 0 ? r.ld : '—'}</td>
-      <td style="color:#FDF38E;font-weight:600">${r.snp > 0 ? r.snp : '—'}</td>
+      <td style="color:${nationPartyTextColor('scottishcon', '#0087DC')};font-weight:600">${r.con > 0 ? r.con : '—'}</td>
+      <td style="color:${nationPartyTextColor('scottishlab', '#E4003B')};font-weight:600">${r.lab > 0 ? r.lab : '—'}</td>
+      <td style="color:${nationPartyTextColor('scottishlibdem', '#FAA61A')};font-weight:600">${r.ld > 0 ? r.ld : '—'}</td>
+      <td style="color:${snpCol};font-weight:600">${r.snp > 0 ? r.snp : '—'}</td>
       <td style="color:var(--text-muted)">${r.other > 0 ? r.other : '—'}</td>
       <td style="color:var(--cream-dark);font-size:0.8rem">${r.total}</td>
     </tr>`).join('');
@@ -2447,7 +2547,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.5rem">"LD" includes Coalition Liberal (1918), National Liberal (1922–45), Liberal/SDP Alliance (1983–87), Liberal Democrats (1988–). Scotland had 71–72 seats 1918–2001; reduced to 59 from 2005, and 57 from 2024. "Other" in the interwar period includes ILP MPs (Glasgow). The precise breakdown of "Other" seats is not available in the source document. Sources: HC Library CBP-7529 (1918–2019); HC Library CBP-10009 (2024).</p>
       <div style="overflow-x:auto"><table class="results-table">
-        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('scottishcon', 'Con', '#0087DC')}${nationTablePartyHeading('scottishlab', 'Lab', '#E4003B')}${nationTablePartyHeading('scottishlibdem', 'LD', '#FAA61A')}${nationTablePartyHeading('snp', 'SNP', '#FDF38E')}<th scope="col">Other</th><th scope="col">Total</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('scottishcon', 'Con')}${nationTablePartyHeading('scottishlab', 'Lab')}${nationTablePartyHeading('scottishlibdem', 'LD')}${nationTablePartyHeading('snp', 'SNP')}<th scope="col">Other</th><th scope="col">Total</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -2492,12 +2592,12 @@ function renderNation(app, id) {
   if (id === 'wales' && nation.seneddResults) {
     const rows = nation.seneddResults.map(r => `<tr>
       <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/senedd/${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
-      <td><span style="color:#E4003B;font-weight:600">${r.lab}</span></td>
-      <td><span style="color:#008672;font-weight:600">${r.pc}</span></td>
-      <td><span style="color:#0087DC;font-weight:600">${r.con}</span></td>
-      <td><span style="color:#FAA61A;font-weight:600">${r.ld}</span></td>
-      ${r.ukip !== undefined ? `<td><span style="color:#70147A;font-weight:600">${r.ukip > 0 ? r.ukip : '—'}</span></td>` : '<td>—</td>'}
-      <td><span style="color:#12B6CF;font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
+      <td><span style="color:${nationPartyTextColor('welshlab', '#E4003B')};font-weight:600">${r.lab}</span></td>
+      <td><span style="color:${nationPartyTextColor('plaid', '#008672')};font-weight:600">${r.pc}</span></td>
+      <td><span style="color:${nationPartyTextColor('welshcon', '#0087DC')};font-weight:600">${r.con}</span></td>
+      <td><span style="color:${nationPartyTextColor('welshlibdem', '#FAA61A')};font-weight:600">${r.ld}</span></td>
+      ${r.ukip !== undefined ? `<td><span style="color:${nationPartyTextColor('ukip', '#70147A')};font-weight:600">${r.ukip > 0 ? r.ukip : '—'}</span></td>` : '<td>—</td>'}
+      <td><span style="color:${nationPartyTextColor('reform', '#12B6CF')};font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
     </tr>`).join('');
     devolvedTable = `<div class="devolved-section">
       <span class="section-label">Senedd Cymru Elections</span>
@@ -2505,7 +2605,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">60 Members elected by AMS (1999–2021); 96 Members from 2026 under closed-list PR. Labour was the largest party at every election until 2026. <a href="/devolved/senedd">View full Senedd archive →</a></p>
       <table class="results-table">
-        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#E4003B">Labour</th><th scope="col" style="color:#008672">Plaid</th><th scope="col" style="color:#0087DC">Cons.</th><th scope="col" style="color:#FAA61A">Lib Dem</th><th scope="col" style="color:#70147A">UKIP</th><th scope="col" style="color:#12B6CF">Reform</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('welshlab', 'Labour')}${nationTablePartyHeading('plaid', 'Plaid')}${nationTablePartyHeading('welshcon', 'Cons.')}${nationTablePartyHeading('welshlibdem', 'Lib Dem')}${nationTablePartyHeading('ukip', 'UKIP')}${nationTablePartyHeading('reform', 'Reform')}</tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2514,12 +2614,12 @@ function renderNation(app, id) {
   if (id === 'scotland' && nation.holyroodResults) {
     const rows = nation.holyroodResults.map(r => `<tr>
       <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem"><a href="/devolved/holyrood/${r.year}" style="color:inherit;text-decoration:none">${r.year}</a></td>
-      <td><span style="color:#FDF38E;font-weight:600">${r.snp}</span></td>
-      <td><span style="color:#E4003B;font-weight:600">${r.lab}</span></td>
-      <td><span style="color:#0087DC;font-weight:600">${r.con}</span></td>
-      <td><span style="color:#FAA61A;font-weight:600">${r.ld}</span></td>
-      <td><span style="color:#00B140;font-weight:600">${r.grn}</span></td>
-      <td><span style="color:#12B6CF;font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
+      <td><span style="color:${nationPartyTextColor('snp', '#FDF38E')};font-weight:600">${r.snp}</span></td>
+      <td><span style="color:${nationPartyTextColor('scottishlab', '#E4003B')};font-weight:600">${r.lab}</span></td>
+      <td><span style="color:${nationPartyTextColor('scottishcon', '#0087DC')};font-weight:600">${r.con}</span></td>
+      <td><span style="color:${nationPartyTextColor('scottishlibdem', '#FAA61A')};font-weight:600">${r.ld}</span></td>
+      <td><span style="color:${nationPartyTextColor('scottishgrn', '#00B140')};font-weight:600">${r.grn}</span></td>
+      <td><span style="color:${nationPartyTextColor('reform', '#12B6CF')};font-weight:600">${r.reform > 0 ? r.reform : '—'}</span></td>
     </tr>`).join('');
     devolvedTable = `<div class="devolved-section">
       <span class="section-label">Scottish Parliament Elections</span>
@@ -2527,7 +2627,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">129 MSPs elected by Additional Member System (73 constituency + 56 regional). The SNP has governed Scotland since 2007. <a href="/devolved/holyrood">View full Holyrood archive →</a></p>
       <table class="results-table">
-        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#FDF38E">SNP</th><th scope="col" style="color:#E4003B">Labour</th><th scope="col" style="color:#0087DC">Cons.</th><th scope="col" style="color:#FAA61A">Lib Dem</th><th scope="col" style="color:#00B140">Greens</th><th scope="col" style="color:#12B6CF">Reform</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('snp', 'SNP')}${nationTablePartyHeading('scottishlab', 'Labour')}${nationTablePartyHeading('scottishcon', 'Cons.')}${nationTablePartyHeading('scottishlibdem', 'Lib Dem')}${nationTablePartyHeading('scottishgrn', 'Greens')}${nationTablePartyHeading('reform', 'Reform')}</tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2536,11 +2636,11 @@ function renderNation(app, id) {
   if (id === 'northern-ireland' && nation.assemblyResults) {
     const rows = nation.assemblyResults.map(r => `<tr>
       <td style="color:var(--cream);font-family:var(--font-display);font-size:1.1rem">${r.year}</td>
-      <td><span style="color:#D46A4C;font-weight:600">${r.dup}</span></td>
-      <td><span style="color:#326760;font-weight:600">${r.sf}</span></td>
-      <td><span style="color:#48A5EE;font-weight:600">${r.uup}</span></td>
-      <td><span style="color:#2AA82C;font-weight:600">${r.sdlp}</span></td>
-      <td><span style="color:#F6CB2F;font-weight:600">${r.alliance}</span></td>
+      <td><span style="color:${nationPartyTextColor('dup', '#D46A4C')};font-weight:600">${r.dup}</span></td>
+      <td><span style="color:${nationPartyTextColor('sinnfein', '#326760')};font-weight:600">${r.sf}</span></td>
+      <td><span style="color:${nationPartyTextColor('uup', '#48A5EE')};font-weight:600">${r.uup}</span></td>
+      <td><span style="color:${nationPartyTextColor('sdlp', '#2AA82C')};font-weight:600">${r.sdlp}</span></td>
+      <td><span style="color:${nationPartyTextColor('alliance', '#F6CB2F')};font-weight:600">${r.alliance}</span></td>
     </tr>`).join('');
     devolvedTable = `<div class="devolved-section">
       <span class="section-label">Northern Ireland Assembly Elections</span>
@@ -2548,7 +2648,7 @@ function renderNation(app, id) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem">90 MLAs elected by Single Transferable Vote (5 per constituency). In 2022 Sinn Féin became the largest party for the first time since partition in 1922. Source: HC Library CBP-7529.</p>
       <table class="results-table">
-        <thead><tr><th scope="col">Year</th><th scope="col" style="color:#D46A4C">DUP</th><th scope="col" style="color:#326760">Sinn Féin</th><th scope="col" style="color:#48A5EE">UUP</th><th scope="col" style="color:#2AA82C">SDLP</th><th scope="col" style="color:#F6CB2F">Alliance</th></tr></thead>
+        <thead><tr><th scope="col">Year</th>${nationTablePartyHeading('dup', 'DUP')}${nationTablePartyHeading('sinnfein', 'Sinn Féin')}${nationTablePartyHeading('uup', 'UUP')}${nationTablePartyHeading('sdlp', 'SDLP')}${nationTablePartyHeading('alliance', 'Alliance')}</tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -2589,7 +2689,7 @@ function renderNation(app, id) {
           ${devolvedTable}
           <p style="font-size:0.75rem;color:var(--text-faint);margin-top:1.5rem">Source: ${nation.source}</p>
         </div>
-        <div>
+        <div class="nation-aside">
           <div class="nation-parties-card">
             <div class="section-label" style="margin-bottom:1rem">${id === 'europe' ? 'Alliance families' : `Parties in ${nation.name}`}</div>
             ${partyLinks}
@@ -2599,7 +2699,7 @@ function renderNation(app, id) {
             ${id === 'northern-ireland' ? `<a href="/devolved/stormont/other-parties" class="holyrood-other-link">Other Northern Irish parties →</a>` : ''}
             ${id === 'europe' ? `<a href="/devolved/euro/other-parties" class="holyrood-other-link">Other EP parties →</a>` : ''}
           </div>
-          ${id === 'europe' ? `<a href="/devolved/euro" class="cross-archive-link" style="margin-top:1rem;display:flex">European Parliament archive →</a>` : ''}
+          ${nationArchiveLink(id)}
         </div>
       </div>
     </div>
@@ -2746,6 +2846,7 @@ function parseManifestoYaml(yaml) {
 function parseYamlScalar(raw) {
   if (raw === 'true') return true;
   if (raw === 'false') return false;
+  if (raw === 'null' || raw === 'Null' || raw === 'NULL' || raw === '~') return null;
   if (/^\d+$/.test(raw)) return parseInt(raw, 10);
   if ((raw.startsWith('"') && raw.endsWith('"')) || (raw.startsWith("'") && raw.endsWith("'"))) {
     return raw.slice(1, -1);

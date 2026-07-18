@@ -49,9 +49,41 @@
         "firstPct": 3.2
       },
       {
-        "name": "Other candidates (5)",
-        "firstVotes": 164354,
-        "firstPct": 6.8
+        "name": "Richard Barnbrook",
+        "party": "bnp",
+        "firstVotes": 69710,
+        "firstPct": 2.9
+      },
+      {
+        "name": "Alan Craig",
+        "party": "cpa",
+        "partyLabel": "Christian Peoples Alliance / Christian Party",
+        "firstVotes": 39249,
+        "firstPct": 1.6
+      },
+      {
+        "name": "Gerard Batten",
+        "party": "ukip",
+        "firstVotes": 22422,
+        "firstPct": 0.9
+      },
+      {
+        "name": "Lindsey German",
+        "partyLabel": "Left List",
+        "firstVotes": 16796,
+        "firstPct": 0.7
+      },
+      {
+        "name": "Matt O'Connor",
+        "party": "englishdemocrats",
+        "firstVotes": 10695,
+        "firstPct": 0.4
+      },
+      {
+        "name": "Winston McKenzie",
+        "party": "independent",
+        "firstVotes": 5389,
+        "firstPct": 0.2
       }
     ]
   },

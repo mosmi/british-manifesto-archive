@@ -18,7 +18,8 @@ VOTES_JSON = ROOT / "data" / "election-vote-totals.json"
 # Wikipedia 1945 — authoritative seat breakdown (640 seats) + vote totals where listed
 OVERRIDE_1945: list[tuple[str, int, int, float]] = [
     ("labour", 393, 11_967_746, 49.7),
-    ("conservative", 197, 8_716_211, 36.2),
+    ("conservative", 196, 8699780, 36.1),
+    ("speaker", 1, 16431, 0.1),
     ("libdem", 12, 2_177_938, 9.0),
     ("nationalliberal", 11, 686_652, 2.9),
     ("independent", 8, 133_191, 0.6),

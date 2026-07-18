@@ -2,7 +2,7 @@
 election_year: 2017
 party_id: nha
 party_name: National Health Action Party
-party_leader: null
+party_leader: Alex Ashman
 political_spectrum: centre-left
 victory: false
 government_outcome: opposition

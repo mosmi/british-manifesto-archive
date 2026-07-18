@@ -24,8 +24,6 @@ sections:
 
 # UK Independence Party Manifesto 1997
 
-Here is the 1997 UK Independence Party (UKIP) general election manifesto, cleaned up and formatted as a Markdown document with the redundant "List of Contents" navigation text removed.
-
 ## Contents
 * Preface by Dr Alan Sked
 * Introduction

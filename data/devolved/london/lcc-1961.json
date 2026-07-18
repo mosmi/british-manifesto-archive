@@ -18,14 +18,69 @@
     "totalSeats": 126,
     "system": "First-past-the-post",
     "results": [
-      { "party": "labour", "seats": 84, "pct": 50.4 },
-      { "party": "conservative", "seats": 42, "pct": 42.0 },
-      { "party": "libdem", "seats": 0, "pct": 6.0 }
+      {
+        "party": "labour",
+        "seats": 84,
+        "pct": 50.4
+      },
+      {
+        "party": "conservative",
+        "seats": 42,
+        "pct": 42.0
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 6.0
+      }
     ],
-    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results."
+    "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
+    "otherVotes": [
+      {
+        "name": "Communist",
+        "votes": 7622,
+        "pct": 1.0
+      },
+      {
+        "name": "British National Party",
+        "votes": 3695,
+        "pct": 0.5
+      },
+      {
+        "name": "Union Movement",
+        "votes": 2605,
+        "pct": 0.3
+      },
+      {
+        "name": "Independent",
+        "votes": 2094,
+        "pct": 0.3
+      },
+      {
+        "name": "Independent Labour Party",
+        "votes": 1633,
+        "pct": 0.2
+      },
+      {
+        "name": "Alert Party",
+        "votes": 672,
+        "pct": 0.08
+      }
+    ],
+    "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."
   },
   "sources": [
-    { "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)", "url": "https://www.electionscentre.co.uk/" },
-    { "label": "London Datastore — historic London elections", "url": "https://data.london.gov.uk/elections/" }
+    {
+      "label": "Rallings & Thrasher, London County Council Elections 1889–1961 (Elections Centre)",
+      "url": "https://www.electionscentre.co.uk/"
+    },
+    {
+      "label": "London Datastore — historic London elections",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "Wikipedia — 1961 London County Council election",
+      "url": "https://en.wikipedia.org/wiki/1961_London_County_Council_election"
+    }
   ]
 }

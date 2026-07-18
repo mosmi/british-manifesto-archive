@@ -18,14 +18,129 @@
     "totalSeats": 92,
     "system": "First-past-the-post",
     "results": [
-      { "party": "conservative", "seats": 64, "pct": 52.5 },
-      { "party": "labour", "seats": 28, "pct": 32.9 },
-      { "party": "libdem", "seats": 0, "pct": 7.8 }
+      {
+        "party": "conservative",
+        "seats": 64,
+        "pct": 52.5
+      },
+      {
+        "party": "labour",
+        "seats": 28,
+        "pct": 32.9
+      },
+      {
+        "party": "libdem",
+        "seats": 0,
+        "pct": 7.8
+      }
     ],
-    "note": "92 single-member electoral divisions. From 1977 all aldermen left office and no further aldermen were appointed."
+    "note": "92 single-member electoral divisions. From 1977 all aldermen left office and no further aldermen were appointed.",
+    "otherVotes": [
+      {
+        "name": "National Front",
+        "votes": 119060,
+        "pct": 5.31
+      },
+      {
+        "name": "National Party",
+        "votes": 8300,
+        "pct": 0.37
+      },
+      {
+        "name": "Communist",
+        "votes": 8267,
+        "pct": 0.37
+      },
+      {
+        "name": "Abolish GLC",
+        "votes": 7869,
+        "pct": 0.35
+      },
+      {
+        "name": "Socialist (International Marxist)",
+        "votes": 1930,
+        "pct": 0.09
+      },
+      {
+        "name": "People and Agrarian Party",
+        "votes": 1621,
+        "pct": 0.07
+      },
+      {
+        "name": "Independent Conservative",
+        "votes": 1025,
+        "pct": 0.05
+      },
+      {
+        "name": "Independent Liberal",
+        "votes": 878,
+        "pct": 0.04
+      },
+      {
+        "name": "English Nationalist",
+        "votes": 685,
+        "pct": 0.03
+      },
+      {
+        "name": "North East Tottenham Campaign Against Traffic",
+        "votes": 646,
+        "pct": 0.03
+      },
+      {
+        "name": "Independent",
+        "votes": 605,
+        "pct": 0.03
+      },
+      {
+        "name": "Fellowship Party",
+        "votes": 552,
+        "pct": 0.02
+      },
+      {
+        "name": "Socialist Party of Great Britain",
+        "votes": 502,
+        "pct": 0.02
+      },
+      {
+        "name": "Ecology",
+        "votes": 298,
+        "pct": 0.01
+      },
+      {
+        "name": "Medical Practitioner",
+        "votes": 290,
+        "pct": 0.01
+      },
+      {
+        "name": "New Britain",
+        "votes": 254,
+        "pct": 0.01
+      },
+      {
+        "name": "Sales Representative",
+        "votes": 175,
+        "pct": 0.01
+      },
+      {
+        "name": "Co-operative Housing",
+        "votes": 67,
+        "pct": 0.0
+      },
+      {
+        "name": "Democratic Monarchist White Resident Home Owner",
+        "votes": 51,
+        "pct": 0.0
+      }
+    ]
   },
   "sources": [
-    { "label": "London Datastore — Greater London Council Election 1977", "url": "https://data.london.gov.uk/elections/" },
-    { "label": "1977 Greater London Council election (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1977_Greater_London_Council_election" }
+    {
+      "label": "London Datastore — Greater London Council Election 1977",
+      "url": "https://data.london.gov.uk/elections/"
+    },
+    {
+      "label": "1977 Greater London Council election (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1977_Greater_London_Council_election"
+    }
   ]
 }

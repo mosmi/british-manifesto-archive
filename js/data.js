@@ -327,6 +327,13 @@ const PARTIES = {
     nation: 'others',
     description: 'The Common Wealth Party was founded in 1942 by Sir Richard Acland as a socialist party committed to common ownership and postwar reconstruction. It won its only Westminster seat at the 1945 general election when Ernest Millington took Chelmsford. The party declined rapidly afterwards and was dissolved later that year, with many members joining the Labour Party.',
   },
+  spgb: {
+    id: 'spgb', name: 'Socialist Party of Great Britain', shortName: 'SPGB',
+    color: '#A61C30', dim: 'rgba(166,28,48,0.14)',
+    founded: 1904, spectrum: 'Far-left / World socialism', isPrimary: false,
+    nation: 'others',
+    description: 'The Socialist Party of Great Britain (SPGB) was founded in 1904 as a breakaway from the Social Democratic Federation and is the oldest existing socialist party in Britain. An "impossibilist" party, it advocates world socialism established by a conscious democratic majority, refuses to campaign for reforms of capitalism, and famously makes no election promises. It has contested elections at every level without ever winning a seat, including the London County Council election of 1958, when it stood three candidates in East London.',
+  },
   communist: {
     id: 'communist', name: 'Communist Party of Great Britain', shortName: 'Communist',
     color: '#EF0000', dim: 'rgba(239,0,0,0.14)',
@@ -593,6 +600,13 @@ const PARTIES = {
     nation: 'others',
     description: 'Pirate Party UK was founded in 2009 as part of the international Pirate Party movement, which originated in Sweden in 2006. The party campaigns for digital rights, civil liberties, copyright and patent reform, net neutrality, privacy, and government transparency. It fielded candidates in the 2010, 2015 and 2017 general elections, never winning a Westminster seat. The party produced crowd-sourced, openly licensed manifestos — its 2015 document invited public contributions via Reddit, and its 2017 "Open Manifesto" was released under a Creative Commons zero licence. Pirate Party UK was dissolved in 2020.',
   },
+  cista: {
+    id: 'cista', name: 'Cannabis Is Safer Than Alcohol', shortName: 'CISTA',
+    color: '#2E8B57', dim: 'rgba(46,139,87,0.14)',
+    founded: 2015, spectrum: 'Single-issue / Drug reform', isPrimary: false,
+    nation: 'others',
+    description: 'Cannabis Is Safer Than Alcohol (CISTA) was registered as a political party in March 2015 under leader Paul Birch to campaign for evidence-based drug-law reform, starting with the legal regulation of cannabis. It fielded 32 candidates across England, Scotland, Wales and Northern Ireland at the 2015 general election — the first pro-reform single-issue party to contest seats in all four nations — and fielded Lee Harris as its candidate for Mayor of London in 2016.',
+  },
   changeuk: {
     id: 'changeuk', name: 'Change UK', shortName: 'Change UK',
     color: '#3B5998', dim: 'rgba(59,89,152,0.14)',
@@ -746,6 +760,20 @@ const PARTIES = {
     founded: 2014, spectrum: 'Left / Socialist', isPrimary: false,
     nation: 'others',
     description: 'Socialist Alternative is a Trotskyist organisation that has contested UK elections, including the 2015 general election, on an anti-austerity socialist platform.',
+  },
+  socialistlabour: {
+    id: 'socialistlabour', name: 'Socialist Labour Party', shortName: 'Socialist Labour',
+    color: '#9B1B30', dim: 'rgba(155,27,48,0.14)',
+    founded: 1996, spectrum: 'Left / Socialist', isPrimary: false,
+    nation: 'others',
+    description: 'The Socialist Labour Party was founded in 1996 by Arthur Scargill after he left the Labour Party. It campaigns for public ownership, trade union rights, and a socialist programme, and is distinct from Labour, the Scottish Socialist Party, Socialist Alternative, and TUSC.',
+  },
+  liberal1989: {
+    id: 'liberal1989', name: 'Liberal Party (1989–)', shortName: 'Liberal Party',
+    color: '#FFD700', dim: 'rgba(255,215,0,0.14)',
+    founded: 1989, spectrum: 'Centre / Liberal', isPrimary: false,
+    nation: 'others',
+    description: 'The Liberal Party was formed in 1989 by members of the former Liberal Party who opposed its merger with the SDP. It is a distinct contemporary party from the Liberal Democrats and continues to contest general elections on a liberal platform.',
   },
   sdp: {
     id: 'sdp', name: 'Social Democratic Party', shortName: 'SDP',
@@ -1074,20 +1102,21 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 393, votes: 11967746, percentage: 49.7  },
-      { party: 'conservative', seats: 197, votes: 8716211, percentage: 36.2  },
+      { party: 'conservative', seats: 196, votes: 8699780, percentage: 36.1  },
       { party: 'libdem', seats:  12, votes: 2177938, percentage: 9  },
       { party: 'nationalliberal', seats:  11, votes: 686652, percentage: 2.9  },
       { party: 'independent', seats:   8, votes: 133191, percentage: 0.6  },
+      { party: 'ilp', seats:   3, votes: 46769, percentage: 0.2  },
       { party: 'national', seats:   2, votes: 130513, percentage: 0.5  },
-      { party: 'commonwealth', seats:   1, votes: 110634, percentage: 0.5  },
       { party: 'communist', seats:   2, votes: 97945, percentage: 0.4  },
       { party: 'irishnationalist', seats:   2, votes: 92819, percentage: 0.4  },
       { party: 'nationalindependent', seats:   2, votes: 65171, percentage: 0.3  },
       { party: 'indlabour', seats:   2, votes: 63135, percentage: 0.3  },
       { party: 'indconservative', seats:   2, votes: 57823, percentage: 0.2  },
-      { party: 'ilp', seats:   3, votes: 46769, percentage: 0.2  },
-      { party: 'indprogressive', seats:   1, votes: 45967, percentage: 0.1  },
       { party: 'indliberal', seats:   2, votes: 30450, percentage: 0.1  },
+      { party: 'commonwealth', seats:   1, votes: 110634, percentage: 0.5  },
+      { party: 'indprogressive', seats:   1, votes: 45967, percentage: 0.1  },
+      { party: 'speaker', seats:   1, votes: 16431, percentage: 0.1  },
     ],
   },
   {
@@ -1113,13 +1142,13 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 315, votes: 13266176, percentage: 46.1  },
-      { party: 'conservative', seats: 277, votes: 12492404, percentage: 43.4  },
-      { party: 'uup', seats:  10, votes: 0, percentage: 0  },
+      { party: 'conservative', seats: 277, votes: 11482357, percentage: 39.9  },
+      { party: 'uup', seats:  10, votes: 352300, percentage: 1.2  },
       { party: 'libdem', seats:   9, votes: 2621487, percentage: 9.1  },
-      { party: 'natlibconservative', seats:   9, votes: 0, percentage: 0  },
-      { party: 'nationalliberal', seats:   2, votes: 0, percentage: 0  },
-      { party: 'irishnationalist', seats:   2, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
+      { party: 'natlibconservative', seats:   9, votes: 815118, percentage: 2.8  },
+      { party: 'nationalliberal', seats:   2, votes: 181137, percentage: 0.6  },
+      { party: 'irishnationalist', seats:   2, votes: 65200, percentage: 0.2  },
+      { party: 'speaker', seats:   1, votes: 24703, percentage: 0.1  },
     ],
   },
   {
@@ -1144,15 +1173,15 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  1, votes: 0, percentage: 2.7 },
     },
     results: [
-      { party: 'conservative', seats: 297, votes: 13717538, percentage: 48  },
+      { party: 'conservative', seats: 297, votes: 12574037, percentage: 44.0  },
       { party: 'labour', seats: 295, votes: 13948605, percentage: 48.8  },
-      { party: 'natlibconservative', seats:  14, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   9, votes: 0, percentage: 0  },
+      { party: 'natlibconservative', seats:  14, votes: 986942, percentage: 3.5  },
+      { party: 'uup', seats:   9, votes: 274900, percentage: 1.0  },
       { party: 'libdem', seats:   6, votes: 730546, percentage: 2.5  },
-      { party: 'irishlabour', seats:   1, votes: 0, percentage: 0  },
-      { party: 'nationalliberal', seats:   1, votes: 0, percentage: 0  },
-      { party: 'antipartition', seats:   1, votes: 0, percentage: 0  },
-      { party: 'irishrepublican', seats:   1, votes: 0, percentage: 0  },
+      { party: 'irishlabour', seats:   1, votes: 33714, percentage: 0.1  },
+      { party: 'nationalliberal', seats:   1, votes: 70496, percentage: 0.2  },
+      { party: 'antipartition', seats:   1, votes: 32717, percentage: 0.1  },
+      { party: 'irishrepublican', seats:   1, votes: 33094, percentage: 0.1  },
     ],
   },
   {
@@ -1177,13 +1206,14 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  1, votes: 0, percentage: 1.9 },
     },
     results: [
-      { party: 'conservative', seats: 320, votes: 13286569, percentage: 49.7  },
+      { party: 'conservative', seats: 319, votes: 12843969, percentage: 48.0  },
       { party: 'labour', seats: 277, votes: 12404970, percentage: 46.4  },
       { party: 'natlibconservative', seats:  13, votes: 0, percentage: 0  },
-      { party: 'uup', seats:  10, votes: 0, percentage: 0  },
+      { party: 'uup', seats:  10, votes: 442600, percentage: 1.7  },
       { party: 'libdem', seats:   6, votes: 722405, percentage: 2.7  },
+      { party: 'sinnfein', seats:   2, votes: 168400, percentage: 0.6  },
       { party: 'nationalliberal', seats:   2, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   2, votes: 0, percentage: 0  },
+      { party: 'speaker', seats:   1, votes: 25372, percentage: 0.1  },
     ],
   },
   {
@@ -1208,14 +1238,13 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  1, votes: 0, percentage: 4.1 },
     },
     results: [
-      { party: 'conservative', seats: 342, votes: 13749830, percentage: 49.4  },
+      { party: 'conservative', seats: 342, votes: 13304830, percentage: 47.8  },
       { party: 'labour', seats: 258, votes: 12215538, percentage: 43.8  },
-      { party: 'uup', seats:  11, votes: 0, percentage: 0  },
+      { party: 'uup', seats:  12, votes: 445000, percentage: 1.6  },
       { party: 'natlibconservative', seats:  10, votes: 0, percentage: 0  },
       { party: 'libdem', seats:   6, votes: 1638571, percentage: 5.9  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
+      { party: 'indunionist', seats:   1, votes: 12163, percentage: 0.0  },
       { party: 'nationalliberal', seats:   1, votes: 0, percentage: 0  },
-      { party: 'indunionist', seats:   1, votes: 0, percentage: 0  },
     ],
   },
   {
@@ -1241,11 +1270,10 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 317, votes: 12205814, percentage: 44.1  },
-      { party: 'conservative', seats: 289, votes: 12001396, percentage: 43.4  },
-      { party: 'uup', seats:  12, votes: 0, percentage: 0  },
+      { party: 'conservative', seats: 291, votes: 11577908, percentage: 41.9  },
+      { party: 'uup', seats:  12, votes: 401900, percentage: 1.5  },
       { party: 'libdem', seats:   9, votes: 3092878, percentage: 11.2  },
-      { party: 'others', seats:   2, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
+      { party: 'speaker', seats:   1, votes: 21588, percentage: 0.1  },
     ],
   },
   {
@@ -1270,12 +1298,12 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 363, votes: 13064951, percentage: 47.9  },
-      { party: 'conservative', seats: 241, votes: 11418433, percentage: 41.9  },
+      { party: 'conservative', seats: 241, votes: 11049833, percentage: 40.5  },
       { party: 'libdem', seats:  12, votes: 2327533, percentage: 8.5  },
-      { party: 'uup', seats:  11, votes: 0, percentage: 0  },
-      { party: 'republicanlabour', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:  11, votes: 368600, percentage: 1.4  },
+      { party: 'republicanlabour', seats:   1, votes: 26292, percentage: 0.1  },
       { party: 'natlibconservative', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
+      { party: 'speaker', seats:   1, votes: 30463, percentage: 0.1  },
     ],
   },
   {
@@ -1300,16 +1328,16 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  3, votes: 0, percentage: 5.5 },
     },
     results: [
-      { party: 'conservative', seats: 322, votes: 13145123, percentage: 46.4  },
+      { party: 'conservative', seats: 322, votes: 12723123, percentage: 44.9  },
       { party: 'labour', seats: 287, votes: 12175174, percentage: 43.1  },
-      { party: 'uup', seats:   8, votes: 0, percentage: 0  },
+      { party: 'uup', seats:   8, votes: 422000, percentage: 1.5  },
       { party: 'libdem', seats:   6, votes: 2030611, percentage: 7.2  },
-      { party: 'unity', seats:   2, votes: 0, percentage: 0  },
-      { party: 'protestantunionist', seats:   1, votes: 0, percentage: 0  },
-      { party: 'republicanlabour', seats:   1, votes: 0, percentage: 0  },
-      { party: 'indlabour', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   1, votes: 0, percentage: 0  },
+      { party: 'unity', seats:   2, votes: 71521, percentage: 0.3  },
+      { party: 'protestantunionist', seats:   1, votes: 24130, percentage: 0.1  },
+      { party: 'republicanlabour', seats:   1, votes: 30649, percentage: 0.1  },
+      { party: 'indlabour', seats:   1, votes: 16701, percentage: 0.1  },
+      { party: 'speaker', seats:   1, votes: 29417, percentage: 0.1  },
+      { party: 'snp', seats:   1, votes: 306800, percentage: 1.1  },
     ],
   },
   {
@@ -1336,15 +1364,16 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 301, votes: 11607044, percentage: 37.2  },
-      { party: 'conservative', seats: 297, votes: 11902195, percentage: 37.9  },
+      { party: 'conservative', seats: 296, votes: 11902195, percentage: 37.9  },
       { party: 'libdem', seats:  15, votes: 6042771, percentage: 19.3  },
-      { party: 'snp', seats:   7, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   7, votes: 0, percentage: 0  },
-      { party: 'vanguard', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   2, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   1, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   1, votes: 0, percentage: 0  },
-      { party: 'indlabour', seats:   1, votes: 0, percentage: 0  },
+      { party: 'snp', seats:   7, votes: 633200, percentage: 2.0  },
+      { party: 'uup', seats:   7, votes: 326400, percentage: 1.0  },
+      { party: 'vanguard', seats:   3, votes: 172100, percentage: 0.5  },
+      { party: 'plaid', seats:   2, votes: 171400, percentage: 0.5  },
+      { party: 'sdlp', seats:   1, votes: 160400, percentage: 0.5  },
+      { party: 'dup', seats:   1, votes: 58700, percentage: 0.2  },
+      { party: 'speaker', seats:   1, votes: 38452, percentage: 0.1  },
+      { party: 'indlabour', seats:   1, votes: 22918, percentage: 0.1  },
     ],
   },
   {
@@ -1370,15 +1399,16 @@ const ELECTIONS = [
     },
     results: [
       { party: 'labour', seats: 319, votes: 11431491, percentage: 39.2  },
-      { party: 'conservative', seats: 277, votes: 10248856, percentage: 35.8  },
+      { party: 'conservative', seats: 276, votes: 10213151, percentage: 35.0  },
       { party: 'libdem', seats:  13, votes: 5030173, percentage: 18.3  },
-      { party: 'snp', seats:  11, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   6, votes: 0, percentage: 0  },
-      { party: 'vanguard', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   3, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   1, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   1, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
+      { party: 'snp', seats:  11, votes: 839600, percentage: 2.9  },
+      { party: 'uup', seats:   6, votes: 256100, percentage: 0.9  },
+      { party: 'plaid', seats:   3, votes: 166300, percentage: 0.6  },
+      { party: 'vanguard', seats:   3, votes: 126598, percentage: 0.4  },
+      { party: 'sdlp', seats:   1, votes: 154200, percentage: 0.5  },
+      { party: 'dup', seats:   1, votes: 59500, percentage: 0.2  },
+      { party: 'speaker', seats:   1, votes: 35705, percentage: 0.1  },
+      { party: 'independent', seats:   1, votes: 32980, percentage: 0.1  },
     ],
   },
   {
@@ -1405,16 +1435,16 @@ const ELECTIONS = [
     },
     results: [
       { party: 'conservative', seats: 339, votes: 13069731, percentage: 43.9  },
-      { party: 'labour', seats: 268, votes: 11532918, percentage: 36.9  },
+      { party: 'labour', seats: 268, votes: 11505883, percentage: 36.9  },
       { party: 'libdem', seats:  11, votes: 4285761, percentage: 13.8  },
-      { party: 'uup', seats:   6, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   2, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   2, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
-      { party: 'uuuc', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:   6, votes: 254600, percentage: 0.8  },
+      { party: 'dup', seats:   3, votes: 71000, percentage: 0.2  },
+      { party: 'plaid', seats:   2, votes: 132500, percentage: 0.4  },
+      { party: 'snp', seats:   2, votes: 504300, percentage: 1.6  },
+      { party: 'sdlp', seats:   1, votes: 126300, percentage: 0.4  },
+      { party: 'speaker', seats:   1, votes: 27035, percentage: 0.1  },
+      { party: 'independent', seats:   1, votes: 22398, percentage: 0.1  },
+      { party: 'uuuc', seats:   1, votes: 29249, percentage: 0.1  },
     ],
   },
   {
@@ -1429,7 +1459,7 @@ const ELECTIONS = [
       'Neil Kinnock begins rebuilding Labour in the years following',
     ],
     youtubeId: 'AZm_TTa8wcI',
-    extraManifestoParties: ['green'],
+    extraManifestoParties: ['green', 'scottishcon', 'welshcon'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 14, votes: 0, percentage: 31.0 },
       welshlab:    { party: 'welshlab',    seats: 20, votes: 0, percentage: 37.5 },
@@ -1442,13 +1472,13 @@ const ELECTIONS = [
       { party: 'conservative', seats: 397, votes: 13012316, percentage: 42.4  },
       { party: 'labour', seats: 209, votes: 8271837, percentage: 27.6  },
       { party: 'libdem', seats:  23, votes: 7780486, percentage: 25.4  },
-      { party: 'uup', seats:  11, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   2, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   2, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   1, votes: 0, percentage: 0  },
-      { party: 'ulsterpopularunionist', seats:   1, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:  11, votes: 260000, percentage: 0.8  },
+      { party: 'dup', seats:   3, votes: 152700, percentage: 0.5  },
+      { party: 'plaid', seats:   2, votes: 125300, percentage: 0.4  },
+      { party: 'snp', seats:   2, votes: 332000, percentage: 1.1  },
+      { party: 'sinnfein', seats:   1, votes: 102700, percentage: 0.3  },
+      { party: 'ulsterpopularunionist', seats:   1, votes: 22861, percentage: 0.1  },
+      { party: 'sdlp', seats:   1, votes: 137000, percentage: 0.4  },
     ],
   },
   {
@@ -1474,17 +1504,17 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  9, votes: 0, percentage: 19.2 },
     },
     results: [
-      { party: 'conservative', seats: 375, votes: 13760935, percentage: 42.2  },
+      { party: 'conservative', seats: 375, votes: 13736747, percentage: 42.2  },
       { party: 'labour', seats: 229, votes: 10029027, percentage: 30.8  },
       { party: 'libdem', seats:  22, votes: 7341291, percentage: 22.6  },
-      { party: 'uup', seats:   9, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   3, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'ulsterpopularunionist', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:   9, votes: 276200, percentage: 0.8  },
+      { party: 'snp', seats:   3, votes: 416500, percentage: 1.3  },
+      { party: 'dup', seats:   3, votes: 85600, percentage: 0.3  },
+      { party: 'plaid', seats:   3, votes: 123600, percentage: 0.4  },
+      { party: 'sdlp', seats:   3, votes: 154100, percentage: 0.5  },
+      { party: 'sinnfein', seats:   1, votes: 83400, percentage: 0.3  },
+      { party: 'speaker', seats:   1, votes: 24188, percentage: 0.1  },
+      { party: 'ulsterpopularunionist', seats:   1, votes: 18420, percentage: 0.1  },
     ],
   },
   {
@@ -1513,12 +1543,12 @@ const ELECTIONS = [
       { party: 'conservative', seats: 336, votes: 14093007, percentage: 41.9  },
       { party: 'labour', seats: 271, votes: 11624109, percentage: 34.4  },
       { party: 'libdem', seats:  20, votes: 5990604, percentage: 17.8  },
-      { party: 'uup', seats:   9, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   4, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   4, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   3, votes: 0, percentage: 0  },
-      { party: 'ulsterpopularunionist', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:   9, votes: 271000, percentage: 0.8  },
+      { party: 'sdlp', seats:   4, votes: 154400, percentage: 0.5  },
+      { party: 'plaid', seats:   4, votes: 154900, percentage: 0.5  },
+      { party: 'snp', seats:   3, votes: 629600, percentage: 1.9  },
+      { party: 'dup', seats:   3, votes: 103000, percentage: 0.3  },
+      { party: 'ulsterpopularunionist', seats:   1, votes: 19305, percentage: 0.1  },
     ],
   },
   {
@@ -1548,15 +1578,15 @@ const ELECTIONS = [
       { party: 'labour', seats: 418, votes: 16661454, percentage: 43.2  },
       { party: 'conservative', seats: 165, votes: 9571673, percentage: 30.7  },
       { party: 'libdem', seats:  46, votes: 5181677, percentage: 16.8  },
-      { party: 'uup', seats:  10, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   6, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   4, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   2, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   2, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
-      { party: 'others', seats:   1, votes: 0, percentage: 0  },
-      { party: 'ukup', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:  10, votes: 258300, percentage: 0.8  },
+      { party: 'snp', seats:   6, votes: 621600, percentage: 2.0  },
+      { party: 'plaid', seats:   4, votes: 161000, percentage: 0.5  },
+      { party: 'sdlp', seats:   3, votes: 190800, percentage: 0.6  },
+      { party: 'sinnfein', seats:   2, votes: 126900, percentage: 0.4  },
+      { party: 'dup', seats:   2, votes: 107300, percentage: 0.3  },
+      { party: 'ukup', seats:   1, votes: 107300, percentage: 0.3  },
+      { party: 'independent', seats:   1, votes: 29354, percentage: 0.1  },
+      { party: 'speaker', seats:   1, votes: 23969, percentage: 0.1  },
     ],
   },
   {
@@ -1585,14 +1615,14 @@ const ELECTIONS = [
       { party: 'labour', seats: 412, votes: 10834800, percentage: 40.7  },
       { party: 'conservative', seats: 166, votes: 8355683, percentage: 31.7  },
       { party: 'libdem', seats:  52, votes: 4840340, percentage: 18.3  },
-      { party: 'uup', seats:   6, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   5, votes: 0, percentage: 0  },
-      { party: 'dup', seats:   5, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   4, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   4, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'others', seats:   1, votes: 0, percentage: 0  },
+      { party: 'uup', seats:   6, votes: 216800, percentage: 0.8  },
+      { party: 'snp', seats:   5, votes: 464300, percentage: 1.8  },
+      { party: 'dup', seats:   5, votes: 182000, percentage: 0.7  },
+      { party: 'sinnfein', seats:   4, votes: 175900, percentage: 0.7  },
+      { party: 'plaid', seats:   4, votes: 195900, percentage: 0.7  },
+      { party: 'sdlp', seats:   3, votes: 169900, percentage: 0.6  },
+      { party: 'speaker', seats:   1, votes: 16053, percentage: 0.1  },
+      { party: 'others', seats:   1, votes: 28487, percentage: 0.1  },
     ],
   },
   {
@@ -1608,7 +1638,7 @@ const ELECTIONS = [
       'Lowest Labour vote share since 1987 despite majority win',
     ],
     youtubeId: '-fz6OdDZhT0',
-    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'cpa', 'englishdemocrats', 'forwardwales', 'sea', 'veritas'],
+    extraManifestoParties: ['cooperative', 'ukip', 'bnp', 'respect', 'ssp', 'alliance', 'green', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'cpa', 'englishdemocrats', 'forwardwales', 'sea', 'veritas', 'socialistlabour'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  3, votes: 0, percentage: 21.4 },
       welshlab:    { party: 'welshlab',    seats: 29, votes: 0, percentage: 42.7 },
@@ -1621,15 +1651,15 @@ const ELECTIONS = [
       { party: 'labour', seats: 355, votes: 9552589, percentage: 35.2  },
       { party: 'conservative', seats: 199, votes: 8782966, percentage: 32.4  },
       { party: 'libdem', seats:  62, votes: 5961718, percentage: 22  },
-      { party: 'dup', seats:   9, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   6, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   5, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   3, votes: 0, percentage: 0  },
-      { party: 'respect', seats:   1, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
+      { party: 'dup', seats:   9, votes: 241900, percentage: 0.9  },
+      { party: 'snp', seats:   6, votes: 412300, percentage: 1.5  },
+      { party: 'sinnfein', seats:   5, votes: 174500, percentage: 0.6  },
+      { party: 'sdlp', seats:   3, votes: 125600, percentage: 0.5  },
+      { party: 'plaid', seats:   3, votes: 174800, percentage: 0.6  },
+      { party: 'respect', seats:   1, votes: 15891, percentage: 0.1  },
+      { party: 'independent', seats:   1, votes: 20505, percentage: 0.1  },
+      { party: 'uup', seats:   1, votes: 127400, percentage: 0.5  },
+      { party: 'speaker', seats:   1, votes: 15153, percentage: 0.1  },
     ],
   },
   {
@@ -1661,18 +1691,18 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats: 11, votes: 0, percentage: 18.9 },
     },
     results: [
-      { party: 'conservative', seats: 306, votes: 10737068, percentage: 36.1  },
-      { party: 'labour', seats: 258, votes: 8578244, percentage: 29  },
-      { party: 'libdem', seats:  57, votes: 6226587, percentage: 23  },
-      { party: 'dup', seats:   8, votes: 0, percentage: 0  },
-      { party: 'snp', seats:   6, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   5, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   3, votes: 0, percentage: 0  },
-      { party: 'alliance', seats:   1, votes: 0, percentage: 0  },
-      { party: 'green', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
+      { party: 'conservative', seats: 306, votes: 10703654, percentage: 36.1  },
+      { party: 'labour', seats: 258, votes: 8606517, percentage: 29.0  },
+      { party: 'libdem', seats:  57, votes: 6836248, percentage: 23.0  },
+      { party: 'dup', seats:   8, votes: 168216, percentage: 0.6  },
+      { party: 'snp', seats:   6, votes: 491386, percentage: 1.7  },
+      { party: 'sinnfein', seats:   5, votes: 171942, percentage: 0.6  },
+      { party: 'sdlp', seats:   3, votes: 110970, percentage: 0.4  },
+      { party: 'plaid', seats:   3, votes: 165394, percentage: 0.6  },
+      { party: 'alliance', seats:   1, votes: 42762, percentage: 0.1  },
+      { party: 'green', seats:   1, votes: 265243, percentage: 0.9  },
+      { party: 'speaker', seats:   1, votes: 22860, percentage: 0.1  },
+      { party: 'independent', seats:   1, votes: 21181, percentage: 0.1  },
     ],
   },
   {
@@ -1689,7 +1719,7 @@ const ELECTIONS = [
       'Miliband resigns; Jeremy Corbyn elected Labour leader months later',
     ],
     youtubeId: 'VjJDyIAI4SI',
-    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'animalpolitics', 'nicon', 'nha', 'ssp', 'socialistalternative', 'tusc', 'workerspartyie'],
+    extraManifestoParties: ['cooperative', 'gpni', 'pirate', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'omrlp', 'animalpolitics', 'nicon', 'nha', 'ssp', 'socialistalternative', 'tusc', 'workerspartyie', 'alliance', 'socialistlabour', 'cista'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 11, votes: 0, percentage: 27.2 },
       welshlab:    { party: 'welshlab',    seats: 25, votes: 0, percentage: 36.9 },
@@ -1699,19 +1729,19 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  1, votes: 0, percentage: 7.5 },
     },
     results: [
-      { party: 'conservative', seats: 330, votes: 11334576, percentage: 36.8  },
-      { party: 'labour', seats: 232, votes: 9315310, percentage: 30.4  },
-      { party: 'snp', seats:  56, votes: 1454101, percentage: 4.7  },
-      { party: 'dup', seats:   8, votes: 0, percentage: 0  },
-      { party: 'libdem', seats:   8, votes: 2446903, percentage: 7.9  },
-      { party: 'sinnfein', seats:   4, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   3, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   3, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   2, votes: 0, percentage: 0  },
-      { party: 'green', seats:   1, votes: 1111271, percentage: 3.6  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'ukip', seats:   1, votes: 3883988, percentage: 12.6  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
+      { party: 'conservative', seats: 330, votes: 11299609, percentage: 36.8  },
+      { party: 'labour', seats: 232, votes: 9347273, percentage: 30.4  },
+      { party: 'snp', seats:  56, votes: 1454436, percentage: 4.7  },
+      { party: 'dup', seats:   8, votes: 184260, percentage: 0.6  },
+      { party: 'libdem', seats:   8, votes: 2415916, percentage: 7.9  },
+      { party: 'sinnfein', seats:   4, votes: 176232, percentage: 0.6  },
+      { party: 'plaid', seats:   3, votes: 181704, percentage: 0.6  },
+      { party: 'sdlp', seats:   3, votes: 99809, percentage: 0.3  },
+      { party: 'uup', seats:   2, votes: 114935, percentage: 0.4  },
+      { party: 'green', seats:   1, votes: 1111603, percentage: 3.6  },
+      { party: 'speaker', seats:   1, votes: 34617, percentage: 0.1  },
+      { party: 'ukip', seats:   1, votes: 3881099, percentage: 12.6  },
+      { party: 'independent', seats:   1, votes: 17689, percentage: 0.1  },
     ],
   },
   {
@@ -1728,7 +1758,7 @@ const ELECTIONS = [
       'Youth turnout rises sharply; "youthquake" credited with Labour surge',
     ],
     youtubeId: '1PXnD5jEa-A',
-    extraManifestoParties: ['cooperative', 'gpni', 'nha', 'pirate', 'ukip', 'uup', 'wep', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'nicon'],
+    extraManifestoParties: ['cooperative', 'gpni', 'nha', 'pirate', 'ukip', 'uup', 'wep', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'nicon', 'alliance', 'sdlp', 'liberal1989'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  8, votes: 0, percentage: 33.6 },
       welshlab:    { party: 'welshlab',    seats: 28, votes: 0, percentage: 49.0 },
@@ -1738,16 +1768,16 @@ const ELECTIONS = [
       scottishlibdem: { party: 'scottishlibdem', seats:  4, votes: 0, percentage: 6.8 },
     },
     results: [
-      { party: 'conservative', seats: 317, votes: 13636684, percentage: 42.4  },
-      { party: 'labour', seats: 262, votes: 12879100, percentage: 40  },
-      { party: 'snp', seats:  35, votes: 977569, percentage: 3  },
-      { party: 'libdem', seats:  12, votes: 2244577, percentage: 7.4  },
-      { party: 'dup', seats:  10, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   7, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   4, votes: 0, percentage: 0  },
-      { party: 'green', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   1, votes: 0, percentage: 0  },
+      { party: 'conservative', seats: 317, votes: 13636684, percentage: 42.3  },
+      { party: 'labour', seats: 262, votes: 12877918, percentage: 40.0  },
+      { party: 'snp', seats:  35, votes: 977568, percentage: 3.0  },
+      { party: 'libdem', seats:  12, votes: 2371861, percentage: 7.4  },
+      { party: 'dup', seats:  10, votes: 292316, percentage: 0.9  },
+      { party: 'sinnfein', seats:   7, votes: 238915, percentage: 0.7  },
+      { party: 'plaid', seats:   4, votes: 164466, percentage: 0.5  },
+      { party: 'green', seats:   1, votes: 512327, percentage: 1.6  },
+      { party: 'speaker', seats:   1, votes: 34299, percentage: 0.1  },
+      { party: 'independent', seats:   1, votes: 16148, percentage: 0.1  },
     ],
   },
   {
@@ -1765,7 +1795,7 @@ const ELECTIONS = [
     ],
     youtubeId: '_mv7HkOx-Hs',
     manifestoPartyLabels: { reform: 'Brexit Party' },
-    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'uup', 'reform', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'cpa', 'gwlad', 'sdp', 'yorkshire'],
+    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'uup', 'reform', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem', 'animalpolitics', 'cpa', 'gwlad', 'sdp', 'yorkshire', 'liberal1989'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats: 14, votes: 0, percentage: 36.1 },
       welshlab:    { party: 'welshlab',    seats: 22, votes: 0, percentage: 40.9 },
@@ -1776,16 +1806,16 @@ const ELECTIONS = [
     },
     results: [
       { party: 'conservative', seats: 365, votes: 13966454, percentage: 43.6  },
-      { party: 'labour', seats: 202, votes: 10269441, percentage: 32.2  },
-      { party: 'snp', seats:  48, votes: 1241298, percentage: 3.9  },
-      { party: 'libdem', seats:  11, votes: 3469961, percentage: 11.6  },
-      { party: 'dup', seats:   8, votes: 0, percentage: 0  },
-      { party: 'sinnfein', seats:   7, votes: 0, percentage: 0  },
-      { party: 'plaid', seats:   4, votes: 0, percentage: 0  },
-      { party: 'sdlp', seats:   2, votes: 0, percentage: 0  },
-      { party: 'green', seats:   1, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'alliance', seats:   1, votes: 0, percentage: 0  },
+      { party: 'labour', seats: 202, votes: 10269051, percentage: 32.1  },
+      { party: 'snp', seats:  48, votes: 1242380, percentage: 3.9  },
+      { party: 'libdem', seats:  11, votes: 3696419, percentage: 11.5  },
+      { party: 'dup', seats:   8, votes: 244128, percentage: 0.8  },
+      { party: 'sinnfein', seats:   7, votes: 181853, percentage: 0.6  },
+      { party: 'plaid', seats:   4, votes: 153265, percentage: 0.5  },
+      { party: 'sdlp', seats:   2, votes: 118737, percentage: 0.4  },
+      { party: 'green', seats:   1, votes: 835597, percentage: 2.6  },
+      { party: 'speaker', seats:   1, votes: 26831, percentage: 0.1  },
+      { party: 'alliance', seats:   1, votes: 134115, percentage: 0.4  },
     ],
   },
   {
@@ -1802,7 +1832,7 @@ const ELECTIONS = [
       'Rishi Sunak concedes defeat in a dawn address outside Downing Street',
     ],
     youtubeId: 'l5Fr8fiNp-Y',
-    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba', 'animalpolitics', 'aontu', 'cpa', 'communist', 'nicon', 'pbp', 'rejoin', 'sdp', 'tusc', 'walesgrn'],
+    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba', 'animalpolitics', 'aontu', 'cpa', 'communist', 'nicon', 'pbp', 'rejoin', 'sdp', 'tusc', 'walesgrn', 'liberal1989'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 18.2 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 37.0 },
@@ -1817,17 +1847,17 @@ const ELECTIONS = [
       { party: 'conservative', seats: 121, votes: 6828925, percentage: 23.7  },
       { party: 'libdem', seats:  72, votes: 3519143, percentage: 12.2  },
       { party: 'snp', seats:   9, votes: 724758, percentage: 2.5  },
-      { party: 'sinnfein', seats:   7, votes: 0, percentage: 0  },
-      { party: 'independent', seats:   6, votes: 0, percentage: 0  },
-      { party: 'reform', seats:   5, votes: 4125246, percentage: 14.3  },
-      { party: 'dup', seats:   5, votes: 0, percentage: 0  },
-      { party: 'green', seats:   4, votes: 1945308, percentage: 6.8  },
+      { party: 'sinnfein', seats:   7, votes: 210891, percentage: 0.7  },
+      { party: 'independent', seats:   6, votes: 99234, percentage: 0.3  },
+      { party: 'reform', seats:   5, votes: 4117610, percentage: 14.3  },
+      { party: 'dup', seats:   5, votes: 172058, percentage: 0.6  },
+      { party: 'green', seats:   4, votes: 1843124, percentage: 6.4  },
       { party: 'plaid', seats:   4, votes: 194811, percentage: 0.7  },
-      { party: 'sdlp', seats:   2, votes: 0, percentage: 0  },
-      { party: 'speaker', seats:   1, votes: 0, percentage: 0  },
-      { party: 'alliance', seats:   1, votes: 0, percentage: 0  },
-      { party: 'tuv', seats:   1, votes: 0, percentage: 0  },
-      { party: 'uup', seats:   1, votes: 0, percentage: 0  },
+      { party: 'sdlp', seats:   2, votes: 86861, percentage: 0.3  },
+      { party: 'speaker', seats:   1, votes: 25238, percentage: 0.1  },
+      { party: 'alliance', seats:   1, votes: 117191, percentage: 0.4  },
+      { party: 'tuv', seats:   1, votes: 48685, percentage: 0.2  },
+      { party: 'uup', seats:   1, votes: 94779, percentage: 0.3  },
     ],
   },
 ];
@@ -1863,11 +1893,12 @@ const NAV_PARTIES = {
 
 const OTHERS_PARTIES = [
   'alba', 'antipartition', 'aontu', 'animalpolitics', 'bnp', 'cooperative', 'commonwealth', 'communist',
-  'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
+  'cista', 'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
   'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
   'irishlabour', 'irishnationalist', 'irishrepublican', 'mebyon', 'nha', 'nationalindependent',
   'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'pirate', 'protestantunionist',
   'referendumparty', 'rejoin', 'republicanlabour', 'respect', 'restorebrit', 'sdp', 'socialistalternative',
+  'socialistlabour', 'spgb', 'liberal1989',
   'ssp', 'speaker', 'stuckist', 'tusc', 'ukup',
   'ulsterpopularunionist', 'uuuc', 'unity', 'veritas', 'wep', 'workersparty', 'yorkshire', 'yourparty',
 ];
@@ -2182,39 +2213,94 @@ function buildPartyBrowseCard(pid, opts = {}) {
   </a>`;
 }
 
-/** Leader line + optional role for devolved portal election cards (mock 1e). */
-function devolvedTimelineCardMeta(e) {
-  if (e.firstMinister && e.deputyFirstMinister) {
-    return { name: `${e.firstMinister} & ${e.deputyFirstMinister}`, role: '' };
-  }
-  if (e.firstMinister) {
-    return { name: e.firstMinister, role: '(First Minister)' };
-  }
-  if (e.mayorWinner && e.winnerName) {
-    return { name: e.winnerName, role: '(Mayor)' };
-  }
-  if (e.winnerName) {
-    return { name: e.winnerName, role: '' };
-  }
-  const controlParty = e.control && PARTIES?.[e.control];
-  return { name: controlParty?.shortName || controlParty?.name || '', role: '' };
+/** Controlling / largest party id for a devolved portal index entry. */
+function devolvedElectionWinnerPartyId(e) {
+  if (e.mayorWinner) return e.mayorWinner;
+  const results = e.results || [];
+  // Prefer control when it appears in seat results (handles aliases like brexit → reform).
+  if (e.control && results.some(r => r.party === e.control)) return e.control;
+  const top = results.slice().sort((a, b) => (b.seats || 0) - (a.seats || 0))[0];
+  return top?.party || e.control || null;
 }
 
 function devolvedTimelinePartyColor(e) {
-  const pid = e.mayorWinner || e.control;
+  const pid = devolvedElectionWinnerPartyId(e);
   if (!pid || !PARTIES?.[pid]) return 'var(--gold)';
   return getPartyColor(pid, e.year);
 }
 
+/** Winner kicker text for devolved portal election cards (mirrors Westminster cards). */
+function devolvedElectionWinnerLabel(e) {
+  const pid = devolvedElectionWinnerPartyId(e);
+  const result = (e.results || []).find(r => r.party === pid);
+  const seats = result?.seats || 0;
+  const party = pid && PARTIES?.[pid];
+  const name = result?.partyLabel
+    || (party ? (party.shortName || party.name) : '')
+    || e.winnerName
+    || '';
+  const body = e.body;
+
+  if (body === 'euro') {
+    return seats ? `${name} · ${seats} MEPs` : name;
+  }
+  if (body === 'gla' || e.mayorWinner) {
+    return seats ? `${name} · ${seats} Assembly seats` : name;
+  }
+
+  const threshold = e.majorityThreshold
+    || (e.totalSeats ? Math.floor(e.totalSeats / 2) + 1 : 0);
+  if (seats && threshold && seats < threshold) {
+    return `${name} minority · ${seats} seats`;
+  }
+  return seats ? `${name} · ${seats} seats` : name;
+}
+
+/** Person line under the winner kicker (First Minister / Mayor / FM & dFM). Omit for Europe. */
+function devolvedElectionPersonLine(e) {
+  if (e.body === 'euro') return '';
+  if (e.firstMinister && e.deputyFirstMinister) {
+    return `FM &amp; dFM: <span>${e.firstMinister} &amp; ${e.deputyFirstMinister}</span>`;
+  }
+  if (e.firstMinister) {
+    return `First Minister: <span>${e.firstMinister}</span>`;
+  }
+  if (e.mayorWinner && e.winnerName) {
+    return `Mayor: <span>${e.winnerName}</span>`;
+  }
+  return '';
+}
+
+/** Shared portal election card — same structure as Westminster `electionCardHtml`. */
 function buildDevolvedTimelineCard(href, e) {
-  const { name, role } = devolvedTimelineCardMeta(e);
-  const partyColor = devolvedTimelinePartyColor(e);
-  const leaderHtml = role
-    ? `<div class="london-timeline-leader">${name}<br><span class="london-timeline-role">${role}</span></div>`
-    : `<div class="london-timeline-leader">${name}</div>`;
-  return `<a href="${href}" class="london-timeline-card" style="--party-color:${partyColor}">
-    <div class="london-timeline-year">${e.displayYear}</div>
-    <div class="london-timeline-meta">${leaderHtml}</div>
+  const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
+  const pid = devolvedElectionWinnerPartyId(e);
+  const accent = (typeof partyAccentDerivedForYear === 'function' && pid)
+    ? partyAccentDerivedForYear(pid, e.year, theme)
+    : {
+        surface: devolvedTimelinePartyColor(e),
+        kicker: devolvedTimelinePartyColor(e),
+        border: 'rgba(255,255,255,0.07)',
+        raw: devolvedTimelinePartyColor(e),
+      };
+  const ghostDigits = String(e.displayYear || e.year).replace(/\D/g, '').slice(-2)
+    || String(e.year).slice(-2);
+  const longLabel = String(e.displayYear || '').includes(' ')
+    || String(e.displayYear || '').length > 5;
+  const ghostColour = typeof ghostTint === 'function'
+    ? ghostTint(accent.raw, theme)
+    : (typeof rgbaHex === 'function' ? rgbaHex(accent.raw, 0.07) : accent.raw);
+  const personLine = devolvedElectionPersonLine(e);
+  const personHtml = personLine ? `<div class="card-pm">${personLine}</div>` : '';
+  const seatBar = typeof electionSeatBarHtml === 'function' ? electionSeatBarHtml(e) : '';
+
+  return `<a href="${href}" class="election-card" data-winner="${pid || ''}" style="--party-border:${accent.border};--party-ghost:${ghostColour};--party-kicker:${accent.kicker};--party-surface:${accent.surface}">
+    <div class="card-ghost-year" aria-hidden="true">${ghostDigits}</div>
+    <div class="card-year${longLabel ? ' long-label' : ''}">${e.displayYear}</div>
+    <div class="card-date">${e.date || ''}</div>
+    <div class="card-winner"><div class="card-winner-dot"></div>${devolvedElectionWinnerLabel(e)}</div>
+    ${personHtml}
+    <div class="card-seats-bar">${seatBar}</div>
   </a>`;
 }
 

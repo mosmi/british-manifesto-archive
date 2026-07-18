@@ -16,7 +16,7 @@
     "SNP collapses from 48 to just 9 seats as Labour sweeps Scotland",
     "Rishi Sunak concedes defeat in a dawn address outside Downing Street"
   ],
-  "youtubeId": "",
+  "youtubeId": "l5Fr8fiNp-Y",
   "extraManifestoParties": [
     "cooperative",
     "gpni",
@@ -37,7 +37,8 @@
     "rejoin",
     "sdp",
     "tusc",
-    "walesgrn"
+    "walesgrn",
+    "liberal1989"
   ],
   "partyResults": {
     "welshcon": {
@@ -103,16 +104,34 @@
       "percentage": 12.2
     },
     {
+      "party": "snp",
+      "seats": 9,
+      "votes": 724758,
+      "percentage": 2.5
+    },
+    {
+      "party": "sinnfein",
+      "seats": 7,
+      "votes": 210891,
+      "percentage": 0.7
+    },
+    {
+      "party": "independent",
+      "seats": 6,
+      "votes": 99234,
+      "percentage": 0.3
+    },
+    {
       "party": "reform",
       "seats": 5,
       "votes": 4117610,
       "percentage": 14.3
     },
     {
-      "party": "snp",
-      "seats": 9,
-      "votes": 724758,
-      "percentage": 2.5
+      "party": "dup",
+      "seats": 5,
+      "votes": 172058,
+      "percentage": 0.6
     },
     {
       "party": "green",
@@ -127,16 +146,16 @@
       "percentage": 0.7
     },
     {
-      "party": "sinnfein",
-      "seats": 7,
-      "votes": 210891,
-      "percentage": 0.7
-    },
-    {
       "party": "sdlp",
       "seats": 2,
       "votes": 86861,
       "percentage": 0.3
+    },
+    {
+      "party": "speaker",
+      "seats": 1,
+      "votes": 25238,
+      "percentage": 0.1
     },
     {
       "party": "alliance",
@@ -145,28 +164,16 @@
       "percentage": 0.4
     },
     {
-      "party": "dup",
-      "seats": 5,
-      "votes": 172058,
-      "percentage": 0.6
-    },
-    {
-      "party": "uup",
-      "seats": 1,
-      "votes": 94779,
-      "percentage": 0.3
-    },
-    {
       "party": "tuv",
       "seats": 1,
       "votes": 48685,
       "percentage": 0.2
     },
     {
-      "party": "others",
-      "seats": 7,
-      "votes": 893576,
-      "percentage": 3.2
+      "party": "uup",
+      "seats": 1,
+      "votes": 94779,
+      "percentage": 0.3
     }
   ]
 }

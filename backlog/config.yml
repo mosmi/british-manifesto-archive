@@ -1,0 +1,16 @@
+# Backlog.md configuration
+# https://github.com/MrLesk/Backlog.md
+project_name: British Manifesto Archive
+default_status: todo
+statuses:
+  - todo
+  - in-progress
+  - done
+labels:
+  - hexmaps
+  - transcription
+  - data
+  - content
+  - frontend
+  - ops
+date_format: yyyy-mm-dd

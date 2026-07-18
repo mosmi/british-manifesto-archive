@@ -11,6 +11,81 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-18 — London on party pages; holdings fix; SPGB 1958 manifesto (Claude Fable 5)
+Party pages now have London Results + London Manifestos sections and a London
+count in "Elections contested" (`getLondonPartyHistory`/`londonPartyElectionRow`
+in js/london.js; wired in renderParty in js/app.js). **Fixed party-holdings**:
+`buildHoldings` in tools/og-generator/build-manifest.mjs counted every flat
+manifests-index entry as Westminster — the 3 `london/gla-*` entries inflated
+Green to "14 Westminster" (correct: 11) and mayoral-only candidates (Binface,
+London Real, Fosh…) were bucketed as Westminster instead of London; also now
+derives party ids from pdf paths for partyLabel-only entries.
+`data/party-holdings.json` regenerated. Note the two metrics still differ by
+design: homepage cards count manifestos held; party heroes count elections
+contested (e.g. Green: 9 EP contested vs 6 EP manifestos). Added the **SPGB
+1958 LCC manifesto** (Socialist Standard No. 644, April 1958) as markdown at
+manifestos/london/lcc-1958/spgb/, a `spgb` PARTIES entry (est. 1904, in
+OTHERS_PARTIES), an lcc-1958 manifests entry + source, and manifests-index
+registration; seo.json rebuilt. londonManifestoCard now omits the PDF link for
+text-only entries. Script `?v=` bumped to 2026071811 for data.js, london.js,
+app.js, data-loader.js.
+
+## 2026-07-18 — LCC accordion + 1946 seat correction (Claude Fable 5)
+Extended the "Other parties (no seats)" accordion to the six LCC pages
+(1946–61). Minor-party figures from the Wikipedia LCC election pages (citing
+The Times and the Elections Centre compendium); whole-county Con/Lab/Lib/Oth
+checked against the compendium PDF. Each accordion carries a note that
+bloc-vote bases differ slightly between sources. **Corrected lcc-1946**: the
+compendium's whole-county row credits 94 seats to Labour, but contemporary
+reports record Labour 90, Municipal Reform 30, Liberal 2 (Percy Harris &
+Edward Martell, Bethnal Green) and Communist 2 (Mile End — the CPGB's only
+LCC seats); results, summary, highlights and note updated, Wikipedia source
+links added to all six. Cache `2026071810`.
+
+## 2026-07-18 — "Other parties (no seats)" accordion on GLC pages (Claude Fable 5)
+Rolled the Holyrood-style accordion out to the six GLC pages: added
+`council.otherVotes` [{name, votes, pct}] to `glc-{1964..1981}.json` from the
+booklets' "votes by party" tables, and rendered it in `londonCouncilSection`
+(js/london.js), gated on the field so LCC pages are unchanged until data exists.
+Rules: ballot-label variants already folded into the archive's main lines stay
+out of the accordion (Lab Co-op 1977/81; Con Right to Buy, Liberal Focus/Team/
+SD/Radical 1981 — verified numerically); NF listed (no seats). Sums reconcile
+exactly with booklet "Other" totals (1970: 153,219; 1973: 41,801) and with the
+1981 grand total after fixing two OCR misreads against the scan (SLAG 1,727 not
+1,127; LIBR 1,572 not 1,512). 1964–70 rows carry a note that percentages are
+shares of all bloc votes cast, a different basis from the main table's figures.
+Cache `2026071809`.
+
+## 2026-07-18 — GLC hexmaps made geography-faithful; winner names filled (Claude Fable 5)
+Redesigned `data/hex/glc-grid.json` (92 divisions, 1973–81) and
+`glc-borough-grid.json` (32 boroughs, 1964–70) so the overall cartogram reads as
+Greater London: borough clusters kept contiguous and anchored at true compass
+positions (Hillingdon west edge, Havering east wing, Bexley SE, Croydon/Bromley
+south arc, Barnet/Enfield north bumps, Kingston/Surbiton SW pinch); Thames
+respected relationally (Greenwich across from Stepney & Poplar, Woolwich East
+across from Newham South). Method designed against the GLCE booklets'
+"Political representation of constituencies" diagrams. Coordinates patched into
+all six `data/hex/glc/*.hexjson`. Known compromises: inner-east London inflates
+~1–2 hexes east; Fulham/Chelsea sit in the south-bank row (latitude-correct);
+32-map Croydon–Bromley adjacency lost. Also filled all 271 missing 1973/77/81
+`winner` names by re-parsing GLCE Table 1 with a column-aware pdfplumber parser
+(winner = first-listed candidate; party cross-validated 92/92/92, zero
+mismatches; 1981 scanned-OCR 'a'→'il' fixups cross-checked against 1973/77 and
+Wikipedia, e.g. Chipping Barnet 1981 = John Reveley Major). Cache `2026071808`.
+
+## 2026-07-17 — Fill Westminster `party_leader` nulls
+Fixed `parseYamlScalar` so YAML `null`/`~` no longer render as the string “null”.
+Filled 11 of 12 Westminster gaps (Green principal speakers 2001/05; Co-op Chairs
+Gareth Thomas / Anna Turley / Jim McMahon; Pirate Loz Kaye & David Elston acting;
+NHA Alex Ashman). Left GPNI 2010 as `null` — leadership post created Jan 2011.
+Cache `2026071727`.
+
+## 2026-07-17 — CISTA 2015 Westminster manifesto
+Added Cannabis Is Safer Than Alcohol (`cista`) party record and 2015 GE manifesto (PDF + Medium-sourced `manifesto.md` + transparent A4 cover). Wired into `extraManifestoParties`, `manifestos-index.json`, pdf-sizes, latest-additions, SEO/sitemap; also mapped Lee Harris on `gla-2016` to `party: cista`. Cache `2026071724`.
+
+## 2026-07-17 — Audited, visually cleaned, and finalized all 47 London mayoral manifestos
+Using the page-ledger pipeline and Gemini Vision API (`gemini-2.5-flash`), audited and visually repaired all 47 London devolved election manifestos across all available years (2024, 2021, 2016, 2012, 2008, 2004, and 2000). This fixed layout/column order discrepancies, headers/footers, and missing blocks. Generated correct YAML frontmatter and canonical H1 headers for each manifesto, copied them to the repository, and updated the site index, PDF sizes, sitemaps, and homepage carousels.
+
 ## 2026-07-16 — Convert London devolved election PDFs to markdown
 Batch converted all 147 London devolved election PDFs from 'Original documents/Devolved Elections/London' to markdown versions using Microsoft's MarkItDown. The converted files are saved under 'Markdown versions/London', maintaining the original sub-folder year/materials structure. Resolved unreadable outputs by applying a custom font-based shift decoder (+31/+32 character offset) to rebuild the scrambled 2004 Simon Hughes PDF, and cleaned up bullet/spacer CIDs in the 2008 Boris Johnson PDF. Transcribed the 6 scanned/image-only PDFs from the 2024 London election (including Susan Hall and Brian Rose) using Gemini's OCR vision endpoint.
 

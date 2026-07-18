@@ -115,5 +115,7 @@ const PARTY_COLOURS = {
   "sdp": "#E31C79",
   "yorkshire": "#00AEEF",
   "rejoin": "#003399",
-  "aontu": "#445C2A"
+  "aontu": "#445C2A",
+  "socialistlabour": "#9B1B30",
+  "liberal1989": "#FFD700"
 };

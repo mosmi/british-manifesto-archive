@@ -2,7 +2,7 @@
 election_year: 2017
 party_id: pirate
 party_name: Pirate Party UK
-party_leader: null
+party_leader: David Elston (acting)
 political_spectrum: centre
 victory: false
 government_outcome: opposition

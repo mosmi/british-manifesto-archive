@@ -1,0 +1,649 @@
+{
+  "layout": "odd-r",
+  "hexes": {
+    "glc-1981-acton": {
+      "n": "Acton",
+      "q": 2,
+      "r": 5,
+      "winner": "Dobson, John C",
+      "party": "conservative"
+    },
+    "glc-1981-barking": {
+      "n": "Barking",
+      "q": 10,
+      "r": 5,
+      "winner": "Ward, John B",
+      "party": "labour"
+    },
+    "glc-1981-battersea-north": {
+      "n": "Battersea North",
+      "q": 4,
+      "r": 2,
+      "winner": "Dimson, Gladys F",
+      "party": "labour"
+    },
+    "glc-1981-battersea-south": {
+      "n": "Battersea South",
+      "q": 3,
+      "r": 2,
+      "winner": "Wise, Valerie",
+      "party": "labour"
+    },
+    "glc-1981-beckenham": {
+      "n": "Beckenham",
+      "q": 7,
+      "r": 0,
+      "winner": "Randall, Simon J.C",
+      "party": "conservative"
+    },
+    "glc-1981-bermondsey": {
+      "n": "Bermondsey",
+      "q": 6,
+      "r": 3,
+      "winner": "Nicholson, George E",
+      "party": "labour"
+    },
+    "glc-1981-bethnal-green-and-bow": {
+      "n": "Bethnal Green and Bow",
+      "q": 8,
+      "r": 5,
+      "winner": "Bramall, Sir Ashley",
+      "party": "labour"
+    },
+    "glc-1981-bexleyheath": {
+      "n": "Bexleyheath",
+      "q": 9,
+      "r": 2,
+      "winner": "Langton, Victor R.M",
+      "party": "conservative"
+    },
+    "glc-1981-brent-east": {
+      "n": "Brent East",
+      "q": 3,
+      "r": 6,
+      "winner": "Howard, Norman",
+      "party": "labour"
+    },
+    "glc-1981-brent-north": {
+      "n": "Brent North",
+      "q": 2,
+      "r": 7,
+      "winner": "Hardy, Alan",
+      "party": "conservative"
+    },
+    "glc-1981-brent-south": {
+      "n": "Brent South",
+      "q": 2,
+      "r": 6,
+      "winner": "Harrington, Illtyd",
+      "party": "labour"
+    },
+    "glc-1981-brentford-and-isleworth": {
+      "n": "Brentford and Isleworth",
+      "q": 2,
+      "r": 4,
+      "winner": "Bailey, George N.A",
+      "party": "conservative"
+    },
+    "glc-1981-carshalton": {
+      "n": "Carshalton",
+      "q": 4,
+      "r": 0,
+      "winner": "Copland, Sonia",
+      "party": "conservative"
+    },
+    "glc-1981-chelsea": {
+      "n": "Chelsea",
+      "q": 4,
+      "r": 3,
+      "winner": "Bell, William A.O.J",
+      "party": "conservative"
+    },
+    "glc-1981-chingford": {
+      "n": "Chingford",
+      "q": 7,
+      "r": 8,
+      "winner": "Brew, Richard M",
+      "party": "conservative"
+    },
+    "glc-1981-chipping-barnet": {
+      "n": "Chipping Barnet",
+      "q": 3,
+      "r": 9,
+      "winner": "Major, John R",
+      "party": "conservative"
+    },
+    "glc-1981-chislehurst": {
+      "n": "Chislehurst",
+      "q": 8,
+      "r": 0,
+      "winner": "Wykes, Joan K",
+      "party": "conservative"
+    },
+    "glc-1981-city-of-london-and-westminster-south": {
+      "n": "City of London and Westminster South",
+      "q": 5,
+      "r": 4,
+      "winner": "Avery, David J",
+      "party": "conservative"
+    },
+    "glc-1981-croydon-central": {
+      "n": "Croydon Central",
+      "q": 5,
+      "r": -1,
+      "winner": "Hughes, Robert G",
+      "party": "conservative"
+    },
+    "glc-1981-croydon-north-east": {
+      "n": "Croydon North East",
+      "q": 6,
+      "r": 0,
+      "winner": "Rolfe, Arthur J",
+      "party": "conservative"
+    },
+    "glc-1981-croydon-north-west": {
+      "n": "Croydon North West",
+      "q": 5,
+      "r": 0,
+      "winner": "Stewart, Stephen J",
+      "party": "conservative"
+    },
+    "glc-1981-croydon-south": {
+      "n": "Croydon South",
+      "q": 4,
+      "r": -1,
+      "winner": "Gill, Peter S",
+      "party": "conservative"
+    },
+    "glc-1981-dagenham": {
+      "n": "Dagenham",
+      "q": 11,
+      "r": 5,
+      "winner": "Kay, Harry",
+      "party": "labour"
+    },
+    "glc-1981-deptford": {
+      "n": "Deptford",
+      "q": 7,
+      "r": 2,
+      "winner": "McKay, Alexander C",
+      "party": "labour"
+    },
+    "glc-1981-dulwich": {
+      "n": "Dulwich",
+      "q": 6,
+      "r": 1,
+      "winner": "Hammond, Lesley",
+      "party": "labour"
+    },
+    "glc-1981-ealing-north": {
+      "n": "Ealing North",
+      "q": 1,
+      "r": 6,
+      "winner": "Daniel, Gareth J",
+      "party": "labour"
+    },
+    "glc-1981-edmonton": {
+      "n": "Edmonton",
+      "q": 6,
+      "r": 8,
+      "winner": "Little, Kenneth W",
+      "party": "labour"
+    },
+    "glc-1981-enfield-north": {
+      "n": "Enfield North",
+      "q": 5,
+      "r": 9,
+      "winner": "McBrearty, Anthony",
+      "party": "labour"
+    },
+    "glc-1981-erith-and-crayford": {
+      "n": "Erith and Crayford",
+      "q": 9,
+      "r": 3,
+      "winner": "Handy, Elgar",
+      "party": "labour"
+    },
+    "glc-1981-feltham-and-heston": {
+      "n": "Feltham and Heston",
+      "q": 1,
+      "r": 4,
+      "winner": "Pitt, Peter S",
+      "party": "labour"
+    },
+    "glc-1981-finchley": {
+      "n": "Finchley",
+      "q": 4,
+      "r": 8,
+      "winner": "Beale, Neville",
+      "party": "conservative"
+    },
+    "glc-1981-fulham": {
+      "n": "Fulham",
+      "q": 3,
+      "r": 3,
+      "winner": "Stead, Barrington J",
+      "party": "labour"
+    },
+    "glc-1981-greenwich": {
+      "n": "Greenwich",
+      "q": 7,
+      "r": 3,
+      "winner": "Wood, Deirdre F.M",
+      "party": "labour"
+    },
+    "glc-1981-hackney-central": {
+      "n": "Hackney Central",
+      "q": 7,
+      "r": 5,
+      "winner": "Carr, John A",
+      "party": "labour"
+    },
+    "glc-1981-hackney-north-and-stoke-newington": {
+      "n": "Hackney North and Stoke Newington",
+      "q": 7,
+      "r": 6,
+      "winner": "Ross, Gerald",
+      "party": "labour"
+    },
+    "glc-1981-hackney-south-and-shoreditch": {
+      "n": "Hackney South and Shoreditch",
+      "q": 7,
+      "r": 4,
+      "winner": "Morgan, Joan M",
+      "party": "labour"
+    },
+    "glc-1981-hammersmith-north": {
+      "n": "Hammersmith North",
+      "q": 3,
+      "r": 4,
+      "winner": "Wetzel, David C",
+      "party": "labour"
+    },
+    "glc-1981-hampstead": {
+      "n": "Hampstead",
+      "q": 4,
+      "r": 6,
+      "winner": "Greengross, Alan D",
+      "party": "conservative"
+    },
+    "glc-1981-harrow-central": {
+      "n": "Harrow Central",
+      "q": 1,
+      "r": 7,
+      "winner": "Clack, Jill E",
+      "party": "conservative"
+    },
+    "glc-1981-harrow-east": {
+      "n": "Harrow East",
+      "q": 2,
+      "r": 8,
+      "winner": "Mote, Harold T",
+      "party": "conservative"
+    },
+    "glc-1981-harrow-west": {
+      "n": "Harrow West",
+      "q": 1,
+      "r": 8,
+      "winner": "Cutler, Sir Horace",
+      "party": "conservative"
+    },
+    "glc-1981-hayes-and-harlington": {
+      "n": "Hayes and Harlington",
+      "q": 0,
+      "r": 5,
+      "winner": "McDonnell, John",
+      "party": "labour"
+    },
+    "glc-1981-hendon-north": {
+      "n": "Hendon North",
+      "q": 3,
+      "r": 8,
+      "winner": "Cassidy, Bryan M.D",
+      "party": "conservative"
+    },
+    "glc-1981-hendon-south": {
+      "n": "Hendon South",
+      "q": 3,
+      "r": 7,
+      "winner": "Black, Peter B",
+      "party": "conservative"
+    },
+    "glc-1981-holborn-and-st-pancras-south": {
+      "n": "Holborn and St Pancras South",
+      "q": 5,
+      "r": 5,
+      "winner": "Rossi, Charles A",
+      "party": "labour"
+    },
+    "glc-1981-hornchurch": {
+      "n": "Hornchurch",
+      "q": 11,
+      "r": 6,
+      "winner": "Williams, Alan R",
+      "party": "labour"
+    },
+    "glc-1981-hornsey": {
+      "n": "Hornsey",
+      "q": 4,
+      "r": 7,
+      "winner": "Hart, Anthony B",
+      "party": "labour"
+    },
+    "glc-1981-ilford-north": {
+      "n": "Ilford North",
+      "q": 9,
+      "r": 7,
+      "winner": "Roe, Marion A",
+      "party": "conservative"
+    },
+    "glc-1981-ilford-south": {
+      "n": "Ilford South",
+      "q": 9,
+      "r": 6,
+      "winner": "Gouge, Edward S",
+      "party": "labour"
+    },
+    "glc-1981-islington-central": {
+      "n": "Islington Central",
+      "q": 6,
+      "r": 5,
+      "winner": "Turney, Simon J",
+      "party": "labour"
+    },
+    "glc-1981-islington-north": {
+      "n": "Islington North",
+      "q": 6,
+      "r": 6,
+      "winner": "Bundred, Stephen",
+      "party": "labour"
+    },
+    "glc-1981-islington-south-and-finsbury": {
+      "n": "Islington South and Finsbury",
+      "q": 6,
+      "r": 4,
+      "winner": "Morrell, Frances M",
+      "party": "labour"
+    },
+    "glc-1981-kensington": {
+      "n": "Kensington",
+      "q": 4,
+      "r": 4,
+      "winner": "Vigars, Robert L",
+      "party": "conservative"
+    },
+    "glc-1981-kingston-upon-thames": {
+      "n": "Kingston upon Thames",
+      "q": 1,
+      "r": 1,
+      "winner": "Ripley, Sydney W.L",
+      "party": "conservative"
+    },
+    "glc-1981-lambeth-central": {
+      "n": "Lambeth Central",
+      "q": 5,
+      "r": 2,
+      "winner": "Moore, Paul D",
+      "party": "labour"
+    },
+    "glc-1981-lewisham-east": {
+      "n": "Lewisham East",
+      "q": 8,
+      "r": 1,
+      "winner": "Rossi, Paul N",
+      "party": "labour"
+    },
+    "glc-1981-lewisham-west": {
+      "n": "Lewisham West",
+      "q": 7,
+      "r": 1,
+      "winner": "Herbert, Alan L",
+      "party": "labour"
+    },
+    "glc-1981-leyton": {
+      "n": "Leyton",
+      "q": 8,
+      "r": 6,
+      "winner": "Dawe, Peter J",
+      "party": "labour"
+    },
+    "glc-1981-mitcham-and-morden": {
+      "n": "Mitcham and Morden",
+      "q": 2,
+      "r": 0,
+      "winner": "Judge, Anthony R",
+      "party": "labour"
+    },
+    "glc-1981-newham-north-east": {
+      "n": "Newham North East",
+      "q": 10,
+      "r": 6,
+      "winner": "Wilson, John",
+      "party": "labour"
+    },
+    "glc-1981-newham-north-west": {
+      "n": "Newham North West",
+      "q": 9,
+      "r": 5,
+      "winner": "Edwards, Arthur F.G",
+      "party": "labour"
+    },
+    "glc-1981-newham-south": {
+      "n": "Newham South",
+      "q": 9,
+      "r": 4,
+      "winner": "Jenkinson, Thomas A",
+      "party": "labour"
+    },
+    "glc-1981-norwood": {
+      "n": "Norwood",
+      "q": 5,
+      "r": 1,
+      "winner": "Smith, Norman J.D",
+      "party": "conservative"
+    },
+    "glc-1981-orpington": {
+      "n": "Orpington",
+      "q": 7,
+      "r": -1,
+      "winner": "Tatham, Jean",
+      "party": "conservative"
+    },
+    "glc-1981-paddington": {
+      "n": "Paddington",
+      "q": 3,
+      "r": 5,
+      "winner": "Livingstone, Kenneth R",
+      "party": "labour"
+    },
+    "glc-1981-peckham": {
+      "n": "Peckham",
+      "q": 6,
+      "r": 2,
+      "winner": "Hinds, Harvey W",
+      "party": "labour"
+    },
+    "glc-1981-putney": {
+      "n": "Putney",
+      "q": 2,
+      "r": 2,
+      "winner": "Harris, Andrew P",
+      "party": "labour"
+    },
+    "glc-1981-ravensbourne": {
+      "n": "Ravensbourne",
+      "q": 6,
+      "r": -1,
+      "winner": "Wheeler, Michael J",
+      "party": "conservative"
+    },
+    "glc-1981-richmond": {
+      "n": "Richmond",
+      "q": 2,
+      "r": 3,
+      "winner": "Slade, Adrian C",
+      "party": "libdem"
+    },
+    "glc-1981-romford": {
+      "n": "Romford",
+      "q": 10,
+      "r": 7,
+      "winner": "Brook-Partridge, Bernard",
+      "party": "conservative"
+    },
+    "glc-1981-ruislip-northwood": {
+      "n": "Ruislip-Northwood",
+      "q": 0,
+      "r": 7,
+      "winner": "Taylor, Cyril J.H",
+      "party": "conservative"
+    },
+    "glc-1981-sidcup": {
+      "n": "Sidcup",
+      "q": 9,
+      "r": 1,
+      "winner": "Gent, Rodney C",
+      "party": "conservative"
+    },
+    "glc-1981-southall": {
+      "n": "Southall",
+      "q": 1,
+      "r": 5,
+      "winner": "Sieve, Yvonne",
+      "party": "labour"
+    },
+    "glc-1981-southgate": {
+      "n": "Southgate",
+      "q": 5,
+      "r": 8,
+      "winner": "Gardner, Rachel T",
+      "party": "conservative"
+    },
+    "glc-1981-st-marylebone": {
+      "n": "St Marylebone",
+      "q": 4,
+      "r": 5,
+      "winner": "Sandford, Herbert H",
+      "party": "conservative"
+    },
+    "glc-1981-st-pancras-north": {
+      "n": "St Pancras North",
+      "q": 5,
+      "r": 6,
+      "winner": "Sofer, Anne",
+      "party": "labour"
+    },
+    "glc-1981-stepney-and-poplar": {
+      "n": "Stepney and Poplar",
+      "q": 8,
+      "r": 4,
+      "winner": "Branagan, John",
+      "party": "labour"
+    },
+    "glc-1981-streatham": {
+      "n": "Streatham",
+      "q": 4,
+      "r": 1,
+      "winner": "Weyer, Frederick W",
+      "party": "conservative"
+    },
+    "glc-1981-surbiton": {
+      "n": "Surbiton",
+      "q": 1,
+      "r": 0,
+      "winner": "Seaton, Geoffrey J.D",
+      "party": "conservative"
+    },
+    "glc-1981-sutton-and-cheam": {
+      "n": "Sutton and Cheam",
+      "q": 3,
+      "r": 0,
+      "winner": "Gumbel, Muriel",
+      "party": "conservative"
+    },
+    "glc-1981-tooting": {
+      "n": "Tooting",
+      "q": 3,
+      "r": 1,
+      "winner": "Banks, Antony L",
+      "party": "labour"
+    },
+    "glc-1981-tottenham": {
+      "n": "Tottenham",
+      "q": 6,
+      "r": 7,
+      "winner": "McIntosh, Andrew R",
+      "party": "labour"
+    },
+    "glc-1981-twickenham": {
+      "n": "Twickenham",
+      "q": 1,
+      "r": 3,
+      "winner": "Tremlett, George",
+      "party": "conservative"
+    },
+    "glc-1981-upminster": {
+      "n": "Upminster",
+      "q": 11,
+      "r": 7,
+      "winner": "Bays, Anthony W",
+      "party": "conservative"
+    },
+    "glc-1981-uxbridge": {
+      "n": "Uxbridge",
+      "q": 0,
+      "r": 6,
+      "winner": "Lemkin, James A",
+      "party": "conservative"
+    },
+    "glc-1981-vauxhall": {
+      "n": "Vauxhall",
+      "q": 5,
+      "r": 3,
+      "winner": "Davies, Brinley H",
+      "party": "labour"
+    },
+    "glc-1981-walthamstow": {
+      "n": "Walthamstow",
+      "q": 7,
+      "r": 7,
+      "winner": "Boateng, Paul",
+      "party": "labour"
+    },
+    "glc-1981-wanstead-and-woodford": {
+      "n": "Wanstead and Woodford",
+      "q": 8,
+      "r": 7,
+      "winner": "Mitchell, Robert",
+      "party": "conservative"
+    },
+    "glc-1981-wimbledon": {
+      "n": "Wimbledon",
+      "q": 2,
+      "r": 1,
+      "winner": "Bolton, Stanley C",
+      "party": "conservative"
+    },
+    "glc-1981-wood-green": {
+      "n": "Wood Green",
+      "q": 5,
+      "r": 7,
+      "winner": "Ward, Michael",
+      "party": "labour"
+    },
+    "glc-1981-woolwich-east": {
+      "n": "Woolwich East",
+      "q": 8,
+      "r": 3,
+      "winner": "Garside, Mair E",
+      "party": "labour"
+    },
+    "glc-1981-woolwich-west": {
+      "n": "Woolwich West",
+      "q": 8,
+      "r": 2,
+      "winner": "Davies, Neil",
+      "party": "labour"
+    }
+  }
+}
