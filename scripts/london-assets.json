@@ -1,13 +1,13 @@
 [
   {
-    "id": "gla-2000",
+    "id": "2000",
     "booklet": null,
     "manifestos": [
       { "party": "livingstone", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2000 London Devolved Election/Ken Livingstone - 2000 Manifesto for London (derived from archived HTML).pdf" }
     ]
   },
   {
-    "id": "gla-2004",
+    "id": "2004",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Mayor-of-London-2004-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "green", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2004 London Devolved Election/Darren Johnson - Green Party manifesto 2004.pdf" },
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": "gla-2008",
+    "id": "2008",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Mayor-of-London-2008-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "conservative", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2008 London Devolved Election/Boris Johnson - 2008 Complete Manifesto.pdf" },
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": "gla-2012",
+    "id": "2012",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Mayor-of-London-2012-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2012 London Devolved Election/Ken Livingstone - Manifesto for London 2012.pdf" },
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "id": "gla-2016",
+    "id": "2016",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Mayor-of-London-2016-election-Mayor-election-address-booklet.pdf",
     "manifestos": [
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2016 London Devolved Election/Sadiq Khan - A Manifesto for All Londoners.pdf" },
@@ -53,7 +53,7 @@
     ]
   },
   {
-    "id": "gla-2021",
+    "id": "2021",
     "booklet": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/GLABooklet2021_0.pdf",
     "manifestos": [
       { "party": "labour", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2021 London Devolved Election/Sadiq-for-London-Manifesto-.pdf" },
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "id": "gla-2024",
+    "id": "2024",
     "booklet": null,
     "manifestos": [
       { "party": "reform", "src": "/Users/mosmi/Claude/Projects/Manifestos/Original documents/Devolved Elections/London/2024 London Devolved Election/Howard Cox - London Needs Reform Manifesto Poster 2024.pdf" },

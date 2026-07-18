@@ -1,5 +1,5 @@
 {
-  "id": "gla-2000",
+  "id": "2000",
   "body": "gla",
   "year": 2000,
   "displayYear": "2000",
@@ -158,17 +158,18 @@
       "party": "independent",
       "candidate": "Ken Livingstone",
       "title": "Manifesto for London",
-      "pdf": "/manifestos/london/gla-2000/livingstone/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2000/livingstone/cover.png"
+      "pdf": "/manifestos/london/2000/livingstone/manifesto.pdf",
+      "cover": "/manifestos/london/2000/livingstone/cover.png",
+      "id": "livingstone"
     }
   ],
   "sources": [
     {
-      "label": "House of Commons Library \u2014 The local elections and elections for a London Mayor and Assembly (RP 00/53)",
+      "label": "House of Commons Library — The local elections and elections for a London Mayor and Assembly (RP 00/53)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/rp00-53/"
     },
     {
-      "label": "London Elects \u2014 election results",
+      "label": "London Elects — election results",
       "url": "https://www.londonelects.org.uk/im-voter/election-results/"
     }
   ]

@@ -166,7 +166,8 @@
   },
   "animalpolitics": {
     "westminster": 4,
-    "euro": 1
+    "euro": 1,
+    "london": 1
   },
   "cista": {
     "westminster": 1
@@ -228,7 +229,7 @@
     "westminster": 1
   },
   "communist": {
-    "westminster": 1,
+    "westminster": 3,
     "holyrood": 2,
     "senedd": 2
   },
@@ -267,7 +268,7 @@
   },
   "independent": {
     "euro": 1,
-    "london": 2
+    "london": 6
   },
   "eurefa": {
     "euro": 4
@@ -332,6 +333,9 @@
   "sovereignty": {
     "holyrood": 1
   },
+  "spgb": {
+    "london": 1
+  },
   "onelove": {
     "london": 1
   },
@@ -339,9 +343,6 @@
     "london": 2
   },
   "reclaim": {
-    "london": 1
-  },
-  "maxfosh": {
     "london": 1
   },
   "pierscorbyn": {
@@ -353,22 +354,7 @@
   "binface": {
     "london": 2
   },
-  "campbell": {
-    "london": 1
-  },
-  "awp": {
-    "london": 1
-  },
-  "michli": {
-    "london": 1
-  },
-  "ghulati": {
-    "london": 1
-  },
   "britainfirst": {
-    "london": 1
-  },
-  "spgb": {
     "london": 1
   },
   "propel": {

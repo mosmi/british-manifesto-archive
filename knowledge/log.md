@@ -11,6 +11,75 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-18 — London year-only election URLs (Cursor Grok)
+Dropped `gla-` / `glc-` / `lcc-` prefixes from London election ids so they align
+with Holyrood/Senedd (`/devolved/london/2000`, `/manifesto/london/2000/livingstone`).
+Renamed election JSON, manifesto folders, and OG images; era remains in JSON
+`body`. Permanent redirects from legacy prefixed paths in `_redirects` +
+`functions/_middleware.js` (+ SPA `navigate` replace). Assets `?v=2026071822`.
+
+## 2026-07-18 — London mayoral manifesto text routes (Cursor Grok)
+Fixed independents/personas whose folder slug ≠ `party`/`partyLabel` (e.g. Ken
+Livingstone 2000 under `livingstone/` with `party: independent`). Stamped `id`
+(= folder) on all GLA `manifestos[]` entries; cards and viewer key off that slug;
+`renderManifesto` no longer requires `PARTIES[slug]` for devolved when a
+manifesto entry exists. Indexed all 47 transcribed GLA folders; middleware now
+accepts 4-segment `/manifesto/london/gla-YYYY/slug` URLs. Added lightweight
+PARTIES for recurring London minors (binface, londonreal, reclaim, britainfirst,
+burningpink, onelove, pierscorbyn). Assets `?v=2026071821`.
+
+## 2026-07-18 — CPGB 1966 cover image (Claude Fable 5)
+Added manifestos/1966/communist/cover.png from the marxists.org scan of the
+*New Britain, People's Britain* front cover, processed per
+knowledge/pipelines/covers.md: fitted inside the canonical 1191×1684
+transparent A4 canvas (source 646×1000 → 1088×1684 centred, srgba,
+opaque=False). No data changes needed — Westminster cards derive the cover
+path automatically.
+
+## 2026-07-18 — CPGB 1955 & 1966 Westminster manifestos (Claude Fable 5)
+Added two CPGB general-election manifestos as markdown from the Marxists
+Internet Archive: *A Policy for Britain* (Feb 1955, Pollitt era) at
+manifestos/1955/communist/ and *New Britain, People's Britain* (March 1966,
+Gollan) at manifestos/1966/communist/. Registered in manifestos-index.json;
+'communist' added to extraManifestoParties for 1955/1966 in data.js, plus
+communist partyResults rows (1955: 33,144 votes 0.1%; 1966: 62,092 votes 0.2%,
+per Wikipedia's CPGB election-results table) — inserted INTO the existing
+partyResults objects (they already held Scottish/Welsh splits; beware duplicate
+keys). seo.json + party-holdings rebuilt (communist: 3 Westminster). data.js
+`?v=` → 2026071817.
+
+## 2026-07-18 — Accordion rows styled like the main table (Claude Fable 5)
+"Other parties (no seats)" rows now render via londonPartyCell — party colour
+swatch + the same inline-party-link styling as the main Council Composition
+table (neutral grey swatch, no link, for parties without a page). The printed
+ballot label is preserved via partyLabel so historic names ("Ecology",
+"Unofficial Liberal") are unchanged. london.js `?v=` → 2026071815.
+
+## 2026-07-18 — Votes column on London council tables (Claude Fable 5)
+Council Composition tables on the 12 LCC/GLC pages now show a Votes column
+(rendered by londonCouncilSection when any result row carries `votes`; GLA
+pages unaffected). Totals chosen on the same basis as each page's existing
+percentages: GLC from the official booklets (1977/81 fold the Lab/Con/Lib
+ballot-label variants exactly as the pct do, e.g. 1981 Labour 939,457 = LAB +
+LABCP); LCC from the Elections Centre whole-county rows. Exceptions: 1946
+Communist/Liberal use The Times all-candidate totals with pct omitted (the
+main-party shares use the compendium's best-placed-candidate basis — explained
+in the table note), and GLC 1964–70 notes now state that vote totals are raw
+bloc-vote ballots while the R&T shares use a different basis. london.js `?v=`
+→ 2026071814.
+
+## 2026-07-18 — Accordion party links (Claude Fable 5)
+"Other parties (no seats)" rows on London pages now link to party pages where
+an unambiguous PARTIES entry exists: `party` ids added to otherVotes rows
+(communist, spgb, independent, ilp, indlabour, indconservative, indliberal,
+nationalliberal, libdem for 1952/55 "Liberal", green for "Ecology" per the
+party-names rule). Deliberately NOT linked: 1961 "British National Party"
+(1960 party ≠ 1982 `bnp`), 1977 "National Party" (Kingsley Read's party ≠ the
+1945 `national` label), 1981 SDP-adjacent labels (founding-era ambiguity), and
+National Front (no PARTIES entry). `getLondonPartyHistory` also counts
+otherVotes appearances, so e.g. the CPGB page now lists all its 1946–81 London
+contests. london.js `?v=` → 2026071813.
+
 ## 2026-07-18 — London on party pages; holdings fix; SPGB 1958 manifesto (Claude Fable 5)
 Party pages now have London Results + London Manifestos sections and a London
 count in "Elections contested" (`getLondonPartyHistory`/`londonPartyElectionRow`

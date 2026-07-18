@@ -1,5 +1,5 @@
 {
-  "id": "glc-1977",
+  "id": "1977",
   "body": "glc",
   "year": 1977,
   "displayYear": "1977",
@@ -21,17 +21,20 @@
       {
         "party": "conservative",
         "seats": 64,
-        "pct": 52.5
+        "pct": 52.5,
+        "votes": 1177390
       },
       {
         "party": "labour",
         "seats": 28,
-        "pct": 32.9
+        "pct": 32.9,
+        "votes": 737194
       },
       {
         "party": "libdem",
         "seats": 0,
-        "pct": 7.8
+        "pct": 7.8,
+        "votes": 174405
       }
     ],
     "note": "92 single-member electoral divisions. From 1977 all aldermen left office and no further aldermen were appointed.",
@@ -49,7 +52,8 @@
       {
         "name": "Communist",
         "votes": 8267,
-        "pct": 0.37
+        "pct": 0.37,
+        "party": "communist"
       },
       {
         "name": "Abolish GLC",
@@ -69,12 +73,14 @@
       {
         "name": "Independent Conservative",
         "votes": 1025,
-        "pct": 0.05
+        "pct": 0.05,
+        "party": "indconservative"
       },
       {
         "name": "Independent Liberal",
         "votes": 878,
-        "pct": 0.04
+        "pct": 0.04,
+        "party": "indliberal"
       },
       {
         "name": "English Nationalist",
@@ -89,7 +95,8 @@
       {
         "name": "Independent",
         "votes": 605,
-        "pct": 0.03
+        "pct": 0.03,
+        "party": "independent"
       },
       {
         "name": "Fellowship Party",
@@ -99,12 +106,14 @@
       {
         "name": "Socialist Party of Great Britain",
         "votes": 502,
-        "pct": 0.02
+        "pct": 0.02,
+        "party": "spgb"
       },
       {
         "name": "Ecology",
         "votes": 298,
-        "pct": 0.01
+        "pct": 0.01,
+        "party": "green"
       },
       {
         "name": "Medical Practitioner",

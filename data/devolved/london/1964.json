@@ -1,5 +1,5 @@
 {
-  "id": "glc-1964",
+  "id": "1964",
   "body": "glc",
   "year": 1964,
   "displayYear": "1964",
@@ -21,30 +21,35 @@
       {
         "party": "labour",
         "seats": 64,
-        "pct": 44.6
+        "pct": 44.6,
+        "votes": 3467634
       },
       {
         "party": "conservative",
         "seats": 36,
-        "pct": 40.1
+        "pct": 40.1,
+        "votes": 3147805
       },
       {
         "party": "libdem",
         "seats": 0,
-        "pct": 10.0
+        "pct": 10.0,
+        "votes": 775385
       }
     ],
-    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council. The Greater London Council formally took over from the London County Council on 1 April 1965.",
+    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council. The Greater London Council formally took over from the London County Council on 1 April 1965. Vote totals are all ballots cast under the multi-member bloc vote (each elector had one vote per seat); the percentage shares recorded by Rallings & Thrasher use a slightly different basis.",
     "otherVotes": [
       {
         "name": "Communist",
         "votes": 102649,
-        "pct": 1.36
+        "pct": 1.36,
+        "party": "communist"
       },
       {
         "name": "Independent",
         "votes": 19983,
-        "pct": 0.26
+        "pct": 0.26,
+        "party": "independent"
       },
       {
         "name": "Ratepayers' Association",

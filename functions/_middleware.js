@@ -81,13 +81,27 @@ function nationDisplayName(nationRec) {
   return nationRec?.name || '';
 }
 
+/** Parse /manifesto/:electionId/:partyId (Westminster) or /manifesto/:portal/:election/:party (London etc.). */
+function manifestoRouteParts(parts) {
+  if (!parts || parts[0] !== 'manifesto') return null;
+  if (parts.length === 3) {
+    return { electionId: parts[1], partyId: parts[2], key: `${parts[1]}/${parts[2]}` };
+  }
+  if (parts.length === 4) {
+    const electionId = `${parts[1]}/${parts[2]}`;
+    return { electionId, partyId: parts[3], key: `${electionId}/${parts[3]}` };
+  }
+  return null;
+}
+
 function ogImagePathForRoute(path) {
   if (!path || path === '/') return '/og-image.jpg';
   const parts = path.split('/').filter(Boolean);
   if (parts[0] === 'party' && parts[1]) return `/og/party/${parts[1]}.jpg`;
   if (parts[0] === 'election' && parts[1]) return `/og/election/${parts[1]}.jpg`;
-  if (parts[0] === 'manifesto' && parts[1] && parts[2]) {
-    return `/og/manifesto/${parts[1]}/${parts[2]}.jpg`;
+  const manifesto = manifestoRouteParts(parts);
+  if (manifesto) {
+    return `/og/manifesto/${manifesto.electionId}/${manifesto.partyId}.jpg`;
   }
   if (parts[0] === 'nation' && parts[1]) return `/og/nation/${parts[1]}.jpg`;
   if (parts[0] === 'devolved' && parts[1]) {
@@ -398,20 +412,22 @@ function classify(path, seo) {
 
   const parts = path.split('/').filter(Boolean);
 
-  // /manifesto/:electionId/:partyId
-  if (parts[0] === 'manifesto' && parts.length === 3) {
-    const key = `${parts[1]}/${parts[2]}`;
+  // /manifesto/:electionId/:partyId  OR  /manifesto/:portal/:election/:partyId (London etc.)
+  const manifestoRoute = manifestoRouteParts(parts);
+  if (manifestoRoute) {
+    const { electionId, partyId, key } = manifestoRoute;
     const rec = seo.manifestos[key];
     if (!rec) return { valid: false };
-    const election = seo.elections[parts[1]];
-    const party = seo.parties[parts[2]];
-    const label = rec.label || `${parts[2]} ${parts[1]}`;
-    const year = election ? election.displayYear : parts[1];
-    const description =
-      `Read and search the full text of the ${label} from the ${year} ` +
-      `UK general election.`;
+    const isDevolved = electionId.includes('/');
+    const election = seo.elections[electionId];
+    const party = seo.parties[partyId];
+    const label = rec.label || `${partyId} ${electionId}`;
+    const year = election ? election.displayYear : (electionId.split(/[-/]/).pop() || electionId);
+    const description = isDevolved
+      ? `Read and search the full text of the ${label} from the ${year} London election.`
+      : `Read and search the full text of the ${label} from the ${year} UK general election.`;
     const canonical = canonicalFor(path);
-    const assetBase = `${SITE_URL}/manifestos/${parts[1]}/${parts[2]}`;
+    const assetBase = `${SITE_URL}/manifestos/${electionId}/${partyId}`;
     const encoding = [
       {
         '@type': 'WebPage',
@@ -438,12 +454,16 @@ function classify(path, seo) {
     const partyNode = party
       ? {
           '@type': 'Organization',
-          '@id': `${SITE_URL}/party/${parts[2]}#organization`,
+          '@id': `${SITE_URL}/party/${partyId}#organization`,
           name: party.name,
           ...(party.shortName ? { alternateName: party.shortName } : {}),
-          url: `${SITE_URL}/party/${parts[2]}`,
+          url: `${SITE_URL}/party/${partyId}`,
         }
       : null;
+    const electionPath = isDevolved ? `/devolved/${electionId}` : `/election/${electionId}`;
+    const electionName = isDevolved
+      ? `${year} London election`
+      : `${year} UK General Election`;
     const doc = {
       '@type': 'DigitalDocument',
       '@id': `${canonical}#document`,
@@ -459,33 +479,38 @@ function classify(path, seo) {
       encoding,
       provider: { '@id': ORG_ID },
       publisher: { '@id': ORG_ID },
-      ...(election
-        ? {
-            about: {
-              '@type': 'Event',
-              '@id': `${SITE_URL}/election/${parts[1]}#event`,
-              name: `${year} UK General Election`,
-              url: `${SITE_URL}/election/${parts[1]}`,
-            },
-          }
-        : {}),
+      about: {
+        '@type': 'Event',
+        '@id': `${SITE_URL}${electionPath}#event`,
+        name: electionName,
+        url: `${SITE_URL}${electionPath}`,
+      },
       isPartOf: { '@id': CATALOG_ID },
     };
+    const crumbs = isDevolved
+      ? [
+          { name: 'Home', path: '/' },
+          { name: 'Devolved & regional', path: '/devolved' },
+          { name: 'London', path: '/devolved/london' },
+          { name: `${year}`, path: electionPath },
+          { name: label },
+        ]
+      : [
+          { name: 'Home', path: '/' },
+          { name: 'UK General Elections', path: '/elections' },
+          { name: `${year}`, path: `/election/${electionId}` },
+          { name: label },
+        ];
     const graph = [
       doc,
       orgNode(),
-      breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'UK General Elections', path: '/elections' },
-        { name: `${year}`, path: `/election/${parts[1]}` },
-        { name: label },
-      ]),
+      breadcrumb(crumbs),
     ];
     return {
       valid: true,
       meta: { title: `${label}${TITLE_SUFFIX}`, description },
       graph,
-      image: `/og/manifesto/${parts[1]}/${parts[2]}.jpg`,
+      image: `/og/manifesto/${electionId}/${partyId}.jpg`,
     };
   }
 
@@ -633,10 +658,10 @@ function classify(path, seo) {
     if (portal === 'london') {
       const portalName = seo.devolved && seo.devolved[portal];
       if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      if (!/^(gla|glc|lcc)-\d{4}$/.test(sub)) return { valid: false };
-      const yearMatch = sub.match(/(\d{4})/);
-      return devolvedElection(
-        seo, portal, sub, portalName, path, yearMatch ? yearMatch[1] : sub);
+      // Year-only ids (aligned with holyrood/senedd). Legacy gla-/glc-/lcc-
+      // prefixes are redirected in onRequest before SEO validation.
+      if (!/^\d{4}$/.test(sub)) return { valid: false };
+      return devolvedElection(seo, portal, sub, portalName, path, sub);
     }
     if (portal === 'euro') {
       if (sub === 'other-parties') {
@@ -716,16 +741,22 @@ function buildNoscriptHtml(path, meta, seo) {
   const links = [];
   const parts = path.split('/').filter(Boolean);
 
-  if (parts[0] === 'manifesto' && parts[1] && parts[2]) {
-    const key = `${parts[1]}/${parts[2]}`;
+  const nsManifesto = manifestoRouteParts(parts);
+  if (nsManifesto) {
+    const { electionId, partyId, key } = nsManifesto;
     const rec = seo?.manifestos?.[key];
-    links.push(`<a href="/election/${escapeHtml(parts[1])}">${escapeHtml(parts[1])} election</a>`);
-    links.push(`<a href="/party/${escapeHtml(parts[2])}">Party page</a>`);
+    const electionHref = electionId.includes('/')
+      ? `/devolved/${escapeHtml(electionId)}`
+      : `/election/${escapeHtml(electionId)}`;
+    links.push(`<a href="${electionHref}">${escapeHtml(electionId)} election</a>`);
+    if (seo?.parties?.[partyId]) {
+      links.push(`<a href="/party/${escapeHtml(partyId)}">Party page</a>`);
+    }
     if (rec?.hasMarkdown) {
-      links.push(`<a href="/manifestos/${escapeHtml(parts[1])}/${escapeHtml(parts[2])}/manifesto.md">Full text (Markdown)</a>`);
+      links.push(`<a href="/manifestos/${escapeHtml(electionId)}/${escapeHtml(partyId)}/manifesto.md">Full text (Markdown)</a>`);
     }
     if (rec?.hasPdf) {
-      links.push(`<a href="/manifestos/${escapeHtml(parts[1])}/${escapeHtml(parts[2])}/manifesto.pdf">Original PDF</a>`);
+      links.push(`<a href="/manifestos/${escapeHtml(electionId)}/${escapeHtml(partyId)}/manifesto.pdf">Original PDF</a>`);
     }
   } else if (parts[0] === 'election' && parts[1]) {
     links.push('<a href="/elections">All UK general elections</a>');
@@ -854,6 +885,21 @@ function buildRewriter({ meta, graph, canonical, image, noindex, noscriptHtml })
   return rewriter;
 }
 
+/** Permanent redirects for pre-2026 London ids (gla-/glc-/lcc-YYYY → YYYY). */
+function londonLegacyRedirectPath(path) {
+  let m = path.match(/^\/devolved\/london\/(gla|glc|lcc)-(\d{4})\/?$/);
+  if (m) return `/devolved/london/${m[2]}`;
+  m = path.match(/^\/manifesto\/london\/(gla|glc|lcc)-(\d{4})\/([^/]+)\/?$/);
+  if (m) return `/manifesto/london/${m[2]}/${m[3]}`;
+  m = path.match(/^\/manifestos\/london\/(gla|glc|lcc)-(\d{4})(\/.*)?$/);
+  if (m) return `/manifestos/london/${m[2]}${m[3] || ''}`;
+  m = path.match(/^\/og\/devolved\/london\/(gla|glc|lcc)-(\d{4})\.jpg$/);
+  if (m) return `/og/devolved/london/${m[2]}.jpg`;
+  m = path.match(/^\/og\/manifesto\/london\/(gla|glc|lcc)-(\d{4})\/([^/]+\.jpg)$/);
+  if (m) return `/og/manifesto/london/${m[2]}/${m[3]}`;
+  return null;
+}
+
 export async function onRequest(context) {
   const { request, next } = context;
 
@@ -864,6 +910,13 @@ export async function onRequest(context) {
 
   const url = new URL(request.url);
   const path = url.pathname;
+
+  const londonRedirect = londonLegacyRedirectPath(path);
+  if (londonRedirect) {
+    const dest = new URL(londonRedirect, url.origin);
+    dest.search = url.search;
+    return Response.redirect(dest.toString(), 301);
+  }
 
   // Static asset paths: detect SPA HTML fallback for missing files and return a real 404.
   // /manifestos/* is intentionally included in Functions (_routes.json) for this check.

@@ -155,7 +155,7 @@ function londonBookletBox(booklet) {
 
 function londonManifestoCard(m, electionOrYear) {
   const isObj = electionOrYear && typeof electionOrYear === 'object';
-  const electionId = isObj ? electionOrYear.id : `gla-${electionOrYear}`;
+  const electionId = isObj ? electionOrYear.id : String(electionOrYear);
   const year = isObj ? electionOrYear.year : electionOrYear;
   
   const color = londonPartyColor(m.party);
@@ -164,17 +164,20 @@ function londonManifestoCard(m, electionOrYear) {
   const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
   const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
 
-  const partyId = m.party || m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const hasText = MANIFESTO_ARCHIVE?.has(`london/${electionId}/${partyId}`) ?? false;
+  // Route slug = folder id (not affiliation): livingstone ≠ independent
+  const routeSlug = londonManifestoRouteSlug(m);
+  const hasText = routeSlug
+    ? (MANIFESTO_ARCHIVE?.has(`london/${electionId}/${routeSlug}`) ?? false)
+    : false;
 
   const textLink = hasText
-    ? `<a href="/manifesto/london/${electionId}/${partyId}" class="manifesto-link">
+    ? `<a href="/manifesto/london/${electionId}/${routeSlug}" class="manifesto-link">
          <span class="manifesto-link-icon">📝</span>
          <div class="manifesto-link-info"><div class="manifesto-link-title">Read Online</div><div class="manifesto-link-sub">Formatted text version</div></div>
        </a>`
     : '';
 
-  const thumbHref = hasText ? `/manifesto/london/${electionId}/${partyId}` : m.pdf;
+  const thumbHref = hasText ? `/manifesto/london/${electionId}/${routeSlug}` : m.pdf;
   const thumbTarget = hasText ? '' : ' target="_blank" rel="noopener"';
   const thumbLabel = hasText
     ? `Read ${heading} ${year} manifesto online`
@@ -289,22 +292,30 @@ function londonCouncilSection(election) {
   const c = election.council;
   if (!c || !Array.isArray(c.results)) return '';
   const maxSeats = Math.max(...c.results.map(r => r.seats || 0), 1);
+  const hasVotes = c.results.some(r => typeof r.votes === 'number');
   const rows = c.results.slice().sort((x, y) => y.seats - x.seats).map(r => {
     const color = londonPartyColor(r.party);
     const isWinner = r.party === election.control;
     const pct = typeof r.pct === 'number' ? r.pct.toFixed(1) + '%' : '—';
+    const votesCell = hasVotes
+      ? `<td style="color:var(--text-muted)">${typeof r.votes === 'number' ? londonNum(r.votes) : '—'}</td>`
+      : '';
     return `<tr>
       <td>${londonPartyCell(r, election.year)}${isWinner ? ' <span class="majority-badge">✦ Control</span>' : ''}</td>
       <td><div class="result-seats-bar-wrap"><div class="result-seats-bar"><div class="result-seats-fill" style="width:${((r.seats || 0) / maxSeats * 100).toFixed(1)}%;background:${color}"></div></div><strong style="color:var(--cream);min-width:32px">${r.seats}</strong></div></td>
+      ${votesCell}
       <td style="color:var(--text-muted)">${pct}</td>
     </tr>`;
   }).join('');
   const otherPct = o => typeof o.pct !== 'number' ? '—'
     : (o.pct > 0 && o.pct < 0.05 ? '&lt;0.1%' : o.pct.toFixed(1) + '%');
+  // Same styling as the main table: swatch + party link (falls back to a
+  // neutral swatch and the printed ballot label for parties without a page).
+  const otherName = o => londonPartyCell({ ...o, partyLabel: o.partyLabel || o.name }, election.year);
   const others = (c.otherVotes || []).length
     ? `<details class="london-others"><summary>Other parties (no seats)</summary>
         <table class="results-table"><thead><tr><th scope="col">Party</th><th scope="col">Votes</th><th scope="col">%</th></tr></thead>
-        <tbody>${c.otherVotes.map(o => `<tr><td>${o.name}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? londonNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${otherPct(o)}</td></tr>`).join('')}</tbody></table>
+        <tbody>${c.otherVotes.map(o => `<tr><td>${otherName(o)}</td><td style="color:var(--text-muted)">${typeof o.votes === 'number' ? londonNum(o.votes) : '—'}</td><td style="color:var(--text-muted)">${otherPct(o)}</td></tr>`).join('')}</tbody></table>
         ${c.otherVotesNote ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.5rem">${c.otherVotesNote}</p>` : ''}
       </details>`
     : '';
@@ -313,7 +324,7 @@ function londonCouncilSection(election) {
       <span class="section-label">${LONDON_BODY_LABELS[election.body] || 'Council'}</span>
       <h2>Council Composition</h2>
       <table class="results-table">
-        <thead><tr><th scope="col">Party</th><th scope="col">Councillors (of ${c.totalSeats})</th><th scope="col">Vote %</th></tr></thead>
+        <thead><tr><th scope="col">Party</th><th scope="col">Councillors (of ${c.totalSeats})</th>${hasVotes ? '<th scope="col">Votes</th>' : ''}<th scope="col">Vote %</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
       ${c.note ? `<p style="font-size:0.75rem;color:var(--text-faint);margin-top:0.75rem">${c.note}</p>` : ''}
@@ -322,7 +333,19 @@ function londonCouncilSection(election) {
 }
 
 // ── LONDON ELECTION PAGE ──────────────────────────────────────
+/** Legacy prefixed ids (gla-2000 / glc-1964 / lcc-1946) → year-only. */
+function normalizeLondonElectionId(id) {
+  const m = String(id || '').match(/^(?:gla|glc|lcc)-(\d{4})$/);
+  return m ? m[1] : id;
+}
+
 async function renderLondonElection(app, id) {
+  const canonicalId = normalizeLondonElectionId(id);
+  if (canonicalId !== id) {
+    navigate(`/devolved/london/${canonicalId}`, { replace: true });
+    return;
+  }
+
   setPageMeta({ title: 'London election', description: 'London election results.', path: `/devolved/london/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
@@ -653,12 +676,18 @@ async function renderLondonPortal(app) {
 }
 
 // ── PARTY-PAGE HISTORY (used by renderParty in app.js) ────────
-/** Party id slug from a manifesto entry (fringe candidates carry only partyLabel). */
-function londonManifestoPartySlug(m) {
-  if (m.party) return m.party;
-  const path = m.pdf || m.md || m.cover || '';
+/** Folder / route slug for a London manifesto (unique per election). */
+function londonManifestoRouteSlug(m) {
+  if (m?.id) return m.id;
+  const path = m?.pdf || m?.md || m?.cover || '';
   const segs = path.split('/').filter(Boolean);
-  return segs.length >= 2 ? segs[segs.length - 2] : null;
+  if (segs.length >= 2) return segs[segs.length - 2];
+  return m?.party || null;
+}
+
+/** @deprecated Use londonManifestoRouteSlug — kept as alias for callers. */
+function londonManifestoPartySlug(m) {
+  return londonManifestoRouteSlug(m);
 }
 
 /** Elections contested + manifestos held across LCC / GLC / GLA for one party. */
@@ -672,6 +701,7 @@ async function getLondonPartyHistory(partyId) {
     if (!election) return;
     let result = election.council?.results?.find(r => r.party === canonical)
       || election.assembly?.results?.find(r => r.party === canonical)
+      || election.council?.otherVotes?.find(r => r.party === canonical)
       || null;
     if (result) {
       result = {
@@ -681,9 +711,14 @@ async function getLondonPartyHistory(partyId) {
           : (typeof result.listPct === 'number' ? result.listPct : null)),
       };
     }
-    const partyManifestos = (election.manifestos || []).filter(m =>
-      londonManifestoPartySlug(m) === canonical
-      || (m.party && typeof resolvePartyId === 'function' && resolvePartyId(m.party) === canonical));
+    // Match persona/folder id OR affiliation party (independent ≠ livingstone).
+    const partyManifestos = (election.manifestos || []).filter(m => {
+      const route = londonManifestoRouteSlug(m);
+      const affiliation = m.party && typeof resolvePartyId === 'function'
+        ? resolvePartyId(m.party) : m.party;
+      return route === canonical || route === partyId
+        || affiliation === canonical || affiliation === partyId;
+    });
     const isMayorWinner = election.mayorWinner === canonical;
     if (result || partyManifestos.length || isMayorWinner) {
       elections.push({ election, result: result || { party: canonical, seats: 0, pct: null } });

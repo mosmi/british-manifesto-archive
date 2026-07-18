@@ -26,7 +26,12 @@ breaks down 2001–2024 primary manifestos specifically.
 | Local Government | 22 | 13 | 59% |
 
 ## Largest outstanding gaps
-- **Devolved elections** — All 26 London mayoral manifestos (2024, 2021, and 2004) have been fully transcribed, visually repaired, and finalized. Gaps remain in NI Assembly elections (Greens NI, Sinn Féin variants, PUP, TUV, Workers' Party across 2003–2016).
+- **Devolved elections** — All seven GLA cycles (2000–2024) with published
+  mayoral manifesto PDFs now have transcribed markdown and SPA “Read Online”
+  routes keyed by folder `id` (47 text routes in `manifestos-index.json`,
+  including independents such as Livingstone 2000). Gaps remain in NI Assembly
+  elections (Greens NI, Sinn Féin variants, PUP, TUV, Workers' Party across
+  2003–2016).
 - **2019 General (28 unmatched)** — mostly Labour supplementary/regional manifestos
   (9 regional, plus easy-read, animal welfare, housing, environment, arts) and Green
   youth/digital manifestos.

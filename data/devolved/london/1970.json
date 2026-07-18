@@ -1,5 +1,5 @@
 {
-  "id": "glc-1970",
+  "id": "1970",
   "body": "glc",
   "year": 1970,
   "displayYear": "1970",
@@ -21,20 +21,23 @@
       {
         "party": "conservative",
         "seats": 65,
-        "pct": 50.6
+        "pct": 50.6,
+        "votes": 3183781
       },
       {
         "party": "labour",
         "seats": 35,
-        "pct": 39.9
+        "pct": 39.9,
+        "votes": 2494118
       },
       {
         "party": "libdem",
         "seats": 0,
-        "pct": 5.4
+        "pct": 5.4,
+        "votes": 335818
       }
     ],
-    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council.",
+    "note": "100 councillors elected from borough-based multi-member electoral areas, plus 16 aldermen chosen by the council. Vote totals are all ballots cast under the multi-member bloc vote (each elector had one vote per seat); the percentage shares recorded by Rallings & Thrasher use a slightly different basis.",
     "otherVotes": [
       {
         "name": "Homes Before Roads",
@@ -44,7 +47,8 @@
       {
         "name": "Communist",
         "votes": 42906,
-        "pct": 0.7
+        "pct": 0.7,
+        "party": "communist"
       },
       {
         "name": "Union Movement",
@@ -54,7 +58,8 @@
       {
         "name": "Socialist Party of Great Britain",
         "votes": 5945,
-        "pct": 0.1
+        "pct": 0.1,
+        "party": "spgb"
       },
       {
         "name": "Unofficial Liberal",
@@ -64,7 +69,8 @@
       {
         "name": "Independent",
         "votes": 2614,
-        "pct": 0.04
+        "pct": 0.04,
+        "party": "independent"
       },
       {
         "name": "Rent Rebel",

@@ -11,7 +11,7 @@ For each PDF it:
 Driven by scripts/london-assets.json:
 [
   {
-    "id": "gla-2016",
+    "id": "2016",
     "booklet": "<absolute source path or null>",
     "manifestos": [ {"party": "labour", "src": "<absolute source path>"} ]
   }
@@ -19,7 +19,7 @@ Driven by scripts/london-assets.json:
 
 Usage:
   python3 scripts/import-london-assets.py            # process everything
-  python3 scripts/import-london-assets.py gla-2016   # one election only
+  python3 scripts/import-london-assets.py 2016   # one election only
   python3 scripts/import-london-assets.py --dry-run
 """
 from __future__ import annotations

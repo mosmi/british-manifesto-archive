@@ -1,5 +1,5 @@
 {
-  "id": "gla-2008",
+  "id": "2008",
   "body": "gla",
   "year": 2008,
   "displayYear": "2008",
@@ -8,7 +8,7 @@
   "mayorWinner": "conservative",
   "mayorWinnerName": "Boris Johnson",
   "turnout": 44.6,
-  "summary": "Conservative Boris Johnson unseated the two-term incumbent Ken Livingstone (Labour) to become the second Mayor of London. Johnson won 1,044,068 first-preference votes (43.2%) to Livingstone's 894,316 (37.0%), and was elected with 1,168,738 votes (53.2%) to 1,028,966 (46.8%) after second preferences. Turnout jumped almost nine points to 44.6%. The Conservatives became the largest Assembly party with 11 seats, and the BNP won its first \u2014 and only \u2014 London-wide seat.",
+  "summary": "Conservative Boris Johnson unseated the two-term incumbent Ken Livingstone (Labour) to become the second Mayor of London. Johnson won 1,044,068 first-preference votes (43.2%) to Livingstone's 894,316 (37.0%), and was elected with 1,168,738 votes (53.2%) to 1,028,966 (46.8%) after second preferences. Turnout jumped almost nine points to 44.6%. The Conservatives became the largest Assembly party with 11 seats, and the BNP won its first — and only — London-wide seat.",
   "highlights": [
     "Boris Johnson defeats Ken Livingstone to take City Hall for the Conservatives",
     "Johnson elected with 53.2% after second preferences",
@@ -43,7 +43,7 @@
         "firstPct": 9.8
       },
       {
-        "name": "Si\u00e2n Berry",
+        "name": "Siân Berry",
         "party": "green",
         "firstVotes": 77396,
         "firstPct": 3.2
@@ -158,51 +158,56 @@
   },
   "booklet": {
     "title": "London Elects candidate booklet",
-    "pdf": "/manifestos/london/gla-2008/booklet/booklet.pdf",
-    "cover": "/manifestos/london/gla-2008/booklet/cover.png"
+    "pdf": "/manifestos/london/2008/booklet/booklet.pdf",
+    "cover": "/manifestos/london/2008/booklet/cover.png"
   },
   "manifestos": [
     {
       "party": "conservative",
       "candidate": "Boris Johnson",
       "title": "Complete Manifesto",
-      "pdf": "/manifestos/london/gla-2008/conservative/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2008/conservative/cover.png"
+      "pdf": "/manifestos/london/2008/conservative/manifesto.pdf",
+      "cover": "/manifestos/london/2008/conservative/cover.png",
+      "id": "conservative"
     },
     {
       "party": "libdem",
       "candidate": "Brian Paddick",
       "title": "The experience to deliver",
-      "pdf": "/manifestos/london/gla-2008/libdem/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2008/libdem/cover.png"
+      "pdf": "/manifestos/london/2008/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/2008/libdem/cover.png",
+      "id": "libdem"
     },
     {
       "party": "cooperative",
       "title": "London Co-operative Party manifesto",
-      "pdf": "/manifestos/london/gla-2008/cooperative/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2008/cooperative/cover.png"
+      "pdf": "/manifestos/london/2008/cooperative/manifesto.pdf",
+      "cover": "/manifestos/london/2008/cooperative/cover.png",
+      "id": "cooperative"
     },
     {
       "party": "green",
-      "candidate": "Si\u00e2n Berry",
-      "pdf": "/manifestos/london/gla-2008/green/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2008/green/cover.png"
+      "candidate": "Siân Berry",
+      "pdf": "/manifestos/london/2008/green/manifesto.pdf",
+      "cover": "/manifestos/london/2008/green/cover.png",
+      "id": "green"
     },
     {
       "party": "englishdemocrats",
       "candidate": "Matt O'Connor",
       "title": "English Democrats manifesto",
-      "pdf": "/manifestos/london/gla-2008/englishdemocrats/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2008/englishdemocrats/cover.png"
+      "pdf": "/manifestos/london/2008/englishdemocrats/manifesto.pdf",
+      "cover": "/manifestos/london/2008/englishdemocrats/cover.png",
+      "id": "englishdemocrats"
     }
   ],
   "sources": [
     {
-      "label": "House of Commons Library \u2014 London Elections 2008 (RP 08/47)",
+      "label": "House of Commons Library — London Elections 2008 (RP 08/47)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/rp08-47/"
     },
     {
-      "label": "London Elects \u2014 election results",
+      "label": "London Elects — election results",
       "url": "https://www.londonelects.org.uk/im-voter/election-results/"
     }
   ]

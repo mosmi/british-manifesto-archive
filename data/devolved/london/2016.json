@@ -1,5 +1,5 @@
 {
-  "id": "gla-2016",
+  "id": "2016",
   "body": "gla",
   "year": 2016,
   "displayYear": "2016",
@@ -37,7 +37,7 @@
         "finalPct": 43.2
       },
       {
-        "name": "Si\u00e2n Berry",
+        "name": "Siân Berry",
         "party": "green",
         "firstVotes": 150673,
         "firstPct": 5.8
@@ -73,11 +73,11 @@
         "firstPct": 1.2
       },
       {
-      "name": "Lee Harris",
-      "party": "cista",
-      "firstVotes": 20537,
-      "firstPct": 0.8
-    },
+        "name": "Lee Harris",
+        "party": "cista",
+        "firstVotes": 20537,
+        "firstPct": 0.8
+      },
       {
         "name": "David Furness",
         "party": "bnp",
@@ -169,72 +169,83 @@
   },
   "booklet": {
     "title": "London Elects candidate booklet",
-    "pdf": "/manifestos/london/gla-2016/booklet/booklet.pdf",
-    "cover": "/manifestos/london/gla-2016/booklet/cover.png"
+    "pdf": "/manifestos/london/2016/booklet/booklet.pdf",
+    "cover": "/manifestos/london/2016/booklet/cover.png"
   },
   "manifestos": [
     {
       "party": "labour",
       "candidate": "Sadiq Khan",
-      "pdf": "/manifestos/london/gla-2016/labour/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/labour/cover.png"
+      "pdf": "/manifestos/london/2016/labour/manifesto.pdf",
+      "cover": "/manifestos/london/2016/labour/cover.png",
+      "id": "labour"
     },
     {
       "party": "conservative",
       "candidate": "Zac Goldsmith",
-      "pdf": "/manifestos/london/gla-2016/conservative/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/conservative/cover.png"
+      "pdf": "/manifestos/london/2016/conservative/manifesto.pdf",
+      "cover": "/manifestos/london/2016/conservative/cover.png",
+      "id": "conservative"
     },
     {
       "party": "libdem",
       "candidate": "Caroline Pidgeon",
-      "pdf": "/manifestos/london/gla-2016/libdem/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/libdem/cover.png"
+      "pdf": "/manifestos/london/2016/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/2016/libdem/cover.png",
+      "id": "libdem"
     },
     {
       "party": "green",
-      "candidate": "Si\u00e2n Berry",
-      "pdf": "/manifestos/london/gla-2016/green/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/green/cover.png"
+      "candidate": "Siân Berry",
+      "pdf": "/manifestos/london/2016/green/manifesto.pdf",
+      "cover": "/manifestos/london/2016/green/cover.png",
+      "id": "green"
     },
     {
       "party": "ukip",
       "candidate": "Peter Whittle",
-      "pdf": "/manifestos/london/gla-2016/ukip/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/ukip/cover.png"
+      "pdf": "/manifestos/london/2016/ukip/manifesto.pdf",
+      "cover": "/manifestos/london/2016/ukip/cover.png",
+      "id": "ukip"
     },
     {
       "party": "respect",
       "candidate": "George Galloway",
-      "pdf": "/manifestos/london/gla-2016/respect/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/respect/cover.png"
+      "pdf": "/manifestos/london/2016/respect/manifesto.pdf",
+      "cover": "/manifestos/london/2016/respect/cover.png",
+      "id": "respect"
     },
     {
       "partyLabel": "Women's Equality Party",
       "candidate": "Sophie Walker",
-      "pdf": "/manifestos/london/gla-2016/wep/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/wep/cover.png"
+      "pdf": "/manifestos/london/2016/wep/manifesto.pdf",
+      "cover": "/manifestos/london/2016/wep/cover.png",
+      "id": "wep",
+      "party": "wep"
     },
     {
       "party": "bnp",
       "candidate": "David Furness",
-      "pdf": "/manifestos/london/gla-2016/bnp/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/bnp/cover.png"
+      "pdf": "/manifestos/london/2016/bnp/manifesto.pdf",
+      "cover": "/manifestos/london/2016/bnp/cover.png",
+      "id": "bnp"
     },
     {
       "partyLabel": "One Love Party",
       "candidate": "Ankit Love",
-      "pdf": "/manifestos/london/gla-2016/onelove/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2016/onelove/cover.png"
+      "pdf": "/manifestos/london/2016/onelove/manifesto.pdf",
+      "cover": "/manifestos/london/2016/onelove/cover.png",
+      "id": "onelove",
+      "party": "onelove"
     }
   ],
   "sources": [
     {
-      "label": "House of Commons Library \u2014 London Elections 2016 (CBP-7598)",
+      "label": "House of Commons Library — London Elections 2016 (CBP-7598)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7598/"
     },
     {
-      "label": "London Elects \u2014 election results",
+      "label": "London Elects — election results",
       "url": "https://www.londonelects.org.uk/im-voter/election-results/"
     }
   ]

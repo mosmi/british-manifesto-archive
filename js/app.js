@@ -539,7 +539,16 @@ function route() {
   } else if (path.startsWith('/manifesto/')) {
     const parts = path.split('/').filter(Boolean);
     if (parts.length >= 4) {
-      renderManifesto(app, parts[1] + '/' + parts[2], parts[3]);
+      // Legacy London ids: /manifesto/london/gla-2000/slug → /manifesto/london/2000/slug
+      let electionSeg = parts[2];
+      if (parts[1] === 'london') {
+        const legacy = String(electionSeg).match(/^(?:gla|glc|lcc)-(\d{4})$/);
+        if (legacy) {
+          navigate(`/manifesto/london/${legacy[1]}/${parts[3]}`, { replace: true });
+          return;
+        }
+      }
+      renderManifesto(app, parts[1] + '/' + electionSeg, parts[3]);
     } else {
       renderManifesto(app, parts[1], parts[2]);
     }
@@ -3106,6 +3115,25 @@ function setupManifestoReader(contentEl, paperEl, accent) {
   setActive(0);
 }
 
+function manifestoFolderFromPath(path) {
+  if (!path) return null;
+  const segs = path.split('/').filter(Boolean);
+  return segs.length >= 2 ? segs[segs.length - 2] : null;
+}
+
+function findDevolvedManifestoEntry(election, routeSlug) {
+  if (!election?.manifestos || !routeSlug) return null;
+  return election.manifestos.find(m => {
+    // Prefer explicit folder id — never let affiliation "independent" steal a candidate folder.
+    if (m.id === routeSlug) return true;
+    if (manifestoFolderFromPath(m.pdf || m.md || m.cover) === routeSlug) return true;
+    // Party/label fallback only when that value is also the folder (major parties: id === party).
+    if (m.party === routeSlug && (!m.id || m.id === m.party)) return true;
+    const labelSlug = m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return Boolean(labelSlug && labelSlug === routeSlug && (!m.id || m.id === labelSlug));
+  }) || null;
+}
+
 async function renderManifesto(app, electionId, partyId) {
   let election;
   const isDevolved = electionId.includes('/');
@@ -3120,25 +3148,49 @@ async function renderManifesto(app, electionId, partyId) {
   } else {
     election = getElection(electionId);
   }
-  
-  const party = PARTIES[partyId];
-  if (!election || !party) { renderNotFound(app); return; }
+
+  if (!election) { renderNotFound(app); return; }
+
+  // Devolved (esp. London): resolve by folder/id first — independents are not PARTIES keys.
+  const mEntry = isDevolved
+    ? findDevolvedManifestoEntry(election, partyId)
+    : election.manifestos?.find(m =>
+        m.party === partyId ||
+        m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '') === partyId);
+
+  const colourId = (mEntry?.party && resolvePartyId(mEntry.party)) || partyId;
+  const party = PARTIES[partyId] || PARTIES[colourId] || null;
+  if (!isDevolved && !party) { renderNotFound(app); return; }
+  // Devolved text pages require a real manifesto entry (folder id). Affiliation-only
+  // URLs like /manifesto/london/2000/independent must not open a blank viewer.
+  if (isDevolved && !mEntry) { renderNotFound(app); return; }
 
   const displayName = (election.manifestoPartyLabels && election.manifestoPartyLabels[partyId])
-    || getPartyName(partyId, election.year);
+    || mEntry?.candidate
+    || mEntry?.partyLabel
+    || (party ? getPartyName(partyId, election.year) : null)
+    || (colourId !== partyId && PARTIES[colourId] ? getPartyName(colourId, election.year) : null)
+    || partyId;
   const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
   const accent = typeof partyAccentDerivedForYear === 'function'
-    ? partyAccentDerivedForYear(partyId, election.year, theme)
-    : { raw: party.color, surface: party.color, kicker: party.color };
+    ? partyAccentDerivedForYear(colourId, election.year, theme)
+    : { raw: party?.color || '#6b7280', surface: party?.color || '#6b7280', kicker: party?.color || '#6b7280' };
 
-  const mEntry = election.manifestos?.find(m => m.party === partyId || m.partyLabel?.toLowerCase().replace(/[^a-z0-9]/g, '') === partyId);
-  const pdfPath = mEntry ? mEntry.pdf : `/manifestos/${electionId}/${partyId}/manifesto.pdf`;
-  const hasPdf = isDevolved ? Boolean(pdfPath) : hasManifestoPdf(electionId, partyId);
+  const folderSlug = (mEntry && manifestoFolderFromPath(mEntry.pdf || mEntry.md || mEntry.cover)) || partyId;
+  const pdfPath = mEntry?.pdf || `/manifestos/${electionId}/${folderSlug}/manifesto.pdf`;
+  const mdPath = mEntry?.md
+    || (mEntry?.pdf ? mEntry.pdf.replace(/manifesto\.pdf$/i, 'manifesto.md') : null)
+    || `/manifestos/${electionId}/${folderSlug}/manifesto.md`;
+  const hasPdf = isDevolved ? Boolean(mEntry?.pdf) : hasManifestoPdf(electionId, partyId);
   const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
   const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
   
-  const coverPath = mEntry ? `${mEntry.cover}?v=${ASSETS_VERSION}` : `/manifestos/${electionId}/${partyId}/cover.png?v=${ASSETS_VERSION}`;
-  const coverFallback = mEntry ? `${mEntry.cover}?v=${ASSETS_VERSION}` : `/manifestos/${electionId}/${partyId}/cover.jpg?v=${ASSETS_VERSION}`;
+  const coverPath = mEntry?.cover
+    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
+    : `/manifestos/${electionId}/${folderSlug}/cover.png?v=${ASSETS_VERSION}`;
+  const coverFallback = mEntry?.cover
+    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
+    : `/manifestos/${electionId}/${folderSlug}/cover.jpg?v=${ASSETS_VERSION}`;
   
   const coverThumbOpen = hasPdf
     ? `<a href="${pdfPath}" class="manifesto-viewer-cover-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">`
@@ -3160,7 +3212,7 @@ async function renderManifesto(app, electionId, partyId) {
               ${pdfDownloadLink}
             </div>`;
   const barSurface = typeof barColour === 'function'
-    ? barColour(getPartyColor(partyId, election.year), theme)
+    ? barColour(getPartyColor(colourId, election.year), theme)
     : accent.surface;
 
   const electionUrl = isDevolved ? `/devolved/${electionId}` : `/election/${election.id}`;
@@ -3170,6 +3222,12 @@ async function renderManifesto(app, electionId, partyId) {
   const kickerLabel = isDevolved
     ? `${DEVOLVED_PORTALS?.[electionId.split('/')[0]]?.label?.toUpperCase() || 'DEVOLVED'} ELECTION ${election.displayYear}`
     : `GENERAL ELECTION ${election.displayYear}`;
+
+  // Breadcrumb party link: affiliation or route slug when a party page exists.
+  const breadcrumbPartyId = (PARTIES[colourId] && colourId) || (PARTIES[partyId] && partyId) || null;
+  const breadcrumbParty = breadcrumbPartyId
+    ? `<a href="/party/${breadcrumbPartyId}">${PARTIES[breadcrumbPartyId] ? getPartyName(breadcrumbPartyId, election.year) : displayName}</a><span aria-hidden="true">›</span>`
+    : `<span>${displayName}</span><span aria-hidden="true">›</span>`;
 
   setPageMeta({
     title: displayName,
@@ -3184,7 +3242,7 @@ async function renderManifesto(app, electionId, partyId) {
           <nav class="manifesto-viewer-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a><span aria-hidden="true">›</span>
             <a href="${electionUrl}">${electionLabel}</a><span aria-hidden="true">›</span>
-            <a href="/party/${partyId}">${displayName}</a><span aria-hidden="true">›</span>
+            ${breadcrumbParty}
             <span class="bc-current">Manifesto</span>
           </nav>
           <div class="manifesto-viewer-title-row">
@@ -3234,7 +3292,7 @@ async function renderManifesto(app, electionId, partyId) {
     </div>
   `;
 
-  fetchTyped(`/manifestos/${electionId}/${partyId}/manifesto.md`, 'markdown')
+  fetchTyped(mdPath, 'markdown')
     .then(md => {
       const { meta, body } = splitManifestoFrontmatter(md);
       const metaEl = document.getElementById('manifesto-header-meta');

@@ -1,5 +1,5 @@
 {
-  "id": "gla-2004",
+  "id": "2004",
   "body": "gla",
   "year": 2004,
   "displayYear": "2004",
@@ -157,37 +157,41 @@
   },
   "booklet": {
     "title": "London Elects candidate booklet",
-    "pdf": "/manifestos/london/gla-2004/booklet/booklet.pdf",
-    "cover": "/manifestos/london/gla-2004/booklet/cover.png"
+    "pdf": "/manifestos/london/2004/booklet/booklet.pdf",
+    "cover": "/manifestos/london/2004/booklet/cover.png"
   },
   "manifestos": [
     {
       "party": "libdem",
       "candidate": "Simon Hughes",
-      "pdf": "/manifestos/london/gla-2004/libdem/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2004/libdem/cover.png"
+      "pdf": "/manifestos/london/2004/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/2004/libdem/cover.png",
+      "id": "libdem"
     },
     {
       "party": "green",
       "candidate": "Darren Johnson",
-      "pdf": "/manifestos/london/gla-2004/green/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2004/green/cover.png"
+      "pdf": "/manifestos/london/2004/green/manifesto.pdf",
+      "cover": "/manifestos/london/2004/green/cover.png",
+      "id": "green"
     },
     {
       "partyLabel": "Christian Peoples Alliance",
       "candidate": "Ram Gidoomal",
       "title": "Passion for London",
-      "pdf": "/manifestos/london/gla-2004/cpa/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2004/cpa/cover.png"
+      "pdf": "/manifestos/london/2004/cpa/manifesto.pdf",
+      "cover": "/manifestos/london/2004/cpa/cover.png",
+      "id": "cpa",
+      "party": "cpa"
     }
   ],
   "sources": [
     {
-      "label": "House of Commons Library \u2014 2004 London Elections (RP 04/48)",
+      "label": "House of Commons Library — 2004 London Elections (RP 04/48)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-48/"
     },
     {
-      "label": "London Elects \u2014 election results",
+      "label": "London Elects — election results",
       "url": "https://www.londonelects.org.uk/im-voter/election-results/"
     }
   ]

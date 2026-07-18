@@ -1,5 +1,5 @@
 {
-  "id": "lcc-1946",
+  "id": "1946",
   "body": "lcc",
   "year": 1946,
   "displayYear": "1946",
@@ -22,30 +22,34 @@
       {
         "party": "labour",
         "seats": 90,
-        "pct": 55.0
+        "pct": 55.0,
+        "votes": 291138
       },
       {
         "party": "conservative",
         "partyLabel": "Municipal Reform",
         "seats": 30,
-        "pct": 42.1
+        "pct": 42.1,
+        "votes": 222840
       },
       {
         "party": "communist",
-        "seats": 2
+        "seats": 2,
+        "votes": 15353
       },
       {
         "party": "libdem",
         "partyLabel": "Liberal",
         "seats": 2,
-        "pct": 1.1
+        "votes": 11119
       }
     ],
-    "note": "124 directly elected councillors, plus aldermen chosen by the council. The main anti-Labour party at this election was the Municipal Reform Party; the Conservatives stood under their own name from 1949. The Elections Centre compendium credits all 94 non-Conservative seats to Labour, but contemporary reports (The Times, 9 March 1946) record 90 Labour, 2 Liberal (Bethnal Green) and 2 Communist (Mile End) — the attribution used here.",
+    "note": "124 directly elected councillors, plus aldermen chosen by the council. The main anti-Labour party at this election was the Municipal Reform Party; the Conservatives stood under their own name from 1949. The Elections Centre compendium credits all 94 non-Conservative seats to Labour, but contemporary reports (The Times, 9 March 1946) record 90 Labour, 2 Liberal (Bethnal Green) and 2 Communist (Mile End) — the attribution used here. Liberal and Communist vote totals are the sums of all their candidates' bloc votes as reported by The Times; their vote shares are omitted because the main-party percentages use the Elections Centre's best-placed-candidate basis.",
     "otherVotes": [
       {
         "name": "National Liberal",
-        "votes": 1930
+        "votes": 1930,
+        "party": "nationalliberal"
       },
       {
         "name": "British People's Party",
@@ -53,7 +57,8 @@
       },
       {
         "name": "Independent",
-        "votes": 1184
+        "votes": 1184,
+        "party": "independent"
       }
     ],
     "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."

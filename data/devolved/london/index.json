@@ -1,6 +1,6 @@
 [
   {
-    "id": "gla-2024",
+    "id": "2024",
     "body": "gla",
     "year": 2024,
     "displayYear": "2024",
@@ -33,7 +33,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2021",
+    "id": "2021",
     "body": "gla",
     "year": 2021,
     "displayYear": "2021",
@@ -62,7 +62,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2016",
+    "id": "2016",
     "body": "gla",
     "year": 2016,
     "displayYear": "2016",
@@ -95,7 +95,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2012",
+    "id": "2012",
     "body": "gla",
     "year": 2012,
     "displayYear": "2012",
@@ -124,7 +124,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2008",
+    "id": "2008",
     "body": "gla",
     "year": 2008,
     "displayYear": "2008",
@@ -157,7 +157,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2004",
+    "id": "2004",
     "body": "gla",
     "year": 2004,
     "displayYear": "2004",
@@ -190,7 +190,7 @@
     "totalSeats": 25
   },
   {
-    "id": "gla-2000",
+    "id": "2000",
     "body": "gla",
     "year": 2000,
     "displayYear": "2000",
@@ -219,7 +219,7 @@
     "totalSeats": 25
   },
   {
-    "id": "glc-1981",
+    "id": "1981",
     "body": "glc",
     "year": 1981,
     "displayYear": "1981",
@@ -230,7 +230,7 @@
     "results": []
   },
   {
-    "id": "glc-1977",
+    "id": "1977",
     "body": "glc",
     "year": 1977,
     "displayYear": "1977",
@@ -241,7 +241,7 @@
     "results": []
   },
   {
-    "id": "glc-1973",
+    "id": "1973",
     "body": "glc",
     "year": 1973,
     "displayYear": "1973",
@@ -252,7 +252,7 @@
     "results": []
   },
   {
-    "id": "glc-1970",
+    "id": "1970",
     "body": "glc",
     "year": 1970,
     "displayYear": "1970",
@@ -263,7 +263,7 @@
     "results": []
   },
   {
-    "id": "glc-1967",
+    "id": "1967",
     "body": "glc",
     "year": 1967,
     "displayYear": "1967",
@@ -274,7 +274,7 @@
     "results": []
   },
   {
-    "id": "glc-1964",
+    "id": "1964",
     "body": "glc",
     "year": 1964,
     "displayYear": "1964",
@@ -285,7 +285,7 @@
     "results": []
   },
   {
-    "id": "lcc-1961",
+    "id": "1961",
     "body": "lcc",
     "year": 1961,
     "displayYear": "1961",
@@ -296,7 +296,7 @@
     "results": []
   },
   {
-    "id": "lcc-1958",
+    "id": "1958",
     "body": "lcc",
     "year": 1958,
     "displayYear": "1958",
@@ -307,7 +307,7 @@
     "results": []
   },
   {
-    "id": "lcc-1955",
+    "id": "1955",
     "body": "lcc",
     "year": 1955,
     "displayYear": "1955",
@@ -318,7 +318,7 @@
     "results": []
   },
   {
-    "id": "lcc-1952",
+    "id": "1952",
     "body": "lcc",
     "year": 1952,
     "displayYear": "1952",
@@ -329,7 +329,7 @@
     "results": []
   },
   {
-    "id": "lcc-1949",
+    "id": "1949",
     "body": "lcc",
     "year": 1949,
     "displayYear": "1949",
@@ -340,7 +340,7 @@
     "results": []
   },
   {
-    "id": "lcc-1946",
+    "id": "1946",
     "body": "lcc",
     "year": 1946,
     "displayYear": "1946",

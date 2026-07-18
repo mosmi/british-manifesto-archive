@@ -1,5 +1,5 @@
 {
-  "id": "gla-2012",
+  "id": "2012",
   "body": "gla",
   "year": 2012,
   "displayYear": "2012",
@@ -8,7 +8,7 @@
   "mayorWinner": "conservative",
   "mayorWinnerName": "Boris Johnson",
   "turnout": 37.4,
-  "summary": "Conservative Boris Johnson was re-elected Mayor of London in a rematch with Labour's Ken Livingstone. Johnson won 971,931 first-preference votes (44.0%) to Livingstone's 889,918 (40.3%), and led 1,054,811 to 992,273 after second preferences. It was the closest mayoral contest since the office was created. Labour won 12 Assembly seats \u2014 four more than in 2008 \u2014 to become the largest party in the chamber for the first time, while the BNP lost their only seat.",
+  "summary": "Conservative Boris Johnson was re-elected Mayor of London in a rematch with Labour's Ken Livingstone. Johnson won 971,931 first-preference votes (44.0%) to Livingstone's 889,918 (40.3%), and led 1,054,811 to 992,273 after second preferences. It was the closest mayoral contest since the office was created. Labour won 12 Assembly seats — four more than in 2008 — to become the largest party in the chamber for the first time, while the BNP lost their only seat.",
   "highlights": [
     "Boris Johnson wins a second term in the closest mayoral race yet",
     "Johnson beats Livingstone 51.5% to 48.5% after second preferences",
@@ -136,56 +136,62 @@
   },
   "booklet": {
     "title": "London Elects candidate booklet",
-    "pdf": "/manifestos/london/gla-2012/booklet/booklet.pdf",
-    "cover": "/manifestos/london/gla-2012/booklet/cover.png"
+    "pdf": "/manifestos/london/2012/booklet/booklet.pdf",
+    "cover": "/manifestos/london/2012/booklet/cover.png"
   },
   "manifestos": [
     {
       "party": "labour",
       "candidate": "Ken Livingstone",
-      "pdf": "/manifestos/london/gla-2012/labour/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/labour/cover.png"
+      "pdf": "/manifestos/london/2012/labour/manifesto.pdf",
+      "cover": "/manifestos/london/2012/labour/cover.png",
+      "id": "labour"
     },
     {
       "party": "conservative",
       "candidate": "Boris Johnson",
       "title": "Taking Greater London Forward",
-      "pdf": "/manifestos/london/gla-2012/conservative/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/conservative/cover.png"
+      "pdf": "/manifestos/london/2012/conservative/manifesto.pdf",
+      "cover": "/manifestos/london/2012/conservative/cover.png",
+      "id": "conservative"
     },
     {
       "party": "libdem",
       "candidate": "Brian Paddick",
-      "pdf": "/manifestos/london/gla-2012/libdem/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/libdem/cover.png"
+      "pdf": "/manifestos/london/2012/libdem/manifesto.pdf",
+      "cover": "/manifestos/london/2012/libdem/cover.png",
+      "id": "libdem"
     },
     {
       "party": "green",
       "candidate": "Jenny Jones",
-      "pdf": "/manifestos/london/gla-2012/green/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/green/cover.png"
+      "pdf": "/manifestos/london/2012/green/manifesto.pdf",
+      "cover": "/manifestos/london/2012/green/cover.png",
+      "id": "green"
     },
     {
       "party": "bnp",
       "candidate": "Carlos Cortiglia",
-      "pdf": "/manifestos/london/gla-2012/bnp/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/bnp/cover.png"
+      "pdf": "/manifestos/london/2012/bnp/manifesto.pdf",
+      "cover": "/manifestos/london/2012/bnp/cover.png",
+      "id": "bnp"
     },
     {
       "party": "independent",
       "candidate": "Siobhan Benita",
       "title": "Introduction manifesto",
-      "pdf": "/manifestos/london/gla-2012/benita/manifesto.pdf",
-      "cover": "/manifestos/london/gla-2012/benita/cover.png"
+      "pdf": "/manifestos/london/2012/benita/manifesto.pdf",
+      "cover": "/manifestos/london/2012/benita/cover.png",
+      "id": "benita"
     }
   ],
   "sources": [
     {
-      "label": "House of Commons Library \u2014 London Elections 2012 (RP 12/28)",
+      "label": "House of Commons Library — London Elections 2012 (RP 12/28)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/rp12-28/"
     },
     {
-      "label": "London Elects \u2014 election results",
+      "label": "London Elects — election results",
       "url": "https://www.londonelects.org.uk/im-voter/election-results/"
     }
   ]

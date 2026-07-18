@@ -1,5 +1,5 @@
 {
-  "id": "lcc-1952",
+  "id": "1952",
   "body": "lcc",
   "year": 1952,
   "displayYear": "1952",
@@ -21,12 +21,14 @@
       {
         "party": "labour",
         "seats": 92,
-        "pct": 55.1
+        "pct": 55.1,
+        "votes": 577506
       },
       {
         "party": "conservative",
         "seats": 37,
-        "pct": 43.5
+        "pct": 43.5,
+        "votes": 456298
       }
     ],
     "note": "129 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
@@ -34,12 +36,14 @@
       {
         "name": "Liberal",
         "votes": 19723,
-        "pct": 0.6
+        "pct": 0.6,
+        "party": "libdem"
       },
       {
         "name": "Communist",
         "votes": 11131,
-        "pct": 0.4
+        "pct": 0.4,
+        "party": "communist"
       },
       {
         "name": "Union Movement",
@@ -49,7 +53,8 @@
       {
         "name": "Independent",
         "votes": 1672,
-        "pct": 0.05
+        "pct": 0.05,
+        "party": "independent"
       }
     ],
     "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."

@@ -52,7 +52,7 @@ ITEMS: list[tuple[str, str, str, str]] = [
     ("2024", "tusc", "2024 General election/Trade Unionist and Socialist Coalition 2024 manifesto.pdf", "TUSC Manifesto 2024"),
     ("2024", "walesgrn", "2024 General election/Wales Green Party 2024 manifesto.pdf", "Wales Green Party Manifesto 2024"),
     (
-        "london/gla-2008",
+        "london/2008",
         "englishdemocrats",
         "Devolved Elections/London/2008 London Devolved Election/Matt OConnor English Democrats - EDP UK manifesto.pdf",
         "English Democrats Manifesto 2008 (London)",

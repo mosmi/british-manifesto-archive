@@ -1,5 +1,5 @@
 {
-  "id": "lcc-1955",
+  "id": "1955",
   "body": "lcc",
   "year": 1955,
   "displayYear": "1955",
@@ -21,12 +21,14 @@
       {
         "party": "labour",
         "seats": 74,
-        "pct": 50.3
+        "pct": 50.3,
+        "votes": 388141
       },
       {
         "party": "conservative",
         "seats": 52,
-        "pct": 47.2
+        "pct": 47.2,
+        "votes": 363862
       }
     ],
     "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
@@ -34,12 +36,14 @@
       {
         "name": "Liberal",
         "votes": 27615,
-        "pct": 1.2
+        "pct": 1.2,
+        "party": "libdem"
       },
       {
         "name": "Communist",
         "votes": 11473,
-        "pct": 0.5
+        "pct": 0.5,
+        "party": "communist"
       },
       {
         "name": "Union Movement",
@@ -49,7 +53,8 @@
       {
         "name": "Independent",
         "votes": 2160,
-        "pct": 0.1
+        "pct": 0.1,
+        "party": "independent"
       }
     ],
     "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."

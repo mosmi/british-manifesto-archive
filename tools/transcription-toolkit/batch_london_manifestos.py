@@ -10,67 +10,67 @@ REPO_ROOT = TOOLKIT_DIR.parents[1]
 # Mappings of election -> candidates
 BATCHES = {
     "1": [
-        "manifestos/london/gla-2024/sdp/manifesto.pdf",
-        "manifestos/london/gla-2024/londonreal/manifesto.pdf",
-        "manifestos/london/gla-2024/binface/manifesto.pdf",
-        "manifestos/london/gla-2024/awp/manifesto.pdf",
-        "manifestos/london/gla-2024/reform/manifesto.pdf",
-        "manifestos/london/gla-2024/conservative/manifesto.pdf"
+        "manifestos/london/2024/sdp/manifesto.pdf",
+        "manifestos/london/2024/londonreal/manifesto.pdf",
+        "manifestos/london/2024/binface/manifesto.pdf",
+        "manifestos/london/2024/awp/manifesto.pdf",
+        "manifestos/london/2024/reform/manifesto.pdf",
+        "manifestos/london/2024/conservative/manifesto.pdf"
     ],
     "2": [
-        "manifestos/london/gla-2024/michli/manifesto.pdf",
-        "manifestos/london/gla-2024/campbell/manifesto.pdf",
-        "manifestos/london/gla-2024/britainfirst/manifesto.pdf",
-        "manifestos/london/gla-2024/libdem/manifesto.pdf",
-        "manifestos/london/gla-2024/labour/manifesto.pdf",
-        "manifestos/london/gla-2024/ghulati/manifesto.pdf",
-        "manifestos/london/gla-2024/green/manifesto.pdf"
+        "manifestos/london/2024/michli/manifesto.pdf",
+        "manifestos/london/2024/campbell/manifesto.pdf",
+        "manifestos/london/2024/britainfirst/manifesto.pdf",
+        "manifestos/london/2024/libdem/manifesto.pdf",
+        "manifestos/london/2024/labour/manifesto.pdf",
+        "manifestos/london/2024/ghulati/manifesto.pdf",
+        "manifestos/london/2024/green/manifesto.pdf"
     ],
     "3": [
-        "manifestos/london/gla-2021/labour/manifesto.pdf",
-        "manifestos/london/gla-2021/conservative/manifesto.pdf",
-        "manifestos/london/gla-2021/libdem/manifesto.pdf",
-        "manifestos/london/gla-2021/green/manifesto.pdf",
-        "manifestos/london/gla-2021/londonreal/manifesto.pdf",
-        "manifestos/london/gla-2021/reclaim/manifesto.pdf",
-        "manifestos/london/gla-2021/binface/manifesto.pdf",
-        "manifestos/london/gla-2021/pierscorbyn/manifesto.pdf",
-        "manifestos/london/gla-2021/burningpink/manifesto.pdf",
-        "manifestos/london/gla-2021/maxfosh/manifesto.pdf"
+        "manifestos/london/2021/labour/manifesto.pdf",
+        "manifestos/london/2021/conservative/manifesto.pdf",
+        "manifestos/london/2021/libdem/manifesto.pdf",
+        "manifestos/london/2021/green/manifesto.pdf",
+        "manifestos/london/2021/londonreal/manifesto.pdf",
+        "manifestos/london/2021/reclaim/manifesto.pdf",
+        "manifestos/london/2021/binface/manifesto.pdf",
+        "manifestos/london/2021/pierscorbyn/manifesto.pdf",
+        "manifestos/london/2021/burningpink/manifesto.pdf",
+        "manifestos/london/2021/maxfosh/manifesto.pdf"
     ],
     "4": [
-        "manifestos/london/gla-2004/libdem/manifesto.pdf",
-        "manifestos/london/gla-2004/green/manifesto.pdf",
-        "manifestos/london/gla-2004/cpa/manifesto.pdf"
+        "manifestos/london/2004/libdem/manifesto.pdf",
+        "manifestos/london/2004/green/manifesto.pdf",
+        "manifestos/london/2004/cpa/manifesto.pdf"
     ],
     "5": [
-        "manifestos/london/gla-2016/labour/manifesto.pdf",
-        "manifestos/london/gla-2016/conservative/manifesto.pdf",
-        "manifestos/london/gla-2016/libdem/manifesto.pdf",
-        "manifestos/london/gla-2016/green/manifesto.pdf",
-        "manifestos/london/gla-2016/ukip/manifesto.pdf",
-        "manifestos/london/gla-2016/respect/manifesto.pdf",
-        "manifestos/london/gla-2016/wep/manifesto.pdf",
-        "manifestos/london/gla-2016/bnp/manifesto.pdf",
-        "manifestos/london/gla-2016/onelove/manifesto.pdf"
+        "manifestos/london/2016/labour/manifesto.pdf",
+        "manifestos/london/2016/conservative/manifesto.pdf",
+        "manifestos/london/2016/libdem/manifesto.pdf",
+        "manifestos/london/2016/green/manifesto.pdf",
+        "manifestos/london/2016/ukip/manifesto.pdf",
+        "manifestos/london/2016/respect/manifesto.pdf",
+        "manifestos/london/2016/wep/manifesto.pdf",
+        "manifestos/london/2016/bnp/manifesto.pdf",
+        "manifestos/london/2016/onelove/manifesto.pdf"
     ],
     "6": [
-        "manifestos/london/gla-2012/labour/manifesto.pdf",
-        "manifestos/london/gla-2012/conservative/manifesto.pdf",
-        "manifestos/london/gla-2012/libdem/manifesto.pdf",
-        "manifestos/london/gla-2012/green/manifesto.pdf",
-        "manifestos/london/gla-2012/bnp/manifesto.pdf",
-        "manifestos/london/gla-2012/benita/manifesto.pdf"
+        "manifestos/london/2012/labour/manifesto.pdf",
+        "manifestos/london/2012/conservative/manifesto.pdf",
+        "manifestos/london/2012/libdem/manifesto.pdf",
+        "manifestos/london/2012/green/manifesto.pdf",
+        "manifestos/london/2012/bnp/manifesto.pdf",
+        "manifestos/london/2012/benita/manifesto.pdf"
     ],
     "7": [
-        "manifestos/london/gla-2008/conservative/manifesto.pdf",
-        "manifestos/london/gla-2008/libdem/manifesto.pdf",
-        "manifestos/london/gla-2008/cooperative/manifesto.pdf",
-        "manifestos/london/gla-2008/green/manifesto.pdf",
-        "manifestos/london/gla-2008/englishdemocrats/manifesto.pdf"
+        "manifestos/london/2008/conservative/manifesto.pdf",
+        "manifestos/london/2008/libdem/manifesto.pdf",
+        "manifestos/london/2008/cooperative/manifesto.pdf",
+        "manifestos/london/2008/green/manifesto.pdf",
+        "manifestos/london/2008/englishdemocrats/manifesto.pdf"
     ],
     "8": [
-        "manifestos/london/gla-2000/livingstone/manifesto.pdf"
+        "manifestos/london/2000/livingstone/manifesto.pdf"
     ]
 }
 

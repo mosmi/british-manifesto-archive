@@ -214,14 +214,24 @@ function westminsterGhost(eid, election) {
   return String(y).slice(-2);
 }
 
+function londonBodyFromSub(sub) {
+  // Year-only election ids — era from year bands (LCC ≤1961, GLC 1964–1981, GLA ≥2000).
+  const y = parseInt(String(sub).replace(/\D/g, ''), 10);
+  if (!Number.isFinite(y)) return 'gla';
+  if (y <= 1961) return 'lcc';
+  if (y <= 1986) return 'glc';
+  return 'gla';
+}
+
 function londonKicker(sub) {
-  if (sub.startsWith('lcc-')) return 'LONDON COUNTY COUNCIL';
-  if (sub.startsWith('glc-')) return 'GREATER LONDON COUNCIL';
+  const body = londonBodyFromSub(sub);
+  if (body === 'lcc') return 'LONDON COUNTY COUNCIL';
+  if (body === 'glc') return 'GREATER LONDON COUNCIL';
   return 'MAYOR & ASSEMBLY';
 }
 
 function londonHasMap(sub) {
-  return sub.startsWith('gla-');
+  return londonBodyFromSub(sub) === 'gla';
 }
 
 function portalFirstYear(portal) {

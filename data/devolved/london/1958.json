@@ -1,5 +1,5 @@
 {
-  "id": "lcc-1958",
+  "id": "1958",
   "body": "lcc",
   "year": 1958,
   "displayYear": "1958",
@@ -21,17 +21,20 @@
       {
         "party": "labour",
         "seats": 101,
-        "pct": 58.4
+        "pct": 58.4,
+        "votes": 422875
       },
       {
         "party": "conservative",
         "seats": 25,
-        "pct": 37.5
+        "pct": 37.5,
+        "votes": 271609
       },
       {
         "party": "libdem",
         "seats": 0,
-        "pct": 3.0
+        "pct": 3.0,
+        "votes": 21672
       }
     ],
     "note": "126 directly elected councillors, plus aldermen chosen by the council. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
@@ -39,22 +42,26 @@
       {
         "name": "Communist",
         "votes": 4772,
-        "pct": 0.7
+        "pct": 0.7,
+        "party": "communist"
       },
       {
         "name": "Independent Labour Party",
         "votes": 1382,
-        "pct": 0.2
+        "pct": 0.2,
+        "party": "ilp"
       },
       {
         "name": "Independent",
         "votes": 1334,
-        "pct": 0.2
+        "pct": 0.2,
+        "party": "independent"
       },
       {
         "name": "Socialist Party of Great Britain",
         "votes": 995,
-        "pct": 0.1
+        "pct": 0.1,
+        "party": "spgb"
       }
     ],
     "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."
@@ -81,7 +88,8 @@
     {
       "party": "spgb",
       "title": "London County Council Elections: Party Manifesto",
-      "md": "/manifestos/london/lcc-1958/spgb/manifesto.md"
+      "md": "/manifestos/london/1958/spgb/manifesto.md",
+      "id": "spgb"
     }
   ]
 }

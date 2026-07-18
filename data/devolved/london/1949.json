@@ -1,5 +1,5 @@
 {
-  "id": "lcc-1949",
+  "id": "1949",
   "body": "lcc",
   "year": 1949,
   "displayYear": "1949",
@@ -21,17 +21,20 @@
       {
         "party": "conservative",
         "seats": 64,
-        "pct": 50.7
+        "pct": 50.7,
+        "votes": 517346
       },
       {
         "party": "labour",
         "seats": 64,
-        "pct": 46.9
+        "pct": 46.9,
+        "votes": 478347
       },
       {
         "party": "libdem",
         "seats": 1,
-        "pct": 1.3
+        "pct": 1.3,
+        "votes": 13416
       }
     ],
     "note": "129 directly elected councillors, plus aldermen chosen by the council. With the elected seats tied, Labour retained control through its majority among the aldermen. Seat shares are taken from Rallings & Thrasher's record of LCC results.",
@@ -39,7 +42,8 @@
       {
         "name": "Communist",
         "votes": 26666,
-        "pct": 0.9
+        "pct": 0.9,
+        "party": "communist"
       },
       {
         "name": "Union Movement",
@@ -49,7 +53,8 @@
       {
         "name": "Independent",
         "votes": 617,
-        "pct": 0.02
+        "pct": 0.02,
+        "party": "independent"
       }
     ],
     "otherVotesNote": "Under the multi-member bloc vote each elector had as many votes as seats to fill; minor-party totals and shares are as recorded in the Elections Centre compendium and contemporary press reports, whose percentage bases differ slightly."

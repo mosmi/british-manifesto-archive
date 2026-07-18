@@ -194,6 +194,24 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1955/communist#document",
+          "name": "Communist Party Programme 1955",
+          "url": "https://www.manifestos.org.uk/manifesto/1955/communist",
+          "keywords": [
+            "foreign policy",
+            "defence",
+            "economy",
+            "taxation",
+            "housing",
+            "education",
+            "health",
+            "welfare",
+            "democracy and constitution",
+            "agriculture"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1955/conservative#document",
           "name": "Conservatives Manifesto 1955",
           "url": "https://www.manifestos.org.uk/manifesto/1955/conservative",
@@ -366,6 +384,24 @@
             "agriculture",
             "science and technology",
             "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1966/communist#document",
+          "name": "Communist Party Manifesto 1966",
+          "url": "https://www.manifestos.org.uk/manifesto/1966/communist",
+          "keywords": [
+            "economy",
+            "taxation",
+            "housing",
+            "education",
+            "health",
+            "welfare",
+            "foreign policy",
+            "defence",
+            "democracy and constitution",
+            "agriculture"
           ]
         },
         {
@@ -5014,9 +5050,46 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/cpa#document",
-          "name": "Christian Peoples Alliance London Mayoral Manifesto 2004",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/cpa",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/1958/spgb#document",
+          "name": "Socialist Party of Great Britain LCC Manifesto 1958",
+          "url": "https://www.manifestos.org.uk/manifesto/london/1958/spgb",
+          "keywords": [
+            "housing",
+            "education",
+            "health",
+            "economy"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2000/livingstone#document",
+          "name": "Ken Livingstone Manifesto 2000",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2000/livingstone",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2004/cpa#document",
+          "name": "Ram Gidoomal Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2004/cpa",
           "keywords": [
             "economy",
             "taxation",
@@ -5039,9 +5112,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/green#document",
-          "name": "Green Party London Mayoral Manifesto 2004",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/green",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2004/green#document",
+          "name": "Darren Johnson Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2004/green",
           "keywords": [
             "economy",
             "taxation",
@@ -5065,9 +5138,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2004/libdem#document",
-          "name": "Liberal Democrats London Mayoral Manifesto 2004",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2004/libdem",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2004/libdem#document",
+          "name": "Simon Hughes Manifesto 2004",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2004/libdem",
           "keywords": [
             "economy",
             "taxation",
@@ -5090,9 +5163,457 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/binface#document",
-          "name": "Count Binface London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/binface",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2008/conservative#document",
+          "name": "Boris Johnson Manifesto 2008",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2008/conservative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2008/cooperative#document",
+          "name": "Cooperative Manifesto 2008",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2008/cooperative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2008/englishdemocrats#document",
+          "name": "Matt O'Connor Manifesto 2008",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2008/englishdemocrats",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2008/green#document",
+          "name": "Siân Berry Manifesto 2008",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2008/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2008/libdem#document",
+          "name": "Brian Paddick Manifesto 2008",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2008/libdem",
+          "keywords": [
+            "economy",
+            "health",
+            "education",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/benita#document",
+          "name": "Siobhan Benita Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/benita",
+          "keywords": [
+            "economy",
+            "education",
+            "immigration",
+            "law and order",
+            "welfare",
+            "science and technology"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/bnp#document",
+          "name": "Carlos Cortiglia Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/bnp",
+          "keywords": [
+            "economy",
+            "taxation",
+            "housing",
+            "immigration",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/conservative#document",
+          "name": "Boris Johnson Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/conservative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/green#document",
+          "name": "Jenny Jones Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/labour#document",
+          "name": "Ken Livingstone Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/labour",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2012/libdem#document",
+          "name": "Brian Paddick Manifesto 2012",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2012/libdem",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/bnp#document",
+          "name": "David Furness Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/bnp",
+          "keywords": [
+            "economy",
+            "taxation",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "energy",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/conservative#document",
+          "name": "Zac Goldsmith Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/conservative",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/green#document",
+          "name": "Siân Berry Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/green",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "agriculture",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/labour#document",
+          "name": "Sadiq Khan Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/labour",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/libdem#document",
+          "name": "Caroline Pidgeon Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/libdem",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "energy",
+            "devolution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/onelove#document",
+          "name": "Ankit Love Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/onelove",
+          "keywords": [
+            "economy",
+            "taxation",
+            "education",
+            "housing",
+            "immigration",
+            "defence",
+            "foreign policy",
+            "environment",
+            "law and order",
+            "welfare",
+            "energy",
+            "science and technology"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/respect#document",
+          "name": "George Galloway Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/respect",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "defence",
+            "foreign policy",
+            "transport",
+            "law and order",
+            "democracy and constitution"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/ukip#document",
+          "name": "Peter Whittle Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/ukip",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "democracy and constitution",
+            "energy",
+            "devolution",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2016/wep#document",
+          "name": "Sophie Walker Manifesto 2016",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2016/wep",
+          "keywords": [
+            "economy",
+            "taxation",
+            "health",
+            "education",
+            "housing",
+            "immigration",
+            "foreign policy",
+            "environment",
+            "transport",
+            "law and order",
+            "welfare",
+            "democracy and constitution",
+            "science and technology",
+            "local government"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/binface#document",
+          "name": "Count Binface Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/binface",
           "keywords": [
             "economy",
             "health",
@@ -5105,9 +5626,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink#document",
-          "name": "Burning Pink London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/burningpink",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/burningpink#document",
+          "name": "Valerie Brown Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/burningpink",
           "keywords": [
             "health",
             "education",
@@ -5118,9 +5639,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/conservative#document",
-          "name": "Conservative Party London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/conservative",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/conservative#document",
+          "name": "Shaun Bailey Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/conservative",
           "keywords": [
             "economy",
             "taxation",
@@ -5143,9 +5664,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/green#document",
-          "name": "Green Party London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/green",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/green#document",
+          "name": "Siân Berry Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/green",
           "keywords": [
             "economy",
             "taxation",
@@ -5169,9 +5690,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/labour#document",
-          "name": "Labour Party London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/labour",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/labour#document",
+          "name": "Sadiq Khan Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/labour",
           "keywords": [
             "economy",
             "taxation",
@@ -5194,9 +5715,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/libdem#document",
-          "name": "Liberal Democrats London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/libdem",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/libdem#document",
+          "name": "Luisa Porritt Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/libdem",
           "keywords": [
             "economy",
             "taxation",
@@ -5217,9 +5738,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/londonreal#document",
-          "name": "London Real Party London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/londonreal",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/londonreal#document",
+          "name": "Brian Rose Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/londonreal",
           "keywords": [
             "economy",
             "taxation",
@@ -5239,9 +5760,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/maxfosh#document",
-          "name": "Independent London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/maxfosh",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/maxfosh#document",
+          "name": "Max Fosh Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/maxfosh",
           "keywords": [
             "housing",
             "foreign policy",
@@ -5252,9 +5773,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/pierscorbyn#document",
-          "name": "Let London Live London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/pierscorbyn",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/pierscorbyn#document",
+          "name": "Piers Corbyn Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/pierscorbyn",
           "keywords": [
             "economy",
             "health",
@@ -5268,9 +5789,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2021/reclaim#document",
-          "name": "Reclaim Party London Mayoral Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2021/reclaim",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2021/reclaim#document",
+          "name": "Laurence Fox Manifesto 2021",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2021/reclaim",
           "keywords": [
             "economy",
             "taxation",
@@ -5288,9 +5809,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/awp#document",
-          "name": "Animal Welfare Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/awp",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/awp#document",
+          "name": "Femy Amin Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/awp",
           "keywords": [
             "economy",
             "taxation",
@@ -5312,9 +5833,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/binface#document",
-          "name": "Count Binface London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/binface",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/binface#document",
+          "name": "Count Binface Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/binface",
           "keywords": [
             "taxation",
             "health",
@@ -5328,9 +5849,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/britainfirst#document",
-          "name": "Britain First London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/britainfirst",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/britainfirst#document",
+          "name": "Nick Scanlon Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/britainfirst",
           "keywords": [
             "housing",
             "immigration",
@@ -5340,9 +5861,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/campbell#document",
-          "name": "Natalie Campbell London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/campbell",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/campbell#document",
+          "name": "Natalie Campbell Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/campbell",
           "keywords": [
             "economy",
             "housing",
@@ -5353,9 +5874,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/conservative#document",
-          "name": "Conservative Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/conservative",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/conservative#document",
+          "name": "Susan Hall Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/conservative",
           "keywords": [
             "economy",
             "taxation",
@@ -5372,9 +5893,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/ghulati#document",
-          "name": "Tarun Ghulati London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/ghulati",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/ghulati#document",
+          "name": "Tarun Ghulati Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/ghulati",
           "keywords": [
             "economy",
             "education",
@@ -5390,9 +5911,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/green#document",
-          "name": "Green Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/green",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/green#document",
+          "name": "Zoë Garbett Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/green",
           "keywords": [
             "economy",
             "taxation",
@@ -5415,9 +5936,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/labour#document",
-          "name": "Labour Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/labour",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/labour#document",
+          "name": "Sadiq Khan Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/labour",
           "keywords": [
             "economy",
             "health",
@@ -5439,9 +5960,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/libdem#document",
-          "name": "Liberal Democrats London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/libdem",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/libdem#document",
+          "name": "Rob Blackie Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/libdem",
           "keywords": [
             "economy",
             "taxation",
@@ -5463,9 +5984,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/londonreal#document",
-          "name": "London Real Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/londonreal",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/londonreal#document",
+          "name": "Brian Rose Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/londonreal",
           "keywords": [
             "economy",
             "taxation",
@@ -5484,9 +6005,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/michli#document",
-          "name": "Andreas Michli London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/michli",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/michli#document",
+          "name": "Andreas Michli Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/michli",
           "keywords": [
             "economy",
             "taxation",
@@ -5502,9 +6023,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/reform#document",
-          "name": "Reform UK London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/reform",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/reform#document",
+          "name": "Howard Cox Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/reform",
           "keywords": [
             "housing",
             "transport"
@@ -5512,9 +6033,9 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/gla-2024/sdp#document",
-          "name": "Social Democratic Party London Mayoral Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/london/gla-2024/sdp",
+          "@id": "https://www.manifestos.org.uk/manifesto/london/2024/sdp#document",
+          "name": "Amy Gallagher Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/london/2024/sdp",
           "keywords": [
             "economy",
             "taxation",
@@ -5528,18 +6049,6 @@
             "law and order",
             "democracy and constitution",
             "science and technology"
-          ]
-        },
-        {
-          "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/london/lcc-1958/spgb#document",
-          "name": "Socialist Party of Great Britain LCC Manifesto 1958",
-          "url": "https://www.manifestos.org.uk/manifesto/london/lcc-1958/spgb",
-          "keywords": [
-            "housing",
-            "education",
-            "health",
-            "economy"
           ]
         },
         {
@@ -6727,289 +7236,289 @@
         {
           "@type": "DigitalDocument",
           "name": "Manifesto for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2000/livingstone/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2000/livingstone/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "libdem london/gla-2004",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2004/libdem/manifesto.pdf",
+          "name": "libdem london/2004",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2004/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "green london/gla-2004",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2004/green/manifesto.pdf",
+          "name": "green london/2004",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2004/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Passion for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2004/cpa/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2004/cpa/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Complete Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/conservative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2008/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "The experience to deliver",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/libdem/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2008/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Co-operative Party manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/cooperative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2008/cooperative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "green london/gla-2008",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/green/manifesto.pdf",
+          "name": "green london/2008",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2008/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "English Democrats manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2008/englishdemocrats/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2008/englishdemocrats/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "labour london/gla-2012",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/labour/manifesto.pdf",
+          "name": "labour london/2012",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Taking Greater London Forward",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/conservative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "libdem london/gla-2012",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/libdem/manifesto.pdf",
+          "name": "libdem london/2012",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "green london/gla-2012",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/green/manifesto.pdf",
+          "name": "green london/2012",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "bnp london/gla-2012",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/bnp/manifesto.pdf",
+          "name": "bnp london/2012",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/bnp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Introduction manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2012/benita/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2012/benita/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "labour london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/labour/manifesto.pdf",
+          "name": "labour london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "conservative london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/conservative/manifesto.pdf",
+          "name": "conservative london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "libdem london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/libdem/manifesto.pdf",
+          "name": "libdem london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "green london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/green/manifesto.pdf",
+          "name": "green london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "ukip london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/ukip/manifesto.pdf",
+          "name": "ukip london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/ukip/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "respect london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/respect/manifesto.pdf",
+          "name": "respect london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/respect/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "None london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/wep/manifesto.pdf",
+          "name": "wep london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/wep/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "bnp london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/bnp/manifesto.pdf",
+          "name": "bnp london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/bnp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
-          "name": "None london/gla-2016",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2016/onelove/manifesto.pdf",
+          "name": "onelove london/2016",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2016/onelove/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "A Fairer, Greener, Safer London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/labour/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Shaun Bailey for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/conservative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Liberal Democrat Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/libdem/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Green Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/green/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Common Ground: London Co-operative Party Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/cooperative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/cooperative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Real Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/londonreal/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/londonreal/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Laurence Fox for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/reclaim/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/reclaim/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Max Fosh for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/maxfosh/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/maxfosh/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "14-Point Statement",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/pierscorbyn/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/pierscorbyn/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Burning Pink Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/burningpink/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/burningpink/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Manifesto for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2021/binface/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2021/binface/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "A Fairer, Safer, Greener London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/labour/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/labour/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Contract with London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/conservative/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/conservative/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Fix the Met, Fix London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/libdem/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/libdem/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Green Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/green/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/green/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Needs Reform",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/reform/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/reform/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Manifesto for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/campbell/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/campbell/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Making London Work for You",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/sdp/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/sdp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "A Vision for London",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/awp/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/awp/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Make London Strong",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/michli/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/michli/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Vision Statement and Policy Ideas",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/ghulati/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/ghulati/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Make Earth Great Again",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/binface/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/binface/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "Taking Our Country Back",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/britainfirst/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/britainfirst/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
           "@type": "DigitalDocument",
           "name": "London Real Party Manifesto",
-          "url": "https://www.manifestos.org.uk/manifestos/london/gla-2024/londonreal/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/london/2024/londonreal/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

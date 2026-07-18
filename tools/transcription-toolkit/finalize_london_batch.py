@@ -15,7 +15,7 @@ import process_manifestos
 
 # Mappings of election -> candidate -> metadata
 METADATA = {
-    "gla-2024": {
+    "2024": {
         "sdp": {
             "party_name": "Social Democratic Party",
             "party_leader": "Amy Gallagher",
@@ -108,7 +108,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2021": {
+    "2021": {
         "labour": {
             "party_name": "Labour Party",
             "party_leader": "Sadiq Khan",
@@ -180,7 +180,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2004": {
+    "2004": {
         "libdem": {
             "party_name": "Liberal Democrats",
             "party_leader": "Simon Hughes",
@@ -203,7 +203,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2016": {
+    "2016": {
         "labour": {
             "party_name": "Labour Party",
             "party_leader": "Sadiq Khan",
@@ -268,7 +268,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2012": {
+    "2012": {
         "labour": {
             "party_name": "Labour Party",
             "party_leader": "Ken Livingstone",
@@ -312,7 +312,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2008": {
+    "2008": {
         "conservative": {
             "party_name": "Conservative Party",
             "party_leader": "Boris Johnson",
@@ -349,7 +349,7 @@ METADATA = {
             "government_outcome": "opposition"
         }
     },
-    "gla-2000": {
+    "2000": {
         "livingstone": {
             "party_name": "Independent",
             "party_leader": "Ken Livingstone",
@@ -361,14 +361,14 @@ METADATA = {
 }
 
 BATCH_PARTIES = {
-    "1": ("gla-2024", ["sdp", "londonreal", "binface", "awp", "reform", "conservative"]),
-    "2": ("gla-2024", ["michli", "campbell", "britainfirst", "libdem", "labour", "ghulati", "green"]),
-    "3": ("gla-2021", ["labour", "conservative", "libdem", "green", "londonreal", "reclaim", "binface", "pierscorbyn", "burningpink", "maxfosh"]),
-    "4": ("gla-2004", ["libdem", "green", "cpa"]),
-    "5": ("gla-2016", ["labour", "conservative", "libdem", "green", "ukip", "respect", "wep", "bnp", "onelove"]),
-    "6": ("gla-2012", ["labour", "conservative", "libdem", "green", "bnp", "benita"]),
-    "7": ("gla-2008", ["conservative", "libdem", "cooperative", "green", "englishdemocrats"]),
-    "8": ("gla-2000", ["livingstone"])
+    "1": ("2024", ["sdp", "londonreal", "binface", "awp", "reform", "conservative"]),
+    "2": ("2024", ["michli", "campbell", "britainfirst", "libdem", "labour", "ghulati", "green"]),
+    "3": ("2021", ["labour", "conservative", "libdem", "green", "londonreal", "reclaim", "binface", "pierscorbyn", "burningpink", "maxfosh"]),
+    "4": ("2004", ["libdem", "green", "cpa"]),
+    "5": ("2016", ["labour", "conservative", "libdem", "green", "ukip", "respect", "wep", "bnp", "onelove"]),
+    "6": ("2012", ["labour", "conservative", "libdem", "green", "bnp", "benita"]),
+    "7": ("2008", ["conservative", "libdem", "cooperative", "green", "englishdemocrats"]),
+    "8": ("2000", ["livingstone"])
 }
 
 def detect_sections_from_text(text: str) -> list[str]:

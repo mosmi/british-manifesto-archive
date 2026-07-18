@@ -607,6 +607,56 @@ const PARTIES = {
     nation: 'others',
     description: 'Cannabis Is Safer Than Alcohol (CISTA) was registered as a political party in March 2015 under leader Paul Birch to campaign for evidence-based drug-law reform, starting with the legal regulation of cannabis. It fielded 32 candidates across England, Scotland, Wales and Northern Ireland at the 2015 general election — the first pro-reform single-issue party to contest seats in all four nations — and fielded Lee Harris as its candidate for Mayor of London in 2016.',
   },
+  // London mayoral minor / persona brands (folder slug = party id)
+  binface: {
+    id: 'binface', name: 'Count Binface', shortName: 'Count Binface',
+    color: '#6B7280', dim: 'rgba(107,114,128,0.14)',
+    founded: 2018, spectrum: 'Satirical / Independent', isPrimary: false,
+    nation: 'others',
+    description: 'Count Binface is a satirical persona who has contested the London mayoral election, publishing short manifesto texts that parody the serious candidates.',
+  },
+  londonreal: {
+    id: 'londonreal', name: 'London Real Party', shortName: 'London Real',
+    color: '#111827', dim: 'rgba(17,24,39,0.14)',
+    founded: 2020, spectrum: 'Independent / Media', isPrimary: false,
+    nation: 'others',
+    description: 'The London Real Party was founded by podcaster Brian Rose and contested the 2021 and 2024 London mayoral elections.',
+  },
+  reclaim: {
+    id: 'reclaim', name: 'Reclaim Party', shortName: 'Reclaim',
+    color: '#1D4ED8', dim: 'rgba(29,78,216,0.14)',
+    founded: 2020, spectrum: 'Right / Populist', isPrimary: false,
+    nation: 'others',
+    description: 'The Reclaim Party was founded by actor Laurence Fox and contested the 2021 London mayoral election on a free-speech and anti-lockdown platform.',
+  },
+  britainfirst: {
+    id: 'britainfirst', name: 'Britain First', shortName: 'Britain First',
+    color: '#166534', dim: 'rgba(22,101,52,0.14)',
+    founded: 2011, spectrum: 'Far-right / Nationalist', isPrimary: false,
+    nation: 'others',
+    description: 'Britain First is a far-right British nationalist party that has contested London mayoral and other elections.',
+  },
+  burningpink: {
+    id: 'burningpink', name: 'Burning Pink', shortName: 'Burning Pink',
+    color: '#EC4899', dim: 'rgba(236,72,153,0.14)',
+    founded: 2020, spectrum: 'Environmentalist / Protest', isPrimary: false,
+    nation: 'others',
+    description: 'Burning Pink (Beyond Politics) is an environmentalist protest party that fielded Valerie Brown as its candidate for Mayor of London in 2021.',
+  },
+  onelove: {
+    id: 'onelove', name: 'One Love Party', shortName: 'One Love',
+    color: '#F59E0B', dim: 'rgba(245,158,11,0.14)',
+    founded: 2016, spectrum: 'Independent / Single-issue', isPrimary: false,
+    nation: 'others',
+    description: 'The One Love Party fielded Ankit Love as its candidate for Mayor of London in 2016.',
+  },
+  pierscorbyn: {
+    id: 'pierscorbyn', name: 'Let London Live', shortName: 'Let London Live',
+    color: '#DC2626', dim: 'rgba(220,38,38,0.14)',
+    founded: 2021, spectrum: 'Independent / Anti-lockdown', isPrimary: false,
+    nation: 'others',
+    description: 'Let London Live was the ballot label used by weather forecaster Piers Corbyn when he contested the 2021 London mayoral election.',
+  },
   changeuk: {
     id: 'changeuk', name: 'Change UK', shortName: 'Change UK',
     color: '#3B5998', dim: 'rgba(59,89,152,0.14)',
@@ -1196,8 +1246,9 @@ const ELECTIONS = [
       'Suez Crisis would end Eden\'s premiership within 18 months',
     ],
     youtubeId: 'a23vcMCWWPA',
-    extraManifestoParties: [],
+    extraManifestoParties: ['communist'],
     partyResults: {
+      communist:   { party: 'communist',   seats:  0, votes: 33144, percentage: 0.1 },
       welshcon:    { party: 'welshcon',    seats:  6, votes: 0, percentage: 29.9 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 57.6 },
       welshlibdem: { party: 'welshlibdem', seats:  3, votes: 0, percentage: 7.3 },
@@ -1287,8 +1338,9 @@ const ELECTIONS = [
       'Sterling devaluation crisis would later embarrass Wilson\'s government',
     ],
     youtubeId: '6lBbSSIv9Ww',
-    extraManifestoParties: [],
+    extraManifestoParties: ['communist'],
     partyResults: {
+      communist:   { party: 'communist',   seats:  0, votes: 62092, percentage: 0.2 },
       welshcon:    { party: 'welshcon',    seats:  3, votes: 0, percentage: 27.9 },
       welshlab:    { party: 'welshlab',    seats: 32, votes: 0, percentage: 60.7 },
       welshlibdem: { party: 'welshlibdem', seats:  1, votes: 0, percentage: 6.3 },
@@ -1892,11 +1944,13 @@ const NAV_PARTIES = {
 };
 
 const OTHERS_PARTIES = [
-  'alba', 'antipartition', 'aontu', 'animalpolitics', 'bnp', 'cooperative', 'commonwealth', 'communist',
+  'alba', 'antipartition', 'aontu', 'animalpolitics', 'binface', 'bnp', 'britainfirst', 'burningpink',
+  'cooperative', 'commonwealth', 'communist',
   'cista', 'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
   'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
-  'irishlabour', 'irishnationalist', 'irishrepublican', 'mebyon', 'nha', 'nationalindependent',
-  'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'pirate', 'protestantunionist',
+  'irishlabour', 'irishnationalist', 'irishrepublican', 'londonreal', 'mebyon', 'nha', 'nationalindependent',
+  'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'onelove', 'pierscorbyn', 'pirate',
+  'protestantunionist', 'reclaim',
   'referendumparty', 'rejoin', 'republicanlabour', 'respect', 'restorebrit', 'sdp', 'socialistalternative',
   'socialistlabour', 'spgb', 'liberal1989',
   'ssp', 'speaker', 'stuckist', 'tusc', 'ukup',
@@ -2046,6 +2100,7 @@ const PARTY_ALIASES = {
   eurleft: 'guengl',
   ecrp: 'ecr',
   eaf: 'identity',
+  awp: 'animalpolitics', // London folder slug for Animal Welfare Party
 };
 
 function resolvePartyId(id) {

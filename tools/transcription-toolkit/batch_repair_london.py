@@ -7,67 +7,67 @@ TOOLKIT_DIR = Path(__file__).resolve().parent
 
 BATCH_SLUGS = {
     "1": [
-        "manifestos__london__gla-2024__sdp__manifesto",
-        "manifestos__london__gla-2024__binface__manifesto",
-        "manifestos__london__gla-2024__reform__manifesto",
-        "manifestos__london__gla-2024__awp__manifesto",
-        "manifestos__london__gla-2024__conservative__manifesto",
-        "manifestos__london__gla-2024__londonreal__manifesto"
+        "manifestos__london__2024__sdp__manifesto",
+        "manifestos__london__2024__binface__manifesto",
+        "manifestos__london__2024__reform__manifesto",
+        "manifestos__london__2024__awp__manifesto",
+        "manifestos__london__2024__conservative__manifesto",
+        "manifestos__london__2024__londonreal__manifesto"
     ],
     "2": [
-        "manifestos__london__gla-2024__michli__manifesto",
-        "manifestos__london__gla-2024__campbell__manifesto",
-        "manifestos__london__gla-2024__britainfirst__manifesto",
-        "manifestos__london__gla-2024__libdem__manifesto",
-        "manifestos__london__gla-2024__labour__manifesto",
-        "manifestos__london__gla-2024__ghulati__manifesto",
-        "manifestos__london__gla-2024__green__manifesto"
+        "manifestos__london__2024__michli__manifesto",
+        "manifestos__london__2024__campbell__manifesto",
+        "manifestos__london__2024__britainfirst__manifesto",
+        "manifestos__london__2024__libdem__manifesto",
+        "manifestos__london__2024__labour__manifesto",
+        "manifestos__london__2024__ghulati__manifesto",
+        "manifestos__london__2024__green__manifesto"
     ],
     "3": [
-        "manifestos__london__gla-2021__labour__manifesto",
-        "manifestos__london__gla-2021__conservative__manifesto",
-        "manifestos__london__gla-2021__libdem__manifesto",
-        "manifestos__london__gla-2021__green__manifesto",
-        "manifestos__london__gla-2021__londonreal__manifesto",
-        "manifestos__london__gla-2021__reclaim__manifesto",
-        "manifestos__london__gla-2021__binface__manifesto",
-        "manifestos__london__gla-2021__pierscorbyn__manifesto",
-        "manifestos__london__gla-2021__burningpink__manifesto",
-        "manifestos__london__gla-2021__maxfosh__manifesto"
+        "manifestos__london__2021__labour__manifesto",
+        "manifestos__london__2021__conservative__manifesto",
+        "manifestos__london__2021__libdem__manifesto",
+        "manifestos__london__2021__green__manifesto",
+        "manifestos__london__2021__londonreal__manifesto",
+        "manifestos__london__2021__reclaim__manifesto",
+        "manifestos__london__2021__binface__manifesto",
+        "manifestos__london__2021__pierscorbyn__manifesto",
+        "manifestos__london__2021__burningpink__manifesto",
+        "manifestos__london__2021__maxfosh__manifesto"
     ],
     "4": [
-        "manifestos__london__gla-2004__libdem__manifesto",
-        "manifestos__london__gla-2004__green__manifesto",
-        "manifestos__london__gla-2004__cpa__manifesto"
+        "manifestos__london__2004__libdem__manifesto",
+        "manifestos__london__2004__green__manifesto",
+        "manifestos__london__2004__cpa__manifesto"
     ],
     "5": [
-        "manifestos__london__gla-2016__labour__manifesto",
-        "manifestos__london__gla-2016__conservative__manifesto",
-        "manifestos__london__gla-2016__libdem__manifesto",
-        "manifestos__london__gla-2016__green__manifesto",
-        "manifestos__london__gla-2016__ukip__manifesto",
-        "manifestos__london__gla-2016__respect__manifesto",
-        "manifestos__london__gla-2016__wep__manifesto",
-        "manifestos__london__gla-2016__bnp__manifesto",
-        "manifestos__london__gla-2016__onelove__manifesto"
+        "manifestos__london__2016__labour__manifesto",
+        "manifestos__london__2016__conservative__manifesto",
+        "manifestos__london__2016__libdem__manifesto",
+        "manifestos__london__2016__green__manifesto",
+        "manifestos__london__2016__ukip__manifesto",
+        "manifestos__london__2016__respect__manifesto",
+        "manifestos__london__2016__wep__manifesto",
+        "manifestos__london__2016__bnp__manifesto",
+        "manifestos__london__2016__onelove__manifesto"
     ],
     "6": [
-        "manifestos__london__gla-2012__labour__manifesto",
-        "manifestos__london__gla-2012__conservative__manifesto",
-        "manifestos__london__gla-2012__libdem__manifesto",
-        "manifestos__london__gla-2012__green__manifesto",
-        "manifestos__london__gla-2012__bnp__manifesto",
-        "manifestos__london__gla-2012__benita__manifesto"
+        "manifestos__london__2012__labour__manifesto",
+        "manifestos__london__2012__conservative__manifesto",
+        "manifestos__london__2012__libdem__manifesto",
+        "manifestos__london__2012__green__manifesto",
+        "manifestos__london__2012__bnp__manifesto",
+        "manifestos__london__2012__benita__manifesto"
     ],
     "7": [
-        "manifestos__london__gla-2008__conservative__manifesto",
-        "manifestos__london__gla-2008__libdem__manifesto",
-        "manifestos__london__gla-2008__cooperative__manifesto",
-        "manifestos__london__gla-2008__green__manifesto",
-        "manifestos__london__gla-2008__englishdemocrats__manifesto"
+        "manifestos__london__2008__conservative__manifesto",
+        "manifestos__london__2008__libdem__manifesto",
+        "manifestos__london__2008__cooperative__manifesto",
+        "manifestos__london__2008__green__manifesto",
+        "manifestos__london__2008__englishdemocrats__manifesto"
     ],
     "8": [
-        "manifestos__london__gla-2000__livingstone__manifesto"
+        "manifestos__london__2000__livingstone__manifesto"
     ]
 }
 

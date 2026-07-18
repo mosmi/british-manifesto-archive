@@ -26,6 +26,20 @@ European Parliament manifesto cards are primarily listed in
 `data/devolved/euro/<year>.json` → `manifestos[]` (not always duplicated here).
 SEO/devolved catalogue builders read those arrays separately.
 
+### London (GLA) entries
+London mayoral text routes also live in this index, with a composite
+`electionId` (year-only) and a **folder slug** as `partyId`:
+```json
+{ "electionId": "london/2000", "partyId": "livingstone", "label": "Ken Livingstone Manifesto 2000" }
+```
+- URL: `/manifesto/london/2000/livingstone`
+- `partyId` is the on-disk folder under `manifestos/london/<YYYY>/` — **not**
+  the ballot affiliation. Independents use a candidate slug (`livingstone`,
+  `benita`, `campbell`), never a shared `independent` key.
+- Election JSON `manifestos[]` entries carry a matching `id` field (see
+  [devolved](./devolved.md)).
+- Legacy `london/gla-*` / `glc-*` / `lcc-*` keys redirect to year-only.
+
 ## Files: `manifestos/<electionId>/<partyId>/`
 Each manifesto lives in its own folder, e.g. `manifestos/2024/labour/`:
 - `manifesto.pdf` — the source PDF

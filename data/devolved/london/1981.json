@@ -1,5 +1,5 @@
 {
-  "id": "glc-1981",
+  "id": "1981",
   "body": "glc",
   "year": 1981,
   "displayYear": "1981",
@@ -21,17 +21,20 @@
       {
         "party": "labour",
         "seats": 50,
-        "pct": 41.8
+        "pct": 41.8,
+        "votes": 939457
       },
       {
         "party": "conservative",
         "seats": 41,
-        "pct": 39.7
+        "pct": 39.7,
+        "votes": 894234
       },
       {
         "party": "libdem",
         "seats": 1,
-        "pct": 14.4
+        "pct": 14.4,
+        "votes": 323856
       }
     ],
     "note": "92 single-member electoral divisions, each coterminous with a Greater London parliamentary constituency. The GLC was abolished by the Local Government Act 1985, taking effect in 1986.",
@@ -44,7 +47,8 @@
       {
         "name": "Ecology",
         "votes": 17515,
-        "pct": 0.78
+        "pct": 0.78,
+        "party": "green"
       },
       {
         "name": "Social Democrat",
@@ -59,7 +63,8 @@
       {
         "name": "Communist",
         "votes": 5275,
-        "pct": 0.23
+        "pct": 0.23,
+        "party": "communist"
       },
       {
         "name": "Constitutional Movement",
@@ -139,7 +144,8 @@
       {
         "name": "Independent",
         "votes": 622,
-        "pct": 0.03
+        "pct": 0.03,
+        "party": "independent"
       },
       {
         "name": "Abolition of Rates",
@@ -149,7 +155,8 @@
       {
         "name": "Independent Conservative",
         "votes": 362,
-        "pct": 0.02
+        "pct": 0.02,
+        "party": "indconservative"
       },
       {
         "name": "New Britain Party",
@@ -204,7 +211,8 @@
       {
         "name": "Socialist Party of Great Britain",
         "votes": 83,
-        "pct": 0.0
+        "pct": 0.0,
+        "party": "spgb"
       },
       {
         "name": "Abolitionist",
