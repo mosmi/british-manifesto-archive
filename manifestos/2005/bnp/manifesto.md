@@ -25,13 +25,14 @@ sections:
   - science-and-technology
 ---
 
+
 # British National Party Manifesto 2005
 
 ## Rebuilding British Democracy
 
 ---
 
-### Contents
+## Contents
 
 Introduction: Freedom; Security; Identity; Democracy
 
@@ -101,7 +102,7 @@ a victim of crime. It is the schoolchildren who suffer from obesity and ailments
 associated with a poor diet. It is the hourly paid worker who suffers when he or she is
 sacked as their job is exported to a call-centre in India.
 
-#### Freedom
+## Freedom
 
 The exists to put an end to this injustice. We will return power to
 the men and women of Britain, the taxpayers, pensioners, mums and dads and
@@ -109,7 +110,7 @@ workers, and remove it from the unelected commissioners in Europe. We will provi
 a safe environment for all, where there is freedom from fear of crime, freedom from
 repression of the State, freedom of association and freedom of speech.
 
-#### Security
+## Security
 
 The believes that security means the well being of life, limb and
 property. This means safe neighbourhoods with vibrant communities, working
@@ -118,7 +119,7 @@ systems. It means security of long term employment after a decent education with
 the fear that factories, offices and shops will be closed and jobs exported to the third
 world.
 
-#### Identity
+## Identity
 
 The believes in genuine ethnic and cultural diversity and the
 right of ALL peoples to self-determination and that must include the indigenous
@@ -133,21 +134,21 @@ existence on this planet and we are under an obligation to pass on to generation
 unborn, the collected knowledge, wisdom and lore, which we ourselves have
 inherited.
 
-#### Democracy
+## Democracy
 
 The wishes of the electorate cannot be made manifest until we have the
 powers restored to our national parliaments and assemblies and put an end to the
 blackmail and underhanded tactics to buy influence. Honesty, integrity and
 transparency will be restored to civic and public institutions.
 
-#### Summary
+## Summary
 
 This is the largest and most comprehensive election manifesto the
 has compiled. It clearly illustrates that we are neither a single issue party, nor an
 ephemeral protest group. The is serious about winning our nation back and this
 manifesto sets out our plan to achieve this goal.
 
-### Leaving the European Union – The sine qua non
+## Leaving the European Union – The sine qua non
 
 The European Union is an aspiring super state which would deprive the people
 of their right to democratic self-government; subject us to alien rule in the interest of a
@@ -199,7 +200,7 @@ the NHS, and could fund numerous improvements in public services if it were
 recaptured. The Common Agricultural Policy alone is estimated to impose a 26% tax
 on food. (source: Labour Euro-Safeguards Campaign Bulletin , Sept. 2004).
 
-#### Unaccountable
+## Unaccountable
 
 The EU is spectacularly corrupt, as is only natural in an unaccountable institution.
 According to Marta Adreasen, former Chief Accounting Officer of the EU, 95% of EU
@@ -227,7 +228,7 @@ conned us into “ever greater union” with a federal European superstate. That
 will end on the day the win a general election and
 ceremoniously tear up the Treaty of Rome on the following morning.
 
-### Democracy – Resolving the crisis of our highest value
+## Democracy – Resolving the crisis of our highest value
 
 This country is the birthplace of modern democracy. This is no surprise; it is clear
 from what is known of the way in which free men and women among Celtic, Anglo-
@@ -303,7 +304,7 @@ illegality, the fact remains that by showing such contempt for democracy in Engl
 while simultaneously giving way at every turn to terrorists in Ulster - New Labour are
 inviting angry young men in multi-cultural cities to conclude that violence pays.
 
-#### Dismantling the repressive State
+## Dismantling the repressive State
 
 Add to this the growing and relentless persecution of the BNP, both collectively and
 as individuals, in ways ranging from denial of banking facilities to dismissal from jobs
@@ -357,7 +358,7 @@ dues from trades unions will all be outlawed.
 10. The rejection of ID cards – the core technique and expression of the repressive
 Surveillance State.
 
-#### Democracy and the media
+## Democracy and the media
 
 A separate danger to genuine democracy comes from the concentration of
 ownership and control of the mass media in too few hands, particularly when the
@@ -399,7 +400,7 @@ For particularly bad cases, we will create a new criminal offence of “The deli
 dissemination of falsehoods about an individual or organisation for financial or political
 gain” by any media outlet.
 
-#### Bringing power closer to the people
+## Bringing power closer to the people
 
 In addition to defending democracy against creeping totalitarianism, we also intend to
 introduce sweeping reforms to strengthen and extend it. Once again, we reiterate that
@@ -487,7 +488,7 @@ with the representatives of England, Scotland, Wales and Ulster, and ending for 
 the Brothers’ War which has been our Achilles Heel, tragedy and shame since our
 Masters set us at each others’ throats generations ago.
 
-#### Citizens’ Initiative referenda
+## Citizens’ Initiative referenda
 
 We believe that such constitutional changes would lead to significantly better
 government. That said, history warns the prudent, and those who love freedom, to
@@ -511,8 +512,8 @@ This is the vital factor which turns the Citizens’ Initiative referendum into 
 genuine democracy, as opposed to the government-created plebiscite beloved of
 dictators from Hitler to John Prescott.
 
-#### The Armed People – the ultimate protection against
-#### invasion or tyranny
+## The Armed People – the ultimate protection against
+## invasion or tyranny
 
 The exploitation of the Dunblane Massacre of sixteen school-children and a
 teacher by a homosexual paedophile to provide an excuse to disarm many
@@ -558,7 +559,7 @@ the fact that the State does not possess a monopoly on the potential use of forc
 struggle between slavery and freedom means that they are unlikely to have to do so.
 This state of affairs has a great deal to commend it.
 
-#### A Bill of Rights
+## A Bill of Rights
 
 The rights of citizens as they are confirmed emerge from the details above
 must be set down in a formal Bill of Rights, the starting point for which should be
@@ -572,7 +573,7 @@ of universally-known importance, it provides a tripwire to alert a future genera
 the fact that, as is the way of the world, a ruling class has arisen that has once again
 come to think of itself as more important than those in whose name it governs.
 
-### Immigration – A crisis without parallel
+## Immigration – A crisis without parallel
 
 Britain’s very existence today is threatened by immigration. As a nation we must
 rebuild trust in the immigration system amongst the electorate whilst
@@ -599,7 +600,7 @@ escaping the fact that choosing to admit such persons into the country in signif
 numbers means choosing to become a poorer, more violent, more dependent and
 worse-educated society.
 
-#### Our programme:
+## Our programme:
 
 1. In any society claiming to be based on the rule of law, it must be beyond serious
 controversy that all illegal immigrants must be deported as soon as they are
@@ -653,7 +654,7 @@ pending to be held in refugee centres, not at large in the community.
 on any person found guilty of having violated entry or immigration laws,
 enforced by instant deportation.
 
-#### Our Agenda for Change
+## Our Agenda for Change
 
 On current demographic trends we, the native people, will be an ethnic
 minority in our own country within sixty years. By 2020, an extra 5-7 million
@@ -720,7 +721,7 @@ planned Two Phase procedure. The First Phase will be dealt with by the Civil Cou
 and regarded as a civil matter, whilst the Second Phase will be dealt with by the
 Criminal Courts and regarded as a matter of Security.
 
-#### The First Phase: Voluntary Registration
+## The First Phase: Voluntary Registration
 
 Those illegal immigrants who truthfully declare their illegal status to the authorities
 during the registration period will be able to claim, in the case of skilled and key
@@ -744,7 +745,7 @@ no extensions.
 Voluntary Registration cases will be dealt with by the Home Office through the Civil
 Courts in the event of any disputes arising over asset liquidation.
 
-#### The Second Phase: Assisted Registration
+## The Second Phase: Assisted Registration
 
 Those illegal immigrants resident in the UK who fail to register with the authorities and
 
@@ -772,7 +773,7 @@ arrest and to be held in custody until proof of citizenship is proved.
 Those who have been arrested will not be allowed to remove any assets from the
 country when they are deported.
 
-### Abolishing multiculturalism, preserving Britain
+## Abolishing multiculturalism, preserving Britain
 
 The present regime is engaged in a profound cultural war against the people,
 motivated by the desire to create a new ethnic power base to replace the working
@@ -830,7 +831,7 @@ islands – the English, Scots, Irish and Welsh – together with the limited nu
 peoples of European descent, who arrived as refugees or economic immigrants
 centuries or decades ago, and who have fully integrated into our society.
 
-#### Multi-racialism – a recipe for disaster
+## Multi-racialism – a recipe for disaster
 
 We are further encouraged to see this as essential by two other factors. The first is
 the truly gruesome record of multi-ethnic societies breaking down into hatred and
@@ -857,7 +858,7 @@ Our determination to avoid such a human tragedy is what drives us to risk
 imprisonment and persecution, and it is what allows us to say with confidence and
 sincerity that we are not ‘racists’, but realists.
 
-#### Multi-culturalism – the enemy of human diversity
+## Multi-culturalism – the enemy of human diversity
 
 Even if, against most prior historical experience, it proved to be possible to assimilate
 and integrate huge numbers of immigrants from other ethnic and cultural groups into
@@ -972,7 +973,7 @@ can live side-by-side and at peace for generations. They can even enjoy each oth
 cultures, but they must stick to their own, or ‘diversity’ will be but a short-lived
 stepping stone to nothingness.
 
-#### Our proposals:
+## Our proposals:
 
 1. We would repeal the Race Relations Acts and all other restrictions on free
 speech in Britain.
@@ -1029,7 +1030,7 @@ local level.
 We will publish a list of these nationals preference proposals before the next
 major election.
 
-### Culture, traditions and the civil society
+## Culture, traditions and the civil society
 
 We believe that the character of daily life in Britain is being corroded by the gradual
 but inexorable loss of many of the things that make Britain civilized. We believe that
@@ -1086,7 +1087,7 @@ inheritance of cathedrals, churches and liturgies has less resonance with the
 broad mass of the population at present, the wheel of faith will one day turn
 again and they will be fully valued once more.
 
-#### Art and Culture
+## Art and Culture
 
 Schools in England will be encouraged to celebrate May Day and other ancient
 festivals, whilst the other folk nations of the Isles will be encouraged to
@@ -1123,7 +1124,7 @@ schools between the ages of five and fourteen. From fourteen upwards, every effo
 should be made to encourage those children who have shown musical talent to play
 for their own and their peers’ entertainment.
 
-### Tough on the causes of crime – Criminals
+## Tough on the causes of crime – Criminals
 
 Despite the unprecedented sums being spent on the police, Britain today faces
 record crime rates. Traditional and effective bobby-on-the-beat policing has been
@@ -1207,7 +1208,7 @@ jobs identified later in this Manifesto.
 12. While every effort will be made to help addicts to recover, individuals convicted of
 the importation and large-scale dealing of hard drugs will face the death penalty.
 
-### Social inclusion – One healthy nation
+## Social inclusion – One healthy nation
 
 As nationalists we are committed to caring for and nurturing all sections of our
 national community. We also oppose the tendency of the other, non-nationalist,
@@ -1216,7 +1217,7 @@ for which they themselves as politicians are largely responsible. The creation a
 maintenance of an undercurrent of national solidarity is one of the cornerstones of a
 true national democracy.
 
-#### The NHS
+## The NHS
 
 We are wholly committed to a free, fully funded Health Service for all
 citizens. Contrary to popular political and ‘right-wing’ myth, the NHS is actually
@@ -1361,7 +1362,7 @@ humane nor affordable for society as a whole. This, however, is not a matter for
 political manifestos or parties, but for a full and informed national debate and decision
 by referendum.
 
-#### A fair deal for our pensioners
+## A fair deal for our pensioners
 
 It is a national disgrace that people who have worked all their lives, paid in to the
 system and raised families forced to live on the lowest state pension of any Western
@@ -1422,7 +1423,7 @@ compensate pensioners by giving them very substantial increases in their
 pensions. These will be financed with some of the savings made by not having to
 operate the massively expensive system required to collect income tax.
 
-### Education for a future
+## Education for a future
 
 We are against the ‘trendy’ teaching methods that have made Britain one of the most
 poorly educated nations in Europe. These are based upon neo-Marxist egalitarianism,
@@ -1472,7 +1473,7 @@ these areas, and it is based on the destructive and anti-human extermination thr
 integration model of community relations we have already condemned in our section
 on multi-culturalism.
 
-#### Key Policies on Primary & Secondary Schooling
+## Key Policies on Primary & Secondary Schooling
 
 1. All staff at teacher training colleges will face compulsory re-evaluation and re-
 training. The egalitarian and anti-British dogmas that have betrayed a generation
@@ -1545,7 +1546,7 @@ not called for.
 17. We will re-introduce assemblies based on traditional Christian values and
 worship.
 
-#### Key Policies on University Education
+## Key Policies on University Education
 
 1. We reject the idea that the left is entitled to institutionalised control of higher
 education and through this means impose its ideas on the rest of the nation.
@@ -1573,7 +1574,7 @@ medicine.
 7. We will fund industrial-incubator laboratories and other means by which
 university research is made useful to industry.
 
-### Britain-first economics – The antidote to globalism
+## Britain-first economics – The antidote to globalism
 
 The stands for a national economy and is opposed to globalism,
 international socialism, laissez-faire capitalism and economic liberalism. We stand for
@@ -1766,7 +1767,7 @@ disciplines and institutions most relevant to the bulk of industry, like
 the polytechnics. We support the systematic rebuilding of the pure and
 applied scientific prowess that supports industrial research.
 
-### Extending ownership and responsibility
+## Extending ownership and responsibility
 
 The current pensions crisis was created largely by Gordon Brown’s smash-and-grab
 tax raids on pension funds. But even without that it is clear that the cost of providing
@@ -1842,7 +1843,7 @@ responsible to the pan-British parliament. Further details of how this system wi
 will be published before the next major election, once our Economic Strategy Group
 has had the time to research this crucial matter much more thoroughly.
 
-#### Britain? Whose Britain?
+## Britain? Whose Britain?
 
 Past nationalist proposals for reviving industry have tended to begin and end
 with a plan to protect industry by erecting tariff barriers, and then leaving
@@ -1901,7 +1902,7 @@ Turning growing numbers of ‘hands’, ‘wage slaves’, ‘workers by hand or
 middle class contract workers – call them what you will – into the personal owners of
 their own tiny share of our national productive capacity, is one such way to increase
 the average level of independence and hence freedom among our people.
-#### A return of pride and purpose
+## A return of pride and purpose
 
 In deciding where to locate new industries, the Ministry of Finance and the other
 government agencies and private investors with which it will work will do their best to
@@ -1927,7 +1928,7 @@ or for harnessing genius to productivity. More than anything, we want to see men
 women who can hold their heads up high and say to the highest and mightiest
 people it is their misfortune to meet: “Well, I’ve got a proper job.”
 
-### Abolition of income tax
+## Abolition of income tax
 
 Under the present regime, the state’s total take in taxes from the people has
 risen by approximately 50%, and now stands at more than one third of our entire
@@ -1955,7 +1956,7 @@ introduce will be imposed gradually, not precipitately, in order to allow eviden
 their consequences to correct any defects in the initial scheme. Having seen the
 fiascoes of the present and past government, we are not going to rush into untried
 schemes.
-#### Income tax – the ‘temporary’ solution that became a menace
+## Income tax – the ‘temporary’ solution that became a menace
 
 One such scheme rushed into by a previous administration is income tax. This was
 first introduced in to finance the war against revolutionary France. After being
@@ -2068,7 +2069,7 @@ We are aware of the theoretical and practical complexities of the consumption
 tax, but given the complexity of the present tax system, we believe they are no
 greater and we will address them in a forthcoming document on our tax policies.
 
-#### Other tax policies
+## Other tax policies
 
 1. While the present Council Tax system (introduced by the Tories and increased by
 76% under New Labour) is far from perfect, the same is certainly true of the
@@ -2109,7 +2110,7 @@ identifies as being suitable targets for replacement by items made in
 factories. This money would be ploughed into the rebuilding of our manufacturing
 base.
 
-### Public service, not corporate profit
+## Public service, not corporate profit
 
 The present regime has increased public spending by approximately 50% since 1997,
 and yet the average citizen is painfully aware that the quality of public services like the
@@ -2177,7 +2178,7 @@ is different, and we will expose and lead the popular fight
 against such attempts to turn public services into corporate milch-cows whenever we
 find them.
 
-### Transport – Life’s too short to spend in a traffic jam
+## Transport – Life’s too short to spend in a traffic jam
 
 Britain’s overall transport policy will inevitably be shaped over the next few decades
 by the growing worldwide energy crisis caused by the peaking and subsequent
@@ -2217,7 +2218,7 @@ the same time, ending the distortion of our national economy by withdrawal from 
 European Union will reverse thirty years of over-concentration of business, people and
 traffic in the South East.
 
-#### Proposals
+## Proposals
 
 1. A administration would abolish the road fund tax on all private and
 commercial vehicles. We view this as an over-bureaucratic and unnecessary
@@ -2273,7 +2274,7 @@ sponsorship. The generous and courageous efforts of those lifeboat volunteers
 perform a valuable service for marine safety and should not be left to the
 vagaries of charity giving.
 
-### Food production – A radical shift
+## Food production – A radical shift
 
 A healthy nation depends on a healthy environment and on healthy food. We see a
 strong, healthy agriculture sector and vibrant farming communities as vital to the
@@ -2331,7 +2332,7 @@ entering waters by force if required.
 river, loch and estuary fish farms with off-shore deepwater fish farms, possibly
 built in conjunction with wave, ocean current and wind power generation units.
 
-### The environment – Our ‘blessed plot’
+## The environment – Our ‘blessed plot’
 
 Our ideal for Britain is that of a clean, beautiful country, free of pollution in all its forms.
 We will enforce standards to curb those practices which pollute the environment,
@@ -2376,7 +2377,7 @@ prairies of much of rural England will provide greatly increased employment pros
 for many trades connected with re creating an environment and landscape which is
 recognisably ‘English’.
 
-#### Our Key Environment Policies
+## Our Key Environment Policies
 
 1. We will end immigration to the UK and reduce our land’s population burden by
 creating firm but voluntary incentives for immigrants and their descendants to
@@ -2417,7 +2418,7 @@ people out of their cars.
 
 10. We will not permit the growing of GM crops.
 
-#### Green, but hard green
+## Green, but hard green
 
 We are a "green" party, but we are a "hard green" party, meaning that our
 environmentalism, though as vigorous as the irrational left, differs from it in a number
@@ -2441,7 +2442,7 @@ to international bodies.
 6. We care about the urban as well as the rural environment. People habitats
 matter, too!
 
-### Britain and the world – Good fences, good neighbours
+## Britain and the world – Good fences, good neighbours
 
 Britain’s foreign relations should be determined by the protection of our own national
 interest and not by our like or dislike of other nations’ internal politics. We will be
@@ -2452,7 +2453,7 @@ will not act as the world’s policeman either for the UN, the EU or the United 
 We will maintain an independent foreign policy of our own, and not a spineless
 subservience to the USA , the ‘international community’, or any other country.
 
-#### Post-EU Foreign Policy
+## Post-EU Foreign Policy
 
 Planning to withdraw from the European Union naturally raises the question of what
 Britain ‘s post-EU foreign policy would look like. We believe that the present regime,
@@ -2515,7 +2516,7 @@ fusion and space exploitation, in which we would engage in joint ventures with o
 European nations. This however, would be as sovereign partners on specific projects,
 and would involve no diminution of our political, economic or military sovereignty.
 
-#### The ‘Clash of Civilisations’
+## The ‘Clash of Civilisations’
 
 The is widely known as the only political party warning of the danger
 posed to our democracy, traditions and freedoms by the creeping Islamification and
@@ -2534,7 +2535,7 @@ the ‘Eurabia’ project of the French and Italian liberal elites. But we also 
 right of the people of the Islamic world to resist the attempts by the political elite to
 democratise or Westernise the Middle East.
 
-#### Assisting the Developing World
+## Assisting the Developing World
 
 We reject the idea that Britain must forever be obliged to subsidise the incompetence
 and corruption of Third World states by supplying them with financial aid. We also
@@ -2577,7 +2578,7 @@ how many years they had worked and paid taxes in Britain.
 acquired proceeds of their time in Britain, including the full profits from any
 investment in property here.
 
-#### Defence
+## Defence
 
 We would have no quarrel with any nation that does not threaten interests.
 We will not act as the world’s policeman either for the UN, the EU or the US. We will
@@ -2624,8 +2625,8 @@ not being entitled to free places at university, on training courses or self-
 employment schemes. Whereas some other politicians mouth platitudes about
 there being “no rights without responsibilities”, we mean it.
 
-### Conclusion: Popular nationalism – The idea whose
-### time will come
+## Conclusion: Popular nationalism – The idea whose
+## time will come
 
 The material contained in this document has been written by a team of highly
 qualified experts in their own fields who support the and who have the political

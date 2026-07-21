@@ -16,7 +16,8 @@ const SITE = {
   homeTitle: SITE_META.homeTitle,
 };
 
-// Manifesto text without a PDF scan (electionId/partyId)
+// Manifesto text without a PDF scan (electionId/partyId) — legacy override;
+// prefer data/manifesto-assets.json once loaded.
 const MANIFESTO_TEXT_ONLY = new Set([
   '2001/omrlp',
   '2005/omrlp',
@@ -26,11 +27,14 @@ const MANIFESTO_TEXT_ONLY = new Set([
 function hasManifestoPdf(electionId, partyId) {
   const key = `${electionId}/${partyId}`;
   if (MANIFESTO_TEXT_ONLY.has(key)) return false;
+  const assets = getManifestoAssetFlags(electionId, partyId);
+  if (assets) return Boolean(assets.pdf);
   const pdfPath = `/manifestos/${electionId}/${partyId}/manifesto.pdf`;
   return Boolean(getPdfSize(pdfPath));
 }
 
 let MANIFESTO_ARCHIVE = null;
+let _manifestoAssets = null;
 
 async function initManifestoArchive() {
   try {
@@ -41,7 +45,44 @@ async function initManifestoArchive() {
   }
 }
 
+async function initManifestoAssets() {
+  try {
+    _manifestoAssets = await fetchTyped(
+      `/data/manifesto-assets.json?v=${ASSETS_VERSION}`,
+      'json'
+    );
+  } catch {
+    _manifestoAssets = {};
+  }
+}
+
+function getManifestoAssetFlags(electionId, partyId) {
+  if (!_manifestoAssets) return null;
+  const key = `${electionId}/${partyId}`;
+  // After the inventory loads, a missing key means nothing is on disk for this folder.
+  if (Object.prototype.hasOwnProperty.call(_manifestoAssets, key)) {
+    return _manifestoAssets[key];
+  }
+  return { pdf: false, md: false, cover: false };
+}
+
+function hasManifestoCover(electionId, partyId) {
+  const assets = getManifestoAssetFlags(electionId, partyId);
+  if (assets) return Boolean(assets.cover);
+  // Unknown until assets load — assume cover may exist (img onerror handles miss).
+  return true;
+}
+
+function hasManifestoMarkdown(electionId, partyId) {
+  const assets = getManifestoAssetFlags(electionId, partyId);
+  if (assets) return Boolean(assets.md);
+  return MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`)
+    || (MANIFESTO_ARCHIVE?.has(`${electionId}/${partyId}`) ?? false);
+}
+
 function hasManifestoContent(electionId, partyId) {
+  const assets = getManifestoAssetFlags(electionId, partyId);
+  if (assets) return Boolean(assets.pdf || assets.md);
   return hasManifestoPdf(electionId, partyId)
     || MANIFESTO_TEXT_ONLY.has(`${electionId}/${partyId}`)
     || (MANIFESTO_ARCHIVE?.has(`${electionId}/${partyId}`) ?? false);
@@ -356,7 +397,7 @@ document.addEventListener('keydown', e => {
 
 document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
-  await Promise.all([initManifestoArchive(), initPdfSizes()]);
+  await Promise.all([initManifestoArchive(), initManifestoAssets(), initPdfSizes()]);
   buildNav();
   setupMobileMenu();
   setupNavDropdowns();
@@ -439,9 +480,10 @@ function getPath() {
 
 function navigate(path, { replace = false } = {}) {
   const normalized = path.startsWith('/') ? path : `/${path}`;
+  const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
   if (replace) {
     history.replaceState(null, '', normalized);
-  } else if (getPath() !== normalized) {
+  } else if (current !== normalized) {
     history.pushState(null, '', normalized);
   }
   closeAllNavMenus();
@@ -556,8 +598,8 @@ function route() {
     renderElectionsHub(app);
   } else if (path === '/devolved') {
     renderDevolvedHub(app);
-  } else if (path === '/parties') {
-    renderPartiesHub(app);
+  } else if (path === '/parties' || path === '/parties/all') {
+    renderPartiesHub(app, path === '/parties/all');
   } else if (path === '/nations') {
     renderNationsHub(app);
   } else if (path === '/about') {
@@ -566,6 +608,16 @@ function route() {
     renderNotFound(app);
   }
   window.scrollTo({ top: 0, behavior: 'instant' });
+  // Honour in-page anchors after SPA render (route always resets scroll above)
+  const hashId = decodeURIComponent((window.location.hash || '').replace(/^#/, ''));
+  if (hashId) {
+    const hashTarget = document.getElementById(hashId);
+    if (hashTarget) {
+      requestAnimationFrame(() => {
+        hashTarget.scrollIntoView({ behavior: 'instant', block: 'start' });
+      });
+    }
+  }
   // Trigger fade-in for any lazy cover images rendered by this route
   initLazyImages(document.getElementById('app'));
   // Move focus to main landmark so keyboard/SR users know the page changed
@@ -598,13 +650,35 @@ function nationLink(id, label) {
   return `<a href="/nation/${id}" class="inline-nation-link">${label}</a>`;
 }
 
+/** Flag emoji (aria-hidden) + text for nation group headings (I13). */
+const NATION_HEADING_PARTS = {
+  england: { flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', text: 'England & UK-wide' },
+  scotland: { flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', text: 'Scotland' },
+  wales: { flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿', text: 'Wales' },
+  'northern-ireland': { flag: '🇮🇪', text: 'Northern Ireland' },
+  others: { flag: '', text: 'Other Parties' },
+  alliances: { flag: '🇪🇺', text: 'Alliances' },
+};
+
+function nationHeadingLabelHtml(nationId) {
+  const parts = NATION_HEADING_PARTS[nationId];
+  if (!parts) return nationId;
+  const flag = parts.flag
+    ? `<span aria-hidden="true">${parts.flag}</span> `
+    : '';
+  return `${flag}${parts.text}`;
+}
+
 function partyBreadcrumbItems(party) {
   const crumbs = [
     { label: 'Home', href: '/' },
     { label: 'Parties', href: '/parties' },
   ];
+  // `nation: 'england'` is the mega-menu "England & UK-wide" bucket (Labour,
+  // Conservatives, Reform UK, …). Do not insert a bare "England" crumb for those
+  // parties — they are not England-only. Territorial nations keep their crumb.
   const nationId = party.nation && party.nation !== 'others' ? party.nation : null;
-  if (nationId && typeof getNationLabel === 'function') {
+  if (nationId && nationId !== 'england' && typeof getNationLabel === 'function') {
     crumbs.push({ label: getNationLabel(nationId), href: `/nation/${nationId}` });
   }
   crumbs.push({ label: party.shortName });
@@ -675,6 +749,15 @@ function buildElectionsDropdown() {
   el.appendChild(hub);
 }
 
+/** Mega-menu label — Reform stays one party page with nation-qualified labels. */
+function megaPartyLabel(nationId, pid) {
+  if (pid === 'reform') {
+    if (nationId === 'scotland') return 'Reform UK Scotland';
+    if (nationId === 'wales') return 'Reform UK Wales';
+  }
+  return PARTIES[pid]?.shortName || pid;
+}
+
 function buildPartiesMega() {
   const mega = document.getElementById('parties-mega');
   if (!mega) return;
@@ -700,7 +783,7 @@ function buildPartiesMega() {
       if (typeof dotStyle === 'function') dot.setAttribute('style', dotStyle(p.color));
       else dot.style.background = p.color;
       a.appendChild(dot);
-      a.appendChild(document.createTextNode(p.shortName));
+      a.appendChild(document.createTextNode(megaPartyLabel(nationId, pid)));
       col.appendChild(a);
     });
     if (nationId === 'scotland') {
@@ -770,7 +853,7 @@ function buildPartiesMega() {
   mega.appendChild(othersCol);
 
   const hub = document.createElement('a');
-  hub.href = '/parties';
+  hub.href = '/parties/all';
   hub.className = 'mega-all-link mega-hub-link';
   hub.textContent = 'All parties →';
   mega.appendChild(hub);
@@ -809,6 +892,15 @@ function renderHome(app) {
         <header class="home-dashboard-header">
           <h1 class="hero-title">The British<br><em>Manifesto Archive</em></h1>
           <p class="hero-subtitle">Digital repository of UK political history — manifesto documents, electoral results, and campaign records for every post-war election.</p>
+          <nav class="hero-ways" aria-label="Ways into the archive">
+            <p class="hero-ways-kicker">Four ways in</p>
+            <ul class="hero-ways-list">
+              <li><a href="/elections"><span class="hero-ways-label">Westminster</span><span class="hero-ways-hint">General elections</span></a></li>
+              <li><a href="/devolved"><span class="hero-ways-label">Beyond Westminster</span><span class="hero-ways-hint">Devolved &amp; European</span></a></li>
+              <li><a href="/nations"><span class="hero-ways-label">Nations</span><span class="hero-ways-hint">By place</span></a></li>
+              <li><a href="/parties"><span class="hero-ways-label">Parties</span><span class="hero-ways-hint">Every platform</span></a></li>
+            </ul>
+          </nav>
           <div class="hero-stats">
             <div><div class="hero-stat-num">71</div><div class="hero-stat-label">Elections</div></div>
             <div><div class="hero-stat-num">${Object.keys(PARTIES).filter(k => k !== 'others').length}</div><div class="hero-stat-label">Parties</div></div>
@@ -880,6 +972,7 @@ function renderHome(app) {
           <h2>Browse by Nation</h2>
           <div class="gold-rule"></div>
         </div>
+        <p class="browse-section-lede">Party geography and Westminster results by nation. For devolved legislatures, use <a href="/devolved">Beyond Westminster</a>.</p>
         <div class="nations-grid" id="nations-grid"></div>
         <a href="/nations" class="browse-section-link">Explore all four nations →</a>
       </div>
@@ -1403,6 +1496,7 @@ function electionCardHtml(e) {
     : (typeof rgbaHex === 'function' ? rgbaHex(accent.raw, 0.07) : accent.raw);
   return `<a href="/election/${e.id}" class="election-card" data-winner="${e.winner}" style="--party-border:${accent.border};--party-ghost:${ghostColour};--party-kicker:${accent.kicker};--party-surface:${accent.surface}">
     <div class="card-ghost-year" aria-hidden="true">${ghostDigits}</div>
+    <span class="election-type-chip">General election</span>
     <div class="card-year${longLabel ? ' long-label' : ''}">${e.displayYear}</div>
     <div class="card-date">${e.date}</div>
     <div class="card-winner"><div class="card-winner-dot"></div>${electionWinnerLabel(e)}</div>
@@ -1556,6 +1650,7 @@ function buildManifestoCard(pid, election, opts = {}) {
   const coverPath    = `/manifestos/${election.id}/${pid}/cover.png?v=${ASSETS_VERSION}`;
   const coverFallback= `/manifestos/${election.id}/${pid}/cover.jpg?v=${ASSETS_VERSION}`;
   const hasPdf       = hasManifestoPdf(election.id, pid);
+  const hasCover     = hasManifestoCover(election.id, pid);
   const thumbHref    = hasPdf ? pdfPath : textPath;
   const thumbTarget  = hasPdf ? ' target="_blank" rel="noopener"' : '';
   const thumbLabel   = hasPdf
@@ -1569,36 +1664,38 @@ function buildManifestoCard(pid, election, opts = {}) {
   const headerName = opts.showYearAsTitle
     ? election.displayYear
     : partyLink(pid, displayName, election.year);
+  const englandOnlySeats = !opts.result
+    && Boolean(TERRITORIAL_SEAT_CHILDREN[pid])
+    && electionHasTerritorialSeatEditions(election);
   const seatsTag = seats === 0
     ? '<div class="manifesto-party-tag no-seats-tag">No seats won</div>'
-    : `<div class="manifesto-party-tag">${seats} seat${seats !== 1 ? 's' : ''}</div>`;
-
-  const pdfLink = hasPdf
-    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document</div></div>
-        </a>`
-    : '';
+    : englandOnlySeats
+      ? `<div class="manifesto-party-tag" title="England seats only — Scottish and Welsh seats appear on those parties’ cards">${seats} England seat${seats !== 1 ? 's' : ''}</div>`
+      : `<div class="manifesto-party-tag">${seats} seat${seats !== 1 ? 's' : ''}</div>`;
 
   const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
   const pdfLinkFinal = hasPdf
-    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF scan of original document${pdfSizeLabel}</div></div>
-        </a>`
+    ? pdfCtaHtml({ href: pdfPath, size: pdfSize, scanNote: true })
     : '';
 
-  return `<div class="manifesto-card" style="--party-color:${partyBar};--party-dim:${accent.border};--party-surface:${accent.surface};--party-ghost:${ghostColour};--party-kicker:${accent.kicker}">
-      <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
-        <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
+  const thumbInner = hasCover
+    ? `<img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
           class="img-lazy" loading="lazy" decoding="async"
           onerror="if(this.dataset.fb){this.style.display='none';this.nextElementSibling.style.display='flex';}else{this.dataset.fb=1;this.src='${coverFallback}';}">
         <div class="manifesto-thumb-placeholder" style="display:none">
           <div class="manifesto-placeholder-topbar"></div>
           <div class="manifesto-placeholder-ghost" aria-hidden="true">${ghostYear}</div>
           <span class="manifesto-placeholder-label">Scan not yet archived</span>
-        </div>
+        </div>`
+    : `<div class="manifesto-thumb-placeholder" style="display:flex">
+          <div class="manifesto-placeholder-topbar"></div>
+          <div class="manifesto-placeholder-ghost" aria-hidden="true">${ghostYear}</div>
+          <span class="manifesto-placeholder-label">Scan not yet archived</span>
+        </div>`;
+
+  return `<div class="manifesto-card" style="--party-color:${partyBar};--party-dim:${accent.border};--party-surface:${accent.surface};--party-ghost:${ghostColour};--party-kicker:${accent.kicker}">
+      <a href="${thumbHref}" class="manifesto-thumb"${thumbTarget} aria-label="${thumbLabel}">
+        ${thumbInner}
       </a>
       <div class="manifesto-card-header">
         <div class="manifesto-party-dot" style="${dotCss}"></div>
@@ -1680,7 +1777,6 @@ function renderElection(app, id) {
   const manifestoPartyIds = manifestoPartiesOnPage(election);
 
   const NATION_ORDER  = ['england', 'scotland', 'wales', 'northern-ireland', 'others'];
-  const NATION_LABELS = { england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England & UK-wide', scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland', wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales', 'northern-ireland': '🇮🇪 Northern Ireland', others: 'Other Parties' };
   const grouped = {};
   manifestoPartyIds.forEach(pid => {
     const n = PARTIES[pid].nation || 'others';
@@ -1698,12 +1794,12 @@ function renderElection(app, id) {
   const presentNations = NATION_ORDER.filter(n => grouped[n]?.length);
   const manifestoGridContent = presentNations.length > 1
     ? presentNations.map(n => `<div class="manifesto-nation-group">
-        <h3 class="manifesto-nation-heading">${nationLink(n, NATION_LABELS[n])}</h3>
+        <h3 class="manifesto-nation-heading">${n === 'others' ? nationHeadingLabelHtml(n) : nationLink(n, nationHeadingLabelHtml(n))}</h3>
         <div class="manifesto-grid">${grouped[n].map(pid => buildManifestoCard(pid, election)).join('')}</div>
       </div>`).join('')
     : `<div class="manifesto-grid">${manifestoPartyIds.map(pid => buildManifestoCard(pid, election)).join('')}</div>`;
   const territorialSeatsNote = electionHasTerritorialSeatEditions(election)
-    ? `<p class="manifestos-intro" style="margin-top:0.5rem">Seat counts on Scottish/Welsh party cards are for that nation; Labour, Conservative and Liberal Democrat cards show England only so totals are not double-counted. The results table above is UK-wide.</p>`
+    ? `<p class="manifestos-intro manifestos-seat-note" style="margin-top:0.5rem"><strong>Seat badges:</strong> Labour, Conservative and Liberal Democrat cards show <em>England seats</em> only so totals are not double-counted. Scottish and Welsh party cards show that nation’s seats. The results table above is UK-wide.</p>`
     : '';
   const videoIds = Array.isArray(election.youtubeId)
     ? election.youtubeId.filter(Boolean)
@@ -1751,6 +1847,7 @@ function renderElection(app, id) {
             <span class="section-label">Seat Distribution</span>
             <h2>Results</h2>
             <table class="results-table">
+              <caption class="sr-only">${election.displayYear} UK general election results by party</caption>
               <thead><tr><th scope="col">Party</th><th scope="col">Seats (of ${election.totalSeats})</th><th scope="col">Votes</th><th scope="col">Vote %</th></tr></thead>
               <tbody>${resultRows}</tbody>
             </table>
@@ -2148,6 +2245,10 @@ async function renderParty(app, id) {
   const partyId = resolvePartyId(id);
   const party = PARTIES[partyId];
   if (!party) { renderNotFound(app); return; }
+  // Canonicalise aliased slugs in the URL bar (e.g. /party/brexit → /party/reform).
+  if (id && partyId && id !== partyId && getPath() === `/party/${id}`) {
+    history.replaceState(null, '', `/party/${partyId}`);
+  }
   if (partyId === 'cooperative') {
     await renderCooperativePartyPage(app, party);
     return;
@@ -2162,18 +2263,36 @@ async function renderParty(app, id) {
   const partyElections = isAllianceParty ? [] : ELECTIONS.map(e => {
     const r = e.results.find(res => res.party === partyId || res.party === id);
     if (r) return { election: e, result: r };
-    const pr = (e.partyResults || {})[id];
+    const pr = (e.partyResults || {})[partyId] || (e.partyResults || {})[id];
     if (pr) return { election: e, result: pr };
-    if ((e.extraManifestoParties || []).includes(id)) return { election: e, result: { party: id, seats: 0, votes: 0, percentage: 0 } };
+    if ((e.extraManifestoParties || []).includes(partyId) || (e.extraManifestoParties || []).includes(id)) {
+      return { election: e, result: { party: partyId, seats: 0, votes: 0, percentage: 0 } };
+    }
     return null;
   }).filter(Boolean);
 
-  const electionsWon = partyElections.filter(pe => pe.election.winner === id).length;
+  // Catch manifesto-only elections missing from results / extraManifestoParties
+  // (e.g. text editions for parties that won no seats and weren't listed yet).
+  if (!isAllianceParty && MANIFESTO_ARCHIVE) {
+    const seen = new Set(partyElections.map(pe => pe.election.id));
+    ELECTIONS.forEach(e => {
+      if (seen.has(e.id)) return;
+      if (hasManifestoContent(e.id, partyId)) {
+        partyElections.push({
+          election: e,
+          result: { party: partyId, seats: 0, votes: 0, percentage: 0 },
+        });
+      }
+    });
+    partyElections.sort((a, b) => a.election.year - b.election.year);
+  }
+
+  const electionsWon = partyElections.filter(pe => pe.election.winner === partyId).length;
   const maxSeats = Math.max(1, ...partyElections.map(pe => pe.result.seats));
 
   const electionRows = partyElections.slice().reverse().map(({ election: e, result: r }) => {
-    const isWon   = e.winner === id;
-    const isCoal  = id === 'libdem' && e.id === '2010';
+    const isWon   = e.winner === partyId;
+    const isCoal  = partyId === 'libdem' && e.id === '2010';
     const cls     = isWon ? 'won' : isCoal ? 'coalition' : 'lost';
     const label   = isWon ? '✦ Won' : isCoal ? '⊕ Coalition' : 'Opposition';
     const barW    = ((r.seats / maxSeats) * 100).toFixed(1);
@@ -2186,10 +2305,10 @@ async function renderParty(app, id) {
   }).join('');
 
   const manifestoElections = partyElections.filter(({ election: e }) =>
-    hasManifestoContent(e.id, id)
+    hasManifestoContent(e.id, partyId)
   );
   const manifestoItems = manifestoElections.slice().reverse().map(({ election: e, result: r }) =>
-    buildManifestoCard(id, e, { result: r, showYearAsTitle: true })
+    buildManifestoCard(partyId, e, { result: r, showYearAsTitle: true })
   ).join('');
 
   const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
@@ -2925,6 +3044,15 @@ function enhanceManifestoHtml(html, accent) {
   const wrap = document.createElement('div');
   wrap.innerHTML = html;
   wrap.style.setProperty('--manifesto-party-colour', accent.surface);
+  // Keep chrome <h1> as the sole page heading — demote the document's first H1
+  // (from manifesto.md) to a styled masthead (I07 / sandbox/i07-manifesto-heading.html).
+  const firstH1 = wrap.querySelector('h1');
+  if (firstH1) {
+    const masthead = document.createElement('p');
+    masthead.className = 'manifesto-doc-masthead';
+    masthead.innerHTML = firstH1.innerHTML;
+    firstH1.replaceWith(masthead);
+  }
   wrap.querySelectorAll('h2').forEach((h2, idx) => {
     if (!h2.id) h2.id = `section-${idx + 1}`;
     const label = h2.textContent.trim();
@@ -2932,7 +3060,7 @@ function enhanceManifestoHtml(html, accent) {
       h2.innerHTML = `<a href="#${h2.id}" class="manifesto-section-link">${label}</a>`;
     }
   });
-  const firstP = wrap.querySelector('p');
+  const firstP = wrap.querySelector('p:not(.manifesto-doc-masthead)');
   if (firstP) firstP.classList.add('manifesto-lede');
   return wrap.innerHTML;
 }
@@ -3031,25 +3159,249 @@ function manifestoEmptyStateHtml(pdfPath, hasPdf) {
   </div>`;
 }
 
+/** No PDF, no cover, and no Markdown — the document is not in the archive yet. */
+function manifestoUnavailableHtml({ electionUrl, electionLabel, partyUrl, partyName }) {
+  const partyLink = partyUrl
+    ? `<a href="${partyUrl}" class="manifesto-btn-solid">${partyName} party page</a>`
+    : '';
+  return `<div class="manifesto-empty-state manifesto-empty-state--unavailable">
+    <div class="manifesto-empty-kicker">Not yet in the archive</div>
+    <p class="manifesto-empty-text">
+      We don’t currently hold a PDF, cover image, or readable text for this manifesto.
+      It may not have survived in a form we can publish, or it may still be waiting to be sourced.
+    </p>
+    <div class="manifesto-empty-actions">
+      <a href="${electionUrl}" class="manifesto-btn-solid">${electionLabel}</a>
+      ${partyLink}
+      <a href="/about#contact-and-corrections" class="manifesto-btn-ghost">Contact and corrections</a>
+    </div>
+  </div>`;
+}
+
+function setupManifestoCite() {
+  const citeEl = document.getElementById('manifesto-cite');
+  if (!citeEl) return;
+  const textEl = document.getElementById('manifesto-cite-text');
+  const citation = (textEl?.textContent || '').replace(/\s+/g, ' ').trim();
+  const urlEl = citeEl.querySelector('.manifesto-cite-url');
+  const url = (urlEl?.textContent || window.location.href).trim();
+
+  const flash = (btn, label) => {
+    if (!btn) return;
+    const prev = btn.textContent;
+    btn.textContent = label;
+    setTimeout(() => { btn.textContent = prev; }, 1600);
+  };
+
+  document.getElementById('manifesto-copy-citation')?.addEventListener('click', async () => {
+    const btn = document.getElementById('manifesto-copy-citation');
+    try {
+      await navigator.clipboard.writeText(citation);
+      flash(btn, 'Copied');
+    } catch (_) {
+      flash(btn, 'Copy failed');
+    }
+  });
+  document.getElementById('manifesto-copy-link')?.addEventListener('click', async () => {
+    const btn = document.getElementById('manifesto-copy-link');
+    try {
+      await navigator.clipboard.writeText(url);
+      flash(btn, 'Copied');
+    } catch (_) {
+      flash(btn, 'Copy failed');
+    }
+  });
+}
+
+function setupManifestoFind(contentEl) {
+  const desktop = document.getElementById('manifesto-find');
+  const mobile = document.getElementById('manifesto-find-mobile');
+  const isEmpty = contentEl.classList.contains('manifesto-content--empty')
+    || contentEl.querySelector('.manifesto-empty-state');
+  if (isEmpty || !contentEl.textContent?.trim()) {
+    if (desktop) desktop.hidden = true;
+    if (mobile) mobile.hidden = true;
+    return;
+  }
+  if (desktop) desktop.hidden = false;
+  if (mobile) mobile.hidden = false;
+
+  const inputs = [
+    document.getElementById('manifesto-find-input'),
+    document.getElementById('manifesto-find-input-mobile'),
+  ].filter(Boolean);
+  const counts = [
+    document.getElementById('manifesto-find-count'),
+    document.getElementById('manifesto-find-count-mobile'),
+  ].filter(Boolean);
+  const prevBtns = [
+    document.getElementById('manifesto-find-prev'),
+    document.getElementById('manifesto-find-prev-mobile'),
+  ].filter(Boolean);
+  const nextBtns = [
+    document.getElementById('manifesto-find-next'),
+    document.getElementById('manifesto-find-next-mobile'),
+  ].filter(Boolean);
+
+  let marks = [];
+  let active = -1;
+  let debounceTimer = null;
+
+  const clearMarks = () => {
+    contentEl.querySelectorAll('mark.manifesto-find-hit').forEach(mark => {
+      const parent = mark.parentNode;
+      if (!parent) return;
+      parent.replaceChild(document.createTextNode(mark.textContent), mark);
+      parent.normalize();
+    });
+    marks = [];
+    active = -1;
+  };
+
+  const paintCount = () => {
+    const label = !marks.length
+      ? (inputs[0]?.value.trim() ? '0 matches' : '')
+      : `${active + 1} of ${marks.length}`;
+    counts.forEach(el => { el.textContent = label; });
+    const disabled = marks.length === 0;
+    [...prevBtns, ...nextBtns].forEach(btn => { btn.disabled = disabled; });
+    marks.forEach((m, i) => m.classList.toggle('is-current', i === active));
+  };
+
+  const goTo = (index) => {
+    if (!marks.length) return;
+    active = ((index % marks.length) + marks.length) % marks.length;
+    paintCount();
+    const el = marks[active];
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  };
+
+  const runFind = (query) => {
+    clearMarks();
+    const q = (query || '').trim();
+    if (q.length < 2) {
+      paintCount();
+      return;
+    }
+    const qLower = q.toLowerCase();
+    const walker = document.createTreeWalker(contentEl, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        if (node.parentElement?.closest('script, style')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      const text = node.nodeValue;
+      const lower = text.toLowerCase();
+      let from = 0;
+      let idx = lower.indexOf(qLower, from);
+      if (idx === -1) return;
+      const frag = document.createDocumentFragment();
+      while (idx !== -1) {
+        if (idx > from) frag.appendChild(document.createTextNode(text.slice(from, idx)));
+        const mark = document.createElement('mark');
+        mark.className = 'manifesto-find-hit';
+        mark.textContent = text.slice(idx, idx + q.length);
+        frag.appendChild(mark);
+        marks.push(mark);
+        from = idx + q.length;
+        idx = lower.indexOf(qLower, from);
+      }
+      if (from < text.length) frag.appendChild(document.createTextNode(text.slice(from)));
+      node.parentNode?.replaceChild(frag, node);
+    });
+    if (marks.length) goTo(0);
+    else paintCount();
+  };
+
+  const syncInputs = (value, source) => {
+    inputs.forEach(input => {
+      if (input !== source) input.value = value;
+    });
+  };
+
+  inputs.forEach(input => {
+    input.addEventListener('input', () => {
+      syncInputs(input.value, input);
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => runFind(input.value), 120);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        if (e.shiftKey) goTo(active - 1);
+        else goTo(active + 1);
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        input.value = '';
+        syncInputs('', input);
+        clearMarks();
+        paintCount();
+        input.blur();
+      }
+    });
+  });
+  prevBtns.forEach(btn => btn.addEventListener('click', () => goTo(active - 1)));
+  nextBtns.forEach(btn => btn.addEventListener('click', () => goTo(active + 1)));
+
+  const onSlash = (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (e.target?.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || e.target?.isContentEditable) return;
+    if (!document.getElementById('manifesto-content')) return;
+    e.preventDefault();
+    const target = window.matchMedia('(max-width: 900px)').matches
+      ? document.getElementById('manifesto-find-input-mobile')
+      : document.getElementById('manifesto-find-input');
+    const mobilePanel = document.querySelector('.manifesto-toc-mobile');
+    if (target === document.getElementById('manifesto-find-input-mobile') && mobilePanel) {
+      mobilePanel.open = true;
+    }
+    target?.focus();
+    target?.select();
+  };
+  document.addEventListener('keydown', onSlash);
+}
+
 function setupManifestoReader(contentEl, paperEl, accent) {
   const headings = [...contentEl.querySelectorAll('h2[id]')];
   const tocHtml = buildManifestoTocLinks(headings);
   const tocList = document.getElementById('manifesto-toc-list');
   const tocMobileList = document.getElementById('manifesto-toc-mobile-list');
   const tocMeta = document.getElementById('manifesto-toc-meta');
+  const tocLabel = document.getElementById('manifesto-toc-label');
+  const tocDivider = document.getElementById('manifesto-toc-divider');
   const minutes = estimateReadingMinutes(contentEl.textContent || '');
+  const isEmpty = contentEl.classList.contains('manifesto-content--empty')
+    || Boolean(contentEl.querySelector('.manifesto-empty-state'));
 
   const tocAside = document.querySelector('.manifesto-toc');
   const tocMobilePanel = document.querySelector('.manifesto-toc-mobile');
   const hasToc = headings.length > 0;
-  if (tocAside) tocAside.hidden = !hasToc;
-  if (tocMobilePanel) tocMobilePanel.hidden = !hasToc;
-
-  if (tocList) tocList.innerHTML = tocHtml;
-  if (tocMobileList) tocMobileList.innerHTML = tocHtml;
-  if (tocMeta) {
-    tocMeta.innerHTML = `Reading time ~${minutes} min<br>Section <span id="manifesto-section-current">1</span> of ${Math.max(headings.length, 1)}`;
+  const showSidebar = !isEmpty && (hasToc || Boolean(document.getElementById('manifesto-find')));
+  if (tocAside) tocAside.hidden = !showSidebar;
+  if (tocMobilePanel) tocMobilePanel.hidden = !showSidebar;
+  if (tocLabel) tocLabel.hidden = !hasToc;
+  if (tocDivider) tocDivider.hidden = !hasToc;
+  if (tocList) {
+    tocList.innerHTML = tocHtml;
+    tocList.hidden = !hasToc;
   }
+  if (tocMobileList) {
+    tocMobileList.innerHTML = tocHtml;
+    tocMobileList.hidden = !hasToc;
+  }
+  if (tocMeta) {
+    tocMeta.innerHTML = isEmpty
+      ? ''
+      : `Reading time ~${minutes} min${hasToc ? `<br>Section <span id="manifesto-section-current">1</span> of ${Math.max(headings.length, 1)}` : ''}`;
+  }
+
+  setupManifestoCite();
+  setupManifestoFind(contentEl);
 
   const progressRead = document.getElementById('manifesto-progress-read');
   const progressTrack = document.getElementById('manifesto-progress-track');
@@ -3112,7 +3464,7 @@ function setupManifestoReader(contentEl, paperEl, accent) {
 
   window.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
-  setActive(0);
+  if (hasToc) setActive(0);
 }
 
 function manifestoFolderFromPath(path) {
@@ -3182,39 +3534,9 @@ async function renderManifesto(app, electionId, partyId) {
     || (mEntry?.pdf ? mEntry.pdf.replace(/manifesto\.pdf$/i, 'manifesto.md') : null)
     || `/manifestos/${electionId}/${folderSlug}/manifesto.md`;
   const hasPdf = isDevolved ? Boolean(mEntry?.pdf) : hasManifestoPdf(electionId, partyId);
-  const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
-  
-  const coverPath = mEntry?.cover
-    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
-    : `/manifestos/${electionId}/${folderSlug}/cover.png?v=${ASSETS_VERSION}`;
-  const coverFallback = mEntry?.cover
-    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
-    : `/manifestos/${electionId}/${folderSlug}/cover.jpg?v=${ASSETS_VERSION}`;
-  
-  const coverThumbOpen = hasPdf
-    ? `<a href="${pdfPath}" class="manifesto-viewer-cover-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">`
-    : `<div class="manifesto-viewer-cover-thumb">`;
-  const coverThumbClose = hasPdf ? '</a>' : '</div>';
-  const pdfDownloadLink = hasPdf
-    ? `<a href="${pdfPath}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon" aria-hidden="true">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">PDF${pdfSizeLabel}</div></div>
-        </a>`
-    : '';
-  const coverPanel = `
-            <div class="manifesto-viewer-cover" id="manifesto-viewer-cover">
-              ${coverThumbOpen}
-                <img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
-                  width="148" height="210" decoding="async"
-                  onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='${coverFallback}';}else{const wrap=this.closest('.manifesto-viewer-cover');if(wrap){wrap.classList.add('is-cover-missing');if(!wrap.querySelector('.manifesto-link'))wrap.hidden=true;}}">
-              ${coverThumbClose}
-              ${pdfDownloadLink}
-            </div>`;
-  const barSurface = typeof barColour === 'function'
-    ? barColour(getPartyColor(colourId, election.year), theme)
-    : accent.surface;
-
+  const hasCover = isDevolved
+    ? Boolean(mEntry?.cover)
+    : hasManifestoCover(electionId, folderSlug);
   const electionUrl = isDevolved ? `/devolved/${electionId}` : `/election/${election.id}`;
   const electionLabel = isDevolved
     ? `${election.displayYear} ${DEVOLVED_PORTALS?.[electionId.split('/')[0]]?.label || 'Devolved'} Election`
@@ -3229,9 +3551,115 @@ async function renderManifesto(app, electionId, partyId) {
     ? `<a href="/party/${breadcrumbPartyId}">${PARTIES[breadcrumbPartyId] ? getPartyName(breadcrumbPartyId, election.year) : displayName}</a><span aria-hidden="true">›</span>`
     : `<span>${displayName}</span><span aria-hidden="true">›</span>`;
 
+  const assets = isDevolved
+    ? {
+        pdf: Boolean(mEntry?.pdf),
+        md: Boolean(mEntry?.md),
+        cover: Boolean(mEntry?.cover),
+      }
+    : getManifestoAssetFlags(electionId, folderSlug);
+  const hasMd = isDevolved ? Boolean(mEntry?.md) : hasManifestoMarkdown(electionId, folderSlug);
+  const whollyUnavailable = Boolean(assets) && !hasPdf && !hasCover && !hasMd;
+
+  if (whollyUnavailable) {
+    setPageMeta({
+      title: `${displayName} Manifesto ${election.displayYear}`,
+      description: `The ${displayName} manifesto for the ${election.displayYear} election is not yet held in The British Manifesto Archive.`,
+      path: `/manifesto/${electionId}/${partyId}`,
+      noindex: true,
+    });
+    const barSurface = typeof barColour === 'function'
+      ? barColour(getPartyColor(colourId, election.year), theme)
+      : accent.surface;
+    app.innerHTML = `
+      <div class="manifesto-viewer-page manifesto-viewer-page--unavailable">
+        <header class="manifesto-viewer-header">
+          <div class="manifesto-viewer-header-inner">
+            <nav class="manifesto-viewer-breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a><span aria-hidden="true">›</span>
+              <a href="${electionUrl}">${electionLabel}</a><span aria-hidden="true">›</span>
+              ${breadcrumbParty}
+              <span class="bc-current">Manifesto</span>
+            </nav>
+            <div class="manifesto-viewer-title-row">
+              <div>
+                <div class="manifesto-viewer-kicker">
+                  <div class="manifesto-viewer-kicker-rule" style="background:${barSurface}"></div>
+                  <div class="manifesto-viewer-kicker-text" style="color:${accent.kicker}">${kickerLabel}</div>
+                </div>
+                <h1 class="manifesto-viewer-title">${displayName} Manifesto ${election.displayYear}</h1>
+                <div class="manifesto-viewer-meta-row">
+                  <span>${election.date}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="manifesto-viewer-body manifesto-viewer-body--unavailable">
+          <div class="manifesto-paper-wrap">
+            <article class="manifesto-paper manifesto-paper--empty" id="manifesto-paper">
+              <div id="manifesto-content" class="manifesto-content manifesto-content--empty">
+                ${manifestoUnavailableHtml({
+                  electionUrl,
+                  electionLabel,
+                  partyUrl: breadcrumbPartyId ? `/party/${breadcrumbPartyId}` : null,
+                  partyName: displayName,
+                })}
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const pdfSize = hasPdf ? getPdfSize(pdfPath) : '';
+
+  const coverPath = mEntry?.cover
+    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
+    : `/manifestos/${electionId}/${folderSlug}/cover.png?v=${ASSETS_VERSION}`;
+  const coverFallback = mEntry?.cover
+    ? `${mEntry.cover}?v=${ASSETS_VERSION}`
+    : `/manifestos/${electionId}/${folderSlug}/cover.jpg?v=${ASSETS_VERSION}`;
+
+  const coverThumbOpen = hasPdf
+    ? `<a href="${pdfPath}" class="manifesto-viewer-cover-thumb" target="_blank" rel="noopener" aria-label="Open ${displayName} ${election.displayYear} manifesto PDF">`
+    : `<div class="manifesto-viewer-cover-thumb">`;
+  const coverThumbClose = hasPdf ? '</a>' : '</div>';
+  const pdfDownloadLink = hasPdf
+    ? pdfCtaHtml({ href: pdfPath, size: pdfSize, compact: true })
+    : '';
+  const coverThumbInner = hasCover
+    ? `<img src="${coverPath}" alt="${displayName} ${election.displayYear} manifesto cover"
+                  width="148" height="210" decoding="async"
+                  onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='${coverFallback}';}else{this.style.display='none';const ph=this.nextElementSibling;if(ph)ph.style.display='flex';}">
+                <div class="manifesto-thumb-placeholder manifesto-viewer-cover-placeholder" style="display:none" aria-hidden="true">
+                  <div class="manifesto-placeholder-topbar"></div>
+                  <div class="manifesto-placeholder-ghost">${election.year}</div>
+                  <span class="manifesto-placeholder-label">Scan not yet archived</span>
+                </div>`
+    : `<div class="manifesto-thumb-placeholder manifesto-viewer-cover-placeholder" style="display:flex" aria-hidden="true">
+                  <div class="manifesto-placeholder-topbar"></div>
+                  <div class="manifesto-placeholder-ghost">${election.year}</div>
+                  <span class="manifesto-placeholder-label">Scan not yet archived</span>
+                </div>`;
+  const coverPanel = hasCover || hasPdf
+    ? `<div class="manifesto-viewer-cover" id="manifesto-viewer-cover">
+              ${coverThumbOpen}
+                ${coverThumbInner}
+              ${coverThumbClose}
+              ${pdfDownloadLink}
+            </div>`
+    : '';
+  const barSurface = typeof barColour === 'function'
+    ? barColour(getPartyColor(colourId, election.year), theme)
+    : accent.surface;
+
+  const pageTitle = `${displayName} Manifesto ${election.displayYear}`;
   setPageMeta({
-    title: displayName,
-    description: `Read and search the full text of the ${displayName} manifesto from the ${election.displayYear} ${isDevolved ? 'devolved' : 'general'} election.`,
+    title: pageTitle,
+    description: `Read the ${displayName} manifesto from the ${election.displayYear} ${isDevolved ? 'devolved' : 'general'} election — original PDF and online text where available.`,
     path: `/manifesto/${electionId}/${partyId}`,
   });
 
@@ -3255,6 +3683,15 @@ async function renderManifesto(app, electionId, partyId) {
               <div class="manifesto-viewer-meta-row" id="manifesto-header-meta">
                 <span>${election.date}</span>
               </div>
+              <div class="manifesto-cite" id="manifesto-cite">
+                <div class="manifesto-cite-label">Cite</div>
+                <p class="manifesto-cite-text" id="manifesto-cite-text">${displayName} (${election.displayYear}). <em>${pageTitle}</em>. The British Manifesto Archive. <span class="manifesto-cite-url">https://www.manifestos.org.uk/manifesto/${electionId}/${partyId}</span></p>
+                <div class="manifesto-cite-actions">
+                  <button type="button" class="manifesto-cite-btn" id="manifesto-copy-citation">Copy citation</button>
+                  <button type="button" class="manifesto-cite-btn" id="manifesto-copy-link">Copy link</button>
+                </div>
+                <p class="manifesto-cite-note"><a href="/about">Sources and copyright</a></p>
+              </div>
             </div>
             ${coverPanel}
           </div>
@@ -3262,13 +3699,31 @@ async function renderManifesto(app, electionId, partyId) {
       </header>
       <div class="manifesto-viewer-body">
         <aside class="manifesto-toc" aria-label="Table of contents">
-          <div class="manifesto-toc-label">CONTENTS</div>
+          <div class="manifesto-find" id="manifesto-find" hidden>
+            <label class="manifesto-find-label" for="manifesto-find-input">Find in this manifesto</label>
+            <div class="manifesto-find-row">
+              <input type="search" id="manifesto-find-input" class="manifesto-find-input" placeholder="Find…" autocomplete="off" spellcheck="false" />
+              <span class="manifesto-find-count" id="manifesto-find-count" aria-live="polite"></span>
+              <button type="button" class="manifesto-find-nav" id="manifesto-find-prev" aria-label="Previous match" disabled>↑</button>
+              <button type="button" class="manifesto-find-nav" id="manifesto-find-next" aria-label="Next match" disabled>↓</button>
+            </div>
+          </div>
+          <div class="manifesto-toc-label" id="manifesto-toc-label">CONTENTS</div>
           <nav class="manifesto-toc-list" id="manifesto-toc-list"></nav>
-          <div class="manifesto-toc-divider"></div>
+          <div class="manifesto-toc-divider" id="manifesto-toc-divider"></div>
           <div class="manifesto-toc-meta" id="manifesto-toc-meta"></div>
         </aside>
         <details class="manifesto-toc-mobile">
           <summary>Contents</summary>
+          <div class="manifesto-find manifesto-find--mobile" id="manifesto-find-mobile" hidden>
+            <label class="manifesto-find-label" for="manifesto-find-input-mobile">Find in this manifesto</label>
+            <div class="manifesto-find-row">
+              <input type="search" id="manifesto-find-input-mobile" class="manifesto-find-input" placeholder="Find…" autocomplete="off" spellcheck="false" />
+              <span class="manifesto-find-count" id="manifesto-find-count-mobile" aria-live="polite"></span>
+              <button type="button" class="manifesto-find-nav" id="manifesto-find-prev-mobile" aria-label="Previous match" disabled>↑</button>
+              <button type="button" class="manifesto-find-nav" id="manifesto-find-next-mobile" aria-label="Next match" disabled>↓</button>
+            </div>
+          </div>
           <nav class="manifesto-toc-list" id="manifesto-toc-mobile-list"></nav>
         </details>
         <div class="manifesto-paper-wrap">
@@ -3291,6 +3746,17 @@ async function renderManifesto(app, electionId, partyId) {
       </div>
     </div>
   `;
+
+  // Text known absent — skip the fetch and avoid a false “connection failed” message.
+  if (assets && !hasMd) {
+    const contentEl = document.getElementById('manifesto-content');
+    const paperEl = document.getElementById('manifesto-paper');
+    contentEl.innerHTML = manifestoEmptyStateHtml(pdfPath, hasPdf);
+    contentEl.classList.add('manifesto-content--empty');
+    paperEl?.classList.add('manifesto-paper--empty');
+    setupManifestoReader(contentEl, paperEl, accent);
+    return;
+  }
 
   fetchTyped(mdPath, 'markdown')
     .then(md => {
@@ -3317,7 +3783,16 @@ async function renderManifesto(app, electionId, partyId) {
       if (metaEl) metaEl.innerHTML = buildManifestoHeaderMetaHtml(election, {}, '');
       const contentEl = document.getElementById('manifesto-content');
       const paperEl = document.getElementById('manifesto-paper');
-      contentEl.innerHTML = manifestoLoadErrorHtml(pdfPath, hasPdf);
+      // Prefer an honest “not archived” message over a connection-error framing
+      // when we already know there is no PDF either.
+      contentEl.innerHTML = hasPdf || hasMd
+        ? manifestoLoadErrorHtml(pdfPath, hasPdf)
+        : manifestoUnavailableHtml({
+            electionUrl,
+            electionLabel,
+            partyUrl: breadcrumbPartyId ? `/party/${breadcrumbPartyId}` : null,
+            partyName: displayName,
+          });
       contentEl.classList.add('manifesto-content--empty');
       paperEl?.classList.add('manifesto-paper--empty');
       document.getElementById('manifesto-retry')?.addEventListener('click', () => {
@@ -3360,7 +3835,7 @@ function renderElectionsHub(app) {
         <span class="section-label">United Kingdom · 1945–2024</span>
         <h1>General Elections</h1>
         <div class="gold-rule"></div>
-        <p>Every postwar UK general election — electoral results, manifesto documents, and campaign records.</p>
+        <p>Westminster contests — every postwar UK general election with results, manifesto documents, and campaign records. For devolved legislatures, use <a href="/devolved">Beyond Westminster</a>.</p>
       </header>
       <div class="timeline-filter hub-filter" id="hub-elections-filter">
         <button class="filter-btn active" data-filter="all">All</button>
@@ -3386,12 +3861,20 @@ function renderElectionsHub(app) {
 function renderDevolvedHub(app) {
   setPageMeta({
     title: 'Beyond Westminster',
-    description: 'Devolved legislatures of the United Kingdom — Scottish Parliament, Welsh Parliament, Northern Ireland Assembly, and London Mayor & Assembly.',
+    description: 'The main path into devolved and regional elections — Scottish Parliament, Welsh Parliament, Northern Ireland Assembly, London Mayor & Assembly, and UK European Parliament contests.',
     path: '/devolved',
   });
 
+  const portalTypeChip = {
+    holyrood: 'Scottish Parliament',
+    senedd: 'Senedd',
+    stormont: 'Stormont',
+    london: 'London',
+    euro: 'European Parliament',
+  };
   const cards = Object.values(DEVOLVED_PORTALS).map(portal => `
     <a href="/devolved/${portal.id}" class="hub-devolved-card">
+      <span class="election-type-chip">${portalTypeChip[portal.id] || 'Institution'}</span>
       <strong>${portal.label}</strong>
       <span class="hub-devolved-sub">${portal.subtitle}</span>
       <p>${portal.description}</p>
@@ -3409,7 +3892,8 @@ function renderDevolvedHub(app) {
         <span class="section-label">United Kingdom — Devolved Government</span>
         <h1>Beyond Westminster</h1>
         <div class="gold-rule"></div>
-        <p>Legislatures with devolved powers across Scotland, Wales, Northern Ireland, and Greater London.</p>
+        <p>Institutions and their elections — Holyrood, the Senedd, Stormont, London Mayor &amp; Assembly, and UK European Parliament contests. This is the main path into devolved content.</p>
+        <p class="hub-page-crosslink">Looking for parties by geography instead? Browse <a href="/nations">The Four Nations &amp; Europe</a>. For UK general elections, see <a href="/elections">Westminster</a>.</p>
       </header>
       <div class="hub-devolved-grid">${cards}</div>
     </div>
@@ -3419,7 +3903,7 @@ function renderDevolvedHub(app) {
 function renderNationsHub(app) {
   setPageMeta({
     title: 'The Four Nations & Europe',
-    description: 'Browse England, Wales, Scotland, Northern Ireland, and European political families — Westminster results and devolved government.',
+    description: 'Browse parties and Westminster results by nation — England, Wales, Scotland, Northern Ireland — plus European political families. For devolved elections, use Beyond Westminster.',
     path: '/nations',
   });
 
@@ -3435,14 +3919,745 @@ function renderNationsHub(app) {
         <span class="section-label">United Kingdom</span>
         <h1>The Four Nations &amp; Europe</h1>
         <div class="gold-rule"></div>
-        <p>England, Wales, Scotland, and Northern Ireland — plus pan-European political families that contested UK European elections.</p>
+        <p>A geography and party taxonomy — England, Wales, Scotland, and Northern Ireland, plus pan-European political families — with Westminster results by nation.</p>
+        <p class="hub-page-crosslink">For devolved legislatures and their elections, go to <a href="/devolved">Beyond Westminster</a>.</p>
       </header>
       <div class="hub-nations-grid">${cards}</div>
     </div>
   `;
 }
 
-function renderPartiesHub(app) {
+const PARTY_COLOUR_FAMILIES = [
+  { id: 'red', label: 'Red', swatch: '#E4003B' },
+  { id: 'orange', label: 'Orange', swatch: '#E67E22' },
+  { id: 'yellow', label: 'Yellow', swatch: '#FAA61A' },
+  { id: 'green', label: 'Green', swatch: '#00B140' },
+  { id: 'teal', label: 'Teal', swatch: '#12B6CF' },
+  { id: 'blue', label: 'Blue', swatch: '#0087DC' },
+  { id: 'purple', label: 'Purple', swatch: '#70147A' },
+  { id: 'magenta', label: 'Magenta', swatch: '#C51A70' },
+  { id: 'brown', label: 'Brown', swatch: '#8B5E3C' },
+  { id: 'grey', label: 'Grey / black', swatch: '#6b7280' },
+];
+
+const PARTY_BROWSE_NATIONS = [
+  { id: 'england', label: 'England' },
+  { id: 'scotland', label: 'Scotland' },
+  { id: 'wales', label: 'Wales' },
+  { id: 'northern-ireland', label: 'Northern Ireland' },
+  { id: 'europe', label: 'Europe' },
+  { id: 'uk', label: 'UK-wide' },
+];
+
+const PARTY_BROWSE_CONTESTS = [
+  { id: 'westminster', label: 'Westminster' },
+  { id: 'holyrood', label: 'Holyrood' },
+  { id: 'senedd', label: 'Senedd' },
+  { id: 'stormont', label: 'Stormont' },
+  { id: 'london', label: 'London' },
+  { id: 'euro', label: 'Europe' },
+];
+
+function colourFamilyFromHex(hex) {
+  if (typeof hexToRgb !== 'function' || typeof rgbToOklch !== 'function') return 'grey';
+  const lch = rgbToOklch(hexToRgb(hex || '#6b7280'));
+  if (lch.C < 0.035 && lch.L < 0.35) return 'grey';
+  if (lch.C < 0.025) return 'grey';
+  const h = ((lch.H % 360) + 360) % 360;
+  // Browns: low–mid chroma oranges with lower lightness
+  if (h >= 35 && h < 75 && lch.L < 0.55 && lch.C < 0.12) return 'brown';
+  if (h < 25 || h >= 345) return 'red';
+  if (h < 55) return 'orange';
+  if (h < 95) return 'yellow';
+  if (h < 165) return 'green';
+  // Teal includes Reform UK (#12B6CF, H≈212); Conservatives sit higher (~247)
+  if (h < 230) return 'teal';
+  if (h < 265) return 'blue';
+  if (h < 305) return 'purple';
+  return 'magenta';
+}
+
+function electionYearFromId(electionId) {
+  const m = String(electionId || '').match(/(\d{4})/);
+  return m ? parseInt(m[1], 10) : null;
+}
+
+function electionKindFromId(electionId) {
+  const id = String(electionId || '');
+  if (id.startsWith('london/')) return 'london';
+  if (id.includes('/')) return id.split('/')[0];
+  return 'westminster';
+}
+
+function splitArchiveKey(key) {
+  const i = String(key).lastIndexOf('/');
+  if (i < 0) return { electionId: '', partyId: key };
+  return { electionId: key.slice(0, i), partyId: key.slice(i + 1) };
+}
+
+function buildPartyBrowseRows() {
+  const docsByParty = new Map();
+  const contestsByParty = new Map();
+
+  const bumpDoc = (partyId, electionId, hasPdf) => {
+    if (!partyId || partyId === 'others') return;
+    let row = docsByParty.get(partyId);
+    if (!row) {
+      row = { years: new Set(), kinds: new Set(), hasPdf: false, hasText: false };
+      docsByParty.set(partyId, row);
+    }
+    const year = electionYearFromId(electionId);
+    if (year) row.years.add(year);
+    row.kinds.add(electionKindFromId(electionId));
+    if (hasPdf) row.hasPdf = true;
+    row.hasText = true;
+  };
+
+  const bumpContest = (partyId, kind) => {
+    if (!partyId || partyId === 'others' || !kind) return;
+    let set = contestsByParty.get(partyId);
+    if (!set) {
+      set = new Set();
+      contestsByParty.set(partyId, set);
+    }
+    set.add(kind);
+  };
+
+  if (MANIFESTO_ARCHIVE) {
+    MANIFESTO_ARCHIVE.forEach(key => {
+      const { electionId, partyId } = splitArchiveKey(key);
+      bumpDoc(partyId, electionId, hasManifestoPdf(electionId, partyId));
+      bumpContest(partyId, electionKindFromId(electionId));
+    });
+  }
+
+  Object.keys(_pdfSizes || {}).forEach(path => {
+    const m = path.match(/^\/manifestos\/(.+)\/([^/]+)\/manifesto\.pdf$/i);
+    if (!m) return;
+    bumpDoc(m[2], m[1], true);
+    bumpContest(m[2], electionKindFromId(m[1]));
+  });
+
+  // Westminster contests from bundled election results (even without a manifesto on file)
+  if (typeof ELECTIONS !== 'undefined') {
+    ELECTIONS.forEach(e => {
+      (e.extraManifestoParties || []).forEach(pid => bumpContest(pid, 'westminster'));
+      (e.results || []).forEach(r => bumpContest(r.party, 'westminster'));
+      Object.keys(e.partyResults || {}).forEach(pid => bumpContest(pid, 'westminster'));
+    });
+  }
+
+  return Object.values(PARTIES)
+    .filter(p => p && p.id && p.id !== 'others')
+    .map(p => {
+      const docs = docsByParty.get(p.id) || {
+        years: new Set(), kinds: new Set(), hasPdf: false, hasText: false,
+      };
+      const years = [...docs.years].sort((a, b) => a - b);
+      const foundedDecade = partyFoundedDecadeBucket(p.founded);
+      const kinds = new Set([
+        ...(p.contests || []),
+        ...(contestsByParty.get(p.id) || []),
+        ...docs.kinds,
+      ]);
+
+      const desc = `${p.description || ''}`.toLowerCase();
+      const dissolved = /\b(dissolved|disbanded|wound up|merged into)\b/.test(desc);
+      let status = p.status || null;
+      if (!status) {
+        if (dissolved) status = 'historical';
+        else if (p.isPrimary) status = 'primary';
+        else status = 'active';
+      }
+
+      const colourFamily = p.colourFamily || colourFamilyFromHex(p.color);
+      let hue = 0;
+      let lightness = 0.5;
+      if (typeof hexToRgb === 'function' && typeof rgbToOklch === 'function') {
+        const lch = rgbToOklch(hexToRgb(p.color || '#6b7280'));
+        hue = ((lch.H % 360) + 360) % 360;
+        lightness = lch.L;
+      }
+
+      const nationLabel = (p.nation || 'others') === 'others'
+        ? 'Other'
+        : (typeof getNationLabel === 'function' ? getNationLabel(p.nation) : p.nation);
+      const tags = [
+        ...(p.spectrum || '').split(/\s*\/\s*/).map(t => t.trim()).filter(Boolean),
+        ...(nationLabel ? [nationLabel] : []),
+      ];
+
+      return {
+        id: p.id,
+        name: p.shortName || p.name,
+        fullName: p.name,
+        color: p.color || '#6b7280',
+        spectrum: p.spectrum || '',
+        nation: p.nation || 'others',
+        nationLabel,
+        colourFamily,
+        hue,
+        lightness,
+        founded: p.founded || null,
+        foundedDecade,
+        tags,
+        kinds: [...kinds],
+        hasPdf: docs.hasPdf,
+        hasText: docs.hasText,
+        status,
+        isPrimary: Boolean(p.isPrimary),
+        searchText: `${p.name} ${p.shortName || ''} ${p.id}`.toLowerCase(),
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
+}
+
+/** Founded decade bucket: 1890 = “1890s and earlier”; else floor to decade. */
+function partyFoundedDecadeBucket(founded) {
+  if (founded == null || Number.isNaN(founded)) return null;
+  const d = Math.floor(founded / 10) * 10;
+  return d < 1900 ? 1890 : d;
+}
+
+function partyFoundedDecadeLabel(decade) {
+  if (decade == null) return '';
+  return decade <= 1890 ? '1890s and earlier' : `${decade}s`;
+}
+
+function partyBrowseFoundedSteps(rows) {
+  const present = [...new Set(rows.map(r => r.foundedDecade).filter(d => d != null))].sort((a, b) => a - b);
+  if (!present.length) return [1890, 1900];
+  const max = present[present.length - 1];
+  const steps = [];
+  for (let d = 1890; d <= max; d += 10) steps.push(d);
+  return steps;
+}
+
+function readPartyBrowseFilters() {
+  const params = new URLSearchParams(window.location.search);
+  const tagsRaw = params.get('tags') || '';
+  return {
+    q: params.get('q') || '',
+    colour: params.get('colour') || '',
+    nation: params.get('nation') || '',
+    foundedFrom: params.get('foundedFrom') || '',
+    foundedTo: params.get('foundedTo') || '',
+    // legacy single-decade param
+    founded: params.get('founded') || params.get('decade') || '',
+    status: params.get('status') || '',
+    contest: params.get('contest') || '',
+    docs: params.get('docs') || '',
+    tags: tagsRaw ? tagsRaw.split('|').map(t => decodeURIComponent(t)).filter(Boolean) : [],
+    tagQuery: '',
+  };
+}
+
+function writePartyBrowseFilters(filters) {
+  const params = new URLSearchParams();
+  Object.entries(filters).forEach(([k, v]) => {
+    if (k === 'tagQuery') return;
+    if (k === 'tags') {
+      if (Array.isArray(v) && v.length) params.set('tags', v.map(encodeURIComponent).join('|'));
+      return;
+    }
+    if (v) params.set(k, v);
+  });
+  const qs = params.toString();
+  const next = qs ? `/parties/all?${qs}` : '/parties/all';
+  if (`${window.location.pathname}${window.location.search}` !== next) {
+    history.replaceState(null, '', next);
+  }
+}
+
+function partyBrowseRowHtml(row) {
+  const meta = [row.spectrum, row.nationLabel].filter(Boolean).join(' · ');
+  return `<a href="/party/${row.id}" class="parties-all-row" role="listitem" data-party-id="${row.id}">
+    <span class="mega-dot" style="${typeof dotStyle === 'function' ? dotStyle(row.color) : `background:${row.color}`}" aria-hidden="true"></span>
+    <span class="parties-all-name">${row.name}</span>
+    <span class="parties-all-meta">${meta}</span>
+  </a>`;
+}
+
+function partyBrowseMatches(row, filters, foundedSteps) {
+  if (filters.q) {
+    const q = filters.q.trim().toLowerCase();
+    if (q && !row.searchText.includes(q)) return false;
+  }
+  if (filters.colour && row.colourFamily !== filters.colour) return false;
+  if (filters.nation && row.nation !== filters.nation) return false;
+
+  const steps = foundedSteps || [];
+  const minStep = steps[0];
+  const maxStep = steps[steps.length - 1];
+  let from = filters.foundedFrom !== '' ? parseInt(filters.foundedFrom, 10) : minStep;
+  let to = filters.foundedTo !== '' ? parseInt(filters.foundedTo, 10) : maxStep;
+  if (filters.founded && filters.foundedFrom === '' && filters.foundedTo === '') {
+    from = to = parseInt(filters.founded, 10);
+  }
+  const rangeActive = steps.length && (from !== minStep || to !== maxStep);
+  if (rangeActive) {
+    if (row.foundedDecade == null) return false;
+    if (row.foundedDecade < from || row.foundedDecade > to) return false;
+  }
+
+  if (filters.status === 'primary' && !row.isPrimary) return false;
+  if (filters.status === 'historical' && row.status !== 'historical') return false;
+  if (filters.status === 'active' && row.status === 'historical') return false;
+  if (filters.contest && !row.kinds.includes(filters.contest)) return false;
+  if (filters.docs === 'pdf' && !row.hasPdf) return false;
+  if (filters.docs === 'text' && !row.hasText) return false;
+  if (filters.docs === 'none' && (row.hasPdf || row.hasText)) return false;
+  if (filters.tags && filters.tags.length) {
+    const have = new Set(row.tags || []);
+    if (!filters.tags.every(t => have.has(t))) return false;
+  }
+  return true;
+}
+
+function partyBrowseFilterChip(group, value, label, active) {
+  return `<button type="button" class="filter-btn${active ? ' active' : ''}" data-browse-group="${group}" data-browse-value="${value}" aria-pressed="${active ? 'true' : 'false'}">${label}</button>`;
+}
+
+function renderPartySpectrumHtml(rows, filters) {
+  const sorted = [...rows].sort((a, b) => {
+    if (a.colourFamily === 'grey' && b.colourFamily !== 'grey') return 1;
+    if (b.colourFamily === 'grey' && a.colourFamily !== 'grey') return -1;
+    if (a.hue !== b.hue) return a.hue - b.hue;
+    return a.lightness - b.lightness;
+  });
+  const bars = sorted.map(r => {
+    const active = !filters.colour || r.colourFamily === filters.colour;
+    return `<a href="/party/${r.id}" class="parties-spectrum-bar${active ? '' : ' is-dimmed'}" data-party-id="${r.id}" style="--bar:${r.color}" title="${r.fullName}" aria-label="${r.fullName}">
+      <span class="parties-spectrum-tip">${r.name}</span>
+    </a>`;
+  }).join('');
+  return `
+    <div class="parties-spectrum" aria-label="Party colour">
+      <span class="parties-browse-label">Party colour</span>
+      <div class="parties-spectrum-track" role="list">${bars}</div>
+    </div>`;
+}
+
+function renderPartyFoundedRangeHtml(rows, filters) {
+  const steps = partyBrowseFoundedSteps(rows);
+  const min = 0;
+  const max = Math.max(0, steps.length - 1);
+  let fromIdx = 0;
+  let toIdx = max;
+  if (filters.foundedFrom !== '') {
+    const i = steps.indexOf(parseInt(filters.foundedFrom, 10));
+    if (i >= 0) fromIdx = i;
+  }
+  if (filters.foundedTo !== '') {
+    const i = steps.indexOf(parseInt(filters.foundedTo, 10));
+    if (i >= 0) toIdx = i;
+  }
+  if (filters.founded && filters.foundedFrom === '' && filters.foundedTo === '') {
+    const i = steps.indexOf(parseInt(filters.founded, 10));
+    if (i >= 0) fromIdx = toIdx = i;
+  }
+  if (fromIdx > toIdx) [fromIdx, toIdx] = [toIdx, fromIdx];
+  const fromLabel = partyFoundedDecadeLabel(steps[fromIdx]);
+  const toLabel = partyFoundedDecadeLabel(steps[toIdx]);
+  const pctFrom = max === 0 ? 0 : (fromIdx / max) * 100;
+  const pctTo = max === 0 ? 100 : (toIdx / max) * 100;
+  return `
+    <div class="parties-browse-row">
+      <span class="parties-browse-label" id="parties-founded-label">Party founded</span>
+      <div class="parties-founded-range" style="--founded-from:${pctFrom}%; --founded-to:${pctTo}%">
+        <div class="parties-founded-track" aria-hidden="true"></div>
+        <label class="sr-only" for="parties-founded-from">Founded from decade</label>
+        <input type="range" id="parties-founded-from" class="parties-founded-input parties-founded-input--from" min="${min}" max="${max}" step="1" value="${fromIdx}" data-founded-handle="from" aria-labelledby="parties-founded-label" />
+        <label class="sr-only" for="parties-founded-to">Founded to decade</label>
+        <input type="range" id="parties-founded-to" class="parties-founded-input parties-founded-input--to" min="${min}" max="${max}" step="1" value="${toIdx}" data-founded-handle="to" aria-labelledby="parties-founded-label" />
+        <div class="parties-founded-readout" aria-live="polite">${fromLabel} — ${toLabel}</div>
+      </div>
+    </div>`;
+}
+
+function renderPartyTagsFilterHtml(rows, filters) {
+  const counts = new Map();
+  rows.forEach(r => {
+    (r.tags || []).forEach(t => counts.set(t, (counts.get(t) || 0) + 1));
+  });
+  const allTags = [...counts.keys()].sort((a, b) => a.localeCompare(b, 'en-GB'));
+  const q = (filters.tagQuery || '').trim().toLowerCase();
+  const visible = q ? allTags.filter(t => t.toLowerCase().includes(q)) : allTags;
+  const selected = new Set(filters.tags || []);
+  const rowsHtml = visible.map(t => {
+    const checked = selected.has(t);
+    return `<label class="parties-tag-row">
+      <input type="checkbox" data-browse-tag="${t.replace(/"/g, '&quot;')}" ${checked ? 'checked' : ''} />
+      <span class="parties-tag-name">${t}</span>
+      <span class="parties-tag-count">${counts.get(t)}</span>
+    </label>`;
+  }).join('');
+  return `
+    <div class="parties-browse-row parties-tags-filter">
+      <div class="parties-tags-head">
+        <span class="parties-browse-label">Tags</span>
+        <span class="parties-tags-total">${allTags.length}</span>
+      </div>
+      <label class="sr-only" for="parties-tags-filter-q">Filter tags</label>
+      <input type="search" id="parties-tags-filter-q" class="parties-tags-filter-q" value="${(filters.tagQuery || '').replace(/"/g, '&quot;')}" placeholder="Filter tags…" autocomplete="off" />
+      <div class="parties-tags-meta">${visible.length} tag${visible.length === 1 ? '' : 's'}</div>
+      <div class="parties-tags-list" role="group" aria-label="Party tags">${rowsHtml || '<p class="parties-browse-hint">No tags match.</p>'}</div>
+    </div>`;
+}
+
+function renderPartyBrowseFiltersHtml(rows, filters) {
+  const nationsPresent = new Set(rows.map(r => r.nation));
+  const colourPresent = new Set(rows.map(r => r.colourFamily));
+  const contestPresent = new Set(rows.flatMap(r => r.kinds));
+  const foundedSteps = partyBrowseFoundedSteps(rows);
+
+  const colourBtns = PARTY_COLOUR_FAMILIES
+    .filter(f => colourPresent.has(f.id))
+    .map(f => {
+      const active = filters.colour === f.id;
+      return `<button type="button" class="parties-colour-swatch${active ? ' active' : ''}" data-browse-group="colour" data-browse-value="${f.id}" title="${f.label}" aria-label="${f.label}" aria-pressed="${active ? 'true' : 'false'}" style="--swatch:${f.swatch}"></button>`;
+    }).join('');
+
+  const nationBtns = [
+    partyBrowseFilterChip('nation', '', 'All', !filters.nation),
+    ...PARTY_BROWSE_NATIONS
+      .filter(n => nationsPresent.has(n.id))
+      .map(n => partyBrowseFilterChip('nation', n.id, n.label, filters.nation === n.id)),
+  ].join('');
+
+  const statusBtns = [
+    partyBrowseFilterChip('status', '', 'All', !filters.status),
+    partyBrowseFilterChip('status', 'primary', 'Primary', filters.status === 'primary'),
+    partyBrowseFilterChip('status', 'active', 'Active', filters.status === 'active'),
+    partyBrowseFilterChip('status', 'historical', 'Historical', filters.status === 'historical'),
+  ].join('');
+
+  const contestBtns = [
+    partyBrowseFilterChip('contest', '', 'All', !filters.contest),
+    ...PARTY_BROWSE_CONTESTS
+      .filter(c => contestPresent.has(c.id))
+      .map(c => partyBrowseFilterChip('contest', c.id, c.label, filters.contest === c.id)),
+  ].join('');
+
+  const docsBtns = [
+    partyBrowseFilterChip('docs', '', 'All', !filters.docs),
+    partyBrowseFilterChip('docs', 'pdf', 'Has PDF', filters.docs === 'pdf'),
+    partyBrowseFilterChip('docs', 'text', 'In catalogue', filters.docs === 'text'),
+    partyBrowseFilterChip('docs', 'none', 'No documents', filters.docs === 'none'),
+  ].join('');
+
+  const rangeActive = filters.foundedFrom || filters.foundedTo || filters.founded
+    || (filters.tags && filters.tags.length);
+  const hasActive = Object.entries(filters).some(([k, v]) => {
+    if (k === 'q' || k === 'tagQuery') return false;
+    if (k === 'tags') return Array.isArray(v) && v.length;
+    if (k === 'foundedFrom' || k === 'foundedTo' || k === 'founded') return false;
+    return Boolean(v);
+  }) || rangeActive;
+
+  // Treat full-span founded range as inactive for Clear
+  const steps = foundedSteps;
+  const from = filters.foundedFrom !== '' ? parseInt(filters.foundedFrom, 10) : steps[0];
+  const to = filters.foundedTo !== '' ? parseInt(filters.foundedTo, 10) : steps[steps.length - 1];
+  const foundedConstrained = steps.length && (from !== steps[0] || to !== steps[steps.length - 1] || filters.founded);
+  const showClear = hasActive || foundedConstrained || (filters.tags && filters.tags.length);
+
+  return `
+    <aside class="parties-browse-sidebar" id="parties-browse-filters" aria-label="Filter parties">
+      <div class="parties-browse-row">
+        <span class="parties-browse-label" id="parties-colour-label">Colour family</span>
+        <div class="parties-colour-strip" role="group" aria-labelledby="parties-colour-label">
+          <button type="button" class="filter-btn${filters.colour ? '' : ' active'}" data-browse-group="colour" data-browse-value="" aria-pressed="${filters.colour ? 'false' : 'true'}">All</button>
+          ${colourBtns}
+        </div>
+      </div>
+      <div class="parties-browse-row">
+        <span class="parties-browse-label">Nation / Europe</span>
+        <div class="timeline-filter parties-browse-stack" role="group">${nationBtns}</div>
+      </div>
+      ${renderPartyFoundedRangeHtml(rows, filters)}
+      <div class="parties-browse-row">
+        <span class="parties-browse-label">Status</span>
+        <div class="timeline-filter parties-browse-stack" role="group">${statusBtns}</div>
+      </div>
+      ${renderPartyTagsFilterHtml(rows, filters)}
+      <div class="parties-browse-row">
+        <span class="parties-browse-label">Contested</span>
+        <p class="parties-browse-hint">Chambers with a recorded contest or documents in the archive. Territorial parties (e.g. Welsh Lib Dems) are listed separately from their federal counterpart.</p>
+        <div class="timeline-filter parties-browse-stack" role="group">${contestBtns}</div>
+      </div>
+      <div class="parties-browse-row">
+        <span class="parties-browse-label">Documents</span>
+        <div class="timeline-filter parties-browse-stack" role="group">${docsBtns}</div>
+      </div>
+      ${showClear ? `<p class="parties-browse-clear"><button type="button" class="parties-browse-clear-btn" data-browse-clear>Clear filters</button></p>` : ''}
+    </aside>`;
+}
+
+function renderPartyBrowseSearchHtml(filters) {
+  const q = (filters.q || '').replace(/"/g, '&quot;');
+  return `
+    <div class="parties-browse-search" id="parties-browse-search">
+      <div class="parties-browse-search-meta">
+        <span>Search the archive</span>
+      </div>
+      <form class="parties-browse-search-form" id="parties-browse-search-form" role="search">
+        <label class="sr-only" for="parties-browse-q">Search parties</label>
+        <input type="search" id="parties-browse-q" name="q" value="${q}" placeholder="Search by party" autocomplete="off" />
+        <button type="submit" class="parties-browse-search-submit">Search</button>
+      </form>
+      <div class="parties-browse-try" aria-label="Try searching">
+        <span class="parties-browse-try-label">Try:</span>
+        <button type="button" class="parties-browse-try-chip" data-browse-q="Reform">Reform</button>
+        <button type="button" class="parties-browse-try-chip" data-browse-q="Labour">Labour</button>
+        <button type="button" class="parties-browse-try-chip" data-browse-q="SNP">SNP</button>
+        <button type="button" class="parties-browse-try-chip" data-browse-q="Plaid">Plaid</button>
+      </div>
+    </div>`;
+}
+
+function setupPartyBrowse(app, rows) {
+  const hub = app.querySelector('.hub-page');
+  if (!hub) return;
+
+  let filters = readPartyBrowseFilters();
+  const foundedSteps = partyBrowseFoundedSteps(rows);
+
+  const syncFoundedFromSliders = () => {
+    const fromEl = hub.querySelector('#parties-founded-from');
+    const toEl = hub.querySelector('#parties-founded-to');
+    if (!fromEl || !toEl || !foundedSteps.length) return null;
+    let fromIdx = parseInt(fromEl.value, 10);
+    let toIdx = parseInt(toEl.value, 10);
+    if (Number.isNaN(fromIdx)) fromIdx = 0;
+    if (Number.isNaN(toIdx)) toIdx = foundedSteps.length - 1;
+    if (fromIdx > toIdx) {
+      // Keep the active thumb; nudge the other
+      if (document.activeElement === fromEl) toIdx = fromIdx;
+      else fromIdx = toIdx;
+      fromEl.value = String(fromIdx);
+      toEl.value = String(toIdx);
+    }
+    const from = foundedSteps[fromIdx];
+    const to = foundedSteps[toIdx];
+    const full = fromIdx === 0 && toIdx === foundedSteps.length - 1;
+    filters = {
+      ...filters,
+      founded: '',
+      foundedFrom: full ? '' : String(from),
+      foundedTo: full ? '' : String(to),
+    };
+    return { fromIdx, toIdx, from, to };
+  };
+
+  /** Update range chrome in place — never recreate the inputs mid-drag. */
+  const paintFoundedSlider = (idxs) => {
+    const wrap = hub.querySelector('.parties-founded-range');
+    const readout = hub.querySelector('.parties-founded-readout');
+    if (!wrap || !foundedSteps.length) return;
+    const max = Math.max(0, foundedSteps.length - 1);
+    const fromIdx = idxs?.fromIdx ?? 0;
+    const toIdx = idxs?.toIdx ?? max;
+    const pctFrom = max === 0 ? 0 : (fromIdx / max) * 100;
+    const pctTo = max === 0 ? 100 : (toIdx / max) * 100;
+    wrap.style.setProperty('--founded-from', `${pctFrom}%`);
+    wrap.style.setProperty('--founded-to', `${pctTo}%`);
+    if (readout) {
+      readout.textContent = `${partyFoundedDecadeLabel(foundedSteps[fromIdx])} — ${partyFoundedDecadeLabel(foundedSteps[toIdx])}`;
+    }
+  };
+
+  const foundedRangeConstrained = () => {
+    if (!foundedSteps.length) return false;
+    const from = filters.foundedFrom !== '' ? parseInt(filters.foundedFrom, 10) : foundedSteps[0];
+    const to = filters.foundedTo !== '' ? parseInt(filters.foundedTo, 10) : foundedSteps[foundedSteps.length - 1];
+    return from !== foundedSteps[0] || to !== foundedSteps[foundedSteps.length - 1] || Boolean(filters.founded);
+  };
+
+  const syncClearButton = () => {
+    const aside = hub.querySelector('#parties-browse-filters');
+    if (!aside) return;
+    const hasOther = Object.entries(filters).some(([k, v]) => {
+      if (k === 'q' || k === 'tagQuery' || k === 'foundedFrom' || k === 'foundedTo' || k === 'founded') return false;
+      if (k === 'tags') return Array.isArray(v) && v.length;
+      return Boolean(v);
+    });
+    const show = hasOther || foundedRangeConstrained() || (filters.tags && filters.tags.length);
+    let clearEl = aside.querySelector('.parties-browse-clear');
+    if (show && !clearEl) {
+      clearEl = document.createElement('p');
+      clearEl.className = 'parties-browse-clear';
+      clearEl.innerHTML = '<button type="button" class="parties-browse-clear-btn" data-browse-clear>Clear filters</button>';
+      aside.appendChild(clearEl);
+    } else if (!show && clearEl) {
+      clearEl.remove();
+    }
+  };
+
+  const renderResults = () => {
+    const listEl = hub.querySelector('#parties-all-list');
+    const countEl = hub.querySelector('#parties-browse-count');
+    const spectrumMount = hub.querySelector('#parties-spectrum-mount');
+    const matched = rows.filter(r => partyBrowseMatches(r, filters, foundedSteps));
+    if (spectrumMount) {
+      spectrumMount.innerHTML = renderPartySpectrumHtml(rows, filters);
+    }
+    if (listEl) {
+      listEl.innerHTML = matched.map(partyBrowseRowHtml).join('')
+        || `<p class="parties-browse-empty">No parties match these filters. <button type="button" class="parties-browse-clear-btn" data-browse-clear>Clear filters</button></p>`;
+    }
+    if (countEl) {
+      countEl.textContent = matched.length === rows.length
+        ? `${rows.length} parties`
+        : `${matched.length} of ${rows.length} parties`;
+    }
+    syncClearButton();
+    writePartyBrowseFilters(filters);
+  };
+
+  const render = ({ skipFilters = false } = {}) => {
+    const filtersMount = hub.querySelector('#parties-browse-filters');
+    const searchInput = hub.querySelector('#parties-browse-q');
+    if (!skipFilters && filtersMount) {
+      filtersMount.outerHTML = renderPartyBrowseFiltersHtml(rows, filters);
+    }
+    if (searchInput && searchInput.value !== (filters.q || '')) {
+      searchInput.value = filters.q || '';
+    }
+    renderResults();
+  };
+
+  if (hub.dataset.browseBound !== '1') {
+    hub.dataset.browseBound = '1';
+    hub.addEventListener('click', e => {
+      const clearBtn = e.target.closest('[data-browse-clear]');
+      if (clearBtn) {
+        filters = {
+          q: '', colour: '', nation: '', founded: '', foundedFrom: '', foundedTo: '',
+          status: '', contest: '', docs: '', tags: [], tagQuery: '',
+        };
+        render();
+        return;
+      }
+      const tryChip = e.target.closest('[data-browse-q]');
+      if (tryChip) {
+        filters = { ...filters, q: tryChip.getAttribute('data-browse-q') || '' };
+        render();
+        return;
+      }
+      const spectrumBar = e.target.closest('.parties-spectrum-bar');
+      if (spectrumBar && spectrumBar.getAttribute('href')) {
+        return;
+      }
+      const btn = e.target.closest('[data-browse-group]');
+      if (!btn || !hub.contains(btn) || btn.classList.contains('parties-spectrum-bar')) return;
+      const group = btn.getAttribute('data-browse-group');
+      const value = btn.getAttribute('data-browse-value') || '';
+      const next = value === '' ? '' : (filters[group] === value ? '' : value);
+      filters = { ...filters, [group]: next };
+      render();
+    });
+
+    hub.addEventListener('change', e => {
+      const tag = e.target.getAttribute?.('data-browse-tag');
+      if (tag != null) {
+        const selected = new Set(filters.tags || []);
+        if (e.target.checked) selected.add(tag);
+        else selected.delete(tag);
+        filters = { ...filters, tags: [...selected] };
+        render();
+      }
+    });
+
+    hub.addEventListener('submit', e => {
+      const form = e.target.closest('#parties-browse-search-form');
+      if (!form) return;
+      e.preventDefault();
+      const input = form.querySelector('#parties-browse-q');
+      filters = { ...filters, q: (input?.value || '').trim() };
+      render();
+    });
+
+    hub.addEventListener('input', e => {
+      if (e.target.id === 'parties-browse-q') {
+        const value = e.target.value.trim();
+        clearTimeout(hub._browseSearchTimer);
+        hub._browseSearchTimer = setTimeout(() => {
+          filters = { ...filters, q: value };
+          render();
+        }, value ? 180 : 0);
+        return;
+      }
+      if (e.target.id === 'parties-tags-filter-q') {
+        filters = { ...filters, tagQuery: e.target.value };
+        // Re-render only the tags list without full replace would be nicer;
+        // full re-render is fine and keeps checkbox state from filters.tags.
+        const q = e.target.value;
+        clearTimeout(hub._tagFilterTimer);
+        hub._tagFilterTimer = setTimeout(() => {
+          filters = { ...filters, tagQuery: q };
+          render();
+          const again = hub.querySelector('#parties-tags-filter-q');
+          if (again) {
+            again.focus();
+            const len = again.value.length;
+            again.setSelectionRange(len, len);
+          }
+        }, 120);
+        return;
+      }
+      if (e.target.matches?.('[data-founded-handle]')) {
+        const idxs = syncFoundedFromSliders();
+        paintFoundedSlider(idxs);
+        // Keep the range inputs mounted so the pointer drag is not interrupted
+        render({ skipFilters: true });
+      }
+    });
+  }
+
+  render();
+}
+
+function renderPartiesHub(app, allMode = false) {
+  if (allMode) {
+    setPageMeta({
+      title: 'All Parties',
+      description: 'A–Z catalogue of every political party in The British Manifesto Archive, with search and filters for colour, nation, founding decade, and contested chambers.',
+      path: '/parties/all',
+    });
+
+    const rows = buildPartyBrowseRows();
+    const filters = readPartyBrowseFilters();
+
+    app.innerHTML = `
+      ${renderBreadcrumb([
+        { label: 'Home', href: '/' },
+        { label: 'Parties', href: '/parties' },
+        { label: 'All parties' },
+      ])}
+      <div class="hub-page parties-browse-page">
+        <header class="parties-browse-hero">
+          <div class="parties-browse-hero-copy">
+            <span class="section-label" id="parties-browse-count">${rows.length} parties</span>
+            <h1>All parties</h1>
+            <div class="gold-rule"></div>
+            <p>Every party currently in the archive. Filter by colour, nation, founding decade, or contested chamber — or see the <a href="/parties">nation-grouped hub</a>.</p>
+          </div>
+          ${renderPartyBrowseSearchHtml(filters)}
+        </header>
+        <div id="parties-spectrum-mount">${renderPartySpectrumHtml(rows, filters)}</div>
+        <div class="parties-browse-layout">
+          ${renderPartyBrowseFiltersHtml(rows, filters)}
+          <div class="parties-browse-main">
+            <div class="parties-all-list" id="parties-all-list" role="list"></div>
+          </div>
+        </div>
+      </div>
+    `;
+    setupPartyBrowse(app, rows);
+    return;
+  }
+
   setPageMeta({
     title: 'Political Parties',
     description: 'Browse UK political parties and their historical general election manifestos in The British Manifesto Archive.',
@@ -3464,7 +4679,7 @@ function renderPartiesHub(app) {
       otherLink = `<a href="/devolved/holyrood/other-parties" class="hub-all-others-link">Other Scottish parties →</a>`;
     } else if (nationId === 'wales') {
       otherLink = `<a href="/devolved/senedd/other-parties" class="hub-all-others-link">Other Welsh parties →</a>`;
-    } else     if (nationId === 'northern-ireland') {
+    } else if (nationId === 'northern-ireland') {
       otherLink = `<a href="/devolved/stormont/other-parties" class="hub-all-others-link">Other Northern Irish parties →</a>`;
     } else if (nationId === 'europe') {
       otherLink = `<a href="/nation/europe" class="hub-all-others-link">All alliance families →</a>
@@ -3505,7 +4720,7 @@ function renderPartiesHub(app) {
         <span class="section-label">Browse by Nation</span>
         <h1>Political Parties</h1>
         <div class="gold-rule"></div>
-        <p>Parties contesting UK, devolved, and European elections, organised by nation and pan-European alliance families.</p>
+        <p>Parties contesting UK, devolved, and European elections, organised by nation and pan-European alliance families — or browse every party in the archive as an <a href="/parties/all">A–Z list</a>.</p>
       </header>
       <div class="hub-parties-grid">
         ${nationSections}
@@ -3534,7 +4749,7 @@ function renderAbout(app) {
       <h1>About the British Manifesto Archive</h1>
       <div class="gold-rule"></div>
       <p>The British Manifesto Archive is a comprehensive resource for the study of British democratic politics, bringing together the manifesto documents, electoral results, and campaign records of UK general, devolved, regional, and European Parliament elections.</p>
-      <p>It brings together the founding documents of British democratic politics: what parties promised, how the country voted, and how those results reshaped Parliament and the devolved institutions — in one place, free to read and search.</p>
+      <p>It brings together the founding documents of British democratic politics: what parties promised, how the country voted, and how those results reshaped Parliament and the devolved institutions — in one place, free to read.</p>
 
       <h2>What you'll find here</h2>
       <p>Every election and party in the archive is built from the same set of materials:</p>
@@ -3543,7 +4758,15 @@ function renderAbout(app) {
         <li><strong>Election result pages</strong> — summaries, seat charts, vote shares, the key moments of each campaign, and the documents that defined it.</li>
         <li><strong>Party pages</strong> — each party's electoral record over time and the manifestos it published at successive elections.</li>
         <li><strong>Beyond Westminster hubs</strong> — dedicated sections for the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the European Parliament.</li>
-        <li><strong>Ways in</strong> — browse by year, by party, by nation, or by institution, or search the whole archive from anywhere on the site.</li>
+        <li><strong>Ways in</strong> — browse by year, by party, by nation, or by institution; search the catalogue for party names, election years, and manifesto titles; or switch search to <em>Full text</em> to look inside transcribed manifesto documents.</li>
+      </ul>
+
+      <h2>How the archive is organised</h2>
+      <ul>
+        <li><strong>Westminster</strong> — UK general elections (<a href="/elections">/elections</a>).</li>
+        <li><strong>Beyond Westminster</strong> — institutions and their elections: Holyrood, Senedd, Stormont, London, European Parliament (<a href="/devolved">/devolved</a>). This is the main path into devolved content.</li>
+        <li><strong>Nations</strong> — geography and party taxonomy across England, Scotland, Wales, Northern Ireland, and Europe (<a href="/nations">/nations</a>).</li>
+        <li><strong>Parties</strong> — each organisation’s record over time (<a href="/parties">/parties</a>, <a href="/parties/all">A–Z</a>).</li>
       </ul>
 
       <h2>Coverage</h2>
@@ -3567,7 +4790,7 @@ function renderAbout(app) {
       <h2>Copyright</h2>
       <p>Manifestos remain the copyright of their respective political parties or publishers. They are reproduced here for educational, historical, and research purposes. If you hold rights in a document and have a query about its inclusion, please email <a href="mailto:hello@manifestos.org.uk">hello@manifestos.org.uk</a>.</p>
 
-      <h2>Contact and corrections</h2>
+      <h2 id="contact-and-corrections">Contact and corrections</h2>
       <p>This is a living archive, and extra pairs of eyes make it better. Spotted an error, a broken link, or a manifesto that should be here but isn't? Email <a href="mailto:hello@manifestos.org.uk">hello@manifestos.org.uk</a> — corrections and leads on missing documents are genuinely welcome and help keep the record accurate and complete. You can also find the archive on <a href="https://bsky.app/profile/manifestos.org.uk" rel="me">Bluesky</a>, <a href="https://mastodon.social/@manifestosuk" rel="me">Mastodon</a>, <a href="https://x.com/manifestosuk" rel="me">X</a>, <a href="https://www.instagram.com/manifestosuk/" rel="me">Instagram</a>, <a href="https://www.threads.net/@manifestosuk" rel="me">Threads</a>, and <a href="https://www.youtube.com/@manifestosuk" rel="me">YouTube</a>.</p>
     </div>
   `;
@@ -3581,5 +4804,19 @@ function renderNotFound(app) {
     path: getPath(),
     noindex: true,
   });
-  app.innerHTML = `<div class="not-found"><h1>404</h1><p>This page could not be found.</p><a href="/">Return to home</a></div>`;
+  app.innerHTML = `<div class="not-found">
+    <h1>404</h1>
+    <p>This page could not be found.</p>
+    <nav class="not-found-links" aria-label="Suggested destinations">
+      <a href="/">Home</a>
+      <a href="/elections">UK general elections</a>
+      <a href="/parties/all">All parties</a>
+      <a href="/devolved">Beyond Westminster</a>
+      <a href="/about">About</a>
+      <button type="button" class="not-found-search-btn" id="not-found-search">Search the archive</button>
+    </nav>
+  </div>`;
+  document.getElementById('not-found-search')?.addEventListener('click', () => {
+    document.getElementById('search-toggle')?.click();
+  });
 }

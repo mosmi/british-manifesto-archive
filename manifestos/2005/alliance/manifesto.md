@@ -25,6 +25,7 @@ sections:
   - local-government
 ---
 
+
 # Alliance Party Manifesto 2005
 
 ## Alliance Works
@@ -51,7 +52,7 @@ Westminster and Local Government Elections
 
 ---
 
-### Contents
+## Contents
 
 12 Key Commitments
 Alliance Working for You
@@ -84,7 +85,7 @@ bureaucracy costs
 
 ---
 
-### 12 Key Commitments
+## 12 Key Commitments
 
 ** 1. Alliance will work to establish a voluntary coalition in the Northern Ireland Assembly.**
 
@@ -118,7 +119,7 @@ bureaucracy costs
 
 ---
 
-### Alliance Working for You
+## Alliance Working for You
 
 *making the difference*
 
@@ -186,7 +187,7 @@ David Ford _Party Leader_
 
 ---
 
-### Voluntary Coalition Works
+## Voluntary Coalition Works
 
 *deadlock costs*
 
@@ -210,7 +211,7 @@ Unionists must make it absolutely clear that they are prepared to share power pr
 
 However, this proposal is only one of many from the Alliance Party to reform the Agreement, and to place it on a stable basis. These are set out in full in our document _Agenda for Democracy._
 
-#### The Agreement
+## The Agreement
 
 The major strength of the Agreement continues to lie in its creation of a set of political institutions with cross-community legitimacy within a deeply divided society. The opponents of the Agreement continue to fail to produce any alternative that is capable of generating similar support across the community.
 
@@ -304,7 +305,7 @@ Second, the package conspicuously ignores community relations issues. Without do
 
 Third, there was an over-optimism that a deal was not only possible between the DUP and Sinn Fein but could actually hold. The basis for this belief was that any deal including the DUP and Sinn Fein would be more secure. But while both the DUP and Sinn Fein have moderated to some extent, they remain parties on the relative extremes of the Northern Ireland political spectrum. It is extremely difficult to create and sustain a political process on such a basis. The fundamental lesson is that political progress starts through from the centre.
 
-### Sharing Works
+## Sharing Works
 
 *segregation costs*
 
@@ -356,7 +357,7 @@ important challenge function with respect to both central and local government.
 
 * **Promote Northern Ireland as a distinct region** within a decentralising British Isles and an emerging Europe of the Regions.
 
-#### Equality
+## Equality
 
 Alliance will promote equality of opportunity, equality of treatment, equality of access, and equality under the law for all people, irrespective of:
 
@@ -396,7 +397,7 @@ We are opposed to all forms of unlawful and unfair discrimination. To this end, 
 
 * **Support measures to eradicate age discrimination.** This includes the voluntary extension of work, and the provision of health and social services.
 
-### Justice Works
+## Justice Works
 
 *gangsterism costs*
 
@@ -472,7 +473,7 @@ Human Rights Commission (NIHRC) to draft a Bill of Rights for Northern Ireland.
 
 * **Ensure that adequate funding is put in place for victims’ organisations.**
 
-### Fair Taxation Works
+## Fair Taxation Works
 
 *punitive charges cost*
 
@@ -494,7 +495,7 @@ Third, there are the opportunity costs of lost inward investment and tourism. Wh
 
 * **Alliance will reinvest the costs of segregation** in providing quality services for the whole community.
 
-#### Water Charges
+## Water Charges
 
 Water reform has been mishandled and misrepresented by both the Northern Ireland Executive and direct rule ministers. The proposed ‘tap tax’ is unfair and will lead to some of the most vulnerable being unable to afford a basic human necessity.
 
@@ -530,7 +531,7 @@ Alliance accepts that the Executive has only limited financial resources at its 
 
 * **Alliance would introduce tax-varying powers to Northern Ireland.** This will give the Assembly a greater ability to reflect the democratic wishes of local people and to have the capability to offer tax incentives to stimulate local economic growth.
 
-### Education Works
+## Education Works
 
 *ignorance costs*
 
@@ -610,7 +611,7 @@ Alliance will implement the following 9-point plan to expand the provision of in
 
 * **Develop the cross-border, mutual recognition of qualifications.** We welcome the removal of the Irish language qualification as compulsory in public sector employment in the Republic of Ireland. 14
 
-### Well-being Works
+## Well-being Works
 
 *illness costs*
 
@@ -668,7 +669,7 @@ active measures that will support and retain staff (including flexible working a
 
 * **Increase the provision for services to support families,** to protect children from abuse and to assist children in need with disabilities. Spending in Northern Ireland is two-thirds of that in England. This poor performance by our local administration cannot be allowed to continue.
 
-### Sustainability Works
+## Sustainability Works
 
 *pollution costs*
 
@@ -684,7 +685,7 @@ Alliance priorities are to—
 
 * **Create a Green Economy Task Force.** This body would make local businesses aware of the true economic and environmental costs of their actions, to illustrate the potential savings from the more efficient use of resources and the minimisation of waste, and to show the potential of new markets for environmentally friendly products.
 
-#### Planning
+## Planning
 
 Alliance favours balanced development that creates new investment, prosperity and homes, while respecting both the environment and our built heritage. Alliance is concerned at the lack of proper planning frameworks in most parts of Northern Ireland, and the particular absence of current Area Plans. Alliance is also deeply concerned at the destruction of many buildings of historic importance or architectural merit, and incursions into the Greenbelt.
 
@@ -744,7 +745,7 @@ Alliance favours a broad-based approach to waste management that stresses waste 
 
 * **Introduce a levy on plastic bags.** A similar scheme has been launched successfully in the Republic of Ireland. We will also investigate extending such a levy to unnecessary packaging.
 
-#### Transport
+## Transport
 
 Safe, effective, and efficient transport is essential to the success of the economy, the protection of the local and global environment, and the quality of life of the people in Northern Ireland. Traffic levels are growing at an exponential and unsustainable rate, with increased gridlock on important roads. Investment in public transport is well behind European and even British levels. The building of more roads cannot solve our problems alone. Public transport must be developed on priority routes and in urban areas, and be safe, reliable and affordable. The creation of such a network will require a significant injection of public funds. However, we must also recognise that Northern Ireland has a large rural population that is dependent upon private transport.
 
@@ -770,7 +771,7 @@ Safe, effective, and efficient transport is essential to the success of the econ
 
 * **Encourage a wider debate on ‘congestion charges’** and other forms of road pricing. Such initiatives would be consistent with the ‘polluter pays’ principle. However, motorists should not be so penalised until a proper public transport infrastructure has been put in place.
 
-### Enterprise Works
+## Enterprise Works
 
 *stagnation costs*
 
@@ -842,7 +843,7 @@ Like any other sector, the forces of modernisation and globalisation cannot be i
 
 * **Extend compulsory country of origin labelling.** We endorse the efforts of the Food Standards Agency to improve food labelling policy.
 
-### Social Inclusion Works
+## Social Inclusion Works
 
 *social exclusion costs*
 
@@ -898,7 +899,7 @@ Alliance endorses the establishment of the Children and Young People’s Unit, t
 
 * **Establish a respite care system** that is flexible, reliable and meets the needs of carers and those they care for.
 
-#### Disability
+## Disability
 
 Alliance believes that people with disabilities should have equal rights and opportunities within an inclusive society. They must be able to access mainstream services in all areas.
 
@@ -908,7 +909,7 @@ Alliance believes that people with disabilities should have equal rights and opp
 
 * **Ensure the choice of mainstream education** is available for people with disabilities.
 
-#### Housing
+## Housing
 
 Alliance will provide the leadership necessary for the Housing Executive to tackle the blight of paramilitary graffiti and flags, which contribute to hostile living environments for so many in Northern Ireland.
 
@@ -920,7 +921,7 @@ Alliance will provide the leadership necessary for the Housing Executive to tack
 
 * **Ensure adequate public funds to pay for housing arrears or repairs.** Alliance would not increase rents of those living in Housing Executive properties above the rate of inflation.
 
-### Celebrating Arts Works
+## Celebrating Arts Works
 
 *insularity costs*
 
@@ -946,7 +947,7 @@ Alliance priorities for are to—
 
 * **Extend the Football Offences Act** (1991) and other relevant legislation to Northern Ireland, to deal with sectarian and racist chanting at local sports grounds.
 
-### Internationalism Works
+## Internationalism Works
 
 *isolationism costs*
 
@@ -1016,7 +1017,7 @@ Alliance priorities are to—
 
 * **Further support an enhanced role for NATO in peacekeeping and peace enforcement within Europe.** We further support the creation of a credible Common Foreign and Security Policy for the European Union, linked to a credible defence arm. We will maximise the effectiveness of defence expenditure by increasing co-operation with our NATO allies.
 
-### Local Accountability Works
+## Local Accountability Works
 
 *bureaucracy costs*
 

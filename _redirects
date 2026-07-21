@@ -96,6 +96,9 @@
 /og/devolved/london/lcc-1961.jpg  /og/devolved/london/1961.jpg  301
 /og/manifesto/london/lcc-1961/*  /og/manifesto/london/1961/:splat  301
 
+# Brexit Party relaunched as Reform UK — keep old party URL bookmarkable.
+/party/brexit    /party/reform  301
+
 # Explicit SPA fallbacks for client-routed paths (extensionless).
 # Do NOT add a catch-all /* → index.html — that turns missing PDFs into 200 HTML.
 /election/*      /index.html  200
@@ -104,7 +107,9 @@
 /nation/*        /index.html  200
 /devolved/*      /index.html  200
 /elections       /index.html  200
+/elections/      /index.html  200
 /parties         /index.html  200
+/parties/all     /index.html  200
 /devolved        /index.html  200
 /nations         /index.html  200
 /others          /index.html  200

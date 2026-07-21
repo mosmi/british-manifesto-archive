@@ -25,19 +25,20 @@ sections:
   - local-government
 ---
 
+
 # Alba Party Manifesto 2024
 
-### UK General Election 2024
+## UK General Election 2024
 
 *ALBA — Yes to Scottish Independence*
 
 ---
 
-### Watch our Party Election Broadcast
+## Watch our Party Election Broadcast
 
 ---
 
-### Contents
+## Contents
 
 Contents
 
@@ -108,7 +109,7 @@ We have the opportunity at this Election to make our votes count for independenc
 
 ---
 
-### Introducing the Manifesto
+## Introducing the Manifesto
 
 ALBA stands for Scotland - quite literally!
 
@@ -118,7 +119,7 @@ With 7,000 members, and rising, in all parts of Scotland, ALBA activists, Counci
 
 The more votes that are cast for ALBA, the more action there will be on independence, and the more we can accomplish for Scotland.
 
-#### A vote for ALBA in this Election is:
+## A vote for ALBA in this Election is:
 
 * A vote for Scottish Independence.
 * A vote to tackle the cost of living crisis through our targeted five-point plan to address family and child poverty.
@@ -132,7 +133,7 @@ Only by voting for ALBA can you make any of this happen. That is why, on July 4,
 
 ---
 
-### Taking Action on Independence
+## Taking Action on Independence
 
 Independence is ALBA's priority. Independence is not an aspiration for the hereafter but for the HERE and NOW!
 
@@ -190,7 +191,7 @@ The struggle for independence is a political one to be fought and won in Scotlan
 
 If we are to have success in garnering international support for our cause, we need to start engaging now with key players in the diplomatic community. Diplomacy has two main components: relationship building and information sharing; and we need to work on both in order to achieve Scotland's goals.
 
-#### ALBA will:
+## ALBA will:
 
 * Ensure that every vote cast for the Alba Party counts for Scottish independence.
 * Introduce the argument that the mandate for independence must be won at a National election through a majority of votes cast and that the list vote in 2026 will provide the earliest and best opportunity to bring this into effect.
@@ -202,7 +203,7 @@ That is why on July 4, you should vote for the ALBA Party: Yes to Scottish Indep
 
 ---
 
-### The UK Political and Economic Straightjacket
+## The UK Political and Economic Straightjacket
 
 Under continued macro economic management by Westminster, Scotland will be condemned to lower than trend economic growth within a UK state which itself is exhibiting lower than trend growth.
 
@@ -234,14 +235,14 @@ The Scotland ALBA seeks is an independent, prosperous, social democratic society
 
 In this manifesto we sketch out some of ALBA's key campaigns for Westminster government action which would have revenue implications for Scotland and we identify some of our most important initiatives which we will take into the Scottish Parliament campaign in two years' time.
 
-#### ALBA will:
+## ALBA will:
 
 * Argue for a new monetary policy in the UK which targets a range of economic objectives and sees interests rates as an objective of policy, not as an instrument of policy.
 * Present a new economic prospectus for Scotland which seeks a comparative advantage in energy costs to sustain the public finances, household budgets and business costs.
 
 ---
 
-### Tackling the Cost of Living Crisis
+## Tackling the Cost of Living Crisis
 
 Scotland is facing a real cost of living crisis, one that cries out for real action from both the UK and the Scottish Governments - action which has been sadly lacking to date.
 
@@ -277,7 +278,7 @@ The price of wind or water has not gone up but Westminster prices Scottish elect
 
 Our problem is that our resources are controlled by international capital, London pockets the revenues and Scots pay the bills. That is why we have huge levels of fuel poverty in our land of energy plenty.
 
-#### To tackle the Cost of Living Crisis the Alba Party will support the following measures:
+## To tackle the Cost of Living Crisis the Alba Party will support the following measures:
 
 * Establish an annual £500 payment targeted at every low earnings household in Scotland in receipt of council tax reduction. This will benefit half a million households at a cost of £250 million.
 * A £1000 increase to the State Pension through the Scottish Triple Lock.
@@ -291,7 +292,7 @@ Our problem is that our resources are controlled by international capital, Londo
 
 ---
 
-### Standing up for Women and Children
+## Standing up for Women and Children
 
 ALBA recognises and supports the Equality Act 2010, which protects those with protected characteristics from discrimination. Protected characteristics are - age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.
 
@@ -303,7 +304,7 @@ The ALBA Party has been at the forefront of championing women's rights and child
 
 The ALBA Party remains committed to a competent Government and calls on the Scottish Government to learn from its bruising judicial review experience and consult widely on legislation to avoid costly humiliation later in the courts. ALBA believes that the electorate will not forgive Labour and the SNP for any attempt to bring gender self-id into law in Scotland or the UK to appease ideologically driven lobby groups.
 
-#### ALBA will:
+## ALBA will:
 
 * Support clarity in law - a woman is an adult human female.
 * Support the Cass Review's implementation immediately and in full in all areas relevant to Scotland.
@@ -320,7 +321,7 @@ Together, we can shape an independent future for Scotland, prioritising competen
 
 ---
 
-### Tackling the Root Cause and Impact of Inequality
+## Tackling the Root Cause and Impact of Inequality
 
 The ALBA Party is steadfast in its support for the equality of all citizens. We are committed to ensuring that the fundamental rights of all our people are derived from a Citizens' Assembly and enshrined in a written constitution of an Independent Scotland.
 
@@ -348,7 +349,7 @@ Supporting organisations that champion racial equality and amplifying marginalis
 
 ---
 
-### The NHS and Social Care
+## The NHS and Social Care
 
 When Alex Salmond was First Minister he set Scotland on the path towards having the best performing A&E waiting times across the UK. Prescription charges were scrapped meaning that nobody in Scotland had to choose to avoid treatment in fear of the cost.
 
@@ -374,7 +375,7 @@ There were 3,396 registered NHS dentists in March 2010. The number grew to a hig
 
 ALBA will open a new graduate school of dentistry in the HIU Inverness campus building through its work in the Scottish Graduate Entry Medicine Programme (ScotGEM). This will be backed up by Scotland wide incentives for dental graduates to commit to the NHS.
 
-#### ALBA will:
+## ALBA will:
 
 * Support universal entitlement to the NHS free at the point of need.
 * Work to increase Scotland's Advanced Nursing Practitioners to 1000 in the Scottish NHS.
@@ -384,7 +385,7 @@ ALBA will open a new graduate school of dentistry in the HIU Inverness campus bu
 
 ---
 
-### An Alba Revolution in Housing
+## An Alba Revolution in Housing
 
 The reprehensible and totally unjustified SNP cut in the Scottish housing budget to satisfy Green Party demands on "active travel" has condemned more people in Scotland to spend more time without an acceptable standard of a safe and secure home.
 
@@ -404,7 +405,7 @@ An ALBA influenced administration will compulsory purchase the sites of ruined c
 
 Finally to oversee this revolution in Scottish housing provision, ALBA will argue for a dedicated Cabinet Minister Secretary responsible for the policy.
 
-#### ALBA will:
+## ALBA will:
 
 * Establish the target to build 200,000 houses in the five year term of the Parliament.
 * Expand the skilled construction workforce by some 50,000.
@@ -413,7 +414,7 @@ Finally to oversee this revolution in Scottish housing provision, ALBA will argu
 
 ---
 
-### Saving Grangemouth and the Future of the North Sea
+## Saving Grangemouth and the Future of the North Sea
 
 The ALBA Party are deeply concerned about the announcement by Petroineos in November 2023 to begin a transition project which could end oil refining at its Grangemouth complex as early as 2025.
 
@@ -435,7 +436,7 @@ The Alba Party want to see new fields licensed with a condition for them to be a
 
 In contrast, the Conservatives see Scottish resources as a cash cow for their tax incentives for the wealthy, Labour's plan to end investment allowances will have a devastating impact on jobs and new investment while the SNP have lost all credibility with their ever changing stance on development. To sustain employment at serious levels the North Sea requires exploration, development and production.
 
-#### ALBA will:
+## ALBA will:
 
 * Fight to Save Grangemouth from closure.
 * Support a sustainable future for North Sea Oil and Gas workers.
@@ -444,7 +445,7 @@ In contrast, the Conservatives see Scottish resources as a cash cow for their ta
 
 ---
 
-### Climate and Energy
+## Climate and Energy
 
 *Ending the perversity that is energy rich Scotland having fuel poor Scots*
 
@@ -468,7 +469,7 @@ Without independence and a coherent energy policy, the Scottish people will yet 
 
 ---
 
-### EFTA, Single Market and Immigration
+## EFTA, Single Market and Immigration
 
 The ALBA Party is a pro-immigration party, that recognises the tremendous contribution that New Scots, who decide to make Scotland their home, make to wider society. This has been demonstrated by our continued support for safe and legal routes for refugees and asylum seekers and our opposition to the UK Government's inhumane asylum policy.
 
@@ -484,7 +485,7 @@ Successfully negotiated, an independent Scotland's membership of EFTA and the EE
 
 ---
 
-### Education
+## Education
 
 Students in tertiary education in Scotland are getting a bad deal. Despite the landmark achievement of the abolishment of Tuition fees, implemented by the Alba Party Leader, Alex Salmond, many students still face economic hardship which has been exacerbated by the current Cost of Living Crisis.
 
@@ -506,7 +507,7 @@ We will call on an incoming UK Government to scrap tuition fees for students in 
 
 ---
 
-### International Relations and Defence
+## International Relations and Defence
 
 The Alba Party believes that Scotland can be a force for peace in the world.
 
@@ -530,7 +531,7 @@ ALBA supports the endeavours of the International Criminal Court prosecutors to 
 
 ALBA supports the efforts of the Secretary General of the United Nations and the government of Türkiye and others to bring about de-escalation and a negotiated peaceful settlement of the European War provoked by the Russian invasion of Ukraine.
 
-#### ALBA will:
+## ALBA will:
 
 * Call for the renewal of Trident to be scrapped.
 * Support an independent Scotland being free of nuclear weapons from day one of independence.
@@ -538,7 +539,7 @@ ALBA supports the efforts of the Secretary General of the United Nations and the
 
 ---
 
-### Connecting Scotland
+## Connecting Scotland
 
 The Alba Party recognises that road infrastructure in Scotland is in deplorable condition and needs to be brought up to 21st century standards. This is particularly true of rural Scotland.
 
@@ -564,7 +565,7 @@ Alba believe that the Scottish Government's support for a third runway at Heathr
 
 We recognise that many people in Scotland require to use cross border rail services and the level of service is all too often unacceptable for people in Scotland. We will advocate that the UK Government ends the current franchises and brings cross border rail services back into public ownership.
 
-#### ALBA will:
+## ALBA will:
 
 * Demand an increase to Scotland's capital budget to bring forward the targeted completion of the duelling of the A9.
 * Establish a National Pot Hole Taskforce to eliminate the repair backlog over five years.
@@ -573,16 +574,16 @@ We recognise that many people in Scotland require to use cross border rail servi
 
 ---
 
-### A Summary of ALBA's Pledges
+## A Summary of ALBA's Pledges
 
-#### On independence Alba will:
+## On independence Alba will:
 
 * Ensure that every vote cast for Alba Party counts for Scottish independence.
 * Take real action on Independence through the establishment of an Independence Convention.
 * Pressure for a referendum to be held by the Scottish Parliament on independence powers.
 * Agitate for international support to respect the right of the Scottish people to self-determination.
 
-#### On the cost of living crisis Alba will:
+## On the cost of living crisis Alba will:
 
 * Establish an annual £500 payment targeted at every low earnings household in Scotland in receipt of council tax reduction. This will benefit half a million households at a cost of £250 million.
 * A £1000 increase to the State Pension through the Scottish Triple Lock.
@@ -594,50 +595,50 @@ We recognise that many people in Scotland require to use cross border rail servi
 * Guaranteeing free universal access for all children and young people to sport facilities. This could potentially benefit one million young people with a cost (based on a take up rate of 80%) of £206 million - a fraction of the billions lost over time to productivity due to obesity or the hundreds of millions cost to the NHS each year.
 * Support the scrapping of the Bedroom Tax and ending the Two Child Benefit Cap.
 
-#### On standing up for women and girls Alba will:
+## On standing up for women and girls Alba will:
 
 * Support the sex-based rights of women and girls at a local level.
 * Say without hesitation that a woman is an adult human female.
 * Support changes to the equality act that make clear that in regards to protection from sex based discrimination sex means biological sex.
 
-#### On the NHS and Social Care Alba will:
+## On the NHS and Social Care Alba will:
 
 * Support universal entitlement to the NHS free at the point of need.
 * Work to increase Scotland's Advanced Nursing Practitioners to 1000 in the Scottish NHS.
 * Prioritise measures to get Scotland back on target to achieve 500 new GPs by 2027.
 * Call for free personal care in England at the same level as delivered in Scotland.
 
-#### On Grangemouth and the North Sea Alba will:
+## On Grangemouth and the North Sea Alba will:
 
 * Fight to Save Grangemouth from closure.
 * Support a bright future for North Sea Oil and Gas workers.
 * Support new Oil & Gas licences with carbon neural requirements placed on them.
 * Oppose the SNP and Labour stance on the future of the North Sea that will cost over 100,000 jobs.
 
-#### On immigration Alba will:
+## On immigration Alba will:
 
 * Support pro immigration policies that help people come to live in and contribute to Scotland.
 * Advocate membership of EFTA which will allow Scottish citizens to enjoy the benefits of freedom of movement and for Scotland to rejoin the European single marketplace.
 
-#### On Climate and Energy Alba will:
+## On Climate and Energy Alba will:
 
 * Support the establishment of a national energy company with a public stake in all offshore wind projects.
 * Support the licensing of new oil and gas developments with world leading net zero license conditions.
 * Champion Carbon Capture technology as an integral part of a credible transition.
 
-#### On Education Alba will:
+## On Education Alba will:
 
 * Support free tuition in Scotland.
 * Ensure that all qualified Scottish domiciled applicants are allocated University and College places.
 * Call on the next UK Government to scrap tuition fees in England which would result in an increase of £1 Billion to the Scottish Budget in consequentials.
 
-#### On Defence and international relations Alba will:
+## On Defence and international relations Alba will:
 
 * Call for the renewal of Trident to be scrapped.
 * Support an independent Scotland being free of nuclear weapons from day one of independence.
 * Continue to call for an immediate ceasefire and lasting peaceful settlement between Israel and Palestine.
 
-#### On Transport Alba will:
+## On Transport Alba will:
 
 * Demand an increase to Scotland's capital budget to bring forward the targeted completion of the duelling of the A9.
 * Oppose a third runway at Heathrow airport and instead advocate for expansion of Scottish services.
@@ -645,7 +646,7 @@ We recognise that many people in Scotland require to use cross border rail servi
 
 ---
 
-### A Call to Action
+## A Call to Action
 
 ## It's time for action
 

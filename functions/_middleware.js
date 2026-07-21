@@ -119,6 +119,7 @@ function ogImagePathForRoute(path) {
     '/about': 'about',
     '/elections': 'elections',
     '/parties': 'parties',
+    '/parties/all': 'parties',
     '/devolved': 'devolved',
     '/nations': 'nations',
     '/others': 'others',
@@ -140,11 +141,15 @@ const STATIC_ROUTES = {
     description: 'Browse every UK general election from 1945 to 2024 with ' +
       'results, seat maps, and the party manifestos published for each.',
   },
+  '/parties/all': {
+    title: `All Parties${TITLE_SUFFIX}`,
+    description: 'A–Z catalogue of political parties in The British Manifesto Archive.',
+  },
   '/devolved': {
     title: `Beyond Westminster${TITLE_SUFFIX}`,
-    description: 'Devolved legislatures of the United Kingdom — Scottish ' +
-      'Parliament, Welsh Parliament, Northern Ireland Assembly, and London ' +
-      'Mayor & Assembly.',
+    description: 'The main path into devolved and regional elections — Scottish ' +
+      'Parliament, Welsh Parliament, Northern Ireland Assembly, London Mayor & ' +
+      'Assembly, and UK European Parliament contests.',
   },
   '/parties': {
     title: `Political Parties${TITLE_SUFFIX}`,
@@ -153,8 +158,9 @@ const STATIC_ROUTES = {
   },
   '/nations': {
     title: `The Four Nations & Europe${TITLE_SUFFIX}`,
-    description: 'Browse England, Wales, Scotland, Northern Ireland, and ' +
-      'European political families — Westminster results and devolved government.',
+    description: 'Browse parties and Westminster results by nation — England, ' +
+      'Wales, Scotland, Northern Ireland — plus European political families. ' +
+      'For devolved elections, use Beyond Westminster.',
   },
   '/others': {
     title: `Other Parties${TITLE_SUFFIX}`,
@@ -386,11 +392,22 @@ function classify(path, seo) {
         breadcrumb([{ name: 'Home', path: '/' }, { name: 'UK General Elections' }]),
         itemList('UK general elections', items),
       ];
-    } else if (path === '/parties') {
+    } else if (path === '/parties' || path === '/parties/all') {
       const items = Object.entries(seo.parties || {})
-        .map(([id, p]) => ({ name: p.name, url: `${SITE_URL}/party/${id}` }));
+        .map(([id, p]) => ({ name: p.name, url: `${SITE_URL}/party/${id}` }))
+        .sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
+      const crumbs = path === '/parties/all'
+        ? [
+            { name: 'Home', path: '/' },
+            { name: 'Political Parties', path: '/parties' },
+            { name: 'All parties' },
+          ]
+        : [
+            { name: 'Home', path: '/' },
+            { name: 'Political Parties' },
+          ];
       graph = [
-        breadcrumb([{ name: 'Home', path: '/' }, { name: 'Political Parties' }]),
+        breadcrumb(crumbs),
         itemList('UK political parties', items),
       ];
     } else if (path === '/devolved') {
@@ -424,8 +441,8 @@ function classify(path, seo) {
     const label = rec.label || `${partyId} ${electionId}`;
     const year = election ? election.displayYear : (electionId.split(/[-/]/).pop() || electionId);
     const description = isDevolved
-      ? `Read and search the full text of the ${label} from the ${year} London election.`
-      : `Read and search the full text of the ${label} from the ${year} UK general election.`;
+      ? `Read the ${label} from the ${year} London election — original PDF and online text where available.`
+      : `Read the ${label} from the ${year} UK general election — original PDF and online text where available.`;
     const canonical = canonicalFor(path);
     const assetBase = `${SITE_URL}/manifestos/${electionId}/${partyId}`;
     const encoding = [
@@ -774,13 +791,45 @@ function buildNoscriptHtml(path, meta, seo) {
     }
   } else if (parts[0] === 'party' && parts[1]) {
     links.push('<a href="/parties">All parties</a>');
+    links.push('<a href="/parties/all">A–Z party catalogue</a>');
     links.push(`<a href="/party/${escapeHtml(parts[1])}">${title}</a>`);
   } else if (parts[0] === 'devolved') {
     links.push('<a href="/devolved">Beyond Westminster</a>');
+    links.push('<a href="/elections">UK General Elections</a>');
+    links.push('<a href="/parties">Parties</a>');
+    if (parts[1] && seo?.devolved?.[parts[1]]) {
+      const portalLabel = typeof seo.devolved[parts[1]] === 'string'
+        ? seo.devolved[parts[1]]
+        : (seo.devolved[parts[1]].label || parts[1]);
+      links.push(`<a href="/devolved/${escapeHtml(parts[1])}">${escapeHtml(portalLabel)}</a>`);
+    }
+  } else if (path === '/elections' || path === '/elections/') {
+    links.push('<a href="/elections">UK General Elections</a>');
+    const years = Object.keys(seo?.elections || {}).sort().reverse().slice(0, 12);
+    years.forEach(id => {
+      const ey = seo.elections[id];
+      const label = ey?.displayYear || id;
+      links.push(`<a href="/election/${escapeHtml(id)}">${escapeHtml(String(label))} general election</a>`);
+    });
+    links.push('<a href="/parties">Parties</a>');
+    links.push('<a href="/about">About</a>');
+  } else if (path === '/parties' || path === '/parties/all') {
+    links.push('<a href="/parties">Parties by nation</a>');
+    links.push('<a href="/parties/all">A–Z party catalogue</a>');
+    links.push('<a href="/elections">UK General Elections</a>');
+    links.push('<a href="/about">About</a>');
+  } else if (path === '/nations' || path === '/about' || path === '/') {
+    links.push('<a href="/elections">UK General Elections</a>');
+    links.push('<a href="/devolved">Beyond Westminster</a>');
+    links.push('<a href="/nations">The Four Nations &amp; Europe</a>');
+    links.push('<a href="/parties">Parties</a>');
+    links.push('<a href="/parties/all">A–Z party catalogue</a>');
+    links.push('<a href="/about">About</a>');
   } else {
     links.push('<a href="/elections">UK General Elections</a>');
     links.push('<a href="/devolved">Beyond Westminster</a>');
     links.push('<a href="/parties">Parties</a>');
+    links.push('<a href="/about">About</a>');
   }
 
   const linkList = links.length
@@ -791,7 +840,7 @@ function buildNoscriptHtml(path, meta, seo) {
   <h1>${title}</h1>
   <p>${description}</p>
   ${linkList}
-  <p>This archive requires JavaScript for the full interactive experience. Key documents are also linked above as Markdown or PDF where available.</p>
+  <p>This archive requires JavaScript for interactive maps, search, and in-page navigation. The links above point to key hubs and documents (Markdown or PDF) that remain available without scripting.</p>
 </section>`;
 }
 
@@ -900,6 +949,43 @@ function londonLegacyRedirectPath(path) {
   return null;
 }
 
+/** Fetch the SPA shell without following a broken hub redirect. */
+async function fetchSpaShell(context, request) {
+  const { env } = context;
+  const indexUrl = new URL('/index.html', request.url);
+  try {
+    if (env && env.ASSETS) {
+      const res = await env.ASSETS.fetch(indexUrl);
+      if (res.ok) return res;
+    }
+  } catch (_) { /* fall through */ }
+  return fetch(indexUrl);
+}
+
+function isElectionsHubPath(path) {
+  return path === '/elections' || path === '/elections/';
+}
+
+/**
+ * `/elections` has been observed returning 308 → `/` from the asset layer
+ * (while `/parties` and other hubs rewrite correctly), even with a `_redirects`
+ * 200 rewrite. Prefer serving the SPA shell directly; keep recovery as a
+ * fallback if something still returns a bad redirect/404.
+ */
+function needsElectionsHubRecovery(path, response) {
+  if (!isElectionsHubPath(path)) return false;
+  const status = response.status;
+  if (status === 404) return true;
+  if (status < 300 || status >= 400) return false;
+  const loc = response.headers.get('Location') || '';
+  try {
+    const dest = new URL(loc, 'https://www.manifestos.org.uk');
+    return dest.pathname === '/' || dest.pathname === '';
+  } catch {
+    return loc === '/' || loc === '';
+  }
+}
+
 export async function onRequest(context) {
   const { request, next } = context;
 
@@ -941,9 +1027,17 @@ export async function onRequest(context) {
   const seo = await loadSeo(context);
 
   // Fail safe: without data we can still fix the canonical, but never 404.
-  const result = seo ? classify(path, seo) : { valid: true, meta: null };
+  const classifyPath = path === '/elections/' ? '/elections' : path;
+  const result = seo ? classify(classifyPath, seo) : { valid: true, meta: null };
 
-  const response = await next();
+  // Short-circuit the elections hub: do not trust the asset layer for this path.
+  let response = isElectionsHubPath(path)
+    ? await fetchSpaShell(context, request)
+    : await next();
+  if (needsElectionsHubRecovery(path, response)) {
+    response = await fetchSpaShell(context, request);
+  }
+
   const contentType = response.headers.get('content-type') || '';
   if (!contentType.includes('text/html')) {
     return response;
@@ -964,11 +1058,11 @@ export async function onRequest(context) {
     });
   }
 
-  const noscriptHtml = buildNoscriptHtml(path, result.meta, seo);
+  const noscriptHtml = buildNoscriptHtml(classifyPath, result.meta, seo);
   const rewriter = buildRewriter({
     meta: result.meta,
     graph: result.graph,
-    canonical: canonicalFor(path),
+    canonical: canonicalFor(classifyPath),
     image: result.image,
     noindex: false,
     noscriptHtml,

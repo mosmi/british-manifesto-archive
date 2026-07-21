@@ -154,3 +154,13 @@ Full reference: [party-holdings](../data-model/party-holdings.md).
 
 After any change to parties, elections, manifesto holdings, or card copy rules —
 typically alongside `build-seo-data.py` and `build-sitemap.py`.
+
+**This is not automatic on deploy.** Cards are static JPGs committed under `/og/`.
+Adding a manifesto updates `data/seo.json` / party pages immediately after the
+usual rebuild scripts, but **share previews stay stale until**
+`python3 scripts/build-og-images.py` runs (party-only is enough when only
+holdings change). Phase 5 of the [transcription pipeline](./transcription.md)
+includes `--only party` for that reason.
+
+True per-request OG rendering (Cloudflare Worker + HTML canvas) is out of scope
+for the static archive; regenerate from data instead.

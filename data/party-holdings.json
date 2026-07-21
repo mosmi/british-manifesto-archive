@@ -159,6 +159,9 @@
     "euro": 3,
     "stormont": 6
   },
+  "pirate": {
+    "westminster": 3
+  },
   "tuv": {
     "westminster": 3,
     "euro": 2,
@@ -179,9 +182,6 @@
     "westminster": 3,
     "euro": 1,
     "stormont": 5
-  },
-  "pirate": {
-    "westminster": 2
   },
   "socialistalternative": {
     "westminster": 1
@@ -228,8 +228,8 @@
   "aontu": {
     "westminster": 1
   },
-  "communist": {
-    "westminster": 3,
+  "cpb": {
+    "westminster": 1,
     "holyrood": 2,
     "senedd": 2
   },
@@ -247,6 +247,9 @@
   "workersparty": {
     "westminster": 1,
     "holyrood": 1
+  },
+  "communist": {
+    "westminster": 2
   },
   "eldr": {
     "euro": 5

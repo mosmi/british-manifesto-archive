@@ -26,13 +26,14 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 1997
 
 ## YES WE CAN — Win the Best for Scotland
 
 ---
 
-### Contents
+## Contents
 
 - An introduction by Alex Salmond
 - What Scotland needs now!
@@ -50,7 +51,7 @@ sections:
 
 ---
 
-### A Wealth of Information
+## A Wealth of Information
 
 This Manifesto is published by the Scottish National Party for the General Election of May 1997. During the past two years the SNP has placed in the public domain a wealth of information on Scotland's future, and our manifesto is published alongside a fully costed budget for the first four years of an independent Scotland.
 
@@ -100,7 +101,7 @@ And if the SNP wins, so does Scotland.
 
 ---
 
-### What Scotland Needs Now!
+## What Scotland Needs Now!
 
 **Scotland Needs BETTER HEALTH** - new investment in a true National Health Service to restore standards and provide quality comprehensive care, free at the point of need.
 
@@ -116,7 +117,7 @@ And if the SNP wins, so does Scotland.
 
 ---
 
-### 1: "A Nation Once Again"
+## 1: "A Nation Once Again"
 
 *"Now there's ane end of ane auld sang"* were the words of the Chancellor of Scotland, when he signed the Treaty of Union of 1707 submerging from view for almost three centuries the independent nation of Scotland.
 
@@ -142,7 +143,7 @@ These promises will allow Scotland to win again. For if the SNP wins, so does Sc
 
 ---
 
-### 2: Scotland — the Facts
+## 2: Scotland — the Facts
 
 The choice of how to vote at a General Election can be dictated by tradition, reason or emotion. But whatever the basis for your choice will be, it is important first to know the truth about our country and our prospects as its citizens.
 
@@ -174,7 +175,7 @@ The facts are these:
 
 ---
 
-### 3: Gaining Independence
+## 3: Gaining Independence
 
 A vote for the SNP is a vote for Independence - it is also a vote to encourage change, because only when the SNP is strong do the other parties pay any attention to Scotland.
 
@@ -190,7 +191,7 @@ There are many precedents for such a process: indeed during 1996 a committee of 
 
 ---
 
-### 4: A Scotland for all her People
+## 4: A Scotland for all her People
 
 An independent Scotland will have a written constitution and Bill of Rights. This means that Scots will be citizens, not subjects. They will be protected from the type of arbitrary interference that is the hallmark of Westminster government, and they will be able to force the state to honour its commitments to them.
 
@@ -210,13 +211,13 @@ Citizens of Scotland, wherever they have come from, will be full participants in
 
 ---
 
-### 5: Working in a Better Scotland
+## 5: Working in a Better Scotland
 
 Independence is vital for our future; but independence is not an aim on its own. The purpose of independence is not just to free Scotland but to free Scots - all the people who live in Scotland.
 
 The Tory Government has been responsible for a vast increase in the National Debt, and an Independent Scotland would of course inherit a proportion of that debt, estimated to be around £38 billion. An SNP Government would commence a programme of repaying this debt, aiming to reduce the amount spent in interest and to free resources for further investment in the future. The debt repayment will amount to a total of £6.6 billion in the first four years of Independence.
 
-#### Jobs and Employment
+## Jobs and Employment
 
 The SNP aims for full employment - an achievable goal that is integral to the growth of the Scottish economy, the delivery of a high standard of living and the development of a secure and inclusive society in which every individual contributes and plays a constructive role.
 
@@ -224,7 +225,7 @@ The SNP's four year budget will result in the creation of an additional 100,000 
 
 In addition to the immediate jobs boost that independence will produce, the creation of new jobs will come about as Scottish business is assisted to develop and compete. The key to such development will be the introduction of a sensitive and targeted corporate tax structure, allied to important initiatives to encourage small businesses that do not pay corporation tax.
 
-#### Business Taxation
+## Business Taxation
 
 The SNP is the only party in a generation to enter a General Election fully committed to a reduction in business taxation.
 
@@ -238,29 +239,29 @@ In government the SNP will:
 
 These proposals will be phased in over a four year period. We have allocated an average of £250 million per year from our budget for the creation of a Business Tax Reduction fund to pay for these measures.
 
-#### New Investment
+## New Investment
 
 In addition to a innovative business tax regime, Government funding will be provided for priority economic projects such as industrial expansion, modernisation, agricultural diversification and the introduction of new technologies. An additional £120 million over four years will be provided to enhance research and development of new products and processes. This will ensure that full advantage is taken of the intellectual capacity and scientific and technological innovation that is to be found in rich abundance in our universities and colleges, and in many of our businesses.
 
-#### Exports and Skills
+## Exports and Skills
 
 A Scottish Export Unit will also assist in building our export trade and focusing the attention of Scottish industry on the need to expand its excellent record in this field and will provide a massive boost to the international profile of Scottish business. A Scottish Skills Foundation will be established to bring international best practice in skills and innovation training to bear on Scottish business and industry.
 
-#### Tourism
+## Tourism
 
 The SNP has budgeted for a doubling of the Scottish Tourist Board's advertising and promotions budget and will assist the Tourism industry - which contributes in excess of £2.2 billion to the Scottish economy and employs over 177,000 people - to fulfil its potential.
 
-#### Business Growth and Fair Trading
+## Business Growth and Fair Trading
 
 With the SNP's commitment to Defence Diversification (see Chapter 9), to a modernised transport and communications infrastructure (See Chapter 8) and with a successful Scottish approach to attracting investment the prospects for job creation and business birth, growth and survival will be better than ever before.
 
 An SNP government will provide a context for business that is fair and flexible: a Merger and Take-overs panel will ensure competitive practices and prevent "asset stripping" which has destroyed many Scottish companies over the past 20 years; a Fair Trading Unit within a Scottish Department of Industry, Technology and Employment will inherit and strengthen the responsibilities of the current utility regulators and legislation will ensure that the practice of delayed payment that damages small businesses is outlawed.
 
-#### The Social Chapter and Trade Unions
+## The Social Chapter and Trade Unions
 
 A fair and flexible business environment will flourish if accompanied by active partnership with trade unions: the SNP Charter for Trade Unions will guarantee Trade Union rights whilst ensuring that their responsibilities are enforceable at law. Scottish endorsement of the EU Social Chapter will encourage Unions and employers to observe best practice that enhances constructive and profitable co-operation. The introduction of a minimum wage (after discussion and with consensus) set at half median male earnings will be accompanied by an implementation plan developed in association with employers which assists smaller businesses to take this vital social step forward.
 
-#### Fair Personal Taxation
+## Fair Personal Taxation
 
 For those in work, a fair personal tax system is an essential motivator: the SNP aim to introduce a starter rate of income tax at 15p over the first four years of government. For middle income earners the bands of income at which the basic rate is levied will be expanded by 15 per cent. This means that the top rate will not kick in until earnings exceed £30,000.
 
@@ -287,17 +288,17 @@ The economic and employment priorities of an SNP Government will be to:
 
 ---
 
-### 6: Living in a Better Scotland
+## 6: Living in a Better Scotland
 
 Job creation, business growth and economic success at home and abroad are aims that Scotland should aspire to given its wealth of talents and its strong resource base. But those underpinning strengths in the Scottish economy must also give rise to the development of social justice, education for life, health and public services which the Scottish people need and deserve. Scots should be encouraged to take advantage of arts and leisure opportunities and to have their lives enriched by such pursuits.
 
 And all these developments must take place in society that is determined to be free of crime and its effects.
 
-#### Scotland can afford to look after its citizens.
+## Scotland can afford to look after its citizens.
 
 The Scottish National Party is committed to a socially just Scotland - the type of Scotland which the Tories have systematically tried to destroy for 18 years: A Scotland in which poverty is eradicated and those in need are assisted to the maximum degree possible; the Scotland that all Scots want.
 
-#### Freedom from Poverty
+## Freedom from Poverty
 
 In our society there will always be a need for supporting those who cannot work, either through incapacity or for a variety of short-term reasons. Government must also use the benefits system to assist those who are vulnerable - the very young, the old and those who are incapacitated - and to eliminate the effects of poverty.
 
@@ -305,13 +306,13 @@ An SNP government will increase Child Benefit to £12.50 per week per child and 
 
 Benefit will be restored to 16 and 17 year olds immediately, as the Tory removal of such benefits has been a strong contributory factor in the rise of youth homelessness and youth crime. Education and training - with proper financial support - is the best way to assist young people, but they must not be put in the position of suffering poverty and alienation because society will not assist them.
 
-#### A Pensioner's Package
+## A Pensioner's Package
 
 The SNP is strongly committed to eradicating the scourge of fuel poverty - particularly so as Scotland is an energy rich nation. Our "Pensioners Package" already forms the basis for action of fuel poverty for SNP councils: we will ensure that the entire package is implemented at a national level - a package that will increase the state retirement pension by £3 a week for a single person and £5 a week for married couples as a first step towards achieving parity with the higher European pension levels; introduce a Cold Climate Allowance of £9.20 for all pensioners and others on benefits; remove standing charges from electricity, gas and telecom services for pensioners; and abolish means testing for the residential care of elderly.
 
 These measures will provide real relief from hardship and enhance social justice. In particular, the removal of standing charges provides a much more efficient and targeted way of making privatised utilities contribute to society than a one-off "windfall tax", while the abolition of means testing will remove a major indignity from old people and allow them to enjoy the fruits of their retirement without undue worry or stress.
 
-#### A Real Scottish National Health Service
+## A Real Scottish National Health Service
 
 Social justice also requires a new approach to the Scottish Health Service.
 
@@ -339,7 +340,7 @@ The provision of care in the community has a direct bearing on adequate local go
 
 The cost of democratic control of the Health Service through such Commissions will be considerably less than the present "internal market" which lacks both democracy and efficiency.
 
-#### Enabling the Disabled
+## Enabling the Disabled
 
 As many as one in 10 of the world's population suffers some form of disability, but society is still reluctant to legislate to ensure full civil rights for disabled people, and to improve the quality of life so that all disabled people can fulfil their potential and contribute to the society of which they are members.
 
@@ -347,7 +348,7 @@ The SNP will introduce measures, in the Bill of Rights and in other legislation,
 
 The SNP will implement its "Charter for the Disabled" to enable valuable members of society who are presently often excluded from the mainstream, but who have much to contribute.
 
-#### Protecting Scotland's People
+## Protecting Scotland's People
 
 Whilst food safety is not primarily a health issue, until structures, controls and procedures go wrong, there is a clear need now to restore the reputation of the Scottish food industry and to provide a mechanism for public control of food quality.
 
@@ -357,7 +358,7 @@ An independent Scottish Food and Consumer Health Agency will have a wide remit: 
 
 It will also work closely with the producers to instil the best practices and provide a certification of quality that in time will be the passport to domestic and international success for the Scottish food industry.
 
-#### Freedom from Crime
+## Freedom from Crime
 
 Freedom from crime is an important freedom for many Scots; and whilst crime levels in Scotland have fallen in recent years many communities are still subject to unacceptable levels of vandalism, burglary and violence.
 
@@ -375,7 +376,7 @@ The basis of community action against crime must lie in the community, and the S
 
 Scotland should never lose sight of the link between poverty, social deprivation and crime. Accordingly, whilst crime must be tackled at source, the creation of a better and fairer society will also have a strong impact on crime levels. An economy that produces more jobs and more meaningful work for the people of Scotland will pay dividends in this area as well.
 
-#### Drugs and Crime
+## Drugs and Crime
 
 A major cause of criminal activity lies in the drugs culture that has developed in parts of Scotland. But drug abuse, like crime, is also a symptom of something wrong in our society, that needs to be put right.
 
@@ -387,7 +388,7 @@ Solving Scotland's drug problems also requires the collection of much informatio
 
 The SNP also supports, and will encourage, local initiatives including Drugs Action Teams.
 
-#### Eradicating the Gun Culture
+## Eradicating the Gun Culture
 
 The whole world was shocked by the Dunblane tragedy; but Scotland's call for action to ban all hand guns and to tighten restrictions on all other weapons was ignored by the Tory government.
 
@@ -399,11 +400,11 @@ As a nation we must do our utmost to ensure that every step is taken to prevent 
 
 ---
 
-### 7: Serving a Better Scotland
+## 7: Serving a Better Scotland
 
 Just as crime, social justice and health are priorities for Scotland, so are Education, Housing, Local services and arts and leisure provision. These community services, usually delivered at local level, need to be enhanced and improved if the quality of life in Scotland is to be enhanced and improved.
 
-#### Restoring Educational Excellence
+## Restoring Educational Excellence
 
 Labour's so-called "Passion for Education" is a sham when the actual resources that are being offered are examined closely. In contrast the SNP has firmly costed changes that can be made immediately to the Scottish Education system.
 
@@ -427,7 +428,7 @@ Gaelic medium education is of particular importance to many parents, and an SNP 
 
 The SNP is also sensitive to the needs of other communities which are part of the rich tapestry of Scotland. Schools with pupils from Moslem families must offer Islamic studies to such pupils as a matter of course, and the same applies to other communities which wish to take part in Scottish education, but which also wish to retain and develop their distinctive nature. Scottish education will be enriched by such provision.
 
-#### Tackling the Housing Crisis
+## Tackling the Housing Crisis
 
 For many years there has been a deplorable lack of investment in Scotland's housing. The result is a housing crisis with increased levels of homelessness and longer and longer council waiting lists. The Scottish Housing Conditions Survey has shown that too many of our citizens are forced to live in housing that is damp, overcrowded, poorly insulated and often lacking basic amenities. 90,000 Scottish homes are deemed to be below tolerable standard and one third are affected by damp, condensation or mould.
 
@@ -439,7 +440,7 @@ An SNP Government will address this atrocious state of affairs by:
 
 - **Build Homes and Raise Standards:** With the money released by the capital debt transfer up to 20,000 socially affordable homes can be built in the first four years, and a further 35,000 homes can be brought back from below tolerable standard. 160,000 homes can be treated for dampness and condensation. By applying higher standards of insulation money spent on upgrading can quickly be recouped in terms of energy expenditure.
 
-#### Reform Housing Tenure and the "Right to Buy"
+## Reform Housing Tenure and the "Right to Buy"
 
 Some 300,000 houses have been bought under the Tory "right to buy" legislation, usually at a discounted price. This has left a disproportionate number of council houses in poor condition as the best of the stock has been purchased. It would be illogical to increase investment in socially affordable housing if it was then simply to be sold at a discount. New or improved houses coming on stream from the building and renovation programme will be protected from the right to buy at a discounted price.
 
@@ -449,7 +450,7 @@ An SNP Government will replace Scottish Homes with a new accountable housing age
 
 The SNP is the only party which has costed a full programme of action to tackle Scotland's housing crisis. Such a programme will not only begin to eliminate homelessness, it will also create many new jobs and provide a boost for the Scottish economy. It will reduce housing waiting lists and move Scotland towards the provision of a home for all.
 
-#### Making Local Government Work
+## Making Local Government Work
 
 Those living in a better Scotland have a right to expect better local services. An SNP Government, having protected the autonomy of Local Government in a written Constitution, will expect local authorities to ensure that local services are efficient, effective and well targeted. As Scottish local authorities will be elected by proportional representation, the monolithic and unresponsive one party states that Labour has created in many parts of Scotland will be consigned to the past.
 
@@ -457,7 +458,7 @@ Local Government will have restored to it many of the powers lost to unelected q
 
 An SNP Government would abolish the Water Quangos and return water and sewerage to democratic control.
 
-#### The Arts and Leisure
+## The Arts and Leisure
 
 Finally, arts and leisure provision are vital to the well being of society. An SNP Government will encourage a programme of 'sport for all' and will back that policy up by the provision of affordable community sports facilities managed by local authorities. There will be ministerial responsibility for sports development and in addition to community participation it will be a policy aim to encourage international competitiveness and success.
 
@@ -479,13 +480,13 @@ These many changes to Scottish life would make life in an independent Scotland a
 
 ---
 
-### 8: Helping all of Scotland
+## 8: Helping all of Scotland
 
 A better Scotland in which all our citizens can live and work is the ambition and the intention of the Scottish National Party.
 
 But the benefits of such a Scotland have to reach to every part of our country and in so doing any political party has to address other issues and concerns that arise - issues of traditional industries, special local concerns, the environment and the needs of Scotland's island and rural communities.
 
-#### Scotland's Land
+## Scotland's Land
 
 Land is the most valuable resource of a nation: but Scotland's system of land ownership and tenure is amongst the most archaic in the western world.
 
@@ -499,7 +500,7 @@ We will also transfer the powers of the Crown Estate Commissioners and other pri
 
 We will also establish an all Scotland Land Register which will give open access to all enquirers and banish forever the mystery of land ownership behind which many have hidden in recent years, to the detriment of local communities.
 
-#### Healing and Building Scotland's Agriculture
+## Healing and Building Scotland's Agriculture
 
 Scotland's farmers have been hard hit in recent years by successive Tory failures and by a growing neglect of the importance of the agricultural sector. Scotland, as a sparsely populated country, needs a strong agricultural base and that base can contribute greatly to Scottish exports and to the international reputation of our nation. The agricultural sector already contributes 3% of GDP.
 
@@ -517,7 +518,7 @@ A priority will be to assist Scottish producers to have more and better access t
 
 The SNP's commitment to Scottish agriculture is firm and clear. Scottish farmers, producers and all those who work in ancillary industries, can only have their priorities met by an independent Scottish government which places their concerns firmly on the European and domestic agendas.
 
-#### Scotland's Forests
+## Scotland's Forests
 
 Forestry is also a considerable national resource, and one which can be better used for the benefit of all.
 
@@ -529,7 +530,7 @@ Private forest ownership can be of great benefit but tax incentives for such own
 
 The SNP is also committed to greater recreational use of forests, and the Land Commission, in enabling better public land access, will be mindful of the need to secure sensible forest access as well.
 
-#### Crofting
+## Crofting
 
 Crofter and tenant farmers have a role to play in forest development, treating (where holdings allow) timber as a common crop.
 
@@ -541,7 +542,7 @@ Accordingly assisting crofters to purchase crofting estates should be done as pa
 
 The crofting estates that currently belong to the Crown should be returned to the people who live on them, but the opportunity to develop vibrant communities on crofting estates should not apply only to those who, by accident of tenure, are tenants of the Crown. Private ownership should also be subject to regulation for purchase under clear conditions.
 
-#### Scotland's Fishing Industry
+## Scotland's Fishing Industry
 
 All the evidence in the history of the Common Fisheries Policy points to the harsh reality that the UK has been happy, more often than not, to trade off fishing interests for other goals in European policy. Scottish fishermen have paid the price for that UK hypocrisy.
 
@@ -567,7 +568,7 @@ The SNP has allocated an additional £10 million per annum within the Independen
 - An additional £1.6 million for harbour and infrastructure improvements which will leverage additional European funds.
 - Improving the effectiveness of research.
 
-#### The Environment
+## The Environment
 
 Scotland's international reputation is as a clean nation, rich in land and water. But in reality Scotland is now threatened by a number of environmental hazards.
 
@@ -584,13 +585,13 @@ Its expanded task will be to:
 
 An SNP Government will also promote recycling, and contribute to global environmental protection. As part of the overall strategy of government an SNP Government will establish and enshrine National Environmental Targets.
 
-#### An Opportunity for Dounreay
+## An Opportunity for Dounreay
 
 It goes without saying that no SNP Government would permit Nuclear Reprocessing to take place in Scotland. Nuclear reprocessing at Dounreay would end immediately an SNP Government was elected and arrangements would be made for all nuclear material originating furth of Scotland to be returned to their country of origin. Materials originating in Scotland will require to be stored in Scotland for as long as environmentally required.
 
 However, rather than this determination being seen as a threat to the people of Dounreay, it should be seen as a major opportunity. Employment in clean up, storage and decommissioning will be a long term prospect for many people; many others will be employed in a new renewable energy research and development centre which will be established at Dounreay.
 
-#### An Energy Rich Nation
+## An Energy Rich Nation
 
 The vital resource of the 20th century has been energy. And in the 21st century energy self sufficiency, still more the ability to export energy or energy sources, will remain of great importance to any nation.
 
@@ -620,7 +621,7 @@ An SNP government will introduce a programme to phase out nuclear generation in 
 
 To replace nuclear generation, Scotland requires to develop alternative energy sources that are renewable and sustainable. The SNP Budget contains an allocation of funding for this task, and also funding for schemes of energy conservation, which can reduce our demand significantly by reducing heating bills.
 
-#### Scotland on the Move
+## Scotland on the Move
 
 Scotland needs an integrated transport network, that gives good access to all parts of the country, speeds goods and services, and brings the nation closer together.
 
@@ -636,7 +637,7 @@ The SNP will abolish the Air Passenger Duty for the Highlands and Islands, as it
 
 Scotland needs more direct air links with the world, and we will work with private operators to make these sustainable, as well as assisting Scottish airports to provide high quality services easily accessible to passengers.
 
-#### Developing the Telecommunications Network
+## Developing the Telecommunications Network
 
 Telecommunications can not only connect parts of Scotland that would otherwise be remote, but it can and will also open Scotland up to the world, and the world to Scotland.
 
@@ -658,11 +659,11 @@ In keeping with an open and positive philosophy on net use and access, no new re
 
 ---
 
-### 9: Scotland in Europe and the World
+## 9: Scotland in Europe and the World
 
 Professor Christopher Harvie once called Scotland "The invisible nation of Europe". It is time for Scotland to become visible again and to resume a place in the world.
 
-#### The European Union
+## The European Union
 
 An SNP Government would wish to make certain that Scotland's traditional openness to Europe and the World again coloured all our international relations. With a secure independent Parliament at home, the benefits of international co-operation and full and equal membership of international organisations would greatly strengthen Scotland's ability to defend and promote its interests in a world that shrinks each day.
 
@@ -678,7 +679,7 @@ Scotland's representation in the European Parliament would double on Independenc
 
 An Independent Scottish Parliament will elect Scotland's Commissioner and of course Scotland would take its turn at the European Presidency, bringing substantial benefits to the nation.
 
-#### Diplomatic Links
+## Diplomatic Links
 
 Scotland will require a cost effective, efficient and modern diplomatic presence in some of the world's capitals. Most small nations do not attempt to emulate the imperial pretensions of the United Kingdom, but instead target their diplomatic effort where it will do most good.
 
@@ -686,7 +687,7 @@ Scotland's embassies and consulates will exist to promote Scottish trade and ind
 
 We already pay our share of the UK diplomatic budget, but receive little in return. An Independent Scotland would get a much better return for this necessary expenditure.
 
-#### International Institutions
+## International Institutions
 
 Independence means joining in, not staying separate. The real separatists are those who have put us in our present condition, for they do not allow us to take a full part in anything.
 
@@ -698,7 +699,7 @@ Scotland will be a member of the United Nations. The Scottish UN Mission would b
 
 Finally Scotland will seek to assist in the establishment of an Association of States of the British Isles which will include England, Wales and Ireland. This grouping will work together on problems and possibilities that exist in our area and which can be helped by joint action.
 
-#### Defending Scotland
+## Defending Scotland
 
 No part of the UK has played such a central role in the defence of the realm as Scotland. Its military and naval traditions are well known, and the professionalism of its service men and women will be an enormous asset to an independent state.
 
@@ -730,7 +731,7 @@ Defence Industries in Scotland will be free to carry on their businesses in co-o
 
 The SNP will also promote Defence Diversification, with funding already allocated in the SNP Budget. The highly skilled Scottish defence manufacturing companies, and their workers, will have a brighter future both in supplying the SDF and in being encouraged and assisted to expand their abilities and markets.
 
-#### Scotland Helping the World
+## Scotland Helping the World
 
 It has been, and remains, a matter of shame that the UK, one of the richer nations of the world, is so miserly when it comes to international aid.
 
@@ -742,7 +743,7 @@ Small countries in Europe lead the way in aid, relief and international assistan
 
 ---
 
-### 10: Paying for Scotland's Future
+## 10: Paying for Scotland's Future
 
 This manifesto has laid out the main proposals of the SNP for the creation of an independent nation once again and the sensitive, compassionate and forward looking governance of that nation which the SNP believe can be delivered.
 
@@ -764,7 +765,7 @@ It also gives that strong affirmation that Alex Salmond used in his introduction
 
 For it says: **YES WE CAN!**
 
-#### Estimated Cost / Yield — £million
+## Estimated Cost / Yield — £million
 
 | | Year 1 1997/8 | Year 2 1998/9 | Year 3 1999/00 | Year 4 2000/01 | Total |
 |---|---|---|---|---|---|
@@ -827,7 +828,7 @@ For it says: **YES WE CAN!**
 
 ---
 
-### Using Your Vote
+## Using Your Vote
 
 On the 1st of May you will have the opportunity of using your vote to choose Scotland's future.
 
@@ -851,7 +852,7 @@ We can answer the questions about our future with the confident statement —
 
 ---
 
-### References
+## References
 
 1. OECD, Hansard 17/3/1997
 2. Professor Harvey Gibson, 'Scotland on Sunday', 18/2/1996
@@ -863,7 +864,7 @@ We can answer the questions about our future with the confident statement —
 
 ---
 
-### Production
+## Production
 
 19 Birkmyre Road,
 Glasgow G51 3JH

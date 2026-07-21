@@ -16,7 +16,14 @@ Every election and party in the archive is built from the same set of materials:
 - **Election result pages** — summaries, seat charts, vote shares, the key moments of each campaign, and the documents that defined it.
 - **Party pages** — each party's electoral record over time and the manifestos it published at successive elections.
 - **Beyond Westminster hubs** — dedicated sections for the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the European Parliament.
-- **Ways in** — browse by year, by party, by nation, or by institution, or search the whole archive from anywhere on the site.
+- **Ways in** — browse by year, by party, by nation, or by institution; search the catalogue for party names, election years, and manifesto titles; or switch search to *Full text* to look inside transcribed manifesto documents.
+
+## How the archive is organised
+
+- **Westminster** — UK general elections (`/elections`).
+- **Beyond Westminster** — institutions and their elections (`/devolved`); main path into devolved content.
+- **Nations** — geography and party taxonomy (`/nations`).
+- **Parties** — each organisation’s record (`/parties`, `/parties/all`).
 
 ## Coverage
 
@@ -45,5 +52,7 @@ The archive draws on three kinds of material:
 Manifestos remain the copyright of their respective political parties or publishers. They are reproduced here for educational, historical, and research purposes. If you hold rights in a document and have a query about its inclusion, please email hello@manifestos.org.uk.
 
 ## Contact and corrections
+
+Anchor: `/about#contact-and-corrections` (`id` on the About page `<h2>`).
 
 This is a living archive, and extra pairs of eyes make it better. Spotted an error, a broken link, or a manifesto that should be here but isn't? Email hello@manifestos.org.uk — corrections and leads on missing documents are genuinely welcome and help keep the record accurate and complete. You can also find the archive on Bluesky, Mastodon, X, Instagram, Threads, and YouTube (links in the site footer).

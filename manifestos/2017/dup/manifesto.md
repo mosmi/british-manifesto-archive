@@ -22,6 +22,7 @@ sections:
   - science-and-technology
 ---
 
+
 # Democratic Unionist Party Manifesto 2017
 
 ## Standing Strong for Northern Ireland
@@ -30,7 +31,7 @@ The DUP Manifesto for the 2017 Westminster Election
 
 ---
 
-### Leader’s Message
+## Leader’s Message
 
 The General Election gives unionism the chance to get back on the right track. Be in no doubt, the party that has most Members of Parliament elected will be seen as the voice of Northern Ireland. The Prime Minister’s decision to hold a snap poll provides a basis to make the positive case for the Union.
 
@@ -52,7 +53,7 @@ We are proud to be standing strong for Northern Ireland.
 
 Leader, Democratic Unionist Party
 
-### Deputy Leader/Parliamentary Party Leader’s Message
+## Deputy Leader/Parliamentary Party Leader’s Message
 
 This Westminster election comes at a time of great importance for our country and for Northern Ireland. For the first time in decades, the powers of Parliament will grow. This growth means its importance to the lives of each and every one of us grows too. This makes it vital that we have a strong, united and clear voice to speak up for Northern Ireland.
 
@@ -64,11 +65,11 @@ In the previous parliamentary term, the DUP team used its influence, in public a
 
 At this election, we re-dedicate ourselves to doing it again.
 
-#### Rt Hon Nigel Dodds
+## Rt Hon Nigel Dodds
 
 Deputy Leader, Democratic Unionist Party
 
-### Restoring Devolution Now
+## Restoring Devolution Now
 
 The Democratic Unionist Party believes that Northern Ireland needs a working Assembly and Executive as the best form of government for all of our people.
 
@@ -82,7 +83,7 @@ There are 5 pressing reasons why we need devolution restored immediately.
 * To protect and improve our education system – the impact of not having an Executive in place is already being felt across our school system. Having an Executive up and running is critical to resolving the funding crisis facing our schools thus ensuring that we prioritise frontline funding for our schools so that all our children receive the best educational start in life. It is vital that we build on positive practical reforms in education.
 * To attract investment and jobs – it is no coincidence that our record levels of inward investment have happened during a sustained period of devolution.  Having stable structures at Stormont with local Ministers leading efforts to sell Northern Ireland internationally has helped us secure thousands of new jobs.  Without devolution, all of the efforts to reduce our rate of Corporation tax will have been for nothing. Political stability is key to our future economic success.
 
-#### The Strongest, Most Experienced Unionist Team Ready for Negotiations
+## The Strongest, Most Experienced Unionist Team Ready for Negotiations
 
 Immediately after the General Election, we will enter another round of negotiations.  The DUP will place the interests of the people of Northern Ireland first in those negotiations.  We will not draw any red lines or put any roadblocks in the way of seeing an Executive formed straight away.
 
@@ -90,19 +91,19 @@ It is absolutely imperative that voters use this election to not only send a cle
 
 Immediately after the election on 8 June the negotiations aimed at restoring devolution will recommence with a view to establishing a new Executive by 29 June. We will enter these negotiations with a positive approach and a goal of seeing the Assembly and Executive restored. We will not draw any red lines or preconditions but will judge any potential deal against 5 core tests.
 
-#### Is the agreement likely to increase support for Northern Ireland’s constitutional position within the United Kingdom?
+## Is the agreement likely to increase support for Northern Ireland’s constitutional position within the United Kingdom?
 
-#### Is the agreement fully consistent with Northern Ireland remaining a full and integral part of the United Kingdom?
+## Is the agreement fully consistent with Northern Ireland remaining a full and integral part of the United Kingdom?
 
-#### Is the agreement fully compatible with our British citizenship?
+## Is the agreement fully compatible with our British citizenship?
 
-#### Will the agreement result in better government and policies for the people of Northern Ireland than a return to Direct Rule?
+## Will the agreement result in better government and policies for the people of Northern Ireland than a return to Direct Rule?
 
-#### Is the agreement consistent with the mandate we received for our Assembly manifesto in March?
+## Is the agreement consistent with the mandate we received for our Assembly manifesto in March?
 
 For ease of reference we set out the 10 commitments for negotiations which were endorsed on 2 March.
 
-#### Our 10 Commitments in Negotiations
+## Our 10 Commitments in Negotiations
 
 1.  We will work to avoid Direct Rule and get local government back at Stormont as quickly as possible. 2.  Our demands in negotiations will be proportionate to those of Gerry Adams and Sinn Fein. 3.  As has been the case since 2007, we remain committed to working constructively and in partnership with all those who are in an Executive after an election.
 
@@ -120,7 +121,7 @@ For ease of reference we set out the 10 commitments for negotiations which were 
 
 10. We will honour all previous commitments we have made on the basis that republicans will honour theirs as well.
 
-### Increasing Family Incomes
+## Increasing Family Incomes
 
 Our national and local economy has been improving steadily over the last number of years.  Indeed, Northern Ireland is performing better in some aspects than the rest of the UK.  The DUP believes that it is essential that the benefits of economic growth are felt by everyone, everywhere.  An improving economy must not just be for the benefit of big companies or confined to London and the South East.  Growth must also have a meaningful and positive impact on the lives of hardworking families in every part of our nation.
 
@@ -128,24 +129,24 @@ We welcome the fact that median gross weekly earnings for full-time employees in
 
 We understand that it will be the responsibility of the Party that forms the next Government to bring forward a Budget that encourages economic growth and protects our society’s most vulnerable.  The DUP proposes measures aimed at increasing family incomes that we seek to have included in future Budgets.
 
-#### Increase the National Living Wage
+## Increase the National Living Wage
 
 The newly introduced National Living Wage (NLW) has helped increase family incomes across the United Kingdom.  Whilst acknowledging the pressures that the NLW can place upon small businesses, the DUP believes that it can have a positive impact on working families, help lift people out of poverty and make work pay. The DUP supports:
 
 * Continued increases in the National Living Wage; and
 * Firm action against companies who fail to pay their staff the NLW.
 
-#### Further Increase the Personal Tax Allowance
+## Further Increase the Personal Tax Allowance
 
 The DUP were frontrunners in proposing increases in the personal tax allowance.  We firmly believe that the gradual increase in the personal tax allowance has been positive for all taxpayers but especially for the lowest paid, taking them out of the tax system entirely, and hugely beneficial for thousands of people from Northern Ireland. In Parliament, we will support proposals to further increase the personal allowance.
 
-#### Freeze Then Cut or Abolish the Tv Licence and Reform the BBC
+## Freeze Then Cut or Abolish the Tv Licence and Reform the BBC
 
 The TV licence fee is a highly regressive tax which was designed for a different era and a world of communication that no longer exists. The success of Netflix and Amazon streaming services shows that subscription based media can and does work.
 
 An independent Commission should be established to conduct a review of how the BBC is structured and the services it provides and to examine alternative funding models, identify the opportunities for competitive tendering of key services and produce a plan that will either significantly reduce the licence fee or abolish it.
 
-#### Protecting Pensions
+## Protecting Pensions
 
 The DUP has always advocated for the interests of our older people. In the Northern Ireland Executive, we have introduced initiatives like free bus passes and have defended their retention against those who would take them away. We will continue our staunch support for pensioners in the new Parliament.
 
@@ -154,17 +155,17 @@ The DUP will:
 * Support the maintenance of the pensions ‘triple lock’; and
 * Support an end to the unfair treatment of women pensioners.
 
-#### Affordable Energy
+## Affordable Energy
 
 Paying for oil, gas and electricity can consume a significant chunk of household budgets. A perception exists that electricity prices in Northern Ireland are high.  Whilst prices are undoubtedly high for the largest industrial customers, our approximately 800,000 domestic customers pay just below the EU average for their electricity and considerably lower than their counterparts in the Republic of Ireland.
 
 The DUP wants to see our energy companies place further downward pressure on household bills.  We will support efforts to better control energy bills and will seek to ensure any such measure operates in Northern Ireland.
 
-#### Safeguarding Universal Benefits
+## Safeguarding Universal Benefits
 
 The DUP is proud of the universal benefits we have introduced in Northern Ireland like free public transport for the over 60s.  Some parties have once again placed universal benefits like the winter fuel allowance in their sights.  The DUP will resist any assault on these important universal benefits.
 
-### Creating a Globally Competitive Economy
+## Creating a Globally Competitive Economy
 
 Northern Ireland’s economy – like the rest of the United Kingdom’s –  is heading in the right direction.  Key economic indicators show sustained progress across a range of important areas:
 
@@ -177,7 +178,7 @@ Northern Ireland’s economy – like the rest of the United Kingdom’s –  is
 
 We are determined to build on that success and continue the positive development in our economic fortunes.  This is our plan for the Northern Ireland economy.
 
-#### More and Better Paying Jobs
+## More and Better Paying Jobs
 
 Northern Ireland has experienced falling unemployment, increased job creation and record levels of inward investment.  Between 2011 and 2016:
 
@@ -191,7 +192,7 @@ The DUP wants to build on that outstanding success by:
 * Implementing the Economic Inactivity Strategy; and
 * Reducing Northern Ireland’s Corporation Tax rate to at least 12.5%.
 
-#### An Industrial Renaissance in Northern Ireland
+## An Industrial Renaissance in Northern Ireland
 
 Northern Ireland has a rich industrial heritage.  The DUP wants to build on our strong manufacturing base and encourage a renaissance in Northern Ireland industry.
 
@@ -203,7 +204,7 @@ The DUP supports the delivery of an ambitious new Industrial Strategy for Northe
 * Succeeding in global markets; and
 * Building the best economic infrastructure. While some seek to talk Northern Ireland down we see huge potential in our economy.  Northern Ireland has world class capabilities in sectors such as cyber security, agri-foods, advanced engineering and materials handling.  By taking a long term, ten years plus view, we can become a globally competitive economy built upon a renewed and reinvigorated industrial base. We will also continue to press HM Government to create City Region Growth Deals for Northern Ireland.
 
-#### Selling Northern Ireland to the World
+## Selling Northern Ireland to the World
 
 Increasing exports and improving trade links will play a huge part in Northern Ireland’s economic future.  While Northern Ireland has been the best performing region for exports in the whole of the United Kingdom, we must build on that success and begin the groundwork needed to capitalise on the trade opportunities that the UK leaving the EU will present.  That’s why the DUP introduced an International Trade Plan which included:
 
@@ -222,7 +223,7 @@ We will lobby Her Majesty’s Government to:
 * encourage international events to be staged in Northern Ireland; and
 * continue to incorporate Northern Ireland prominently in UK branding.
 
-#### Making Tourism a £1 Billion Industry
+## Making Tourism a £1 Billion Industry
 
 Northern Ireland has developed hugely in recent times as a must visit destination for visitors from around the world.
 
@@ -239,7 +240,7 @@ We will also pursue:
 * The abolition of Air Passenger Duty; and
 * A cut in the VAT rate for tourism businesses.
 
-#### A Secure and Sustainable Energy Supply for Northern Ireland
+## A Secure and Sustainable Energy Supply for Northern Ireland
 
 Northern Ireland needs a secure and sustainable energy supply for both domestic and business customers.  While concerns have been highlighted about the future security of supply of electricity in Northern Ireland, the DUP believes that this can be addressed by continued progress on interconnection, market integration and the development of new generation capacity.  We are encouraged by recent planning applications for new power stations and see this as a sign that the market is responding positively and that the issues with security of supply can be addressed. The DUP also believes that a comprehensive new Energy Strategy is needed to deal with security of supply as well as the future of renewable energy policy in Northern Ireland.
 
@@ -250,7 +251,7 @@ The DUP supports:
 * Improved interconnection with Great Britain; and
 * The development of new generation capacity.
 
-#### Making Northern Ireland the Best Place to Do Business
+## Making Northern Ireland the Best Place to Do Business
 
 Northern Ireland is already a great place to do business.  Whether it is a start-up or an inward investor, Northern Ireland offers companies a lower cost base, loyal and skilled workers and sensible regulation.  The DUP wants to build on that hard-earned reputation and make Northern Ireland not just a good place but the best place to do business.
 
@@ -263,7 +264,7 @@ We will support:
 * UK wide tax policy improvements to encourage economic growth in Northern Ireland; and
 * Assistance from HM Government to attract FDI into Northern Ireland.
 
-#### Securing the Skills to Succeed
+## Securing the Skills to Succeed
 
 A strong skills base has been a substantial element to Northern Ireland’s Investment in infrastructure is crucial for economic competitiveness recent economic success.  In an increasingly competitive global economy, as well as providing a boost for the local construction industry.  Given it is often the skills and talents of our people that positively differentiate Northern Ireland’s geographical location, improved digital and transport Northern Ireland from other possible investment destinations. Investment in skills must continue if Northern Ireland is to continue to secure jobs and investment. The DUP supports:
 
@@ -274,7 +275,7 @@ A strong skills base has been a substantial element to Northern Ireland’s Inve
 * Increased involvement of industry in shaping the skills agenda; and
 * Better alignment of third level courses with the strong and emerging sectors of our economy.
 
-#### Keeping Northern Ireland Well Connected
+## Keeping Northern Ireland Well Connected
 
 connectivity remain key to building a world class economy. The DUP will:
 
@@ -284,7 +285,7 @@ connectivity remain key to building a world class economy. The DUP will:
 * Continue to press the mobile telephony providers to invest in their networks ensuring 4G provision across Northern Ireland and that we are at the forefront of future 5G investments; and
 * Establish the new Northern Ireland Infrastructure Fund as quickly as possible.
 
-### Improving Public Services
+## Improving Public Services
 
 The DUP has a track record of positively reforming public services and streamlining the political system. Due to our determination, we have delivered:
 
@@ -301,7 +302,7 @@ The DUP has also been the driving force behind a series of public sector reforms
 
 The DUP wants to continue to reform our public sector.  This is our Plan to improve public services in Northern Ireland.
 
-#### A National Reform Plan for Northern Ireland
+## A National Reform Plan for Northern Ireland
 
 The DUP believes that all parties should agree to the creation of a structured, long term, cross-government National Reform Plan for Northern Ireland including measurable targets and agreed implementation dates.
 
@@ -313,21 +314,21 @@ Elements of a National Reform Plan for Northern Ireland could include:
 * expanding shared services provision; and
 * a dedicated Change Fund to stimulate reform.
 
-#### A Good Budget Settlement
+## A Good Budget Settlement
 
 The DUP will fight hard at Westminster for a Budget settlement that allows for real terms increases in health and education spending over the next parliamentary term and will prioritise these areas in future Northern Ireland Budgets.
 
-#### Progressing Health Reforms
+## Progressing Health Reforms
 
 The DUP were in the driving seat in developing ambitious, far sighted reforms for our National Health Service in Northern Ireland.  These reforms including the Bengoa Panel’s recommendations for a new model of health and social care, and proposals to eliminate a layer of bureaucracy by abolishing the HSC Board are much needed.  The DUP supports these reforms and wants to see them progressed as a matter of urgency.  Similarly, our Health Service needs a properly resourced plan to reduce waiting lists and a dedicated Transformation Fund to support reform. Health is fundamental to every person in Northern Ireland.  The DUP will continue to strive for a situation where key decisions about the enhancement of the NHS in Northern Ireland are free from party politics.
 
-#### Giving Every Child the Chance to Succeed
+## Giving Every Child the Chance to Succeed
 
 The DUP is committed to defending and improving our education system in Northern Ireland to ensure that every child has the opportunity to succeed in life.
 
 We will fight for sufficient resources to be provided for frontline schools budgets, and for greater autonomy in decision making for schools.  We support academic selection, the maintenance of the Dickson Plan, and greater value being placed on vocational qualifications. We will focus on tackling educational underachievement through support for early years interventions, n expanded childcare strategy and community based initiatives. The DUP supports equality of treatment for all education sectors, including removal of discrimination in teacher employment, as well as increased shared education across all education sectors.
 
-#### Safer Streets and Smarter Justice
+## Safer Streets and Smarter Justice
 
 Maintaining law and order is one of government’s primary duties.  The DUP supports the justice family across the United Kingdom in the fight against crime in all its increasingly complex guises.  The DUP supports:
 
@@ -337,7 +338,7 @@ Maintaining law and order is one of government’s primary duties.  The DUP supp
 * the introduction of a NI Register of Animal Cruelty Offenders and the seriousness of these animal cruelty offences reflected in the sentences handed down by courts;
 * the PSNI in their efforts to target criminal gangs and ensure they have all the powers necessary to seize assets of paramilitary godfathers
 
-### Defending Our Nation from Old and New Threats
+## Defending Our Nation from Old and New Threats
 
 The DUP does not believe that the present defence arrangements for the United Kingdom are adequate enough to cope with the emerging threats in the 21st Century.  We appreciate that in a time of significant challenge to public finances, almost all areas will be affected, but more consideration needs to be given to prioritising the funding of defence.  In order to afford it some protection, the DUP supported the UK maintaining the NATO target of 2% of GDP for the Defence Budget, despite reservations about the funding formula.
 
@@ -347,33 +348,33 @@ It should be remembered that the NATO target is intended as a minimum figure not
 
 We must not ignore dissident Republican terrorists and the threat they pose to all our citizens in Northern Ireland and Great Britain. The intelligence community and our security forces must be given a budget and rules of engagement that enable them not only to deter the threat from Republican splinter groups but also to actively pursue such terrorists and defeat them. This is the DUP’s Plan to strengthen the UK’s Defences and support service personnel and veterans.
 
-#### A New National Security and Strategic Defence Review
+## A New National Security and Strategic Defence Review
 
 When the public finances improve we believe it will be appropriate to have a new National Security and Strategic Defence Review. The 2015 Review demonstrated a lack of strategic ambition and was too much a product of expenditure limitations. The DUP believes that such a review needs to be honest about the nature of the threats we face and the consequences of failing to deal with them. Only then can we make the difficult choices about capability and affordability.
 
 In terms of military doctrine, we believe our military capability should be driven by the ability to act alone in defence of our own strategic interests in places like the Falkland Islands whilst also continuing to be the partner of choice to our allies, primarily through NATO. Within our military capabilities, the DUP believes the sufficient staffing, training and equipping of our reserve forces must be a priority.
 
-#### Maintaining Our Independent Nuclear Deterrent, and Nuclear Proliferation
+## Maintaining Our Independent Nuclear Deterrent, and Nuclear Proliferation
 
 The DUP has consistently supported the maintenance of the UK’s independent nuclear deterrent and will continue to support Trident’s renewal.  One of the reasons for the need to renew is the systematic failure of the international community to deal with the issue of nuclear proliferation.  We believe the UK should use all international forums to completely overhaul the approaches to counter proliferation and support efforts to prevent the likes of North Korean dictatorships from gaining and distributing such technology.
 
-#### Playing a Full Role in International Military and Security Relationships
+## Playing a Full Role in International Military and Security Relationships
 
 The DUP supports our participation in NATO but shares the American concerns that other members are consistently failing to fulfil the minimum spending target.  The Russian state is becoming more belligerent in its actions based on its assessment of western political and military weakness.  This pattern of behaviour will only be arrested by a reversal of both of these weaknesses.
 
-#### A Cybersecurity Leader for the United Kingdom
+## A Cybersecurity Leader for the United Kingdom
 
 Cybersecurity is recognised as the current dominant threat to global security. Part of the growth of the knowledge economy in Northern Ireland has been a specialism in the area of cybersecurity.  The DUP believes this is a critical area where Northern Ireland could contribute to countering this growing threat to national security. We support the expansion of cybersecurity research in Northern Ireland.
 
-#### A Review of the Military Covenant
+## A Review of the Military Covenant
 
 Northern Ireland is part of the United Kingdom with both an immense contribution to our Armed Forces and debt to our Armed Forces for the protection they provided in the successful execution of Operation Banner.  These are why fulfilling the Military Covenant is particularly important for us. We believe that the Military Covenant should be reviewed and updated. The DUP supports the introduction of Independent Commissioners in the four parts of the United Kingdom to ensure the Covenant is fully implemented.  The DUP is conscious how equality legislation in Northern Ireland has been used to hamper the fulfilment of both the spirit and the practical elements of the Covenant here. It wishes to see this situation ended and Veterans in Northern Ireland to be treated equally to Veterans right across the United Kingdom.
 
-#### 6.bringing Armed Forces Day to Northern Ireland
+## 6.bringing Armed Forces Day to Northern Ireland
 
 It is unacceptable that Northern Ireland has never hosted the main national event for Armed Forces Day in the UK.  The DUP wish to see Northern Ireland host the main national event at some point in the life of the next Parliament and regularly thereafter.
 
-#### A Review of the Present Terrorism Legislation
+## A Review of the Present Terrorism Legislation
 
 The DUP believes that considering the multi-faceted evolving and insidious nature of the terrorist threat it is time to review whether present arrangements need to be updated or upgraded.
 
@@ -384,7 +385,7 @@ This review should include:
 * Changes to the glorification of terrorism offences with an examination of the 20 year time limit.
 * Consideration of intelligence and security committee membership
 
-#### Resisting Attempts to Rewrite the Past
+## Resisting Attempts to Rewrite the Past
 
 Ninety percent of the deaths in the Troubles were by paramilitaries yet the balance of investigations is disproportionately against former police officers and soldiers. A one-sided approach only serves those who want to re-write the past.
 
@@ -392,7 +393,7 @@ It is only natural that the public are outraged to see former soldiers who stood
 
 The recent Defence Select Committee’s report “Investigation into Fatalities in Northern Ireland involving British Personnel” recommends Government bring forward a statute of limitations, following a DUP led debate in Parliament.  The DUP also managed to secure Committee backing to extend such a proposal to include members of the Royal Ulster Constabulary and other security personnel. The last twenty years have been marred by the completely imbalanced treatment of those who terrorised our society compared against brave service personnel who ensured they would never succeed. Early release of prisoners, a maximum two year sentence for fresh terrorist convictions, odious On the Runs legislation and a secretive scheme to issue letters of immunity have all tarnished the process of justice. Our troubled past can only be dealt with effectively in an honest and holistic manner, not the partial way republicans would wish. We must ensure that the past cannot be rewritten. Government should go ahead and publish their draft legislation so the new Historical Investigations Unit can commence its work as soon as possible. We will do everything we can to assist innocent victims to obtain a measure of justice.
 
-### Getting the Best Deal for Northern Ireland from the UK leaving the EU
+## Getting the Best Deal for Northern Ireland from the UK leaving the EU
 
 WHY WE SUPPORTED A VOTE TO LEAVE: The DUP’s decision to support leaving the European Union was based on principle and practicality.  The DUP had opposed joining in the first place, had been consistent in its scepticism throughout our membership and fully supported the question of membership being put to the people of the United Kingdom.  This was the demonstration of our commitment to principle.
 
@@ -412,7 +413,7 @@ The circumstances of Northern Ireland are well understood and working together s
 
 In the new Parliament, Northern Ireland needs to have a strong, united DUP team arguing the case for our people.
 
-#### During the Negotiations the Dup Wants to See a Focus on the Following Priorities and Objectives:
+## During the Negotiations the Dup Wants to See a Focus on the Following Priorities and Objectives:
 
 1. Successful outward-looking knowledge-based economy in Northern Ireland 2. Ease of trade with the Irish Republic and throughout the European Union 3. Maintenance of the Common Travel Area 4. Strengthened relationships across the four components parts of the United Kingdom with no internal borders 5. Northern Ireland-specific solutions achieved through active Executive engagement 6. Particular circumstances of Northern Ireland with a land border with the EU fully reflected 7. Frictionless border with Irish Republic assisting those working or travelling in the other jurisdiction 8. Progress on new free trade deals with the rest of the world 9. Comprehensive free trade and customs agreement with the European Union 10. Northern Ireland established as a hub for trade from Irish Republic into the broader UK market 11. Customs arrangements which facilitate trade with new and existing markets 12.  Confidence and capacity within local businesses to maximize opportunities 13. Business to retain competiveness and not face additional costs 14. Arrangements to facilitate ease of movement of people, goods and services 15. Proportionate regulatory regime which can promote competiveness, with legislation to suit our local needs
 
@@ -420,7 +421,7 @@ In the new Parliament, Northern Ireland needs to have a strong, united DUP team 
 
 **It is in the interests of all in Northern Ireland that the UK-EU negotiations progress well and that the trade elements commence as soon as possible. The stronger and more positive the agreements reached, especially on trade and customs relationships, then the better for the particular circumstances of Northern Ireland**
 
-### A Real Respect Agenda
+## A Real Respect Agenda
 
 The role and importance of identity is an increasing issue of discussion across the Western world. The development and impact of globalisation had led many to assume that identity was inexorably fading away.  This is not true.  The desire to be from somewhere remains inherent in many and played an important role across many recent elections.  Simply put, identity matters.
 
@@ -436,11 +437,11 @@ These concerns fit within three broad categories:
 * Our Ulster Identities
 * Our Pride in Northern Ireland
 
-#### Our British Identity
+## Our British Identity
 
 Within this context there are four broad areas where progress is sought.  These include:
 
-#### British Symbols
+## British Symbols
 
 For significant periods of recent history, there has been a consistent attempt to reduce the display of British symbols.  This process was particularly aggressive in Northern Ireland. It was commonly referred to as “hollowing out Ulster’s Britishness” but the process was not exclusive to Northern Ireland.
 
@@ -448,11 +449,11 @@ More recent times have shown a greater desire to display national symbols in the
 
 Therefore, there is a clear desire that this exclusion of Northern Ireland from these positive developments for the public expression of Britishness ends.
 
-#### National Celebration and Commemoration
+## National Celebration and Commemoration
 
 The celebration and commemoration of important national events are central to the maintenance and promotion of a common identity. The full enjoyment, celebration and/or participation in them needs to be guaranteed. Examples of how this has not been occurring are Homecoming parades, the Armed Forces Day National event and the Battlefield Tours programme.  There were demonstrations against Homecoming parades.  Northern Ireland has never hosted the main national event for Armed Forces Day, unlike every other constituent part of the UK.  Schools from Northern Ireland have only just started participating on a pilot basis in WW1 Battlefield tours. These commenced elsewhere in the UK in 2014 and NI’s exclusion was the result of Sinn Fein’s control of the education and cultural ministries.
 
-#### Recognition and Support of Military Service
+## Recognition and Support of Military Service
 
 Our Armed Forces, their sacrifices and their achievements are a central and continuing bond.  The debt that is owed to these men and women is expressed through the Military Covenant. The inequality that sees veterans In Northern Ireland not enjoying the full benefits of this covenant is not something that the DUP considers in any way acceptable.  Thus, a framework to:
 
@@ -464,31 +465,31 @@ is required.
 
 Likewise, to encourage our future contribution to the military our Cadet services in Northern Ireland should receive comparable support arrangements as elsewhere in UK and the development of a new Army Museum in Northern Ireland should be seen as an opportunity for significant development.
 
-#### The Commonwealth
+## The Commonwealth
 
 Our membership of the EU meant the Commonwealth and its contribution was often overlooked. Its peoples have contributed so much to the diversity of modern Britain and is an international network we must utilise better at pursuing our mutual interests. The role and contribution of the Commonwealth should be better promoted in our schools. Northern Ireland should seek to host Commonwealth political and sporting events and maximise the range of sports in which Northern Ireland teams participate. Beyond these themes the DUP would also like to see the development of a UK equivalent of Co-operation Ireland promoting the linkages across the constituent parts of the country.
 
-#### Our Ulster Identities
+## Our Ulster Identities
 
 The Ulster-Scots heritage, language and culture and Orangeism have both made a huge contribution to our own local identity as well as having a significant impact beyond our shores.  However, their birth and strength remain here.
 
-#### Ulster-Scots heritage, language and culture
+## Ulster-Scots heritage, language and culture
 
 When you consider the breadth and depth of the Ulster-Scots identity the range of measures and opportunities that could be pursued is long.  At its core there must be reform and resourcing of the Ulster-Scots Agency, refocusing of the Ulster-Scots Broadcast Fund and fulfilling the 2003 promise to create an Ulster-Scots Academy. These developments would facilitate the likes of language promotion, tourism initiatives, capital investment, cultural networks, diaspora development, social economy projects, inclusion in the education system and bespoke courses, academic research and digital and broadcasting growth.
 
-#### Orangeism
+## Orangeism
 
 It is a continuing contradiction that despite all the talk of rights in Northern Ireland many of the same people are silent about or opposed to freedom of assembly.  Public expression by parades is central to Orangeism but over the years regardless of who was on the Parades Commissions the end result has been the same. Namely, the exclusion of Orangeism from ever greater areas of public space. This is regardless of engagement or not or compliance or not and often rewarded violence.  Thus the DUP is committed to a new start on parades.
 
-#### Our Pride in Northern Ireland
+## Our Pride in Northern Ireland
 
 The pride in Northern Ireland that many feel in what we can achieve together or individually is something the DUP wishes to promote and believes would be attractive to a broad cross-section of people in Northern Ireland. This would include:
 
-#### Celebration of Northern Ireland’s Centenary
+## Celebration of Northern Ireland’s Centenary
 
 Despite an agreement of Executive support for the ‘Decade of Centenaries’, this led to little practical action. The DUP does not want that to be the case in 2021.  It will be a clear opportunity for us to celebrate what has been achieved in the previous 100 years but equally to look forward to what we want to achieve in the next century. The programme for this should include a public holiday, public art, an ‘Expo’, centenary wood and greenway, securing of major sporting events and practical measures to demonstrate our values such as ‘baby boxes’ and awards for centenarians.
 
-#### Recognition of Northern Ireland
+## Recognition of Northern Ireland
 
 The recognition of Northern Ireland can be given practical effect in a number of ways, for example:
 
@@ -504,8 +505,8 @@ Sinn Fein have used their mandate at the last Assembly election to demand a dest
 
 A vote for the DUP is a vote …
 
-#### For Northern Ireland’s place within the United Kingdom For real influence at Westminster For the best deal for Northern Ireland as the UK leaves the EU For the strongest representation at Westminster For the restoration of the Assembly and Executive
+## For Northern Ireland’s place within the United Kingdom For real influence at Westminster For the best deal for Northern Ireland as the UK leaves the EU For the strongest representation at Westminster For the restoration of the Assembly and Executive
 
 If you want the DUP to be Northern Ireland’s voice at Westminster so we can stand up for unionism, speak up for Northern Ireland, and stop Gerry Adams and Sinn Fein from dictating the political agenda, then you must send that message by voting for the DUP.
 
-#### Use your vote to unite around the biggest and strongest unionist party. Vote DUP!
+## Use your vote to unite around the biggest and strongest unionist party. Vote DUP!

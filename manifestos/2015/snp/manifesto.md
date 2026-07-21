@@ -26,6 +26,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 2015
 
 ## Stronger for Scotland
@@ -34,7 +35,7 @@ sections:
 
 ---
 
-### My vow is to make Scotland stronger at Westminster.
+## My vow is to make Scotland stronger at Westminster.
 
 At this election, we have the opportunity to shake up the out of touch Westminster system so that it serves Scotland better.
 
@@ -66,7 +67,7 @@ My vow is to make Scotland stronger at Westminster. With your support, we can se
 
 ---
 
-### Priorities for a Fairer and More Successful Scotland
+## Priorities for a Fairer and More Successful Scotland
 
 Whether in Scotland or at Westminster, our focus will be on **growing Scotland's economy** and **making life better for people across our country**. This is what underpins our policies on public finances, on education, health, housing and social justice and our support for the Scottish Parliament having more of the powers it needs. We want more people in rewarding, well paid work. We want stronger local economies, with job opportunities for our young people close to home so we can retain the important links of family and community that add to the strength and well-being of our society.
 
@@ -76,13 +77,13 @@ The more SNP MPs that are elected to Westminster, the louder Scotland's voice wi
 
 With greater influence for Scotland at Westminster and new powers for our parliament in Edinburgh, there is so much more we can achieve for the people of Scotland. SNP MPs will:
 
-#### Make sure Westminster works better for the people of Scotland
+## Make sure Westminster works better for the people of Scotland
 
 - The biggest threat to Scotland's public services and our social fabric is the ongoing Tory and Labour obsession with austerity cuts to vital public spending. That is why we propose **responsible increases in public spending**.
 - We will support **increases in infrastructure investment as part of our plans to generate new jobs** and support higher levels of growth, and we will work to open access to finances for businesses looking to expand.
 - Our approach is to secure a fair deal for all with **those on the very highest incomes contributing a little bit more** to ensure that we can continue to deliver universal, free public services and protect the most vulnerable from the impacts of poverty.
 
-#### Support the Scottish Government
+## Support the Scottish Government
 
 - We back the planned **expansion of childcare with 30-hours a week of free nursery education** for all 3 and 4 year olds and eligible 2 year olds, providing the best possible start in life for younger Scots and making life easier for their parents.
 - We support a big **increase in NHS spending in Scotland, and across the UK**, to enable the Scottish government to continue improving our health service. Our plans will mean £2 billion more for our NHS by 2020-21.
@@ -101,7 +102,7 @@ We will:
 
 ---
 
-### Better Off with the SNP
+## Better Off with the SNP
 
 We are working hard to make life better for people across Scottish society and the plans we set out in this manifesto will see some new and important gains.
 
@@ -136,7 +137,7 @@ We are working hard to make life better for people across Scottish society and t
 
 ---
 
-### Making Scotland's Voice Heard
+## Making Scotland's Voice Heard
 
 This election is an exciting opportunity for Scotland to deliver real change, here and across the UK.
 
@@ -168,15 +169,15 @@ Throughout this Parliament SNP MPs have worked hard to take forward the prioriti
 
 ---
 
-### A Stronger Voice at Westminster
+## A Stronger Voice at Westminster
 
-#### An alternative to austerity cuts
+## An alternative to austerity cuts
 
 With enough SNP MPs in the House of Commons, we can **end the current austerity agenda** and release new investment in jobs and growth, in strengthening our society and in protecting vital public services.
 
 SNP MPs will oppose austerity and never do a deal with the Tories. If there is an anti-Tory majority of MPs, we will vote to lock the Tories from government. And we will make sure any Labour government can't forget Scotland. Quite simply, **Scotland can get better government and real influence by voting for the SNP in May.**
 
-#### An approach to the public finances that works
+## An approach to the public finances that works
 
 The starting point for the next parliament and government must be an approach to the public finances that works. There can be no doubt, based on the Office for Budget Responsibility's figures and the targets set by the current government itself, that George Osborne's approach has failed on multiple counts, with borrowing rising substantially. Indeed, net borrowing in this financial year has exceeded the June 2010 forecast by around £50 billion.
 
@@ -190,7 +191,7 @@ We reject the current trajectory of spending, proposed by the UK government and 
 
 We will also look to release additional resources by backing a series of revenue raising measures - the reintroduction of the 50p top tax rate, a tax on bankers' bonuses, a bank levy, a mansion tax, a crackdown on tax avoidance, the abolition of 'non dom' status, reversal of the married couples' tax allowance, and a review of the pension tax relief available to the wealthiest.
 
-#### A greater focus on job creation and growth
+## A greater focus on job creation and growth
 
 We need increased investment in economic growth and action to get more people into rewarding, sustainable, well-paid employment. As set out above, we propose modest spending increases to invest in the economy, enabling us to deliver a stronger fiscal performance over the medium-term.
 
@@ -216,7 +217,7 @@ We've also made sure people have more money in their pockets, with the Council T
 
 As a result, we have reduced unemployment, increased employment in Scotland and have a stronger record on youth employment than the UK.
 
-#### Investing in infrastructure
+## Investing in infrastructure
 
 We firmly believe that additional investment in Scotland's infrastructure, and that of the rest of the UK, is an important part of building the wider strength of our economy and society. Our proposals for additional expenditure in the next Parliament will include substantial new infrastructure investment. Properly deployed, capital expenditure has the ability to reduce inequalities by providing good, well paid employment, with opportunities for the long-term unemployed, for apprenticeships and for wider skills and professional development. It also serves to expand the productive capacity of Scotland, making our economy more competitive, with improved connectivity and infrastructure that is fit for the 21st century.
 
@@ -228,7 +229,7 @@ We will also seek adequate transport infrastructure investment, with a particula
 
 We will back investment a house-building target across the UK of 100,000 affordable homes per year. We are determined to use capital investment to create jobs, and support higher levels of economic growth. This additional investment would support at least 6,500 jobs in the construction sector in Scotland.
 
-#### Supporting Scotland's job creating businesses
+## Supporting Scotland's job creating businesses
 
 We want to make it much easier for growing businesses across Scotland to access finance and will look for an expansion of lending options, including peer-to-peer lending and making it easier for new entrants to the market, in particular to help with short term financing. We believe the UK government should be doing more to rebalance economic activity on these isles and so we will press for seed-fund capitalisation of the new **Scottish Business Development Bank**, enabling new finance and investment for Scottish business to maximise job creation and growth.
 
@@ -257,7 +258,7 @@ The SNP will use its influence at Westminster to deliver key economic advantages
 - A £100 million investment in jobs in the creative sector with BBC Scotland receiving a fairer share of the licence fee.
 - Increased investment in infrastructure as part of our alternative to the failed UK austerity agenda.
 
-#### A government that works for all the country
+## A government that works for all the country
 
 One of the greatest indictments of the current Westminster system is that it works best for one part of society and one part of the country. Social and geographic imbalances are increasing at a worrying rate, with an increasing imbalance between London, and the south-east, and the rest of the UK.
 
@@ -289,9 +290,9 @@ Other measures, proposed in this manifesto, that will be of particular benefit t
 
 ---
 
-### A Fairer Society
+## A Fairer Society
 
-#### An economy that works for the many
+## An economy that works for the many
 
 We will firmly oppose, and seek to reverse, the growing inequality in UK society - inequality that acts as a dampener on growth and limits opportunity for people in communities across the country. That is why we **must create a fair wage economy**, with higher wages for those on low and middle earnings translating into increased revenues for the Exchequer. Underpinning this is our belief that everyone should have the opportunity of a good life in return for their effort and hard work.
 
@@ -317,7 +318,7 @@ We will also support a review of controlled foreign companies exemptions and fav
 
 We support calls for a global fair tax summit to agree international measures to tackle tax abuses.
 
-#### More support for hard-pressed households
+## More support for hard-pressed households
 
 Using the current powers of devolution, the SNP Scottish Government has taken forward policies designed to support households through the recession. For example, we have frozen the Council Tax, removed prescription charges and road tolls, increased free nursery provision, provided free school meals in the early years of primary school and reintroduced free university education.
 
@@ -325,7 +326,7 @@ Taken together, these measures have saved people across Scotland hundreds of pou
 
 As well as certainty on Council Tax bills, we have also placed limits on increases in rail fares and water charges. Through tough and effective regulation of Scottish Water we've been able to deliver real-terms cuts in water bills. In the same way we wish to see a more robust approach to energy bills and believe Ofgem should be empowered to enforce price reductions to reflect lower wholesale costs as a result of lower oil prices. Consumers must see the benefit of lower wholesale costs in their bills, with savings of as much as £100 a year. The Scottish Government and UK government should have joint oversight of Ofgem.
 
-#### A fair deal for older Scots
+## A fair deal for older Scots
 
 We will continue to support older Scots, by retaining key policies such as the free bus pass and free personal care and we'll back the continuation of the free TV licence.
 
@@ -335,7 +336,7 @@ We will oppose the abolition of Savings Credit - introduced to reward people for
 
 **We will continue to support the roll out of auto enrolment for occupational pensions** and also back, in principle, proposals to give pensioners more flexibility over their pension pots. However, we must ensure adequate levels of advice and support. We will work with pensioner groups to identify and target unfair, hidden pension charges.
 
-#### Fairness in the welfare system
+## Fairness in the welfare system
 
 Westminster has presided over a relentless undermining of our social security system. The SNP is determined to target the worst and most damaging welfare changes introduced by the current government and to address issues such as zero-hour contracts, which create unacceptable levels of uncertainty and financial insecurity for often low paid workers.
 
@@ -361,13 +362,13 @@ We will also press the UK government to ensure that pensioners whose homes are '
 
 ---
 
-### A Stronger Society
+## A Stronger Society
 
 This election is an opportunity for Scotland to have real influence to deliver important gains and protections.
 
 On a wide range of issues, Scottish values and priorities can carry real weight at Westminster.
 
-#### Working in partnership
+## Working in partnership
 
 We will press the UK government to work with the business community on mechanisms to formalise the relationship between government, employer associations and employee associations with a particular focus on encouraging wider trade union participation and recognising the positive role that can be played by collective bargaining in improving labour market conditions.
 
@@ -377,7 +378,7 @@ We will seek to reverse recent changes, which reduced key aspects of workers' ri
 
 In addition, we will also oppose Tory plans to further restrict the right to strike and support trade unions with their proposals to modernise the way strike ballots are undertaken, with safe and secure online voting to maximise participation.
 
-#### Caring about climate change, our environment and the natural world
+## Caring about climate change, our environment and the natural world
 
 ##### Carbon Reduction
 
@@ -401,7 +402,7 @@ The Scottish Government has ambitious targets to support community energy genera
 
 While responsibility for animal welfare is devolved to the Scottish Parliament - and the SNP in government is already working to improve the conditions of kept animals, including consultations on responsible dog ownership and wild animals in travelling circuses, and giving consideration to further protection at slaughter, the registration or licensing of horse establishments and a review of tail docking in working dogs - at Westminster we will support further animal welfare measures with a global focus. This includes action to end the illegal ivory trade and protect species such as polar bears and bluefin tuna.
 
-#### Our place in the world
+## Our place in the world
 
 Scotland is an outward looking nation. We have family in all parts of the world and our society has been strengthened, over generations, by new Scots arriving from across the globe. This is part of who we are and provides untold benefits, socially, culturally and economically. That is why we must do all we can to prevent increasingly insular attitudes at Westminster from shutting Scotland off from the world.
 
@@ -437,7 +438,7 @@ And, we are in favour of an audit of outstanding debt owed by developing countri
 
 SNP MPs will also make the case for the establishment of a special envoy - a diplomatic post within the Foreign Office - to promote the rights of LGBTI people throughout the word, as an integral part of UK foreign policy.
 
-#### Defence that works for the people of Scotland
+## Defence that works for the people of Scotland
 
 ##### Strategic Defence and Security Review
 
@@ -467,17 +468,17 @@ As a matter of safety, we believe a collision warning system should be installed
 
 We also support giving Armed Forces representative bodies a statutory footing.
 
-#### New powers to protect our communities
+## New powers to protect our communities
 
 There is no doubt that Fixed Odds Betting Terminals cause harm and hardship in communities across Scotland. That's why the Scottish Government needs legislative powers to control the growth and impact of these machines, and we believe the UK government should devolve these powers in full. The problem of Fixed Odds Betting Terminals is linked to the proliferation of betting shops in some communities and so we will continue to argue for Scotland to have full responsibility for the regulation of gambling.
 
 We will also seek new powers so we can effectively regulate payday lenders in Scotland's communities, building on the recommendations of the Smith Commission and going beyond proposals set out so far by the current UK government.
 
-#### Protecting personal data
+## Protecting personal data
 
 We do not support Tory plans for the reintroduction of the so-called 'snoopers' charter', which would see all online activity of every person in the UK stored for a year. Instead, we need a proportionate response to extremism. That is why we will support targeted, and properly overseen, measures to identify suspected extremists and, if necessary, examine their online activity and communications.
 
-#### A flourishing media environment and creative sector
+## A flourishing media environment and creative sector
 
 We believe that responsibility for broadcasting in Scotland should transfer from Westminster to the Scottish Parliament and we will support moves to more devolved arrangements for the BBC with greater powers and funding for the different national and regional broadcasting areas, such as BBC Scotland.
 
@@ -491,7 +492,7 @@ It should also be for the Scottish Government to decide which sporting events in
 
 Regulation of print media is already devolved. The Scottish Parliament chose, on a cross party basis, to support the UK Government's actions to implement Leveson. We will consider carefully the results of the first year review and work with other parties, in Scotland and at Westminster, to ensure effective regulation of the media on a non-political basis.
 
-#### Safeguarding our land and seas
+## Safeguarding our land and seas
 
 We will press the UK government to reinstate an emergency towing vehicle on the west coast of Scotland and to ensure that delays in recruitment don't leave vital coastguard stations understaffed.
 
@@ -499,7 +500,7 @@ We will seek a commitment for the earliest possible return of the Aeronautical R
 
 ---
 
-### Sorting the Broken Westminster System
+## Sorting the Broken Westminster System
 
 This election gives us a rare opportunity to begin to repair what is an increasingly broken political system in the UK. We need to make clear to those who wield power that they do so only with the consent of the people. Almost every aspect of the system needs an overhaul.
 
@@ -517,7 +518,7 @@ Given the successful inclusion of 16 and 17 year olds in the independence vote t
 
 We support strict rules on lobbying but believe that campaigning charities should be allowed straightforward access and restrictions on their activities as 'non-party campaigners' should be removed.
 
-#### Promoting equality and protecting human rights
+## Promoting equality and protecting human rights
 
 Scotland's new First Minister, Nicola Sturgeon MSP, has given a very clear signal of the need to have more equal representation of men and women in public life. The Scottish Cabinet is one of only three cabinets in the developed world to have an equal number of men and women and, with the necessary powers devolved, we will take forward proposals to ensure 50 per cent female representation on public boards.
 
@@ -543,13 +544,13 @@ Given the central place of human rights in Scotland's constitutional settlement,
 
 ---
 
-### Backing the Scottish Government
+## Backing the Scottish Government
 
 Too often in recent years, decisions by governments at Westminster have undermined the ability of the Scottish Government to deliver as much as it would wish. This has included budget cuts as a result of austerity, questionable application of the Barnett Formula and long delays in giving approval for Scottish Government proposals, for example the mechanism to mitigate the Bedroom Tax in Scotland.
 
 A strong team of SNP MPs at Westminster can do more to ensure that the UK government is not standing in the way of progress for Scotland.
 
-#### Protecting a strong record of delivery
+## Protecting a strong record of delivery
 
 At the heart of this manifesto is our commitment to move away from the damaging austerity agenda of the current UK government, so that we can protect Scotland's public services from future Tory cuts and protect the progress that has been delivered by tens of thousands of dedicated public sector staff.
 
@@ -597,11 +598,11 @@ SNP MPs will press for the revenue from court fines to be retained in Scotland a
 
 ---
 
-### Backing the Scottish Government (continued)
+## Backing the Scottish Government (continued)
 
 But there is much more we can achieve and SNP MPs in the House of Commons will work with SNP ministers in the Scottish Government to ensure that we continue to make progress as a society and economy, across all three of the Scottish Government's priority areas:
 
-#### Creating more, better paid jobs in a strong, sustainable economy
+## Creating more, better paid jobs in a strong, sustainable economy
 
 Our ambition is for a stronger Scottish economy, with the fruits of economic success shared more widely. We have set out our plans to deliver higher levels of sustainable economic growth through the Scottish Government's refreshed Economic Strategy. This includes proposals to boost Scotland's competitiveness, reduce levels of inequality and increase productivity.
 
@@ -659,7 +660,7 @@ We know that fair pay is an important part of creating a fairer society and so w
 
 Our economic strategy is designed to ensure that Scotland can take more advantage of **international opportunities**. In government, we are developing a new Trade and Investment Strategy and will establish One Scotland Partnerships. These will set clear trade and innovation goals for specific international markets and ensure that activity is coordinated to maximise impact. Our updated International Framework will set the context for how the Scottish Government, its agencies and public bodies engage most effectively worldwide to promote Scotland for the benefit of our economy and to increase trade and investment opportunities. 330,000 Scottish jobs depend on membership of the EU single market. SNP MPs will vote against an in/out EU referendum. However, if there is to be a referendum, we will seek to amend the legislation to insert a 'double majority' rule - unless each of England, Scotland, Wales and Northern Ireland, as well as the UK as a whole, voted to exit the EU, the UK would remain a member state.
 
-#### Building a fairer Scotland and tackling inequality
+## Building a fairer Scotland and tackling inequality
 
 The past year has shown there is a real demand for a new Scotland, where more of us can contribute fully. Our approach in government, with its focus on early intervention, is putting in place the firm foundations for future success by giving more young Scots the best possible start in life.
 
@@ -703,7 +704,7 @@ We will also expand entitlement to the Educational Maintenance Allowance (EMA) s
 
 We are proud to have delivered our unique Scottish Youth Guarantee, with a guaranteed offer of a place in training or education for all 16 to 19 year olds. That is why we have seen an increase in full-time college places and have committed to an increase in the number of Modern Apprenticeship places to 30,000 each year. SNP MPs will press the UK to adopt the European Youth Guarantee to ensure faster intervention when a young person aged 16 to 24 is unemployed.
 
-#### Passing power to people and delivering stronger communities
+## Passing power to people and delivering stronger communities
 
 Throughout the referendum campaign we said that decisions about Scotland's future should be taken by the people who care most about Scotland, that is the people who live here. That same broad principle should apply to decisions that most directly affect our local communities.
 
@@ -761,7 +762,7 @@ We are also providing £35 million per year to ensure over 70,000 Scottish house
 
 ---
 
-### Delivering Home Rule for Scotland
+## Delivering Home Rule for Scotland
 
 The SNP believes that decisions about Scotland's future - about our economy and society - are best taken by the people of Scotland: the more powers we have in Scotland the more we can achieve for the people who live here.
 
@@ -787,7 +788,7 @@ And, instead of choices on most aspects of our welfare system remaining at Westm
 
 It is only with the more extensive devolution of welfare, wages, taxation and the economy that we can deliver greater prosperity for more of our citizens and for Scotland as a whole.
 
-#### Powers for a Purpose
+## Powers for a Purpose
 
 Our focus, therefore, will be on securing specific new economic and social powers, over and above those set out in the Smith Commission proposals, so we can tailor policy to make much more of the country's strengths and finally address the challenges that we face as a society.
 
@@ -801,7 +802,7 @@ Full control over social protection would allow the Scottish Parliament to tailo
 
 Devolving employment policy would allow us to take progressive action on low pay in order to tackle poverty and inequality, with the power to **raise the minimum wage**, regardless of the political balance at Westminster, and we could more closely integrate skills and employment policy to support people in their search for rewarding work.
 
-#### Securing Home Rule
+## Securing Home Rule
 
 We will use the influence of SNP votes at Westminster to ensure that the promises made to Scotland during the referendum are delivered.
 
@@ -819,7 +820,7 @@ As we set out in our submission to the Smith Commission, the Barnett Formula sho
 
 ---
 
-### Scotland's Opportunity
+## Scotland's Opportunity
 
 This General Election is an exciting opportunity for Scotland to have real power at Westminster.
 

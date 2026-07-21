@@ -26,3 +26,7 @@ backlog/
 General election *.pdf
 Wikipedia*.html
 .DS_Store
+
+# Local prototypes / agent skills (not public site)
+sandbox/
+.claude/

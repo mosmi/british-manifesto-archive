@@ -204,13 +204,21 @@ function euroManifestosBySeats(election) {
 // pan-European "Alliances" group for transnational parties (e.g. PES).
 const EURO_GROUP_ORDER = ['england', 'scotland', 'wales', 'northern-ireland', 'others', 'alliances'];
 const EURO_GROUP_LABELS = {
-  england: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England & UK-wide',
-  scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland',
-  wales: '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales',
-  'northern-ireland': '🇮🇪 Northern Ireland',
+  england: 'England & UK-wide',
+  scotland: 'Scotland',
+  wales: 'Wales',
+  'northern-ireland': 'Northern Ireland',
   others: 'Other parties',
-  alliances: '🇪🇺 Alliances',
+  alliances: 'Alliances',
 };
+
+function euroGroupHeadingHtml(key) {
+  if (typeof nationHeadingLabelHtml === 'function') {
+    if (key === 'others') return 'Other parties';
+    return nationHeadingLabelHtml(key === 'alliances' ? 'alliances' : key);
+  }
+  return EURO_GROUP_LABELS[key] || key;
+}
 
 function euroManifestoGroupKey(m) {
   if (m.group) return m.group;
@@ -250,9 +258,12 @@ function euroManifestoGroupsHtml(election) {
   if (present.length <= 1) {
     return `<div class="manifesto-grid">${sorted.map(m => euroManifestoCard(m, election)).join('')}</div>`;
   }
-  const headingFor = (k) => (typeof nationLink === 'function' && k !== 'others' && k !== 'alliances')
-    ? nationLink(k, EURO_GROUP_LABELS[k])
-    : EURO_GROUP_LABELS[k];
+  const headingFor = (k) => {
+    const label = euroGroupHeadingHtml(k);
+    return (typeof nationLink === 'function' && k !== 'others' && k !== 'alliances')
+      ? nationLink(k, label)
+      : label;
+  };
   return present.map(k => {
     const body = k === 'alliances'
       ? euroAlliancesGroupsHtml(grouped[k], election)
@@ -265,6 +276,13 @@ function euroManifestoGroupsHtml(election) {
 }
 
 async function renderEuroElection(app, id) {
+  setPageMeta({
+    title: 'European Parliament election',
+    description: 'UK European Parliament election results and manifestos.',
+    path: `/devolved/euro/${id}`,
+  });
+  app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
+
   const election = await loadEuroElection(id);
   if (!election) {
     renderNotFound(app);
@@ -282,7 +300,7 @@ async function renderEuroElection(app, id) {
   const prev = currIdx > 0 ? index[currIdx - 1] : null;
   const next = currIdx < index.length - 1 && currIdx !== -1 ? index[currIdx + 1] : null;
 
-  const winnerId = election.control;
+  const winnerId = resolvePartyId(election.control);
   const winner = PARTIES[winnerId] || {};
   const badge = typeof winnerBadgeStyle === 'function'
     ? winnerBadgeStyle(winnerId, election.year)

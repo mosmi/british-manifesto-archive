@@ -67,6 +67,10 @@ as empty so the Leader chip is omitted).
 5. Wire the election:
    - Westminster: `extraManifestoParties` in **both** `js/data.js` → `ELECTIONS` and
      `data/elections/<id>.json` (keep them in sync), plus any needed party lists.
+     **Required** when the party has no seats row in `results` / `partyResults`
+     (otherwise the manifesto won’t appear on `/election/…` or historically on
+     `/party/…`). Party pages also fall back to `manifestos-index.json` for
+     manifesto cards, but election pages still need `extraManifestoParties`.
    - European: append to `manifestos[]` in `data/devolved/euro/<year>.json`.
 6. Run:
    ```bash
@@ -74,10 +78,15 @@ as empty so the Leader chip is omitted).
    python3 scripts/build-latest-additions.py
    python3 scripts/build-seo-data.py
    python3 scripts/build-sitemap.py
+   python3 scripts/build-fulltext-index.py
+   python3 scripts/build-manifesto-assets.py
    ```
    (Carousel: [latest-additions](../content/latest-additions.md); sizes:
-   [pdf-sizes](../pipelines/pdf-sizes.md).)
+   [pdf-sizes](../pipelines/pdf-sizes.md); full-text search:
+   [fulltext-index](../pipelines/fulltext-index.md); cover/PDF/md flags:
+   [manifesto-assets](../pipelines/manifesto-assets.md).)
 7. Update `data/party-holdings.json` chamber counts (or regenerate via the OG/holdings
    path — see [party-holdings](./party-holdings.md)).
 8. Bump `?v=` / `ASSETS_VERSION` when JS/CSS/covers change
-   ([cache-busting](../architecture/cache-busting.md)).
+   ([cache-busting](../architecture/cache-busting.md)). Full-text index rebuilds
+   cache-bust via `fulltext-meta.json` without a separate assets bump.

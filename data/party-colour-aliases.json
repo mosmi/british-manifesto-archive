@@ -7,7 +7,7 @@
   "SNP": "snp",
   "Plaid Cymru": "plaid",
   "UKIP": "ukip",
-  "Brexit Party": "brexit",
+  "Brexit Party": "reform",
   "Reform UK": "reform",
   "Green": "green",
   "DUP": "dup",
@@ -165,5 +165,7 @@
   "Socialist Labour": "socialistlabour",
   "Liberal Party (1989–)": "liberal1989",
   "Liberal Party (1989)": "liberal1989",
-  "Continuing Liberal Party": "liberal1989"
+  "Continuing Liberal Party": "liberal1989",
+  "Communist Party of Britain": "cpb",
+  "CPB": "cpb"
 }

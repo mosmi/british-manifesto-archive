@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox — L2 Compare mode MVP (not live)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #191b20;
+      --ink-body: #3a3d45;
+      --ink-chrome: #8a8e99;
+      --field: #f7f6f2;
+      --paper: #fffef9;
+      --line: #e4e1d8;
+      --gold: #b8952c;
+      --labour: #e4003b;
+      --con: #0087dc;
+      --libdem: #faa61a;
+      --reform: #12b6cf;
+      --font-display: "Instrument Serif", Georgia, serif;
+      --font-ui: Inter, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #eceae3;
+      color: var(--ink);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+      padding-bottom: 5.5rem;
+    }
+    .banner {
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+    .banner strong { color: #f0d78c; }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.75rem 1.25rem 2rem;
+    }
+    h1.sandbox-title {
+      font-family: var(--font-display);
+      font-size: 2.15rem;
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+    }
+    .lede {
+      color: var(--ink-body);
+      max-width: 44rem;
+      margin: 0 0 1.25rem;
+    }
+    .callout {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      padding: 0.9rem 1.1rem;
+      margin: 0 0 1.75rem;
+      max-width: 48rem;
+      font-size: 0.92rem;
+      color: var(--ink-body);
+    }
+    .callout ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+    }
+    .step-btn {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink-chrome);
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .step-btn.is-active {
+      border-color: var(--gold);
+      color: var(--ink);
+      background: #fffdf5;
+    }
+    .panel {
+      background: var(--field);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .panel-chrome {
+      padding: 0.85rem 1.1rem;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--ink-chrome);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .panel-chrome .url {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--ink-body);
+    }
+    .mock {
+      padding: 1.25rem 1.25rem 1.5rem;
+      background: var(--paper);
+    }
+    .bc {
+      font-size: 0.8rem;
+      color: var(--ink-chrome);
+      margin-bottom: 0.85rem;
+    }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+    .mock h2 {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 400;
+      margin: 0 0 0.35rem;
+    }
+    .mock-intro {
+      color: var(--ink-body);
+      font-size: 0.95rem;
+      max-width: 40rem;
+      margin: 0 0 1.25rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .card.is-selected {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px var(--gold);
+    }
+    .card.is-disabled {
+      opacity: 0.72;
+    }
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      padding: 0.75rem 0.85rem 0.5rem;
+    }
+    .card-check {
+      margin-top: 0.2rem;
+      width: 1.05rem;
+      height: 1.05rem;
+      accent-color: var(--gold);
+      flex: none;
+    }
+    .card-check:disabled { cursor: not-allowed; }
+    .card-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .dot {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      flex: none;
+    }
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--ink-chrome);
+      margin-top: 0.15rem;
+    }
+    .card-body {
+      padding: 0.35rem 0.85rem 0.85rem;
+      font-size: 0.8rem;
+      color: var(--ink-body);
+      flex: 1;
+    }
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 0 0.85rem 0.85rem;
+      font-size: 0.8rem;
+    }
+    .card-actions span {
+      color: var(--ink-chrome);
+    }
+    .card-actions a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .hint-disabled {
+      font-size: 0.75rem;
+      color: #8a1528;
+      margin-top: 0.35rem;
+    }
+
+    /* Sticky compare bar */
+    .compare-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      z-index: 20;
+      border-top: 1px solid #3d414c;
+    }
+    .compare-bar.is-visible { display: flex; }
+    .compare-bar-text {
+      font-size: 0.9rem;
+    }
+    .compare-bar-text strong { color: #f0d78c; }
+    .btn {
+      font-family: var(--font-ui);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.5rem 0.95rem;
+      border-radius: 2px;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .btn-solid {
+      background: var(--gold);
+      color: #1a1a1a;
+    }
+    .btn-solid:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .btn-ghost {
+      background: transparent;
+      border-color: #6a6e7a;
+      color: #f3f1ea;
+    }
+
+    /* Compare view */
+    .compare-view[hidden] { display: none !important; }
+    .compare-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .compare-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .compare-columns { grid-template-columns: 1fr; }
+    }
+    .compare-col {
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 16rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .compare-col-head {
+      padding: 0.75rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .compare-col-kicker {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-chrome);
+      padding: 0.65rem 0.9rem 0;
+    }
+    .compare-col-body {
+      padding: 0.65rem 0.9rem 1rem;
+      font-size: 0.88rem;
+      color: var(--ink-body);
+      line-height: 1.55;
+      flex: 1;
+    }
+    .compare-col-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 0 0 0.5rem;
+    }
+    .compare-col-foot {
+      padding: 0.65rem 0.9rem 0.85rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.8rem;
+    }
+    .compare-col-foot a { color: var(--gold); text-decoration: none; }
+    .note {
+      margin-top: 1.75rem;
+      max-width: 46rem;
+      font-size: 0.9rem;
+      color: var(--ink-body);
+    }
+    .note h2 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 0 0 0.5rem;
+    }
+    .note ol { padding-left: 1.25rem; }
+    .view[hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <strong>Sandbox only</strong> — L2 Compare mode MVP. Not wired into the live election pages.
+  </div>
+
+  <div class="page">
+    <h1 class="sandbox-title">L2 — Compare mode (MVP)</h1>
+    <p class="lede">
+      Example surface: the Documents grid on <code>/election/2024</code>.
+      Select 2–3 parties that have online text, then open a simple side-by-side reading view.
+      No automatic policy alignment or AI summarising.
+    </p>
+
+    <div class="callout">
+      <strong>What this mock proposes</strong>
+      <ul>
+        <li>Checkboxes on manifesto cards that have a readable text edition.</li>
+        <li>PDF-only / no-text cards stay visible but cannot be selected.</li>
+        <li>Sticky bar when 2–3 selected → <em>Compare</em>.</li>
+        <li>Compare view: one column per party (stacks on narrow screens), excerpt + link to full reader.</li>
+      </ul>
+    </div>
+
+    <div class="steps" role="tablist" aria-label="Mock steps">
+      <button type="button" class="step-btn is-active" data-view="select">1 · Select on Documents grid</button>
+      <button type="button" class="step-btn" data-view="compare" id="step-compare" disabled>2 · Compare view</button>
+    </div>
+
+    <div class="panel">
+      <div class="panel-chrome">
+        <span id="panel-label">Election documents</span>
+        <span class="url" id="panel-url">/election/2024#documents</span>
+      </div>
+
+      <!-- SELECT VIEW -->
+      <div class="mock view" id="view-select">
+        <div class="bc">Home / Elections / 2024 / Documents</div>
+        <div class="section-label">Documents</div>
+        <h2>Party manifestos</h2>
+        <p class="mock-intro">
+          Tick up to three parties with an online text edition, then use <strong>Compare</strong> in the bar below.
+          (Interactive in this sandbox.)
+        </p>
+
+        <div class="grid" id="card-grid">
+          <article class="card" data-party="labour" data-has-text="1" style="--c: var(--labour)">
+            <div class="card-top">
+              <input type="checkbox" class="card-check" id="c-labour" aria-label="Select Labour for compare" />
+              <div>
+                <div class="card-name"><span class="dot" style="background:var(--labour)"></span> Labour</div>
+                <div class="card-meta">411 seats · text + PDF</div>
+              </div>
+            </div>
+            <div class="card-body">Change — Labour Party Manifesto 2024</div>
+            <div class="card-actions">
+              <a href="#">Original PDF · 7.8 MB</a>
+              <a href="#">Read online</a>
+            </div>
+          </article>
+
+          <article class="card" data-party="conservative" data-has-text="1" style="--c: var(--con)">
+            <div class="card-top">
+              <input type="checkbox" class="card-check" id="c-con" aria-label="Select Conservatives for compare" />
+              <div>
+                <div class="card-name"><span class="dot" style="background:var(--con)"></span> Conservatives</div>
+                <div class="card-meta">121 seats · text + PDF</div>
+              </div>
+            </div>
+            <div class="card-body">Clear Plan · Bold Action · Secure Future</div>
+            <div class="card-actions">
+              <a href="#">Original PDF · 5.2 MB</a>
+              <a href="#">Read online</a>
+            </div>
+          </article>
+
+          <article class="card" data-party="libdem" data-has-text="1" style="--c: var(--libdem)">
+            <div class="card-top">
+              <input type="checkbox" class="card-check" id="c-ld" aria-label="Select Liberal Democrats for compare" />
+              <div>
+                <div class="card-name"><span class="dot" style="background:var(--libdem)"></span> Liberal Democrats</div>
+                <div class="card-meta">72 seats · text + PDF</div>
+              </div>
+            </div>
+            <div class="card-body">For a Fair Deal</div>
+            <div class="card-actions">
+              <a href="#">Original PDF · 4.1 MB</a>
+              <a href="#">Read online</a>
+            </div>
+          </article>
+
+          <article class="card" data-party="reform" data-has-text="1" style="--c: var(--reform)">
+            <div class="card-top">
+              <input type="checkbox" class="card-check" id="c-reform" aria-label="Select Reform UK for compare" />
+              <div>
+                <div class="card-name"><span class="dot" style="background:var(--reform)"></span> Reform UK</div>
+                <div class="card-meta">5 seats · text + PDF</div>
+              </div>
+            </div>
+            <div class="card-body">Our Contract with You</div>
+            <div class="card-actions">
+              <a href="#">Original PDF · 2.4 MB</a>
+              <a href="#">Read online</a>
+            </div>
+          </article>
+
+          <article class="card is-disabled" data-party="example-pdf" data-has-text="0">
+            <div class="card-top">
+              <input type="checkbox" class="card-check" disabled aria-label="Cannot select — no online text" />
+              <div>
+                <div class="card-name"><span class="dot" style="background:#6b7280"></span> Example party</div>
+                <div class="card-meta">0 seats · PDF only</div>
+              </div>
+            </div>
+            <div class="card-body">Scan held; transcription not yet archived.</div>
+            <div class="card-actions">
+              <a href="#">Original PDF · 1.1 MB</a>
+              <span>Read online unavailable</span>
+              <p class="hint-disabled">Cannot compare — no online text</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- COMPARE VIEW -->
+      <div class="mock view" id="view-compare" hidden>
+        <div class="compare-toolbar">
+          <div>
+            <div class="section-label">Compare</div>
+            <h2 style="margin:0;font-family:var(--font-display);font-size:1.75rem;font-weight:400">2024 general election</h2>
+            <p class="mock-intro" style="margin-top:0.35rem;margin-bottom:0">Side-by-side excerpts from transcribed editions. Scroll each column independently.</p>
+          </div>
+          <button type="button" class="btn btn-ghost" id="back-to-docs" style="border-color:var(--line);color:var(--ink-body)">← Back to documents</button>
+        </div>
+        <div class="compare-columns" id="compare-columns"></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <h2>If approved, production behaviour</h2>
+      <ol>
+        <li>Wire checkboxes into election Documents cards in <code>js/app.js</code> (and devolved grids later if useful).</li>
+        <li>Cap at <strong>3</strong> selections; disable further checks with a short status message.</li>
+        <li>Compare route or in-page state: e.g. <code>/election/2024/compare?parties=labour,conservative,libdem</code> (shareable).</li>
+        <li>Load first ~N paragraphs (or first section) from each <code>manifesto.md</code>; link “Open full manifesto” to the existing reader.</li>
+        <li>Mobile: columns stack; sticky bar stays. No NLP / “theme matching”.</li>
+      </ol>
+      <p style="margin-top:1rem">
+        Open locally: <code>sandbox/l2-compare-mode.html</code>
+      </p>
+    </div>
+  </div>
+
+  <div class="compare-bar" id="compare-bar" aria-live="polite">
+    <span class="compare-bar-text" id="compare-bar-text">Select 2 or 3 parties to compare</span>
+    <button type="button" class="btn btn-ghost" id="clear-sel">Clear</button>
+    <button type="button" class="btn btn-solid" id="open-compare" disabled>Compare</button>
+  </div>
+
+  <script>
+    const MAX = 3;
+    const EXCERPTS = {
+      labour: {
+        name: 'Labour',
+        color: 'var(--labour)',
+        title: 'Mission-driven government',
+        body: 'Britain faces its most consequential election for a generation. Our country has been held back by a lack of growth, crumbling public services, and a politics that talks down to people. Labour will rebuild Britain with a mission-driven government…',
+        href: '/manifesto/2024/labour',
+      },
+      conservative: {
+        name: 'Conservatives',
+        color: 'var(--con)',
+        title: 'Secure Future',
+        body: 'This election is about who has a serious plan. We will cut taxes for working people, stop the boats, and protect the pension triple lock — while keeping our nuclear deterrent and supporting Ukraine…',
+        href: '/manifesto/2024/conservative',
+      },
+      libdem: {
+        name: 'Liberal Democrats',
+        color: 'var(--libdem)',
+        title: 'For a Fair Deal',
+        body: 'The Liberal Democrats offer a fair deal for Britain’s people and Britain’s future. Fix the NHS and social care. Invest in opportunities for every child. Tackle the climate emergency with practical action…',
+        href: '/manifesto/2024/libdem',
+      },
+      reform: {
+        name: 'Reform UK',
+        color: 'var(--reform)',
+        title: 'Our Contract with You',
+        body: 'Reform UK will put the British people first. Leave the European Convention on Human Rights if needed to stop the boats. Cut immigration. Scrap net zero targets that drive up bills…',
+        href: '/manifesto/2024/reform',
+      },
+    };
+
+    const checks = [...document.querySelectorAll('.card-check:not(:disabled)')];
+    const bar = document.getElementById('compare-bar');
+    const barText = document.getElementById('compare-bar-text');
+    const openBtn = document.getElementById('open-compare');
+    const clearBtn = document.getElementById('clear-sel');
+    const viewSelect = document.getElementById('view-select');
+    const viewCompare = document.getElementById('view-compare');
+    const columns = document.getElementById('compare-columns');
+    const stepSelect = document.querySelector('[data-view="select"]');
+    const stepCompare = document.getElementById('step-compare');
+    const panelLabel = document.getElementById('panel-label');
+    const panelUrl = document.getElementById('panel-url');
+
+    function selected() {
+      return checks.filter(c => c.checked).map(c => c.closest('.card').dataset.party);
+    }
+
+    function syncCards() {
+      const sel = selected();
+      document.querySelectorAll('.card[data-has-text="1"]').forEach(card => {
+        const on = sel.includes(card.dataset.party);
+        card.classList.toggle('is-selected', on);
+        const box = card.querySelector('.card-check');
+        if (!on && sel.length >= MAX) box.disabled = true;
+        else box.disabled = false;
+      });
+      const n = sel.length;
+      bar.classList.toggle('is-visible', n >= 1);
+      if (n === 0) barText.innerHTML = 'Select 2 or 3 parties to compare';
+      else if (n === 1) barText.innerHTML = '<strong>1</strong> selected — pick at least one more';
+      else barText.innerHTML = `<strong>${n}</strong> selected — ready to compare`;
+      openBtn.disabled = n < 2 || n > MAX;
+      stepCompare.disabled = n < 2;
+    }
+
+    function showSelect() {
+      viewSelect.hidden = false;
+      viewCompare.hidden = true;
+      stepSelect.classList.add('is-active');
+      stepCompare.classList.remove('is-active');
+      panelLabel.textContent = 'Election documents';
+      panelUrl.textContent = '/election/2024#documents';
+      syncCards();
+    }
+
+    function showCompare() {
+      const sel = selected();
+      if (sel.length < 2) return;
+      columns.innerHTML = sel.map(id => {
+        const e = EXCERPTS[id];
+        return `<article class="compare-col">
+          <div class="compare-col-head"><span class="dot" style="background:${e.color}"></span>${e.name}</div>
+          <div class="compare-col-kicker">Excerpt</div>
+          <div class="compare-col-body">
+            <h3>${e.title}</h3>
+            <p>${e.body}</p>
+          </div>
+          <div class="compare-col-foot"><a href="${e.href}">Open full manifesto →</a></div>
+        </article>`;
+      }).join('');
+      viewSelect.hidden = true;
+      viewCompare.hidden = false;
+      bar.classList.remove('is-visible');
+      stepSelect.classList.remove('is-active');
+      stepCompare.classList.add('is-active');
+      panelLabel.textContent = 'Compare view';
+      panelUrl.textContent = '/election/2024/compare?parties=' + sel.join(',');
+    }
+
+    checks.forEach(c => c.addEventListener('change', syncCards));
+    clearBtn.addEventListener('click', () => {
+      checks.forEach(c => { c.checked = false; c.disabled = false; });
+      showSelect();
+    });
+    openBtn.addEventListener('click', showCompare);
+    document.getElementById('back-to-docs').addEventListener('click', showSelect);
+    stepSelect.addEventListener('click', showSelect);
+    stepCompare.addEventListener('click', () => { if (!stepCompare.disabled) showCompare(); });
+
+    // Prefill a sensible demo selection
+    document.getElementById('c-labour').checked = true;
+    document.getElementById('c-con').checked = true;
+    document.getElementById('c-ld').checked = true;
+    syncCards();
+  </script>
+</body>
+</html>

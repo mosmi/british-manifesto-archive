@@ -162,7 +162,6 @@ function londonManifestoCard(m, electionOrYear) {
   const partyName = londonPartyName(m, year);
   const heading = m.candidate || partyName;
   const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
 
   // Route slug = folder id (not affiliation): livingstone ≠ independent
   const routeSlug = londonManifestoRouteSlug(m);
@@ -182,6 +181,9 @@ function londonManifestoCard(m, electionOrYear) {
   const thumbLabel = hasText
     ? `Read ${heading} ${year} manifesto online`
     : `Open the ${heading} manifesto PDF`;
+  const pdfLink = m.pdf && typeof pdfCtaHtml === 'function'
+    ? pdfCtaHtml({ href: m.pdf, size: pdfSize, scanNote: true })
+    : '';
 
   return `
     <div class="manifesto-card" style="--party-color:${color};--party-dim:rgba(0,0,0,0.04)">
@@ -203,10 +205,7 @@ function londonManifestoCard(m, electionOrYear) {
       </div>
       <div class="manifesto-card-body">
         ${m.title ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        ${m.pdf ? `<a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Original Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
-        </a>` : ''}
+        ${pdfLink}
         ${textLink}
       </div>
     </div>`;

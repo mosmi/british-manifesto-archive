@@ -27,13 +27,14 @@ sections:
   - local-government
 ---
 
+
 # Democratic Unionist Party Manifesto 2019
 
 ## Let's Get the UK Moving Again
 
 *Democratic Unionist Party General Election Manifesto 2019*
 
-### Leader’s Message
+## Leader’s Message
 
 **The Democratic Unionist Party has set out our 12-point plan to deliver on the people’s priorities on health, education, jobs, childcare and protecting the vulnerable through having a working Assembly back and an All-Party Executive in place.**
 
@@ -77,7 +78,7 @@ Others seek a mandate to do nothing in this election – nothing in the Assembly
 
 ## Foreword
 
-### Deputy Leader/Parliamentary Party Leader’s Message
+## Deputy Leader/Parliamentary Party Leader’s Message
 
 **At the last Westminster election, the votes of people in Northern Ireland helped return the strongest ever team of DUP Members of Parliament.**
 
@@ -103,9 +104,9 @@ The DUP voted against Boris Johnson’s Brexit deal and we will use our votes an
 
 The DUP has a positive plan for the future of our country, and a track record of working for Northern Ireland. While others talk about delivery, we can stand over what has been achieved as a result of the votes cast for our party. On 12th December vote for the DUP plan for a Brighter Future; vote to protect Northern Ireland’s place in the United Kingdom; vote to get Northern Ireland Moving Again.
 
-#### Rt Hon Nigel Dodds Deputy Leader, Democratic Unionist Party
+## Rt Hon Nigel Dodds Deputy Leader, Democratic Unionist Party
 
-### Manifesto Summary: 10 Key Points
+## Manifesto Summary: 10 Key Points
 
 1. **Delivering for Northern Ireland** — Northern Ireland needs represented by a strong team with the record of delivering for all by working with other parties.
 2. **Helping Family Incomes Grow** — With austerity over, unemployment low and the economy growing it is time to ensure that people feel the benefits in their incomes and in their lives.
@@ -118,7 +119,7 @@ The DUP has a positive plan for the future of our country, and a track record of
 9. **Next Generation Unionism** — Reforming Parliament and politics and reshaping the relationships with the devolved institutions and pro-active engagement and promotion of the ties that bind us.
 10. **12-point plan for Northern Ireland** — Action at a national level that helps deliver our 12-point plan to get Northern Ireland moving again in key areas such as health, education and crime.
 
-#### Reasons to Vote DUP
+## Reasons to Vote DUP
 
 * The strongest unionist team to speak up for Northern Ireland at Westminster.
 * For a strong DUP team who will not support a Corbyn Government.
@@ -127,13 +128,13 @@ The DUP has a positive plan for the future of our country, and a track record of
 * Send a message that there can be no borders in the Irish Sea.
 * To get Northern Ireland moving again with a re-established Executive and Assembly taking meaningful decisions on health and education.
 
-### Delivering for Northern Ireland
+## Delivering for Northern Ireland
 
 **The DUP Confidence and Supply Agreement with the Conservative Party has delivered much for Northern Ireland. Even our opponents accept that more has been achieved for Northern Ireland as a result of electing ten DUP Members of Parliament who held the balance of power. With such an unpredictable election it is very possible it could happen again.**
 
 Extra resources alone cannot solve every problem, but additional money has been able to provide vital investment. Without it we would have seen more and more front-line services slip back and no support for new services to develop. More and better could have been achieved with a working Assembly but the value of Confidence and Supply funding has been vital in key services like our NHS and our schools.
 
-#### More for our health service
+## More for our health service
 
 The injection of funding from the Confidence and Supply Agreement has proved absolutely essential. As well as allocations for immediate in-year pressures, £200 million was secured for health transformation. The £100 million in the first year has been invested in a range of transformation initiatives including funding extra capacity to help with waiting lists. It has permitted progress on multidisciplinary teams in primary care, elective centres and workforce development, with examples including:
 
@@ -173,7 +174,7 @@ A number of mental health projects were funded including:
 
 * £4.6 million for psychological therapies.
 
-#### More for children
+## More for children
 
 Our children and the next generation of Northern Ireland have been supported through Confidence and Supply. £16.5million received by the Department of Education has benefited local schools in a number of ways including:
 
@@ -201,7 +202,7 @@ Schools across Northern Ireland benefited from this investment:
 
 - Newry Mourne and Down, 67 schools receiving £1,067,884 - Armagh City, Banbridge and Craigavon, 27 schools receiving £494,292 The lasting effect of this real investment in real lives will be to help our future generations achieve a better, well-educated and ambitious future for themselves as well as their community.
 
-#### More Jobs
+## More Jobs
 
 Many councils and parts of the United Kingdom have made City and Growth Deals with the national government. These deals represent extra
 
@@ -211,7 +212,7 @@ Prior to the agreement, no Council in Northern Ireland had ever had such a deal.
 
 This will be the long-lasting legacy of the Confidence and Supply Agreement.
 
-### Helping Family Incomes Grow
+## Helping Family Incomes Grow
 
 **The era of austerity is over. Public spending and tax policy should reflect that.**
 
@@ -219,7 +220,7 @@ The DUP believes money is better in your pocket than the government’s. A succe
 
 Those that have worked hard all their lives should not be penalised in retirement.
 
-#### Personal Taxes and Incomes
+## Personal Taxes and Incomes
 
 The gradual increase in the personal tax allowance has been positive for all taxpayers, but especially for the lowest paid, taking them out of the tax system entirely. The DUP were to the fore in calling for increases in the personal tax allowance, which has subsequently benefited many people in Northern Ireland. We want to see new reforms progressed that will benefit the lowest paid the most. In this Parliament the DUP will support:
 
@@ -237,7 +238,7 @@ The gradual increase in the personal tax allowance has been positive for all tax
 
 * The two-child limit on Universal credit should be raised to 3 and then 4 in this Parliamentary term.
 
-#### The People’s Choice
+## The People’s Choice
 
 The new and older generations have seen a transformation in how they access and watch their film, television and music entertainment-including Netflix, Amazon, Now TV, Spotify, AppleTV etc. Each person gets to decide which services they want and what they are willing to pay-free to choose what they spend their money on. This transformation has made the BBC licence fee, a regressive tax on the poorest, an anachronism.
 
@@ -245,7 +246,7 @@ The licence fee should be abolished. People should be free to choose how they sp
 
 The BBC boasts of the quality of what it produces. However, this is not an argument against change, but for it. This confidence in its product is surely what can make it flourish as a successful subscription-based service and grow beyond the UK as a high-quality global brand. Freedom for licence fee payers will also mean freedom for the BBC to grow to something even bigger and better, and create fairer competition for media outlets nationally and locally.
 
-#### Supporting Older People
+## Supporting Older People
 
 The DUP has a strong record as a champion of older people. We will continue to do so in Parliament by supporting:
 
@@ -255,7 +256,7 @@ The DUP has a strong record as a champion of older people. We will continue to d
 
 * Action on the unfair treatment of women pensioners with a suitable compensatory scheme established.
 
-#### Family Budgets and Taxes
+## Family Budgets and Taxes
 
 VAT and other indirect taxes are a key strain on family budgets and leaving the European Union effectively will give the UK the flexibility it needs to act. The DUP will support:
 
@@ -271,7 +272,7 @@ VAT and other indirect taxes are a key strain on family budgets and leaving the 
 
 * Maintaining the freeze in fuel duty.
 
-#### Pension Changes
+## Pension Changes
 
 The Government was right to ensure people make greater pension provision. People should have the resources to enjoy a comfortable retirement. However, there have been a series of changes to the pension system combined with changes to defined benefits schemes which are creating significant disincentives for people to progress in key organisations and operate optimally in the NHS without punitive tax bills. These often function as stealth taxation. The pension system must:
 
@@ -279,11 +280,11 @@ The Government was right to ensure people make greater pension provision. People
 
 * Within two years establish comprehensive, user-friendly pensions dashboards for self-employed people with the necessary legislation to compel pension schemes to share data.
 
-#### Fairness in Public Sector Pay
+## Fairness in Public Sector Pay
 
 With the end of austerity, there needs to be a prioritisation of the public sector pay rises especially in our NHS, police and armed forces. This means pay rises should not only take account of inflation but of the need to uplift rates to restore the full value of public sector pay.
 
-#### Social Care & the Blood Scandal
+## Social Care & the Blood Scandal
 
 The United Kingdom faces a growing ageing population with higher and more complex health needs. The decline of family and community networks increases the demands on public services. The costs of social care are a significant burden and fear for older people and their families. This needs a national solution. The DUP calls for:
 
@@ -293,13 +294,13 @@ Another national health issue needing resolution is those affected by the contam
 
 * Establishing a compensation panel for the victims and families of those who suffered from receiving contaminated blood products.
 
-### National Infrastructure Investment that delivers for the United Kingdom
+## National Infrastructure Investment that delivers for the United Kingdom
 
 **Northern Ireland is on the geographic periphery of the Atlantic Ocean, British Isles and Europe. Even if within Northern Ireland we had a fully upgraded road network, expanding public transport, up to date airports, modern shipping ports and the latest digital infrastructure the networks and connectivity beyond our shores are crucial to us.**
 
 What is built or not built in Great Britain matters to Northern Ireland.
 
-#### Spend Better – Cancel HS2
+## Spend Better – Cancel HS2
 
 The economic case for HS2 simply does not stand up. The scale of investment in one route cannot be justified. It is about making more of England a suburb of London than rebalancing and expanding the economy of the United Kingdom, and an unwillingness to stop a poor project simply because money has already been spent. The money should still be invested and spent better on:
 
@@ -315,7 +316,7 @@ In the midst of the fevered debate about the likelihood or viability of this con
 
 * The national government should make investment in these roads a national infrastructure priority, especially the A75 as Northern Ireland’s main connection to the Northern Powerhouse.
 
-#### Build Heathrow’s Third Runway
+## Build Heathrow’s Third Runway
 
 The UK needs more international air linkages and following extensive research the conclusion is that the third runway at Heathrow represents the best solution for the UK. Such a positive and strategic intervention must also deliver for the regions of the UK.
 
@@ -323,7 +324,7 @@ The expansion of Heathrow must be on the condition of designated slots for regio
 
 hubs due to be set up as part of its airport expansion programme. If chosen, this project will act as a catalyst for long term economic growth across the Province and further underpin the local reputation for excellence in the construction and manufacturing sectors. This extra national capacity needs to be complemented by establishing a new Air Routes Task Force.
 
-#### Digital Infrastructure
+## Digital Infrastructure
 
 Digital network infrastructure, which connects us to the Internet, and to each other, is increasingly recognised as core economic infrastructure, like electricity, gas and water. They are central to tackling the UK’s productivity problem. The DUP will support:
 
@@ -331,7 +332,7 @@ Digital network infrastructure, which connects us to the Internet, and to each o
 
 * 5G network rollout.
 
-#### Energy
+## Energy
 
 Interconnection is central to a future energy strategy especially to those countries with stronger access to renewables.
 
@@ -339,11 +340,11 @@ The DUP supports:
 
 * The pursuit of a strong interconnection strategy including with Iceland (and examination of Icelandic interconnection making landfall in Northern Ireland).
 
-#### Representation
+## Representation
 
 The National Infrastructure Commission should aspire to be just that, truly national. Therefore, in addition to the members appointed by the national government, the devolved institutions should be able to nominate a suitably experienced appointee.
 
-### Truly Internationally Competitive
+## Truly Internationally Competitive
 
 **Our economy will be driven forward by investment in strategic infrastructure in a business-friendly environment, but equally if not more important will be our people and their skills.**
 
@@ -389,7 +390,7 @@ To achieve these goals the DUP will support:
 
 * a Trade Accelerator Plan including an enhanced range of initiatives to help support both new and existing exporters to explore new markets
 
-### Leaving the European Union as One United Kingdom
+## Leaving the European Union as One United Kingdom
 
 **The DUP is committed to a deal that works for the whole of the United Kingdom and which does not leave Northern Ireland behind.**
 
@@ -399,11 +400,11 @@ In the last Parliament, it was the votes of the DUP that altered the course of e
 
 between Great Britain and Northern Ireland, and consequentially higher prices and less choice for consumers as GB businesses opt for ‘not available in Northern Ireland’. Northern Ireland trades far more with Great Britain than it does with the Republic of Ireland, European Union and rest of the world combined. Yet the proposals put forward would see our East-West trade subject to the rules of the EU Customs Union, notwithstanding that Northern Ireland would remain part of the UK customs territory. The DUP will continue to work to shape a solution in Northern Ireland’s interests. The prism through which the DUP will judge each situation and vote is what is best for Northern Ireland economically and constitutionally within the Union.
 
-### A Global UK
+## A Global UK
 
 **If the United Kingdom’s goal is a Global UK then it must ensure it has a clear plan and strategy to achieve it.**
 
-#### Foreign Development Aid
+## Foreign Development Aid
 
 The United Kingdom ranks amongst the most generous in the world in its commitment to Foreign Development Aid. According to the OECD’s Development Assistance Committee the UK is the second largest donor in cash terms and sixth largest donor in GNI contribution. This commitment is also reflected in the public support for many UK charities who work abroad. The DUP supports:
 
@@ -415,7 +416,7 @@ The United Kingdom ranks amongst the most generous in the world in its commitmen
 
 * Regular reviews of safeguarding practices by agencies supported through foreign aid to prevent a repeat of past abuses by aid workers.
 
-#### Representing British Interests Effectively
+## Representing British Interests Effectively
 
 There must be a proactive and positive plan for UK global engagement:
 
@@ -427,13 +428,13 @@ trade. Many Commonwealth members are transforming economically and socially. The
 
 * Defending British Sovereignty - The DUP supports the people of the Falklands and Gibraltar. Their expressed desire to remain linked to the United Kingdom is admirable and must be respected and if necessary defended.
 
-#### Libyan Assets and Victims
+## Libyan Assets and Victims
 
 The weaponry supplied by the Libyan government to the PIRA cost so many lives. The DUP supports:
 
 * UK victims properly compensated from the Libyan seized assets.
 
-#### Defending Fundamental Human Rights
+## Defending Fundamental Human Rights
 
 The DUP successfully urged the government to take seriously international human rights abuses against Christians and other faith groups. This work needs to be continued in the next Parliament through:
 
@@ -445,15 +446,15 @@ The DUP successfully urged the government to take seriously international human 
 
 * Retaining the Foreign Secretary’s Human Rights Advisory Group, and ensure that there are at least three representatives from civil society which specialise on Freedom of Religion and Belief.
 
-#### Immigration system
+## Immigration system
 
 The United Kingdom should develop a points-based immigration system that will be built around attracting the best of global talent to the United Kingdom and addressing the skills gaps within our labour market. The system must also address localised labour needs through not only a national skills gap list but supplementary lists for the constituent parts of the United Kingdom.
 
-### Our Green and Pleasant Land
+## Our Green and Pleasant Land
 
 **The primary custodians of our rural areas are the farming community. Their commitment and strength of connection to their farms and businesses are vital to sustaining rural communities, producing high quality food and improving our environment.**
 
-#### Farming and Fisheries support
+## Farming and Fisheries support
 
 The DUP has a clear vision for our farmers and is committed to ensuring the necessary policy and financial support to enable all of the different sectors to become more profitable, sustainable and productive. During the last Parliament through our Confidence and Supply Agreement we secured commitments to the same level of direct support in cash terms as currently received through the Common Agriculture Policy. We also ensured that the needs of our farmers are reflected in the forthcoming UK Agriculture Bill and will continue to make changes to the Bill in preparation for the UK leaving the European Union. Future agriculture policy is best delivered through devolution reflecting the needs of each constituent part of the United Kingdom. The Agriculture Bill allows this flexibility. In order to take full advantage of this opportunity and keep our farming and food sector moving forward we want to see devolution restored and a local minister in charge of developing that new vision for agriculture. It is regrettable that we do not have willing partners with whom to form an Executive at Stormont. As we leave the EU we will have the opportunity to shape a new agricultural policy to produce the amounts of food we want, to the standards we need, to make our environment better and deliver on climate change goals. The DUP believes:
 
@@ -483,7 +484,7 @@ The DUP is committed to an end to the remote management from Brussels and a new 
 
 * a new fisheries bill for the UK which will ensure that we take back control of our territorial waters, secure fair quota arrangements through annual fisheries agreements, prioritise access to UK inshore zones to UK fishing vessels and deliver an environmentally responsible and sustainable fisheries management regime. In order to grow the opportunity for our fishing industry we will work with national and local government to improve facilities at harbours within Northern Ireland so that greater amounts of our catch can be landed and processed at local ports thereby boasting the local economy and employment prospects in coastal areas.
 
-#### Protecting Our National Natural Wealth
+## Protecting Our National Natural Wealth
 
 Our land, our waters and our air are our natural wealth. It is a common desire that these should be passed on to the next generation in better condition than we found them. Many of the issues around the environment do not stop at the boundaries of the constituent parts of the United Kingdom nor the borders of the United Kingdom. The integrated nature of our economy reinforces the need to work together and work well. Therefore, we believe a national approach to environmental protection is what is needed.
 
@@ -513,7 +514,7 @@ The United Kingdom is a world leader on climate action and this was reflected in
 
 * The transition and transformation this involves must be a just one for poorer sections of the community and regions.
 
-#### Same Distance Travelled
+## Same Distance Travelled
 
 Each constituent part of the United Kingdom’s work on climate action must be based on the distinct opportunities and challenges they face. The Committee on Climate Change (CCC) recognises this and has recommended different targets for the four constituent parts of the UK that would still enable the nation to achieve its Net Zero target. The same distance travelled in each part of the UK will deliver the national target but not require a common local target everywhere. It must be recognised that Northern Ireland is the UK region with the greatest distance to travel and sectors that will be the most difficult to transform. In the recent CCC report on Net Zero, it recommended a target for Northern Ireland of 78-80% reduction in CO2 by 2050. However, with no Assembly or Executive it has never been asked for a formal recommendation. The DUP will:
 
@@ -521,7 +522,7 @@ Each constituent part of the United Kingdom’s work on climate action must be b
 
 * Adopt that target and use the Programme for Government and the strategies and plans that flow from it to put it into practical action.
 
-#### Cleaner Transport and Cleaner Air
+## Cleaner Transport and Cleaner Air
 
 The primary challenge of transport and air quality is tackling the pollution from diesel engines and older vehicles. This can be achieved by:
 
@@ -533,7 +534,7 @@ The primary challenge of transport and air quality is tackling the pollution fro
 
 * The development of a national Compressed National Gas Fuel network for HGVs, buses and coaches.
 
-### A New Long-Term National Defence Approach
+## A New Long-Term National Defence Approach
 
 **The DUP does not believe that the current defence arrangements for the United Kingdom are adequate enough to cope with either the existing or the emerging threats of the 21st Century. It is clear from the decision-making of the Ministry of Defence that they do not have confidence in its own Defence and National Security Reviews.**
 
@@ -547,7 +548,7 @@ The dissident Republican terrorist threat is a major concern to all our citizens
 
 This is the DUP’s Plan to strengthen the UK’s defences and support service personnel and veterans.
 
-#### National strategic defence & security review
+## National strategic defence & security review
 
 Post-Brexit, the UK must reconsider its strategic position in terms of Defence and Security. Government needs to give a clear strategic vision of the UK’s place in the world and our strategic aims and ambitions. A Review needs to be conducted, independent of government, in order that we have an honest assessment of our current capability and capacity. That will generate a clear indication of the ‘gap’ between what we need to do and what we are currently able to do. Then decisions can be taken about the level of funding required to close the ‘gap’ or the level of risk Government is willing to take on National Security.
 
@@ -557,31 +558,31 @@ The National Strategic Defence and Security Review would be the basis to establi
 
 defence spending, a target we call ‘2% plus’ to plan for systematic defence spending increases. In addition to this new target there should be a long-term (5 year) capital settlement for equipment needs of the Armed Forces. This will enable better planning, sustainable defence contracts and as a result greater value for money.
 
-#### Full implementation of the Armed Forces Covenant across the United Kingdom
+## Full implementation of the Armed Forces Covenant across the United Kingdom
 
 Northern Ireland is a part of the United Kingdom with both an immense contribution to, and debt to, our Armed Forces for the protection they provided in the successful execution of Operation Banner. This is partly why fulfilling the Military Covenant is particularly important for us. We believe that the Military Covenant should be reviewed and updated. The DUP supports the introduction of the Office for Veterans Affairs to co-ordinate cross government efforts to ensure the Covenant is fully implemented. The DUP is conscious how equality legislation in Northern Ireland has been used to hamper the fulfilment of both the spirit and the practical elements of the Covenant here. It wishes to see this situation ended and veterans in Northern Ireland to be treated equally to veterans right across the United Kingdom. The DUP also believes that British military veterans living in the Republic of Ireland should also have unfettered access to the benefits of the Covenant.
 
 For serving soldiers the DUP supports the recommendation of the Defence Select Committee to remove Crown Protection to force action to reduce deaths in training.
 
-#### Maintaining our independent nuclear deterrent, and tackling nuclear proliferation
+## Maintaining our independent nuclear deterrent, and tackling nuclear proliferation
 
 The DUP supports the UK’s independent nuclear deterrent and will continue to support Trident’s renewal. We believe the UK should use all international forums to completely overhaul the approaches to counter proliferation and prevent the likes of Iran and North Korea developing and further proliferating such capabilities. We believe that all of the funding of the nuclear deterrent programme should be ring-fenced outside of the Defence budget, recognising the unique nature of this National critical strategic asset.
 
-#### Playing a full role in international military and security relationships
+## Playing a full role in international military and security relationships
 
 The DUP supports our participation in NATO but shares the American concerns that other members are consistently failing to fulfil the minimum spending target. The development of the European Union Defence Force attempts to hide this chronic underinvestment, and contributes to incoherent responses to threats already dealt with by existing international structures such as NATO and the United Nations.
 
-#### A Cybersecurity leader for the United Kingdom
+## A Cybersecurity leader for the United Kingdom
 
 Cyber activity continues to evolve as a dominant threat to global security. The knowledge economy in Northern Ireland has developed a cybersecurity specialism and DUP believes this is a critical area where Northern Ireland could contribute to countering the growing threat to national and global security. We support the expansion of cybersecurity research and the creation of a National Cyber Security ‘hub’ in Northern Ireland.
 
-#### Investing in a success story – Northern Ireland and Reserve Forces
+## Investing in a success story – Northern Ireland and Reserve Forces
 
 The contribution and role of Reserve Forces is a key element of Defence capability. Northern Ireland’s contribution to UK reserves is disproportionate to our size and this contribution needs to be matched by the necessary investment in facilities and infrastructure in Northern Ireland. The DUP wants a £15m investment package to upgrade reserve training facilities at Ballykinler, Enniskillen, Ballymena, Coleraine, Londonderry and Belfast. As recognition of past service the DUP will support:
 
 A new Combined Military Museum for Northern Ireland in partnership with national museums to develop a prestigious tourist attraction.
 
-#### A review of the present terrorism legislation
+## A review of the present terrorism legislation
 
 The DUP believes that considering the multi-faceted evolving and insidious nature of the terrorist threat it is time to review whether
 
@@ -595,11 +596,11 @@ present arrangements need to be updated or upgraded. This review should include:
 
 * Consideration of Intelligence and Security Committee membership representing all regions of the UK
 
-#### Legal Protections for Soldiers and Veterans
+## Legal Protections for Soldiers and Veterans
 
 The fundamental failures of the Iraq Historical Investigations Team (IHAT) and the disproportionate focus upon security personnel in Legacy Investigations demonstrate a clear need to provide better protections for those who saw active service or contributed to the fight against terrorism. With IHAT veterans hounded on a series of false allegations and in Northern Ireland Legacy Cases almost all security force related deaths are being reinvestigated while only a fraction of paramilitary killings have been. The Defence Select Committee proposed a Qualified Statute of Limitations. The DUP recognises the importance of all service personnel upholding the very highest standards in order to maintain the reputation of the forces and the colleagues they serve alongside. We are supportive in principle of exploring protections for the armed forces where they would not lead to an amnesty or be restricted to operations outside the United Kingdom.
 
-#### Valuing Soldiers’ Service
+## Valuing Soldiers’ Service
 
 The condition and maintenance of much Army housing is unacceptable. Decent housing provision for Service personnel and their families should be the minimum not the target.
 
@@ -613,7 +614,7 @@ Kingdom, should be welcomed when they choose to settle in the UK. The DUP suppor
 
 * Waiving indefinite leave to remain fees for former service personnel and their families applying to take up their right to settle here.
 
-#### Resisting attempts to rewrite the past.
+## Resisting attempts to rewrite the past.
 
 Ninety percent of those who died during the Troubles were killed by paramilitaries yet the balance of investigations is disproportionately against former police officers and soldiers. A one-sided approach only serves those who want to re-write the past and glorify terrorism.
 
@@ -621,11 +622,11 @@ It is only natural that the public are outraged to see former soldiers who stood
 
 Our troubled past can only be dealt with effectively in an honest and holistic manner, not the partial way republicans would wish. Government needs to ensure terrorists are pursued, with full police powers to conduct effective and comprehensive investigations and arrest suspects. We will do everything we can to assist innocent victims to obtain a measure of justice.
 
-#### Bringing Armed Forces Day to Northern Ireland
+## Bringing Armed Forces Day to Northern Ireland
 
 It is unacceptable that Northern Ireland has never hosted the main national event for Armed Forces Day in the UK. The DUP wish to see Northern Ireland host the main national event at some point in the life of the next Parliament and regularly thereafter. It would be a welcome addition to a programme of events to celebrate Northern Ireland’s Centenary in 2021.
 
-### Next Generation Unionism
+## Next Generation Unionism
 
 **With Northern Ireland’s centenary less than two years away, we are seeking to develop a long-term vision for Unionism and Northern Ireland beyond 2021.**
 
@@ -671,52 +672,52 @@ In terms of cultural wealth and linkages the DUP supports:
 
 * National Access to our National Cultural Wealth - National cultural institutions have become less London centric but they remain too England centric. Access to our national cultural wealth is not enjoyed equally, and what practical barriers do exist do not justify this. The DUP supports a new National Cultural Wealth Plan to increase touring exhibitions, display artefacts in other national museums and create shared exhibition space across the UK for the likes of the Imperial War Museum, V&A or Tate Gallery to place long and short-term exhibitions.
 
-### Our 12 Point Plan To Get Northern Ireland Moving Again
+## Our 12 Point Plan To Get Northern Ireland Moving Again
 
-#### Let's Get the Assembly Moving Again
+## Let's Get the Assembly Moving Again
 
 Delivery from Westminster is much needed but its impact is impaired by no Assembly. The DUP want to work with others to secure a balanced deal and we remain willing to set up an Executive immediately.
 
-#### Let's Get Our NHS and Mental Health Services Moving Again
+## Let's Get Our NHS and Mental Health Services Moving Again
 
 Developing next generation healthcare by implementing Bengoa and investing in new services, GPs and health staff, tackling waiting lists, embracing AI and new technology and prioritising prevention. A new future for mental health services by boosting prevention, leading on trauma and increasing investment to transform services.
 
-#### Let's Get Our Schools Moving Again
+## Let's Get Our Schools Moving Again
 
 Ensure the Barnett uplift in education gets to school budgets; lifting the burden of bureaucracy on principals and teachers; an action plan on Adverse Childhood Experiences; and 30 hours for 38 weeks childcare provision for 3-4 year olds.
 
-#### Let's Get Our Economy Moving Again
+## Let's Get Our Economy Moving Again
 
 The Assembly and Westminster has helped deliver a jobs revolution in Northern Ireland. Now it is time to do the same for skills and productivity backed up by infrastructure investment and a business rates system fit for our modern economy. We want to see a sensible Brexit deal but no borders in the Irish Sea.
 
-#### Let's Continue Protecting the Vulnerable
+## Let's Continue Protecting the Vulnerable
 
 The DUP were the first advocates of a mitigations package for Welfare. We want an Assembly back to produce a new package based on expert advice and end the 'Cliff Edge' created by Sinn Fein's boycott.
 
-#### Let's Protect Mothers & Unborn Life Again
+## Let's Protect Mothers & Unborn Life Again
 
 The dangerous vacuum of law and guidance created by the Creasy amendment. This must be matched by promoting a culture of choosing life in Northern Ireland through perinatal services and valuing children through baby boxes and childcare.
 
-#### Let's Protect Our Green and Pleasant Land
+## Let's Protect Our Green and Pleasant Land
 
 The DUP is committed to passing on our natural wealth to the next generation in a better state than we found it with a new Environmental strategy and action on air, land and water pollution. We will support our farmers and rural communities.
 
-#### Let's Protect Our Animals Better
+## Let's Protect Our Animals Better
 
 Northern Ireland to lead on animal protection in the United Kingdom with new offences and tougher sentences matched by public education.
 
-#### Let's Build Stronger Communities Again
+## Let's Build Stronger Communities Again
 
 Action to bolster social housing, new approaches to affordable housing and improving quality in the private let market while placing economic regeneration at the centre of community regeneration and programmes with positive social and cultural development.
 
-#### Let's Lead the Way on Fighting Crime
+## Let's Lead the Way on Fighting Crime
 
 Northern Ireland to lead on justice innovation, tackle paramilitary criminality and strengthening and improving our police service.
 
-#### Let's Make the Assembly Better
+## Let's Make the Assembly Better
 
 The DUP wants an Assembly back today but any new Assembly will have to undergo far-reaching reform to deliver more and deliver better.
 
-#### Let's Get Northern Ireland Celebrating Again
+## Let's Get Northern Ireland Celebrating Again
 
 The Centenary of Northern Ireland can become a showcase of what Northern Ireland and all its people have achieved. Positive celebrations exploring shared values with a physical legacy and commitment to the Northern Ireland we will shape for the Next Generation.

@@ -132,10 +132,10 @@ but the page shows the fetch-error placeholder and "Download ↓" does nothing.
    `a.hasAttribute('download')` or when `href` matches static asset extensions
    (`.pdf`, `.jpg`, `.png`, etc.). "Original PDF" works because it uses
    `target="_blank"`.
-3. **Local dev note**: direct browser navigation to `/manifesto/…` on bare
-   `python -m http.server` returns 404 (no SPA fallback to `index.html`). In-app
-   navigation works; production (Cloudflare Pages) should serve `index.html` for
-   unknown paths — verify separately from the two JS bugs above.
+3. **Local dev note**: bare `python -m http.server` has no SPA fallback — hard
+   loads of `/manifesto/…` 404. Use the default
+   [`scripts/serve-preview.py`](../architecture/local-preview.md) instead.
+   Production Cloudflare serves `index.html` for the SPA routes in `_redirects`.
 
 **QA after fix:**
 - [ ] `/manifesto/2019/labour` renders full markdown body + populated TOC

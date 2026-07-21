@@ -25,6 +25,7 @@ sections:
   - science-and-technology
 ---
 
+
 # Ulster Unionist Party Manifesto 2024
 
 ## Making Northern Ireland Work.
@@ -33,7 +34,7 @@ sections:
 
 ---
 
-### Contents
+## Contents
 * A Message from the Party Leader
 * The Union
 * Windsor Framework
@@ -71,7 +72,7 @@ This manifesto is for you, and it is you who has the ability to create real chan
 
 ---
 
-### The Union
+## The Union
 
 **The Ulster Unionist Party stands firm in our commitment to safeguarding Northern Ireland's integral position within the United Kingdom. During this potentially significant General Election, we wish to underscore the profound importance of the Union, historically and in the present day and continue to fight for its preservation.**
 
@@ -91,7 +92,7 @@ The Ulster Unionist Party is seeking to secure seats in the Westminster Parliame
 
 ---
 
-### Windsor Framework
+## Windsor Framework
 
 The Ulster Unionist Party is committed to defending and promoting Northern Ireland's place within the United Kingdom. During this General Election, we reaffirm our dedication to upholding the principles of the Union and ensuring that the interests of Northern Ireland are safeguarded at all levels of government.
 
@@ -109,13 +110,13 @@ Through active engagement in democratic processes, robust scrutiny of legislatio
 
 **The Ulster Unionist Party is dedicated to defending and promoting Northern Ireland's place within the Union with the rest of Great Britain.**
 
-#### Providing Governance.
-#### Embracing Opportunities.
-#### Leading Challenge.
+## Providing Governance.
+## Embracing Opportunities.
+## Leading Challenge.
 
 ---
 
-### Economy
+## Economy
 
 We affirm our commitment to supporting City Deals and Growth Deals across the Northern Ireland, including the Belfast Region City Deal, Derry-Londonderry and Strabane Region City Deal, Mid South West Growth Deal, and Causeway Coast and Glens Growth Deal. With a potential investment of £1.3 billion, funded from Westminster and Stormont, these initiatives will foster global centres of innovation excellence. Harnessing the expertise of our universities and businesses will give Northern Ireland unprecedented opportunities for collaboration and drive the development of groundbreaking technologies, products, and services.
 
@@ -125,7 +126,7 @@ Tourism and hospitality in NI represent around 4 - 5% of our Gross Value Added (
 
 Yet our tourism and hospitality sector face unfair competition from the Republic of Ireland in terms of pricing since the Value Added Tax regime in the RoI is 13.5% - up recently from 12.5% but still a lot more attractive than the 20% VAT rate in NI. The Ulster Unionist Party will work at Westminster to seek commitment to lower Leisure and Hospitality VAT in Northern Ireland to match the Republic of Ireland, allowing our hotels, restaurants and leisure businesses to compete on a level playing field with our closest neighbour.
 
-#### We Will:
+## We Will:
 
 * We will lobby in Parliament to establish a 'Freeport Northern Ireland,' capitalising on UK government policy to establish freeports nationwide. Given Northern Ireland's unique geographical circumstances and the impact of the Northern Ireland Protocol, we advocate for designating all ports and airports in Northern Ireland as freeports. This comprehensive approach will extend the benefits of freeports across the entire region, from Londonderry to Aldergrove, Warrenpoint, Belfast, and Larne. We will also argue for the creation of a 'Trusted Trader' scheme to enable businesses outside secure port zones to access processing relief at zero tariff rates, maximising economic benefits for all of Northern Ireland.
 * Ulster Unionists are committed to fiscal responsibility and effective financial stewardship. We aim to work with Westminster to gradually reduce Corporation Tax in Northern Ireland to 15%. Despite past fiscal mismanagement, we are determined to showcase Northern Ireland's potential for responsible financial management. By implementing necessary reforms and reducing Corporation Tax, we seek to enhance competitiveness, attract investment and drive economic growth throughout the Northern Ireland.
@@ -136,7 +137,7 @@ Yet our tourism and hospitality sector face unfair competition from the Republic
 
 ---
 
-### Taxation & Pensions
+## Taxation & Pensions
 
 **Ulster Unionist MPs pledge to prioritise fair and sustainable taxation policies that promote economic growth while ensuring the well-being of all citizens, including those that have retired. We firmly believe in maintaining the UK's 'triple lock' for state pensions, safeguarding the financial security of our elderly population.**
 
@@ -144,15 +145,15 @@ The 'triple lock' for pensions is a commitment made by the UK government to annu
 
 Furthermore, we advocate for a progressive approach to taxation, ensuring that the burden is distributed equitably and that those with the means to contribute more do so responsibly.
 
-#### Our Commitments:
+## Our Commitments:
 * Upholding the 'triple lock' for state pensions and implementing fair taxation policies.
 * We reaffirm our commitment to building a society where every individual can retire with dignity and financial stability.
 
-### Delivering a Prosperity Agenda.
+## Delivering a Prosperity Agenda.
 
 ---
 
-### Health
+## Health
 
 > “The Ulster Unionist Party’s overall aim and vision is to build a world-leading health and social care system that is responsive, accessible and delivers quality care.”
 
@@ -178,7 +179,7 @@ Whilst many waiting times remain intolerable, for the first-time tangible improv
 
 The Ulster Unionist Party’s focus will remain on driving through improvements in service delivery wherever and whenever possible. That will include a renewed focus on improved productivity and efficiency to fully maximise capacity using existing resources.
 
-#### Our Commitments:
+## Our Commitments:
 
 * We will continue to transform services to allow us to meet the needs of the population going forward. This will include the identification of the next Elective Overnight Stay Centre as well as further commissioned activity in Day Procedure Centres, and the continued expansion and utilisation of mega-clinics. This will be assisted by the publication of a HSC reconfiguration blueprint, the publication of a multi-year plan, as well as through the ongoing implementation of the elective care framework, the mental health strategy, and the cancer strategy.
 * In addition, Mike Nesbitt has brought about a renewed determination to drive improvements in population health and to address health inequalities. A new targeted and innovative health inequalities initiative will be announced in the autumn.
@@ -190,7 +191,7 @@ The Ulster Unionist Party’s focus will remain on driving through improvements 
 
 ---
 
-### A Fairer Society
+## A Fairer Society
 
 **The Ulster Unionist Party is committed to building a fair and united society within the United Kingdom**
 
@@ -206,7 +207,7 @@ Unpaid carers save the public purse nearly £6 billion in Northern Ireland every
 
 The Carer’s Allowance benefit isn’t fit for purpose and is leaving many unpaid carers struggling to make ends meet. The Department for Work and Pensions should increase the value of Carer’s Allowance to properly reflect carers’ living costs. It should also increase the Carer’s Allowance earnings cap so that more unpaid carers can stay in the labour market while keeping their payments.
 
-#### Disabilities
+## Disabilities
 
 Across the UK, around 16 million people have a recognised disability, which constitutes about 24% of the total population. This includes 11% of children, 23% of working-age adults, and 45% of pension-age adults (Disability, accessibility and blue badge statistics, England, 2022 to 2023 - GOV—UK; Disability facts and figures | Disability charity Scope UK.)
 
@@ -220,7 +221,7 @@ In Northern Ireland, approximately 21% of the population reported having a disab
 * Additionally, your Ulster Unionist Party MPs will work to hold the next Government to account if they fail in their duty to support our citizens living with disabilities in having active and fulfilling lives. This support must include recognising that Personal Independence Payment and other social security payments are crucial in this regard, and any attempt to scale back this support will have a far-reaching and devastating impact.
 * We will advocate for the next Government to acknowledge the high proportion of the population living with disabilities and to proactively develop policy interventions that improve services and the overall quality of life for these citizens. This will include pressing for the incorporation of the United Nations Convention on the Rights of Persons with Disabilities into UK law, ensuring that the rights of individuals with disabilities are fully protected and promoted.
 
-#### Housing
+## Housing
 
 The United Kingdom is in the midst of a pressing housing crisis, with a significant number of our citizens lacking a secure place to call home. This dire situation has resulted in an alarming surge in property prices and rental costs, forcing many into a state of housing insecurity or even homelessness.
 
@@ -231,33 +232,33 @@ The housing crisis is a multi-faceted issue, impacting various aspects of life, 
 
 ---
 
-### Our Young People
+## Our Young People
 
 **The Ulster Unionist Party believes that the future of Northern Ireland lies in the strength and potential of our children and young people. We are committed to building a world-class education system that values every child, regardless of their ability, disability, or support needs. Our pledge is to secure the necessary funding and implement policies that will create an inclusive, supportive, and high-quality educational environment for all.**
 
-#### A Single Education System
+## A Single Education System
 We will establish a single education system that:
 * Values every child equally, providing tailored support and resources to meet individual needs.
 * Integrates children of all abilities, fostering a culture of inclusivity and mutual respect.
 * Promotes early support and intervention, recognizing that early education and childcare are crucial for the holistic development of children and the well-being of families.
 
-#### Early Education & Childcare
+## Early Education & Childcare
 To ensure that every child gets the best start in life, we will:
 * Advocate for high-quality early education and childcare services that are accessible and affordable for all families.
 * Support initiatives that enhance the early learning experience, laying a strong foundation for future academic and personal success.
 * Enable families to thrive by providing flexible childcare solutions that support parents and caregivers.
 
-#### Therapeutic Learning Environments
+## Therapeutic Learning Environments
 We recognize that a well-resourced educational environment is key to fostering learning and development. Therefore, we commit to:
 * Securing adequate funding to create and maintain therapeutic learning environments that cater to the diverse needs of all students.
 * Ensuring that schools are equipped with the necessary resources, including modern facilities and learning materials, to support every child's educational journey.
 
-#### Valuing Educators & Support Staff
+## Valuing Educators & Support Staff
 The success of our education system depends on the dedication and hard work of our educators and support staff. We will:
 * Advocate for fair and competitive pay for teachers, classroom assistants, childcare staff, and the entire multidisciplinary team involved in education.
 * Recognise and reward the invaluable contributions of all education professionals, ensuring they are supported and appreciated in their roles.
 
-#### Supporting Young People with Disabilities
+## Supporting Young People with Disabilities
 We are committed to creating equal opportunities for young people with disabilities. To achieve this, we will:
 * Secure funding and resources for post-secondary education and training for young people with disabilities or learning disabilities.
 * Develop pathways to further learning and employment opportunities that are on par with those available to mainstream school leavers.
@@ -272,7 +273,7 @@ We are committed to creating equal opportunities for young people with disabilit
 
 ---
 
-### Agriculture & Environment
+## Agriculture & Environment
 
 **The Ulster Unionist Party recognises the vital role that agriculture, food production, and our rural communities play in the economic and social fabric of Northern Ireland and the United Kingdom as a whole.**
 
@@ -284,17 +285,17 @@ The Ulster Unionist Party will always champion this vital industry. We will work
 
 Farmers are the bedrock of our rural communities. The Ulster Unionist Party recognises the immense challenges they face, from volatile market prices and spiralling input costs to the increasing burden of red tape and environmental regulations.
 
-#### We Will:
+## We Will:
 * Maintain and enhance Direct Payments to farmers, ensuring they receive a fair, stable income to invest in their businesses.
 * Cut bureaucracy and streamline compliance processes to reduce the administrative burden on farmers.
 * Increase funding for research, development and knowledge transfer to drive innovation, productivity, and sustainability across the sector.
 * Work in partnership with farmers to develop a comprehensive, long-term strategy for the future of Northern Ireland agriculture.
 
-#### Empowering Rural Communities
+## Empowering Rural Communities
 
 The Ulster Unionist Party understands that a thriving rural economy is about more than just farms and food production. It is about ensuring our villages, towns and rural areas have access to the infrastructure, services and opportunities they need to prosper.
 
-#### We Will:
+## We Will:
 * Invest in broadband, mobile connectivity and transport links to end the digital and physical isolation of rural communities.
 * Support the diversification of rural economies, backing entrepreneurship, tourism, and other rural enterprises.
 * Protect and enhance vital public services like healthcare, education, and policing in our rural areas.
@@ -305,7 +306,7 @@ The Ulster Unionist Party understands that a thriving rural economy is about mor
 
 ---
 
-### Our Changing Climate
+## Our Changing Climate
 
 > “The Ulster Unionist Party has a strong commitment to addressing the climate emergency in Northern Ireland.”
 
@@ -321,11 +322,11 @@ The scale and technological advancements required to achieve these goals necessi
 
 > “By leveraging our cherished position within the UK, we can access the resources, expertise, and collaborative opportunities needed to accelerate our transition to a low-carbon economy and safeguard the planet for future generations.”
 
-#### Woodlands
+## Woodlands
 
 Trees capture carbon and woodlands provide habitats where wildlife can flourish therefore, Ulster Unionists will plant more of the right trees in the right places and do more to look after the trees and woods we already have. This will help Northern Ireland make a fair contribution to the UK’s efforts to tackle climate change whilst also helping nature to recover, reducing the risk of flooding, creating new green jobs, and improving access to trees and woods for everyone to enjoy.
 
-#### Our Commitments:
+## Our Commitments:
 * Ulster Unionists understand the urgent need for a collaborative effort to address the pressing issues affecting Lough Neagh's water quality and long-term sustainability. Recent multi-agency meetings underscore the necessity of establishing a management task force inclusive of all stakeholders. This task force should oversee ongoing monitoring, management and the formulation of future plans for the Lough.
 * Collaboration among Stormont Executive departments, arms-length bodies, and stakeholders is vital to charting a viable path forward. It is important to maintain transparency and engagement throughout this process to effectively tackle the crisis affecting Lough Neagh. Our party's long-standing advocacy for a unified strategy underscores the necessity of proactive measures to safeguard Lough Neagh and its surrounding environment.
 * Ulster Unionists will continue to press NI Water for an urgent assessment of the proximity to a critical tipping point where Lough Neagh water may become unusable for drinking. The long absence of an Executive at Stormont has exacerbated these challenges, hindering our ability to implement timely solutions.
@@ -336,7 +337,7 @@ Trees capture carbon and woodlands provide habitats where wildlife can flourish 
 
 ---
 
-### Justice & Legacy
+## Justice & Legacy
 
 **Policing and Justice were devolved to Northern Ireland in 2010. From that moment it has been mismanaged, poorly resourced and badly understood. Instead of building on the resilience and commitment of a workforce and structures that were able to operate in the most difficult of circumstances and environment at pace, Northern Ireland moved to a system that gutted our Policing and Justice structures.**
 
@@ -346,7 +347,7 @@ The confidence in the Northern Ireland justice system is at an all-time low wher
 
 The Ulster Unionist Party will, at Westminster and in Stormont, work to ensure our Policing and Justice system are fit for purpose.
 
-#### Our Commitments:
+## Our Commitments:
 
 * **Police first approach** - Ulster Unionists are steadfast in our support for delivering a headcount of 7,500 officers proposed by the Independent Commission for Policing in Northern Ireland over twenty years ago (“A New Beginning: Policing in Northern Ireland” September 1999). We believe that 500 additional police officers should be recruited over the next 3 years, in addition to the normal recruitment to replenish leavers.
 * **Attestation** - Police Officers should attest at the start of their training making them a legally appointed police officer from their first day, in line with other forces around the United Kingdom. This will also allow for quicker pay transition to a higher band on completion of training and after probationary periods.
@@ -357,7 +358,7 @@ The Ulster Unionist Party will, at Westminster and in Stormont, work to ensure o
 * **Challenge Serious and Organised crime** - far too many communities across Northern Ireland are plagued by organised criminal gangs which are involved in serious criminal activity including drug dealing. Some are regarded as paramilitary or terrorist in nature, claiming a spurious political motivation in a bid to gain some kind of legitimacy, whilst others are simply the type of organised criminal enterprises that exist in major cities in the Republic and in Great Britain. Over 25 years on from the Belfast Agreement, it is incomprehensible that so-called paramilitary gangs are still in existence. These groups need to be put out of business permanently. Ulster Unionists want to see a concerted effort against the leadership of such groups with a focus on arrests and seizure of assets to reassure the public that crime really does not pay.
 * **Resource Prisons** - the loss of personal liberty is the ultimate sanction available to the UK State for those who have broken the law and who have damaged society. Whilst rehabilitation is important where possible, we must also be mindful of the need to punish, protect society, and deter others. Ulster Unionists want to see our Prison Service given the resources they need - including a workforce that is fit for purpose with the correct numbers, terms and conditions. It is important that we reduce the number who are held on remand in prison by finding alternative methods to deal with those bound over. Speeding up justice which will naturally reduce those on bail as they are dealt with in the court and methods such as electronic tagging must be introduced, as it is in England.
 
-#### Legacy
+## Legacy
 
 Dealing with legacy has been something that has plagued Northern Ireland for many years. Ulster Unionists will engage positively with the Independent Commission for Reconciliation and Information Recovery (ICRIR) but remain opposed to the Northern Ireland Troubles (Legacy and Reconciliation) Act which denies justice for victims and gives amnesty to perpetrators.
 
@@ -371,7 +372,7 @@ Dealing with legacy has been something that has plagued Northern Ireland for man
 
 ---
 
-### Defence & Security
+## Defence & Security
 
 **The UK is a permanent member of the UN Security Council, it is a major contributor to NATO and has multi-lateral and bi-lateral defence agreements right across the globe. Collective Defence remains our greatest asset and allows the UK to continue to stand up, and speak out, in defence of freedom and democracy wherever it is threatened.**
 
@@ -395,7 +396,7 @@ Therefore, it is important that Northern Ireland is brought into the UK’s ‘N
 
 Both defence platforms, RN and RAF, can assist with the protection of rapid deployments of military assets from the US and Canada via either Shannon or Aldergrove airports. This creates two important airheads allowing for redundancy if Ireland was to regress further from providing support to deploying US assets.
 
-#### We Commit To:
+## We Commit To:
 * Support the establishment of a Naval Base in Northern Ireland allowing NATO assets to be deployed from here to increase patrolling of our western approaches.
 * Encourage the Republic of Ireland to take defence seriously and enhance their Partnership and Cooperation Programme, or join NATO, and commit to spending 2% of GDP on defence.
 * Support Aldergrove Military Base reverting back to an RAF station with the ability to forward mount air frames alleviating the burden on Scottish bases and allowing them to concentrate on the UK’s Northern approaches.
@@ -406,7 +407,7 @@ Both defence platforms, RN and RAF, can assist with the protection of rapid depl
 
 ---
 
-### Veterans
+## Veterans
 
 **The Ulster Unionist Party is committed to supporting service personnel, veterans and their families across the United Kingdom. We will advocate for the retention of the Office for Veterans' Affairs (OVA) with a cabinet attending Minister to ensure consistent support for veterans living in England, Northern Ireland, Wales, and Scotland. To enhance coordination and service delivery, we will push for the OVA to have a properly resourced presence in each of the devolved regions, which utilises the knowledge and networks built up by the Northern Ireland Veterans Support Office.**
 
@@ -416,7 +417,7 @@ Northern Ireland has consistently contributed more service personnel per head of
 
 The Ulster Unionist Party remains dedicated to advocating for the rights and well-being of our service personnel, veterans, and their families, ensuring that they receive the recognition, support, and respect they deserve for their sacrifices and service to our country.
 
-#### Our Commitments to Veterans:
+## Our Commitments to Veterans:
 * We will address existing disparities in the application of military compensation when determining eligibility for social security support across the UK. Additionally, we will advocate for the inclusion of chronic pain as a compensable condition within the Armed Forces Compensation Scheme and press for the establishment of a compensation scheme for Nuclear Test Veterans and their families.
 * Building upon previous successes we will support veteran families by removing application fees for non-UK citizens who have served in the UK Armed Forces for four years or more for the Veterans Hearing Loss Fund and the Veterans Mobility Fund. This will provide essential support and equipment for veterans with hearing loss and mobility issues resulting from their service.
 * We are committed to fulfilling our moral obligation to Afghan Locally Employed Civilians by expediting the resettlement process for eligible family members who supported our service personnel during the Afghanistan conflict.
@@ -429,7 +430,7 @@ The Ulster Unionist Party remains dedicated to advocating for the rights and wel
 
 ---
 
-### Immigration
+## Immigration
 
 Controlled Immigration is important to all countries across the world. In the UK it has helped create a skilled workforce. Many doctors, nurses and other Health Care professionals come from other countries around the world, setting up home in Northern Ireland and contributing to our society in a positive way. Northern Ireland is also heavily reliant on ethnic minorities from other countries to carry out highly intensive manual jobs within the agri-food industry.
 
@@ -443,7 +444,7 @@ The market in people trafficking and illegal immigration has now become big busi
 
 Our immigration system must be open, transparent and fair. We must target the traffickers, who put people’s lives at risk for profit, as our main defence in reducing illegal immigration.
 
-#### We Will:
+## We Will:
 * Have a zero-tolerance policy on illegal immigration, while being responsive to genuine asylum seekers.
 * Support government measures to target the people traffickers through cooperation with other European countries.
 * Increase the number of staff working on asylum applications threefold to allow genuine asylum seekers to receive their application decision quicker and when granted asylum to integrate fully into UK society.
@@ -455,7 +456,7 @@ There are a minority of people in Northern Ireland that feel threatened by multi
 
 > “Immigration has created a diversity in Northern Ireland that is enriching, welcoming and positive.”
 
-#### We Will:
+## We Will:
 * Continue to support a Racial Equality Strategy for Northern Ireland.
 * Promote a multi-cultural society that ensures ethnic minorities have the opportunity to integrate throughout Northern Ireland.
 * Ensure funding for ethic minority and religious groups, including cultural events, is fair and proportionate building on the Belfast Mela celebrations as best practice.
@@ -464,7 +465,7 @@ There are a minority of people in Northern Ireland that feel threatened by multi
 
 ---
 
-### Artificial Intelligence
+## Artificial Intelligence
 
 In the modern era, few technological advancements have captured the imagination quite like Artificial Intelligence (A.I.). At its core, A.I. refers to the simulation of human intelligence processes by machines, particularly computer systems. It encompasses a wide array of capabilities, including learning, reasoning, problem-solving, perception, and language understanding. As we stand on the cusp of a new age of innovation, the Ulster Unionist Party recognises the transformative potential of A.I. and is committed to harnessing its power for the betterment of Northern Ireland.
 
@@ -480,7 +481,7 @@ Ethical considerations surrounding data privacy, algorithmic bias, and autonomou
 
 As supporters of progress and innovation, the Ulster Unionist Party is committed to fostering an ecosystem that encourages the responsible development and deployment of A.I. technologies.
 
-#### We Commit To:
+## We Commit To:
 * Investment in Research and Development: We will advocate for increased public and private investment in A.I. research and development, fostering collaboration between universities, the private sector and government to drive innovation and technological advancement.
 * Skills Development and Education: Recognising the importance of human capital in realising the potential of A.I., we will champion initiatives to upskill and reskill the workforce, ensuring that Northern Ireland remains competitive in the global digital economy.
 * Ethical and Regulatory Frameworks: We will work in Parliament to establish robust ethical and regulatory frameworks governing the development and deployment of A.I. technologies, prioritising transparency, accountability, and fairness to mitigate potential risks and safeguard public trust.
@@ -495,7 +496,7 @@ As supporters of progress and innovation, the Ulster Unionist Party is committed
 
 ---
 
-### Your Ulster Unionist Candidates
+## Your Ulster Unionist Candidates
 **Westminster 2024**
 
 * **JOHN STEWART** - East Antrim

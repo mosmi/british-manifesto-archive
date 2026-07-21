@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifesto QA Reader & Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Marked library for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="app" class="app-container">
+    <!-- Header Controls -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo">📖</span>
+        <h1>Manifesto QA Reader</h1>
+      </div>
+
+      <div class="manifesto-selector-wrap">
+        <label for="manifesto-select">Manifesto:</label>
+        <select id="manifesto-select" class="select-input">
+          <option value="">Loading manifestos...</option>
+        </select>
+      </div>
+
+      <div class="nav-controls">
+        <button id="btn-prev-flagged" class="btn btn-secondary" title="Jump to previous flagged page (Cmd+Shift+Left)">
+          ⏮️ Prev Flagged
+        </button>
+        <button id="btn-prev-page" class="btn btn-secondary" title="Previous Page (Left Arrow)">
+          ◀ Prev
+        </button>
+        <div class="page-indicator">
+          Page <input type="number" id="input-page-num" min="1" value="1"> / <span id="text-total-pages">1</span>
+        </div>
+        <button id="btn-next-page" class="btn btn-secondary" title="Next Page (Right Arrow)">
+          Next ▶
+        </button>
+        <button id="btn-next-flagged" class="btn btn-primary" title="Jump to next flagged page (Cmd+Shift+Right)">
+          Next Flagged ⏭️ <span id="badge-flagged-count" class="badge">0</span>
+        </button>
+      </div>
+
+      <div class="header-actions">
+        <button id="btn-glossary" class="btn btn-secondary" title="View QA Check Warning & Error Code Glossary">
+          ❓ QA Codes
+        </button>
+        <button id="btn-save" class="btn btn-success" title="Save page edits, reassemble draft, and re-gate (Cmd+S)">
+          💾 Save Edit
+        </button>
+        <button id="btn-accept-flag" class="btn btn-outline" title="Accept flag as false positive & mark reviewed (Cmd+Enter)">
+          ✓ Accept Flag
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Split Pane -->
+    <main class="workspace">
+      <!-- Left Pane: PDF Page Image -->
+      <section class="pane pane-image">
+        <div class="pane-header">
+          <h2>📷 Source Page Image</h2>
+          <div class="pane-tools">
+            <button id="btn-zoom-out" class="btn-icon" title="Zoom Out">-</button>
+            <span id="text-zoom-level">100%</span>
+            <button id="btn-zoom-in" class="btn-icon" title="Zoom In">+</button>
+            <button id="btn-zoom-reset" class="btn-icon" title="Reset Zoom">Fit</button>
+          </div>
+        </div>
+        <div class="image-viewport" id="image-viewport">
+          <img id="page-image" src="" alt="Select a page to view image" />
+          <div id="image-loader" class="loader hidden">Loading Image...</div>
+        </div>
+      </section>
+
+      <!-- Right Pane: Markdown Editor & Preview -->
+      <section class="pane pane-text">
+        <div class="pane-header">
+          <div class="tab-group">
+            <button id="tab-edit" class="tab-btn active">✏️ Edit Markdown</button>
+            <button id="tab-preview" class="tab-btn">👁️ Preview HTML</button>
+            <button id="tab-diff" class="tab-btn">🔍 Diff vs PDF Baseline</button>
+          </div>
+          <div class="status-pill" id="page-status-pill">reviewed</div>
+        </div>
+
+        <div class="pane-content">
+          <!-- Editor Mode -->
+          <div id="view-editor" class="tab-view active">
+            <textarea id="markdown-editor" spellcheck="false" placeholder="Select a page to edit Markdown transcription..."></textarea>
+          </div>
+
+          <!-- Live HTML Preview Mode -->
+          <div id="view-preview" class="tab-view markdown-body">
+            <div id="markdown-rendered"></div>
+          </div>
+
+          <!-- Baseline Diff Mode -->
+          <div id="view-diff" class="tab-view">
+            <div class="diff-container">
+              <div class="diff-box">
+                <h3>PDF Baseline (pdftotext)</h3>
+                <pre id="diff-baseline-text"></pre>
+              </div>
+              <div class="diff-box">
+                <h3>Transcribed Markdown (selected)</h3>
+                <pre id="diff-selected-text"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom QA Issue Drawer -->
+    <footer class="qa-drawer" id="qa-drawer">
+      <div class="qa-header">
+        <div class="qa-title">
+          <span class="qa-icon">⚠️</span>
+          <h3>QA Gate Status & Warnings for Page <span id="qa-page-num">1</span></h3>
+        </div>
+        <div class="qa-metrics">
+          <span>Candidate: <strong id="metric-cand-words">0</strong> words</span>
+          <span>Baseline: <strong id="metric-base-words">0</strong> words</span>
+          <span>Ratio: <strong id="metric-ratio">0.00</strong></span>
+        </div>
+      </div>
+      <div class="qa-issues-list" id="qa-issues-list">
+        <div class="no-issues">✓ No gate flags or structural issues for this page.</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- QA Check Code Glossary Modal -->
+  <div id="modal-glossary" class="modal-overlay hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>❓ QA Check Codes Glossary</h2>
+        <button id="btn-close-modal" class="btn-icon">✖</button>
+      </div>
+      <div class="modal-search">
+        <input type="text" id="input-glossary-search" placeholder="Search codes or descriptions (e.g. B2, headings, bullets)...">
+      </div>
+      <div class="modal-body" id="glossary-content">
+        <!-- Populated dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

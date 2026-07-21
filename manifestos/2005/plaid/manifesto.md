@@ -27,11 +27,12 @@ sections:
   - local-government
 ---
 
+
 # Plaid Cymru Manifesto 2005
 
 ## Plaid Cymru - The Party of Wales
 ### Westminster Election Manifesto 2005
-#### We can build a better Wales
+## We can build a better Wales
 
 **www.plaidcymru.org**
 
@@ -56,7 +57,7 @@ ISBN: 0-905077-61-X
 
 ---
 
-### A Stronger Economy and a Fairer Society
+## A Stronger Economy and a Fairer Society
 
 Since New Labour took office in 1997, economic and social inequality has increased. The tax and benefit system overall does no more to redistribute income now than it did 20 years ago, at the height of Thatcherism. Yet market forces during this time have created a society in which incomes have been less and less evenly distributed.
 
@@ -78,7 +79,7 @@ Wages in Wales remain low. The average full-time wage in Wales is seven-eighths 
 * Lead Wales to the cutting edge of environmental technology and sustainable development.
 * Campaign for a real Parliament, leading to a Wales which governs itself.
 
-#### Fair Taxation
+## Fair Taxation
 We want to see a more progressive tax system, with a greater number of income tax bands and a 50% rate of tax on incomes above £50,000 a year. We want to scrap the unjust council tax and replace it with a fair local income tax, saving a Welsh couple on the state pension at least £600 a year.
 
 Regional tax incentives should be used to boost the economy of Wales and other disadvantaged parts of the UK. These should include lower rates of Corporation Tax and employers’ National Insurance contributions, which is a tax on employing people.
@@ -89,7 +90,7 @@ We want to see taxation used to help the environment and encourage the efficient
 
 In many cases it is appropriate to fund investment in public assets – such as hospital and school buildings – through borrowing rather than taxation. But the current PFI (Public Finance Initiative) is a wasteful and unreliable form of borrowing, which we would phase out. Even within existing PFI rules, there is scope for “not-for-profit” arrangements which could ensure that profits made under PFI are ploughed back for the public benefit rather than creamed off by the private sector.
 
-#### Pensions and Social Security
+## Pensions and Social Security
 19% of Welsh pensioners lived in poverty based on 50% of average income in 2002/03. We would link the annual increase in state retirement pension with the average rise in incomes. We would introduce a citizen’s pension – of £106 per week for a single pensioner and £161 for a couple, getting rid of the wasteful pensioner credit element which around a third of eligible pensioners in Wales do not claim.
 
 This citizen’s pension would be based on residence in the UK and thereby end the discrimination against women under the current pension regime.
@@ -102,7 +103,7 @@ Poor Government regulation in the past has left many in badly managed private pe
 
 Compensation for former coal miners suffering from respiratory diseases has been slow in coming, inefficient in operation, and often clawed back by the government. The basic approach seems to have been to hope that miners’ deaths will reduce the cost of the scheme. The Government must recognise and act on its responsibilities here, and extend the compensation scheme to include former slate quarrymen.
 
-#### Fair Funding for Wales
+## Fair Funding for Wales
 The Barnett Formula is used by governments to determine how much money goes from UK taxation to be spent in Wales. The formula is not based on the needs of Wales or other parts of the UK, or on considerations about disadvantage or inequality. It is simply a population-based percentage share based on spending in England. This works against the interests of Wales.
 
 Plaid Cymru the Party of Wales calls for the Barnett Formula to be abolished and the pattern of government spending in different parts of the UK to be reviewed. We want to see a broad-based independent commission set up after the election to carry out this review and make detailed recommendations for a needs-based formula for the allocation of public money. This needs to take into account the large amounts of money put into London to pay for the civil service and other parts of central government, and into southern England as a whole in the form of military expenditure. Official calculations of how expenditure is allocated often fail to take these amounts into account.
@@ -113,7 +114,7 @@ We will fight the Government on this and support direct access by business and c
 
 ---
 
-### The Economy at the Cutting Edge
+## The Economy at the Cutting Edge
 
 Wales now needs a combination of investment in good quality public services - such as education, health, and public transport - with measures to help boost private sector investment in the industries and services of the future.
 
@@ -140,7 +141,7 @@ We want to see the establishment of a network of regional technology centres, wo
 
 ---
 
-### Crisis in the Countryside
+## Crisis in the Countryside
 
 Plaid Cymru has always spoken up for our countryside, environment and farmers.
 
@@ -166,7 +167,7 @@ Urgent action is needed to tackle the housing crisis in parts of rural Wales and
 
 ---
 
-### A Real Parliament
+## A Real Parliament
 
 The establishment of the National Assembly was a vital step forward in the way Wales is governed. But its lack of real powers has allowed the Labour Government to get away with incompetence in our economy, health service and public infrastructure. It’s time to move on.
 
@@ -176,7 +177,7 @@ Plaid Cymru the Party of Wales’s ambition for Wales is independence in Europe.
 
 In the meantime, we seek an immediate and substantial improvement in the representation of Wales within European Union structures. This is essential in order to protect the interests of Wales at a time when countries such as Catalonia in Spain and regions such as Germany’s are proving very successful in getting benefits from being part of the EU.
 
-### Fighting Discrimination
+## Fighting Discrimination
 
 Plaid Cymru the Party of Wales proposes a written Bill of Rights to end discrimination in all walks of life.
 
@@ -198,7 +199,7 @@ We want to see a small compulsory levy on insurance policies to ensure people re
 
 ---
 
-### Better Public Services
+## Better Public Services
 
 Under New Labour people working in education and the health service have become tired of endless new initiatives, bureaucracy, market forces, and dishonest use of statistics. The public in turn are sick and tired of spin, broken promises and missed targets.
 
@@ -213,7 +214,7 @@ The public services – education, health, public transport, etc. - are importan
 
 The voluntary sector plays a crucial role in providing direct services, in innovating and experimenting, in mobilising public concern and willingness to help out, in strengthening local community life, and in putting forward policy ideas. Plaid Cymru will continue to support the work of the voluntary sector, and to help ensure it has access to decision-makers in the public sector.
 
-#### Health
+## Health
 **Plaid Cymru the Party of Wales believes in a publicly-funded, free NHS, both because this is the most efficient way to deliver healthcare, and because it ensures that healthcare is available to all.**
 
 The Labour Party’s neglect and incompetence is destroying the health service in Wales.
@@ -250,7 +251,7 @@ We will work for a ban on smoking in public places, in the interests of children
 
 ---
 
-### Education
+## Education
 
 The Thatcher Government also brought market mechanisms into education, overloading teachers and in many cases undermining their commitment. As with health spending, Labour has made many misleading announcements about additional expenditure, most of which has failed to materialise in practice.
 
@@ -273,7 +274,7 @@ We value the whole team in our schools, including support staff.
 
 ---
 
-### Social Care
+## Social Care
 
 We will campaign for the cash and support necessary to recruit and retain the staff needed to provide good quality social services. We also want to see greater recognition of and support for carers.
 
@@ -286,7 +287,7 @@ The reorganisation in Scotland of long-term care for the elderly, integrating ca
 
 ---
 
-### Transport
+## Transport
 
 Under New Labour, Wales is on a road to nowhere.
 
@@ -302,7 +303,7 @@ Under New Labour, Wales is on a road to nowhere.
 
 ---
 
-### Housing
+## Housing
 
 The affordability gap in many of our communities is driving young people out of their home areas and blighting local services. House prices in Wales rose 124% from 1997 to 2004. Significantly, 82% of this growth occurred in 2001-2004.
 
@@ -317,7 +318,7 @@ We have set out our full proposals in a consultation paper; these include:
 
 ---
 
-### Crime
+## Crime
 
 The causes of crime can only be tackled through a full range of policies for the economy, education, social justice, and the regeneration of communities.
 
@@ -340,7 +341,7 @@ Rather than addressing these real concerns, the Government wants to chase the ex
 
 ---
 
-### Culture
+## Culture
 
 Plaid Cymru the Party of Wales wants to see a fully bilingual nation, with each and every child given the opportunity to learn Welsh. We want positive steps to support the communities which contribute to making Wales a multi-cultural society.
 
@@ -352,7 +353,7 @@ Support for the arts, museums, libraries, sport, and our historic environment, i
 
 ---
 
-### Accountability
+## Accountability
 
 Many public services are provided by local authorities, which also make important planning decisions and have an important role as representatives of local people. It is essential that these functions are carried out by councils which are fully equipped for these tasks and command public respect. **Plaid Cymru the Party of Wales, believes that this requires –**
 * The abolition of council tax and its replacement by local income tax
@@ -366,7 +367,7 @@ We will press for the development of a separate civil and public service for Wal
 
 ---
 
-### A Better World
+## A Better World
 
 Under New Labour, Tony Blair has dragged the UK into a disastrous and unjustified war in Iraq; the UK has been closely aligned with a right-wing Republican US President and the idea of an “ethical foreign policy” has been completely abandoned.
 
@@ -376,7 +377,7 @@ Under New Labour, Tony Blair has dragged the UK into a disastrous and unjustifie
 * Argue for a fairer deal for the world’s poor - to make poverty history.
 * Put the challenge of climate change at the heart of everything we do.
 
-#### One World
+## One World
 The Bush/Blair “war against terrorism” is misconceived. Although of course there is a need to protect ourselves against possible terrorist attacks, it is important also to strike at the roots of terrorism. These are often about the injustices suffered by the poor of the world. Unless basic injustices are tackled in a serious way, there will be a further build-up in tension, terrorism, and conflict. Policies for justice are therefore also policies for peace.
 
 A key part of this must be the establishment of a much fairer system for international trade. We support Fair Trade principles and reject the WTO and World Bank obsession with privatising services in developing countries.
@@ -393,14 +394,14 @@ We reiterate our opposition to all weapons of mass destruction, including the **
 
 Plaid Cymru the Party of Wales, opposed US/UK military action in Afghanistan and Iraq. **We are now leading the campaign to impeach Tony Blair for the way he twisted the truth to justify the war in Iraq.**
 
-#### Immigration and Refugees
+## Immigration and Refugees
 Many of the policies we have already outlined – above all, those for tackling the causes of war and economic injustice – will reduce the need felt by many people to flee long distances as emigrants and refugees. At the same time, we also recognise that immigrants and refugees often make an enormous contribution to the countries and communities they join. **We will not prey on people’s fears of an inefficient and under-resourced asylum system to win votes.**
 
 Rather, we recognise the dignity of the human spirit and will seek the abolition of the present practice of keeping asylum seekers in prisons. There should be easy and emergency access for all requiring advice on immigration and asylum.
 
 Wales has accepted economic migrants from many other parts of the UK and Europe for many decades. We recognise that today many are being exploited as a way of circumventing the minimum wage and undercutting local workers. We would support a crackdown on this abuse.
 
-#### Europe
+## Europe
 Plaid Cymru the Party of Wales, is committed to the further development of Europe as a co-operating union of diverse nations. We want to see Wales play its full part as one of the nations of Europe, with a much stronger representation for Wales in European Union institutions.
 
 We want to see greater co-operation within the European Union on matters concerned with foreign policy, conflict prevention, and the use of military force for peacekeeping purposes. The EU is potentially a very important counterweight in the world to the power of the USA.
@@ -411,7 +412,7 @@ We now want to see some commitments from the UK Government regarding the way in 
 
 ---
 
-### The Global Environment & Climate Change
+## The Global Environment & Climate Change
 
 Global climate change produced by emissions of carbon dioxide and other greenhouse gases requires concerted and urgent action by the world community. We must now look past the Kyoto Treaty, regrettably not supported by the USA, for a new international agreement to limit, then reduce greenhouse gas emissions. An essential part of this is a shift worldwide in energy policy to cut carbon emissions by reducing the use of fossil fuels and increasing the use of renewables.
 
@@ -435,7 +436,7 @@ Such policies are essential, as climate change will effect us greatly here in Wa
 
 ---
 
-### ~ People’s Contract ~
+## ~ People’s Contract ~
 
 **Plaid Cymru candidates in the forthcoming Westminster election are offering a contract to voters in each and every constituency throughout Wales**
 
@@ -475,7 +476,7 @@ Such policies are essential, as climate change will effect us greatly here in Wa
 
 ---
 
-### ~ Feedback Form ~
+## ~ Feedback Form ~
 
 **Name:** ....................................................................................................................
 **Address:** ................................................................................................................

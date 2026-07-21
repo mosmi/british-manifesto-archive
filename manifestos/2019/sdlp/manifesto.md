@@ -25,6 +25,7 @@ sections:
   - local-government
 ---
 
+
 # Social Democratic and Labour Party Manifesto 2019
 
 ## Stop Boris, Stop Brexit
@@ -35,7 +36,7 @@ General Election 2019
 
 ---
 
-### Contents
+## Contents
 
 * LEADERS MESSAGE — 1
 
@@ -63,7 +64,7 @@ General Election 2019
 
 ---
 
-### Leader’s Message
+## Leader’s Message
 
 This is no ordinary election. It is our opportunity to take back control from Boris Johnson, the DUP and the rest of the Brexiteers who have sidelined our interests and ignored our democratically expressed will. It’s our chance to stop Boris and stop Brexit.
 
@@ -87,9 +88,9 @@ Colum Eastwood - SDLP Leader
 
 ---
 
-### We’ll take our seats - where it counts, when it counts
+## We’ll take our seats - where it counts, when it counts
 
-#### The Battle Against Brexit
+## The Battle Against Brexit
 
 After this election, Boris Johnson will use every tool at his disposal to remove Northern Ireland from the European Union to satisfy the ERG and Nigel Farage.
 
@@ -99,7 +100,7 @@ Regardless of your feelings about Westminster and its behaviour over the last th
 
 SDLP MPs will use their votes to protect people, businesses and communities here at all costs. We will go to work to stop Boris and stop Brexit.
 
-#### A Political Vacuum
+## A Political Vacuum
 
 In the absence of an inclusive, power sharing Executive at Stormont, more and more decisions have been outsourced to MPs in London.
 
@@ -143,9 +144,9 @@ If you turn up for us, SDLP MPs will turn up for you.
 
 ---
 
-### Stop Boris, Stop Brexit
+## Stop Boris, Stop Brexit
 
-#### The Most Pro-europe Party
+## The Most Pro-europe Party
 
 The SDLP is proud of our history as the most pro-European party on this island. While others opposed the principles of European integration, our leaders were inspired by the European Union as the world’s most successful peace project - bringing former enemies together to forge a new vision for the continent from the fierce antagonism of the second world war.
 
@@ -153,7 +154,7 @@ The European ideals are ingrained in our own peace process thanks to the work of
 
 We voted to remain. For the last three years, Northern Ireland has been abandoned by abstentionist MPs and misrepresented by hardline DUP Brexiteers at Westminster who have ignored the will of people here for five minutes of influence with two Tory governments. This election is your chance to say their time is up.
 
-#### Voting for Change
+## Voting for Change
 
 For the first time in almost three years, we now have the opportunity to remove Boris Johnson from office and put an end to Brexit. SDLP MPs will use every parliamentary, legal and diplomatic tool at our disposal to stop Brexit. These include:
 
@@ -167,7 +168,7 @@ For the first time in almost three years, we now have the opportunity to remove 
 
 * Voting to prevent a damaging no-deal exit.
 
-#### A Progressive Coalition
+## A Progressive Coalition
 
 There is no such thing as a good Brexit, there are only degrees of harm which will be inflicted on people, businesses and communities here. SDLP MPs will defend the interests and the will of people here by voting to stop Brexit at every opportunity.
 
@@ -177,17 +178,17 @@ Our first act in a new parliament will be to bring together a progressive cross-
 
 ---
 
-### Delivering Climate Justice
+## Delivering Climate Justice
 
-#### Our Vision
+## Our Vision
 
 A green new deal and just transition that transforms our economy and helps prevent immediate climate breakdown.
 
-#### Our Pledge
+## Our Pledge
 
 Emergency legislation incentivising the transition from a carbon-intensive to a carbon neutral economy by 2030 and support schemes to allow families to make informed decisions about a clean, green future.
 
-#### A Seismic Challenge
+## A Seismic Challenge
 
 Climate breakdown is the seismic global challenge facing this generation. Failure to take action now will result in significant changes to our global climate and weather patterns that will devastate developed and developing economies across the world, leaving millions destitute and poverty-stricken. Global warming is happening and at a much faster rate than anticipated. Extraordinary action is required to keep global temperature increases below 1.5 degrees Celsius and avert irreversible damage to our climate.
 
@@ -195,7 +196,7 @@ Over the course of the last few years, millions of citizens, led by young people
 
 We know that this crisis will disproportionately affect those least able to bear the burden. Interventions designed to tackle the climate emergency must be robust, equitable and contribute to social justice more broadly. We cannot create a society that offers tax cuts to the wealthy while introducing new levies that disproportionately target the poor.
 
-#### Ecological & Economic Equality
+## Ecological & Economic Equality
 
 We cannot decarbonise our economy without ensuring that clean energy is affordable energy. We cannot deliver income equality without a green economy that creates high quality jobs. We know that ecological transition and economic equality must go hand in hand.
 
@@ -203,7 +204,7 @@ Accepting and addressing the causes of the climate crisis is critical to avoidin
 
 While balancing the needs of our economy with the needs of people and communities, we must also respect the needs of our natural environment. Protecting our indigenous plant and animal life is critical to preserving the delicate ecosystems which we occupy. That demands a tough new look at planning policy to create a new approach to development that respects and nurtures local habitats. The shift to a net gain approach to biodiversity and development across these islands should be examined as a potential model for an ecologically aware economy.
 
-#### A Green Transition
+## A Green Transition
 
 We understand the scale of the challenge facing developed economies. We can’t step into an open, Green economy without a stable transition from where we are now.
 
@@ -211,7 +212,7 @@ We need to create low-carbon alternatives to high-carbon industries and a signif
 
 The European Commission estimates that measures to achieve the current 2030 climate targets alone could create an additional 900,000 jobs. But first, we have to support carbon-intensive industries to make their processes more carbon neutral and resource efficient. We also have to support workers in these sectors to develop new skills that will allow us to lead emerging and transformed industries.
 
-#### Action at Every Level
+## Action at Every Level
 
 The scale of the crisis we’re facing demands urgent action at every level. That’s why SDLP councillors have established climate crisis committees in councils across Northern Ireland to examine how they can mitigate climate breakdown through procurement, by reducing reliance on single use plastics, increasing the availability of water refill stations in parks and public places among other measures.
 
@@ -223,7 +224,7 @@ An SDLP Minister refused the planning application for an incinerator at Hightown
 
 The limit of our ambition for renewable energy should not be heating empty sheds with biomass boilers. Northern Ireland has immense capacity for a transformational shift from legacy fossil fuel technology to green, clean energy production. From the potential of geothermal spots on the North Coast to diversifying our fishing fleets to support sustainable offshore wind, renewable technology is an underutilised resource. It’s vital that we invest in renewable tech, research and development to occupy the space of leadership in this growth sector.
 
-#### Our Climate Priorities
+## Our Climate Priorities
 
 Governments across the world must do more to secure the sustainability of our planet. Failure in this moment will condemn future generations to a crisis not of their making.
 
@@ -247,7 +248,7 @@ SDLP MPs will:
 
 * Introduce a moratorium on strip mining and precious mineral/metal mining until it can be proven that there will be no risk to the enviroment or public health.
 
-#### Climate Coordination
+## Climate Coordination
 
 The European Union is the perfect model for coordinating climate action across all member states. Acting together with our European sister nations, we can more effectively coordinate emissions reduction targets, renewable energy uptake and decarbonisation plans.
 
@@ -267,13 +268,13 @@ We’ll be even more ambitious and push for carbon neutrality by 2030, setting t
 
 ---
 
-### World Class Health Services
+## World Class Health Services
 
-#### Our Vision
+## Our Vision
 
 A world class health service, delivering excellent care free at the point of need.
 
-#### The Price of Impasse
+## The Price of Impasse
 
 The SDLP believes that our health service is suffering from the political impasse. We need a Health Minister, scrutinised by a Health Committee, to take key decisions and unlock urgent investment.
 
@@ -281,65 +282,65 @@ It is clear that our health service has been a victim of chronic under-resourcin
 
 Our waiting lists are growing, leading to distress for individuals and their families. People in the North are at least 48 times as likely to wait more than a year for care as the closest waiting time in Britain. One in four people here are on a waiting list. Waiting lists in each individual Trust area here in the North are longer than the entirety of waiting lists in England. It is clear our health service needs to transform to meet the needs of the people. That’s why the SDLP supports the Bengoa Expert Panel report and supports removing politics from the equation and planning services based on need.
 
-#### NHS Privatisation
+## NHS Privatisation
 
 The SDLP will fight hard against any attempt to privatise our NHS. Our MPs will oppose Boris Johnson and make it clear that our NHS is not on the table in any future trade negotiations with the USA. Our votes in Westminster will be crucial to help to ensure that the biggest social democratic achievement in the world is protected from creeping Tory-Trump privatisation.
 
-#### Our Pledge
+## Our Pledge
 
 Our pledge to you is that we will take the politics out of health. We will lead an honest conversation about our health and social care system and we will not shy away from difficult decisions when they are in the public interest.
 
-#### Supporting Our Greatest Asset – Our Staff
+## Supporting Our Greatest Asset – Our Staff
 
 The greatest asset of our health service is the staff who go above and beyond, in challenging circumstances, to deliver excellent care. Our hardworking staff deserve a fair and consolidated long overdue pay rise, along with the protection of working conditions. The SDLP will fight for pay parity so our nurses and healthcare workers are not earning less than their counterparts in Britain. We also need a comprehensive and fit-for-purpose strategy to tackle the crisis in our workforce, focusing on recruitment and retention
 
-#### The Impact of Brexit on Health and Social Care
+## The Impact of Brexit on Health and Social Care
 
 Brexit will have a huge impact on public services across the North, but most acutely on our health and social care sector. In Northern Ireland, 8.8% of doctors come from other EU countries. In the absence of a functioning Executive, more than ever, Northern Irelands needs MPs to show up to vote in patients interests against a hard Tory Brexit that threatens health workforce supply and timely access to drugs.
 
-#### Mental Health
+## Mental Health
 
 More than 200,000 people across the North suffer as a result of poor mental health, with almost 50% of these cases related to the conflict. The SDLP believes in parity of esteem for mental health services and that these services need to be properly resourced. We must secure an appropriate, community based provision which addresses both the trauma imparted by the conflict and other areas of mental ill health such as eating disorders. It is crucial we instill knowledge and tools in our young people, from childhood, to ensure they are resilient with strong mental wellbeing. The SDLP supports enhanced dual diagnosis and services for those suffering from mental ill health and addiction, particularly for under 18’s.
 
-#### Rural Healthcare
+## Rural Healthcare
 
 The SDLP is of the firm view that there must be a balance between centralisation of services in regional centres of excellence and ensuring that rural communities are able to access care, particularly emergency care, in a way that needs their needs.
 
 We will ensure that the Northern Ireland Ambulance Service and Air Ambulance is properly resourced to meet the needs of geographically isolated communities.
 
-#### General Practice
+## General Practice
 
 The number of GP practices in the North have decreased to the lowest level in over 20 years, providing care to on average 500 more people than 10 years previously. We must properly invest in primary care provision, supporting the roll out of the multidisciplinary teams to enhance general practice. The SDLP supports a review of primary care, seeking to model the service in more innovative ways with easier referral pathways.
 
-#### Medical School at Magee
+## Medical School at Magee
 
 The SDLP will support the development of a Medical School in Derry to address decades of economic inequality and long standing workforce challenges, to provide much needed primary care capacity west of the Bann. This investment will provide critical support to a workforce at breaking point and provide opportunity for communities in the North West, who have been neglected for too long.
 
-#### Prevention and Public Health
+## Prevention and Public Health
 
 The SDLP supports measures to increase public health and prevention including; inclusion of prevention as a key Programme for Government priority, engage the entire workforce in prevention and a wider focus on maternal and child health, obesity, smoking, substance misuse and mental health.
 
-#### Loneliness
+## Loneliness
 
 The SDLP believes there should be a strategy to address loneliness in the North, noting the work done by Sinead Bradley MLA on the cross-party Loneliness taskforce. Evidence highlights the impact extreme loneliness can have on the mental and physical health of an individual.
 
-#### North - South Healthcare
+## North - South Healthcare
 
 The SDLP is committed to an all-island approach to health and social care. We want to see increased provisions for North-South healthcare including a joined-up approach to ambulance service provision in the border areas. Cross border services including ENT at Daisy Hill and Craigavon hospitals and paediatric cardiology in Dublin have all reduced waiting times and waiting lists. It is vital these services are protected and more investment in cross border services is delivered.
 
-#### Fertility
+## Fertility
 
 Noting that 1 in 7 families across the North experience difficulty in having children, the SDLP supports wider access to IVF treatment on the NHS and will increase the entitlement to three IVF cycles, as is the case in Scotland.
 
 ---
 
-### Investing in skills
+## Investing in skills
 
-#### Our Vision
+## Our Vision
 
 An education system that provides all of our people with the skills and opportunities to achieve their ambitions.
 
-#### Opportunity for All
+## Opportunity for All
 
 Excellence and achievement in education is vital for equality, prosperity and wellbeing. The SDLP is committed to the development of an education system which sees achievement and excellence as something that all of our young people can reach for. For too long, too many young people have left our schools still lacking basic numeracy and literacy training and with next-to-no training for life or the workplace. Improvements mean tackling, at source, the problems which lead to educational underachievement, be they inside or outside the classroom.
 
@@ -347,15 +348,15 @@ Financial cuts to school have had a drastic effect on the ability of teachers to
 
 SDLP MPs will ensure that any future funding package for Northern Ireland includes ring-fenced resources for our education system.
 
-#### Early Years
+## Early Years
 
 The first years of a child’s life are vital for their wellbeing. The foundations for our paths in life are laid in these years. The SDLP has consistently campaigned for an increase in free childcare provision to 20 hours per week, with a view to further increasing this to 30 hours per week. We remain steadfastly committed to delivering on this commitment and any extra funding secured by SDLP MPs will be used for this purpose.
 
-#### Our Pledge
+## Our Pledge
 
 We will ensure that any future funding package includes ring-fenced resources for university expansion and skills development.
 
-#### Primary and Post Primary Schools.
+## Primary and Post Primary Schools.
 
 The political failure to restore power-sharing in Stormont, has led to a deepening of the financial crisis, with a delay in decision making leading to the decay at the heart of our education sector. It is disgraceful that schools are now resorting to writing to parents asking for support so that schools can be properly resourced - this cannot continue and increased funding for schools will form a central principle of any package which SDLP MPs secure.
 
@@ -363,13 +364,13 @@ Our curriculum requires modernisation if we are to compete globally. This should
 
 The SDLP remains opposed to academic selection, a system which results in dramatic inequality in education and puts young children through a needlessly stressful process. An education system which welcomes and supports all children in deciding their own educational pathway is vital and we will continue to work to end this outdated and
 
-#### Autism and Adhd Support
+## Autism and Adhd Support
 
 The lack of support for children diagnosed with autism or ADHD is reaching crisis levels in our schools. Delays in assessments, excessive bureaucracy, red-tape and the lack of co-ordination between health and educational authorities means that children and their families do not receive the help they need.
 
 The SDLP will commission an urgent review of SEND education provision, including the Education Authrority’s work in this area and the implementation of the SEND Act (NI) 2016 to report urgently on improvements to be made in this area.
 
-#### Further and Higher Education
+## Further and Higher Education
 
 Universities and FE Colleges are critically important to providing training and skills for our society and economy. As well as providing training for our young people, they attract national and international funding and build close links with research and industry which benefits our entire economy and society.
 
@@ -379,7 +380,7 @@ The SDLP remains committed to funding education as a public good, including putt
 
 In addition, the SDLP is committed to the expansion of the Magee campus to 10,000 student places through direct government funding, North-South structural funds and further government support.
 
-#### Apprenticeships
+## Apprenticeships
 
 Funding for apprenticeships at all levels, including higher-level apprenticeship is vital to improve training and skills opportunities for young people and in our overall productivity. The SDLP will seek to increase funding of these opportunities, and to provide direct support to universities, colleges and employers to further expand the number of Higher-Level Apprenticeships.
 
@@ -387,31 +388,31 @@ The Apprenticeship Levy requires substantial reform and the inclusion of a deliv
 
 ---
 
-### A vibrant economy
+## A vibrant economy
 
-#### Our Vision
+## Our Vision
 
 A prosperous, world class economy, delivering equality and opportunity to all our citizens.
 
-#### A Broad Challenge
+## A Broad Challenge
 
 Building a vibrant and world class economy creates jobs, reduces inequality and means more revenue to support public services. That is why the task of strengthening our economy will be the central focus of SDLP MPs, an Executive if and when it returns, and our local councils. The SDLP is committed to improving our economy and growing our private sector. That economy is not just our businesses, but it is all organisations, including third sector, who work to improve our society.
 
-#### City Deals
+## City Deals
 
 The SDLP pioneered the introduction of City Deals in Northern Ireland. We welcome the recent developments in councils across Northern Ireland. City Deals will play a key part in ensuring access to training for young people increasing employment and ensuring that our technology infrastructure meets the demands of the modern economy.
 
 However, it is clear that for spending to be authorised for each City Deal, we need a local Executive in place and that is absolutely vital to fully realise the potential of our City Deals.
 
-#### Our Pledge
+## Our Pledge
 
 The SDLP will prioritise wealth creation, training and skills, safeguarding our young people and workers against the economic threats of Brexit.
 
-#### Tourism
+## Tourism
 
 While our tourism market goes from strength-to-strength, key financial tools to support the tourism industry remain in the control of Westminster. The SDLP will continue to call for an end to Air Passenger Duty (APD) which will allow airports in Northern Ireland to compete with their Southern counterparts and explore new routes to attract tourists. In addition, the power to reduce VAT on tourism and hospitality services remains at Westminster and SDLP MPs will seek its reduction to act as an additional stimulus to our tourism market.
 
-#### Agriculture & Agri-food
+## Agriculture & Agri-food
 
 Brexit is the greatest threat to the agriculture sector in decades and SDLP MPs will do everything in our power to stop it and to reduce the damaging effect it will have on our farming communities. That means ensuring that everything must be done to stop a hard Brexit which would see the economic decimation of farms through the removal of tariffs and flooding of our markets with cheap poor-quality imports.
 
@@ -419,23 +420,23 @@ Ensuring the maintenance of EU standards, including on animal welfare, will form
 
 SDLP MPs in Westminster will ensure that our agri-food industry has a voice at the top table when it comes to decisions on agri-food and new markets. This means our farmers and agri-food businesses will not be disadvantaged through any UK-wide deals which may emerge.
 
-#### Corporation Tax
+## Corporation Tax
 
 The SDLP supports the devolution of corporation tax powers to Northern Ireland as an absolutely vital step in growing private sector employment. The impact of any cut must be competitive, especially against other similar regions, and should be focused on delivering growth in areas of high productivity and employment.
 
-#### Housing
+## Housing
 
 The work of the Northern Ireland Housing Executive and housing associations in providing social housing is absolutely vital. It is important that social housing providers are given full support to ensure that more new housing is built in the areas of greatest need. The reclassification of housing association debt is a vital way of ensuring the full financial strength of associations can be harnessed to build more homes.
 
 Affordable housing schemes should also be expanded to give more first-time buyers the chance to own their own home. This means that those who are unable to access social housing, but cannot buy their own home, are able to have this chance. The SDLP will work to see the creation of more shared housing schemes, more mixed developments to include social, affordable and private homes and reform of common selection and regulation of the private rented sector.
 
-#### Public Sector Pay
+## Public Sector Pay
 
 The Northern Ireland Department for Health and the Executive’s decision to reject clear recommendations from the independent pay review body about the pay regime for nurses, midwives and other health service professionals has become increasingly exploitative of these workers’ strong sense of vocation. The move by the Royal College of Nurses to take industrial action for the first time in their over 100-year history is a clear indication that nurses have been taken for granted for too long and action is needed to address the immense pressure on our public servants.
 
 Unlike the DUP, who voted against a pay increase for public sector workers in an amendment to a Queen’s Speech tabled by the Labour Party, SDLP MPs will use our influence and votes to deliver a consolidated pay increase for public sector workers. We will always vote to deliver a fair deal for nurses, firefighters and other emergency service staff.
 
-#### Jobs & Skills
+## Jobs & Skills
 
 The SDLP has always been committed to delivering better jobs, better wages and a fairer economy. SDLP MPs will support this by ensuring Northern Ireland is properly funded to support our manufacturing industry, to increase the number of SMEs, and to increase our levels of exports, which pale in comparison to Republic. That means supporting the growth of indigenous manufacturing and attracting manufacturers from abroad to Northern Ireland. It also means harnessing the spending power of local and national government to support local enterprises.
 
@@ -443,55 +444,55 @@ We will ensure that Invest NI work closely with Enterprise Ireland to learn from
 
 ---
 
-### Connecting Communities through Infrastructure
+## Connecting Communities through Infrastructure
 
-#### Our Vision
+## Our Vision
 
 A modern network of physical and digital infrastructure meeting the needs of people in towns, villages and cities across Northern Ireland.
 
-#### Setting the Building Blocks
+## Setting the Building Blocks
 
 State-of-the-art infrastructure is a key building block of prosperity for any society. Northern Ireland requires a comprehensive programme of investment across a range of infrastructure including telecommunications, railways, roads, energy and green infrastructure. Working at Westminster, SDLP MPs will ensure the continued delivery of City Deals in Northern Ireland and will ensure that the block grant reflects the needs of Northern Ireland.
 
-#### Roads and Road Safety
+## Roads and Road Safety
 
 Northern Ireland does not have a modern roads network. While continued work sees some improvements on the A5 and A6, the travel time between our two largest cities is far too long. Delays in planning have added to the frustration of many of those living outside Belfast subjected to a substandard roads network. The SDLP will seek fast-tracked funding for the update of our roads network, including cross-border projects like Narrow Water Bridge. We will work to secure a more efficient planning process which will ensure proper consultation on changes without taking years.
 
 The SDLP’s commitment to road safety remains steadfast – too many people are being killed and injured on our roads. This includes ensuring our new and existing roads infrastructure are properly designed and maintained to world standards. We will deliver ongoing increases in road safety campaigning budgets to bring the message of how important road safety is.
 
-#### Our Pledge
+## Our Pledge
 
 Ensure that infrastructure protects and enhances the environment, supports economic growth and delivers more connected communities.
 
-#### Rail
+## Rail
 
 The closure of vast swathes of our railway network was a huge mistake. The climate emergency means putting more and more cars on the road is no longer a viable solution to our transport needs. The SDLP is committed to the retention of our current rail network and its expansion to other locations across the North. We are committed to the creation of stations at Belfast International Airport, Belfast City Airport and City of Derry Airport – these airports are all very close to existing railway lines, yet incredibly none have a dedicated railway station. This simple investment would not only bring us up to modern standards, it would reduce car journeys by tens of thousands, thereby reducing air pollution.
 
 The SDLP is committed to transformative improvements on the Belfast-Dublin train line. Brexit has brought into sharp focus the rapid improvement required on this line, which has seen no improvement in the journey time of two hours in over 20 years. At an era when journeys of a similar distance on European networks take one hour, we should be aiming to deliver that speed of service here. The SDLP welcomes the various feasibility studies underway at present to explore how this vital railway line can be improved.
 
-#### Rural Broadband
+## Rural Broadband
 
 Our rural towns, villages and countryside have been left behind in the broadband revolution. Too many homes and businesses in rural areas – especially West of the Bann – are still unable to access broadband services with adequate download speeds. While extra investment in broadband infrastructure is to be welcomed, the ongoing delays are unacceptable. SDLP MPs will make the fast-tracking of this process a top priority – rural areas should no longer be discriminated against when it comes to broadband provision.
 
-#### Waterways
+## Waterways
 
 Our loughs, rivers and canals are an unexplored jewel in our environmental crown. Not only do improvements in our waterways infrastructure protect and improve the environment, they open up hundreds of locations to tourism right across Northern Ireland and benefit rural areas. Ensuring that this network grows and flourishes is a key commitment of the SDLP.
 
-#### Energy
+## Energy
 
 Restrictions in our energy infrastructure continue to stifle investment, especially in manufacturing, in various parts of Northern Ireland. In addition, consumers are subject to continued price increases. SDLP MPs will use our influence in Westminster to increase funding for energy infrastructure. In addition, we remain committed to the further advancement of the all-Ireland energy market and are committed to overall renewables targets and the reduction of domestic prices which increased competition can bring.
 
-#### Cycling
+## Cycling
 
 We still have not made a meaningful commitment to building world-class cycling infrastructure despite decades of platitudes and the climate emergency we now face, which means taking cars off the road is a challenge that all of us must meet.
 
 We remain committed to delivering cycling improvements through more greenways in rural communities, and prioritising the development of cycle lanes and other cycle infrastructure in towns and cities.
 
-#### Water and Wastewater
+## Water and Wastewater
 
 The SDLP has and will remain resolutely opposed to domestic water charges. Despite the previous capital investment programme, and the new Water and Sewerage Act, there continues to be significant short-falls in water and wastewater infrastructure, especially in Belfast and in some rural areas.
 
-#### Regional Infrastructure Commission
+## Regional Infrastructure Commission
 
 The UK National Infrastructure Commission provides a strategic assessment of long-term infrastructure needs at the beginning of each parliamentary mandate alongside recommendations for project delivery. It also produces expert-led research into the most pressing infrastructure challenges while monitoring progress on delivering new projects.
 
@@ -499,17 +500,17 @@ SDLP MPs will make the case for a regional infrastructure commission to break th
 
 ---
 
-### An Ireland for All
+## An Ireland for All
 
-#### Our Vision
+## Our Vision
 
 A fairer, socially just society where difference is respected, not just tolerated.
 
-#### A Bill of Rights
+## A Bill of Rights
 
 Human rights provide vital protections for everyone in Northern Ireland. The SDLP believes it is the responsibility of all of us to respect the rights of others and we will continue to campaign for the adoption of a Northern Ireland Bill of Rights to protect, strengthen and uphold the social, cultural and economic rights we currently enjoy.
 
-#### Lgbt+ Rights
+## Lgbt+ Rights
 
 The SDLP is a strong and proud supporter of LGBT+ rights. SDLP Leader Colum Eastwood brought forward the first Assembly motion on equal marriage that achieved a majority. Prior to the collapse of the Assembly, the SDLP was working on a cross party basis to table a marriage equality bill.
 
@@ -517,31 +518,31 @@ The SDLP recognises that there is much progress still to make to ensure we achie
 
 SDLP MPs will use our votes to promote LGBT+ rights at home and around the world.
 
-#### Our Pledge
+## Our Pledge
 
 Our MPs will be in Westminster where it counts, continuing to champion human rights both here at home and internationally and ensuring that the rights of workers are safeguarded.
 
-#### Racism
+## Racism
 
 The SDLP strongly opposes racism and xenophobia in all forms. We are concerned by reports of increased hate crime following the vote to leave the European Union. We believe that Northern Ireland is greatly enriched by those who have come here to make a new home and this will help progress towards a truly shared future. SDLP MPs will fight to protect EU nationals who have made their home here. They must not be used as a bargaining chip in any Brexit negotiations.
 
 Immigration has enriched the North. Given that immigration remains a reserved matter controlled by the British Government, it is crucial that SDLP MPs are in Westminster to make the case that people of the North have the legal entitlement to be Irish. Any change to this position would be a dilution of the principles of the Good Friday Agreement.
 
-#### An Ghaeilge – Irish Language
+## An Ghaeilge – Irish Language
 
 Tá PDSLO go mór i bhfách le hAcht Gaeilge a bheith ann a dhéanfaidh an teanga a chosaint agus a fhorbairt fud fad an Tuaiscirt. Tacaíonn muid le hAcht a chinnteoidh aitheantas dlíthiúil don teanga agus serbhísí poiblí fríd an teanga, an rialtas áitiúil agus na hinstitiúidí polaitiúla san áireamh. Rachaidh feisirí PSDLO go Westminster agus oibreoidh siad leis na páirtithe leasmhara le hAcht Gaeilge a chur i reachtaíocht a mbeidh cúrsaí craolachán ina chuid de chomh maith le cúrsaí eile atá faoi chumhacht na parlaiminte sin faoi láthair.
 
 The SDLP is committed to the establishment of a rights based Irish Language Act, to protect and enhance the language across the North. We support an Act that ensures legal recognition for the Irish language, and better integration within our public services; including local government and political institutions. SDLP MPs will go to Westminster and, working with various language stakeholders, will press the case for protection for the Irish language. This includes proposing an Irish Language Act in Westminster to ensure the powers retained by Westminster, such as broadcasting, are covered by the Act.
 
-#### Dignity for Our Older People
+## Dignity for Our Older People
 
 Older people in our society deserve dignity and to have a good quality of life. The SDLP commit to no further erosion of older people’s entitlements and will work to increase awareness of the financial entitlements available to older people, to ensure they get what they are entitled to. The SDLP will fight and vote against any attempt to remove the free TV license from over 75s. We will oppose the increase in state pension age and stand by the women born in the 1950s affected by the unfair hike in state pension age in their campaign for justice.
 
-#### Disability Rights
+## Disability Rights
 
 The SDLP understands that society and its structures ultimately disable people. We believe in the Social Model of disability. It is this model which guides our understanding and work in respect of disability. As a party we are fully committed to supporting all disabled people to realise their rights as defined in the UNCRPD. We believe in the inherent dignity and worth of every disabled person and their valuable contribution to our society past, present and future.
 
-#### International Human Rights
+## International Human Rights
 
 The SDLP will continue to champion and defend human rights. The international issues that people across the North care about are primarily dealt with at Westminster. The votes of SDLP and our allies have defeated the British Government’s reckless approach to foreign affairs and intervention in the Middle East.
 
@@ -551,31 +552,31 @@ From tackling tax evasion to speaking up for a humanitarian approach to refugees
 
 ---
 
-### Policing and Justice
+## Policing and Justice
 
-#### Our Vision
+## Our Vision
 
 A safe, shared society that protects people from crime, meets the needs of victims and works to rehabilitate those who fall into a cycle of criminal behaviour.
 
-#### Healing Through Justice
+## Healing Through Justice
 
 There is a continuing and urgent need to comprehensively and ethically address the legacy of the Past and the needs of victims and survivors. This would be one of the single greatest contributions to reconciliation and healing.
 
-#### Truth and Justice
+## Truth and Justice
 
 Successive British Governments have been clear they will seek to protect their wider state interests in relation to addressing the past and in multiple ways, they will resist accountability. In this critical period on addressing the past, it is vital that there are votes in Westminster to challenge the British Government. SDLP MPs have done that robustly and will continue to do so.
 
-#### Animal Cruelty
+## Animal Cruelty
 
 SDLP MPs were previously active in Westminster in defending animal welfare.
 
 SDLP MPs at Westminster will support the establishment of an all-Islands animal cruelty register to ensure that animals aren’t inadvertently rehomed to banned persons, increasing the risk of serial offending.
 
-#### Our Pledge
+## Our Pledge
 
 Our MPs will approach legacy, the past and policing issues with the needs of victims in mind and ensure any process is human rights compliant.
 
-#### Standing Up for Victims
+## Standing Up for Victims
 
 Throughout the various negotiations that have taken place since the Good Friday Agreement, the SDLP has pressed for the Agreement’s promise to victims to be honoured and addressed. The range of the Eames-Bradley proposals have regrettably been downgraded.
 
@@ -583,7 +584,7 @@ We supported the Haass-O’Sullivan proposals and regret these have been diluted
 
 The SDLP supports the introduction of a Victims Payment Scheme and will continue to fight for a fair and just mechanism of delivery. The SDLP will work with WAVE Trauma Centre and other stakeholders to ensure that any payments would not affect existing social security benefits. SDLP MPs will press to ensure this scheme is properly funded and that support should be on the basis of need.
 
-#### Policing
+## Policing
 
 The SDLP supports substantive reforms to the criminal justice system to deliver faster, fairer justice with increased accountability. This is best achieved by introducing clear timelines for bringing a case to court and increasing communication between victims, the PSNI and the Public Prosecution Service.
 
@@ -591,7 +592,7 @@ The SDLP will fight against cuts to legal aid and the closure of courthouses, to
 
 The SDLP believes the single most effective way to fight crime and make our communities safer is to have a visible police presence. We recognise the impact that a decade of Tory austerity has had on community policing and we support increasing resource to the PSNI to ensure that they can operate effectively and efficiently to meet the needs of victims of crime.
 
-#### Domestic Abuse
+## Domestic Abuse
 
 SDLP MPs supported the successful Istanbul Convention Bill on preventing and combating domestic violence against women and girls. We will support a cross departmental Domestic Violence Strategy to tackle the unacceptable level of domestic abuse and gender violence in the North, as well as comprehensive legislation, to include coercive behaviour.
 
@@ -599,29 +600,29 @@ The SDLP is concerned that the British Government’s Domestic Abuse Bill does n
 
 ---
 
-### Restoring and reforming Stormont
+## Restoring and reforming Stormont
 
-#### Our Vision
+## Our Vision
 
 Inclusive, sustainable powersharing government that delivers a prosperous economy and first class public services for all communities.
 
-#### Bridging the Gaps
+## Bridging the Gaps
 
 Northern Ireland has been without a government for over 1000 days, leaving vital public services in crisis with no Ministers to take strategic resource decisions. The evidence for the crisis can be found in longer waiting lists, supply shortages in our schools and the welfare cliff edge facing tens of thousands of families.
 
 The SDLP has made bold proposals to bridge the gaps between parties and secure the restoration of reformed institutions.
 
-#### Repairing Relationships
+## Repairing Relationships
 
 There are several fault lines that risk the stability and sustainability of a future Executive. Key among these are the relationships between leaders and parties which have become frayed over a period of years. A priority must be resetting the relationships between parties to work together in our substantial common interests.
 
 There must also be a new way of identifying and managing emerging risks and critical incidents which may test the relationships between parties. The SDLP has also made proposals in this area.
 
-#### Our Pledge
+## Our Pledge
 
 The SDLP will make radical proposals for the reform and restoration of an Executive that delivers health services and economic investment that people need.
 
-#### The Petition of Concern
+## The Petition of Concern
 
 The SDLP supports substantial reform of the Petition of Concern to restore the mechanism to its original purpose – a way of protecting minority communities from abuse by others. We have made significant proposals to constrain the opportunities for the deployment of the veto to issues relating to human rights and equality, with further proposals for a robust system of accountability.
 
@@ -629,7 +630,7 @@ We recognise, however, that agreement around a specific package for reform may p
 
 Reforming the Assembly veto will allow any challenging issues, and any future issues which threaten the sustainability of the institutions, to be dealt with by way of a simple vote on the floor of the Assembly.
 
-#### A New Era of Civic Engagement
+## A New Era of Civic Engagement
 
 We must recognise the serious anxiety and exasperation that has been expressed in civic society about the failure of politics over the last three years.
 
@@ -653,19 +654,19 @@ This should include:
 
 ---
 
-### Social security
+## Social security
 
-#### Our Vision
+## Our Vision
 
 A healthy and prosperous society where poverty is tackled and not normalised, and where we provide a safety net for those who fall on hard times.
 
-#### Tackling Poverty
+## Tackling Poverty
 
 In Northern Ireland in 2019 we have 292,000 adults and 85,000 children living in poverty. As a society we cannot allow survival by food banks, increasing levels of poverty, homelessness, debt and despair to be normalised or denied. It is shameful we do not have a government and Assembly in the north to help protect people. Tackling poverty and empowering citizens will be a key priority for the SDLP in Westminster and it remains a key priority for us in any Talks process to restore devolution.
 
 There has been a deliberate attempt to demonise those on social security and to dismiss them as ‘scroungers’. A healthy and prosperous society requires a safety net for those who fall on hard times and language has a powerful role to play. We should reject and refuse to use terms like ‘welfare and claimants’ and instead use ‘entitlements and people’.
 
-#### Mitigating the Crisis
+## Mitigating the Crisis
 
 SDLP MPs in Westminster, in the absence of an Assembly, will vote to strengthen & extend mitigations for another four years with a commitment to redistribute any underspend towards tackling poverty.
 
@@ -673,17 +674,17 @@ The reality however is that mitigations are a sticking plaster. The social secur
 
 SDLP MPs will support efforts to deliver the living wage for workers and support businesses to deliver fairer work conditions.
 
-#### Our Pledge
+## Our Pledge
 
 SDLP MPs will vote to scrap Universal Credit, the Bedroom Tax and vote to scrap the two child limit policy and end the benefits freeze. SDLP MPs in Westminster, in the absence of an Assembly, will press for an adequate mitigations package with a commitment to redistribute any underspend towards tackling poverty.
 
-#### Ending Austerity
+## Ending Austerity
 
 The UN Special rapporteur on extreme poverty Philip Alston rightly described Welfare Reform as ‘a digital and sanitised version of the 19th-century workhouse, made infamous by Charles Dickens’. He also correctly said austerity wasn’t a necessity. It is a political choice.
 
 This UN report confirmed, as does the mountain of evidence, that women, children, the disabled and low income working families, are among the hardest hit groups by Welfare Reform. In Northern Ireland given our unique circumstances; the legacy of the conflict, the shortage and segregated nature of our social housing, higher disability rates and larger family sizes, means the impact of Welfare Reform is particularly hard hitting. These unique circumstances require a unique social security response.
 
-#### Homelessness
+## Homelessness
 
 SDLP MPs will support positive housing decisions and prioritise spending on social housing and new build programmes, including budgetary lines which in turn factor into the Barnett formula allocation for Northern Ireland.
 
@@ -693,7 +694,7 @@ The SDLP believes that at least 3,000 new social homes are needed each year to m
 
 If we are to successfully tackle homelessness, an initial step must be to place a duty of co-operation on Government departments. The SDLP tabled proposals to introduce this duty and will progress this through legislation, as a first step in reducing homelessness.
 
-#### A Fairer Deal
+## A Fairer Deal
 
 Too many people in communities across the North have been let down by this government. Nowhere is that more true than for the WASPI women who have had their pensions raided after making significant plans for their financial stability in retirement. It is a disgrace that they now face years longer in work and have had their confidence in government shattered by the callous actions of this administration. SDLP MPs will vote for pension justice for this generation of women.
 

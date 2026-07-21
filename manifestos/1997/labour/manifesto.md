@@ -24,11 +24,12 @@ sections:
   - local-government
 ---
 
+
 # Labour Party Manifesto 1997
 
 ## new Labour because Britain deserves better
 
-### Britain will be better with new Labour
+## Britain will be better with new Labour
 
 'Our case is simple: that Britain can and must be better'
 
@@ -73,7 +74,7 @@ nation in facing the tough and dangerous challenges of the new economy and chang
 in which we must live. I want a Britain which we all feel part of, in whose future we all
 have a stake, in which what I want for my own children I want for yours.
 
-#### A new politics
+## A new politics
 
 The reason for having created new Labour is to meet the challenges of a different world.
 The millennium symbolises a new era opening up for Britain. I am confident about our
@@ -105,7 +106,7 @@ middle class versus working class. It is time for this country to move on and mo
 We are proud of our history, proud of what we have achieved - but we must learn from our
 history, not be chained to it.
 
-#### New Labour
+## New Labour
 
 The purpose of new Labour is to give Britain a different political choice: the choice
 between a failed Conservative government, exhausted and divided in everything other than
@@ -126,7 +127,7 @@ successful businessman or woman to the pensioner on a council estate. Young peop
 flooded in to join us in what is the fastest growing youth section of any political party
 in the western world.
 
-#### The vision
+## The vision
 
 We are a broad-based movement for progress and justice. New Labour is the political arm of
 none other than the British people as a whole. Our values are the same: the equal worth of
@@ -153,7 +154,7 @@ The vision is one of national renewal, a country with drive, purpose and energy.
 equipped to prosper in a global economy of technological change; with a modern welfare state;
 its politics more accountable; and confident of its place in the world.
 
-#### Programme: a new centre and centre-left politics
+## Programme: a new centre and centre-left politics
 
 In each area of policy a new and distinctive approach has been mapped out, one that differs
 both from the solutions of the old left and those of the Conservative right. This is why
@@ -281,7 +282,7 @@ Please phone 0171 277 3410
 
 Visit Labour's general election website at
 
-### We will make education our number one priority
+## We will make education our number one priority
 
 - Cut class sizes to 30 or under for 5, 6 and 7 year-olds
 
@@ -334,7 +335,7 @@ Church schools will retain their distinctive religious ethos.
 We wish to build bridges wherever we can across education divides. The educational apartheid
 created by the public/private divide diminishes the whole education system.
 
-#### Zero tolerance of underperformance
+## Zero tolerance of underperformance
 
 Every school has the capacity to succeed. All Local Education Authorities (LEAs) must
 demonstrate that every school is improving. For those failing schools unable to improve,
@@ -342,7 +343,7 @@ ministers will order a 'fresh start' - close the school and start afresh on the 
 Where good schools and bad schools coexist side by side we will authorise LEAs to allow
 one school to take over the other to set the underperforming school on a new path.
 
-#### Quality nursery education guaranteed for all four year-olds
+## Quality nursery education guaranteed for all four year-olds
 
 Nursery vouchers have been proven not to work. They are costly and do not generate more
 quality nursery places. We will use the money saved by scrapping nursery vouchers to
@@ -350,7 +351,7 @@ guarantee places for four year-olds. We will invite selected local authorities t
 early excellence centres combining education and care for the under-fives. We will set
 targets for universal provision for three year-olds whose parents want it.
 
-#### New focus on standards in primary schools
+## New focus on standards in primary schools
 
 Primary schools are the key to mastering the basics and developing in every child an
 eagerness to learn.
@@ -371,7 +372,7 @@ Our numeracy taskforce will develop equally ambitious targets. We will encourage
 the most effective teaching methods, including phonics for reading and whole class
 interactive teaching for maths.
 
-#### Attacking educational disadvantage
+## Attacking educational disadvantage
 
 No matter where a school is, Labour will not tolerate under-achievement.
 
@@ -392,7 +393,7 @@ We support the greatest possible integration into mainstream education of pupils
 educational needs, while recognising that specialist facilities are essential to meet
 particular needs.
 
-#### Realising the potential of new technology
+## Realising the potential of new technology
 
 Labour is the pioneer of new thinking. We have agreed with British Telecom and the cable
 companies that they will wire up schools, libraries, colleges and hospitals to the
@@ -428,7 +429,7 @@ sound discipline. Schools suffer from unruly and disruptive pupils. Exclusion or
 may sometimes be necessary. We will, however, pilot new pupil referral units so that
 schools are protected but these pupils are not lost to education or the country.
 
-#### New job description for LEAs
+## New job description for LEAs
 
 The judge and jury of LEA performance will be their contribution to raising standards.
 
@@ -438,7 +439,7 @@ governors. LEA performance will be inspected by Ofsted and the Audit Commission.
 authorities are deemed to be failing, the secretary of state may suspend the relevant powers
 of the LEA and send in an improvement team.
 
-#### Grant maintained schools
+## Grant maintained schools
 
 Schools that are now grant maintained will prosper with Labour's proposals, as will every
 school.
@@ -449,7 +450,7 @@ be represented on governing bodies, but will not control them. We support guidel
 open and fair admissions, along the lines of those introduced in 1993; but we will also
 provide a right of appeal to an independent panel in disputed cases.
 
-#### Teachers: pressure and support
+## Teachers: pressure and support
 
 Schools are critically dependent on the quality of all staff. The majority of teachers are
 skilful and dedicated, but some fall short. We will improve teacher training, and ensure
@@ -464,7 +465,7 @@ The strength of a school is critically dependent on the quality of its head. We 
 establish mandatory qualifications for the post. A head teacher will be appointed to a
 position only when fully trained to accept the responsibility.
 
-#### Higher education
+## Higher education
 
 The improvement and expansion needed cannot be funded out of general taxation. Our proposals
 for funding have been made to the Dearing Committee, in line with successful policies
@@ -475,7 +476,7 @@ from the career success to which higher education has contributed. The current s
 badly administered and payback periods are too short. We will provide efficient
 administration, with fairness ensured by longer payback periods where required.
 
-#### Lifelong learning
+## Lifelong learning
 
 We must learn throughout life, to retain employment through new and improved skills. We will
 promote adult learning both at work and in the critical sector of further education.
@@ -500,7 +501,7 @@ technology to enhance skills and education. The University for Industry will be 
 public/private partnership, commissioning software and developing the links to extend
 lifelong learning.
 
-#### Government spending on education
+## Government spending on education
 
 The Conservatives have cut government spending on education as a share of national income
 by the equivalent of more than £3 billion as spending on the bills of economic and
@@ -508,7 +509,7 @@ social failure has risen. We are committed to reversing this trend of spending. 
 course of a five-year Parliament, as we cut the costs of economic and social failure we
 will raise the proportion of national income spent on education.
 
-### We will promote personal prosperity for all
+## We will promote personal prosperity for all
 
 - Economic stability to promote investment
 
@@ -558,7 +559,7 @@ problems or end the economic cycle. But by spending wisely and taxing fairly, go
 can help tackle the problems. Our goals are low inflation, rising living standards and high
 and stable levels of employment.
 
-#### Spending and tax: new Labour's approach
+## Spending and tax: new Labour's approach
 
 The myth that the solution to every problem is increased spending has been comprehensively
 dispelled under the Conservatives. Spending has risen. But more spending has brought neither
@@ -604,7 +605,7 @@ fair deal.
 
 New Labour therefore makes the following economic pledges.
 
-#### Fair taxes
+## Fair taxes
 
 There will be no return to the penal tax rates that existed under both Labour and Conservative
 governments in the 1970s.
@@ -629,13 +630,13 @@ We will also examine the interaction of the tax and benefits systems so that the
 streamlined and modernised, so as to fulfil our objectives of promoting work incentives,
 reducing poverty and welfare dependency, and strengthening community and family life.
 
-#### No risks with inflation
+## No risks with inflation
 
 We will match the current target for low and stable inflation of 2. 5 per cent or less.
 We will reform the Bank of England to ensure that decision-making on monetary policy is
 more effective, open, accountable and free from short-term political manipulation.
 
-#### Strict rules for government borrowing
+## Strict rules for government borrowing
 
 We will enforce the 'golden rule' of public spending - over the economic cycle, we will
 only borrow to invest and not to fund current expenditure.
@@ -643,27 +644,27 @@ only borrow to invest and not to fund current expenditure.
 We will ensure that - over the economic cycle - public debt as a proportion of national
 income is at a stable and prudent level.
 
-#### Stick to planned public spending allocations for the first two years of office
+## Stick to planned public spending allocations for the first two years of office
 
 Our decisions have not been taken lightly. They are a recognition of Conservative
 mismanagement of the public finances. For the next two years Labour will work within the
 departmental ceilings for spending already announced. We will resist unreasonable demands
 on the public purse, including any unreasonable public sector pay demands.
 
-#### Switch spending from economic failure to investment
+## Switch spending from economic failure to investment
 
 We will conduct a central spending review and departmental reviews to assess how to use
 resources better, while rooting out waste and inefficiency in public spending.
 
 Labour priorities in public spending are different from Tory priorities.
 
-#### Tax reform to promote saving and investment
+## Tax reform to promote saving and investment
 
 We will introduce a new individual savings account and extend the principle of TESSAs
 and PEPs to promote long-term saving. We will review the corporate and capital gains tax
 regimes to see how the tax system can promote greater long-term investment.
 
-#### Labour's welfare-to-work Budget
+## Labour's welfare-to-work Budget
 
 We will introduce a Budget within two months after the election to begin the task of
 equipping the British economy and reforming the welfare state to get young people and the
@@ -671,7 +672,7 @@ long-term unemployed back to work. This welfare-to-work programme will be funded
 windfall levy on the excess profits of the privatised utilities, introduced in this Budget
 after we have consulted the regulators.
 
-### We will help create successful and profitable businesses
+## We will help create successful and profitable businesses
 
 - Backing business: skills, infrastructure, new markets
 
@@ -725,7 +726,7 @@ But flexibility alone is not enough. We need *'flexibility plus'*:
 - plus an imaginative welfare-to-work programme to put the long-term unemployed
  back to work and to cut social security costs.
 
-#### A reformed and tougher competition law
+## A reformed and tougher competition law
 
 Competitiveness abroad must begin with competition at home. Effective competition can
 bring value and quality to consumers. As an early priority we will reform Britain's
@@ -740,7 +741,7 @@ interests of the environment as well. We recognise the need for open and predict
 regulation which is fair both to consumers and to shareholders and at the same time
 provides incentives for managers to innovate and improve efficiency.
 
-#### Reinvigorate the Private Finance Initiative
+## Reinvigorate the Private Finance Initiative
 
 Britain's infrastructure is dangerously run down: parts of our road and rail network are
 seriously neglected, and all too often our urban environment has been allowed to
@@ -759,7 +760,7 @@ We will ensure that self-financing commercial organisations within the public se
 Post Office is a prime example - are given greater commercial freedom to make the most of
 new opportunities.
 
-#### Backing small business
+## Backing small business
 
 The number of small employers has declined by half a million since 1990. Support for small
 businesses will have a major role in our plans for economic growth. We will cut unnecessary
@@ -768,14 +769,14 @@ high-tech start-ups; improve the quality and relevance of advice and training th
 reformed Business Links network and the University for Industry; and assist firms to enter
 overseas markets more effectively.
 
-#### Local economic growth
+## Local economic growth
 
 Prosperity needs to be built from the bottom up. We will establish one-stop regional
 development agencies to co-ordinate regional economic development, help small business
 and encourage inward investment. Many regions are already taking informal steps to this
 end and they will be supported.
 
-#### Strengthen our capability in science, technology and design
+## Strengthen our capability in science, technology and design
 
 The UK must be positively committed to the global pursuit of new knowledge, with a strong
 science base in our universities and centres of excellence leading the world. The Dearing
@@ -784,7 +785,7 @@ teaching and research throughout UK higher education. We support a collaborative
 between researchers and business, spreading the use of new technology and good design, and
 exploiting our own inventions to boost business in the UK.
 
-#### Promoting new green technologies and businesses
+## Promoting new green technologies and businesses
 
 There is huge potential to develop Britain's environmental technology industries to create
 jobs, win exports and protect the environment.
@@ -797,7 +798,7 @@ energy use and production, including a new and strong drive to develop renewable
 sources such as solar and wind energy, and combined heat and power. We see no economic case
 for the building of any new nuclear power stations.
 
-#### Key elements of the 1980s trade union reforms to stay
+## Key elements of the 1980s trade union reforms to stay
 
 There must be minimum standards for the individual at work, including a minimum wage, within
 a flexible labour market. We need a sensible balance in industrial relations law - rights
@@ -810,7 +811,7 @@ ballot for the union to represent them, the union should be recognised. This pro
 stable and orderly industrial relations. There will be full consultation on the most
 effective means of implementing this proposal.
 
-#### Partnership at work
+## Partnership at work
 
 The best companies recognise their employees as partners in the enterprise. Employees
 whose conditions are good are more committed to their companies and are more productive.
@@ -823,7 +824,7 @@ Plans and co-operatives. We support too the Social Chapter of the EU, but will d
 influence in Europe to ensure that it develops so as to promote employability and
 competitiveness, not inflexibility.
 
-#### A sensibly set national minimum wage
+## A sensibly set national minimum wage
 
 There should be a statutory level beneath which pay should not fall - with the minimum
 wage decided not on the basis of a rigid formula but according to the economic circumstances
@@ -836,7 +837,7 @@ remove the worst excesses of low pay (and be of particular benefit to women), wh
 some of the massive £4 billion benefits bill by which the taxpayer subsidises companies
 that pay very low wages.
 
-### We will get the unemployed from welfare to work
+## We will get the unemployed from welfare to work
 
 - Stop the growth of an 'underclass' in Britain
 
@@ -864,7 +865,7 @@ Labour's welfare-to-work programme will attack unemployment and break the spiral
 escalating spending on social security. A one-off windfall levy on the excess profits of
 the privatised utilities will fund our ambitious programme.
 
-#### Every young person unemployed for more than six months in a job or training
+## Every young person unemployed for more than six months in a job or training
 
 We will give 250,000 under-25s opportunities for work, education and training. Four options
 will be on offer, each involving day-release education or training leading to a
@@ -875,7 +876,7 @@ qualifications on an approved course a job with the environment taskforce, linke
 Labour's citizens' service programme. Rights and responsibilities must go hand in hand,
 without a fifth option of life on full benefit.
 
-#### Every 16 and 17 year-old on the road to a proper qualification by the year 2000
+## Every 16 and 17 year-old on the road to a proper qualification by the year 2000
 
 Nearly a third of young people do not achieve an NVQ level two qualification by age 19.
 All young people will be offered part-time or full-time education after the age of 16. Any
@@ -883,7 +884,7 @@ under-18 year-old in a job will have the right to study on an approved course fo
 qualifications at college. We will replace the failed Youth Training scheme with our new
 Target 2000 programme, offering young people high-quality education and training.
 
-#### Action on long-term unemployment
+## Action on long-term unemployment
 
 New partnerships between government and business, fully involving local authorities and the
 voluntary sector, will attack long-term joblessness. We will encourage employers to take on
@@ -892,7 +893,7 @@ rebate paid for six months, financed by the windfall levy. Our programme for the
 release of past receipts from council house sales will provide new jobs in the construction
 industry.
 
-#### Lone parents into work
+## Lone parents into work
 
 Today the main connection between unemployed lone parents and the state is their benefits.
 Most lone parents want to work, but are given no help to find it. New Labour has a positive
@@ -900,7 +901,7 @@ policy. Once the youngest child is in the second term of full-time school, lone 
 will be offered advice by a proactive Employment Service to develop a package of job
 search, training and after-school care to help them off benefit.
 
-#### Customised, personalised services
+## Customised, personalised services
 
 We favour initiatives with new combinations of available benefits to suit individual
 circumstances. In new and innovative 'Employment Zones', personal job accounts will combine
@@ -908,14 +909,14 @@ money currently available for benefits and training, to offer the unemployed new
 leading to work and independence. We will co-ordinate benefits, employment and career
 services, and utilise new technology to improve their quality and efficiency.
 
-#### Fraud
+## Fraud
 
 Just as we owe it to the taxpayer to crack down on tax avoidance, so we must crack down on
 dishonesty in the benefit system. We will start with a clampdown on Housing Benefit fraud,
 estimated to cost £2 billion a year, and will maintain action against benefit fraud
 of all kinds.
 
-### We will save the NHS
+## We will save the NHS
 
 - 100,000 people off waiting lists
 
@@ -958,7 +959,7 @@ The savings achieved will go on direct care for patients. As a start, the first 
 million saved will treat an extra 100,000 patients. We will end waiting for cancer surgery,
 thereby helping thousands of women waiting for breast cancer treatment.
 
-#### Primary care will play a lead role
+## Primary care will play a lead role
 
 In recent years, GPs have gained power on behalf of their patients in a changed relationship
 with consultants, and we support this. But the development of GP fundholding has also brought
@@ -977,7 +978,7 @@ three- to five-year agreements between the local primary care teams and hospital
 Hospitals will then be better able to plan work at full capacity and co-operate to enhance
 patient services.
 
-#### Higher-quality services for patients
+## Higher-quality services for patients
 
 Hospitals will retain their autonomy over day-to-day administrative functions, but, as
 part of the NHS, they will be required to meet high-quality standards in the provision of
@@ -1000,7 +1001,7 @@ services which is being actively promoted by the Conservatives.
 Labour will promote new developments in telemedicine - bringing expert advice from
 regional centres of excellence to neighbourhood level using new technology.
 
-#### Good health
+## Good health
 
 A new minister for public health will attack the root causes of ill health, and so improve
 lives and save the NHS money. Labour will set new goals for improving the overall health of
@@ -1014,13 +1015,13 @@ Labour will establish an independent food standards agency. The £3.5 billion BS
 crisis and the E. coli outbreak which resulted in serious loss of life, have made
 unanswerable the case for the independent agency we have proposed.
 
-#### NHS spending
+## NHS spending
 
 The Conservatives have wasted spending on the NHS. We will do better. We will raise
 spending on the NHS in real terms every year and put the money towards patient care. And
 a greater proportion of every pound spent will go on patient care not bureaucracy.
 
-#### An NHS for the future
+## An NHS for the future
 
 The NHS requires continuity as well as change, or the system cannot cope. There must be
 pilots to ensure that change works. And there must be flexibility, not rigid
@@ -1030,7 +1031,7 @@ Our fundamental purpose is simple but hugely important: to restore the NHS as a 
 service working co-operatively for patients, not a commercial business driven by
 competition.
 
-### We will be tough on crime and tough on the causes of crime
+## We will be tough on crime and tough on the causes of crime
 
 - Fast-track punishment for persistent young offenders
 
@@ -1057,7 +1058,7 @@ and disorder. The Conservatives have broken their 1992 general election pledge t
 an extra 1,000 police officers. We will relieve the police of unnecessary bureaucratic
 burdens to get more officers back on the beat.
 
-#### Youth crime
+## Youth crime
 
 Youth crime and disorder have risen sharply, but very few young offenders end up in court,
 and when they do half are let off with another warning. Young offenders account for seven
@@ -1072,7 +1073,7 @@ make it far more effective.
 New parental responsibility orders will make parents face up to their responsibility for
 their children's misbehaviour.
 
-#### Conviction and sentencing
+## Conviction and sentencing
 
 The job of the Crown Prosecution Service is to prosecute criminals effectively. There is
 strong evidence that the CPS is over-centralised, bureaucratic and inefficient, with
@@ -1092,7 +1093,7 @@ available, take proper ministerial responsibility for the service, and seek to e
 that prison regimes are constructive and require inmates to face up to their offending
 behaviour.
 
-#### Disorder
+## Disorder
 
 The Conservatives have forgotten the 'order' part of 'law and order'. We will tackle the
 unacceptable level of anti-social behaviour and crime on our streets. Our 'zero tolerance'
@@ -1109,7 +1110,7 @@ Britain is a multiracial and multicultural society. All its members must have th
 of the law. We will create a new offence of racial harassment and a new crime of racially
 motivated violence to protect ethnic minorities from intimidation.
 
-#### Drugs
+## Drugs
 
 The vicious circle of drugs and crime wrecks lives and threatens communities. Labour will
 appoint an anti-drugs supremo to co-ordinate our battle against drugs across all government
@@ -1124,7 +1125,7 @@ We will attack the drug problem in prisons. In addition to random drug testing o
 prisoners we will aim for a voluntary testing unit in every prison for prisoners ready
 to prove they are drug-free.
 
-#### Victims
+## Victims
 
 Victims of crime are too often neglected by the criminal justice system. We will ensure
 that victims are kept fully informed of the progress of their case, and why charges may
@@ -1133,13 +1134,13 @@ have been downgraded or dropped.
 Greater protection will be provided for victims in rape and serious sexual offence trials
 and for those subject to intimidation, including witnesses.
 
-#### Prevention
+## Prevention
 
 We will place a new responsibility on local authorities to develop statutory partnerships
 to help prevent crime. Local councils will then be required to set targets for the
 reduction of crime and disorder in their area.
 
-#### Gun control
+## Gun control
 
 In the wake of Dunblane and Hungerford, it is clear that only the strictest firearms laws
 can provide maximum safety. The Conservatives failed to offer the protection required.
@@ -1148,7 +1149,7 @@ will be legislation to allow individual MPs a free vote for a complete ban on ha
 
 Labour is the party of law and order in Britain today.
 
-### We will strengthen family life
+## We will strengthen family life
 
 - Help parents balance work and family
 
@@ -1183,7 +1184,7 @@ More equal relationships between men and women have transformed our lives. Equal
 attitudes to race, sex and sexuality have changed fundamentally. Our task is to combine
 change and social stability.
 
-#### Work and family
+## Work and family
 
 Families without work are without independence. This is why we give so much emphasis to our
 welfare-to-work policies.
@@ -1210,7 +1211,7 @@ older than 16 to ensure higher staying-on rates at school and college, and that 
 are used to support those in most need. This review will continue in government on the
 guidelines we have already laid down.
 
-#### Security in housing
+## Security in housing
 
 Most families want to own their own homes. We will also support efficiently run social and
 private rented sectors offering quality and choice.
@@ -1237,7 +1238,7 @@ to pay the costs inflicted on others, in particular legal and survey costs. We a
 consulting on the best way of tackling the problems of gazumping in the interests of
 responsible home buyers and sellers.
 
-#### The rented housing sector
+## The rented housing sector
 
 We support a three-way partnership between the public, private and housing association
 sectors to promote good social housing. With Labour, capital receipts from the sale of
@@ -1259,7 +1260,7 @@ We will introduce 'commonhold', a new form of tenure enabling people living in f
 their homes individually and to own the whole property collectively. We will simplify the
 current rules restricting the purchase of freeholds by leaseholders.
 
-#### Homelessness
+## Homelessness
 
 Homelessness has more than doubled under the Conservatives. Today more than 40,000 families
 in England are in expensive temporary accommodation. The government, in the face of Labour
@@ -1274,7 +1275,7 @@ ways: the phased release of capital receipts from council house sales will incre
 stock of housing for rent; and our welfare-to-work programme will lead the young unemployed
 into work and financial independence.
 
-#### Older citizens
+## Older citizens
 
 We value the positive contribution that older people make to our society, through their
 families, voluntary activities and work. Their skills and experience should be utilised
@@ -1347,7 +1348,7 @@ including SERPS, and community care. The review will ensure that the views of pe
 are heard. Our watchword in developing policy for pensions and long-term care will be to
 build consensus among all interested parties.
 
-### We will help you get more out of life
+## We will help you get more out of life
 
 - Every government department a 'green' department
 
@@ -1369,7 +1370,7 @@ and dynamic approach to the 'creative economy'. The Department of National Herit
 develop a strategic vision that matches the real power and energy of British arts, media
 and cultural industries.
 
-#### Protecting the environment
+## Protecting the environment
 
 Our generation, and generations yet to come, are dependent on the integrity of the
 environment. No one can escape unhealthy water, polluted air or adverse climate change. And
@@ -1392,7 +1393,7 @@ A sustainable environment requires above all an effective and integrated transpo
 at national, regional and local level that will provide genuine choice to meet people's
 transport needs. That is what we will establish and develop.
 
-#### Railways
+## Railways
 
 The process of rail privatisation is now largely complete. It has made fortunes for a few,
 but has been a poor deal for the taxpayer. It has fragmented the network and now threatens
@@ -1416,7 +1417,7 @@ The core public responsibilities of the Underground would be threatened.
 Labour plans a new public/private partnership to improve the Underground, safeguard its
 commitment to the public interest and guarantee value for money to taxpayers and passengers.
 
-#### Road transport
+## Road transport
 
 A balanced transport system must cater for all the familiar modes of transport: cars -
 whether owned, leased or shared; taxis; buses; bicycles and motorcycles. All needs must
@@ -1443,7 +1444,7 @@ We will conduct an overall strategic review of the roads programme against the c
 accessibility, safety, economy and environmental impact, using public/private partnerships
 to improve road maintenance and exploiting new technology to improve journey information.
 
-#### Shipping and aviation
+## Shipping and aviation
 
 The Tory years have seen the near-extinction of Britain's merchant fleet. Labour will work
 with all concerned in shipping and ports to help develop their economic potential to the
@@ -1453,7 +1454,7 @@ The guiding objectives of our aviation strategy will be fair competition, safety
 environmental standards. We want all British carriers to be able to compete fairly in the
 interests of consumers.
 
-#### Life in our countryside
+## Life in our countryside
 
 Labour recognises the special needs of people who live and work in rural areas. The
 Conservatives do not. Public services and transport services in rural areas must not be
@@ -1505,7 +1506,7 @@ NESTA will be partly funded by the lottery; and artists who have gained high rew
 their excellence in the arts and wish to support young talent will be encouraged to donate
 copyright and royalties to NESTA.
 
-#### Sport
+## Sport
 
 A Labour government will take the lead in extending opportunities for participation in
 sports; and in identifying sporting excellence and supporting it.
@@ -1515,7 +1516,7 @@ schools to sell off playing fields to an end. We will provide full backing to th
 host the 2006 football World Cup in England. A Labour government will also work to bring
 the Olympics and other major international sporting events to Britain.
 
-#### A people's lottery
+## A people's lottery
 
 The lottery has been a financial success. But there has been no overall strategy for the
 allocation of monies; and no co-ordination among the five distributor bodies about the
@@ -1533,7 +1534,7 @@ Because the lottery is a monopoly intended to serve the public interest, it must
 administered efficiently and economically. When the current contract runs out, Labour will
 seek an efficient not-for-profit operator to ensure that the maximum sums go to good causes.
 
-#### Media and broadcasting
+## Media and broadcasting
 
 Labour aims for a thriving, diverse media industry, combining commercial success and public
 service. We will ensure that the BBC continues to be a flagship for British creativity and
@@ -1544,7 +1545,7 @@ competitive economy, and enormous technological advance, for example with digita
 Labour will balance sensible rules, fair regulation and national and international
 competition, so maintaining quality and diversity for the benefit of viewers.
 
-#### Citizens' service for a new millennium
+## Citizens' service for a new millennium
 
 An independent and creative voluntary sector, committed to voluntary activity as an
 expression of citizenship, is central to our vision of a stakeholder society. We are
@@ -1556,7 +1557,7 @@ believe programmes should be imposed from the top down, but on the contrary wish
 encourage a broad range of voluntary initiatives devised and developed by people within
 their own communities.
 
-### We will clean up politics
+## We will clean up politics
 
 - End the hereditary principle in the House of Lords
 
@@ -1583,7 +1584,7 @@ prosper from secret funds from foreign supporters. There is unquestionably a nat
 crisis of confidence in our political system, to which Labour will respond in a measured
 and sensible way.
 
-#### A modern House of Lords
+## A modern House of Lords
 
 The House of Lords must be reformed. As an initial, self-contained reform, not dependent
 on further reform in the future, the right of hereditary peers to sit and vote in the
@@ -1602,7 +1603,7 @@ review of possible further change and then to bring forward proposals for reform
 
 We have no plans to replace the monarchy.
 
-#### An effective House of Commons
+## An effective House of Commons
 
 We believe the House of Commons is in need of modernisation and we will ask the House to
 establish a special Select Committee to review its procedures. Prime Minister's Questions
@@ -1622,14 +1623,14 @@ proportional alternative to the first-past-the-post system.
 At this election, Labour is proud to be making major strides to rectify the
 under-representation of women in public life.
 
-#### Open government
+## Open government
 
 Unnecessary secrecy in government leads to arrogance in government and defective policy
 decisions. The Scott Report on arms to Iraq revealed Conservative abuses of power. We are
 pledged to a Freedom of Information Act, leading to more open government, and an
 independent National Statistical Service.
 
-#### Devolution: strengthening the Union
+## Devolution: strengthening the Union
 
 The United Kingdom is a partnership enriched by distinct national identities and
 traditions. Scotland has its own systems of education, law and local government. Wales
@@ -1665,7 +1666,7 @@ Following majorities in the referendums, we will introduce in the first year of 
 Parliament legislation on the substantive devolution proposals outlined in our white
 papers.
 
-#### Good local government
+## Good local government
 
 Local decision-making should be less constrained by central government, and also more
 accountable to local people. We will place on councils a new duty to promote the
@@ -1710,7 +1711,7 @@ towns and outer estates alike. A Labour government will join with local governme
 concerted attack against the multiple causes of social and economic decline - unemployment,
 bad housing, crime, poor health and a degraded environment.
 
-#### London
+## London
 
 London is the only Western capital without an elected city government. Following a
 referendum to confirm popular demand, there will be a new deal for London, with a
@@ -1720,7 +1721,7 @@ but take responsibility for London-wide issues - economic regeneration, planning
 policing, transport and environmental protection. London-wide responsibility for its
 own government is urgently required. We will make it happen.
 
-#### The regions of England
+## The regions of England
 
 The Conservatives have created a tier of regional government in England through quangos
 and government regional offices. Meanwhile local authorities have come together to
@@ -1737,7 +1738,7 @@ system of local government, as presently exists in Scotland and Wales, and confi
 by independent auditors that no additional public expenditure overall would be involved.
 Our plans will not mean adding a new tier of government to the existing English system.
 
-#### Real rights for citizens
+## Real rights for citizens
 
 Citizens should have statutory rights to enforce their human rights in the UK courts. We
 will by statute incorporate the European Convention on Human Rights into UK law to bring
@@ -1769,7 +1770,7 @@ cases dating back beyond 1993. We will ensure swift and fair decisions on whethe
 can stay or go, control unscrupulous immigration advisors and crack down on the fraudulent
 use of birth certificates.
 
-#### Northern Ireland
+## Northern Ireland
 
 Labour's approach to the peace process has been bipartisan. We have supported the recent
 agreements between the two governments - the Anglo-Irish Agreement, the Downing Street
@@ -1794,7 +1795,7 @@ Northern Ireland by acting to guarantee human rights, strengthen confidence in p
 combat discrimination at work and reduce tensions over parades. Labour will also foster
 economic progress and competitiveness in Northern Ireland, so as to reduce unemployment.
 
-### We will give Britain leadership in Europe
+## We will give Britain leadership in Europe
 
 - Referendum on single currency
 
@@ -1869,7 +1870,7 @@ the front during the UK presidency in the first half of 1998:
  does not cost jobs. We will use our participation to promote
  employability and flexibility, not high social costs.
 
-#### The single currency
+## The single currency
 
 Any decision about Britain joining the single currency must be determined by a hard-headed
 assessment of Britain's economic interests. Only Labour can be trusted to do this: the
@@ -1886,7 +1887,7 @@ have to be satisfied before Britain could join during the next Parliament: first
 Cabinet would have to agree; then Parliament; and finally the people would have to say
 'Yes' in a referendum.
 
-#### Strong defence through NATO
+## Strong defence through NATO
 
 The post-Cold War world faces a range of new security challenges - proliferation of weapons
 of mass destruction, the growth of ethnic nationalism and extremism, international
@@ -1908,7 +1909,7 @@ The review we propose will be foreign policy led, first assessing our likely ove
 commitments and interests and then establishing how our forces should be deployed to
 meet them.
 
-#### Arms control
+## Arms control
 
 A new Labour government will retain Trident. We will press for multilateral negotiations
 towards mutual, balanced and verifiable reductions in nuclear weapons. When satisfied with
@@ -1927,7 +1928,7 @@ We support a strong UK defence industry, which is a strategic part of our indust
 as well as our defence effort. We believe that part of its expertise can be extended to
 civilian use through a defence diversification agency.
 
-#### Leadership in the international community
+## Leadership in the international community
 
 A new Labour government will use Britain's permanent seat on the Security Council to
 press for substantial reform of the United Nations, including an early resolution of its
@@ -1942,7 +1943,7 @@ to promote reform at the UN and common action on the global environment. Britain
 real opportunity to provide leadership to the Commonwealth when we host the heads of
 government meeting in Britain at the end of 1997.
 
-#### Promoting economic and social development
+## Promoting economic and social development
 
 Labour will also attach much higher priority to combating global poverty and
 underdevelopment. According to the World Bank, there are 1. 3 billion people in the world
@@ -1968,14 +1969,14 @@ countries and to ensure that developing countries are given a fair deal in inter
 trade. It is our aim to rejoin UNESCO. We will consider how this can be done most
 effectively and will ensure that the cost is met from savings elsewhere.
 
-#### Human rights
+## Human rights
 
 Labour wants Britain to be respected in the world for the integrity with which it conducts
 its foreign relations. We will make the protection and promotion of human rights a central
 part of our foreign policy. We will work for the creation of a permanent international
 criminal court to investigate genocide, war crimes and crimes against humanity.
 
-#### A new environmental internationalism
+## A new environmental internationalism
 
 Labour believes that the threats to the global climate should push environmental concerns
 higher up the international agenda. A Labour government will strengthen co-operation in the
@@ -1987,7 +1988,7 @@ Labour believes the international environment should be safeguarded in negotiati
 international trade. We will also work for the successful negotiation of a new protocol
 on climate change to be completed in Japan in 1997.
 
-#### Leadership, not isolation
+## Leadership, not isolation
 
 There is a sharp division between those who believe the way to cope with global change is
 for nations to retreat into isolationism and protectionism, and those who believe in

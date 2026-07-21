@@ -25,6 +25,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 1992
 
 ## Independence in Europe — Make It Happen Now!
@@ -68,7 +69,7 @@ Only you can make it happen.
 
 ---
 
-### 1  Introduction
+## 1  Introduction
 
 SCOTLAND is a living, breathing, exciting country. Its resources are vast and varied, its people skilled and dynamic, its name and history respected throughout the world.
 
@@ -90,7 +91,7 @@ That's why, at this election, you should vote for the Scottish National Party.
 
 ---
 
-### 2  Six Steps to Independence
+## 2  Six Steps to Independence
 
 INDEPENDENCE IN EUROPE is the only policy which will bring stability to Scotland. The status quo is thoroughly discredited. Devolution would result in endless feuds with Westminster. Independence is the immediate, logical and clear cut answer to the question of how Scotland should be governed.
 
@@ -112,7 +113,7 @@ There are six steps to Independence:
 
 ---
 
-### 3  A Constitution for Scotland
+## 3  A Constitution for Scotland
 
 AN INDEPENDENT Scotland will have a written Constitution, like most other modern democracies, which will include a Bill of Rights clearly setting out the rights and responsibilities of citizens and state alike. The Constitution will include:
 
@@ -140,7 +141,7 @@ AN INDEPENDENT Scotland will have a written Constitution, like most other modern
 
 ---
 
-### 4  Action for Jobs
+## 4  Action for Jobs
 
 ONLY WITH Independence in Europe can Scotland be put back on the road to full employment. The SNP's ***Medium Term Recovery Strategy*** - an accompanying document to this manifesto, previously published - provides full details and costings of the SNP's economic and social policies for the first four-year Parliament of an independent Scotland.
 
@@ -184,7 +185,7 @@ In a modern, progressive European society such as Scotland, it is ridiculous tha
 
 ---
 
-### 5  Education for Life
+## 5  Education for Life
 
 EDUCATION IS one of the cornerstones of a developed society. An SNP government will ensure it is freely available to all our people.
 
@@ -206,7 +207,7 @@ An SNP government will establish a collegiate University of the Highlands, based
 
 ---
 
-### 6  Arts and the Media
+## 6  Arts and the Media
 
 THE SNP regards the arts as a vital part of our national life. We will encourage the widest possible enjoyment of and participation in all forms of the arts. The diversity of Scotland as a multi-cultural society will be encouraged.
 
@@ -224,7 +225,7 @@ Scottish produced programmes will be promoted as viable product for satellite an
 
 ---
 
-### 7  Health
+## 7  Health
 
 THE SNP will retain and develop the National Health Service. In an independent Scotland, comprehensive healthcare of the highest standard will be free to all at time of need and at point of need.
 
@@ -242,7 +243,7 @@ Labour will not say how much money they would spend on health, although they kno
 
 ---
 
-### 8  Defence
+## 8  Defence
 
 THE SNP is committed to a non-nuclear Scotland. An independent Scotland will immediately withdraw from the UK's Trident Programme, and will order nuclear weapons and installations off our soil.
 
@@ -264,7 +265,7 @@ An SNP Government will fulfil our international obligations to UN (or in the fut
 
 ---
 
-### 9  Living in a Safe Scotland
+## 9  Living in a Safe Scotland
 
 THE SNP is also completely opposed to the dumping of imported nuclear waste in Scotland. We will not let Scotland become the world's nuclear dustbin, risking the health of all our people and the clean image and prosperity of our industries.
 
@@ -286,7 +287,7 @@ Our country has the best tidal and wind energy resources in Europe - we shall pu
 
 ---
 
-### 10  Housing for People
+## 10  Housing for People
 
 POOR PUBLIC housing is the scourge of Scotland. Dampness, long waiting lists, lack of funding and run-down properties have created a legacy of intolerable misery.
 
@@ -302,7 +303,7 @@ In the private sector, the SNP will make owner occupation a viable, low-risk opt
 
 ---
 
-### 11  The Rural Economy
+## 11  The Rural Economy
 
 SCOTLAND'S Rural Economy has been under siege for generations. An SNP Government will recognise the vital importance of our rural areas, and take positive steps to maintain the rural population, and provide new opportunities for young people who would otherwise have to leave.
 
@@ -328,7 +329,7 @@ An SNP Government will establish a Land Commission to take active steps to ensur
 
 ---
 
-### 12  Independence and Equality
+## 12  Independence and Equality
 
 THE WRITTEN CONSTITUTION of an independent Scotland will contain a provision outlawing any discrimination on the basis of sex.
 
@@ -348,7 +349,7 @@ The Bill of Rights will also offer protection and redress to those discriminated
 
 ---
 
-### 13  An Attack on Poverty
+## 13  An Attack on Poverty
 
 SCOTLAND HAS the highest proportion of low-paid full-time workers in the UK. More than a third of our employees are struggling to make ends meet.
 
@@ -364,7 +365,7 @@ Leave from work for family reasons, including paid maternity and paternity leave
 
 ---
 
-### 14  Pensions — A First Class Deal for Senior Citizens
+## 14  Pensions — A First Class Deal for Senior Citizens
 
 OUR ELDERLY folk deserve justice and dignity. In an Independent Scotland they will get it.
 
@@ -382,7 +383,7 @@ A Cold Climate Allowance will be paid automatically every week during the winter
 
 ---
 
-### 15  Help for the Disabled
+## 15  Help for the Disabled
 
 DISABLED PEOPLE have the absolute right to live their lives without suffering from discrimination or hardship.
 
@@ -398,7 +399,7 @@ The SNP favours the introduction of a concessionary national transport pass for 
 
 ---
 
-### 16  Tax Reform
+## 16  Tax Reform
 
 AN SNP Government will bring fairness to the taxation system in Scotland. In the first year of Independence, two measures will be taken:
 
@@ -410,7 +411,7 @@ National insurance contributions will be reconciled on an annualised basis, in o
 
 ---
 
-### 17  The Call to Action
+## 17  The Call to Action
 
 THE FORTHCOMING General Election will be Scotland's Independence Election. The SNP is a responsible, modern political party firmly rooted in the tradition of European social democracy. The SNP's policy of Independence in Europe will bring stability to the governance of Scotland.
 
@@ -422,9 +423,9 @@ We will negotiate firmly but fairly with Westminster to produce a settlement whi
 
 ---
 
-### Go For It .....!
+## Go For It .....!
 
-#### A Message from *Sean Connery*
+## A Message from *Sean Connery*
 
 This is a now or never time for Scotland. We are true internationalists and we have friends all over the world. They're waiting to see if Scotland will go for it - or cop out. Everyone can see that nothing will ever change if we don't break with the old, outdated Union.
 

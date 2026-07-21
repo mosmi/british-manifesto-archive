@@ -14,6 +14,8 @@ Scripts and satellite toolkits that generate content consumed by the site.
 - [transcription](./transcription.md) — manifesto PDFs → `manifestos/**/manifesto.md`
 - [covers](./covers.md) — transparent A4 PNG covers from `manifesto.pdf` page 1
 - [pdf-sizes](./pdf-sizes.md) — `data/pdf-sizes.json` for download-link file sizes
+- [manifesto-assets](./manifesto-assets.md) — `data/manifesto-assets.json` (pdf/md/cover flags; “Scan not yet archived” placeholder)
+- [fulltext-index](./fulltext-index.md) — `data/fulltext-index.json` for manifesto full-text search
 - [latest-additions](../content/latest-additions.md) — homepage carousel from catalogue + git dates
 - [og-generator](./og-generator.md) — Open Graph share cards in `/og/`
 

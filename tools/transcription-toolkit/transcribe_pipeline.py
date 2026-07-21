@@ -884,7 +884,13 @@ def work_dir_for(path: Path, work_root: Path) -> Path:
         key = path.resolve().relative_to(REPO_ROOT)
     except Exception:
         key = path.resolve()
-    slug = "__".join(key.with_suffix("").parts)
+    parts = key.with_suffix("").parts
+    # For PDFs outside the repo the key is absolute and parts[0] is the
+    # root anchor ("/"); dropping it stops the slug from being an absolute
+    # path (work_root / "/..." escapes to the filesystem root).
+    if parts and parts[0] == "/":
+        parts = parts[1:]
+    slug = "__".join(parts)
     return work_root / slug
 
 

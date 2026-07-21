@@ -47,3 +47,6 @@ tools/transcription-toolkit-archive/
 
 # Local pip target installs
 .pip/
+
+# Claude local settings
+.claude/settings.local.json

@@ -2276,6 +2276,20 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2010/pirate#document",
+          "name": "Pirate Party UK Manifesto 2010",
+          "url": "https://www.manifestos.org.uk/manifesto/2010/pirate",
+          "keywords": [
+            "science and technology",
+            "law and order",
+            "democracy and constitution",
+            "health",
+            "education",
+            "foreign policy"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2010/plaid#document",
           "name": "Plaid Cymru Manifesto 2010",
           "url": "https://www.manifestos.org.uk/manifesto/2010/plaid",
@@ -4421,12 +4435,6 @@
         },
         {
           "@type": "DigitalDocument",
-          "@id": "https://www.manifestos.org.uk/manifesto/2024/communist#document",
-          "name": "Communist Party of Britain Manifesto 2024",
-          "url": "https://www.manifestos.org.uk/manifesto/2024/communist"
-        },
-        {
-          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/2024/conservative#document",
           "name": "Conservatives Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/conservative",
@@ -4479,6 +4487,12 @@
           "@id": "https://www.manifestos.org.uk/manifesto/2024/cpa#document",
           "name": "Christian Peoples Alliance Manifesto 2024",
           "url": "https://www.manifestos.org.uk/manifesto/2024/cpa"
+        },
+        {
+          "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/2024/cpb#document",
+          "name": "Communist Party of Britain Manifesto 2024",
+          "url": "https://www.manifestos.org.uk/manifesto/2024/cpb"
         },
         {
           "@type": "DigitalDocument",
@@ -7008,7 +7022,7 @@
         {
           "@type": "DigitalDocument",
           "name": "Communist Party Manifesto 2011",
-          "url": "https://www.manifestos.org.uk/manifestos/holyrood/2011/communist/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/holyrood/2011/cpb/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -7086,7 +7100,7 @@
         {
           "@type": "DigitalDocument",
           "name": "Communist Party Manifesto 2016",
-          "url": "https://www.manifestos.org.uk/manifestos/holyrood/2016/communist/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/holyrood/2016/cpb/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -7734,7 +7748,7 @@
         {
           "@type": "DigitalDocument",
           "name": "Welsh Communist Party Manifesto 2021",
-          "url": "https://www.manifestos.org.uk/manifestos/senedd/2021/communist/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/senedd/2021/cpb/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {
@@ -7806,7 +7820,7 @@
         {
           "@type": "DigitalDocument",
           "name": "Communist Party of Britain Manifesto 2026",
-          "url": "https://www.manifestos.org.uk/manifestos/senedd/2026/communist/manifesto.pdf",
+          "url": "https://www.manifestos.org.uk/manifestos/senedd/2026/cpb/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

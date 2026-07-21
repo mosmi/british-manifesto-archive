@@ -73,8 +73,12 @@ BATCH_SLUGS = {
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python batch_repair_london.py <batch_number> [--only-flagged]")
+        print("Usage: python batch_repair_london.py <batch_number> [repair args...]")
         print("Available batches: 1, 2, 3, 4, 5, 6, 7, 8")
+        print("Extra args are forwarded to repair_manifestos_gemini.py, e.g.:")
+        print("  python batch_repair_london.py 3 --only-flagged")
+        print("  python batch_repair_london.py 3 --model deepseek-ocr-8bit")
+        print("  python batch_repair_london.py 3 --backend gemini --only-flagged")
         sys.exit(1)
 
     batch_num = sys.argv[1]
@@ -82,7 +86,7 @@ def main():
         print(f"Unknown batch number: {batch_num}")
         sys.exit(1)
 
-    only_flagged = "--only-flagged" in sys.argv
+    extra_args = sys.argv[2:]
 
     slugs = BATCH_SLUGS[batch_num]
     print(f"Starting visual page-by-page repair for Batch {batch_num} ({len(slugs)} manifestos)...")
@@ -97,15 +101,14 @@ def main():
         print(f"Repairing {slug}...")
         print(f"==========================================")
         
-        # Run repair_manifestos_gemini.py
+        # Run repair_manifestos_gemini.py (backend-agnostic; defaults to local)
         cmd = [
             sys.executable,
             str(TOOLKIT_DIR / "repair_manifestos_gemini.py"),
             str(ledger_path)
-        ]
-        if only_flagged:
-            cmd.append("--only-flagged")
-            
+        ] + extra_args
+
+
         print(f"Running: {' '.join(cmd)}")
         res = subprocess.run(cmd)
         if res.returncode != 0:

@@ -24,6 +24,7 @@ sections:
   - devolution
 ---
 
+
 # Traditional Unionist Voice Manifesto 2024
 
 ## Restore the Union
@@ -38,7 +39,7 @@ sections:
 
 ---
 
-### Contents
+## Contents
 
 * Foreword by William Ross, Party President
 * Personal message from Jim Allister KC MLA 
@@ -85,7 +86,7 @@ TUV President
 
 ---
 
-### Personal Message from Jim Allister
+## Personal Message from Jim Allister
 
 This election is overshadowed by the greatest constitutional crisis Northern Ireland has ever faced. Our nation is partitioned by a border in the Irish Sea and unaccountable rule from Brussels dictates many aspects of our lives.
 
@@ -104,7 +105,7 @@ TUV Leader
 
 ---
 
-### Impacting on National Politics
+## Impacting on National Politics
 
 In this election, TUV - No Sea Border is offering the people of Northern Ireland the opportunity to vote for truly national politics.
 
@@ -134,7 +135,7 @@ For far too long Unionism has been parochial and detached from the politics of t
 
 ---
 
-### Dire Consequences of the Protocol
+## Dire Consequences of the Protocol
 
 The Protocol, which denied Northern Ireland the Brexit enjoyed by GB, has the most far reaching consequences, both constitutionally and economically. It makes this part of the UK an adjunct of the EU, ruled in significant part by its foreign laws and court.
 
@@ -156,7 +157,7 @@ Until 1 January 2021, Northern Ireland was a fully integrated part of the UK eco
 
 The far greater diversity of goods movements within a fully integrated economy means that imposition of a customs and SPS border across such an economy necessitates a huge increase in the amount of customs and SPS paperwork with the cost of generating such making trade uneconomic. This necessitates the restructuring of supply chains either side of the new border, replacing what was previously one integrated economy with two separate economies and promoting alignment of Northern Ireland with the Republic.
 
-#### Failed Solutions:
+## Failed Solutions:
 
 **i) The Windsor Framework – saving the Irish Sea Border**
 
@@ -173,7 +174,7 @@ The problem with this is that the disenfranchisement of the people of NI remains
 
 Although the DUP claimed earlier in the year that their Safeguarding the Union deal provided a significant advance on the Windsor Framework (which they rejected) and that their new deal should be embraced, this was based on what can only be regarded as a sleight of hand. They stated repeatedly in Parliament, and to the media, ‘the Green Lane has gone’, implying that the Donaldson deal largely removed the border in the Irish Sea, the Green Lane having accounted for over 80% of goods crossing to NI. In truth, however, they later confirmed that rather than going, it was being replaced with the UK Internal Market System. This created a huge problem because the UK Internal Market System is just another name for the Green Lane, so no changes have taken place in relation to the Green Lane whatsoever.
 
-#### The Solution:
+## The Solution:
 
 **i) Mutual Enforcement**
 
@@ -201,7 +202,7 @@ We welcome Reform UK’s manifesto commitment, reproduced here:
 
 ---
 
-### The Protocol Is a Dynamo for Irish Unity
+## The Protocol Is a Dynamo for Irish Unity
 
 No unionist should underestimate the centrality of the Protocol to the Irish unity project.
 
@@ -215,7 +216,7 @@ Hence, the importance of unionists on 4th July rebelling against this folly.
 
 ---
 
-### Who Divided Unionism?
+## Who Divided Unionism?
 
 Some who recognise their credibility with the Unionist electorate is shot, are resorting to calling TUV vote splitters. But let’s consider the facts.
 
@@ -240,7 +241,7 @@ Alone among the Unionist parties in this election, TUV is publishing the full te
 
 ---
 
-### The Importance of Maintaining the Unionist Vote Share
+## The Importance of Maintaining the Unionist Vote Share
 
 After this election one of the important statistics which will be considered is the total Unionist vote. Some – for their own selfish reasons – arrogantly claim that they alone have the right to contest elections and only a vote for them counts. Such talk plays into the hands of the enemies of the Union. By ensuring that the vast majority of Unionists have the opportunity to vote against the Protocol, TUV is ensuring that the pro-Union vote is maximised.
 
@@ -250,7 +251,7 @@ Far from damaging Unionism, TUV – No Sea Border candidates ensure that the Uni
 
 ---
 
-### Immigration
+## Immigration
 
 On 13th May this year in our High Court, there was a judgement of immense constitutional significance. It ruled that the UK Government’s Rwanda Bill could not apply in Northern Ireland.
 
@@ -304,7 +305,7 @@ A vote for TUV in this election is a vote for a robust migration policy across t
 
 ---
 
-### The Economy – Personal
+## The Economy – Personal
 
 TUV shares the Reform UK approach to our economy. We quote from their 2024 Manifesto:
 
@@ -324,7 +325,7 @@ TUV shares the Reform UK approach to our economy. We quote from their 2024 Manif
 
 ---
 
-### The Economy – Business
+## The Economy – Business
 
 Reform UK will back risk takers and wealth creators and make sure that Britain is open for business.
 
@@ -351,7 +352,7 @@ Major simplification is needed. At over 21,000 pages, the UK’s tax code is a b
 
 ---
 
-### Cost of Living Crisis
+## Cost of Living Crisis
 
 Across the UK the cost of living crisis continues, making life tough for everyone.
 
@@ -365,7 +366,7 @@ TUV has proved at council and Assembly level that we are the enemies of squander
 
 ---
 
-### Suitable Housing for All
+## Suitable Housing for All
 
 TUV believes that everyone is entitled to decent housing. The most common request of Housing Executive and Housing Association tenants is for repairs to be carried out in a timely manner. Given the expenditure proposed by others on items which deliver no tangible day to day benefit - such as Casement - we believe that adequate funding can be found for basics like proactive maintenance and addressing issues like mould.
 
@@ -375,7 +376,7 @@ TUV believes that there is an urgent need for reform of the housing points syste
 
 ---
 
-### Fair Funding Deal for Northern Ireland
+## Fair Funding Deal for Northern Ireland
 
 TUV will fight in Westminster for a fair financial funding deal for Northern Ireland.
 
@@ -383,7 +384,7 @@ Whereas self-help must come from cutting out squander and waste, there must be a
 
 ---
 
-### Foreign Affairs and Defence
+## Foreign Affairs and Defence
 
 The UK has some of the best and bravest Armed Forces in the world. Yet grandstanding politicians send our servicemen and women abroad with poor equipment. They have cut the Army to its smallest size in 300 years. Military housing is substandard.
 
@@ -393,7 +394,7 @@ TUV believes that the whole of the UK should be able to benefit from Brexit and 
 
 ---
 
-### Stormont Reform and the Case for British Rule
+## Stormont Reform and the Case for British Rule
 
 Though Stormont is back, it is fast falling into its dysfuctional routine. We have minimal faith in Stormont’s ability to ever deliver. Therefore, in the absence of any prospect or desire to move to a more workable system our default position is British rule. We are clear that if it is a choice between British rule from Westminster and Sinn Fein rule from Stormont TUV will always choose the former.
 
@@ -407,7 +408,7 @@ While this is a Westminster election, TUV has a full range of policies covering 
 
 ---
 
-### Health
+## Health
 
 While others claimed they wanted to get back to Stormont to sort the NHS, the reality is that the promises about funding for the National Health Service were forgotten once they were in the door. This year’s budget passed by Stormont was down by 2.3% when compared to what was actually spent by the end of last year.
 
@@ -439,7 +440,7 @@ Halting the pandemic of destruction of the unborn, which abortion on demand repr
 
 ---
 
-### Education
+## Education
 
 The shortage of funding and the imbalance between sectors is hitting the controlled sector particularly hard. TUV wants to address this inequality.
 
@@ -461,7 +462,7 @@ TUV believes in a fair deal for classroom assistants including greater job secur
 
 ---
 
-### Childcare
+## Childcare
 
 Given the focus on childcare during the last Assembly election and the promises which were made, it is shocking that less than half of the money Stormont received as a result of the Barnett Consequential allocation in relation to childcare provision in England and Wales, is actually being spent on childcare.
 
@@ -473,7 +474,7 @@ Does this decision really speak to a local administration which is in tune with 
 
 ---
 
-### Agriculture
+## Agriculture
 
 One DUP candidate in this election referred to the issue of the EU threat to veterinary medicines as a "time bomb". The opportunity to insist on the defusing of that time bomb was before the DUP gave up their leverage, and it is a disappointment that other things mattered more than our farming community. Those who present themselves as the friends of farmers let down the farmers when sacrificing that issue.
 
@@ -495,7 +496,7 @@ Crew migration limitations and burdens resulting from the absence of a full Brex
 
 ---
 
-### Policing and Justice
+## Policing and Justice
 
 There is a huge crisis of confidence in the PSNI within the Unionist community. The reasons are transparent.
 
@@ -509,7 +510,7 @@ In the last Assembly, Jim Allister drafted a Private Members Bill to ban convict
 
 ---
 
-### Innocent Victims
+## Innocent Victims
 
 TUV believes that we need to radically change the whole approach to the issue of legacy and victims. To this end we demand that:
 
@@ -524,7 +525,7 @@ TUV is opposed to the Legacy Act which has shut the door on justice.
 
 ---
 
-### Valuing Our Senior Citizens
+## Valuing Our Senior Citizens
 
 TUV recognises the invaluable contribution which our senior citizens continue to make to Northern Ireland. Yet, their lives are often made more difficult by decisions such as the closure of bank branches, making adequate public transport even more necessary.
 
@@ -538,7 +539,7 @@ While generally sceptical of quangos, TUV recognises that the Older People’s C
 
 ---
 
-### Life and Family
+## Life and Family
 
 You know where you stand with TUV when it comes to the big social issues of the day.
 
@@ -554,7 +555,7 @@ Just as we support the rights of the unborn, so at the end-of-life stage we oppo
 
 ---
 
-### Fundamental Freedoms
+## Fundamental Freedoms
 
 The right to life is paramount but is not the only fundamental right under attack in Northern Ireland.
 
@@ -570,7 +571,7 @@ TUV believes that religious belief, teaching, and practice is a fundamental huma
 
 ---
 
-### Protecting Women’s Rights
+## Protecting Women’s Rights
 
 While identity has long been associated with culture and politics in Northern Ireland, TUV recognises that in recent years identity has been challenged at a more basic and fundamental level. It might not be in tune with the woke spirit of the age, but TUV believes that gender is determined at birth.
 
@@ -582,7 +583,7 @@ TUV believes that we should not be afraid to use the words “women” and “gi
 
 ---
 
-### Making Tourism About Northern Ireland Again
+## Making Tourism About Northern Ireland Again
 
 Northern Ireland has many unique selling points when it comes to tourism. In North Antrim we have the world renowned Giant’s Causeway, Fermanagh has its lakes and South Down the Mournes. Across Northern Ireland there are superb golf courses which have helped foster the talent of world class golfers and cultural attractions, like the Twelfth, need to be marketed much better.
 
@@ -594,7 +595,7 @@ Many Northern Ireland visitors come from mainland UK. TUV is committed to mainta
 
 ---
 
-### Sport
+## Sport
 
 The success of both our women's football team and local golfers has demonstrated that sportsmen and women from Northern Ireland can compete with the best on the international stage. Sadly, however, all is not positive when it comes to sport in Northern Ireland.
 
@@ -612,7 +613,7 @@ Failing that, there should, at the very least, be provision for the government t
 
 ---
 
-### Our Candidates
+## Our Candidates
 
 * **Belfast North**: David Clarke 
 * **Belfast East**: John Ross 

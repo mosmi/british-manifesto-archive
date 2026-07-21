@@ -18,11 +18,12 @@ sections:
   - democracy-and-constitution
 ---
 
+
 # Official Monster Raving Loony Party Manifesto 2005
 
 ## The Official Monster Raving Loony Party
 
-### 2005 General Election Manifesto
+## 2005 General Election Manifesto
 
 ---
 
@@ -34,13 +35,13 @@ We are pleased that the Government has stolen our loony policy of discouraging b
 
 ---
 
-### Economy
+## Economy
 
-#### Overview
+## Overview
 
 Our team of experts has decided that Income Tax has not proved popular with the public and will therefore be abolished. It was started in order to finance the Napoleonic war in 1799 and we now believe that the time is right to announce the cessation of hostilities with Napoleon. Some of the money left in the coffers will be used to fill in our part of the Channel Tunnel in case no one has mentioned it to the French. Any remaining money will be strategically placed on a horse at the 3-30 at Haydock Park at odds of at least 12/1 in order to see us through until the next election. Income Tax will be officially replaced by people lending the government a bob or two at the end of the week when we're a bit skint.
 
-#### Other Policies
+## Other Policies
 
 - We will issue a 99p coin to save on change.
 - The Official Monster Raving Loony Party will not join the single European currency. We will invite all European countries to JOIN THE POUND.
@@ -49,13 +50,13 @@ Our team of experts has decided that Income Tax has not proved popular with the 
 
 ---
 
-### Sleaze
+## Sleaze
 
-#### Overview
+## Overview
 
 We feel that a £57,000 a year salary is quite ample for the average person to survive on and that the £118,000 expenses that MPs also manage to wangle is far too much. The expenses money will in future be distributed to the poor and needy so that they can waste it instead.
 
-#### Other Policies
+## Other Policies
 
 - Any Home Secretary claiming to have more children than necessary will be made to run the House of Commons Crèche.
 - Any cabinet minister found telling lies will be shot across the English Channel in a high velocity circus cannon to save time and first class travel expenses. Top British engineers will be employed to plot the correct trajectory. A European funded net will be set up strategically in front of the European Parliament so that when the errant MP hits it, he or she will bounce through the second floor window where they will be handed champagne and canapés at a reception hosted by Leon Brittan and Peter Mandelson.
@@ -64,13 +65,13 @@ We feel that a £57,000 a year salary is quite ample for the average person to s
 
 ---
 
-### Education
+## Education
 
-#### Overview
+## Overview
 
 We pledge to reduce class sizes by making the pupils sit closer to one another and issuing them with smaller desks. Any MP whose constituency sells off a school playing field for development will be required to relinquish their own back garden as a replacement sports facility for the school. All future Deputy Prime Ministers will be required to be fluent in at least one language to encourage the education system.
 
-#### Other Policies
+## Other Policies
 
 - In the interests of fair education policy, under a Loony government all children will automatically be given full marks in their exams.
 - Bright pupils will be provided with dimmer switches to prevent them distracting the rest of the class.
@@ -79,7 +80,7 @@ We pledge to reduce class sizes by making the pupils sit closer to one another a
 - Any child who is cleverer than their teacher will be allowed to take over the class and the teacher will stand at the back with a dunce's hat on. He or she will then be on half pay until he or she has learnt enough to regain the upper ground. This is our policy for child empowerment.
 - The number 13 will be abolished due to its longstanding unpopularity. The bus to Acton North will now not have a number on it but not much else will be affected. Therefore if you see a bus with no number on it, it will be going to Acton North. Please remember this for future reference.
 
-#### Policies for Students
+## Policies for Students
 
 - Eton and Oxford will be relocated to Blackpool and Bognor Regis, leaving the other universities with a chance of a bigger intake.
 - All students will be awarded The Louis Pasteur degree for the scientific research into the growth of mould.
@@ -88,19 +89,19 @@ We pledge to reduce class sizes by making the pupils sit closer to one another a
 
 ---
 
-### Political Reform
+## Political Reform
 
-#### Overview: Relocation of the Houses of Parliament
+## Overview: Relocation of the Houses of Parliament
 
 The Houses of Parliament will be demolished and replaced by a mobile parliament. This will allow MPs to be picked up in the mornings if their cars won't start. It will also allow the public to see parliament at work and members will be able to wave to the public as it is going along. It will also cut out any necessity to have regional assemblies as it can park up at different towns and villages throughout the year. On the old site of parliament a large statue of Screaming Lord Sutch will be erected and a Loony Village will be built where it will be obligatory to enjoy yourself. Pogo sticks will be provided free of charge.
 
-#### Other Policies
+## Other Policies
 
 - We will replace the House of Lords with the House of Cards, to make it easier for the Government to deal with.
 - Portional Representation will be introduced in England. One vote, one Raffle Ticket.
 - Government Whips will only be used if a politician has been really bad. Minor offences should receive the political slipper.
 
-### Transport
+## Transport
 
 - In order to combat motorway congestion we will immediately close all motorways to all vehicles with the exception of bicycles, to encourage our green policy and fitness. Any bicycles with more than 3 gears will also be banned for safety reasons. Apart from anything else, this will allow police to get on with catching burglars. Traffic cops who are not intelligent enough to cope with proper police work will be allowed to wear their uniforms for a transitional period before being retrained as vicars.
 - Pram lanes will be created in all shopping centres.
@@ -115,7 +116,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Law and Order
+## Law and Order
 
 - We fully back the government's policy of discouraging binge drinking by opening pubs for 24 hours. We believe that 24 hours is not quite long enough and propose to make the length of a day 32 hours long so that the pubs can be open for even longer. We also rather like the government idea of coming down hard on drugs by legalising them. Regarding tobacco, it will now only be legal to smoke it with cannabis. Anyone found to have a cigarette not containing any cannabis will be made to walk to Coventry with a stone in their shoe, unless they come from Coventry, in which case an alternative major city will be substituted on the advice of a committee who will meet far too often and eat dope cakes.
 - Anyone caught breaking the law will be made to mend it.
@@ -123,7 +124,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 - All police will be made to say "HELLO, HELLO, HELLO" when making an arrest. This will treble the police force.
 - Police helmets will be reintroduced and made even sillier. The higher the police rank, the higher their hat becomes. At Christmas they will be able to put flashing lights on them and generally decorate them. Once they have achieved the rank of Chief Constable the height of their hats will not allow them to leave their office — which they don't anyway.
 
-### Home Affairs
+## Home Affairs
 
 - We will set up an enquiry to find out why there's a Polar Bear on Fox's Glacier Mints.
 - The Millennium Bridge will be made wobbly again, by building a pub at either end.
@@ -133,7 +134,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Environment
+## Environment
 
 - All foxes will be issued with sheep's clothing.
 - Half the grey squirrel population will be painted red in order to increase the red squirrel population.
@@ -146,7 +147,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Health
+## Health
 
 - To solve the increasing obesity problem and global warming, all TVs and home computers must be run only by exercycle generators. A phase-in period of this major remedy will be allowed — maybe 5 to 5 million minutes.
 - We will ask the Tooth Fairy to bring back all our good teeth and stop the rot in your dental services.
@@ -156,7 +157,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Defence
+## Defence
 
 - All WMDs (Weapons of Mass Distraction) will be made highly visible so that we can find them.
 - Any politician wanting to start a war will be shipped off to the country in question with a bag of conkers. They can then conker the country themselves.
@@ -166,7 +167,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Pets
+## Pets
 
 - Anyone believing that their pet understands every word that they say to them will be asked to make the pet write a thesis to prove it.
 - It will be legal to keep Tapirs. People will be encouraged to keep them as pets because they are very funny and will cheer up the population no end.
@@ -174,7 +175,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### OAPs
+## OAPs
 
 - We will raise the old age pension to £2,000 a week for every pensioner who, for a period of more than 6 days, manages not to bore everyone witless about how brilliant their grandchildren are. To ease the transition period, special centres will be built where they may go once a week and rattle on about them. Unemployed people will be paid a 'Bore Allowance' of £27.50 a day to sit in front of them pretending to give a damn and saying "Mmm, how interesting" and "Really, well I never" and other statements as determined by the government. Tea and biscuits will be provided and the Samaritans will be on hand to counsel any of the 'Bore Allowance' volunteers.
 - Meals will be served on plates, not on wheels.
@@ -184,7 +185,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Sport
+## Sport
 
 - All footballers will be made to wear slippers to make the game more interesting.
 - Boxing will be made obligatory for people we don't like.
@@ -193,7 +194,7 @@ The Houses of Parliament will be demolished and replaced by a mobile parliament.
 
 ---
 
-### Final Pledges
+## Final Pledges
 
 To keep up with the present government we promise to introduce many policies that have not been thought through properly, purely for cheap votes.
 
@@ -205,6 +206,6 @@ These include:
 
 ---
 
-### The Queen
+## The Queen
 
 In future the National Anthem will be 'Bring Me Sunshine' as sung by Morecambe and Wise. It is quicker, more tuneful and people know the words. On state occasions Prince Philip will juggle his spectacles up and down and say, "Hey!" before the whole of the Royal Family do the dance off at the end. If the music cannot be found because it was left in the pub then it may be substituted by 'The Hippo Song' by Flanders and Swann.

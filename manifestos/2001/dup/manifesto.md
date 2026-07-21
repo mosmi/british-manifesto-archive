@@ -24,6 +24,7 @@ sections:
   - local-government
 ---
 
+
 # Democratic Unionist Party Manifesto 2001
 
 ## DUP: Leadership to Put Things Right!
@@ -57,7 +58,7 @@ Your Friend,
 
 ---
 
-### Broken Pledges of UUP Reward IRA/Sinn Fein
+## Broken Pledges of UUP Reward IRA/Sinn Fein
 
 The broken pledges of Tony Blair and David Trimble have allowed IRA/Sinn Fein to reap all the benefits of the appeasement process without giving anything in return – not even the decommissioning of a single bullet.
 
@@ -67,13 +68,13 @@ The UUP Leadership simply can't be trusted any more. Without the handing in of i
 
 Only a vote for the DUP will signal the clear determination of the unionist people for no more concessions to the IRA and no more rewards for IRA/Sinn Fein.
 
-#### UUP Forces Ratepayers to Pay for All-Ireland Government
+## UUP Forces Ratepayers to Pay for All-Ireland Government
 
 Under the Belfast Agreement all-Ireland bodies with Executive powers have been set up with unionists in a permanent minority. The despised institutions of the Anglo Irish Agreement have been extended and enhanced as the result of the cave-in of the UUP. The range and powers of the all-Ireland bodies are being already being increased. An embryo united Ireland government is being set in place in which UUP Ministers are playing an active role.
 
 So enthusiastic are these Ministers that they and their UUP colleagues voted for a 7% increase in your Rates rather than cut spending on the all-Ireland bodies!
 
-#### Republicans Want Trimble to Win
+## Republicans Want Trimble to Win
 
 At last you have a chance to stop the rot and put things right. The current process of appeasement to republicanism continues because government is able, by the acquiescence of Trimble and his team, to perpetuate the myth that it has the consent of both nationalists and unionists.
 
@@ -85,7 +86,7 @@ A vote for the DUP will be taken for strong leadership to halt the concessions. 
 
 ---
 
-### DUP – United and Strong
+## DUP – United and Strong
 
 All the DUP candidates are united in their unanimous support for this manifesto. The UUP is divided and split even on the fundamental terms of their party platform.
 
@@ -93,19 +94,19 @@ As a united and committed party, only the DUP can deliver the full time vigorous
 
 The DUP has no division or dissension to distract from the vital task of defending and promoting your interests. We will continue to work with like-minded unionists to make progress on the constitutional issues.
 
-#### Working for Your Benefit as Promised!
+## Working for Your Benefit as Promised!
 
 Consistent with our electoral pledges the DUP has energetically fought to improve the living conditions of individuals, families and communities in Councils, the Assembly, its Committees and in Parliament. At the same time we have maintained our resolute opposition to IRA/Sinn Fein refusing – unlike the UUP – to give credibility or legitimacy to representatives of armed terrorism. On the ground the DUP is in touch with local opinion, listening and responsive to the unionist community's needs and interests.
 
 The DUP constituency help and advice service is second to none. We want to make it even better. Help us to maintain and improve that level of service on your behalf by voting for your DUP candidate.
 
-#### British Symbols and Identity Under Constant Attack
+## British Symbols and Identity Under Constant Attack
 
 Day by day our British heritage and way of life is under attack. The symbols of the State, including even the National Flag and the image of Her Majesty, are being torn down. Everything Gaelic, republican and Irish is promoted while everything British, unionist or Orange is derided and reviled. Traditional parades are banned and the Union Flag can no longer fly on most days from government buildings. The Agreement is being used to undermine every expression of British identity.
 
 If allowed to continue the Britishness of Northern Ireland will be totally submerged. Don't let it happen!
 
-#### RUC Disbanded – IRA Maintained!
+## RUC Disbanded – IRA Maintained!
 
 Because of UUP support for the Belfast Agreement, the RUC is being destroyed. Yet the IRA remains intact, still carries out violence, and is continuing to import even more arms.
 
@@ -113,7 +114,7 @@ The Patten Report flowed directly from the Belfast Agreement which set out the r
 
 Trimble unionists have destroyed the RUC. This is your chance to reject those who have failed the RUC and demand its retention, not destruction.
 
-#### Terrorists Rejoice as Victims Are Forgotten
+## Terrorists Rejoice as Victims Are Forgotten
 
 Victims of terrorism endure a life sentence of grief and pain yet terrorists walk out of jail early. Remember how we were told that terrorists would stay in prison unless violence was over for good?
 
@@ -125,7 +126,7 @@ The implementation of the Agreement in this way has caused moral standards to be
 
 ---
 
-### DUP Rates Best
+## DUP Rates Best
 
 The DUP has the best record for keeping your Rates down at both District Council level and has tried through its votes in the Assembly to bring down the Regional rate increase to the rate of inflation.
 
@@ -133,7 +134,7 @@ Other parties have been profligate with your money hiking up the Rates without d
 
 However, the UUP and the others, preferred to maintain the all-Ireland aspects of the Belfast Agreement rather than reduce the financial pressure on working families. This is despite these same parties having criticised Direct Rule Ministers for imposing the same level of Rates increases in the past.
 
-#### Human Rights and Equality – for Unionists as well!
+## Human Rights and Equality – for Unionists as well!
 
 Issues of equality and human rights have been largely hijacked by those engaged in or sympathetic to republicanism. We believe that unionism must demand and exercise its rights and use the system created to its own benefit. Standing on the sidelines will not produce any advance for our just cause.
 
@@ -145,7 +146,7 @@ We believe in real and meaningful equality for women and ethnic minorities. We h
 
 ---
 
-### Massive Crime Increase Requires Zero Tolerance
+## Massive Crime Increase Requires Zero Tolerance
 
 The release of terrorists from jail and the rewarding of evildoers has sent a message that crime pays. This will be a lasting legacy of Trimble's Belfast Agreement.
 
@@ -157,7 +158,7 @@ Unless the gloves are taken off our society will be the prisoners and the lawbre
 
 ---
 
-### DUP – The Farmer's Proven Champion
+## DUP – The Farmer's Proven Champion
 
 The DUP has always championed the farmer's case and consistently fought for a fair deal for our farmers in Europe, at national level and locally. We believe our farmers are entitled to fair economic rewards and incentives.
 
@@ -179,7 +180,7 @@ We seek:
 - The establishment of a Young Entrants and Farming Retirement Scheme.
 - A Farmland Planning Easement Scheme in order to achieve development of rural land and permit farm families to live in the countryside.
 
-#### Fishing Communities Must Not Be Cast Adrift
+## Fishing Communities Must Not Be Cast Adrift
 
 The DUP is committed to having the fishing industry elevated within the Department of Agriculture and Rural Development. For too long fishing has been the poor relation. The retention of our fishing fleet with adequate and substantial funding to keep the industry viable is essential. The right to fish is a core issue as far the DUP is concerned.
 
@@ -191,7 +192,7 @@ The DUP is working for the provision of a decommissioning scheme that makes it c
 
 ---
 
-### Fairness and Quality in Education – Not Republican Bias
+## Fairness and Quality in Education – Not Republican Bias
 
 The DUP believes that the present IRA/Sinn Fein Minister has abused his position in the allocation of funding across sectors of education in Northern Ireland. Irish Medium and integrated schools are to be treated differently than state controlled schools.
 
@@ -214,7 +215,7 @@ There should be specialist schools at post primary level catering for different 
 
 As far as nursery education is concerned the present method of allocating nursery places discriminates against parents who are working. Many of these parents are in low paid jobs and the absence of nursery school places is forcing them out of work. The DUP will continue to press for a change in the criterion to give working parents a fairer allocation of nursery places for their offspring.
 
-#### Extending Further and Higher Education to All
+## Extending Further and Higher Education to All
 
 The DUP believes in the basic right of everyone to have the opportunity of higher and further education if they so wish. Promoting improved access and establishing affordability are the key principles underpinning our approach.
 
@@ -237,7 +238,7 @@ We believe in:
 
 ---
 
-### Preserving Our Environment
+## Preserving Our Environment
 
 The DUP supports a waste management strategy which will substantially reduce the amount of waste going to landfill.
 
@@ -247,7 +248,7 @@ The DUP has through the Chairmanship of the Assembly's Environment Committee bro
 
 ---
 
-### Equality for People with Disabilities
+## Equality for People with Disabilities
 
 People with disabilities must have their rights recognised and enshrined in the new Bill of Rights for Northern Ireland. We are committed to ensuring that the rights and needs of people with disabilities are respected and upheld by law if necessary.
 
@@ -259,7 +260,7 @@ It is essential that people with disabilities gain proper access to housing, tra
 
 ---
 
-### Meeting Housing Need and Waging War on Poverty
+## Meeting Housing Need and Waging War on Poverty
 
 The DUP is committed to tackling disadvantage and building communities. In the areas of housing, urban regeneration and through partnership with the community and voluntary sector we are determined to bring about improvements to the lives of ordinary people.
 
@@ -272,7 +273,7 @@ The DUP is committed to tackling disadvantage and building communities. In the a
 - We have set in train new strategies for urban regeneration in our towns and cities throughout the Province through the development of new and innovative partnerships that can take a more holistic view in assessing problems and developing solutions.
 - We are totally committed to ensuring that urgent action is taken to strengthen areas of weak community infrastructure, particularly in unionist areas.
 
-#### Protecting All Our Children
+## Protecting All Our Children
 
 We lobbied successfully for the creation of a Children's Commissioner. The DUP Chairman of the Committee of the Centre at Stormont has instigated an enquiry into the creation of this post to ensure that the process is completed as quickly as possible.
 
@@ -280,7 +281,7 @@ It is essential that the powers of the new Commissioner are sufficient to meet t
 
 ---
 
-### DUP Delivers for Our Senior Citizens – but battle is not over
+## DUP Delivers for Our Senior Citizens – but battle is not over
 
 The DUP alone promised to bring in free fares for senior citizens on public transport and we alone are delivering on that promise. We will continue to help our older people.
 
@@ -302,7 +303,7 @@ The DUP will continue to work for:
 
 ---
 
-### Promoting Ulster's Cultural, Artistic and Sporting Heritage
+## Promoting Ulster's Cultural, Artistic and Sporting Heritage
 
 - The DUP supports the promotion of Ulster Scots language, history and culture. There has been too much focus on Gaelic culture. That must be redressed urgently. We aim to ensure appropriate funding is made available for the Ulster-Scots language and that a major drive is made to promote it. We will continue to campaign for parity and equality.
 - We support changes to access to the Arts so that everyone can feel they can participate and enjoy good art. Art must be open and accessible to people from all spheres of life.
@@ -315,7 +316,7 @@ The DUP will continue to work for:
 
 ---
 
-### A Healthy Society – a First Priority
+## A Healthy Society – a First Priority
 
 Since IRA/Sinn Fein took control of our health service under the terms of the Belfast Agreement there has been one review after another. This must end. We need a workable health service plan consisting of primary care, area hospitals and regional hospitals.
 
@@ -331,7 +332,7 @@ Since IRA/Sinn Fein took control of our health service under the terms of the Be
 
 ---
 
-### Tackling Transport and Developing a Better Province
+## Tackling Transport and Developing a Better Province
 
 The DUP has used its Ministerial position to make improvements to our public transport. The DUP alone has won free fares for older people from October this year allowing free transport across the Province on buses and trains. At the end of the first year of operation we will be looking at ways to extend and expand the provision of free fares.
 
@@ -346,7 +347,7 @@ The DUP has used its Ministerial position to make improvements to our public tra
 
 ---
 
-### The Way to Secure Jobs and Investment
+## The Way to Secure Jobs and Investment
 
 The DUP is committed to promoting economic development strategies which will enable Northern Ireland to compete in a rapidly changing global economy. We support policies which will build strong competitive industries to help transform the economy from one based not just on the manufacture of traditional goods but also high-tech, high value goods.
 

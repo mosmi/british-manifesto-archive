@@ -13,5 +13,5 @@ Read the relevant rule before editing these pages.
 
 - [cooperative-party](./cooperative-party.md) — Labour/Co-op split is allowed on **one
   page only**
-- [manifesto-viewer](./manifesto-viewer.md) — TOC scroll + header cover/PDF panel on
-  `/manifesto/…`
+- [manifesto-viewer](./manifesto-viewer.md) — single H1, cite strip, in-doc find,
+  Original PDF CTAs, TOC scroll + cover panel on `/manifesto/…`

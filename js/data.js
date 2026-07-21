@@ -332,14 +332,27 @@ const PARTIES = {
     color: '#A61C30', dim: 'rgba(166,28,48,0.14)',
     founded: 1904, spectrum: 'Far-left / World socialism', isPrimary: false,
     nation: 'others',
+    status: 'active',
+    contests: ['westminster', 'london'],
     description: 'The Socialist Party of Great Britain (SPGB) was founded in 1904 as a breakaway from the Social Democratic Federation and is the oldest existing socialist party in Britain. An "impossibilist" party, it advocates world socialism established by a conscious democratic majority, refuses to campaign for reforms of capitalism, and famously makes no election promises. It has contested elections at every level without ever winning a seat, including the London County Council election of 1958, when it stood three candidates in East London.',
   },
   communist: {
-    id: 'communist', name: 'Communist Party of Great Britain', shortName: 'Communist',
+    id: 'communist', name: 'Communist Party of Great Britain', shortName: 'CPGB',
     color: '#EF0000', dim: 'rgba(239,0,0,0.14)',
     founded: 1920, spectrum: 'Far-left / Communist', isPrimary: false,
     nation: 'others',
+    status: 'historical',
+    contests: ['westminster', 'london'],
     description: 'The Communist Party of Great Britain (CPGB) was the principal communist party in Britain throughout the twentieth century. At the 1945 general election it won two seats — Willie Gallacher in West Fife and Phil Piratin in Mile End — its highest ever Westminster representation. The party never again won a seat and was dissolved in 1991.',
+  },
+  cpb: {
+    id: 'cpb', name: 'Communist Party of Britain', shortName: 'CPB',
+    color: '#EF0000', dim: 'rgba(239,0,0,0.14)',
+    founded: 1988, spectrum: 'Far-left / Communist', isPrimary: false,
+    nation: 'others',
+    status: 'active',
+    contests: ['westminster', 'holyrood', 'senedd'],
+    description: 'The Communist Party of Britain (CPB) was established in 1988 by the Communist Party of Great Britain\'s Straight Left / Communist Campaign Group tradition and is the publisher of the Morning Star. Distinct from the dissolved CPGB, it contests Westminster and devolved elections and publishes Britain\'s Road to Socialism.',
   },
   nationalliberal: {
     id: 'nationalliberal', name: 'National Liberal Party', shortName: 'National Liberal',
@@ -853,13 +866,7 @@ const PARTIES = {
     nation: 'northern-ireland',
     description: 'Aontú is an all-Ireland republican party founded by Peadar Tóibín after leaving Sinn Féin. It contests elections in Northern Ireland and the Republic on a socially conservative, anti-abortion platform.',
   },
-  brexit: {
-    id: 'brexit', name: 'Brexit Party', shortName: 'Brexit Party',
-    color: '#12B6CF', dim: 'rgba(18,182,207,0.14)',
-    founded: 2018, spectrum: 'Right / Populist / Eurosceptic', isPrimary: false,
-    nation: 'england',
-    description: 'The Brexit Party was founded in 2018 by Eurosceptics including Nigel Farage. It won 29 seats in the 2019 European Parliament election, becoming the largest party in the delegation. It did not contest seats in the 2019 general election where Conservatives were defending to prevent a split vote. It was later renamed Reform UK.',
-  },
+  /* Brexit Party → Reform UK via PARTY_ALIASES (euro/2019/brexit folder slug retained). */
   others: {
     id: 'others', name: 'Others', shortName: 'Others',
     color: '#6b7280', dim: 'rgba(107,114,128,0.14)',
@@ -1116,7 +1123,7 @@ const NATIONS = {
 
 /* ── Political spectrum order for parliament chart ─────────── */
 const SPECTRUM_ORDER = [
-  'sinnfein', 'workersparty', 'ssp', 'respect', 'tusc', 'communist', 'commonwealth', 'ilp', 'indlabour', 'sdlp',
+  'sinnfein', 'workersparty', 'ssp', 'respect', 'tusc', 'communist', 'cpb', 'commonwealth', 'ilp', 'indlabour', 'sdlp',
   'irishnationalist', 'irishrepublican', 'antipartition', 'irishlabour', 'republicanlabour', 'unity',
   'plaid', 'green', 'walesgrn', 'scottishgrn', 'snp', 'labour', 'welshlab', 'scottishlab', 'alliance',
   'libdem', 'nationalliberal', 'natlibconservative', 'indliberal', 'welshlibdem', 'scottishlibdem',
@@ -1582,7 +1589,7 @@ const ELECTIONS = [
       'Neil Kinnock resigns; John Smith and then Tony Blair reshape the party',
     ],
     youtubeId: 'rXAwSquD4ZU',
-    extraManifestoParties: ['green'],
+    extraManifestoParties: ['green', 'bnp'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  6, votes: 0, percentage: 28.6 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 49.5 },
@@ -1733,7 +1740,7 @@ const ELECTIONS = [
       },
     ],
     youtubeId: 'R9emO6B8HFE',
-    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'bnp', 'uup', 'tuv', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
+    extraManifestoParties: ['cooperative', 'gpni', 'ukip', 'bnp', 'uup', 'tuv', 'pirate', 'welshcon', 'scottishgrn', 'welshlab', 'welshlibdem', 'scottishcon', 'scottishlab', 'scottishlibdem'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  8, votes: 0, percentage: 26.1 },
       welshlab:    { party: 'welshlab',    seats: 26, votes: 0, percentage: 36.2 },
@@ -1884,7 +1891,7 @@ const ELECTIONS = [
       'Rishi Sunak concedes defeat in a dawn address outside Downing Street',
     ],
     youtubeId: 'l5Fr8fiNp-Y',
-    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba', 'animalpolitics', 'aontu', 'cpa', 'communist', 'nicon', 'pbp', 'rejoin', 'sdp', 'tusc', 'walesgrn', 'liberal1989'],
+    extraManifestoParties: ['cooperative', 'gpni', 'workersparty', 'welshcon', 'welshlab', 'scottishcon', 'scottishlab', 'scottishlibdem', 'scottishgrn', 'alba', 'animalpolitics', 'aontu', 'cpa', 'cpb', 'nicon', 'pbp', 'rejoin', 'sdp', 'tusc', 'walesgrn', 'liberal1989'],
     partyResults: {
       welshcon:    { party: 'welshcon',    seats:  0, votes: 0, percentage: 18.2 },
       welshlab:    { party: 'welshlab',    seats: 27, votes: 0, percentage: 37.0 },
@@ -1945,7 +1952,7 @@ const NAV_PARTIES = {
 
 const OTHERS_PARTIES = [
   'alba', 'antipartition', 'aontu', 'animalpolitics', 'binface', 'bnp', 'britainfirst', 'burningpink',
-  'cooperative', 'commonwealth', 'communist',
+  'cooperative', 'commonwealth', 'communist', 'cpb',
   'cista', 'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
   'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
   'irishlabour', 'irishnationalist', 'irishrepublican', 'londonreal', 'mebyon', 'nha', 'nationalindependent',
@@ -1964,11 +1971,11 @@ const OTHERS_FEATURED = [
 const HOLYROOD_OTHER_PARTIES = [
   'alba', 'ssp', 'solidarity', 'rise', 'allforunity', 'isp', 'scottishfamily',
   'scottishlibertarian', 'sovereignty', 'scottishchristian', 'bnp', 'ukip',
-  'communist', 'cooperative', 'wep', 'workersparty',
+  'cpb', 'cooperative', 'wep', 'workersparty',
 ];
 
 const SENEDD_OTHER_PARTIES = [
-  'ukip', 'gwlad', 'forwardwales', 'propel', 'abolish', 'heritage', 'communist', 'tusc',
+  'ukip', 'gwlad', 'forwardwales', 'propel', 'abolish', 'heritage', 'cpb', 'tusc',
   'cooperative', 'bnp', 'respect', 'omrlp',
 ];
 
@@ -2089,7 +2096,7 @@ const DEVOLVED_PORTALS = {
   },
 };
 
-/** Manifesto/party slug → canonical party page (2019 alliance names). */
+/** Manifesto/party slug → canonical party page. */
 const PARTY_ALIASES = {
   pes: 'sand',
   eldr: 'renew',
@@ -2101,6 +2108,7 @@ const PARTY_ALIASES = {
   ecrp: 'ecr',
   eaf: 'identity',
   awp: 'animalpolitics', // London folder slug for Animal Welfare Party
+  brexit: 'reform', // Brexit Party relaunched as Reform UK (2021); EP folder slug retained
 };
 
 function resolvePartyId(id) {
@@ -2270,12 +2278,13 @@ function buildPartyBrowseCard(pid, opts = {}) {
 
 /** Controlling / largest party id for a devolved portal index entry. */
 function devolvedElectionWinnerPartyId(e) {
-  if (e.mayorWinner) return e.mayorWinner;
+  if (e.mayorWinner) return resolvePartyId(e.mayorWinner);
   const results = e.results || [];
-  // Prefer control when it appears in seat results (handles aliases like brexit → reform).
-  if (e.control && results.some(r => r.party === e.control)) return e.control;
+  const control = e.control ? resolvePartyId(e.control) : null;
+  // Prefer control when it (or an alias) appears in seat results.
+  if (control && results.some(r => resolvePartyId(r.party) === control)) return control;
   const top = results.slice().sort((a, b) => (b.seats || 0) - (a.seats || 0))[0];
-  return top?.party || e.control || null;
+  return (top?.party ? resolvePartyId(top.party) : null) || control || null;
 }
 
 function devolvedTimelinePartyColor(e) {
@@ -2359,6 +2368,28 @@ function buildDevolvedTimelineCard(href, e) {
   </a>`;
 }
 
+/**
+ * Shared PDF call-to-action markup (I06).
+ * @param {{ href: string, size?: string, compact?: boolean, scanNote?: boolean }} opts
+ */
+function pdfCtaHtml({ href, size = '', compact = false, scanNote = true } = {}) {
+  if (!href) return '';
+  const sizePart = size ? ` · ${size}` : '';
+  if (compact) {
+    return `<a href="${href}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon" aria-hidden="true">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original PDF${sizePart}</div></div>
+        </a>`;
+  }
+  const sub = scanNote
+    ? `PDF scan of original document${sizePart}`
+    : (size ? `PDF document${sizePart}` : 'PDF document');
+  return `<a href="${href}" class="manifesto-link" target="_blank" rel="noopener">
+          <span class="manifesto-link-icon" aria-hidden="true">📄</span>
+          <div class="manifesto-link-info"><div class="manifesto-link-title">Original PDF</div><div class="manifesto-link-sub">${sub}</div></div>
+        </a>`;
+}
+
 /** Shared manifesto card for Holyrood, Senedd, Stormont, and European elections. */
 function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
   const election = normalizeDevolvedElection(electionOrYear);
@@ -2375,12 +2406,14 @@ function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
       : null)
     || getPartyName(pageId, yearNum);
   const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
-  const pdfSizeLabel = pdfSize ? ` · ${pdfSize}` : '';
   const headerName = pageId && PARTIES[pageId]
     ? devolvedPartyLink(pageId, partyName, yearNum)
     : partyName;
   const altHeading = m.candidate || partyName;
   const assetsVersion = typeof ASSETS_VERSION !== 'undefined' ? ASSETS_VERSION : '';
+  const pdfLink = m.pdf
+    ? pdfCtaHtml({ href: m.pdf, size: pdfSize, scanNote: true })
+    : '';
 
   return `
     <div class="manifesto-card" style="--party-color:${color};--party-dim:${dim}">
@@ -2403,10 +2436,7 @@ function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
       <div class="manifesto-card-body">
         ${m.candidate ? `<p class="london-manifesto-title">${m.candidate}</p>` : ''}
         ${m.title && !m.candidate ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        <a href="${m.pdf}" class="manifesto-link" target="_blank" rel="noopener">
-          <span class="manifesto-link-icon">📄</span>
-          <div class="manifesto-link-info"><div class="manifesto-link-title">Manifesto</div><div class="manifesto-link-sub">PDF document${pdfSizeLabel}</div></div>
-        </a>
+        ${pdfLink}
       </div>
     </div>`;
 }

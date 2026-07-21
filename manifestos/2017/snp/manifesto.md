@@ -26,6 +26,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 2017
 
 ## Stronger for Scotland
@@ -66,73 +67,73 @@ My pledge is to make Scotland stronger at Westminster. With your support, we can
 
 ---
 
-### Stronger for Scotland
+## Stronger for Scotland
 
 SNP MPs have used their influence to deliver positive change. Here's just some of what a strong team of SNP MPs has worked to achieve in the past two years.
 
-#### Holding the UK government to account on powers
+## Holding the UK government to account on powers
 
 When the Scotland Bill was going through Westminster it was the SNP who forced the UK government to give Scotland more powers. And it was SNP MPs, working with the Scottish Government, who saw off Tory attempts to slash Scotland's budget by £7 billion in the process. The SNP secured a deal that ensures Scotland will not lose billions of pounds in return for new powers.
 
-#### Opposing Tory austerity
+## Opposing Tory austerity
 
 SNP MPs have consistently opposed Tory austerity. Our MPs have been instrumental in forcing UK government budget u-turns on some of the proposed cuts to tax credits and disability benefits.
 
-#### Fighting to end the Rape Clause
+## Fighting to end the Rape Clause
 
 Alison Thewliss has been at the forefront of the campaign against the Tory policy to limit Child Tax Credits to two children and force women to prove they have been raped to claim benefits for third and subsequent children.
 
-#### Pension justice for women born in the 1950s
+## Pension justice for women born in the 1950s
 
 SNP MPs have worked with Women Against State Pension Inequality (WASPI) and led calls at Westminster for women born in the 1950s to receive the pensions they are due.
 
-#### Legislation on ending violence against women
+## Legislation on ending violence against women
 
 This year Dr Eilidh Whiteford became the first SNP MP to have a Private Member's Bill pass at Westminster. The Bill requires the UK government to ratify the Istanbul Convention and take further action to eradicate domestic violence.
 
-#### Fighting against the cruel and punitive sanction regime
+## Fighting against the cruel and punitive sanction regime
 
 Mhairi Black has led opposition to the punitive benefit sanctions regime, and proposed a Private Member's Bill to make the system fairer. SNP MPs will continue to press for change in the next Parliament.
 
-#### Leading opposition to the bombing of Syria
+## Leading opposition to the bombing of Syria
 
 It was the SNP that provided the clear and unified opposition to the UK government's ill-judged decision to bomb Syria. SNP MPs will continue to press the UK government to take meaningful action to bring about a political resolution to end the six-year conflict in Syria, in accordance with UN Security Council Resolution 2254.
 
-#### Clear, consistent and unified opposition to Trident
+## Clear, consistent and unified opposition to Trident
 
 SNP MPs have been the only effective opposition to the UK government's plan to spend billions on a new generation of nuclear weapons.
 
-#### Fighting for a fairer immigration policy
+## Fighting for a fairer immigration policy
 
 Ian Blackford and Alex Salmond successfully lobbied on behalf of the Brain family and secured their right to live in Scotland. We will continue to support a post-study work visa, to help attract and retain the skills and talent Scotland needs.
 
-#### Demanding action on tax evasion
+## Demanding action on tax evasion
 
 Roger Mullin has led calls for the UK government to take action on the use of the Scottish Limited Partnership business model that can be used to undertake criminal activity, fraud and tax evasion. As a result of SNP pressure, the UK government has commenced a review into the use of such practices.
 
-#### Fair compensation for veterans
+## Fair compensation for veterans
 
 Kirsten Oswald, alongside the Royal British Legion, successfully campaigned to force the UK government to ensure that veterans are entitled to the same compensation for asbestos-related mesothelioma as civilians who contracted the illness.
 
 ---
 
-### Building a Better Scotland
+## Building a Better Scotland
 
 In Scotland we are working to protect public services, social protections and family incomes from Tory cuts.
 
-#### High quality health care
+## High quality health care
 
 Investment in Scotland's NHS is at a record level and the number of staff working in our NHS has increased by almost 10 per cent since 2007. Health and social care has been integrated and our hospital A&E departments are the best performing in the UK.
 
-#### Prescription charges abolished, ensuring there's no tax on ill health
+## Prescription charges abolished, ensuring there's no tax on ill health
 
 We abolished prescription charges in 2011. In England, patients are still forced to pay a Tory tax on health of £8.60 per prescription.
 
-#### Free, high quality childcare increased
+## Free, high quality childcare increased
 
 We have increased the availability of free early years education and childcare from 12.5 hours in 2007 to 16 hours a week for all three and four year olds – and also extended it to two year olds from low income households. By 2021 we will increase provision to 30 hours.
 
-#### Investing in a good education for all
+## Investing in a good education for all
 
 Spending on education and training in Scotland is going up. Total spending rose by almost five per cent in 2015-16, in contrast to the UK as a whole, where it fell.
 
@@ -140,47 +141,47 @@ We are seeing record exam passes in our schools and more young people going into
 
 We have abolished university tuition fees, saving students up to £27,000 compared to the cost of study in England. College students in Scotland are eligible for the best level of non-repayable bursary anywhere in the UK.
 
-#### Cheaper Council Tax bills
+## Cheaper Council Tax bills
 
 Average Council Tax bills in Scotland, in all property bands, are lower in Scotland than in England.
 
-#### Free personal care for older people
+## Free personal care for older people
 
 Around 77,000 people in Scotland enjoy access to a wide range of personal care services without charge. Older people in England are not entitled to free personal care.
 
-#### The highest house building rate in the UK
+## The highest house building rate in the UK
 
 Scotland has the highest house building rate in the UK. We have overseen a new generation of council house building and, since 2007, over 60,000 affordable homes have been completed.
 
-#### Higher youth employment
+## Higher youth employment
 
 Youth employment in Scotland is higher and youth unemployment is lower than the rest of the UK.
 
-#### Fair pay
+## Fair pay
 
 Scotland has the highest proportion of employees paid the Living Wage of any country in the UK.
 
-#### More police officers and less crime
+## More police officers and less crime
 
 In Scotland, under the SNP, police numbers are up, while they've fallen in England. And crime is at a 42-year low.
 
-#### No Bedroom Tax
+## No Bedroom Tax
 
 No one in Scotland has to pay the Bedroom Tax and we will use new powers to abolish it completely.
 
 ---
 
-### Our Key Pledges
+## Our Key Pledges
 
 Now more than ever, it is vital to have strong SNP voices standing up for Scotland.
 
 A vote for the SNP will make Scotland's voice heard at Westminster. It will elect MPs who will always work to protect our public services, social protections and family budgets from the impact of Tory cuts. It will be a vote to make sure that Scotland's interests are not sidelined in the Brexit negotiations. And it will send a message to Westminster that Scotland's future should always be in Scotland's hands.
 
-#### An end to austerity
+## An end to austerity
 
 SNP MPs will demand an end to austerity. We have a responsible plan to repair the public finances while also freeing up additional resources to bring an end to austerity. This will allow us to support a halt to further social security cuts, an end to the freeze on working age benefits, increased investment in public services and protection for family budgets.
 
-#### Fair tax
+## Fair tax
 
 Setting rates of income tax is now the responsibility of the Scottish Parliament. In the current financial year, we have frozen the basic rate of income tax to help low and middle earners - and we have opted not to cut tax for higher rate taxpayers through an increase in the higher rate threshold.
 
@@ -192,7 +193,7 @@ At a time when household budgets are under increasing pressure, SNP MPs will opp
 
 We will also support the reversal of the married couple's allowance, the reversal of the reductions to the bank levy and the introduction of a tax on bankers' bonuses.
 
-#### Protecting the NHS
+## Protecting the NHS
 
 We are already committed to increasing the budget of NHS Scotland by £2 billion by the end of the current Scottish Parliament.
 
@@ -200,7 +201,7 @@ Our plan to end austerity would enable the UK government to increase investment 
 
 SNP MPs will also vote against any further privatisation of the NHS in England and back any moves to restore it to a fully public service.
 
-#### Improving education
+## Improving education
 
 We will expand early years education and childcare to 30 hours a week for all 3 & 4 year olds and vulnerable 2 year olds.
 
@@ -208,17 +209,17 @@ We will continue to invest in and reform school education, with the new National
 
 We will also guarantee the continuation of tuition free university education.
 
-#### Tackling poverty and inequality
+## Tackling poverty and inequality
 
 The Tories have cut taxes for the wealthiest in our society, while cutting support for the disabled and low income working families. According to the Resolution Foundation, the UK is on course for the biggest increase in inequality since the days of Margaret Thatcher. SNP MPs will vote against further cuts to social security. We will also press for the abolition of the two child cap on tax credits and the associated Rape Clause. And we will vote to ensure that benefits increase at least in line with CPI inflation.
 
-#### Fair pensions
+## Fair pensions
 
 Pensioner poverty is on the rise across the UK. We will vote to protect the Triple Lock, ensuring that pensions continue to rise by inflation, earnings or 2.5 per cent - whatever is the highest.
 
 We will also continue to support the WASPI campaign.
 
-#### A focus on jobs, growth and productivity
+## A focus on jobs, growth and productivity
 
 SNP MPs will not support further reductions to Corporation Tax.
 
@@ -228,7 +229,7 @@ To boost productivity, we will also support extension of the Annual Investment A
 
 We will also demand fresh support for our oil and gas sector, and an industrial strategy that works for Scotland.
 
-#### Making work fair and tackling low pay
+## Making work fair and tackling low pay
 
 SNP MPs will support repeal of the Trade Union Act 2016 and a ban on exploitative zero-hours contracts.
 
@@ -244,11 +245,11 @@ For the wider public sector, we will enter into negotiations for next year's pay
 
 SNP MPs will also call for tough new action to close the gender pay gap.
 
-#### More powers for the Scottish Parliament
+## More powers for the Scottish Parliament
 
 We will seek additional powers for the Scottish Parliament to boost our economy, mitigate the damage of Brexit, and protect the most vulnerable in our society from damaging Tory cuts.
 
-#### Protecting Scotland's place in the Single Market
+## Protecting Scotland's place in the Single Market
 
 We must make sure that our interests are not ignored in the Brexit negotiations - a vote for the SNP will make sure that Scotland's voice is heard.
 
@@ -260,7 +261,7 @@ That is why the Scottish Government published proposals that would keep Scotland
 
 These proposals were rejected by the UK government. However, if the SNP wins this election, we will demand a place for Scotland at the Brexit negotiating table and the inclusion of the case for our place in the Single Market in the UK's negotiating remit.
 
-#### Scotland's choice
+## Scotland's choice
 
 At the end of the Brexit process, when the final terms of the deal are known, it is right that Scotland should have a choice about our future.
 
@@ -268,21 +269,21 @@ Brexit must not simply be imposed on Scotland no matter how damaging it turns ou
 
 Last year's Holyrood election delivered the democratic mandate for an independence referendum. The recent vote of Scotland's national Parliament has underlined that mandate. If the SNP wins a majority of Scottish seats in this election, that would complete a triple lock, further reinforcing the democratic mandate which already exists. And, in such circumstances, any continued Tory attempts to block the people of Scotland having a choice on their future - when the time is right and the options are clear - would be democratically unsustainable.
 
-#### Modernising UK democracy
+## Modernising UK democracy
 
 Our democratic institutions should be representative of, and accountable to, the people they represent. We support the replacement of the first-past-the-post system with proportional representation for elections to the House of Commons. SNP MPs will bring forward proposals to extend the franchise to 16 and 17 year olds in all elections. We will also support the right to vote of citizens from other EU countries resident here.
 
 SNP MPs will vote for the abolition of the House of Lords.
 
-#### Scrap Trident
+## Scrap Trident
 
 SNP MPs will build a cross-party coalition to scrap Trident as quickly and safely as possible. We will vote for the billions other Westminster parties are committing to renewing Trident to be spent on our public services.
 
 ---
 
-### Standing Up for Scotland
+## Standing Up for Scotland
 
-#### By Angus Robertson
+## By Angus Robertson
 
 In the last two years your SNP team at Westminster has worked tirelessly to stand up for Scotland.
 
@@ -308,9 +309,9 @@ Only a vote for the SNP on 8 June will ensure Scotland has a strong voice at Wes
 
 ---
 
-### Ending the Callous Tory Benefit Sanctions Regime
+## Ending the Callous Tory Benefit Sanctions Regime
 
-#### By Mhairi Black
+## By Mhairi Black
 
 The Tory obsession with austerity is a political choice, not a necessity. The punitive benefit sanctions regime is one of the worst policies to ever come out of Westminster.
 
@@ -328,9 +329,9 @@ Only a strong team of SNP MPs can take the fight to Theresa May and halt the unf
 
 ---
 
-### Campaigning Against the Abhorrent Rape Clause
+## Campaigning Against the Abhorrent Rape Clause
 
-#### By Alison Thewliss
+## By Alison Thewliss
 
 At the first Budget after the 2015 General Election, the Tories announced they would restrict eligibility for Child Tax Credits to the first two children in a family.
 
@@ -346,9 +347,9 @@ The SNP stands up for all children in Scotland.
 
 ---
 
-### Standing Up for Our Oil and Gas Industry
+## Standing Up for Our Oil and Gas Industry
 
-#### By Callum McCaig
+## By Callum McCaig
 
 Scotland's oil and gas industry is vital to our economy and jobs. Yet there has been a lack of action from the Tory government at Westminster since the downturn in the sector.
 
@@ -362,9 +363,9 @@ We will not let a Tory government at Westminster get away with destroying anothe
 
 ---
 
-### Combatting Domestic and Sexual Violence
+## Combatting Domestic and Sexual Violence
 
-#### By Dr Eilidh Whiteford
+## By Dr Eilidh Whiteford
 
 Earlier this year my Bill to ensure new action on domestic violence was passed at Westminster with cross-party support.
 
@@ -380,9 +381,9 @@ I'm proud that it was the SNP that led the campaign to get the Istanbul Conventi
 
 ---
 
-### Fighting the Tories' Great Rural Robbery
+## Fighting the Tories' Great Rural Robbery
 
-#### By Calum Kerr
+## By Calum Kerr
 
 It's never been more important for our rural communities to have a strong voice at Westminster. With more SNP MPs since 2015 that's what we've been delivering.
 
@@ -398,9 +399,9 @@ At this election we face an unfettered Tory government ready to grab farming pow
 
 ---
 
-### Fighting for Our Friends and Neighbours from Other EU Countries
+## Fighting for Our Friends and Neighbours from Other EU Countries
 
-#### By Stephen Gethins
+## By Stephen Gethins
 
 Leaving the EU will have an impact on every one of us. For EU nationals in particular, Brexit will bring uncertainty about their right to continue living and working in Scotland.
 
@@ -414,9 +415,9 @@ The SNP will continue to stand up for the rights of EU citizens at Westminster. 
 
 ---
 
-### Demanding Action on Tax Evasion
+## Demanding Action on Tax Evasion
 
-#### By Roger Mullin
+## By Roger Mullin
 
 Scottish Limited Partnerships (SLPs) are a way of registering businesses that has existed for over a century.
 
@@ -430,13 +431,13 @@ It's a step closer to a robust solution to this serious issue, but only the SNP 
 
 ---
 
-### Protecting Our Public Services
+## Protecting Our Public Services
 
 Tackling austerity and securing investment in our public services will be the priority for SNP MPs.
 
 We have a plan to repair the public finances by the end of this Parliament, while freeing up additional resources to end austerity and support investment in our public services.
 
-#### Ending austerity and investing in public services
+## Ending austerity and investing in public services
 
 SNP MPs will demand an end to austerity. We will demand a new, credible fiscal plan for the UK.
 
@@ -459,7 +460,7 @@ That is enough to:
 - build the new Queen Elizabeth Hospital – Europe's largest – three times, or
 - train more than 3,800 consultant doctors
 
-#### Fair and balanced personal taxation
+## Fair and balanced personal taxation
 
 We will back tax proposals that promote fairness, while raising the revenues required to protect the public services we all rely on.
 
@@ -475,7 +476,7 @@ We will not support further reductions to Corporation Tax.
 
 At a time when household budgets are under pressure and consumer confidence in Scotland is low, SNP MPs will back a freeze on National Insurance contributions and Value Added Tax. We will back the continuation of VAT-exemption on essential items like children's clothes, and will hold the UK government to a commitment to remove VAT from sanitary products. Until VAT is removed from sanitary products, SNP MPs will call for Scotland's population share of the Tampon Tax Fund to be transferred to the Scottish Government so that a fair and proportionate amount can be distributed to organisations working with and for women across Scotland.
 
-#### Improving tax collection
+## Improving tax collection
 
 SNP MPs will back improvements to tax collection and tougher action on tax avoidance, including:
 
@@ -484,7 +485,7 @@ SNP MPs will back improvements to tax collection and tougher action on tax avoid
 - measures to improve the transparency of tax paid by major international companies;
 - and further action by the UK government to tackle international tax avoidance.
 
-#### Protecting our health service
+## Protecting our health service
 
 We all rely on our NHS – that is why we are committed to making sure it is fit for the future. The SNP Scottish Government is already committed to an increase in the NHS revenue budget of £500 million more than inflation by the end of the current term of the Scottish Parliament. That means the budget will increase by £2 billion in total.
 
@@ -533,7 +534,7 @@ Victims of contaminated blood products deserve answers. In 2008 the SNP Scottish
 - Most recent figures show that 90 per cent of NHS Scotland patients rated their care and treatment as good or excellent.
 - Nurses in Scotland are better paid than anywhere else in the UK. A nurse in Scotland, at Band 5, is paid up to £309 more than their English counterparts. And, unlike in the NHS in England, we are supporting the lowest paid workers in our NHS by delivering the real Living Wage. As a result the starting salary of NHS support staff in Scotland is over £1,100 higher than in England.
 
-#### Protecting our education sector
+## Protecting our education sector
 
 We will guarantee the continuation of free university education in Scotland.
 
@@ -554,11 +555,11 @@ A good education is an investment – not just in our children, but in our socie
 - We have been reforming vocational education and increasing the number of Modern Apprenticeships, hitting new records every year on the road to our target of 30,000 new starts by the end of this parliament.
 - We have expanded the Education Maintenance Allowance – now scrapped for new students south of the border – to support even more school pupils and college students from low income families.
 
-#### Supporting our emergency services
+## Supporting our emergency services
 
 Despite emergency services in England having tax relief from VAT, the UK government has failed to deliver the same relief for Police Scotland and the Scottish Fire and Rescue Service. This has cost Scottish taxpayers more than £140 million since 2013. SNP MPs will continue to make the case to the UK government to extend a VAT exemption to Scottish emergency services. The money saved will be invested by the Scottish Government in making Scotland safer.
 
-#### Public Sector Pay
+## Public Sector Pay
 
 The Scottish Government has supported public sector workers through a difficult time of pay restraint with additional measures to tackle low pay. However, we recognise that at a time of rising inflation, public sector pay caps become increasingly unsustainable.
 
@@ -566,7 +567,7 @@ For the NHS, the Scottish Government will work with unions to submit evidence to
 
 For the wider public sector, we will enter into negotiations for next year's pay settlement in good faith and with a view to agreeing a fair outcome that takes account of both the public finances and the cost of living.
 
-#### Better rail services
+## Better rail services
 
 We are committed to improving standards for rail users. Since the SNP took office, we have invested £7.7 billion to maintain and upgrade tracks, stations and trains in Scotland. Scotland's rail passengers benefit from the lowest levels of fare increases since rail powers were devolved in 2005, as well as more seats, services and stations. And we are already using new powers to ensure a public sector operator will be able to bid for a future rail contract.
 
@@ -576,7 +577,7 @@ Connecting Scotland to HS2 must be a priority, with construction beginning in Sc
 
 SNP MPs will engage the UK government in discussions on the feasibility of improving cross-border rail links, including linking Carlisle to the Borders Railway.
 
-#### Championing public service broadcasting and a thriving press
+## Championing public service broadcasting and a thriving press
 
 We continue to believe that responsibility for broadcasting in Scotland should transfer from Westminster to the Scottish Parliament. In the meantime we welcome the creation of a new BBC Scotland TV channel and its associated investment. We will continue to push for greater authority and funding to be moved from BBC network to BBC Scotland. We will also continue to push for a fairer share of the TV licence fee raised in Scotland being spent in Scotland.
 
@@ -592,7 +593,7 @@ We will demand that the UK government reinstates its funding for Gaelic broadcas
 
 ---
 
-### The Real Benefit of Voting SNP
+## The Real Benefit of Voting SNP
 
 - A strong voice for Scotland, standing against Tory cuts.
 - A mandate to strengthen Scotland's hand on Brexit.
@@ -600,13 +601,13 @@ We will demand that the UK government reinstates its funding for Gaelic broadcas
 
 ---
 
-### An Open, Modern Economy
+## An Open, Modern Economy
 
 Now more than ever, it is vital to have strong SNP voices standing up for jobs and businesses in Scotland. At Westminster, we will demand fresh support for businesses to grow and to boost productivity.
 
 We will hold the Tories to account, making sure they cannot trade away Scotland's industries in Brexit negotiations. We will fight for Single Market membership. And we will demand new powers, so we can continue to encourage the best and brightest from around the world to make Scotland their home, and contribute to our economy and society.
 
-#### Supporting business
+## Supporting business
 
 We will support the targeted reduction in National Insurance to bring down the costs employers face when taking on new workers by the doubling of the Employment Allowance – the National Insurance discount businesses receive when they increase employment – from £3,000 per business per year to £6,000 per business per year, phased in over the Parliament.
 
@@ -644,7 +645,7 @@ In 2017-18 alone almost £6.4 billion of infrastructure projects will be under c
 - In government we have made energy efficiency a national infrastructure priority, and we will support it with more than £500 million of public funding over four years.
 - We have invested £400 million to deliver superfast broadband to 95 per cent of properties across Scotland by the end of 2017, and we are on track to deliver this target. We will now go further, ensuring that 100 per cent of premises across Scotland have access to super-fast broadband by 2021.
 
-#### Protecting our place in the European Single Market
+## Protecting our place in the European Single Market
 
 The European Single Market represents in excess of 500 million consumers – eight times the size of the UK's market. The Tories' plans to take us out of the Single Market would damage our economy. In Scotland 80,000 Scottish jobs could be lost, wages face a £2,000 per head cut and our economy faces a hit of up to £11 billion a year by 2030. Our public finances are also threatened by the loss of EU funding for research and development, and support for our rural communities.
 
@@ -654,7 +655,7 @@ Scotland does not have to choose between the Single Market and the UK market. Wh
 
 SNP MPs will continue to press the UK government to work with the Scottish Government to support Scotland's businesses in the wake of Brexit, and ensure their voice is heard during negotiations.
 
-#### Safeguarding the success of our world-class food and drink sector
+## Safeguarding the success of our world-class food and drink sector
 
 Scotland's food and drink is a global success story, worth £14.4 billion. The EU – Scotland's biggest overseas regional food and drink export market – is of vital importance to the sector. We will fight to maintain Single Market membership, to protect the future success of the industry.
 
@@ -672,7 +673,7 @@ We will not allow the UK government to dismantle Scotland's GM-free status and c
 
 Given the Scotch Whisky industry is a key sector of Scotland's economy, SNP MPs will continue to advocate a review of alcohol taxation to better reflect alcohol content, while supporting health benefits through minimum unit pricing.
 
-#### Tourism and hospitality
+## Tourism and hospitality
 
 Tourism is a growing part of Scotland's economy with Scotland hailed as the second best place to visit in the world this year.
 
@@ -682,7 +683,7 @@ To provide further support to our tourism industry the SNP will call on the UK g
 
 The tourism and hospitality sector faces real challenges presented by Brexit. The Tourism Industry Council expects that there will need to be a 200 per cent increase in Border Force resources to deal with post-Brexit EU passengers. SNP MPs will press the UK government to ensure border checks are as seamless as possible after the UK leaves the EU, making it as easy as possible for international tourists to visit Scotland.
 
-#### Connecting Scotland to the world
+## Connecting Scotland to the world
 
 International connectivity plays an important role in facilitating trade, tourism and investment. Membership of the EU has helped open up skies across Europe, boosting the number of flights to and from Scotland, creating more choice for businesses and families. SNP MPs will:
 
@@ -694,7 +695,7 @@ International connectivity plays an important role in facilitating trade, touris
 
 The current system for managing aviation noise is outdated and is in urgent need of reform. In the last Parliament, SNP MPs secured a UK government consultation on a new Independent Aviation Noise Authority to ensure communities are fully engaged in decisions by airports to alter flight paths. We will now push for the establishment of this body, ensuring that airspace changes are delivered with the approval of the community, without having an adverse impact on our environment.
 
-#### Standing up for Scotland's oil and gas sector
+## Standing up for Scotland's oil and gas sector
 
 There are encouraging signs Scotland's oil and gas industry is emerging from its recent downturn, thanks to the efforts of the men and women who have made it an international success story. Despite raising £330 billion in tax revenues for the UK Treasury, Westminster has repeatedly failed to provide adequate support for the industry and the families which depend upon it.
 
@@ -710,7 +711,7 @@ The Oil and Gas Institute at Robert Gordon University in Aberdeen has estimated 
 
 In light of local concerns, SNP MPs and the SNP Scottish Government will continue to demand the UK government devolves control of ship-to-ship oil transfers.
 
-#### Investing in our cities and regions
+## Investing in our cities and regions
 
 SNP MPs will campaign for a UK government funding commitment for an Ayrshire Growth Deal, a Tay City Deal, a Stirling and Clackmannanshire City Deal, an Edinburgh and South East Scotland City Deal, and a Deal for the Islands of Orkney, Shetland and the Western Isles.
 
@@ -726,7 +727,7 @@ In total the SNP Government has pledged more than £1 billion but the UK has fai
 
 SNP MPs will demand the UK government delivers on its responsibilities to these areas and matches the missing millions. And they will demand that in all future deals, the UK does not short-change the people of Scotland.
 
-#### An immigration policy that works for Scotland
+## An immigration policy that works for Scotland
 
 Our vision of Scotland is one of an open country that looks outwards, and encourages the best and brightest from Europe, and around the world, to make Scotland their home.
 
@@ -744,7 +745,7 @@ SNP MPs will continue to press the UK government to limit immigration detention 
 
 Access to citizenship has become increasingly expensive. We support a review of the citizenship application process, with a view to bringing down its cost and reducing its complexity.
 
-#### Reforming the banking sector
+## Reforming the banking sector
 
 The SNP supports the creation of a robust regulatory framework to ensure that the UK economy is not vulnerable to a re-run of the 2008 financial crisis. The SNP will support measures including the reinstatement of the reverse burden of proof which, before being removed by the Tories, required senior bank managers to demonstrate they had done the right thing where wrongdoing had emerged on their watch.
 
@@ -758,7 +759,7 @@ SNP MPs will press the UK government to compel the banking industry and LINK mem
 
 ---
 
-### Scotland's Future
+## Scotland's Future
 
 This election is about the kind of country we want Scotland to be. More than ever, Scotland needs strong voices in Westminster, standing up for the values we hold dear.
 
@@ -766,7 +767,7 @@ A vote for the SNP is a vote to ensure Scotland's future is in Scotland's hands 
 
 We will oppose any attempts by the Tories to water-down the vital rights currently protected by EU membership. We will stand up for Scotland's place in Europe, and we will make sure Scotland's voice is heard in the Brexit negotiations.
 
-#### Scotland's choice
+## Scotland's choice
 
 This election won't decide whether or not Scotland will be independent. But a vote for the SNP is a vote to reinforce the Scottish Parliament's right to decide when an independence referendum should happen.
 
@@ -776,7 +777,7 @@ Brexit must not simply be imposed on Scotland no matter how damaging it turns ou
 
 Last year's Holyrood election delivered the democratic mandate for an independence referendum in these circumstances. The recent vote of Scotland's national Parliament has underlined that mandate. If the SNP wins a majority of Scottish seats in this election, that would complete a triple lock, further reinforcing the democratic mandate which already exists. And, in such circumstances, any continued Tory attempts to block the people of Scotland having a choice on their future - when the options are clear, and on a timescale determined by the Scottish Parliament, would be democratically unsustainable.
 
-#### Scotland's place in Europe
+## Scotland's place in Europe
 
 The SNP believes that if Scotland chooses to become independent, we should be a member state of the EU.
 
@@ -802,7 +803,7 @@ However, this election offers people the chance to give the Scottish Government'
 
 If the SNP wins the election, it will give us a mandate to demand a place for Scotland at the Brexit negotiating table and the inclusion of the case for our place in the Single Market in the UK's negotiating remit.
 
-#### Protecting fundamental rights
+## Protecting fundamental rights
 
 Brexit threatens the fundamental rights that people in the UK currently enjoy, including workers' rights, as well as vital social and environmental protections. SNP MPs will hold the Tories to account to ensure that the rights and protections currently safeguarded by EU membership are not diminished after the UK leaves.
 
@@ -816,7 +817,7 @@ So long as Scotland is covered by trade arrangements negotiated by the UK govern
 
 The benefits delivered by EU funding for Scotland are significant and wide-ranging - supporting jobs, paying for new infrastructure across the country, funding research at our universities, and providing support for our farming and fishing industries. SNP MPs will demand urgent clarity from the UK government on long-term funding arrangements after the UK leaves the EU, and ensure that current funding levels are matched.
 
-#### Strengthening the Scottish Parliament
+## Strengthening the Scottish Parliament
 
 Until such time as Scotland chooses to be independent, SNP MPs will support increased powers for the Scottish Parliament.
 
@@ -828,19 +829,19 @@ SNP MPs will seek additional powers. These will include:
 - powers to be repatriated in reserved areas, such as employment law, which protect fundamental rights currently enjoyed by the people of Scotland;
 - new powers, beyond those being repatriated, including, but not limited to immigration; powers to conclude international agreements in areas of the Scottish Parliament's responsibility, and powers that would allow Scotland to meet the regulatory and administrative requirements of continued European Single Market membership.
 
-#### Protecting Scotland's budget from a Tory cash grab
+## Protecting Scotland's budget from a Tory cash grab
 
 SNP MPs will support the Scottish Government to ensure that Scotland's finances are protected from any attempt by the UK government to reduce Scotland's budget. As long as part of the Scottish Parliament's budget continues to be determined by Westminster we will fight to protect the Barnett formula.
 
 ---
 
-### Making Westminster Fairer
+## Making Westminster Fairer
 
 While handing tax cuts to the wealthiest, the Tories have cut support for the most vulnerable. And the Tories are now openly threatening a race to the bottom in tax, wages and working conditions. That's not the Scotland we seek.
 
 The SNP will fight to end the appalling Tory welfare policies that are punishing the most vulnerable in society – including pensioners, the disabled, vulnerable young adults, and even the bereaved. We will demand that the UK government calls a halt to the cuts that are damaging lives, and we will seek new powers for the Scottish Parliament so we are better able to protect our communities.
 
-#### Social security powers
+## Social security powers
 
 Social security should be there for all of us in times of need. It is part of what holds us together as a society. Social security is a safety net that we all pay into when times are good, in the expectation that it is there for us when we find ourselves in difficult financial or personal circumstance. We will protect the principles that have underpinned the social security system since its foundations.
 
@@ -850,17 +851,17 @@ Only with full powers over social security will the Scottish Parliament be able 
 
 SNP MPs will continue to call for the Scottish Parliament to have full control over all social security benefits, so that we can deliver a system based on dignity and respect that is tailored to the needs of all the people of Scotland.
 
-#### Tackling child poverty
+## Tackling child poverty
 
 The SNP Scottish Government has introduced a new Child Poverty Bill, following the Tory government's decision to scrap income-based child poverty targets in the last Parliament. The new Bill introduces new Scotland-wide targets to eradicate child poverty. SNP MPs will call on the UK government to match that ambition by reintroducing UK-wide targets to end child poverty.
 
 We will also urge the UK government to follow the lead of the SNP Scottish Government, by working with devolved administrations to establish a Poverty and Inequality Commission that provides expert advice on tackling poverty, and monitors and regularly reports on progress.
 
-#### Protecting women and girls from gender-based violence
+## Protecting women and girls from gender-based violence
 
 Dr Eilidh Whiteford became the first SNP MP ever to have a Private Member's Bill reach the statute book. She led a campaign to get the ratification of an important international treaty to prevent and combat sexual and domestic violence, which disproportionately affects women and girls. The Bill will commit the UK government to funding essential services such as women's refuges and rape crisis helplines. SNP MPs will ensure there is a clear timetable for that to happen.
 
-#### Protecting disabled people from Tory cuts
+## Protecting disabled people from Tory cuts
 
 The Tory government is driving disabled people and those with illnesses into poverty by cutting their incomes. Under the Tories, from April this year, disabled and ill people assessed as not fit for work have lost out on £29 per week from their Employment and Support Allowance. SNP MPS will support reversal of this cut.
 
@@ -868,11 +869,11 @@ The current Work Capability Assessment is failing. SNP MPs will call for this to
 
 SNP MPs will urge the UK government to follow the lead of the Scottish Government to review Personal Independence Payments, ensuring assessments, descriptors and award times are appropriate and rooted in respect and dignity.
 
-#### Protecting family budgets
+## Protecting family budgets
 
 The SNP strongly opposes the cap that restricts Child Tax Credits to the first two children and the removal of the family element of Universal Credit. We believe that all children should be treated equally. We oppose the ruthless and inhumane Rape Clause which forces women to relive the ordeal of rape in order to claim tax credits for third or subsequent children. The SNP believes that the UK social security system, paid for by all of us, should provide a safety net for all low income families, to ensure that even in the most difficult times we can all make the best futures for our children.
 
-#### Protecting people on low incomes
+## Protecting people on low incomes
 
 We will call for the end of the cash freeze that the Tories have imposed on many benefits, leaving families struggling as the cost of living rises. Instead, we will support the annual uprating of all benefits by at least CPI inflation.
 
@@ -892,15 +893,15 @@ The Tory government has introduced new charges for parents seeking support from 
 
 SNP MPs will continue to fight for an end to premium-rate telephone charges faced by those seeking advice on or claiming benefits from the DWP.
 
-#### Protecting vulnerable young people
+## Protecting vulnerable young people
 
 Vulnerable young people under the age of 21 are no longer entitled to financial support for housing unless they can prove family breakdown or abuse. SNP MPs will support restoration of housing support for 18 to 21 year olds across the UK.
 
-#### Support for people who have lost loved ones
+## Support for people who have lost loved ones
 
 The Tory government is cutting Bereavement Payments and Widowed Parents' Allowance - making grieving families worse off. According to the UK government's own analysis, 75 per cent of families entitled to Widowed Parents' Allowance will be worse off. SNP MPs will support the reversal of this cut.
 
-#### Making work fair
+## Making work fair
 
 SNP MPs will continue to press for full devolution of employment and employability policy – including the Minimum Wage – to enable the Scottish Government to protect and enhance vital workers' rights that are under threat from a hard-line Tory government. Upon devolution of these new powers, an SNP Scottish Government will take advice from a strengthened Fair Work Convention to deliver workplace policy that is fit for the 21st century, including a full review of workplace leave entitlements.
 
@@ -914,7 +915,7 @@ SNP MPs will call for the UK government to follow the lead of the Scottish Gover
 
 The SNP will press the UK government to ban exploitative zero-hours contracts, and ensure that workers have appropriate rights and protections, including holiday and sick pay. This will help casual and agency workers as well as those now part of the growing gig economy. To tackle maternity and pregnancy discrimination, we back the Women and Equalities Committee's recommendation to strengthen the law to protect women from discriminatory redundancies and practices.
 
-#### Championing equality in work
+## Championing equality in work
 
 It is unacceptable that 47 years after the Equal Pay Act was passed, businesses are still not properly penalised if they break the law by not paying men and women the same rate. We will seek to ensure that any employer who loses an equal pay claim conducts and publishes an equal pay audit and then takes appropriate action on the results.
 
@@ -932,17 +933,17 @@ The Scottish Government is putting in place support for new parents to ensure th
 
 The UK is one of the few countries in the world not to provide a statutory right to breastfeed on return to work. SNP MPs will press the UK government to introduce a proper legal right to breastfeed in the workplace. All women should have a real choice about how long they breastfeed their babies.
 
-#### Halt Jobcentre closures
+## Halt Jobcentre closures
 
 The UK government is proposing the closure of up to 23 Jobcentre Plus sites across Scotland, including half of all Jobcentres in Glasgow. SNP MPs will urge the UK government to abandon their planned closures and work with the Scottish Government to bring forward proposals for joint governance of Jobcentres with the Scottish Government, as recommended by the Smith Commission.
 
-#### Promoting fair work through procurement
+## Promoting fair work through procurement
 
 We will support the continued use of procurement processes to ensure the Scottish Government can continue to seek the Living Wage for workers in firms who win contracts from the public sector.
 
 We believe the practice of 'blacklisting' individuals from employment is unacceptable. The SNP Scottish Government has introduced regulations to exclude businesses which have been found to be involved in blacklisting from bidding for public contracts. Similar measures should be introduced to ensure blacklisters do not benefit from UK government procurement.
 
-#### Fairness in retirement
+## Fairness in retirement
 
 We will continue to argue for a fairer pensions system. SNP MPs will oppose plans to increase the State Pension Age beyond 66. We will support the establishment of an Independent Savings and Pension Commission, to ensure pensions and savings policies are fit for purpose. The remit of the Commission should include consideration of the specific demographic needs of different parts of the UK in relation to State Pension Age.
 
@@ -980,7 +981,7 @@ Here are just some of the actions the SNP Scottish Government is taking:
 - We want to stop the revolving door of disability assessments and reintroduce long term awards for those with long term conditions. That's why we have established a Disability Benefits Assessment Commission to provide recommendations and guidance on eligibility and conditions.
 - The SNP Scottish Government will offer a new Best Start Grant worth £1,900 to a two child family - £1,400 more than the UK Sure Start Maternity Grant.
 
-#### Diverse but equal
+## Diverse but equal
 
 The SNP is committed to tackling the challenges of racism and discrimination in society. SNP MPs will press for strengthened provisions relating to Equality Impact Assessments which will ensure that legislation is sensitive to the interests of minority communities.
 
@@ -994,7 +995,7 @@ The Scottish Parliament unanimously passed the historic British Sign Language (S
 
 Working with disabled people and organisations that represent them, the Scottish Government has produced an action plan for the implementation of the UN Convention on the Rights of Persons with Disabilities in Scotland. The UN committee responsible for the Convention is currently assessing its implementation in the UK. The UK government should fully engage with the investigation, implement its findings and work towards the incorporation of the Convention in UK law.
 
-#### A better deal for consumers
+## A better deal for consumers
 
 SNP MPs will call for all powers over consumer protection to be devolved to the Scottish Parliament.
 
@@ -1025,19 +1026,19 @@ The loss of local post offices threatens the economic well-being of rural commun
 
 ---
 
-### Standing Up for Rural and Remote Communities
+## Standing Up for Rural and Remote Communities
 
 As the UK government embarks on Brexit negotiations, it's more important than ever that Scotland's farming, fishing, food production and forestry sectors have a strong voice to defend their interests.
 
 The SNP always has and always will champion rural Scotland. We will be a strong voice for our farmers and crofters, our food and drink sector, our fishing and fish processing industries, our billion-pound forestry sector – and all the tens of thousands of jobs, businesses and livelihoods that depend on a strong, sustainable and productive rural economy.
 
-#### An end to the UK government's great rural robbery
+## An end to the UK government's great rural robbery
 
 Without Scotland's historically low average farm payments, the UK would not have been eligible for additional EU 'convergence uplift' funding. Not only has the UK government refused to pass on additional funding it has received to Scottish farmers, they have now broken their promise to review how they allocate farm funding in the UK. As a result, farmers in Scotland have been short-changed to the tune of around £190 million. SNP MPs will continue to demand that this vital support to Scotland's farmers is passed on. We will also press for clarity and certainty over existing funding. Forestry grants for 2019 and beyond must be guaranteed now to allow investment and planting decisions to go ahead.
 
 Funding for our Less Favoured Areas grant scheme in 2019 – a vital support for our most fragile farmers and crofters – must be met in full.
 
-#### Fighting off the Tory power and money grab
+## Fighting off the Tory power and money grab
 
 Before the EU Referendum, the UK government promised to match current EU funding, which is worth half a billion pounds every year to Scotland's rural and remote communities, "without a shadow of a doubt". Now they refuse to provide any guarantees over funding beyond Brexit, and want a UK wide funding mechanism. With a 16 per cent share of current Common Agricultural Policy (CAP) funding, there is no doubt that Scotland would lose out.
 
@@ -1045,7 +1046,7 @@ Just as we will expect all powers over agriculture and rural policy to be repatr
 
 SNP MPs will fight any and all Tory attempts to grab Scotland's powers and funding for Westminster.
 
-#### A better deal for our fishing industry
+## A better deal for our fishing industry
 
 The SNP always will stand up for Scottish fishing, demanding a productive and sustainable approach to fisheries management in the future, to ensure a thriving industry both on and offshore, whether we are in or out the EU.
 
@@ -1061,7 +1062,7 @@ Europe is the leading export destination for Scotland's fish and seafood exports
 
 Fishing is fully devolved and whatever future Scotland chooses, we will expect all powers over policy to be repatriated to Scotland when the UK leaves the EU. SNP MPs will press for EU fisheries funding to be matched and transferred to Scotland in full.
 
-#### Improving rural connectivity
+## Improving rural connectivity
 
 At Westminster the SNP successfully secured a UK government commitment to a Universal Service Obligation (USO) for broadband of 10Mbps. In the next parliamentary term SNP MPs will call for the USO to cover up to 30Mbps with an appropriate update mechanism to ensure that rural areas are not left behind.
 
@@ -1071,7 +1072,7 @@ SNP MPs will call on the UK government to ensure that future mobile spectrum lic
 
 We will press the UK government to provide appropriate support and resources for Scotland's Mobile Action Plan and also to ensure that Scotland does not miss out on access to EU wide regulation in future, including plans to improve and increase fixed and mobile connectivity throughout the EU.
 
-#### Ending unfair delivery charges
+## Ending unfair delivery charges
 
 Consumers living in the Highlands and Islands, and in some of Scotland's most remote communities, face unfair additional delivery charges. SNP MPs will call on the UK government to step in to regulate for fair delivery charges for rural communities.
 
@@ -1094,11 +1095,11 @@ Here are just some of the ways the SNP Scottish Government is supporting rural S
 
 ---
 
-### Modernising UK Democracy
+## Modernising UK Democracy
 
 Our democratic institutions should be representative of and accountable to the people they represent. We support an electoral system where every vote counts equally and where 16 and 17 year olds, and EU citizens resident here, have a vote. And we believe in a fair and level playing field in our elections, for the integrity and health of our democracy.
 
-#### Making Westminster work for the people
+## Making Westminster work for the people
 
 The SNP will oppose the exorbitant cost associated with the refurbishment of the Palace of Westminster.
 
@@ -1106,7 +1107,7 @@ SNP MPs will continue to oppose the undemocratic House of Lords and vote for its
 
 We will work to ensure that there is as much support as possible for disabled people, and people of all classes, races and gender identities to stand for election to the House of Commons.
 
-#### Making Westminster more democratic
+## Making Westminster more democratic
 
 We will vote for the replacement of the first-past-the-post system with proportional representation. The SNP supports the Single Transferable Vote, a system that makes sure every vote and every part of the country counts.
 
@@ -1114,23 +1115,23 @@ We trust our young people. That's why, where we have had the powers to do so, th
 
 The gap between the voting age population and those registered to vote is greater than it has ever been in the post-war era. More must be done to get people to join the electoral register. We support the recommendations of the All Party Parliamentary Group on Democratic Participation to get the 'missing millions' onto the electoral register. SNP MPs will urge the UK government to implement the recommendations, working alongside the Scottish Government and the other devolved administrations of the UK.
 
-#### A fair and level playing field in our elections
+## A fair and level playing field in our elections
 
 Ensuring a fair and level playing field is essential to the integrity of, and public confidence in, elections and our democracy.
 
 SNP MPs will support new powers for the Electoral Commission, providing them with legal authority to investigate offences under the Representation of the People Act 1983. We will also support the Electoral Commission's call to make higher sanctioning powers available to them, increasing the maximum penalty from £20,000 to £1,500,000.
 
-#### Lobbying and charities
+## Lobbying and charities
 
 We support strict rules on lobbying and enhanced registration thresholds for campaigners but we oppose the restrictions on the activities of campaigning charities. We will push for those parts of the Transparency of Lobbying, Non-party Campaigning and Trade Union Administration Act 2014 which have been used to gag campaigning organisations to be removed.
 
 ---
 
-### Defence, Security and Global Peace-Keeping
+## Defence, Security and Global Peace-Keeping
 
 The Tory government has presided over cuts to the defence estate in Scotland, while committing billions to a new generation of Trident nuclear weapons. SNP MPs will oppose the erosion of the defence estate in Scotland. We will stand up for Scottish bases, regiments and our veterans. We will press for investment in conventional defence. And we will oppose the immoral and expensive Trident nuclear weapons system at every opportunity.
 
-#### Scrapping Trident
+## Scrapping Trident
 
 SNP MPs will build a cross-party coalition to scrap Trident as quickly and safely as possible.
 
@@ -1140,7 +1141,7 @@ At Westminster we will press the UK government to meet their international oblig
 
 SNP MPs will support long-term investment in HMNB Faslane as a conventional military base.
 
-#### Investing in conventional defence
+## Investing in conventional defence
 
 SNP MPs will hold the UK government to its promise on building the new Type-26 Frigates in Scotland.
 
@@ -1148,19 +1149,19 @@ SNP MPs will continue to campaign to protect Scotland's bases – including Glen
 
 Scotland's distinct defence needs are not being met by the current UK government's defence policy. SNP MPs will support a new Strategic Defence and Security Review, in order to assess the need, as a matter of priority, for permanent basing of ocean-going conventional patrol vessels in Scotland. We will press to ensure that the nine multi-role Maritime Patrol Aircraft on order reach full operational capacity at the earliest possible stage, and support a review into the need for additional aircraft.
 
-#### Fighting international crime and terrorism
+## Fighting international crime and terrorism
 
 International co-operation is essential to keep Scotland and the rest of the UK safe from the threats of organised crime, cybercrime and terrorism. SNP MPs will call for continued co-operation on detecting, disrupting and detaining criminals across borders through Europol. We will seek assurances that our law enforcement agencies will continue to have the same level of access to Europol as they currently enjoy.
 
 We will oppose any moves that would seek to use security co-operation as a bargaining chip in Brexit or trade negotiations with our European friends and neighbours.
 
-#### Supporting our veterans
+## Supporting our veterans
 
 Far too often, the UK government has let down our service personnel and veterans. The SNP will act to ensure the UK government prioritises the duty of care to service personnel, veterans and their families, especially in the event of a loss of a serving relative, and we will press the UK government to put the Armed Forces representative body on a statutory footing.
 
 To provide practical support for veterans requiring social care, the Scottish Government changed the rules to ensure the War Disablement Pension is exempt from the assessment of income – meaning our veterans get the help they need and keep the full value of this pension. We believe this approach should be taken to all social security benefits, so that those who have been injured in the service of our country get the full value of their War Disablement Pension and we will press the UK government to adopt this approach.
 
-#### Getting a better deal for the taxpayer
+## Getting a better deal for the taxpayer
 
 The UK government's own report says that the Royal Navy's fleet is being depleted because of a "vicious cycle" of poor planning and cost overruns that is wasting taxpayer money and undermining the viability of the shipbuilding industry. SNP MPs will continue to call for the publication of the long-overdue National Shipbuilding Strategy.
 
@@ -1168,13 +1169,13 @@ The SNP will call for greater transparency in UK defence spending with a full br
 
 SNP MPs will press for more Scottish SMEs in Scotland to benefit from the manufacturing supply chain for major defence projects.
 
-#### Arms exports
+## Arms exports
 
 SNP MPs have led the calls for resolution of the destructive conflict in South Yemen. Given the clear evidence that munitions supplied by the United Kingdom have been used in breach of international law, there should be an immediate ban on arms sales to Saudi Arabia pending proper investigation.
 
 And we will urge the UK government to immediately halt all military support and arms sales to regimes suspected of violations of human rights and international humanitarian law.
 
-#### Our place in the world
+## Our place in the world
 
 Building on the experience of the Scottish Government's partnership with the United Nations to empower the women of Syria and promote Scotland as a centre for training of female peacemakers, the SNP will continue to support UN Security Council Resolution 1325 reaffirming the important role of women in the prevention and resolution of conflicts.
 
@@ -1188,11 +1189,11 @@ The SNP will continue to work with international partners to progress a lasting 
 
 ---
 
-### Protecting Our Environment and Tackling Climate Change
+## Protecting Our Environment and Tackling Climate Change
 
 Renewable energy is a Scottish success story. We are determined to build on that success. We will fight climate change, while keeping energy bills down and creating jobs, by continuing to champion low cost renewable energy.
 
-#### Standing up for Scotland's renewables industry
+## Standing up for Scotland's renewables industry
 
 Scotland has a wealth of onshore and offshore renewable energy potential which, if unlocked, can support thousands more jobs and further economic growth.
 
@@ -1208,13 +1209,13 @@ SNP MPs will work to protect Scotland's place in Europe's energy markets and fun
 
 We will also seek to build a regulatory environment which supports investment in new energy storage schemes, including pumped hydro and batteries, allowing Scotland to maximise the benefits of our outstanding resources and build an energy system for the 21st century.
 
-#### Carbon Capture and Storage
+## Carbon Capture and Storage
 
 We want Scotland to be a leader in the development of Carbon Capture and Storage (CCS) technology, which has the potential to create thousands of jobs in Aberdeen, Aberdeenshire and beyond, while fighting climate change.
 
 Scotland's oil and gas sector remains uniquely well placed to develop CCS on an industrial scale – despite the UK government reneging on its commitment to a £1 billion project set to benefit Peterhead Power Station. We will work to ensure Scotland is not denied this opportunity by working to secure the funding needed to develop this vital technology here in Scotland.
 
-#### Transmission charges
+## Transmission charges
 
 The UK's punitive transmission charging regime forces renewable and conventional energy generators in Scotland to pay huge fees to connect to the electricity grid, while power stations in the south of England receive subsidies.
 
@@ -1222,17 +1223,17 @@ This unfair system contributed to the early closure of the power stations at Lon
 
 The SNP will continue to demand the reform of the punitive transmission charging regime, which has come to symbolise the UK government's repeated failure to deliver energy policies which meet Scotland's needs.
 
-#### Nuclear power
+## Nuclear power
 
 The UK government is determined to push ahead with the Hinkley Point C nuclear plant in the south of England, which will cost at least £18 billion to build and will result in huge costs for taxpayers and consumers. We are opposed to these plans, which have already come close to collapse. If built, electricity generated by Hinkley C will be sold for more than twice the current retail price. SNP MPs will hold the UK government to account over its support for the Hinkley white elephant.
 
-#### Working with our neighbours to fight climate change
+## Working with our neighbours to fight climate change
 
 Scotland has already exceeded a world-leading target to reduce emissions by 42 per cent by 2020. The Scottish Government has now produced a draft Climate Change Plan, with tougher targets for future years, ensuring Scotland continues to set an example for other countries to follow. SNP MPs will press the UK government to match Scotland's commitment and ambition.
 
 SNP MPs will work to prevent the threat of Brexit being used by the UK to reduce commitments to tackle climate change or to undermine the European Union's efforts to fight climate change and protect the environment. Scotland has played an important role in these areas, and has also directly benefited from the EU's work. We are determined to safeguard the advances which have already been made, while continuing to protect and enhance our environment in the years ahead. We will defend the interests of environmental scientists from across the EU who contribute so much to the success of Scotland's research institutes.
 
-#### Animal welfare
+## Animal welfare
 
 We will oppose any relaxation of the laws on fox-hunting.
 
@@ -1249,11 +1250,11 @@ Scotland is a world leader in tackling climate change – and the SNP Scottish G
 
 ---
 
-### A Compassionate Country
+## A Compassionate Country
 
 Extreme poverty, inequality, climate change, the plight of refugees fleeing war and repression, and the humanitarian impact of disasters and emergencies are global issues on which we have a moral duty to act. A strong team of SNP MPs at Westminster will make sure that when it comes to their humanitarian and moral obligations, the UK government will not be let off the hook.
 
-#### International development
+## International development
 
 SNP MPs will hold the UK government to its commitment of spending 0.7 per cent of Gross National Income on international development. We will seek to ensure overseas aid funding meets the internationally-recognised Development Assistance Criteria and does not undermine public services in developing countries.
 
@@ -1267,17 +1268,17 @@ SNP MPs will continue to support the EU in the pursuit of the objectives outline
 
 As new trading relationships are formed, the SNP will back policies which support development and ensure that the UK's trade arrangements with developing countries prioritise poverty reduction. Given Scotland's long and enduring relationship with Malawi, the SNP will continue to call for the UK government to renegotiate a new, fair tax treaty with Malawi.
 
-#### Ethical trade
+## Ethical trade
 
 As the UK sets its own trade policy, it must be done responsibly and ethically. ActionAid has ranked the UK joint worst in the world for having the largest number of treaties with developing countries which most restrict the rights of poor countries to tax UK companies operating there. The SNP will urge the UK government to develop a trade and development policy that outlines how the UK will support development as part of its trade with developing countries.
 
 The SNP Scottish Government has committed to "always consider the human rights implications of its engagement with countries and business" and to ensure that "investment agreements should only be signed where appropriate due diligence, including on the human rights record of companies involved, has been undertaken." The SNP Scottish Government is now engaging with Amnesty International to put these commitments into practice. SNP MPs will demand that the UK government follows the lead of the Scottish Government.
 
-#### Championing LGBTI rights globally
+## Championing LGBTI rights globally
 
 SNP MPs will support the establishment of a special envoy to promote the rights of LGBTI people throughout the world, as an integral part of UK foreign policy - helping to alleviate the discrimination and persecution faced by LGBTI people in Chechnya and across the world.
 
-#### Meeting our humanitarian and moral obligations
+## Meeting our humanitarian and moral obligations
 
 We believe that the UK government has a responsibility – through action and leadership – to tackle global issues such as extreme poverty, the impact of climate change, the plight of refugees fleeing war and repression and the humanitarian impact of disasters and emergencies.
 

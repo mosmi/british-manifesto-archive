@@ -27,9 +27,10 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 2024
 
-### "A Future Made in Scotland."
+## "A Future Made in Scotland."
 
 **Vote SNP for Scotland**
 
@@ -39,7 +40,7 @@ sections:
 
 ---
 
-### Our Vision
+## Our Vision
 
 > "We will put the interests of the people of Scotland first, and protect public services like our cherished NHS."
 
@@ -90,7 +91,7 @@ So on Thursday, 4th July, to remove the Tories from office, to put the interests
 
 ---
 
-### Our Key Pledges
+## Our Key Pledges
 
 > "We will protect our NHS from the twin threats of Westminster privatisation and austerity."
 
@@ -136,7 +137,7 @@ So on Thursday, 4th July, to remove the Tories from office, to put the interests
 
 ---
 
-### Why Independence?
+## Why Independence?
 
 > "In an independent Scotland, decisions about Scotland will be made in Scotland, for Scotland."
 
@@ -172,7 +173,7 @@ It is through the power of democratic pressure that we will secure the right of 
 
 ---
 
-### Ending Austerity
+## Ending Austerity
 
 > "We will stand firmly against the Westminster consensus on continued cuts and demand increased investment in our vital public services."
 
@@ -186,7 +187,7 @@ Only independence can free Scotland from the brutal impact of Westminster cuts, 
 
 Until then, SNP MPs will stand firmly against the Westminster consensus on continued cuts and demand increased investment in our vital public services.
 
-#### A Fairer Tax System
+## A Fairer Tax System
 
 Against a backdrop of biting austerity, we've delivered the fairest and most progressive income tax system in the UK - raising an additional £1.5bn to invest in our public services, fund fair pay deals for nurses and other public sector workers and support our economy. However, without the full powers of independence, we only have a very limited range of tax powers to work with.
 
@@ -204,7 +205,7 @@ We have already removed charitable rates relief from private schools in Scotland
 
 To drive economic growth and help in our transition to net zero we would introduce a lower rate of VAT for hospitality and tourism sectors, address the imbalance in VAT rates in the construction sector to encourage the refurbishment and retrofitting of existing buildings and remove VAT from on-street electric vehicle charging.
 
-#### Unlocking Investment
+## Unlocking Investment
 
 Decades of Westminster cuts have left infrastructure across the UK creaking. It is clear there is a need for more investment – not only to support the delivery of public services but also to grow the economy.
 
@@ -222,7 +223,7 @@ We're proposing a sensible alternative, setting out three new fiscal rules to en
 - Upper limit on debt servicing costs – to allow explicit consideration of the sustainability of the stock of debt
 - Three-year detailed spending plans – to support detailed planning and improve clarity for devolved administrations.
 
-#### Prioritising Public Infrastructure
+## Prioritising Public Infrastructure
 
 Scotland's capital budget, which pays for our hospitals, roads and schools, has been hammered by successive Westminster Governments refusing to prioritise investment.
 
@@ -236,7 +237,7 @@ It is vital that the UK Government at least reverse the £1.3bn cut to our capit
 
 ---
 
-### Reverse Brexit
+## Reverse Brexit
 
 Brexit has been a disaster for Scotland. Despite voting overwhelmingly to remain within the EU, we have been dragged out against our will and are powerless to escape the consequences.
 
@@ -244,7 +245,7 @@ Brexit has wiped billions of pounds from the Scottish economy, pushed up prices 
 
 We have lost access to one of the world's most sophisticated and integrated international justice and crime-fighting ecosystems, red tape is exacerbating medicine shortages, and the end of freedom of movement has made it much harder to recruit staff to work in our NHS, social care and other vital sectors.
 
-### Brexit
+## Brexit
 
 > "We will champion our vision for an independent Scotland in the EU."
 
@@ -270,7 +271,7 @@ We will champion our vision for an independent Scotland in the EU, offering Scot
 
 ---
 
-### Tackle the Cost of Living Crisis
+## Tackle the Cost of Living Crisis
 
 > "We will push for the fundamental change that is needed to tackle the cost of living crisis and improve living standards for all."
 
@@ -309,7 +310,7 @@ Our vision is of an independent Scotland, where decisions are made in Scotland, 
 
 ---
 
-### Defending Scotland's Parliament and Your Rights
+## Defending Scotland's Parliament and Your Rights
 
 Scotland is a proud, democratic nation. From the independence referendum with record high levels of engagement, to introducing a fairer electoral system and extending the right to vote, we have taken important steps to advance democracy and human rights.
 
@@ -333,9 +334,9 @@ The SNP is the only party who will protect Scotland's parliament, democracy and 
 
 ---
 
-### Putting Scotland's Interests First
+## Putting Scotland's Interests First
 
-#### Protecting Scotland's NHS
+## Protecting Scotland's NHS
 
 Our NHS is our most cherished public service. Under the SNP, funding for Scotland's NHS has more than doubled and NHS staffing is at a record high – with far more doctors and nurses per head in Scotland than south of the border.
 
@@ -353,9 +354,9 @@ When it comes to investment and improvement in our NHS, we're determined to go f
 
 ---
 
-### Building a Fairer, Greener Economy
+## Building a Fairer, Greener Economy
 
-#### A Green Energy Powerhouse
+## A Green Energy Powerhouse
 
 Scotland is an energy-rich nation but without the full powers of independence we cannot fully harness the opportunities our vast renewable energy sources provide.
 
@@ -415,7 +416,7 @@ Our commitment to tackling the twin crises of climate change and nature loss is 
 
 **Prioritise research and investment in Artificial Intelligence** to capitalise on the technological revolution and ensure its full potential is maximised in supporting our public services in a way that is open, ethical and transparent.
 
-#### A Cleaner, Greener Transport System
+## A Cleaner, Greener Transport System
 
 Under the SNP huge improvements have been made to our transport system. We've scrapped bridge tolls, invested over £11bn on rail infrastructure, brought Scotland's railway into public hands and removed peak fares, provided free bus travel to 2.2 million people and completed the Queensferry crossing on time and under budget. But our ambition is constrained by resources and powers controlled by Westminster.
 
@@ -429,7 +430,7 @@ Under the SNP huge improvements have been made to our transport system. We've sc
 
 **Invest in safer roads.** Reducing road traffic is key to cutting emissions, but in a rural and sparsely populated country, not everywhere and everyone can be expected to make the same changes at the same time. It is vital that we ensure roads are as safe, reliable and resilient as possible. We are committed to dualling the A9 in full between Perth and Inverness and improving the A96, including dualling Inverness to Nairn and the Nairn Bypass. We will press the UK Government to fulfil their commitment to fund improvements to the A75.
 
-#### Broadcasting
+## Broadcasting
 
 Broadcasting is a crucial platform to showcase Scottish life and culture, but with power over broadcasting reserved to Westminster we are restricted in our ability to ensure it better reflects the needs and priorities of Scottish audiences.
 
@@ -445,7 +446,7 @@ Broadcasting is a crucial platform to showcase Scottish life and culture, but wi
 
 ---
 
-### Standing Up for Workers
+## Standing Up for Workers
 
 Years of attacks on workers' rights have shown that Westminster is not working for workers. With independence we can guarantee the rights of working people in Scotland are protected and strengthened. Until then, it is vital Scotland has strong SNP voices at Westminster to stand up for workers. SNP MPs will demand that the UK Government:
 
@@ -461,7 +462,7 @@ Years of attacks on workers' rights have shown that Westminster is not working f
 
 ---
 
-### Creating a Just and Healthier Scotland
+## Creating a Just and Healthier Scotland
 
 While Westminster governments prioritise tax cuts for the wealthy, the SNP Scottish Government is focussed on mitigating the cruel policies inflicted on the poorest in our society – investing around £3bn a year in helping tackle poverty and the impacts of the Westminster made cost of living crisis.
 
@@ -515,7 +516,7 @@ While we do all we can to lift people out of poverty, it is clear that Westminst
 
 ---
 
-### Defending Democracy and Human Rights
+## Defending Democracy and Human Rights
 
 The SNP stands on a strong record of defending Scotland's democratic functions and institutions, and we will always stand up to promote and protect Scotland's democracy and make sure that the people of Scotland's voices are heard. SNP MPs will demand the UK Government:
 
@@ -541,7 +542,7 @@ The SNP stands on a strong record of defending Scotland's democratic functions a
 
 ---
 
-### Scotland's Place in the World
+## Scotland's Place in the World
 
 We want to see an independent Scotland take its place in the international community; alongside the 193 other United Nations member states, able to join the European Union, with the powers necessary to protect our citizens and prosper in the global economy. We are determined that Scotland plays a positive and progressive role in international affairs through action and leadership. SNP MPs will call on the UK Government to:
 

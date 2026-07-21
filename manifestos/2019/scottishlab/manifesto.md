@@ -26,13 +26,14 @@ sections:
   - local-government
 ---
 
+
 # Scottish Labour Party Manifesto 2019
 
 ## Real Change: For The Many Not The Few
 
 ### Scottish Labour Manifesto 2019
 
-### Contents
+## Contents
 
 * FOREWORD BY RICHARD LEONARD6
 
@@ -134,7 +135,7 @@ This is the most important General Election in a generation and Scotland has the
 
 **Richard Leonard, Leader of the Scottish Labour Party**
 
-### Foreword from Jeremy Corbyn
+## Foreword from Jeremy Corbyn
 
 **This election will shape our country for a generation. It is your opportunity to transform our country, so that it works not just for a few, but for all of us. It is a chance to deliver the real change Scotland and the UK needs.**
 
@@ -196,7 +197,7 @@ The future is ours to make. It’s time for real change – for the many, not th
 
 **Jeremy Corbyn, Leader of the Labour Party**
 
-### A Green Industrial Revolution
+## A Green Industrial Revolution
 
 * ECONOMY AND ENERGY
 
@@ -208,7 +209,7 @@ The future is ours to make. It’s time for real change – for the many, not th
 
 * ANIMAL WELFARE
 
-#### Economy and Energy
+## Economy and Energy
 
 **This election is about the crisis of declining living standards and the climate and environmental emergency. Whether we are ready or not, we stand on the brink of unstoppable change. We must confront this change while dealing with the growing inequalities and insecurities facing people across the UK. Labour led the UK Parliament in declaring a climate and environmental emergency. Scottish Labour has led the Scottish Parliament to adopt bolder targets and greater urgency in its implementation plans.**
 
@@ -236,7 +237,7 @@ Tackling the destruction of our planet is a question of justice – for the comm
 
 2019 saw the blossoming of a global movement calling on politicians to wake up and act on climate change. Labour welcomed that movement and, as a government in waiting, we have turned its demands into detailed, credible plans for real change that will provide and secure opportunities for Scotland’s industries and its workers
 
-#### Investment
+## Investment
 
 Delivering the far-reaching change needed to tackle the climate and environmental emergency will require a full mobilisation of national resources, both public and private.
 
@@ -268,7 +269,7 @@ The climate and environmental emergency is a chance to unite the country to face
 
 We will bring about a radical decentralisation of power in the UK so that local people and communities are given far greater control over their own lives and prospects. In Scotland, that means extending devolution beyond Holyrood to all of our communities. Local Government has its part to play in securing a prosperous economic future for the people of Scotland.
 
-#### Energy
+## Energy
 
 Energy use in buildings accounts for 51.2% of Scotland’s total emissions, making it the single most polluting sector. We will develop the recommendations of our 30 by 2030 report to put the UK on track for a net zero carbon energy system within the 2030s – and go faster if credible pathways can be found. We will deliver nearly 90% of electricity and 50% of heat from renewable and low carbon sources by 2030 in the UK – and Scotland has the potential to lead the way.
 
@@ -298,7 +299,7 @@ Wherever necessary we will support energy workers through transition and guarant
 
 We will introduce a windfall tax on oil companies, so that the companies that knowingly damaged our climate will help cover the costs. In Scotland, this fund will be used to accelerate the new green industries that are needed by workers as much as the environment. We will not allow the North Sea workers to be abandoned in a move to a greener economy. This fund will safeguard a future for their skills and communities.
 
-#### Ownership
+## Ownership
 
 We will not achieve the promise of a fair and sustainable economy if we repeat the mistakes of the carbon era, when the capture of a natural resource for private profit created a vastly unequal and polluting economy dominated by powerful vested interests.
 
@@ -322,7 +323,7 @@ Under Labour’s plans:
 
 The Tories allowed the proceeds of North Sea oil to be squandered on tax cuts for the richest and captured in profits for the few, instead of investing them in our future. We now stand at an even greater crossroads in the development of our national economy. Under Labour, our green future will be owned by all of us. Whenever public money is invested in an energy generation project, the public sector will take a stake and return profits to the public.
 
-#### Industry and Innovation
+## Industry and Innovation
 
 Averting climate catastrophe offers huge economic opportunities. But the UK will only benefit from a Green Industrial Revolution with the right policies.
 
@@ -352,7 +353,7 @@ Labour’s progressive trade strategy will help develop the industrial base need
 
 For small businesses, we will ensure no quarterly reporting for businesses below the VAT threshold.
 
-#### Skills
+## Skills
 
 Our Green Industrial Revolution will create at least one million well-paid, unionised jobs across the UK. We will train people in the skills they need to access these jobs of the future.
 
@@ -364,7 +365,7 @@ Labour’s investment will ensure apprenticeships are tied closely to the labour
 
 Labour also want to inspire a new generation of world-leading scientists by removing barriers that prevent young people, especially girls, from entering the STEM (science, technology, engineering and mathematics) workforce.
 
-#### Transport
+## Transport
 
 **Labour will build a sustainable, affordable, accessible and integrated transport system, founded on the principle that transport is an essential public service.Transport is responsible for more than a third of Scotland’s greenhouse gases, while estimates suggest air pollution causes upwards of 2,500 deaths every year.**
 
@@ -408,7 +409,7 @@ Labour will adopt an ambitious Vision Zero approach to UK road safety, striving 
 
 We will take action to end nationality-based discrimination in seafarer pay.
 
-#### Environment
+## Environment
 
 **Scottish Labour would take the necessary action to deliver on our climate change ambitions and protect our environment, boosted by Labour’s Green Industrial Revolution. Ambition is good, but we believe it has to be backed up with clear delivery plans because investing in our environment is investing in our future. We need to defend and extend existing environmental protections, which are threatened by trade deals and corporate lobbying for deregulation.**
 
@@ -422,7 +423,7 @@ We will develop new preventative and planning provisions to address the causes o
 
 Scottish Labour would support the designation of new National Parks (including coastal, marine and city parks) while strengthening local accountability through new models of governance. We will seek to strengthen other protected area designations, with an eco-systems based approach which will guard existing wildlife sites and join up important habitats, while also ensuring more people can enjoy living closer to nature.
 
-#### Land
+## Land
 
 Scottish Labour believes land wealth is as much an issue as monetary wealth being in the hands of the few. Scotland’s land ownership patterns are some of the most unequal in the world. We need to ensure more land is in the hands of the many to help create a fairer sustainable Scotland.
 
@@ -430,7 +431,7 @@ The Land Reform (Scotland) Act 2016 made some modest progress on land reform, bu
 
 Scottish Labour would develop a Community Land Fund in line with the recommendations in UK Labour’s ‘Land for the Many’ proposals along with long-term revenue support for community buy-outs. We will use regulation and intervene when land is not used in ways that serve the public interest.
 
-#### Rural economy
+## Rural economy
 
 Tory and SNP governments have taken rural communities for granted with chronic underinvestment in transport, broadband and public services. Rural infrastructure and industry have been neglected – particularly in Scotland.
 
@@ -458,7 +459,7 @@ Scottish Labour would introduce a ‘rural-proofing’ process so that all our l
 
 Tourism remains an important industry for Scotland, and our magnificent scenery draws a large number of visitors to rural Scotland. Scottish Labour will develop a new sustainable national plan for tourism based on improving our offer to visitors while reducing resource use and waste, reducing the transport impact, protecting our natural and cultural heritage. Public money will also require improvement in the quality of jobs by raising employment standards, strengthening the quality of life in rural areas.
 
-#### Food
+## Food
 
 **Food and food production impacts on a range of policy areas from health to our economy to our environment. Developing a world class food system requires a bold cross-cutting approach.**
 
@@ -468,7 +469,7 @@ Scottish Labour recognises the link between the reform of food production and su
 
 We will reconfigure funds for farming and fishing to support smaller traders, local economies, community benefits and sustainable practices.
 
-#### Animal Welfare
+## Animal Welfare
 
 **The Tories will sacrifice animal welfare standards in trade deals with other countries.**
 
@@ -476,7 +477,7 @@ Labour has an ambitious animal welfare manifesto available in full online.
 
 We will stand up for all animals – wild, farmed, and pets. We will close the loopholes and ban fox hunting, end the cruel live export of farmed animals, and improve the rights of pet owners in whatever their accommodation. We will tackle wildlife crime.
 
-### Rebuild Our Public Services
+## Rebuild Our Public Services
 
 * FUNDING
 
@@ -494,7 +495,7 @@ We will stand up for all animals – wild, farmed, and pets. We will close the l
 
 * DIGITAL, CULTURE, MEDIA AND SPORT
 
-#### Funding
+## Funding
 
 **Universal public services, collectively provided through general taxation and free at the point of use for all, are how we guarantee the right to a good life.**
 
@@ -520,9 +521,9 @@ We will repair the damage the Tories have done to our social fabric, with a £15
 
 Our most valuable assets are the dedicated people who work in our public services, but their pay has been cut in real terms. Labour will restore public sector pay to at least pre-financial crisis levels (in real terms), by delivering year-on-year above inflation pay rises, starting with a 5% increase, to reward and retain the people who do so much for us all. Scottish Labour will expect the Scottish Government to follow this lead in devolved pay negotiations.
 
-#### NHS and Social Care
+## NHS and Social Care
 
-#### NHS Scotland
+## NHS Scotland
 
 The National Health Service is one of Labour’s proudest achievements. The right to free at the point of use healthcare, universal and comprehensive in scope is socialism in action.
 
@@ -572,7 +573,7 @@ Scottish Labour recognises the benefits that a ‘Right to Rehab’ would bring 
 
 We believe it is possible to properly shift the balance of care from expensive and needless stays in hospital to dignified care at home through a better-funded new structure of social care.
 
-#### Mental Health
+## Mental Health
 
 Scotland is experiencing a mental health crisis with too many people struggling to access the help and support that they need. Gaps and failures in the provision of mental health support can have tragic consequences. Scotland has the highest rate of suicide in all of Great Britain and in 2018, over 100 young people died due to suicide.
 
@@ -608,7 +609,7 @@ Screening is an essential preventative health measure, and delays in bowel and b
 
 Creating a healthier Scotland would be a priority for Scottish Labour. We will engage all our public services at the national and local level to end the damage that poor health does to people, families and communities across Scotland.
 
-#### Education and Skills
+## Education and Skills
 
 **Education makes our economy stronger, our society richer and our people more fulfilled.**
 
@@ -616,7 +617,7 @@ Whether it is businesses finding people with the right skills, a tech start-up m
 
 But education isn’t just vital to our economy – it lets people develop their talents, overcomes injustices and inequalities and helps us understand each other and form social bonds.
 
-#### Early years
+## Early years
 
 The SNP’s implementation of their early learning and childcare expansion is behind with the staffing and infrastructure needed, and there have been warnings that the system will not be delivered effectively.
 
@@ -626,7 +627,7 @@ Our workforce plan would focus on recruiting and retaining highly qualified staf
 
 Scottish Labour supports the Give Them Time campaign and stands with parents who wish to defer their child’s entry into primary one. We are in favour of legislation to automatically entitle eligible children to an additional funded year of nursery when their parents use their legal right to defer their child’s entry to school.
 
-#### School years
+## School years
 
 Cuts to per pupil spend have fuelled educational inequity at every level in our schools.
 
@@ -636,7 +637,7 @@ Scottish Labour would reinvest in the next generation by replacing core funding 
 
 Our vision for Scottish education also means putting more teachers and support staff, including specialist teachers for those with additional support needs, into our schools and providing local authorities with enough funding to make certain that those children who need additional support are not left behind.
 
-#### Curriculum and attainment
+## Curriculum and attainment
 
 It is increasingly difficult for those who work in education to assess the academic progress of Scotland’s children. Scotland has been removed from international measures of attainment and the Scottish National Standardised Assessment (SNSA) is not fit for purpose.
 
@@ -660,11 +661,11 @@ While we await the outcomes of the Independent Care Review, we believe there is 
 
 Scottish Labour’s plan for free access to period products gives statutory underpinning to the requirement for schools, colleges and universities to provide period products for free.
 
-#### Free school meals
+## Free school meals
 
 Scottish Labour would seek to extend the current universal provision of free school meals to include all school years using the financial consequences of Labour’s expansion of the scheme in England. We will also roll out the provision of free meals during holidays, ending the scandal of children going hungry during the school holidays.
 
-#### Colleges and Universities
+## Colleges and Universities
 
 Scotland’s Further Education (FE) colleges are facing a funding crisis and financial problems are set to deepen in the years ahead.
 
@@ -678,7 +679,7 @@ Scottish Labour supports maintaining the two year post-study work offer to inter
 
 Scottish Labour would create an education system fit for the 21st century by providing the investment that further and higher education in Scotland desperately need.
 
-#### Investing in students
+## Investing in students
 
 The SNP has done incredible damage to our student support system. They let students down by scrapping their pledge to scrap student debt in 2007, again in 2012 with their ‘reforms’ to loans, and once more with their timid response to the Student Support Review.
 
@@ -688,7 +689,7 @@ Scottish Labour would create a system that works for the many, and that begins b
 
 Scottish Labour has brought forward a Bill to regulate rents in the private sector and we will apply these provisions to student accommodation. We will also encourage universities to educate students on their housing rights and how they can take steps to enforce them. Student housing must also be a strategic planning issue and not an afterthought. Educational institutions must be part and parcel of the dialogue, as well as members of the community.
 
-#### Lifelong learning
+## Lifelong learning
 
 It’s essential that Scotland has the skills it needs for the changing economy. All individuals must also be supported to realise their full potential, at any age.
 
@@ -702,7 +703,7 @@ Workers need better skills that reflect the challenges of automation and the rea
 
 Scottish Labour would develop a new National Plan for Adult Learning with national frameworks and local delivery. This will include workforce learning building in initiatives such as Scottish Union Learning, as well as placing duties on employers to raise educational standards.
 
-#### Police and Security
+## Police and Security
 
 **The SNP has failed to give Police Scotland the support and resources they need to fight crime and keep Scotland safe. Their approach to centralisation has led to falling officer numbers, with local divisions bearing the brunt of cuts.**
 
@@ -718,7 +719,7 @@ We would place local democratic accountability at the heart of a modern, respons
 
 Police Scotland is among those with the least capital funding of all police forces in the UK. This has resulted in Police Scotland using out of date ICT, a run-down fleet and police stations that have been forced to close or are no longer fit for service. Scottish Labour would give Police Scotland the capital funding it needs.
 
-#### Security
+## Security
 
 A Labour government will address the current UK government’s failure to take effective measures against a growing problem of extreme or violent radicalisation. We will ensure closer counter terrorism co-ordination between the police and the security services, combining neighbourhood expertise with international intelligence.
 
@@ -746,7 +747,7 @@ We will review the role and remit of the National Cyber Security Centre to deter
 
 We will also review the structures and roles of the National Crime Agency, to strengthen the response to all types of economic crime, including cybercrime and fraud and ensure a modern, technologically advanced police service that has the capacity and skills to combat online crime, supported by a new national strategy on cybercrime and fraud.
 
-#### Justice
+## Justice
 
 **Last year around a quarter of a million crimes were recorded in Scotland. Non-sexual violent crimes increased by 10%**
 
@@ -780,7 +781,7 @@ Labour will release all papers on the Shrewsbury 24 trials and 37 Cammell
 
 Laird shipyard workers and introduce a Public Accountability Bill. We will ensure fair compensation for the victims of contaminated blood products across the UK.
 
-#### Communities and Local Government
+## Communities and Local Government
 
 **Scottish Labour would properly fund local councils after a decade of devastating SNP cuts so that they can breathe new life into local communities and high streets.**
 
@@ -808,7 +809,7 @@ Labour will build community wealth by giving communities the powers and resource
 
 Young people have been let down by the Tories and SNP. Too many young people now have nowhere to go, nothing to do and no one to help them with their problems. Scottish Labour would build properly funded, professionally staffed youth services and guarantee every young person has access to local, high quality youth work.
 
-#### Fire and Rescue
+## Fire and Rescue
 
 **The Scottish Fire and Rescue Service (SFRS) has lost more than 700 officers as a result of the SNP’s approach to centralisation, and appliances are being left unavailable to deal with fire calls because of a lack of staff.**
 
@@ -818,9 +819,9 @@ Scottish Labour would stop cuts to SFRS and undertake an evaluation of the capac
 
 Scottish Labour would ensure that building regulations, in particular those related to cladding, are fit for purpose and properly enforced.
 
-#### Digital, Culture, Media and Sport
+## Digital, Culture, Media and Sport
 
-#### Culture
+## Culture
 
 Those living in more deprived areas and those with a lower income are less likely to attend cultural events and participate in cultural activities. It is therefore essential that local culture is open to as many people as possible, so that those who do not have the means to travel further afield are able to access it.
 
@@ -828,7 +829,7 @@ However, the SNP Government’s underfunding of our communities has resulted in 
 
 The next Scottish Labour government will properly fund councils and ensure arts and culture are open and available to everyone. We will also require organisations in receipt of public funding to pay proper trade union rates for the job and allow workers the opportunity to join a recognised trade union.
 
-#### Media
+## Media
 
 A Labour government will ensure a healthy future for our all public service broadcasters, including BBC Alba and S4C. We will protect free TV licences for over-75s.
 
@@ -838,7 +839,7 @@ We will address misconduct and the unresolved failures of corporate governance r
 
 We will consult media sector workers and trade unions to establish an inquiry into the fake news undermining trust in media, democracy and public debate.
 
-#### Digital
+## Digital
 
 Digital and technological advancements bring challenges, but also huge opportunities.
 
@@ -852,7 +853,7 @@ BDI will roll out the remaining 90-92% of the full-fibre network, and acquire ne
 
 We will enforce a legal duty of care to protect our children online, impose fines on companies that fail on online abuse and empower the public with a Charter of Digital Rights.
 
-#### Sport
+## Sport
 
 Physical activity is key to achieving healthy lifestyles but too often low-income families are priced out of participating in sports clubs and activities.
 
@@ -868,15 +869,15 @@ Scottish Labour first established the Active Schools Network in 2004 and we want
 
 Access to appropriate physical activity for individuals with long-term conditions can be limited across parts of Scotland. Scottish Labour would address the gaps in provision
 
-#### Gambling
+## Gambling
 
 A Labour government will curb gambling advertising in sports and introduce a new Gambling Act fit for the digital age, establishing gambling limits, a levy for problem gambling funding and mechanisms for consumer compensations.
 
-#### Civic Society
+## Civic Society
 
 In the years of austerity it was non-government organisations that often held the social fabric of our society together, protecting our communities from even greater harm and providing precisely targeted support. As we rebuild our public services we will support and maintain the social capital values of these organisations.
 
-### Tackle Poverty and Inequality
+## Tackle Poverty and Inequality
 
 * WORK
 
@@ -888,7 +889,7 @@ In the years of austerity it was non-government organisations that often held th
 
 * HOUSING
 
-#### Work
+## Work
 
 **Work should provide a decent life for all, guaranteeing not just dignity and respect in the workplace, but also the income and leisure time to allow for a fulfilling life outside it.**
 
@@ -910,7 +911,7 @@ We will also seek to develop tailored support and protections for the self-emplo
 
 We will tackle late payments that leave small businesses and the self-employed waiting months to be paid, including strengthening Scottish procurement rules to ban late payers from public procurement.
 
-#### Ministry for Employment Rights
+## Ministry for Employment Rights
 
 Throughout history, working people in the UK have improved their lives by coming together to demand rights and protections. Even after decades in which workers’ rights have been cut back and their unions’ capacity to defend them have been slashed, the Tories believe that workers’ terms and conditions should be dictated by employers on a ‘take it or leave it’ basis.
 
@@ -988,7 +989,7 @@ Scottish Labour would seek to build on this new framework by using devolved powe
 
 For years, the UK has been in breach of our international obligations. We will bring UK law into line with the International Labour Organisation standards it has ratified, so the UK leads the world, instead of engaging in a race to the bottom.
 
-#### Working Time
+## Working Time
 
 Time off to rest, relax and be with family is essential to a happy and fulfilling life, but workers in the UK put in some of the longest hours in Europe.
 
@@ -1006,7 +1007,7 @@ We will meet this target by:
 
 Scottish Labour would enact the Statutory Instrument required to compel large shops to close on New Year’s Day and support the UK commitment to review unpaid overtime.
 
-#### Enforcement
+## Enforcement
 
 Rights don’t mean anything unless they’re enforced, but that is not happening under the Tories or the SNP.
 
@@ -1014,7 +1015,7 @@ That doesn’t just hurt workers who lose out, it is also bad for employers who 
 
 Strong trade unions are the best and most effective way to enforce rights at work. Labour will also introduce a new, unified Workers’ Protection Agency to enforce workplace rights, including the Real Living Wage. It will be given extensive powers to inspect workplaces and bring prosecutions and civil proceedings on workers’ behalf. We will keep employment tribunals free, extend their powers, and introduce new Labour Courts with a stronger role for people with industrial experience on panels.
 
-#### Rewriting the Rules
+## Rewriting the Rules
 
 Social justice also means levelling the playing field between small and big business, and ensuring that democracy and accountability are valued across society, including in the private sector.
 
@@ -1036,7 +1037,7 @@ Audits are vital to corporate accountability, but the auditing industry is domin
 
 We will tackle regulatory capture and streamline regulation by creating a new Business Commission, responsive to parliamentary select committees.
 
-#### Social Justice Commission
+## Social Justice Commission
 
 Labour will usher in a new era of social justice in the UK. Everyone in our society should be allowed to flourish regardless of what class or postcode they are born into, or the colour of their skin.
 
@@ -1052,7 +1053,7 @@ Social justice, on the other hand, demands that we end poverty, reduce inequalit
 
 Labour will replace the Social Mobility Commission with a Social Justice Commission, based in the Treasury, with wide-ranging powers to hold us, and future governments, to account.
 
-#### Women and Equalities
+## Women and Equalities
 
 **The Labour Party is the party of equality, committed to achieving a world free from all forms of bigotry and discrimination. Whether campaigning on the streets or passing legislation in government, Labour is the only party to consistently stand with women, disabled people, people from ethnic minority backgrounds, and LGBT+ communities.**
 
@@ -1068,7 +1069,7 @@ In Scotland, we will also seek to strengthen the delivery of the socio-economic 
 
 We will put class at the heart of the UK’s equality agenda and create a new ground for discrimination on the basis of socio-economic disadvantage.
 
-#### Women
+## Women
 
 Labour will put women at the heart of our government and programme. Next year marks the 50th anniversary of the Equal Pay Act, yet women still earn 13% less than men. Labour will take action to close the gender pay gap by 2030.
 
@@ -1092,7 +1093,7 @@ The new Workers’ Protection Agency working with HMRC will ensure that employer
 
 • Increase women’s representation across parliament by building on the Equality Act, passed by the last Labour government, and enact Section 106 so that all political parties publish diversity data about electoral candidates.
 
-#### Race Equality
+## Race Equality
 
 Achieving racial equality is a bedrock Labour value. It has never been more important than in the current climate. We are proud of the way our country has been shaped by the contributions, cultures and values of people from around the world.
 
@@ -1108,7 +1109,7 @@ Labour will ensure a pathway to economic inclusion for all, putting an end to al
 
 • Create an Emancipation Educational Trust to educate around migration and colonialism, and to address the legacy of slavery and teach how it interrupted a rich and powerful black history which is also British history. Scottish Labour would ensure that our curriculum and cultural institutions address Scotland’s role in colonialism and slavery.
 
-#### Religious discrimination
+## Religious discrimination
 
 Labour is the party of equality: we will work to build a society free from anti-Semitism and Islamophobia.
 
@@ -1116,7 +1117,7 @@ Only recently, we have seen concerning incidents of sectarian behavior in Scotla
 
 Scottish Labour would also target sectarianism through education, and by working with local communities.
 
-#### Disability with Dignity
+## Disability with Dignity
 
 Over the last 10 years, through a catalogue of punitive welfare policies, the dignity of people with disabilities has been degraded by the Tories. Not one, but two, UN reports describe the government as having committed “systematic violations” of the rights of disabled people. Families have also struggled because of the SNP’s failure to prioritise social care.
 
@@ -1140,7 +1141,7 @@ In Scotland, the SNP has failed to deliver the housing needed to allow disabled 
 
 A Scottish Labour government would commit to a target of 10% of new housing in Scotland to be built to-accessible home standards and work with local authorities to ensure they have enough funding for the housing adaptations that people need.
 
-#### LGBT+ Equality
+## LGBT+ Equality
 
 Labour has a proud history of standing shoulder to shoulder with LGBT+ people. We abolished Section 28, equalised the age of consent, and supported the legislation creating civil partnerships and equal marriage.
 
@@ -1158,7 +1159,7 @@ Likewise, we would ensure all frontline health and social care professionals rec
 
 Labour will work with organisations and charities already making the UK a more equal and fairer society and together we will build a country for the many.
 
-#### Migration
+## Migration
 
 **A Labour government will establish a humane immigration system and end the hostile environment that caused the Windrush scandal of British citizens being deported. Instead our system will be built on human rights and aimed at meeting the skills and labour shortages that exist in our economy and public services.**
 
@@ -1178,7 +1179,7 @@ If we remain in the EU, freedom of movement would continue. If we leave, that wi
 
 In accordance with our values and domestic laws, we will uphold the right to a family life for British, EU and non-EU residents alike. We will end the deportation of family members of people entitled to be here and end the minimum income requirements which separate families.
 
-#### Refugees
+## Refugees
 
 Refugees are victims of wars, environmental catastrophes, famine or persecution. This Tory government has failed its international legal obligations to refugees and to allow people to exercise their rights to seek asylum.
 
@@ -1186,7 +1187,7 @@ A Labour government will uphold those rights and meet those obligations. We will
 
 Once here, refugees will have the right to work and will be treated humanely by government at all levels.
 
-#### Social Security
+## Social Security
 
 **Labour holds social security in the same esteem as our health and education systems - it is there to help each of us in times of need. If someone falls on hard times – because they lose their job, get sick or lose a loved one – Labour will help them live with dignity and provide support to get them back on their feet.**
 
@@ -1198,7 +1199,7 @@ The cruelty and heartlessness of the Tories has made the Department for Work & P
 
 We’ll put children at the heart of everything we do, developing a cross-governmental National Strategy for Childhood focusing on health, security, well-being and poverty. We will give effect to the UN Convention on the Rights of the Child.
 
-#### Universal Credit
+## Universal Credit
 
 The Tories’ flagship social security programme, Universal Credit (UC), has been a catastrophe. It has pushed thousands of people into poverty, caused families to lose their homes and forced parents to visit foodbanks in order to feed their children.
 
@@ -1218,7 +1219,7 @@ Tory cuts are pushing people into rent arrears and leaving them at risk of homel
 
 The decision to scrap the “bedroom tax” across the UK would free up around £50 million a year in the Scottish budget.
 
-#### Disabled People
+## Disabled People
 
 Labour stands with and for disabled people. We will always challenge stigma and discrimination wherever it is found and support the right of disabled people to live independently and be treated with respect. The Tories’ rhetoric of ‘scroungers’ and ‘skivers’ has whipped up hatred of disabled people. Labour will never demonise disabled people or the unemployed.
 
@@ -1278,7 +1279,7 @@ We will legislate to allow the CWU-Royal Mail agreement for a collective pension
 
 We will ensure the pensions of UK citizens living overseas rise in line with pensions in the UK.
 
-#### Housing
+## Housing
 
 **Everyone has the right to a decent, secure home. In 1945, Labour promised to “proceed with a housing programme with the maximum practical speed until every family in this island has a good standard of accommodation” In 2019, we renew that pledge. But too many people are being denied their right to a good home by our housing system that treats homes as financial assets rather than places to live.**
 
@@ -1292,17 +1293,17 @@ Scottish Labour supports greater publicly led development, to shift the balance 
 
 Scottish Labour’s Housing Commission recently recommended the creation of a new ’Land and Communities Development Agency’ in Scotland. This new Agency would sit between the Scottish and local government. It would work with local authorities and other appropriate bodies to acquire, assemble remediate, service and co-develop derelict and vacant land in Scotland, make available serviced sites for affordable housing and drive forward the delivery of a new generation of planned, attractive, mixed tenure communities in Scotland. Scottish Labour would also upgrade our current housing stock. We would invest £6 billion from the UK’s National Transformation Fund to upgrade almost all of Scotland’s 2.6 million homes to the highest energy efficiency standards. This would reduce the average household energy bill by £417 per household per year by 2030, dramatically reduce fuel poverty and support 35,000 jobs.
 
-#### Council and Social Homes
+## Council and Social Homes
 
 The only way to deliver on everyone’s right to a good home is to build publicly-funded social housing.
 
 Through the National Transformation Fund, Scottish Labour would provide an initial £10 billion investment to kickstart an ambitious social house-building programme in Scotland, building 12,000 eco-friendly social and council homes a year for 10 years. This will ensure that everyone in Scotland has the right to an affordable, well-insulated and permanent home. It would also support 50,000 jobs. This funding would allow Scottish Labour to return to pre-SNP subsidy levels for affordable house building. Local government and housing associations would receive two thirds of the funding required to build these homes. Reducing the need for social landlords to borrow to build, would lower social rents long term, reduce the cost of living for those on low incomes and minimise the risk of eviction.
 
-#### Home Ownership
+## Home Ownership
 
 We don’t believe it’s fair that the housing options previous generations took for granted are now out of reach for so many people. And home ownership is becoming a driver of capital inequality in Scotland. We need to close the gulf emerging between young people who may never be able to own their own home or accumulate savings and those whose parents can afford to help them buy. However, too many young people are stuck in a cycle from which there seems to be no escape – they rent to save for a deposit to buy a house but rising rents mean they can’t afford to put much away at the end of the month. The Help to Buy scheme, established by the Coalition Tory - Lib Dem government and passed on to Scotland by the SNP, has directed funding towards those who don’t need it. Scottish Labour would scrap Help to Buy and replacing it with a more targeted scheme to help first time buyers on lower incomes.
 
-#### Private Renters
+## Private Renters
 
 Unpredictable private rent increases across Scotland risk pushing more families into poverty and homelessness.
 
@@ -1312,7 +1313,7 @@ As part of our plans to improve private sector tenants’ rights, Scottish Labou
 
 Scottish Labour supports a change in planning law to ensure that properties being used as short-term lets, which are not the owner’s sole residence, require planning permission. This would provide the basis for fair, locally-sensitive and evidence-based regulation.
 
-#### Homelessness
+## Homelessness
 
 No one should sleep without a roof over their head in one of the richest countries in the world. But under the Tories and the SNP, homelessness has increased. The systematic problems that lead to homelessness are not being tackled, for example, the number of homelessness applicants citing mental health or physical health for the reason why they failed to maintain accommodation has risen dramatically. Only Labour governments, committed to investing in our public services, will be able to tackle the root causes of homelessness.
 
@@ -1320,7 +1321,7 @@ A UK Labour government will tackle the wider causes of homelessness, raising the
 
 The Scottish Government’s commitment on rapid rehousing is welcome, but the local authorities tasked with delivering it are chronically underfunded. The government’s lack of action on homelessness prevention is equally disappointing. Local authorities, the NHS, Police Scotland and the Prison Service all have a key role to play in prevention and must have clearly defined duties, developed in partnership with government, and the funding to deliver them.
 
-### The Final Say on Brexit
+## The Final Say on Brexit
 
 **Labour will give the people the final say on Brexit. Within three months of coming to power, a Labour government will secure a sensible deal. And within six months, we will put that deal to a public vote alongside remain. A Labour government will implement whatever the people decide.**
 
@@ -1384,7 +1385,7 @@ This must change. If the country decides to remain, a Labour government will tak
 
 If people decide to leave, a Labour government will work constructively on vital issues of mutual interest and to the mutual benefit of the UK and EU. But we will leave. Most importantly, under a Labour government, you will get the final say on Brexit.
 
-### A New Internationalism
+## A New Internationalism
 
 * A NEW INTERNATIONALISM
 
@@ -1410,7 +1411,7 @@ Our approach will be based on our values. Within the first year of government La
 
 • Invest an additional £400 million in our diplomatic capacity to secure the UK’s role as a country that promotes peace, delivers ambitious global climate agreements and works through international organisations to secure political settlements to critical issues.
 
-#### Effective Diplomacy
+## Effective Diplomacy
 
 **Internationalism is at the core of the Labour movement. We recognise our responsibility to confront injustices we see today and to correct the injustices of the past.**
 
@@ -1424,7 +1425,7 @@ We will:
 
 We have a duty to stand up for the security and sovereignty of our overseas territories, including the Falklands, and for the rights of our citizens and dual-nationals abroad, and will continue fighting for justice on behalf of Nazanin Zaghari-Ratcliffe and other British nationals wrongly imprisoned or suffering mistreatment in captivity abroad.
 
-#### Human Rights
+## Human Rights
 
 Human rights and international humanitarian law are fundamental pillars of a secure global system. These principles are under threat. Some of the world’s most powerful states choose to sell arms to human rights-abusing states. Tory ministers, including Boris Johnson, have signed off well over £2 billion of arms sales to repressive regimes since June 2017.
 
@@ -1452,7 +1453,7 @@ World Bank and other global institutions to promote policies to tackle the clima
 
 • Use our diplomatic expertise to negotiate and deliver more ambitious global targets to deal with the climate emergency, starting with COP 26 in Glasgow next year.
 
-#### Prioritising Conflict Prevention and Building Peace
+## Prioritising Conflict Prevention and Building Peace
 
 The Tories have failed to play a constructive role in resolving the world’s most pressing humanitarian crises, including in Kashmir, Yemen and Myanmar, and the escalation of tensions with Iran. The treatment of the Kurdish people in Syria, including by Turkey, and the Uighurs in China has been meet with total inaction and apathy by the UK government. In some cases, they set aside regard for international law, including refusing to criticise Crown Prince Bin Salman of Saudi Arabia over the murder of journalist Jamal Khashoggi.
 
@@ -1468,7 +1469,7 @@ We believe effective diplomacy can address the drivers of conflict and insecurit
 
 • Act immediately to urge negotiations towards a political resolution to conflict wherever it arises, including in the Middle East and Sub-Saharan Africa.
 
-#### Defence and Security
+## Defence and Security
 
 **The primary duty of government is to guarantee the security of people in the UK. Labour’s defence policy will be strategic and evidence-led. Our security at home is made stronger when the security of others elsewhere is guaranteed too.**
 
@@ -1504,11 +1505,11 @@ Auxiliary shipbuilding contracts in the UK, to secure a long-term future for the
 
 Reducing our carbon footprint can only happen with ambitious emissions reduction targets at the MoD, one of government’s biggest energy users. So as part of our Green Industrial Revolution, we will create a Climate Change Sustainability Committee within the department to review the feasibility of increasing the use of sustainable energy in defence, and publish a strategy to accelerate the safe and sustainable recycling of our old nuclear submarines
 
-#### International Solidarity and Social Justice
+## International Solidarity and Social Justice
 
 **The scale of the challenges facing our world are enormous. Conflict, climate change and a global economy rigged in favour of a tiny elite are driving instability and inequality across the world. A bold international development policy driven by social justice has never been more needed.**
 
-#### Justice
+## Justice
 
 Labour will use the UK’s influence within the World Bank, IMF and WTO to transform the rules of the global economy so they work for the many.
 
@@ -1568,13 +1569,13 @@ Labour recognises the right to essential medicines as an integral part of the ri
 
 • In the long term, ensure that all medicines developed with the support of UK taxpayer money are accessible to people in the Global South.
 
-### Democracy and Accountability
+## Democracy and Accountability
 
 * CONSTITUTIONAL REFORM IN SCOTLAND
 
 * STRENGTHENING DEMOCRACY
 
-#### Constitutional Reform in Scotland
+## Constitutional Reform in Scotland
 
 **This manifesto demonstrates the transformational change that a UK Labour government can make. It is a transformational change that the SNP simply cannot deliver. The Scottish Tories claim to defend the UK, but they know that Boris Johnson will abandon Scotland, as he did Northern Ireland in his Brexit deal, if it suits his purpose.**
 
@@ -1598,7 +1599,7 @@ Regions that could begin the process of reshaping our political system.
 
 A federal system could be built on a principle of co-determination, of shared powers based on partnership, not hierarchy. It would allow both subsidiarity and solidarity. Based on a charter of rights with minimum standards below which no part of the UK could fall.
 
-#### Strengthening Democracy
+## Strengthening Democracy
 
 **For many people, politics doesn’t work. The Westminster bubble is a world away from their daily lives. The Labour Party was founded to give working-class people a voice in politics.**
 

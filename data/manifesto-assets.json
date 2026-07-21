@@ -1,0 +1,3087 @@
+{
+  "1945/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1945/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1945/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1950/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1950/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1950/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1951/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1951/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1951/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1955/communist": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1955/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1955/labour": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1955/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1959/conservative": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1959/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1959/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1964/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1964/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1964/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1966/communist": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1966/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1966/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1966/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1970/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1970/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1970/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1979/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1979/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1979/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1979/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1979/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1983/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1983/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1983/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1983/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1983/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1983/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1987/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1987/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1987/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1987/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1992/bnp": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1992/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1992/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1992/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1992/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1992/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1992/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "1997/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/niwc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1997/plaid": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1997/pup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1997/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "1997/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "1997/ukip": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "1997/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/omrlp": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "2001/plaid": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "2001/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/stuckist": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2001/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2001/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/bnp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/cpa": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/englishdemocrats": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/forwardwales": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/omrlp": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "2005/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/respect": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/scottishgrn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/sea": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/socialistlabour": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/ssp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/veritas": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2005/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2005/welshlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/bnp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/gpni": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/pirate": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/scottishgrn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/tuv": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2010/welshlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/animalpolitics": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/cista": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/gpni": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/nha": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/omrlp": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "2015/pirate": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/scottishgrn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/socialistalternative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/socialistlabour": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/ssp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/tusc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2015/tuv": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/welshlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2015/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2017/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/animalpolitics": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2017/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/gpni": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/liberal1989": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2017/nha": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2017/pirate": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2017/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/welshlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2017/wep": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/animalpolitics": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2019/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/cpa": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2019/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/gpni": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/gwlad": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2019/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/liberal1989": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2019/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/reform": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/scottishgrn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/sdp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2019/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/welshlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2019/yorkshire": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/alba": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/alliance": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/animalpolitics": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/aontu": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/cpa": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/cpb": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/dup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/gpni": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/liberal1989": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/pbp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/plaid": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/reform": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/rejoin": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/scottishcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/scottishgrn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/scottishlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/scottishlibdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/sdlp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/sdp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/sinnfein": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/snp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/tusc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/tuv": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/uup": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/walesgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "2024/welshcon": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/welshlab": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "2024/workersparty": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "euro/1979/eldr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1979/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1984/eldr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1984/green": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1989/eldr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1989/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1989/greengroup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1989/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1994/eldr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1994/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1994/greengroup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1999/alde": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1999/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1999/eurengreens": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/1999/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/alde": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/conservative": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/dup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/eurefa": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/eurengreens": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/eurleft": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/gilliland": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/gpni": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/green": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/labour": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/libdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/plaid": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/sdlp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/sea": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/sinnfein": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/snp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/ssp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/ukip": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2004/uup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/alliance": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/bnp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/christian": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/conservative": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/dup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/ecr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/eldr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/englishdemocrats": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/eurefa": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/eurengreens": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/eurleft": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/gpni": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/green": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/inddem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/labour": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/libdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/plaid": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/scottishgrn": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/scottishlab": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/scottishlibdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/sdlp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/sinnfein": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/snp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/tuv": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/uen": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/ukip": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2009/uup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/alde": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/alliance": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/conservative": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/dup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/eaf": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/ecr": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/eurefa": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/eurengreens": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/eurleft": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/gpni": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/green": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/labour": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/libdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/nicon": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/plaid": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/scottishcon": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/scottishgrn": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/sdlp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/sinnfein": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/snp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/tuv": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/ukip": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/uup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/welshcon": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2014/welshlibdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/alde": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/alliance": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/animalpolitics": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/brexit": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/changeuk": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/conservative": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/diem25": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/dup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/ecpm": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/ecrp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/englishdemocrats": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/epp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/eurefa": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/eurengreens": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/eurleft": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/eurpirates": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/green": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/labour": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/libdem": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/pes": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/plaid": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/scottishgrn": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/sinnfein": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/snp": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/ukip": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/uup": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/volt": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "euro/2019/wep": {
+    "cover": false,
+    "md": false,
+    "pdf": true
+  },
+  "feb1974/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "feb1974/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "feb1974/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "holyrood/1999/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/1999/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/1999/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/1999/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/bnp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2003/ssp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/bnp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/scottishchristian": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/solidarity": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/ssp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2007/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/bnp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/cpb": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2011/ssp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/cpb": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/rise": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2016/wep": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/alba": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/allforunity": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/isp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishfamily": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/scottishlibertarian": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2021/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/isp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/reform": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/scottishcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/scottishgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/scottishlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/scottishlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/scottishlibertarian": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/snp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/sovereignty": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/ssp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "holyrood/2026/workersparty": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "london/1958/spgb": {
+    "cover": false,
+    "md": true,
+    "pdf": false
+  },
+  "london/2000/livingstone": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2004/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2004/cpa": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2004/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2004/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2008/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2008/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2008/cooperative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2008/englishdemocrats": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2008/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2008/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/benita": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/bnp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2012/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2012/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/bnp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2016/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/onelove": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/respect": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/ukip": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2016/wep": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/binface": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2021/burningpink": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "london/2021/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/londonreal": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/maxfosh": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/pierscorbyn": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2021/reclaim": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/awp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/binface": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/booklet": {
+    "cover": true,
+    "md": false,
+    "pdf": false
+  },
+  "london/2024/britainfirst": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/campbell": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/ghulati": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/green": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/londonreal": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/michli": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/reform": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "london/2024/sdp": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
+  "oct1974/conservative": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "oct1974/labour": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "oct1974/libdem": {
+    "cover": true,
+    "md": true,
+    "pdf": false
+  },
+  "senedd/1999/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/1999/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2003/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2003/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2003/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2003/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2007/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2007/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2007/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2007/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2007/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/walesgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2011/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/walesgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2016/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/abolish": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/cpb": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/gwlad": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/propel": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/reform": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/tusc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/walesgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2021/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/cooperative": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/cpb": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/gwlad": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/heritage": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/plaid": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/propel": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/reform": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/tusc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/walesgrn": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/welshcon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/welshlab": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "senedd/2026/welshlibdem": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/niwc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/1998/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/niwc": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/pup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/sea": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2003/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/pup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/rsf": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/sea": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/ukup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2007/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/pup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/tuv": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2011/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/pup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/tuv": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/ukip": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2016/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/nicon": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/pbp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/tuv": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2017/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/alliance": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/dup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/gpni": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/pbp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/sdlp": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/sinnfein": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/tuv": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/uup": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  },
+  "stormont/2022/workerspartyie": {
+    "cover": true,
+    "md": false,
+    "pdf": true
+  }
+}

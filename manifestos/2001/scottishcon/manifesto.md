@@ -25,6 +25,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish Conservative Party Manifesto 2001
 
 ## time for common sense in Scotland
@@ -71,7 +72,7 @@ The election of Scottish Conservative MPs at this election will bring a much nee
 
 That is just plain common sense. It is time for common sense in Scotland.
 
-### through our lives
+## through our lives
 
 * raising a family - 6
 * living safely - 10
@@ -79,7 +80,7 @@ That is just plain common sense. It is time for common sense in Scotland.
 * staying healthy - 18
 * growing older - 22
 
-#### raising a family
+## raising a family
 
 Common sense means strengthening the family.
 
@@ -165,7 +166,7 @@ Conservatives want our universities to be free to shape their own character and 
 
 To achieve their independence they need to have their own resources. We will therefore create permanent endowment funds for Britain's universities.
 
-#### living safely
+## living safely
 
 Common sense means having enough police to keep our streets safe and a criminal justice system that reflects our values rather than undermines them.
 
@@ -240,7 +241,7 @@ Average sentences, and average time served on Labour's special early release sch
 
 Since 1997-98 violent crime has risen by 22 per cent.
 
-#### earning a living
+## earning a living
 
 Common sense means less tax and regulation for people and businesses.
 
@@ -342,7 +343,7 @@ The next Conservative Government will operate within a sound and stable financia
 * We will appoint a National Accounts Commission to draw up proper national accounts, including a proper presentation of the Government's long-term liabilities.
 * We will plot a course away from the direction in which the Chancellor is leading us, and towards real annual increases in spending which are within the trend rate of growth of the economy.
 
-#### staying healthy
+## staying healthy
 
 Common sense means ending political interference in medical judgements and giving choice to patients.
 
@@ -412,7 +413,7 @@ In some areas of Scotland, doctors can prescribe certain new drugs, and in other
 
 Conservatives will ensure that important issues of medical ethics are properly debated in Parliament.
 
-#### growing older
+## growing older
 
 Common sense means respect and independence for older people.
 
@@ -479,7 +480,7 @@ We would implement these proposals in Scotland within a clearly defined timetabl
 | Single pensioner over 75 | £72.50 | £76.50 | £81.75 |
 | Married couple over 75 | £115.90 | £122.70 | £128.20 |
 
-### knowing who we are
+## knowing who we are
 
 * a world leader - 28
 * a stronger society - 32
@@ -487,7 +488,7 @@ We would implement these proposals in Scotland within a clearly defined timetabl
 * a civilised country - 40
 * a proud democracy - 44
 
-#### a world leader
+## a world leader
 
 Common sense means valuing what makes us distinctive as a nation.
 
@@ -603,7 +604,7 @@ We will ensure that those whose claims are rejected are quickly deported by a ne
 
 Conservatives will restore common sense to Britain's asylum procedures.
 
-#### a stronger society
+## a stronger society
 
 Common sense means responsible citizens and a smaller state.
 
@@ -667,7 +668,7 @@ We will introduce a tough anti-fraud package, including a single integrated task
 
 > Britain is made up of many ethnic communities. Conservatives believe that we are richer and stronger for it.
 
-#### town and country
+## town and country
 
 Common sense means valuing the distinctiveness of both town and country.
 
@@ -777,7 +778,7 @@ Immediately upon taking office we will implement a Strategy for Recovery includi
 * properly fund campaigns to promote the tourist industry
 * block high risk food imports to prevent Foot and Mouth recurring
 
-#### a civilised country
+## a civilised country
 
 Common sense means supporting the people that create a thriving culture.
 
@@ -841,7 +842,7 @@ Our policy will deliver fair and independent regulation of the BBC. The regulato
 
 We will ensure that religious broadcasters have fair and equal access to future competitions for local, national, digital and programme service licences.
 
-#### a proud democracy
+## a proud democracy
 
 Common sense means fewer politicians and more local decision-making.
 
@@ -911,7 +912,7 @@ We will abandon the Government's plans for a new tier of regional politicians in
 
 And we will cut the number of political advisers and spin doctors employed at the taxpayer's expense.
 
-### time to deliver
+## time to deliver
 
 Conservatives have a vision of what our country can be when it is true to its own character. We want strong families and enterprising business. We want a free and responsible society. We want to govern ourselves, confident in a stable and trusted constitution.
 

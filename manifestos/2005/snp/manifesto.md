@@ -16,6 +16,7 @@ sections:
   - energy
 ---
 
+
 # Scottish National Party Manifesto 2005
 
 ## SNP — If Scotland Matters to You, Make It Matter in May
@@ -24,7 +25,7 @@ sections:
 
 ---
 
-### Let's Make Scotland Matter
+## Let's Make Scotland Matter
 
 The SNP is Scotland's Party. Only the SNP can be trusted to put Scotland first at all times.
 
@@ -54,7 +55,7 @@ Scotland matters to us. If it matters to you, vote SNP and help us to make Scotl
 
 ---
 
-### Independence Means a Better Standard of Life
+## Independence Means a Better Standard of Life
 
 This year Norway will celebrate 100 years of Independence.
 
@@ -82,7 +83,7 @@ Independence would give us the freedom to build a Scotland of which we can all b
 
 ---
 
-### Let Scotland Flourish
+## Let Scotland Flourish
 
 Scotland has enormous potential.
 
@@ -118,7 +119,7 @@ With Independence Scotland can compete and flourish.
 
 ---
 
-### What Labour's Means Test Means
+## What Labour's Means Test Means
 
 Since the Tories broke the link between pensions and earnings back in 1980, the value of the state pension has fallen by a third.
 
@@ -146,7 +147,7 @@ The SNP will restore dignity to Scotland's pensioners.
 
 ---
 
-### How Much Longer Must Patients Wait?
+## How Much Longer Must Patients Wait?
 
 Since 1999 NHS waiting times and lists have increased to record levels.
 
@@ -166,7 +167,7 @@ And we will make health boards more accountable by insisting that half of their 
 
 ---
 
-### How Much Were You Hit for This Year?
+## How Much Were You Hit for This Year?
 
 Since 1997 Council Tax in Scotland has increased by 55% and it is still rising.
 
@@ -192,7 +193,7 @@ Under our proposals, most people will pay less. And half of pensioners will pay 
 
 ---
 
-### More Than Enough to Fuel Our Future
+## More Than Enough to Fuel Our Future
 
 More than 90% of the UK's oil revenues come from Scottish waters. So it really is Scotland's oil.
 
@@ -220,7 +221,7 @@ A Scottish Oil Fund will make sure that our children and grandchildren share in 
 
 ---
 
-### ID Cards Won't Catch Criminals... More Police Will
+## ID Cards Won't Catch Criminals... More Police Will
 
 ID cards won't catch criminals. More police will.
 
@@ -252,7 +253,7 @@ We want a Scotland where people can live safely and securely, an Independent Sco
 
 ---
 
-### Ready to Take Our Place in the World
+## Ready to Take Our Place in the World
 
 Independence will give Scotland the freedom to speak with our own voice in the world and take our place at the top tables of the European Union and the United Nations.
 
@@ -274,7 +275,7 @@ We believe that Scotland is ready to take her place in the world.
 
 ---
 
-### Our Record in Westminster
+## Our Record in Westminster
 
 The SNP is the hardest-working party in Westminster.
 
@@ -294,17 +295,17 @@ Check out your MP's report card at www.snp.org
 
 ---
 
-### Our Pledge is to Make Scotland Matter
+## Our Pledge is to Make Scotland Matter
 
-#### SNP Candidates — 2005 General Election
+## SNP Candidates — 2005 General Election
 
 Aberdeen North — **Kevin Stewart** | Aberdeen South — **Maureen Watt** | Airdrie & Shotts — **Malcolm Balfour** | Angus — **Mike Weir** | Argyll and Bute — **Isobel Strong** | Ayr, Carrick & Cumnock — **Chic Brodie** | Banff & Buchan — **Alex Salmond** | Berwickshire, Roxburgh & Selkirk — **Aileen Orr** | Caithness, Sutherland & Easter Ross — **Karen Shirron** | Central Ayrshire — **Jahangir Hanif** | Coatbridge, Chryston & Bellshill — **Duncan Ross** | Cumbernauld, Kilsyth & Kirkintilloch East — **Jamie Hepburn** | Dumfries & Galloway — **Douglas Henderson** | Dumfriesshire, Clydesdale & Tweeddale — **Andrew Wood** | Dundee East — **Stewart Hosie** | Dundee West — **Joe Fitzpatrick** | Dunfermline & West Fife — **Douglas Chapman** | East Dunbartonshire — **Chris Sagan** | East Kilbride, Strathaven & Lesmahagow — **Douglas Edwards** | East Lothian — **Paul McLennan** | East Renfrewshire — **Osama Saeed Bhutta** | Edinburgh East — **Stefan Tymkewycz** | Edinburgh North & Leith — **Davie Hutchison** | Edinburgh South — **Graham Sutherland** | Edinburgh South West — **Nick Elliott-Cannon** | Edinburgh West — **Sheena Cleland** | Falkirk — **Laura Love** | Glasgow Central — **Bill Kidd** | Glasgow East — **Lachie McNeill** | Glasgow North — **Kenny McLean** | Glasgow North East — **John McLaughlin** | Glasgow North West — **Graeme Hendry** | Glasgow South — **Finlay MacLean** | Glasgow South West — **James Dornan** | Glenrothes — **John Beare** | Gordon — **Joanna Strathdee** | Inverclyde — **Stuart McMillan** | Inverness, Nairn, Badenoch & Strathspey — **David Thompson** | Kilmarnock & Loudoun — **Danny Coffey** | Kirkcaldy & Cowdenbeath — **Alan Bath** | Lanark & Hamilton East — **John Wilson** | Linlithgow & East Falkirk — **Gordon Guthrie** | Livingston — **Angela Constance** | Midlothian — **Colin Beattie** | Moray — **Angus Robertson** | Motherwell & Wishaw — **Ian MacQuarrie** | Na h-Eileanan an Iar — **Angus MacNeil** | North Ayrshire & Arran — **Tony Gurney** | North East Fife — **Rod Campbell** | Ochil & South Perthshire — **Annabelle Ewing** | Orkney & Shetland — **John Mowat** | Paisley & Renfrewshire North — **Bill Wilson** | Paisley & Renfrewshire South — **Andrew Doig** | Perth & North Perthshire — **Pete Wishart** | Ross, Skye & Lochaber — **Mhairi Will** | Rutherglen & Hamilton West — **Margaret Park** | Stirling — **Frances McGlinchey** | West Aberdeenshire and Kincardine — **Caroline Little** | West Dunbartonshire — **Tom Chalmers**
 
-#### On 5 May It's Your Turn.
+## On 5 May It's Your Turn.
 
 ---
 
-### Our Vision for Scotland
+## Our Vision for Scotland
 
 We have set out our priorities for Scotland; policies rooted in our values and aspirations for our nation.
 

@@ -25,6 +25,7 @@ sections:
   - local-government
 ---
 
+
 # Ulster Unionist Party Manifesto 2010
 
 ## Invitation to Join the Government of the United Kingdom
@@ -93,9 +94,9 @@ Each of the three programmes of reform outlined in this manifesto – our plans 
 
 the UK faces huge problems that demand radical change; and it cannot come soon enough. We are impatient to get on with this work. We are determined to make a difference. We have the policies to make that difference. and most importantly, we have faith in the people of the UK, because we know that if we all pull together, stick together, then this country can change its future.
 
-### Change the economy
+## Change the economy
 
-#### get the economy moving
+## get the economy moving
 
 _Gordon Brown’s debt, waste and taxes have wrecked the economy and threaten to kill the_ _recovery. A Conservative and Unionist Government will take action now to cut the deficit, stop_ _Labour’s jobs tax, help keep mortgage rates low and get the economy moving. We will create a_ _new economic model built on investment and savings, not borrowing and debt._ Where is the growth going to come from? Who will provide jobs for the millions out of work?
 
@@ -109,7 +110,7 @@ With the next Conservative and Unionist Government, our tax system, education an
 
 Building this new economic model requires a national effort. We can reverse the UK’s economic decline – but only if we accept that we are all in this together. no government, even a strong and united one, can create a better country alone. it needs individuals, families and businesses pulling alongside. We want to unite everyone in our country behind this bold vision of a new UK economic model.
 
-#### Benchmarks for the United Kingdom
+## Benchmarks for the United Kingdom
 
 _For the first time, the people of the United Kingdom will have eight clear and transparent_ _benchmarks against which they can judge the economic success or failure of the next government._ _We will be accountable and open. These are the eight Benchmarks for the UK. Achieving them_ _over the next Parliament will mean we have put the UK back on its feet and are building a new_ _UK economic model, very different from the debt-driven economy of recent years._ 1. Ensure macroeconomic stability: We will safeguard the United Kingdom’s credit rating with a credible plan to eliminate the bulk of the structural deficit over a Parliament. Our fiscal policy will seek to help keep interest rates lower for longer. the independent Bank of England will continue to target 2 per cent Consumer Price Index (CPI) inflation, and will use its new role in prudential supervision to preserve financial stability.
 
@@ -127,13 +128,13 @@ _For the first time, the people of the United Kingdom will have eight clear and 
 
 8. Build a greener economy: We will reduce UK greenhouse gas emissions and increase our share of global markets for low carbon technologies.
 
-#### Ensure macroeconomic stability
+## Ensure macroeconomic stability
 
 _We will safeguard the United Kingdom’s credit_ _the structural deficit over a Parliament. our fiscal_ _longer. The independent Bank of england will continue_ _use its new role in prudential supervision to preserve_ after a decade of mismanagement, the UK entered the recession in poor shape, with the second biggest budget deficit in the developed world. We have been honest about the scale of the problem, and the actions we will need to take to deal with it. this will not be easy, but we can overcome our problems if we all pull together.
 
 the absence of a credible plan to deal with our record budget deficit, the largest of any major economy, is creating uncertainty over the United Kingdom’s credit rating and interest rates. This instability undermines confidence and jeopardises investment. it could tip the United Kingdom back into recession. this is gordon Brown’s legacy – and why the greatest risk to our economic recovery is five more years of gordon Brown.
 
-#### Urgent action to reduce debt
+## Urgent action to reduce debt
 
 Urgent action is needed if we are to avoid the higher borrowing costs that would inevitably follow from a credit rating downgrade. So we will cut wasteful government spending _rating with a credible plan to eliminate the bulk of_ _policy will help keep interest rates lower for_ _to target 2 per cent CPi inflation, and will_ _financial stability._ to bring the deficit down and restore stability.
 
@@ -199,13 +200,13 @@ former government advisers Sir Peter gershon and Dr martin Read have advised us 
 
 We will match Labour’s spending plans for 2010/11 in health and overseas aid. Given our commitment to carry out a Strategic Defence and Security Review, it would also not be appropriate to make in-year reductions to the existing defence budget in 2010/11. Savings in these protected areas will be channelled back into frontline services. the net £6 billion of savings will be made from the remaining departmental budgets.
 
-#### Create a more balanced economy
+## Create a more balanced economy
 
 _We will create the conditions for higher exports,_ for the last decade, growth has been too dependent on government spending and debt- fuelled consumption. more than half of the new jobs created were driven by public spending.
 
 household savings collapsed, and the UK has the lowest investment as a share of gDP of any G7 country. Our share of world exports has fallen by almost a third. a sustainable recovery must be driven by growth in exports and business investment, and through a better environment for wealth creation.
 
-#### make the United Kingdom the leading hi-tech exporter in Europe
+## make the United Kingdom the leading hi-tech exporter in Europe
 
 We will implement key recommendations from Sir james Dyson’s Review into how to achieve our goal of making the United Kingdom Europe’s leading hi-tech exporter, including:
 
@@ -219,7 +220,7 @@ Research and development tax credits will be improved and refocused on hi-tech c
 
 We will improve the performance of UK trade and investment with a renewed focus on high priority sectors and markets where the return on taxpayers’ money is highest. We will regularly compare government support for exporters and inward investment against the services provided by our competitors. We will work for the successful conclusion of the Doha trade round and support bilateral free trade negotiations between the European Union (EU) and other countries.
 
-#### Encourage saving and investment
+## Encourage saving and investment
 
 Only by saving more can we finance investment for the future without being dependent on unsustainable inflows of capital from abroad. We will help stop the spread of means-testing by restoring the link between the basic state pension and average earnings, making it worthwhile for people to save. other measures we will take to encourage saving include:
 
@@ -231,7 +232,7 @@ We will reward those who have saved for their retirement by ending the effective
 
 We must not let the mis-selling of financial products put people off saving. We will implement the ombudsman’s recommendation to make fair and transparent payments to Equitable Life policy holders, through an independent payment scheme, for their relative loss as a consequence of regulatory failure.
 
-#### help households manage their debts
+## help households manage their debts
 
 going into the recession, the United Kingdom’s consumer debt was the highest in the g7. a Conservative and Unionist government will promote responsible consumer finance by creating a powerful Consumer Protection Agency (CPA) to take over the Financial Services authority’s consumer protection role.
 
@@ -247,7 +248,7 @@ in addition, we will:
 
 _“Getting people back into work_ _is an essential part of ensuring_ _that everyone benefits_ _from economic growth”_ get the United Kingdom working _We will reduce youth unemployment and reduce_ _part of our strategy for tackling poverty and inequality._ 
 
-#### get the United Kingdom working again
+## get the United Kingdom working again
 
 Under Labour, youth unemployment has reached over 900,000, with one in five young people unable to find a job. We are at risk of creating a lost generation of young people without the skills to participate in the workforce, without hope for the future. at the same time, economic inactivity is rising, and more than five million people are out of work and on benefits.
 
@@ -255,7 +256,7 @@ this tidal wave of worklessness is making it hard for many families to make ends
 
 getting people back into work is an essential part of realising the goal of eliminating child poverty by 2020, and ensuring that everyone benefits from economic growth.
 
-#### Reduce welfare dependency
+## Reduce welfare dependency
 
 We will scrap Labour’s failing employment schemes and create a single Work Programme for everyone who is unemployed, including the 2.6 million people claiming incapacity again _the number of children in workless households as_ Benefit who do not get enough help from existing programmes. We will reassess all current claimants of Incapacity Benefit.
 
@@ -269,7 +270,7 @@ We will work with the northern ireland Executive to consider how those measures 
 
 our plans will give unemployed people a hand up, not a hand out. Unemployed people must be prepared to take up job offers. So, with the Conservatives and Unionists, long-term benefit claimants who fail to find work will be required to ‘work for the dole’ on community work programmes. anyone on jobseeker’s allowance who refuses to join the Work Programme will lose the right to claim out-of- work benefits until they do, while people who refuse to accept reasonable job offers could forfeit their benefits for up to three years. This will create a welfare system that is fair but firm.
 
-#### Boost small business
+## Boost small business
 
 in the end, it is not the state that creates sustainable employment – it is business people.
 
@@ -283,15 +284,15 @@ We will support would-be entrepreneurs through a new programme – Work for Your
 
 and we will force equal pay audits on any company found to be discriminating on the basis of gender.
 
-#### Silicon valley
+## Silicon valley
 
 Despite having a population twenty times smaller than the UK, Silicon valley is a global beacon for innovation and enterprise, attracting more venture capital investment than the whole of the UK. having led the internet revolution, Silicon valley is now becoming a world leader in green technology development. these successes are thanks to the highly skilled workforce and world-class universities, the ease of starting a business, and the availability of credit and investment. in addition, companies in Silicon valley have been able to attract employees in a highly competitive labour market by introducing measures to improve the general well-being of their staff, including flexible working and childcare facilities.
 
-#### Encourage enterprise
+## Encourage enterprise
 
 _We will improve the United Kingdom’s international_ _regulation._ Thirteen years ago, the United Kingdom’s tax system was one of the most competitive in the developed world. over the last decade, other countries have cut their tax rates while our tax system has become one of the most complex in the world. our competitiveness rating has fallen, while the burden of regulation and the impact of taxation have risen. We can only make a sustainable economic recovery if we send a clear signal that the United Kingdom is open for business again. that means stopping Labour’s jobs tax, lowering corporate tax rates, reducing the regulatory burden, and supporting innovation and sustainable development – changes that will benefit businesses of all sizes and boost employment.
 
-#### Cut and simplify business taxes
+## Cut and simplify business taxes
 
 Conservatives and Unionists believe in lower and simpler taxation. That is why we will ensure that by far the largest part of the burden of dealing with the deficit falls on lower spending rather than higher taxes. Cutting the deficit is the most urgent task we need to undertake if we are to get the economy moving, but it is not enough. So, initially, we will cut the headline rate of corporation tax to 25p and the small companies’ rate to 20p, funded by _rankings for tax competitiveness and business_ reducing complex reliefs and allowances.
 
@@ -315,7 +316,7 @@ to encourage new businesses to start up, we will reduce the number of forms need
 
 We are proud of the last Conservative government’s industrial relations reforms, which helped bring about our economic revival in the 1980s, and we will always be prepared to build on them if necessary.
 
-#### Support innovation and sustainable development
+## Support innovation and sustainable development
 
 Government procurement is a £200 billion a year market that can be used much better to stimulate enterprise and innovation. We will take steps to open up government procurement to small and innovative businesses by:
 
@@ -341,7 +342,7 @@ We will abolish the unelected infrastructure Planning Commission (IPC) and repla
 
 Reform has been slow and disappointing. in order to boost economic growth northern Ireland needs an efficient and effective planning system that is democratically- accountable but which gives greater certainty to business and enterprise.
 
-#### attract the brightest and best to our country
+## attract the brightest and best to our country
 
 immigration has enriched our nation over the years and we want to attract the brightest and the best people who can make a real difference to our economic growth. But immigration today is too high and needs to be reduced. We do not need to attract people to do jobs that could be carried out by UK citizens, given the right training and support. So we will take steps to take net migration back to the levels of the 1990s – tens of thousands a year, not hundreds of thousands.
 
@@ -361,7 +362,7 @@ We want to encourage students to come to our universities and colleges, but our 
 
 Ensure the whole country shares _We will increase the private sector’s share of the_ _outside London and the south east._ too many areas of the UK lack a vibrant private sector and are too dependent on public spending. these regional imbalances have got worse over the last decade, despite billions of pounds spent by the Regional Development Agencies (RDAs). Our aim is to increase the private sector’s share of the economy in every part of the country by boosting enterprise and creating a better business environment. We will work closely with local government, and with the northern ireland assembly, Scottish Parliament and Welsh assembly to achieve this goal.
 
-#### turning northern ireland into an Enterprise Zone
+## turning northern ireland into an Enterprise Zone
 
 in northern ireland over two-thirds of economic activity is directly or indirectly dependent on government spending. We can’t go on like this. We need a long-term programme to rebalance the northern ireland economy and boost the private sector. in the 19th century, Ulster was renowned for enterprise and innovation. there is no reason why, against a backdrop of peace and political stability, northern ireland cannot once again become an economic powerhouse.
 
@@ -369,7 +370,7 @@ in rising prosperity _economy in all regions of the country, especially_ Conserv
 
 Conservatives and Unionists will therefore look at turning northern ireland into an economic enterprise zone. A Conservative and Unionist government will produce a government paper examining the mechanism for changing the corporation tax rate in Northern Ireland, in order to attract significant new investment.
 
-#### Create a modern transport network
+## Create a modern transport network
 
 A rebalanced economy requires an extensive and reliable infrastructure. But transport has been a low priority for Labour, and the hassle of getting around is bad for business, bad for families and bad for everyone’s quality of life.
 
@@ -385,7 +386,7 @@ We will stop the third runway and instead link heathrow directly to our high spe
 
 We will consult on the introduction of a ‘fair fuel Stabiliser’. this would cut fuel duty when oil prices rise, and vice versa. it would ensure families, businesses and the whole UK economy are less exposed to volatile oil markets, and that there is a more stable environment for low carbon investment.
 
-#### Spread prosperity
+## Spread prosperity
 
 We want the United Kingdom to become a European hub for hi-tech, digital and creative industries – but this can only happen if we have the right infrastructure in place. Establishing a super-fast broadband network throughout the UK could generate 600,000 additional jobs and add £18 billion to the United Kingdom’s gDP.
 
@@ -397,7 +398,7 @@ Reform public services to deliver _We will raise productivity growth in the publ
 
 if productivity in the public sector had grown at the same rate as in private sector services, we could now have the same quality of public services for £60 billion less each year. So, by improving public sector productivity while getting a grip on the debt, we will still be able to deliver better public services. that is why good government costs less with the Conservatives and Unionists.
 
-#### Decentralisation, accountability and transparency
+## Decentralisation, accountability and transparency
 
 We value the work of those employed in our public services, and a Conservative and Unionist government will work with them to deliver higher productivity and better value for money for taxpayers.
 
@@ -411,7 +412,7 @@ transparency is crucial to creating a value for money culture. We will publish a
 
 Create a safer banking system that _We will reform the regulation and structure of the_ _less dependence on unstable wholesale funding,_ In the run up to the financial crisis, UK banks became amongst the most indebted and most leveraged in the world – with disastrous consequences for us all. this credit boom turned into a bust, with a significant fall in credit available to firms. Lack of access to credit remains a major problem, especially for SmEs. We need to change the way we regulate our banks to stop a crisis on this scale ever happening again.
 
-#### Reform financial services
+## Reform financial services
 
 The financial services sector is one of our most globally successful industries, and we want the City to be the leading location for global finance.
 
@@ -433,19 +434,19 @@ in addition, we will:
 
 We will create more diverse sources of affordable credit for small businesses, building on our proposals for a national Loan guarantee Scheme.
 
-#### Presbyterian mutual Society
+## Presbyterian mutual Society
 
 in northern ireland, the plight of the Presbyterian mutual Society has brought distress to many thousands of investors. It was Labour’s financial mismanagement, and their guarantees to other financial institutions, that triggered the crisis in the PmS. this issue has not been resolved satisfactorily by the Labour government. a Conservative and Unionist government will continue to work with the Northern Ireland Executive for a fair resolution of the crisis in the PmS.
 
 japan japan is a world leader in the development of green technology. it invests in R&D at almost double the UK’s rate, and japanese companies hold roughly 30 per cent of green technology patents filed in the US. As a result, japan is far ahead of the UK in the trillion pound market for green technology. this leadership is not just good for the economy; it’s also good for the environment. For example, thanks to the widespread use of green technologies, japan has the lowest carbon intensity of any major economy.
 
-#### Build a greener economy
+## Build a greener economy
 
 _We will reduce UK greenhouse gas emissions and_ _carbon technologies._ Labour have said the right things on climate change, but these have proved little more than warm words. Despite three White Papers, a multitude of strategies and endless new announcements, the UK now gets more of its energy from fossil fuels than it did in 1997. our performance on emissions has been criticised by environmental groups and we have the worst record of any major EU nation when it comes to renewable energy. this must change to safeguard the United Kingdom and the world’s future.
 
 We need to cut our carbon emissions to tackle the challenge of climate change. But the low carbon economy also provides exciting opportunities for UK businesses. We will encourage private sector investment to put the United Kingdom at the forefront of the green technology revolution, creating jobs and new businesses across the country.
 
-#### Create a low carbon future
+## Create a low carbon future
 
 this wave of low carbon innovation we want to unleash requires investment, so we will create the United Kingdom’s first Green Investment Bank – which will draw together money currently divided across existing government initiatives, leveraging private sector capital to _increase our share of global markets for low_ finance new green technology start-ups. We will create green individual Savings accounts to help provide the financial backing we need to create a low carbon economy.
 
@@ -455,13 +456,13 @@ Whatever the carbon content of electricity generated, operators considering new 
 
 We will increase the proportion of tax revenues accounted for by environmental taxes, ensuring that any additional revenues from new green taxes that are principally designed as an environmental measure to change behaviour are used to reduce the burden of taxation elsewhere.
 
-### Change society
+## Change society
 
-#### mend our broken society
+## mend our broken society
 
 _our society is broken, but together we can mend it: we can build the Big society. A Conservative_ _and Unionist Government will make the United Kingdom the most family-friendly country in_ _europe. We will back the nhs, which matters more to families than anything. We will defend_ _northern ireland’s education system and work to ensure that all children reach their full potential._ _We will tackle welfare dependency and the causes of poverty, and fight back against crime._
 
-#### fight back against crime
+## fight back against crime
 
 Despite Labour’s massive expansion of the state, many people’s quality of life is getting worse, not better. the number of people living in poverty has risen in the last three years, and inequality is at a record high. We have some of the worst rates of family breakdown in the world. in some of the most deprived parts of the country, life expectancy has actually fallen. The achievement gap at school between the richest and poorest is growing.
 
@@ -475,7 +476,7 @@ So we will redistribute power from the central state to individuals, families an
 
 this vision demands a cultural change across the country. our success will depend not just on the actions we take but on society’s response. By promoting equality and tackling discrimination, our policies, like recognising civil partnerships as well as marriage in the tax system and helping disabled people live independently, will give everybody the chance to play their part. this way, we can make the United Kingdom fairer and safer; a country where opportunity is more equal.
 
-#### Build the Big Society
+## Build the Big Society
 
 _We will use the state to help stimulate social action,_ _services and training new community organisers_ _citizen being a member of an active neighbourhood_ _that strengthen communities in deprived areas,_ _initially for 16 year olds, to help bring our country_ The size, scope and role of government in the UK has reached a point where it is now inhibiting, not advancing, the progressive aims of reducing poverty, fighting inequality, and increasing general well-being. We can’t go on pretending that government has all the answers.
 
@@ -487,7 +488,7 @@ from the centre to local communities, giving people the opportunity to take more
 
 _helping social enterprises to deliver public_ _to help achieve our ambition of every adult_ _group. We will direct funding to those groups_ _and we will introduce national Citizen service,_ _together._ But we recognise that it is not enough to create opportunities for people to get involved in building the Big Society; our reform plans require a social response in order to be successful. So building the Big Society is not just a question of the state stepping back and hoping for the best: it will require an active role for the state. the state must take action to agitate for, catalyse and galvanise social renewal. We must use the state to help remake society.
 
-#### Public service reform
+## Public service reform
 
 our public service reform programme will enable social enterprises, charities and voluntary groups to play a leading role in delivering public services and tackling deep-rooted social problems.
 
@@ -497,7 +498,7 @@ this will provide social enterprises with the start-up funding and support they 
 
 the United Kingdom has a proud and long- standing charitable tradition, and we are convinced that the voluntary sector should play a major part in our civic renewal. We will introduce a fair deal on grants to give voluntary sector organisations more stability and allow them to earn a competitive return for providing public services. We will work with local authorities to promote the delivery of public services by social enterprises, charities and the voluntary sector.
 
-#### neighbourhood groups
+## neighbourhood groups
 
 our reform agenda is designed to empower communities to come together to address local issues. our policies will give new powers and rights to neighbourhood groups: the ‘little platoons’ of civil society – and the institutional building blocks of the Big Society.
 
@@ -513,7 +514,7 @@ to stimulate social action further, we will:
 
 and, • develop a measure of well-being that encapsulates the social value of state action.
 
-#### National Citizen Service
+## National Citizen Service
 
 Building the Big Society means encouraging the concept of public-spirited service – the idea that everyone should play a part in making their communities stronger.
 
@@ -523,13 +524,13 @@ The initial flagship project will provide a programme for 16 year olds to give t
 
 Even in these difficult times, the people of the UK have demonstrated their desire to give money and time to good causes. We will introduce new ways to increase philanthropy, and use the latest insights from behavioural economics to encourage people to make volunteering and community participation something they do on a regular basis.
 
-#### the national Lottery
+## the national Lottery
 
 We will restore the national Lottery to its original purpose and, by cutting down on administration costs, make sure more money goes to good causes. the Big Lottery fund will focus purely on supporting social action through the voluntary and community sector, instead of ministers’ pet projects as at present.
 
 Sports, heritage and the arts will each see their original allocations of 20 per cent of good cause money restored.
 
-#### Sport and the olympics
+## Sport and the olympics
 
 We will deliver a successful olympics that brings lasting benefits for the country as a whole. Part of the community sports budget of the national Lottery will be responsible for delivering an olympic legacy, including the vigorous promotion of competitive sports through a national olympic-style school competition. We will work with our Ulster Unionist assembly colleagues to ensure that Northern Ireland benefits from the legacy of London 2012. To support high-level sport further, we will:
 
@@ -541,7 +542,7 @@ Such sporting events are an opportunity for the UK as a whole and we will work w
 
 _“strong families are_ _the bedrock of a_ _strong society”_ make the United Kingdom the most Europe _We will make the United Kingdom the most family-friendly_ _families in the tax and benefits system, extend flexible_ _help parents cope with the commercialisation of_ _their lives. We will support and improve sure start._ _and dysfunctional families._ 
 
-#### make the United Kingdom the most family-friendly country in Europe
+## make the United Kingdom the most family-friendly country in Europe
 
 Strong families are the bedrock of a strong society. they provide the stability and love we need to flourish as human beings, and the relationships they foster are the foundation on which society is built. the warmth of a child’s parenting is as important to their life chances as the wealth of their upbringing.
 
@@ -551,7 +552,7 @@ this will change with a Conservative and Unionist government. We will help famil
 
 family-friendly country in _country in europe. We will support_ _working and improve parental leave. We will_ _childhood and give families more control over_ _We will give targeted help to disadvantaged_ Reform tax and benefits to help families and pensioners 
 
-#### Reform tax and benefits to help families and pensioners
+## Reform tax and benefits to help families and pensioners
 
 today, Labour’s tax and benefits system rewards couples who split up. a Conservative and Unionist government will end the couple penalty for all couples in the tax credit system as we make savings from our welfare reform plans. We will recognise marriage and civil partnerships in the tax system in the next Parliament. this will send an important signal that we value couples and the commitment that people make when they get married.
 
@@ -567,7 +568,7 @@ We strongly value the role older people play in families and in society, and wil
 
 • disability living allowance and attendance allowance; and, • the pension credit.
 
-#### give families more control over their lives
+## give families more control over their lives
 
 making the United Kingdom more family- friendly means helping families spend more time together. that is why we will initially extend the right to request flexible working to every parent with a child under the age of eighteen. We want our government to lead from the front, so we will extend the right to request flexible working to all those in the public sector, recognising that this may need to be done in stages.
 
@@ -579,7 +580,7 @@ With our Ulster Unionist colleagues in the assembly we support the provision of 
 
 to give families more control over their lives, we will put funding for relationship support on a stable, long-term footing and make sure couples are given greater encouragement to use existing relationship support. We will review family law in order to increase the use of mediation when couples do break up, and look at how best to provide greater access rights to non-resident parents and grandparents.
 
-#### Protect childhood
+## Protect childhood
 
 Children should be allowed to grow up at their own pace, without excessive pressure placed on them by businesses. We will take a series of measures to help reverse the commercialisation of childhood. We prefer to gain voluntary consent to these actions but we are prepared to legislate if necessary. We will:
 
@@ -587,13 +588,13 @@ Children should be allowed to grow up at their own pace, without excessive press
 
 • ban companies from using new peer-to-peer marketing techniques targeted at children, and tackle marketing on corporate websites targeted at children; and, • establish a new online system that gives parents greater powers to take action against irresponsible commercial activities targeted at children.
 
-#### a new approach to early intervention
+## a new approach to early intervention
 
 Conservatives and Unionists are committed to keeping Sure Start because the network of Children’s Centres is of enormous value to parents across the country. But we believe Sure Start needs to work better because the people who need it most – disadvantaged and dysfunctional families – are not getting enough of the benefit.
 
 We will take Sure Start back to its original purpose of early intervention, increase its focus on the neediest families, and better involve organisations with a track record in supporting families.
 
-#### Back the nhS
+## Back the nhS
 
 _Conservatives and Unionists back the nhs. We_ _england to increase health spending every year_ over three years ago David Cameron spelled out his priorities in three letters – nhS. Since then, michael mcgimpsey, the Ulster Unionist Health Minister in the Executive, and Ulster Unionist members of the assembly, have consistently fought to protect the values of our nhS and have campaigned to defend health and social care in northern ireland from DUP cuts.
 
@@ -607,7 +608,7 @@ We understand the pressures which face health and social care. in recognition of
 
 Conservatives and Unionists not only back the values of our nhS, we also back its funding and we have a vision for its future.
 
-#### Putting patients first
+## Putting patients first
 
 given the huge pressures faced by health and social care over the coming decades, our pledge to protect health spending will not be enough on its own to deliver the rising standards of care that people expect and deserve. The gap between what we will have to do and what we can afford to do is challenging. in reforming our nhS, however, we have not been afraid to step up to the mark to ensure patients come first.
 
@@ -621,7 +622,7 @@ the abolition of these charges is an investment in the future of the health and 
 
 meeting your healthcare needs can be complicated. that is why we want the family doctor to be a patient’s guide throughout our nhS. through the creation of Local Commissioning Groups (LCGs) we have ensured that local gPs, working with a range of clinical and local community representatives, are able to commission services on behalf of their areas – either in hospitals or using other forms of treatment and therapy in gP surgeries or specialist clinics.
 
-#### a more accessible nhS
+## a more accessible nhS
 
 our reform plan for health and social care has ensured that patients will be put first. But more can still be done. We will continue to drive up quality, bring down waiting lists and improve cleanliness and infection control.
 
@@ -641,7 +642,7 @@ So we brought in a provider thus meeting the need and providing a much valued se
 
 One in four British adults experience at least one mental health problem in any given year and poor mental health costs the UK economy £77 billion each year. michael mcgimpsey has stated that mental health and learning disability is his number one priority for health and Social Care in northern ireland. We will continue to support michael mcgimpsey in this valued area as he seeks to invest in much needed services as outlined in the Bamford Report.
 
-#### a healthier nation
+## a healthier nation
 
 today, health and social care in northern ireland faces unique upward pressures on spending. Lifestyle-linked health problems like obesity, smoking and alcohol abuse are putting huge demands on health services and are harming people’s quality of life. our population is ageing, meaning more people living longer with chronic conditions and requiring regular treatment. on top of this there is the pressure of infectious diseases like HIV, Hepatitis C and pandemic flu. Each of these factors is leading to soaring costs for our nhS.
 
@@ -651,7 +652,7 @@ Significant success has already been made in this area through the establishment
 
 Conservative and Unionists are committed to ensuring that the needs of public health will be addressed across government. this includes planning in local councils where the views of local communities on major developments must include public health considerations.
 
-#### Building on excellence in Northern Ireland's schools
+## Building on excellence in Northern Ireland's schools
 
 _northern ireland is rightly proud of the standards_ _always out-perform the rest of the United Kingdom._ _our education system. not all children, however,_ _ensure excellence, diversity and choice for all._ improving our school system is the most important thing we can do to extend opportunity and reverse declining social mobility. But the UK is slipping down the world league tables in maths and English.
 
@@ -705,11 +706,11 @@ We also need to free the police from the inappropriate rules and regulations tha
 
 We will back measures to end the confusion over criminals’ anonymity and give police the power to identify offenders in order to protect the public and prevent crime. We will support changes to the rules so that anyone acting reasonably to stop a crime or apprehend a criminal is not arrested or prosecuted, and we will back measures to give householders greater protection if they have to defend themselves against intruders in their homes.
 
-### Change politics
+## Change politics
 
 _“We will work to strengthen_ _the Union of Great Britain_ _and northern ireland”_ a new agenda for a new politics _
 
-#### a new agenda for a new politics
+## a new agenda for a new politics
 
 Conservatives and Unionists have led the way in sorting out the mess of mPs’ expenses. in_ _government we will go further, by cutting the size of Parliament, cutting the scope of Whitehall,_ _and cutting the cost of politics. We will make politics more local, more transparent and more_ _accountable. We will work to strengthen the Union of Great Britain and northern ireland. We_ _intend to build a new political system that serves people rather than politicians. Together, we can_ _change our politics for the better._ The events of recent months have revealed the size of the fissures in our political system.
 
@@ -721,7 +722,7 @@ The top-down model of power that exists in the United Kingdom today is completel
 
 We believe in people power – and today the information revolution gives us the practical tools to realise that philosophy. So we plan to change the United Kingdom with a sweeping redistribution of power: from the state to citizens; from the government to Parliament; from Whitehall to communities; from Brussels to the United Kingdom; from bureaucracy to democracy. taking power away from the political elite and handing it to the man and woman in the street. Using decentralisation, accountability and transparency, we will weaken the old political elites, give people power, fix our broken politics and restore people’s faith that if we act together things can change. this is a new agenda for a new politics.
 
-#### make politics more accountable
+## make politics more accountable
 
 _We will clean up politics: the expenses, the lobbying_ _the cost of Parliament, cut the number of mPs and_ _control over what goes on in Westminster, make_ _independence of the civil service._ it is vital that we act quickly and decisively to restore the reputation of politics. too much unacceptable behaviour has gone unchecked for too long, from excessive expenses to sleazy lobbying practices. The people of the United Kingdom have looked on in horror as revelations have stripped away the dignity of Parliament, leaving millions of voters detached from the political process, devoid of trust in the political classes, and disillusioned with our system of government.
 
@@ -733,7 +734,7 @@ But that is just the start. We will also cut ministers’ pay and reduce the num
 
 We promise a total overhaul of our system of government, so that power is passed from the politicians at Westminster back to the people of the United Kingdom. But this is the very least that is needed to fix our broken political system.
 
-#### Clean up Westminster
+## Clean up Westminster
 
 the political crisis was triggered by the scandal of MPs’ expenses. We insisted that MPs’ expenses were published online, and we have supported the independent proposals to clean up the house of Commons. We proposed legislation so that anyone wanting to be a member of either the house of Commons or the house of Lords will need to be treated as a full UK taxpayer. But much, much more is needed to clean up our politics and restore public trust.
 
@@ -757,7 +758,7 @@ a Conservative and Unionist government will introduce new measures to ensure tha
 
 the lobbying industry must regulate itself to ensure its practices are transparent – if it does not, then we will legislate to do so.
 
-#### Give citizens more power
+## Give citizens more power
 
 People have been shut out of Westminster politics for too long. having a single vote every four or five years is not good enough – we need to give people real control over how they are governed. So, with a Conservative and Unionist government, any petition that secures 100,000 signatures will be eligible for formal debate in Parliament. the petition with the most signatures will enable members of the public to table a Bill eligible to be voted on in Parliament. and we will introduce a new Public Reading Stage for Bills to give the public an opportunity to comment on proposed legislation online.
 
@@ -765,7 +766,7 @@ Labour have meddled shamelessly with the electoral system to try to gain politic
 
 We support the first-past-the-post system for Westminster elections because it gives voters the chance to kick out a government they are fed up with. We will work to build a consensus for a mainly-elected second chamber to replace the current house of Lords, recognising that an efficient and effective second chamber should play an important role in our democracy and requires both legitimacy and public confidence.
 
-#### make government more accountable and representative
+## make government more accountable and representative
 
 Because we are serious about redistributing power, we will restore the balance between the government and Parliament, by:
 
@@ -781,13 +782,13 @@ We will scrap Labour’s failed target regime and instead require every departme
 
 Rebuilding trust in politics means making our political system better reflect the people it is meant to represent. We will introduce a £1 million fund to help people with disabilities who want to become mPs, councillors or other elected officials with the extra costs they face in running for office. This will be funded from the existing budget of the Government Equalities Office.
 
-#### make politics more transparent
+## make politics more transparent
 
 _We will publish details of the money Westminster_ _People will have a right to government data to_ _will cut the unaccountable quango state and root_ Government has been far too profligate for far too long. Billions are wasted each year on pointless bureaucracy and failed projects while taxpayers are left to foot the bill. The explosion of unaccountable quangos, public sector ‘non- jobs’ and costly bureaucracy is an indictment of Labour’s reckless approach to spending other people’s money. once again, it undermines public trust in the political process.
 
 We understand that people want government to be more effective in what it does, and to do it for less money. that means transforming the way the state goes about its business, using decentralisation, accountability and transparency to reduce dramatically the cost of government. and, because sunlight is the best disinfectant, we will bring the operation of government out into the open so that everyone can see whether we are delivering good value for money.
 
-#### Publish data so the public can hold government to account
+## Publish data so the public can hold government to account
 
 Drawing inspiration from administrations around the world which have shown that being transparent can transform the effectiveness of _government spends and the people it employs._ _make the performance of the state transparent. We_ _out waste._ government, we will create a powerful new right to government data, enabling the public to request – and receive – government datasets in an open and standardised format. independent estimates suggest this could provide a £6 billion boost to the UK economy. We will open up Whitehall recruitment by publishing central government job vacancies online, saving costs and increasing transparency.
 
@@ -799,7 +800,7 @@ all data will be published in an open and standardised format. We will:
 
 • require anyone paid more than the Prime minister in the public sector to have their salary signed off by the treasury; and, • require senior civil servants to publish online details of expense claims and meetings with lobbyists.
 
-#### Curtail the quango state
+## Curtail the quango state
 
 Under Labour, the quango state has flourished.
 
@@ -809,7 +810,7 @@ Government figures show that there are over 700 unelected bodies spending £46 b
 
 • examine the case for giving Select Committees the power to prevent increases in quango budgets; and, • ensure that the National Audit Office has full access to the BBC’s accounts.
 
-#### Reduce the cost of procurement
+## Reduce the cost of procurement
 
 this government has a dreadful record of managing procurement, with billions of pounds wasted on mismanaged projects. We will tackle wasteful government procurement projects by:
 
@@ -831,7 +832,7 @@ in northern ireland local government reform has been badly mismanaged under Dire
 
 the planning system in northern ireland is not fit for the 21st century. Northern Ireland needs a planning system that is strategic, efficient and responsive to economic and development needs. it must also, however, be more transparent and accountable to local people. We will work with our Ulster Unionist colleagues in the assembly to ensure that the right changes are made to transform the planning system in northern ireland.
 
-#### Restore our civil liberties
+## Restore our civil liberties
 
 _We will scale back Labour’s database state and_ _We will introduce a balanced approach to the retention_ _records system so it protects children without destroying_ Labour have subjected the United Kingdom’s historic freedoms to unprecedented attack.
 
@@ -841,7 +842,7 @@ the impact of this has been profound and far- reaching. trust has been replaced 
 
 the database state is a poor substitute for the human judgement essential to the delivery of public services. Worse than that, it gives people false comfort that an infallible central state is looking after their best interests. But the many scandals of lost data, leaked documents and database failures have put millions at risk. it is time for a new approach to protecting our liberty.
 
-#### Protect our freedoms
+## Protect our freedoms
 
 Labour’s approach to our personal privacy is the worst of all worlds – intrusive, ineffective and enormously expensive. We will scrap ID cards, the national identity Register and the Contactpoint database. to protect our freedoms from state encroachment and encourage _protect the privacy of the public’s information._ _of people’s dnA and reform the criminal_ _trust._ greater social responsibility, we will replace the human Rights act with a UK Bill of Rights.
 
@@ -865,13 +866,13 @@ Provision for supplementary rights for northern ireland was contained in the 199
 
 Conservatives and Unionists believe strongly in the right to lawful assembly and peaceful protest. in northern ireland parades are an important part of the culture and ethos of both major traditions. We support moves to make them more inclusive. the issue of parading is now being considered by the northern ireland Executive. Responsibility for parades will shortly be transferred to the assembly with a view to legislation being brought forward to replace the Parades Commission later this year. We will work with our Ulster Unionist colleagues in the Assembly to find a solution that commands widespread support across the community.
 
-#### Strengthen the Union
+## Strengthen the Union
 
 _We are unionist parties and we will not put the_ _committed to making it work for all countries. We_ _Commission, grant a referendum on greater powers_ _devolved institutions in northern ireland. We will_ _for devolved issues in Parliament._ in recent years, we have been hearing things that we have not heard for a long time: people in Scotland saying they want to leave the UK, and some people responding with ‘let them go’. Labour’s constitutional vandalism has weakened Parliament, undermined democracy and brought the integrity of the ballot into question. our unbalanced devolution settlement has caused separatism to gather momentum in Scotland, and separatists have propped up a weakened Labour Party in Wales.
 
 Conservatives and Unionists are passionate about the Union and we will never do anything to put it at risk. We are proud that the Conservatives and Unionists are the only political force fielding candidates in every part of the UK at this election.
 
-#### Support devolution
+## Support devolution
 
 We support the changes proposed by the Calman Commission for clarifying the devolution settlement and creating a relationship of mutual respect between Westminster and holyrood:
 
@@ -897,9 +898,9 @@ Conservatives and Unionists recognise that people on all sides lost their lives 
 
 We unreservedly reject any notion of ‘equivalence’ between those who perpetrated wicked and cowardly acts of terrorism and those who lost their lives defending democracy and the rule of law. Politically motivated violence – on all sides – was never justified and we will not be party to a re-write of history in order to give it a spurious legitimacy. a Conservative and Unionist government will not, therefore, take forward the proposal for a universal Recognition Payment to all families of the dead. We will, however, dedicate ourselves to building a better, fairer future for all. in addition, under a Conservative and Unionist government there will be no more open-ended and costly inquiries into the past at vast public expense. There can be no hierarchy of investigations into the past.
 
-### Protect the environment and support our farmers
+## Protect the environment and support our farmers
 
-#### Sustainable UK
+## Sustainable UK
 
 _A Conservative and Unionist Government will cut carbon emissions and rebuild our energy_ _security. We will make it easier for people to go green, with incentives for people to do the right_ _thing. We will protect our precious habitats and natural resources, and promote a sustainable_ _farming industry. We will fulfil our responsibility to hand on a richer and more sustainable natural_ _environment to future generations._ We have a vision of a different United Kingdom. it is a country which leads the world in the market for green goods and services. a new high-tech manufacturing sector and a new green investment bank help create new jobs, wealth and growth. our cars run on electricity and our rail infrastructure is fit for the 21st century.
 
@@ -913,7 +914,7 @@ Instead of holding businesses back by imposing unfair retrospective stealth taxe
 
 the Westminster government has formed the policy framework within which the northern ireland assembly has tackled environmental and energy issues. We will work with our Ulster Unionist colleagues in the Northern Ireland Assembly to ensure that everyone in the UK benefits from our innovative ideas. this is how we will live up to our responsibility to be the most environmentally progressive government in our history.
 
-#### Combat climate change
+## Combat climate change
 
 _We will reduce carbon emissions in line with our_ _small-and large-scale low carbon energy production,_ _biogas. We will safeguard our energy security by_ _the energy system. We will make it easier to go_ _household energy bills._ Labour’s failure on climate change has been stark. Strong rhetoric has not been matched by effective action – it took the longest and deepest recession for sixty years for Labour to achieve any significant reduction in the UK’s carbon emissions. We need to generate 15 per cent of our energy from renewables by 2020, but we have one of the worst records of any EU nation when it comes to renewable energy. our national security is threatened by a looming energy crunch in which a third of our electricity generating capacity will close, and most of our gas will need to be imported by 2020.
 
@@ -921,13 +922,13 @@ Yet the United Kingdom is uniquely placed to be the world’s first low carbon e
 
 _international commitments. We will promote_ _including nuclear, wind, clean coal and_ _ensuring there is sufficient spare capacity in_ _green, including through a ‘Green deal’ to cut_ Conservatives and Unionists recognise that northern ireland’s geographical location within the Union means that energy security and price are pressing issues. We will work with our Ulster Unionist colleagues in the northern Ireland Assembly to explore the potential for a ‘green new Deal’ for northern ireland.
 
-#### ambitious goals for reducing emissions
+## ambitious goals for reducing emissions
 
 Climate change is a global phenomenon, and that means the world must work together to reduce harmful emissions. a Conservative and Unionist government will work towards an ambitious global deal that will limit emissions and make available substantial financial resources for adaptation and mitigation.
 
 as part of our commitment to move towards a low carbon future, we can confirm our aim of reducing carbon emissions by 80 per cent by 2050. In government, we will lead from the front by delivering a 10 per cent cut in central government emissions within twelve months and by working with local authorities and others to deliver emissions reductions.
 
-#### Promote low carbon energy production
+## Promote low carbon energy production
 
 the way our energy is produced and transmitted is stuck in the last century. a Conservative and Unionist government will transform this ‘dumb’, unresponsive network and create an ‘electricity internet’. We will work with our Ulster Unionist colleagues in the northern ireland assembly to make the Single Electricity market more competitive, give consumers more choice and to make prices more economical. We will seek to share innovations in ‘smart grid’ and ‘smart meter’ technology across the UK which will automatically match supply and demand, allowing a huge increase in renewable power.
 
@@ -945,7 +946,7 @@ Safeguard the UK’s energy security the United Kingdom has had no clear energy 
 
 Labour’s just-in-time approach to energy supply has left us badly exposed to events outside our control. We will work to diversify the sources of the gas we need, secure long- term contracts and increase storage capacity to guarantee supplies throughout the year. We support plans to create a gas storage facility off the coast of northern ireland.
 
-#### helping people to do the right thing.
+## helping people to do the right thing.
 
 transparency is one of the best ways to change people’s behaviour. We will work with our Ulster Unionist colleagues in the northern Ireland Assembly to explore the possibility of transforming consumers’ control over their energy bills by ensuring every household bill provides information on how to move to the cheapest tariff offered by their supplier and how their energy usage compares to similar households. And we will give Post Office Card Account holders the chance to benefit from direct debit discounts, worth up to £150 a year.
 
@@ -953,7 +954,7 @@ Conserve and enhance the natural _We will protect and improve the UK’s natural
 
 We need to act now to enhance biodiversity, protect our countryside and marine environment, and secure the vital eco-systems that sustain life on land, in our rivers and in our seas. a Conservative and Unionist government will take a broad approach to improving the natural environment as a whole, so that we can ensure a secure future for the natural world where vital ecological assets are protected and resources are used more responsibly.
 
-#### Conserve wildlife
+## Conserve wildlife
 
 Too many animals remain at risk of extinction, and climate change will put even more pressure on endangered species and precious habitats.
 
@@ -971,7 +972,7 @@ to give wildlife greater protection, we will:
 
 • press for a total ban on ivory sales and the destruction of existing stockpiles; and, • promote new green spaces and wildlife corridors to help animals adapt and thrive in the face of climate change.
 
-#### Protect habitats
+## Protect habitats
 
 the natural world faces great pressure from development and climate change. We will produce a White Paper on protecting the natural environment, including a focus on restoring habitat. We will pioneer a new system of conservation credits to protect habitats.
 
@@ -983,7 +984,7 @@ We will tackle illegal logging by:
 
 • pressing for only legally-harvested timber and timber products to be made available on the market; and, • introducing a new criminal offence under UK law for the import and possession of illegal timber.
 
-#### Promoting sustainable and productive farming practices
+## Promoting sustainable and productive farming practices
 
 Conservatives and Unionists care passionately about northern ireland’s rural communities as an essential part of our social and economic fabric. We believe we have a countryside and a rich rural heritage of which we can be proud.
 
@@ -1015,9 +1016,9 @@ in northern ireland we are the only part of the UK sharing a land border with an
 
 We will ensure a fair market for food suppliers – especially farmers – by reducing the burden of regulation. to ensure the grocery supply code of practice is applied fairly we will introduce an independent supermarket ombudsman.
 
-### Promote our national interest
+## Promote our national interest
 
-#### a stronger the United Kingdom in a safer world
+## a stronger the United Kingdom in a safer world
 
 _A Conservative and Unionist Government will defend our national security and support our brave_ _Armed Forces in everything they do. We will promote our national interest with an active foreign_ _policy. We will work constructively with the eU, but we will not hand over any more areas of_ _power and we will never join the euro. We will honour our aid commitments and make sure this_ _money works for the poorest nations._ this country possesses great assets and advantages – a permanent seat on the Un Security Council, a leading role in nato, a strong relationship with the United States, a major role in the affairs of the EU, and armed forces that are the envy of the world. We are a global trading nation and home to the world’s pre-eminent language.
 
@@ -1025,7 +1026,7 @@ But, looking a decade or two ahead, powerful forces of economics and demography 
 
 We no longer inhabit a world in which foreign and defence issues can be separated from domestically-generated threats. instead, we live in a world in which dangers, events and actions abroad are inter-dependent with threats to our security at home. We must meet the threats we face with a concerted response from the state. that response cannot just come from how we conduct our foreign affairs, or organise our defence and internal security – it must cut across energy, education, community cohesion, health, technology, international development and the environment too.
 
-#### Defend our security
+## Defend our security
 
 _We will create a national security Council to oversee_ _Prime minister. We are committed to succeeding_ _our Forces without the resources they need to fulfil_ _with a series of measures to support service personnel,_ Labour have failed to deliver a unified and coherent approach to national security.
 
@@ -1037,7 +1038,7 @@ Despite fighting two major wars in the last decade, Labour have cut the target f
 
 the men and women of our armed forces are the ones charged with protecting our nation’s security. But Labour’s dangerous mismanagement has endangered lives and harmed the United Kingdom’s capacity to defend itself. Labour have been too slow to provide the equipment, such as helicopters, which our forces on operations have badly needed. our brave men and women, their families, and our veterans deserve the best for putting their lives on the line to protect our liberties. We will ensure they get the best. We are particularly proud of the role played by men and women from northern ireland in the Royal irish and other regiments of the British army in recent operations. the United Kingdom _all aspects of our security, chaired by the_ _in our mission in Afghanistan and will not leave_ _this goal. We will repair the military Covenant_ _their families and veterans._ punches above its weight on the world stage, and northern ireland punches above its weight in our armed forces.
 
-#### a resilient nation
+## a resilient nation
 
 We understand the severity of the threats that exist and will do all we can to make the United Kingdom safe. We will establish a national Security Council to co-ordinate responses to the dangers we face, which will be chaired by the Prime minister. in addition, we will:
 
@@ -1047,7 +1048,7 @@ We understand the severity of the threats that exist and will do all we can to m
 
 terrorism remains a major threat to our country and some of the biggest threats to our security do not come from abroad – they are home grown. a Conservative and Unionist government will ban any organisations which advocate hate or the violent overthrow of our society, such as Hizb-ut-Tahrir, and close down organisations which attempt to fund terrorism from the UK. in northern ireland, we will continue to give our fullest support to the police and other agencies in their efforts to combat the threat from dissident republican and other terrorist organisations.
 
-#### Support our brave armed forces
+## Support our brave armed forces
 
 our mission in afghanistan is vital to our national security. Success in afghanistan will be achieved when it is a more stable state, able to manage its own security, resist outside interference, and prevent terrorists from using its territory as a safe haven. We will always ensure our forces have the resources they need to carry out their mission properly, and we will press other members of nato to take their fair share of the military burden. the training of afghanistan’s own security forces is key to the success of the mission, and we will continue to make it a priority.
 
@@ -1089,7 +1090,7 @@ We will be safer if our values are strongly upheld and widely respected in the w
 
 it is not in our character to have a foreign policy without a conscience or to turn our back on the millions who live in poverty and conflict.
 
-#### Promote our enlightened national interest
+## Promote our enlightened national interest
 
 a Conservative and Unionist government will champion a distinctive UK foreign policy. We will renew and reinforce our engagement with the rest of the world and build up UK influence by deepening our alliances beyond Europe and the United States, not only diplomatically but in culture, education, commerce and security.
 
@@ -1125,7 +1126,7 @@ We will work with our allies across the world to prevent conflict and secure pea
 
 • always be ready to assist Cypriots in their efforts to agree a just, balanced and lasting settlement to reunite their island; and, • play our part in efforts to make the world safer from the dangers of nuclear weapons and nuclear proliferation.
 
-#### an open and democratic Europe
+## an open and democratic Europe
 
 _We will be positive members of the european Union_ _further extension of the eU’s power over the UK_ _will ensure that by law no future government can_ _euro without a referendum of the people of the_ _legal rights, criminal justice and social and employment_ the European Union has done much to reconcile the painful division of Europe and to spread democracy and the rule of law across our continent. But it should not rest on those achievements.
 
@@ -1141,7 +1142,7 @@ _but we are clear that there should be no_ _without the consent of the people of
 
 Labour’s ratification of the Lisbon Treaty without the consent of the people of the UK has been a betrayal of this country’s democratic traditions. in government, we will put in place a number of measures to make sure this shameful episode can never happen again.
 
-#### Restore democratic control
+## Restore democratic control
 
 in future, the people of the UK must have their say on any transfer of powers to the European Union. We will amend the 1972 European Communities act so that any proposed future treaty that transferred areas of power, or competences, would be subject to a referendum – a ‘referendum lock’. a Conservative and Unionist government would never take the UK into the Euro. our amendment to the 1972 act will prevent any future government from doing so without a referendum.
 
@@ -1153,17 +1154,17 @@ the steady and unaccountable intrusion of the European Union into almost every a
 
 We seek a mandate to negotiate the return of these powers from the EU to the UK.
 
-#### Project Umubano
+## Project Umubano
 
 Every summer for the past three years, the Conservatives have been running ‘Project Umubano’ in Rwanda. over that period, Conservative mPs and volunteers have provided English lessons to 3,000 Rwandan primary school teachers, renovated a school, established a small medical library at Kirambi health Centre, and built a community centre. Project Umubano is a sign of our commitment to one World Conservatism, and our belief in the positive power of social action.
 
-#### one World Conservatism
+## one World Conservatism
 
 _We will honour our commitment to spend 0.7 per_ _aid is transparent and properly targeted. We will_ _malaria. Both the people of the UK and those who_ _is spent. We will push for a trade deal which brings_ _countries adapt to climate change, and puts in_ the global downturn has shaken up rich and poor countries alike. for poor countries, it threatens to undermine a decade’s growth and poverty reduction. for rich countries, it puts new pressures on household and government budgets – nowhere more so than in the UK, where Labour’s appalling mismanagement of the economy has saddled us with unprecedented levels of debt. But we should use this opportunity to reaffirm, not abandon, our values – which is why we will continue to increase the level of UK aid. We will do so because it is in our national interest, as well as being the right thing to do.
 
 Deliver on our commitment to the world’s poorest nations 
 
-#### Deliver on our commitment to the world's poorest nations
+## Deliver on our commitment to the world's poorest nations
 
 a new Conservative and Unionist government will be fully committed to achieving, by 2013, the UN target of spending 0.7 per cent of national income as aid. We will stick to the rules laid down by the oECD about what spending counts as aid. We will legislate in the first session of a new Parliament to lock in this level of spending for every year from 2013.
 

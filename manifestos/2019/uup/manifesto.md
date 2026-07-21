@@ -25,18 +25,19 @@ sections:
   - science-and-technology
 ---
 
+
 # Ulster Unionist Party Manifesto 2019
 
 ## Northern Ireland Needs Change
-### Let's Change Together
-#### 2019 General Election Manifesto
+## Let's Change Together
+## 2019 General Election Manifesto
 
 Ulster Unionist Party 
 For the Union 
 
 ---
 
-### Contents
+## Contents
 
 | Section | Page |
 | :--- | :--- |
@@ -64,7 +65,7 @@ Steve Aiken
 
 ---
 
-### The Union of the United Kingdom ahead of the European Union
+## The Union of the United Kingdom ahead of the European Union
 
 During the 2016 referendum on balance - the Ulster Unionist Party encouraged a remain vote, due to the detrimental impact it could have on the stability of the Union of Great Britain and Northern Ireland, and the fact that Northern Ireland was by far the least prepared of all UK regions. However after the UK voted democratically to leave we wanted to see the result respected. That was three years ago, and the intervening period has been dominated by stalemate, indecision and weakened international standing. A disorderly Brexit on the basis of a bad deal would spell real economic harm. Leaving the European Union without a deal would have been calamitous for our people, our businesses, our economy and our place within the United Kingdom. That is why neither of these are options that the Ulster Unionist Party is, or has ever been, prepared to countenance. 
 
@@ -74,13 +75,13 @@ As a direct result we are now faced with Boris Johnson's deal. The Government's 
 
 ---
 
-### Giving Stormont one more chance if it doesn't work it's time for Direct Rule
+## Giving Stormont one more chance if it doesn't work it's time for Direct Rule
 
 Over 21 years on from the signing of the Belfast Agreement, it is a democratic and moral outrage that most 21 year olds living in Northern Ireland have never even had the opportunity to vote for a functioning Assembly. Those young people - the generation that had been promised so much by so many - have been failed by the Sinn Fein and DUP politics of distrust, incompetence, intransigence and corruption. It is hugely disappointing that the decade of devolution from 2007 to 2017 ended in such ruinous failure. Yet despite those disturbing mistakes of the past, the Ulster Unionist Party does genuinely believe that the people of Northern Ireland are best served by a fully functioning Assembly and Executive. It is outrageous that just as the pressures on public services were reaching a critical juncture in January 2017, the Executive collapsed. In the almost three years since, the problems have been intensified dramatically. Things are so serious in our health service that patients are coming to real physical and mental harm because they are being forced to wait for so long. Our schoolchildren are being failed as extracurricular activities all around them are being scaled back and more and more schools are being forced into letting key staff go. The absence of any political accountability or leadership during this critical period has been devastating. Northern Ireland urgently needs Ministers in place who are ready and, most importantly, willing to step in and take decisions to start fixing the many problems we face. 
 
 The upcoming political talks are an opportunity to restore our political institutions. As far as the Ulster Unionist Party is concerned however, in the current political environment, they represent the final chance. It is obvious what needs to happen. The operation of the Executive needs reformed so it is given a genuine chance to succeed, and we need to get back to the politics of consensus as envisioned in the Belfast Agreement. The first step must be reverting to the original system of appointing First and deputy First Ministers. So we do hope that the upcoming political talks succeed. There have been too many false dawns. If there is no deal however, then we must immediately move to Direct Rule. This is the last chance. 
 
-#### Our political asks
+## Our political asks
 
 1. If there is no deal by mid-January then we must immediately move to Direct Rule. Any deal must include the genuine reform of both the Executive and the Assembly. 
 2. In the future if Ministers and Special Advisers are alleged to have broken the Code of Conduct they must face investigation like in any other democratic system. 
@@ -90,7 +91,7 @@ The upcoming political talks are an opportunity to restore our political institu
 
 ---
 
-### It's time to declare a healthcare emergency
+## It's time to declare a healthcare emergency
 
 Our health service is in the midst of an unprecedented and deepening crisis. Never before have so many people been forced to wait, and wait for so long. Almost every waiting time statistic is frightening, but it is worth reviewing the most recent figures just to realise the sheer scale of the crisis. With a population of only 1.8m people; 
 
@@ -126,7 +127,7 @@ Additional measures that must now also be taken:
 
 ---
 
-### Tackling spin with the facts
+## Tackling spin with the facts
 
 Was the two year DUP-Conservative Party deal a success? The DUP claim they secured £1.5bn for our schools, our hospitals, our roads and broadband. What they don’t tell you is a third of it was funding already destined for the Executive simply being reannounced, and hundreds of millions of the remainder has still not been received. 
 
@@ -145,9 +146,9 @@ Was the two year DUP-Conservative Party deal a success? The DUP claim they secur
 
 ---
 
-### Priorities for Ulster Unionist MPs
+## Priorities for Ulster Unionist MPs
 
-#### Reimaging the Union
+## Reimaging the Union
 
 The Union of the United Kingdom works. England, Scotland, Wales and Northern Ireland are better and stronger together than we ever would be apart. We have shared values, a shared history and shared cultures. New devolution settlements in Scotland, Wales, London and here in Northern Ireland have occurred and been subject to significant and ongoing amendment. Our unwritten constitution has had to bear many significant pressures in the last 20 years. Yet despite the many benefits of collectively belonging to the world’s fifth largest economy, the Union is facing a number of existential challenges. Whether it is political populism or the disingenuous calls for a border poll or an independence referendum, Unionism is facing an uncertain future. 
 
@@ -157,7 +158,7 @@ Ulster Unionist MPs will:
 * Ensure Northern Ireland is not left a place apart in any final Brexit deal. We won’t support trade barriers East-West or North-South. 
 * Ensure unionism does better in selling the many benefits of the Union. Collectively Unionism must offer an open, tolerant and welcoming message that is able to both attract traditional support as well as appeal to new audiences. 
 
-#### Supporting communities
+## Supporting communities
 
 Welfare reform was meant to have simplified the overall benefits system, but instead it has made the system more complicated and has driven even more people into real financial hardship. Fortunately however, individuals and families across Northern Ireland were shielded from some of the worst aspects as a result of the mitigation payments previously agreed to in 2015. Those measures are set to expire at the end of March 2020 so legislation must be introduced at Westminster to extend mitigation measures on key issues such as the bedroom tax, especially as a result of the continuing mismatch in the local housing stock. 
 
@@ -167,7 +168,7 @@ Ulster Unionist MPs will:
 * Vote to restore free TV licences for over 75s and retain the triple lock protection for pensions. 
 * End the scandal of Northern Ireland remaining the only UK jurisdiction without funded childcare provision and support calls for the full implementation of a Childcare Strategy, with specific objectives supported by legislation. 
 
-#### Preventing the rewriting of history
+## Preventing the rewriting of history
 
 The Ulster Unionist Party will never support the proposed Historical Investigations Unit - the parallel police force agreed by the DUP and Sinn Fein as part of the Stormont House Agreement. The body would trawl State archives, scrutinising the actions of police officers during the Troubles, whilst being unable to open up any equivalent records held by the terrorists responsible for 90 per cent of deaths during the Troubles. This is exactly the sort of organisation terrorists would want investigating the 30 years of mayhem that Northern Ireland endured. 
 
@@ -177,7 +178,7 @@ Ulster Unionist MPs will:
 * Support the Asset Freezing (Compensation) Bill to use some of the £12.5bn of frozen Libyan assets in London to compensate IRA victims of Libyan supplied weaponry. 
 * Support bespoke measures on health, education and housing, funded as a non-devolved solution by Westminster, to ensure the Armed Forces Covenant is fully compliant in Northern Ireland. 
 
-#### Protecting communities
+## Protecting communities
 
 Throughout our existence, the Ulster Unionist Party has been proud to be the Party of law and order. The 1999 Patten Report made two key recommendations regarding police numbers. It said that for a country of Northern Ireland’s size, and with the particular challenges it faces, the size of the police service should be 7,500 full time officers. It also recommended that those officers be backed up by a Part Time Reserve of 2,500, giving a total of 10,000 officers. 
 
@@ -187,7 +188,7 @@ Ulster Unionist MPs will:
 * Back calls for the UK’s Defence spending to meet the NATO Target of 2% of national GDP, as well as recognising the need to maintain our own nuclear deterrent. 
 * Support closing the loophole in existing legislation which prevents the DPP referring unduly lenient sentences for animal welfare abuses in the Magistrates’ Court to the Court of Appeal. 
 
-#### Safe, affordable and sustainable homes
+## Safe, affordable and sustainable homes
 
 Northern Ireland is simply not building enough houses. Over the next ten years, Northern Ireland needs 12,500 new homes per annum just to keep up with demand, but that target is not being met. As a consequence we are heading for a housing crisis. 
 
@@ -197,7 +198,7 @@ Ulster Unionist MPs will:
 * Support major structural reform of social housing provision, including splitting the landlord function away from the Northern Ireland Housing Executive. 
 * Legislate to reclassify housing associations and to introduce a cross departmental duty to prevent homelessness on statutory services such as the health service and prisons. 
 
-#### Tackling the climate emergency
+## Tackling the climate emergency
 
 The Ulster Unionist Party cares passionately about protecting the environment and taking steps to proactively tackle the threats it faces. Our planet is facing a climate emergency. Tough decisions need to be taken and they need to be taken now. This generation has a moral obligation to protect the environment and the planet to safely pass it on to the next. 
 
@@ -207,7 +208,7 @@ Ulster Unionist MPs will:
 * Introduce a new statutory duty on tackling invasive species, as well as a target to halt the rate at which local species and habitats are declining. 
 * Set a target to plant 1 million new trees by 2025 in order to address the failure that we have just 8% woodland cover compared to the EU average of 37%. The 2007-2011 Programme for Government set a target which wasn’t even half met and the subsequent two PfG’s didn’t even include setting a target. 
 
-#### Giving our children the best chance for success
+## Giving our children the best chance for success
 
 Every child in Northern Ireland deserves to have the chance to succeed in life and we can help achieve that by ensuring they get the very best start. Yet our schools are facing unprecedented budgetary pressures, with increased class sizes and reduced extra-curricular opportunities. That is why the additional funds that will subsequently come to Northern Ireland as a result of the increases in school funding in England should be ring-fenced for front-line education spending. 
 
@@ -217,7 +218,7 @@ Ulster Unionist MPs will:
 * Vote to remove Article 71 of the Fair Employment and Equal Treatment Order which outrageously still permits religious discrimination in the appointment of teachers. 
 * Recognise that our universities are key drivers for future economic growth, and will support the lifting of the cap in order to allow more students to study and stay within Northern Ireland. They will also support a review of interest rates on student loans. 
 
-#### Supporting economic prosperity
+## Supporting economic prosperity
 
 Businesses are at the heart of any successful economy, and that is especially the case here in Northern Ireland. We want to see a strong economy that generates wealth, offers growing wages and provides the opportunity for record levels of employment. Yet across Northern Ireland the economic output is still 4.2% below 2007 levels. This is in comparison to the overall UK GDP average which is 12.9% higher. That productivity deficit, along with the obvious skills gap, must be closed in order to fully support the local economy. By taking proactive decisions such as opening up the Apprenticeship levy to local employers, putting energy pricing to the forefront of future energy strategies to assist larger companies in Northern Ireland who at present pay among the highest electricity tariffs in Europe, and allowing the personal taxation allowance to rise with inflation, there is much that could still be done. 
 
@@ -227,7 +228,7 @@ Ulster Unionist MPs will:
 * Support our tourism industry and create a more level playing field for our airports by abolishing Air Passenger Duty. 
 * Recognise the importance, and for some sectors the absolute necessity, of attracting migrant workers. That is why we will reject the proposed arbitrary cap of £30,000 for migrant salaries. 
 
-#### Assisting our farming and fishing communities
+## Assisting our farming and fishing communities
 
 Whilst Northern Ireland’s farmers have potentially the most to lose from a bungled Brexit deal, our Province still remains by far the least prepared region of the UK. The ongoing absence of a Northern Ireland Executive is proving disastrous at such an important time for local farmers as there has been no progress made on the future model of post-Brexit support. Bearing in mind the now broken pledge of the Conservative Party to guarantee the current cash totals until the end of the 2022 Parliamentary session, we believe farmers here need to be granted a period of certainty. 
 
@@ -237,7 +238,7 @@ Ulster Unionist MPs will:
 * Ensure in the imminent trade negotiations that the UK does not compromise on the quality, traceability and high animal welfare standards of its agri-food produce. 
 * Prioritise access to UK inshore zones to UK vessels to ensure UK fishermen get a fair deal on quotas. 
 
-#### Strengthening our straining infrastructure
+## Strengthening our straining infrastructure
 
 For a small country, Northern Ireland continues to be a world leader in a range of industries. Yet in order to further widen our abilities, we need world class infrastructure. However our hard infrastructure is already struggling - key arterial routes are congested, railway connections – especially to the West - are limited and often non-existent, and the list of projects requiring serious upgrading are growing year on year. We also need to improve key rail routes such as the Antrim line and create new connections to strategic sites such as the Belfast International Airport. Whilst progress has been made in promoting alternative methods of transport such as cycling - better conditions are needed to make sustainable transport a long-term and viable alternative. 
 
@@ -249,7 +250,7 @@ Ulster Unionist MPs will:
 
 ---
 
-### Your Ulster Unionist Candidates
+## Your Ulster Unionist Candidates
 
 * Steve Aiken, East Antrim 
 * Michael Henderson, South Belfast 

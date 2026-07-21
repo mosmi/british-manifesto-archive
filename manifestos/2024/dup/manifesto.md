@@ -26,6 +26,7 @@ sections:
   - local-government
 ---
 
+
 # Democratic Unionist Party Manifesto 2024
 
 ## Speaking Up for Northern Ireland: Working and Winning for You
@@ -34,7 +35,7 @@ sections:
 
 ---
 
-### Contents
+## Contents
 * Leader’s Message
 * Our Commitment to You
 * Our Record of Delivering for Northern Ireland at Westminster
@@ -53,7 +54,7 @@ sections:
 
 ---
 
-### Leader’s Message
+## Leader’s Message
 
 **On 4th July voters will face a clear choice at this General Election.**
 
@@ -84,7 +85,7 @@ By voting DUP on 4th July, you can back our positive plan and ensure our childre
 
 ---
 
-### Our Commitment to You...
+## Our Commitment to You...
 
 **The Democratic Unionist Party has an experienced track record of speaking up for you on issues that matter. The DUP has the strength and depth to be able to make the Pro-Union case and to unashamedly make the case for Northern Ireland in Parliament.**
 
@@ -107,56 +108,56 @@ Delivering an unrivalled, dedicated and professional constituency advice service
 
 ---
 
-### Our Record of Delivering for Northern Ireland at Westminster
+## Our Record of Delivering for Northern Ireland at Westminster
 
-#### Promoting the Union
+## Promoting the Union
 The Democratic Unionist Party has an experienced and unrivalled track record of making the Pro-Union case for Northern Ireland in Parliament. Through our negotiations with the Government, the DUP has secured meaningful, visible and practical proposals to deepen connections throughout our United Kingdom, whilst driving forward the Northern Ireland economy. This includes:
 - the establishment of a new U.K East-West Council to foster deeper links for Northern Ireland as part of the Union across business, education and culture;
 - the creation of Intertrade UK to boost, and remove barriers to, trade throughout the United Kingdom;
 - a twinning programme for primary schools, enabling students from Northern Ireland to benefit from opportunities across the Union.
 
-#### Broadband
+## Broadband
 Northern Ireland is on course to be the first region in Europe to have 100 per cent fibre broadband availability because of £150 million delivered by DUP MPs. A recent Ofcom report, Connected Nations, found that 91 per cent of all premises in Northern Ireland have access to full-fibre broadband, making it by far the best-connected region within the British Isles.
 
-#### Pensions Triple Lock
+## Pensions Triple Lock
 The DUP made the retention of the triple lock on pensions a key pillar of our Confidence and Supply Agreement with the Government in 2017. In the last Parliament, we have continued to stress the importance of this guaranteed protection for pensioners across the United Kingdom. 
 
-#### Jobs and Growth
+## Jobs and Growth
 DUP MPs have secured significant investment for driving growth, creating jobs and generating prosperity in every corner of Northern Ireland. This included:
 - working with UK Ministers to unlock £350 million from the Government for the Belfast Region City Deal, which will create up to 20,000 new jobs, build new world-class visitor experiences and support the regeneration of our towns and cities;
 - achieving significant progress toward a Heads of Terms agreement for the Londonderry and Strabane City Deal and the Mid South West and Causeway Coast and Glens Growth deals; 
 - £150 million in UK Government funding for creating and underpinning an Enhanced Investment Zone in Northern Ireland, to boost growth and attract investment;
 - securing a new £10 million fund to boost investment in strategically important ports linking Northern Ireland and Great Britain. 
 
-#### Help with Energy Costs and Household Bills
+## Help with Energy Costs and Household Bills
 DUP Parliamentarians ensured all households in Northern Ireland received the Government’s £600 energy support payment and benefited from discounted bills under the Energy Price Guarantee. They also supported the ‘Essentials Guarantee’ campaign launched by the Joseph Rowntree Foundation and Trussell Trust, which seeks to ensure that, at a minimum, Universal Credit protects people from going without essentials.
 
-#### Stronger Communities
+## Stronger Communities
 The DUP team at Westminster has successfully fought for vital funding to strengthen local communities and support those who find themselves in challenging circumstances. This included:
 - delivering a £20 million funding package for town centre regeneration in Coleraine and Londonderry;
 - securing tens of millions of pounds in Levelling Up funding for local projects, including the redevelopment of Dundonald International Ice Bowl;
 - fighting for, and delivering, £15 million in emergency support from the UK Government to support flood recovery schemes in Northern Ireland;
 - successfully lobbying the Development for Levelling Up and Department for Communities to fund and launch a scheme to address Non-ACM (Aluminium Composite Material) cladded buildings in Northern Ireland, post-Grenfell.
 
-#### Better Infrastructure
+## Better Infrastructure
 DUP MPs secured almost £5 million through the Union Connectivity Review to progress plans for the electrification of the railway from Belfast to the Border and allowing Translink to deliver feasibility studies to:
 - reopen the Antrim-Lisburn railway line, with an additional stop at Belfast International Airport;
 - re-instate the Portadown to Armagh railway line. 
 
 They also obtained a Government commitment to improving the connections between Northern Ireland and Great Britain, including through the A75 in Scotland. 
 
-#### More for Public Services
+## More for Public Services
 DUP Leader Gavin Robinson was the first MP to campaign for change on how Northern Ireland is funded. It is now accepted that going forward the Treasury’s contribution to public services in Northern Ireland must be on the basis of assessed need. The DUP has led where others have followed and we will continue to seek to address the legacy of chronic underfunding across our government departments. 
 
-#### Levelling Up
+## Levelling Up
 The DUP has challenged, and will continue to challenge, the Government to remedy low levels of financial support awarded to projects in Northern Ireland under the UK Shared Prosperity Fund and press for a remedy to the lack of a formal appeals process.
 
-#### Roll-out of the Armed Forces Covenant
+## Roll-out of the Armed Forces Covenant
 Brave men and women from Northern Ireland make an invaluable contribution to the Armed Forces both at home and abroad. They and their families deserve to be treated fairly and equitably in the provision of key services. In the last term, DUP MPs:
 - supported the Armed Forces Act 2021, delivering on our pledge to ensure the Armed Forces Covenant was legally protected in Northern Ireland as in other parts of the United Kingdom; 
 - insisted on the appointment of a Northern Ireland Veterans’ Commissioner to act as an independent point of contact for, and support, service families locally. 
 
-#### More for Defence
+## More for Defence
 DUP Leader Gavin Robinson promoted the significant contribution Spirit Aerospace, Thales, Harland and Wolff and other companies in the Aerospace, Defence, Security and Space sectors play in creating high-quality and high-paid jobs in Northern Ireland. He has campaigned to deliver significant Ministry of Defence contracts to help secure their future. 
 
 The DUP also secured a Government commitment to launch a review into Northern Ireland’s role in the UK defence network. This review will:
@@ -168,22 +169,22 @@ The DUP also secured a Government commitment to launch a review into Northern Ir
 
 Building on our agreement with the previous Government that the United Kingdom’s 2% NATO defence spending target should continue to be met, DUP MPs continued to pursue an upward trajectory in defence expenditure during the last term. The latest NATO figures show that the UK spent an estimated 2.3% of GDP on defence in 2023. 
 
-#### Strengthening British Citizenship
+## Strengthening British Citizenship
 The DUP introduced the British Nationality (Irish Citizens) Bill to ensure people born in the Republic of Ireland who have lived in Northern Ireland or other parts of the United Kingdom for at least five years can claim British citizenship without the need for tests and fees. This legislation was supported by the Government and became law in May 2024.
 
-#### Muckamore Abbey Public Inquiry
+## Muckamore Abbey Public Inquiry
 DUP Leader Gavin Robinson was at the forefront of bringing allegations of abuse and ill-treatment of patients at Muckamore Abbey Hospital to public attention. The DUP successfully fought for the establishment and commencement of a public inquiry and continues to advocate for increased resources to ensure this work, and the police investigations, continues.
 
-#### Infected Blood Scandal
+## Infected Blood Scandal
 The DUP in Parliament has supported calls for comprehensive compensation for the victims of the infected blood scandal. Our MPs signed an Early Day Motion in July 2023, which recognised the government’s initial actions in making interim compensation payments and called for urgent further compensation for those affected. When this issue was raised in Parliament, our MPs have ensured that Northern Ireland and its citizens were represented.
 
-#### Down’s Syndrome given Minority Status
+## Down’s Syndrome given Minority Status
 DUP Parliamentarians have been a committed and consistent voice for people with disabilities. One of our MPs co-sponsored the Down Syndrome Act 2022, the world’s first piece of legislation recognising people with Down’s syndrome as a specific minority group.
 
-#### Justice for NI Sub-Postmasters
+## Justice for NI Sub-Postmasters
 DUP MPs successfully fought to extend legislation exonerating sub-postmasters wrongly convicted as a result of the Horizon IT scandal to Northern Ireland.
 
-#### Religious Freedom
+## Religious Freedom
 DUP MPs have been consistent advocates for freedom of religion or belief both in the United Kingdom and across the globe. They have:
 - worked with Open Doors and other non-government organisations to throw a spotlight on the persecution of Christians internationally; 
 - supported the International Freedom of Religion or Belief Bill in Parliament;
@@ -192,25 +193,25 @@ DUP MPs have been consistent advocates for freedom of religion or belief both in
 
 We will build on this record to ensure that the rights of those of all faiths and none are protected across the United Kingdom. 
 
-#### Pro-Life
+## Pro-Life
 DUP MPs continued to adopt an unequivocal and determined pro-life stance in Parliament, opposing the commissioning of, and funding for, abortion services in Northern Ireland. One of our MPs chaired the pro-life All-Party Parliamentary Group. 
 
-#### Automated External Defibrillators
+## Automated External Defibrillators
 A DUP MP brought forward a 10-minute rule motion on Automated External Defibrillators (Public Access) Bill 2022-23 with regards to securing public access defibrillators in schools and new public buildings. This was accepted and implemented by the government with funding attached. 
 
-#### GCSE in Sign Language
+## GCSE in Sign Language
 DUP MPs supported plans to consult on the introduction of British Sign Language as a GCSE qualification in schools in England, whilst campaigning for similar steps to be considered in Northern Ireland.
 
-#### Baby Loss Certificates
+## Baby Loss Certificates
 DUP MPs worked closely with colleagues in the Assembly to seek the introduction of a Baby Loss Certificate scheme in Northern Ireland on a similar basis to England.
 
 ---
 
-### Delivering for Northern Ireland in the Assembly
+## Delivering for Northern Ireland in the Assembly
 
 Working together from Westminster, at Stormont and in local government, the DUP has the strength, depth and experience to deliver for communities across Northern Ireland. Since the restoration of devolution in February, DUP Ministers have been to the forefront of delivering results for households, businesses and workers.
 
-#### Department for Communities Outcomes Delivered:
+## Department for Communities Outcomes Delivered:
 - Announced the way forward for a sign language bill, ensuring that deaf people have the same rights and opportunities as those in the hearing community;
 - Help for working families by launching the ‘Intermediate Rent’ product, where a long-term low interest loan is offered to an operator to develop a new supply of affordable homes for rent at 20% discount off market value;
 - Approved the Northern Ireland Football Fund – a £36 million fund of investment into performance clubs, grassroots clubs and a National Training Centre;
@@ -229,7 +230,7 @@ Working together from Westminster, at Stormont and in local government, the DUP 
   - £3 million supporting people programme – helping vulnerable people to live independently.
 - Launch of consultation to reduce the threshold for charity registration to reduce bureaucracy and burdens on smaller local charities.
 
-#### Department of Education Outcomes Delivered:
+## Department of Education Outcomes Delivered:
 - Settled the long-running industrial action by teachers and increased the starting salary for teachers in Northern Ireland to £30,000;
 - Resolving the pay and grading review for educational support staff, including classroom assistants;
 - Announced the biggest step change to education planning for a generation, with an ambitious and far-reaching programme of investment in facilities for children with special educational needs, which will transform the education and lives of our most vulnerable children and their families;
@@ -243,9 +244,9 @@ Working together from Westminster, at Stormont and in local government, the DUP 
 
 ---
 
-### Making Northern Ireland Work
+## Making Northern Ireland Work
 
-#### Promoting the Union and Removing Barriers within the United Kingdom
+## Promoting the Union and Removing Barriers within the United Kingdom
 The DUP will always work to promote and strengthen the case for the Union between Northern Ireland and the rest of the United Kingdom. In Parliament we also stand ready to work in co-operation with other Unionists. 
 
 The Northern Ireland Protocol was imposed over the heads of the people of Northern Ireland and without support from any unionist elected representative. 
@@ -305,7 +306,7 @@ The DUP remains committed to urging both the Government and Commons authorities 
 
 ---
 
-#### Putting You First - Delivering Fair and Equitable Funding for our NHS, and other Public Services
+## Putting You First - Delivering Fair and Equitable Funding for our NHS, and other Public Services
 The DUP believes underfunding has systematically destroyed Northern Ireland’s capacity to provide frontline services that are fit for the 21st century. 
 
 Northern Ireland has the highest proportion of public sector workers in the United Kingdom. Only Scotland’s population is more dispersed. Yet when it comes to distributing money under the Barnett Formula, Northern Ireland receives less than it needs to match public services in England. That means money for health reform and pay awards simply does not go far enough. It means the money to repair our roads and increase school budgets does not exist. Meanwhile Scotland continues to receive more than it needs and Wales benefits from the protection of a funding floor.
@@ -364,7 +365,7 @@ The DUP will seek the faithful implementation of these schemes, the expansion of
 
 ---
 
-#### Campaigning to Protect Family Incomes
+## Campaigning to Protect Family Incomes
 As the cost-of-living crisis continues to place new and significant pressures on household budgets, the DUP is clear that Government should do more to protect incomes, ensure taxation is fair, with more remaining in the pockets of working people, and ensuring that wages are able to lift more people out of poverty. 
 
 DUP MPs will campaign to:
@@ -448,7 +449,7 @@ We will continue to seek the abolition of the BBC licence fee and the creation o
 
 ---
 
-#### Unleashing our Full Economic Potential
+## Unleashing our Full Economic Potential
 The Democratic Unionist Party has been, and remains, committed to growing the Northern Ireland economy. We want to see an ambitious approach taken toward creating more and better jobs, which in turn will lead to greater prosperity for all of our people. 
 
 Between 2007 and 2021, the DUP has helped create 50,000 jobs and ensure we punched well above our weight within the UK in terms of securing record levels of investment. 
@@ -606,7 +607,7 @@ The DUP believes there are a number of fundamental issues that require resolutio
 
 ---
 
-#### A Strategic Role for UK Defence and Security
+## A Strategic Role for UK Defence and Security
 The Democratic Unionist Party believes that now more than ever there is a need to strengthen the United Kingdom’s defence industrial base and grow our Armed Forces. Putin’s abhorrent invasion of Ukraine and the proliferation of cyber threats from China, Iran and North Korea has demonstrated the importance of the UK being equipped with the military and intelligence capabilities to protect our national interests. 
 
 Without a vision to deter and respond to residual threats posed by those intent on undermining our democratic institutions and harming our citizens, we believe the UK’s role in a volatile and fast-changing global landscape will become increasingly precarious. The multi-faceted and ever-evolving nature of the challenges we face requires a constant appraisal of our Armed Forces and intelligence agencies to ensure they are not only fighting-fit but equipped with the right skillsets to respond in an agile and decisive fashion irrespective of the threat facing them.
@@ -692,7 +693,7 @@ DUP MPs will:
 
 ---
 
-#### Backing our Farmers and Food Security
+## Backing our Farmers and Food Security
 The DUP recognises that farms and our rural communities are an integral part of the social and economic fabric of Northern Ireland. We know that the challenges facing primary producers can, at times, take their toll on farm families, negatively impacting their health and wellbeing. DUP MPs will fight to ensure they receive the right support, and the proper recognition, going forward. 
 
 **Direct Farm Support**
@@ -746,7 +747,7 @@ The DUP also recognises that coastal erosion is also a concern for many resident
 
 ---
 
-#### Leading a Fairer - Not Faster - Path Towards Net-Zero
+## Leading a Fairer - Not Faster - Path Towards Net-Zero
 The DUP supports the United Kingdom’s long-term net zero ambitions and will advocate for policy and initiatives that are environmentally responsible and support decarbonisation. 
 
 Although we appreciate that there is a role for ambitious and flexible emissions targets in driving forward progress, we remain concerned that recent legislation, including in Northern Ireland, has been rushed, poorly drafted and conflicts with independent scientific advice by the Climate Change Committee. 
@@ -817,7 +818,7 @@ In order to contribute to the 70% recycling rate for all waste in Northern Irela
 
 ---
 
-#### Defending Our Most Vulnerable
+## Defending Our Most Vulnerable
 
 **Pro-Life**
 The DUP is unashamedly pro-life and continues to oppose the radical abortion laws foisted on communities in Northern Ireland. Since 2019, DUP MPs have:
@@ -843,7 +844,7 @@ DUP MPs will:
 
 ---
 
-#### Investing More in National Infrastructure
+## Investing More in National Infrastructure
 
 Delivering high quality infrastructure will be the foundation of future growth across the United Kingdom. The DUP not only has a strong record of improving links between Great Britain and Northern Ireland but a clear vision for better connectivity nationally, throughout the British Isles and with the rest of the world.
 
@@ -901,7 +902,7 @@ The DUP would campaign to establish a national database of public land. A major 
 
 ---
 
-#### Standing Up for Victims of Crime
+## Standing Up for Victims of Crime
 
 **Online Harm**
 The DUP will campaign to end the ‘Wild West’ of social media and to protect children and all internet users from harm, abuse and misinformation online. Our MPs supported key aspects of the Online Safety Act, including:

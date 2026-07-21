@@ -27,13 +27,14 @@ sections:
   - local-government
 ---
 
+
 # Welsh Liberal Democrats Manifesto 2019
 
 ## Stop Brexit
 
 Build a Brighter Future
 
-### Contents
+## Contents
 
 **Leader’s Foreword 5**
 
@@ -126,7 +127,7 @@ For me, the choice is clear. To stop Brexit and build that brighter future, vote
 
 **Jo Swinson, Leader of the Liberal Democrats**
 
-### Introduction
+## Introduction
 
 The Welsh Liberal Democrats are fighting this election with a clear plan to build a brighter future for Wales. The first step of this plan is simple: stop Brexit and use the subsequent remain bonus to invest in our public services.
 
@@ -152,7 +153,7 @@ On December 12th, you will have a historic opportunity to stop Brexit and build 
 
 **Jane Dodds, Leader of the Welsh Liberal Democrats**
 
-### Stop Brexit
+## Stop Brexit
 
 Every vote for the Welsh Liberal Democrats is a vote to stop Brexit and stay in the European Union.
 
@@ -182,7 +183,7 @@ To ensure that EU citizens are not denied their vote in any election or referend
 
 The national humiliation of Brexit puts so much at risk – the NHS, public services, jobs across the country, scientific collaboration, peace in Northern Ireland, the unity of the UK, our ability to tackle global crises such as climate change and our global reputation as a country that is confident and outward-facing. By keeping the UK in the EU, we can get on with tackling the real issues facing our country, using the Remain Bonus of £50 billion to invest in public services and tackle inequality. A Liberal Democrat government will stop Brexit – and build a brighter future for Wales and the UK by keeping us at the heart of the European Union.
 
-### Our Plan for a Stronger Economy
+## Our Plan for a Stronger Economy
 
 People who work hard and contribute to society should have good, fulfilling and well-paid jobs. Businesses and entrepreneurs who innovate, invest and behave responsibly to their employees and to the environment should be supported. This is not how Wales or the UK is today. Too many people can’t get on, and live secure, happy and fulfilling lives. The failure of governments to invest in infrastructure and skills has undermined productivity, and now the Conservatives threaten to make the vast majority of people poorer and punish business and enterprise through a hard Brexit.
 
@@ -200,7 +201,7 @@ Liberal Democrats are now the natural home of business: we are the only party wi
 
 * **Introducing a wellbeing budget and basing decisions for UK Government spending on what will improve wellbeing as well as on economic and fiscal indicators**
 
-#### Investment for the Future across the UK
+## Investment for the Future across the UK
 
 Opportunity and access to education, employment and services are not fairly spread around the UK. This means that many people become stuck in insecure work in which they have no prospect of promotion. The Conservatives pay lip service to the idea of regional growth while pursuing a reckless Brexit that will deepen inequality and place trade barriers between Northern Ireland and the rest of the UK. Labour’s backwards-looking approach of Whitehall running renationalised industries denies people and communities autonomy and will hit investment and stifle innovation. Liberal Democrats are the only party looking to the future with sustainable answer to the regional divide. We will:
 
@@ -222,7 +223,7 @@ Opportunity and access to education, employment and services are not fairly spre
 
 * £5 billion of initial capital for a new Green Investment Bank, using public money to attract private investment for zero-carbon priorities. We will ensure that the National Infrastructure Commission takes fully into account the climate and environmental implications of all national infrastructure decisions.
 
-#### UK2050: Our Vision for an Innovation-Led Economy
+## UK2050: Our Vision for an Innovation-Led Economy
 
 We want to lay the foundations for the UK to be the best place in the world for innovation-led businesses in the long-term – to be a place where people come from across the EU and the world to turn their ideas into reality. But with R&D and innovation investment lagging behind other countries and being overly concentrated in the south east, it needs major change to make this vision a reality. Only the Liberal Democrats can deliver this: the Conservatives are harking back to a romanticised imperial past, while pursuing a Brexit that will hit research and innovation, which is so dependent on European and other international collaboration; Labour have no plan for the economy of the future.
 
@@ -240,7 +241,7 @@ Liberal Democrats have a transformative plan to make the UK a world-leader in re
 
 * Continue to support investment in new UK digital start-ups by reforming the British Business Bank’s support for venture capital funds to enable it to help funds ‘crowd in’ new backers rather than acting as a funder of last resort.
 
-#### Harnessing the Benefits of New Technology
+## Harnessing the Benefits of New Technology
 
 Our ambition is for the UK to lead the world in ethical, inclusive new technology, including artificial intelligence. We will invest in education to equip people with the skills they need – whether to use new technology or to create it – while also attracting and welcoming the best talent from around the world. We will enable innovators and entrepreneurs to experiment and take risks, while taking on concentrations of power that stifle competition, limit choice for consumers and hamper progress. And we will ensure that new technology is developed and deployed ethically, so that it respects people’s fundamental rights, including the rights to privacy and non-discrimination. We will:
 
@@ -262,7 +263,7 @@ Our ambition is for the UK to lead the world in ethical, inclusive new technolog
 
 * Empower consumers and ensure that everyone can enjoy the benefits of new technology, by requiring all products to provide a short, clear version of their terms and conditions, setting out the key facts as they relate to individuals’ data and privacy.
 
-#### A Better Deal for Entrepreneurs and Small Business
+## A Better Deal for Entrepreneurs and Small Business
 
 Dynamic, entrepreneurial businesses are a force for good: entrepreneurs, the self-employed and small businesses form the backbone of local economies and government should support them. However, the Conservatives are pursuing policies that make it harder to start successful new businesses and Labour do not understand or value start-ups and small businesses. Liberal Democrats are the only party who understand the importance of these businesses and who will ensure that they have the access to funding and long-term capital that they need. We will:
 
@@ -284,7 +285,7 @@ Dynamic, entrepreneurial businesses are a force for good: entrepreneurs, the sel
 
 * Work with all levels of government to reform the business rates system, prioritising reforms that recognise the development of the digital economy, lessen the burden on smaller businesses, and ensure high streets remain competitive. We will also consider the implementation of a Commercial Landover Levy.
 
-#### Better Business
+## Better Business
 
 Business can be a force for good in our economy: we need thriving businesses to create wealth and a model of responsible capitalism generates good jobs, shares prosperity and sees businesses promote rights and protect the environment. But the system is not working as it should: unscrupulous employers are still able to exploit their workforce and even when businesses fail, those at the top often receive huge rewards while staff lose their jobs. And we do not yet have a framework that sufficiently rewards businesses for environmentally sustainable behaviour – or penalises them for environmentally damaging activities. Labour do not recognise the good that business can do; the Conservatives don’t care about the consequences of businesses that are run irresponsibly. Only the Liberal Democrats will promote responsible capitalism that works for the future. Our plan is for an economy that works for everyone, fosters a diversity of types of business
 
@@ -304,7 +305,7 @@ Business can be a force for good in our economy: we need thriving businesses to 
 
 * Extend the scope of the existing ‘public interest’ test when considering approvals for takeovers of large or strategically significant companies by overseas-based owners to recognise the benefits to the UK economy, workers and consumers of protecting UK companies from speculative or short-term interests.
 
-#### Fair Taxes
+## Fair Taxes
 
 Government must ensure the tax system meets the needs of a modern economy and is ready for the transition to a digital and zero-carbon economy. Businesses and individuals who benefit from being based in the UK should pay their fair share in tax – and responsible businesses are willing to do this. They benefit from public goods such as an educated workforce, a stable economy and publicly-funded infrastructure, and it is right that they should contribute towards them. But the taxation system is unbalanced and unfair: it is too easy for tech giants and large monopolies to avoid tax and income from employment is taxed more harshly than income generated by wealth.
 
@@ -332,7 +333,7 @@ Labour and the Conservatives are looking to the past for answers that will not w
 
 * Scrap the Marriage Tax Allowance.
 
-#### Future of Work
+## Future of Work
 
 People should have secure jobs, with proper rights and fair pay. However, changes in technology and the nature of employment have outgrown the existing system of employment rights and protections. The Conservatives have not done enough to support workers as they are sucked into insecure, poorly paid jobs; Labour’s dogmatic, backward-looking approach would destroy flexible jobs that people value and harm the economy. Liberal Democrats are the only ones with a plan for 21st century work: a plan that will give employees protection and a voice at work while enabling innovative business models to flourish in the modern economy. We will make work pay and ensure that there are good and well-paid jobs available for people to do. We will:
 
@@ -358,7 +359,7 @@ People should have secure jobs, with proper rights and fair pay. However, change
 
 * Strengthen the ability of unions to represent workers effectively in the modern economy, including a right of access of to workplaces.
 
-#### Responsible Finances
+## Responsible Finances
 
 A good government should responsibly manage the nation’s finances: taking advantage of opportunities to borrow to invest in key infrastructure while making sure that day-to-day spending does not exceed the amount of money raised in taxes. The Liberal Democrats are the only party who will manage the country’s finances properly. The Conservatives are pursuing a Brexit that will wreck the economy for a generation, making it impossible to sustainably invest in public services. Labour will waste billions nationalising utilities – spending money that could be used to improve them just to bring them under state control. Our plan for the future is built on responsible management of the country’s finances: stopping Brexit and using the increased revenue from a bigger economy to invest in services and using the money that Labour would waste to tackle the climate emergency and invest in transport and energy infrastructure. We will:
 
@@ -370,7 +371,7 @@ A good government should responsibly manage the nation’s finances: taking adva
 
 * Protect the independence of the Bank of England and keep the inflation target of two per cent.
 
-#### Promoting Wellbeing
+## Promoting Wellbeing
 
 There is no more fundamental purpose for government than supporting people to expand their quality of life. A successful economy is important, because it supports jobs, income and well-funded public services – all of which matter for individuals’ wellbeing. But the conventional focus on GDP as the objective not only of government but society as a whole is clearly insufficient. People in the UK deserve to have their wellbeing considered and invested in, and a Liberal Democrat government will do just that. Liberal Democrats understand that wellbeing requires both a strong economy and a government that considers many other aspects of life, including support for people’s mental health and good working conditions. Only a Liberal Democrat government will put the wellbeing of people and the planet first.
 
@@ -388,7 +389,7 @@ We are the only party with a plan to invest in wellbeing and put it at the foref
 
 * Ensure that the planet is protected for future generations with clean air to breathe and urgent action to move towards net-zero carbon emissions.
 
-### Education: Our National Mission
+## Education: Our National Mission
 
 Education from the early years right through adulthood is critical to ensuring that everyone can reach their full potential. The quality of schooling you enjoy should not be determined by where you are born, where you go to school or how rich your parents are. Yet people who receive a poor education are far less likely to enjoy a decent opportunity to make the best of their lives; diminishing their own futures and damaging the country’s prosperity.
 
@@ -408,7 +409,7 @@ Liberal Democrats recognise the dual role of education in giving young people th
 
 * **Overseeing the most progressive higher education student support policy in the UK, which supports every student, no matter their mode of study, with living costs grants.**
 
-#### Better for Early Years
+## Better for Early Years
 
 * Investing in high quality early years education has a huge impact on children’s attainment as they enter school. Our most vulnerable children have the most to gain from excellent early years settings, with strong partnerships with parents a key component.
 
@@ -418,7 +419,7 @@ Liberal Democrats recognise the dual role of education in giving young people th
 
 * Childcare is devolved to the Welsh Government, but this childcare commitment would lead to the Welsh Government having an extra £464m a year on average. We would urge the Welsh Government to use this funding to deliver the same free, high quality childcare offer in Wales.
 
-#### Teachers – our biggest asset in education
+## Teachers – our biggest asset in education
 
 Teachers are the biggest and most important asset in our education system. That is why Kirsty Williams has secured the single biggest investment in the profession since devolution; delivering the biggest immediate uplift in starting teacher salaries anywhere in the UK; and introducing the most comprehensive professional learning programme available in the history of education in the UK. We are:
 
@@ -438,7 +439,7 @@ Teachers are the biggest and most important asset in our education system. That 
 
 * Attracting and retaining more high-quality applicants and high calibre mature graduates into teaching through a re-designed Graduate Teacher Programme.
 
-#### Improving Education Standards
+## Improving Education Standards
 
 Liberal Democrats want to give every child the chance of attending an excellent local school. We are:
 
@@ -464,7 +465,7 @@ Liberal Democrats want to give every child the chance of attending an excellent 
 
 * Investing in school broadband to ensure that all schools across Wales can embed the new Digital Competence Framework and access resources made available through the Hwb platform.
 
-#### Creating a Better Curriculum
+## Creating a Better Curriculum
 
 In government in Wales, Kirsty Williams is developing a world-class curriculum that will help raise academic standards across our schools. It is a curriculum being designed by teachers and experts and being shaped in schools across Wales. We want schools and teachers to have the flexibility to teach pupils the way they know best. But we also believe that parents and children need to know that the curriculum in every school will cover the essentials and combine knowledge and skills. This curriculum will support teachers to be skilled educators who inspire a love of learning.
 
@@ -482,7 +483,7 @@ Alongside introducing a new curriculum for Wales, we are:
 
 * Establishing a National Endowment for Music, which will enable more young people to access musical opportunities.
 
-#### Getting children and families ready to learn
+## Getting children and families ready to learn
 
 Schools are on the front line in dealing with children and young adults with mental health issues. We also know that children cannot learn properly if they are undernourished.
 
@@ -506,7 +507,7 @@ Parents are under huge pressure and receive little support even though home is t
 
 * Ensuring collaboration between leading education and family organisations to improve the flow of helpful information between home and school without increasing teacher workload.
 
-#### A world class university sector, open to all
+## A world class university sector, open to all
 
 The ability of universities to attract funding to maintain top quality research activity and deliver the best teaching depends on us being open and outward looking. The UK Government’s disastrous approach to Brexit is already damaging our universities. Liberal Democrats will protect our world-leading higher education sector, which relies on international collaboration and being able to attract leading academics from around the world. In government we have introduced the most generous and progressive student finance system in the UK. It is unique in Europe for its approach to supporting all students with living costs grants. We have introduced a system that provides financial support for living costs of all students, including equivalent support for postgraduate and part-time learners. This has resulted in record levels of part- time and post-graduation students accessing higher education, delivering for social mobility and economic prosperity. We are:
 
@@ -528,7 +529,7 @@ The ability of universities to attract funding to maintain top quality research 
 
 * Maintain access to EU funding streams, including Horizon 2020 and Marie Sklodowska- Curie Actions funding.
 
-#### Lifelong opportunities to learn
+## Lifelong opportunities to learn
 
 We need to grow Wales’ skills base, especially in the technologies and industries that are most important to our economic future. We want it to become the norm for businesses to take on and train up young people as apprentices in every sector, and for higher level apprenticeships to be understood as a respected alternative to university education.
 
@@ -546,7 +547,7 @@ As our economy rapidly changes, the need for people to retrain and reskill has n
 
 * Place the needs of learners at the heart of the education system by establishing clear and flexible learning and career pathways.
 
-#### How the EU Helps
+## How the EU Helps
 
 Membership of the EU has greatly benefited our university sector. The UK has one of the strongest university sectors in the world and it’s an area where we punch well above our weight. The EU – through funding, facilities and people – is a vital part of the UK’s success that it. Before the referendum, the UK’s universities received around £730 million a year from the EU to spend on research. Membership of the EU means that academics of an international calibre can easily come to teach in our universities and pass their expertise on to British students. It also allows them access to the large science facilities elsewhere in the EU, making the UK an attractive place to work and conduct research.
 
@@ -554,7 +555,7 @@ The Erasmus scheme provides British and students with fantastic opportunities to
 
 The EU benefits schools as well. Our schools have staff shortages in a number of areas and, without EU citizens, teaching staff would be even more stretched – EU citizens teaching in British schools improves children’s education. Membership of the EU also gives schools easy access to school trips and school exchanges, allowing children to experience other cultures and broaden their horizons.
 
-### Our Plan for a Green Society and a Green Economy
+## Our Plan for a Green Society and a Green Economy
 
 The UK should be leading the world in tackling the climate emergency. We are the first generation to know we are destroying the environment, and the last generation with a chance to do something about it before it is too late. There is no Planet B. If we fail to act, millions of people – at home and abroad – will suffer the impacts of floods, storms and heatwaves, rising food prices and the spread of diseases; the global financial system will be destabilised, poor countries could collapse and the number of refugees will soar.
 
@@ -578,7 +579,7 @@ The Liberal Democrats have the thought-through, deliverable plan for that new Gr
 
 * **Investing in public transport, electrifying Britain’s railways and ensuring that all new cars are electric by 2030.**
 
-#### Climate Action Now
+## Climate Action Now
 
 The climate emergency can only be tackled effectively by ensuring that every relevant decision taken by the UK Government, Welsh Government, councils, businesses, investors, communities and households makes progress towards the net zero objective. We will set a new legally binding target to reduce net greenhouse gas emissions to zero by 2045 at the latest, and implement a comprehensive climate action plan, cutting emissions across all sectors. To realise these goals, we will:
 
@@ -598,7 +599,7 @@ The climate emergency can only be tackled effectively by ensuring that every rel
 
 * Implement the UK’s G7 pledge to end fossil fuel subsidies by 2025 and provide Just Transition funding for areas and communities negatively affected by the transition to net zero greenhouse gas emissions.
 
-#### Renewable Energy
+## Renewable Energy
 
 Thanks to Liberal Democrat policies in government, the UK has made major strides in cutting emissions from power generation; wind power is now the cheapest form of electricity generation. Now we can go further: we aim to decarbonise the power sector completely, supporting renewables and household and community energy to create jobs and cut fossil fuel imports. We will:
 
@@ -612,7 +613,7 @@ Thanks to Liberal Democrat policies in government, the UK has made major strides
 
 * Provide an additional £12 billion over five years to support these commitments, and ensure that the National Infrastructure Commission, National Grid, the energy regulator Ofgem, and the Crown Estate work together to deliver our net zero climate objective.
 
-#### Warm Homes and Lower Energy Bills
+## Warm Homes and Lower Energy Bills
 
 Everyone should be able to afford to heat their home so that it is warm enough for them to live in. However, too many households are in fuel poverty. Homes they cannot afford to heat to a decent standard partly due to poor insulation and heat loss. This contributes to climate change and causes ill-health and early deaths. We will implement an emergency ten-year programme to reduce energy consumption from all buildings. Cutting emissions and energy bills, ending fuel poverty and generating employment. Supported by investing over £6 billion a year on home insulation and zero-carbon heating by the fifth year of the Parliament. We will:
 
@@ -624,7 +625,7 @@ Everyone should be able to afford to heat their home so that it is warm enough f
 
 * Adopt a Zero-Carbon Heat Strategy, including reforming the Renewable Heat Incentive, requiring the phased installation of heat pumps in homes and businesses off the gas grid, and piloting projects to determine the best future mix of zero-carbon heating solutions
 
-#### Green Industry, Green Jobs and Green Products
+## Green Industry, Green Jobs and Green Products
 
 Given the right support, British businesses have the chance to be world leaders in green technology. UK low-carbon businesses already have a combined turnover of £80 billion and directly employ 400,000 people, and under our proposals these will grow. We will provide support for innovation to cut energy and fossil fuel use in industrial processes – reducing emissions, cutting dependence on fossil fuel imports and generating jobs and prosperity. We will:
 
@@ -644,7 +645,7 @@ Given the right support, British businesses have the chance to be world leaders 
 
 * Work with the Welsh Government and other devolved governments to create an expanded deposit return scheme for all food and drink bottles and containers.
 
-#### Saving Nature and the Countryside
+## Saving Nature and the Countryside
 
 A healthy natural environment, where people breathe clean air, drink clean water and enjoy the beauty of the natural world, lies at the heart of the society and the economy Liberal Democrats want to create. Yet nature is under threat: unsustainable farming practices are depleting the soil and, together with air and water pollution, contributing to a rapid decline in the numbers of insects, birds and other animals. One in seven UK species are at risk of extinction.
 
@@ -660,7 +661,7 @@ We will protect the natural environment and reverse biodiversity loss at the sam
 
 * Ensure that sustainability lies at the heart of fisheries policy, rebuilding depleted fish stocks to achieve their former abundance. Fishers, scientists and conservationists should all be at the centre of a decentralised and regionalised fisheries management system. Immigration policy should also be flexible enough to ensure that both the catching and processing sectors have access to the labour they need.
 
-#### Farming, Food and Agriculture
+## Farming, Food and Agriculture
 
 Brexit puts farmers, agricultural businesses and rural communities in huge danger. It threatens to cut farmers and businesses off from their main markets, levy substantial tariffs on Welsh lamb and beef and flood Welsh markets with chlorinated chicken and hormone-treated beef via a US trade deal. Brexit also threatens cuts to the financial support that underpins farmers’ livelihoods and their ability to manage the countryside.
 
@@ -680,7 +681,7 @@ Our system must support farmers, secure food production, and protect the environ
 
 * Bovine TB is a horrifying disease that causes suffering to wild and domestic animal populations. We wish to continue efforts to eradicate the disease in the British Isles.
 
-#### Animal Welfare
+## Animal Welfare
 
 Liberal Democrats believe that all possible steps should be taken to promote animal welfare and prevent animal suffering, with better protection for animals, and full regard for animal welfare. We will:
 
@@ -694,7 +695,7 @@ Liberal Democrats believe that all possible steps should be taken to promote ani
 
 * Minimise the use of animals in scientific experimentation, including by funding research into alternatives.
 
-#### Improving Transport
+## Improving Transport
 
 Britain’s transport systems are broken. Commuting by rail is expensive, unreliable and unpleasant, and away from the major commuter routes, buses, trams and trains are so infrequent and expensive that cars are essentially made a necessity. This in turn has made air pollution – mostly caused by cars – one of the biggest causes of preventable illness in the UK, causing at least 40,000 premature deaths a year and costing the NHS £15 billion. And surface transport is now the largest source of greenhouse gas emissions in the UK, with almost no progress in reducing them since 1990. The UK’s share of international aviation and shipping emissions has risen by almost 80 per cent since 1990. Liberal Democrats will meet this challenge by:
 
@@ -704,7 +705,7 @@ Britain’s transport systems are broken. Commuting by rail is expensive, unreli
 
 * Accelerating the transition to ultra-low-emission transport – cars, buses and trains – through taxation, subsidy and regulation. Together these steps will tackle the clean air crisis, meet the challenge of climate change, improve people’s health, stimulate local and regional prosperity and develop British zero-carbon industries, with benefits for jobs, growth and exports.
 
-#### Clean and Green
+## Clean and Green
 
 To achieve our net-zero climate target by 2045, we aim to reduce emissions from surface transport to near zero; at the same time the transition to electric vehicles and from private to public transport will drastically cut air pollution. Emissions from the UK’s share of international aviation are much more difficult to tackle; we need to accelerate the development of new technologies and cut demand for flying, particularly from the 15 per cent of individuals who take 70 per cent of flights. We will:
 
@@ -720,7 +721,7 @@ To achieve our net-zero climate target by 2045, we aim to reduce emissions from 
 
 * Develop a strategic airports policy for the whole of the UK. We will focus on improving existing regional airports, and encourage, in particular, the development of Cardiff airport. We will ensure no net increase in runways across the UK.
 
-#### Fixing Wales’ Railways
+## Fixing Wales’ Railways
 
 There is enormous scope to improve Britain’s railways, providing reliable and affordable train services and cutting emissions. The Tories’ and Labour’s ideological obsessions – the former with privatisation, the latter with nationalisation – only serve to get in the way of making real improvements through investment and regulation. We will improve the railways, reform the franchising system and improve services to customers. We will:
 
@@ -736,7 +737,7 @@ There is enormous scope to improve Britain’s railways, providing reliable and 
 
 * Ensure new rail franchises include a stronger focus on customers, and completing a programme of investment in new stations, lines and station facilities as a matter of urgency. Continue the Access for All programme, improving disabled access to public transport as a key priority.
 
-#### How the EU helps
+## How the EU helps
 
 Climate change is a global problem and tackling requires us to work closely with partners. The EU are the international block that is most committed to combatting climate change and working with them greatly amplifies the UK’s voice. The EU also sets and enforces the UK’s environmental standards so that the government is held to account for not meeting them. This has been used to great effect in highlighting poor air quality in the UK.
 
@@ -748,7 +749,7 @@ The EU also plays an important role in supporting farmers, protecting the countr
 
 The UK is heavily reliant on EU workers to secure animal welfare. Around half of veterinary surgeons registering to practise in the UK each year, and over 90% of Official Veterinarians working in abattoirs, are non-UK EU nationals.
 
-### Our Plan for Health and Social Care
+## Our Plan for Health and Social Care
 
 We recognise that powers over the running of the NHS are devolved to the Welsh Government, yet decisions made in England on health affect many people in Wales. These policies therefore make clear the Welsh Liberal Democrats’ vision and priorities for how the Welsh NHS should deliver for patients.
 
@@ -756,7 +757,7 @@ Britain’s National Health Service used to be the envy of the world. Free at th
 
 Good health is a prerequisite to taking full advantage of life’s opportunities, and we must do all we can to help people stay healthy, as well as provide high-quality care when they are ill. Mental health is just as important as physical health and we must make it a priority to deliver equality between the two. We are living longer, but that means more people are living with conditions like diabetes and dementia who need help to live with dignity and the maximum degree of independence. We must set the highest standards in care and encourage effective collaboration between health and social services. We will work to improve wider factors like warm homes, good air quality and access to exercise and healthy food so that everyone can have the best chance to lead a healthy life.
 
-#### Funding for Health and Social Care
+## Funding for Health and Social Care
 
 The UK Government has an important role to play in giving the NHS in Wales the resources it needs to provide the care the people deserve. The UK Government has a responsibility to provide the Welsh Government with a budget that gives the Welsh Government the opportunity to properly fund health and social care.
 
@@ -778,7 +779,7 @@ Liberal Democrats will put our health and social care system back on a sustainab
 
 * We will also continue to make the case for our own cross-party health and social care commission in Wales, bringing together stakeholders to review the financial and workforce sustainability of health and social care in Wales and to examine the practicalities of greater integration. Were we able to establish both our UK-Wide convention and our commission for Wales we would expect the two to fully work together on the question of financial sustainability.
 
-#### Better Mental Health
+## Better Mental Health
 
 One in four people experience a mental health problem in any given year. For too long, mental health has been stigmatised and ignored. We strongly believe mental health should be taken as seriously as physical health and are determined to give it the equal attention it deserves. We know that not enough resources reach front line services and that in the fight for parity of esteem, there is still a very long way to go.
 
@@ -810,7 +811,7 @@ That’s why Liberal Democrats think we need to put 1p in the £ on income tax. 
 
 * Establish a Gambling Ombudsman.
 
-#### Supporting our Workforce
+## Supporting our Workforce
 
 Our health and social care services’ greatest resource is their staff, working tirelessly under immense pressure. We will:
 
@@ -830,7 +831,7 @@ Our health and social care services’ greatest resource is their staff, working
 
 * Support GP federations and clusters being given real decision-making powers with delegated budgets.
 
-#### Help to Stay Healthy
+## Help to Stay Healthy
 
 It is better for patients and for the NHS if we keep people healthy in the first place, rather than just waiting until people develop illnesses and come for treatment, too much of NHS spending is on diseases that are preventable. We need to do more to promote healthy eating and exercise, making people aware of the dangers of smoking and excessive consumption of alcohol and other drugs, and helping to improve mental health and wellbeing. We will:
 
@@ -876,7 +877,7 @@ We believe that everyone has a right to make independent decisions over their re
 
 * Support the people of Northern Ireland to have access to abortion facilities within their own province.
 
-#### How does the EU help?
+## How does the EU help?
 
 EU citizens make a huge contribution to the UK’s health and social care services. A substantial proportion of doctors, nurses and social care workers in Wales are EU nationals and the number is falling since the EU referendum.
 
@@ -884,7 +885,7 @@ EU membership benefits health and social care services in other ways too. The EU
 
 The UK imports a great number of medical goods from the EU that are essential for treating disease: we rely on our membership of Euratom to get access to the radioactive isotopes that are relied upon for cancer diagnosis, we rely on imports of blood plasma – which cannot be replaced from within the UK due to the risk of variant CJD – from the EU, and the UK is also dependent on the EU for insulin. Membership of the EU – and Euratom – helps protect the health and wellbeing of people in the UK.
 
-### Our Plan to Build a Fair Society
+## Our Plan to Build a Fair Society
 
 People should have enough money to keep a roof over their heads, buy food, heat their home, access services and opportunities online, or afford a simple bus journey to visit or care for family. But this is sadly beyond the reach of too many people: life has become unaffordable. While the UK is one of the world’s richest countries, the benefits and opportunities that should follow from that are felt increasingly unevenly across our communities.
 
@@ -906,7 +907,7 @@ Liberal Democrats are the only party capable of building a criminal justice syst
 
 * **Creating a £50 billion Regional Rebalancing Programme to address the historic investment disparities between our nations and regions.**
 
-#### A Safety Net that Works
+## A Safety Net that Works
 
 The social security system is not working as it should: it is driving people further into poverty and forcing families to rely on foodbanks to get by. The Conservatives have designed the welfare system based on their backward-looking view of work and families and are making the matter worse. Liberal Democrats are looking to the future and will build a system that works for the modern world to support those who need it and help people back into work. We will:
 
@@ -942,7 +943,7 @@ The social security system is not working as it should: it is driving people fur
 
 * Aim to end fuel poverty by 2025 by providing free energy retrofits for low- income homes as part of our emergency programme to reduce energy consumption from all the UK’s buildings.
 
-#### Support for Pensioners
+## Support for Pensioners
 
 Everybody should have enough to live on when they retire, but low wages and underemployment mean that people are not able to save as much for their retirement as they need. Because people are living longer – meaning that their pensions need to last for 20, 30 or even 40 years – many people find themselves in an even more vulnerable position. Liberal Democrats are looking to the future and will build a country that is the best place in the world to save for, and enjoy, retirement. We will:
 
@@ -952,7 +953,7 @@ Everybody should have enough to live on when they retire, but low wages and unde
 
 * Address continuing inequalities in pensions law for those in same-sex relationships.
 
-#### Access to Affordable Housing
+## Access to Affordable Housing
 
 People are struggling to afford good homes in in the right location: house prices are too high and the possibility of owning a home seems remote for many people; the private rental market is expensive and insecure; and there are not enough homes for social rent to meet demand.
 
@@ -974,7 +975,7 @@ The Conservatives, looking back to the 1980s, have tried to solve the problem of
 
 * Ensure that all local authorities have at least one provider of the Housing First model of provision for long term, entrenched homeless people. We would also scrap the Vagrancy Act were we to form the next UK Government, so that rough sleeping is no longer criminalised.
 
-#### Rural and Coastal Communities
+## Rural and Coastal Communities
 
 Rural communities are vital to the character and strength of Wales. Liberal Democrats have a long tradition of representing these communities and understand their needs. We will always give rural interests a high priority.
 
@@ -992,7 +993,7 @@ A thriving rural community needs local services and community facilities such as
 
 * Commit to preventing Post Office closures and protect Royal Mail’s Universal Service Obligation to deliver across the UK for the same price.
 
-#### A Public Health Approach to Violence
+## A Public Health Approach to Violence
 
 People should feel safe in their homes and on their streets. But this is not how it is for too many people today: knife crime has increased by over 75 per cent since 2015; homicides are at their highest rate for a decade; robberies and thefts are increasing and almost all go unsolved; and there are more and more places in the country where people simply don’t see police officers. The Conservatives, having unnecessarily cut police funding in England and Wales, are now trying to seem tough on crime without actually doing what is needed to prevent it. We understand that the situation needs more than tough talk: our plan means more police, properly supported by the government and focused on the community policing that prevents crime and makes people feel safe while investing in the services that will help people build lives free from crime.
 
@@ -1036,7 +1037,7 @@ Until these powers are devolved to Wales, these are our priorities for policing 
 
 * Stop Brexit and maintain the European crime-fighting tools that keep us all safe, including: Europol, the European Arrest Warrant and direct access to shared police databases.
 
-#### Reducing Reoffending
+## Reducing Reoffending
 
 Prisons should be places of rehabilitation: when people leave them they should be ready to reintegrate into society with work and a place to live. But, the prison system is in crisis and not delivering this: prisons are overcrowded and understaffed and riots, drug use, suicide and extreme violence have all become far too common. For decades, Labour and Conservative governments have repeated the same failed policies, desperate to appear tough on crime while failing to properly provide the services that help people build lives free from crime. Only the Liberal Democrats have a vision for making the justice system work. Instead of wasting money locking people up on short sentences that don’t work, we will spend it on the things that actually prevent crime. We will protect people from becoming victims of crime by focusing on what works to stop re-offending. We will:
 
@@ -1062,7 +1063,7 @@ Prisons should be places of rehabilitation: when people leave them they should b
 
 * Reform criminal record disclosure rules so that people do not have to declare irrelevant old and minor convictions and remove questions about criminal convictions from initial application forms for all public-sector jobs.
 
-### Our Plan for Freedom, Rights and Equality
+## Our Plan for Freedom, Rights and Equality
 
 People should be able to live their lives free from discrimination or intrusion and without fear of having their most fundamental rights violated. But this is not the reality in the UK today. The hostile environment has unacceptably trampled on people’s rights and people are still discriminated against on the basis of their gender, race, age, sexuality, gender identity, religion or whether they are disabled. Inequalities are rife – children from Black households are more likely to be in persistent poverty and both hate crimes and violence against women and girls are far too prevalent.
 
@@ -1078,7 +1079,7 @@ Our plan is for a free society where every person’s rights and liberties are p
 
 * **Giving asylum seekers the right to work three months after they have applied and resettling 10,000 unaccompanied refugee children in the UK over the next ten years.**
 
-#### Protect Civil Liberties
+## Protect Civil Liberties
 
 Our rights and freedoms are under threat. Labour and Conservatives consistently vote for new laws that curtail civil liberties and Conservatives repeatedly threaten the Human Rights Act that safeguards our individual freedoms. Liberal Democrats will build a society where rights and liberties are protected and where nobody has their privacy violated by prying instruments of the state. We will:
 
@@ -1106,7 +1107,7 @@ Our rights and freedoms are under threat. Labour and Conservatives consistently 
 
 * Introduce legal recognition of humanist marriages.
 
-#### Demand Equality
+## Demand Equality
 
 People should be able to go about their lives without fear of discrimination. However, hate crimes are on the rise and too many groups of people no longer feel safe. We believe that government needs to take an active role both in punishing discrimination and ensuring that it does not happen in the first place. We will:
 
@@ -1130,7 +1131,7 @@ People should be able to go about their lives without fear of discrimination. Ho
 
 * Outlaw caste discrimination.
 
-#### Promote Diversity
+## Promote Diversity
 
 Liberal Democrats believe that in the diversity of the UK should be represented in public and working life. That means that women, ethnic minority groups, LGBT+ people and disabled people should be properly represented and paid fairly. But deep-seated and – normally – unconscious biases mean that too many workplaces lack diversity and inequalities remain entrenched. We will tackle institutional biases, promote equality and hold power to account through applying values of openness, transparency and accountability. We will:
 
@@ -1150,7 +1151,7 @@ Liberal Democrats believe that in the diversity of the UK should be represented 
 
 * Develop a UK Government-wide plan to tackle BAME inequalities and review the funding of the Equality and Human Rights Commission to ensure that it is adequate.
 
-#### A Compassionate and Effective Immigration System
+## A Compassionate and Effective Immigration System
 
 Britain’s immigration system is in desperate need of reform. The Conservatives’ hostile environment has caused far too many innocent people to have their rights violated – most notably the Windrush generation. The NHS can’t recruit the doctors and nurses it needs; families are separated by unfair, complex visa requirements; people are detained indefinitely, in inhumane conditions and at great expense. Decades of incompetence, cruelty and hostile rhetoric from Labour and Conservative Home Secretaries have shattered confidence in the system. The Liberal Democrats are the only party with a plan for a fair migration system that works for everyone. A plan to ensure that migrants coming to the UK are welcomed for the skills and contribution that they bring, while ensuring that everyone has confidence that the immigration system is functioning as it should. We will:
 
@@ -1180,7 +1181,7 @@ Britain’s immigration system is in desperate need of reform. The Conservatives
 
 * Enable people who came here as children to apply for resident status.
 
-#### Dignity for Refugees and Asylum Seekers
+## Dignity for Refugees and Asylum Seekers
 
 We must do all we can to protect people forced to flee their homes to escape war and persecution. The UK has a proud history of providing sanctuary to those in need, but Labour and Conservative governments have introduced a harsh system that fails to respect people’s dignity. Thousands of asylum seekers are forced to wait many months for a decision, unable to work, rent a home or support their families. Too many people are wrongly denied asylum, with 40 per cent of refusals overturned on appeal. Liberal Democrats are the only party who can make the system work fairly for seekers of sanctuary. We will:
 
@@ -1196,7 +1197,7 @@ We must do all we can to protect people forced to flee their homes to escape war
 
 * Increase the ‘move-on period’ for refugees from 28 days to 60 days.
 
-### Our Plan for a Better Politics
+## Our Plan for a Better Politics
 
 Everybody, wherever they live, should be given a proper chance to influence the decisions that affect them. But, as it stands, British politics is far from delivering this for people. Too many are being cheated out of a voice and a vote. For some, that is because they live in a constituency where they feel that it does not matter who they vote for – the same party will always get elected. For young people, EU citizens and many British people living abroad, it is because they are denied any say at all in elections to parliament. The failure of the UK’s democratic system to reflect the diversity of the public’s views in parliament has played a major role in creating the current political crisis – fixing this is a matter of urgency.
 
@@ -1210,7 +1211,7 @@ Neither Labour nor Conservatives are interested in changing our broken system, b
 
 * **Introducing a written constitution for a federal United Kingdom.**
 
-#### Fair Votes
+## Fair Votes
 
 The current UK Parliament voting system is not working. It means that too many people do not have their voices heard. Liberal Democrats are the only party that realises that the system is broken and will change it so that it works for the future: Labour and Conservatives will not change the system that has always entrenched their privileged position. We understand that British politics needs to be reformed to make it more representative and empower citizens. We will:
 
@@ -1238,7 +1239,7 @@ The current UK Parliament voting system is not working. It means that too many p
 
 * Bring into force Section 106 of the Equality Act 2010, requiring political parties to publish candidate diversity data.
 
-#### High-Quality Public Debate
+## High-Quality Public Debate
 
 A well-functioning democracy should have a high standard of public debate in which: citizens are supported, educated and empowered to distinguish between facts and lies; there is a pluralistic media environment where journalists have the resources they need to find the truth and to hold the powerful to account; civility in public discourse is protected; election procedures and rules are upheld robustly and quickly. However, these foundations of our democratic way of life are under threat. Liberal Democrats are the only party forward-looking enough to do what it takes to foster high quality public debate. We will:
 
@@ -1260,7 +1261,7 @@ A well-functioning democracy should have a high standard of public debate in whi
 
 * Review the need for any election safeguarding legislation that is needed to respond to emerging challenges of the internet age, such as foreign interference in elections.
 
-#### Power for the Nations and Regions
+## Power for the Nations and Regions
 
 The people who best understand what the UK’s nations and regions need are those who live in them. However, the Conservative government has a terrible record at meeting the needs of the UK outside its heartlands in the south of England – this is most clear in the way that the Conservative government has excluded voices from the nations in the Brexit negotiations.
 
@@ -1278,7 +1279,7 @@ Our plans for a written, federal constitution will include a permanent Scottish 
 
 * Establish a dispute resolution process to resolve differences between the administrations.
 
-#### Wales
+## Wales
 
 In the 20 years since the National Assembly for Wales was created, we have proudly played our part in Wales’ devolution journey: 20 years of devolution has allowed the Welsh National Assembly to mature into a Welsh Parliament. Yet Brexit now threatens much of this progress. We recognise that stopping Brexit and protecting existing levels of devolution will not be enough to create the federal Britain that Wales needs to achieve its potential.
 
@@ -1290,11 +1291,11 @@ We will complete the next stage of devolution in Wales by implementing the remai
 
 * Devolve powers over youth justice, probation services, prisons and policing to allow Wales to create an effective, liberal, community-based approach to policing and tackling crime. We firmly believe Wales is best off as part of both the UK and the EU. Each union is worth billions of pounds to the Welsh economy and supports tens of thousands of jobs. For Wales, a federal UK will mean a truly equal family of nations, ensuring that every part of this union has a voice, backed up by real, meaningful devolution. We will work to create a Wales that is able to shape its own destiny as part of a strong United Kingdom playing a leading role within the EU.
 
-#### Funding Devolution
+## Funding Devolution
 
 The nations of the United Kingdom have long had different needs with regard to funding. The Liberal Democrats when in government delivered a substantial extension of financial powers to the nations of the UK and we will devolve further fiscal powers. To ensure reliable funding, we will retain the Barnett formula to adjust spending allocations across the UK. This will protect the individual nations’ budgets from external shocks. However, we recognise the findings of the Holtham Commission that the current formula underfunds Wales and will commission work to update this analysis. We will address the imbalance by immediately ensuring that the Barnett floor is set at a level that reflects the need for Wales to be funded fairly and seek over a parliament to increase the Welsh block grant to an equitable level.
 
-### Our Plan for a Better World
+## Our Plan for a Better World
 
 The world today feels increasingly unstable and unsafe. Nationalism and authoritarianism are on the rise in countries across the globe. President Trump has repeatedly acted to cause instability, whether by initiating trade wars or abandoning Kurdish allies in Syria; Putin’s Russia is persistently threatening the international rules-based order; and tensions continue to rise across the world – a brutal war still rages in Yemen, relationships with Iran are increasingly difficult and citizens are protesting against their leaders in places such as Hong Kong, Pakistan and Chile. The UK should be playing a leading role as part of a coalition of liberal democracies to respond to these challenges, but Brexit has already undermined our ability to shape world events.
 
@@ -1312,7 +1313,7 @@ Only the Liberal Democrats have a plan to renew international liberalism in Brit
 
 * **Controlling arms exports to countries with poor human rights records and, as part of this, suspending arms sales to Saudi Arabia.**
 
-#### A Peaceful World
+## A Peaceful World
 
 Liberalism and cooperation have a vital role to play in securing peace, promoting democracy and defending human rights across the world. But the rules-based international order that has governed international relations for the past 70 years is under threat. The Liberal Democrats are the only party that is looking forward: neither the Conservatives nor Labour have a convincing vision of the UK’s role in the world. We will build on the UK’s proud record of international leadership through the EU, UN, NATO and the Commonwealth by promoting values of freedom and opportunity for all. It has never been more important for the UK to work with allies as a champion of this message. We will:
 
@@ -1344,7 +1345,7 @@ Liberalism and cooperation have a vital role to play in securing peace, promotin
 
 * Honour our legal and moral duty to the people of Hong Kong by reopening the British National Overseas Passport offer, extending the scheme to provide the right to abode to all holders.
 
-#### A Secure Defence in the 21st Century
+## A Secure Defence in the 21st Century
 
 The Armed Forces play a vital role in the defence of the nation: government should have a deep sense of duty to properly support service personnel and veterans. Neither the Conservatives nor Labour have shown a commitment to this: the Conservative government in particular has spread chronic low morale, misspent money on vanity projects and failed to recruit and retain people with the skills needed for 21st century warfare. Liberal Democrats are the only party who understand the new challenges faced by the Armed Forces and who are committed to properly supporting them. We will:
 
@@ -1360,7 +1361,7 @@ The Armed Forces play a vital role in the defence of the nation: government shou
 
 * Improve the quality of housing for service personnel by bringing the Ministry of Defence into line with other landlords, giving tenants the same legal rights to repair and maintenance as private tenants.
 
-#### Trade, Aid and Investment
+## Trade, Aid and Investment
 
 The liberal, international rules-based order has created peace and prosperity: trade has helped millions out of poverty and to live longer, healthier lives. But the system is imperfect and must improve to tackle global inequalities: gender inequality remains widespread and the climate crisis will disproportionately impact the poorest people and poorest countries. Liberal Democrats are the only party with a vision for the future based on championing liberalism: the Conservatives are inward-looking and nationalist and committed to leaving the EU, the biggest champion of the liberal order in our part of the world; Jeremy Corbyn’s Labour spring to the defence of authoritarian regimes in Venezuela and Iran, while failing to fight to stop Brexit. Our plan for the future is built on championing liberal and international values, ending poverty and promoting the UN Sustainable Development Goals both in the UK and abroad. We will:
 
@@ -1378,7 +1379,7 @@ The liberal, international rules-based order has created peace and prosperity: t
 
 * Champion global anti-corruption initiatives and ensure the UK and British Overseas Territories have publicly-accessible registers of beneficial ownership of companies registered in their jurisdictions.
 
-#### Promoting Human Rights and Equality Around the World
+## Promoting Human Rights and Equality Around the World
 
 Human rights are global. An individual’s liberty should be equally respected wherever they live. However, as authoritarian regimes trample over freedom of speech and belief and LGBT+ and other people are continuing to suffer discrimination, this is far from being the case. Liberal Democrats are the only party capable of renewing international liberalism and combatting discrimination: the Conservatives’ Brexit will mean prioritising trade deals over people’s rights and Labour cannot hope to tackle discrimination abroad when they cannot even root out anti-Semitism in their own party. We are the only party with a credible plan to enhance the UK’s soft power and to use it to promote human rights and democracy around the world. We will:
 
@@ -1400,7 +1401,7 @@ Human rights are global. An individual’s liberty should be equally respected w
 
 * Appoint an Ambassador-level Champion for Freedom of Belief.
 
-#### Global Climate Action Now
+## Global Climate Action Now
 
 The climate emergency is a global challenge and requires a global solution. However, with the US withdrawing from the Paris Agreement and with most national climate policies falling well short of the Agreement’s ambition to limit the global temperature rise to 1.5°C, this global solution looks a long way off. Neither the Conservatives nor Labour have a plan to tackle this: the Conservatives have given no real thought to the climate emergency, and Labour are only interested in repeating empty slogans. Liberal Democrats are the only party with a detailed plan to lead global efforts to combat the climate emergency. We will:
 

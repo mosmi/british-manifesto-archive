@@ -26,11 +26,12 @@ sections:
   - local-government
 ---
 
+
 # Reform UK Manifesto 2024
 
 ## Our Contract with You
 
-### Britain Needs Reform and Reform UK Needs You
+## Britain Needs Reform and Reform UK Needs You
 
 **Britain has so much potential.**
 **Our country is full of talent and energy.**
@@ -61,7 +62,7 @@ Leader, Reform UK
 
 ---
 
-### Contents
+## Contents
 
 * Our Core Pledges to You
 * Immigration
@@ -94,7 +95,7 @@ Costings can be found at the end of each policy page. Some policy areas come wit
 
 ---
 
-### Our Core Pledges to You
+## Our Core Pledges to You
 
 Fourteen years of Tory failure are coming to an end. A Labour government would ramp up mass immigration, crime, and taxes even further. Labour and the Tories are two sides of the same coin. 
 
@@ -117,8 +118,8 @@ Only Reform UK is ready to stand up for common sense politics. We set out our pl
 
 ---
 
-### Immigration
-#### Uncontrolled Immigration has Pushed Britain to Breaking Point
+## Immigration
+## Uncontrolled Immigration has Pushed Britain to Breaking Point
 
 **Reform UK will secure Britain’s borders to protect wages, our public services, and British culture and values.**
 
@@ -152,8 +153,8 @@ The National Insurance rate will be raised to 20% for foreign workers. This woul
 
 ---
 
-### Slash Government Waste
-#### Government Spending Needs Major Reform
+## Slash Government Waste
+## Government Spending Needs Major Reform
 
 **Reform UK will slash wasteful spending to increase funding for frontline public services and reduce taxes for working people.**
 
@@ -180,8 +181,8 @@ HM Revenue and Customs failed to collect tens of billions in taxes last year due
 
 ---
 
-### Economy - Personal
-#### Our Economy Needs Reform
+## Economy - Personal
+## Our Economy Needs Reform
 
 **Reform UK will make work pay and help the unemployed to escape the benefits trap.**
 
@@ -208,8 +209,8 @@ That means some 98% of all estates. The rate above £2m will be 20% tax, with th
 
 ---
 
-### Economy - Business
-#### Our Economy Needs Reform
+## Economy - Business
+## Our Economy Needs Reform
 
 **Reform UK will back risk takers and wealth creators and make sure that Britain is open for business.**
 
@@ -244,8 +245,8 @@ Major simplification is needed. At over 21,000 pages, the UK’s tax code is a b
 
 ---
 
-### NHS
-#### The NHS Needs Urgent Reform
+## NHS
+## The NHS Needs Urgent Reform
 
 **Despite record extra funding in recent years, NHS healthcare outcomes have declined. While still free at the point of delivery, our healthcare needs major reforms to improve results and enjoy zero waiting lists.**
 
@@ -280,8 +281,8 @@ Excess deaths are nearly as high as they were during the Covid pandemic. Young p
 
 ---
 
-### Net Zero
-#### Net Zero is Crippling our Economy
+## Net Zero
+## Net Zero is Crippling our Economy
 
 **Net Zero is pushing up bills, damaging British industries like steel, and making us less secure. We can protect our environment with more tree planting, more recycling and less single use plastics. New technology will help, but we must not impoverish ourselves in pursuit of unaffordable, unachievable global CO2 targets.**
 
@@ -307,8 +308,8 @@ Fast-track clean nuclear energy with new Small Modular Reactors, built in Britai
 
 ---
 
-### Policing
-#### Law and Order Urgently Needs Reform
+## Policing
+## Law and Order Urgently Needs Reform
 
 **Reform UK will restore Law and Order on Britain’s streets and make sure that criminals face justice.** 
 
@@ -340,8 +341,8 @@ Prioritise crime prevention, discipline, public service and high standards of st
 
 ---
 
-### Justice
-#### Our Justice System Needs Reform
+## Justice
+## Our Justice System Needs Reform
 
 **Reform UK will build a common sense justice system that punishes criminals and keeps the public safe.** 
 
@@ -376,8 +377,8 @@ Reopen High Intensity Training Camps for young offenders to teach basic educatio
 
 ---
 
-### Education
-#### Too Many Children and Young People are Being Badly Let Down
+## Education
+## Too Many Children and Young People are Being Badly Let Down
 
 **Reform UK wants an education system that ensures young people are proud of Britain and learn the skills, character and values to succeed in life.** 
 
@@ -412,8 +413,8 @@ The option of 2-year courses would reduce student debt and allow earlier entry i
 
 ---
 
-### Benefits
-#### The Benefits System is Broken
+## Benefits
+## The Benefits System is Broken
 
 **Reform UK will ensure those who can work do work.** 
 
@@ -437,8 +438,8 @@ Personal Independence Payment and Work Capability Assessment should be face to f
 
 ---
 
-### Brexit
-#### Brexit Means Taking Back Control of our Borders, Money and Laws
+## Brexit
+## Brexit Means Taking Back Control of our Borders, Money and Laws
 
 **Reform UK will do what the Tories have failed to - grasp the huge opportunities of Brexit**
 
@@ -462,8 +463,8 @@ A so-called EU ‘level playing field’ is holding us back.
 
 ---
 
-### Defence
-#### Britain has some of the Best and Bravest Armed Forces in the World
+## Defence
+## Britain has some of the Best and Bravest Armed Forces in the World
 
 **Reform UK will ensure our servicemen and women have the resources they need to defend our nation and that they are respected and supported after they leave the services.** 
 
@@ -501,8 +502,8 @@ Free education both during and after service is vital to ensure a successful ret
 
 ---
 
-### Housing
-#### Britain has a Housing Crisis
+## Housing
+## Britain has a Housing Crisis
 
 **Reform UK will ensure that people can own their own home by unleashing housebuilding across the country and cutting immigration.** 
 
@@ -534,8 +535,8 @@ We will incentivise innovation to speed up building: modular construction, digit
 
 ---
 
-### Children and Families
-#### Britain has one of the Highest Family Breakdown Rates in the Western World
+## Children and Families
+## Britain has one of the Highest Family Breakdown Rates in the Western World
 
 **Reform UK believes that strong families are the bedrock of a thriving society – we will support family formation and give parents back control.** 
 
@@ -564,8 +565,8 @@ Social media giants that push baseless transgender ideology and divisive Critica
 
 ---
 
-### Transport & Utilities Infrastructure
-#### The Scandal of our Crumbling Infrastructure Must End
+## Transport & Utilities Infrastructure
+## The Scandal of our Crumbling Infrastructure Must End
 
 **Reform UK will take a pragmatic approach to getting Britain’s infrastructure back on its feet and keeping it secure from foreign threats.** 
 
@@ -594,8 +595,8 @@ Overhaul and merge the National Infrastructure Commission and the Infrastructure
 
 ---
 
-### Agriculture
-#### British Farming Needs Reform to Take Advantage of Brexit
+## Agriculture
+## British Farming Needs Reform to Take Advantage of Brexit
 
 **Reform UK will revitalise Britain’s agriculture to give a much-needed boost to our farmers and guarantee the country’s food security.**
 
@@ -627,8 +628,8 @@ Many farmers spend over 15 hours a week on paperwork. Cut red tape from HMRC and
 
 ---
 
-### Fishing & Coastal Communities
-#### The Government has Betrayed Britain’s Fishing Industry
+## Fishing & Coastal Communities
+## The Government has Betrayed Britain’s Fishing Industry
 
 **Reform UK will seize the huge opportunity to renew our fishing industry and revive our coastal communities.** 
 
@@ -660,8 +661,8 @@ Implement a ‘dynamic management system’. Work with national and regional par
 
 ---
 
-### Pensions and Social Care
-#### Our Elderly Deserve to be Treated with Dignity and Respect
+## Pensions and Social Care
+## Our Elderly Deserve to be Treated with Dignity and Respect
 
 **Reform UK will ensure that our elderly people can live with dignity through long-term reforms funded by a growing economy.** 
 
@@ -685,8 +686,8 @@ We accept the Business, Energy and Industrial Strategy Committee 2021 recommenda
 
 ---
 
-### Constitutional Reform
-#### Britain’s Constitutional Arrangements Need Reform
+## Constitutional Reform
+## Britain’s Constitutional Arrangements Need Reform
 
 **We will end the corruption of our government and politics by an out-of-touch, London-centric elite to make Britain a more democratic, accountable, and therefore more prosperous nation.** 
 
@@ -715,8 +716,8 @@ Our freedoms must be codified and guaranteed. Never again can our entire country
 
 ---
 
-### Reclaiming Britain
-#### Reform is Needed to Defend and Promote British Culture, Identity and Values
+## Reclaiming Britain
+## Reform is Needed to Defend and Promote British Culture, Identity and Values
 
 **Reform UK will uphold British values and legislate against extremist forces that seek to undermine our way of life.** 
 
@@ -746,9 +747,9 @@ We will ensure that public officials face sanctions if they break the rules, inc
 
 ---
 
-### Funding of Reform UK Plans
+## Funding of Reform UK Plans
 
-#### Savings Pledges
+## Savings Pledges
 
 | Policy Area | Annualised Savings Over 5 Year Electoral Term Amount in £ billions |
 | :--- | :--- |
@@ -764,7 +765,7 @@ We will ensure that public officials face sanctions if they break the rules, inc
 
 **Sub-Total Potential Savings = £150 billion pa = Almost £3,000 per Adult**
 
-#### Extra Growth Assumption
+## Extra Growth Assumption
 
 **Policy Area**
 * Economy - Personal Pledges
@@ -782,7 +783,7 @@ We will ensure that public officials face sanctions if they break the rules, inc
 
 ---
 
-### Cost Pledges
+## Cost Pledges
 
 | Policy Area | Annualised Cost Over 5 Year Electoral Term Amount in £ billions |
 | :--- | :--- |

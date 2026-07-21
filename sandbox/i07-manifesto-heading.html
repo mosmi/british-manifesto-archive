@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox — I07 Manifesto headings (not live)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #191b20;
+      --ink-body: #3a3d45;
+      --ink-chrome: #8a8e99;
+      --field: #f7f6f2;
+      --paper: #fffef9;
+      --line: #e4e1d8;
+      --gold: #b8952c;
+      --labour: #e4003b;
+      --font-display: "Instrument Serif", Georgia, serif;
+      --font-ui: Inter, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #eceae3;
+      color: var(--ink);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .banner {
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+    .banner strong { color: #f0d78c; }
+    h1.sandbox-title {
+      font-family: var(--font-display);
+      font-size: 2.25rem;
+      font-weight: 400;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .lede {
+      color: var(--ink-body);
+      max-width: 42rem;
+      margin: 0 0 1.75rem;
+    }
+    .lede code {
+      font-size: 0.9em;
+      background: #fff;
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+    }
+    .callout {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.15rem;
+      margin: 0 0 2rem;
+      max-width: 46rem;
+    }
+    .callout h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 0.5rem;
+      color: var(--ink-chrome);
+    }
+    .callout ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+    .callout li { margin: 0.25rem 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .panel {
+      background: var(--field);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .panel-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 1rem;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .panel-label .tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.45rem;
+      border-radius: 2px;
+    }
+    .tag-now { background: #f3d5d8; color: #8a1528; }
+    .tag-prop { background: #d8ead8; color: #1f5c2e; }
+    .browser-chrome {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.75rem;
+      background: #ddd9ce;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.78rem;
+      color: var(--ink-body);
+    }
+    .browser-chrome .dots {
+      display: flex;
+      gap: 0.28rem;
+      margin-right: 0.35rem;
+    }
+    .browser-chrome .dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #b8b3a6;
+    }
+    .browser-chrome .tab {
+      flex: 1;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 4px 4px 0 0;
+      padding: 0.35rem 0.65rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+    }
+    .tab .weak { color: #b00020; }
+    .tab .ok { color: #146c2e; }
+    .mock {
+      padding: 1.25rem 1.35rem 1.5rem;
+      background: var(--paper);
+    }
+    .bc {
+      font-size: 0.8rem;
+      color: var(--ink-chrome);
+      margin-bottom: 1rem;
+    }
+    .bc a { color: var(--ink-chrome); text-decoration: none; }
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .kicker-rule {
+      width: 28px;
+      height: 2px;
+      background: var(--labour);
+    }
+    .kicker-text {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--labour);
+    }
+    .title-chrome {
+      font-family: var(--font-display);
+      font-size: 2.35rem;
+      font-weight: 400;
+      line-height: 1.1;
+      margin: 0 0 0.65rem;
+      color: var(--ink);
+    }
+    .meta {
+      font-size: 0.875rem;
+      color: var(--ink-body);
+      margin-bottom: 1.35rem;
+    }
+    .body-block {
+      border-top: 1px solid var(--line);
+      padding-top: 1.15rem;
+    }
+    .h1-body {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: var(--ink);
+    }
+    .doc-masthead {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: var(--ink);
+    }
+    .body-p {
+      margin: 0 0 0.85rem;
+      color: var(--ink-body);
+      font-size: 0.95rem;
+    }
+    .h2-body {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.65rem;
+      color: var(--ink);
+    }
+    .outline {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: #fff;
+      border-top: 1px dashed var(--line);
+      font-size: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--ink-body);
+    }
+    .outline strong {
+      display: block;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-chrome);
+      margin-bottom: 0.4rem;
+    }
+    .outline .bad { color: #b00020; }
+    .outline .good { color: #146c2e; }
+    .note {
+      margin-top: 2rem;
+      max-width: 46rem;
+      font-size: 0.9rem;
+      color: var(--ink-body);
+    }
+    .note h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 0 0 0.65rem;
+    }
+    .note ol { padding-left: 1.25rem; }
+    .note li { margin: 0.4rem 0; }
+    .alt {
+      margin-top: 1.5rem;
+      padding: 1rem 1.15rem;
+      background: #fff;
+      border: 1px dashed var(--line);
+      max-width: 46rem;
+      font-size: 0.9rem;
+      color: var(--ink-body);
+    }
+    .alt h3 {
+      margin: 0 0 0.4rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-chrome);
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <strong>Sandbox only</strong> — I07 mock-up. Nothing here is wired into the live site or SPA.
+  </div>
+
+  <div class="page">
+    <h1 class="sandbox-title">I07 — Manifesto dual H1 + weak document.title</h1>
+    <p class="lede">
+      Example page: <code>/manifesto/2024/labour</code>.
+      The audit flagged two related problems. The proposal below is
+      <em>structural</em> (heading outline + browser tab), not a visual redesign —
+      the page should look almost the same.
+    </p>
+
+    <div class="callout">
+      <h2>What is wrong today</h2>
+      <ul>
+        <li>
+          <strong>Two H1s:</strong> page chrome uses
+          <code>&lt;h1 class="manifesto-viewer-title"&gt;Labour Manifesto 2024&lt;/h1&gt;</code>,
+          then ~257 transcribed <code>manifesto.md</code> files also start with
+          <code># Labour Party Manifesto 2024</code>, which becomes a second
+          <code>&lt;h1&gt;</code> inside the article.
+        </li>
+        <li>
+          <strong>Thin tab title:</strong>
+          <code>setPageMeta({ title: displayName })</code> →
+          <code>Labour — The British Manifesto Archive</code>
+          (no “Manifesto”, no year), while the visible chrome title already includes both.
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <!-- CURRENT -->
+      <section class="panel" aria-label="Current behaviour">
+        <div class="panel-label">
+          <span>Current (live)</span>
+          <span class="tag tag-now">Before</span>
+        </div>
+        <div class="browser-chrome">
+          <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="tab">
+            <span class="weak">Labour — The British Manifesto Archive</span>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="bc">
+            <a href="#">Home</a> /
+            <a href="#">Elections</a> /
+            <a href="#">2024</a> /
+            Labour
+          </div>
+          <div class="kicker">
+            <span class="kicker-rule"></span>
+            <span class="kicker-text">MANIFESTO</span>
+          </div>
+          <h1 class="title-chrome">Labour Manifesto 2024</h1>
+          <div class="meta">Keir Starmer · UK general election</div>
+          <div class="body-block">
+            <h1 class="h1-body">Labour Party Manifesto 2024</h1>
+            <p class="body-p">
+              Britain faces its most consequential election for a generation…
+            </p>
+            <h2 class="h2-body">Mission-driven government</h2>
+            <p class="body-p">First section of the transcribed document…</p>
+          </div>
+        </div>
+        <div class="outline">
+          <strong>Heading outline</strong>
+          <div class="bad">h1 — Labour Manifesto 2024 <em>(chrome)</em></div>
+          <div class="bad">h1 — Labour Party Manifesto 2024 <em>(from markdown)</em></div>
+          <div>h2 — Mission-driven government</div>
+        </div>
+      </section>
+
+      <!-- PROPOSED -->
+      <section class="panel" aria-label="Proposed behaviour">
+        <div class="panel-label">
+          <span>Proposed</span>
+          <span class="tag tag-prop">After</span>
+        </div>
+        <div class="browser-chrome">
+          <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="tab">
+            <span class="ok">Labour Manifesto 2024 — The British Manifesto Archive</span>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="bc">
+            <a href="#">Home</a> /
+            <a href="#">Elections</a> /
+            <a href="#">2024</a> /
+            Labour
+          </div>
+          <div class="kicker">
+            <span class="kicker-rule"></span>
+            <span class="kicker-text">MANIFESTO</span>
+          </div>
+          <h1 class="title-chrome">Labour Manifesto 2024</h1>
+          <div class="meta">Keir Starmer · UK general election</div>
+          <div class="body-block">
+            <!-- Same visual weight as today's body H1, but not an H1 -->
+            <p class="doc-masthead">Labour Party Manifesto 2024</p>
+            <p class="body-p">
+              Britain faces its most consequential election for a generation…
+            </p>
+            <h2 class="h2-body">Mission-driven government</h2>
+            <p class="body-p">First section of the transcribed document…</p>
+          </div>
+        </div>
+        <div class="outline">
+          <strong>Heading outline</strong>
+          <div class="good">h1 — Labour Manifesto 2024 <em>(chrome only)</em></div>
+          <div>p.manifesto-doc-masthead — Labour Party Manifesto 2024 <em>(visual only)</em></div>
+          <div>h2 — Mission-driven government</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="note">
+      <h2>What would change in code (if approved)</h2>
+      <ol>
+        <li>
+          <strong>Tab title only:</strong> pass the same string as the chrome H1 into
+          <code>setPageMeta</code> — e.g.
+          <code>Labour Manifesto 2024</code> →
+          <code>Labour Manifesto 2024 — The British Manifesto Archive</code>.
+          No layout change.
+        </li>
+        <li>
+          <strong>Single H1:</strong> after Markdown is parsed, demote the first
+          content <code>&lt;h1&gt;</code> to a non-heading element
+          (<code>&lt;p class="manifesto-doc-masthead"&gt;</code>) keeping today’s
+          body-title styling. Later <code>h2</code>/<code>h3</code> sections stay
+          as headings (TOC unchanged — TOC already keys off <code>h2</code>).
+        </li>
+        <li>
+          <strong>Not changing:</strong> source <code>manifesto.md</code> files,
+          cover treatment, body copy, or the visible chrome title wording.
+        </li>
+      </ol>
+    </div>
+
+    <div class="alt">
+      <h3>Rejected alternative (for contrast)</h3>
+      <p style="margin:0">
+        Drop the chrome <code>&lt;h1&gt;</code> and keep the markdown title as the
+        only H1. That would also fix the dual-H1 rule, but it makes the archive
+        chrome title (used for breadcrumbs / prev-next orientation) no longer the
+        document landmark — worse for skim readers who never scroll into the
+        transcription. Prefer keeping chrome as the sole H1.
+      </p>
+    </div>
+
+    <p class="note" style="margin-top:2rem">
+      Open this file locally:
+      <code>sandbox/i07-manifesto-heading.html</code>
+      (or via the preview server if you prefer). Approve or reject before any
+      production change to <code>js/app.js</code>.
+    </p>
+  </div>
+</body>
+</html>

@@ -19,7 +19,7 @@ metadata on first paint.
 | `meta.js` | Shared title suffix, OG image paths, election/party meta helpers (mirrors edge middleware) |
 | `data.js` | `PARTIES`, `ELECTIONS`, `NATIONS`, `DEVOLVED_PORTALS`, navigation config, SEO helpers |
 | `data-loader.js` | Lazy election JSON fetch; `ASSETS_VERSION` for cache-busted data URLs |
-| `app.js` | Main app, routing, page renderers, `setPageMeta()`, mega-menu |
+| `app.js` | Main app, routing, page renderers (incl. filterable `/parties/all` browse), `setPageMeta()`, mega-menu |
 | `parliament.js` | Westminster seating / chamber visualisations |
 | `hexmap.js` | Renders hex cartograms from `data/hex/` |
 | `holyrood.js` | Scottish Parliament views |
@@ -27,14 +27,14 @@ metadata on first paint.
 | `ni.js` | Northern Ireland Assembly (Stormont) views |
 | `euro.js` | European Parliament election views |
 | `london.js` | London Mayor & Assembly views |
-| `search.js` | Client-side search (token AND matching; indexes manifesto docs + devolved election titles) |
+| `search.js` | Search overlay with Catalogue + Full text modes; catalogue index; full-text via `data/fulltext-index.json` |
 
 ## Edge / Cloudflare
 | Path | Role |
 |---|---|
-| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs); real 404 when `/manifestos/*` would SPA-fall back to HTML; optional `<noscript>` summary injection |
+| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs); real 404 when `/manifestos/*` would SPA-fall back to HTML; **short-circuits `/elections` to the SPA shell** (asset layer has 308→`/`); richer `<noscript>` hub links (elections, parties, About, PDFs/MD) |
 | `_routes.json` | Which paths invoke the middleware (includes `/manifestos/*` for the PDF 404 check) |
-| `_redirects` | Explicit SPA fallbacks only — **no** catch-all `/* → index.html` (that turned missing PDFs into 200 HTML) |
+| `_redirects` | Explicit SPA fallbacks only — **no** catch-all `/* → index.html` (that turned missing PDFs into 200 HTML). Locally, mirror with [`scripts/serve-preview.py`](./local-preview.md) |
 | `_headers` | Cache + security headers (HSTS, frame options, etc.) |
 | `wrangler.toml` | Workers static-assets config |
 

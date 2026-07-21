@@ -17,16 +17,17 @@ sections:
   - democracy-and-constitution
 ---
 
+
 # Ulster Unionist Party Manifesto 2017
 
 ## Northern Ireland for a Stronger, Better Union
-### General Election Manifesto | 2017
+## General Election Manifesto | 2017
 
 **Ulster Unionist Party**
 
 ---
 
-### Contents
+## Contents
 
 * Foreword by Robin Swann MLA — 01
 * A Record of Achievement — 03
@@ -38,7 +39,7 @@ sections:
 ---
 
 ## Foreword
-#### Ulster Unionist Party Leader
+## Ulster Unionist Party Leader
 
 I am delighted to present our manifesto for the Westminster election on June 8. When I became Leader of the Ulster Unionist Party I spoke of the need for unionism to become more confident, more outward looking and more embracing. There is no doubt whatsoever - not only in my mind but that of nearly all rational observers - that Northern Ireland, England, Scotland and Wales are far stronger together than we would ever be apart.
 
@@ -52,7 +53,7 @@ It is essential therefore, that in an absence of an Executive, Northern Ireland 
 
 As the UK faces up to all the challenges that Brexit will bring it is essential that all the constituent regions of our country remain strong and united. Yet there remain those who constantly try to chip away at the Union. Of course I realise that for many people the unprecedented waiting times crisis in our health service, the continuing injustice for the victims of a brutal 30 year terrorist campaign, the shortfall in frontline PSNI numbers, or the major uncertainty surrounding school budgets may well be the most pressing issue for you and your family right now. You can find recent and detailed policies on each of these issues, as well as many others, in our Assembly manifesto from only three months ago at www.uup.org. All Ulster Unionist MPs elected will champion these policies for you at Westminster.
 
-#### Our top 5 key issues for Northern Ireland are:
+## Our top 5 key issues for Northern Ireland are:
 
 1. **Strengthening Northern Ireland's place in the United Kingdom** and ensuring we secure the best deal possible as we prepare to exit the European Union. Despite having potentially the most to lose from a bungled Brexit deal, Northern Ireland remains by far the least prepared of any UK region. This issue is so important to all our futures that we need the best deal, not just any deal, or worse, no deal at all.
 2. **Addressing the legacy of the past** in a proportionate manner, whilst also meeting the immediate needs of victims and survivors. We will vehemently oppose efforts to rewrite the reality of the past and tackle unfair aspersions cast against legitimate actions of our security forces.
@@ -69,11 +70,11 @@ Ulster Unionist Party Leader
 
 ---
 
-### A Record of Achievement
+## A Record of Achievement
 
 In 2015 the Ulster Unionist Party presence returned to the House of Commons. Fermanagh and South Tyrone had its voice back after 14 years of silence and South Antrim now had a local MP in touch with its constituents. Both Tom Elliott and Danny Kinahan have proved to be highly effective MPs. Over the last two years they have developed a wealth of contacts across all political parties, and have been strong advocates for everyone in Northern Ireland.
 
-#### Notable achievements include:
+## Notable achievements include:
 
 * **Justice for victims:** Leading from the front in campaigning for justice for victims of terrorist violence in Northern Ireland. This included establishing a landmark cross-party group to campaign for compensation for victims of Libyan sponsored IRA terrorism. Tom secured debates on the issue, and along with Danny has worked with Lord Empey to seek to use frozen Libyan assets to fund compensation.
 * **Support for Security Forces:** Our MPs were instrumental in obtaining support of MPs and Peers to exert pressure on Her Majesty's Government to stand by our brave men and women in the Armed Forces and Police. Danny secured a vital debate on the matter before the election announcement.
@@ -88,7 +89,7 @@ In 2015 the Ulster Unionist Party presence returned to the House of Commons. Fer
 
 ---
 
-### Strengthening the Union
+## Strengthening the Union
 
 The United Kingdom is one of the most successful political Unions ever — a nation with a proud history and a great future that Northern Ireland is integral to. While some commentators refer to Northern Ireland as a 'statelet', the UK is actually one of the largest economies in the world with a GDP of nearly $3 Trillion.
 
@@ -96,7 +97,7 @@ As a Party, we believe the best option for all our people, regardless of religio
 
 Ulster Unionist MPs will be champions for the Union, ensuring Northern Ireland's voice is heard loudly in the House of Commons. We will be persuaders for the Union in a respectful and dignified manner. Denigrating other people's culture or language is not the sort of Unionism we embrace.
 
-#### The Union between Great Britain and Northern Ireland means:
+## The Union between Great Britain and Northern Ireland means:
 
 1. Better opportunities to work, live, and learn anywhere in the UK.
 2. Benefits of belonging to the world's sixth largest economy.
@@ -111,11 +112,11 @@ Ulster Unionist MPs will be champions for the Union, ensuring Northern Ireland's
 
 ---
 
-### Making Brexit Work
+## Making Brexit Work
 
 The decision to leave the EU has been made; this election is about getting the best deal for Northern Ireland and resisting those using Brexit to unpick the Union. The absence of a local Executive puts us at a disadvantage. We reject calls for 'special status' as it would put Northern Ireland on the fringes of the Union and could lead to immigration controls or trade barriers with Great Britain.
 
-#### Our five key Brexit priorities are:
+## Our five key Brexit priorities are:
 
 1. No hard border, or internal borders within the United Kingdom.
 2. Future-proofing our economy by investing in skills and infrastructure.
@@ -125,11 +126,11 @@ The decision to leave the EU has been made; this election is about getting the b
 
 ---
 
-### Fixing Stormont
+## Fixing Stormont
 
 Northern Ireland needs a functioning Assembly and Executive. Public confidence has been damaged by scandals like RHI and NAMA, but the institutions must be re-established with fundamental reforms.
 
-#### Essential reforms include:
+## Essential reforms include:
 
 1. Better regulation of internal Executive operations and engagement standards.
 2. Reforming the budgetary process for improved transparency and scrutiny.
@@ -139,7 +140,7 @@ Northern Ireland needs a functioning Assembly and Executive. Public confidence h
 
 ---
 
-### Your Ulster Unionist Candidates
+## Your Ulster Unionist Candidates
 
 * **Hazel Legge** — Belfast East
 * **Michael Henderson** — Belfast South

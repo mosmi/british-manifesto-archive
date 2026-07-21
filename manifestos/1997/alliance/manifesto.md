@@ -24,17 +24,18 @@ sections:
   - science-and-technology
 ---
 
+
 # Alliance Party Manifesto 1997
 
 ## Agenda for Change
 
-### General Election, 1 May 1997
+## General Election, 1 May 1997
 
 The Alliance Party of Northern Ireland
 
 ---
 
-### Tell them it has to stop
+## Tell them it has to stop
 
 Tell them...
 
@@ -74,11 +75,11 @@ Every vote for Alliance is a vote for:
 
 ---
 
-### The Rule of Law
+## The Rule of Law
 
 The Alliance Party believes that individual freedoms carry responsibilities to ensure that those freedoms are available for all citizens. We propose the enactment of a Bill of rights, and the creation of a Department of Justice (to be overseen by an elected Northern Ireland Assembly) which would lead to more widespread involvement in issues of justice and human rights throughout the community. The Department of Justice would have responsibility for parades, policing, victim support, prisons, probation, criminal injuries and criminal damage.
 
-#### Parades
+## Parades
 
 It is essential that the Rule of Law should be upheld in Northern Ireland. The events surrounding Drumcree last summer including blocking of roads, burning of vehicles and looting of shops were totally indefensible and unjustifiable. Alliance has been pressing for an independent body to deal with the issue of controversial parades, a proposal closely reflected in the central recommendation of the North Report.
 
@@ -91,25 +92,25 @@ Alliance's proposals to the North Commission included the following:-
 
 In effect the community, not the police force, would take responsibility for the organisation of parades. Alliance believes that it is inappropriate to infringe freedom of assembly by imposing charges, but it is necessary for the Independent Commission to have statutory powers.
 
-#### Policing
+## Policing
 
 The fight against terrorism must continue unabated, with the police supported by the army and, most importantly, by the community as a whole. This task has been undertaken over the years with great courage and professionalism, but the increased professionalism of the RUC and its standing in the community were threatened by the events of Drumcree last summer. Alliance believes that the community and its elected representatives must work with the police to promote greater cooperation between the police and the public. There must be a fully independent police complaints procedure. As the terrorist situation permits, there should be greater emphasis on community policing. Training and secondment schemes should be adapted to take account of policing in the changing environment of Northern Ireland, especially in respect of the negative 'peace dividend' of increased drug trafficking and other organised crime.
 
-#### Victim Support
+## Victim Support
 
 Alliance believes there must be proper recognition of the suffering of victims by practical, as well as symbolic means. Alliance rejects the 'tariff' system of criminal injuries compensation introduced in Great Britain and calls for a review of the permanent exclusion of former paramilitaries from criminal injuries compensation.
 
-#### Emergency Legislation
+## Emergency Legislation
 
 The Emergency Legislation currently in force under the Prevention of Terrorism Act, must be kept under review to ensure that the measures in place are appropriate to take account of the terrorist threat faced by the community while safeguarding the rights of individuals. Exclusion orders in particular should be ended. Interrogation of suspects should be video-taped as well as audio-taped, to ensure that false claims cannot be sustained in respect of the material or conduct of interrogations. Alliance has consistently supported the incorporation of the European Convention on Human Rights into a Bill of Rights for the UK as a whole and for Northern Ireland in particular. We will strive especially hard to ensure that the new Parliament sees this enacted.
 
 ---
 
-### Political Development
+## Political Development
 
 The current round of multi-party talks is deadlocked but Alliance will continue to work vigorously to find a way forward. Any just, fair and workable settlement needs to have four main elements:
 
-#### Elements of a Settlement
+## Elements of a Settlement
 
 ##### A Regional Power-sharing Government for Northern Ireland
 
@@ -133,7 +134,7 @@ In 1988 we published a very detailed and imaginative set of proposals which we e
 
 There is another side to this principle, and it is the consent of the minority to the way in which Northern Ireland is governed. This other dimension of consent is also an essential feature. Dealing with this will amongst other things involve reaching agreement to ensure that those with responsibility for the law and its administration, receive the respect without which no society can give its citizens a sense of safety and security.
 
-#### The Process of Reaching a Settlement
+## The Process of Reaching a Settlement
 
 ##### The Mitchell Principles
 
@@ -151,7 +152,7 @@ We have provide elsewhere a detailed publication showing how decommissioning mig
 
 ---
 
-### Education
+## Education
 
 Education is a preparation for life, and the opportunity for our children's future. This opportunity must be available to all. It cannot be provided without the necessary resources. That is why Alliance is prepared to see a 1p increase in Income Tax, to be put entirely into education. Not a single Northern Ireland MP voted for this proposition when it came to Parliament in late 1996. Alliance is opposed to unnecessary taxation, but Education is a priority and we are prepared to accept that more public funds are necessary, if our children are to get a fair chance in life.
 
@@ -172,7 +173,7 @@ Education can and should be fundamental in developing tolerance, respect and mut
 
 ---
 
-### Training for Work
+## Training for Work
 
 Alliance welcomes the growth in the establishment of formal and informal learning opportunities but believes that a proportion of the potential workforce is still insufficiently prepared for the demands of the workplace. Aware that employers demands change continuously due to technological developments, Alliance believes further initiatives are required. These include:
 
@@ -185,7 +186,7 @@ In the future, few people will work in a full-time career for life. Many will de
 
 ---
 
-### Health Care
+## Health Care
 
 Alliance is fully committed to the fundamental principle of equity of access on the basis of medical need to a National Health Service, free at the point of delivery and funded from general taxation. A uniformly high standard of treatment must be available to every patient regardless of whether his/her GP is a fundholder or not and regardless of his/her location within the province. Alliance deplores the increasing play of so-called market forces in a sector which should be driven by need and the desire to provide optimum care.
 
@@ -201,7 +202,7 @@ While recognizing the importance of sound financial management, Alliance deplore
 
 ---
 
-### The Economy
+## The Economy
 
 Alliance is committed to the creation and maintenance of a thriving Northern Ireland economy characterised by sustainable growth, stability, high employment and a fair distribution of resources. The private sector is generally best placed to achieve these goals through the marketplace, for it is primarily through individual enterprise and initiative that the economy grows and wealth is created. However the public sector will have a continuing significant role helping to improve the competitiveness of business, provide services and infrastructure development beyond the scope of the market, and compensating for things the market does not do, such as the distribution of some of the benefits of wealth creation, especially in health care and the education services.
 
@@ -222,7 +223,7 @@ Innovation needs to be encouraged while progress and change should be regarded a
 
 ---
 
-### Agriculture and Rural Development
+## Agriculture and Rural Development
 
 Agriculture is the largest sector of the economy in Northern Ireland and employs thousands of our people both directly and in ancillary industries. It also has the capacity to make a larger contribution by additional activities which 'add value' to agricultural produce.
 
@@ -246,7 +247,7 @@ Animal welfare concerns, as well as the need to add value to agricultural goods,
 
 ---
 
-### Energy
+## Energy
 
 Alliance supports a sustainable energy policy for Northern Ireland which aims to maximise energy efficiency and minimise consumption of non-renewable resources. Northern Ireland has the potential to develop renewable resources. Government policy must emphasise and encourage new, imaginative sources of energy, such as wind and wave power, bio fuels and agricultural and municipal wastes. Alliance believes new energy technology should be supported by government funding as well as by the private sector. The Party also supports energy inter-connectors between Northern Ireland and the Republic of Ireland, and between Northern Ireland and Great Britain, subject to careful consideration of economic and environmental concerns.
 
@@ -254,7 +255,7 @@ Energy efficiency and conservation must be encouraged in both public, commercial
 
 ---
 
-### Transport
+## Transport
 
 Alliance supports an integrated transport strategy for Northern Ireland, incorporating transportation by rail, road, air and sea. This should include both internal movement and external movement to the Republic of Ireland, Great Britain and further afield into mainland Europe.
 
@@ -268,7 +269,7 @@ Alliance believes that a comprehensive transport policy which improves infrastru
 
 ---
 
-### The Environment
+## The Environment
 
 Alliance believes that the ever increasing level of damage being done to the environment is one of the greatest challenges facing countries around the world. Responsibility for taking up the challenge rests with governments, councils, civil servants and political parties as well as businessmen, community groups and individuals.
 
@@ -288,7 +289,7 @@ Alliance welcomes the recent decision against the underground laboratory at Sell
 
 ---
 
-### Housing
+## Housing
 
 Alliance aims to ensure that every family is provided with a decent home, at a price which they can afford. We believe that both the public and private sectors have equally important roles to play in achieving this.
 
@@ -306,7 +307,7 @@ Alliance is concerned that improvements in combating urban housing decay have no
 
 ---
 
-### Women's Issues
+## Women's Issues
 
 Women represent 52% of the population, yet Northern Ireland representation in Parliament and Europe is exclusively male. Women's rights are neglected because they are not represented in the places where they can argue for them.
 
@@ -324,7 +325,7 @@ Alliance believes in equality of opportunity at all levels of society for men an
 
 ---
 
-### Children and Young People
+## Children and Young People
 
 Alliance has adopted the United Nations Convention on the Rights of the Child as a policy commitment.
 
@@ -340,7 +341,7 @@ Both parents should take responsibility for the upbringing of their children, Pa
 
 ---
 
-### Disability
+## Disability
 
 More than 17% of the adult population in Northern Ireland (200,000 people) have a disability. While 75,000 people with disabilities are of working age only 10,000 are registered as disabled.
 
@@ -363,7 +364,7 @@ Alliance is in favour of positive action rather than positive discrimination to 
 
 ---
 
-### Social Security
+## Social Security
 
 Alliance believes the Social Security system must be sufficiently flexible and adequately funded to provide not only a 'safety net', but also proper support and incentives to those seeking work. The long-term aim should be a combined taxation-benefit system which gets rid of the poverty trap created by the present arrangements, and which encourages individuals to take responsibility for themselves in so far as they can. We support the introduction of pilot 'Work Returner' schemes, where payment of benefits is phased out gradually once the recipient finds work. While the cost of such schemes needs to be carefully evaluated, their benefit is that they would allow the long-term unemployed to make the transition to full-time employment without suffering loss or debt.
 
@@ -375,7 +376,7 @@ We believe society's values are reflected in how it treats its most disadvantage
 
 ---
 
-### Community Relations
+## Community Relations
 
 Alliance has believed since its inception that it is essential to work. for the elimination of prejudice by a just and liberal appreciation of the beliefs and fears of the different members of the community. Within any framework for a devolved government in Northern Ireland it is essential that there should be a Ministry of Community Relations which would influence other policy areas as well as promoting its own specific community relations agenda.
 
@@ -387,23 +388,23 @@ We have identified the following priority areas:
 - A review and affirmation of the contribution of the Community Relations Council.
 - Ensuring that in all policy areas new legislation encourages good community relations. This means not always dividing the community into two mutually exclusive camps, but rather building a single but diverse community with a pluralist ethos.
 
-#### Anti-Discrimination Legislation
+## Anti-Discrimination Legislation
 
 Alliance welcomes the introduction of Race Relations Legislation to Northern Ireland, albeit some 20 years after the corresponding legislation was introduced in Great Britain. Alliance also welcomes the introduction of the Disability Discrimination Act, but believes that the current law needs to be expanded and strengthened in order to be effective. Alliance has consistently supported effective legislation to ensure equality of opportunity and to counter discrimination on grounds of religion, political belief, gender, race, disability and age.
 
 ---
 
-### Consumer Affairs
+## Consumer Affairs
 
 Alliance believes it is essential to have effective redress for consumers, and protection of consumer rights within both national and European legislation.
 
 Priorities for consumers in Northern Ireland include:
 
-#### Electricity Prices
+## Electricity Prices
 
 The price differential between electricity costs in Northern Ireland and the rest of the UK is unacceptable and must be reduced. Generating costs must be brought within the remit of OFFER.
 
-#### Water Privatisation
+## Water Privatisation
 
 As a result of Alliance campaigning, the privatisation proposal has been postponed. We will continue to campaign to ensure the proposal is not reintroduced.
 
@@ -411,7 +412,7 @@ Consumer rights must be given appropriate weight in the overall economy so as to
 
 ---
 
-### Europe
+## Europe
 
 The Alliance Party is strongly committed to the European Union, which has maintained peace and democracy in a region riven by centuries of conflict and national rivalries. The Maastricht Treaty allows local issues to be addressed in developing a Europe of the Regions. Alliance supports greater consultation with Northern Ireland public representatives in distribution of EU Funds and, where appropriate, direct representation for the province in negotiations with the European Commission and within the Council of Ministers. These are expressions of the principle of subsidiarily.
 
@@ -423,7 +424,7 @@ As a member of the European Liberal, Democratic and Reform Party, Alliance will 
 
 ---
 
-### Overseas Development
+## Overseas Development
 
 Alliance is committed to a more equitable distribution of the world's wealth between nations to ensure fair treatment for poorer nations. This may be done through government and international action as well as individual action.
 

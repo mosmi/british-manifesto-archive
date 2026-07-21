@@ -26,6 +26,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish National Party Manifesto 2010
 
 ## Elect a Local Champion
@@ -34,7 +35,7 @@ sections:
 
 ---
 
-### Contents
+## Contents
 
 - Introduction — 4
 - Scotland needs champions — 6
@@ -69,7 +70,7 @@ Elections are important. Too often it is the hard-working people and families wh
 
 ---
 
-### Scotland Needs Champions
+## Scotland Needs Champions
 
 **Your vote on May 6th is important. Our nation needs a strong team of Scottish MPs working for our communities in the House of Commons. SNP MPs who will be local and national champions – working hard for people in all parts of Scotland.**
 
@@ -95,7 +96,7 @@ We are the only Party that will put Scottish interests first. SNP MPs will provi
 
 ---
 
-### More Nats, Less Cuts
+## More Nats, Less Cuts
 
 **In this time of fragile recovery from recession it is more important than ever to have SNP MPs working in the House of Commons to protect public spending and investment in recovery so we can create jobs for communities across Scotland.**
 
@@ -117,7 +118,7 @@ We must recycle government efficiencies to protect frontline services. We should
 
 We must not allow the UK parties to jeopardise Scotland's recovery. We must protect Scotland from Labour's plan for 'deeper and tougher' cuts than Margaret Thatcher and from the Tories' plan to impose a £1 billion cut targeted specifically at Scotland.
 
-#### Protecting the Things That Matter
+## Protecting the Things That Matter
 
 We believe different choices on cuts must be made. Instead of cutting spending on the things that really matter like recovery and local services – as the London parties propose – we believe the axe should fall elsewhere. We should protect spending on health, education and jobs and instead cut projects like the £100 billion replacement for Trident, the current nuclear deterrent, the UK's deep depository for nuclear waste and the remnants of the ID card programme.
 
@@ -137,7 +138,7 @@ At this election the choice is clear. Only the SNP is working to protect recover
 
 ---
 
-### Winning a Better Deal for Scotland
+## Winning a Better Deal for Scotland
 
 **SNP MPs in the House of Commons will work hard to win the best deal for Scotland and our communities. We will work in partnership with our allies in Plaid Cymru to secure important gains for the people of our nations as set out in the 4Wales, 4 Scotland agreement.**
 
@@ -145,7 +146,7 @@ We will not enter any form of coalition agreement with the London parties. Inste
 
 There is much we can achieve for our nation and for our communities:
 
-#### Fair Funding
+## Fair Funding
 
 New, fairer funding arrangements, including fiscal autonomy for Scotland, will be one of our key priorities, allowing us to do more to support jobs and create a more competitive business environment. Given the economic challenges we face, this is crucial for Scotland's future success.
 
@@ -161,7 +162,7 @@ This approach is supported by the governments in Wales and Northern Ireland beca
 
 The SNP will also continue to lead cross-party calls for the return of £150 million lottery funds diverted from Scotland to help fund the London 2012 games. The return of the diverted funds would turn a good legacy for the 2014 Glasgow Commonwealth Games into a great legacy.
 
-#### Focus on Jobs and Recovery
+## Focus on Jobs and Recovery
 
 We will urge a further acceleration of capital spending, a move that would support almost 5,000 Scottish jobs and provide much needed economic stimulus in the short term. This should be a central part of any post-election Budget or spending review and will help us strengthen and support Scotland's economic recovery.
 
@@ -169,7 +170,7 @@ And SNP MPs will join with the Scottish Government to press for Scotland to have
 
 We will look to improve current efforts on employment. We will argue for Scotland to have greater responsibility for employment policy so we can bring together the work of Job Centres and our skills agency to make sure local communities benefit from skills and employment support that is fully co-ordinated. That simple move would enhance the existing partnership arrangements, reduce bureaucracy and overlap and mean more time and resources are available to help people into work.
 
-#### Protecting Local Services and the Most Vulnerable
+## Protecting Local Services and the Most Vulnerable
 
 In the next Parliament public spending will be squeezed and we will argue that action to reduce the deficit is based on what is important to people here in Scotland. Cuts should be made to the things that matter least so we can continue investment in vital local services.
 
@@ -189,7 +190,7 @@ SNP MPs will work to put renewed focus on efforts to narrow the gap between the 
 
 We will press the UK government to investigate new approaches such as a maximum combined withdrawal rate for benefits and also call for reform to the hugely problematic Employment Support Allowance and changes to the system of cold weather payments so it more closely reflects Scottish needs and circumstances and increases support for individuals in Scotland. And we believe the minimum wage should increase in line with earnings.
 
-#### Action to Help the Green Economy
+## Action to Help the Green Economy
 
 Scotland has enormous green energy potential and the SNP is determined to make the most of this opportunity for our nation. We need to maximise investment in the research and infrastructure so we can turn potential today into tens of thousands of green jobs tomorrow.
 
@@ -201,7 +202,7 @@ And we will work to remove obstacles to further investment in wave, tidal and wi
 
 Taking forward the green economy is of course about more than renewables and that's why Scotland must be part of the first phase of the proposed UK high speed rail network. This move will boost business and reduce carbon emissions by delivering an effective alternative to domestic flights. It will take 30 years for high speed rail to reach Scotland under Labour or Tory plans and this is not acceptable.
 
-#### Support for Business Growth
+## Support for Business Growth
 
 Our efforts will be focused on promoting Scottish economic recovery. We will work to ensure that growth industries in Scotland, like the games industry, are given the same sort of support as in competitor countries and for incentives for further investment and exploration in the North Sea, helping extend the lifetime of this valuable Scottish resource.
 
@@ -211,7 +212,7 @@ We believe the banks should be doing more to support rather than inhibit growing
 
 We will provide a strong voice for our fishing and agriculture sectors, holding the UK government to account while they represent these economically important industries in Europe. And, to protect the incomes of many of our farm businesses we will oppose UK plans on CAP reform, which would see the removal of the important First Pillar funding.
 
-#### Standing Up for What Is Right
+## Standing Up for What Is Right
 
 We will continue to lead the campaign for the scrapping of the UK's nuclear deterrent. We, like the majority of Scots, do not want the obscenity of weapons of mass destruction on Scotland's shores. We have no doubt that our nation would prefer to see resources spent properly equipping our troops in Afghanistan and invested in jobs, on meeting our international development commitments and on building a fairer, stronger society here at home rather than on nuclear missiles that can wipe out half the planet.
 
@@ -223,7 +224,7 @@ We will oppose plans to repeal the Human Rights Act. Our MPs will continue to su
 
 ---
 
-### Building a New Partnership
+## Building a New Partnership
 
 **Every survey of opinion tells us that people across Scotland want to see the Scottish Parliament take on more responsibilities – for our representatives here in Scotland to have the ability to do more to make our nation more successful.**
 
@@ -287,7 +288,7 @@ The nuclear deterrent has employment costs as well. Research conducted by the ST
 
 Having full responsibility for defence matters would let the people of Scotland have their proper say on these issues – we could take the decisions on adequate protection of our troops. We would have been free to decline to take part in the recent Iraq War, based on its lack of a legal mandate. And we would be in a position to ensure the removal of nuclear weapons from Scotland.
 
-#### Why Independence?
+## Why Independence?
 
 Scotland is a distinct community. Together we see ourselves as a nation and independence is the natural state for nations like ours. And as a community, we care most about our own success – we have the biggest stake in solving the problems we face, or making the most of the opportunities available to us. As a community and as a nation we are the best people for the job of making our nation the sort of place we want it to be.
 
@@ -299,7 +300,7 @@ The fundamental appeal of independence is that it offers a different vision for 
 
 ---
 
-### Supporting the Scottish Government
+## Supporting the Scottish Government
 
 **SNP MPs will be strong partners for the Scottish Government in London. We need MPs who will support Scotland, not argue against Scotland. MPs who will help win the best deal for our nation.**
 
@@ -321,7 +322,7 @@ Since the Scottish election the SNP government has implemented almost three quar
 
 Much has been achieved and as we move forward, much to protect:
 
-#### Economic Recovery
+## Economic Recovery
 
 The SNP's Economic Recovery Plan has already supported 20,000 jobs and left Scottish families with more money in their pockets at the end of each month. This includes the extension of the council tax freeze for a third year, with the resources made available to freeze the Council Tax again in 2010-11.
 
@@ -337,7 +338,7 @@ We are directly supporting jobs in local communities through record investment i
 
 Connecting Scotland is also an important part of our approach to economic growth. The new Borders Railway will provide direct access for many communities to Edinburgh, boosting local jobs and local economies. Similarly, the faster journey times by train from Aberdeen and Inverness, the improvements on the A9 and A96 and the green light for the Aberdeen by-pass will also deliver social and economic benefits for communities in the north and north east. And we will take forward the crucial Forth Replacement Crossing, in the face of the cuts proposed by the government in London.
 
-#### Education and Skills
+## Education and Skills
 
 Our Economic Recovery plan is also supporting thousands of new training places, including 20,000 apprenticeships this past year, exceeding our target by well over 1,000. And through the Scottish budget this year, we have invested once again in modern apprentices and in our universities and colleges.
 
@@ -349,7 +350,7 @@ And we are also working to improve the life chances of young Scots, with an incr
 
 And we will protect our planned £1.25 billion investment in even more new and refurbished schools in the years ahead as we work to remove the backlog of repair and rebuilding that has grown up over the past decade. Since taking office, we have built or substantially refurbished schools at a faster rate than before – 260 schools across Scotland with over half financed using traditional borrowing or NPD.
 
-#### Innovation and the Industries of the Future
+## Innovation and the Industries of the Future
 
 We are also investing in innovation and the industries of the future. We have launched the £10 million Saltire Prize to provide the largest innovation prize for marine renewables, and established a new £12 million fund for research and development putting Scotland at the forefront of this emerging and potentially planet saving technology. The Saltire Prize has already seen 146 expressions of interest from 27 different countries, and we are proud to be working with experts from around the world and with National Geographic, one of the largest scientific and educational institutions in the world, to promote and develop this initiative.
 
@@ -361,7 +362,7 @@ Scotland's marine environment is undoubtedly one of our most prized assets and a
 
 Scotland has the know-how and the geography to be a world leader in this – and other – offshore energy technologies and it is an opportunity we must take full advantage of in the decade to come. Investment today will deliver greater returns – in jobs and revenues – tomorrow. And it is clear, given this huge opportunity and potential to generate up to 10 times Scotland's own electricity requirements there is no need for new nuclear power stations.
 
-#### Supporting the Rural Economy
+## Supporting the Rural Economy
 
 Scotland has huge strengths and enormous potential and that must be translated into greater prosperity and opportunity for hard-working families and individuals in communities across our nation.
 
@@ -375,7 +376,7 @@ We oppose the CFP and believe it should be replaced so that there is a bigger sa
 
 Clearly Scotland's rural communities and economy have specific needs and the SNP is working hard for rural interests. That is why we have introduced road equivalent tariff on routes to the Western Isles, and will look to protect this important initiative from the proposed Labour and Tory cuts.
 
-#### A Healthier Scotland
+## A Healthier Scotland
 
 Spending in our NHS is at record levels and it is to protect this funding that the SNP is offering an alternative to the planned Labour and Tory cuts. As part of our commitment to direct more to the frontline and protect the things that are most important, we will take forward vital investment including our £1 billion programme of new community health facilities through the Scottish Futures Trust and the £840m new Southern General hospital in Glasgow.
 
@@ -389,7 +390,7 @@ And we will move forward with our proposals to abolish prescription charges in 2
 
 We are also taking action to improve health, prevent ill-health and tackle health inequalities. We are acting to tackle obesity and promote physical activity. We are also acting to tackle the health impact of tobacco, with legislation to restrict cigarette displays and remove vending machines. And we are investing more than ever in rehabilitation so that drug addicts can kick the habit.
 
-#### Safer Communities
+## Safer Communities
 
 When the SNP came to office in 2007 many of Scotland's streets were not safe. So we have been working hard to make them safer. We are taking forward proposals to tackle alcohol misuse including a policy of minimum pricing that is targeted on the cheap alcohol that fuels so much of the anti-social behaviour and violence on our streets. There is growing support, not only among health professionals and the police, but now also among the drinks industry including leading manufacturers and the licensed trade.
 
@@ -397,7 +398,7 @@ And we are delivering additional policing capacity – more police officers, spe
 
 And they will be working to protect investment in initiatives like the highly effective Violence Reduction Unit. Under the SNP more knife carriers are being sent to jail and they are getting longer sentences. The average sentence for those sent to prison for carrying a knife has now increased from less than 4 months in 2003/04 to well over 8 months in 2008/09.
 
-#### Scotland Can Be More Successful
+## Scotland Can Be More Successful
 
 These are the sorts of initiatives – across the range of policy portfolios – that are important for the SNP and we believe for Scotland's communities. They are designed to make Scotland the more successful country we know it can be.
 

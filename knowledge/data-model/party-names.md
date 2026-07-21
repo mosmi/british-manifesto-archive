@@ -50,8 +50,24 @@ organisation after the 2021 relaunch). Period label:
 
 Election pages may also set `manifestoPartyLabels: { reform: 'Brexit Party' }` as an
 explicit override; `getPartyName` should make that redundant for year-aware UI.
-There is a separate `brexit` party id used for some European Parliament holdings —
-do not confuse the two when auditing “missing” folders.
+
+The EP folder slug `manifestos/euro/2019/brexit/` is retained on disk, but
+`PARTY_ALIASES.brexit → reform` so `/party/brexit` resolves to the Reform UK page
+(and Cloudflare `_redirects` 301s it). Do not reintroduce a separate `PARTIES.brexit`
+record.
+
+### Centralised party (not territorial Lib Dem-style)
+
+Unlike Labour/Conservative/Lib Dem territorial editions (`scottishlab`, `welshlibdem`,
+…), **Reform UK keeps a single party id** (`reform`) for Westminster, Holyrood, and
+Senedd. Mega-menu labels may read **Reform UK** / **Reform UK Scotland** /
+**Reform UK Wales** but all three link to `/party/reform`. Do not invent
+`scottishreform` / `welshreform` records.
+
+Party breadcrumbs omit a nation crumb when `nation === 'england'` — that field is
+the mega-menu **England & UK-wide** bucket (Labour, Conservatives, Reform UK, …),
+not “England-only”. Territorial parties (`nation: scotland|wales|northern-ireland`)
+still show `Home › Parties › {Nation} › {Party}`.
 
 ## Adding another lineage
 

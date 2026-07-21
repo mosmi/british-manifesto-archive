@@ -22,17 +22,18 @@ sections:
   - local-government
 ---
 
+
 # British National Party Manifesto 1992
 
 ## Fight Back!
-### The Election Manifesto of the Bnp
+## The Election Manifesto of the Bnp
 
 **British National Party**
 **Election Manifesto for 1992**
 
 *Printed & published by BNP, PO Box 117, Welling, Kent DA16 3DW*
 
-### What This Election Means to US
+## What This Election Means to US
 
 BRITAIN heads, through ever recurring crises, towards total collapse. Whether the collapse comes during the present year, or the next year or later we cannot predict exactly; what is certain is that it will come soon. And when it comes it will not come merely throughout the failure of one particular government; it will be a failure of the whole political system, rooted in institutions which have long outlived their usefulness to the nation. It is the system that has given us one inept government after another, one disastrous national leader after another, one failed policy after another.
 
@@ -50,15 +51,15 @@ The British National Party was founded exactly ten years ago. For a long time it
 
 **JOHN TYNDALL (Chairman, BNP)**
 
-### A Party of Nationalism
+## A Party of Nationalism
 
 WE ARE NATIONALISTS, while the other parties are internationalist. We seek to preserve Britain's national identity by preserving the traditional character of her people; they seek to destroy that identity by the policy of multi-racialism. We seek to preserve Britain's national freedom and sovereignty by keeping control of all British affairs in British hands; they seek to destroy our freedom and sovereignty by surrendering that control to a supra-national authority in Europe. We seek to preserve all the assets and resources of Britain, economic and otherwise, under British ownership; they are willing to sell out our assets and resources to any foreign bidder.
 
-### A Party of National Unity
+## A Party of National Unity
 
 NATIONAL UNITY is the first requirement if Britain is going to summon the effort to grapple with the grave crises now threatening her on all fronts. To this purpose, a system of government must be created which will mobilise the entire resources of the nation's leadership towards one common purpose, instead of those resources being dissipated in party warfare. Likewise, the nation as a whole must be wielded into a single and solid community, dedicated to a common patriotic purpose, instead of being torn apart by political, ethnic, religious, class and regional conflicts. The old political parties, created to serve sectional interests and with the minds of their leaders imprisoned in the outworn dogmas of the party game, are quite incapable of carrying out these unifying tasks.
 
-### A Party of Political Reform
+## A Party of Political Reform
 
 THE PRESENT SYSTEM of government in Britain achieves the worst of both worlds: it combines inefficiency with tyranny; it is unable to maintain either order or freedom.
 
@@ -94,7 +95,7 @@ Such a system of occupational franchise, by enabling the elector, as stated, to 
 
 Where the mass media does become necessary to guide public opinion on matters of vital national concern, such as in elections to prime-ministerial office, they should be required by law to offer equal facilities of communication to all candidates. And at all other times the law should oblige all organs of the mass media to give a hearing to every shade of political opinion, with no exceptions. In this way will the people be granted a further freedom which is denied many of them under present conditions, in which a largely invisible media censorship effectively excludes certain opinions which the mass media-owners have an interest in suppressing. (Further comment on the mass media can be found in a later section).
 
-### A True National Community
+## A True National Community
 
 WE TOTALLY REJECT the Tory concept of the nation as merely an aggregate of so many millions of individuals, motivated only by avarice and self-interest. Instead, we envisage Britain as a true national community, whose purpose will work for each other and for the nation as a whole.
 
@@ -108,7 +109,7 @@ We are not against the concepts of aristocracy and inherited wealth, but we main
 
 While we recognise the need for some social stratifications based on the foregoing considerations, we totally repudiate the idea that these stratifications should form the basis for political and class conflicts, founded on the supposition of a rivalry of interests — as is the case in Britain at present. Different classes there may be; but all must share one interest in common: that of the nation.
 
-### Britain and Europe: a New Relationship
+## Britain and Europe: a New Relationship
 
 BRITAIN'S MEMBERSHIP of the European Community has brought no advantage to us, only economic decline and political servitude. It must be ended.
 
@@ -118,7 +119,7 @@ Some politicians among the parties of Westminster have maintained the delusion t
 
 We believe that in the longer term the European Community as it now stands is destined not to survive. German dominance and the Gulf War, accompanied by numerous manifestations of incompatible economic interests and irreconcilable concepts of the future political structure of Europe, have underlined this probability. What is important is that we now look beyond Europe to a realistic vision of a future in which Britain will stand on her own feet, and as part of that form new associations around the world which best serve her unique and special national interests and traditions.
 
-### Reform of the Commonwealth
+## Reform of the Commonwealth
 
 WE BELIEVE that Britain's best alternative to immersion in Europe lies in a re-establishment of close trading, cultural and family relationships with members of the Old Commonwealth, formerly known as the 'Dominions'.
 
@@ -136,7 +137,7 @@ We should exploit the vast treasure house of British Antarctica, while preservin
 
 We firmly believe that the community of states formed through a close partnership between Britain and the Old Commonwealth could become a world power of the first rank and one of the strongest combinations of the 21st century.
 
-### Race and Immigration
+## Race and Immigration
 
 WE BELIEVE that the multi-racial experiment has proved disastrous to Britain and must be ended. All further non-white immigration to the United Kingdom should be stopped, while in the meantime the Government should initiate a massive programme for the resettlement overseas of those non-Whites already here.
 
@@ -144,13 +145,13 @@ Britain should use a leverage presently offered by her financial aid to Third Wo
 
 Pending the repatriation of non-white residents of this country, all current 'race relations' legislation, which stifles the right of native-born Britons to speak out against the evils of the multi-racial society, should be repealed. So also should all 'positive discrimination' in favour of ethnic minorities in jobs, housing and social services be ended.
 
-### A New Economic Revolution
+## A New Economic Revolution
 
 THE DAWN of the Thatcher era was heralded by promises of 'revolutionary change' in the manner in which the British economy was to function. By the end of that era, eleven and a half years later, it had become clear that the 'revolution' was pure illusion: very little had changed, and the state of the economy was even worse than when the era began. What is needed now is the real revolution that Mrs. Thatcher talked about but never delivered, the revolution that will challenge the deeply entrenched interests which over the decades have constantly resisted change: the interests of the City, of International Finance, of the Stock Market and of Usury. Though Mrs. Thatcher has now gone, there is no sign that the power of these interests has abated; on the contrary, it increases by the week.
 
 The City of London, and the financial institutions of the nation as a whole, must cease to exist as self-serving entities and must be harnessed and mobilised by government to act as the handmaidens of the productive sectors of the economy, most of all of manufacturing industry and of agriculture. We intend to put an end to the practice of the free movement of investment capital whereby British money is used to build up the industries of our foreign competitors while foreign money is permitted to buy up the industries of Britain. Investment must be firmly regulated so as to ensure that it serves the real needs of the British economy. Our financial institutions must become national rather than international.
 
-### Primacy of the Producer
+## Primacy of the Producer
 
 THE PRODUCER of real goods and services must be given primacy in the British economy of tomorrow; money, on the other hand, must become the servant of the economy and not its master.
 
@@ -168,7 +169,7 @@ We believe it essential to achieve regional balance between all parts of the Uni
 
 We believe that recent governments have been wholly wrong in squandering Britain's precious domestic oil resources by allowing unrestricted exports so as to maximise their own revenue from oil sales. We advocate the careful conservation of British oil, both offshore and inland, so as to enable Britain to enjoy near self-sufficiency in oil products for as far into the future as possible.
 
-### Monetary Reform
+## Monetary Reform
 
 THE NATION'S monetary system must be taken out of the hands of the private banking interests and made a national resource to be controlled according to national needs.
 
@@ -178,7 +179,7 @@ It is by the operation of the latter system — which none of the parties of Wes
 
 Our solution to this constant problem of interest rates and inflation is to rule that private banks will no longer be permitted to lend money in excess of real cash reserves. The creation of all new money must become the sole prerogative of government, and must occur in a manner that renders the new money debt-free and, as stated earlier, issued in a quantity equated to the expansion of real national wealth. This money should regularly be created as a portion of public expenditure, thus making possible a vast reduction of taxation without necessitating public cuts; at the same time it will enable wages to be regularly increased, as production increases, without any inflationary result.
 
-### A New Charter for Industrial Relations
+## A New Charter for Industrial Relations
 
 AS NATIONALISTS, we do not recognise that there are employers' interests or employees' interests; there is only a national interest. That interest requires total harmonisation between all sectors of industry and their united effort to increase national prosperity.
 
@@ -188,7 +189,7 @@ We are pledged to introduce revolutionary reforms in the whole structure of indu
 
 We see much merit in profit-sharing schemes within some industries as in inducement to better performance. We believe, however, that the initiative to introduce these should be left to the discretion of the heads of the respective in question, rather than their being imposed on all industry by the decree of government.
 
-### Transport
+## Transport
 
 WE ARE RESOLVED to provide Britain with a system of public transport equal to any in the world. This will require massive subsidies, but the money spent will be an investment leading to greater national economic efficiency as well as environmental improvement. Our aim is an integrated national transport system through a radical upgrading and overhaul of the existing road, rail, air and waterways structure.
 
@@ -198,7 +199,7 @@ International air traffic routes should be spread more evenly over the country r
 
 The national waterways network should be enhanced to provide greater transportation for both commercial and leisure purposes.
 
-### A New Social Ethic
+## A New Social Ethic
 
 OUR SYSTEM of social welfare in Britain has run into insuperable difficulties because it has been based from the very start on a false understanding of what should be the fundamental goals of society. In our own conception of these goals, the requirement to care for those genuinely in need must be balanced by the necessity to produce a healthier, sturdier, more capable and more self-reliant population. This is best expressed in the dictum that we do not help the weak by undermining the strong.
 
@@ -218,7 +219,7 @@ An essential step towards achieving a more nationally advantageous code of socia
 
 A large number of those presently in need of social help are to be found in the ranks of the unemployed. We are confident that the economic programme which we offer will almost wholly eliminate unemployment in Britain. However, in instances where absence of work does lead to a need for social welfare benefits over and above normal unemployment benefit, and where the applicant is perfectly capable of work, such benefits should be granted in return for work performed, and not as 'something-for-nothing'. With this in mind, we favour the establishment of a 'workfare' system, on the model of those operated in a number of American states, whereby local authorities organise work schemes to be engaged in by unemployed in return for social service payments.
 
-### The Role of Women
+## The Role of Women
 
 WHAT has been said earlier about the need to encourage a responsible approach to family life, and to reverse the dangerous downturn in the birth rate, requires a very basic review of those conceptions of the role of women that have been in popular vogue over the past two or three decades.
 
@@ -238,7 +239,7 @@ At the same time we should depart from the concept of the career woman as our na
 
 Housewives and mothers should be prominent among those occupational groups granted representation in the new parliament, for they represent a role in society more important indeed than any other: that of ensuring the maintenance of our future life as a nation. Under present conditions, and after all the great sacrifices of the suffragettes, women have a vote which is just as useless to them as it is to their menfolk. Under the conditions that we should bring about, women would in fact have a power and influence in national affairs far greater than those afforded by the prevailing swindle known as 'democracy', but these would be a power and influence of a kind far more beneficial to women because thoroughly suited to their special attributes and understanding. In this way they could play a role in society that is equal in importance to that of men, though fundamentally different.
 
-### Education for National Survival
+## Education for National Survival
 
 IT IS common knowledge that Britain has now become one of the worst-educated nations in the advanced world. Even the Tory Party, and at least elements among the other parties of Westminster, recognise the need for sweeping reforms that will restore basic disciplines and traditional teaching methods to our centres of learning, instead of the permissive and 'child-centred' approaches that have retarded British education during the past two or three decades.
 
@@ -252,7 +253,7 @@ This having been said, we must not presume that all will be well if we are able 
 
 However, British education must not only strive to produce people with the academic capabilities stated above; it must aim to produce the whole man and the whole woman: citizens possessing the desired combination of mental development, sound health and physique, strong character and a sense of patriotism and civic responsibility. With these needs in mind, we advocate the formation of a national youth movement which will supplement the educational syllabus and provide our young people with a solid grounding in such extra-curricular forms of training.
 
-### Mass Media
+## Mass Media
 
 WE INCLUDE a section dealing with policy towards the mass media immediately after one dealing with education because today the two have become inextricably linked together: the press, radio and, in particular, television have assumed the character of public educators, and as such they cannot simply be left to go their own way without any responsibility to the nation of which they are part.
 
@@ -264,7 +265,7 @@ The whole issue of 'freedom of the media' has in fact become a big red herring; 
 
 We are pledged to ensure that Britain's vastly powerful mass communications industry is brought within the ambit of those institutions that have responsibilities to the nation and are made to fulfil those responsibilities. This does not mean that this industry should become, as in some totalitarian countries, merely a tool and mouthpiece of government; it does mean, however, that it should be obliged to observe certain standards of morality and decency, that it should be made to function as a proper public service and not as a merely one for the benefit of a small clique of billionaire communicators, and that, like every other powerful and influential body, it should not be permitted to use its power and influence in anti-British causes.
 
-### National Health
+## National Health
 
 WE ARE PLEDGED to provide the highest standards of health treatment in a national health system in which no discrimination will be made between private and public provision. The approach to illness must be primarily through preventative measures, which will emphasise the need for health to be attained by attention to personal hygiene, physical fitness and the consumption of nutritious and wholesome food. Greater attention must be paid to dietary habits and to the need to combat the harmful influence of the drug industries, the breweries and the tobacco companies.
 
@@ -272,13 +273,13 @@ We are opposed to the policy of the present Tory Government of introducing 'mark
 
 Stress plays a vital part in causing ill-health, and that is why we attach great importance to improving living and working conditions.
 
-### Sport and Recreation
+## Sport and Recreation
 
 BELIEVING as we do in importance of the correlation between health and physical exercise, we are pledged to encourage and promote active participation by the population in every field of sporting endeavour, physical activity and recreational pursuit. To this end, we advocate a vast increase in the provision of sporting facilities and leisure centres so as to cover every area of the country. Emphasis in schools should be placed, from a very early age, on the importance of physical fitness and bodily health, and participation in physical training and hard sports should be obligatory for every school pupil, except the physically disabled.
 
 While we are pledged to give greater help to sport and recreation in Britain at every level, we shall give very high priority to raising the performance of British sporting teams in Olympic and other international competition. In modern times, prowess in international sport is taken by the world as an indicator of the vigour or feebleness of nations. We are resolved that in this regard Britain will not be counted among the feeble.
 
-### A Population Properly Housed
+## A Population Properly Housed
 
 IN HOUSING, our ideal is home ownership for the largest possible number. To realise this, we must keep property prices within reasonable reach of the ordinary wage-earner, and this we can do only by changing the present financial system which creates built-in inflation. In a non-inflationary economy, property prices can rise only within the limits to which the prices of other commodities can fall. Such a non-inflationary economy will also render redundant the property speculator, who acquires land and buildings only to keep them in disuse in expectation that later they can be sold for a large profit.
 
@@ -290,7 +291,7 @@ In council housing we are pledged to eliminate, again by the financial reforms e
 
 In slum clearance, there must be a greater concentration on the renovation of old housing where this structurally practicable, so as to assist the preservation of community life. We regard high-rise flats as not only damaging to communities but an environmental eyesore, which should be gradually phased out.
 
-### Care for the Environment
+## Care for the Environment
 
 NO MORE of Britain's countryside must be sacrificed for building purposes except where essential to national security. Where new land is required for building it must be found in urban areas by means of stricter rules governing the use of urban property. Privately owned urban land that is not in use but is being retained purely for purposes of speculation will be subject to compulsory-purchase orders where necessary.
 
@@ -306,7 +307,7 @@ Our waterways must be thoroughly cleansed of industrial waste and other pollutio
 
 On 'green' issues generally, we recognise that today most of the population is 'green-orientated' to some degree or another. The dispute is not so much about the desirability of 'green' ideals as over the methods by which they can be achieved. In contrast to other parties which profess 'green' programmes, however, we do not believe that the attainment of a better environment is compatible with 'liberal' institutions and policies. Such an environment is possible only through the introduction of a greater element of national discipline — as applied both to industry and commerce and to the individual citizen.
 
-### A Truly British Culture
+## A Truly British Culture
 
 WHERE culture and the arts are concerned, two views have always existed in this country: one is that there should be minimal state involvement in cultural affairs, with these left to private forces to finance in accordance with the free-market rules of supply-and-demand; the other is that it is the duty of government to sponsor the nation's cultural and artistic development to whatever degree is necessary to elevate the cultural and artistic awareness of the people.
 
@@ -318,7 +319,7 @@ Furthermore, we do not believe it is the duty of the British taxpayer to provide
 
 We believe that it is entirely wrong for talented British artists, whether they be painters, sculptors, novelists, playwrights, poets, composers, singers, musical instrumentalists or film-makers, to have their development and creativity stifled by commercial limitations. Where such talent reveals itself, money should be no object in bringing it to full flower. We particularly deplore the present absence of a vigorous and viable British film industry due to lack of adequate financial support, and the resulting need for British film products to be financed by foreign money, as well as the excessive importation of American and other foreign films for showing on British television and in British cinemas. In a cultural sphere where this country has always bred an abundance of talent, it is lamentable that foreign products should so dominate the viewing time of the British people.
 
-### Local Government
+## Local Government
 
 OUR PARTY is against the Community Charge (sometimes known as the Poll Tax) on the grounds that it is unjust, expensive and unworkable. In its place we favour a return to the rates system, not because that system is perfect but because it is the best alternative on offer.
 
@@ -332,7 +333,7 @@ With these considerations in mind, we are pledged to bring in legislation which 
 
 The other vital need in the sphere of local government is to eliminate the huge burden of municipal debt, which constitutes the hidden factor accounting for the excessive charges levied on local residents. We believe this to be perfectly possible within the framework of the monetary reforms outlined in a previous section. The sum total of charges that local residents are required to pay should equal the sum total of the cost of local amenities and services; those same residents should not, in addition, have to provide for the interest payable on local government loans from the banking system.
 
-### Law and Order: Need for a New Approach
+## Law and Order: Need for a New Approach
 
 BRITAIN is collapsing into anarchy, with crime figures hitting new records in almost every sector. Government, police and the judicial authorities have totally lost control. From the left and from the centre comes the cry that we must seek remedies through 'understanding' the criminal, through mollycoddling him and through rectifying the economic, social and educational disadvantages that, according to theory, lead him into crime. From the right comes the demand for tougher penalties, heavier policing and the restoration of hanging and flogging. We believe that both of these approaches to the problem are based on oversimplification which is the result of excessive attachment to ideological tradition and of unwillingness to engage in new thinking.
 
@@ -358,7 +359,7 @@ All that this means is that the battle against crime is not going to succeed unl
 
 And law and order will be re-established only when they become a law and an order which British people can identify as guardians of their true interests and as upholders of their loftiest ideals.
 
-### Cleaning Up Britain
+## Cleaning Up Britain
 
 AS the foregoing section on law and order will have indicated, we see the fight against crime as something inseparable from the task of moral regeneration of the whole nation. We are pledged to wage war against all those influences that are making for the disintegration of our society. This is a war in which traditionally minded Christians have a role, but it is not one that should concern Christians alone; we believe that the issues involved in combating the collapse of Britain's social and moral fabric are ones which transcend questions of religion. Both the religious and the non-religious should be capable of understanding the ethical and social conventions which over the centuries have served to shape a cohesive society in this country, and should be able to reach common ground in seeking to restore them.
 
@@ -374,7 +375,7 @@ In addition to these things, there is the stand we have constantly made against 
 
 In fact, it is in this very concept of what are the desirable freedoms that we hurl our challenge against 'liberal-democracy'. To the liberal-democrat, the freedom to do anything should be upheld as long as it does not harm another living being. But to us, human behaviour needs to be regulated by much more than this: it needs to be regulated by our debt to the past, to our ancestors and to the heritage they have handed down to us, as well as by our obligations to the future, to the unborn generations of our race to whom we in turn are bound to pass on what we have inherited. Behaviour, which harms ourselves, is behaviour which damages our people and our nation, when seen in this perspective. That was an old Christian view, even if the older Christians arrived at it by a route somewhat different from the one we have taken. It is, at any rate, a view that strikes at the very heart of the sanctified decadence that represents 20th century liberalism.
 
-### Unity of the Kingdom
+## Unity of the Kingdom
 
 WE ARE DEDICATED to maintaining the unity of the United Kingdom of Great Britain and Northern Ireland. We oppose any devolution schemes which threaten to loosen ties between the component lands of the Kingdom, and we oppose any bargaining over the future of Northern Ireland with the forces of Irish Republicanism. We deplore the weakness of both Conservative and Labour Governments during past years in dealing with Irish Republican terrorism.
 
@@ -384,7 +385,7 @@ The British Government must make a declaration, without qualification, that Nort
 
 In the meantime, we advocate that Britain should recognise that she is engaged in a war in Northern Ireland, and that she should employ every method necessary to prosecute that war to a successful conclusion — including a fully authorised shoot-kill policy against known leaders and activists of the Republican terrorist movement.
 
-### Defence
+## Defence
 
 BRITAIN'S ARMED FORCES must be brought up to, and sustained at, a level of strength and efficiency which at all times will be adequate to the defence of the United Kingdom and of British interests throughout the world.
 
@@ -398,7 +399,7 @@ We recognise the traditional British regimental system as one of the most import
 
 We are in favour of the restoration of compulsory military service for all young British males for a period to be fixed in accordance with the needs of any future war. We believe that such a period of service is desirable, not only from the standpoint of military training, but also as a preparation for citizenship. In addition to this, we believe that, for the same young males, pre-service military training should be given as part of the curriculum of a national youth movement in which both boys and girls would participate.
 
-### Britain and the World
+## Britain and the World
 
 THE FIRST PRIORITY of all British foreign policy should be the defence and furtherance of British interests. Our relations with foreign states should be based solely on that principle and not be conditional on our approval or disapproval of other states' internal politics.
 
@@ -414,7 +415,7 @@ Our party is opposed to all forms of international organisation which diminish B
 
 We repudiate the fashionable leftist notion that nationalism is the cause of international discord and war; on the contrary, we regard mutual respect between nation-states for each other's sovereignty as providing the best foundation for international peace.
 
-### Some questions answered
+## Some questions answered
 
 In letters of enquiry about the British National Party we receive a number of questions, some of which arise out of the distorted image of the party given by reports in the mass media. Here we have selected a few of the questions that occur most frequently, and we follow them with our answers.
 

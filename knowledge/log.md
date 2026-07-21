@@ -11,6 +11,537 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-21 — Pirate Party UK 2010 Westminster manifesto added (Cursor Grok)
+
+Assets `?v=2026072105`.
+
+- Added `manifestos/2010/pirate/` (PDF, transparent A4 cover, transcribed
+  `manifesto.md`; leader Andrew Robinson).
+- Wired `manifestos-index.json`, `extraManifestoParties` in `js/data.js` and
+  `data/elections/2010.json`; rebuilt pdf-sizes, latest-additions, SEO, sitemap,
+  fulltext, manifesto-assets, and party/manifesto OG cards.
+
+## 2026-07-21 — Brexit→Reform alias restored; euro election loading skeleton (Cursor Grok)
+
+Assets `?v=2026072104`.
+
+- Restored `PARTY_ALIASES.brexit → reform`; removed standalone `PARTIES.brexit`.
+  `/party/brexit` now canonicalises to Reform UK (client `replaceState` +
+  `_redirects` 301). EP folder `manifestos/euro/2019/brexit/` kept.
+- Euro index `control` for 2019 corrected to `reform`; winner helper resolves aliases.
+- `renderEuroElection` shows a loading skeleton (same pattern as Senedd) so hard
+  navigations are not a blank page while JSON loads.
+
+## 2026-07-21 — Home ways-in polish, UK-wide breadcrumbs, OG rebuild hook (Cursor Grok)
+
+Assets `?v=2026072103`.
+
+- **Home:** Replaced the inline “Four ways in: A · B · C · D” line with a four-column
+  label + hint nav under the hero subtitle.
+- **Breadcrumbs:** `partyBreadcrumbItems` skips the nation crumb for
+  `nation: 'england'` (UK-wide bucket) so Reform UK etc. read
+  `Home › Parties › Reform UK`. Documented in
+  [`party-names.md`](./data-model/party-names.md).
+- **OG cards:** Stale `/og/party/*.jpg` (last mass build ~5 Jul) did not reflect new
+  holdings. Regenerated party cards from current `seo.json`; added
+  `build-og-images.py --only party` to transcription Phase 5 and clarified in
+  [`og-generator.md`](./pipelines/og-generator.md) that cards are static JPGs, not
+  edge-dynamic.
+
+## 2026-07-21 — UX audit follow-on I11–I18, L1, L3, research notes (Cursor Grok)
+
+Assets `?v=2026072102`. Plan waves A–D (L2 compare mode out of scope).
+
+- **I11:** `minmax(min(280px,100%),1fr)` grids; election-body `overflow-x: clip`.
+- **I12:** Verified platform-aware ⌘K / Ctrl+K in `search.js` — no change.
+- **I13:** Nation headings use `aria-hidden` flags via `nationHeadingLabelHtml`.
+- **I14:** Richer edge noscript hubs (elections years, parties A–Z, About, portals).
+- **I15:** “England seats” badge + stronger Documents seat note.
+- **I16:** Richer 404 with hub links + Search button.
+- **I17:** Mega-menu Reform UK / Reform UK Scotland / Reform UK Wales → `/party/reform`.
+- **I18:** Light `--gold` → `#7a5f24` (~5.4:1 on cream).
+- **L1:** Home “Four ways in”; About organisation section; election/portal type chips.
+- **L3:** [`design/a11y-programme.md`](./design/a11y-programme.md) + results table caption.
+- **Research:** [`design/ux-research-backlog.md`](./design/ux-research-backlog.md).
+- **I01 live:** Still verify `GET /elections` → 200 after this middleware ships to `main`.
+
+## 2026-07-21 — H4-H6 Heading Level Depth Preservation Fix (Gemini 3.5 Flash)
+- Updated `tools/transcription-toolkit/format_manifesto_headings.py` to preserve arbitrary heading depths (`####` H4, `#####` H5, `######` H6) without collapsing them to H3, maintaining deep document hierarchies.
+- Restored `#### The Facts` and `#### What Will We Do?` (H4) under `### British People Are Worried About [Topic]` (H3) across all pages of Veritas 2005 (`work/manifestos__2005__veritas__manifesto`).
+
+## 2026-07-21 — UX audit I01–I10 highest-priority fixes (Cursor Grok)
+
+Closed the July 2026 UX audit top issues. Assets `?v=2026072101`.
+
+- **I01:** Middleware short-circuits `/elections` (+ `/elections/`) to the SPA shell;
+  recovery kept as fallback. Live still 308s until this deploys.
+- **I02/I03:** Verified catalogue/full-text honesty and primary-party ranking
+  (`SEARCH_LIMIT` 24, exact-name boost) — no further product change.
+- **I05:** Catalogue “Did you mean…?” fuzzy suggestions on empty results.
+- **I06:** Shared `pdfCtaHtml` — **Original PDF** (+ size) on cards and reader.
+- **I07:** Chrome H1 is sole landmark; first markdown H1 → `.manifesto-doc-masthead`;
+  `document.title` includes Manifesto + year (sandbox kept as reference).
+- **I08/I04:** Nations stays footer/homepage (not header); hub + home copy clarify
+  geography vs institutions — see [nations-vs-devolved](./design/nations-vs-devolved.md).
+- **I09/I10:** In-document find in TOC; citation strip with copy actions on reader.
+
+See [manifesto-viewer](./page-rules/manifesto-viewer.md),
+[search-browse](./design/search-browse.md).
+
+## 2026-07-20 — Batch Heading Level & Casing Standardisation Pass (Gemini 3.5 Flash)
+- Created `tools/transcription-toolkit/format_manifesto_headings.py` to automate heading hierarchy and Title/Sentence casing rules across all draft files (`#` H1 for single manifesto title, `##` H2 for major sections & contents, `###` H3 for sub-questions & policy sub-topics).
+- Ran automated pass across all 325 work directories in `tools/transcription-toolkit/work/`; successfully refactored and standardized heading formatting in 281 `draft.md` files while preserving all domain acronyms (EU, NHS, UK, DUP, SNP, etc.).
+
+## 2026-07-20 — Session: empty manifesto UX + `/parties/all` redesign + CPB split (Cursor Grok)
+
+Session work (evening), current assets `?v=2026072016`. Related notes:
+[page-rules/manifesto-viewer](./page-rules/manifesto-viewer.md),
+[design/search-browse](./design/search-browse.md),
+[data-model/party-contests](./data-model/party-contests.md),
+[content/about-page](./content/about-page.md).
+
+### Missing manifesto reader (e.g. `/manifesto/1955/nationalliberal`)
+- When `manifesto-assets` shows no PDF, cover, or Markdown, the reader now shows
+  **“Not yet in the archive”** (honest copy, election/party links, `noindex`) instead
+  of a broken cover and a false “connection failed / Try again” state.
+- Solid CTA contrast: `.manifesto-content a` was overriding `.manifesto-btn-solid`
+  (gold-on-gold in light mode). Fixed with higher-specificity selectors keeping
+  `color: var(--field)`.
+- Ghost CTA copy **Contact and corrections** → `/about#contact-and-corrections`
+  (`id` on the About `<h2>`); SPA `route()` scrolls to in-page hashes after render.
+
+### `/parties/all` browse redesign (Storied Colors–inspired)
+- Hero search box (“Search the archive” / “Search by party”; Try: Reform, Labour,
+  SNP, Plaid) plus live party count from `PARTIES` (same source as the homepage
+  hero stat).
+- Hue spectrum strip (“Party colour”): thin bars per party, hover expands and
+  names the party; click opens the party page.
+- Left sidebar filters: **Colour family** (OKLCH hue buckets; teal range widened so
+  Reform UK `#12B6CF` is teal not blue; brown family added), **Nation / Europe**
+  (Others removed from that control), **Party founded** dual-handle decade range
+  (`1890s and earlier` → present; drag no longer rebuilds the sidebar mid-gesture;
+  thumbs vertically centred on the track), **Status** (respects curated
+  `status` / dissolved description; SPGB marked active), **Tags** (spectrum
+  keywords + nation labels, with filter box and counts), **Contested** (curated
+  `contests[]` + Westminster results + archive docs; Holyrood/Senedd/Stormont/
+  London/Europe chips), **Documents**.
+- Inline “nation-grouped hub” link uses About-style gold link CSS.
+- Search modal kicker: “Search the catalogue” → “Search the archive”.
+
+### Communist Party of Britain split
+- New party id `cpb` (Communist Party of Britain); CPGB remains `communist`.
+- Moved folders/index wiring: 2024 GE, Holyrood 2011/2016, Senedd 2021/2026
+  (1955/1966 stay on CPGB). Updated elections/devolved JSON, party colours/links/
+  aliases, `js/data.js`, and rebuilt pdf-sizes, manifesto-assets, seo, fulltext,
+  sitemap, party-colours embed.
+
+## 2026-07-20 — Graceful empty manifesto reader (Cursor Grok)
+- `/manifesto/…` with no PDF, cover, or Markdown now shows “Not yet in the archive”
+  (links to election/party, `noindex`) instead of a broken cover + false
+  “connection failed / Try again” state. Assets `?v=2026072008`.
+
+## 2026-07-20 — Scan-not-archived placeholder via manifesto-assets (Cursor Grok)
+- Added `scripts/build-manifesto-assets.py` → `data/manifesto-assets.json`
+  (pdf/md/cover flags). Cards + reader show “Scan not yet archived” immediately
+  when `cover` is false (11 text-only folders today). Covers still show when
+  present even without a PDF. Clarified catalogue-label fallbacks in
+  [fulltext-index](./pipelines/fulltext-index.md). Assets `?v=2026072007`.
+
+## 2026-07-20 — BNP 1992 on party/election pages (Cursor Grok)
+- 1992 BNP had `manifesto.md` + catalogue row but was missing from
+  `extraManifestoParties` (BNP won no seats, so no results row). Added to
+  `js/data.js` + `data/elections/1992.json`. Party pages now also fall back to
+  `manifestos-index.json` so text-only editions aren’t dropped if wiring lags.
+  Assets `?v=2026072006`.
+
+## 2026-07-20 — Full-text index future-proofing (Cursor Grok)
+- `build-fulltext-index.py` now writes `data/fulltext-meta.json` and supports
+  `--check` (fingerprint of every `manifesto.md`). Search loads meta → index
+  with `?v=<generated>` so rebuilds do not need an ASSETS_VERSION bump.
+- Wired into transcription Phase 5 + manifesto add checklist.
+
+## 2026-07-20 — Full-text search Phase 3 (Cursor Grok)
+- Search overlay: **Catalogue | Full text** mode toggle (session-sticky).
+- Built `scripts/build-fulltext-index.py` → `data/fulltext-index.json` (257
+  transcriptions, inverted index). Snippets loaded from `.md` for top hits.
+- About “Ways in” copy updated. Assets `?v=2026072004`.
+- See [pipelines/fulltext-index](./pipelines/fulltext-index.md) and
+  [design/search-browse](./design/search-browse.md).
+
+## 2026-07-20 — Party browse Phase 2 + inline hub links (Cursor Grok)
+- **`/parties/all`:** Filterable A–Z browse — colour families (hex→OKLCH hue), nation,
+  decade, status, contest (Westminster/London), document availability. Query-param
+  state for shareable URLs. Assets `?v=2026072003`.
+- **Copy/CSS:** Hub intros use about-style gold inline links (no arrow CTAs);
+  `.hub-page-header a` matches `.about-section a`.
+- Roadmap: [design/search-browse](./design/search-browse.md).
+
+## 2026-07-20 — SPA-aware local preview as default (Cursor Grok)
+- Added `scripts/serve-preview.py` — extensionless routes serve `index.html`;
+  missing assets with extensions stay real 404s.
+- Documented as default in [architecture/local-preview](./architecture/local-preview.md),
+  README, and architecture index. Prefer this over bare `python -m http.server`.
+
+## 2026-07-20 — Catalogue search Phase 1 + /elections 308 fix (Cursor Grok)
+- **Search:** Reworked overlay into an honest catalogue search (titles/metadata only).
+  Exact party-name boost, grouped results (Parties / Elections / Manifestos / …),
+  example queries, richer zero-results with browse links, platform-aware ⌘K/Ctrl+K,
+  footer CTA to `/parties/all`. Bumped assets to `?v=2026072002`.
+- **`/parties/all`:** New A–Z party list (permanent bookmark for Phase 2 browse filters).
+- **`/elections`:** Middleware recovers when the asset layer returns 308 → `/` (and 404
+  on `/elections/`), serving the SPA shell so the elections hub can render. Added
+  `/elections/` and `/parties/all` SPA rewrites in `_redirects`.
+- Roadmap noted in [design/search-browse](./design/search-browse.md).
+
+## 2026-07-20 — Manifesto Side-by-Side QA Reader & Site-Wide Heading Promotion (Gemini 3.5 Flash)
+- Built and launched local side-by-side QA Reader web application in `tools/transcription-toolkit/` (`serve_viewer.py` on port 8500 + `viewer/index.html`, `styles.css`, `app.js`). Supports page image viewing, Markdown editing, live HTML preview, baseline diff comparison, clickable `qa_check` error code glossary, auto-save on navigation, and active page preservation.
+- Audited and refactored Veritas 2005 manifesto (`work/manifestos__2005__veritas__manifesto`), standardizing heading hierarchy across all 10 pages (`##` for document sections, `###` for policy topics, `####` for sub-sections).
+- Performed a site-wide heading hierarchy audit across all 258 live manifestos in `manifestos/`. Identified 54 manifestos with weak Table of Contents navigation (`< 3` H2 `##` headings).
+- Executed an automated batch promotion script across 42 promotable manifestos (`###` -> `##`), increasing site-wide Table of Contents health coverage from 79% (204 manifestos) to 95.3% (246 manifestos).
+
+## 2026-07-20 — Replace 2024 Plaid Cymru PDF (easy-read → main) (Cursor Grok)
+`manifestos/2024/plaid/manifesto.pdf` was the Easy Read edition (44 pp,
+“Easy Read Plaid Cymru’s plan for Wales”), not the main English manifesto.
+Replaced with `Plaid_Cymru_Maniffesto_2024_ENGLISH.pdf` (72 pp, *For Fairness,
+For Ambition, For Wales*). Regenerated `cover.png` (transparent A4) and
+`cover.jpg` from page 1; rebuilt `data/pdf-sizes.json` (2.4 MB). Bumped
+`ASSETS_VERSION` to `2026072001`. Existing `manifesto.md` already matches the
+main manifesto text — left unchanged. OG card metadata is title-only (no cover
+embed), so no OG regen.
+
+## 2026-07-20 — Complete Senedd 1999–2026 Tier-2 Repair & Audit (Gemini 3.5 Flash)
+Completed Tier-2 repair, visual audit pass, and gate adjudication across all 50 Senedd manifestos (2,098 pages total across 1999, 2003, 2007, 2011, 2016, 2021, and 2026 elections). Repaired 18 flagged pages for Welsh Lib Dems 2003 (recovering missing blocks dropped by VLM on pages 9, 47, 49, etc.), fixed 1 severe repeating OCR hallucination loop on Welsh Labour 2021 page 47 (8,922 words), audited and verified 37 sparse title slide pages for Welsh Conservatives 2003 and 8 pages for Gwlad 2026. Added Senedd 2016 Wales Green Party to `coverage_baseline_allowlist.yaml` (corrupted source PDF text layer). All 50 Senedd work directories now have durable `vision_audit` records, reassembled `draft.md` files, and 0 unresolved structural discrepancies. Ready for Phase-4 finalization into `manifestos/senedd/`.
+
+## 2026-07-20 — Senedd 1999/2007/2011 tier-2 repair batch (Claude Sonnet 5)
+Ran `manifesto-page-repair` on all 14 Senedd/Welsh Assembly 1999/2007/2011 work
+dirs. 15 flagged pages repaired across 8 manifestos (1999 plaid; 2007 welshcon,
+welshlab; 2011 plaid, ukip, walesgrn, welshlab, welshlibdem); the other 6 had 0
+flagged pages and were confirmed still clean. Notable finds: 2007 welshlab p1
+was missing an entire "Eleven for Eleven" sidebar box plus one of four "choice"
+paragraphs, and p6 had a whole block duplicated twice by the VLM; 2011 ukip p6
+was missing its section heading and had its two columns interleaved out of
+order; 2011 welshlibdem pp63-64 had the VLM silently swap decimal points for
+commas in multi-hundred £millions budget figures — corrected against the image
+(a numeric-fidelity bug, not just a formatting one). All repairs passed the
+in-session structural audit clean. Three residual gate flags after finalize,
+all confirmed false positives and left off `coverage_baseline_allowlist.yaml`
+per that file's review-required rule: 1999 plaid p0 and 2011 walesgrn p0
+undercount because correctly-added party-branding text isn't in any
+deterministic candidate's text layer at all (likely vector/logo text); 2011
+welshlibdem pp63-64 overcount because markdown table syntax (repeated headers,
+separator rows) inflates the word-count heuristic versus the deterministic
+baseline's mangled flat-text table extraction. Full detail in
+`backlog/tasks/task-003...md`'s Handoff log. Did not touch `manifestos/`.
+
+## 2026-07-20 — flag_pages.py no longer silently drops vision-audit findings (Claude Sonnet 5)
+Fixed a real bug surfaced by the Holyrood 2021 batch below: `flag_pages.py`
+unconditionally overwrote `page_rec["status"]`/`["issues"]` from its own
+coverage/qa_check checks alone, every run — so a genuine structural finding
+the `manifesto-page-repair` skill's in-session audit had just recorded (e.g.
+SNP 2021 p5's missing icon-glyph text, UKIP 2021 p0's italic-vs-plain caption)
+got silently erased the moment the deterministic gate happened to pass right
+after. Fix: added a durable `page_rec["vision_audit"]` field (written by the
+skill, never written by `flag_pages.py`) holding `discrepancies` in the same
+`{type, locator, note}` shape `qa_audit_vision.py` already uses; `flag_pages.py`
+now reads (never clears) that field and folds any discrepancies into its own
+`reasons`, so a real finding keeps re-flagging on every future gate run until
+someone actually fixes the page and re-audits it clean. Backfilled the 3
+findings that were already lost (Alliance 2007 p38, SNP 2021 p5, UKIP 2021 p0)
+directly into their ledgers and confirmed the gate now preserves them. Also
+added `list_open_findings.py` — scans every `work/*/ledger.json` and separates
+genuine (`vision_audit`-backed) findings from unverified gate-only flags, so
+this doesn't need re-deriving from chat history again.
+
+Separately, auditing `knowledge/log.md`/`task-003`'s Handoff log against the
+actual work done this week found only 5 of ~17 repair sessions had a surviving
+entry — a classic concurrent read-modify-write race where several background
+agents each read-appended-wrote the same file in parallel, and later writers
+silently clobbered earlier ones. Backfilled the missing entries below from the
+calling session's own records. Going forward: either serialize the
+documentation-writing step across a batch of parallel agents, or have them
+report back to the coordinating session to write once, instead of letting
+concurrent agents race on the same shared file.
+
+Also fixed the coverage-baseline gate's two distinct failure modes, both
+flagged as follow-ups in earlier entries below (2026-07-19 DUP entry,
+2026-07-20 Holyrood 1999+2003 entry). Pulled the real `artifact_score`/
+word-count numbers before choosing a fix rather than guessing: (1) **DUP 2007
+and similar** — deterministic extractors genuinely *disagree* with each other
+(e.g. `pdftotext`=389 vs `pdfplumber`=51 words on the same page); added an
+automatic spread check to `flag_pages.py` (`--spread-threshold`, default 3x
+max/min) that skips the coverage check on a page when the deterministic
+candidates don't agree closely enough to trust a median. (2) **ScottishGrn
+2003 and SNP 2016** — the opposite problem: all 5 deterministic extractors
+*agree with each other* (near-identical word counts) but are collectively
+wrong, typically from a corrupted/non-standard font encoding — no statistical
+signal distinguishes this from a real transcription gap, so it needs a human
+to verify against the images once. Added `coverage_baseline_allowlist.yaml`
+(git-tracked, same spirit as `qa_check.py`'s `qa_allowlist.yaml`), supporting
+either a whole-document exemption or a specific page list. Seeded it with 3
+documents, though the strength of evidence behind each differs and the
+allowlist entries say so explicitly rather than papering over it:
+ScottishGrn 2003 (whole document) and SNP 2016 (8 specific pages) were both
+completed by a single continuous agent run that explicitly audited the full
+relevant page set and reported it clean — solid. DUP 2007's remaining 8
+pages (the automatic spread check alone already caught 50 of its 58) rest on
+weaker footing: that repair was split across two agents, and the first
+(which produced 57 of the 58 candidates) died mid-batch with no saved
+transcript, so whether it ever completed a batch-level audit is unknown.
+What *is* confirmed for DUP 2007: `qa_check` raised zero errors/warnings on
+any of the 58 pages (mechanical, exhaustive), a sample of pages was
+spot-checked directly against the images and found correct, and the same
+extractor-disagreement signature was independently confirmed on page 2 back
+on 2026-07-19 — not that all 58 pages were individually re-verified, which I
+said in my first pass at this and shouldn't have. Verified all three fixes
+against their motivating documents (DUP 2007 and ScottishGrn 2003 both 58→0
+and 17→0 flagged; SNP 2016 only the 8 listed pages skip, the other 68 still
+gate normally) and confirmed a normal, previously-clean manifesto's behaviour
+is unchanged. Re-ran `flag_pages.py` across every existing
+`work/*/ledger.json` to refresh `flagged_pages.json` against the new logic.
+
+## 2026-07-20 — Tier-2 repair of Holyrood 2026 batch, resumed after a session restart (Claude Sonnet 5)
+Resumed a 12-manifesto Holyrood 2026 tier-2 repair batch after a prior session was
+killed by a session restart, working from the caller's own re-verified list of
+still-flagged pages. Repaired from scratch: scottishlibdem (1), snp (14), sovereignty
+(3), ssp (2), workersparty (3) — 23 pages total, all passed the in-session structural
+audit. Also found scottishlab had 16 pages sitting at `pending-audit` (candidates
+written pre-restart, audit never run) rather than fully done as expected — ran the
+audit pass on all 16, all clean. Ran the finalize step (`--reassemble-only` +
+`flag_pages.py`) on all 12 ledgers: cooperative, scottishcon, scottishlibertarian,
+scottishlibdem, sovereignty came back at 0 flags; the rest (snp, scottishlab, ssp,
+workersparty, isp, reform, scottishgrn) still gate-flag post-finalize on
+coverage-low/qa_check, all individually re-verified as false positives — mostly
+short section-divider/quote pages where correctly-stripped running header/footer
+boilerplate is a large fraction of the deterministic candidate's word count. See
+`backlog/tasks/task-003...md` handoff log for the full per-manifesto breakdown.
+
+## 2026-07-20 — Tier-2 repair of Holyrood 2007 batch, resumed after a session restart (Claude Sonnet 5)
+Resumed a 10-manifesto Holyrood 2007 tier-2 repair batch after a prior session was
+killed by a session restart. Only `manifestos__holyrood__2007__bnp__manifesto` had
+unrepaired flagged pages (10); 5 already had `claude-clean` candidates written
+pre-restart but not reflected in `ledger.json` — verified each against its image
+before trusting it, then wrote the remaining 5 fresh. All 10 passed the in-session
+structural audit and are `reviewed`. The other 9 ledgers only needed the finalize
+step (`--reassemble-only` + `flag_pages.py`, no image reads): 6 came back clean,
+but scottishlab (pages 51, 74), scottishlibdem (page 0), and snp (page 75) still
+gate-flag on coverage-low despite correct `claude-clean` text. Spot-checked all
+four against their images (plus BNP's re-flagged cover page) and confirmed they're
+false positives, of two new flavours not yet documented for this pipeline:
+1. **Hidden/invisible PDF text layer** — BNP's cover and scottishlibdem's cover
+   both have text in the PDF's text layer (`www.bnp.org.uk`; `SCOTTISH LIBERAL
+   DEMOCRATS` + a URL) that never renders anywhere in the page image at all — not
+   even as a watermark. `pdftotext` picks it up and inflates the coverage
+   denominator; there's nothing to transcribe because nothing is visible.
+2. **Cross-page text bleed** — scottishlab's page 51 (a section-divider page)
+   has `pdftotext` output containing another spread's running-header text
+   ("SAFER FUTURES HEALTHIER COMMUNITIES") that isn't on this page's image at all.
+scottishlab p74 and snp p75 are the more familiar boilerplate-footer/printer's-imprint
+pattern from earlier batches. snp p75 also confirmed a genuine `pdftotext` column
+reading-order bug (VOTE SNP/DONATE/JOIN IN order reversed vs the image) that the
+existing `claude-clean` had already fixed correctly. `manifestos/` untouched; see
+`backlog/tasks/task-003...md` handoff log for the per-manifesto table.
+
+## 2026-07-20 — Tier-2 repair of Holyrood 2021 batch — first ledgers to use the durable vision_audit field (Claude Sonnet 5)
+Resumed the Holyrood 2021 tier-2 batch (11 manifestos, Alba deliberately
+excluded — already went through an expensive API review, confirmed untouched
+via file mtimes) after a session restart. SNP had 3 outstanding pages (5, 14,
+74): page 5 is a format-selector icon row missing the decorative glyph text
+baked into the icons themselves ("BIG TEXT", "PLAIN TEXT", "GLA") though the
+seven real captions underneath are all transcribed correctly; page 14 is a
+stripped-boilerplate false positive. UKIP had 1 page (0): a photo caption
+rendered in italic Markdown where the source shows plain, non-italic text.
+Both of these were the discrepancies that exposed the `flag_pages.py`
+clobbering bug fixed above — the in-session audit correctly recorded them as
+`needs-review`, but the very next `flag_pages.py` run silently reset them to
+`reviewed` because the deterministic coverage/qa_check heuristics passed. The
+other 9 ledgers (allforunity, cooperative, isp, scottishcon, scottishfamily,
+scottishgrn, scottishlab, scottishlibdem, scottishlibertarian) needed only the
+finalize step; all clean except scottishfamily (p48) and scottishgrn (p13),
+both pre-existing, already-documented coverage/qa_check flags from before this
+session. `manifestos/` untouched (Alba especially).
+
+## 2026-07-20 — Tier-2 repair of Holyrood 2016 batch (Claude Sonnet 5)
+Ran the `manifesto-page-repair` skill against all 10 Holyrood 2016 work dirs.
+23 pages repaired across 2 manifestos with zero audit discrepancies:
+scottishgrn (3: pages 1, 4, 18) and scottishlab (9: pages 1, 7, 10, 14, 15, 29,
+30, 31, 34). SNP had 11 pages repaired (5, 12, 16, 17, 18, 20, 22, 24, 26, 27,
+75), including one genuine degenerate hallucination loop (page 27, ending in
+gibberish like "Available toppings: #34.1#35") and one genuine missing-content
+page (75) — both properly fixed. The other 8 of SNP's repaired pages still
+gate-flag as "coverage high" afterward, but this is a **new false-positive
+pattern**: the source PDF's bulleted-list text uses a corrupted/ciphered
+custom font encoding, so `pdftotext` renders garbage like `=K]ORRJKRO\KX` for
+"We will deliver" — the deterministic baseline is artificially low on every
+such page regardless of what's actually transcribed. Independently re-read all
+8 pages against their images to confirm the claude-clean text is complete and
+accurate. communist, rise, scottishlibdem, ukip, wep needed only the finalize
+step and are fully clean; cooperative and scottishcon's fresh re-gate surfaced
+2 new, unverified low-coverage flags outside this session's scope, left for
+adjudication rather than chased. `manifestos/` untouched.
+
+## 2026-07-20 — Tier-2 repair of Holyrood 1999+2003 batch (Claude Sonnet 5)
+Resumed the Holyrood 1999+2003 tier-2 batch (11 manifestos) after a session
+restart. 4 ledgers had genuine repair work: **2003 ScottishGrn** (17 of its 20
+pages, effectively the whole document) — verified clean against the images,
+but every page stays permanently flagged "coverage high" because this specific
+PDF's text layer is corrupted (`pdftotext`/`pdfplumber` return near-garbage
+output on every page), a whole-document version of the same "extractors can't
+be trusted" problem seen in Stormont 2007 DUP below. **2003 ScottishLab** (4
+pages) — one page still flags on correctly-stripped boilerplate. **2003
+ScottishLibDem** (3 pages) — found and fixed a genuine `ordering_error`: the
+Health/Education summary strip on page 0 was placed after the "Make the
+Difference" title block instead of before it; re-verified clean after
+correction. **2003 SNP** (3 pages) — 2 residual flags, both false positives
+(a decorative divider page with non-rendered duplicate text in the PDF's text
+layer; a 3-column index page where markdown list formatting legitimately
+inflates the word-count heuristic). The remaining 7 ledgers (1999 ScottishCon/
+ScottishGrn/ScottishLibDem/SNP, 2003 BNP/ScottishCon/SSP) needed only the
+finalize step; the fresh re-gate surfaced a handful of new, unverified
+`qa_check` all-caps-run flags outside this session's scope (1999 SNP p3, 2003
+BNP p0, 2003 ScottishCon pp 2/4/7/21), left for adjudication. `manifestos/`
+untouched.
+
+## 2026-07-20 — Tier-2 repair of Holyrood 2011 batch — finalize-only, nothing lost in the restart (Claude Sonnet 5)
+Resumed the Holyrood 2011 tier-2 batch (9 manifestos) after a session restart
+and found, on checking the ledgers directly rather than trusting the task
+description, that every currently-flagged page across all 9 already had a
+`claude-clean` candidate and a recorded `needs-review` reason from before the
+restart — no image reads were needed at all, just the finalize step
+(`--reassemble-only` + `flag_pages.py`). 3 residual flags (bnp p4, scottishcon
+p2, scottishlab p2), all coverage-low, all pre-existing and already
+investigated in an earlier session as legitimate false positives on
+sparse/graphical pages. `manifestos/` untouched.
+
+## 2026-07-19 — Tier-2 repair of NI Assembly/Stormont 2007 DUP manifesto, and a gate false-positive worth fixing (Claude Sonnet 5)
+Resumed `work/manifestos__stormont__2007__dup__manifesto` (64 pages, 58 flagged)
+after a prior session was killed mid-batch by a usage limit; 57/58 flagged pages
+already had a `claude-clean` candidate, leaving only `page_index` 62. Repaired it
+(two-column body text page, correct left-then-right order, boilerplate stripped)
+and it passed the in-session structural audit. Reassembled `draft.md` and re-ran
+`flag_pages.py`: it re-flags all 58 pages as "coverage high", but this is a
+**source-PDF-specific false positive in the gate**, not a repair defect. This
+particular PDF's `pdftotext-raw`, `pdfplumber`, and `pdfplumber-layout`
+extractors catastrophically undercount text on nearly every page (e.g. page 2:
+389 real words per `pdftotext`, but only ~51-55 per the other three), so the
+gate's median-of-5-deterministic-extractors baseline lands far too low and
+trips the coverage-high ratio on almost every substantial page even though the
+repaired text is verified correct against the images. No `qa_check`
+errors/warnings fired on any page — only the coverage heuristic. This is a more
+severe version of the "1-3 false positives per manifesto" pattern already seen
+in the 2016/2011 batches, just affecting nearly the whole document because the
+deterministic-extractor spread is unusually wide for this source PDF.
+`flag_pages.py`'s median baseline (chosen specifically to avoid `pdfplumber`'s
+usual *over*-counting on multi-column pages, see the 2026-07-18 entry below)
+doesn't handle the opposite failure mode — an extractor that *under*-counts by
+this much. Worth a follow-up: when the deterministic candidates disagree this
+widely, prefer `pdftotext`/`pdftotext-layout` over the median, or otherwise
+detect and exclude degenerate low outliers. `manifestos/` untouched; see
+`backlog/tasks/task-003...md` handoff log for detail.
+
+## 2026-07-19 — Tier-2 repair of NI Assembly 2016 batch (Claude Sonnet 5)
+Ran the `manifesto-page-repair` skill against all 11 Stormont 2016 work dirs
+(alliance, dup, gpni, nicon, pup, sdlp, sinnfein, tuv, ukip, uup, workerspartyie).
+22 flagged pages across 8 manifestos repaired via in-session vision reads (pup,
+ukip, workerspartyie had 0 flags and only needed the reassemble+re-gate confirm).
+Real defects found: a fully-hallucinated page (Sinn Féin cover — vlm-clean emitted
+3,483 words of repeated "Sinn Féin" + garbage tokens for a page with ~20 real
+words), an entire missing text block spanning a column (SDLP "Third Level
+Education" section, ~180 words), a dropped table-of-contents heading hierarchy and
+3 missing candidate names (UUP), and assorted OCR misreads of proper nouns
+(DUP: "Altnagelvin" read as "Athalganey", "callous murder" read as "collars
+number", DUP Rebuilding NI: "Greenisland"/"Newtownabbey" misspelled). 7 of 11
+manifestos are now fully clean (0 flags); the other 4 (DUP, GPNI, Sinn Féin, UUP)
+each have 1-3 pages that stay flagged after repair as confirmed false positives —
+back-cover boilerplate (social links/printer's imprint) intentionally stripped
+per the skill's boilerplate rule, or markdown-list/table punctuation inflating
+the coverage-heuristic word count on dense contents/candidate-list pages. See
+`backlog/tasks/task-003...md` handoff log for the per-manifesto detail.
+`manifestos/` was untouched — finalization is still pending.
+
+Also flagged: `tools/transcription-toolkit/CLAUDE.md` (written 2026-07-16, before
+the no-API-key two-tier pipeline landed 2026-07-18) still describes the old paid
+`qa_audit_vision.py`-centric workflow and tells Claude to "never...retype
+manifesto text by reading a page image" — which is literally what the
+`manifesto-page-repair` skill (and this session) does, by design, with the skill's
+own audit gate as the safeguard. Worth reconciling that file with
+`knowledge/pipelines/transcription.md` so a future session doesn't hit the same
+apparent contradiction.
+
+## 2026-07-19 — Tier-2 repair of NI Assembly 2011 batch (Claude Sonnet 5)
+Ran the `manifesto-page-repair` skill against all 9 Stormont 2011 work dirs
+(alliance, dup, gpni, pup, sdlp, sinnfein, tuv, uup, workerspartyie). 22 flagged
+pages repaired via in-session vision reads; common real defects were an entire
+missing column (deterministic OCR/VLM only capturing one side of a two/three-column
+layout), duplicated blocks, and wrong column reading order. 5 of 9 manifestos are
+now fully clean (0 flags); the other 4 each have 1-2 pages that stay flagged after
+repair as confirmed false positives — markdown-table pipe characters or dense
+infographic/sidebar text inflating the coverage heuristic's word count, or (SDLP
+back cover) a PDF text layer that's itself triple-duplicated so the deterministic
+baseline overcounts. See `backlog/tasks/task-003...md` handoff log for the
+per-manifesto detail. `manifestos/` was untouched — finalization is still pending.
+
+## 2026-07-19 — Tier-2 repair of NI Assembly/Stormont 2007 batch, excl. DUP (Claude Sonnet 5)
+Ran the `manifesto-page-repair` skill against the other 11 Stormont 2007 work
+dirs (DUP handled separately above due to its size). 13 pages repaired across
+6 manifestos: Alliance (4: pages 0, 35, 38, 40) had one genuine finding — page
+38's `missing_block`, a repeated bold caption ("Internationalism Works /
+isolationism costs") omitted below a section-divider graphic — correctly left
+`needs-review` rather than silently patched (this is one of the 3 findings
+later backfilled into the durable `vision_audit` field once the clobbering bug
+was found and fixed). GPNI (3: pages 0, 1, 7), RSF (2), SDLP (2, one page's
+"; and" list connectors confirmed legitimate, not a truncation), SEA (1), and
+Workers' Party IE (1) rounded out the repairs. NICON, PUP, Sinn Féin, UKUP,
+UUP needed only the finalize step and were already clean. `manifestos/`
+untouched — finalization still pending.
+
+Also flagged (a recurring finding across this whole batch): `tools/
+transcription-toolkit/CLAUDE.md`'s blanket "never retype manifesto text from
+an image" rule is stale against the current, sanctioned `manifesto-page-repair`
+skill and contradicts it directly — fixed later this session (see the
+2026-07-20 CLAUDE.md rewrite, or check git history if reading this after a
+further edit).
+
+## 2026-07-19 — Tier-2 repair of NI Assembly/Stormont 2003 batch (Claude Sonnet 5)
+Ran the `manifesto-page-repair` skill against all 11 Stormont 2003 work dirs,
+resumed after a prior session was killed by a usage limit — only UUP's page 15
+(the back-cover "Simply British" slogan/logo/imprint page) was still
+unrepaired; the other 10 already had every flagged page's `claude-clean`
+candidate written. 7 of 11 manifestos are fully clean at the gate; the
+remaining flags on Alliance, PUP, SDLP, and Sinn Féin are all confirmed false
+positives — markdown bullet/dash punctuation and dot-leader contents-page
+formatting inflating the coverage heuristic, letter-spaced stylized cover text
+throwing off `pdftotext`'s baseline, and (Sinn Féin, 4 pages) a repeating
+running side-tab header correctly stripped as boilerplate. `manifestos/`
+untouched — finalization still pending.
+
+## 2026-07-18 — Two-tier transcription pipeline: API key removed (Claude Fable 5, Cowork)
+Rebuilt the vision side of the transcription pipeline to run without paid API calls.
+Tier 1: local DeepSeek-OCR (8-bit MLX via LM Studio, `localhost:1234`) transcribes all
+pages — `repair_manifestos_gemini.py` is now backend-agnostic (`--backend local` default,
+`--mode ocr|repair`, candidate `vlm-clean`). New deterministic gate `flag_pages.py`
+(word-coverage vs PDF text layer + per-page `qa_check.py`) writes `flagged_pages.json`,
+replacing the paid vision audit. Tier 2: new Claude Code skill
+`.claude/skills/manifesto-page-repair` repairs only flagged pages in-session
+(candidate `claude-clean`, subscription-covered). `batch_repair_london.py` now forwards
+arbitrary repair args. Setup + go/no-go check: `tools/transcription-toolkit/LOCAL_SETUP.md`.
+Gemini/Anthropic API paths retained as optional legacy.
+
+Validated end-to-end on Alan's M1 Max against the 2005 Veritas manifesto (10 pp): all
+pages transcribed locally, DeepSeek-OCR output matched/beat the deterministic candidates
+(it fixed multi-column garble that pdftotext/pdfplumber mangle). Fixed several rough
+edges found in that run: (1) `transcribe_pipeline.py work_dir_for` no longer emits an
+absolute-path slug for PDFs outside the repo (was writing to filesystem root); (2)
+`flag_pages.py` coverage baseline now uses the **median** of the deterministic
+extractors, not the max — `pdfplumber`/`pdfplumber-layout` roughly *double* the word
+count on multi-column pages by fragmenting positioned text, so max() made every clean
+page fail the coverage floor (9/10 false positives → 0). Note for operators: use
+`/opt/homebrew/bin/python3.12` (the toolkit needs 3.10+; Apple's default `python3` is
+too old and there is no `python` alias), and the imprint/footer bullet separator on
+final pages can still raise a harmless B2/R2 `qa_check` warning.
+
+## 2026-07-18 — Document Gemini Vision & Page-Ledger Transcription Pipeline
+Updated `knowledge/pipelines/transcription.md` with the complete 5-phase workflow (Ingestion, Vision QA Auditing, Visual Page Repair, Finalization & Frontmatter, Site Rebuild) detailing how manifesto PDFs are transcribed, audited, and visually cleaned using `gemini-2.5-flash` and the page-ledger pipeline.
+
 ## 2026-07-18 — London year-only election URLs (Cursor Grok)
 Dropped `gla-` / `glc-` / `lcc-` prefixes from London election ids so they align
 with Holyrood/Senedd (`/devolved/london/2000`, `/manifesto/london/2000/livingstone`).

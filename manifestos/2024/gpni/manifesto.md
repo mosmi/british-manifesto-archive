@@ -27,10 +27,11 @@ sections:
   - local-government
 ---
 
+
 # Green Party Northern Ireland Manifesto 2024
 
 ## Greener, Cleaner, Fairer
-#### Westminster Manifesto 2024
+### Westminster Manifesto 2024
 
 **greenparty NORTHERN IRELAND**
 
@@ -51,7 +52,7 @@ Your vote is powerful. Every single vote for a Green candidate sends a clear mes
 
 ---
 
-### Our Five Key Priorities for a Greener, Cleaner, Fairer Society
+## Our Five Key Priorities for a Greener, Cleaner, Fairer Society
 
 **Save Our Environment**
 The Tories and Executive parties have failed to take any action on Climate breakdown. **Lough Neagh is in crisis**, 20m tonnes of sewage enters our waters each year, our air is toxic and we are the 12th worst in the world for biodiversity loss. **The Green Party will fight for public ownership and a recovery plan for Lough Neagh**, end dependency on fossil fuels and invest in cheap renewable energy.
@@ -70,7 +71,7 @@ The Tories and Executive parties have failed to invest in and reform public serv
 
 ---
 
-### What have the Greens done for you?
+## What have the Greens done for you?
 
 *   **Delivered Northern Ireland’s first Climate Act**, ensuring we meet net-zero emissions by 2050
 *   **Introduced climate units on local councils**, dedicated to delivering climate action on a local level
@@ -82,9 +83,9 @@ The Tories and Executive parties have failed to invest in and reform public serv
 
 ---
 
-### Greener
+## Greener
 
-#### Introduction
+## Introduction
 
 Northern Ireland is rich in natural beauty and resources and known for its majestic landscape. Yet we watch our current governments and administrations preside over the destruction of natural habitats, waterways and coastlines. Overreliance on fossil fuels and unsustainable farming practices have not just left us with environmental destruction, it is hitting the average person in their pockets. The cost of greed crisis has left us with energy, fuel and transport costs which are driving working people to choose between heating and eating and leaving families dependent on food banks – a problem made worse by increasingly insecure and unsustainable food supply chains. Affordable housing has become scarce, and much of the existing housing stock fails to meet standards of energy efficiency – leaving homes damp, cold and expensive to maintain.
 
@@ -98,7 +99,7 @@ Northern Ireland is rich in natural beauty and resources and known for its majes
 
 ---
 
-#### Summary
+## Summary
 
 **WE WILL WORK WITH GREENS ACROSS THE UK TO MAKE OUR REGION GREENER**
 
@@ -149,9 +150,9 @@ We will take firm steps to end the abuse and exploitation of companion animals b
 
 ---
 
-### Cleaner
+## Cleaner
 
-#### Introduction
+## Introduction
 
 **The Green Party is the party of the Environment.** We understand that there will be no reform of public services, social justice or economic growth on a dead planet. We have reached a critical stage. We witness the impact of climate change every day, and yet the current political leadership continues to make empty campaign promises on the environment. They fail to follow through – or worse – make decisions which create further damage.
 
@@ -168,7 +169,7 @@ These circumstances are man-made and preventable. We don't have time to sit back
 
 ---
 
-#### Summary
+## Summary
 
 **WITH GREENS ACROSS THE UK AND IRELAND, WE WILL WORK HARD TO TAKE REAL ACTION**
 
@@ -214,9 +215,9 @@ We will reaffirm our commitment to international aid – supporting Greens in pa
 
 ---
 
-### Fairer
+## Fairer
 
-#### Introduction
+## Introduction
 
 In one of the richest countries in the world, we continue to see the gap between the richest and poorest grow. People on lower incomes are disproportionately bearing the brunt of the cost of greed crisis and are not feeling the effects of economic growth and slowing rates of inflation. In Northern Ireland, 25 years of a fragile peace has not yielded the same benefits across all communities. We welcome the progress we have made since 1998, but it is time to move to the next stage of peace, and to ensure that this phase benefits everyone equally. We will push for a fairer society through the restoration and protection of our public services, reform of the Barnett Formula and other structures of the Good Friday Agreement, and the introduction of a Wealth Tax which ensures that the costs of improving health and education, building affordable and sustainable housing, and protecting the environment are borne by those who can afford it.
 
@@ -229,7 +230,7 @@ In one of the richest countries in the world, we continue to see the gap between
 
 ---
 
-#### Summary
+## Summary
 
 **WITH GREENS ACROSS THE UK AND IRELAND, WE WILL WORK FOR A FAIRER SOCIETY**
 
@@ -327,7 +328,7 @@ We will fight to make work fairer for those who can work, and make life liveable
 
 ---
 
-### Meet Our Candidates
+## Meet Our Candidates
 
 *   **Senator Mal O’Hara** - Belfast North
 *   **Cllr Aine Groogan** - Belfast South & Mid Down
@@ -343,7 +344,7 @@ We will fight to make work fairer for those who can work, and make life liveable
 
 ---
 
-### Get in Touch
+## Get in Touch
 
 **CONTACT US :**
 **Website:** www.greenpartyni.org

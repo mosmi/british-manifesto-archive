@@ -17,6 +17,7 @@ All structured data lives under `data/` as JSON; manifesto documents live under
 - [manifestos-index](./manifestos-index.md) — the manifesto catalogue + file layout
 - [party-colours](./party-colours.md) — canonical party ids, colours and eras
 - [party-names](./party-names.md) — period-correct labels (Liberal/Alliance; Ecology/Green)
+- [party-contests](./party-contests.md) — optional contests[] / status for `/parties/all`
 - [party-holdings](./party-holdings.md) — per-party manifesto counts by chamber (derived)
 
 ## Quick map of `data/`

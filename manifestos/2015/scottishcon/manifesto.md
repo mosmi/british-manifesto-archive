@@ -27,6 +27,7 @@ sections:
   - local-government
 ---
 
+
 # Scottish Conservative Party Manifesto 2015
 
 _Strong leadership. A brighter, more secure future._
@@ -68,27 +69,27 @@ Conclusion. 72
 
 ## We have a plan for every stage of your life:
 
-### For the Best Start in Life
+## For the Best Start in Life
 We will continue to increase spending on the NHS, employ 1,000 extra nurses and midwives, expand the health visitor service and make it easier to see your GP – so you know you will always have access to a free and high quality health service when you need it most.
 
-### For Your School Years
+## For Your School Years
 We will reform Scottish education, build a system where every child gets the best possible start in life and have zero tolerance for failure – so you have the skills you need to succeed.
 
-### To Secure Your First Job
+## To Secure Your First Job
 We will create 10,000 new apprenticeships every year; take everyone earning less than £12,500 out of Income Tax altogether and pass a law to ensure we have a Tax-Free Minimum Wage in this country; and continue to create a fairer welfare system where benefits are capped to the level that makes work pay – so you are rewarded for working hard and doing the right thing.
 
-### As You Raise Your Family
+## As You Raise Your Family
 We will extend the Help to Buy scheme further in Scotland, reintroduce the Right to Buy and launch a new Step-by-Step scheme to gradually help tenants own their own home – and provide extended and more flexible childcare support – so you are able to work whilst having the security of your own home in which to raise your family.
 
-### While You Grow Older
+## While You Grow Older
 We will not raise VAT, National Insurance contributions or Income Tax but we will raise the 40p Income Tax threshold to £50,000 and take the family home out of tax by increasing the effective Inheritance Tax threshold for married couples and civil partners to £1 million – so you can keep more of your income and pass it on to future generations.
 
-### And When You Retire
+## And When You Retire
 We will continue to increase the Basic State Pension by at least 2.5 per cent through the triple lock, give you the freedom to use your pension savings as you want and pass them on tax-free – so you can have the dignity and security you deserve in your old age.
 
 _The next Conservative Government will secure a brighter future for you, your family and Britain._
 
-### On your side, at every stage of your life
+## On your side, at every stage of your life
 
 Over the last five years, we have put our country back on the right track. Five years ago, Britain was on the brink. As the outgoing Labour Treasury Minister put it with brutal candour, ‘there is no money’. Since then, we have turned things around.
 
@@ -117,7 +118,7 @@ I hope you will give it your support, so that together, we can see through the t
 DAVID CAMERON
 Prime Minister and Leader of the Conservative Party
 
-### Securing a Brighter Future for Scotland
+## Securing a Brighter Future for Scotland
 
 Last year, in the independence referendum, we chose to stay part of the United Kingdom. Now, at this election, Scotland faces another massive decision.
 
@@ -168,9 +169,9 @@ Let's seize our moment.
 RUTH DAVIDSON
 Leader of the Scottish Conservative & Unionist Party
 
-### A strong economy to help you and your family
+## A strong economy to help you and your family
 
-### Our commitment to you:
+## Our commitment to you:
 
 Your job, your home, the mortgage you pay, the school your children go to, your local hospital, your pension: all these things depend on a strong economy. So we will carry on working through our long-term economic plan. We will:
 
@@ -196,7 +197,7 @@ And failing to control our debt would be more than an economic failing; it would
 
 So you face a clear choice. Economic competence, with David Cameron as Prime Minister, following through on our long-term economic plan. Or economic chaos under Labour, with higher taxes, more debt and no plan to fix our public finances, create jobs or build a more secure economy.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will finish the job by eliminating the deficit to keep our economy secure and keep your_ _ taxes and mortgage payments down_ Our long-term economic plan reflects our values: we as a nation should not be piling up and passing on unaffordable levels of debt to the next generation. We will eliminate the deficit in a sensible and balanced way that will enable us to continue to increase spending on the NHS and cut Income Tax for 30 million working people.
 
@@ -218,9 +219,9 @@ _We will continue to lead the world on tax and transparency_ Tackling tax evasio
 
 _We will rebalance our economy_ In Scotland, we have seen 174,000 more people in work, 37,600 more businesses and 56,700 fewer Jobseeker’s Allowance claimants since the last General Election. We are committed to a truly national recovery, benefiting all parts of our country. We have devolved powers to Scotland and Wales, and set out long-term economic plans to raise the growth rate of all parts of England, bringing areas which have grown more slowly up to at least the national average. We will deliver in full the historic City Deal for Glasgow and we welcome the proposals for further City Deals for Aberdeen and Inverness. We will continue discussions with our local partners and the Scottish Government on how to take these proposals forward.
 
-### Better roads, trains and modern communications
+## Better roads, trains and modern communications
 
-### Our commitment to you:
+## Our commitment to you:
 
 _You depend on infrastructure at every stage of your businesses to grow and create jobs for your children_ _ action that will improve your roads, railways, airports_ _invest in infrastructure to attract businesses and_ _make your life easier, with more and faster trains,_ _roll out universal broadband and better mobile part of the digital economy._ Under Labour, road and rail were starved of resources, while too many people were stuck on the wrong side of the digital divide. This meant packed trains, potholes, patchy broadband coverage – businesses held back and cities left behind. Turning these problems around takes time.
 
@@ -230,7 +231,7 @@ This will fund the biggest investment in rail since Victorian times, and the mos
 
 _life: to go to school, to go to work, to enable and grandchildren. We have a plan of and internet connections. We will: good jobs across the whole of the UK more roads and cycle routes phone connections, to ensure everyone is_
 
-### Our plan of action:
+## Our plan of action:
 
 _We will support motorists and invest in our roads, to save you time and money_ We abolished Labour’s fuel duty escalator, and instead have frozen fuel duty, delivering the longest duty freeze in 20 years. We will invest £15 billion in roads. This will include over £6 billion in the northern road network, with the dualling and widening of the A1 north of Newcastle part of the investment. We will continue to challenge the Scottish Government to commit to dualling the A1 in Scotland too and push for the introduction of a Road Maintenance Fund to help Scottish councils with road repairs.
 
@@ -244,9 +245,9 @@ _We will refocus and double the funding of Community Broadband Scotland_ In addi
 
 _We will boost mobile coverage, so you can stay connected_ We will hold the mobile operators to their new legally binding agreement to ensure that 90 per cent of the UK landmass will have voice and SMS coverage by 2017. We will continue to invest in mobile infrastructure to deliver coverage for voice calls and text messages for the final 0 – 0.4 per cent of UK premises that do not currently have it. We will ensure that Britain seizes the chance to be a world leader in the development of 5G, playing a key role in defining industry standards.
 
-### Jobs for all
+## Jobs for all
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Whatever stage of life you are at – whether you’re coming to the end of your career – we will work to_ _ of a decent job. We will:_ _help businesses to create two hundred thousand employment_ _give businesses the most competitive taxes of_ _back small firms by reviewing business rates_ _support 10,000 new apprenticeships every year succeed._ If you want to live in the most vibrant and dynamic country in the world, this election matters. Only the Conservatives have the vision, the optimism, the ambition and the discipline to transform Britain. That’s because we know that a decent job is the best weapon against poverty and the best way to provide security for families.
 
@@ -262,7 +263,7 @@ Backing business also means helping our farmers and our rural communities. Negle
 
 This is all at risk if the Labour Party forms the Government. Their policies to spend more, borrow more and tax more would be catastrophic for Britain’s businesses – and for all the families thrown back into the despair of joblessness and financial uncertainty.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will help you secure a good job_ We aim to achieve full employment in Scotland, and across the wider UK, with the highest employment rate in the G7, and we will help businesses create two hundred thousand jobs over the Parliament. We have abolished the jobs tax – employers' National Insurance contributions (NICs) for the under 21s – and next year we will do the same for young apprentices under 25. We will continue to help smaller businesses take on new workers through the Employment Allowance, which frees businesses from the first £2,000 of employers' NICs meaning a third of employers pay no jobs tax.
 
@@ -292,9 +293,9 @@ _We will support our fishing and coastal communities_ We will defend our hard-wo
 
 _We will support countryside pursuits_ We will protect countryside pursuits including fishing, for all the benefits to individuals, the environment and the rural economy that these activities bring. We will oppose the SNP's proposals to bring back rural sporting rates which could threaten hundreds of rural jobs.
 
-### Cutting your taxes and building a fairer welfare system
+## Cutting your taxes and building a fairer welfare system
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Our goal is a country that not only rewards those gives everyone – no matter their background – the_ _ means seeing through our major reforms of tax and_ _cut income tax for 30 million people, taking everyone Income Tax altogether_ _pass a new law so that nobody working 30 hours what they earn_ _back aspiration by raising the 40p tax threshold pays it_ _cap overall welfare spending, lower the amount £23,000 and continue to roll out Universal Credit,_ _bring in tax-free childcare to support parents extended and more flexible childcare._ Under Labour, those who worked hard found more and more of their earnings taken away in tax to support a welfare system that allowed, and even encouraged, people to choose benefits when they could be earning a living. This sent out terrible signals: if you did the right thing, you were penalised – and if you did the wrong thing, you were rewarded, with the unfairness of it all infuriating hardworking people.
 
@@ -306,7 +307,7 @@ Real fairness means that where people really cannot work, they must be supported
 
 In the next Parliament, we will continue to reward hard work: raising the tax-free Personal Allowance so that those working 30 hours on the Minimum Wage pay no Income Tax at all and taking hardworking people out of a 40p higher rate tax band originally meant to capture only the wealthy. And we will see through our welfare reforms, lowering the benefit cap and rolling out Universal Credit, to make the system fairer and reward hard work.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will reward work_ A Conservative Government will not increase the rates of VAT, Income Tax or National Insurance in the next Parliament. Instead, we will ease the burden of taxation by raising the tax-free Personal Allowance – the amount you can earn before you start paying tax – to £12,500. This will cut Income Tax for 30 million people and take everyone who earns less than £12,500 out of Income Tax altogether. That means by the end of the decade, one million more people on the lowest wages will be lifted out of Income Tax, and people who work for 30 hours a week on the increased National Minimum Wage will no longer pay any Income Tax at all. We will pass a new law so that the Personal Allowance automatically rises in line with the National Minimum Wage. The new Tax Free Minimum Wage law will be applied from the first Budget after the General Election. The change will update the 1977 ‘Rooker-Wise’ amendment which forced government to uprate tax thresholds in line with inflation, meaning the Personal Allowance will now increase more quickly.
 
@@ -320,9 +321,9 @@ _We will cap the UK's overall welfare spending, to save you money_ We will keep 
 
 _We will reduce the household benefit cap to make the system fairer_ We will lower the maximum amount that a single household can claim in benefits each year from £26,000 to £23,000, so we reward work. We will continue to have exemptions from the cap for those receiving Disability Living Allowance or the Personal Independence Payment.
 
-### Controlled immigration that benefits Britain
+## Controlled immigration that benefits Britain
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Our plan to control immigration will put you, your reduce the number of people coming to our country_ _ robust enforcement. We will:_ _keep our ambition of delivering annual net migration hundreds of thousands_ _control migration from the European Union, by_ _clamp down on illegal immigration and abuse_ _enhance our border security and strengthen the_ _develop a fund to ease pressure on local areas_ Conservatives believe in controlled immigration, not mass immigration. Immigration brings real benefits to Britain - to our economy, our culture and our national life. We will always be a party that is open, outward-looking and welcoming to people from all around the world. We also know that immigration must be controlled. When immigration is out of control, it puts pressure on schools, hospitals and transport; and it can cause social pressures if communities find it hard to integrate.
 
@@ -334,7 +335,7 @@ We have seen many more people from the EU coming to Britain than originally anti
 
 We will negotiate new rules with the EU, so that people will have to be earning here for a number of years before they can claim benefits, including the tax credits that top up low wages. Instead of something-for-nothing, we will build a system based on the principle of something-for-something. We will then put these changes to the British people in a straight in-out referendum on our membership of the European Union by the end of 2017. At the same time, we will continue to strengthen our borders, improve the enforcement of our immigration laws and act to make sure people leave at the end of their visas. Across the spectrum, from the student route to the family and work routes, we will build a system that truly puts you, your family and the British people first.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will regain control of EU migration by reforming welfare rules_ Changes to welfare to cut EU migration will be an absolute requirement in the renegotiation. We have already banned housing benefit for EU jobseekers, and restricted other benefits, including Jobseeker's Allowance. We will insist that EU migrants who want to claim tax credits and child benefit must live here and contribute to our country for a minimum of four years. This will reduce the financial incentive for lower-paid, lower-skilled workers to come to Britain. We will introduce a new residency requirement for social housing, so that EU migrants cannot even be considered for a council house unless they have been living in an area for at least four years. If an EU migrant’s child is living abroad, then they should receive no child benefit or child tax credit, no matter how long they have worked in the UK and no matter how much tax they have paid. To reduce the numbers of EU migrants coming to Britain, we will end the ability of EU jobseekers to claim any job-seeking benefits at all. And if jobseekers have not found a job within six months, they will be required to leave.
 
@@ -350,9 +351,9 @@ _We will ease pressure on public services and_ GNILLORTNOC_your local community_
 
 _We will promote integration and British values_ Being able to speak English is a fundamental part of integrating into our society. That’s why we have introduced tough new language tests for migrants and will legislate to ensure that every public sector worker operating in a customer-facing role must speak fluent English. And to encourage better integration into our society, we will also require those coming to Britain on a family visa with only basic English to become more fluent over time, with new language tests for those seeking a visa extension.
 
-### Giving your child the best start in life
+## Giving your child the best start in life
 
-### This is our commitment to you:
+## This is our commitment to you:
 
 _Wherever you live, whatever background you come that gives your child the best possible start in life._ _ good standard of education, we are not keeping most deprived children who bear the heaviest cost._ _allow individuals, groups of parents and charities_ _give more control over the running of schools_ _introduce a Parent Power Bill to give parents more_ _increase the focus on vocational education and_ The reason why we need such fundamental change is clear.
 
@@ -380,7 +381,7 @@ Increasing the focus on vocational education and skills must be a priority. Scot
 
 Scotland must be ambitious for excellence in our schools and learn from examples around the world, which have improved standards for all no matter their background.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will allow individuals, groups of parents and charities to set up new schools_ Scottish Conservatives do not think the state always knows best. We trust individuals to make their own decisions, we support innovative ideas and we value the contribution our voluntary sector makes to Scottish society. We believe that these principles should extend to education too. A greater diversity of schools, with a variety of approaches, can only help our children develop their talents. We will therefore allow individuals, groups of parents and charities to set up new schools with government funding.
 
@@ -398,9 +399,9 @@ _We will extend childcare provision to all two-year-olds from the poorest backgr
 
 _We will introduce Childcare Credits to give parents maximum flexibility_ Expanding childcare is only one side of the coin, we also need to look at how to make childcare more flexible, to help meet the circumstances and needs of individual families and find ways to extend nursery provision in Scotland. We will introduce Childcare Credits giving families the choice between public preschools and nurseries and approved private and voluntary sector childcare providers. _We will repeal the “Named Person” provisions in the Children and Young People Act_ The Named Person policy is the worst example of the SNP’s statist approach. Not only are there philosophical objections to the policy but there are practical concerns regarding cost, accountability and indiscriminate information sharing – we will repeal it. _We will introduce a Graduate Contribution to_ _fund more bursaries_ Scottish Conservatives do not support upfront tuition fees, but we do believe in a fairer balance between the taxpayer and the graduate when it comes to university tuition by way of a Graduate Contribution scheme. We must ensure that our higher education sector is adequately funded for it to remain competitive and to widen access to students from disadvantaged backgrounds through more bursaries. Relying on tuition fees from foreign and English students, and deep cuts to the college budgets are not the answer.
 
-### Protecting and improving our National Health Service
+## Protecting and improving our National Health Service
 
-### This is our commitment to you:
+## This is our commitment to you:
 
 _Our National Health Service is there for you throughout your final days. We will value and protect it, and implement_ _ even more efficient and effective. We will:_ _continue to increase spending on the NHS, supported_ _keep the NHS free for you to use_ _employ 1,000 extra nurses and midwives in Scotland_ _make it easier for you to access your GP seven_ The NHS is vitally important to all of us. Founded on the noble but simple ideal that no person should ever have to worry about their healthcare, it is a profound expression of our values as a nation.
 
@@ -418,7 +419,7 @@ The SNP’s own figures have shown that waiting times for outpatient appointment
 
 People in Scotland want politicians to come up with constructive answers to help our doctors and nurses do their job, and ensure that our families are given the best possible care. That will require extra funding in some areas. But it will also require society to accept a more responsible approach to healthcare. Simply put, we all need to care for our NHS.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will deliver a strong NHS through a strong economy_ Over the last five years the Conservatives in Government have increased health spending in England by more than £7 billion above and beyond inflation. We are now able to commit to increasing NHS spending in real terms by a minimum of £8 billion over the next five years, which would mean an additional £800 million for the Scottish NHS. Scottish Conservatives will demand that all of this spending is passed on to the health service in Scotland in full and not diverted elsewhere.
 
@@ -436,9 +437,9 @@ _We will promote a culture of personal responsibility in our NHS_ More funding c
 
 _We will continue to pursue the integration of health and social care_ We have supported the integration of health and social care right from the beginning. As the population ages, it is becoming more necessary than ever to link up all the stages of a patient's journey. Joined-up approaches have the potential to massively reduce so-called bed-blocking and we will ensure that the implementation of this programme is championed.
 
-### Enabling you to enjoy our heritage, creativity and sports
+## Enabling you to enjoy our heritage, creativity and sports
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Wherever you live in the country, we want you to sports have to offer. We will:_ _keep our major national museums and galleries_ _build on our Commonwealth Games, Olympic and Cricket World Cups and the World Athletics_ _promote Scottish sporting excellence_ _freeze the BBC licence fee, to save you money_ _support our creative industries and defend a free_ Two sporting events have defined our nation in the last few years. Glasgow's Commonwealth Games showed off the best of Scotland and left a legacy that has rejuvenated the city.
 
@@ -450,7 +451,7 @@ That’s why, despite all the economic chaos we inherited, we have put over £8 
 
 _be able to enjoy the best our culture and_ _free to enter and Paralympic legacy, and deliver the Rugby Championships_ _media._
 
-### Our plan of action:
+## Our plan of action:
 
 _We will support our world-leading museums, galleries and heritage_ We support the retention of free entry to our major national museums and galleries. We will enable our cultural institutions to benefit from greater financial autonomy to use their budgets as they see fit. Over the last five years, we have made sure that arts funding benefits the whole of the UK. We significantly increased National Lottery funding for heritage and we will continue to support essential roof repairs for our cathedrals and churches, along with other places of worship.
 
@@ -466,9 +467,9 @@ _We will build on our Commonwealth Games, Olympic and Paralympic legacy_ We want
 
 _We will introduce pilots that would bring back alcohol at football_ There seems no rational reason why ordinary football fans should not enjoy the same rights as fans who attend other sports and enjoy a drink in the stadium. Scottish football fans have shown themselves to be amongst the best in the world, so we believe – and the clubs believe – that it is time to change. We believe the sport has moved on and will therefore introduce a series of pilots across football stadia to examine the best way to enhance the visitor experience without compromising safety.
 
-### Helping you build the Big Society
+## Helping you build the Big Society
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Building the Big Society is about involving the people, of Britain in the great task of improving our country_ _ opportunity to play a real part in their community._ _extend National Citizen Service to Scotland, so people from different walks of life_ _promote equal treatment and equal opportunity and diversity_ _give more power to our local communities and_ _give those who work for a big company and the Volunteering Leave for three days a year, on full_ The Big Society is a vision of a more engaged nation, one in which we take more responsibility for ourselves and our neighbours; communities working together, not depending on remote and impersonal bureaucracies. Of course, there are many tasks which require the resources and grip of government. But there are also many areas of national life in which we need more people to step forward, take responsibility and play their part. This is about a national culture change, saying to everyone in Britain: ask what you can do for your community and your country.
 
@@ -476,7 +477,7 @@ In the past five years, there has been real progress. Volunteering is now at a t
 
 Across the rest of the UK a generation of teenagers has undertaken National Citizen Service (NCS), developing their skills, broadening their horizons and growing in _neighbourhoods, villages, towns and cities – and giving young people the power and We will: children can learn new skills and meet young_ _for all in a society proud of its tolerance_ _continue to challenge SNP centralisation_ _public sector a new workplace entitlement to_ _ pay._ confidence; over the next five years, we will expand NCS to Scotland – so it becomes a rite of passage for young people in our country. We will give more people the power and support to run a school, start their own social enterprise, and take over their own local parks, landmarks and pubs. We will support communities who want to have more say in planning decisions or in how public services are run. And we will take new steps to encourage volunteering, enabling more people to join the unsung heroes who are the backbone of communities across Britain.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will expand National Citizen Service_ Over 130,000 young people have graduated from NCS in the rest of the UK. The Conservative Government has now guaranteed a place on NCS for every 16 and 17-year-old who wants one and we believe the service should be extended to Scotland too. In addition to this, we will increase the number of cadet units in schools, so that more students have the chance to learn skills such as leadership and self-reliance.
 
@@ -486,9 +487,9 @@ _We will introduce a Community Right to Challenge_ While the Scottish Government
 
 _We will help you volunteer and support action to help the vulnerable_ We will support the Prince of Wales’ Step Up To Serve initiative, encouraging young people to serve in their community. And we will make volunteering for three days a year a workplace entitlement for people working in large companies and the public sector. People could, for example, volunteer for a local charity or serve as a school governor. We have always believed that SLATIPSOH churches, faith groups and other voluntary groups play an important and longstanding role in this country’s social fabric, running foodbanks, helping the homeless, and tackling debt and addictions, such as alcoholism and gambling. We have already introduced tougher regulation of gambling, capped payday lending and backed financial inclusion, and will continue to support action that helps vulnerable people get the assistance they need. _We will champion equal rights and correct_ _ past wrongs_ The historic introduction of gay marriage has helped drive forward equality and strengthened the institution of marriage. But there is still more to do, and we will continue to champion equality for Lesbian, Gay, Bisexual and Transgender people. We will build on the posthumous pardon of Enigma codebreaker Alan Turing, who committed suicide following his conviction for gross indecency, with a broader measure to lift the blight of outdated convictions of this nature. Thousands of British men still suffer from similar historic charges, even though they would be completely innocent of any crime today. Many others are dead and cannot correct this injustice themselves through the legal process we have introduced while in government. So we will introduce a new law that will pardon those people, and right these wrongs.
 
-### Making government work better for you
+## Making government work better for you
 
-### Our commitment to you:
+## Our commitment to you:
 
 _The Government is the servant of the British people. Government run as efficiently and effectively as possible._ _save you money by cutting government waste_ _put more of the essential services you use online,_ _continue to make government more transparent, money is being spent_ _reform the Scottish Parliament into a responsible,_ Government is the servant of the British people, not their master. That simple fact was forgotten when Labour was in power. Quangos grew in number, wasteful projects proliferated and the bureaucracy swelled – symptoms of a Government that believed it always knew best.
 
@@ -504,7 +505,7 @@ However, it's not only devolution that changed the Scottish political landscape.
 
 These measures will help to restore public confidence in British and Scottish politics.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will cut government waste_ We have reduced the cost of government, by selling empty buildings, managing big projects better, shrinking the Civil Service, reforming pensions, moving more services online, and improving contracting. We plan a further £10 billion annual savings by 2017-18 and £15-20 billion in 2019-20.
 
@@ -524,9 +525,9 @@ _We will issue Scottish personal tax statements_ Transparency and accessible inf
 
 _We will reform Scottish Parliamentary procedure to improve accountability_ The last four years have shown that the Scottish Parliament needs procedural reform to be able to properly hold government to account. We believe, for example, that convenors of mandatory committees should be elected by committee members from one of the opposition parties. Reforms to parliamentary questions should also be pursued, with more time for principal opposition spokespersons and a more representative allocation of questions.
 
-### Helping you to buy a home of your own
+## Helping you to buy a home of your own
 
-### Our commitment to you:
+## Our commitment to you:
 
 _The chance to own your own home should be available_ _help to keep mortgage rates lower by continuing plan_ _extend Help to Buy across the UK and in Scotland housing ladder, and introduce a new Help to Buy_ _ deposit_ _reintroduce the Right to Buy in Scotland and launch help tenants own their own home_ _ensure local people have more control over planning._ Conservatives believe passionately in home ownership. We understand how good it feels when you have worked long hours, saved money for years, and finally take possession of the keys to your first home. For years, however, people have been finding it harder and harder to get on the housing ladder. Developers were building too few homes and the aftermath of the banking crisis saw young people struggling to raise a deposit.
 
@@ -536,7 +537,7 @@ As the party of home ownership, we want to go further and faster – and this ma
 
 _to everyone who works hard. We will: to work through our long-term economic to help more people onto and up the ISA to support people to saving for a a new Step-by-Step scheme to gradually_ And for all those already in their home, we will make sure we continue working through our economic plan, so mortgage rates stay lower for longer and people can keep hold of their homes and plan for the future – safe in the knowledge they have a government that is competently looking after the public finances so they can look after their own.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will help more people own their own home_ Our Help to Buy Mortgage Guarantee has helped over 4,000 Scots buy their own home. 79% of those were first-time buyers. More widely, the number of first-time buyers increased by 50% from 2010 to 2014. This is good progress, but we want to go even further. We will continue the Help to Buy Mortgage Guarantee until the start of 2017, and extend the Help to Buy Equity Loan in Scotland until at least 2020. From this autumn, we will introduce a new Help to Buy ISA to support people who are working hard to save up for a deposit for their first home. A ten per cent deposit on the average first home costs £15,000, so if you put in up to £12,000, government will put in up to £3,000 more. A 25 per cent top-up is equivalent to saving a deposit from your pre-tax income – making it effectively a tax cut for first-time buyers.
 
@@ -550,9 +551,9 @@ _We will ensure local decisions are paramount in planning_ We have previously ou
 
 _We will help you build a strong local economy_ We want local authorities to help create strong local economies. We also want to see local councils support businesses by extending the Business Rates Incentivisation Scheme to allow councils keep 100% of extra business rates revenue. We will support Business Improvement Districts and other forms of business-led collaboration on high streets - giving more say to retailers on issues such as minor planning, cleaning and parking. Our Coastal Communities Fund will help our seaside areas thrive, helping boost skills and create jobs. We will also introduce another round of the Town Centre Regeneration Fund in Scotland.
 
-### Protecting and enhancing our natural environment
+## Protecting and enhancing our natural environment
 
-### This is our commitment to you:
+## This is our commitment to you:
 
 _Scotland's natural environment not only supports but it is what makes us proud to call it home. We_ _protect the unique and world-famous Scottish_ _ensure our countryside can thrive and is not stifled_ _keep working with our international partners_ Scotland is the most beautiful country in the world and we are all rightly proud to call it home. We have hundreds of natural wonders sitting on our doorstep – no matter where in Scotland we live. Our landscape attracts millions of tourists every single year, employing hundreds of thousands of Scots and making a contribution worth billions of pounds to our economy.
 
@@ -568,7 +569,7 @@ _thousands of jobs across our rural economy, will:_ landscape by central belt po
 
 It is our duty to support our natural environment, for Scotland today – and Scotland tomorrow – depends on it.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will protect your countryside_ The SNP seems to have no understanding of the difference between rural Scotland and the central belt. Their centralising tendencies have been exposed over their time in government, with decision-making powers flowing only one way - from rural communities straight into Holyrood. Scottish Conservatives believe there is a better way. We believe in public services accountable and responsive to local communities. We believe in decisions on things like wind farms being made locally, not overridden by Edinburgh. We believe in rural policy tailored for rural Scotland.
 
@@ -580,9 +581,9 @@ _We will protect animal welfare_ The quality of the food on your plate, and the 
 
 _We will tackle international wildlife trade_ As hosts of the London Conference on the Illegal Wildlife Trade, we helped secure the adoption of the London Declaration on Illegal Wildlife Trade and will continue to lead the world in stopping the poaching that kills thousands of rhinos, elephants and tigers each year. We will oppose any resumption of commercial whaling, and seek further measures at the EU and internationally to end shark-finning. We will promote effective worldwide measures for tuna conservation, press for a total ban on ivory sales, and support the Indian Government in its efforts to protect the Asian elephant. We will press for full ‘endangered species’ status for polar bears and a ban on the international trade in polar bear skins, as well as for greater attention to be paid to the impact of climate change on wildlife and habitats in Polar Regions in the Arctic Council and other international fora.
 
-### Guaranteeing you clean, affordable and secure energy supplies
+## Guaranteeing you clean, affordable and secure energy supplies
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Affordable, reliable energy is critical to our economy, budgets. We will:_ _keep your bills as low as possible and promote_ _ensure your homes and businesses have energy_ _help you insulate your home_ _halt the spread of subsidised onshore wind farms_ _meet our climate change commitments, cutting save you money._ Without secure energy supplies, we leave British families and business at the mercy of fluctuating global oil and gas prices; we increase our dependence on foreign sources of energy; and we become less safe and less prosperous as a result.
 
@@ -604,7 +605,7 @@ But the job is only half done. We need a Conservative Government to see through 
 
 This is a long-term plan to keep the lights on; keep our homes warm; and keep families from endless worry about their energy bills.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will promote competition to keep your bills as low as possible_ We have helped increase the number of independent energy suppliers from seven to 21, made it easier for customers to switch to better deals, slashed the number of tariffs to just 4 per supplier, and cut switching times in half. We will go even further, implementing the recommendations of the Competition and Markets Authority investigation that we triggered. We will ensure that every home and business in the country has a Smart Meter by 2020, delivered as cost-effectively as possible, so consumers have instant, accurate bills and can switch to an alternative provider within one day. And we will support low-cost measures on energy efficiency, with the goal of insulating a million more homes over the next five years, supporting our commitment to tackle fuel poverty.
 
@@ -614,9 +615,9 @@ _We will reduce the spread of onshore wind farms_ Onshore wind now makes a meani
 
 _We will protect our planet for our children_ We have been the greenest government ever, setting up the world’s first Green Investment Bank in Edinburgh, signing a deal to build the first new nuclear plant in a generation, trebling renewable energy generation to 19 per cent, bringing energy efficiency measures to over one million homes, and committing £1 billion for carbon capture and storage. We are the largest offshore wind market in the world. We will push for a strong global climate deal later this year – one that keeps the goal of limiting global warming to two-degrees firmly in reach. At home, we will continue to support the UK Climate Change Act. We will cut emissions as cost-effectively as possible, and will not support additional distorting and expensive power sector targets.
 
-### Fighting crime and standing up for victims
+## Fighting crime and standing up for victims
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Your local area should be a safe place to grow up, continue to cut crime and make your community_ _conduct a review of Police Scotland to ensure as Parliament_ _toughen community sentencing to make sentences_ _reform the prison system, so dangerous criminals chance of meaningful rehabilitation_ _scrap the Human Rights Act and curtail the role with the Scottish Parliament retaining the final_ _ Scotland Act 1998._ Law and order is and always will be a Conservative priority. We believe that people must face the consequences of their actions – good or bad. If people break the law, they should not expect to get away with it.
 
@@ -632,7 +633,7 @@ A cornerstone of any justice system is trust in the people who watch over it. Th
 
 Scottish Conservatives have always stood up for victims of crime and they remain at the heart of our justice policy. We will continue to argue for local accountability, robust sentencing and meaningful rehabilitation.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will conduct an accountability review of Police Scotland_ One of the SNP's most controversial policies has been to scrap local police forces and their replacement with a single police force. Scottish Conservatives voiced concerns about the loss of local accountability from the outset. Recent revelations surrounding armed police and stop and search made it quite clear that these concerns were justified. We have called for a thorough review of the arrangements in place and believe this must include looking at how local accountability can be restored. We believe the review should, in particular, look at the possibility of a tiered police service, which would combine national strategic co-operation with local autonomy.
 
@@ -644,9 +645,9 @@ _We will strengthen community sentences and toughen breaches_ Community sentence
 
 _We will reform human rights law_ We have stopped prisoners from having the vote, and have deported suspected terrorists such as Abu Qatada, despite all the problems created by Labour’s human rights laws. The next Conservative Government will scrap the Human Rights Act, and introduce a British Bill of Rights. This will break the formal link between British courts and the European Court of Human Rights, and make our own Supreme Court the ultimate arbiter of human rights matters in the UK. The Scottish Parliament will retain the final say on the role of the European Court of Human Rights in relation to the Scotland Act 1998.
 
-### Preventing terrorism, countering extremism
+## Preventing terrorism, countering extremism
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Keeping you and your family safe is our overriding terrorism remains serious, but with our tough, intelligent_ _ confront and ultimately defeat it. We will:_ _strengthen the ability of the police and intelligence authorities have all the tools they need to prevent_ _deal with online radicalisation and propaganda, being drawn into extremism and terrorism_ _tackle all forms of extremism, including non-violent life are properly promoted and defended._ The first duty of government is to keep you safe. We will always do whatever is necessary to protect the British people. We have protected and increased the budgets for the security and intelligence agencies and counter-terrorism policing. But the scale of the threat to our country from a number of terrorist groups remains serious, and the rise of ISIL in Syria and Iraq has created new havens for terrorists from which attacks against Britain can be planned, financed and directed.
 
@@ -658,15 +659,15 @@ The next Conservative Government will continue to take a tough, intelligent and 
 
 Dealing with these threats is not just about new powers. It is about how we combat extremism in all its forms. We need to tackle it at root, before it takes the form of violence and terror. At the heart of our approach lies an uncompromising defence of British values, and a very simple message: in Britain, you do not just enjoy the freedom to live how you choose; you have a responsibility to respect others too.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will strengthen counter-terrorism powers_ We have strengthened counter-terrorism laws, including making it easier to stop British nationals travelling abroad to fight, and control the return of those who do. We will keep up to date the ability of the police and security services to access communications data – the ‘who, where, when and how’ of a communication, but not its content. Our new communications data legislation will strengthen our ability to disrupt terrorist plots, criminal networks and organised child grooming gangs, even as technology develops. We will maintain the ability of the authorities to intercept the content of suspects’ communications, whilst continuing to strengthen oversight of the use of these powers.
 
 _We will confront all forms of extremism, including non-violent extremism_ We have already reformed the Prevent strategy so that it focuses on non-violent as well as violent extremism. We will now go even further. We will outlaw groups that foment hate with the introduction of new Banning Orders for extremist organisations. These could be applied to dangerous organisations that fall short of the existing thresholds for proscription under terrorism legislation. To restrict the harmful activities of extremist individuals, we will create new Extremism Disruption Orders. These new powers might, for instance, prevent those who are seeking to radicalise young British people online from using the internet or communicating via social media. We will develop a strategy to tackle the infiltration of extremists into our schools and public services. We will strengthen Ofcom’s role so that tough measures can be taken against channels that broadcast extremist content. We will enable employers to check whether an individual is an extremist and bar them from working with children. And we will take further measures to ensure colleges and universities do not give a platform to extremist speakers.
 
-### Dignity in your retirement
+## Dignity in your retirement
 
-### Our commitment to you:
+## Our commitment to you:
 
 _If you have worked hard during your life, saved, paid deserve dignity and security when you retire. We_ _ grow old. We will:_ _take the family home out of Inheritance Tax for threshold for married couples and civil partners_ _continue to increase the State Pension through cent, inflation or earnings, whichever is highest_ _reward saving by introducing a new single-tier_ _give you the freedom to invest and spend your on to your loved ones tax-free_ _protect pensioner benefits including the free bus_ Our pensioners have made this country what it is, and we believe that, in return, younger generations owe it to them to ensure they have dignity and security in their old age.
 
@@ -674,15 +675,15 @@ In office, Labour neglected the elderly. They raided pensions with a £150 billi
 
 In the next five years, as our country recovers and our elderly population grows, we will continue to put pensioners at the heart of our long-term economic plan.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will guarantee your financial security as you grow older_ We will keep the triple lock pension system. From April 2016 we are bringing in a Single Tier Pension; this will effectively abolish means-testing the pensions of people who have contributed all their lives. We will maintain all the current pensioner benefits including Winter Fuel Payments, free bus passes, free prescriptions and TV licences for the next Parliament, while implementing the "temperature test" for Winter Fuel Payment, so that expats in hot countries no longer receive it. And we will allow pensioners to access their pension savings and decide whether or not to take out an annuity, so they can make their own decisions about their money.
 
 _We will help you support your loved-ones_ We have guaranteed that ISAs can now be passed on to a spouse tax-free, so that from this April they are no longer subject to Income Tax and Capital Gains Tax. We have abolished the 55 per cent tax on pension pots, so that when the deceased is 75 or over any beneficiary only has to pay their marginal Income Tax rate - normally 20 per cent - when they draw down the pension. We have also enabled anyone who dies before the age of 75 to pass on their pension pot completely tax-free, so that beneficiaries will pay no tax on pensions they inherit, or on the income they draw down. We will take the family home out of tax for all but the richest by increasing the effective Inheritance Tax threshold for married couples and civil partners to £1 million, with a new transferable main residence allowance of £175,000 per person. This will be paid for by reducing the tax relief on pension contributions for people earning more than £150,000.
 
-### Stronger together: a Union for the 21st century
+## Stronger together: a Union for the 21st century
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Wherever you live in the great nations of our United_ _honour in full our commitments to Scotland to_ _give English MPs a veto over matters only affecting_ _implement the agreed settlement for Wales, handing Assembly_ _continue to build a Northern Ireland where politics strong._ Scotland, England, Wales and Northern Ireland – ours is the greatest union of nations the world has seen. Together we have done so much, and we can do much more. The Conservative Party is the party of the Union – and we will always do our utmost to keep our family of nations together.
 
@@ -694,7 +695,7 @@ We have tackled the problems we inherited. First, we held the referendum on Scot
 
 In the last five years we have proven that we are the party of the Union. We will go further in the next Parliament, pushing power out beyond Westminster, Holyrood, Cardiff Bay and Stormont, so we keep our United Kingdom strong and secure for the long term.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will build an enduring settlement for the United Kingdom_ We will work to ensure a stable constitution that is fair to the people of Scotland, England, Wales and Northern Ireland. We will strengthen and improve devolution for each part of our United Kingdom in a way that accepts that there is no one-size-fits-all solution: we will implement the Smith Commission and St David’s Day Agreement and equivalent changes in the rest of the UK, including English votes for English laws.
 
@@ -740,9 +741,9 @@ continue to work closely with the Northern Ireland Executive to implement commit
 
 complete the devolution of Corporation Tax powers to the Assembly, consistent with the Executive fulfilling its commitments on finance, welfare reform and efficiencies in the Stormont House Agreement.
 
-### Real change in our relationship with the European Union
+## Real change in our relationship with the European Union
 
-### Our commitment to you:
+## Our commitment to you:
 
 _For too long, your voice has been ignored on Europe._ _• give you a say over whether we should stay in the end of 2017_ _• commit to keeping the pound and staying out_ _• reform the workings of the EU, which is too big,_ _• reclaim power from Brussels on your behalf Market_ _• back businesses to create jobs in Britain by completing red tape._ The EU needs to change. And it is time for the British people - not politicians – to have their say. Only the Conservative Party will deliver real change and real choice on Europe, with an in-out referendum by the end of 2017.
 
@@ -756,7 +757,7 @@ It will be a fundamental principle of a future Conservative Government that memb
 
 So the choice at this election is clear: SNP, Labour and the Liberal Democrats won’t give you a say over the EU. UKIP can’t give you a say. Only the Conservative Party will deliver real change in Europe – and only the Conservatives can and will deliver an in-out referendum.
 
-### Our plan of action:
+## Our plan of action:
 
 _We will let you decide whether to stay in or leave the EU_ We will legislate in the first session of the next Parliament for an in-out referendum to be held on Britain’s membership of the EU before the end of 2017. We will negotiate a new settlement for Britain in the EU. And then we will ask the British people whether they want to stay in on this basis, or leave. We will honour the result of the referendum, whatever the outcome.
 
@@ -768,9 +769,9 @@ _We will scrap the Human Rights Act_ We will scrap Labour's Human Rights Act and
 
 _We will take action in Europe to make you better off_ We want an EU that helps Britain move ahead, not one that holds us back. We have already succeeded in exempting our smallest businesses from new EU regulations, and kicked-off negotiations for a massive EU trade deal with the USA, which could be worth billions of pounds to the UK economy. We will build on this. We want to preserve the integrity of the Single Market, by insisting on protections for those countries that have kept their own currencies. We want to expand the Single Market, breaking down the remaining barriers to trade and ensuring that new sectors are opened up to British firms. We want to ensure that new rules target unscrupulous behaviour in the financial services industry, while safeguarding Britain as a global centre of excellence in finance. So we will resist EU attempts to restrict legitimate financial services activities. We will press for lower EU spending, further reform of the Common Agricultural Policy and Structural Funds, and for EU money to be focused on promoting jobs and growth.
 
-### A Britain standing tall in the world
+## A Britain standing tall in the world
 
-### Our commitment to you:
+## Our commitment to you:
 
 _Everything we do around the world will be driven and help you prosper. We will:_ _• ensure Britain is a major player on the world interests, uphold British values and tackle threats_ _• help generate new trade, investment and job opportunities,_ _• maintain our world class Armed Forces so they_ _• uphold our commitment to spend 0 per cent development._ Economic security and national security are two sides of the same coin. Without one, you cannot have the other. Our prosperity depends upon Britain remaining an active, outward-looking nation, one that is engaged with the world, not looking in on itself. We will maintain Britain’s strong global role and our capacity to project UK power and values around the world.
 
@@ -782,9 +783,9 @@ We have strengthened Britain’s influence in the world. The National Security C
 
 We will back this up with UK military power and international aid. Our long-term economic plan will ensure we have the economic strength to maintain our world-class Armed Forces, to uphold our national security and project power globally. Aid helps prevent failed states from becoming havens for terrorists. It builds long-term markets for our businesses, by promoting global prosperity, and reduces migration pressures. So we will maintain our commitment to tackling conflict, poverty, and disease around the world.
 
-### A stronger voice for our nation on the world stage
+## A stronger voice for our nation on the world stage
 
-### Our plan of action:
+## Our plan of action:
 
 _We will keep you secure_ We will tackle global terrorism and the poisonous ideology of Islamist extremism, while taking a patient, long-term approach to preventing conflict and state failure. We will work with our partners to address threats to UK security, including the spread of nuclear, chemical and biological weapons, pandemic diseases, the illegal drugs trade, piracy and organised crime. We will:
 
@@ -800,9 +801,9 @@ _We will stand up for British values_ Our long-term security and prosperity depe
 
 uphold our Special Relationship with the USA and further strengthen our ties with our close Commonwealth allies, Australia, Canada and New Zealand uphold the democratic rights of the people of Gibraltar and the Falkland Islands to remain British, for as long as that is their wish, and protect our Overseas Territories stand up for the rule of law and human rights in Zimbabwe support a democratic transition in Burma promote reconciliation and human rights in Sri Lanka, including through supporting the UN investigation into war crimes, which the Prime Minister was instrumental in securing following his historic visit to Jaffna actively support Cypriots to find a peaceful and lasting settlement to reunite their island.
 
-### Keeping Britain safe
+## Keeping Britain safe
 
-### Our plan of action:
+## Our plan of action:
 
 _We will protect our nation_ We will continue to keep our Armed Forces strong so they can continue to keep you safe. We will maintain the size of the regular armed services and not reduce the army to below 82,000. We will retain the Trident continuous at sea nuclear deterrent to provide the ultimate guarantee of our safety and build the new fleet of four Successor Ballistic Missile Submarines – securing thousands of highly-skilled engineering jobs in the UK. We will work closely with our allies to continue to strengthen TO – supporting its new multi-national rapid response force. We will maintain our global presence, strengthening our defence partnerships in the Gulf and Asia. Later this year, we will hold a National Security Strategy and Strategic Defence and Security Review to plan for the future.
 
@@ -812,9 +813,9 @@ _We will maintain strong, modern Armed Forces_ Modern, flexible Armed Forces nee
 
 _We will continue to honour the Armed Forces Covenant_ We have honoured our commitment to enshrine the Armed Forces Covenant in law and done much to support our servicemen and women. We have delivered better accommodation for service families and helped service personnel buy their own home. To ensure that those who serve can enjoy greater economic security, we have boosted allowances and tax reliefs. We have protected pensions for our servicemen and women. We have ensured that injured service personnel have access to the latest prosthetics and world-class rehabilitation facilities. And we have used £450 million of LIBOR fines from banks to support the Armed Forces community. The money has been used to support a wide range of charities and good causes, from providing better play facilities for the children of service families, to helping rehabilitation through sport for injured veterans. We pressed for the introduction of the Arctic Star medal - for veterans of the Arctic Convoys - and the Bomber Command Clasp, to ensure proper recognition for those who risked their lives to keep us free. We will build on this proud record, implementing Lord Ashcroft’s recommendations on the way the nation fulfils its obligations to veterans. We will work to address hearing loss among veterans. And we will continue to support the unsung heroes of the Armed Forces community: the partners and families of those who serve.
 
-### Tackling global challenges to make you safer and more prosperous
+## Tackling global challenges to make you safer and more prosperous
 
-### Our plan of action:
+## Our plan of action:
 
 _We will continue to honour our commitments_ Tackling global poverty is both the right thing to do and in Britain’s interests. We have delivered on our promises to meet the UN target of spending 0 per cent of national income as aid and to enshrine this in law. We will continue to meet the 0.7 per cent target, maintain an independent Department for International Development and keep aid untied. Our aid budget meets the OECD aid rules, and we will actively engage in international discussions to ensure that these rules fully reflect the importance of peace, stability and effective institutions for reducing poverty. We will insist that every government and organisation we fund meets global transparency standards.
 
@@ -824,13 +825,13 @@ _We will tackle the causes of poverty and promote gender equality_ We will push 
 
 _We will help you fight poverty_ Our International Citizen Service has given thousands of young Brits the opportunity to volunteer abroad. We will triple it in size. We will also double our successful Aid Match scheme, which matches donations to charity from the aid budget. We will boost partnerships between UK institutions and their counterparts in the developing world, and help people in the UK give or lend money directly to individuals and entrepreneurs around the world.
 
-### Conclusion
+## Conclusion
 
-### So This Is Our Detailed Plan for Britain.
+## So This Is Our Detailed Plan for Britain.
 
 Our plan to entrench the progress of the past five years. Our plan for you and your family, at every stage of your life.
 
-### It Is Underpinned by Some Simple Conservative Values.
+## It Is Underpinned by Some Simple Conservative Values.
 
 Those who work hard and do the right thing must be rewarded. Everyone should be able to rise as high as their talents and effort will take them. We measure our success not just in how we show our strength abroad, but in how we care for the weakest and most vulnerable at home.
 

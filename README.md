@@ -4,11 +4,15 @@ A static web archive of UK general election manifestos, results, and maps (1945�
 
 ## Local preview
 
+Use the SPA-aware preview so deep links (`/elections`, `/party/…`, etc.) work on
+hard refresh — same idea as Cloudflare `_redirects`:
+
 ```bash
-python3 -m http.server 8888 --bind 127.0.0.1
+python3 scripts/serve-preview.py
 ```
 
-Open [http://127.0.0.1:8888/](http://127.0.0.1:8888/).
+Open [http://127.0.0.1:8888/](http://127.0.0.1:8888/). See
+[`knowledge/architecture/local-preview.md`](knowledge/architecture/local-preview.md).
 
 ## Deploy to Cloudflare
 

@@ -1,13 +1,32 @@
 [
   {
-    "electionId": "2015",
-    "partyId": "cista",
-    "title": "Cannabis Is Safer Than Alcohol Manifesto 2015",
-    "year": "2015",
-    "url": "/manifesto/2015/cista",
+    "electionId": "2010",
+    "partyId": "pirate",
+    "title": "Pirate Party UK Manifesto 2010",
+    "year": "2010",
+    "url": "/manifesto/2010/pirate",
     "isPdf": false,
-    "added": "2026-07-17T20:56:38Z",
-    "cover": "/manifestos/2015/cista/cover.png"
+    "added": "2026-07-21T00:31:37Z",
+    "cover": "/manifestos/2010/pirate/cover.png"
+  },
+  {
+    "electionId": "1955",
+    "partyId": "communist",
+    "title": "Communist Party Programme 1955",
+    "year": "1955",
+    "url": "/manifesto/1955/communist",
+    "isPdf": false,
+    "added": "2026-07-18T20:58:18+01:00"
+  },
+  {
+    "electionId": "1966",
+    "partyId": "communist",
+    "title": "Communist Party Manifesto 1966",
+    "year": "1966",
+    "url": "/manifesto/1966/communist",
+    "isPdf": false,
+    "added": "2026-07-18T20:58:18+01:00",
+    "cover": "/manifestos/1966/communist/cover.png"
   },
   {
     "electionId": "1983",
@@ -16,7 +35,7 @@
     "year": "1983",
     "url": "/manifesto/1983/scottishcon",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/1983/scottishcon/cover.png"
   },
   {
@@ -26,7 +45,7 @@
     "year": "1983",
     "url": "/manifesto/1983/welshcon",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/1983/welshcon/cover.png"
   },
   {
@@ -36,8 +55,18 @@
     "year": "2005",
     "url": "/manifesto/2005/socialistlabour",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/2005/socialistlabour/cover.png"
+  },
+  {
+    "electionId": "2015",
+    "partyId": "cista",
+    "title": "Cannabis Is Safer Than Alcohol Manifesto 2015",
+    "year": "2015",
+    "url": "/manifesto/2015/cista",
+    "isPdf": false,
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2015/cista/cover.png"
   },
   {
     "electionId": "2015",
@@ -46,7 +75,7 @@
     "year": "2015",
     "url": "/manifesto/2015/socialistlabour",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/2015/socialistlabour/cover.png"
   },
   {
@@ -56,7 +85,7 @@
     "year": "2017",
     "url": "/manifesto/2017/liberal1989",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/2017/liberal1989/cover.png"
   },
   {
@@ -66,7 +95,7 @@
     "year": "2019",
     "url": "/manifesto/2019/liberal1989",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/2019/liberal1989/cover.png"
   },
   {
@@ -76,7 +105,7 @@
     "year": "2024",
     "url": "/manifesto/2024/liberal1989",
     "isPdf": false,
-    "added": "2026-07-16T20:45:51Z",
+    "added": "2026-07-18T16:30:49+01:00",
     "cover": "/manifestos/2024/liberal1989/cover.png"
   },
   {
@@ -88,35 +117,5 @@
     "isPdf": false,
     "added": "2026-07-12T21:36:09+01:00",
     "cover": "/manifestos/1992/sdlp/cover.png"
-  },
-  {
-    "electionId": "1997",
-    "partyId": "niwc",
-    "title": "Northern Ireland Women's Coalition Manifesto 1997",
-    "year": "1997",
-    "url": "/manifesto/1997/niwc",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/1997/niwc/cover.png"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "stuckist",
-    "title": "Stuckist Party Manifesto 2001",
-    "year": "2001",
-    "url": "/manifesto/2001/stuckist",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2001/stuckist/cover.png"
-  },
-  {
-    "electionId": "2001",
-    "partyId": "welshlibdem",
-    "title": "Welsh Liberal Democrats Manifesto 2001",
-    "year": "2001",
-    "url": "/manifesto/2001/welshlibdem",
-    "isPdf": false,
-    "added": "2026-07-12T21:36:09+01:00",
-    "cover": "/manifestos/2001/welshlibdem/cover.png"
   }
 ]

@@ -117,5 +117,6 @@ const PARTY_COLOURS = {
   "rejoin": "#003399",
   "aontu": "#445C2A",
   "socialistlabour": "#9B1B30",
-  "liberal1989": "#FFD700"
+  "liberal1989": "#FFD700",
+  "cpb": "#EF0000"
 };

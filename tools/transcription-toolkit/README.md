@@ -20,7 +20,10 @@ A set of tools for converting political party manifesto PDFs into clean, complet
 | `spot_check.py` | **Spot checker** — extracts key snippets from both PDF and Markdown for quick side-by-side reading-order verification |
 | `log_conversion.py` | **Conversion metadata logger** — writes and reads `.conversion.json` sidecar records (extractor, coverage, QA counts, notes) |
 | `transcribe_pipeline.py` | **Human-gated orchestration layer** — page-ledger workflow for new transcriptions, retrospective audits, conservative repairs, batch audit reports, and (`checklist` subcommand) bounded human-review checklists generated from a ledger |
-| `qa_audit_vision.py` | **Layer B vision-model audit** — sends a page image + its extracted text to a Claude vision model to classify structural discrepancies (missing/merged/misordered blocks); never asked to transcribe. Needs `ANTHROPIC_API_KEY`; supports `--dry-run`. See `TRANSCRIPTION_PIPELINE.md` Sec.4 |
+| `qa_audit_vision.py` | **Layer B vision-model audit (LEGACY/optional)** — sends a page image + its extracted text to a Claude vision model to classify structural discrepancies. Needs `ANTHROPIC_API_KEY`; superseded for gating by `flag_pages.py`. See `TRANSCRIPTION_PIPELINE.md` Sec.4 |
+| `repair_manifestos_gemini.py` | **Tier-1 page transcription/repair (backend-agnostic despite the name)** — defaults to a local OCR VLM via LM Studio/oMLX (`--backend local --mode ocr`, no API key); `--backend gemini` is the legacy paid path. Writes `vlm-clean`/`gemini-clean` candidates, reassembles `draft.md`; `--reassemble-only` rebuilds the draft with no model calls. See `LOCAL_SETUP.md` |
+| `flag_pages.py` | **Deterministic per-page QA gate** — checks model-transcribed pages (word coverage vs PDF text layer + per-page `qa_check.py`) and writes `flagged_pages.json` for tier-2 repair. No API key |
+| `LOCAL_SETUP.md` | One-time LM Studio / DeepSeek-OCR setup, go/no-go quality check, and the two-tier per-manifesto workflow |
 | `manifests/` | Per-PDF YAML sidecar files that declare per-page extraction mode, skip pages, and header/footer overrides — see `manifests/TEMPLATE.yaml` |
 | `scripts/` | Bespoke per-manifesto extraction scripts for PDFs too complex for the generic extractor |
 | `requirements.txt` | Python package dependencies |

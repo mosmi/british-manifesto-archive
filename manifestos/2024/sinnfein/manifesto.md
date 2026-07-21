@@ -16,6 +16,7 @@ sections:
   - democracy-and-constitution
 ---
 
+
 # Sinn Féin Manifesto 2024
 
 ## Strong Leadership, Positive Change
@@ -26,7 +27,7 @@ sections:
 
 ---
 
-### Contents
+## Contents
 
 * A Message from Uachtarán Shinn Féin Mary Lou McDonald TD ... 3
 * Introduction – Leas-Uachtarán Shinn Féin First Minister Michelle O’Neill MLA ... 4
@@ -78,8 +79,8 @@ To vote for a party that is committed to working for all.
 
 ---
 
-### Introduction
-#### Leas-Uachtarán Shinn Féin First Minister Michelle O’Neill MLA
+## Introduction
+## Leas-Uachtarán Shinn Féin First Minister Michelle O’Neill MLA
 
 In this election people can send a clear message about what they want for the future. 
 
@@ -105,7 +106,7 @@ Let’s seize the opportunity to return the strongest Sinn Féin team and keep m
 
 ---
 
-### Strong Leadership
+## Strong Leadership
 
 In this election Sinn Féin is asking you to endorse strong leadership and positive change. 
 
@@ -133,7 +134,7 @@ We will continue to offer strong leadership to all our people and communities wi
 
 ---
 
-### Delivering Positive Change
+## Delivering Positive Change
 
 Sinn Féin MPs are part of an all-Ireland team driving forward change on this island.
 
@@ -159,7 +160,7 @@ Sinn Féin MPs will continue to prioritise the interests of people and communiti
 
 ---
 
-### Standing Up for Public Services
+## Standing Up for Public Services
 
 Sinn Féin is committed to standing up for workers, families, rural and urban communities, to ensure they have access to first-class public services.
 
@@ -191,7 +192,7 @@ Decisions should be taken here by locally accountable Executive Ministers and no
 
 ---
 
-### Planning for Constitutional Change
+## Planning for Constitutional Change
 
 The discussion on constitutional change is everywhere. 
 
@@ -219,7 +220,7 @@ Now is the time to plan for the future.
 
 ---
 
-### Building a Society for All
+## Building a Society for All
 
 Sinn Féin is committed to an inclusive and diverse society based on equal rights and equal opportunities for all citizens.
 

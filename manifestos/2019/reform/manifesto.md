@@ -23,11 +23,12 @@ sections:
   - science-and-technology
 ---
 
+
 # Brexit Party Manifesto 2019
 
 ## Brexit Party 2019 Contract with the People
 
-### A Clean-break Brexit Is the Key to Changing Britain for Good
+## A Clean-break Brexit Is the Key to Changing Britain for Good
 
 Our priority is to Leave the European Union and deliver the Brexit that 17.4m voted for in 2016. Acting on the biggest popular mandate in British history is crucial to restore faith in our democracy. What sort of democratic society do we live in, if a few Parliamentarians can defy the expressed will of the people?
 
@@ -41,7 +42,7 @@ The old mainstream parties have made ‘manifesto’ a dirty word. Everybody kno
 
 With a Clean-Break Brexit, we can start changing Britain for good from day one. There will be no extended ‘transition period’, no more years of wrangling with Brussels, no further entanglement with the EU’s controlling political institutions. We will be free to start building our future immediately, to change politics and Britain for good. And that’s a promise.
 
-### A Political Revolution
+## A Political Revolution
 
 The way the political Establishment has conspired to frustrate democracy over Brexit has highlighted the need for fundamental political reform. The Brexit Party can deliver real democratic change because we are not part of the Westminster status quo. It is now time for a debate on a written constitution. We pledge to:
 
@@ -63,7 +64,7 @@ The way the political Establishment has conspired to frustrate democracy over Br
 
 * Introduce Citizens’ Initiatives to allow people to call referendums, subject to a 5m threshold of registered voter signatures and time limitations on repeat votes.
 
-### The Brexit Dividend
+## The Brexit Dividend
 
 The Brexit Party supports policies aimed at regional regeneration, supporting key sectors of the economy and targeted investments in the young, the High Street and families. We pledge to:
 
@@ -79,7 +80,7 @@ The Brexit Party supports policies aimed at regional regeneration, supporting ke
 
 * Abolish Inheritance Tax (IHT). This hated ‘grief’ tax raises less than 1% of total tax revenue. It is ‘double taxation’ on a lifetime’s assets, levied at a time of family distress.
 
-### Invest in the Future
+## Invest in the Future
 
 The Brexit Party supports investment in key public services, the environment, fishing and strategic industries – partly financed by saving our annual contribution to the EU. We pledge to:
 
@@ -93,7 +94,7 @@ The Brexit Party supports investment in key public services, the environment, fi
 
 * Invest in Strategic Industries: freed from EU rules on state aid, we can invest in strategic industries such as steel, railways and defence to create thousands of jobs.
 
-### Cut the Cost of Living
+## Cut the Cost of Living
 
 A Clean-Break Brexit is a chance to reduce the cost of living for working families. The impact of EU policies on energy prices costs us jobs and punishes the poorest in society, while the EU Customs Union prevents us cutting tariffs on non-EU imports. We pledge to:
 
@@ -101,7 +102,7 @@ A Clean-Break Brexit is a chance to reduce the cost of living for working famili
 
 * Reduce import tariffs: 20% of UK food items are sourced from outside the EU. A Clean-Break Brexit will allow us to reduce tariffs to zero on certain foods, footwear and clothing.
 
-### Turbo-charge the Economy
+## Turbo-charge the Economy
 
 We want to attract investment and jobs with a series of targeted incentives to drive growth and increase the tax take. We pledge to:
 
@@ -115,7 +116,7 @@ We want to attract investment and jobs with a series of targeted incentives to d
 
 * Overhaul financial services regulation, cut red tape, increase competition and boost lending to Small and Medium Enterprises.
 
-### Protect Britain’s Borders and People
+## Protect Britain’s Borders and People
 
 A Clean-Break Brexit means that we can control our own national security and borders, free from entanglement in the EU’s integrated defence and discriminatory immigration policies. We pledge to:
 
@@ -133,7 +134,7 @@ A Clean-Break Brexit means that we can control our own national security and bor
 
 * Abolish distortive targets and introduce sentence ‘ranges’ for young offenders, to encourage rehabilitation.
 
-### Invest in the NHS
+## Invest in the NHS
 
 We need to develop a National Health Service fit for the 21st Century. The Brexit Party believes in continued investment in the NHS, better management, increasing the number of medical staff and cutting waste. We want the NHS to be a beacon of excellent care. It was the Labour governments of Blair and Brown that burdened the NHS with billions of pounds of debt through their Private Finance Initiatives.
 
@@ -151,7 +152,7 @@ We need to develop a National Health Service fit for the 21st Century. The Brexi
 
 * Have a national debate on our NHS, involving the public alongside MPs, doctors and experts. We should discuss ring-fencing the NHS budget and the tax revenues that pay for it.
 
-### Invest in Education
+## Invest in Education
 
 Britain’s future in the world depends on improving our education for young people and giving employers a positive role in training and apprenticeships. We pledge to:
 
@@ -163,7 +164,7 @@ Britain’s future in the world depends on improving our education for young peo
 
 * Scrap the cumbersome Apprentice Levy — apprenticeships have collapsed. Improve tax incentives for employers to take on genuine apprentices.
 
-### Reform Universal Credit
+## Reform Universal Credit
 
 Providing a safety net for those in need is a defining mark of a civilised society. The Universal Credit system has not achieved what was intended and needs to be revisited. We pledge to:
 
@@ -175,7 +176,7 @@ Providing a safety net for those in need is a defining mark of a civilised socie
 
 * Extend the use of dormant funds to support civil society.
 
-### Rebuild the Housing System
+## Rebuild the Housing System
 
 We need to simplify the planning and development processes to encourage small and medium sized developers, accelerating the pace of development to increase housing supply. We pledge to:
 

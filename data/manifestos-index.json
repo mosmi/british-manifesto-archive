@@ -566,6 +566,11 @@
   },
   {
     "electionId": "2010",
+    "partyId": "pirate",
+    "label": "Pirate Party UK Manifesto 2010"
+  },
+  {
+    "electionId": "2010",
     "partyId": "scottishcon",
     "label": "Scottish Conservatives Manifesto 2010"
   },
@@ -1091,7 +1096,7 @@
   },
   {
     "electionId": "2024",
-    "partyId": "communist",
+    "partyId": "cpb",
     "label": "Communist Party of Britain Manifesto 2024"
   },
   {
