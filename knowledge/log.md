@@ -11,6 +11,16 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-07-21 — London mayoral result rows link to party pages (Cursor Grok)
+
+Assets `?v=2026072106`.
+
+- Added missing `party` ids on 2024 (and 2016) mayoral candidates that already
+  have dedicated pages — Binface, London Real, Britain First, SDP, Animal
+  Welfare, One Love, Independents.
+- `londonPartyCell` now uses `resolvePartyId` + `devolvedPartyLink` so result
+  labels link to `/party/<id>`.
+
 ## 2026-07-21 — Pirate Party UK 2010 Westminster manifesto added (Cursor Grok)
 
 Assets `?v=2026072105`.

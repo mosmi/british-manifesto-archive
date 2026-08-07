@@ -68,6 +68,7 @@
       },
       {
         "name": "Paul Golding",
+        "party": "britainfirst",
         "partyLabel": "Britain First",
         "firstVotes": 31372,
         "firstPct": 1.2
@@ -92,6 +93,7 @@
       },
       {
         "name": "Ankit Love",
+        "party": "onelove",
         "partyLabel": "One Love Party",
         "firstVotes": 4941,
         "firstPct": 0.2

@@ -55,48 +55,56 @@
       },
       {
         "name": "Natalie Campbell",
+        "party": "independent",
         "partyLabel": "Independent",
         "votes": 47815,
         "pct": 1.9
       },
       {
         "name": "Amy Gallagher",
+        "party": "sdp",
         "partyLabel": "Social Democratic Party",
         "votes": 34449,
         "pct": 1.4
       },
       {
         "name": "Femy Amin",
+        "party": "animalpolitics",
         "partyLabel": "Animal Welfare Party",
         "votes": 29280,
         "pct": 1.2
       },
       {
         "name": "Andreas Michli",
+        "party": "independent",
         "partyLabel": "Independent",
         "votes": 26121,
         "pct": 1.1
       },
       {
         "name": "Tarun Ghulati",
+        "party": "independent",
         "partyLabel": "Independent",
         "votes": 24702,
         "pct": 1.0
       },
       {
         "name": "Count Binface",
+        "party": "binface",
         "partyLabel": "Count Binface for Mayor of London",
         "votes": 24260,
         "pct": 1.0
       },
       {
         "name": "Nick Scanlon",
+        "party": "britainfirst",
         "partyLabel": "Britain First",
         "votes": 20519,
         "pct": 0.8
       },
       {
         "name": "Brian Rose",
+        "party": "londonreal",
         "partyLabel": "London Real Party",
         "votes": 7501,
         "pct": 0.3

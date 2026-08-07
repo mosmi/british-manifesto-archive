@@ -56,6 +56,12 @@ under `manifestos/london/<YYYY>/`:
 | `party` | Affiliation for colour / results / party-page matching |
 | `partyLabel` / `candidate` | Display (ballot label + mayoral name) |
 
+Mayoral **results** rows in `mayor.candidates[]` use the same `party` /
+`partyLabel` fields. When `party` resolves to a `PARTIES` id (via
+`resolvePartyId`), the Mayoral Result table links the label to `/party/<id>`
+through `londonPartyCell` → `devolvedPartyLink`. Label-only rows (no matching
+party page) stay plain text.
+
 Major parties: `id === party` (`libdem`, `labour`, …). Independents and personas:
 `id` is the person/persona slug — never a colliding `independent` URL.
 Cards and the viewer resolve via `londonManifestoRouteSlug` / `findDevolvedManifestoEntry`

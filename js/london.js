@@ -128,11 +128,15 @@ function londonPartyName(row, year) {
 }
 
 function londonPartyCell(row, year) {
-  const color = londonPartyColor(row.party);
+  const partyId = row.party ? resolvePartyId(row.party) : null;
+  const color = londonPartyColor(partyId || row.party);
   const name = londonPartyName(row, year);
-  const inner = (row.party && PARTIES?.[row.party])
-    ? `<a href="/party/${row.party}" class="inline-party-link">${name}</a>`
-    : name;
+  // Link when the row has a canonical PARTIES id (mayoral labels alone are not enough).
+  const inner = (typeof devolvedPartyLink === 'function')
+    ? devolvedPartyLink(partyId, name, year)
+    : ((partyId && PARTIES?.[partyId])
+      ? `<a href="/party/${partyId}" class="inline-party-link">${name}</a>`
+      : name);
   return `<div class="result-party-name"><div class="result-party-swatch" style="background:${color}"></div>${inner}</div>`;
 }
 
