@@ -1,7 +1,7 @@
 ---
 election_year: 2000
 party_id: livingstone
-party_name: Independent
+party_name: Ken Livingstone
 party_leader: Ken Livingstone
 political_spectrum: centre-left
 victory: true

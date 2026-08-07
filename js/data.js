@@ -621,6 +621,13 @@ const PARTIES = {
     description: 'Cannabis Is Safer Than Alcohol (CISTA) was registered as a political party in March 2015 under leader Paul Birch to campaign for evidence-based drug-law reform, starting with the legal regulation of cannabis. It fielded 32 candidates across England, Scotland, Wales and Northern Ireland at the 2015 general election — the first pro-reform single-issue party to contest seats in all four nations — and fielded Lee Harris as its candidate for Mayor of London in 2016.',
   },
   // London mayoral minor / persona brands (folder slug = party id)
+  livingstone: {
+    id: 'livingstone', name: 'Ken Livingstone', shortName: 'Ken Livingstone',
+    color: '#BE123C', dim: 'rgba(190,18,60,0.14)',
+    founded: 2000, spectrum: 'Centre-left / Independent', isPrimary: false,
+    nation: 'others',
+    description: 'Ken Livingstone won the first London mayoral election in 2000 as an Independent after being denied the Labour nomination, then rejoined Labour and won again in 2004. He contested the mayoralty again in 2008 and 2012. This page covers his four mayoral campaigns; Labour’s wider London record remains on the Labour party page.',
+  },
   binface: {
     id: 'binface', name: 'Count Binface', shortName: 'Count Binface',
     color: '#6B7280', dim: 'rgba(107,114,128,0.14)',
@@ -1955,7 +1962,7 @@ const OTHERS_PARTIES = [
   'cooperative', 'commonwealth', 'communist', 'cpb',
   'cista', 'cpa', 'englishdemocrats', 'forwardwales', 'healthconcern',
   'independent', 'indconservative', 'indlabour', 'ilp', 'indliberal', 'indprogressive', 'indunionist',
-  'irishlabour', 'irishnationalist', 'irishrepublican', 'londonreal', 'mebyon', 'nha', 'nationalindependent',
+  'irishlabour', 'irishnationalist', 'irishrepublican', 'livingstone', 'londonreal', 'mebyon', 'nha', 'nationalindependent',
   'natlibconservative', 'nationalliberal', 'national', 'omrlp', 'onelove', 'pierscorbyn', 'pirate',
   'protestantunionist', 'reclaim',
   'referendumparty', 'rejoin', 'republicanlabour', 'respect', 'restorebrit', 'sdp', 'socialistalternative',

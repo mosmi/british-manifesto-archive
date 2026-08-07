@@ -43,7 +43,8 @@ under `manifestos/london/<YYYY>/`:
 ```json
 {
   "id": "livingstone",
-  "party": "independent",
+  "party": "livingstone",
+  "partyLabel": "Independent",
   "candidate": "Ken Livingstone",
   "title": "Manifesto for London",
   "pdf": "/manifestos/london/2000/livingstone/manifesto.pdf",
@@ -61,6 +62,12 @@ Mayoral **results** rows in `mayor.candidates[]` use the same `party` /
 `resolvePartyId`), the Mayoral Result table links the label to `/party/<id>`
 through `londonPartyCell` → `devolvedPartyLink`. Label-only rows (no matching
 party page) stay plain text.
+
+**Persona pages** (e.g. `binface`, `livingstone`): folder/`id` equals the persona
+slug. Ken Livingstone’s 2000 Independent win uses `mayorWinner: livingstone`
+(ballot label via `partyLabel`); later Labour-banner runs stay `party: labour` in
+results but the `/party/livingstone` history also matches by candidate name so
+2004–2012 appear on his page.
 
 Major parties: `id === party` (`libdem`, `labour`, …). Independents and personas:
 `id` is the person/persona slug — never a colliding `independent` URL.

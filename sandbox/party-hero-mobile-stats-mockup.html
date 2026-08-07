@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox — Compact mobile party stats panel (not live)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --field: #0a1224;
+      --navy-mid: #0f1a30;
+      --navy-border: #1f2d47;
+      --cream: #f4f1e8;
+      --cream-dark: #e0d4b0;
+      --text-muted: #aeb6c4;
+      --gold: #d9b76a;
+      --font-display: "Playfair Display", Georgia, serif;
+      --font-ui: "DM Sans", system-ui, sans-serif;
+      --page-px: clamp(1.25rem, 4vw, 3rem);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #060b16;
+      color: var(--cream);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+    }
+    .banner {
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+      border-bottom: 1px solid #3a3f4d;
+    }
+    .banner strong { color: #f0d78c; }
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem var(--page-px) 4rem;
+    }
+    h1.sandbox-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+    }
+    .lede {
+      color: var(--text-muted);
+      max-width: 48rem;
+      margin: 0 0 1.5rem;
+      font-size: 1rem;
+    }
+    .lede code {
+      font-size: 0.9em;
+      background: var(--navy-mid);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      border: 1px solid var(--navy-border);
+      color: var(--cream-dark);
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .toc a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--navy-border);
+      border-radius: 999px;
+      background: var(--navy-mid);
+    }
+    .toc a:hover { border-color: var(--gold); color: var(--gold); }
+
+    .case { margin-bottom: 3.25rem; }
+    .case-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.6rem 1.1rem;
+      margin-bottom: 0.85rem;
+    }
+    .case-head h2 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: 0;
+    }
+    .case-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid var(--navy-border);
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+    }
+    .case-note {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin: 0 0 1rem;
+      max-width: 44rem;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .col-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 0.55rem;
+    }
+
+    /* Phone chrome */
+    .phone {
+      width: 100%;
+      max-width: 390px;
+      border: 1px solid var(--navy-border);
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--field);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    }
+    .phone.light {
+      --field: #f7f4ec;
+      --navy-mid: #efebe0;
+      --navy-border: #d9d2c2;
+      --cream: #1a2438;
+      --cream-dark: #2c3548;
+      --text-muted: #5c6578;
+      background: var(--field);
+      color: var(--cream);
+    }
+    .phone-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0.9rem;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--navy-border);
+      background: color-mix(in srgb, var(--navy-mid) 80%, transparent);
+    }
+    .hero {
+      padding: 1.15rem 1.15rem 1.35rem;
+      --party-color: #E4003B;
+      --party-kicker: #E4003B;
+    }
+    .phone.light .hero {
+      --party-kicker: #C8102E;
+    }
+    .hero.con { --party-color: #0087DC; --party-kicker: #0087DC; }
+    .phone.light .hero.con { --party-kicker: #006BB3; }
+    .hero.reform { --party-color: #12B6CF; --party-kicker: #12B6CF; }
+    .phone.light .hero.reform { --party-kicker: #0E8FA3; }
+    .hero.snp { --party-color: #FDF38E; --party-kicker: #FDF38E; }
+    .phone.light .hero.snp { --party-color: #C9A227; --party-kicker: #9A7B1A; }
+
+    .color-bar {
+      width: 48px;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--party-color);
+      margin-bottom: 0.75rem;
+    }
+    .title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.05;
+      margin: 0 0 0.65rem;
+      color: var(--cream);
+    }
+    .party-lede {
+      margin: 0 0 1rem;
+      font-size: 0.92rem;
+      color: var(--cream-dark);
+      line-height: 1.55;
+    }
+
+    /* ── BEFORE (current tall stack) ── */
+    .meta-before {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem 1.35rem;
+      margin: 0;
+    }
+    .meta-item {
+      margin: 0;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .meta-item dt { font: inherit; margin: 0; }
+    .meta-item dd {
+      margin: 0.2rem 0 0;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--party-color);
+    }
+    .phone.light .meta-item dd { color: var(--party-kicker); }
+    .meta-item--elections { flex: 1 1 100%; }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.4rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.3rem;
+      padding: 0.32rem 0.6rem 0.36rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--party-color) 40%, transparent);
+      background: color-mix(in srgb, var(--party-color) 10%, transparent);
+      color: var(--cream);
+      font-size: 0.78rem;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .chip-count {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--party-color);
+      line-height: 1;
+    }
+    .phone.light .chip { color: var(--cream-dark); }
+    .phone.light .chip-count { color: var(--party-kicker); }
+    .chip-label { color: var(--cream-dark); font-size: 0.74rem; }
+
+    .wins-before {
+      margin-top: 1.25rem;
+      text-align: left;
+    }
+    .wins-before .num {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      font-weight: 300;
+      line-height: 1;
+      /* Deliberately wrong (kicker wash) — shows the bug being fixed */
+      color: color-mix(in srgb, var(--party-color) 55%, #f5d0d8);
+    }
+    .phone.light .wins-before .num {
+      color: color-mix(in srgb, var(--party-kicker) 70%, #fff);
+    }
+    .wins-before .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+    .wins-before .chamber {
+      margin-top: 0.4rem;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--cream);
+    }
+    .wins-before .win-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.65rem;
+    }
+
+    /* ── AFTER (compact panel) ── */
+    .stats-panel {
+      margin-top: 0.15rem;
+      padding: 0.85rem 0.9rem 0.95rem;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--party-color) 28%, var(--navy-border));
+      background: color-mix(in srgb, var(--party-color) 7%, var(--navy-mid));
+    }
+    .phone.light .stats-panel {
+      background: color-mix(in srgb, var(--party-kicker) 6%, #fff);
+      border-color: color-mix(in srgb, var(--party-kicker) 22%, var(--navy-border));
+    }
+    .stats-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem 1rem;
+      margin: 0 0 0.75rem;
+    }
+    .stats-top .meta-item dd {
+      font-size: 1.05rem;
+      color: var(--party-color);
+    }
+    .phone.light .stats-top .meta-item dd { color: var(--party-kicker); }
+
+    .stats-block { margin: 0; }
+    .stats-block + .stats-block {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid color-mix(in srgb, var(--party-color) 18%, var(--navy-border));
+    }
+    .stats-block dt {
+      font-size: 0.68rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 0.35rem;
+    }
+    .stats-block .chips { margin-top: 0; }
+    .stats-block .chip {
+      padding: 0.26rem 0.52rem 0.3rem;
+      font-size: 0.74rem;
+    }
+    .stats-block .chip-count { font-size: 0.92rem; }
+
+    .wins-compact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.35rem 0.65rem;
+    }
+    .wins-compact .num {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--party-color);
+    }
+    .phone.light .wins-compact .num { color: var(--party-kicker); }
+    .wins-compact .label {
+      font-size: 0.68rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .wins-compact .chamber {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: var(--cream);
+      width: 100%;
+      margin-top: 0.1rem;
+    }
+    .wins-compact .win-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      width: 100%;
+      margin-top: 0.35rem;
+    }
+    .win-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.28rem;
+      padding: 0.22rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--party-color) 40%, transparent);
+      background: color-mix(in srgb, var(--party-color) 10%, transparent);
+      color: var(--cream-dark);
+      font-size: 0.72rem;
+      text-decoration: none;
+    }
+    .win-chip-count {
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      color: var(--party-color);
+    }
+    .phone.light .win-chip-count { color: var(--party-kicker); }
+    .year-chip {
+      display: inline-block;
+      padding: 0.18rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--party-color) 35%, transparent);
+      background: color-mix(in srgb, var(--party-color) 8%, transparent);
+      color: var(--cream-dark);
+      font-size: 0.7rem;
+      text-decoration: none;
+    }
+
+    .body-tease {
+      padding: 1rem 1.15rem 1.25rem;
+      border-top: 1px solid var(--navy-border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .body-tease strong {
+      display: block;
+      color: var(--cream);
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .variant-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <strong>Sandbox only</strong> — Compact mobile party stats panel. Not wired into the live site.
+    Open via preview: <code>/sandbox/party-hero-mobile-stats-mockup.html</code>
+  </div>
+
+  <div class="page">
+    <h1 class="sandbox-title">Compact mobile stats panel</h1>
+    <p class="lede">
+      Proposal for ≤900px party heroes: keep title + lede, then fold
+      <strong>Founded / Spectrum / Contested / Wins</strong> into one bordered panel.
+      Wins numeral uses the same brand token as Founded (fixes the washed kicker red).
+      Desktop layout is unchanged (not shown).
+    </p>
+    <nav class="toc" aria-label="Jump">
+      <a href="#labour">Labour</a>
+      <a href="#reform">Reform</a>
+      <a href="#snp">SNP</a>
+      <a href="#light">Light theme</a>
+    </nav>
+
+    <!-- LABOUR -->
+    <section class="case" id="labour">
+      <div class="case-head">
+        <h2>Labour — multi-chamber major</h2>
+        <span class="case-tag">Dark · 390px</span>
+      </div>
+      <p class="case-note">
+        Before: tall stack + oversized wins figure in the wrong red.
+        After: one panel; wins ~2.1rem; chamber count chips under a single “Elections won” row.
+      </p>
+      <div class="compare">
+        <div>
+          <p class="col-label">Before (current)</p>
+          <div class="phone">
+            <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+            <div class="hero">
+              <div class="color-bar"></div>
+              <h3 class="title">The Labour Party</h3>
+              <p class="party-lede">Founded in 1900 by trade unions and socialist societies, Labour has been the principal party of the British left…</p>
+              <dl class="meta-before">
+                <div class="meta-item"><dt>Founded</dt><dd>1900</dd></div>
+                <div class="meta-item"><dt>Spectrum</dt><dd>Centre-left / Left</dd></div>
+                <div class="meta-item meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li><a class="chip" href="#"><span class="chip-count">22</span><span class="chip-label">Westminster</span></a></li>
+                      <li><a class="chip" href="#"><span class="chip-count">9</span><span class="chip-label">Europe</span></a></li>
+                      <li><a class="chip" href="#"><span class="chip-count">19</span><span class="chip-label">London</span></a></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <aside class="wins-before" aria-label="Elections won">
+                <div class="num">10</div>
+                <div class="label">Elections won</div>
+                <div class="chamber">Westminster</div>
+                <div class="win-chips">
+                  <a class="win-chip" href="#"><span>Europe</span><span class="win-chip-count">2</span></a>
+                  <a class="win-chip" href="#"><span>London</span><span class="win-chip-count">13</span></a>
+                </div>
+              </aside>
+            </div>
+            <div class="body-tease"><strong>Body starts here</strong>Long scroll before results…</div>
+          </div>
+        </div>
+        <div>
+          <p class="col-label">After (proposed)</p>
+          <div class="phone">
+            <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+            <div class="hero">
+              <div class="color-bar"></div>
+              <h3 class="title">The Labour Party</h3>
+              <p class="party-lede">Founded in 1900 by trade unions and socialist societies, Labour has been the principal party of the British left…</p>
+
+              <div class="stats-panel">
+                <dl class="stats-top">
+                  <div class="meta-item"><dt>Founded</dt><dd>1900</dd></div>
+                  <div class="meta-item"><dt>Spectrum</dt><dd>Centre-left / Left</dd></div>
+                </dl>
+                <div class="stats-block">
+                  <dt>Elections contested</dt>
+                  <ul class="chips">
+                    <li><a class="chip" href="#"><span class="chip-count">22</span><span class="chip-label">Westminster</span></a></li>
+                    <li><a class="chip" href="#"><span class="chip-count">9</span><span class="chip-label">Europe</span></a></li>
+                    <li><a class="chip" href="#"><span class="chip-count">19</span><span class="chip-label">London</span></a></li>
+                  </ul>
+                </div>
+                <div class="stats-block">
+                  <dt>Elections won</dt>
+                  <div class="wins-compact">
+                    <span class="num">10</span>
+                    <span class="label">Westminster</span>
+                    <div class="win-chips">
+                      <a class="win-chip" href="#"><span>Europe</span><span class="win-chip-count">2</span></a>
+                      <a class="win-chip" href="#"><span>London</span><span class="win-chip-count">13</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body-tease"><strong>Body starts sooner</strong>Results / manifestos follow…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFORM -->
+    <section class="case" id="reform">
+      <div class="case-head">
+        <h2>Reform UK — single-chamber win</h2>
+        <span class="case-tag">Dark · year chips</span>
+      </div>
+      <p class="case-note">
+        Compact wins row + year chip left-aligned with the numeral (not pushed right).
+      </p>
+      <div class="compare">
+        <div>
+          <p class="col-label">Before</p>
+          <div class="phone">
+            <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+            <div class="hero reform">
+              <div class="color-bar"></div>
+              <h3 class="title">Reform UK</h3>
+              <p class="party-lede">Formerly the Brexit Party; contested Westminster and Europe under successive brands…</p>
+              <dl class="meta-before">
+                <div class="meta-item"><dt>Founded</dt><dd>2018</dd></div>
+                <div class="meta-item"><dt>Spectrum</dt><dd>Right / Populist</dd></div>
+                <div class="meta-item meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li><a class="chip" href="#"><span class="chip-count">3</span><span class="chip-label">Westminster</span></a></li>
+                      <li><a class="chip" href="#"><span class="chip-count">1</span><span class="chip-label">Europe</span></a></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <aside class="wins-before">
+                <div class="num">1</div>
+                <div class="label">Election won</div>
+                <div class="chamber">Europe</div>
+                <div class="win-chips" style="justify-content:flex-end">
+                  <a class="year-chip" href="#">2019</a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="col-label">After</p>
+          <div class="phone">
+            <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+            <div class="hero reform">
+              <div class="color-bar"></div>
+              <h3 class="title">Reform UK</h3>
+              <p class="party-lede">Formerly the Brexit Party; contested Westminster and Europe under successive brands…</p>
+              <div class="stats-panel">
+                <dl class="stats-top">
+                  <div class="meta-item"><dt>Founded</dt><dd>2018</dd></div>
+                  <div class="meta-item"><dt>Spectrum</dt><dd>Right / Populist</dd></div>
+                </dl>
+                <div class="stats-block">
+                  <dt>Elections contested</dt>
+                  <ul class="chips">
+                    <li><a class="chip" href="#"><span class="chip-count">3</span><span class="chip-label">Westminster</span></a></li>
+                    <li><a class="chip" href="#"><span class="chip-count">1</span><span class="chip-label">Europe</span></a></li>
+                  </ul>
+                </div>
+                <div class="stats-block">
+                  <dt>Election won</dt>
+                  <div class="wins-compact">
+                    <span class="num">1</span>
+                    <span class="label">Europe</span>
+                    <div class="win-chips">
+                      <a class="year-chip" href="#">2019</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SNP -->
+    <section class="case" id="snp">
+      <div class="case-head">
+        <h2>SNP — non-Westminster largest-party years</h2>
+        <span class="case-tag">Dark</span>
+      </div>
+      <p class="case-note">Year chips stay under the compact figure; label reads “Largest party”.</p>
+      <div class="variant-row">
+        <div>
+          <p class="col-label">After only</p>
+          <div class="phone">
+            <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+            <div class="hero snp">
+              <div class="color-bar"></div>
+              <h3 class="title">Scottish National Party</h3>
+              <p class="party-lede">The SNP has been Scotland’s dominant party at Holyrood since 2007…</p>
+              <div class="stats-panel">
+                <dl class="stats-top">
+                  <div class="meta-item"><dt>Founded</dt><dd>1934</dd></div>
+                  <div class="meta-item"><dt>Spectrum</dt><dd>Centre-left / Nationalist</dd></div>
+                </dl>
+                <div class="stats-block">
+                  <dt>Elections contested</dt>
+                  <ul class="chips">
+                    <li><a class="chip" href="#"><span class="chip-count">22</span><span class="chip-label">Westminster</span></a></li>
+                    <li><a class="chip" href="#"><span class="chip-count">7</span><span class="chip-label">Holyrood</span></a></li>
+                    <li><a class="chip" href="#"><span class="chip-count">9</span><span class="chip-label">Europe</span></a></li>
+                  </ul>
+                </div>
+                <div class="stats-block">
+                  <dt>Largest party</dt>
+                  <div class="wins-compact">
+                    <span class="num">5</span>
+                    <span class="label">Holyrood</span>
+                    <div class="win-chips">
+                      <a class="year-chip" href="#">2026</a>
+                      <a class="year-chip" href="#">2021</a>
+                      <a class="year-chip" href="#">2016</a>
+                      <a class="year-chip" href="#">2011</a>
+                      <a class="year-chip" href="#">2007</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHT -->
+    <section class="case" id="light">
+      <div class="case-head">
+        <h2>Light theme — Labour</h2>
+        <span class="case-tag">Proposed panel</span>
+      </div>
+      <p class="case-note">Wins numeral matches Founded via <code>--party-kicker</code> (same as live meta values).</p>
+      <div class="phone light">
+        <div class="phone-bar"><span>manifestos.org.uk</span><span>9:41</span></div>
+        <div class="hero">
+          <div class="color-bar"></div>
+          <h3 class="title">The Labour Party</h3>
+          <p class="party-lede">Founded in 1900 by trade unions and socialist societies…</p>
+          <div class="stats-panel">
+            <dl class="stats-top">
+              <div class="meta-item"><dt>Founded</dt><dd>1900</dd></div>
+              <div class="meta-item"><dt>Spectrum</dt><dd>Centre-left / Left</dd></div>
+            </dl>
+            <div class="stats-block">
+              <dt>Elections contested</dt>
+              <ul class="chips">
+                <li><a class="chip" href="#"><span class="chip-count">22</span><span class="chip-label">Westminster</span></a></li>
+                <li><a class="chip" href="#"><span class="chip-count">9</span><span class="chip-label">Europe</span></a></li>
+                <li><a class="chip" href="#"><span class="chip-count">19</span><span class="chip-label">London</span></a></li>
+              </ul>
+            </div>
+            <div class="stats-block">
+              <dt>Elections won</dt>
+              <div class="wins-compact">
+                <span class="num">10</span>
+                <span class="label">Westminster</span>
+                <div class="win-chips">
+                  <a class="win-chip" href="#"><span>Europe</span><span class="win-chip-count">2</span></a>
+                  <a class="win-chip" href="#"><span>London</span><span class="win-chip-count">13</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

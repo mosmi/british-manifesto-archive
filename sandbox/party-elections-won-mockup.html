@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox — Party “Elections won” beyond Westminster (not live)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --field: #0a1224;
+      --navy-mid: #0f1a30;
+      --navy-border: #1f2d47;
+      --cream: #f4f1e8;
+      --cream-dark: #e0d4b0;
+      --text-muted: #aeb6c4;
+      --gold: #d9b76a;
+      --font-display: "Playfair Display", Georgia, serif;
+      --font-ui: "DM Sans", system-ui, sans-serif;
+      --page-px: clamp(1.25rem, 4vw, 3rem);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #060b16;
+      color: var(--cream);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+    }
+    .banner {
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+      border-bottom: 1px solid #3a3f4d;
+    }
+    .banner strong { color: #f0d78c; }
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2rem var(--page-px) 4rem;
+    }
+    h1.sandbox-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+    }
+    .lede {
+      color: var(--text-muted);
+      max-width: 48rem;
+      margin: 0 0 2rem;
+      font-size: 1rem;
+    }
+    .lede code {
+      font-size: 0.9em;
+      background: var(--navy-mid);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      border: 1px solid var(--navy-border);
+      color: var(--cream-dark);
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .toc a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--navy-border);
+      border-radius: 999px;
+      background: var(--navy-mid);
+    }
+    .toc a:hover { border-color: var(--gold); color: var(--gold); }
+
+    .case { margin-bottom: 3rem; }
+    .case-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.75rem 1.25rem;
+      margin-bottom: 0.85rem;
+    }
+    .case-head h2 {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 400;
+      margin: 0;
+    }
+    .case-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(217, 183, 106, 0.35);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+    }
+    .case-note {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin: 0 0 1rem;
+      max-width: 42rem;
+    }
+    .compare {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 900px) {
+      .compare--2 { grid-template-columns: 1fr 1fr; }
+    }
+    .panel-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 0.5rem;
+    }
+
+    /* Party hero shell */
+    .party-hero {
+      position: relative;
+      padding: 2.25rem 1.5rem 2rem;
+      overflow: hidden;
+      border: 1px solid var(--navy-border);
+      border-radius: 6px;
+      background: var(--field);
+    }
+    .party-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 85% 40%, var(--hero-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .party-hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem 2rem;
+      align-items: center;
+    }
+    .party-color-bar {
+      width: 56px; height: 5px;
+      border-radius: 3px;
+      background: var(--party-color, var(--gold));
+      margin-bottom: 0.85rem;
+    }
+    .party-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 4.5vw, 2.8rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.05;
+      margin: 0;
+    }
+    .party-lede {
+      max-width: 34rem;
+      font-size: 0.92rem;
+      color: var(--cream-dark);
+      line-height: 1.65;
+      margin: 0.7rem 0 0;
+      opacity: 0.9;
+    }
+    .party-hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem 1.5rem;
+      margin-top: 1.25rem;
+    }
+    .party-meta-item {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .party-meta-item dt {
+      font: inherit;
+      letter-spacing: inherit;
+      text-transform: inherit;
+      color: inherit;
+    }
+    .party-meta-item dd {
+      display: block;
+      color: var(--party-color, var(--gold));
+      font-size: 1.15rem;
+      font-family: var(--font-display);
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      margin: 0.15rem 0 0;
+    }
+    .party-meta-item--elections { flex: 1 1 100%; }
+    .election-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.4rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .election-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.3rem;
+      padding: 0.3rem 0.6rem 0.35rem;
+      border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 40%, transparent);
+      background: color-mix(in srgb, var(--party-color, var(--gold)) 10%, transparent);
+      border-radius: 999px;
+      font-size: 0.78rem;
+    }
+    .election-chip-count {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--party-color, var(--gold));
+    }
+    .election-chip-label { color: var(--cream-dark); }
+
+    /* Current empty aside */
+    .aside-empty {
+      min-width: 7rem;
+      text-align: right;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.55;
+      border: 1px dashed var(--navy-border);
+      border-radius: 6px;
+      padding: 1.25rem 0.75rem;
+    }
+
+    /* Proposed wins badge */
+    .wins-badge {
+      text-align: right;
+      min-width: 8.5rem;
+      max-width: 14rem;
+    }
+    .wins-num {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      line-height: 0.95;
+      color: var(--party-color, var(--gold));
+      font-weight: 400;
+    }
+    .wins-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+    .wins-chamber {
+      margin-top: 0.55rem;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--cream);
+      line-height: 1.25;
+    }
+    .wins-years {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.35rem;
+      margin-top: 0.65rem;
+      list-style: none;
+      padding: 0;
+    }
+    .wins-year {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 35%, transparent);
+      background: color-mix(in srgb, var(--party-color, var(--gold)) 8%, transparent);
+      color: var(--cream-dark);
+      font-size: 0.72rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .wins-year:hover {
+      border-color: var(--party-color, var(--gold));
+      color: var(--cream);
+    }
+
+    /* Alt: stacked when multiple chambers (shown once as pattern note) */
+    .wins-stack {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      min-width: 9rem;
+    }
+    .wins-stack-row .wins-num { font-size: 2.4rem; }
+    .wins-stack-row .wins-label { margin-top: 0.15rem; }
+
+    @media (max-width: 640px) {
+      .party-hero-inner { grid-template-columns: 1fr; }
+      .wins-badge, .aside-empty, .wins-stack { text-align: left; }
+      .wins-years { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <strong>Sandbox mock-up</strong> — not wired into the live site.
+    Proposal: keep a large count, name the chamber, list years; don’t invent a fake Westminster total.
+  </div>
+
+  <div class="page">
+    <h1 class="sandbox-title">Elections won — beyond Westminster</h1>
+    <p class="lede">
+      Four parties that currently show <em>no</em> “elections won” badge (Westminster <code>winner</code> only),
+      but do lead at least one archived contest via <code>control</code>.
+      Copy uses <strong>Largest party</strong> for devolved AMS chambers and <strong>Election won</strong> for the UK EP result.
+    </p>
+
+    <nav class="toc" aria-label="Jump to cases">
+      <a href="#ukip">UKIP</a>
+      <a href="#plaid">Plaid Cymru</a>
+      <a href="#scottishlab">Scottish Labour</a>
+      <a href="#snp">SNP</a>
+    </nav>
+
+    <!-- ═══ UKIP ═══ -->
+    <section class="case" id="ukip">
+      <div class="case-head">
+        <h2>UK Independence Party</h2>
+        <span class="case-tag">1 · Europe 2014</span>
+      </div>
+      <p class="case-note">Single landmark win — the badge should surface it, not bury it in a “0 Westminster” silence.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Current (live)</p>
+          <article class="party-hero" style="--party-color:#70147A;--hero-glow:rgba(112,20,122,0.2)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">UK Independence Party</h3>
+                <p class="party-lede">Eurosceptic party that reshaped UK politics around EU membership…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1993</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Right / Eurosceptic</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">6</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">4</span><span class="election-chip-label">Europe</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="aside-empty" aria-hidden="true">No<br>wins<br>badge</div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <p class="panel-label">Proposed</p>
+          <article class="party-hero" style="--party-color:#70147A;--hero-glow:rgba(112,20,122,0.2)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">UK Independence Party</h3>
+                <p class="party-lede">Eurosceptic party that reshaped UK politics around EU membership…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1993</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Right / Eurosceptic</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">6</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">4</span><span class="election-chip-label">Europe</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <aside class="wins-badge" aria-label="Elections won">
+                <div class="wins-num">1</div>
+                <div class="wins-label">Election won</div>
+                <div class="wins-chamber">Europe · UK</div>
+                <ul class="wins-years">
+                  <li><a class="wins-year" href="#">2014</a></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PLAID ═══ -->
+    <section class="case" id="plaid">
+      <div class="case-head">
+        <h2>Plaid Cymru</h2>
+        <span class="case-tag">1 · Senedd 2026</span>
+      </div>
+      <p class="case-note">First time as largest party in the Senedd — “Largest party” is clearer than “won” for AMS.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Current (live)</p>
+          <article class="party-hero" style="--party-color:#008672;--hero-glow:rgba(0,134,114,0.18)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Plaid Cymru</h3>
+                <p class="party-lede">Welsh nationalist party campaigning for independence and progressive politics…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1925</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left / Welsh Nationalist</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">14</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Senedd</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="aside-empty" aria-hidden="true">No<br>wins<br>badge</div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <p class="panel-label">Proposed</p>
+          <article class="party-hero" style="--party-color:#008672;--hero-glow:rgba(0,134,114,0.18)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Plaid Cymru</h3>
+                <p class="party-lede">Welsh nationalist party campaigning for independence and progressive politics…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1925</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left / Welsh Nationalist</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">14</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Senedd</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <aside class="wins-badge" aria-label="Largest party finishes">
+                <div class="wins-num">1</div>
+                <div class="wins-label">Largest party</div>
+                <div class="wins-chamber">Senedd</div>
+                <ul class="wins-years">
+                  <li><a class="wins-year" href="#">2026</a></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SCOTTISH LABOUR ═══ -->
+    <section class="case" id="scottishlab">
+      <div class="case-head">
+        <h2>Scottish Labour</h2>
+        <span class="case-tag">2 · Holyrood 1999, 2003</span>
+      </div>
+      <p class="case-note">Early Holyrood largest-party finishes (coalition eras). Stays on the Scottish Labour page — not rolled into UK Labour’s Westminster tally.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Current (live)</p>
+          <article class="party-hero" style="--party-color:#E4003B;--hero-glow:rgba(228,0,59,0.16)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Scottish Labour</h3>
+                <p class="party-lede">Scottish branch of Labour; largest party at Holyrood in 1999 and 2003…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1900</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Holyrood</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="aside-empty" aria-hidden="true">No<br>wins<br>badge</div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <p class="panel-label">Proposed</p>
+          <article class="party-hero" style="--party-color:#E4003B;--hero-glow:rgba(228,0,59,0.16)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Scottish Labour</h3>
+                <p class="party-lede">Scottish branch of Labour; largest party at Holyrood in 1999 and 2003…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1900</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Holyrood</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <aside class="wins-badge" aria-label="Largest party finishes">
+                <div class="wins-num">2</div>
+                <div class="wins-label">Largest party</div>
+                <div class="wins-chamber">Holyrood</div>
+                <ul class="wins-years">
+                  <li><a class="wins-year" href="#">1999</a></li>
+                  <li><a class="wins-year" href="#">2003</a></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SNP ═══ -->
+    <section class="case" id="snp">
+      <div class="case-head">
+        <h2>Scottish National Party</h2>
+        <span class="case-tag">5 · Holyrood 2007–2026</span>
+      </div>
+      <p class="case-note">Multiple Holyrood leads — year chips keep the streak readable. (Westminster seat hauls stay in the results list; this badge is about contests led.)</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Current (live)</p>
+          <article class="party-hero" style="--party-color:#FDF38E;--hero-glow:rgba(253,243,142,0.12)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Scottish National Party</h3>
+                <p class="party-lede">Governing Scotland through Holyrood since 2007; campaigns for independence…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1934</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">16</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Holyrood</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">4</span><span class="election-chip-label">Europe</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="aside-empty" aria-hidden="true">No<br>wins<br>badge</div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <p class="panel-label">Proposed</p>
+          <article class="party-hero" style="--party-color:#FDF38E;--hero-glow:rgba(253,243,142,0.12)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div>
+                <div class="party-color-bar"></div>
+                <h3 class="party-hero-title">Scottish National Party</h3>
+                <p class="party-lede">Governing Scotland through Holyrood since 2007; campaigns for independence…</p>
+                <dl class="party-hero-meta">
+                  <div class="party-meta-item"><dt>Founded</dt><dd>1934</dd></div>
+                  <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre-left</dd></div>
+                  <div class="party-meta-item party-meta-item--elections">
+                    <dt>Elections contested</dt>
+                    <dd>
+                      <ul class="election-chips">
+                        <li><span class="election-chip"><span class="election-chip-count">16</span><span class="election-chip-label">Westminster</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">7</span><span class="election-chip-label">Holyrood</span></span></li>
+                        <li><span class="election-chip"><span class="election-chip-count">4</span><span class="election-chip-label">Europe</span></span></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <aside class="wins-badge" aria-label="Largest party finishes">
+                <div class="wins-num">5</div>
+                <div class="wins-label">Largest party</div>
+                <div class="wins-chamber">Holyrood</div>
+                <ul class="wins-years">
+                  <li><a class="wins-year" href="#">2007</a></li>
+                  <li><a class="wins-year" href="#">2011</a></li>
+                  <li><a class="wins-year" href="#">2016</a></li>
+                  <li><a class="wins-year" href="#">2021</a></li>
+                  <li><a class="wins-year" href="#">2026</a></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <p class="lede" style="margin-top:1rem">
+      Pattern for later (Labour / Conservatives with Westminster <em>and</em> other wins): keep the big Westminster figure,
+      add a second line of chamber chips — don’t add London mayors into the same digit as general elections.
+      Open at <code>/sandbox/party-elections-won-mockup.html</code>.
+    </p>
+  </div>
+</body>
+</html>

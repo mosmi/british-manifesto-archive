@@ -1987,19 +1987,160 @@ async function initElectionHexmap(electionId) {
   drawHexmap(container, data, { electionId, electionYear: election?.year, legendEl: legend });
 }
 
+/**
+ * Party-hero wins aside.
+ * - Westminster majors with extra chambers: big Westminster count + chamber count chips (no year pills).
+ * - Single non-Westminster chamber with ≤5 wins: big count + chamber + year chips.
+ * Numeral colour from CSS (--party-color / --party-kicker), matching Founded.
+ * @param {{
+ *   westYears: string[],
+ *   chambers: { id: string, label: string, href: string, years: string[], kind: 'won'|'largest'|'mayor' }[],
+ * }} opts
+ */
+function partyWinsAsideHtml({ westYears = [], chambers = [] }) {
+  const westCount = westYears.length;
+  const nonWest = chambers.filter(c => c.years.length);
+  if (!westCount && !nonWest.length) return '';
+
+  const yearChips = (chamber) => {
+    const years = chamber.years || [];
+    if (!years.length || years.length > 5) return '';
+    return `<ul class="wins-years">${years.map(y => {
+      const href = typeof chamber.yearHref === 'function'
+        ? chamber.yearHref(y)
+        : (chamber.href || '#');
+      return `<li><a class="wins-year" href="${href}">${y}</a></li>`;
+    }).join('')}</ul>`;
+  };
+
+  const kindLabel = (kind, n) => {
+    if (kind === 'mayor') return n === 1 ? 'Mayoral win' : 'Mayoral wins';
+    if (kind === 'won') return n === 1 ? 'Election won' : 'Elections won';
+    return 'Largest party';
+  };
+
+  // Westminster hero figure (+ optional extra-chamber count chips, no year row).
+  if (westCount > 0) {
+    const extra = nonWest.map(c =>
+      `<a class="wins-chamber-chip" href="${c.href}"><span class="wins-chamber-chip-label">${c.label}</span><span class="wins-chamber-chip-count">${c.years.length}</span></a>`
+    ).join('');
+    return `<aside class="party-elections-won-badge" aria-label="Elections won">
+      <div class="elections-won-label">Election${westCount === 1 ? '' : 's'} won</div>
+      <div class="elections-won-num">${westCount}</div>
+      <div class="wins-chamber">Westminster</div>
+      ${extra ? `<div class="wins-chamber-chips">${extra}</div>` : ''}
+    </aside>`;
+  }
+
+  // Non-Westminster only — one chamber: count + years when small.
+  if (nonWest.length === 1) {
+    const c = nonWest[0];
+    const n = c.years.length;
+    return `<aside class="party-elections-won-badge" aria-label="${kindLabel(c.kind, n)}">
+      <div class="elections-won-label">${kindLabel(c.kind, n)}</div>
+      <div class="elections-won-num">${n}</div>
+      <div class="wins-chamber">${c.label}</div>
+      ${yearChips(c)}
+    </aside>`;
+  }
+
+  // Multiple non-Westminster chambers, no Westminster — chamber count chips.
+  const total = nonWest.reduce((s, c) => s + c.years.length, 0);
+  const chips = nonWest.map(c =>
+    `<a class="wins-chamber-chip" href="${c.href}"><span class="wins-chamber-chip-label">${c.label}</span><span class="wins-chamber-chip-count">${c.years.length}</span></a>`
+  ).join('');
+  return `<aside class="party-elections-won-badge" aria-label="Contests led">
+    <div class="elections-won-label">Contests led</div>
+    <div class="elections-won-num">${total}</div>
+    <div class="wins-chamber-chips">${chips}</div>
+  </aside>`;
+}
+
+/**
+ * Party-hero “Elections contested” meta.
+ * @param {{ count: number, label: string, href?: string }[]} chambers
+ * 1 chamber → scalar dd; 2+ → wrap chips (optionally linking to on-page sections).
+ */
+function partyContestedMetaHtml(chambers) {
+  if (!chambers || !chambers.length) {
+    return `<div class="party-meta-item"><dt>Elections contested</dt><dd>0</dd></div>`;
+  }
+  if (chambers.length === 1) {
+    const c = chambers[0];
+    return `<div class="party-meta-item"><dt>Elections contested</dt><dd>${c.count} ${c.label}</dd></div>`;
+  }
+  const chips = chambers.map(c => {
+    const inner = `<span class="election-chip-count">${c.count}</span><span class="election-chip-label">${c.label}</span>`;
+    return c.href
+      ? `<li><a class="election-chip" href="${c.href}">${inner}</a></li>`
+      : `<li><span class="election-chip">${inner}</span></li>`;
+  }).join('');
+  return `<div class="party-meta-item party-meta-item--elections">
+    <dt>Elections contested</dt>
+    <dd><ul class="election-chips">${chips}</ul></dd>
+  </div>`;
+}
+
+/** Wrap a results list in a <details> fold (closed on mobile, open on desktop). */
+function partyResultsFoldHtml(rowsHtml, count) {
+  if (!rowsHtml) return '';
+  const n = Number(count) || 0;
+  const label = n === 1 ? 'Show 1 contest' : `Show ${n} contests`;
+  return `<details class="party-results-fold">
+    <summary class="party-results-fold-summary"><span>${label}</span></summary>
+    <div class="party-results-list">${rowsHtml}</div>
+  </details>`;
+}
+
+/** Scroll to #party-* after SPA render. Do not open mobile folds — chips jump to the
+ *  section heading; the user expands “Show N contests” if they want the list. */
+function scrollToPartyHash() {
+  const id = decodeURIComponent((window.location.hash || '').replace(/^#/, ''));
+  if (!id) return;
+  const section = document.getElementById(id);
+  if (!section || !section.classList.contains('party-elections-section')) return;
+  section.scrollIntoView({ block: 'start' });
+}
+
+/** Desktop: force results folds open; mobile: closed by default. */
+function initPartyResultsFolds() {
+  const folds = document.querySelectorAll('.party-results-fold');
+  if (!folds.length) return;
+  const mq = window.matchMedia('(min-width: 901px)');
+  const sync = () => {
+    folds.forEach(d => { d.open = mq.matches; });
+  };
+  if (!window.__partyResultsFoldsBound) {
+    window.__partyResultsFoldsBound = true;
+    mq.addEventListener('change', () => {
+      document.querySelectorAll('.party-results-fold').forEach(d => {
+        d.open = mq.matches;
+      });
+    });
+  }
+  sync();
+  // After fold state is set, scroll to hash target (element may not have existed at nav time).
+  requestAnimationFrame(() => scrollToPartyHash());
+}
+
 // ── CO-OPERATIVE PARTY CUSTOM PAGE ───────────────────────────
 async function renderCooperativePartyPage(app, party) {
   const color = party.color;
   const theme = typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark';
   const kickerCol = typeof partyTextColour === 'function' ? partyTextColour('cooperative', null, theme) : color;
   const barCol = typeof barColour === 'function' ? barColour(color, theme) : color;
-  const coopChambers = ['22 Westminster', '7 Holyrood', '7 Senedd'];
+  const coopChambers = [
+    { count: 22, label: 'Westminster', href: '#party-westminster' },
+    { count: 7, label: 'Holyrood', href: '#party-holyrood' },
+    { count: 7, label: 'Senedd', href: '#party-senedd' },
+  ];
   setPageMeta({
     title: party.shortName,
-    description: buildPartyMetaDescription(party, coopChambers),
+    description: buildPartyMetaDescription(party, coopChambers.map(c => `${c.count} ${c.label}`)),
     path: '/party/cooperative',
   });
   const partyLede = partyLedeText(party.description);
+  const contestedMetaHtml = partyContestedMetaHtml(coopChambers);
 
   // Load devolved history to get the manifestos
   const holyroodHistory = (typeof getHolyroodPartyHistory === 'function')
@@ -2129,22 +2270,22 @@ async function renderCooperativePartyPage(app, party) {
     </a>`;
   }).join('');
 
-  const contestedLabel = '22 Westminster · 7 Holyrood · 7 Senedd';
-
   app.innerHTML = `
     ${renderBreadcrumb(partyBreadcrumbItems(party))}
     <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
       <div class="party-hero-inner">
-        <div>
+        <div class="party-hero-main">
           <div class="party-color-bar" style="background:${barCol}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
           ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
-          <dl class="party-hero-meta">
-            <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
-            <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
-            <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
-          </dl>
+          <div class="party-hero-stats">
+            <dl class="party-hero-meta">
+              <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
+              <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
+              ${contestedMetaHtml}
+            </dl>
+          </div>
         </div>
       </div>
     </section>
@@ -2177,11 +2318,11 @@ async function renderCooperativePartyPage(app, party) {
         </p>
       </div>
 
-      <div class="party-elections-section">
+      <div class="party-elections-section" id="party-westminster">
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Joint Representatives</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${westminsterRows}</div>
+        ${partyResultsFoldHtml(westminsterRows, coopWestminsterData.length)}
       </div>
 
       <div class="party-manifestos-section">
@@ -2191,11 +2332,11 @@ async function renderCooperativePartyPage(app, party) {
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>
 
-      <div class="party-elections-section">
+      <div class="party-elections-section" id="party-holyrood">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Joint Representatives</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${holyroodRows}</div>
+        ${partyResultsFoldHtml(holyroodRows, coopHolyroodData.length)}
       </div>
 
       <div class="party-manifestos-section">
@@ -2205,11 +2346,11 @@ async function renderCooperativePartyPage(app, party) {
         ${holyroodItems ? `<div class="manifesto-grid">${holyroodItems}</div>` : '<p style="color:var(--text-muted)">No Scottish Parliament manifestos on record.</p>'}
       </div>
 
-      <div class="party-elections-section">
+      <div class="party-elections-section" id="party-senedd">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Joint Representatives</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${seneddRows}</div>
+        ${partyResultsFoldHtml(seneddRows, coopSeneddData.length)}
       </div>
 
       <div class="party-manifestos-section">
@@ -2238,6 +2379,7 @@ async function renderCooperativePartyPage(app, party) {
       </div>
     </div>
   `;
+  initPartyResultsFolds();
 }
 
 // ── PARTY PAGE ────────────────────────────────────────────────
@@ -2287,7 +2429,9 @@ async function renderParty(app, id) {
     partyElections.sort((a, b) => a.election.year - b.election.year);
   }
 
-  const electionsWon = partyElections.filter(pe => pe.election.winner === partyId).length;
+  const westWinYears = partyElections
+    .filter(pe => pe.election.winner === partyId)
+    .map(pe => pe.election.displayYear || String(pe.election.year));
   const maxSeats = Math.max(1, ...partyElections.map(pe => pe.result.seats));
 
   const electionRows = partyElections.slice().reverse().map(({ election: e, result: r }) => {
@@ -2386,15 +2530,100 @@ async function renderParty(app, id) {
     londonManifestoCard(manifesto, election)
   ).join('');
 
-  const contestedParts = [];
-  if (!isAllianceParty && partyElections.length) contestedParts.push(`${partyElections.length} Westminster`);
-  if (!isAllianceParty && holyroodElections.length) contestedParts.push(`${holyroodElections.length} Holyrood`);
-  if (!isAllianceParty && seneddElections.length) contestedParts.push(`${seneddElections.length} Senedd`);
-  if (!isAllianceParty && niElections.length) contestedParts.push(`${niElections.length} Stormont`);
-  if (euroElections.length) contestedParts.push(`${euroElections.length} European Parliament`);
-  if (!isAllianceParty && londonElections.length) contestedParts.push(`${londonElections.length} London`);
-  const contestedLabel = contestedParts.join(' · ') || '0';
+  const contestedChambers = [];
+  if (!isAllianceParty && partyElections.length) {
+    contestedChambers.push({ count: partyElections.length, label: 'Westminster', href: '#party-westminster' });
+  }
+  if (!isAllianceParty && holyroodElections.length) {
+    contestedChambers.push({ count: holyroodElections.length, label: 'Holyrood', href: '#party-holyrood' });
+  }
+  if (!isAllianceParty && seneddElections.length) {
+    contestedChambers.push({ count: seneddElections.length, label: 'Senedd', href: '#party-senedd' });
+  }
+  if (!isAllianceParty && niElections.length) {
+    contestedChambers.push({ count: niElections.length, label: 'Stormont', href: '#party-stormont' });
+  }
+  if (euroElections.length) {
+    contestedChambers.push({ count: euroElections.length, label: 'Europe', href: '#party-europe' });
+  }
+  if (!isAllianceParty && londonElections.length) {
+    contestedChambers.push({ count: londonElections.length, label: 'London', href: '#party-london' });
+  }
+  // Meta description keeps the fuller European Parliament wording.
+  const contestedParts = contestedChambers.map(c => (
+    c.label === 'Europe' ? `${c.count} European Parliament` : `${c.count} ${c.label}`
+  ));
+  const contestedMetaHtml = partyContestedMetaHtml(contestedChambers);
   const partyLede = partyLedeText(party.description);
+
+  const winYear = pe => pe.election.displayYear || String(pe.election.year);
+  const winId = pe => pe.election.id || winYear(pe);
+  const ledByControl = (list) => list.filter(pe =>
+    pe.election.control === partyId
+    || (typeof resolvePartyId === 'function' && pe.election.control === resolvePartyId(partyId))
+  );
+  const winChambers = [];
+  const holyroodLed = ledByControl(holyroodElections);
+  if (holyroodLed.length) {
+    winChambers.push({
+      id: 'holyrood', label: 'Holyrood', href: '#party-holyrood', kind: 'largest',
+      years: holyroodLed.map(winYear),
+      yearHref: (y) => {
+        const pe = holyroodLed.find(p => winYear(p) === y);
+        return `/devolved/holyrood/${winId(pe)}`;
+      },
+    });
+  }
+  const seneddLed = ledByControl(seneddElections);
+  if (seneddLed.length) {
+    winChambers.push({
+      id: 'senedd', label: 'Senedd', href: '#party-senedd', kind: 'largest',
+      years: seneddLed.map(winYear),
+      yearHref: (y) => {
+        const pe = seneddLed.find(p => winYear(p) === y);
+        return `/devolved/senedd/${winId(pe)}`;
+      },
+    });
+  }
+  const stormontLed = ledByControl(niElections);
+  if (stormontLed.length) {
+    winChambers.push({
+      id: 'stormont', label: 'Stormont', href: '#party-stormont', kind: 'largest',
+      years: stormontLed.map(winYear),
+      yearHref: (y) => {
+        const pe = stormontLed.find(p => winYear(p) === y);
+        return `/devolved/stormont/${winId(pe)}`;
+      },
+    });
+  }
+  const euroLed = ledByControl(euroElections);
+  if (euroLed.length) {
+    winChambers.push({
+      id: 'europe', label: 'Europe', href: '#party-europe', kind: 'won',
+      years: euroLed.map(winYear),
+      yearHref: (y) => {
+        const pe = euroLed.find(p => winYear(p) === y);
+        return `/devolved/euro/${winId(pe)}`;
+      },
+    });
+  }
+  const londonLed = londonElections.filter(pe =>
+    typeof londonPartyLedElection === 'function'
+      ? londonPartyLedElection(partyId, pe.election)
+      : pe.election.mayorWinner === partyId || pe.election.control === partyId
+  );
+  if (londonLed.length) {
+    const hasMayorWin = londonLed.some(pe => pe.election.mayor || pe.election.mayorWinner);
+    winChambers.push({
+      id: 'london', label: 'London', href: '#party-london',
+      kind: hasMayorWin ? 'mayor' : 'largest',
+      years: londonLed.map(winYear),
+      yearHref: (y) => {
+        const pe = londonLed.find(p => winYear(p) === y);
+        return `/devolved/london/${winId(pe)}`;
+      },
+    });
+  }
 
   const ukMembers = isAllianceParty && typeof getEuroAllianceUkMembers === 'function'
     ? getEuroAllianceUkMembers(partyId)
@@ -2406,10 +2635,11 @@ async function renderParty(app, id) {
         <a href="/devolved/euro" class="holyrood-other-link">European Parliament archive →</a>
       </div>`
     : '';
-  const heroAside = membersCard
-    || (electionsWon > 0
-      ? `<div class="party-elections-won-badge"><div class="elections-won-num" style="color:${kickerCol}">${electionsWon}</div><div class="elections-won-label">Election${electionsWon !== 1 ? 's' : ''} won</div></div>`
-      : '');
+  const winsAside = membersCard
+    ? ''
+    : partyWinsAsideHtml({ westYears: westWinYears, chambers: winChambers });
+  const heroInnerClass = membersCard ? ' party-hero-inner--with-aside' : '';
+  const statsClass = winsAside ? ' party-hero-stats--with-wins' : '';
 
   setPageMeta({
     title: party.shortName,
@@ -2421,28 +2651,31 @@ async function renderParty(app, id) {
     ${renderBreadcrumb(partyBreadcrumbItems(party))}
     <section class="party-hero" style="--party-color:${color};--party-kicker:${kickerCol}">
       <div class="party-hero-bg"></div>
-      <div class="party-hero-inner${membersCard ? ' party-hero-inner--with-aside' : ''}">
-        <div>
+      <div class="party-hero-inner${heroInnerClass}">
+        <div class="party-hero-main">
           <div class="party-color-bar" style="background:${barCol}"></div>
           <h1 class="party-hero-title">${party.name}</h1>
           ${partyLede ? `<p class="party-lede">${partyLede}</p>` : ''}
-          <dl class="party-hero-meta">
-            <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
-            <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
-            <div class="party-meta-item"><dt>Elections contested</dt><dd>${contestedLabel}</dd></div>
-          </dl>
+          <div class="party-hero-stats${statsClass}">
+            <dl class="party-hero-meta">
+              <div class="party-meta-item"><dt>Founded</dt><dd>${party.founded || '—'}</dd></div>
+              <div class="party-meta-item"><dt>Spectrum</dt><dd>${party.spectrum}</dd></div>
+              ${contestedMetaHtml}
+            </dl>
+            ${winsAside}
+          </div>
         </div>
-        ${heroAside}
+        ${membersCard}
       </div>
     </section>
 
     <div class="party-body">
       <div class="party-description">${party.description}</div>
-      ${!isAllianceParty ? `<div class="party-elections-section">
+      ${!isAllianceParty ? `<div class="party-elections-section" id="party-westminster">
         <span class="section-label">Electoral Record</span>
         <h2>Westminster Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        ${electionRows ? `<div class="party-results-list">${electionRows}</div>` : '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
+        ${electionRows ? partyResultsFoldHtml(electionRows, partyElections.length) : '<p style="color:var(--text-muted)">No Westminster election data available.</p>'}
       </div>
       <div class="party-manifestos-section">
         <span class="section-label">Documents</span>
@@ -2450,11 +2683,11 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         ${manifestoItems ? `<div class="manifesto-grid">${manifestoItems}</div>` : '<p style="color:var(--text-muted)">No Westminster manifestos on record.</p>'}
       </div>` : ''}
-      ${!isAllianceParty && holyroodElectionRows ? `<div class="party-elections-section">
+      ${!isAllianceParty && holyroodElectionRows ? `<div class="party-elections-section" id="party-holyrood">
         <span class="section-label">Holyrood</span>
         <h2>Scottish Parliament Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${holyroodElectionRows}</div>
+        ${partyResultsFoldHtml(holyroodElectionRows, holyroodElections.length)}
       </div>` : ''}
       ${!isAllianceParty && holyroodItems ? `<div class="party-manifestos-section">
         <span class="section-label">Holyrood</span>
@@ -2462,11 +2695,11 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${holyroodItems}</div>
       </div>` : ''}
-      ${!isAllianceParty && seneddElectionRows ? `<div class="party-elections-section">
+      ${!isAllianceParty && seneddElectionRows ? `<div class="party-elections-section" id="party-senedd">
         <span class="section-label">Senedd Cymru</span>
         <h2>Welsh Parliament Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${seneddElectionRows}</div>
+        ${partyResultsFoldHtml(seneddElectionRows, seneddElections.length)}
       </div>` : ''}
       ${!isAllianceParty && seneddItems ? `<div class="party-manifestos-section">
         <span class="section-label">Senedd Cymru</span>
@@ -2474,11 +2707,11 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${seneddItems}</div>
       </div>` : ''}
-      ${!isAllianceParty && niElectionRows ? `<div class="party-elections-section">
+      ${!isAllianceParty && niElectionRows ? `<div class="party-elections-section" id="party-stormont">
         <span class="section-label">Stormont</span>
         <h2>Northern Ireland Assembly Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${niElectionRows}</div>
+        ${partyResultsFoldHtml(niElectionRows, niElections.length)}
       </div>` : ''}
       ${!isAllianceParty && niItems ? `<div class="party-manifestos-section">
         <span class="section-label">Stormont</span>
@@ -2486,12 +2719,12 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${niItems}</div>
       </div>` : ''}
-      ${euroElectionRows ? `<div class="party-elections-section">
+      ${euroElectionRows ? `<div class="party-elections-section" id="party-europe">
         <span class="section-label">European Parliament</span>
         <h2>European Parliament Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
         ${isAllianceParty ? '<p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1rem">Seats held by UK parties in this EP political group at the constitutive session after each election.</p>' : ''}
-        <div class="party-results-list">${euroElectionRows}</div>
+        ${partyResultsFoldHtml(euroElectionRows, euroElections.length)}
       </div>` : ''}
       ${euroItems ? `<div class="party-manifestos-section">
         <span class="section-label">European Parliament</span>
@@ -2499,11 +2732,11 @@ async function renderParty(app, id) {
         <div class="gold-rule" style="background:${barCol}"></div>
         <div class="manifesto-grid">${euroItems}</div>
       </div>` : ''}
-      ${londonElectionRows ? `<div class="party-elections-section">
+      ${londonElectionRows ? `<div class="party-elections-section" id="party-london">
         <span class="section-label">London · LCC / GLC / GLA</span>
         <h2>London Results</h2>
         <div class="gold-rule" style="background:${barCol}"></div>
-        <div class="party-results-list">${londonElectionRows}</div>
+        ${partyResultsFoldHtml(londonElectionRows, londonElections.length)}
       </div>` : ''}
       ${londonItems ? `<div class="party-manifestos-section">
         <span class="section-label">London</span>
@@ -2513,6 +2746,7 @@ async function renderParty(app, id) {
       </div>` : ''}
     </div>
   `;
+  initPartyResultsFolds();
 }
 
 // ── NATION PAGE ───────────────────────────────────────────────

@@ -18,6 +18,7 @@ regexes (data.js is the single source of truth). It deliberately does NOT
 execute the JS. If the formatting of data.js changes substantially, re-check
 the regexes below.
 """
+from __future__ import annotations
 
 import json
 import re

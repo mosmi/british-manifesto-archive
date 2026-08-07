@@ -5,7 +5,7 @@
   "displayYear": "2000",
   "date": "4 May 2000",
   "title": "2000 London mayoral and Assembly election",
-  "mayorWinner": "independent",
+  "mayorWinner": "livingstone",
   "mayorWinnerName": "Ken Livingstone",
   "turnout": 33.7,
   "summary": "The first elections for the new Greater London Authority created the office of Mayor of London and a 25-member London Assembly. Ken Livingstone, who had been refused the Labour nomination, won as an independent with 667,877 first-preference votes (39.0%), defeating Conservative Steve Norris and pushing the official Labour candidate, Frank Dobson, into third. Livingstone was elected with 776,427 votes (57.9%) after second preferences. Labour and the Conservatives tied on nine Assembly seats each, with the Liberal Democrats on four and the Greens on three.",
@@ -21,7 +21,8 @@
     "candidates": [
       {
         "name": "Ken Livingstone",
-        "party": "independent",
+        "party": "livingstone",
+        "partyLabel": "Independent",
         "firstVotes": 667877,
         "firstPct": 39.0,
         "finalVotes": 776427,
@@ -155,7 +156,8 @@
   },
   "manifestos": [
     {
-      "party": "independent",
+      "party": "livingstone",
+      "partyLabel": "Independent",
       "candidate": "Ken Livingstone",
       "title": "Manifesto for London",
       "pdf": "/manifestos/london/2000/livingstone/manifesto.pdf",

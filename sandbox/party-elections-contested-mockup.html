@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox — Party “Elections contested” redesign (not live)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --field: #0a1224;
+      --navy: #0a1224;
+      --navy-mid: #0f1a30;
+      --navy-border: #1f2d47;
+      --cream: #f4f1e8;
+      --cream-dark: #e0d4b0;
+      --text-muted: #aeb6c4;
+      --gold: #d9b76a;
+      --font-display: "Playfair Display", Georgia, serif;
+      --font-ui: "DM Sans", system-ui, sans-serif;
+      --page-px: clamp(1.25rem, 4vw, 3rem);
+      --max-w: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #060b16;
+      color: var(--cream);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+    }
+    .banner {
+      background: #2a2d36;
+      color: #f3f1ea;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+      border-bottom: 1px solid #3a3f4d;
+    }
+    .banner strong { color: #f0d78c; }
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2rem var(--page-px) 4rem;
+    }
+    h1.sandbox-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+    }
+    .lede {
+      color: var(--text-muted);
+      max-width: 46rem;
+      margin: 0 0 2rem;
+      font-size: 1rem;
+    }
+    .lede code {
+      font-size: 0.9em;
+      background: var(--navy-mid);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      border: 1px solid var(--navy-border);
+      color: var(--cream-dark);
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .toc a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--navy-border);
+      border-radius: 999px;
+      background: var(--navy-mid);
+    }
+    .toc a:hover { border-color: var(--gold); color: var(--gold); }
+
+    .case {
+      margin-bottom: 3rem;
+    }
+    .case-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.75rem 1.25rem;
+      margin-bottom: 0.85rem;
+    }
+    .case-head h2 {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 400;
+      margin: 0;
+    }
+    .case-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(217, 183, 106, 0.35);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+    }
+    .case-note {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin: 0 0 1rem;
+      max-width: 40rem;
+    }
+
+    .compare {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 900px) {
+      .compare--2 { grid-template-columns: 1fr 1fr; }
+    }
+    .panel-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 0.5rem;
+    }
+
+    /* ── Party hero shell (matches live) ── */
+    .party-hero {
+      position: relative;
+      padding: 2.25rem 1.5rem 2rem;
+      overflow: hidden;
+      border: 1px solid var(--navy-border);
+      border-radius: 6px;
+      background: var(--field);
+    }
+    .party-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 80% 50%, var(--hero-glow, rgba(250, 165, 25, 0.12)) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .party-hero-inner { position: relative; z-index: 1; }
+    .party-color-bar {
+      width: 56px; height: 5px;
+      border-radius: 3px;
+      background: var(--party-color, var(--gold));
+      margin-bottom: 0.85rem;
+    }
+    .party-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.05;
+      margin: 0;
+    }
+    .party-lede {
+      max-width: 36rem;
+      font-size: 0.95rem;
+      color: var(--cream-dark);
+      line-height: 1.65;
+      margin: 0.75rem 0 0;
+      opacity: 0.9;
+    }
+    .party-hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem 1.75rem;
+      margin-top: 1.35rem;
+    }
+    .party-meta-item {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .party-meta-item dt {
+      font: inherit;
+      letter-spacing: inherit;
+      text-transform: inherit;
+      color: inherit;
+    }
+    .party-meta-item dd {
+      display: block;
+      color: var(--party-color, var(--gold));
+      font-size: 1.2rem;
+      font-family: var(--font-display);
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      margin: 0.15rem 0 0;
+    }
+
+    /* Current middot line (problem) */
+    .contested-line {
+      max-width: 22rem;
+      line-height: 1.35;
+    }
+
+    /* Proposal A — chips */
+    .party-meta-item--elections {
+      flex: 1 1 100%;
+      min-width: min(100%, 18rem);
+    }
+    .election-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.45rem;
+      list-style: none;
+      padding: 0;
+    }
+    .election-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      padding: 0.35rem 0.65rem 0.4rem;
+      border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 40%, transparent);
+      background: color-mix(in srgb, var(--party-color, var(--gold)) 10%, transparent);
+      border-radius: 999px;
+      color: var(--cream);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 0.82rem;
+      letter-spacing: 0;
+      text-transform: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .election-chip:hover {
+      border-color: var(--party-color, var(--gold));
+      background: color-mix(in srgb, var(--party-color, var(--gold)) 18%, transparent);
+    }
+    .election-chip-count {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--party-color, var(--gold));
+      line-height: 1;
+    }
+    .election-chip-label {
+      color: var(--cream-dark);
+      font-size: 0.78rem;
+    }
+
+    /* Single-chamber: keep scalar dd (no chips) */
+    .party-meta-item--elections-scalar dd {
+      font-size: 1.2rem;
+    }
+
+    /* Alt B — stacked pairs (shown once for UKIP) */
+    .election-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+      gap: 0.65rem 1rem;
+      margin-top: 0.5rem;
+      max-width: 36rem;
+    }
+    .election-stack-item {
+      margin: 0;
+    }
+    .election-stack-item dt {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .election-stack-item dd {
+      margin: 0.1rem 0 0;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--party-color, var(--gold));
+    }
+
+    .narrow-demo {
+      max-width: 340px;
+    }
+    .narrow-caption {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin: 0.4rem 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <strong>Sandbox mock-up</strong> — not wired into the live site.
+    Proposal: chamber chips for 2+ chambers; short labels; single-chamber stays a scalar.
+  </div>
+
+  <div class="page">
+    <h1 class="sandbox-title">Elections contested — redesign mock-ups</h1>
+    <p class="lede">
+      Three party shapes: multi-chamber (Lib Dem), max-chamber (UKIP), single-chamber (Pirate Party UK).
+      Chips use short names (<code>Europe</code> not <code>European Parliament</code>) and can later jump to on-page sections.
+    </p>
+
+    <nav class="toc" aria-label="Jump to cases">
+      <a href="#libdem">Liberal Democrats</a>
+      <a href="#ukip">UKIP</a>
+      <a href="#pirate">Pirate Party UK</a>
+    </nav>
+
+    <!-- ═══ LIB DEM ═══ -->
+    <section class="case" id="libdem">
+      <div class="case-head">
+        <h2>Liberal Democrats</h2>
+        <span class="case-tag">3 chambers</span>
+      </div>
+      <p class="case-note">Current line wraps awkwardly once “European Parliament” is in the mix. Chips keep each chamber as a scannable unit.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Current (live)</p>
+          <article class="party-hero" style="--party-color:#FAA519;--hero-glow:rgba(250,165,25,0.14)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">Liberal Democrats</h3>
+              <p class="party-lede">A centre / liberal party formed from the Liberal Party and the SDP…</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1988</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre / Liberal</dd></div>
+                <div class="party-meta-item">
+                  <dt>Elections contested</dt>
+                  <dd class="contested-line">22 Westminster · 9 European Parliament · 19 London</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+          <p class="narrow-caption">Same content in a ~340px column (mobile-ish):</p>
+          <article class="party-hero narrow-demo" style="--party-color:#FAA519;--hero-glow:rgba(250,165,25,0.14);margin-top:0.5rem">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title" style="font-size:1.75rem">Liberal Democrats</h3>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1988</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre / Liberal</dd></div>
+                <div class="party-meta-item">
+                  <dt>Elections contested</dt>
+                  <dd class="contested-line">22 Westminster · 9 European Parliament · 19 London</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <p class="panel-label">Proposed — chips</p>
+          <article class="party-hero" style="--party-color:#FAA519;--hero-glow:rgba(250,165,25,0.14)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">Liberal Democrats</h3>
+              <p class="party-lede">A centre / liberal party formed from the Liberal Party and the SDP…</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1988</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre / Liberal</dd></div>
+                <div class="party-meta-item party-meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="election-chips">
+                      <li><a class="election-chip" href="#west"><span class="election-chip-count">22</span><span class="election-chip-label">Westminster</span></a></li>
+                      <li><a class="election-chip" href="#euro"><span class="election-chip-count">9</span><span class="election-chip-label">Europe</span></a></li>
+                      <li><a class="election-chip" href="#london"><span class="election-chip-count">19</span><span class="election-chip-label">London</span></a></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+          <p class="narrow-caption">Narrow column with chips:</p>
+          <article class="party-hero narrow-demo" style="--party-color:#FAA519;--hero-glow:rgba(250,165,25,0.14);margin-top:0.5rem">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title" style="font-size:1.75rem">Liberal Democrats</h3>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1988</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Centre / Liberal</dd></div>
+                <div class="party-meta-item party-meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="election-chips">
+                      <li><a class="election-chip" href="#west"><span class="election-chip-count">22</span><span class="election-chip-label">Westminster</span></a></li>
+                      <li><a class="election-chip" href="#euro"><span class="election-chip-count">9</span><span class="election-chip-label">Europe</span></a></li>
+                      <li><a class="election-chip" href="#london"><span class="election-chip-count">19</span><span class="election-chip-label">London</span></a></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ UKIP ═══ -->
+    <section class="case" id="ukip">
+      <div class="case-head">
+        <h2>UK Independence Party</h2>
+        <span class="case-tag">6 chambers — worst case</span>
+      </div>
+      <p class="case-note">Chips wrap cleanly. Below: optional stacked-pairs alt if chips feel too “pill-y” for the archive tone.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Proposed — chips (preferred)</p>
+          <article class="party-hero" style="--party-color:#70147A;--hero-glow:rgba(112,20,122,0.18)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">UK Independence Party</h3>
+              <p class="party-lede">A Eurosceptic party that reshaped UK politics around EU membership…</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1993</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Right / Eurosceptic</dd></div>
+                <div class="party-meta-item party-meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="election-chips">
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">6</span><span class="election-chip-label">Westminster</span></a></li>
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">3</span><span class="election-chip-label">Holyrood</span></a></li>
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">4</span><span class="election-chip-label">Senedd</span></a></li>
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">1</span><span class="election-chip-label">Stormont</span></a></li>
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">4</span><span class="election-chip-label">Europe</span></a></li>
+                      <li><a class="election-chip" href="#"><span class="election-chip-count">1</span><span class="election-chip-label">London</span></a></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <p class="panel-label">Alt B — stacked pairs</p>
+          <article class="party-hero" style="--party-color:#70147A;--hero-glow:rgba(112,20,122,0.18)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">UK Independence Party</h3>
+              <p class="party-lede">A Eurosceptic party that reshaped UK politics around EU membership…</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>1993</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Right / Eurosceptic</dd></div>
+                <div class="party-meta-item party-meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <dl class="election-stack">
+                      <div class="election-stack-item"><dt>Westminster</dt><dd>6</dd></div>
+                      <div class="election-stack-item"><dt>Holyrood</dt><dd>3</dd></div>
+                      <div class="election-stack-item"><dt>Senedd</dt><dd>4</dd></div>
+                      <div class="election-stack-item"><dt>Stormont</dt><dd>1</dd></div>
+                      <div class="election-stack-item"><dt>Europe</dt><dd>4</dd></div>
+                      <div class="election-stack-item"><dt>London</dt><dd>1</dd></div>
+                    </dl>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <p class="panel-label" style="margin-top:1.25rem">Current middot line (for contrast)</p>
+      <article class="party-hero" style="--party-color:#70147A;--hero-glow:rgba(112,20,122,0.18)">
+        <div class="party-hero-bg"></div>
+        <div class="party-hero-inner">
+          <div class="party-color-bar"></div>
+          <h3 class="party-hero-title">UK Independence Party</h3>
+          <dl class="party-hero-meta">
+            <div class="party-meta-item"><dt>Founded</dt><dd>1993</dd></div>
+            <div class="party-meta-item"><dt>Spectrum</dt><dd>Right / Eurosceptic</dd></div>
+            <div class="party-meta-item">
+              <dt>Elections contested</dt>
+              <dd class="contested-line">6 Westminster · 3 Holyrood · 4 Senedd · 1 Stormont · 4 European Parliament · 1 London</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- ═══ PIRATE (single chamber) ═══ -->
+    <section class="case" id="pirate">
+      <div class="case-head">
+        <h2>Pirate Party UK</h2>
+        <span class="case-tag">1 chamber — keep scalar</span>
+      </div>
+      <p class="case-note">No chip chrome when there’s only one chamber — same weight as Founded / Spectrum.</p>
+
+      <div class="compare compare--2">
+        <div>
+          <p class="panel-label">Proposed — scalar (unchanged pattern)</p>
+          <article class="party-hero" style="--party-color:#6B7280;--hero-glow:rgba(107,114,128,0.16)">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">Pirate Party UK</h3>
+              <p class="party-lede">A civil-liberties party focused on copyright, privacy, and digital rights…</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>2009</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Libertarian</dd></div>
+                <div class="party-meta-item party-meta-item--elections-scalar">
+                  <dt>Elections contested</dt>
+                  <dd>3 Westminster</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div>
+          <p class="panel-label">Avoid — chips for a single value</p>
+          <article class="party-hero" style="--party-color:#6B7280;--hero-glow:rgba(107,114,128,0.16);opacity:0.72">
+            <div class="party-hero-bg"></div>
+            <div class="party-hero-inner">
+              <div class="party-color-bar"></div>
+              <h3 class="party-hero-title">Pirate Party UK</h3>
+              <p class="party-lede">Over-styled for one chamber — chips only earn their keep at 2+.</p>
+              <dl class="party-hero-meta">
+                <div class="party-meta-item"><dt>Founded</dt><dd>2009</dd></div>
+                <div class="party-meta-item"><dt>Spectrum</dt><dd>Libertarian</dd></div>
+                <div class="party-meta-item party-meta-item--elections">
+                  <dt>Elections contested</dt>
+                  <dd>
+                    <ul class="election-chips">
+                      <li><span class="election-chip"><span class="election-chip-count">3</span><span class="election-chip-label">Westminster</span></span></li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <p class="lede" style="margin-top:2rem">
+      Open at <code>/sandbox/party-elections-contested-mockup.html</code> on the local preview server.
+      Counts are illustrative of the live contested tallies / holdings shape — not a full recompute.
+    </p>
+  </div>
+</body>
+</html>

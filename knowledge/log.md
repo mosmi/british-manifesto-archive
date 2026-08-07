@@ -11,6 +11,55 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-08-08 — Mobile results folds stay closed on hash jump (Cursor Grok)
+
+Assets `?v=2026080704`. `#party-*` chip links scroll to the section but no longer
+auto-open the results `<details>` on narrow screens (that left London’s 19-row
+list expanded on Labour).
+
+## 2026-08-07 — Mobile party hero densify + results folds (Cursor Grok)
+
+Assets `?v=2026080703`.
+
+- Compact ≤900px `.party-hero-stats` panel (Founded / Spectrum / Contested / Wins)
+  matching `sandbox/party-hero-mobile-stats-mockup.html`.
+- Wins numeral uses `--party-color` / `--party-kicker` (same as Founded); removed
+  inline `partyTextColour` wash.
+- Party results lists wrap in `<details class="party-results-fold">` — closed on
+  mobile, open on desktop; `#party-*` chips scroll to the section.
+
+## 2026-08-07 — Wins badge left-align when stacked (Cursor Grok)
+
+Assets `?v=2026080702`. On ≤900px the wins aside stacks under the hero; year and
+chamber chips now `flex-start` with the numeral (they had stayed `flex-end`
+between 641–900px).
+
+## 2026-08-07 — Ken Livingstone party page + multi-chamber wins badge (Cursor Grok)
+
+Assets `?v=2026080701`.
+
+- Added `PARTIES.livingstone`; 2000 London `mayorWinner` → `livingstone` (ballot
+  label Independent). Party history also matches 2004–12 Labour-banner runs by
+  candidate name.
+- Party-hero wins aside: Westminster majors keep a Westminster total + chamber
+  *count* chips (no year pills); single-chamber leads (UKIP/Plaid/SNP/…) get
+  year chips when ≤5. Mock-ups remain under `sandbox/`.
+- Regenerated `data/seo.json` / `catalog.jsonld` so `/party/livingstone` is a
+  valid edge route. `scripts/build-seo-data.py` now has
+  `from __future__ import annotations` so it runs on system Python 3.9.
+- Smoke-checked locally: Livingstone 2 mayoral wins + year chips + 4 rows;
+  Labour/Con Westminster + Europe/London counts; UKIP Europe 2014; SNP Holyrood
+  years; contested chips still present.
+
+## 2026-08-07 — Party “Elections contested” chamber chips (Cursor Grok)
+
+Assets `?v=2026072107`.
+
+- Replaced the middot sentence in the party hero with chamber chips when a party
+  has 2+ contested chambers (scalar kept for one chamber). Short label
+  `Europe`; chips link to `#party-*` results sections.
+- Mock-up retained at `sandbox/party-elections-contested-mockup.html`.
+
 ## 2026-07-21 — London mayoral result rows link to party pages (Cursor Grok)
 
 Assets `?v=2026072106`.

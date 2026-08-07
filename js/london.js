@@ -693,6 +693,33 @@ function londonManifestoPartySlug(m) {
   return londonManifestoRouteSlug(m);
 }
 
+/** Ken Livingstone persona match (Independent 2000, Labour 2004–12). */
+function londonIsLivingstoneName(name) {
+  return typeof name === 'string' && /ken\s+livingstone/i.test(name);
+}
+
+function londonMayorCandidateForParty(election, partyId) {
+  const canonical = typeof resolvePartyId === 'function' ? resolvePartyId(partyId) : partyId;
+  return (election.mayor?.candidates || []).find(c => {
+    const cParty = c.party && typeof resolvePartyId === 'function' ? resolvePartyId(c.party) : c.party;
+    if (cParty === canonical || cParty === partyId) return true;
+    return canonical === 'livingstone' && londonIsLivingstoneName(c.name);
+  }) || null;
+}
+
+/** True when this party/persona won the mayoralty (or council control). */
+function londonPartyLedElection(partyId, election) {
+  const canonical = typeof resolvePartyId === 'function' ? resolvePartyId(partyId) : partyId;
+  if (election.control === canonical || election.control === partyId) return true;
+  if (election.mayorWinner === canonical || election.mayorWinner === partyId) return true;
+  // Livingstone won 2004 under Labour affiliation — still a mayoral win on his page.
+  if (canonical === 'livingstone') {
+    const cand = londonMayorCandidateForParty(election, 'livingstone');
+    return !!(cand && cand.elected);
+  }
+  return false;
+}
+
 /** Elections contested + manifestos held across LCC / GLC / GLA for one party. */
 async function getLondonPartyHistory(partyId) {
   const canonical = typeof resolvePartyId === 'function' ? resolvePartyId(partyId) : partyId;
@@ -715,15 +742,18 @@ async function getLondonPartyHistory(partyId) {
       };
     }
     // Match persona/folder id OR affiliation party (independent ≠ livingstone).
+    // Livingstone also pulls Labour-banner years where he was the mayoral candidate.
     const partyManifestos = (election.manifestos || []).filter(m => {
       const route = londonManifestoRouteSlug(m);
       const affiliation = m.party && typeof resolvePartyId === 'function'
         ? resolvePartyId(m.party) : m.party;
-      return route === canonical || route === partyId
-        || affiliation === canonical || affiliation === partyId;
+      if (route === canonical || route === partyId
+        || affiliation === canonical || affiliation === partyId) return true;
+      return canonical === 'livingstone' && londonIsLivingstoneName(m.candidate);
     });
+    const mayorCand = londonMayorCandidateForParty(election, canonical);
     const isMayorWinner = election.mayorWinner === canonical;
-    if (result || partyManifestos.length || isMayorWinner) {
+    if (result || partyManifestos.length || isMayorWinner || mayorCand) {
       elections.push({ election, result: result || { party: canonical, seats: 0, pct: null } });
       partyManifestos.forEach(m => manifestos.push({ election, manifesto: m }));
     }
@@ -735,9 +765,15 @@ async function getLondonPartyHistory(partyId) {
 
 /** Result row for the party page's London section. */
 function londonPartyElectionRow(partyId, { election, result }, maxSeats, color) {
-  const isMayor = election.mayorWinner === partyId;
-  const isControl = election.control === partyId;
-  const cls = (isMayor || isControl) ? 'won' : 'lost';
+  const isMayor = typeof londonPartyLedElection === 'function'
+    ? londonPartyLedElection(partyId, election) && !!election.mayor
+    : election.mayorWinner === partyId;
+  const isControl = election.control === partyId
+    || (typeof resolvePartyId === 'function' && election.control === resolvePartyId(partyId));
+  const led = typeof londonPartyLedElection === 'function'
+    ? londonPartyLedElection(partyId, election)
+    : (isMayor || isControl);
+  const cls = led ? 'won' : 'lost';
   const label = isMayor ? '✦ Mayor' : isControl ? '✦ Control' : result.seats > 0 ? 'Opposition' : 'No seats';
   const sub = LONDON_BODY_LABELS[election.body] || 'London';
   const barW = ((result.seats / maxSeats) * 100).toFixed(1);
