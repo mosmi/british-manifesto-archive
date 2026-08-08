@@ -29,6 +29,14 @@
       {
         "party": "scottishgrn",
         "seats": 1
+      },
+      {
+        "party": "ssp",
+        "seats": 1
+      },
+      {
+        "party": "independent",
+        "seats": 1
       }
     ],
     "totalSeats": 129,

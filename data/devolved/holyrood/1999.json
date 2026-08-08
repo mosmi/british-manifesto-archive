@@ -64,21 +64,18 @@
         "listPct": 3.6
       },
       {
-        "partyLabel": "Others",
-        "constituencySeats": 1,
-        "listSeats": 2,
-        "seats": 3,
-        "listPct": 11.3
-      }
-    ],
-    "otherListVotes": [
-      {
-        "name": "Scottish Socialist Party",
-        "pct": 3.6
+        "party": "ssp",
+        "constituencySeats": 0,
+        "listSeats": 1,
+        "seats": 1,
+        "listPct": 2.0
       },
       {
-        "name": "Scottish Senior Citizens Unity Party",
-        "pct": 1.5
+        "party": "independent",
+        "partyLabel": "Dennis Canavan",
+        "constituencySeats": 1,
+        "listSeats": 0,
+        "seats": 1
       }
     ]
   },

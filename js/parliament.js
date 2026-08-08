@@ -115,6 +115,21 @@ function drawParliamentChart(container, results, totalSeats, year) {
     orderedParties.push({ partyId: 'others', color: colour, seats: topupSeats });
   }
 
+  // Seat totals in source data can exceed totalSeats (bad rows). Truncate so
+  // party-range geometry never indexes past allPositions.
+  if (colours.length > totalSeats) {
+    colours.length = totalSeats;
+    partyIds.length = totalSeats;
+    orderedParties.length = 0;
+    for (let i = 0; i < partyIds.length;) {
+      const pid = partyIds[i];
+      let j = i + 1;
+      while (j < partyIds.length && partyIds[j] === pid) j++;
+      orderedParties.push({ partyId: pid, color: colours[i], seats: j - i });
+      i = j;
+    }
+  }
+
   const NS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);

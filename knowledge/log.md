@@ -11,6 +11,16 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-08-08 — Fix Holyrood 1999 parliament chart + Ayr hex (Cursor Grok)
+
+Assets `?v=2026080801`.
+
+- 1999 results summed to 130 seats (Others: 3) vs 129 — crashed
+  `drawParliamentChart` (`allPositions[i].t` undefined). Split into SSP (1) +
+  Dennis Canavan Independent (1); index updated.
+- Hex map Ayr was John Scott/Con (2000 by-election); restored Ian Welsh/Labour.
+- Chart now truncates over-allocated seat colours so bad rows cannot blank the SVG.
+
 ## 2026-08-08 — Mobile results folds stay closed on hash jump (Cursor Grok)
 
 Assets `?v=2026080704`. `#party-*` chip links scroll to the section but no longer
