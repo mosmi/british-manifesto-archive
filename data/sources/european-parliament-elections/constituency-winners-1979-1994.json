@@ -1,0 +1,2387 @@
+{
+  "metadata": {
+    "title": "UK European Parliament Election Constituency Winners (1979\u20131994)",
+    "description": "Constituency-level winners for the four FPTP-era UK European Parliament elections.",
+    "electoral_system": "Great Britain: First-Past-The-Post in single-member constituencies. Northern Ireland: Single Transferable Vote in a single 3-seat constituency.",
+    "sources": [
+      "House of Commons Library Research Papers (RP99-57, CBP-7529)",
+      "European Parliament Official Records",
+      "European University Institute Constituency Level Dataset"
+    ],
+    "coverage": "1979, 1984, 1989, 1994",
+    "updated": "2026-08-09"
+  },
+  "elections": {
+    "1979": {
+      "total_seats": 81,
+      "gb_seats": 78,
+      "ni_seats": 3,
+      "summary": {
+        "labour": 17,
+        "conservative": 60,
+        "snp": 1,
+        "sdlp": 1,
+        "dup": 1,
+        "uup": 1
+      },
+      "constituencies": [
+        {
+          "constituency": "Northumbria",
+          "member": "Gordon Adam",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South Inner",
+          "member": "Richard Balfe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Yorkshire North",
+          "member": "Neil Balfour",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Humberside",
+          "member": "Robert Battersby",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Bedfordshire South",
+          "member": "Peter Beazley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London North West",
+          "member": "Lord Bethell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Durham",
+          "member": "Roland Boyes",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Wales North",
+          "member": "Beata Brookes",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Glasgow",
+          "member": "Janey Buchan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Sheffield",
+          "member": "Richard Caborn",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Greater Manchester North",
+          "member": "Barbara Castle",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Cambridgeshire",
+          "member": "Frederick Catherwood",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wales Mid & West",
+          "member": "Ann Clwyd",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Strathclyde East",
+          "member": "Ken Collins",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Bristol",
+          "member": "Richard Cottrell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Essex North East",
+          "member": "David Curry",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lothians",
+          "member": "Ian Dalziel",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Midlands Central",
+          "member": "John de Courcy Ling",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Hampshire West",
+          "member": "Basil de Ferranti",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Surrey",
+          "member": "Marquess of Douro",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Thames Valley",
+          "member": "Baroness Elles",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Leeds",
+          "member": "Derek Enright",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Highlands and Islands",
+          "member": "Winifred Ewing",
+          "party": "Scottish National Party",
+          "party_id": "snp",
+          "ep_group": "EPD"
+        },
+        {
+          "constituency": "Strathclyde West",
+          "member": "Adam Fergusson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Birmingham South",
+          "member": "Norvela Forster",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Birmingham North",
+          "member": "Eric Forth",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Nottingham",
+          "member": "Michael Gallagher",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Wales South",
+          "member": "Win Griffiths",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Greater Manchester South",
+          "member": "Lord Harmar-Nicholls",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cornwall & Plymouth",
+          "member": "David Harris",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Liverpool",
+          "member": "Gloria Hooper",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Greater Manchester West",
+          "member": "William Hopper",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London West",
+          "member": "Brian Hord",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Norfolk",
+          "member": "Paul Howell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Hume",
+          "party": "Social Democratic and Labour Party",
+          "party_id": "sdlp",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "South of Scotland",
+          "member": "Alasdair Hutton",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Kent East",
+          "member": "Christopher Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Upper Thames",
+          "member": "Robert V. Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wight & Hampshire East",
+          "member": "Stanley Johnson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lancashire East",
+          "member": "Edward Kellett-Bowman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cumbria",
+          "member": "Elaine Kellett-Bowman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Yorkshire South",
+          "member": "Brian Key",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London North East",
+          "member": "Alfred Lomas",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London North",
+          "member": "John Marshall",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Yorkshire South West",
+          "member": "Thomas Megahy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South",
+          "member": "James Moorhouse",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Staffordshire East",
+          "member": "Robert Moreland",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lincolnshire",
+          "member": "Bill Newton Dunn",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London Central",
+          "member": "Sir David Nicolson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cheshire East",
+          "member": "Tom Normanton",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Devon",
+          "member": "Lord O'Hagan",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "Ian Paisley",
+          "party": "Democratic Unionist Party",
+          "party_id": "dup",
+          "ep_group": "NI"
+        },
+        {
+          "constituency": "Kent West",
+          "member": "Ben Patterson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cheshire West",
+          "member": "Andrew Pearce",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cotswolds",
+          "member": "Henry Plumb",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Hertfordshire",
+          "member": "Derek Prag",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lancashire West",
+          "member": "Peter Price",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Salop and Stafford",
+          "member": "Christopher Prout",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "North East Scotland",
+          "member": "James Provan",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Mid Scotland and Fife",
+          "member": "John Purvis",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Tyne South and Wear",
+          "member": "Joyce Quin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South East",
+          "member": "Brandon Rhys-Williams",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London South West",
+          "member": "Shelagh Roberts",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wales South East",
+          "member": "Allan Rogers",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Hereford & Worcester",
+          "member": "James Scott-Hopkins",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Yorkshire West",
+          "member": "Barry Seal",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Sussex West",
+          "member": "Madron Seligman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Essex South West",
+          "member": "Dr. Alexander Sherlock",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Midlands West",
+          "member": "Richard Simmonds",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northamptonshire",
+          "member": "Anthony Simpson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Derbyshire",
+          "member": "Tom Spencer",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wessex",
+          "member": "James Spicer",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Sussex East",
+          "member": "Jack Stewart-Clark",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Taylor",
+          "party": "Ulster Unionist Party",
+          "party_id": "uup",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Midlands East",
+          "member": "John Taylor",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Leicester",
+          "member": "Frederick Tuckman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Suffolk",
+          "member": "Am\u00e9d\u00e9e Turner",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London East",
+          "member": "Alan Tyrrell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cleveland",
+          "member": "Peter Vanneck",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Somerset",
+          "member": "Frederick Warner",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lancashire Central",
+          "member": "Michael Welsh",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        }
+      ]
+    },
+    "1984": {
+      "total_seats": 81,
+      "gb_seats": 78,
+      "ni_seats": 3,
+      "summary": {
+        "labour": 32,
+        "conservative": 45,
+        "snp": 1,
+        "sdlp": 1,
+        "dup": 1,
+        "uup": 1
+      },
+      "constituencies": [
+        {
+          "constituency": "Northumbria",
+          "member": "Gordon Adam",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South Inner",
+          "member": "Richard Balfe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Humberside",
+          "member": "Robert Battersby",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cornwall & Plymouth",
+          "member": "Christopher Beazley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Bedfordshire South",
+          "member": "Peter Beazley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London North West",
+          "member": "Lord Bethell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wales North",
+          "member": "Beata Brookes",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Glasgow",
+          "member": "Janey Buchan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Dorset East & Hampshire West",
+          "member": "Bryan Cassidy",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Greater Manchester West",
+          "member": "Barbara Castle",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Cambridgeshire & Bedfordshire North",
+          "member": "Fred Catherwood",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Strathclyde East",
+          "member": "Kenneth Collins",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Bristol",
+          "member": "Richard Cottrell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Birmingham East",
+          "member": "Christine Crawley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Sheffield",
+          "member": "Bob Cryer",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Essex North East",
+          "member": "David Curry",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Somerset & Dorset West",
+          "member": "Margaret Daly",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Midlands Central",
+          "member": "John de Courcy Ling",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Hampshire Central",
+          "member": "Basil de Ferranti",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Surrey West",
+          "member": "Charles Wellesley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Thames Valley",
+          "member": "Baroness Elles",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Oxford & Buckinghamshire",
+          "member": "James Elles",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London West",
+          "member": "Michael Elliott",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Highlands and Islands",
+          "member": "Winifred Ewing",
+          "party": "Scottish National Party",
+          "party_id": "snp",
+          "ep_group": "EDA"
+        },
+        {
+          "constituency": "Cumbria & Lancashire North",
+          "member": "Sheila Faith",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Scotland Mid & Fife",
+          "member": "Alex Falconer",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Greater Manchester East",
+          "member": "Glyn Ford",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Wales South",
+          "member": "Win Griffiths",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Lancashire East",
+          "member": "Michael Hindley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Derbyshire",
+          "member": "Geoff Hoon",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Norfolk",
+          "member": "Paul Howell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Merseyside East",
+          "member": "Les Huckfield",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Durham",
+          "member": "Stephen Hughes",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Hume",
+          "party": "Social Democratic and Labour Party",
+          "party_id": "sdlp",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Scotland South",
+          "member": "Alasdair Hutton",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wiltshire",
+          "member": "Caroline Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Kent East",
+          "member": "Christopher Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Nottingham",
+          "member": "Michael Kilby",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London North East",
+          "member": "Alfred Lomas",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London North",
+          "member": "John Marshall",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lothians",
+          "member": "David Martin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Leeds",
+          "member": "Michael McGowan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Strathclyde West",
+          "member": "Hugh McMahon",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "York",
+          "member": "Edward McMillan-Scott",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Yorkshire South West",
+          "member": "Tom Megahy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South & Surrey East",
+          "member": "James Moorhouse",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wales Mid & West",
+          "member": "David Morris",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London Central",
+          "member": "Stanley Newens",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Greater Manchester Central",
+          "member": "Edward Newman",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Lincolnshire",
+          "member": "Bill Newton Dunn",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cheshire East",
+          "member": "Tom Normanton",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Devon",
+          "member": "Charles Towneley Strachey",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "Ian Paisley",
+          "party": "Democratic Unionist Party",
+          "party_id": "dup",
+          "ep_group": "NI"
+        },
+        {
+          "constituency": "Kent West",
+          "member": "Ben Patterson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cheshire West",
+          "member": "Andrew Pearce",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Midlands West",
+          "member": "Terry Pitt",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Cotswolds",
+          "member": "Henry Plumb",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Hertfordshire",
+          "member": "Derek Prag",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "London South East",
+          "member": "Peter Price",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Shropshire & Stafford",
+          "member": "Christopher Prout",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Scotland North East",
+          "member": "James Provan",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Tyne and Wear",
+          "member": "Joyce Quin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London South West",
+          "member": "Shelagh Roberts",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Hereford & Worcester",
+          "member": "James Scott-Hopkins",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Yorkshire West",
+          "member": "Barry Seal",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Sussex West",
+          "member": "Madron Seligman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Essex South West",
+          "member": "Dr. Alexander Sherlock",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wight & Hampshire East",
+          "member": "Richard Simmonds",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northamptonshire",
+          "member": "Anthony Simpson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Wales South East",
+          "member": "Llewellyn Smith",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Staffordshire East",
+          "member": "George Stevenson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Merseyside West",
+          "member": "Kenneth Stewart",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Sussex East",
+          "member": "Jack Stewart-Clark",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Taylor",
+          "party": "Ulster Unionist Party",
+          "party_id": "uup",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Birmingham West",
+          "member": "John Tomlinson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "London East",
+          "member": "Carole Tongue",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        },
+        {
+          "constituency": "Leicester",
+          "member": "Frederick Tuckman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Suffolk",
+          "member": "Am\u00e9d\u00e9e Turner",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Cleveland & Yorkshire North",
+          "member": "Peter Vanneck",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Lancashire Central",
+          "member": "Michael Welsh",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED"
+        },
+        {
+          "constituency": "Yorkshire South",
+          "member": "Norman West",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC"
+        }
+      ]
+    },
+    "1989": {
+      "total_seats": 81,
+      "gb_seats": 78,
+      "ni_seats": 3,
+      "summary": {
+        "labour": 45,
+        "conservative": 32,
+        "snp": 1,
+        "sdlp": 1,
+        "uup": 1,
+        "dup": 1
+      },
+      "constituencies": [
+        {
+          "constituency": "Northumbria",
+          "member": "Gordon Adam",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "London South Inner",
+          "member": "Richard Balfe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Sheffield",
+          "member": "Roger Barton",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Cornwall & Plymouth",
+          "member": "Christopher Beazley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Bedfordshire South",
+          "member": "Peter Beazley",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "London North West",
+          "member": "Lord Bethell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Midlands West",
+          "member": "John Bird",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Cleveland & Yorkshire North",
+          "member": "David Bowe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Glasgow",
+          "member": "Janey Buchan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Dorset East & Hampshire West",
+          "member": "Bryan Cassidy",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Cambridgeshire & Bedfordshire North",
+          "member": "Sir Frederick Catherwood",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Nottingham",
+          "member": "Ken Coates",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Strathclyde East",
+          "member": "Kenneth Collins",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Humberside",
+          "member": "Peter Crampton",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Birmingham East",
+          "member": "Christine Crawley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Somerset & Dorset West",
+          "member": "Margaret Daly",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Wales South",
+          "member": "Wayne David",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Tyne and Wear",
+          "member": "Alan Donnelly",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Oxford & Buckinghamshire",
+          "member": "Hon. James Elles",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "London West",
+          "member": "Michael Elliott",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Highlands and Islands",
+          "member": "Winifred Ewing",
+          "party": "Scottish National Party",
+          "party_id": "snp",
+          "ep_group": "RBW"
+        },
+        {
+          "constituency": "Scotland Mid & Fife",
+          "member": "Alex Falconer",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Greater Manchester East",
+          "member": "Glyn Ford",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "London North",
+          "member": "Pauline Green",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Cheshire West",
+          "member": "Lyndon Harrison",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Lancashire East",
+          "member": "Michael Hindley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Derbyshire",
+          "member": "Geoff Hoon",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Norfolk",
+          "member": "Paul Howell",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Durham",
+          "member": "Stephen Hughes",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Hume",
+          "party": "Social Democratic and Labour Party",
+          "party_id": "sdlp",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Wiltshire",
+          "member": "Caroline Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Kent East",
+          "member": "Christopher Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Hampshire Central",
+          "member": "Edward Kellett-Bowman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "London North East",
+          "member": "Alfred Lomas",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Lothians",
+          "member": "David Martin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Scotland North East",
+          "member": "Henry McCubbin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Leeds",
+          "member": "Michael McGowan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Essex North East",
+          "member": "Anne McIntosh",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Strathclyde West",
+          "member": "Hugh McMahon",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "York",
+          "member": "Edward McMillan-Scott",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Yorkshire South West",
+          "member": "Tom Megahy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "London South & Surrey East",
+          "member": "James Moorhouse",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Wales Mid & West",
+          "member": "David Morris",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "London Central",
+          "member": "Stanley Newens",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Greater Manchester Central",
+          "member": "Eddie Newman",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Lincolnshire",
+          "member": "Bill Newton Dunn",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "James Nicholson",
+          "party": "Ulster Unionist Party",
+          "party_id": "uup",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Midlands Central",
+          "member": "Christine Oddy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Devon",
+          "member": "Lord O'Hagan",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "Ian Paisley",
+          "party": "Democratic Unionist Party",
+          "party_id": "dup",
+          "ep_group": "NI"
+        },
+        {
+          "constituency": "Kent West",
+          "member": "Ben Patterson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Cotswolds",
+          "member": "Lord Plumb",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "London South West",
+          "member": "Anita Pollack",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Hertfordshire",
+          "member": "Derek Prag",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "London South East",
+          "member": "Peter Price",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Shropshire & Stafford",
+          "member": "Christopher Prout",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Essex South West",
+          "member": "Patricia Rawlings",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Leicester",
+          "member": "Mel Read",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Hereford & Worcester",
+          "member": "James Scott-Hopkins",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Yorkshire West",
+          "member": "Barry Seal",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Sussex West",
+          "member": "Madron Seligman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Wight & Hampshire East",
+          "member": "Richard Simmonds",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Northamptonshire",
+          "member": "Anthony Simpson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Cheshire East",
+          "member": "Brian Simpson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Scotland South",
+          "member": "Alex Smith",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Wales South East",
+          "member": "Llewellyn Smith",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Surrey West",
+          "member": "Tom Spencer",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Thames Valley",
+          "member": "John Stevens",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Staffordshire East",
+          "member": "George Stevenson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Merseyside West",
+          "member": "Kenneth Stewart",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Sussex East",
+          "member": "Jack Stewart-Clark",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Greater Manchester West",
+          "member": "Gary Titley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Birmingham West",
+          "member": "John Tomlinson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "London East",
+          "member": "Carole Tongue",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Suffolk",
+          "member": "Am\u00e9d\u00e9e Turner",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Cumbria & Lancashire North",
+          "member": "Richard Fletcher-Vane",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Lancashire Central",
+          "member": "Michael Welsh",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "ED / EPP"
+        },
+        {
+          "constituency": "Yorkshire South",
+          "member": "Norman West",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Bristol",
+          "member": "Ian White",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Wales North",
+          "member": "Joe Wilson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        },
+        {
+          "constituency": "Merseyside East",
+          "member": "Terry Wynn",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "SOC / PES"
+        }
+      ]
+    },
+    "1994": {
+      "total_seats": 87,
+      "gb_seats": 84,
+      "ni_seats": 3,
+      "summary": {
+        "labour": 62,
+        "conservative": 18,
+        "snp": 2,
+        "sdlp": 1,
+        "uup": 1,
+        "dup": 1,
+        "libdem": 2
+      },
+      "constituencies": [
+        {
+          "constituency": "Northumbria",
+          "member": "Gordon Adam",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London South Inner",
+          "member": "Richard Balfe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Sheffield",
+          "member": "Roger Barton",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Northamptonshire and Blaby",
+          "member": "Angela Billingham",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Cleveland and Richmond",
+          "member": "David Bowe",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Dorset and East Devon",
+          "member": "Bryan Cassidy",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Devon and East Plymouth",
+          "member": "Giles Chichester",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Nottinghamshire North and Chesterfield",
+          "member": "Ken Coates",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES / G"
+        },
+        {
+          "constituency": "Strathclyde East",
+          "member": "Kenneth Collins",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Worcestershire and South Warwickshire",
+          "member": "John Corrie",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Humberside",
+          "member": "Peter Crampton",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Birmingham East",
+          "member": "Christine Crawley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Cumbria and Lancashire North",
+          "member": "Tony Cunningham",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "South Wales Central",
+          "member": "Wayne David",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Tyne and Wear",
+          "member": "Alan Donnelly",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Sussex South and Crawley",
+          "member": "Brendan Donnelly",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Buckinghamshire and Oxfordshire East",
+          "member": "James Elles",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "London West",
+          "member": "Michael Elliott",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London North West",
+          "member": "Robert Evans",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Highlands and Islands",
+          "member": "Winnie Ewing",
+          "party": "Scottish National Party",
+          "party_id": "snp",
+          "ep_group": "ERA"
+        },
+        {
+          "constituency": "Mid Scotland and Fife",
+          "member": "Alexander Falconer",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Greater Manchester East",
+          "member": "Glyn Ford",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London North",
+          "member": "Pauline Green",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Herefordshire and Shropshire",
+          "member": "David Hallam",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Lincolnshire and Humberside South",
+          "member": "Veronica Hardstaff",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Cheshire West and Wirral",
+          "member": "Lyndon Harrison",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Lancashire Central",
+          "member": "Mark Hendrick",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Lancashire South",
+          "member": "Michael Hindley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Essex South",
+          "member": "Richard Howitt",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Durham",
+          "member": "Stephen Hughes",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "John Hume",
+          "party": "Social Democratic and Labour Party",
+          "party_id": "sdlp",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Wiltshire North and Bath",
+          "member": "Caroline Jackson",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Itchen, Test and Avon",
+          "member": "Edward Kellett-Bowman",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Essex West and Hertfordshire East",
+          "member": "Hugh Kerr",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES / G"
+        },
+        {
+          "constituency": "South Wales East",
+          "member": "Glenys Kinnock",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London North East",
+          "member": "Alfred Lomas",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "North East Scotland",
+          "member": "Allan Macartney",
+          "party": "Scottish National Party",
+          "party_id": "snp",
+          "ep_group": "ERA"
+        },
+        {
+          "constituency": "Lothians",
+          "member": "David Martin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Hampshire North and Oxford",
+          "member": "Graham Mather",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Peak District",
+          "member": "Arlene McCarthy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Leeds",
+          "member": "Michael McGowan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Essex North and Suffolk South",
+          "member": "Anne McIntosh",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Strathclyde West",
+          "member": "Hugh McMahon",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "North Yorkshire",
+          "member": "Edward McMillan-Scott",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Bedfordshire and Milton Keynes",
+          "member": "Eryl McNally",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Yorkshire South West",
+          "member": "Thomas Megahy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Glasgow",
+          "member": "Bill Miller",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London South and Surrey East",
+          "member": "James Moorhouse",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP / ELDR"
+        },
+        {
+          "constituency": "Mid and West Wales",
+          "member": "Eluned Morgan",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "South Wales West",
+          "member": "David Morris",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Midlands West",
+          "member": "Simon Murphy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Norfolk",
+          "member": "Clive Needle",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London Central",
+          "member": "Stan Newens",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Greater Manchester Central",
+          "member": "Eddie Newman",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "Jim Nicholson",
+          "party": "Ulster Unionist Party",
+          "party_id": "uup",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Coventry and North Warwickshire",
+          "member": "Christine Oddy",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Northern Ireland",
+          "member": "Ian Paisley",
+          "party": "Democratic Unionist Party",
+          "party_id": "dup",
+          "ep_group": "NI"
+        },
+        {
+          "constituency": "Wight and Hampshire South",
+          "member": "Roy Perry",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Cotswolds",
+          "member": "Lord Plumb",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "London South West",
+          "member": "Anita PollackNationality: Australian",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "South Downs West",
+          "member": "James Provan",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Nottingham and Leicestershire North West",
+          "member": "Imelda Read",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Yorkshire West",
+          "member": "Barry Seal",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Cheshire East",
+          "member": "Brian Simpson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Kent West",
+          "member": "Peter Skinner",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "South of Scotland",
+          "member": "Alex Smith",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Surrey",
+          "member": "Tom Spencer",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "London South East",
+          "member": "Shaun Spiers",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Thames Valley",
+          "member": "John Stevens",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Merseyside West",
+          "member": "Kenneth Stewart",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "East Sussex and Kent South",
+          "member": "Jack Stewart-Clark",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Cambridgeshire",
+          "member": "Robert Sturdy",
+          "party": "Conservative Party",
+          "party_id": "conservative",
+          "ep_group": "EPP"
+        },
+        {
+          "constituency": "Staffordshire West and Congleton",
+          "member": "Michael Tappin",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Cornwall and West Plymouth",
+          "member": "Robin Teverson",
+          "party": "Liberal Democrats",
+          "party_id": "libdem",
+          "ep_group": "ELDR"
+        },
+        {
+          "constituency": "Suffolk and South West Norfolk",
+          "member": "David Thomas",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Greater Manchester West",
+          "member": "Gary Titley",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Birmingham West",
+          "member": "John Tomlinson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "London East",
+          "member": "Carole Tongue",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Hertfordshire",
+          "member": "Peter Truscott",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Leicester",
+          "member": "Susan Waddington",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Somerset and North Devon",
+          "member": "Graham Watson",
+          "party": "Liberal Democrats",
+          "party_id": "libdem",
+          "ep_group": "ELDR"
+        },
+        {
+          "constituency": "Kent East",
+          "member": "Mark Watts",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Yorkshire South",
+          "member": "Norman West",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Bristol",
+          "member": "Ian White",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Staffordshire East and Derby",
+          "member": "Phillip Whitehead",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "North Wales",
+          "member": "Joe Wilson",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        },
+        {
+          "constituency": "Merseyside East and Wigan",
+          "member": "Terry Wynn",
+          "party": "Labour Party",
+          "party_id": "labour",
+          "ep_group": "PES"
+        }
+      ]
+    }
+  }
+}

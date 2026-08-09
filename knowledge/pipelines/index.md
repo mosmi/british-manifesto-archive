@@ -11,6 +11,7 @@ timestamp: 2026-07-11T00:00:00Z
 Scripts and satellite toolkits that generate content consumed by the site.
 
 - [hexmaps](./hexmaps.md) — Westminster hex cartograms in `data/hex/`
+- [euro-region-map](./euro-region-map.md) — UK EP maps (FPTP hex 1979–1994; regional waffle 1999–2019)
 - [transcription](./transcription.md) — manifesto PDFs → `manifestos/**/manifesto.md`
 - [covers](./covers.md) — transparent A4 PNG covers from `manifesto.pdf` page 1
 - [pdf-sizes](./pdf-sizes.md) — `data/pdf-sizes.json` for download-link file sizes

@@ -26,6 +26,7 @@ metadata on first paint.
 | `senedd.js` | Senedd (Welsh Parliament) views |
 | `ni.js` | Northern Ireland Assembly (Stormont) views |
 | `euro.js` | European Parliament election views |
+| `euro-map.js` | EP regional seat map (paths + waffle clusters) |
 | `london.js` | London Mayor & Assembly views |
 | `search.js` | Search overlay with Catalogue + Full text modes; catalogue index; full-text via `data/fulltext-index.json` |
 

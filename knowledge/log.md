@@ -11,6 +11,66 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-08-09 — Compact EP FPTP hexmaps (contiguous UK outline) (Cursor Grok)
+
+Assets `?v=2026080912`.
+
+- Centroid-only placement left ~80 hexes sparse on the Westminster frame.
+- `scripts/build-euro-fptp-hex.py` now nation-packs (scale → Hungarian snap →
+  merge → hole-fill) and assembles England/Scotland/Wales into one mainland;
+  Highlands & Islands and NI stay detached. Mainland touch 100% for all four
+  years. Cross-nation hole-fill disabled (it was scattering Wales into England).
+  See [pipelines/euro-region-map](./pipelines/euro-region-map.md).
+
+## 2026-08-09 — FPTP EP constituency hexmaps 1979–1994 (Cursor Grok)
+
+Assets `?v=2026080910`.
+
+- Built `data/hex/euro/{1979,1984,1989,1994}.hexjson` via
+  `scripts/build-euro-fptp-hex.py` from constituency winners + Westminster→EP
+  centroids (colliding `q,r` nudged; NI `seats_list` of 3 MEPs).
+- UI: `euroHasConstituencyMap` + **Constituencies** tab in `js/euro.js`
+  (reuses `hexmap.js`; does not widen `euroHasRegionMap`).
+- Docs: [pipelines/euro-region-map](./pipelines/euro-region-map.md).
+
+## 2026-08-09 — FPTP EP election constituency dataset & Westminster crosswalks 1979–1994 (Antigravity)
+
+- Generated `data/sources/european-parliament-elections/constituency-winners-1979-1994.json` containing structured constituency-level winners, MEP names, party IDs, and EP political groups across all four FPTP elections (1979, 1984, 1989, 1994).
+- Built Westminster-to-EP constituency crosswalk datasets under `data/sources/european-parliament-elections/westminster-to-ep/{1979,1984,1994}.json` mapping 100% of FPTP-era EP constituencies to their constituent Westminster hex keys from `data/hex/elections/{1979,1983,1997}.hexjson` (0 empty EP lists across all eras).
+- Computed averaged `(q, r)` centroid coordinates for every EP constituency to enable direct hex map rendering and spatial aggregation.
+- Updated European Parliament FPTP hexmaps to generate manifesto detail links using the `/devolved/euro/{year}/{partyId}` route format:
+  1. Added `options.manifestoPrefix` support to `drawHexmap` in `js/hexmap.js`.
+  2. Passed `manifestoPrefix: \`/devolved/euro/\${election.year}\`` in `js/euro.js`.
+  3. Bumped `?v=2026080913` cache-busting query strings for `hexmap.js` and `euro.js` in `index.html`.
+- Updated dataset index in `data/sources/european-parliament-elections/README.md`.
+
+## 2026-08-09 — European Parliament regional maps 1999–2014 (Cursor Grok)
+
+Assets `?v=2026080909`.
+
+- Extended **Electoral regions** tab to all PR-era EP elections:
+  `/devolved/euro/{1999,2004,2009,2014,2019}`.
+- Built `data/devolved/euro/regions/{1999,2004,2009,2014}.json` from Commons
+  Library RP PDFs via `scripts/build-euro-regions-pr.py` (MEP lists + regional
+  vote shares; seat totals validated against election JSON).
+- Year-aware waffle grids in `js/euro-map.js` for changing seat magnitudes
+  (87 → 78 → 72 → 73).
+- Source bundle: `data/sources/european-parliament-elections/`.
+- **1979–1994 FPTP maps deferred** (wrong geography for waffle renderer); phase-2
+  lead documented in [pipelines/euro-region-map](./pipelines/euro-region-map.md)
+  — EUI constituency-level dataset (Cadmus 1814/75475), not RP99-57 alone.
+
+## 2026-08-09 — European Parliament regional seat map (2019) (Cursor Grok)
+
+Assets `?v=2026080901`.
+
+- Added interactive **Electoral regions** tab on `/devolved/euro/2019`: geographic
+  EER outlines with seat-square clusters and MEP detail panel.
+- Data from Commons Library CBP 8600 (`data/sources/commons-library/`); geography
+  from ONS EER Dec 2018 UGCB, simplified to `data/maps/euro-regions.json`.
+- Builders: `scripts/build-euro-regions.py`, `scripts/build-euro-region-map.py`.
+- Docs: [pipelines/euro-region-map](./pipelines/euro-region-map.md).
+
 ## 2026-08-08 — Fix Holyrood 1999 parliament chart + Ayr hex (Cursor Grok)
 
 Assets `?v=2026080801`.

@@ -330,19 +330,20 @@ function drawHexmap(container, data, options = {}) {
       poly.setAttribute('stroke-width', '2');
 
       let actionLinks = '';
+      const prefix = options.manifestoPrefix || (options.electionId ? `/manifesto/${options.electionId}` : '');
       if (hasSeatsList) {
         const uniqueParties = [...new Set(c.seatsList)].filter(pid => pid !== 'others' && PARTIES[pid]);
         uniqueParties.forEach(pid => {
-          if (options.electionId) {
-            actionLinks += `<a href="/manifesto/${options.electionId}/${pid}" class="hexmap-detail-link">Read ${getPartyName(pid, options.electionYear)} manifesto →</a>`;
+          if (prefix) {
+            actionLinks += `<a href="${prefix}/${pid}" class="hexmap-detail-link">Read ${getPartyName(pid, options.electionYear)} manifesto →</a>`;
           }
           actionLinks += `<a href="/party/${pid}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(pid, options.electionYear)} party page</a>`;
         });
       } else {
         const partyId = c.party;
-        const hasManifesto = options.electionId && partyId && partyId !== 'others' && PARTIES[partyId];
+        const hasManifesto = prefix && partyId && partyId !== 'others' && PARTIES[partyId];
         if (hasManifesto) {
-          actionLinks += `<a href="/manifesto/${options.electionId}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`;
+          actionLinks += `<a href="${prefix}/${partyId}" class="hexmap-detail-link">Read ${getPartyName(partyId, options.electionYear)} manifesto →</a>`;
         }
         if (partyId && partyId !== 'others' && PARTIES[partyId]) {
           actionLinks += `<a href="/party/${partyId}" class="hexmap-detail-link hexmap-detail-link-muted">${getPartyName(partyId, options.electionYear)} party page</a>`;

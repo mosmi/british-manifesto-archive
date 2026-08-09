@@ -1,0 +1,361 @@
+LANGUAGE_ID;ID;LABEL
+BG;OFFICIAL;Официални резултати
+BG;BREAKDOWN_BY_PARTY_TITLE;Разбивка по партии
+BG;HISTORICAL;Исторически данни
+BG;FINAL;Окончателни резултати
+BG;EU_HEMICYCLE_TITLE;Състав
+BG;PROJECTION;Проекция
+BG;SEATS_BY_GROUP_TITLE;Разбивка по групи
+BG;PROVISIONAL;Предварителни резултати
+BG;EU_GENDER_BALANCE_TITLE;Съотношение мъже-жени в ЕС
+BG;RESULTS_BY_PARTY_TITLE;Резултати по партии
+BG;EU_TURNOUT_TITLE;Избирателна активност
+BG;CONSTITUTIVE;Учредително заседание
+BG;ESTIMATE;Приблизителни оценки
+BG;GENDER_BALANCE_TITLE;Съотношение между мъжете и жените
+BG;OUTGOING;Парламент в края на мандата
+ES;OFFICIAL;Resultados oficiales
+ES;BREAKDOWN_BY_PARTY_TITLE;Escaños por partidos políticos
+ES;HISTORICAL;Datos históricos
+ES;FINAL;Resultados definitivos
+ES;EU_HEMICYCLE_TITLE;Hemiciclo
+ES;PROJECTION;Proyección
+ES;SEATS_BY_GROUP_TITLE;Escaños por grupos
+ES;PROVISIONAL;Resultados provisionales
+ES;EU_GENDER_BALANCE_TITLE;Equilibrio de género en la UE
+ES;RESULTS_BY_PARTY_TITLE;Partidos políticos con resultados
+ES;EU_TURNOUT_TITLE;Participación electoral
+ES;CONSTITUTIVE;Sesión constitutiva
+ES;ESTIMATE;Estimaciones
+ES;GENDER_BALANCE_TITLE;Equilibrio de género
+ES;OUTGOING;Parlamento saliente
+CS;OFFICIAL;Oficiální výsledky
+CS;BREAKDOWN_BY_PARTY_TITLE;Rozdělení stran
+CS;HISTORICAL;Historické údaje
+CS;FINAL;Konečné výsledky
+CS;EU_HEMICYCLE_TITLE;Polokruh
+CS;PROJECTION;Předpoklad
+CS;SEATS_BY_GROUP_TITLE;Rozdělení skupin
+CS;PROVISIONAL;Prozatímní výsledky
+CS;EU_GENDER_BALANCE_TITLE;Zastoupení mužů a žen EU
+CS;RESULTS_BY_PARTY_TITLE;Výsledky stran
+CS;EU_TURNOUT_TITLE;Volební účast
+CS;CONSTITUTIVE;Ustavující zasedání
+CS;ESTIMATE;Odhady
+CS;GENDER_BALANCE_TITLE;Zastoupení mužů a žen
+CS;OUTGOING;Končící parlament
+DA;OFFICIAL;Officielle resultater
+DA;BREAKDOWN_BY_PARTY_TITLE;Fordeling partier
+DA;HISTORICAL;Historiske data
+DA;FINAL;Endelige resultater
+DA;EU_HEMICYCLE_TITLE;Plenumoversigt
+DA;PROJECTION;Fremskrivning
+DA;SEATS_BY_GROUP_TITLE;Fordeling grupper
+DA;PROVISIONAL;Foreløbige resultater
+DA;EU_GENDER_BALANCE_TITLE;Kønsfordeling EU
+DA;RESULTS_BY_PARTY_TITLE;Resultater partier
+DA;EU_TURNOUT_TITLE;Valgdeltagelse
+DA;CONSTITUTIVE;Konstituerende møde
+DA;ESTIMATE;Skøn
+DA;GENDER_BALANCE_TITLE;Kønsfordeling
+DA;OUTGOING;Afgående Parlament
+DE;OFFICIAL;Amtliche Ergebnisse
+DE;BREAKDOWN_BY_PARTY_TITLE;Aufschlüsselung nach Parteien
+DE;HISTORICAL;Historische Daten
+DE;FINAL;Endergebnisse
+DE;EU_HEMICYCLE_TITLE;Plenarsaal
+DE;PROJECTION;Hochrechnung
+DE;SEATS_BY_GROUP_TITLE;Aufschlüsselung nach Fraktionen
+DE;PROVISIONAL;Vorläufige Ergebnisse
+DE;EU_GENDER_BALANCE_TITLE;Geschlechterverhältnis unionsweit
+DE;RESULTS_BY_PARTY_TITLE;Ergebnisse der Parteien
+DE;EU_TURNOUT_TITLE;Wahlbeteiligung
+DE;CONSTITUTIVE;Konstituierende Sitzung
+DE;ESTIMATE;Schätzungen
+DE;GENDER_BALANCE_TITLE;Geschlechterverhältnis
+DE;OUTGOING;Scheidendes Europäisches Parlament
+ET;OFFICIAL;Ametlikud tulemused
+ET;BREAKDOWN_BY_PARTY_TITLE;Jaotus erakondade kaupa
+ET;HISTORICAL;Ajaloolised andmed
+ET;FINAL;Lõplikud tulemused
+ET;EU_HEMICYCLE_TITLE;Istungisaal
+ET;PROJECTION;Prognoos
+ET;SEATS_BY_GROUP_TITLE;Jaotus fraktsioonide kaupa
+ET;PROVISIONAL;Esialgsed tulemused
+ET;EU_GENDER_BALANCE_TITLE;Sooline jaotus ELis
+ET;RESULTS_BY_PARTY_TITLE;Erakondade tulemused
+ET;EU_TURNOUT_TITLE;Valimisaktiivsus
+ET;CONSTITUTIVE;Avaistung
+ET;ESTIMATE;Prognoosid
+ET;GENDER_BALANCE_TITLE;Sooline jaotus
+ET;OUTGOING;Parlamendi lahkuv koosseis
+EL;OFFICIAL;Επίσημα αποτελέσματα
+EL;BREAKDOWN_BY_PARTY_TITLE;Κατάταξη κομμάτων
+EL;HISTORICAL;Ιστορικά στοιχεία
+EL;FINAL;Τελικά αποτελέσματα
+EL;EU_HEMICYCLE_TITLE;Ημικύκλιο
+EL;PROJECTION;Πρόβλεψη
+EL;SEATS_BY_GROUP_TITLE;Κατάταξη ομάδων
+EL;PROVISIONAL;Προσωρινά αποτελέσματα
+EL;EU_GENDER_BALANCE_TITLE;Ισόρροπη εκπροσώπηση των φύλων στην ΕΕ
+EL;RESULTS_BY_PARTY_TITLE;Αποτελέσματα κομμάτων
+EL;EU_TURNOUT_TITLE;Συμμετοχή
+EL;CONSTITUTIVE;Σύνοδος συγκρότησης του Κοινοβουλίου σε σώμα
+EL;ESTIMATE;Εκτιμήσεις
+EL;GENDER_BALANCE_TITLE;Ισόρροπη εκπροσώπηση των φύλων
+EL;OUTGOING;Απερχόμενο Κοινοβούλιο
+EN;OFFICIAL;Official results
+EN;BREAKDOWN_BY_PARTY_TITLE;Breakdown parties
+EN;HISTORICAL;Historical data
+EN;FINAL;Final results
+EN;EU_HEMICYCLE_TITLE;Hemicycle
+EN;PROJECTION;Projection
+EN;SEATS_BY_GROUP_TITLE;Breakdown groups
+EN;PROVISIONAL;Provisional results
+EN;EU_GENDER_BALANCE_TITLE;EU Gender Balance
+EN;RESULTS_BY_PARTY_TITLE;Results parties
+EN;EU_TURNOUT_TITLE;Turnout
+EN;CONSTITUTIVE;Constitutive session
+EN;ESTIMATE;Estimates
+EN;GENDER_BALANCE_TITLE;Gender Balance
+EN;OUTGOING;Outgoing Parliament
+FR;OFFICIAL;Résultats officiels
+FR;BREAKDOWN_BY_PARTY_TITLE;Répartition des partis
+FR;HISTORICAL;Données historiques
+FR;FINAL;Résultats définitifs
+FR;EU_HEMICYCLE_TITLE;Hémicycle
+FR;PROJECTION;Projection
+FR;SEATS_BY_GROUP_TITLE;Répartition des groupes
+FR;PROVISIONAL;Résultats provisoires
+FR;EU_GENDER_BALANCE_TITLE;Répartition hommes-femmes au sein de l’Union européenne
+FR;RESULTS_BY_PARTY_TITLE;Résultats par parti
+FR;EU_TURNOUT_TITLE;Participation
+FR;CONSTITUTIVE;Session constitutive
+FR;ESTIMATE;Estimations
+FR;GENDER_BALANCE_TITLE;Répartition hommes-femmes
+FR;OUTGOING;Parlement sortant
+GA;OFFICIAL;Torthaí oifigiúla
+GA;BREAKDOWN_BY_PARTY_TITLE;Miondealú ar pháirtithe
+GA;HISTORICAL;Sonraí stairiúla
+GA;FINAL;Torthaí críochnaitheacha
+GA;EU_HEMICYCLE_TITLE;Seomra tionóil
+GA;PROJECTION;Réamh-mheastachán
+GA;SEATS_BY_GROUP_TITLE;Miondealú ar ghrúpaí
+GA;PROVISIONAL;Torthaí sealadacha
+GA;EU_GENDER_BALANCE_TITLE;Cothromaíocht inscne AE
+GA;RESULTS_BY_PARTY_TITLE;Torthaí de réir páirtithe
+GA;EU_TURNOUT_TITLE;Ráta vótála
+GA;CONSTITUTIVE;Seisiún reachtach
+GA;ESTIMATE;Meastacháin
+GA;GENDER_BALANCE_TITLE;Cothromaíocht inscne
+GA;OUTGOING;Parlaimint atá ag dul as oifig
+HR;OFFICIAL;Službeni rezultati
+HR;BREAKDOWN_BY_PARTY_TITLE;Raspodjela stranaka
+HR;HISTORICAL;Povijesni podaci
+HR;FINAL;Konačni rezultati
+HR;EU_HEMICYCLE_TITLE;Vijećnica
+HR;PROJECTION;Projekcija
+HR;SEATS_BY_GROUP_TITLE;Raspodjela klubova
+HR;PROVISIONAL;Privremeni rezultati
+HR;EU_GENDER_BALANCE_TITLE;Ravnoteža među spolovima u EU-u
+HR;RESULTS_BY_PARTY_TITLE;Stranke s rezultatima
+HR;EU_TURNOUT_TITLE;Odaziv birača
+HR;CONSTITUTIVE;Konstituirajuća sjednica
+HR;ESTIMATE;Procjene
+HR;GENDER_BALANCE_TITLE;Ravnoteža među spolovima
+HR;OUTGOING;Parlament na odlasku
+IT;OFFICIAL;Risultati ufficiali
+IT;BREAKDOWN_BY_PARTY_TITLE;Suddivisione partiti
+IT;HISTORICAL;Dati storici
+IT;FINAL;Risultati finali
+IT;EU_HEMICYCLE_TITLE;Emiciclo
+IT;PROJECTION;Proiezione
+IT;SEATS_BY_GROUP_TITLE;Suddivisione gruppi
+IT;PROVISIONAL;Risultati provvisori
+IT;EU_GENDER_BALANCE_TITLE;Equilibrio di genere UE
+IT;RESULTS_BY_PARTY_TITLE;Risultati partiti
+IT;EU_TURNOUT_TITLE;Affluenza
+IT;CONSTITUTIVE;Sessione costitutiva
+IT;ESTIMATE;Stime
+IT;GENDER_BALANCE_TITLE;Equilibrio di genere
+IT;OUTGOING;Parlamento uscente
+LV;OFFICIAL;Oficiālie rezultāti
+LV;BREAKDOWN_BY_PARTY_TITLE;Partiju sadalījums
+LV;HISTORICAL;Vēsturiskie dati
+LV;FINAL;Galīgie rezultāti
+LV;EU_HEMICYCLE_TITLE;Sēžu zāle
+LV;PROJECTION;Prognoze
+LV;SEATS_BY_GROUP_TITLE;Grupu sadalījums
+LV;PROVISIONAL;Provizoriskie rezultāti
+LV;EU_GENDER_BALANCE_TITLE;Dzimumu līdzsvars ES
+LV;RESULTS_BY_PARTY_TITLE;Partiju rezultāti
+LV;EU_TURNOUT_TITLE;Vēlētāju aktivitāte
+LV;CONSTITUTIVE;Konstitutīvā sesija
+LV;ESTIMATE;Aplēses
+LV;GENDER_BALANCE_TITLE;Dzimumu līdzsvars
+LV;OUTGOING;Aizejošais Parlaments
+LT;OFFICIAL;Oficialūs rezultatai
+LT;BREAKDOWN_BY_PARTY_TITLE;Skirstyti partijas
+LT;HISTORICAL;Ankstesnių rinkimų duomenys
+LT;FINAL;Galutiniai rezultatai
+LT;EU_HEMICYCLE_TITLE;Plenarinių posėdžių salė
+LT;PROJECTION;Projekcija
+LT;SEATS_BY_GROUP_TITLE;Skirstyti grupes
+LT;PROVISIONAL;Preliminarūs rezultatai
+LT;EU_GENDER_BALANCE_TITLE;Lyčių pusiausvyra ES
+LT;RESULTS_BY_PARTY_TITLE;Partijų rezultatai
+LT;EU_TURNOUT_TITLE;Dalyvavimas rinkimuose
+LT;CONSTITUTIVE;Steigiamoji sesija
+LT;ESTIMATE;Apytikriai rezultatai
+LT;GENDER_BALANCE_TITLE;Lyčių pusiausvyra
+LT;OUTGOING;Kadenciją baigiantis Parlamentas
+HU;OFFICIAL;Hivatalos eredmények
+HU;BREAKDOWN_BY_PARTY_TITLE;Lebontás pártokra
+HU;HISTORICAL;Korábbi adatok
+HU;FINAL;Végeredmények
+HU;EU_HEMICYCLE_TITLE;Ülésterem
+HU;PROJECTION;Előrejelzés
+HU;SEATS_BY_GROUP_TITLE;Lebontás csoportokra
+HU;PROVISIONAL;Előzetes eredmények
+HU;EU_GENDER_BALANCE_TITLE;A nemek aránya az EU-ban
+HU;RESULTS_BY_PARTY_TITLE;Pártok eredményei
+HU;EU_TURNOUT_TITLE;Részvételi arány
+HU;CONSTITUTIVE;Alakuló ülés
+HU;ESTIMATE;Becsült adatok
+HU;GENDER_BALANCE_TITLE;A nemek aránya
+HU;OUTGOING;Távozó parlament
+MT;OFFICIAL;Riżultati uffiċjali
+MT;BREAKDOWN_BY_PARTY_TITLE;Tqassim tal-partiti
+MT;HISTORICAL;Data storika
+MT;FINAL;Riżultati finali
+MT;EU_HEMICYCLE_TITLE;Emiċiklu
+MT;PROJECTION;Projezzjoni
+MT;SEATS_BY_GROUP_TITLE;Tqassim tal-gruppi
+MT;PROVISIONAL;Riżultati proviżorji
+MT;EU_GENDER_BALANCE_TITLE;Bilanċ Bejn is-Sessi fl-UE
+MT;RESULTS_BY_PARTY_TITLE;Riżultati partiti
+MT;EU_TURNOUT_TITLE;Parteċipazzjoni elettorali
+MT;CONSTITUTIVE;Sessjoni kostituttiva
+MT;ESTIMATE;Stimi
+MT;GENDER_BALANCE_TITLE;Bilanċ Bejn is-Sessi
+MT;OUTGOING;Parlament uxxenti
+NL;OFFICIAL;Officiële resultaten
+NL;BREAKDOWN_BY_PARTY_TITLE;Splitsing partijen
+NL;HISTORICAL;Historische gegevens
+NL;FINAL;Definitieve resultaten
+NL;EU_HEMICYCLE_TITLE;Grote vergaderzaal
+NL;PROJECTION;Voorspelling
+NL;SEATS_BY_GROUP_TITLE;Splitsing fracties
+NL;PROVISIONAL;Voorlopige resultaten
+NL;EU_GENDER_BALANCE_TITLE;Genderverdeling EU
+NL;RESULTS_BY_PARTY_TITLE;Resultaten partijen
+NL;EU_TURNOUT_TITLE;Opkomst
+NL;CONSTITUTIVE;Constituerende vergadering
+NL;ESTIMATE;Schattingen
+NL;GENDER_BALANCE_TITLE;Genderverdeling
+NL;OUTGOING;Uittredend Parlement
+PL;OFFICIAL;Oficjalne wyniki
+PL;BREAKDOWN_BY_PARTY_TITLE;Podział partii
+PL;HISTORICAL;Dane historyczne
+PL;FINAL;Wyniki końcowe
+PL;EU_HEMICYCLE_TITLE;Sala posiedzeń plenarnych
+PL;PROJECTION;Prognoza
+PL;SEATS_BY_GROUP_TITLE;Podział grup
+PL;PROVISIONAL;Wstępne wyniki
+PL;EU_GENDER_BALANCE_TITLE;Rozkład płci w UE
+PL;RESULTS_BY_PARTY_TITLE;Wyniki — partie
+PL;EU_TURNOUT_TITLE;Frekwencja
+PL;CONSTITUTIVE;Posiedzenie inauguracyjne
+PL;ESTIMATE;Szacunki
+PL;GENDER_BALANCE_TITLE;Rozkład płci
+PL;OUTGOING;Ustępujący Parlament
+PT;OFFICIAL;Resultados oficiais
+PT;BREAKDOWN_BY_PARTY_TITLE;Repartição dos partidos
+PT;HISTORICAL;Dados históricos
+PT;FINAL;Resultados finais
+PT;EU_HEMICYCLE_TITLE;Hemiciclo
+PT;PROJECTION;Projeção
+PT;SEATS_BY_GROUP_TITLE;Repartição dos grupos
+PT;PROVISIONAL;Resultados provisórios
+PT;EU_GENDER_BALANCE_TITLE;Equilíbrio de género na UE
+PT;RESULTS_BY_PARTY_TITLE;Resultados dos partidos
+PT;EU_TURNOUT_TITLE;Participação eleitoral
+PT;CONSTITUTIVE;Sessão constitutiva
+PT;ESTIMATE;Estimativas
+PT;GENDER_BALANCE_TITLE;Equilíbrio de género
+PT;OUTGOING;Parlamento cessante
+RO;OFFICIAL;Rezultate oficiale
+RO;BREAKDOWN_BY_PARTY_TITLE;Împărțire partide
+RO;HISTORICAL;Date istorice
+RO;FINAL;Rezultate finale
+RO;EU_HEMICYCLE_TITLE;Hemiciclu
+RO;PROJECTION;Estimări
+RO;SEATS_BY_GROUP_TITLE;Împărțire grupuri
+RO;PROVISIONAL;Rezultate provizorii
+RO;EU_GENDER_BALANCE_TITLE;Echilibrul de gen în UE
+RO;RESULTS_BY_PARTY_TITLE;Rezultate partide
+RO;EU_TURNOUT_TITLE;Rată de participare
+RO;CONSTITUTIVE;Sesiune constitutivă
+RO;ESTIMATE;Estimări
+RO;GENDER_BALANCE_TITLE;Echilibrul de gen
+RO;OUTGOING;Actualul Parlament
+SK;OFFICIAL;Oficiálne výsledky
+SK;BREAKDOWN_BY_PARTY_TITLE;Rozdelenie strán
+SK;HISTORICAL;Historické údaje
+SK;FINAL;Konečné výsledky
+SK;EU_HEMICYCLE_TITLE;Rokovacia sála
+SK;PROJECTION;Prognóza
+SK;SEATS_BY_GROUP_TITLE;Rozdelenie podľa skupín
+SK;PROVISIONAL;Predbežné výsledky
+SK;EU_GENDER_BALANCE_TITLE;Rodová rovnováha v EÚ
+SK;RESULTS_BY_PARTY_TITLE;Výsledky podľa strán
+SK;EU_TURNOUT_TITLE;Volebná účasť
+SK;CONSTITUTIVE;Ustanovujúca schôdza
+SK;ESTIMATE;Odhady
+SK;GENDER_BALANCE_TITLE;Rodová rovnováha
+SK;OUTGOING;Parlament, ktorého volebné obdobie sa končí
+SL;OFFICIAL;Uradni rezultati
+SL;BREAKDOWN_BY_PARTY_TITLE;Razčlenitev strank
+SL;HISTORICAL;Zgodovinski podatki
+SL;FINAL;Končni rezultati
+SL;EU_HEMICYCLE_TITLE;Plenarna dvorana
+SL;PROJECTION;Napoved
+SL;SEATS_BY_GROUP_TITLE;Razčlenitev skupin
+SL;PROVISIONAL;Začasni rezultati
+SL;EU_GENDER_BALANCE_TITLE;Zastopanost spolov za EU
+SL;RESULTS_BY_PARTY_TITLE;Rezultati strank
+SL;EU_TURNOUT_TITLE;Volilna udeležba
+SL;CONSTITUTIVE;Otvoritveno zasedanje
+SL;ESTIMATE;Ocene
+SL;GENDER_BALANCE_TITLE;Zastopanost spolov
+SL;OUTGOING;Odhajajoči parlament
+FI;OFFICIAL;Viralliset tulokset
+FI;BREAKDOWN_BY_PARTY_TITLE;Jaottelu puolueet
+FI;HISTORICAL;Tulokset aiemmissa vaaleissa
+FI;FINAL;Lopulliset tulokset
+FI;EU_HEMICYCLE_TITLE;Istuntosali
+FI;PROJECTION;Ennuste
+FI;SEATS_BY_GROUP_TITLE;Jaottelu ryhmät
+FI;PROVISIONAL;Alustavat tulokset
+FI;EU_GENDER_BALANCE_TITLE;Sukupuolijakauma EU
+FI;RESULTS_BY_PARTY_TITLE;Tulokset puolueet
+FI;EU_TURNOUT_TITLE;Äänestysprosentti
+FI;CONSTITUTIVE;Järjestäytymisistunto
+FI;ESTIMATE;Arviot
+FI;GENDER_BALANCE_TITLE;Sukupuolijakauma
+FI;OUTGOING;Väistyvä parlamentti
+SV;OFFICIAL;Officiella resultat
+SV;BREAKDOWN_BY_PARTY_TITLE;Uppdelning partier
+SV;HISTORICAL;Historiska data
+SV;FINAL;Slutliga resultat
+SV;EU_HEMICYCLE_TITLE;Plenisalen
+SV;PROJECTION;Prognos
+SV;SEATS_BY_GROUP_TITLE;Uppdelning grupper
+SV;PROVISIONAL;Preliminära resultat
+SV;EU_GENDER_BALANCE_TITLE;Könsfördelning i EU
+SV;RESULTS_BY_PARTY_TITLE;Resultat partier
+SV;EU_TURNOUT_TITLE;Valdeltagande
+SV;CONSTITUTIVE;Konstituerande sammanträde
+SV;ESTIMATE;Beräkningar
+SV;GENDER_BALANCE_TITLE;Könsfördelning
+SV;OUTGOING;Avgående parlament

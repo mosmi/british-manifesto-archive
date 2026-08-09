@@ -81,6 +81,11 @@ maps and navigation use **alliance families** (`sand`, `epp`, `renew`, `greensef
 `ecr`, …) defined in `js/data.js` (`EURO_ALLIANCE_PARTIES`). Individual minor
 parties link to `/devolved/euro/other-parties`.
 
+Maps: FPTP constituency hexjson in `data/hex/euro/<year>.hexjson` (1979–1994);
+PR regional results in `data/devolved/euro/regions/<year>.json` with shared
+geography in `data/maps/euro-regions.json` (1999–2019). See
+[pipelines/euro-region-map](../pipelines/euro-region-map.md).
+
 ## Co-operative Party
 Holyrood and Senedd Co-op representation counts have a strict display rule — see
 [page-rules/cooperative-party](../page-rules/cooperative-party.md).

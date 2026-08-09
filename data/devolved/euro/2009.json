@@ -85,7 +85,11 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library \u2014 European Parliament Elections 2009 (RP09-53)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp09-53/"
+    },
+    {
+      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
     }
   ],
@@ -179,7 +183,7 @@
       "party": "dup"
     },
     {
-      "title": "Sinn Féin European Manifesto 2009",
+      "title": "Sinn F\u00e9in European Manifesto 2009",
       "pdf": "/manifestos/euro/2009/sinnfein/manifesto.pdf",
       "cover": "/manifestos/euro/2009/sinnfein/manifesto.png",
       "party": "sinnfein"

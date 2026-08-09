@@ -80,7 +80,11 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library \u2014 Elections to the European Parliament June 1999 (RP99-64)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp99-64/"
+    },
+    {
+      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
     }
   ],

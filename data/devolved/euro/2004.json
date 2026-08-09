@@ -8,11 +8,11 @@
   "control": "conservative",
   "firstMinister": null,
   "majority": false,
-  "summary": "The election was marked by a strong performance by UKIP, which won 12 seats (up from 3) to tie with the Liberal Democrats. The Conservatives won the election with 27 seats, while Tony Blair's Labour Party suffered, falling to 19 seats. Sinn Féin won its first EP seat in Northern Ireland.",
+  "summary": "The election was marked by a strong performance by UKIP, which won 12 seats (up from 3) to tie with the Liberal Democrats. The Conservatives won the election with 27 seats, while Tony Blair's Labour Party suffered, falling to 19 seats. Sinn F\u00e9in won its first EP seat in Northern Ireland.",
   "highlights": [
     "UKIP surges to win 12 seats, matching the Liberal Democrats",
     "Labour drops to 19 seats, reflecting public dissatisfaction over the Iraq War",
-    "Sinn Féin wins its first Northern Ireland seat, overtaking SDLP",
+    "Sinn F\u00e9in wins its first Northern Ireland seat, overtaking SDLP",
     "Conservatives win the election with 27 seats under Michael Howard",
     "Turnout recovers to 38.5% UK-wide, aided by postal voting trials"
   ],
@@ -80,7 +80,11 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library \u2014 European Parliament Elections 2004 (RP04-50)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp04-50/"
+    },
+    {
+      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
     }
   ],
@@ -142,7 +146,7 @@
       "party": "dup"
     },
     {
-      "title": "Sinn Féin European Manifesto 2004",
+      "title": "Sinn F\u00e9in European Manifesto 2004",
       "pdf": "/manifestos/euro/2004/sinnfein/manifesto.pdf",
       "cover": "/manifestos/euro/2004/sinnfein/manifesto.png",
       "party": "sinnfein"

@@ -23,6 +23,32 @@ async function loadEuroElection(id) {
   }
 }
 
+/** True when regional seat-map JSON is published for this election. */
+function euroHasRegionMap(year) {
+  // PR-era multi-member regions (1999–2019).
+  return year >= 1999 && year <= 2019;
+}
+
+/** True when FPTP-era constituency hexjson is published for this election. */
+function euroHasConstituencyMap(year) {
+  return year === 1979 || year === 1984 || year === 1989 || year === 1994;
+}
+
+const _euroFptpHexCache = new Map();
+async function loadEuroFptpHexLayout(year) {
+  const key = String(year);
+  if (_euroFptpHexCache.has(key)) return _euroFptpHexCache.get(key);
+  try {
+    const res = await fetch(`/data/hex/euro/${year}.hexjson?v=${ASSETS_VERSION}`, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    _euroFptpHexCache.set(key, data);
+    return data;
+  } catch (_) {
+    return null;
+  }
+}
+
 function euroNum(n) {
   return typeof n === 'number' ? n.toLocaleString('en-GB') : '—';
 }
@@ -341,6 +367,60 @@ async function renderEuroElection(app, id) {
   const chartResults = election.parliament?.results || [];
   const chartTotal = election.parliament?.totalSeats || 73;
   const hasChart = chartResults.length > 0;
+  const hasRegionMap = hasChart && euroHasRegionMap(election.year);
+  const hasConstituencyMap = hasChart && euroHasConstituencyMap(election.year);
+  const hasMapTab = hasRegionMap || hasConstituencyMap;
+
+  const parliamentPane = `<div class="viz-pane active" id="euro-viz-parliament" role="tabpanel" aria-labelledby="euro-tab-parliament">
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">UK MEP Delegation</div>
+                <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 37}</div>
+                <div id="euro-chart-container"></div>
+                <div class="parliament-legend" id="euro-chart-legend"></div>
+              </div>
+            </div>`;
+
+  const regionsPane = hasRegionMap ? `<div class="viz-pane" id="euro-viz-regions" role="tabpanel" aria-labelledby="euro-tab-regions" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Electoral Regions</div>
+                <div class="parliament-card-sub" id="euro-map-subtitle">Seat winners by European electoral region</div>
+                <div id="euro-map-container" class="euro-map-container"></div>
+                <div id="euro-map-detail" class="hexmap-detail euro-map-detail"></div>
+                <div class="parliament-legend hexmap-legend" id="euro-map-legend" hidden></div>
+              </div>
+            </div>` : '';
+
+  const constituenciesPane = hasConstituencyMap ? `<div class="viz-pane" id="euro-viz-constituencies" role="tabpanel" aria-labelledby="euro-tab-constituencies" hidden>
+              <div class="parliament-card viz-card">
+                <div class="parliament-card-title">Constituencies</div>
+                <div class="parliament-card-sub" id="euro-hexmap-subtitle">FPTP constituency winners (GB) · STV in Northern Ireland</div>
+                <div id="euro-hexmap-container" class="hexmap-container"></div>
+                <div class="parliament-legend hexmap-legend" id="euro-hexmap-legend" hidden></div>
+              </div>
+            </div>` : '';
+
+  const mapTabButton = hasRegionMap
+    ? `<button type="button" class="viz-tab" id="euro-tab-regions" data-viz="regions" role="tab" aria-selected="false" aria-controls="euro-viz-regions" tabindex="-1">Electoral regions</button>`
+    : (hasConstituencyMap
+      ? `<button type="button" class="viz-tab" id="euro-tab-constituencies" data-viz="constituencies" role="tab" aria-selected="false" aria-controls="euro-viz-constituencies" tabindex="-1">Constituencies</button>`
+      : '');
+
+  const vizPanel = hasChart ? (hasMapTab ? `<div class="viz-panel">
+            <div class="viz-tabs" role="tablist">
+              <button type="button" class="viz-tab active" id="euro-tab-parliament" data-viz="parliament" role="tab" aria-selected="true" aria-controls="euro-viz-parliament" tabindex="0">Parliament</button>
+              ${mapTabButton}
+            </div>
+            ${parliamentPane}
+            ${regionsPane}
+            ${constituenciesPane}
+          </div>` : `<div class="viz-panel">
+            <div class="parliament-card viz-card">
+              <div class="parliament-card-title">UK MEP Delegation</div>
+              <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 37}</div>
+              <div id="euro-chart-container"></div>
+              <div class="parliament-legend" id="euro-chart-legend"></div>
+            </div>
+          </div>`) : '';
 
   app.innerHTML = `
     ${renderBreadcrumb([
@@ -374,14 +454,7 @@ async function renderEuroElection(app, id) {
           ${euroParliamentSection(election)}
         </div>
         <div>
-          ${hasChart ? `<div class="viz-panel">
-            <div class="parliament-card viz-card">
-              <div class="parliament-card-title">UK MEP Delegation</div>
-              <div class="parliament-card-sub">${chartTotal} seats · majority ${election.parliament?.majorityThreshold || 37}</div>
-              <div id="euro-chart-container"></div>
-              <div class="parliament-legend" id="euro-chart-legend"></div>
-            </div>
-          </div>` : ''}
+          ${vizPanel}
         </div>
       </div>
 
@@ -396,6 +469,109 @@ async function renderEuroElection(app, id) {
       const leg = document.getElementById('euro-chart-legend');
       if (cont) drawParliamentChart(cont, chartResults, chartTotal);
       if (leg) buildParliamentLegend(leg, chartResults, election.year);
+
+      if (!hasMapTab) return;
+
+      const tabs = document.querySelectorAll('#euro-tab-parliament, #euro-tab-regions, #euro-tab-constituencies');
+      const panes = {
+        parliament: document.getElementById('euro-viz-parliament'),
+        regions: document.getElementById('euro-viz-regions'),
+        constituencies: document.getElementById('euro-viz-constituencies'),
+      };
+      let regionMapLoaded = false;
+      let constituencyMapLoaded = false;
+      const mapViz = hasRegionMap ? 'regions' : 'constituencies';
+
+      const switchTab = (targetViz) => {
+        tabs.forEach(t => {
+          const active = t.dataset.viz === targetViz;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', active);
+          t.tabIndex = active ? 0 : -1;
+        });
+        Object.entries(panes).forEach(([viz, pane]) => {
+          if (!pane) return;
+          const active = viz === targetViz;
+          pane.classList.toggle('active', active);
+          pane.hidden = !active;
+        });
+
+        if (targetViz === 'regions' && !regionMapLoaded) {
+          regionMapLoaded = true;
+          const mapCont = document.getElementById('euro-map-container');
+          const mapLeg = document.getElementById('euro-map-legend');
+          const mapDetail = document.getElementById('euro-map-detail');
+          const subtitleEl = document.getElementById('euro-map-subtitle');
+          if (!mapCont) return;
+          mapCont.innerHTML = '<p class="hexmap-loading">Loading regional map…</p>';
+
+          Promise.all([
+            loadEuroRegionLayout(),
+            loadEuroRegionResults(election.year),
+          ]).then(([layout, regionResults]) => {
+            if (!layout?.regions || !regionResults?.regions) {
+              mapCont.innerHTML = '<p class="hexmap-empty">Regional map not yet available for this election.</p>';
+              return;
+            }
+            if (subtitleEl) {
+              subtitleEl.textContent = `${regionResults.regions.length} electoral regions · ${election.parliament?.system || 'Regional list PR'}`;
+            }
+            drawEuroRegionMap(mapCont, layout, regionResults, {
+              year: election.year,
+              legendEl: mapLeg,
+              detailEl: mapDetail,
+              nationalResults: chartResults,
+            });
+          });
+        }
+
+        if (targetViz === 'constituencies' && !constituencyMapLoaded) {
+          constituencyMapLoaded = true;
+          const hexCont = document.getElementById('euro-hexmap-container');
+          const hexLeg = document.getElementById('euro-hexmap-legend');
+          const subtitleEl = document.getElementById('euro-hexmap-subtitle');
+          if (!hexCont) return;
+          hexCont.innerHTML = '<p class="hexmap-loading">Loading constituency map…</p>';
+
+          loadEuroFptpHexLayout(election.year).then(hexjson => {
+            if (!hexjson?.hexes) {
+              hexCont.innerHTML = '<p class="hexmap-empty">Constituency map not yet available for this election.</p>';
+              return;
+            }
+            const gbCount = Object.values(hexjson.hexes).filter(h => h.n !== 'Northern Ireland').length;
+            if (subtitleEl) {
+              subtitleEl.textContent = `${gbCount} GB constituencies (FPTP) · Northern Ireland 3 MEPs (STV)`;
+            }
+            const data = hexjsonToDrawData(hexjson, election.year);
+            data.constituencies = data.constituencies.map(c => {
+              const cell = hexjson.hexes[c.key];
+              let mpText = cell?.winner || '';
+              if (Array.isArray(cell?.members) && cell.members.length) {
+                mpText = cell.members.map(m => {
+                  const pname = typeof getPartyName === 'function' ? getPartyName(m.party, election.year) : m.party;
+                  return `${m.name} (${pname})`;
+                }).join(' · ');
+              }
+              return { ...c, mp: mpText };
+            });
+            drawHexmap(hexCont, data, {
+              legendEl: hexLeg,
+              electionYear: election.year,
+              electionId: election.id,
+              manifestoPrefix: `/devolved/euro/${election.year}`,
+            });
+            if (hexLeg) hexLeg.hidden = false;
+          });
+        }
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.viz));
+        tab.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); tabs[1]?.focus(); switchTab(mapViz); }
+          if (e.key === 'ArrowLeft') { e.preventDefault(); tabs[0]?.focus(); switchTab('parliament'); }
+        });
+      });
     });
   }
 }

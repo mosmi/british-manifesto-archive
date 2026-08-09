@@ -1,0 +1,712 @@
+{
+  "year": 2014,
+  "source": {
+    "label": "House of Commons Library \u2014 European Parliament Elections 2014 (RP14-32)",
+    "url": "https://commonslibrary.parliament.uk/research-briefings/rp14-32/",
+    "file": "data/sources/european-parliament-elections/commons-library/RP14-32.pdf"
+  },
+  "regions": [
+    {
+      "id": "north-east",
+      "code": "NE",
+      "name": "North East",
+      "seats": 3,
+      "members": [
+        {
+          "name": "Jude Kirton-Darling",
+          "party": "labour",
+          "order": 1
+        },
+        {
+          "name": "Jonathan Arnott",
+          "party": "ukip",
+          "order": 2
+        },
+        {
+          "name": "Paul Brannen",
+          "party": "labour",
+          "order": 3
+        }
+      ],
+      "results": [
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 36.5
+        },
+        {
+          "party": "ukip",
+          "seats": 1,
+          "pct": 29.2
+        }
+      ],
+      "turnout": 30.9
+    },
+    {
+      "id": "north-west",
+      "code": "NW",
+      "name": "North West",
+      "seats": 8,
+      "members": [
+        {
+          "name": "Theresa Griffin",
+          "party": "labour",
+          "order": 1
+        },
+        {
+          "name": "Paul Nuttal",
+          "party": "ukip",
+          "order": 2
+        },
+        {
+          "name": "Jacqueline Foster",
+          "party": "conservative",
+          "order": 3
+        },
+        {
+          "name": "Afzal Khan",
+          "party": "labour",
+          "order": 4
+        },
+        {
+          "name": "Louise Bours",
+          "party": "ukip",
+          "order": 5
+        },
+        {
+          "name": "Julie Ward",
+          "party": "labour",
+          "order": 6
+        },
+        {
+          "name": "Sajjad Karim",
+          "party": "conservative",
+          "order": 7
+        },
+        {
+          "name": "Steven Woolfe",
+          "party": "ukip",
+          "order": 8
+        }
+      ],
+      "results": [
+        {
+          "party": "labour",
+          "seats": 3,
+          "pct": 33.9
+        },
+        {
+          "party": "ukip",
+          "seats": 3,
+          "pct": 27.5
+        },
+        {
+          "party": "conservative",
+          "seats": 2,
+          "pct": 20.1
+        }
+      ],
+      "turnout": 33.3
+    },
+    {
+      "id": "yorkshire-humber",
+      "code": "Y&H",
+      "name": "Yorkshire and the Humber",
+      "seats": 6,
+      "members": [
+        {
+          "name": "Jane Collins",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Linda McAvan",
+          "party": "labour",
+          "order": 2
+        },
+        {
+          "name": "Timothy Kirkhope",
+          "party": "conservative",
+          "order": 3
+        },
+        {
+          "name": "Amjad Bashir",
+          "party": "ukip",
+          "order": 4
+        },
+        {
+          "name": "Richard Corbett",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "Mike Hookem",
+          "party": "ukip",
+          "order": 6
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 3,
+          "pct": 31.1
+        },
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 29.3
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 19.2
+        }
+      ],
+      "turnout": 33.5
+    },
+    {
+      "id": "east-midlands",
+      "code": "EM",
+      "name": "East Midlands",
+      "seats": 5,
+      "members": [
+        {
+          "name": "Roger Helmer",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Emma McClarkin",
+          "party": "conservative",
+          "order": 2
+        },
+        {
+          "name": "Glenis Willmott",
+          "party": "labour",
+          "order": 3
+        },
+        {
+          "name": "Margaret Parker",
+          "party": "ukip",
+          "order": 4
+        },
+        {
+          "name": "Andrew Lewer",
+          "party": "conservative",
+          "order": 5
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 2,
+          "pct": 32.9
+        },
+        {
+          "party": "conservative",
+          "seats": 2,
+          "pct": 26.0
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 24.9
+        }
+      ],
+      "turnout": 33.2
+    },
+    {
+      "id": "west-midlands",
+      "code": "WM",
+      "name": "West Midlands",
+      "seats": 7,
+      "members": [
+        {
+          "name": "Jill Seymour",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Neena Gill",
+          "party": "labour",
+          "order": 2
+        },
+        {
+          "name": "Philip Bradbourn",
+          "party": "conservative",
+          "order": 3
+        },
+        {
+          "name": "Jim Carver",
+          "party": "ukip",
+          "order": 4
+        },
+        {
+          "name": "Sion Simon",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "Anthea McIntyre",
+          "party": "conservative",
+          "order": 6
+        },
+        {
+          "name": "Bill Etheridge",
+          "party": "ukip",
+          "order": 7
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 3,
+          "pct": 31.5
+        },
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 26.7
+        },
+        {
+          "party": "conservative",
+          "seats": 2,
+          "pct": 24.3
+        }
+      ],
+      "turnout": 33.1
+    },
+    {
+      "id": "east-of-england",
+      "code": "E",
+      "name": "East of England",
+      "seats": 7,
+      "members": [
+        {
+          "name": "Patrick O'Flynn",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Vicky Ford",
+          "party": "conservative",
+          "order": 2
+        },
+        {
+          "name": "Richard Howitt",
+          "party": "labour",
+          "order": 3
+        },
+        {
+          "name": "Stuart Agnew",
+          "party": "ukip",
+          "order": 4
+        },
+        {
+          "name": "Geoffrey Van Orden",
+          "party": "conservative",
+          "order": 5
+        },
+        {
+          "name": "Tim Aker",
+          "party": "ukip",
+          "order": 6
+        },
+        {
+          "name": "David Campbell Bannerman",
+          "party": "conservative",
+          "order": 7
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 3,
+          "pct": 34.5
+        },
+        {
+          "party": "conservative",
+          "seats": 3,
+          "pct": 28.4
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 17.3
+        }
+      ],
+      "turnout": 36.0
+    },
+    {
+      "id": "london",
+      "code": "L",
+      "name": "London",
+      "seats": 8,
+      "members": [
+        {
+          "name": "Claude Moraes",
+          "party": "labour",
+          "order": 1
+        },
+        {
+          "name": "Syed Kamall",
+          "party": "conservative",
+          "order": 2
+        },
+        {
+          "name": "Mary Honeyball",
+          "party": "labour",
+          "order": 3
+        },
+        {
+          "name": "Gerard Batten",
+          "party": "ukip",
+          "order": 4
+        },
+        {
+          "name": "Lucy Anderson",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "Charles Tannock",
+          "party": "conservative",
+          "order": 6
+        },
+        {
+          "name": "Seb Dance",
+          "party": "labour",
+          "order": 7
+        },
+        {
+          "name": "Jean Lambert",
+          "party": "green",
+          "order": 8
+        }
+      ],
+      "results": [
+        {
+          "party": "labour",
+          "seats": 4,
+          "pct": 36.7
+        },
+        {
+          "party": "conservative",
+          "seats": 2,
+          "pct": 22.5
+        },
+        {
+          "party": "ukip",
+          "seats": 1,
+          "pct": 16.9
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 8.9
+        }
+      ],
+      "turnout": 40.1
+    },
+    {
+      "id": "south-east",
+      "code": "SE",
+      "name": "South East",
+      "seats": 10,
+      "members": [
+        {
+          "name": "Nigel Farage",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Daniel Hannan",
+          "party": "conservative",
+          "order": 2
+        },
+        {
+          "name": "Janice Atkinson",
+          "party": "ukip",
+          "order": 3
+        },
+        {
+          "name": "Nirj Deva",
+          "party": "conservative",
+          "order": 4
+        },
+        {
+          "name": "Anneliese Dodds",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "Diane James",
+          "party": "ukip",
+          "order": 6
+        },
+        {
+          "name": "Richard Ashworth",
+          "party": "conservative",
+          "order": 7
+        },
+        {
+          "name": "Keith Taylor",
+          "party": "green",
+          "order": 8
+        },
+        {
+          "name": "Catherine Bearder",
+          "party": "libdem",
+          "order": 9
+        },
+        {
+          "name": "Ray Finch",
+          "party": "ukip",
+          "order": 10
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 4,
+          "pct": 32.1
+        },
+        {
+          "party": "conservative",
+          "seats": 3,
+          "pct": 30.9
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 14.7
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 9.1
+        },
+        {
+          "party": "libdem",
+          "seats": 1,
+          "pct": 8.0
+        }
+      ],
+      "turnout": 36.3
+    },
+    {
+      "id": "south-west",
+      "code": "SW",
+      "name": "South West",
+      "seats": 6,
+      "members": [
+        {
+          "name": "William Dartmouth",
+          "party": "ukip",
+          "order": 1
+        },
+        {
+          "name": "Ashley Fox",
+          "party": "conservative",
+          "order": 2
+        },
+        {
+          "name": "Julia Reid",
+          "party": "ukip",
+          "order": 3
+        },
+        {
+          "name": "Julie Girling",
+          "party": "conservative",
+          "order": 4
+        },
+        {
+          "name": "Claire Moody",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "Molly Scott Cato",
+          "party": "green",
+          "order": 6
+        }
+      ],
+      "results": [
+        {
+          "party": "ukip",
+          "seats": 2,
+          "pct": 32.3
+        },
+        {
+          "party": "conservative",
+          "seats": 2,
+          "pct": 28.9
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 13.7
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 11.1
+        }
+      ],
+      "turnout": 36.9
+    },
+    {
+      "id": "wales",
+      "code": "W",
+      "name": "Wales",
+      "seats": 4,
+      "members": [
+        {
+          "name": "Derek Vaughan",
+          "party": "labour",
+          "order": 1
+        },
+        {
+          "name": "Nathan Gill",
+          "party": "ukip",
+          "order": 2
+        },
+        {
+          "name": "Kay Swinburne",
+          "party": "conservative",
+          "order": 3
+        },
+        {
+          "name": "Jill Evans",
+          "party": "plaid",
+          "order": 4
+        }
+      ],
+      "results": [
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 28.1
+        },
+        {
+          "party": "ukip",
+          "seats": 1,
+          "pct": 27.6
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 17.4
+        },
+        {
+          "party": "plaid",
+          "seats": 1,
+          "pct": 15.3
+        }
+      ],
+      "turnout": 32.0
+    },
+    {
+      "id": "scotland",
+      "code": "S",
+      "name": "Scotland",
+      "seats": 6,
+      "members": [
+        {
+          "name": "Ian Hudghton",
+          "party": "snp",
+          "order": 1
+        },
+        {
+          "name": "David Martin",
+          "party": "labour",
+          "order": 2
+        },
+        {
+          "name": "Ian Duncan",
+          "party": "conservative",
+          "order": 3
+        },
+        {
+          "name": "Alyn Smith",
+          "party": "snp",
+          "order": 4
+        },
+        {
+          "name": "Catherine Stihler",
+          "party": "labour",
+          "order": 5
+        },
+        {
+          "name": "David Coburn",
+          "party": "ukip",
+          "order": 6
+        }
+      ],
+      "results": [
+        {
+          "party": "snp",
+          "seats": 2,
+          "pct": 29.0
+        },
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 25.9
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 17.2
+        },
+        {
+          "party": "ukip",
+          "seats": 1,
+          "pct": 10.5
+        }
+      ],
+      "turnout": 33.4
+    },
+    {
+      "id": "northern-ireland",
+      "code": "NI",
+      "name": "Northern Ireland",
+      "seats": 3,
+      "members": [
+        {
+          "name": "Martina Anderson",
+          "party": "sinnfein",
+          "order": 1
+        },
+        {
+          "name": "Diane Dodds",
+          "party": "dup",
+          "order": 2
+        },
+        {
+          "name": "Jim Nicholson",
+          "party": "uup",
+          "order": 3
+        }
+      ],
+      "results": [
+        {
+          "party": "sinnfein",
+          "seats": 1,
+          "pct": 25.5
+        },
+        {
+          "party": "dup",
+          "seats": 1,
+          "pct": 20.9
+        },
+        {
+          "party": "uup",
+          "seats": 1,
+          "pct": 13.3
+        }
+      ],
+      "turnout": 51.0
+    }
+  ]
+}

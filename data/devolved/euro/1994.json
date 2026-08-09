@@ -75,8 +75,16 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
+    },
+    {
+      "label": "House of Commons Library \u2014 European Parliament Elections 1979 to 1994 (RP99-57)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp99-57/"
+    },
+    {
+      "label": "European University Institute \u2014 EP Election Results at Constituency Level",
+      "url": "https://cadmus.eui.eu/handle/1814/75475"
     }
   ],
   "body": "euro",

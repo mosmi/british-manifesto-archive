@@ -1,0 +1,583 @@
+{
+  "layout": "odd-r",
+  "meta": {
+    "year": 1989,
+    "body": "euro",
+    "system": "FPTP (GB) + STV (NI)",
+    "gb_constituencies": 78,
+    "ni_seats": 3,
+    "layout_method": "nation-pack-assemble",
+    "mainland_touch_pct": 100.0,
+    "crosswalk": "data/sources/european-parliament-elections/westminster-to-ep/1984.json",
+    "winners": "data/sources/european-parliament-elections/constituency-winners-1979-1994.json"
+  },
+  "hexes": {
+    "bedfordshire-south": {
+      "n": "Bedfordshire South",
+      "q": 7,
+      "r": 6,
+      "party": "conservative",
+      "winner": "Peter Beazley"
+    },
+    "birmingham-east": {
+      "n": "Birmingham East",
+      "q": 4,
+      "r": 5,
+      "party": "labour",
+      "winner": "Christine Crawley"
+    },
+    "birmingham-west": {
+      "n": "Birmingham West",
+      "q": 4,
+      "r": 6,
+      "party": "labour",
+      "winner": "John Tomlinson"
+    },
+    "bristol": {
+      "n": "Bristol",
+      "q": 2,
+      "r": 2,
+      "party": "labour",
+      "winner": "Ian White"
+    },
+    "cambridgeshire-and-bedfordshire-north": {
+      "n": "Cambridgeshire & Bedfordshire North",
+      "q": 8,
+      "r": 6,
+      "party": "conservative",
+      "winner": "Sir Frederick Catherwood"
+    },
+    "cheshire-east": {
+      "n": "Cheshire East",
+      "q": 4,
+      "r": 9,
+      "party": "labour",
+      "winner": "Brian Simpson"
+    },
+    "cheshire-west": {
+      "n": "Cheshire West",
+      "q": 3,
+      "r": 8,
+      "party": "labour",
+      "winner": "Lyndon Harrison"
+    },
+    "cleveland-and-yorkshire-north": {
+      "n": "Cleveland & Yorkshire North",
+      "q": 4,
+      "r": 13,
+      "party": "labour",
+      "winner": "David Bowe"
+    },
+    "cornwall-and-plymouth": {
+      "n": "Cornwall & Plymouth",
+      "q": 0,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Christopher Beazley"
+    },
+    "cotswolds": {
+      "n": "Cotswolds",
+      "q": 3,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Lord Plumb"
+    },
+    "cumbria-and-lancashire-north": {
+      "n": "Cumbria & Lancashire North",
+      "q": 3,
+      "r": 13,
+      "party": "conservative",
+      "winner": "Richard Fletcher-Vane"
+    },
+    "derbyshire": {
+      "n": "Derbyshire",
+      "q": 5,
+      "r": 8,
+      "party": "labour",
+      "winner": "Geoff Hoon"
+    },
+    "devon": {
+      "n": "Devon",
+      "q": 1,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Lord O'Hagan"
+    },
+    "dorset-east-and-hampshire-west": {
+      "n": "Dorset East & Hampshire West",
+      "q": 2,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Bryan Cassidy"
+    },
+    "durham": {
+      "n": "Durham",
+      "q": 3,
+      "r": 14,
+      "party": "labour",
+      "winner": "Stephen Hughes"
+    },
+    "essex-north-east": {
+      "n": "Essex North East",
+      "q": 8,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Anne McIntosh"
+    },
+    "essex-south-west": {
+      "n": "Essex South West",
+      "q": 8,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Patricia Rawlings"
+    },
+    "glasgow": {
+      "n": "Glasgow",
+      "q": 2,
+      "r": 16,
+      "party": "labour",
+      "winner": "Janey Buchan"
+    },
+    "greater-manchester-central": {
+      "n": "Greater Manchester Central",
+      "q": 3,
+      "r": 9,
+      "party": "labour",
+      "winner": "Eddie Newman"
+    },
+    "greater-manchester-east": {
+      "n": "Greater Manchester East",
+      "q": 4,
+      "r": 10,
+      "party": "labour",
+      "winner": "Glyn Ford"
+    },
+    "greater-manchester-west": {
+      "n": "Greater Manchester West",
+      "q": 3,
+      "r": 10,
+      "party": "labour",
+      "winner": "Gary Titley"
+    },
+    "hampshire-central": {
+      "n": "Hampshire Central",
+      "q": 3,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Edward Kellett-Bowman"
+    },
+    "hereford-and-worcester": {
+      "n": "Hereford & Worcester",
+      "q": 3,
+      "r": 3,
+      "party": "conservative",
+      "winner": "James Scott-Hopkins"
+    },
+    "hertfordshire": {
+      "n": "Hertfordshire",
+      "q": 7,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Derek Prag"
+    },
+    "highlands-and-islands": {
+      "n": "Highlands and Islands",
+      "q": 3,
+      "r": 19,
+      "party": "snp",
+      "winner": "Winifred Ewing"
+    },
+    "humberside": {
+      "n": "Humberside",
+      "q": 6,
+      "r": 8,
+      "party": "labour",
+      "winner": "Peter Crampton"
+    },
+    "kent-east": {
+      "n": "Kent East",
+      "q": 5,
+      "r": 4,
+      "party": "conservative",
+      "winner": "Christopher Jackson"
+    },
+    "kent-west": {
+      "n": "Kent West",
+      "q": 9,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Ben Patterson"
+    },
+    "lancashire-central": {
+      "n": "Lancashire Central",
+      "q": 3,
+      "r": 12,
+      "party": "conservative",
+      "winner": "Michael Welsh"
+    },
+    "lancashire-east": {
+      "n": "Lancashire East",
+      "q": 3,
+      "r": 11,
+      "party": "labour",
+      "winner": "Michael Hindley"
+    },
+    "leeds": {
+      "n": "Leeds",
+      "q": 5,
+      "r": 11,
+      "party": "labour",
+      "winner": "Michael McGowan"
+    },
+    "leicester": {
+      "n": "Leicester",
+      "q": 6,
+      "r": 6,
+      "party": "labour",
+      "winner": "Mel Read"
+    },
+    "lincolnshire": {
+      "n": "Lincolnshire",
+      "q": 7,
+      "r": 7,
+      "party": "conservative",
+      "winner": "Bill Newton Dunn"
+    },
+    "london-central": {
+      "n": "London Central",
+      "q": 7,
+      "r": 2,
+      "party": "labour",
+      "winner": "Stanley Newens"
+    },
+    "london-east": {
+      "n": "London East",
+      "q": 7,
+      "r": 4,
+      "party": "labour",
+      "winner": "Carole Tongue"
+    },
+    "london-north": {
+      "n": "London North",
+      "q": 7,
+      "r": 3,
+      "party": "labour",
+      "winner": "Pauline Green"
+    },
+    "london-north-east": {
+      "n": "London North East",
+      "q": 6,
+      "r": 4,
+      "party": "labour",
+      "winner": "Alfred Lomas"
+    },
+    "london-north-west": {
+      "n": "London North West",
+      "q": 5,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Lord Bethell"
+    },
+    "london-south-and-surrey-east": {
+      "n": "London South & Surrey East",
+      "q": 7,
+      "r": 1,
+      "party": "conservative",
+      "winner": "James Moorhouse"
+    },
+    "london-south-east": {
+      "n": "London South East",
+      "q": 8,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Peter Price"
+    },
+    "london-south-inner": {
+      "n": "London South Inner",
+      "q": 6,
+      "r": 1,
+      "party": "labour",
+      "winner": "Richard Balfe"
+    },
+    "london-south-west": {
+      "n": "London South West",
+      "q": 6,
+      "r": 2,
+      "party": "labour",
+      "winner": "Anita Pollack"
+    },
+    "london-west": {
+      "n": "London West",
+      "q": 5,
+      "r": 2,
+      "party": "labour",
+      "winner": "Michael Elliott"
+    },
+    "lothians": {
+      "n": "Lothians",
+      "q": 4,
+      "r": 16,
+      "party": "labour",
+      "winner": "David Martin"
+    },
+    "merseyside-east": {
+      "n": "Merseyside East",
+      "q": 4,
+      "r": 8,
+      "party": "labour",
+      "winner": "Terry Wynn"
+    },
+    "merseyside-west": {
+      "n": "Merseyside West",
+      "q": 6,
+      "r": 5,
+      "party": "labour",
+      "winner": "Kenneth Stewart"
+    },
+    "midlands-central": {
+      "n": "Midlands Central",
+      "q": 4,
+      "r": 4,
+      "party": "labour",
+      "winner": "Christine Oddy"
+    },
+    "midlands-west": {
+      "n": "Midlands West",
+      "q": 5,
+      "r": 6,
+      "party": "labour",
+      "winner": "John Bird"
+    },
+    "norfolk": {
+      "n": "Norfolk",
+      "q": 8,
+      "r": 7,
+      "party": "conservative",
+      "winner": "Paul Howell"
+    },
+    "northamptonshire": {
+      "n": "Northamptonshire",
+      "q": 5,
+      "r": 5,
+      "party": "conservative",
+      "winner": "Anthony Simpson"
+    },
+    "northern-ireland-1": {
+      "n": "Northern Ireland \u2014 John Hume",
+      "q": -1,
+      "r": 13,
+      "party": "sdlp",
+      "winner": "John Hume"
+    },
+    "northern-ireland-2": {
+      "n": "Northern Ireland \u2014 James Nicholson",
+      "q": -1,
+      "r": 12,
+      "party": "uup",
+      "winner": "James Nicholson"
+    },
+    "northern-ireland-3": {
+      "n": "Northern Ireland \u2014 Ian Paisley",
+      "q": 0,
+      "r": 12,
+      "party": "dup",
+      "winner": "Ian Paisley"
+    },
+    "northumbria": {
+      "n": "Northumbria",
+      "q": 4,
+      "r": 14,
+      "party": "labour",
+      "winner": "Gordon Adam"
+    },
+    "nottingham": {
+      "n": "Nottingham",
+      "q": 6,
+      "r": 7,
+      "party": "labour",
+      "winner": "Ken Coates"
+    },
+    "oxford-and-buckinghamshire": {
+      "n": "Oxford & Buckinghamshire",
+      "q": 4,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Hon. James Elles"
+    },
+    "scotland-mid-and-fife": {
+      "n": "Scotland Mid & Fife",
+      "q": 2,
+      "r": 17,
+      "party": "labour",
+      "winner": "Alex Falconer"
+    },
+    "scotland-north-east": {
+      "n": "Scotland North East",
+      "q": 3,
+      "r": 17,
+      "party": "labour",
+      "winner": "Henry McCubbin"
+    },
+    "scotland-south": {
+      "n": "Scotland South",
+      "q": 4,
+      "r": 15,
+      "party": "labour",
+      "winner": "Alex Smith"
+    },
+    "sheffield": {
+      "n": "Sheffield",
+      "q": 5,
+      "r": 9,
+      "party": "labour",
+      "winner": "Roger Barton"
+    },
+    "shropshire-and-stafford": {
+      "n": "Shropshire & Stafford",
+      "q": 5,
+      "r": 7,
+      "party": "conservative",
+      "winner": "Christopher Prout"
+    },
+    "somerset-and-dorset-west": {
+      "n": "Somerset & Dorset West",
+      "q": 1,
+      "r": 1,
+      "party": "conservative",
+      "winner": "Margaret Daly"
+    },
+    "staffordshire-east": {
+      "n": "Staffordshire East",
+      "q": 4,
+      "r": 7,
+      "party": "labour",
+      "winner": "George Stevenson"
+    },
+    "strathclyde-east": {
+      "n": "Strathclyde East",
+      "q": 3,
+      "r": 16,
+      "party": "labour",
+      "winner": "Kenneth Collins"
+    },
+    "strathclyde-west": {
+      "n": "Strathclyde West",
+      "q": 3,
+      "r": 15,
+      "party": "labour",
+      "winner": "Hugh McMahon"
+    },
+    "suffolk": {
+      "n": "Suffolk",
+      "q": 8,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Am\u00e9d\u00e9e Turner"
+    },
+    "surrey-west": {
+      "n": "Surrey West",
+      "q": 4,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Tom Spencer"
+    },
+    "sussex-east": {
+      "n": "Sussex East",
+      "q": 7,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Jack Stewart-Clark"
+    },
+    "sussex-west": {
+      "n": "Sussex West",
+      "q": 6,
+      "r": 0,
+      "party": "conservative",
+      "winner": "Madron Seligman"
+    },
+    "thames-valley": {
+      "n": "Thames Valley",
+      "q": 8,
+      "r": 2,
+      "party": "conservative",
+      "winner": "John Stevens"
+    },
+    "tyne-and-wear": {
+      "n": "Tyne and Wear",
+      "q": 4,
+      "r": 12,
+      "party": "labour",
+      "winner": "Alan Donnelly"
+    },
+    "wales-mid-and-west": {
+      "n": "Wales Mid & West",
+      "q": 2,
+      "r": 4,
+      "party": "labour",
+      "winner": "David Morris"
+    },
+    "wales-north": {
+      "n": "Wales North",
+      "q": 2,
+      "r": 5,
+      "party": "labour",
+      "winner": "Joe Wilson"
+    },
+    "wales-south": {
+      "n": "Wales South",
+      "q": 2,
+      "r": 3,
+      "party": "labour",
+      "winner": "Wayne David"
+    },
+    "wales-south-east": {
+      "n": "Wales South East",
+      "q": 1,
+      "r": 3,
+      "party": "labour",
+      "winner": "Llewellyn Smith"
+    },
+    "wight-and-hampshire-east": {
+      "n": "Wight & Hampshire East",
+      "q": 6,
+      "r": 3,
+      "party": "conservative",
+      "winner": "Richard Simmonds"
+    },
+    "wiltshire": {
+      "n": "Wiltshire",
+      "q": 3,
+      "r": 2,
+      "party": "conservative",
+      "winner": "Caroline Jackson"
+    },
+    "york": {
+      "n": "York",
+      "q": 6,
+      "r": 11,
+      "party": "conservative",
+      "winner": "Edward McMillan-Scott"
+    },
+    "yorkshire-south": {
+      "n": "Yorkshire South",
+      "q": 6,
+      "r": 9,
+      "party": "labour",
+      "winner": "Norman West"
+    },
+    "yorkshire-south-west": {
+      "n": "Yorkshire South West",
+      "q": 5,
+      "r": 10,
+      "party": "labour",
+      "winner": "Tom Megahy"
+    },
+    "yorkshire-west": {
+      "n": "Yorkshire West",
+      "q": 4,
+      "r": 11,
+      "party": "labour",
+      "winner": "Barry Seal"
+    }
+  }
+}

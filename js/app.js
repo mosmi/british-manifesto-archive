@@ -4583,7 +4583,7 @@ function renderPartyBrowseFiltersHtml(rows, filters) {
   const rangeActive = filters.foundedFrom || filters.foundedTo || filters.founded
     || (filters.tags && filters.tags.length);
   const hasActive = Object.entries(filters).some(([k, v]) => {
-    if (k === 'q' || k === 'tagQuery') return false;
+    if (k === 'tagQuery') return false;
     if (k === 'tags') return Array.isArray(v) && v.length;
     if (k === 'foundedFrom' || k === 'foundedTo' || k === 'founded') return false;
     return Boolean(v);
@@ -4629,23 +4629,33 @@ function renderPartyBrowseFiltersHtml(rows, filters) {
 }
 
 function renderPartyBrowseSearchHtml(filters) {
-  const q = (filters.q || '').replace(/"/g, '&quot;');
+  const qRaw = filters.q || '';
+  const q = qRaw.replace(/"/g, '&quot;');
+  const hasQ = Boolean(qRaw.trim());
+  const tryChips = [
+    ['Reform', 'Reform'],
+    ['Labour', 'Labour'],
+    ['SNP', 'SNP'],
+    ['Plaid', 'Plaid'],
+  ].map(([value, label]) => {
+    const active = qRaw.trim().toLowerCase() === value.toLowerCase();
+    return `<button type="button" class="parties-browse-try-chip${active ? ' is-active' : ''}" data-browse-q="${value}" aria-pressed="${active ? 'true' : 'false'}">${label}</button>`;
+  }).join('');
   return `
     <div class="parties-browse-search" id="parties-browse-search">
       <div class="parties-browse-search-meta">
         <span>Search the archive</span>
+        <button type="button" class="parties-browse-search-clear" data-browse-clear-q ${hasQ ? '' : 'hidden'}>Clear</button>
       </div>
       <form class="parties-browse-search-form" id="parties-browse-search-form" role="search">
         <label class="sr-only" for="parties-browse-q">Search parties</label>
         <input type="search" id="parties-browse-q" name="q" value="${q}" placeholder="Search by party" autocomplete="off" />
+        <button type="button" class="parties-browse-search-clear-icon" data-browse-clear-q aria-label="Clear search" ${hasQ ? '' : 'hidden'}>×</button>
         <button type="submit" class="parties-browse-search-submit">Search</button>
       </form>
       <div class="parties-browse-try" aria-label="Try searching">
         <span class="parties-browse-try-label">Try:</span>
-        <button type="button" class="parties-browse-try-chip" data-browse-q="Reform">Reform</button>
-        <button type="button" class="parties-browse-try-chip" data-browse-q="Labour">Labour</button>
-        <button type="button" class="parties-browse-try-chip" data-browse-q="SNP">SNP</button>
-        <button type="button" class="parties-browse-try-chip" data-browse-q="Plaid">Plaid</button>
+        ${tryChips}
       </div>
     </div>`;
 }
@@ -4708,11 +4718,24 @@ function setupPartyBrowse(app, rows) {
     return from !== foundedSteps[0] || to !== foundedSteps[foundedSteps.length - 1] || Boolean(filters.founded);
   };
 
+  const syncSearchChrome = () => {
+    const hasQ = Boolean((filters.q || '').trim());
+    hub.querySelectorAll('[data-browse-clear-q]').forEach(el => {
+      el.hidden = !hasQ;
+    });
+    const qNorm = (filters.q || '').trim().toLowerCase();
+    hub.querySelectorAll('[data-browse-q]').forEach(chip => {
+      const active = qNorm === (chip.getAttribute('data-browse-q') || '').toLowerCase();
+      chip.classList.toggle('is-active', active);
+      chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  };
+
   const syncClearButton = () => {
     const aside = hub.querySelector('#parties-browse-filters');
     if (!aside) return;
     const hasOther = Object.entries(filters).some(([k, v]) => {
-      if (k === 'q' || k === 'tagQuery' || k === 'foundedFrom' || k === 'foundedTo' || k === 'founded') return false;
+      if (k === 'tagQuery' || k === 'foundedFrom' || k === 'foundedTo' || k === 'founded') return false;
       if (k === 'tags') return Array.isArray(v) && v.length;
       return Boolean(v);
     });
@@ -4726,6 +4749,7 @@ function setupPartyBrowse(app, rows) {
     } else if (!show && clearEl) {
       clearEl.remove();
     }
+    syncSearchChrome();
   };
 
   const renderResults = () => {
@@ -4764,6 +4788,13 @@ function setupPartyBrowse(app, rows) {
   if (hub.dataset.browseBound !== '1') {
     hub.dataset.browseBound = '1';
     hub.addEventListener('click', e => {
+      const clearQBtn = e.target.closest('[data-browse-clear-q]');
+      if (clearQBtn) {
+        filters = { ...filters, q: '' };
+        render();
+        hub.querySelector('#parties-browse-q')?.focus();
+        return;
+      }
       const clearBtn = e.target.closest('[data-browse-clear]');
       if (clearBtn) {
         filters = {
@@ -4775,7 +4806,10 @@ function setupPartyBrowse(app, rows) {
       }
       const tryChip = e.target.closest('[data-browse-q]');
       if (tryChip) {
-        filters = { ...filters, q: tryChip.getAttribute('data-browse-q') || '' };
+        const nextQ = tryChip.getAttribute('data-browse-q') || '';
+        // Second click on the active example clears the search.
+        const clear = (filters.q || '').trim().toLowerCase() === nextQ.toLowerCase();
+        filters = { ...filters, q: clear ? '' : nextQ };
         render();
         return;
       }

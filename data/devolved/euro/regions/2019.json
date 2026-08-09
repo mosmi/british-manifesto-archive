@@ -1,0 +1,767 @@
+{
+  "year": 2019,
+  "source": {
+    "label": "House of Commons Library — European Parliament Elections 2019 (CBP 8600)",
+    "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8600/",
+    "file": "data/sources/commons-library/CBP-8600-2019.xlsx"
+  },
+  "regions": [
+    {
+      "id": "north-east",
+      "code": "NE",
+      "name": "North East",
+      "seats": 3,
+      "members": [
+        {
+          "name": "Brian Monteith",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "John Tennant",
+          "party": "reform",
+          "order": 2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Jude Kirton-Darling",
+          "party": "labour",
+          "order": 3
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 2,
+          "pct": 38.7,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 19.4
+        }
+      ],
+      "turnout": 32.5
+    },
+    {
+      "id": "north-west",
+      "code": "NW",
+      "name": "North West",
+      "seats": 8,
+      "members": [
+        {
+          "name": "Claire Fox",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Theresa Griffin",
+          "party": "labour",
+          "order": 2
+        },
+        {
+          "name": "Chris Davies",
+          "party": "libdem",
+          "order": 3
+        },
+        {
+          "name": "Henrik Nielsen",
+          "party": "reform",
+          "order": 4,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Gina Dowding",
+          "party": "green",
+          "order": 5
+        },
+        {
+          "name": "Julie Ward",
+          "party": "labour",
+          "order": 6
+        },
+        {
+          "name": "David Bull",
+          "party": "reform",
+          "order": 7,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Jane Brophy",
+          "party": "libdem",
+          "order": 8
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 31.2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 21.9
+        },
+        {
+          "party": "libdem",
+          "seats": 2,
+          "pct": 17.1
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 12.5
+        }
+      ],
+      "turnout": 32.9
+    },
+    {
+      "id": "yorkshire-humber",
+      "code": "Y&H",
+      "name": "Yorkshire and the Humber",
+      "seats": 6,
+      "members": [
+        {
+          "name": "John Longworth",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Lucy Harris",
+          "party": "reform",
+          "order": 2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Richard Corbett",
+          "party": "labour",
+          "order": 3
+        },
+        {
+          "name": "Shaffaq Mohammed",
+          "party": "libdem",
+          "order": 4
+        },
+        {
+          "name": "Magid Magid",
+          "party": "green",
+          "order": 5
+        },
+        {
+          "name": "Jake Pugh",
+          "party": "reform",
+          "order": 6,
+          "partyLabel": "Brexit Party"
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 36.5,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 16.0
+        },
+        {
+          "party": "libdem",
+          "seats": 1,
+          "pct": 15.5
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 13.0
+        }
+      ],
+      "turnout": 33.3
+    },
+    {
+      "id": "east-midlands",
+      "code": "EM",
+      "name": "East Midlands",
+      "seats": 5,
+      "members": [
+        {
+          "name": "Annunziata Rees-Mogg",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Jonathan Bullock",
+          "party": "reform",
+          "order": 2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "William Dunn",
+          "party": "libdem",
+          "order": 3
+        },
+        {
+          "name": "Rory Palmer",
+          "party": "labour",
+          "order": 4
+        },
+        {
+          "name": "Matthew Patten",
+          "party": "reform",
+          "order": 5,
+          "partyLabel": "Brexit Party"
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 38.2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "libdem",
+          "seats": 1,
+          "pct": 17.2
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 13.9
+        }
+      ],
+      "turnout": 34.7
+    },
+    {
+      "id": "west-midlands",
+      "code": "WM",
+      "name": "West Midlands",
+      "seats": 7,
+      "members": [
+        {
+          "name": "Rupert Lowe",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Martin Daubney",
+          "party": "reform",
+          "order": 2,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Neena Gill",
+          "party": "labour",
+          "order": 3
+        },
+        {
+          "name": "Phil Bennion",
+          "party": "libdem",
+          "order": 4
+        },
+        {
+          "name": "Andrew Kerr",
+          "party": "reform",
+          "order": 5,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Ellie Chowns",
+          "party": "green",
+          "order": 6
+        },
+        {
+          "name": "Anthea McIntyre",
+          "party": "conservative",
+          "order": 7
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 37.6,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 16.9
+        },
+        {
+          "party": "libdem",
+          "seats": 1,
+          "pct": 16.3
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 10.6
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 10.0
+        }
+      ],
+      "turnout": 32.9
+    },
+    {
+      "id": "east-of-england",
+      "code": "E",
+      "name": "East of England",
+      "seats": 7,
+      "members": [
+        {
+          "name": "Richard Tice",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Barbara Gibson",
+          "party": "libdem",
+          "order": 2
+        },
+        {
+          "name": "Michael Heaver",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Catherine Rowett",
+          "party": "green",
+          "order": 4
+        },
+        {
+          "name": "June Mummery",
+          "party": "reform",
+          "order": 5,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Lucy Nethsingha",
+          "party": "libdem",
+          "order": 6
+        },
+        {
+          "name": "Geoffrey Van Orden",
+          "party": "conservative",
+          "order": 7
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 37.8,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "libdem",
+          "seats": 2,
+          "pct": 22.6
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 12.7
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 10.2
+        }
+      ],
+      "turnout": 36.3
+    },
+    {
+      "id": "london",
+      "code": "L",
+      "name": "London",
+      "seats": 8,
+      "members": [
+        {
+          "name": "Irina Von Wiese",
+          "party": "libdem",
+          "order": 1
+        },
+        {
+          "name": "Claude Moraes",
+          "party": "labour",
+          "order": 2
+        },
+        {
+          "name": "Benyamin Habib",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Dinesh Dhamija",
+          "party": "libdem",
+          "order": 4
+        },
+        {
+          "name": "Scott Ainslie",
+          "party": "green",
+          "order": 5
+        },
+        {
+          "name": "Seb Dance",
+          "party": "labour",
+          "order": 6
+        },
+        {
+          "name": "Luisa Porritt",
+          "party": "libdem",
+          "order": 7
+        },
+        {
+          "name": "Lance Philip Forman",
+          "party": "reform",
+          "order": 8,
+          "partyLabel": "Brexit Party"
+        }
+      ],
+      "results": [
+        {
+          "party": "libdem",
+          "seats": 3,
+          "pct": 27.2
+        },
+        {
+          "party": "labour",
+          "seats": 2,
+          "pct": 23.9
+        },
+        {
+          "party": "reform",
+          "seats": 2,
+          "pct": 17.9,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 12.4
+        }
+      ],
+      "turnout": 40.9
+    },
+    {
+      "id": "south-east",
+      "code": "SE",
+      "name": "South East",
+      "seats": 10,
+      "members": [
+        {
+          "name": "Nigel Farage",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Catherine Bearder",
+          "party": "libdem",
+          "order": 2
+        },
+        {
+          "name": "Alexandra Phillips",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Alexandra Phillips",
+          "party": "green",
+          "order": 4
+        },
+        {
+          "name": "Antony Hook",
+          "party": "libdem",
+          "order": 5
+        },
+        {
+          "name": "Robert Rowland",
+          "party": "reform",
+          "order": 6,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Daniel Hannan",
+          "party": "conservative",
+          "order": 7
+        },
+        {
+          "name": "Belinda De Camborne Lucy",
+          "party": "reform",
+          "order": 8,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Judith Bunting",
+          "party": "libdem",
+          "order": 9
+        },
+        {
+          "name": "John Howarth",
+          "party": "labour",
+          "order": 10
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 4,
+          "pct": 36.1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "libdem",
+          "seats": 3,
+          "pct": 25.7
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 13.5
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 10.2
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 7.3
+        }
+      ],
+      "turnout": 39.2
+    },
+    {
+      "id": "south-west",
+      "code": "SW",
+      "name": "South West",
+      "seats": 6,
+      "members": [
+        {
+          "name": "Ann Widdecombe",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Caroline Voaden",
+          "party": "libdem",
+          "order": 2
+        },
+        {
+          "name": "James Glancy",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Molly Scott Cato",
+          "party": "green",
+          "order": 4
+        },
+        {
+          "name": "Christina Jordan",
+          "party": "reform",
+          "order": 5,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Martin Horwood",
+          "party": "libdem",
+          "order": 6
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 3,
+          "pct": 36.7,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "libdem",
+          "seats": 2,
+          "pct": 23.1
+        },
+        {
+          "party": "green",
+          "seats": 1,
+          "pct": 18.2
+        }
+      ],
+      "turnout": 40.2
+    },
+    {
+      "id": "wales",
+      "code": "W",
+      "name": "Wales",
+      "seats": 4,
+      "members": [
+        {
+          "name": "Nathan Gill",
+          "party": "reform",
+          "order": 1,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Jill Evans",
+          "party": "plaid",
+          "order": 2
+        },
+        {
+          "name": "James Wells",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Jacqueline Jones",
+          "party": "labour",
+          "order": 4
+        }
+      ],
+      "results": [
+        {
+          "party": "reform",
+          "seats": 2,
+          "pct": 32.5,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "plaid",
+          "seats": 1,
+          "pct": 19.6
+        },
+        {
+          "party": "labour",
+          "seats": 1,
+          "pct": 15.3
+        }
+      ],
+      "turnout": 37.1
+    },
+    {
+      "id": "scotland",
+      "code": "S",
+      "name": "Scotland",
+      "seats": 6,
+      "members": [
+        {
+          "name": "Alyn Smith",
+          "party": "snp",
+          "order": 1
+        },
+        {
+          "name": "Christian Allard",
+          "party": "snp",
+          "order": 2
+        },
+        {
+          "name": "Louis Stedman-Bryce",
+          "party": "reform",
+          "order": 3,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "name": "Sheila Ritchie",
+          "party": "libdem",
+          "order": 4
+        },
+        {
+          "name": "Aileen McLeod",
+          "party": "snp",
+          "order": 5
+        },
+        {
+          "name": "Nosheena Mobarik",
+          "party": "conservative",
+          "order": 6
+        }
+      ],
+      "results": [
+        {
+          "party": "snp",
+          "seats": 3,
+          "pct": 37.8
+        },
+        {
+          "party": "reform",
+          "seats": 1,
+          "pct": 14.9,
+          "partyLabel": "Brexit Party"
+        },
+        {
+          "party": "libdem",
+          "seats": 1,
+          "pct": 13.9
+        },
+        {
+          "party": "conservative",
+          "seats": 1,
+          "pct": 11.6
+        }
+      ],
+      "turnout": 39.7
+    },
+    {
+      "id": "northern-ireland",
+      "code": "NI",
+      "name": "Northern Ireland",
+      "seats": 3,
+      "members": [
+        {
+          "name": "Martina Anderson",
+          "party": "sinnfein",
+          "order": 1
+        },
+        {
+          "name": "Naomi Long",
+          "party": "alliance",
+          "order": 2
+        },
+        {
+          "name": "Diane Dodds",
+          "party": "dup",
+          "order": 3
+        }
+      ],
+      "results": [
+        {
+          "party": "sinnfein",
+          "seats": 1,
+          "pct": 22.2
+        },
+        {
+          "party": "dup",
+          "seats": 1,
+          "pct": 21.8
+        },
+        {
+          "party": "alliance",
+          "seats": 1,
+          "pct": 18.5
+        }
+      ],
+      "turnout": 45.0
+    }
+  ]
+}

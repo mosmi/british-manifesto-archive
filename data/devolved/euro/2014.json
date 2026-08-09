@@ -14,7 +14,7 @@
     "Liberal Democrats suffer a catastrophic defeat, losing 10 of their 11 seats",
     "Labour returns 20 seats to push Conservatives (19) into third place",
     "Green Party gains a seat to win 3 seats overall",
-    "STV in Northern Ireland returns 1 DUP, 1 Sinn Féin, and 1 UUP"
+    "STV in Northern Ireland returns 1 DUP, 1 Sinn F\u00e9in, and 1 UUP"
   ],
   "parliament": {
     "totalSeats": 73,
@@ -85,7 +85,11 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library \u2014 European Parliament Elections 2014 (RP14-32)",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/rp14-32/"
+    },
+    {
+      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
     }
   ],
@@ -176,7 +180,7 @@
       "party": "dup"
     },
     {
-      "title": "Sinn Féin European Manifesto 2014",
+      "title": "Sinn F\u00e9in European Manifesto 2014",
       "pdf": "/manifestos/euro/2014/sinnfein/manifesto.pdf",
       "cover": "/manifestos/euro/2014/sinnfein/manifesto.png",
       "party": "sinnfein"
