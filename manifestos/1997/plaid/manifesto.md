@@ -424,9 +424,12 @@ To ensure its success Plaid Cymru envisages:
 * A new National Development Authority for Wales, replacing the Welsh Development Agency and Development Board for Rural Wales and answerable to the Parliament. This new authority would look at all areas of Wales, especially those in the west, which have been neglected by present investment strategies.
 * An increase of up to 2p on the standard rate of income tax and working towards a reduction in employers' National Insurance contribution which is a tax on employment.
 * A Charter for Small Businesses, including:
-  * financial assistance to those starting up;
-  * simplification of tax procedures;
-  * flexible local use of business rate reductions to assist socially essential local businesses.
+* financial assistance to those starting up;
+
+* simplification of tax procedures;
+
+* flexible local use of business rate reductions to assist socially essential local businesses.
+
 * A coherent training strategy led and monitored by the Parliament.
 
 This programme has wide-ranging implications for all our social, economic and environmental proposals, which is why we are pleased to give it pride of place on our agenda for a Parliament of Wales.

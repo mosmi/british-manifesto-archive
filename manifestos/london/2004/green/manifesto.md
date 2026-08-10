@@ -470,18 +470,26 @@ London and European level - especially in helping to meet social needs and impro
 ### Housing and Homelessness
 The Green Party advocates:
 - A GLA Housing for London Authority to ensure the provision of high quality, truly affordable homes for Londoners, which will:
-    * set targets to end homelessness
-    * make full use of empty buildings
-    * oversee the renovation of substandard estates and housing
-    * ensure sufficient new home-building to tackle the housing crisis
-    * enable those who wish to to move across London to take up available social housing
+* set targets to end homelessness
+
+* make full use of empty buildings
+
+* oversee the renovation of substandard estates and housing
+
+* ensure sufficient new home-building to tackle the housing crisis
+
+* enable those who wish to to move across London to take up available social housing
+
 - Housing choice for older people
 - Borough-level targets to match supply with need across the full range of tenures and household sizes
 - A London-wide Affordable Warm Homes initiative - to end fuel poverty by providing insulation and energy conservation for low paid, unwaged and older people, thus reducing fuel bills
 - New requirements for all new housing developments to say they must:
-    * include at least 60 per cent truly affordable housing, even in small-scale sites
-    * be built sustainably and have solar panels to make them carbon neutral
-    * have secure parking for bicycles
+* include at least 60 per cent truly affordable housing, even in small-scale sites
+
+* be built sustainably and have solar panels to make them carbon neutral
+
+* have secure parking for bicycles
+
 - Ambitious targets for car-free housing, giving more space to house people, less for car-parks
 - Support for individuals and co-operatives involved in self-build schemes and environmentally sustainable developments
 - Retention and expansion of council housing, and an end to privatisation and "right to buy"

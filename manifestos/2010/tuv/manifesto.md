@@ -30,33 +30,55 @@ _Traditional Unionist Voice — Putting It Right!_
 
 * **Preface by Party President**
 * **Probity in Public Office**
-  * One man, one job
-  * Transparency on expenses
-  * Have your say
+* One man, one job
+
+* Transparency on expenses
+
+* Have your say
+
 * **Prudence in Public Finances**
-  * Fixing our broken economy
-  * Fighting for farming
-  * Defending our fishermen
+* Fixing our broken economy
+
+* Fighting for farming
+
+* Defending our fishermen
+
 * **Principle before Power**
-  * The ignominy and failure of terrorist inclusive government
-  * DUP surrender on Policing & Justice
-  * No terrorists in government
-  * The alternatives
-  * Opposing Sinn Fein 24/7
-  * Defeating IRA murder
+* The ignominy and failure of terrorist inclusive government
+
+* DUP surrender on Policing & Justice
+
+* No terrorists in government
+
+* The alternatives
+
+* Opposing Sinn Fein 24/7
+
+* Defeating IRA murder
+
 * **Politics of True Equality**
-  * Resisting an anti-unionist rights agenda
-  * Innocent victims – righting the wrongs
-  * Eames/Bradley rejected
+* Resisting an anti-unionist rights agenda
+
+* Innocent victims – righting the wrongs
+
+* Eames/Bradley rejected
+
 * **Pertinent Issues**
-  * Children before dogma
-  * Making Health better
+* Children before dogma
+
+* Making Health better
+
 * **Patriotic in Parliament**
-  * Defending British sovereignty
-  * Supporting our troops
-  * Tackling immigration
-  * Sensible on climate change
-  * Using a hung Parliament
+* Defending British sovereignty
+
+* Supporting our troops
+
+* Tackling immigration
+
+* Sensible on climate change
+
+* Using a hung Parliament
+
 
 ## Foreword
 

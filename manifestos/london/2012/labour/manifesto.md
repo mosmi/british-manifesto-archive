@@ -235,7 +235,8 @@ I want to humanize the system and make the experience of passengers much more ce
 
 I will make Transport for London a body that’s active in pursuit of courtesy on the transport system:
 *   A campaign to remind transport users of the basic ‘rules of travel’
-    *   give up your seat for people who need it more than you; let passengers off before you get on; stand on the right and walk on the left; no music played out loud; move down the carriage or bus to let people on; all those small things that make a difference
+* give up your seat for people who need it more than you; let passengers off before you get on; stand on the right and walk on the left; no music played out loud; move down the carriage or bus to let people on; all those small things that make a difference
+
 *   Too many people complain of people putting dirty shoes up on the seat. We will trial ‘keep your feet off’ designs on seats to discourage this on buses and train carriages where there are facing seats, and as seats are repaired so as to avoid prohibitive costs.
 *   We will run a campaign to encourage Londoners to help commuters struggling with buggies or wheelchairs
 *   Young people will be encouraged to give up their seats for their elders
@@ -777,8 +778,10 @@ I will:
     As development picks up I will expect private developers to contribute to the provision of affordable as well as market homes. I will work closely with them to remove the barriers to development that hinder them. I will work with pension funds to encourage them to invest in affordable homes- which produce excellent long-term returns benefiting pensioners better than an over-reliance on volatile stocks and shares.
 *   **Support other initiatives that will help produce more affordable housing**
     There are ideas around that have potential to help us produce more and better homes and I will promote such schemes. In particular, I will encourage
-    *   ∙ Community Land Trusts and other forms of co-operative and mutual housing, and
-    *   ∙ Fast assembly eco-housing: environmentally high-performing modular homes that can be assembled in just six weeks.
+* ∙ Community Land Trusts and other forms of co-operative and mutual housing, and
+
+* ∙ Fast assembly eco-housing: environmentally high-performing modular homes that can be assembled in just six weeks.
+
 *   **Re-establish affordable home targets**
     No borough should be able to get away with failing to build affordable homes for its residents. I will again expect 50% of homes built in London to be affordable and will move as rapidly as possible towards ensuring that at least one third of new homes are for social rent. I will also set an ambitious target for family homes.
 *   **Launch a London-wide empty homes strategy**

@@ -742,9 +742,12 @@ To relieve overcrowding, Transport for London must urgently speed up the work to
 *   complete the upgrade of all the Tube lines
 *   support the Overground extension to Barking Riverside on the Gospel Oak to Barking line, now in planning stage
 *   develop plans for additional tram, tube and rail services in areas currently underserved by public transport including:
-    *   extending the Bakerloo line south to Southwark and then into Lewisham and Bromley
-    *   extending the tram to Merton and Sutton
-    *   seek to ensure the impact on London of the new high speed rail (HS2) is minimised, for example in Hillingdon, Ealing and in Camden, particularly around Euston
+* extending the Bakerloo line south to Southwark and then into Lewisham and Bromley
+
+* extending the tram to Merton and Sutton
+
+* seek to ensure the impact on London of the new high speed rail (HS2) is minimised, for example in Hillingdon, Ealing and in Camden, particularly around Euston
+
 *   bring forward plans for Crossrail 2 to help with the increased passenger numbers from high speed lines coming into London, whilst supporting further consideration with TfL experts of some of the plans around stations such as Wimbledon, Balham and the Kings Road. We will ensure there is no loss of vital fast trains on other routes egSurbiton to Waterloo, and review the route so the line can serve Streatham.
 *   seek to take over supervision of metro services – in effect sacking current operators South West Trains, Southeastern Trains and Southern who continue to perform badly
 

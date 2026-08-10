@@ -249,7 +249,8 @@ We can make it easy to reduce the waste we produce and recycle or compost it, bu
 
 *   Lobby the Government to give the Mayor the power to roll out a consistent set of recycling services across London boroughs to end the confusing and unnecessary differences. In the meantime, push boroughs to ensure every home has a simple service for separated recyclables and food waste collected on a weekly basis
 *   Become self-sufficient in waste processing by 2030, building a new generation of small and smart waste facilities while blocking any that fail to meet our standards:
-    *   no new landfill or mass-burn incineration;
+* no new landfill or mass-burn incineration;
+
 
 # GREEN PARTY MAYORAL & ASSEMBLY MANIFESTO 2012
 

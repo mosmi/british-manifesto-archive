@@ -58,7 +58,8 @@ We will seek to extend the power of the GLA to be able to face the huge challeng
 *   Protect the free travel card for Londoners who are over 60 years old
 *   Save up to £1billion by not building a Crossrail2 station in Chelsea. Instead, spend the money on repairing London’s roads. It is estimated that it would cost £700million to bring London’s roads up to an ‘acceptable’ condition
 *   Protect London’s black-cab taxi trade. The BNP supports London’s black-cab trade and will campaign for the enforcement of full criminal record checks for all drivers of black cabs and minicabs
-    *   Pressure Transport for London to ensure that foreign nationals for whom background checks cannot be made are automatically denied
+* Pressure Transport for London to ensure that foreign nationals for whom background checks cannot be made are automatically denied
+
 
 *Private Hire Licences (minicabs) or London Taxi Licences (black cabs)*
 *   Campaign for restrictions on Uber Apps such as the introduction of a five minute waiting time to enforce the law

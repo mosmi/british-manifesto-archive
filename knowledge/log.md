@@ -11,6 +11,13 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-08-10 — Natural Law spectrum + manifesto list formatting (Cursor Grok)
+
+Assets `?v=2026081002`.
+
+- Natural Law Party spectrum → *Syncretic / New Age (Natural Law and Transcendental Meditation)*.
+- Batch manifesto.md list-formatting / trailing-newline cleanup across the archive.
+
 ## 2026-08-09 — Natural Law Party (1997 GE + 1999 EP) (Cursor Grok)
 
 Assets `?v=2026080914`.

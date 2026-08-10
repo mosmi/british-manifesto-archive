@@ -3,7 +3,7 @@ election_year: 1997
 party_id: naturallaw
 party_name: Natural Law Party
 party_leader: Geoffrey Clements
-political_spectrum: centrist
+political_spectrum: syncretic
 victory: false
 government_outcome: opposition
 source: https://web.archive.org/web/20000917095128/http://www.natural-law-party.org.uk/UKmanifesto/

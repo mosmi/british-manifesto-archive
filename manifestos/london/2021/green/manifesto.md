@@ -1062,10 +1062,14 @@ Only a Green Mayor and more Assembly Members can be trusted to keep London movin
 ## OUR TRANSPORT AND CLIMATE GOALS
 
 *   A Green Mayor will set a goal for London’s overall traffic miles to reduce by 40 per cent by 2026 and 60 per cent by 2030, and we will achieve this with a comprehensive set of policies that will:
-    *   improve city planning and aim for access to services within 15 minutes locally on foot,
-    *   make streets safe and accessible for children, older and disabled people to walk, wheelchair or cycle,
-    *   improve public transport and reduce fares, and
-    *   charge for driving in the city at a fair rate.
+* improve city planning and aim for access to services within 15 minutes locally on foot,
+
+* make streets safe and accessible for children, older and disabled people to walk, wheelchair or cycle,
+
+* improve public transport and reduce fares, and
+
+* charge for driving in the city at a fair rate.
+
 *   We will also bring forward the current Mayor’s target for at least 80 per cent of journeys to be made by walking, cycling or public transport by eleven years, from 2041 to 2030.
 *   Along with our climate policies and support for zero-emission vehicles, our goal to reduce traffic miles will contribute to our overall city-wide climate emergency target to achieve net zero carbon emissions by 2030.
 *   We believe that London can achieve net zero by 2030 for the transport sector using powers the GLA and Mayor currently hold, and a Green Mayor will set a target to achieve this.
@@ -1691,9 +1695,12 @@ the long term.
     of Londoners. A Green Mayor will
     implement policies which protect
     everyone’s right to:
-    *   green, public space
-    *   healthy, affordable food
-    *   safety
+* green, public space
+
+* healthy, affordable food
+
+* safety
+
 
 * clean air
 * be included.
@@ -1737,14 +1744,21 @@ In October 2019, the Green Party of England and Wales adopted the most forward-t
 
 *   A Green Mayor will implement and support harm-reduction schemes in the capital, taking lessons from pioneering work in other parts of the country and around the world which reduce drug-related harm and save taxpayers’ money.
 *   We will use advice from experts, examples of success in others areas and where there is greatest need to work with the health sector and charities to provide:
-    *   heroin prescribing
-    *   safe consumption rooms
-    *   Naloxone Rescue Treatment
-    *   free drug safety testing
-    *   education.
+* heroin prescribing
+
+* safe consumption rooms
+
+* Naloxone Rescue Treatment
+
+* free drug safety testing
+
+* education.
+
 *   We will work with the police to:
-    *   Deprioritise the policing of cannabis including stop and search, and allow for more police time to be spent preventing violent crimes.
-    *   Implement diversion from the criminal justice system to support services.
+* Deprioritise the policing of cannabis including stop and search, and allow for more police time to be spent preventing violent crimes.
+
+* Implement diversion from the criminal justice system to support services.
+
 *   Taking heroin supply out of criminal hands and back under the control of doctors will radically reduce overdose deaths and will cut the bottom out of the illegal, violent drug trade in our city.
 *   A Green Mayor will lobby the Government to reduce drug harms through legalisation and implement a safer, regulated supply. The Greens’ new national approach would mean that drug supply will be regulated by the Government, instead of organised criminals and alcohol and tobacco corporations, who all have a financial interest in people using drugs harmfully.
 
@@ -2817,13 +2831,20 @@ This manifesto includes new ways to amplify the voices of Londoners, including a
 campaign nationally for the right to vote at the age of 16 in all other elections.
 
 *   A Green Mayor will increase the powers and capacity of London’s Youth Assembly to make sure of a real voice and real influence for young Londoners within City Hall. The changes we will make include:
-    *   Nominations for the Youth Assembly will continue to happen through local borough democratic processes, but with six additional members, to allow for new nominations from students at London colleges and universities, raising the age limit for these members to 21
-    *   There will be a number of Youth Assembly Mayor’s Question Time sessions every year with the Mayor.
-    *   The Youth Assembly will also be able to submit written Mayor’s Questions using the same system as Assembly Members, with the Mayor required to answer. These questions and answers will be published on the GLA website.
-    *   The Youth Assembly will be resourced to hold proper scrutiny meetings similar to an Assembly Committee, in order to investigate issues, make recommendations, and write reports. The London Assembly would support them through their powers of summons, making sure the Mayor’s team, and representatives of other bodies over which the Assembly has summons powers, attend to be held to account by young people.
-    *   Resources and secretariat staff will be made available to better promote the Youth Assembly particularly to students currently underrepresented, and to forge better connections between members and schools, universities and youth organisations across London, enabling young Londoners across the city to feed into its work.
-    *   The Youth Assembly will also be able to propose a budget amendment, sponsored by the Assembly and put to the vote during the annual budget meetings.
-    *   Youth Assembly members would not be full time as almost all of them would be in education or training, but they will be remunerated for the time required to do their work, at the London Living Wage. No-one should be deterred from taking part in the Assembly because they need to do part-time work outside of school and college.
+* Nominations for the Youth Assembly will continue to happen through local borough democratic processes, but with six additional members, to allow for new nominations from students at London colleges and universities, raising the age limit for these members to 21
+
+* There will be a number of Youth Assembly Mayor’s Question Time sessions every year with the Mayor.
+
+* The Youth Assembly will also be able to submit written Mayor’s Questions using the same system as Assembly Members, with the Mayor required to answer. These questions and answers will be published on the GLA website.
+
+* The Youth Assembly will be resourced to hold proper scrutiny meetings similar to an Assembly Committee, in order to investigate issues, make recommendations, and write reports. The London Assembly would support them through their powers of summons, making sure the Mayor’s team, and representatives of other bodies over which the Assembly has summons powers, attend to be held to account by young people.
+
+* Resources and secretariat staff will be made available to better promote the Youth Assembly particularly to students currently underrepresented, and to forge better connections between members and schools, universities and youth organisations across London, enabling young Londoners across the city to feed into its work.
+
+* The Youth Assembly will also be able to propose a budget amendment, sponsored by the Assembly and put to the vote during the annual budget meetings.
+
+* Youth Assembly members would not be full time as almost all of them would be in education or training, but they will be remunerated for the time required to do their work, at the London Living Wage. No-one should be deterred from taking part in the Assembly because they need to do part-time work outside of school and college.
+
 
 ## SUPPORT OUR EUROPEAN UNION CITIZENS
 *   A Green Mayor will never abandon our one million European Union (EU) citizens. We will campaign for European Union (EU) citizens to retain the vote in local and London elections and for settled residents to be given a new right to vote in future General Elections and referendums.
@@ -2931,33 +2952,46 @@ A Green Mayor will take action across every policy area to address economic and 
 *   A Green Mayor will implement anonymous (name, age, gender removed) recruitment through all services directly within their power and lobby for other employers to do the same.
 *   Our Rent Commission for London will rebalance the definition of a London Living Rent better to take account of the wage gaps faced by households led by women and African, Caribbean, Asian, Latino and other minority ethnic Londoners.
 *   A Green Mayor will investigate and take action to reduce the ‘poverty premiums’ faced by those on low incomes. Examples include the cost of energy when paid by a pre-pay meter. Working with poverty campaigners and consumer organisations, we will expose further examples and campaign for changes in regulation and for good practice from businesses serving Londoners.
-    *   **O SEE MORE ABOUT OUR RENT COMMISSION FOR LONDON IN OUR CHAPTER FRESH THINKING FOR HOUSING**
+* **O SEE MORE ABOUT OUR RENT COMMISSION FOR LONDON IN OUR CHAPTER FRESH THINKING FOR HOUSING**
+
 
 ## RESTORING WELFARE AND SECURITY
 
 *   While a Green Mayor will not have control of Government welfare policies, we will take action to make a difference through our policies to pilot radical new ways to support people with a Universal Basic Income and a new Creative Autonomy Allowance. In March 2021, Green Assembly Members won the support of the Assembly for trials of a basic income in London.
 *   We will invest at a London level in welfare advice, strengthening specialist services, including immigration advice and support for disabled people, and playing a role in coordinating provision across London.
-    *   **O SEE MORE IN THE SECTION OF THIS CHAPTER CREATING NEW OPPORTUNITIES**
+* **O SEE MORE IN THE SECTION OF THIS CHAPTER CREATING NEW OPPORTUNITIES**
+
 
 ## A NEW ECONOMY
 ### NEW WAYS TO MEASURE LONDON’S PROGRESS
 
 *   The goals we set for London policies matter. The way we measure progress in our city must change. A Green Mayor will focus on new measures and targets rather than endless economic growth to:
-    *   build a more resilient local economy
-    *   reduce inequality
-    *   cut carbon to achieve our 2030 climate targets
-    *   reduce resource use across every part of our economy
-    *   promote biodiversity and bioabundance
-    *   ensure basic needs are met
-    *   respect all human rights
-    *   achieve genuine financial health and wellbeing for all.
+* build a more resilient local economy
+
+* reduce inequality
+
+* cut carbon to achieve our 2030 climate targets
+
+* reduce resource use across every part of our economy
+
+* promote biodiversity and bioabundance
+
+* ensure basic needs are met
+
+* respect all human rights
+
+* achieve genuine financial health and wellbeing for all.
+
 
 ## THE CIRCULAR ECONOMY
 
 *   We will work towards a circular economy for the city. A Green Mayor will be looking beyond an economy based on consumption and waste, and to redefine growth with a focus on benefits for the economy and the population as a whole. Our core goals are to:
-    *   design waste out of the system based on renewable sources of energy as much as possible,
-    *   make the fullest and continuing use of existing resources, and
-    *   concentrate on social capital as well as the functional purpose of items.
+* design waste out of the system based on renewable sources of energy as much as possible,
+
+* make the fullest and continuing use of existing resources, and
+
+* concentrate on social capital as well as the functional purpose of items.
+
 
 ## A STRONGER, MORE RESILIENT ECONOMY
 
@@ -2966,7 +3000,8 @@ A Green Mayor will take action across every policy area to address economic and 
 *   We will increase and make permanent the small business resilience support fund created in the wake of the Grenfell Tower disaster to support small businesses. This will provide temporary bridging support and advice to businesses when major incidents affect footfall and business viability.
 *   We will support the start-up and scale-up of healthy, low-carbon, circular food economy businesses, with a programme for existing and new markets and traders to sell more fresh produce and help regenerate high streets.
 *   Creating and developing new funding streams for new green businesses, and training to support the huge need for new skills in energy saving and the circular economy, will be a mission and a priority for a Green Mayor, to make London a hub of a strong, sustainable green economy.
-    *   **O SEE MORE ABOUT OUR GREEN NEW DEAL AND HOW WE WILL SUPPORT FOOD BUSINESSES IN OUR CHAPTER CREATE THE GREENEST CITY IN THE WORLD**
+* **O SEE MORE ABOUT OUR GREEN NEW DEAL AND HOW WE WILL SUPPORT FOOD BUSINESSES IN OUR CHAPTER CREATE THE GREENEST CITY IN THE WORLD**
+
 
 ## DECENT WORK THAT PAYS
 
@@ -3021,10 +3056,14 @@ The pandemic has resulted in a great many people now having additional caring re
 *   A Green Mayor will pilot a Universal Basic Income in London with a major new three-year pilot, working with at least 1,000 Londoners who would be guaranteed a basic income without conditions, along with support and careers advice. The pilot would aim to gather evidence and support for a basic income as a national policy, and the potential wider impacts on health, wellbeing and the use of other services would be tracked and evaluated.
 *   We will put pressure on the Government to enable the owners of micro-businesses to achieve equal access to high quality and affordable family care through better support, so that small business owners do not have to choose between their family and their business.
 *   We will also set up a family-friendly work team in City Hall to work on our priorities for better working rights for people who are currently excluded. This team will:
-    *   Develop initiatives to encourage the development of more parent-led childcare
-    *   Work with businesses to create more flexible employment opportunities
-    *   Tackle pregnancy and maternity discrimination in the workplace
-    *   Create more opportunities for older and disabled Londoners to enter work. To achieve this, we will fund and support improved (and flexible) training and career advice for these citizens.
+* Develop initiatives to encourage the development of more parent-led childcare
+
+* Work with businesses to create more flexible employment opportunities
+
+* Tackle pregnancy and maternity discrimination in the workplace
+
+* Create more opportunities for older and disabled Londoners to enter work. To achieve this, we will fund and support improved (and flexible) training and career advice for these citizens.
+
 *   In parallel with a Universal Basic Income pilot, a Green Mayor will introduce a scheme to give a cohort of young people in London a new Creative Autonomy Allowance. This would provide additional support for young people starting small businesses and seeking creative and arts careers. The results of each trial would be evaluated to show the relative benefits of each approach to different cohorts of Londoners.
 *   We will also fund a number of smaller micro-pilots of universal income support, focused on clusters of people and businesses of different kinds and their customers, for example disabled people, a local retail or manufacturing business cluster, or Black-owned business, to examine the impacts on the wellbeing and security of diverse Londoners.
 *   Greens will campaign for Government support to expand both our Universal Basic Income and Creative Autonomy

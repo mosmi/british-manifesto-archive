@@ -107,9 +107,12 @@ Many existing council housing estates have problems of not only under-investment
 Where tenants prefer their housing to stay under local authority control, they can still be given support and guidance to encourage the creation and effective management of tenant participation committees.
 
 *   **Tenant Management** – the management of properties on behalf of their landlords – normally local councils by the tenants themselves, which may be:
-    *   Tenant Management Co-operatives
-    *   Tenant Management Organisations (TMOs)
-    *   Estate Management Boards – normally formed via the activities of Tenant Associations.
+* Tenant Management Co-operatives
+
+* Tenant Management Organisations (TMOs)
+
+* Estate Management Boards – normally formed via the activities of Tenant Associations.
+
 *   **Community Mutual and Gateway Associations** – the co-op solution for council tenants where landlords undertake large-scale voluntary transfer of housing stock to a registered social landlord, focussing on developing tenant democracy and offering communities a range of empowerment opportunities. ALMOs (‘Arms length management organisations’ – set up by councils as a largely independent housing management structure) can also be set up along this model, without transferring ownership.
 
 ### CASE STUDY: The Community Gateway and Mutual models:

@@ -3,7 +3,7 @@ election_year: 1999
 party_id: naturallaw
 party_name: Natural Law Party
 party_leader: Geoffrey Clements
-political_spectrum: centrist
+political_spectrum: syncretic
 victory: false
 government_outcome: opposition
 election_type: european-parliament

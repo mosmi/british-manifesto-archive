@@ -435,14 +435,20 @@ Other areas have benefited from London’s productivity. It is time there was a 
 I will:
 
 *   Create 200,000 direct jobs through City Hall programmes, including:
-    *   32,000 jobs through the Tube upgrade and Crossrail;
-    *   10,000 jobs through a genuine Olympic and Paralympic legacy;
-    *   and 104,000 jobs through my housing programmes.
+* 32,000 jobs through the Tube upgrade and Crossrail;
+
+* 10,000 jobs through a genuine Olympic and Paralympic legacy;
+
+* and 104,000 jobs through my housing programmes.
+
 *   Lead a part-time jobs campaign to help parents return to work.
 *   Action on apprenticeships. Continue working with my Ambassador for Apprentices to:
-    *   Extend to apprentices over the age of 18 the same Transport for London travel discounts as students in full time education, with 30 per cent discount on season tickets.
-    *   Drive the creation of an average of 1,000 new apprenticeships every week.
-    *   Create 4,000 apprenticeships for small and medium-sized London businesses with £6 million secured from the Government.
+* Extend to apprentices over the age of 18 the same Transport for London travel discounts as students in full time education, with 30 per cent discount on season tickets.
+
+* Drive the creation of an average of 1,000 new apprenticeships every week.
+
+* Create 4,000 apprenticeships for small and medium-sized London businesses with £6 million secured from the Government.
+
 *   Work constructively with the private sector to increase to 250 the number of companies offering the London Living Wage.
 
 ## Create 200,000 jobs through City Hall programmes
@@ -647,8 +653,10 @@ I will also audit the GLA Group estate for surplus buildings which could be used
 I will:
 
 *   Guarantee the £221 million regeneration fund to support small businesses, town centres and high streets.
-    *   Launch a new £35 million revolving fund, through the London Growth Fund, to provide low-cost loans to small and medium-sized businesses, using money I have secured from the Government.
-    *   Increase the number of Business Improvement Districts to 50 across London, focusing on town centres such as Bromley, Richmond and Romford.
+* Launch a new £35 million revolving fund, through the London Growth Fund, to provide low-cost loans to small and medium-sized businesses, using money I have secured from the Government.
+
+* Increase the number of Business Improvement Districts to 50 across London, focusing on town centres such as Bromley, Richmond and Romford.
+
 *   Increase by a third the time motorists can park in “Stop and Shop” bays on TfL roads to support local businesses.
 *   Call on each borough to review parking in non-residential, strategic shopping areas to reduce any negative impact on businesses.
 *   Drive a renewed focus on business crime by requiring an Assistant Commissioner at the Metropolitan Police Service to have responsibility for tackling it.
@@ -1322,10 +1330,14 @@ Boris Johnson
 ## Investing in the road network
 
 - Launch a Congestion Busting Plan to:
-    * establish a £50 million Roads Blackspot Fund to relieve congestion at key locations in London;
-    * establish the London Roads Task Force to propose long-term proposals to tackle London’s most notorious roads, including locations such as Hammersmith Flyover, Purley Way, Wandsworth Town Centre, Euston Road, Archway, and Kings Cross;
-    * introduce Lane Rental to tackle road works and expand the ‘Report It’ system to potholes;
-    * expand the role of the Metropolitan Police’s traffic police to keep traffic moving, including reopening roads faster after accidents; and continue to review the phasing of traffic lights to improve conditions for all road users.
+* establish a £50 million Roads Blackspot Fund to relieve congestion at key locations in London;
+
+* establish the London Roads Task Force to propose long-term proposals to tackle London’s most notorious roads, including locations such as Hammersmith Flyover, Purley Way, Wandsworth Town Centre, Euston Road, Archway, and Kings Cross;
+
+* introduce Lane Rental to tackle road works and expand the ‘Report It’ system to potholes;
+
+* expand the role of the Metropolitan Police’s traffic police to keep traffic moving, including reopening roads faster after accidents; and continue to review the phasing of traffic lights to improve conditions for all road users.
+
 - Direct money from Lane Rental to reduce the congestion caused by road works.
 - Promote more shared space improvements to our public realm.
 - Call on each borough to review parking in non-residential, strategic shopping areas to reduce any negative impact on businesses.
@@ -1655,9 +1667,12 @@ I will also operate a ‘two strikes and out’ policy, where individuals are on
 ### I will:
 *   Lobby the government to devolve rail franchising powers to the Mayor so that TfL can specify the standards to be achieved by private Train Operating Companies.
     This will allow me to:
-    *   hold down fares;
-    *   aim for a minimum frequency of service of four trains an hour on local services;
-    *   improve the conditions of rundown suburban rail stations and improve safety, with more station staff and CCTV.
+* hold down fares;
+
+* aim for a minimum frequency of service of four trains an hour on local services;
+
+* improve the conditions of rundown suburban rail stations and improve safety, with more station staff and CCTV.
+
 *   Work to extend the DLR from Lewisham to Bromley.
 *   Aim to develop a Tramlink extension to Crystal Palace.
 *   Work with Network Rail on proposals for longer trains and increased capacity on the suburban network at stations on routes in and around London.
@@ -1794,10 +1809,14 @@ I will also continue to support door-to-door services like Dial A Ride, which ha
 
 I will:
 - Launch a Congestion Busting Plan to:
-    * establish a £50 million Roads Blackspot Fund to relieve congestion at key locations in London;
-    * establish the London Roads Task Force to propose long-term proposals to tackle London’s most notorious roads, including locations such as Hammersmith Flyover, Purley Way, Wandsworth Town Centre, Euston Road, Archway, and Kings Cross;
-    * introduce Lane Rental to tackle road works and expand ‘Report It’ system to potholes;
-    * expand the role of the Metropolitan Police’s traffic police to keep traffic moving, including reopening roads faster after accidents; and continue to review the phasing of traffic lights to improve conditions for all road users.
+* establish a £50 million Roads Blackspot Fund to relieve congestion at key locations in London;
+
+* establish the London Roads Task Force to propose long-term proposals to tackle London’s most notorious roads, including locations such as Hammersmith Flyover, Purley Way, Wandsworth Town Centre, Euston Road, Archway, and Kings Cross;
+
+* introduce Lane Rental to tackle road works and expand ‘Report It’ system to potholes;
+
+* expand the role of the Metropolitan Police’s traffic police to keep traffic moving, including reopening roads faster after accidents; and continue to review the phasing of traffic lights to improve conditions for all road users.
+
 - Promote more shared space improvements to our public realm.
 - Call on each borough to review parking in non-residential, strategic shopping areas, to reduce any negative impact on businesses.
 - Crack down on dangerous rickshaws.
@@ -2633,20 +2652,32 @@ Conservatives
 * Introduction 7
 * My Priorities for a Greater London 9
 * Cutting costs 11
-    * Responsible finances 11
-    * War on waste 11
-    * Shared services 12
-    * Publish a list of all GLA Group assets and create a single property unit 12
-    * Abolishing Ken Livingstone’s London Development Agency 13
+* Responsible finances 11
+
+* War on waste 11
+
+* Shared services 12
+
+* Publish a list of all GLA Group assets and create a single property unit 12
+
+* Abolishing Ken Livingstone’s London Development Agency 13
+
 * Cutting council tax 15
-    * A four year commitment 15
-    * Itemising the precept 15
-    * Special Constables 15
+* A four year commitment 15
+
+* Itemising the precept 15
+
+* Special Constables 15
+
 * An accountable administration 17
-    * Progress on my pledges 17
-    * A Cabbies’ Cabinet 19
-    * Safer Neighbourhood Boards 19
-    * Community Payback 19
+* Progress on my pledges 17
+
+* A Cabbies’ Cabinet 19
+
+* Safer Neighbourhood Boards 19
+
+* Community Payback 19
+
 
 6 Cutting waste and council tax
 
@@ -2734,9 +2765,12 @@ Boris Johnson
 I will:
 
 *   Overhaul the GLA Group finances to achieve even better value for money for Londoners.
-    *   Cut waste to save a further £1.5 billion across the GLA Group next year, bringing total savings to £3.5 billion since 2008.
-    *   Establish a collaborative procurement process for the GLA Group which together with other shared service initiatives will result in cumulative savings worth £600 million by the end of the next Mayoral term.
-    *   Publish online a list of all assets held by the GLA Group for the public, investors and developers to see and create a single property unit.
+* Cut waste to save a further £1.5 billion across the GLA Group next year, bringing total savings to £3.5 billion since 2008.
+
+* Establish a collaborative procurement process for the GLA Group which together with other shared service initiatives will result in cumulative savings worth £600 million by the end of the next Mayoral term.
+
+* Publish online a list of all assets held by the GLA Group for the public, investors and developers to see and create a single property unit.
+
 *   Publish the expenses of all senior staff as well as Mayoral advisors.
 *   Publish details of all spending over £250 across the GLA Group.
 
@@ -3537,25 +3571,36 @@ Boris Johnson
 
 ## Delivering the Games on budget
 - Ensure value for money for Londoners from the events and legacy this year:
-  * Deliver the 2012 Games on time and on budget.
-  * Ensure that the Olympic legacy does not cost London taxpayers a penny more in council tax.
+* Deliver the 2012 Games on time and on budget.
+
+* Ensure that the Olympic legacy does not cost London taxpayers a penny more in council tax.
+
 - Publish our legacy expenditure so Londoners can see how it is spent.
 - Constructively lead London’s relations with international partners this summer to bring new investment and jobs to our city:
-  * Work with our tourism industry to capitalise on the high profile of summer 2012 for longer lasting campaigns.
-  * Host London House – an international investment showcase to attract business – at City Hall.
+* Work with our tourism industry to capitalise on the high profile of summer 2012 for longer lasting campaigns.
+
+* Host London House – an international investment showcase to attract business – at City Hall.
+
 - Provide an Olympics for all Londoners:
-  * Expand grassroots sporting legacy through £30 million programme benefitting over 250,000 Londoners.
-  * Oversee London Ambassadors programme with over 8,000 volunteers and ensure their continued engagement in volunteering programmes.
-  * Upgrade the ‘Look and Feel’ of London with £50,000 already provided to every borough to ensure the capital looks its best for the Games.
+* Expand grassroots sporting legacy through £30 million programme benefitting over 250,000 Londoners.
+
+* Oversee London Ambassadors programme with over 8,000 volunteers and ensure their continued engagement in volunteering programmes.
+
+* Upgrade the ‘Look and Feel’ of London with £50,000 already provided to every borough to ensure the capital looks its best for the Games.
+
 - Enthuse young Londoners with a successful Games:
-  * Guarantee 125,000 school children get Olympic and Paralympic tickets.
-  * Work with the Government to deliver a successful National Schools Championship for London schools.
+* Guarantee 125,000 school children get Olympic and Paralympic tickets.
+
+* Work with the Government to deliver a successful National Schools Championship for London schools.
+
 - Keep London moving during the Games, and open the Olympic Route Network to taxi drivers and other motorists.
 
 ## Delivering an economic legacy
 - Transform East London through development, investment, and better transport links, including:
-  * Oversee the Mayoral Development Corporation to secure the Olympic Legacy and create 10,000 new jobs.
-  * Deliver 11,000 homes on the Olympic Park, including a community-led development at Cobham Manor.
+* Oversee the Mayoral Development Corporation to secure the Olympic Legacy and create 10,000 new jobs.
+
+* Deliver 11,000 homes on the Olympic Park, including a community-led development at Cobham Manor.
+
 - Ensure the Olympic Stadium is commercially viable with naming rights, concerts and sports facilities before the Games start in July 2012.
 
 *   Explore creating a new science institute in the Olympic Park, including lobbying to bring the proposed Cell Therapy Technology and Innovation Centre to the Park.
@@ -3567,19 +3612,28 @@ Boris Johnson
 I will:
 
 *   Ensure Greater London benefits from the events and legacy this year:
-    *   Deliver the 2012 Games on time and on budget.
-    *   Ensure that the Olympic Legacy does not cost London taxpayers a penny more in council tax.
+* Deliver the 2012 Games on time and on budget.
+
+* Ensure that the Olympic Legacy does not cost London taxpayers a penny more in council tax.
+
 *   Publish our legacy expenditure so Londoners can see how it is spent.
 *   Constructively lead London’s relations with international partners this summer to bring new investment and jobs to our city:
-    *   Work with our tourism industry to capitalise on the high profile of summer 2012 for longer lasting campaigns.
-    *   Host London House – an international investment showcase to attract business – at City Hall.
+* Work with our tourism industry to capitalise on the high profile of summer 2012 for longer lasting campaigns.
+
+* Host London House – an international investment showcase to attract business – at City Hall.
+
 *   Provide an Olympics for all Londoners:
-    *   Expand grassroots sporting legacy through £30 million programme benefitting over 250,000 Londoners.
-    *   Oversee London Ambassadors programme with over 8,000 volunteers and ensure their continued engagement in volunteering programmes.
-    *   Upgrade the ‘Look and Feel’ of London with £50,000 already provided to every borough to ensure the capital looks its best for the Games.
+* Expand grassroots sporting legacy through £30 million programme benefitting over 250,000 Londoners.
+
+* Oversee London Ambassadors programme with over 8,000 volunteers and ensure their continued engagement in volunteering programmes.
+
+* Upgrade the ‘Look and Feel’ of London with £50,000 already provided to every borough to ensure the capital looks its best for the Games.
+
 *   Enthuse young Londoners with a successful Games:
-    *   Guarantee 125,000 school children get Olympic and Paralympic tickets.
-    *   Work with the Government to deliver a successful National Schools Championship for London schools.
+* Guarantee 125,000 school children get Olympic and Paralympic tickets.
+
+* Work with the Government to deliver a successful National Schools Championship for London schools.
+
 *   Keep London moving during the Games, and open the Olympic Route Network to taxi drivers and other motorists.
 
 ## Getting the Games back on track
@@ -3712,11 +3766,16 @@ A key responsibilty for the Mayor is to deliver a safer Olympic Games. Through m
 
 I will:
 - Transform East London through development; investment; and better transport links, including:
-    * Oversee the Mayoral Development Corporation to secure the Olympic Legacy and create 10,000 new jobs.
-    * Deliver 11,000 homes on the Olympic Park, including a community-led development at Cobham Manor.
-    * Ensure the Olympic Stadium is commercially viable with naming rights, concerts and sports facilities.
-    * Explore creating a new science institute in the Olympic Park.
-    * Lobby the Government for the proposed Cell Therapy Technology and Innovation Centre to be based in the Park.
+* Oversee the Mayoral Development Corporation to secure the Olympic Legacy and create 10,000 new jobs.
+
+* Deliver 11,000 homes on the Olympic Park, including a community-led development at Cobham Manor.
+
+* Ensure the Olympic Stadium is commercially viable with naming rights, concerts and sports facilities.
+
+* Explore creating a new science institute in the Olympic Park.
+
+* Lobby the Government for the proposed Cell Therapy Technology and Innovation Centre to be based in the Park.
+
 - Manage London’s finances responsibly, including selling the site to ensure we pay back the debt.
 - Ensure all Londoners can benefit from new affordable housing at East Village.
 

@@ -101,25 +101,35 @@ So let’s not go back to the broken promises of a Mayor who’s more interested
 Shaun Bailey
 
 1.  **Making our streets safer** — by hiring 8,000 more police and reopening 38 police stations.
-    *   Funded by long-term savings at City Hall and money from the Mayor’s Community Infrastructure Levy.
+* Funded by long-term savings at City Hall and money from the Mayor’s Community Infrastructure Levy.
+
 2.  **Helping young people get out of crime** — with 32 new youth centres and 4,000 new youth workers.
-    *   Funded by £450million from unclaimed Oyster Card balances.
+* Funded by £450million from unclaimed Oyster Card balances.
+
 3.  **Getting young Londoners on the housing ladder** — by building 100,000 homes and selling them for £100,000 each.
-    *   Funded from the £4billion that the Government gave the Mayor to build affordable homes.
+* Funded from the £4billion that the Government gave the Mayor to build affordable homes.
+
 4.  **Cleaning up London’s air** — with a zero-emission bus fleet by 2025 and interest-free loans for black cab drivers to go electric.
-    *   Funded by a ten-year sponsorship deal, like Santander’s sponsorship of our bike-hire scheme.
+* Funded by a ten-year sponsorship deal, like Santander’s sponsorship of our bike-hire scheme.
+
 5.  **Fixing TfL’s finances** — by introducing corporate sponsorship to the Tube network, so we protect under-18s’ and over-60s’ free travel.
-    *   Corporate sponsorship is set to raise £490 million.
+* Corporate sponsorship is set to raise £490 million.
+
 6.  **A bigger, better transport network** — with a London Infrastructure Bank to fund repairs and new investment.
-    *   By combining public and private funding to improve transport services.
+* By combining public and private funding to improve transport services.
+
 7.  **Reversing the Congestion Charge hike** — and scrapping plans to extend the £12.50 daily ULEZ charge to Outer London.
-    *   Funded by savings from Sadiq Khan’s £9.56billion of waste at TfL.
+* Funded by savings from Sadiq Khan’s £9.56billion of waste at TfL.
+
 8.  **Saving each London household £307** — by reversing Sadiq Khan’s 10% council tax hike.
-    *   Funded by cutting the Mayor’s office and PR budget.
+* Funded by cutting the Mayor’s office and PR budget.
+
 9.  **Standing up for Outer London boroughs** — with 30-minutes free parking for high streets and scrapping plans for an Outer London Tax.
-    *   Funded by reinvesting the receipts from Sadiq Khan’s Congestion Charge hike.
+* Funded by reinvesting the receipts from Sadiq Khan’s Congestion Charge hike.
+
 10. **Working constructively with government** — so we get a better deal for London.
-    *   By working with ministers, instead of attacking them from the sidelines.
+* By working with ministers, instead of attacking them from the sidelines.
+
 
 Shaun Bailey’s plan will create **924,000 jobs** over the next five years
 

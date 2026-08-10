@@ -973,20 +973,31 @@ Above all I will work to make London a pleasant and safe place to live, by nurtu
 I will:
 
 1.  **Protect And Preserve Open Spaces**
-    *   Use the Mayor’s powers to protect the green belt and protect against development on gardens.
-    *   Invest £6 million in making our open spaces cleaner and safer.
-    *   Invest in 10,000 street trees to improve the local neighbourhoods that need them most.
+* Use the Mayor’s powers to protect the green belt and protect against development on gardens.
+
+* Invest £6 million in making our open spaces cleaner and safer.
+
+* Invest in 10,000 street trees to improve the local neighbourhoods that need them most.
+
 2.  **Make It Easier To Recycle And Reduce Waste**
-    *   Promote innovative new schemes that pay Londoners to recycle.
-    *   Work closely with boroughs to reduce the amount of waste sent to landfill, and support a ban on plastic bags.
+* Promote innovative new schemes that pay Londoners to recycle.
+
+* Work closely with boroughs to reduce the amount of waste sent to landfill, and support a ban on plastic bags.
+
 3.  **Make Transport More Sustainable**
-    *   Oppose the third runway at Heathrow and mixed mode operation.
-    *   Promote hybrid buses and get traffic moving more smoothly to reduce congestion and so reduce emissions.
-    *   Make London a genuinely cycle-friendly city to promote modal shift.
+* Oppose the third runway at Heathrow and mixed mode operation.
+
+* Promote hybrid buses and get traffic moving more smoothly to reduce congestion and so reduce emissions.
+
+* Make London a genuinely cycle-friendly city to promote modal shift.
+
 4.  **Help Tackle Climate Change**
-    *   Work to help cut London’s carbon emissions by 60% from their 1990 levels by 2025, through promoting greater energy efficiency and cutting congestion.
-    *   Work with the boroughs to encourage Londoners to install insulation in return for Council Tax rebates.
-    *   Champion innovation through an annual Mayor’s prize of £20,000 for the best new ideas for low carbon technology from London’s students.
+* Work to help cut London’s carbon emissions by 60% from their 1990 levels by 2025, through promoting greater energy efficiency and cutting congestion.
+
+* Work with the boroughs to encourage Londoners to install insulation in return for Council Tax rebates.
+
+* Champion innovation through an annual Mayor’s prize of £20,000 for the best new ideas for low carbon technology from London’s students.
+
 
 ## 1. Protecting And Preserving Open Spaces
 I will:
@@ -2523,21 +2534,34 @@ If elected, I will enact the following measures;
 I will:
 
 1.  **Help More Londoners Afford Their Own Home**
-    *   Release GLA-owned land and £130 million from the Regional Housing Pot to launch a new ‘FirstSteps Housing Scheme’, which will be open to first-time buyers frozen out of Government schemes
-    *   Work with the boroughs to build 50,000 more affordable homes by 2011
-    *   Invest £60 million from the Regional Housing Pot to start renovating the capital’s 84,205 empty properties to help low-income Londoners off waiting lists
-    *   Incentivise the boroughs to release dormant housing to those stuck in bed and breakfast accommodation, by returning the Mayor’s precept to them
-    *   Work with local councils to deliver more family-sized homes
-    *   Increase shared ownership schemes for low-income families by a third
-    *   Protect private tenants from unscrupulous landlords by publishing an online ‘Fair Rents Guide’
-    *   Explore the possibility of a tenant deposit scheme with a guaranteed arbitration period of one month
+* Release GLA-owned land and £130 million from the Regional Housing Pot to launch a new ‘FirstSteps Housing Scheme’, which will be open to first-time buyers frozen out of Government schemes
+
+* Work with the boroughs to build 50,000 more affordable homes by 2011
+
+* Invest £60 million from the Regional Housing Pot to start renovating the capital’s 84,205 empty properties to help low-income Londoners off waiting lists
+
+* Incentivise the boroughs to release dormant housing to those stuck in bed and breakfast accommodation, by returning the Mayor’s precept to them
+
+* Work with local councils to deliver more family-sized homes
+
+* Increase shared ownership schemes for low-income families by a third
+
+* Protect private tenants from unscrupulous landlords by publishing an online ‘Fair Rents Guide’
+
+* Explore the possibility of a tenant deposit scheme with a guaranteed arbitration period of one month
+
 2.  **Design Developments To Combat Crime**
-    *   Amend the London Plan to attach more importance to designing out crime, without compromising the aesthetic quality of developments
+* Amend the London Plan to attach more importance to designing out crime, without compromising the aesthetic quality of developments
+
 3.  **Protect Green Spaces and Historic Views**
-    *   Reinstate planning rules that protect the views of St Paul’s Cathedral and the Palace of Westminster and reinforce protection around new viewing corridors
-    *   Toughen up the London Plan to prevent development on domestic gardens and use planning agreements to protect small shops
-    *   Encourage builders to build more environmentally-friendly homes in the private sector and encourage boroughs to adopt the ‘Merton Rule’ for on-site renewable energy
-    *   Protect the green belt by using the Mayor’s powers to refuse applications to build on it
+* Reinstate planning rules that protect the views of St Paul’s Cathedral and the Palace of Westminster and reinforce protection around new viewing corridors
+
+* Toughen up the London Plan to prevent development on domestic gardens and use planning agreements to protect small shops
+
+* Encourage builders to build more environmentally-friendly homes in the private sector and encourage boroughs to adopt the ‘Merton Rule’ for on-site renewable energy
+
+* Protect the green belt by using the Mayor’s powers to refuse applications to build on it
+
 
 ## What We Need To Do:
 A huge number of Londoners are finding it difficult to get on the housing ladder. There are the low-income Londoners who are stuck on housing waiting lists, wanting to be housed in affordable, desirable, permanent homes, and there are middle-income Londoners on good wages for whom the prospect of home ownership is still a distant dream.
@@ -3879,23 +3903,34 @@ I believe we need a fresh approach, and I will enact the following measures;
 I will:
 
 1.  **Put The Commuter First**
-    *   By focusing on making traffic flow more smoothly through measures like re-phasing traffic lights, allowing motorcycles in bus lanes and cracking down on utility companies who dig up the roads.
-    *   By tackling congestion to reduce emissions.
-    *   By re-instating tidal flow at the Blackwall tunnel and opposing increased tolls at the Dartford crossing.
-    *   By improving public transport in outer London through orbital bus routes and campaigning for better rail services.
+* By focusing on making traffic flow more smoothly through measures like re-phasing traffic lights, allowing motorcycles in bus lanes and cracking down on utility companies who dig up the roads.
+
+* By tackling congestion to reduce emissions.
+
+* By re-instating tidal flow at the Blackwall tunnel and opposing increased tolls at the Dartford crossing.
+
+* By improving public transport in outer London through orbital bus routes and campaigning for better rail services.
+
 
 2.  **Make Public Transport Safer And More Secure**
-    *   By spending less on press officers and more on police officers to patrol the network – increasing their presence on buses and station platforms in outer London.
-    *   By introducing ‘Payback London’, a scheme that will require under-18s who abuse their right to free bus travel to earn it back through community service.
-    *   By cracking down on illegal minicabs.
+* By spending less on press officers and more on police officers to patrol the network – increasing their presence on buses and station platforms in outer London.
+
+* By introducing ‘Payback London’, a scheme that will require under-18s who abuse their right to free bus travel to earn it back through community service.
+
+* By cracking down on illegal minicabs.
+
 
 3.  **Tackle Problems With A Fresh Perspective**
-    *   By supporting different forms of transport like river services, and renewing traditional forms by commissioning a 21st century Routemaster with conductors.
-    *   By making London a truly cycle-friendly city through increasing secure cycle parking and introducing a bike-hire scheme.
+* By supporting different forms of transport like river services, and renewing traditional forms by commissioning a 21st century Routemaster with conductors.
+
+* By making London a truly cycle-friendly city through increasing secure cycle parking and introducing a bike-hire scheme.
+
 
 4.  **Make Transport More Convenient**
-    *   By improving the daily commuter experience through better information, and extending the Oyster top-up network.
-    *   By halting the proposed Tube ticket office closures, and ensuring there is always a manned ticket office at every station.
+* By improving the daily commuter experience through better information, and extending the Oyster top-up network.
+
+* By halting the proposed Tube ticket office closures, and ensuring there is always a manned ticket office at every station.
+
 
 ## What We Need To Do:
 The Mayor’s biggest area of responsibility is transport, and I intend to put the **commuter first** by introducing policies that will first and foremost make journeys faster and more reliable.

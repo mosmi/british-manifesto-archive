@@ -511,7 +511,7 @@ const PARTIES = {
   naturallaw: {
     id: 'naturallaw', name: 'Natural Law Party', shortName: 'Natural Law Party',
     color: '#000080', dim: 'rgba(0,0,128,0.14)',
-    founded: 1992, spectrum: 'Centrist / Natural Law', isPrimary: false,
+    founded: 1992, spectrum: 'Syncretic / New Age (Natural Law and Transcendental Meditation)', isPrimary: false,
     nation: 'others',
     description: 'The Natural Law Party of the United Kingdom was founded in 1992 and contested general and European elections through the 1990s under leader Dr Geoffrey Clements. It campaigned for government in accordance with Natural Law, prevention-oriented health care, organic agriculture, and consciousness-based education, drawing on Transcendental Meditation programmes. It fielded candidates widely in 1992 and 1997 and published substantial UK and European manifestos before fading from electoral politics in the early 2000s.',
   },

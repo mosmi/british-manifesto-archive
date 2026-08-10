@@ -141,9 +141,12 @@ Among our proposals, we believe that simple changes to the rules for electing a 
 * Seek to initiate a review of the operation of devolution under the terms of the Good Friday Agreement, encompassing all parties and both Governments;
 * Press for reform, via both Westminster and Stormont, which prevents one party from collapsing devolution and removes the veto from one party alone while maintaining the principles of power-sharing and partnership
 * Support a series of common sense measures to improve the operation of devolution including:
-  * the return of the joint nomination and election of the First Ministers;
-  * changing the election of the Speaker to two-thirds majority rather than double majority;
-  * expanding the work of north-bodies, and removing the need for two Executive ministers to attend NSMC sectoral meetings;
+* the return of the joint nomination and election of the First Ministers;
+
+* changing the election of the Speaker to two-thirds majority rather than double majority;
+
+* expanding the work of north-bodies, and removing the need for two Executive ministers to attend NSMC sectoral meetings;
+
 
 ---
 

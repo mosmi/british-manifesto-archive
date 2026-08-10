@@ -281,7 +281,10 @@ Provide a new route to provide capital, guarantees and equity to infrastructure
 
 Reduce the cost of long-term funding reduced as compared with PFI.
 
-* * Provide the opportunity for retail investors to save in safe long-term assets.
+* *
+
+* Provide the opportunity for retail investors to save in safe long-term assets.
+
 
 * Be a stand-alone public entity, independent from Government but with a long term strategic remit. It would have the ability to reject or accept proposals based on whether they are financially viable or within its remit.
 
@@ -679,7 +682,10 @@ Welsh Liberal Democrats will:
 
 End testing of household products on animals.
 
-* * Work for the proper enforcement of regulations for the transportation of live animals across all EU Member States.
+* *
+
+* Work for the proper enforcement of regulations for the transportation of live animals across all EU Member States.
+
 
 ## Your World: Securing Britain’s Future with Global Action
 

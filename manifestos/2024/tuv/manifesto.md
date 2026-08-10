@@ -278,10 +278,14 @@ A vote for TUV in this election is a vote for a robust migration policy across t
 ***Strict limits on immigration are the only way to relieve the pressure on our housing, public services, increase wages and protect our culture, identity and values. Essential skills, mainly around healthcare, must be the only exception.***
 
 * ***Stop the Boats with our 4 Point Plan.***
-    * *Leave the European Convention on Human Rights.*
-    * *Zero illegal immigrants to be resettled in the UK. New Department of Immigration.*
-    * *Pick up illegal migrants out of boats and take them back to France.*
-    * *Secure Detention for all illegal migrants*
+* *Leave the European Convention on Human Rights.*
+
+* *Zero illegal immigrants to be resettled in the UK. New Department of Immigration.*
+
+* *Pick up illegal migrants out of boats and take them back to France.*
+
+* *Secure Detention for all illegal migrants*
+
 
 * ***Secure Detention for all Asylum Seekers.***
 

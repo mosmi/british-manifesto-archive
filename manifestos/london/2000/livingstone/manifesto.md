@@ -775,14 +775,22 @@ I will:
 *   Widen access by forging partnerships with local communities through a range of new initiatives including festivals, education work, access pricing schemes, public art and innovative sports programmes.
 *   Foster and seek to widen the reach of London's present arts and cultural infrastructure.
 *   Look for new public and private sector opportunities to fund arts and sports in London. Some of my first priorities for the arts would be:
-    *   A Capital Arts Card Forge a partnership with business to provide a concessionary card to allow students, senior citizens and the unemployed to attend theatres, cinemas and concerts for just £3, one day a week.
-    *   Help schools meet transport costs to attend arts events and visits to London Zoo.
-    *   An annual London Youth Arts Festival A fortnight dedicated to young artists, giving them opportunities to perform, exhibit and participate throughout London. International exchanges would be fostered, and major London institutions would be encouraged to provide a platform for the artists of the future.
-    *   A home for the London Film Festival I will promote film making in London and create a new and exciting showcase for British film by using a major central London venue, such as Leicester Square, as the convention centre of the London Film Festival.
-    *   London Library week An annual festival celebrating the written word, and raising awareness of the role of libraries in London.
-    *   Art in Public Spaces GLA assistance to run a public art competition for a mural, sculpture, painting or installation in a public area within each borough.
-    *   Arts for Education An initiative to place the Arts at the heart of education in London. Franchises offered to companies of professional artists in any discipline: theatre, visual arts, music, opera, dance, to work in secondary or primary schools in London boroughs.
-    *   Arts for All An annual Arts festival for, by, and with disabled people to celebrate the artistic achievements of those with disabilities, to raise disability awareness London-wide, and to continue to focus on the issues of access.
+* A Capital Arts Card Forge a partnership with business to provide a concessionary card to allow students, senior citizens and the unemployed to attend theatres, cinemas and concerts for just £3, one day a week.
+
+* Help schools meet transport costs to attend arts events and visits to London Zoo.
+
+* An annual London Youth Arts Festival A fortnight dedicated to young artists, giving them opportunities to perform, exhibit and participate throughout London. International exchanges would be fostered, and major London institutions would be encouraged to provide a platform for the artists of the future.
+
+* A home for the London Film Festival I will promote film making in London and create a new and exciting showcase for British film by using a major central London venue, such as Leicester Square, as the convention centre of the London Film Festival.
+
+* London Library week An annual festival celebrating the written word, and raising awareness of the role of libraries in London.
+
+* Art in Public Spaces GLA assistance to run a public art competition for a mural, sculpture, painting or installation in a public area within each borough.
+
+* Arts for Education An initiative to place the Arts at the heart of education in London. Franchises offered to companies of professional artists in any discipline: theatre, visual arts, music, opera, dance, to work in secondary or primary schools in London boroughs.
+
+* Arts for All An annual Arts festival for, by, and with disabled people to celebrate the artistic achievements of those with disabilities, to raise disability awareness London-wide, and to continue to focus on the issues of access.
+
 *   Celebrating cultural diversity
 
 The diversity of London's cultural scene is one of its greatest strengths which I would seek to protect and enhance.
@@ -883,7 +891,8 @@ We must make sure that London leads the world in creating jobs in the growing gr
 As Mayor I will:
 *   Set a target for London to create 10,000 jobs in new green businesses by 2005.
 *   Use the purchasing power of the Mayor and Assembly to encourage successful, local and sustainable businesses. These jobs will come in three main areas:
-    *   Recycling and waste management Experience from the US 'Tri-City' region (Washington, Baltimore and Richmond), comparable in size and population to London, suggests that some 2,000 new jobs could be created in the collection, sorting, and movement of recyclables, and in the secondary material processing industries.
+* Recycling and waste management Experience from the US 'Tri-City' region (Washington, Baltimore and Richmond), comparable in size and population to London, suggests that some 2,000 new jobs could be created in the collection, sorting, and movement of recyclables, and in the secondary material processing industries.
+
 
 ## Home energy efficiency
 A 15 year programme of insulation measures, targeting the most vulnerable people including the elderly and young children with respiratory and other illnesses, could create 30,000 jobs across the whole UK. London's share of these new jobs could be at least 5,000.
