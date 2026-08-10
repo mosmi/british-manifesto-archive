@@ -18,4 +18,8 @@ as downloadable PDFs. See ../../knowledge/content-state/european-elections-audit
 - [ ] Record what is confirmed unpublished vs merely not-yet-found in the audit doc
 
 ## Handoff log
-- (empty)
+- **2026-08-09 (Cursor Grok):** Added Natural Law Party 1999 EP manifesto
+  (`manifestos/euro/1999/naturallaw/` — PDF derived from archived HTML + full text
+  transcription of 21 pages + transparent A4 cover). Party slug `naturallaw`.
+  Also ingested the 1997 GE manifesto (108-page archived site). Cache `2026080914`.
+  Still open: other pre-2004 EP gaps per the audit.

@@ -259,6 +259,11 @@
     "md": true,
     "pdf": true
   },
+  "1997/naturallaw": {
+    "cover": true,
+    "md": true,
+    "pdf": true
+  },
   "1997/niwc": {
     "cover": true,
     "md": false,
@@ -1327,6 +1332,11 @@
   "euro/1999/eurengreens": {
     "cover": false,
     "md": false,
+    "pdf": true
+  },
+  "euro/1999/naturallaw": {
+    "cover": true,
+    "md": true,
     "pdf": true
   },
   "euro/1999/pes": {

@@ -80,16 +80,23 @@
   },
   "sources": [
     {
-      "label": "House of Commons Library \u2014 Elections to the European Parliament June 1999 (RP99-64)",
+      "label": "House of Commons Library — Elections to the European Parliament June 1999 (RP99-64)",
       "url": "https://commonslibrary.parliament.uk/research-briefings/rp99-64/"
     },
     {
-      "label": "House of Commons Library \u2014 UK Election Statistics: 1918-2021",
+      "label": "House of Commons Library — UK Election Statistics: 1918-2021",
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/"
     }
   ],
   "body": "euro",
   "manifestos": [
+    {
+      "title": "Natural Law Party European Manifesto 1999",
+      "pdf": "/manifestos/euro/1999/naturallaw/manifesto.pdf",
+      "cover": "/manifestos/euro/1999/naturallaw/manifesto.png",
+      "party": "naturallaw",
+      "group": "others"
+    },
     {
       "title": "ALDE European Manifesto 1999",
       "pdf": "/manifestos/euro/1999/alde/manifesto.pdf",

@@ -11,6 +11,24 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-08-09 — Natural Law Party (1997 GE + 1999 EP) (Cursor Grok)
+
+Assets `?v=2026080914`.
+
+- Added party slug `naturallaw` (`PARTIES`, `OTHERS_PARTIES`, `EURO_OTHER_PARTIES`,
+  `data/party-colours.json` navy `#000080`).
+- Ingested **1997** UK manifesto from the party’s archived multi-page site
+  (108 HTML pages → `manifestos/1997/naturallaw/` PDF + `manifesto.md` + transparent
+  A4 `cover.png`); wired via `extraManifestoParties` / `manifestos-index.json`.
+- Ingested **1999** European manifesto (`manifestos/euro/1999/naturallaw/` PDF +
+  text + `manifesto.png`); registered in `data/devolved/euro/1999.json`.
+- Sources: archived HTML dumps + derived PDFs under the local Original documents
+  tree; Wayback originals at `natural-law-party.org.uk/UKmanifesto/` and
+  `…/euromanifesto/`.
+- 1997 PDF shipped as a ~20 MiB JPEG rebuild (under Cloudflare’s 25 MiB file
+  limit); full-text remains in `manifesto.md`. Dark-mode party hero meta now
+  uses `--party-kicker` for legibility on dark brand colours.
+
 ## 2026-08-09 — Compact EP FPTP hexmaps (contiguous UK outline) (Cursor Grok)
 
 Assets `?v=2026080912`.
@@ -1038,3 +1056,10 @@ added 1979 Conservative manifesto.
 ## 2026-04-12 / 2026-03-29 — Coverage reports
 Generated the PDF→Markdown coverage reports. See
 [content-state/manifesto-coverage](./content-state/manifesto-coverage.md).
+
+## 2026-08-10 — Re-transcribed 1997 Natural Law Party Manifesto
+Extracted and structured the 1997 Natural Law Party General Election manifesto from 108 archived HTML pages into clean, hierarchical Markdown (`manifestos/1997/naturallaw/manifesto.md`).
+- Established the 14 official section H2 headings: *A Group for a Government*, *All-Party Government*, *Education*, *Health*, *Economy*, *Law and Justice*, *European Policy and Foreign Policy*, *Defence*, *Agriculture*, *Housing and National Planning*, *Energy and Environment*, *Transport*, *Family and Social Policy*, and *National Heritage* (preceded by the leader's *Introduction*).
+- Cleaned up broken drop-caps, split letter-by-letter heading font artifacts, boilerplate Dreamweaver library items, and navigation table links.
+- Structured sub-page topics as H3 (`###`) headings and nested sub-subheadings as H4 (`####`).
+- Rebuilt site indexes: `fulltext-index.json`, `seo.json`, `latest-additions.json`, `sitemap.xml`, `manifesto-assets.json`, and `pdf-sizes.json`.

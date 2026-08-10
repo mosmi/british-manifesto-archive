@@ -1007,6 +1007,28 @@
         },
         {
           "@type": "DigitalDocument",
+          "@id": "https://www.manifestos.org.uk/manifesto/1997/naturallaw#document",
+          "name": "Natural Law Party Manifesto 1997",
+          "url": "https://www.manifestos.org.uk/manifesto/1997/naturallaw",
+          "keywords": [
+            "government",
+            "education",
+            "health",
+            "economy",
+            "law and order",
+            "foreign policy",
+            "defence",
+            "agriculture",
+            "housing",
+            "energy",
+            "transport",
+            "family",
+            "national heritage",
+            "genetic engineering"
+          ]
+        },
+        {
+          "@type": "DigitalDocument",
           "@id": "https://www.manifestos.org.uk/manifesto/1997/niwc#document",
           "name": "Northern Ireland Women's Coalition Manifesto 1997",
           "url": "https://www.manifestos.org.uk/manifesto/1997/niwc"
@@ -6207,6 +6229,12 @@
           "@type": "DigitalDocument",
           "name": "Green Group European Manifesto 1994",
           "url": "https://www.manifestos.org.uk/manifestos/euro/1994/greengroup/manifesto.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Natural Law Party European Manifesto 1999",
+          "url": "https://www.manifestos.org.uk/manifestos/euro/1999/naturallaw/manifesto.pdf",
           "encodingFormat": "application/pdf"
         },
         {

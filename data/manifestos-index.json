@@ -46,6 +46,11 @@
   },
   {
     "electionId": "1955",
+    "partyId": "communist",
+    "label": "Communist Party Programme 1955"
+  },
+  {
+    "electionId": "1955",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 1955"
   },
@@ -88,6 +93,11 @@
     "electionId": "1964",
     "partyId": "libdem",
     "label": "Liberal Manifesto 1964"
+  },
+  {
+    "electionId": "1966",
+    "partyId": "communist",
+    "label": "Communist Party Manifesto 1966"
   },
   {
     "electionId": "1966",
@@ -248,6 +258,11 @@
     "electionId": "1997",
     "partyId": "libdem",
     "label": "Liberal Democrats Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
+    "partyId": "naturallaw",
+    "label": "Natural Law Party Manifesto 1997"
   },
   {
     "electionId": "1997",
@@ -561,13 +576,13 @@
   },
   {
     "electionId": "2010",
-    "partyId": "plaid",
-    "label": "Plaid Cymru Manifesto 2010"
+    "partyId": "pirate",
+    "label": "Pirate Party UK Manifesto 2010"
   },
   {
     "electionId": "2010",
-    "partyId": "pirate",
-    "label": "Pirate Party UK Manifesto 2010"
+    "partyId": "plaid",
+    "label": "Plaid Cymru Manifesto 2010"
   },
   {
     "electionId": "2010",
@@ -1096,11 +1111,6 @@
   },
   {
     "electionId": "2024",
-    "partyId": "cpb",
-    "label": "Communist Party of Britain Manifesto 2024"
-  },
-  {
-    "electionId": "2024",
     "partyId": "conservative",
     "label": "Conservatives Manifesto 2024"
   },
@@ -1113,6 +1123,11 @@
     "electionId": "2024",
     "partyId": "cpa",
     "label": "Christian Peoples Alliance Manifesto 2024"
+  },
+  {
+    "electionId": "2024",
+    "partyId": "cpb",
+    "label": "Communist Party of Britain Manifesto 2024"
   },
   {
     "electionId": "2024",
@@ -1260,34 +1275,179 @@
     "label": "Liberal Manifesto 1974"
   },
   {
-    "electionId": "oct1974",
-    "partyId": "conservative",
-    "label": "Conservatives Manifesto 1974"
-  },
-  {
-    "electionId": "oct1974",
-    "partyId": "labour",
-    "label": "Labour Manifesto 1974"
-  },
-  {
-    "electionId": "oct1974",
-    "partyId": "libdem",
-    "label": "Liberal Manifesto 1974"
-  },
-  {
     "electionId": "london/1958",
     "partyId": "spgb",
     "label": "Socialist Party of Great Britain LCC Manifesto 1958"
   },
   {
-    "electionId": "1955",
-    "partyId": "communist",
-    "label": "Communist Party Programme 1955"
+    "electionId": "london/2000",
+    "partyId": "livingstone",
+    "label": "Ken Livingstone Manifesto 2000"
   },
   {
-    "electionId": "1966",
-    "partyId": "communist",
-    "label": "Communist Party Manifesto 1966"
+    "electionId": "london/2004",
+    "partyId": "cpa",
+    "label": "Ram Gidoomal Manifesto 2004"
+  },
+  {
+    "electionId": "london/2004",
+    "partyId": "green",
+    "label": "Darren Johnson Manifesto 2004"
+  },
+  {
+    "electionId": "london/2004",
+    "partyId": "libdem",
+    "label": "Simon Hughes Manifesto 2004"
+  },
+  {
+    "electionId": "london/2008",
+    "partyId": "conservative",
+    "label": "Boris Johnson Manifesto 2008"
+  },
+  {
+    "electionId": "london/2008",
+    "partyId": "cooperative",
+    "label": "Cooperative Manifesto 2008"
+  },
+  {
+    "electionId": "london/2008",
+    "partyId": "englishdemocrats",
+    "label": "Matt O'Connor Manifesto 2008"
+  },
+  {
+    "electionId": "london/2008",
+    "partyId": "green",
+    "label": "Siân Berry Manifesto 2008"
+  },
+  {
+    "electionId": "london/2008",
+    "partyId": "libdem",
+    "label": "Brian Paddick Manifesto 2008"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "benita",
+    "label": "Siobhan Benita Manifesto 2012"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "bnp",
+    "label": "Carlos Cortiglia Manifesto 2012"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "conservative",
+    "label": "Boris Johnson Manifesto 2012"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "green",
+    "label": "Jenny Jones Manifesto 2012"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "labour",
+    "label": "Ken Livingstone Manifesto 2012"
+  },
+  {
+    "electionId": "london/2012",
+    "partyId": "libdem",
+    "label": "Brian Paddick Manifesto 2012"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "bnp",
+    "label": "David Furness Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "conservative",
+    "label": "Zac Goldsmith Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "green",
+    "label": "Siân Berry Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "labour",
+    "label": "Sadiq Khan Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "libdem",
+    "label": "Caroline Pidgeon Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "onelove",
+    "label": "Ankit Love Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "respect",
+    "label": "George Galloway Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "ukip",
+    "label": "Peter Whittle Manifesto 2016"
+  },
+  {
+    "electionId": "london/2016",
+    "partyId": "wep",
+    "label": "Sophie Walker Manifesto 2016"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "binface",
+    "label": "Count Binface Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "burningpink",
+    "label": "Valerie Brown Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "conservative",
+    "label": "Shaun Bailey Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "green",
+    "label": "Siân Berry Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "labour",
+    "label": "Sadiq Khan Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "libdem",
+    "label": "Luisa Porritt Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "londonreal",
+    "label": "Brian Rose Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "maxfosh",
+    "label": "Max Fosh Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "pierscorbyn",
+    "label": "Piers Corbyn Manifesto 2021"
+  },
+  {
+    "electionId": "london/2021",
+    "partyId": "reclaim",
+    "label": "Laurence Fox Manifesto 2021"
   },
   {
     "electionId": "london/2024",
@@ -1355,173 +1515,18 @@
     "label": "Amy Gallagher Manifesto 2024"
   },
   {
-    "electionId": "london/2021",
-    "partyId": "binface",
-    "label": "Count Binface Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
-    "partyId": "burningpink",
-    "label": "Valerie Brown Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
+    "electionId": "oct1974",
     "partyId": "conservative",
-    "label": "Shaun Bailey Manifesto 2021"
+    "label": "Conservatives Manifesto 1974"
   },
   {
-    "electionId": "london/2021",
-    "partyId": "green",
-    "label": "Siân Berry Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
+    "electionId": "oct1974",
     "partyId": "labour",
-    "label": "Sadiq Khan Manifesto 2021"
+    "label": "Labour Manifesto 1974"
   },
   {
-    "electionId": "london/2021",
+    "electionId": "oct1974",
     "partyId": "libdem",
-    "label": "Luisa Porritt Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
-    "partyId": "londonreal",
-    "label": "Brian Rose Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
-    "partyId": "maxfosh",
-    "label": "Max Fosh Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
-    "partyId": "pierscorbyn",
-    "label": "Piers Corbyn Manifesto 2021"
-  },
-  {
-    "electionId": "london/2021",
-    "partyId": "reclaim",
-    "label": "Laurence Fox Manifesto 2021"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "bnp",
-    "label": "David Furness Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "conservative",
-    "label": "Zac Goldsmith Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "green",
-    "label": "Siân Berry Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "labour",
-    "label": "Sadiq Khan Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "libdem",
-    "label": "Caroline Pidgeon Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "onelove",
-    "label": "Ankit Love Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "respect",
-    "label": "George Galloway Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "ukip",
-    "label": "Peter Whittle Manifesto 2016"
-  },
-  {
-    "electionId": "london/2016",
-    "partyId": "wep",
-    "label": "Sophie Walker Manifesto 2016"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "benita",
-    "label": "Siobhan Benita Manifesto 2012"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "bnp",
-    "label": "Carlos Cortiglia Manifesto 2012"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "conservative",
-    "label": "Boris Johnson Manifesto 2012"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "green",
-    "label": "Jenny Jones Manifesto 2012"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "labour",
-    "label": "Ken Livingstone Manifesto 2012"
-  },
-  {
-    "electionId": "london/2012",
-    "partyId": "libdem",
-    "label": "Brian Paddick Manifesto 2012"
-  },
-  {
-    "electionId": "london/2008",
-    "partyId": "conservative",
-    "label": "Boris Johnson Manifesto 2008"
-  },
-  {
-    "electionId": "london/2008",
-    "partyId": "cooperative",
-    "label": "Cooperative Manifesto 2008"
-  },
-  {
-    "electionId": "london/2008",
-    "partyId": "englishdemocrats",
-    "label": "Matt O'Connor Manifesto 2008"
-  },
-  {
-    "electionId": "london/2008",
-    "partyId": "green",
-    "label": "Siân Berry Manifesto 2008"
-  },
-  {
-    "electionId": "london/2008",
-    "partyId": "libdem",
-    "label": "Brian Paddick Manifesto 2008"
-  },
-  {
-    "electionId": "london/2004",
-    "partyId": "cpa",
-    "label": "Ram Gidoomal Manifesto 2004"
-  },
-  {
-    "electionId": "london/2004",
-    "partyId": "green",
-    "label": "Darren Johnson Manifesto 2004"
-  },
-  {
-    "electionId": "london/2004",
-    "partyId": "libdem",
-    "label": "Simon Hughes Manifesto 2004"
-  },
-  {
-    "electionId": "london/2000",
-    "partyId": "livingstone",
-    "label": "Ken Livingstone Manifesto 2000"
+    "label": "Liberal Manifesto 1974"
   }
 ]
