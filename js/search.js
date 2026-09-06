@@ -65,9 +65,11 @@ function buildSearchIndex() {
         type: 'nation',
         id: n.id,
         title: n.name,
-        subtitle: `${n.constituencies} Westminster constituencies`,
+        subtitle: n.id === 'europe'
+          ? 'Pan-European political families'
+          : `${n.constituencies} Westminster constituencies`,
         body: n.description || '',
-        href: `/nation/${n.id}`,
+        href: n.id === 'europe' ? '/party/european-groups' : `/nation/${n.id}`,
         color: '#c9a84c',
         aliases: [n.name, n.id],
       });
@@ -80,9 +82,9 @@ function buildSearchIndex() {
         type: 'portal',
         id: `portal-${portal.id}`,
         title: portal.label,
-        subtitle: portal.subtitle || 'Beyond Westminster',
+        subtitle: portal.subtitle || nodeLabel('elections'),
         body: `${portal.description || ''} ${portal.id} devolved election manifestos`,
-        href: `/devolved/${portal.id}`,
+        href: `/election/${portal.id}`,
         color: '#c9a84c',
         aliases: [portal.label, portal.subtitle, portal.id].filter(Boolean),
       });
@@ -176,14 +178,15 @@ function runCatalogueSearch(query) {
 
   return getSearchItems()
     .map(item => {
-      const hay = `${item.title} ${item.subtitle} ${item.body} ${(item.aliases || []).join(' ')}`.toLowerCase();
+      const displayHay = `${item.title} ${item.subtitle} ${item.body} ${(item.aliases || []).join(' ')}`;
+      const hay = displayHay.toLowerCase();
       if (!tokens.every(t => hay.includes(t))) return null;
       const score = scoreSearchHit(item, tokens, hay);
       const primary = tokens[0];
       const idx = hay.indexOf(primary);
       const snippetStart = Math.max(0, idx === -1 ? 0 : idx - 40);
-      const snippetLen = Math.min(hay.length, snippetStart + primary.length + 80);
-      const snippet = hay.slice(snippetStart, snippetLen).replace(/\s+/g, ' ').trim();
+      const snippetLen = Math.min(displayHay.length, snippetStart + primary.length + 80);
+      const snippet = displayHay.slice(snippetStart, snippetLen).replace(/\s+/g, ' ').trim();
       return {
         ...item,
         score,
@@ -292,15 +295,15 @@ function ensureFulltextIndex() {
   return _fulltextIndexPromise;
 }
 
-function stripMarkdownPlain(text) {
-  return String(text || '')
+function stripMarkdownPlain(text, lower = false) {
+  const plain = String(text || '')
     .replace(/^---[\s\S]*?---\n/, '')
     .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/[#>*_`~|]+/g, ' ')
     .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
+    .trim();
+  return lower ? plain.toLowerCase() : plain;
 }
 
 async function loadManifestoPlain(electionId, partyId) {
@@ -320,10 +323,11 @@ async function loadManifestoPlain(electionId, partyId) {
 
 function excerptAround(plain, tokens, radius = 70) {
   if (!plain) return '';
+  const hay = plain.toLowerCase();
   let best = -1;
   let term = tokens[0] || '';
   tokens.forEach(t => {
-    const idx = plain.indexOf(t);
+    const idx = hay.indexOf(t);
     if (idx !== -1 && (best === -1 || idx < best)) {
       best = idx;
       term = t;
@@ -423,11 +427,12 @@ function searchModeToggleHtml() {
     </div>`;
 }
 
-function searchEmptyHintHtml() {
+function searchEmptyHintHtml(includeToggle = true) {
+  const toggle = includeToggle ? searchModeToggleHtml() : '';
   if (_searchMode === 'fulltext') {
     const n = _fulltextIndex?.docCount;
     return `
-      ${searchModeToggleHtml()}
+      ${toggle}
       <p class="search-hint">
         Search inside transcribed manifesto text
         ${n ? `(${n} documents)` : ''} —
@@ -441,7 +446,7 @@ function searchEmptyHintHtml() {
       </p>`;
   }
   return `
-    ${searchModeToggleHtml()}
+    ${toggle}
     <p class="search-hint">
       Search parties, elections, and manifesto <strong>titles</strong> in the archive.
       Switch to <strong>Full text</strong> to search inside transcriptions.
@@ -466,11 +471,12 @@ function searchSuggestionsHtml(suggestions) {
     </p>`;
 }
 
-function searchZeroHtml(query, suggestions = []) {
+function searchZeroHtml(query, suggestions = [], includeToggle = true) {
   const safe = escapeHtml(query);
+  const toggle = includeToggle ? searchModeToggleHtml() : '';
   if (_searchMode === 'fulltext') {
     return `
-      ${searchModeToggleHtml()}
+      ${toggle}
       <div class="search-empty-block">
         <p class="search-empty">No manifesto passages for “${safe}”.</p>
         <p class="search-empty-help">
@@ -478,13 +484,13 @@ function searchZeroHtml(query, suggestions = []) {
         </p>
         <ul class="search-empty-links">
           <li><button type="button" class="search-switch-mode" data-search-mode="catalogue">Search the archive instead</button></li>
-          <li><a href="/parties/all" data-close-search>Browse all parties</a></li>
-          <li><a href="/elections" data-close-search>UK general elections</a></li>
+          <li><a href="/party/all" data-close-search>Browse all parties</a></li>
+          <li><a href="/election/westminster" data-close-search>UK general elections</a></li>
         </ul>
       </div>`;
   }
   return `
-    ${searchModeToggleHtml()}
+    ${toggle}
     <div class="search-empty-block">
       <p class="search-empty">No catalogue matches for “${safe}”.</p>
       ${searchSuggestionsHtml(suggestions)}
@@ -494,8 +500,8 @@ function searchZeroHtml(query, suggestions = []) {
       </p>
       <ul class="search-empty-links">
         <li><button type="button" class="search-switch-mode" data-search-mode="fulltext">Search manifesto full text</button></li>
-        <li><a href="/parties/all" data-close-search>Browse all parties</a></li>
-        <li><a href="/elections" data-close-search>UK general elections</a></li>
+        <li><a href="/party/all" data-close-search>Browse all parties</a></li>
+        <li><a href="/election/westminster" data-close-search>UK general elections</a></li>
         <li><a href="/election/2024" data-close-search>2024 general election</a></li>
       </ul>
     </div>`;
@@ -532,6 +538,15 @@ function applySearchChrome(input, kicker) {
         : 'Search parties, elections, and manifesto titles';
     }
   }
+}
+
+function searchPageHref(query, mode) {
+  const params = new URLSearchParams();
+  const q = String(query || '').trim();
+  if (q) params.set('q', q);
+  if (mode === 'fulltext') params.set('mode', 'fulltext');
+  const qs = params.toString();
+  return qs ? `/search?${qs}` : '/search';
 }
 
 function setupSearch() {
@@ -608,6 +623,7 @@ function setupSearch() {
     overlay.inert = false;
     panel.setAttribute('aria-modal', 'true');
 
+    document.querySelector('.skip-link')?.setAttribute('inert', '');
     document.getElementById('main-nav')?.setAttribute('inert', '');
     document.getElementById('app')?.setAttribute('inert', '');
     document.getElementById('main-footer')?.setAttribute('inert', '');
@@ -628,6 +644,7 @@ function setupSearch() {
     overlay.inert = true;
     panel.setAttribute('aria-modal', 'false');
 
+    document.querySelector('.skip-link')?.removeAttribute('inert');
     document.getElementById('main-nav')?.removeAttribute('inert');
     document.getElementById('app')?.removeAttribute('inert');
     document.getElementById('main-footer')?.removeAttribute('inert');
@@ -750,14 +767,30 @@ function setupSearch() {
     enrichFulltextSnippets(hits, gen);
   };
 
-  toggle.addEventListener('click', open);
+  const pageLink = document.getElementById('search-page-link');
+
+  const syncOverlayPageLink = () => {
+    if (!pageLink) return;
+    pageLink.href = searchPageHref(input.value, _searchMode);
+  };
+
+  toggle.addEventListener('click', () => {
+    const path = typeof getPath === 'function' ? getPath() : window.location.pathname;
+    if (path === '/search') {
+      document.getElementById('search-page-input')?.focus();
+      return;
+    }
+    open();
+  });
   overlay.querySelector('.search-backdrop')?.addEventListener('click', close);
   overlay.querySelector('.search-close')?.addEventListener('click', close);
   document.getElementById('search-browse-link')?.addEventListener('click', close);
+  pageLink?.addEventListener('click', close);
 
   overlay.addEventListener('keydown', e => {
     if (!overlay.classList.contains('is-open')) return;
 
+    // 3.7: overlay is a modal; nav/app/footer are inert. Cycle Tab inside.
     if (e.key === 'Tab') {
       const focusables = getSearchFocusables(overlay);
       if (!focusables.length) return;
@@ -799,6 +832,11 @@ function setupSearch() {
     if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
+      const path = typeof getPath === 'function' ? getPath() : window.location.pathname;
+      if (path === '/search' && !overlay.classList.contains('is-open')) {
+        document.getElementById('search-page-input')?.focus();
+        return;
+      }
       overlay.classList.contains('is-open') ? close() : open();
     }
   });
@@ -806,13 +844,12 @@ function setupSearch() {
   input.addEventListener('input', () => {
     clearTimeout(debounceTimer);
     const delay = _searchMode === 'fulltext' ? 180 : 0;
-    debounceTimer = setTimeout(() => { renderHits(); }, delay);
+    debounceTimer = setTimeout(() => { renderHits(); syncOverlayPageLink(); }, delay);
   });
 
   overlay.inert = true;
   results.innerHTML = searchEmptyHintHtml();
-
-  loadSearchExtraItems();
+  syncOverlayPageLink();
 }
 
 async function indexManifestosForSearch() {
@@ -820,16 +857,24 @@ async function indexManifestosForSearch() {
     const items = await fetchTyped('/data/manifestos-index.json', 'json');
     items.forEach(m => {
       const party = PARTIES?.[m.partyId];
-      const label = m.label || `${party?.shortName || m.partyId} ${m.electionId}`;
+      const rec = (typeof manifestoTitleRecord === 'function')
+        ? manifestoTitleRecord(m.electionId, m.partyId)
+        : { title: '', distinctive: false };
+      const partyName = party?.shortName || party?.name || m.partyId;
+      const year = m.electionId;
+      const pub = rec.title || '';
+      const label = rec.distinctive && pub
+        ? pub
+        : `${partyName} manifesto, ${year}`;
       pushSearchItem({
         type: 'manifesto',
         id: `manifesto-${m.electionId}-${m.partyId}`,
         title: label,
-        subtitle: `${m.electionId} · ${party?.shortName || m.partyId}`,
-        body: `${party?.name || ''} ${m.electionId} manifesto ${label}`,
+        subtitle: `${year} · ${partyName}`,
+        body: `${party?.name || ''} ${year} manifesto ${pub} ${label}`,
         href: `/manifesto/${m.electionId}/${m.partyId}`,
         color: party?.color || '#c9a84c',
-        aliases: [party?.shortName, party?.name, m.electionId, m.partyId].filter(Boolean),
+        aliases: [party?.shortName, party?.name, m.electionId, m.partyId, pub].filter(Boolean),
       });
     });
   } catch (err) {
@@ -837,10 +882,9 @@ async function indexManifestosForSearch() {
   }
 }
 
-async function indexDevolvedPortal(loaderName, portalId, label, color) {
-  if (typeof globalThis[loaderName] !== 'function') return;
+async function indexDevolvedPortal(portalId, label, color) {
   try {
-    const idx = await globalThis[loaderName]();
+    const idx = await fetchTyped(`/data/devolved/${portalId}/index.json`, 'json');
     if (!Array.isArray(idx)) return;
     idx.forEach(e => {
       const year = e.displayYear || e.year || e.id;
@@ -850,7 +894,7 @@ async function indexDevolvedPortal(loaderName, portalId, label, color) {
         title: `${year} ${label}`,
         subtitle: e.winnerName || e.firstMinister || e.title || '',
         body: `${e.title || ''} ${label} ${portalId} election manifesto ${year}`,
-        href: `/devolved/${portalId}/${e.id}`,
+        href: `/election/${portalId}/${e.id}`,
         color: color || '#c9a84c',
         aliases: [year, label, portalId],
       });
@@ -866,10 +910,197 @@ async function loadSearchExtraItems() {
 
   await Promise.all([
     indexManifestosForSearch(),
-    indexDevolvedPortal('loadEuroIndex', 'euro', 'European Parliament Election', '#F59E0B'),
-    indexDevolvedPortal('loadHolyroodIndex', 'holyrood', 'Scottish Parliament Election', '#0065BD'),
-    indexDevolvedPortal('loadSeneddIndex', 'senedd', 'Senedd Election', '#C8102E'),
-    indexDevolvedPortal('loadNIIndex', 'stormont', 'Northern Ireland Assembly Election', '#D4AF37'),
-    indexDevolvedPortal('loadLondonIndex', 'london', 'London Election', '#EE3A43'),
+    indexDevolvedPortal('euro', 'European Parliament Election', '#F59E0B'),
+    indexDevolvedPortal('holyrood', 'Scottish Parliament Election', '#0065BD'),
+    indexDevolvedPortal('senedd', 'Senedd Election', '#C8102E'),
+    indexDevolvedPortal('stormont', 'Northern Ireland Assembly Election', '#D4AF37'),
+    indexDevolvedPortal('london', 'London Election', '#EE3A43'),
   ]);
 }
+
+function renderSearchPage(app) {
+  const params = new URLSearchParams(window.location.search);
+  const initialQ = params.get('q') || '';
+  const initialMode = params.get('mode') === 'fulltext' ? 'fulltext' : 'catalogue';
+  setStoredSearchMode(initialMode);
+  const title = initialQ ? `Search: ${initialQ}` : 'Search';
+  setPageMeta({
+    title,
+    description: 'Search parties, elections, and manifesto titles, or search inside transcribed manifesto text.',
+    path: '/search',
+  });
+
+  app.innerHTML = `
+    ${typeof renderBreadcrumb === 'function' ? renderBreadcrumb([
+      { label: typeof nodeLabel === 'function' ? nodeLabel('home') : 'Home', href: '/' },
+      { label: 'Search' },
+    ]) : ''}
+    <section class="search-page">
+      <h1 class="search-page-title">Search</h1>
+      <p class="search-page-lead">Catalogue covers parties, elections, and published manifesto titles. Full text looks inside transcribed documents.</p>
+      <form class="search-page-form" id="search-page-form" role="search" action="/search" method="get">
+        ${searchModeToggleHtml()}
+        <label class="sr-only" for="search-page-input">Search the archive</label>
+        <div class="search-page-input-row">
+          <input type="search" id="search-page-input" name="q" class="search-input" value="${escapeHtml(initialQ)}" placeholder="Try Thatcher, housing, or 1997…" autocomplete="off" spellcheck="false">
+          <button type="submit" class="search-page-submit">Search</button>
+        </div>
+        ${initialMode === 'fulltext' ? '<input type="hidden" name="mode" value="fulltext">' : ''}
+      </form>
+      <div id="search-page-results" class="search-results search-page-results"></div>
+    </section>
+  `;
+
+  const input = document.getElementById('search-page-input');
+  const results = document.getElementById('search-page-results');
+  const form = document.getElementById('search-page-form');
+  if (!input || !results) return;
+
+  applySearchChrome(input, null);
+  let debounceTimer = null;
+
+  const syncUrl = () => {
+    const href = searchPageHref(input.value, _searchMode);
+    if (`${window.location.pathname}${window.location.search}` !== href) {
+      history.replaceState(null, '', href);
+    }
+    const q = input.value.trim();
+    setPageMeta({
+      title: q ? `Search: ${q}` : 'Search',
+      description: 'Search parties, elections, and manifesto titles, or search inside transcribed manifesto text.',
+      path: '/search',
+    });
+  };
+
+  const syncFormModeToggle = () => {
+    form.querySelectorAll('.search-mode-btn').forEach(btn => {
+      const on = btn.getAttribute('data-search-mode') === _searchMode;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+  };
+
+  const applyPageMode = (mode) => {
+    if (mode !== 'catalogue' && mode !== 'fulltext') return;
+    if (mode === _searchMode) return;
+    setStoredSearchMode(mode);
+    applySearchChrome(input, null);
+    syncFormModeToggle();
+    const hidden = form.querySelector('input[name="mode"]');
+    if (mode === 'fulltext') {
+      if (!hidden) {
+        const el = document.createElement('input');
+        el.type = 'hidden';
+        el.name = 'mode';
+        el.value = 'fulltext';
+        form.appendChild(el);
+      } else hidden.value = 'fulltext';
+    } else {
+      hidden?.remove();
+    }
+    renderHits();
+    syncUrl();
+    if (mode === 'fulltext') ensureFulltextIndex().catch(() => {});
+  };
+
+  form.querySelectorAll('[data-search-mode]').forEach(btn => {
+    btn.addEventListener('click', () => applyPageMode(btn.getAttribute('data-search-mode')));
+  });
+
+  const bindModeControls = () => {
+    results.querySelectorAll('[data-search-mode]').forEach(btn => {
+      btn.addEventListener('click', () => applyPageMode(btn.getAttribute('data-search-mode')));
+    });
+  };
+
+  const bindExamples = () => {
+    results.querySelectorAll('.search-example').forEach(btn => {
+      btn.addEventListener('click', () => {
+        input.value = btn.getAttribute('data-query') || '';
+        input.focus();
+        renderHits();
+        syncUrl();
+      });
+    });
+  };
+
+  const paintHits = hits => {
+    const groups = groupSearchHits(hits);
+    results.innerHTML = groups.map(group => `
+      <section class="search-group" aria-label="${group.label}">
+        <h2 class="search-group-label">${group.label}</h2>
+        ${group.hits.map(searchHitHtml).join('')}
+      </section>`).join('');
+  };
+
+  const renderHits = async () => {
+    const q = input.value;
+    if (!q.trim()) {
+      results.innerHTML = searchEmptyHintHtml(false);
+      bindExamples();
+      bindModeControls();
+      return;
+    }
+    if (_searchMode === 'catalogue') {
+      const hits = runCatalogueSearch(q);
+      if (!hits.length) {
+        results.innerHTML = searchZeroHtml(q.trim(), catalogueDidYouMean(q.trim()), false);
+        bindExamples();
+        bindModeControls();
+        return;
+      }
+      paintHits(hits);
+      return;
+    }
+    results.innerHTML = `<p class="search-hint">Searching manifesto text…</p>`;
+    let index;
+    try {
+      index = await ensureFulltextIndex();
+    } catch {
+      results.innerHTML = `<p class="search-empty">Full-text index could not be loaded.</p>`;
+      return;
+    }
+    if (input.value !== q) return;
+    const tokens = tokenizeQuery(q).filter(t => t.length >= FULLTEXT_MIN_LEN);
+    if (!tokens.length) {
+      results.innerHTML = `<p class="search-hint">Use at least ${FULLTEXT_MIN_LEN} letters per word for full-text search.</p>`;
+      return;
+    }
+    const hits = runFulltextLookup(q, index);
+    if (!hits.length) {
+      results.innerHTML = searchZeroHtml(q.trim(), [], false);
+      bindModeControls();
+      return;
+    }
+    paintHits(hits);
+    const gen = ++_fulltextSnippetGen;
+    await Promise.all(hits.map(async hit => {
+      const plain = await loadManifestoPlain(hit.electionId, hit.partyId);
+      if (gen !== _fulltextSnippetGen) return;
+      hit.snippet = excerptAround(plain, hit.tokens || tokenizeQuery(input.value));
+      const row = results.querySelector(`[data-hit-id="${CSS.escape(hit.id)}"]`);
+      const el = row?.querySelector('.search-result-snippet');
+      if (el) el.textContent = hit.snippet;
+    }));
+  };
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    syncUrl();
+    renderHits();
+  });
+  input.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    const delay = _searchMode === 'fulltext' ? 180 : 0;
+    debounceTimer = setTimeout(() => {
+      syncUrl();
+      renderHits();
+    }, delay);
+  });
+
+  loadSearchExtraItems().then(() => renderHits());
+  if (_searchMode === 'fulltext') ensureFulltextIndex().catch(() => {});
+  requestAnimationFrame(() => input.focus());
+}
+window.renderSearchPage = renderSearchPage;
+

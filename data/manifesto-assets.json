@@ -1265,7 +1265,7 @@
     "pdf": true
   },
   "euro/1979/eldr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
@@ -1275,7 +1275,7 @@
     "pdf": true
   },
   "euro/1984/eldr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
@@ -1285,52 +1285,52 @@
     "pdf": true
   },
   "euro/1989/eldr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1989/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1989/greengroup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1989/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1994/eldr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1994/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1994/greengroup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1999/alde": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1999/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/1999/eurengreens": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
@@ -1340,532 +1340,532 @@
     "pdf": true
   },
   "euro/1999/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/alde": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/conservative": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/dup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/eurefa": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/eurengreens": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/eurleft": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/gilliland": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/gpni": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/green": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/labour": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/libdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/plaid": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/sdlp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/sea": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/sinnfein": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/snp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/ssp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/ukip": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2004/uup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/alliance": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/bnp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/christian": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/conservative": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/dup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/ecr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/eldr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/englishdemocrats": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/eurefa": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/eurengreens": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/eurleft": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/gpni": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/green": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/inddem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/labour": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/libdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/plaid": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/scottishgrn": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/scottishlab": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/scottishlibdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/sdlp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/sinnfein": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/snp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/tuv": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/uen": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/ukip": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2009/uup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/alde": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/alliance": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/conservative": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/dup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/eaf": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/ecr": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/eurefa": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/eurengreens": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/eurleft": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/gpni": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/green": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/labour": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/libdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/nicon": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/plaid": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/scottishcon": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/scottishgrn": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/sdlp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/sinnfein": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/snp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/tuv": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/ukip": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/uup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/welshcon": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2014/welshlibdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/alde": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/alliance": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/animalpolitics": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/brexit": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/changeuk": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/conservative": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/diem25": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/dup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/ecpm": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/ecrp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/englishdemocrats": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/epp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/eurefa": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/eurengreens": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/eurleft": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/eurpirates": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/green": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/labour": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/libdem": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/pes": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/plaid": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/scottishgrn": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/sinnfein": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/snp": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/ukip": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/uup": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/volt": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },
   "euro/2019/wep": {
-    "cover": false,
+    "cover": true,
     "md": false,
     "pdf": true
   },

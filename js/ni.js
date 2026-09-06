@@ -69,6 +69,7 @@ function niManifestoCard(m, electionOrYear) {
   return buildDevolvedManifestoCard(m, election, {
     color: niPartyColor(m.party),
     partyName: niPartyName(m, election.year),
+    portal: 'stormont',
   });
 }
 
@@ -90,7 +91,7 @@ function niParliamentSection(election) {
       </details>`
     : '';
   return `
-    <div class="results-section">
+    <div class="results-section" id="election-results" data-rail="Results">
       <span class="section-label">Northern Ireland Assembly · ${p.system || 'Single Transferable Vote'}</span>
       <h2>Assembly Result</h2>
       <table class="results-table london-assembly-table">
@@ -120,7 +121,7 @@ function niManifestosBySeats(election) {
 }
 
 async function renderNIElection(app, id) {
-  setPageMeta({ title: 'Northern Ireland Assembly election', description: 'Northern Ireland Assembly election results.', path: `/devolved/stormont/${id}` });
+  setPageMeta({ title: 'Northern Ireland Assembly election', description: 'Northern Ireland Assembly election results.', path: `/election/stormont/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
   const [election, indexRaw] = await Promise.all([loadNIElection(id), loadNIIndex()]);
@@ -138,7 +139,7 @@ async function renderNIElection(app, id) {
   setPageMeta({
     title: `${election.displayYear} Northern Ireland Assembly election`,
     description: devolvedElectionDescription('stormont', election.displayYear, DEVOLVED_PORTALS?.stormont),
-    path: `/devolved/stormont/${id}`,
+    path: `/election/stormont/${id}`,
   });
 
   const sorted = [...index].sort((a, b) => a.year - b.year);
@@ -162,7 +163,7 @@ async function renderNIElection(app, id) {
     ? `<div class="election-date">Turnout ${election.turnout.toFixed(1)}%</div>` : '';
 
   const manifestosSection = (election.manifestos || []).length
-    ? `<div class="manifestos-section">
+    ? `<div class="manifestos-section" id="election-documents" data-rail="Documents">
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} Northern Ireland Assembly election, ordered by seats won.</p>
@@ -171,7 +172,7 @@ async function renderNIElection(app, id) {
     : '';
 
   const sources = (election.sources || []).length
-    ? `<div class="london-sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
+    ? `<div class="london-sources" id="election-sources" data-rail="Sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
     : '';
 
   const chartResults = election.parliament?.results || [];
@@ -180,9 +181,9 @@ async function renderNIElection(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Northern Ireland Assembly', href: '/devolved/stormont' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Northern Ireland Assembly', href: '/election/stormont' },
       { label: election.displayYear },
     ])}
     <section class="election-hero" style="--party-glow:${badge.dim}">
@@ -196,8 +197,8 @@ async function renderNIElection(app, id) {
           ${winnerBadge}
         </div>
         <div class="election-nav-btns">
-          ${prev ? `<a class="election-nav-btn" href="/devolved/stormont/${prev.id}">← ${prev.displayYear}</a>` : ''}
-          ${next ? `<a class="election-nav-btn" href="/devolved/stormont/${next.id}">${next.displayYear} →</a>` : ''}
+          ${prev ? `<a class="election-nav-btn" href="/election/stormont/${prev.id}">← ${prev.displayYear}</a>` : ''}
+          ${next ? `<a class="election-nav-btn" href="/election/stormont/${next.id}">${next.displayYear} →</a>` : ''}
         </div>
       </div>
     </section>
@@ -205,7 +206,7 @@ async function renderNIElection(app, id) {
     <div class="election-body">
       <div class="election-grid">
         <div>
-          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary">${summaryParas}</div>` : ''}
+          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary" id="election-summary" data-rail="Summary">${summaryParas}</div>` : ''}
           ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
           ${niParliamentSection(election)}
         </div>
@@ -240,6 +241,7 @@ async function renderNIElection(app, id) {
       ${sources}
     </div>
   `;
+  if (typeof attachPageRail === 'function') attachPageRail(app);
 
   if (hasChart) {
     requestAnimationFrame(async () => {
@@ -332,7 +334,7 @@ async function renderNIPortal(app) {
   setPageMeta({
     title: `${portal?.label || 'Northern Ireland Assembly'} Elections`,
     description: `Election results and party manifestos for the ${portal?.label || 'Northern Ireland Assembly'}.`,
-    path: '/devolved/stormont',
+    path: '/election/stormont',
   });
 
   const index = await loadNIIndex();
@@ -348,7 +350,7 @@ async function renderNIPortal(app) {
     return;
   }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/stormont/${e.id}`, e)).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/election/stormont/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS['northern-ireland'] : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES['northern-ireland'] : null;
@@ -356,8 +358,8 @@ async function renderNIPortal(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
       { label: 'Northern Ireland Assembly' },
     ])}
     <section class="devolved-hero">
@@ -372,7 +374,7 @@ async function renderNIPortal(app) {
         <div class="nation-parties-card devolved-hero-parties">
           <div class="section-label" style="margin-bottom:1rem">Parties in the Assembly</div>
           ${partyLinks}
-          <a href="/devolved/stormont/other-parties" class="holyrood-other-link">Other Northern Irish parties →</a>
+          <a href="/election/stormont/other-parties" class="holyrood-other-link">Other Northern Irish parties →</a>
         </div>
       </div>
     </section>
@@ -389,7 +391,7 @@ function renderNIOtherParties(app) {
   setPageMeta({
     title: 'Other Northern Irish Parties',
     description: 'Smaller and specialist parties that have contested Northern Ireland Assembly elections.',
-    path: '/devolved/stormont/other-parties',
+    path: '/election/stormont/other-parties',
   });
 
   const ids = (typeof STORMONT_OTHER_PARTIES !== 'undefined') ? STORMONT_OTHER_PARTIES : [];
@@ -400,9 +402,9 @@ function renderNIOtherParties(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Northern Ireland Assembly', href: '/devolved/stormont' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Northern Ireland Assembly', href: '/election/stormont' },
       { label: 'Other Northern Irish parties' },
     ])}
     <div class="about-section">
@@ -411,7 +413,7 @@ function renderNIOtherParties(app) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Parties that have contested Northern Ireland Assembly elections but are not among the principal groups on the Stormont portal. Under the STV system, transfer patterns often play a critical role for these candidates.</p>
       <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
-      <a href="/others" class="cross-archive-link">Other Parties →</a>
+      <a href="/party/other" class="cross-archive-link">Other Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;
@@ -453,7 +455,7 @@ function niPartyElectionRow(partyId, { election, result }, maxSeats, color) {
   const sub = isGov && election.firstMinister
     ? `${election.firstMinister} — First Minister`
     : 'Northern Ireland Assembly';
-  return `<a class="party-election-row" href="/devolved/stormont/${election.id}">
+  return `<a class="party-election-row" href="/election/stormont/${election.id}">
     <div class="per-year">${election.displayYear}</div>
     <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${sub}</div></div>
     <div class="per-seats-wrap"><div class="per-seats-num">${result.seats}</div><div class="per-seats-label">MLAs</div></div>

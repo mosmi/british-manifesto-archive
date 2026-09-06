@@ -296,6 +296,11 @@
   },
   {
     "electionId": "1997",
+    "partyId": "scottishlibdem",
+    "label": "Scottish Liberal Democrats Manifesto 1997"
+  },
+  {
+    "electionId": "1997",
     "partyId": "ukip",
     "label": "UKIP Manifesto 1997"
   },

@@ -11,6 +11,10 @@ timestamp: 2026-07-05T21:00:00Z
 Companion to the mockups in `Site Redesign.dc.html` (ids 1a–1e) and the OG system
 in `tools/og-generator/`. Ordered by impact; each phase ships independently.
 
+The September 2026 forensic-audit batches live in
+[sep-2026-audit-plan](./sep-2026-audit-plan.md). That file wins for a11y,
+performance, IA and copy sequencing.
+
 ---
 
 ## Phase 0 — Design tokens, typography, shared data (prerequisite for everything else)

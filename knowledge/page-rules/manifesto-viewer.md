@@ -8,19 +8,22 @@ timestamp: 2026-07-21T00:00:00Z
 
 # Manifesto reader (`/manifesto/<electionId>/<partyId>`)
 
-Rendered by `renderManifesto()` in `js/app.js`.
+Rendered by `renderManifesto()` in `js/app.js`. The cover wall at
+[`/manifesto`](../design/manifesto-hub.md) is a different page.
 
-## Heading hierarchy (I07)
+## Heading hierarchy (I07 / audit 5.2)
 
 - The chrome title (`.manifesto-viewer-title`) is the **sole `<h1>`**.
-- `document.title` / `setPageMeta` must use the same string:
-  `{displayName} Manifesto {displayYear}` →
-  `Labour Manifesto 2024 — The British Manifesto Archive`.
+- That H1 is the published title from `data/manifesto-titles.json` (Wikipedia
+  slogan, cover line, or the document H1). If none of those exist, use
+  `{Party} manifesto {Year}` — never “Published without a distinct title”.
+- `document.title` / `setPageMeta`: `{Party} manifesto {Year}` first; append
+  ` — {slogan}` only when the title is distinctive. See
+  [manifesto-titles](../pipelines/manifesto-titles.md).
 - After Markdown parse, `enhanceManifestoHtml` demotes the first content `<h1>`
-  (from `manifesto.md`) to `<p class="manifesto-doc-masthead">`, keeping the
-  existing body-title styling. Do **not** edit source `.md` files for this.
-- TOC still keys off `h2` only. Reference mock:
-  [`sandbox/i07-manifesto-heading.html`](../../sandbox/i07-manifesto-heading.html).
+  (from `manifesto.md`) to `<p class="manifesto-doc-masthead">`. Do **not** edit
+  source `.md` files for this.
+- TOC still keys off `h2` only. Title extraction: [manifesto-titles](../pipelines/manifesto-titles.md).
 
 ## Contents sidebar (desktop)
 
@@ -28,15 +31,20 @@ Rendered by `renderManifesto()` in `js/app.js`.
   `max-height: calc(100vh - var(--nav-h) - 3rem)`.
 - The link list (`.manifesto-toc-list`) must **scroll** (`overflow-y: auto`); do not
   remove that when restyling — long TOCs (e.g. Labour 1983) otherwise clip.
+- Below 1199px the desktop aside hides; the open Contents list uses
+  `max-height: min(60vh, …)` and `overflow-y: auto` so it scrolls inside the
+  panel instead of trapping the page.
 - Label + meta stay outside the scrolling list (`flex: none`).
 - **Find in this manifesto** (`setupManifestoFind`) sits above the TOC label;
   hidden on empty/unavailable states. `/` focuses find when not typing in another
   field. Native browser Find remains available.
 
-## Citation strip (I10)
+## Citation strip (I10 / audit 5.5)
 
-Below the header meta row: suggested citation, **Copy citation** / **Copy link**,
-and a quiet link to About (sources / copyright). Keep visually quiet.
+Below the header meta row: Harvard-style citation with **access date** and the
+published title (slogan or conventional party-and-year title), **Copy citation** /
+**Copy Chicago** / **Copy BibTeX** / **Copy link**, provenance (source,
+digitisation, copyright), and a quiet About link.
 
 ## Header cover + PDF (I06)
 
@@ -64,7 +72,7 @@ to the election and party pages, `noindex`, and no TOC / cover placeholder / Try
 
 Text-missing-but-PDF-present still uses “Text version not yet archived” with a PDF CTA.
 
-Placeholder when a scan is expected but absent: **“Scan not yet archived”**.
+Placeholder when a scan is expected but absent: **“Not yet digitised”**.
 
 ## Covers must follow the pipeline
 

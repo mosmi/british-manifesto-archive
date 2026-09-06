@@ -90,7 +90,7 @@ python3 scripts/build-og-images.py --only party
   `python3 scripts/build-fulltext-index.py --check`. Details:
   [fulltext-index](./fulltext-index.md).
 - **`build-manifesto-assets.py`**: Rebuilds `data/manifesto-assets.json` so
-  text-only editions without a cover show the “Scan not yet archived”
+  text-only editions without a cover show the “Not yet digitised”
   placeholder. Details: [manifesto-assets](./manifesto-assets.md).
 - **`build-og-images.py --only party`**: Regenerates party Open Graph cards (and
   `data/party-holdings.json`) so share-preview election counts stay in sync with

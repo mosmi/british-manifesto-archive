@@ -19,6 +19,9 @@ SKIP_DIRS = {
     "cache",
     # Vendored dev toolkits — excluded from the deploy via .assetsignore.
     "tools",
+    # Local-only trees (also gitignored).
+    "chrome",
+    "sandbox",
 }
 
 

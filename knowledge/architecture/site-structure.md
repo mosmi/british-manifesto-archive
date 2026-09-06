@@ -18,37 +18,45 @@ metadata on first paint.
 |---|---|
 | `meta.js` | Shared title suffix, OG image paths, election/party meta helpers (mirrors edge middleware) |
 | `data.js` | `PARTIES`, `ELECTIONS`, `NATIONS`, `DEVOLVED_PORTALS`, navigation config, SEO helpers |
-| `data-loader.js` | Lazy election JSON fetch; `ASSETS_VERSION` for cache-busted data URLs |
-| `app.js` | Main app, routing, page renderers (incl. filterable `/parties/all` browse), `setPageMeta()`, mega-menu |
+| `data-loader.js` | Lazy JSON/markdown fetch (`fetchTyped`, `ASSETS_VERSION`); cover `<picture>` helper; memoised `loadScript` for chamber JS and `marked.min.js` |
+| `app.js` | Main app, routing, page renderers (incl. filterable `/party/all` browse), `setPageMeta()`, mega-menu. Core scripts are `defer` in `index.html`; chamber JS is route-loaded |
 | `parliament.js` | Westminster seating / chamber visualisations |
 | `hexmap.js` | Renders hex cartograms from `data/hex/` |
-| `holyrood.js` | Scottish Parliament views |
+| `holyrood.js` | Scottish Parliament views (loaded on `/election/holyrood…` and `/party/…`) |
 | `senedd.js` | Senedd (Welsh Parliament) views |
 | `ni.js` | Northern Ireland Assembly (Stormont) views |
 | `euro.js` | European Parliament election views |
 | `euro-map.js` | EP regional seat map (paths + waffle clusters) |
 | `london.js` | London Mayor & Assembly views |
+| `marked.min.js` | Self-hosted Marked v12; loaded when a manifesto markdown body is parsed |
 | `search.js` | Search overlay with Catalogue + Full text modes; catalogue index; full-text via `data/fulltext-index.json` |
+| `manifestos-hub.js` | Cover wall at `/manifesto`; route-loaded, not on the homepage bundle |
 
 ## Edge / Cloudflare
 | Path | Role |
 |---|---|
-| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs); real 404 when `/manifestos/*` would SPA-fall back to HTML; **short-circuits `/elections` to the SPA shell** (asset layer has 308→`/`); richer `<noscript>` hub links (elections, parties, About, PDFs/MD) |
+| `functions/_middleware.js` | Per-route titles, descriptions, canonical URLs, OG tags, JSON-LD `@graph`, route validation (404 for unknown IDs); real 404 when `/manifestos/*` would SPA-fall back to HTML; **301s** legacy hubs via `canonicalizeArchivePath` (and recovers `/election`, `/election/westminster`, `/party`, `/nation`, `/search`, `/manifesto` if the asset layer 308s to `/`); richer `<noscript>` hub links |
 | `_routes.json` | Which paths invoke the middleware (includes `/manifestos/*` for the PDF 404 check) |
-| `_redirects` | Explicit SPA fallbacks only — **no** catch-all `/* → index.html` (that turned missing PDFs into 200 HTML). Locally, mirror with [`scripts/serve-preview.py`](./local-preview.md) |
+| `_redirects` | Legacy 301s **above** SPA 200 fallbacks — **no** catch-all `/* → index.html`. Locally, mirror with [`scripts/serve-preview.py`](./local-preview.md) |
 | `_headers` | Cache + security headers (HSTS, frame options, etc.) |
 | `wrangler.toml` | Workers static-assets config |
 
 ## Routing
-Client-side routes like `/election/2024`, `/party/labour`, `/nation/scotland`,
-`/devolved/holyrood/2021`, `/devolved/euro/2019`, `/manifesto/2024/labour`.
+**Live:** `/election` (all chambers), `/election/westminster` (GE timeline),
+`/election/2024`, `/election/holyrood/2021`, `/election/euro/2019`,
+`/party/labour`, `/party/all`, `/party/other`, `/party/european-groups`,
+`/nation/scotland`, `/manifesto`, `/manifesto/2024/labour`.
+
+Westminster items stay year-only (`/election/1997`); do not prefix them with
+`westminster`. Legacy hubs 301 once — see [url-scheme](./url-scheme.md).
 Cloudflare middleware validates dynamic segments against `data/seo.json` so
 unknown party/election IDs return a true 404 with `noindex`. A blank page on a
 direct deep link is usually a stale/mismatched JS deploy — see [deployment](./deployment.md).
 
 ## Content directories
 - `data/` — structured JSON (see [data-model](../data-model/index.md))
-- `manifestos/<electionId>/<partyId>/` — `manifesto.pdf`, `manifesto.md`, cover image
+- `fonts/` — Latin woff2 + `latin.css` (see [pipelines/fonts](../pipelines/fonts.md))
+- `manifestos/<electionId>/<partyId>/` — `manifesto.pdf`, `manifesto.md`, cover PNG plus WebP thumbs
 - `og/` — Open Graph share cards (generated; see [pipelines/og-generator](../pipelines/og-generator.md))
 - `og-image.jpg` — homepage OG card
 - `previews/` — local map preview artefacts (not deployed)
@@ -63,7 +71,9 @@ Key maintenance scripts (not deployed — excluded via `.assetsignore`):
 - `build-og-images.py` → `/og/` (wraps `tools/og-generator/`)
 - `build-pdf-sizes.py` → `data/pdf-sizes.json`
 - `build-latest-additions.py` → `data/latest-additions.json` (homepage carousel)
-- `check-cloudflare-limits.py` — pre-deploy size/file-count guard
+- `build-cover-thumbs.py` → `cover-356.webp` / `cover-712.webp` beside rasters
+- `vendor-fonts.py` → `fonts/latin.css` + hashed woff2
+- `check-cloudflare-limits.py` — pre-deploy size/file-count guard (skips `chrome/` and `sandbox/`)
 - Many `import-*` and `build-*` scripts for devolved legislatures and hexmaps
 
 ## Toolkits (`tools/`)

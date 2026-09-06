@@ -1954,7 +1954,7 @@ const NAV_PARTIES = {
     parties: ['sinnfein', 'dup', 'alliance', 'uup', 'sdlp', 'tuv', 'pbp'],
   },
   europe: {
-    label: 'Europe',
+    label: 'European groups',
     /** Principal families shown in the Parties mega-menu (matches the nation EP table). */
     megaParties: ['sand', 'epp', 'renew', 'greensefa', 'guengl', 'ecr', 'inddem'],
     parties: [
@@ -2404,12 +2404,25 @@ function pdfCtaHtml({ href, size = '', compact = false, scanNote = true } = {}) 
         </a>`;
 }
 
+function manifestoCardShell({ style, href, target = '', label, thumbInner, headerInner, bodyInner = '' }) {
+  const targetAttr = target ? ` ${target}` : '';
+  const body = bodyInner
+    ? `<div class="manifesto-card-body">${bodyInner}</div>`
+    : '';
+  return `<article class="manifesto-card" style="${style}">
+      <a href="${href}" class="manifesto-card-main"${targetAttr} aria-label="${label}">
+        <span class="manifesto-thumb">${thumbInner}</span>
+        <span class="manifesto-card-header">${headerInner}</span>
+      </a>
+      ${body}
+    </article>`;
+}
+
 /** Shared manifesto card for Holyrood, Senedd, Stormont, and European elections. */
 function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
   const election = normalizeDevolvedElection(electionOrYear);
   const pid = m.party;
   const yearNum = election.year;
-  const yearLabel = election.displayYear || String(yearNum || '');
   const pageId = opts.partyPageId || resolvePartyId(pid);
   const color = opts.color || getPartyColor(pageId, yearNum);
   const dim = opts.dim || getPartyDim(pageId) || 'rgba(0,0,0,0.04)';
@@ -2419,38 +2432,45 @@ function buildDevolvedManifestoCard(m, electionOrYear, opts = {}) {
       ? getEuroAllianceManifestoLabel(pid, yearNum)
       : null)
     || getPartyName(pageId, yearNum);
-  const pdfSize = (typeof window.getPdfSize === 'function' && m.pdf) ? window.getPdfSize(m.pdf) : '';
-  const headerName = pageId && PARTIES[pageId]
-    ? devolvedPartyLink(pageId, partyName, yearNum)
-    : partyName;
+  const coverSrc = m.cover;
+  const showCover = coverSrc && (typeof hasCoverForPath === 'function' ? hasCoverForPath(coverSrc) : true);
+  const yearLabel = election.displayYear || String(yearNum || '');
   const altHeading = m.candidate || partyName;
-  const assetsVersion = typeof ASSETS_VERSION !== 'undefined' ? ASSETS_VERSION : '';
-  const pdfLink = m.pdf
-    ? pdfCtaHtml({ href: m.pdf, size: pdfSize, scanNote: true })
+  const coverHtml = showCover && typeof coverPictureHtml === 'function'
+    ? coverPictureHtml({ src: coverSrc, alt: '' })
     : '';
-
-  return `
-    <div class="manifesto-card" style="--party-color:${color};--party-dim:${dim}">
-      <a href="${m.pdf}" class="manifesto-thumb" target="_blank" rel="noopener" aria-label="Open the ${altHeading} manifesto PDF">
-        <img src="${m.cover}?v=${assetsVersion}" alt="${altHeading} manifesto cover"
-          class="img-lazy" loading="lazy" decoding="async"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="manifesto-thumb-placeholder" style="display:none">
+  const thumbInner = `${coverHtml}
+        <div class="manifesto-thumb-placeholder" style="display:${showCover ? 'none' : 'flex'}">
           <svg viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="thumb-doc-icon">
             <rect x="12" y="10" width="32" height="44" rx="2" fill="currentColor" opacity="0.9"/>
           </svg>
           <span class="thumb-year">${yearLabel}</span>
-        </div>
-      </a>
-      <div class="manifesto-card-header">
-        <div class="manifesto-party-dot" style="background:${color}"></div>
-        <div class="manifesto-party-name">${headerName}</div>
-        <div class="manifesto-party-tag">${yearLabel}</div>
-      </div>
-      <div class="manifesto-card-body">
-        ${m.candidate ? `<p class="london-manifesto-title">${m.candidate}</p>` : ''}
-        ${m.title && !m.candidate ? `<p class="london-manifesto-title">${m.title}</p>` : ''}
-        ${pdfLink}
-      </div>
-    </div>`;
+        </div>`;
+  const headerInner = `
+        <span class="manifesto-party-dot" style="background:${color}"></span>
+        <span class="manifesto-card-heading">
+          <span class="manifesto-party-name">${partyName}</span>
+          ${(() => {
+            const key = opts.electionKey
+              || (election.id && String(election.id).includes('/') ? election.id : (opts.portal ? `${opts.portal}/${election.id || election.year}` : ''));
+            const pub = key && typeof distinctiveManifestoTitle === 'function'
+              ? distinctiveManifestoTitle(key, pid)
+              : '';
+            return pub ? `<span class="manifesto-card-doc-title">${pub}</span>` : '';
+          })()}
+        </span>
+        <span class="manifesto-party-tag">${yearLabel}</span>`;
+  const bodyParts = [];
+  if (m.candidate) bodyParts.push(`<p class="london-manifesto-title">${m.candidate}</p>`);
+  else if (m.title) bodyParts.push(`<p class="london-manifesto-title">${m.title}</p>`);
+
+  return manifestoCardShell({
+    style: `--party-color:${color};--party-dim:${dim}`,
+    href: m.pdf || '#',
+    target: m.pdf ? 'target="_blank" rel="noopener"' : '',
+    label: `Open the ${altHeading} manifesto PDF`,
+    thumbInner,
+    headerInner,
+    bodyInner: bodyParts.filter(Boolean).join(''),
+  });
 }

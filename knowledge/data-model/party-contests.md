@@ -8,7 +8,7 @@ timestamp: 2026-07-20T22:00:00Z
 
 # Party contests
 
-`/parties/all` **Contested** filter merges three sources:
+`/party/all` **Contested** filter merges three sources:
 
 1. Optional curated `contests: ['westminster', 'holyrood', …]` on the party
    object in [`js/data.js`](../../js/data.js)

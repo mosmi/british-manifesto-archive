@@ -32,6 +32,7 @@ All structured data lives under `data/` as JSON; manifesto documents live under
 | `data/election-vote-totals.json` | National vote totals/percentages by party by year |
 | `data/seo.json` | Edge SEO feed: parties, elections, nations, devolved portals, manifesto metadata, chamber counts |
 | `data/catalog.jsonld` | Public Schema.org `DataCatalog` feed (three `Dataset`s) |
+| `data/archive-counts.json` | Unique folder totals for the hero (`scripts/build-archive-counts.py`) |
 | `data/party-links.json` | Curated `sameAs` URLs per party (Wikipedia + official sites) |
 | `data/party-colours.json` | Canonical party slug → hex palette |
 | `data/party-colour-aliases.json` | Hexmap/OG display label → slug |

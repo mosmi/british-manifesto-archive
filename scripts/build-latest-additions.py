@@ -27,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MANIFESTOS_DIR = ROOT / "manifestos"
 INDEX_PATH = ROOT / "data" / "manifestos-index.json"
+TITLES_PATH = ROOT / "data" / "manifesto-titles.json"
 DEVOLVED_DIR = ROOT / "data" / "devolved"
 OUT = ROOT / "data" / "latest-additions.json"
 
@@ -129,9 +130,19 @@ def best_added_date(folder: Path, git_added: dict[str, str]) -> str:
     return iso_now()
 
 
+def load_published_titles() -> dict:
+    if not TITLES_PATH.is_file():
+        return {}
+    try:
+        return json.loads(TITLES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def load_index_entries() -> list[dict]:
     if not INDEX_PATH.is_file():
         return []
+    titles = load_published_titles()
     raw = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     out = []
     for item in raw:
@@ -141,12 +152,12 @@ def load_index_entries() -> list[dict]:
         pid = item.get("partyId")
         if not eid or not pid:
             continue
+        rec = titles.get(f"{eid}/{pid}") or {}
         out.append(
             {
                 "electionId": eid,
                 "partyId": pid,
-                "title": item.get("label")
-                or f"{pid} Manifesto {year_from_election_id(eid)}",
+                "title": rec.get("title") or "",
                 "source": "index",
             }
         )
@@ -158,6 +169,7 @@ def load_devolved_entries() -> list[dict]:
     out = []
     if not DEVOLVED_DIR.is_dir():
         return out
+    titles = load_published_titles()
     for portal_dir in sorted(DEVOLVED_DIR.iterdir()):
         if not portal_dir.is_dir():
             continue
@@ -183,12 +195,12 @@ def load_devolved_entries() -> list[dict]:
                     parts = pdf.strip("/").split("/")
                     if len(parts) >= 4:
                         folder = ROOT / "/".join(parts[:-1])
+                rec = titles.get(f"{election_id}/{pid}") or {}
                 out.append(
                     {
                         "electionId": election_id,
                         "partyId": pid,
-                        "title": m.get("title")
-                        or f"{pid} Manifesto {year_from_election_id(election_id)}",
+                        "title": rec.get("title") or m.get("title") or "",
                         "cover_override": m.get("cover"),
                         "pdf_override": pdf or None,
                         "folder": folder,

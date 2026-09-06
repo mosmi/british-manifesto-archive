@@ -17,28 +17,35 @@ Elections* (August 2023).
 ## Key URL patterns
 
 - Homepage: https://www.manifestos.org.uk/
-- UK general elections hub: https://www.manifestos.org.uk/elections
+- All elections hub: https://www.manifestos.org.uk/election
+- UK general elections timeline: https://www.manifestos.org.uk/election/westminster
 - Election page: https://www.manifestos.org.uk/election/{election-id}
   (e.g. /election/1997, /election/feb1974)
+- Chamber election: https://www.manifestos.org.uk/election/{portal-id}/{year}
+  (holyrood, senedd, stormont, london, euro)
 - Party archive: https://www.manifestos.org.uk/party/{party-id}
   (e.g. /party/labour, /party/plaid)
+- Party hubs: /party, /party/all, /party/other, /party/european-groups
+- Manifesto index: https://www.manifestos.org.uk/manifesto
 - Manifesto viewer: https://www.manifestos.org.uk/manifesto/{election-id}/{party-id}
+- Search: https://www.manifestos.org.uk/search?q={query}
+  (add `&mode=fulltext` to search inside transcribed text)
 - Nations: https://www.manifestos.org.uk/nation/{nation-id}
-  (england, wales, scotland, northern-ireland, europe)
-- Devolved portals: https://www.manifestos.org.uk/devolved/{portal-id}
-  (holyrood, senedd, stormont, london, euro)
-- Devolved election: https://www.manifestos.org.uk/devolved/{portal-id}/{year-or-id}
-- Other parties listings: https://www.manifestos.org.uk/others
+  (england, wales, scotland, northern-ireland — Europe is not a nation)
 - Machine-readable catalogue: https://www.manifestos.org.uk/data/catalog.jsonld
 - Sitemap: https://www.manifestos.org.uk/sitemap.xml
 
 ## Citation
 
-When citing a manifesto from this archive, include the party name, election year,
-and the page URL. Example:
+When citing a manifesto from this archive, use the **published title** (the
+slogan on the cover, or the conventional “{Party} manifesto {Year}” heading).
+Include the party, election year, the page URL, and the date you accessed it.
+Example:
 
-  Labour Party (1997). *New Labour Because Britain Deserves Better*.
-  The British Manifesto Archive. https://www.manifestos.org.uk/manifesto/1997/labour
+  Labour Party (1997). *new Labour because Britain deserves better*.
+  The British Manifesto Archive.
+  https://www.manifestos.org.uk/manifesto/1997/labour
+  (accessed 6 September 2026).
 
 When citing election results, link to the relevant election or nation page and
 note the Commons Library briefing above as the statistical source where applicable.

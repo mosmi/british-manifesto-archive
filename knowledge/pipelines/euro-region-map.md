@@ -70,7 +70,7 @@ election JSON / CBP totals.
 
 ### UI behaviour
 
-On `/devolved/euro/2019`, the viz panel mirrors Holyrood:
+On `/election/euro/2019`, the viz panel mirrors Holyrood:
 
 1. **Parliament** — existing UK MEP seating chart (default)
 2. **Electoral regions** — lazy-loads layout + results; hover for seat tally;
@@ -147,7 +147,7 @@ count on the crosswalk centroid.
 
 ### UI behaviour
 
-On `/devolved/euro/1979` (and 1984 / 1989 / 1994):
+On `/election/euro/1979` (and 1984 / 1989 / 1994):
 
 1. **Parliament** — UK MEP seating chart (default)
 2. **Constituencies** — lazy-loads `/data/hex/euro/<year>.hexjson`; GB click

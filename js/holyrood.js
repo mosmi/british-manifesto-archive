@@ -119,6 +119,7 @@ function holyroodManifestoCard(m, electionOrYear) {
   return buildDevolvedManifestoCard(m, election, {
     color: holyroodPartyColor(m.party),
     partyName: holyroodPartyName(m, election.year),
+    portal: 'holyrood',
   });
 }
 
@@ -144,7 +145,7 @@ function holyroodParliamentSection(election) {
       </details>`
     : '';
   return `
-    <div class="results-section">
+    <div class="results-section" id="election-results" data-rail="Results">
       <span class="section-label">Scottish Parliament · ${p.system || 'Additional Member System'}</span>
       <h2>Parliament Result</h2>
       <table class="results-table london-assembly-table">
@@ -174,7 +175,7 @@ function holyroodManifestosBySeats(election) {
 }
 
 async function renderHolyroodElection(app, id) {
-  setPageMeta({ title: 'Holyrood election', description: 'Scottish Parliament election results.', path: `/devolved/holyrood/${id}` });
+  setPageMeta({ title: 'Holyrood election', description: 'Scottish Parliament election results.', path: `/election/holyrood/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
   const [election, indexRaw] = await Promise.all([loadHolyroodElection(id), loadHolyroodIndex()]);
@@ -188,7 +189,7 @@ async function renderHolyroodElection(app, id) {
     : { dim: winner.dim || 'var(--gold-dim)', css: `--party-color:${winner.color || 'var(--gold)'};--party-dim:${winner.dim || 'var(--gold-dim)'}` };
   const fm = election.firstMinister || '';
 
-  setPageMeta({ title: `${election.displayYear} Scottish Parliament election`, description: devolvedElectionDescription('holyrood', election.displayYear, DEVOLVED_PORTALS?.holyrood), path: `/devolved/holyrood/${id}` });
+  setPageMeta({ title: `${election.displayYear} Scottish Parliament election`, description: devolvedElectionDescription('holyrood', election.displayYear, DEVOLVED_PORTALS?.holyrood), path: `/election/holyrood/${id}` });
 
   const sorted = [...index].sort((a, b) => a.year - b.year);
   const pos = sorted.findIndex(e => e.id === id);
@@ -207,7 +208,7 @@ async function renderHolyroodElection(app, id) {
     ? `<div class="election-date">Turnout ${election.turnout.toFixed(1)}%</div>` : '';
 
   const manifestosSection = (election.manifestos || []).length
-    ? `<div class="manifestos-section">
+    ? `<div class="manifestos-section" id="election-documents" data-rail="Documents">
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} Scottish Parliament election, ordered by seats won.</p>
@@ -216,7 +217,7 @@ async function renderHolyroodElection(app, id) {
     : '';
 
   const sources = (election.sources || []).length
-    ? `<div class="london-sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
+    ? `<div class="london-sources" id="election-sources" data-rail="Sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
     : '';
 
   const chartResults = election.parliament?.results || [];
@@ -225,9 +226,9 @@ async function renderHolyroodElection(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Scottish Parliament', href: '/devolved/holyrood' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Scottish Parliament', href: '/election/holyrood' },
       { label: election.displayYear },
     ])}
     <section class="election-hero" style="--party-glow:${badge.dim}">
@@ -241,8 +242,8 @@ async function renderHolyroodElection(app, id) {
           ${winnerBadge}
         </div>
         <div class="election-nav-btns">
-          ${prev ? `<a class="election-nav-btn" href="/devolved/holyrood/${prev.id}">← ${prev.displayYear}</a>` : ''}
-          ${next ? `<a class="election-nav-btn" href="/devolved/holyrood/${next.id}">${next.displayYear} →</a>` : ''}
+          ${prev ? `<a class="election-nav-btn" href="/election/holyrood/${prev.id}">← ${prev.displayYear}</a>` : ''}
+          ${next ? `<a class="election-nav-btn" href="/election/holyrood/${next.id}">${next.displayYear} →</a>` : ''}
         </div>
       </div>
     </section>
@@ -250,7 +251,7 @@ async function renderHolyroodElection(app, id) {
     <div class="election-body">
       <div class="election-grid">
         <div>
-          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary">${summaryParas}</div>` : ''}
+          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary" id="election-summary" data-rail="Summary">${summaryParas}</div>` : ''}
           ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
           ${holyroodParliamentSection(election)}
         </div>
@@ -284,6 +285,7 @@ async function renderHolyroodElection(app, id) {
       ${sources}
     </div>
   `;
+  if (typeof attachPageRail === 'function') attachPageRail(app);
 
   if (hasChart) {
     requestAnimationFrame(() => {
@@ -407,7 +409,7 @@ async function renderHolyroodPortal(app) {
   setPageMeta({
     title: `${portal?.label || 'Scottish Parliament'} Elections`,
     description: `Election results and party manifestos for the ${portal?.label || 'Scottish Parliament'}.`,
-    path: '/devolved/holyrood',
+    path: '/election/holyrood',
   });
 
   const index = await loadHolyroodIndex();
@@ -423,7 +425,7 @@ async function renderHolyroodPortal(app) {
     return;
   }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/holyrood/${e.id}`, e)).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/election/holyrood/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS.scotland : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES.scotland : null;
@@ -431,8 +433,8 @@ async function renderHolyroodPortal(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
       { label: 'Scottish Parliament' },
     ])}
     <section class="devolved-hero">
@@ -447,7 +449,7 @@ async function renderHolyroodPortal(app) {
         <div class="nation-parties-card devolved-hero-parties">
           <div class="section-label" style="margin-bottom:1rem">Parties in the Scottish Parliament</div>
           ${partyLinks}
-          <a href="/devolved/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>
+          <a href="/election/holyrood/other-parties" class="holyrood-other-link">Other Scottish parties →</a>
         </div>
       </div>
     </section>
@@ -464,7 +466,7 @@ function renderHolyroodOtherParties(app) {
   setPageMeta({
     title: 'Other Scottish Parties',
     description: 'Smaller and specialist parties that have contested Scottish Parliament elections at Holyrood.',
-    path: '/devolved/holyrood/other-parties',
+    path: '/election/holyrood/other-parties',
   });
 
   const ids = (typeof HOLYROOD_OTHER_PARTIES !== 'undefined') ? HOLYROOD_OTHER_PARTIES : [];
@@ -475,9 +477,9 @@ function renderHolyroodOtherParties(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Scottish Parliament', href: '/devolved/holyrood' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Scottish Parliament', href: '/election/holyrood' },
       { label: 'Other Scottish parties' },
     ])}
     <div class="about-section">
@@ -486,7 +488,7 @@ function renderHolyroodOtherParties(app) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Parties that have contested Scottish Parliament elections but are not among the principal groups on the Holyrood portal. Many appear only on the regional list under AMS.</p>
       <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
-      <a href="/others" class="cross-archive-link">Other Parties →</a>
+      <a href="/party/other" class="cross-archive-link">Other Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;
@@ -531,7 +533,7 @@ function holyroodPartyElectionRow(partyId, { election, result }, maxSeats, color
   const sub = isGov && election.firstMinister
     ? `${election.firstMinister} — First Minister`
     : 'Scottish Parliament';
-  return `<a class="party-election-row" href="/devolved/holyrood/${election.id}">
+  return `<a class="party-election-row" href="/election/holyrood/${election.id}">
     <div class="per-year">${election.displayYear}</div>
     <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${sub}</div></div>
     <div class="per-seats-wrap"><div class="per-seats-num">${result.seats}</div><div class="per-seats-label">MSPs</div></div>

@@ -28,14 +28,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_JS = ROOT / "js" / "data.js"
 MANIFESTOS_INDEX = ROOT / "data" / "manifestos-index.json"
+MANIFESTO_TITLES = ROOT / "data" / "manifesto-titles.json"
 PARTY_LINKS = ROOT / "data" / "party-links.json"
 DEVOLVED_DIR = ROOT / "data" / "devolved"
 MANIFESTOS_DIR = ROOT / "manifestos"
+MANIFESTO_ASSETS = ROOT / "data" / "manifesto-assets.json"
 OUT = ROOT / "data" / "seo.json"
 CATALOG_OUT = ROOT / "data" / "catalog.jsonld"
 
 SITE_URL = "https://www.manifestos.org.uk"
 SITE_NAME = "The British Manifesto Archive"
+CHAMBER_SLUGS = {"london", "holyrood", "senedd", "stormont", "euro"}
 
 MONTHS = {
     "january": "01", "february": "02", "march": "03", "april": "04",
@@ -251,18 +254,32 @@ def manifesto_sections(md_path: Path) -> list:
     return sections
 
 
-def enrich_manifesto(item: dict) -> dict:
+def load_manifesto_titles() -> dict:
+    if not MANIFESTO_TITLES.is_file():
+        return {}
+    try:
+        return json.loads(MANIFESTO_TITLES.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def enrich_manifesto(item: dict, titles: dict | None = None) -> dict:
     """Add asset flags (pdf/markdown/cover) and topic keywords to a manifesto."""
     eid, pid = item["electionId"], item["partyId"]
     folder = MANIFESTOS_DIR / eid / pid
+    key = f"{eid}/{pid}"
+    rec = (titles or {}).get(key) or {}
     out = {
-        "label": item.get("label"),
+        "label": rec.get("title") or item.get("label"),
         "electionId": eid,
         "partyId": pid,
         "hasPdf": (folder / "manifesto.pdf").is_file(),
         "hasMarkdown": (folder / "manifesto.md").is_file(),
         "hasCover": (folder / "cover.jpg").is_file(),
     }
+    if rec.get("title"):
+        out["title"] = rec["title"]
+    out["distinctive"] = bool(rec.get("distinctive"))
     keywords = [humanize(s) for s in manifesto_sections(folder / "manifesto.md")]
     if keywords:
         out["keywords"] = keywords
@@ -318,6 +335,24 @@ def build_devolved_manifestos() -> dict:
     return out
 
 
+def catalog_key_from_parts(election_key: str, party_id: str) -> str:
+    return f"{election_key}/{party_id}"
+
+
+def is_westminster_key(key: str) -> bool:
+    return (key or "").split("/", 1)[0] not in CHAMBER_SLUGS
+
+
+def leftover_document_name(key: str) -> str:
+    if key.endswith("/booklet"):
+        bits = key.split("/")
+        year = bits[1] if len(bits) > 1 else ""
+        return f"London Elects candidate booklet {year}".strip()
+    party = key.rsplit("/", 1)[-1]
+    year = next((p for p in key.split("/") if p.isdigit() and len(p) == 4), "")
+    return f"{party} manifesto {year}".strip()
+
+
 def build_catalog(seo: dict) -> dict:
     """A DataCatalog feed enumerating the archive's manifesto corpus + datasets."""
     publisher = {
@@ -331,26 +366,63 @@ def build_catalog(seo: dict) -> dict:
         node = {
             "@type": "DigitalDocument",
             "@id": f"{SITE_URL}/manifesto/{key}#document",
-            "name": rec.get("label") or key,
+            "name": rec.get("title") or rec.get("label") or key,
             "url": f"{SITE_URL}/manifesto/{key}",
         }
         if rec.get("keywords"):
             node["keywords"] = rec["keywords"]
         return node
 
-    general_parts = [doc_node(k, r) for k, r in sorted(seo["manifestos"].items())]
-
+    seen: set[str] = set()
+    general_parts = []
     devolved_parts = []
+    assets = {}
+    if MANIFESTO_ASSETS.is_file():
+        assets = json.loads(MANIFESTO_ASSETS.read_text(encoding="utf-8"))
+    held = set(assets)
+
+    for key, rec in sorted(seo["manifestos"].items()):
+        if held and key not in held:
+            continue
+        seen.add(key)
+        node = doc_node(key, rec)
+        if is_westminster_key(key):
+            general_parts.append(node)
+        else:
+            devolved_parts.append(node)
+
     for ekey, items in sorted(seo.get("devolvedManifestos", {}).items()):
         for it in items:
+            party = it.get("party")
+            if not party:
+                continue
+            key = catalog_key_from_parts(ekey, party)
+            if key in seen:
+                continue
             if not it.get("pdf"):
                 continue
+            if held and key not in held:
+                continue
+            seen.add(key)
             devolved_parts.append({
                 "@type": "DigitalDocument",
-                "name": it.get("title") or f"{it.get('party')} {ekey}",
-                "url": f"{SITE_URL}{it['pdf']}",
-                "encodingFormat": "application/pdf",
+                "@id": f"{SITE_URL}/manifesto/{key}#document",
+                "name": it.get("title") or f"{party} {ekey}",
+                "url": f"{SITE_URL}/manifesto/{key}",
             })
+
+    for key in sorted(held - seen):
+        seen.add(key)
+        node = {
+            "@type": "DigitalDocument",
+            "@id": f"{SITE_URL}/manifesto/{key}#document",
+            "name": leftover_document_name(key),
+            "url": f"{SITE_URL}/manifesto/{key}",
+        }
+        if is_westminster_key(key):
+            general_parts.append(node)
+        else:
+            devolved_parts.append(node)
 
     datasets = [
         {
@@ -359,7 +431,7 @@ def build_catalog(seo: dict) -> dict:
             "name": "UK general election party manifestos (1945–2024)",
             "description": "Full-text party manifestos published for UK general "
                            "elections, with original PDFs and transcribed text.",
-            "url": f"{SITE_URL}/elections",
+            "url": f"{SITE_URL}/election/westminster",
             "inLanguage": "en-GB",
             "isAccessibleForFree": True,
             "creativeWorkStatus": "Published",
@@ -373,7 +445,7 @@ def build_catalog(seo: dict) -> dict:
             "description": "Manifestos from Scottish Parliament (Holyrood), Senedd "
                            "Cymru, Northern Ireland Assembly (Stormont) and London "
                            "elections.",
-            "url": f"{SITE_URL}/devolved",
+            "url": f"{SITE_URL}/election",
             "inLanguage": "en-GB",
             "isAccessibleForFree": True,
             "creativeWorkStatus": "Published",
@@ -386,7 +458,7 @@ def build_catalog(seo: dict) -> dict:
             "name": "UK election results and seat maps",
             "description": "Party seat totals, vote shares and constituency hex "
                            "maps for UK general and devolved elections.",
-            "url": f"{SITE_URL}/elections",
+            "url": f"{SITE_URL}/election",
             "inLanguage": "en-GB",
             "isAccessibleForFree": True,
             "creativeWorkStatus": "Published",
@@ -414,7 +486,7 @@ def main() -> None:
 
     parties = parse_parties(text)
     # `others` is a catch-all bucket, not a standalone page (mirrors the
-    # sitemap, which excludes /party/others).
+    # sitemap, which excludes /party/others). Canonical listing is /party/other.
     parties.pop("others", None)
     elections = parse_elections(text)
     nations = parse_nations(slice_block(text, "const NATIONS", "const ELECTIONS"))
@@ -446,8 +518,9 @@ def main() -> None:
                 same_as += 1
 
     manifestos = json.loads(MANIFESTOS_INDEX.read_text(encoding="utf-8"))
+    titles = load_manifesto_titles()
     manifesto_map = {
-        f"{item['electionId']}/{item['partyId']}": enrich_manifesto(item)
+        f"{item['electionId']}/{item['partyId']}": enrich_manifesto(item, titles)
         for item in manifestos
     }
 
@@ -486,6 +559,21 @@ def main() -> None:
     print(f"  manifestos: {len(manifesto_map)}")
     print(f"Wrote {CATALOG_OUT.relative_to(ROOT)}")
     print(f"  datasets:   {len(catalog['dataset'])}")
+
+    try:
+        from importlib.util import module_from_spec, spec_from_file_location
+        spec = spec_from_file_location(
+            "build_archive_counts",
+            Path(__file__).with_name("build-archive-counts.py"),
+        )
+        counts_mod = module_from_spec(spec)
+        spec.loader.exec_module(counts_mod)
+        archive_counts = counts_mod.write_archive_counts(catalog)
+        print(f"Wrote {counts_mod.OUT.relative_to(ROOT)}")
+        print(f"  catalogue:  {archive_counts['manifestos']} DigitalDocument, "
+              f"{archive_counts['elections']} elections")
+    except Exception as exc:
+        print(f"WARN: archive-counts.json not updated ({exc})", file=sys.stderr)
 
 
 if __name__ == "__main__":

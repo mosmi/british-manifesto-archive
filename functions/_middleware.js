@@ -19,10 +19,57 @@
 const SITE_URL = 'https://www.manifestos.org.uk';
 const SITE_NAME = 'The British Manifesto Archive';
 const TITLE_SUFFIX = ` — ${SITE_NAME}`;
-const DEFAULT_TITLE = `${SITE_NAME} — www.manifestos.org.uk`;
+const DEFAULT_TITLE = SITE_NAME;
 const DEFAULT_DESCRIPTION =
   'A comprehensive digital archive of general, devolved, regional, and ' +
   'European Parliament election manifestos, results, and maps in the UK.';
+
+const CHAMBER_SLUGS = ['holyrood', 'senedd', 'stormont', 'london', 'euro'];
+const PARTY_HUB_SLUGS = ['all', 'other', 'european-groups'];
+const NODES = {
+  home: 'Home',
+  elections: 'Elections',
+  allElections: 'All elections',
+  generalElections: 'General elections (1945–2024)',
+  westminster: 'Westminster',
+  holyrood: 'Scottish Parliament',
+  senedd: 'Welsh Parliament',
+  stormont: 'Northern Ireland Assembly',
+  london: 'London Mayor & Assembly',
+  euro: 'European Parliament',
+  parties: 'Parties',
+  allParties: 'All parties A–Z',
+  otherParties: 'Other parties',
+  europeanGroups: 'European groups',
+  manifestos: 'Manifestos',
+  nations: 'The Four Nations',
+  about: 'About',
+};
+
+function canonicalizeArchivePath(path) {
+  let p = path || '/';
+  if (p.length > 1 && p.endsWith('/')) p = p.slice(0, -1);
+
+  let m = p.match(/^\/devolved\/london\/(gla|glc|lcc)-(\d{4})$/);
+  if (m) return `/election/london/${m[2]}`;
+  m = p.match(/^\/manifesto\/london\/(gla|glc|lcc)-(\d{4})\/([^/]+)$/);
+  if (m) return `/manifesto/london/${m[2]}/${m[3]}`;
+
+  if (p === '/elections') return '/election/westminster';
+  if (p === '/parties') return '/party';
+  if (p === '/parties/all') return '/party/all';
+  if (p.startsWith('/parties/')) return `/party/${p.slice('/parties/'.length)}`;
+  if (p === '/others') return '/party/other';
+  if (p === '/nations') return '/nation';
+  if (p === '/manifestos') return '/manifesto';
+  if (p === '/nation/europe') return '/party/european-groups';
+  if (p === '/devolved') return '/election';
+  if (p.startsWith('/devolved/')) return `/election/${p.slice('/devolved/'.length)}`;
+  if (p.startsWith('/election/westminster/')) {
+    return `/election/${p.slice('/election/westminster/'.length)}`;
+  }
+  return p;
+}
 
 function truncateMetaDescription(text, maxLen = 155) {
   if (!text) return '';
@@ -96,35 +143,31 @@ function manifestoRouteParts(parts) {
 
 function ogImagePathForRoute(path) {
   if (!path || path === '/') return '/og-image.jpg';
-  const parts = path.split('/').filter(Boolean);
-  if (parts[0] === 'party' && parts[1]) return `/og/party/${parts[1]}.jpg`;
-  if (parts[0] === 'election' && parts[1]) return `/og/election/${parts[1]}.jpg`;
+  const canonical = canonicalizeArchivePath(path);
+  const parts = canonical.split('/').filter(Boolean);
+  if (parts[0] === 'party') {
+    if (parts[1] === 'european-groups') return '/og/nation/europe.jpg';
+    if (parts[1] === 'other') return '/og/hub/others.jpg';
+    if (parts[1] === 'all' || !parts[1]) return '/og/hub/parties.jpg';
+    return `/og/party/${parts[1]}.jpg`;
+  }
+  if (parts[0] === 'election') {
+    if (!parts[1]) return '/og/hub/devolved.jpg';
+    if (parts[1] === 'westminster') return '/og/hub/elections.jpg';
+    if (CHAMBER_SLUGS.includes(parts[1])) {
+      if (parts[2] === 'other-parties') return `/og/devolved/${parts[1]}/other-parties.jpg`;
+      if (parts[2]) return `/og/devolved/${parts[1]}/${parts[2]}.jpg`;
+      return `/og/devolved/${parts[1]}.jpg`;
+    }
+    return `/og/election/${parts[1]}.jpg`;
+  }
   const manifesto = manifestoRouteParts(parts);
   if (manifesto) {
     return `/og/manifesto/${manifesto.electionId}/${manifesto.partyId}.jpg`;
   }
   if (parts[0] === 'nation' && parts[1]) return `/og/nation/${parts[1]}.jpg`;
-  if (parts[0] === 'devolved' && parts[1]) {
-    if (parts[2] === 'other-parties') {
-      return `/og/devolved/${parts[1]}/other-parties.jpg`;
-    }
-    if (parts[2] && parts[2] !== 'other-parties') {
-      return `/og/devolved/${parts[1]}/${parts[2]}.jpg`;
-    }
-    if (['holyrood', 'senedd', 'stormont', 'euro', 'london'].includes(parts[1])) {
-      return `/og/devolved/${parts[1]}.jpg`;
-    }
-  }
-  const hubSlugs = {
-    '/about': 'about',
-    '/elections': 'elections',
-    '/parties': 'parties',
-    '/parties/all': 'parties',
-    '/devolved': 'devolved',
-    '/nations': 'nations',
-    '/others': 'others',
-  };
-  if (hubSlugs[path]) return `/og/hub/${hubSlugs[path]}.jpg`;
+  if (canonical === '/nation') return '/og/hub/nations.jpg';
+  if (canonical === '/about') return '/og/hub/about.jpg';
   return '/og-image.jpg';
 }
 
@@ -136,36 +179,50 @@ const STATIC_ROUTES = {
     description: 'What the British Manifesto Archive covers, how to use it, our ' +
       'editorial approach, data sources, and how to report corrections.',
   },
-  '/elections': {
-    title: `UK General Elections${TITLE_SUFFIX}`,
+  '/search': {
+    title: `Search${TITLE_SUFFIX}`,
+    description: 'Search parties, elections, and published manifesto titles, or ' +
+      'search inside transcribed manifesto text.',
+  },
+  '/manifesto': {
+    title: `${NODES.manifestos}${TITLE_SUFFIX}`,
+    description: 'Every manifesto document in The British Manifesto Archive — ' +
+      'Westminster, Holyrood, the Senedd, Stormont, London and the European Parliament. ' +
+      'Filter by chamber, decade, party, or what is available to read.',
+  },
+  '/election': {
+    title: `${NODES.allElections}${TITLE_SUFFIX}`,
+    description: 'UK general, devolved, regional, and European Parliament elections — ' +
+      'Scottish Parliament, Welsh Parliament, Northern Ireland Assembly, London Mayor & ' +
+      'Assembly, and UK European Parliament contests.',
+  },
+  '/election/westminster': {
+    title: `${NODES.generalElections}${TITLE_SUFFIX}`,
     description: 'Browse every UK general election from 1945 to 2024 with ' +
       'results, seat maps, and the party manifestos published for each.',
   },
-  '/parties/all': {
-    title: `All Parties${TITLE_SUFFIX}`,
+  '/party/all': {
+    title: `${NODES.allParties}${TITLE_SUFFIX}`,
     description: 'A–Z catalogue of political parties in The British Manifesto Archive.',
   },
-  '/devolved': {
-    title: `Beyond Westminster${TITLE_SUFFIX}`,
-    description: 'The main path into devolved and regional elections — Scottish ' +
-      'Parliament, Welsh Parliament, Northern Ireland Assembly, London Mayor & ' +
-      'Assembly, and UK European Parliament contests.',
-  },
-  '/parties': {
-    title: `Political Parties${TITLE_SUFFIX}`,
+  '/party': {
+    title: `${NODES.parties}${TITLE_SUFFIX}`,
     description: 'Browse UK political parties and their historical general ' +
       'election manifestos in The British Manifesto Archive.',
   },
-  '/nations': {
-    title: `The Four Nations & Europe${TITLE_SUFFIX}`,
+  '/nation': {
+    title: `${NODES.nations}${TITLE_SUFFIX}`,
     description: 'Browse parties and Westminster results by nation — England, ' +
-      'Wales, Scotland, Northern Ireland — plus European political families. ' +
-      'For devolved elections, use Beyond Westminster.',
+      'Wales, Scotland, and Northern Ireland.',
   },
-  '/others': {
-    title: `Other Parties${TITLE_SUFFIX}`,
+  '/party/other': {
+    title: `${NODES.otherParties}${TITLE_SUFFIX}`,
     description: 'Smaller and historical UK political parties and the ' +
       'manifestos they published.',
+  },
+  '/party/european-groups': {
+    title: `${NODES.europeanGroups}${TITLE_SUFFIX}`,
+    description: 'Pan-European political families that contested European Parliament elections in the United Kingdom from 1979 to 2019.',
   },
 };
 
@@ -243,6 +300,14 @@ function websiteNode() {
     inLanguage: 'en-GB',
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': ORG_ID },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
 
@@ -341,9 +406,9 @@ function devolvedElection(seo, portal, sub, portalName, path, yearLabel) {
     event,
     orgNode(),
     breadcrumb([
-      { name: 'Home', path: '/' },
-      { name: 'Devolved Elections', path: '/devolved' },
-      { name: portalName, path: `/devolved/${portal}` },
+      { name: NODES.home, path: '/' },
+      { name: NODES.elections, path: '/election' },
+      { name: portalName, path: `/election/${portal}` },
       { name: yearLabel },
     ]),
     ...(items.length
@@ -381,7 +446,17 @@ function classify(path, seo) {
         { name: 'Home', path: '/' },
         { name: 'About' },
       ])]);
-    } else if (path === '/elections') {
+    } else if (path === '/search') {
+      graph = siteGraph([breadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Search' },
+      ])]);
+    } else if (path === '/manifesto') {
+      graph = [breadcrumb([
+        { name: NODES.home, path: '/' },
+        { name: NODES.manifestos },
+      ])];
+    } else if (path === '/election/westminster') {
       const items = Object.entries(seo.elections || {})
         .sort((a, b) => b[1].year - a[1].year)
         .map(([id, e]) => ({
@@ -389,37 +464,49 @@ function classify(path, seo) {
           url: `${SITE_URL}/election/${id}`,
         }));
       graph = [
-        breadcrumb([{ name: 'Home', path: '/' }, { name: 'UK General Elections' }]),
+        breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.generalElections },
+        ]),
         itemList('UK general elections', items),
       ];
-    } else if (path === '/parties' || path === '/parties/all') {
+    } else if (path === '/party' || path === '/party/all') {
       const items = Object.entries(seo.parties || {})
         .map(([id, p]) => ({ name: p.name, url: `${SITE_URL}/party/${id}` }))
         .sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
-      const crumbs = path === '/parties/all'
+      const crumbs = path === '/party/all'
         ? [
-            { name: 'Home', path: '/' },
-            { name: 'Political Parties', path: '/parties' },
-            { name: 'All parties' },
+            { name: NODES.home, path: '/' },
+            { name: NODES.parties, path: '/party' },
+            { name: NODES.allParties },
           ]
         : [
-            { name: 'Home', path: '/' },
-            { name: 'Political Parties' },
+            { name: NODES.home, path: '/' },
+            { name: NODES.parties },
           ];
       graph = [
         breadcrumb(crumbs),
         itemList('UK political parties', items),
       ];
-    } else if (path === '/devolved') {
-      const items = Object.entries(seo.devolvedPortals || seo.devolved || {})
-        .map(([id, p]) => ({
+    } else if (path === '/election') {
+      const items = [
+        { name: NODES.generalElections, url: `${SITE_URL}/election/westminster` },
+        ...Object.entries(seo.devolvedPortals || seo.devolved || {}).map(([id, p]) => ({
           name: (p && p.label) || p,
-          url: `${SITE_URL}/devolved/${id}`,
-        }));
-      graph = [
-        breadcrumb([{ name: 'Home', path: '/' }, { name: 'Devolved Elections' }]),
-        ...(items.length ? [itemList('Devolved & regional legislatures', items)] : []),
+          url: `${SITE_URL}/election/${id}`,
+        })),
       ];
+      graph = [
+        breadcrumb([{ name: NODES.home, path: '/' }, { name: NODES.allElections }]),
+        itemList('Elections', items),
+      ];
+    } else if (path === '/party/european-groups') {
+      graph = [breadcrumb([
+        { name: NODES.home, path: '/' },
+        { name: NODES.parties, path: '/party' },
+        { name: NODES.europeanGroups },
+      ])];
     } else {
       graph = [breadcrumb([{ name: 'Home', path: '/' }, { name: meta.title.replace(TITLE_SUFFIX, '') }])];
     }
@@ -438,11 +525,22 @@ function classify(path, seo) {
     const isDevolved = electionId.includes('/');
     const election = seo.elections[electionId];
     const party = seo.parties[partyId];
-    const label = rec.label || `${partyId} ${electionId}`;
     const year = election ? election.displayYear : (electionId.split(/[-/]/).pop() || electionId);
+    const published = rec.title;
+    const distinctive = rec.distinctive === true && Boolean(published);
+    const partyLabel = party ? (party.shortName || party.name) : partyId;
+    const archival = `${partyLabel} manifesto ${year}`;
+    const label = distinctive
+      ? published
+      : (published || (party ? `${party.name} manifesto (${year})` : rec.label) || `${partyId} ${electionId}`);
+    const pageTitle = distinctive && published && published.toLowerCase() !== archival.toLowerCase()
+      ? `${archival} — ${published}`
+      : (published || archival);
     const description = isDevolved
-      ? `Read the ${label} from the ${year} London election — original PDF and online text where available.`
-      : `Read the ${label} from the ${year} UK general election — original PDF and online text where available.`;
+      ? `Read the ${archival} from the ${year} London election — original PDF and online text where available.`
+      : distinctive
+        ? `${archival}: ${published}. Original PDF and online text where available.`
+        : `Read the ${archival} from the ${year} UK general election — original PDF and online text where available.`;
     const canonical = canonicalFor(path);
     const assetBase = `${SITE_URL}/manifestos/${electionId}/${partyId}`;
     const encoding = [
@@ -477,7 +575,7 @@ function classify(path, seo) {
           url: `${SITE_URL}/party/${partyId}`,
         }
       : null;
-    const electionPath = isDevolved ? `/devolved/${electionId}` : `/election/${electionId}`;
+    const electionPath = `/election/${electionId}`;
     const electionName = isDevolved
       ? `${year} London election`
       : `${year} UK General Election`;
@@ -506,15 +604,15 @@ function classify(path, seo) {
     };
     const crumbs = isDevolved
       ? [
-          { name: 'Home', path: '/' },
-          { name: 'Devolved & regional', path: '/devolved' },
-          { name: 'London', path: '/devolved/london' },
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.london, path: '/election/london' },
           { name: `${year}`, path: electionPath },
           { name: label },
         ]
       : [
-          { name: 'Home', path: '/' },
-          { name: 'UK General Elections', path: '/elections' },
+          { name: NODES.home, path: '/' },
+          { name: NODES.generalElections, path: '/election/westminster' },
           { name: `${year}`, path: `/election/${electionId}` },
           { name: label },
         ];
@@ -525,10 +623,116 @@ function classify(path, seo) {
     ];
     return {
       valid: true,
-      meta: { title: `${label}${TITLE_SUFFIX}`, description },
+      meta: { title: `${pageTitle}${TITLE_SUFFIX}`, description },
       graph,
       image: `/og/manifesto/${electionId}/${partyId}.jpg`,
     };
+  }
+
+  // /election/:chamber… before unmarked GE /election/:id
+  if (parts[0] === 'election' && parts.length >= 2 && CHAMBER_SLUGS.includes(parts[1])) {
+    const portal = parts[1];
+    const sub = parts[2];
+    if (!sub) {
+      const name = seo.devolved && seo.devolved[portal];
+      if (!seo.devolved) return { valid: /^[a-z][a-z0-9-]*$/.test(portal), meta: null };
+      if (!name) return { valid: false };
+      const years = Object.keys(seo.devolvedManifestos || {})
+        .filter((k) => k.startsWith(`${portal}/`))
+        .map((k) => k.slice(portal.length + 1))
+        .sort()
+        .map((year) => ({
+          name: `${(year.match(/(\d{4})/) || [year])[0]} ${name} election`,
+          url: `${SITE_URL}/election/${portal}/${year}`,
+        }));
+      const graph = [
+        breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name },
+        ]),
+        ...(years.length ? [itemList(`${name} elections`, years)] : []),
+      ];
+      return {
+        valid: true,
+        meta: {
+          title: `${name} Elections${TITLE_SUFFIX}`,
+          description: `Election results and party manifestos for the ${name}.`,
+        },
+        graph,
+        image: `/og/devolved/${portal}.jpg`,
+      };
+    }
+    if (portal === 'holyrood' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Scottish Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Scottish Parliament elections at Holyrood.',
+        },
+        graph: [breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.holyrood, path: '/election/holyrood' },
+          { name: 'Other Scottish parties' },
+        ])],
+        image: '/og/devolved/holyrood/other-parties.jpg',
+      };
+    }
+    if (portal === 'senedd' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Welsh Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Senedd Cymru elections.',
+        },
+        graph: [breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.senedd, path: '/election/senedd' },
+          { name: 'Other Welsh parties' },
+        ])],
+        image: '/og/devolved/senedd/other-parties.jpg',
+      };
+    }
+    if (portal === 'stormont' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other Northern Irish Parties${TITLE_SUFFIX}`,
+          description: 'Smaller parties that have contested Northern Ireland Assembly elections at Stormont.',
+        },
+        graph: [breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.stormont, path: '/election/stormont' },
+          { name: 'Other Northern Irish parties' },
+        ])],
+        image: '/og/devolved/stormont/other-parties.jpg',
+      };
+    }
+    if (portal === 'euro' && sub === 'other-parties') {
+      return {
+        valid: true,
+        meta: {
+          title: `Other European Parliament parties${TITLE_SUFFIX}`,
+          description:
+            'Smaller, regional, and specialist parties that have contested ' +
+            'European Parliament elections in the UK.',
+        },
+        graph: [breadcrumb([
+          { name: NODES.home, path: '/' },
+          { name: NODES.elections, path: '/election' },
+          { name: NODES.euro, path: '/election/euro' },
+          { name: 'Other European Parliament parties' },
+        ])],
+        image: '/og/devolved/euro/other-parties.jpg',
+      };
+    }
+    const portalName = seo.devolved && seo.devolved[portal];
+    if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
+    if (!/^\d{4}$/.test(sub)) return { valid: false };
+    return devolvedElection(seo, portal, sub, portalName, path, sub);
   }
 
   // /election/:id
@@ -556,8 +760,8 @@ function classify(path, seo) {
       event,
       orgNode(),
       breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'UK General Elections', path: '/elections' },
+        { name: NODES.home, path: '/' },
+        { name: NODES.generalElections, path: '/election/westminster' },
         { name: `${year}` },
       ]),
       ...(manifestos.length
@@ -592,8 +796,8 @@ function classify(path, seo) {
     const graph = [
       org,
       breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'Political Parties', path: '/parties' },
+        { name: NODES.home, path: '/' },
+        { name: NODES.parties, path: '/party' },
         { name: party.name },
       ]),
       ...(manifestos.length
@@ -608,8 +812,9 @@ function classify(path, seo) {
     };
   }
 
-  // /nation/:id
+  // /nation/:id (europe is a party hub, 301'd before classify)
   if (parts[0] === 'nation' && parts.length === 2) {
+    if (parts[1] === 'europe') return { valid: false };
     const nationRec = seo.nations && seo.nations[parts[1]];
     // Back-compat: if seo.json predates the nations list, accept slug-shaped
     // IDs (canonical fix only) rather than risk 404ing a real page.
@@ -624,118 +829,11 @@ function classify(path, seo) {
         description,
       },
       graph: [breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'Nations of the UK', path: '/nations' },
+        { name: NODES.home, path: '/' },
+        { name: NODES.nations, path: '/nation' },
         { name },
       ])],
       image: `/og/nation/${parts[1]}.jpg`,
-    };
-  }
-
-  // /devolved/:portal/:sub (election pages, other-parties, etc.)
-  if (parts[0] === 'devolved' && parts.length >= 3) {
-    const portal = parts[1];
-    const sub = parts[2];
-    if (portal === 'holyrood' && sub === 'other-parties') {
-      return {
-        valid: true,
-        meta: {
-          title: `Other Scottish Parties${TITLE_SUFFIX}`,
-          description: 'Smaller parties that have contested Scottish Parliament elections at Holyrood.',
-        },
-        image: '/og/devolved/holyrood/other-parties.jpg',
-      };
-    }
-    if (portal === 'senedd' && sub === 'other-parties') {
-      return {
-        valid: true,
-        meta: {
-          title: `Other Welsh Parties${TITLE_SUFFIX}`,
-          description: 'Smaller parties that have contested Senedd Cymru elections.',
-        },
-        image: '/og/devolved/senedd/other-parties.jpg',
-      };
-    }
-    if (portal === 'stormont' && sub === 'other-parties') {
-      return {
-        valid: true,
-        meta: {
-          title: `Other Northern Irish Parties${TITLE_SUFFIX}`,
-          description: 'Smaller parties that have contested Northern Ireland Assembly elections at Stormont.',
-        },
-        image: '/og/devolved/stormont/other-parties.jpg',
-      };
-    }
-    if (portal === 'holyrood' || portal === 'senedd' || portal === 'stormont') {
-      const portalName = seo.devolved && seo.devolved[portal];
-      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      if (!/^\d{4}$/.test(sub)) return { valid: false };
-      return devolvedElection(seo, portal, sub, portalName, path, sub);
-    }
-    if (portal === 'london') {
-      const portalName = seo.devolved && seo.devolved[portal];
-      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      // Year-only ids (aligned with holyrood/senedd). Legacy gla-/glc-/lcc-
-      // prefixes are redirected in onRequest before SEO validation.
-      if (!/^\d{4}$/.test(sub)) return { valid: false };
-      return devolvedElection(seo, portal, sub, portalName, path, sub);
-    }
-    if (portal === 'euro') {
-      if (sub === 'other-parties') {
-        return {
-          valid: true,
-          meta: {
-            title: `Other European Parliament parties${TITLE_SUFFIX}`,
-            description:
-              'Smaller, regional, and specialist parties that have contested ' +
-              'European Parliament elections in the UK.',
-          },
-          graph: [breadcrumb([
-            { name: 'Home', path: '/' },
-            { name: 'Devolved Elections', path: '/devolved' },
-            { name: 'European Parliament', path: '/devolved/euro' },
-            { name: 'Other European Parliament parties' },
-          ])],
-          image: '/og/devolved/euro/other-parties.jpg',
-        };
-      }
-      const portalName = seo.devolved && seo.devolved[portal];
-      if (!portalName) return { valid: /^[a-z][a-z0-9-]*$/.test(sub), meta: null };
-      if (!/^\d{4}$/.test(sub)) return { valid: false };
-      return devolvedElection(seo, portal, sub, portalName, path, sub);
-    }
-    return { valid: false };
-  }
-
-  // /devolved/:id
-  if (parts[0] === 'devolved' && parts.length === 2) {
-    const name = seo.devolved && seo.devolved[parts[1]];
-    if (!seo.devolved) return { valid: /^[a-z][a-z0-9-]*$/.test(parts[1]), meta: null };
-    if (!name) return { valid: false };
-    const years = Object.keys(seo.devolvedManifestos || {})
-      .filter((k) => k.startsWith(`${parts[1]}/`))
-      .map((k) => k.slice(parts[1].length + 1))
-      .sort()
-      .map((sub) => ({
-        name: `${(sub.match(/(\d{4})/) || [sub])[0]} ${name} election`,
-        url: `${SITE_URL}/devolved/${parts[1]}/${sub}`,
-      }));
-    const graph = [
-      breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'Devolved Elections', path: '/devolved' },
-        { name },
-      ]),
-      ...(years.length ? [itemList(`${name} elections`, years)] : []),
-    ];
-    return {
-      valid: true,
-      meta: {
-        title: `${name} Elections${TITLE_SUFFIX}`,
-        description: `Election results and party manifestos for the ${name}.`,
-      },
-      graph,
-      image: `/og/devolved/${parts[1]}.jpg`,
     };
   }
 
@@ -754,6 +852,7 @@ function escapeHtml(text) {
 function buildNoscriptHtml(path, meta, seo) {
   if (!meta) return '';
   const title = escapeHtml(meta.title || SITE_NAME);
+  const heading = path === '/manifesto' ? escapeHtml(NODES.manifestos) : title;
   const description = escapeHtml(meta.description || DEFAULT_DESCRIPTION);
   const links = [];
   const parts = path.split('/').filter(Boolean);
@@ -762,10 +861,7 @@ function buildNoscriptHtml(path, meta, seo) {
   if (nsManifesto) {
     const { electionId, partyId, key } = nsManifesto;
     const rec = seo?.manifestos?.[key];
-    const electionHref = electionId.includes('/')
-      ? `/devolved/${escapeHtml(electionId)}`
-      : `/election/${escapeHtml(electionId)}`;
-    links.push(`<a href="${electionHref}">${escapeHtml(electionId)} election</a>`);
+    links.push(`<a href="/election/${escapeHtml(electionId)}">${escapeHtml(electionId)} election</a>`);
     if (seo?.parties?.[partyId]) {
       links.push(`<a href="/party/${escapeHtml(partyId)}">Party page</a>`);
     }
@@ -775,8 +871,18 @@ function buildNoscriptHtml(path, meta, seo) {
     if (rec?.hasPdf) {
       links.push(`<a href="/manifestos/${escapeHtml(electionId)}/${escapeHtml(partyId)}/manifesto.pdf">Original PDF</a>`);
     }
-  } else if (parts[0] === 'election' && parts[1]) {
-    links.push('<a href="/elections">All UK general elections</a>');
+  } else if (parts[0] === 'election' && CHAMBER_SLUGS.includes(parts[1])) {
+    links.push('<a href="/election">All elections</a>');
+    const portalRec = seo?.devolved?.[parts[1]];
+    const portalLabel = typeof portalRec === 'string'
+      ? portalRec
+      : (portalRec?.label || parts[1]);
+    links.push(`<a href="/election/${escapeHtml(parts[1])}">${escapeHtml(portalLabel)}</a>`);
+    if (parts[2] && parts[2] !== 'other-parties') {
+      links.push(`<a href="/election/${escapeHtml(parts[1])}/${escapeHtml(parts[2])}">${escapeHtml(parts[2])} election</a>`);
+    }
+  } else if (parts[0] === 'election' && parts[1] && parts[1] !== 'westminster') {
+    links.push('<a href="/election/westminster">All UK general elections</a>');
     const election = seo?.elections?.[parts[1]];
     const manifestoKeys = seo?.manifestos
       ? Object.keys(seo.manifestos).filter(k => k.startsWith(`${parts[1]}/`))
@@ -789,46 +895,34 @@ function buildNoscriptHtml(path, meta, seo) {
     if (election?.winner) {
       links.push(`<a href="/party/${escapeHtml(election.winner)}">Winning party</a>`);
     }
-  } else if (parts[0] === 'party' && parts[1]) {
-    links.push('<a href="/parties">All parties</a>');
-    links.push('<a href="/parties/all">A–Z party catalogue</a>');
+  } else if (parts[0] === 'party' && parts[1] && !PARTY_HUB_SLUGS.includes(parts[1])) {
+    links.push('<a href="/party">All parties</a>');
+    links.push('<a href="/party/all">A–Z party catalogue</a>');
     links.push(`<a href="/party/${escapeHtml(parts[1])}">${title}</a>`);
-  } else if (parts[0] === 'devolved') {
-    links.push('<a href="/devolved">Beyond Westminster</a>');
-    links.push('<a href="/elections">UK General Elections</a>');
-    links.push('<a href="/parties">Parties</a>');
-    if (parts[1] && seo?.devolved?.[parts[1]]) {
-      const portalLabel = typeof seo.devolved[parts[1]] === 'string'
-        ? seo.devolved[parts[1]]
-        : (seo.devolved[parts[1]].label || parts[1]);
-      links.push(`<a href="/devolved/${escapeHtml(parts[1])}">${escapeHtml(portalLabel)}</a>`);
-    }
-  } else if (path === '/elections' || path === '/elections/') {
-    links.push('<a href="/elections">UK General Elections</a>');
+  } else if (parts[0] === 'nation' && parts[1]) {
+    links.push('<a href="/nation">The Four Nations</a>');
+    links.push(`<a href="/nation/${escapeHtml(parts[1])}">${title}</a>`);
+  } else if (path === '/manifesto') {
+    links.push('<a href="/election">All elections</a>');
+    links.push('<a href="/party">Parties</a>');
+    links.push('<a href="/search">Search</a>');
+    links.push('<a href="/about">About</a>');
+  } else if (path === '/election/westminster') {
+    links.push('<a href="/election">All elections</a>');
     const years = Object.keys(seo?.elections || {}).sort().reverse().slice(0, 12);
     years.forEach(id => {
       const ey = seo.elections[id];
       const label = ey?.displayYear || id;
       links.push(`<a href="/election/${escapeHtml(id)}">${escapeHtml(String(label))} general election</a>`);
     });
-    links.push('<a href="/parties">Parties</a>');
-    links.push('<a href="/about">About</a>');
-  } else if (path === '/parties' || path === '/parties/all') {
-    links.push('<a href="/parties">Parties by nation</a>');
-    links.push('<a href="/parties/all">A–Z party catalogue</a>');
-    links.push('<a href="/elections">UK General Elections</a>');
-    links.push('<a href="/about">About</a>');
-  } else if (path === '/nations' || path === '/about' || path === '/') {
-    links.push('<a href="/elections">UK General Elections</a>');
-    links.push('<a href="/devolved">Beyond Westminster</a>');
-    links.push('<a href="/nations">The Four Nations &amp; Europe</a>');
-    links.push('<a href="/parties">Parties</a>');
-    links.push('<a href="/parties/all">A–Z party catalogue</a>');
+    links.push('<a href="/party">Parties</a>');
     links.push('<a href="/about">About</a>');
   } else {
-    links.push('<a href="/elections">UK General Elections</a>');
-    links.push('<a href="/devolved">Beyond Westminster</a>');
-    links.push('<a href="/parties">Parties</a>');
+    links.push('<a href="/election">All elections</a>');
+    links.push('<a href="/election/westminster">UK general elections</a>');
+    links.push('<a href="/party">Parties</a>');
+    links.push('<a href="/party/all">A–Z party catalogue</a>');
+    links.push('<a href="/nation">The Four Nations</a>');
     links.push('<a href="/about">About</a>');
   }
 
@@ -837,7 +931,7 @@ function buildNoscriptHtml(path, meta, seo) {
     : '';
 
   return `<section class="edge-noscript">
-  <h1>${title}</h1>
+  <h1>${heading}</h1>
   <p>${description}</p>
   ${linkList}
   <p>This archive requires JavaScript for interactive maps, search, and in-page navigation. The links above point to key hubs and documents (Markdown or PDF) that remain available without scripting.</p>
@@ -937,7 +1031,7 @@ function buildRewriter({ meta, graph, canonical, image, noindex, noscriptHtml })
 /** Permanent redirects for pre-2026 London ids (gla-/glc-/lcc-YYYY → YYYY). */
 function londonLegacyRedirectPath(path) {
   let m = path.match(/^\/devolved\/london\/(gla|glc|lcc)-(\d{4})\/?$/);
-  if (m) return `/devolved/london/${m[2]}`;
+  if (m) return `/election/london/${m[2]}`;
   m = path.match(/^\/manifesto\/london\/(gla|glc|lcc)-(\d{4})\/([^/]+)\/?$/);
   if (m) return `/manifesto/london/${m[2]}/${m[3]}`;
   m = path.match(/^\/manifestos\/london\/(gla|glc|lcc)-(\d{4})(\/.*)?$/);
@@ -962,18 +1056,17 @@ async function fetchSpaShell(context, request) {
   return fetch(indexUrl);
 }
 
-function isElectionsHubPath(path) {
-  return path === '/elections' || path === '/elections/';
+function isSpaHubPath(path) {
+  const p = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path;
+  return p === '/election' || p === '/election/westminster' || p === '/party' || p === '/nation' || p === '/search' || p === '/manifesto';
 }
 
 /**
- * `/elections` has been observed returning 308 → `/` from the asset layer
- * (while `/parties` and other hubs rewrite correctly), even with a `_redirects`
- * 200 rewrite. Prefer serving the SPA shell directly; keep recovery as a
- * fallback if something still returns a bad redirect/404.
+ * Some extensionless hubs have been observed 308 → `/` from the asset layer.
+ * Serve the SPA shell directly for the new singular hubs.
  */
-function needsElectionsHubRecovery(path, response) {
-  if (!isElectionsHubPath(path)) return false;
+function needsSpaHubRecovery(path, response) {
+  if (!isSpaHubPath(path)) return false;
   const status = response.status;
   if (status === 404) return true;
   if (status < 300 || status >= 400) return false;
@@ -989,7 +1082,6 @@ function needsElectionsHubRecovery(path, response) {
 export async function onRequest(context) {
   const { request, next } = context;
 
-  // Only transform document navigations.
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     return next();
   }
@@ -1000,6 +1092,14 @@ export async function onRequest(context) {
   const londonRedirect = londonLegacyRedirectPath(path);
   if (londonRedirect) {
     const dest = new URL(londonRedirect, url.origin);
+    dest.search = url.search;
+    return Response.redirect(dest.toString(), 301);
+  }
+
+  const trimmed = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path;
+  const canon = canonicalizeArchivePath(trimmed);
+  if (canon !== path) {
+    const dest = new URL(canon, url.origin);
     dest.search = url.search;
     return Response.redirect(dest.toString(), 301);
   }
@@ -1027,14 +1127,22 @@ export async function onRequest(context) {
   const seo = await loadSeo(context);
 
   // Fail safe: without data we can still fix the canonical, but never 404.
-  const classifyPath = path === '/elections/' ? '/elections' : path;
+  const classifyPath = trimmed;
   const result = seo ? classify(classifyPath, seo) : { valid: true, meta: null };
+  if (classifyPath === '/search' && result?.meta) {
+    const q = (url.searchParams.get('q') || '').trim();
+    if (q) {
+      result.meta = {
+        ...result.meta,
+        title: `Search: ${q}${TITLE_SUFFIX}`,
+      };
+    }
+  }
 
-  // Short-circuit the elections hub: do not trust the asset layer for this path.
-  let response = isElectionsHubPath(path)
+  let response = isSpaHubPath(path)
     ? await fetchSpaShell(context, request)
     : await next();
-  if (needsElectionsHubRecovery(path, response)) {
+  if (needsSpaHubRecovery(path, response)) {
     response = await fetchSpaShell(context, request);
   }
 

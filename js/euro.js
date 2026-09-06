@@ -179,6 +179,7 @@ function euroManifestoCard(m, electionOrYear) {
   return buildDevolvedManifestoCard(m, election, {
     color: euroPartyColor(m.party),
     partyName: euroPartyName(m, election.year),
+    portal: 'euro',
   });
 }
 
@@ -196,7 +197,7 @@ function euroParliamentSection(election) {
   }).join('');
 
   return `
-    <div class="results-section">
+    <div class="results-section" id="election-results" data-rail="Results">
       <span class="section-label">Seat Breakdown</span>
       <h2>Electoral Results</h2>
       <table class="results-table">
@@ -230,7 +231,7 @@ function euroManifestosBySeats(election) {
 // pan-European "Alliances" group for transnational parties (e.g. PES).
 const EURO_GROUP_ORDER = ['england', 'scotland', 'wales', 'northern-ireland', 'others', 'alliances'];
 const EURO_GROUP_LABELS = {
-  england: 'England & UK-wide',
+  england: 'England',
   scotland: 'Scotland',
   wales: 'Wales',
   'northern-ireland': 'Northern Ireland',
@@ -305,7 +306,7 @@ async function renderEuroElection(app, id) {
   setPageMeta({
     title: 'European Parliament election',
     description: 'UK European Parliament election results and manifestos.',
-    path: `/devolved/euro/${id}`,
+    path: `/election/euro/${id}`,
   });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
@@ -318,7 +319,7 @@ async function renderEuroElection(app, id) {
   setPageMeta({
     title: `${election.displayYear} European Parliament Election`,
     description: devolvedElectionDescription('euro', election.displayYear, DEVOLVED_PORTALS?.euro),
-    path: `/devolved/euro/${id}`,
+    path: `/election/euro/${id}`,
   });
 
   const index = (await loadEuroIndex()) || [];
@@ -352,16 +353,16 @@ async function renderEuroElection(app, id) {
     ? `<div class="election-date">UK Turnout ${election.turnout.toFixed(1)}%</div>` : '';
 
   const manifestosSection = (election.manifestos || []).length
-    ? `<div class="manifestos-section">
+    ? `<div class="manifestos-section" id="election-documents" data-rail="Documents">
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} European Parliament election, grouped by nation and by pan-European alliance.</p>
         ${euroManifestoGroupsHtml(election)}
       </div>`
-    : '<div class="manifestos-section"><span class="section-label">Party Manifestos</span><h2>Documents</h2><p style="color:var(--text-muted)">No manifestos currently on record for this election.</p></div>';
+    : '<div class="manifestos-section" id="election-documents" data-rail="Documents"><span class="section-label">Party Manifestos</span><h2>Documents</h2><p style="color:var(--text-muted)">No manifestos currently on record for this election.</p></div>';
 
   const sources = (election.sources || []).length
-    ? `<div class="london-sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
+    ? `<div class="london-sources" id="election-sources" data-rail="Sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
     : '';
 
   const chartResults = election.parliament?.results || [];
@@ -424,9 +425,9 @@ async function renderEuroElection(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'European Parliament', href: '/devolved/euro' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'European Parliament', href: '/election/euro' },
       { label: election.displayYear },
     ])}
     <section class="election-hero" style="--party-glow:${badge.dim}">
@@ -440,8 +441,8 @@ async function renderEuroElection(app, id) {
           ${winnerBadge}
         </div>
         <div class="election-nav-btns">
-          ${prev ? `<a class="election-nav-btn" href="/devolved/euro/${prev.id}">← ${prev.displayYear}</a>` : ''}
-          ${next ? `<a class="election-nav-btn" href="/devolved/euro/${next.id}">${next.displayYear} →</a>` : ''}
+          ${prev ? `<a class="election-nav-btn" href="/election/euro/${prev.id}">← ${prev.displayYear}</a>` : ''}
+          ${next ? `<a class="election-nav-btn" href="/election/euro/${next.id}">${next.displayYear} →</a>` : ''}
         </div>
       </div>
     </section>
@@ -449,7 +450,7 @@ async function renderEuroElection(app, id) {
     <div class="election-body">
       <div class="election-grid">
         <div>
-          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary">${summaryParas}</div>` : ''}
+          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary" id="election-summary" data-rail="Summary">${summaryParas}</div>` : ''}
           ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
           ${euroParliamentSection(election)}
         </div>
@@ -462,6 +463,7 @@ async function renderEuroElection(app, id) {
       ${sources}
     </div>
   `;
+  if (typeof attachPageRail === 'function') attachPageRail(app);
 
   if (hasChart) {
     requestAnimationFrame(() => {
@@ -558,7 +560,7 @@ async function renderEuroElection(app, id) {
               legendEl: hexLeg,
               electionYear: election.year,
               electionId: election.id,
-              manifestoPrefix: `/devolved/euro/${election.year}`,
+              manifestoPrefix: `/election/euro/${election.year}`,
             });
             if (hexLeg) hexLeg.hidden = false;
           });
@@ -581,7 +583,7 @@ async function renderEuroPortal(app) {
   setPageMeta({
     title: 'European Parliament Elections',
     description: `Election results and party manifestos for the ${portal?.label || 'European Parliament'}.`,
-    path: '/devolved/euro',
+    path: '/election/euro',
   });
 
   const index = await loadEuroIndex();
@@ -597,7 +599,7 @@ async function renderEuroPortal(app) {
     return;
   }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/euro/${e.id}`, e)).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/election/euro/${e.id}`, e)).join('');
 
   const partyLinks = [
     'reform', 'labour', 'conservative', 'libdem', 'green', 'ukip', 'snp', 'plaid', 'alliance', 'sinnfein', 'dup', 'uup', 'sdlp'
@@ -605,8 +607,8 @@ async function renderEuroPortal(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
       { label: 'European Parliament' },
     ])}
     <section class="devolved-hero">
@@ -620,7 +622,7 @@ async function renderEuroPortal(app) {
         <div class="nation-parties-card devolved-hero-parties">
           <div class="section-label" style="margin-bottom:1rem">Principal UK EP Parties</div>
           ${partyLinks}
-          <a href="/devolved/euro/other-parties" class="holyrood-other-link">Other EP parties →</a>
+          <a href="/election/euro/other-parties" class="holyrood-other-link">Other EP parties →</a>
         </div>
       </div>
     </section>
@@ -644,7 +646,7 @@ function renderEuroOtherParties(app) {
   setPageMeta({
     title: 'Other European Parliament parties',
     description: 'Smaller, regional, and specialist parties that have contested European Parliament elections in the UK.',
-    path: '/devolved/euro/other-parties',
+    path: '/election/euro/other-parties',
   });
 
   const entityIds = (typeof EURO_OTHER_PARTIES !== 'undefined') ? EURO_OTHER_PARTIES : [];
@@ -654,9 +656,9 @@ function renderEuroOtherParties(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'European Parliament', href: '/devolved/euro' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'European Parliament', href: '/election/euro' },
       { label: 'Other European Parliament parties' },
     ])}
     <div class="about-section">
@@ -665,7 +667,7 @@ function renderEuroOtherParties(app) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Specialist, minor, or pan-European political groups that contested European elections in the UK.</p>
       <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
-      <a href="/others" class="cross-archive-link">Other Parties →</a>
+      <a href="/party/other" class="cross-archive-link">Other Parties →</a>
       <span class="section-label" style="display:block;margin-top:2rem;margin-bottom:0.75rem">Other parties</span>
       <div class="others-grid">${entityCards}</div>
       <span class="section-label" style="display:block;margin-top:2.5rem;margin-bottom:0.75rem">Alliances</span>
@@ -716,7 +718,7 @@ function euroPartyElectionRow(partyId, { election, result }, maxSeats, color) {
   const barW = ((result.seats / maxSeats) * 100).toFixed(1);
   const sub = 'European Parliament';
   const pctLabel = '% vote';
-  return `<a class="party-election-row" href="/devolved/euro/${election.id}">
+  return `<a class="party-election-row" href="/election/euro/${election.id}">
     <div class="per-year">${election.displayYear}</div>
     <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${sub}</div></div>
     <div class="per-seats-wrap"><div class="per-seats-num">${result.seats}</div><div class="per-seats-label">MEPs</div></div>

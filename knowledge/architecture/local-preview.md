@@ -9,8 +9,10 @@ timestamp: 2026-07-20T00:00:00Z
 # Local preview
 
 Default local preview is **SPA-aware**: hard loads of client routes
-(`/elections`, `/parties/all`, `/party/labour`, `/election/2024`, …) serve
-`index.html` so the client router can boot. Plain `python3 -m http.server` does
+(`/election/westminster`, `/party/all`, `/party/labour`, `/election/2024`,
+`/manifesto`, `/search`, …) serve
+`index.html` so the client router can boot. `_redirects` 301s are applied first
+(same file Cloudflare uses). Plain `python3 -m http.server` does
 **not** do this — deep links 404 even though in-app soft navigation works.
 
 ## Start
@@ -27,7 +29,8 @@ Open [http://127.0.0.1:8888/](http://127.0.0.1:8888/). Optional: `--port 8890`,
 | Request | Result |
 |---|---|
 | Existing file (`/js/app.js`, `/manifestos/…/manifesto.pdf`, …) | Served as-is |
-| SPA hubs / prefixes listed in [`_redirects`](../../_redirects) 200 rules | `index.html` |
+| SPA hubs / prefixes listed in [`_redirects`](../../_redirects) 200 rules | `index.html` (GET and HEAD) |
+| Legacy hubs listed as 301 in `_redirects` | **301** `Location` (GET and HEAD) |
 | Other extensionless paths | `index.html` (client may render not-found) |
 | Missing file with an extension (e.g. missing PDF) | Real **404** (not HTML) |
 

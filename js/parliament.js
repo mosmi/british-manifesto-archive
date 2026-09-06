@@ -3,6 +3,8 @@
    SVG-based semicircular seat visualisation
    ============================================================ */
 
+let _parliamentDescId = 0;
+
 /**
  * Draws a parliament (semicircle) seat chart into a given container.
  * @param {HTMLElement} container - The element to render into
@@ -136,7 +138,24 @@ function drawParliamentChart(container, results, totalSeats, year) {
   svg.setAttribute('width', '100%');
   svg.setAttribute('height', H);
   svg.setAttribute('role', 'img');
-  svg.setAttribute('aria-label', `Parliament seat chart, ${totalSeats} seats`);
+  const partyBits = orderedParties
+    .filter(p => p.seats > 0)
+    .map(p => {
+      const name = p.partyId === 'none'
+        ? 'Unlabelled'
+        : (p.partyId === 'others'
+          ? 'Others'
+          : (typeof getPartyName === 'function' ? getPartyName(p.partyId, year) : p.partyId));
+      return `${name} ${p.seats}`;
+    });
+  const summaryText = partyBits.length
+    ? `Seat chart: ${partyBits.join(', ')}. ${totalSeats} seats.`
+    : `Parliament seat chart, ${totalSeats} seats`;
+  const desc = document.createElementNS(NS, 'desc');
+  desc.id = `parliament-chart-desc-${++_parliamentDescId}`;
+  desc.textContent = summaryText;
+  svg.setAttribute('aria-labelledby', desc.id);
+  svg.appendChild(desc);
   svg.style.height = 'auto';
   svg.style.display = 'block';
   container.classList.add('parliament-chart');
@@ -429,6 +448,8 @@ function drawParliamentChart(container, results, totalSeats, year) {
  */
 function buildParliamentLegend(legendEl, results, year) {
   legendEl.innerHTML = '';
+  legendEl.setAttribute('role', 'list');
+  legendEl.setAttribute('aria-label', 'Seats by party');
 
   // Sort by seats descending, filter out zero-seat parties
   const sorted = [...results]
@@ -441,6 +462,7 @@ function buildParliamentLegend(legendEl, results, year) {
   sorted.forEach(r => {
     const item = document.createElement('div');
     item.className = 'legend-item';
+    item.setAttribute('role', 'listitem');
     const partyId = r.party || 'none';
     item.dataset.party = partyId;
 

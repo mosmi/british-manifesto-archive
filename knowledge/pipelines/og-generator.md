@@ -115,14 +115,14 @@ Or via npm: `npm run og:build`, `npm run og:sample`.
 | Route | Image path |
 |---|---|
 | `/` | `og-image.jpg` |
-| `/about`, `/elections`, … | `og/hub/{slug}.jpg` |
+| `/about`, `/election`, `/election/westminster`, `/party`, `/nation`, `/party/other` | `og/hub/{slug}.jpg` (legacy filenames `elections.jpg`, `devolved.jpg`, `parties.jpg`, `nations.jpg`, `others.jpg` still used) |
 | `/party/:id` | `og/party/{id}.jpg` |
-| `/election/:id` | `og/election/{id}.jpg` |
+| `/election/:id` (Westminster) | `og/election/{id}.jpg` |
 | `/manifesto/:eid/:pid` | `og/manifesto/{eid}/{pid}.jpg` |
 | `/nation/:id` | `og/nation/{id}.jpg` |
-| `/devolved/:portal` | `og/devolved/{portal}.jpg` |
-| `/devolved/:portal/:year` | `og/devolved/{portal}/{year}.jpg` |
-| `/devolved/:portal/other-parties` | `og/devolved/{portal}/other-parties.jpg` |
+| `/election/:portal` | `og/devolved/{portal}.jpg` (file path unchanged) |
+| `/election/:portal/:year` | `og/devolved/{portal}/{year}.jpg` |
+| `/election/:portal/other-parties` | `og/devolved/{portal}/other-parties.jpg` |
 
 Edge middleware and `js/meta.js` both resolve `og:image` to these paths. See
 [structured-data](../architecture/structured-data.md).

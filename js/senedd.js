@@ -124,6 +124,7 @@ function seneddManifestoCard(m, electionOrYear) {
   return buildDevolvedManifestoCard(m, election, {
     color: seneddPartyColor(m.party),
     partyName: seneddPartyName(m, election.year),
+    portal: 'senedd',
   });
 }
 
@@ -148,7 +149,7 @@ function seneddParliamentSection(election) {
         </details>`
       : '';
     return `
-      <div class="results-section">
+      <div class="results-section" id="election-results" data-rail="Results">
         <span class="section-label">Senedd Cymru · ${p.system}</span>
         <h2>Parliament Result</h2>
         <table class="results-table london-assembly-table">
@@ -179,7 +180,7 @@ function seneddParliamentSection(election) {
       </details>`
     : '';
   return `
-    <div class="results-section">
+    <div class="results-section" id="election-results" data-rail="Results">
       <span class="section-label">Senedd Cymru · ${p.system || 'Additional Member System'}</span>
       <h2>Parliament Result</h2>
       <table class="results-table london-assembly-table">
@@ -208,7 +209,7 @@ function seneddManifestosBySeats(election) {
 }
 
 async function renderSeneddElection(app, id) {
-  setPageMeta({ title: 'Senedd election', description: 'Welsh Parliament election results.', path: `/devolved/senedd/${id}` });
+  setPageMeta({ title: 'Senedd election', description: 'Welsh Parliament election results.', path: `/election/senedd/${id}` });
   app.innerHTML = `<div class="election-body"><div class="manifesto-skeleton" role="status" aria-label="Loading"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line"></div><div class="skeleton-line w-60"></div></div></div>`;
 
   const [election, indexRaw] = await Promise.all([loadSeneddElection(id), loadSeneddIndex()]);
@@ -225,7 +226,7 @@ async function renderSeneddElection(app, id) {
   setPageMeta({
     title: `${election.displayYear} Senedd Cymru election`,
     description: devolvedElectionDescription('senedd', election.displayYear, DEVOLVED_PORTALS?.senedd),
-    path: `/devolved/senedd/${id}`,
+    path: `/election/senedd/${id}`,
   });
 
   const sorted = [...index].sort((a, b) => a.year - b.year);
@@ -247,7 +248,7 @@ async function renderSeneddElection(app, id) {
     ? `<div class="election-date">Turnout ${election.turnout.toFixed(1)}%</div>` : '';
 
   const manifestosSection = (election.manifestos || []).length
-    ? `<div class="manifestos-section">
+    ? `<div class="manifestos-section" id="election-documents" data-rail="Documents">
         <span class="section-label">Party Manifestos</span>
         <h2>Documents</h2>
         <p class="manifestos-intro">Manifestos published by parties contesting the ${election.displayYear} Senedd election, ordered by seats won.</p>
@@ -256,7 +257,7 @@ async function renderSeneddElection(app, id) {
     : '';
 
   const sources = (election.sources || []).length
-    ? `<div class="london-sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
+    ? `<div class="london-sources" id="election-sources" data-rail="Sources"><span class="section-label">Sources</span><ul>${election.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
     : '';
 
   const chartResults = election.parliament?.results || [];
@@ -265,9 +266,9 @@ async function renderSeneddElection(app, id) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Welsh Parliament', href: '/devolved/senedd' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Welsh Parliament', href: '/election/senedd' },
       { label: election.displayYear },
     ])}
     <section class="election-hero" style="--party-glow:${badge.dim}">
@@ -281,8 +282,8 @@ async function renderSeneddElection(app, id) {
           ${winnerBadge}
         </div>
         <div class="election-nav-btns">
-          ${prev ? `<a class="election-nav-btn" href="/devolved/senedd/${prev.id}">← ${prev.displayYear}</a>` : ''}
-          ${next ? `<a class="election-nav-btn" href="/devolved/senedd/${next.id}">${next.displayYear} →</a>` : ''}
+          ${prev ? `<a class="election-nav-btn" href="/election/senedd/${prev.id}">← ${prev.displayYear}</a>` : ''}
+          ${next ? `<a class="election-nav-btn" href="/election/senedd/${next.id}">${next.displayYear} →</a>` : ''}
         </div>
       </div>
     </section>
@@ -290,7 +291,7 @@ async function renderSeneddElection(app, id) {
     <div class="election-body">
       <div class="election-grid">
         <div>
-          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary">${summaryParas}</div>` : ''}
+          ${summaryParas ? `<span class="section-label">Election Summary</span><div class="election-summary" id="election-summary" data-rail="Summary">${summaryParas}</div>` : ''}
           ${renderSupplementaryDocuments(election.supplementaryDocuments)}
           ${highlightItems ? `<div class="highlights-list"><h3>Key Moments</h3>${highlightItems}</div>` : ''}
           ${seneddParliamentSection(election)}
@@ -326,6 +327,7 @@ async function renderSeneddElection(app, id) {
       ${sources}
     </div>
   `;
+  if (typeof attachPageRail === 'function') attachPageRail(app);
 
   if (hasChart) {
     requestAnimationFrame(() => {
@@ -477,7 +479,7 @@ async function renderSeneddPortal(app) {
   setPageMeta({
     title: `${portal?.label || 'Welsh Parliament'} Elections`,
     description: `Election results and party manifestos for the ${portal?.label || 'Welsh Parliament'}.`,
-    path: '/devolved/senedd',
+    path: '/election/senedd',
   });
 
   const index = await loadSeneddIndex();
@@ -493,7 +495,7 @@ async function renderSeneddPortal(app) {
     return;
   }
   const sorted = index.slice().sort((a, b) => b.year - a.year);
-  const cards = sorted.map(e => buildDevolvedTimelineCard(`/devolved/senedd/${e.id}`, e)).join('');
+  const cards = sorted.map(e => buildDevolvedTimelineCard(`/election/senedd/${e.id}`, e)).join('');
 
   const nation = (typeof NATIONS !== 'undefined') ? NATIONS.wales : null;
   const navConfig = (typeof NAV_PARTIES !== 'undefined') ? NAV_PARTIES.wales : null;
@@ -501,8 +503,8 @@ async function renderSeneddPortal(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
       { label: 'Welsh Parliament' },
     ])}
     <section class="devolved-hero">
@@ -517,7 +519,7 @@ async function renderSeneddPortal(app) {
         <div class="nation-parties-card devolved-hero-parties">
           <div class="section-label" style="margin-bottom:1rem">Parties in the Senedd</div>
           ${partyLinks}
-          <a href="/devolved/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>
+          <a href="/election/senedd/other-parties" class="holyrood-other-link">Other Welsh parties →</a>
         </div>
       </div>
     </section>
@@ -534,7 +536,7 @@ function renderSeneddOtherParties(app) {
   setPageMeta({
     title: 'Other Welsh Parties',
     description: 'Smaller and specialist parties that have contested Senedd Cymru elections.',
-    path: '/devolved/senedd/other-parties',
+    path: '/election/senedd/other-parties',
   });
 
   const ids = (typeof SENEDD_OTHER_PARTIES !== 'undefined') ? SENEDD_OTHER_PARTIES : [];
@@ -545,9 +547,9 @@ function renderSeneddOtherParties(app) {
 
   app.innerHTML = `
     ${renderBreadcrumb([
-      { label: 'Home', href: '/' },
-      { label: 'Beyond Westminster', href: '/devolved' },
-      { label: 'Welsh Parliament', href: '/devolved/senedd' },
+      { label: nodeLabel('home'), href: '/' },
+      { label: nodeLabel('elections'), href: '/election' },
+      { label: 'Welsh Parliament', href: '/election/senedd' },
       { label: 'Other Welsh parties' },
     ])}
     <div class="about-section">
@@ -556,7 +558,7 @@ function renderSeneddOtherParties(app) {
       <div class="gold-rule"></div>
       <p style="color:var(--text-muted);margin-bottom:1rem">Parties that have contested Senedd elections but are not among the principal groups on the Welsh Parliament portal. Many appear only on the regional list under AMS.</p>
       <p style="color:var(--text-muted);margin-bottom:0.75rem">For parties that have contested Westminster seats:</p>
-      <a href="/others" class="cross-archive-link">Other Parties →</a>
+      <a href="/party/other" class="cross-archive-link">Other Parties →</a>
       <div class="others-grid">${cards}</div>
     </div>
   `;
@@ -597,7 +599,7 @@ function seneddPartyElectionRow(partyId, { election, result }, maxSeats, color) 
     ? `${election.firstMinister} — First Minister`
     : 'Senedd Cymru';
   const pctLabel = typeof result.pct === 'number' ? '% vote' : '% list vote';
-  return `<a class="party-election-row" href="/devolved/senedd/${election.id}">
+  return `<a class="party-election-row" href="/election/senedd/${election.id}">
     <div class="per-year">${election.displayYear}</div>
     <div><div class="per-outcome ${cls}">${label}</div><div style="font-size:0.78rem;color:var(--text-faint);margin-top:0.3rem">${sub}</div></div>
     <div class="per-seats-wrap"><div class="per-seats-num">${result.seats}</div><div class="per-seats-label">MSs</div></div>

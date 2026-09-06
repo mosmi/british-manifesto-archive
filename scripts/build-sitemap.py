@@ -52,14 +52,15 @@ def lastmod_for_path(path: str) -> str:
             for candidate in (folder / "manifesto.md", folder / "manifesto.pdf"):
                 if candidate.is_file():
                     return iso_date(candidate)
-    if path.startswith("/devolved/"):
-        parts = path.strip("/").split("/")
-        if len(parts) == 3 and parts[2] != "other-parties":
-            jf = ROOT / "data" / "devolved" / parts[1] / f"{parts[2]}.json"
-            return iso_date(jf)
-        if len(parts) == 2:
-            return iso_date(ROOT / "data" / "devolved" / parts[1] / "index.json")
     if path.startswith("/election/"):
+        parts = path.strip("/").split("/")
+        chambers = {"holyrood", "senedd", "stormont", "london", "euro"}
+        if len(parts) >= 2 and parts[1] in chambers:
+            if len(parts) == 3 and parts[2] != "other-parties":
+                jf = ROOT / "data" / "devolved" / parts[1] / f"{parts[2]}.json"
+                return iso_date(jf)
+            if len(parts) == 2:
+                return iso_date(ROOT / "data" / "devolved" / parts[1] / "index.json")
         return iso_date(ROOT / "js" / "data.js")
     if path.startswith("/party/"):
         return iso_date(ROOT / "js" / "data.js")
@@ -86,20 +87,33 @@ def main() -> None:
     stormont_ids = load_index_ids(ROOT / "data/devolved/stormont/index.json")
     euro_ids = load_index_ids(ROOT / "data/devolved/euro/index.json")
 
-    urls: list[str] = ["/", "/about", "/others", "/elections", "/devolved", "/parties", "/nations"]
+    urls: list[str] = [
+        "/",
+        "/about",
+        "/search",
+        "/election",
+        "/election/westminster",
+        "/party",
+        "/party/all",
+        "/party/other",
+        "/party/european-groups",
+        "/nation",
+        "/manifesto",
+    ]
+    party_hubs = {"others", "all", "other", "european-groups"}
     urls.extend(f"/election/{eid}" for eid in election_ids)
-    urls.extend(f"/party/{pid}" for pid in party_ids if pid != "others")
-    urls.extend(f"/nation/{nid}" for nid in nation_ids)
-    urls.extend(f"/devolved/{did}" for did in devolved_ids)
-    urls.extend(f"/devolved/london/{lid}" for lid in london_ids)
-    urls.extend(f"/devolved/holyrood/{hid}" for hid in holyrood_ids)
-    urls.append("/devolved/holyrood/other-parties")
-    urls.extend(f"/devolved/senedd/{sid}" for sid in senedd_ids)
-    urls.append("/devolved/senedd/other-parties")
-    urls.extend(f"/devolved/stormont/{sid}" for sid in stormont_ids)
-    urls.append("/devolved/stormont/other-parties")
-    urls.extend(f"/devolved/euro/{eid}" for eid in euro_ids)
-    urls.append("/devolved/euro/other-parties")
+    urls.extend(f"/party/{pid}" for pid in party_ids if pid not in party_hubs)
+    urls.extend(f"/nation/{nid}" for nid in nation_ids if nid != "europe")
+    urls.extend(f"/election/{did}" for did in devolved_ids)
+    urls.extend(f"/election/london/{lid}" for lid in london_ids)
+    urls.extend(f"/election/holyrood/{hid}" for hid in holyrood_ids)
+    urls.append("/election/holyrood/other-parties")
+    urls.extend(f"/election/senedd/{sid}" for sid in senedd_ids)
+    urls.append("/election/senedd/other-parties")
+    urls.extend(f"/election/stormont/{sid}" for sid in stormont_ids)
+    urls.append("/election/stormont/other-parties")
+    urls.extend(f"/election/euro/{eid}" for eid in euro_ids)
+    urls.append("/election/euro/other-parties")
     urls.extend(
         f"/manifesto/{m['electionId']}/{m['partyId']}" for m in manifestos
     )

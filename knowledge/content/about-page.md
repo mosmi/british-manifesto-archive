@@ -15,15 +15,14 @@ Every election and party in the archive is built from the same set of materials:
 - **Manifesto documents** — original PDFs alongside readable web versions where a text edition is available.
 - **Election result pages** — summaries, seat charts, vote shares, the key moments of each campaign, and the documents that defined it.
 - **Party pages** — each party's electoral record over time and the manifestos it published at successive elections.
-- **Beyond Westminster hubs** — dedicated sections for the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the European Parliament.
+- **Election hubs** — dedicated sections for Westminster, the Scottish Parliament, the Senedd, the Northern Ireland Assembly, the London Mayor and Assembly, and the European Parliament.
 - **Ways in** — browse by year, by party, by nation, or by institution; search the catalogue for party names, election years, and manifesto titles; or switch search to *Full text* to look inside transcribed manifesto documents.
 
 ## How the archive is organised
 
-- **Westminster** — UK general elections (`/elections`).
-- **Beyond Westminster** — institutions and their elections (`/devolved`); main path into devolved content.
-- **Nations** — geography and party taxonomy (`/nations`).
-- **Parties** — each organisation’s record (`/parties`, `/parties/all`).
+- **Elections** — chambers and their contests (`/election`, `/election/westminster`).
+- **Nations** — geography and party taxonomy (`/nation`).
+- **Parties** — each organisation’s record (`/party`, `/party/all`). Pan-European families: `/party/european-groups`.
 
 ## Coverage
 

@@ -1,119 +1,121 @@
 [
   {
+    "electionId": "1997",
+    "partyId": "naturallaw",
+    "title": "Natural Law Party Manifesto 1997",
+    "year": "1997",
+    "url": "/manifesto/1997/naturallaw",
+    "isPdf": false,
+    "added": "2026-08-10T02:05:51+01:00",
+    "cover": "/manifestos/1997/naturallaw/cover.png"
+  },
+  {
+    "electionId": "euro/1999",
+    "partyId": "naturallaw",
+    "title": "Natural Law Party European Manifesto 1999",
+    "year": "1999",
+    "url": "/manifestos/euro/1999/naturallaw/manifesto.pdf",
+    "isPdf": true,
+    "added": "2026-08-10T02:05:51+01:00",
+    "cover": "/manifestos/euro/1999/naturallaw/manifesto.png"
+  },
+  {
+    "electionId": "2010",
+    "partyId": "pirate",
+    "title": "Pirate Party UK Manifesto 2010",
+    "year": "2010",
+    "url": "/manifesto/2010/pirate",
+    "isPdf": false,
+    "added": "2026-07-21T01:37:11+01:00",
+    "cover": "/manifestos/2010/pirate/cover.png"
+  },
+  {
     "electionId": "1955",
     "partyId": "communist",
-    "title": "Communist Party Programme 1955",
+    "title": "A Policy for Britain",
     "year": "1955",
     "url": "/manifesto/1955/communist",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z"
+    "added": "2026-07-18T20:58:18+01:00"
   },
   {
-    "electionId": "1955",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 1955",
-    "year": "1955",
-    "url": "/manifesto/1955/conservative",
+    "electionId": "1966",
+    "partyId": "communist",
+    "title": "New Britain, People's Britain",
+    "year": "1966",
+    "url": "/manifesto/1966/communist",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z",
-    "cover": "/manifestos/1955/conservative/cover.png"
+    "added": "2026-07-18T20:58:18+01:00",
+    "cover": "/manifestos/1966/communist/cover.png"
   },
   {
-    "electionId": "1955",
-    "partyId": "labour",
-    "title": "Labour Manifesto 1955",
-    "year": "1955",
-    "url": "/manifesto/1955/labour",
+    "electionId": "1983",
+    "partyId": "scottishcon",
+    "title": "",
+    "year": "1983",
+    "url": "/manifesto/1983/scottishcon",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/1983/scottishcon/cover.png"
   },
   {
-    "electionId": "1955",
-    "partyId": "libdem",
-    "title": "Liberal Manifesto 1955",
-    "year": "1955",
-    "url": "/manifesto/1955/libdem",
+    "electionId": "1983",
+    "partyId": "welshcon",
+    "title": "",
+    "year": "1983",
+    "url": "/manifesto/1983/welshcon",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z",
-    "cover": "/manifestos/1955/libdem/cover.png"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/1983/welshcon/cover.png"
   },
   {
     "electionId": "2005",
-    "partyId": "omrlp",
-    "title": "Monster Raving Loony Party Manifesto 2005",
+    "partyId": "socialistlabour",
+    "title": "",
     "year": "2005",
-    "url": "/manifesto/2005/omrlp",
+    "url": "/manifesto/2005/socialistlabour",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2005/socialistlabour/cover.png"
   },
   {
-    "electionId": "oct1974",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 1974",
-    "year": "1974",
-    "url": "/manifesto/oct1974/conservative",
+    "electionId": "2015",
+    "partyId": "cista",
+    "title": "CISTA — General Election 2015 Manifesto",
+    "year": "2015",
+    "url": "/manifesto/2015/cista",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z",
-    "cover": "/manifestos/oct1974/conservative/cover.png"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2015/cista/cover.png"
   },
   {
-    "electionId": "oct1974",
-    "partyId": "labour",
-    "title": "Labour Manifesto 1974",
-    "year": "1974",
-    "url": "/manifesto/oct1974/labour",
+    "electionId": "2015",
+    "partyId": "socialistlabour",
+    "title": "",
+    "year": "2015",
+    "url": "/manifesto/2015/socialistlabour",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z",
-    "cover": "/manifestos/oct1974/labour/cover.png"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2015/socialistlabour/cover.png"
   },
   {
-    "electionId": "oct1974",
-    "partyId": "libdem",
-    "title": "Liberal Manifesto 1974",
-    "year": "1974",
-    "url": "/manifesto/oct1974/libdem",
+    "electionId": "2017",
+    "partyId": "liberal1989",
+    "title": "",
+    "year": "2017",
+    "url": "/manifesto/2017/liberal1989",
     "isPdf": false,
-    "added": "2026-08-10T00:53:23Z",
-    "cover": "/manifestos/oct1974/libdem/cover.png"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2017/liberal1989/cover.png"
   },
   {
-    "electionId": "1964",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 1964",
-    "year": "1964",
-    "url": "/manifesto/1964/conservative",
+    "electionId": "2019",
+    "partyId": "liberal1989",
+    "title": "",
+    "year": "2019",
+    "url": "/manifesto/2019/liberal1989",
     "isPdf": false,
-    "added": "2026-08-10T00:53:21Z",
-    "cover": "/manifestos/1964/conservative/cover.png"
-  },
-  {
-    "electionId": "1964",
-    "partyId": "labour",
-    "title": "Labour Manifesto 1964",
-    "year": "1964",
-    "url": "/manifesto/1964/labour",
-    "isPdf": false,
-    "added": "2026-08-10T00:53:21Z",
-    "cover": "/manifestos/1964/labour/cover.png"
-  },
-  {
-    "electionId": "1964",
-    "partyId": "libdem",
-    "title": "Liberal Manifesto 1964",
-    "year": "1964",
-    "url": "/manifesto/1964/libdem",
-    "isPdf": false,
-    "added": "2026-08-10T00:53:21Z",
-    "cover": "/manifestos/1964/libdem/cover.png"
-  },
-  {
-    "electionId": "1970",
-    "partyId": "conservative",
-    "title": "Conservatives Manifesto 1970",
-    "year": "1970",
-    "url": "/manifesto/1970/conservative",
-    "isPdf": false,
-    "added": "2026-08-10T00:53:21Z",
-    "cover": "/manifestos/1970/conservative/cover.png"
+    "added": "2026-07-18T16:30:49+01:00",
+    "cover": "/manifestos/2019/liberal1989/cover.png"
   }
 ]

@@ -53,24 +53,33 @@ Always re-run `python3 scripts/build-seo-data.py` after touching any of those.
   manifestos.
 - `/party/:id`: `Organization` (with `description`, `sameAs`) + `BreadcrumbList`
   + `ItemList` of that party's manifestos.
-- `/elections`, `/parties`, `/devolved`, `/nations`, `/others`: `BreadcrumbList` + `ItemList`.
-- `/devolved/:portal` and `/devolved/:portal/:year`: `BreadcrumbList` (+ `Event`
+- `/election/westminster`, `/party`, `/party/all`, `/election`, `/nation`, `/party/other`, `/party/european-groups`: `BreadcrumbList` + `ItemList` where listed.
+- `/manifesto`: `BreadcrumbList` only (do not emit a hundreds-item `ItemList` of covers).
+- `/election/:portal` and `/election/:portal/:year`: `BreadcrumbList` (+ `Event`
   and a manifesto `ItemList` on the year page).
-- `/nation/:id` (including `europe`): `BreadcrumbList`.
-- `/devolved/:portal/other-parties`: valid route with meta; OG image at
+- `/search` and `/search?q=`: `WebSite` (with `SearchAction`) + `BreadcrumbList`.
+  Query string is included in `<title>` when present.
+- `/nation/:id` (four nations only; `/nation/europe` 301s to `/party/european-groups`): `BreadcrumbList`.
+- `/election/:portal/other-parties`: valid route with meta; OG image still at
   `/og/devolved/{portal}/other-parties.jpg`.
 
 ## Deliberate omissions
 - **No `FAQPage`** — there is no visible FAQ.
-- **No `SearchAction`** — the site search is not a crawlable query URL.
 - **No manifesto text in initial HTML** — manifesto bodies are fetched client-side
   from `manifesto.md` after the SPA loads. Edge metadata and JSON-LD describe
   the document; full-text prerendering is deferred until more manifestos are
   transcribed.
 
+`SearchAction` is on the `WebSite` node (`/search?q={search_term_string}`) now
+that `/search` is a crawlable SPA route (audit **2.7**).
+
 ## Catalogue feed
 `data/catalog.jsonld` is a `DataCatalog` with three `Dataset`s (general
-manifestos, devolved/regional manifestos, election results). It is linked from
+manifestos, devolved/regional manifestos, election results). Each on-disk
+folder is one `DigitalDocument` at `/manifesto/{key}` — London editions that
+also live in `manifestos-index.json` are not listed twice. Hero totals come
+from unique keys in [`archive-counts.json`](../../data/archive-counts.json).
+See [manifesto-hub](../design/manifesto-hub.md). It is linked from
 every page via `<link rel="alternate" type="application/ld+json"
 href="/data/catalog.jsonld?v=…">` in `index.html` (cache-busted like other
 assets — see [cache-busting](./cache-busting.md)).

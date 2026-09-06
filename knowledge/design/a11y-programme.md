@@ -12,12 +12,21 @@ Follow-on to I01–I10 and Wave A polish (flag `aria-hidden`, table captions, co
 
 ## Done in code (baseline)
 
-- Skip link, focus-visible, search inert trap
-- Hexmap / parliament SVGs: `role="img"` + `aria-label`
-- Results table: `scope="col"`; election results `<caption class="sr-only">`
+- Skip link, focus-visible, search inert trap (nav, app, footer, **and skip link**; Tab cycles inside the overlay — re-tested Batch 2)
+- Hexmap SVGs: `role="img"` + `aria-label`. Hemicycle: `aria-labelledby` → SVG `<desc>` with party seat counts; legend is `role="list"`
+- Results table: `scope="col"`; election results `<caption class="sr-only">`; Votes / Vote % stay in the table at 375px (sideways scroll + hint)
 - Nation group headings: flag emoji in `<span aria-hidden="true">`
 - Manifesto find: `aria-live` match count; Cite strip on readers
 - Light-theme gold darkened to ≥4.5:1 on cream (`#7a5f24`)
+- Party tags / winner badge: ink text + kicker border (not party-colour text on party tint)
+- Manifesto cards: one `a.manifesto-card-main` wraps cover + label; decorative emoji `aria-hidden`
+- A–Z `/parties/all`: letter `h2` groups and real `<ul>` / `<li>` (no `role="listitem"` on anchors)
+- Hit targets: chrome controls ≥44×44px; legend items ≥24px
+- `@media (forced-colors: active)` borders and Highlight focus rings
+
+## Batch 2 (Sep 2026 forensic audit)
+
+Shipped **3.3–3.7**, **3.9–3.11**. Verified on `/`, `/election/1997`, `/parties/all` in both themes. Search: overlay `aria-modal`, Tab wraps first↔last, Escape restores the search button; skip-link is inert while open so it cannot leak. Hemicycle is **not** a fully keyboard-operable SVG this round. Assets `?v=2026090606`.
 
 ## AT pass checklist (manual)
 

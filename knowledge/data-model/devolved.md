@@ -33,9 +33,10 @@ Devolved manifestos are the largest remaining transcription gap (see
 ## London election ids & URLs
 - Election JSON: `data/devolved/london/<YYYY>.json` with `"id": "<YYYY>"` and
   `"body": "gla"|"glc"|"lcc"`.
-- Public URLs: `/devolved/london/2000`, `/manifesto/london/2000/livingstone`.
-- Legacy prefixed URLs (`/devolved/london/gla-2000`, …) **301** to year-only
-  via `_redirects` and `functions/_middleware.js`.
+- Public URLs: `/election/london/2000`, `/manifesto/london/2000/livingstone`.
+- Legacy prefixed URLs (`/devolved/london/gla-2000`, `/election/london/gla-2000`, …)
+  **301** once to year-only `/election/london/<year>` via `_redirects` and
+  `functions/_middleware.js`.
 
 ## London mayoral `manifestos[]` shape
 Each GLA manifesto entry uses an explicit **`id`** equal to the folder name
@@ -79,7 +80,7 @@ in `js/london.js` and `js/app.js`. Text routes are registered in
 `data/devolved/euro/` holds UK EP election results 1979–2019. Party groupings for
 maps and navigation use **alliance families** (`sand`, `epp`, `renew`, `greensefa`,
 `ecr`, …) defined in `js/data.js` (`EURO_ALLIANCE_PARTIES`). Individual minor
-parties link to `/devolved/euro/other-parties`.
+parties link to `/election/euro/other-parties`.
 
 Maps: FPTP constituency hexjson in `data/hex/euro/<year>.hexjson` (1979–1994);
 PR regional results in `data/devolved/euro/regions/<year>.json` with shared

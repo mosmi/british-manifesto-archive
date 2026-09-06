@@ -13,11 +13,12 @@ Honest catalogue search overlay:
 - Copy clarifies titles/metadata only (not full-text)
 - Exact party-name boost + grouped results
 - Example queries, richer zero-results, keyboard hints
-- Footer link → [`/parties/all`](https://www.manifestos.org.uk/parties/all)
+- Footer link → [`/party/all`](https://www.manifestos.org.uk/party/all)
 - Also fixed `/elections` hard-navigation 308→`/` recovery in middleware
+  (superseded in Batch 4: `/elections` 301s to `/election/westminster`)
 
 ## Phase 2 (updated 2026-07-20)
-Filterable party browse on **`/parties/all`**:
+Filterable party browse on **`/party/all`**:
 - Hue spectrum strip (hover expands a bar and names the party)
 - Page search box + try chips
 - Left sidebar filters: colour, Nation / Europe (no “Others”), Party founded,
@@ -44,3 +45,14 @@ Labelled **Full text** mode in the search overlay (distinct from Catalogue):
 - `/elections` hub: middleware **short-circuits** to the SPA shell (asset layer
   still 308→`/` on live until deploy); `_redirects` keeps `/elections` and
   `/elections/` → `/index.html` 200.
+
+## Phase 5 (2026-09-06) — crawlable `/search` (audit 2.7)
+
+Shareable `/search?q=` (+ `mode=fulltext`) as a first-class SPA page. One
+Catalogue / Full text toggle lives in the page form (the overlay keeps its own).
+⌘K remains for quick lookup; its footer links to the search page. Full-text
+snippets keep original case. `SearchAction` is on the site graph once this
+route exists. See [structured-data](../architecture/structured-data.md).
+
+The cover wall at [`/manifesto`](./manifesto-hub.md) is a **filter** of titles,
+parties and years, not a second search box. Full-text stays on `/search`.

@@ -8,14 +8,14 @@
   <link rel="icon" href="/favicon.svg?v=2026071101" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2026071101">
   <link rel="manifest" href="/site.webmanifest?v=2026071101">
-  <title>The British Manifesto Archive — www.manifestos.org.uk</title>
+  <title>The British Manifesto Archive</title>
   <meta name="description" id="meta-description" content="A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos, results, and maps in the UK.">
   <link rel="canonical" id="canonical-link" href="https://www.manifestos.org.uk/">
   <link rel="alternate" hreflang="en-GB" id="hreflang-link" href="https://www.manifestos.org.uk/">
-  <link rel="alternate" type="application/ld+json" title="British Manifesto Archive catalogue" href="/data/catalog.jsonld?v=2026070801">
+  <link rel="alternate" type="application/ld+json" title="British Manifesto Archive catalogue" href="/data/catalog.jsonld?v=2026090628">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="manifestos.org.uk">
-  <meta property="og:title" id="og-title" content="The British Manifesto Archive — www.manifestos.org.uk">
+  <meta property="og:site_name" content="The British Manifesto Archive">
+  <meta property="og:title" id="og-title" content="The British Manifesto Archive">
   <meta property="og:description" id="og-description" content="A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos, results, and maps in the UK.">
   <meta property="og:url" id="og-url" content="https://www.manifestos.org.uk/">
   <meta property="og:image" id="og-image" content="https://www.manifestos.org.uk/og-image.jpg?v=2026071101">
@@ -25,18 +25,16 @@
   <meta name="twitter:card" id="twitter-card" content="summary_large_image">
   <meta name="twitter:site" content="@manifestosuk">
   <meta name="twitter:image" id="twitter-image" content="https://www.manifestos.org.uk/og-image.jpg?v=2026071101">
-  <meta name="twitter:title" id="twitter-title" content="The British Manifesto Archive — www.manifestos.org.uk">
+  <meta name="twitter:title" id="twitter-title" content="The British Manifesto Archive">
   <meta name="twitter:description" id="twitter-description" content="A comprehensive digital archive of general, devolved, regional, and European Parliament election manifestos, results, and maps in the UK.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=2026081002">
+  <link rel="stylesheet" href="/fonts/latin.css?v=2026090628">
+  <link rel="stylesheet" href="/styles.css?v=2026090628">
 </head>
 <body>
   <a href="#app" class="skip-link">Skip to content</a>
 
   <nav id="main-nav" aria-label="Primary navigation">
-    <a href="/" class="nav-logo">
+    <a href="/" class="nav-logo" aria-label="The British Manifesto Archive — home">
       <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
         <rect width="32" height="32" rx="7" fill="#090e1c"/>
         <rect x="6" y="3" width="20" height="26" rx="1.6" fill="#f7f3ea"/>
@@ -46,36 +44,40 @@
         <rect x="12.6" y="19" width="9" height="2.1" rx="1.05" fill="#faa61a"/>
         <rect x="12.6" y="24.4" width="5.6" height="2.1" rx="1.05" fill="#00b140"/>
       </svg>
-      <span class="logo-text">manifestos.org.uk</span>
+      <span class="nav-wordmark">
+        <span class="nav-wordmark-name">The British <span class="nav-wordmark-rest">Manifesto Archive</span></span>
+        <span class="nav-wordmark-domain">manifestos.org.uk</span>
+      </span>
     </a>
     <div class="nav-links" id="nav-links">
-      <div class="nav-mobile-only" id="nav-mobile-only">
-        <a href="/" class="nav-btn">Home</a>
-        <a href="/elections" class="nav-btn"><span class="type-dot dot-uk" aria-hidden="true"></span>UK General Elections</a>
-        <a href="/devolved/holyrood" class="nav-btn"><span class="type-dot dot-holyrood" aria-hidden="true"></span>Scottish Parliament</a>
-        <a href="/devolved/senedd" class="nav-btn"><span class="type-dot dot-senedd" aria-hidden="true"></span>Welsh Parliament</a>
-        <a href="/devolved/stormont" class="nav-btn"><span class="type-dot dot-stormont" aria-hidden="true"></span>Northern Ireland Assembly</a>
-        <a href="/devolved/london" class="nav-btn"><span class="type-dot dot-london" aria-hidden="true"></span>London Mayor & Assembly</a>
-        <a href="/devolved/euro" class="nav-btn"><span class="type-dot dot-euro" aria-hidden="true"></span>European Parliament</a>
-        <a href="/parties" class="nav-btn">Parties</a>
-        <a href="/about" class="nav-btn">About</a>
+      <div class="nav-drawer-toolbar">
+        <span class="nav-drawer-kicker">Menu</span>
+        <button type="button" class="nav-drawer-close" id="nav-drawer-close" aria-label="Close menu">Close</button>
       </div>
-      <div class="nav-desktop-only" id="nav-desktop-only">
+      <div class="nav-tree" id="nav-tree">
         <div class="nav-dropdown">
-          <button type="button" class="nav-btn" id="nav-btn-elections" aria-expanded="false" aria-haspopup="true" aria-controls="elections-dropdown">General Elections <span class="caret" aria-hidden="true">▾</span></button>
-          <div class="dropdown-menu" id="elections-dropdown" role="menu" aria-hidden="true"></div>
-        </div>
-        <div class="nav-dropdown">
-          <button type="button" class="nav-btn" id="nav-btn-devolved" aria-expanded="false" aria-haspopup="true" aria-controls="devolved-dropdown">Beyond Westminster <span class="caret" aria-hidden="true">▾</span></button>
-          <div class="dropdown-menu" id="devolved-dropdown" role="menu" aria-hidden="true"></div>
+          <div class="nav-slot">
+            <a href="/election" class="nav-btn nav-go" id="nav-btn-elections">Elections <span class="nav-go-hint" aria-hidden="true">→</span></a>
+            <button type="button" class="nav-disclose" aria-expanded="false" aria-controls="elections-dropdown" aria-haspopup="true" aria-label="Show elections sections">
+              <span class="caret" aria-hidden="true">▾</span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="elections-dropdown"></div>
         </div>
         <div class="nav-dropdown nav-mega">
-          <button type="button" class="nav-btn" id="nav-btn-parties" aria-expanded="false" aria-haspopup="true" aria-controls="parties-mega">Parties <span class="caret" aria-hidden="true">▾</span></button>
-          <div class="dropdown-mega" id="parties-mega" role="menu" aria-hidden="true"></div>
+          <div class="nav-slot">
+            <a href="/party" class="nav-btn nav-go" id="nav-btn-parties">Parties <span class="nav-go-hint" aria-hidden="true">→</span></a>
+            <button type="button" class="nav-disclose" aria-expanded="false" aria-controls="parties-mega" aria-haspopup="true" aria-label="Show party sections">
+              <span class="caret" aria-hidden="true">▾</span>
+            </button>
+          </div>
+          <div class="dropdown-mega" id="parties-mega"></div>
         </div>
-        <a href="/about" class="nav-btn">About</a>
+        <a href="/nation" class="nav-btn nav-go" id="nav-btn-nations">Nations <span class="nav-go-hint" aria-hidden="true">→</span></a>
+        <a href="/about" class="nav-btn nav-go" id="nav-btn-about">About <span class="nav-go-hint" aria-hidden="true">→</span></a>
       </div>
     </div>
+    <div class="nav-scrim" id="nav-scrim" hidden></div>
     <div class="nav-utils" id="nav-utils">
       <button type="button" class="nav-theme-btn" id="theme-toggle" aria-label="Toggle light or dark theme">☀ Light</button>
       <button type="button" class="nav-search-btn" id="search-toggle" aria-label="Search archive">
@@ -105,7 +107,8 @@
       <div id="search-results" class="search-results"></div>
       <div class="search-panel-footer">
         <span class="search-footer-keys" aria-hidden="true">↑↓ navigate · ⏎ open · Esc close</span>
-        <a href="/parties/all" class="search-footer-browse" id="search-browse-link">Browse all parties</a>
+        <a href="/search" class="search-footer-browse" id="search-page-link">Search page</a>
+        <a href="/party/all" class="search-footer-browse" id="search-browse-link">Browse all parties</a>
       </div>
     </div>
   </div>
@@ -115,14 +118,15 @@
   <footer id="main-footer" class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <p class="footer-logo"><a href="https://www.manifestos.org.uk/">www.manifestos.org.uk</a></p>
-        <p class="footer-tagline">The British Manifesto Archive - UK political party manifestos</p>
+        <p class="footer-logo"><a href="/">The British Manifesto Archive</a></p>
+        <p class="footer-tagline">manifestos.org.uk — UK political party manifestos</p>
       </div>
       <nav class="footer-links" role="navigation" aria-label="Site links">
         <a href="/">Home</a>
-        <a href="/nations">The Four Nations &amp; Europe</a>
-        <a href="/devolved">Beyond Westminster</a>
-        <a href="/parties">Parties</a>
+        <a href="/election">Elections</a>
+        <a href="/party">Parties</a>
+        <a href="/nation">Nations</a>
+        <a href="/manifesto">Manifestos</a>
         <a href="/about">About</a>
       </nav>
     </div>
@@ -170,20 +174,13 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous"></script>
-  <script src="/js/meta.js?v=2026081002"></script>
-  <script src="/js/data.js?v=2026081002"></script>
-  <script src="/js/colour.js?v=2026081002"></script>
-  <script src="/js/data-loader.js?v=2026081002"></script>
-  <script src="/js/parliament.js?v=2026081002"></script>
-  <script src="/js/hexmap.js?v=2026081002"></script>
-  <script src="/js/search.js?v=2026081002"></script>
-  <script src="/js/london.js?v=2026081002"></script>
-  <script src="/js/holyrood.js?v=2026081002"></script>
-  <script src="/js/senedd.js?v=2026081002"></script>
-  <script src="/js/ni.js?v=2026081002"></script>
-  <script src="/js/euro-map.js?v=2026081002"></script>
-  <script src="/js/euro.js?v=2026081002"></script>
-  <script src="/js/app.js?v=2026081002"></script>
+  <script defer src="/js/meta.js?v=2026090628"></script>
+  <script defer src="/js/data.js?v=2026090628"></script>
+  <script defer src="/js/colour.js?v=2026090628"></script>
+  <script defer src="/js/data-loader.js?v=2026090628"></script>
+  <script defer src="/js/parliament.js?v=2026090628"></script>
+  <script defer src="/js/hexmap.js?v=2026090628"></script>
+  <script defer src="/js/search.js?v=2026090628"></script>
+  <script defer src="/js/app.js?v=2026090628"></script>
 </body>
 </html>

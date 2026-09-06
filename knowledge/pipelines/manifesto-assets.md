@@ -10,7 +10,8 @@ timestamp: 2026-07-20T22:25:00Z
 
 [`data/manifesto-assets.json`](../../data/manifesto-assets.json) lists every
 `manifestos/<electionId>/<partyId>/` folder that has at least one of
-`manifesto.pdf`, `manifesto.md`, `cover.png`, or `cover.jpg`, with boolean flags:
+`manifesto.pdf`, `manifesto.md`, `cover.png`, `cover.jpg`, or `manifesto.png`
+(euro folders), with boolean flags:
 
 ```json
 {
@@ -25,7 +26,7 @@ Loaded once at startup (`initManifestoAssets` in `js/app.js`):
 
 - **`hasManifestoPdf` / `hasManifestoContent`** — prefer these flags over guessing
 - **`hasManifestoCover`** — when `cover` is false, manifesto cards and the reader
-  show the **“Scan not yet archived”** placeholder immediately (no broken-image
+  show the **“Not yet digitised”** placeholder immediately (no broken-image
   flicker). When `cover` is true, the cover image is shown even if there is no PDF
   (common for early text editions that have a cover scan but no archived PDF yet)
 

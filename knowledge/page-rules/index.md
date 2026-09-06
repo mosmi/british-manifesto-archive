@@ -15,3 +15,4 @@ Read the relevant rule before editing these pages.
   page only**
 - [manifesto-viewer](./manifesto-viewer.md) — single H1, cite strip, in-doc find,
   Original PDF CTAs, TOC scroll + cover panel on `/manifesto/…`
+- [manifesto-hub](../design/manifesto-hub.md) — cover wall at `/manifesto` (not the reader)

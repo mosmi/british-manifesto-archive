@@ -3,8 +3,8 @@
 build-manifesto-assets.py
 
 Walks manifestos/ and writes data/manifesto-assets.json — per-folder flags for
-whether manifesto.pdf, manifesto.md, and a cover image (cover.png or cover.jpg)
-exist on disk.
+whether manifesto.pdf, manifesto.md, and a cover image (`cover.png`, `cover.jpg`,
+or euro-style `manifesto.png`) exist on disk.
 
 Used by the site so text-only editions without a cover can show the
 "Scan not yet archived" placeholder immediately (no broken-image flicker),
@@ -46,7 +46,11 @@ def build() -> dict[str, dict[str, bool]]:
         assets[key] = {
             "pdf": (folder / "manifesto.pdf").is_file(),
             "md": (folder / "manifesto.md").is_file(),
-            "cover": (folder / "cover.png").is_file() or (folder / "cover.jpg").is_file(),
+            "cover": (
+                (folder / "cover.png").is_file()
+                or (folder / "cover.jpg").is_file()
+                or (folder / "manifesto.png").is_file()
+            ),
         }
 
     return assets

@@ -59,6 +59,48 @@
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Source Serif 4', Georgia, serif;
   --font-ui:      'Public Sans', system-ui, sans-serif;
+  --arrow-glyph: "→";
+
+  /* Type scale — 8 UI steps (11px floor) + display clamps */
+  --fs-2xs: 0.6875rem; /* 11px */
+  --fs-xs:  0.75rem;    /* 12px */
+  --fs-sm:  0.8125rem;  /* 13px */
+  --fs-md:  0.875rem;   /* 14px */
+  --fs-lg:  1rem;       /* 16px */
+  --fs-xl:  1.125rem;   /* 18px */
+  --fs-2xl: 1.25rem;    /* 20px */
+  --fs-3xl: 1.5rem;     /* 24px */
+  --fs-display-sm: clamp(1.6rem, 3vw, 2.2rem);
+  --fs-display-md: clamp(2.2rem, 4vw, 3.2rem);
+  --fs-display-lg: clamp(2.8rem, 6vw, 5.5rem);
+  --fs-display-xl: clamp(3.2rem, 7vw, 6.5rem);
+  --fs-ghost: clamp(7rem, 12vw, 11.875rem);
+  --lh-tight: 1.15;
+  --lh-snug:  1.3;
+  --lh-body:  1.7;
+  --lh-loose: 1.75;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.375rem;
+  --space-3: 0.5rem;
+  --space-4: 0.75rem;
+  --space-5: 1rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 3rem;
+
+  /* Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-pill: 999px;
+
+  /* Elevation — cream hairline so dark cards actually lift */
+  --shadow-1: 0 1px 0 rgba(244, 241, 232, 0.06), 0 6px 16px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 1px 0 rgba(244, 241, 232, 0.08), 0 12px 28px rgba(0, 0, 0, 0.48);
+  --shadow-3: 0 1px 0 rgba(217, 183, 106, 0.14), 0 20px 48px rgba(0, 0, 0, 0.55);
 
   /* Spacing */
   --nav-h: 68px;
@@ -77,8 +119,8 @@ body {
   background: var(--navy);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-body);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -95,9 +137,62 @@ body::before {
   z-index: 0;
 }
 
+.hero-scroll-hint,
+.election-eyebrow,
+.results-table th,
+.manifesto-party-tag,
+.party-meta-item,
+.elections-won-label,
+.nation-stat-label,
+.search-suggest-label,
+.hub-nation-meta,
+.hub-devolved-sub,
+.hexmap-outside-heading {
+  font-family: var(--font-ui);
+}
+
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
-button { cursor: pointer; font-family: inherit; border: none; background: none; }
+button { cursor: pointer; font-family: var(--font-ui); border: none; background: none; }
+
+/* 3.1 — inline prose links (not nav, cards, or buttons) */
+.election-summary a,
+.browse-section-lede a,
+.hub-lede a,
+.party-lede a,
+.party-description a,
+.about-section p a,
+.about-section li a,
+.parties-browse-hero-copy p a,
+main p a:not([class]) {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--gold-rule);
+  transition: text-decoration-color 0.15s var(--ease);
+}
+.election-summary a:hover,
+.browse-section-lede a:hover,
+.hub-lede a:hover,
+.party-lede a:hover,
+.party-description a:hover,
+.about-section p a:hover,
+.about-section li a:hover,
+.parties-browse-hero-copy p a:hover,
+main p a:not([class]):hover,
+.election-summary a:focus-visible,
+.browse-section-lede a:focus-visible,
+.hub-lede a:focus-visible,
+.party-lede a:focus-visible,
+.party-description a:focus-visible,
+.about-section p a:focus-visible,
+.about-section li a:focus-visible,
+.parties-browse-hero-copy p a:focus-visible,
+main p a:not([class]):focus-visible {
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--gold-light);
+}
 
 .skip-link {
   position: absolute;
@@ -111,9 +206,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   background: var(--gold);
   color: var(--navy);
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   font-weight: 600;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   text-decoration: none;
 }
 .skip-link:focus {
@@ -156,7 +251,7 @@ textarea:focus-visible,
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: var(--lh-tight);
   letter-spacing: 0.01em;
 }
 
@@ -169,6 +264,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-5);
   padding: 0 var(--page-px);
   background: rgba(9, 14, 28, 0.92);
   backdrop-filter: blur(12px);
@@ -178,9 +274,10 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   color: var(--cream);
   transition: color 0.2s var(--ease);
+  flex-shrink: 0;
 }
 .nav-logo:hover { color: var(--gold-light); }
 
@@ -190,9 +287,32 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+.nav-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+.nav-wordmark-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(var(--fs-xs), 2.4vw, var(--fs-md));
+  letter-spacing: 0.01em;
+  color: inherit;
+  white-space: nowrap;
+}
+.nav-wordmark-rest { display: inline; white-space: nowrap; }
+.nav-wordmark-domain {
+  font-family: var(--font-ui);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: var(--ink-chrome);
+}
+
 .logo-text {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: var(--fs-xl);
   font-weight: 500;
   letter-spacing: 0.03em;
   white-space: nowrap;
@@ -201,43 +321,80 @@ h1, h2, h3, h4 {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--space-1);
+  flex-shrink: 0;
 }
+.nav-desktop-only .nav-btn { white-space: nowrap; }
 
 .nav-utils {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
   margin-left: 0.5rem;
   flex-shrink: 0;
 }
 
-/* Nav menu variants — desktop default; mobile overrides below 640px */
-.nav-mobile-only { display: none; }
-.nav-desktop-only {
+/* Nav menu variants — desktop default; hamburger below 1100px (keep js/app.js in sync) */
+.nav-tree {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--space-1);
+}
+.nav-drawer-toolbar { display: none; }
+.nav-scrim {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: rgba(9, 14, 28, 0.72);
+  border: 0;
+  padding: 0;
 }
 
 .nav-dropdown { position: relative; }
 
+.nav-slot {
+  display: flex;
+  align-items: stretch;
+}
+.nav-disclose {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 0.4rem;
+  color: var(--cream-dim);
+  border-radius: var(--radius-md);
+  transition: color 0.2s, background 0.2s;
+}
+.nav-disclose:hover,
+.nav-disclose[aria-expanded="true"] {
+  color: var(--cream);
+  background: var(--cream-faint);
+}
+.nav-go-hint { display: none; }
+
 .nav-btn {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: var(--space-2);
   padding: 0.45rem 0.85rem;
+  min-height: 44px;
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--cream-dim);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   transition: color 0.2s, background 0.2s;
 }
 .nav-btn:hover, .nav-btn.active { color: var(--cream); background: var(--cream-faint); }
-.caret { font-size: 0.65rem; opacity: 0.7; transition: transform 0.2s; }
-.nav-dropdown:hover .caret { transform: rotate(180deg); }
+.caret { font-size: var(--fs-2xs); opacity: 0.7; transition: transform 0.2s; }
+.nav-btn[aria-expanded="true"] .caret { transform: rotate(180deg); }
+@media (min-width: 1101px) {
+  .nav-dropdown:hover .caret { transform: rotate(180deg); }
+}
 
 .dropdown-menu {
   position: absolute;
@@ -249,7 +406,7 @@ h1, h2, h3, h4 {
   background: var(--navy-mid);
   border: 1px solid var(--navy-border);
   border-top: 2px solid var(--gold);
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   box-shadow: 0 16px 40px rgba(0,0,0,0.5);
   opacity: 0;
   pointer-events: none;
@@ -259,8 +416,10 @@ h1, h2, h3, h4 {
   scrollbar-color: var(--gold-dim) transparent;
   z-index: 150;
 }
-#devolved-dropdown {
-  min-width: 225px;
+#elections-dropdown {
+  min-width: 280px;
+  max-height: none;
+  overflow-y: visible;
 }
 .dropdown-menu.is-open {
   opacity: 1;
@@ -270,8 +429,8 @@ h1, h2, h3, h4 {
 .dropdown-section-label {
   display: block;
   padding: 0.6rem 1rem 0.3rem;
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold);
@@ -282,7 +441,8 @@ h1, h2, h3, h4 {
 .dropdown-menu a {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  min-height: 44px;
+  font-size: var(--fs-md);
   color: var(--cream-dim);
   transition: background 0.15s, color 0.15s;
 }
@@ -295,7 +455,7 @@ h1, h2, h3, h4 {
 .dropdown-menu a .dropdown-sub {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   margin-top: 0.15rem;
 }
@@ -304,14 +464,18 @@ h1, h2, h3, h4 {
 .nav-mobile-btn {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: var(--space-1);
   padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 .nav-mobile-btn span {
   display: block;
   width: 22px; height: 2px;
   background: var(--cream-dim);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   transition: all 0.2s;
 }
 
@@ -333,7 +497,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   font-family: var(--font-body);
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   letter-spacing: normal;
   text-transform: none;
   color: var(--gold);
@@ -375,7 +539,7 @@ h1, h2, h3, h4 {
 .hero-eyebrow {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-5);
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.7s 0.1s var(--ease) forwards;
@@ -385,16 +549,16 @@ h1, h2, h3, h4 {
   background: var(--gold);
 }
 .hero-eyebrow-text {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
-  font-family: var(--font-body);
+  font-family: var(--font-ui);
 }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-size: var(--fs-display-xl);
   font-weight: 300;
   line-height: 1.02;
   letter-spacing: -0.01em;
@@ -410,95 +574,68 @@ h1, h2, h3, h4 {
 
 .hero-subtitle {
   margin-top: 1.75rem;
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
-  max-width: 520px;
+  max-width: 40rem;
   line-height: 1.75;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s var(--ease) forwards;
 }
-.hero-ways {
-  margin: 1.75rem auto 0;
-  max-width: 720px;
-  opacity: 0;
-  animation: fadeUp 0.8s 0.48s var(--ease) forwards;
-}
-.hero-ways-kicker {
-  margin: 0 0 0.85rem;
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-.hero-ways-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.75rem 1rem;
-  border-top: 1px solid var(--navy-border, rgba(255, 255, 255, 0.08));
-  border-bottom: 1px solid var(--navy-border, rgba(255, 255, 255, 0.08));
-  padding: 0.95rem 0;
-}
-.hero-ways-list a {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  text-decoration: none;
-  color: inherit;
-  min-width: 0;
-  transition: color 0.15s var(--ease);
-}
-.hero-ways-list a:hover .hero-ways-label,
-.hero-ways-list a:focus-visible .hero-ways-label {
-  color: var(--gold-light, var(--gold));
-}
-.hero-ways-label {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--cream, var(--text));
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-}
-.hero-ways-hint {
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.3;
-}
-@media (max-width: 640px) {
-  .hero-ways-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem 1.25rem;
-    text-align: left;
-  }
-}
-
 .hero-stats {
   display: flex;
-  gap: 2.5rem;
+  gap: var(--space-7);
   margin-top: 3rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.55s var(--ease) forwards;
 }
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 5.5rem;
+  min-height: 44px;
+  padding: 0.2rem 0.35rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-sm);
+}
 .hero-stat-num {
+  display: block;
   font-family: var(--font-display);
-  font-size: 2.6rem;
+  font-size: var(--fs-display-md);
   font-weight: 300;
   color: var(--gold-light);
   line-height: 1;
+  transition: color 0.15s var(--ease);
 }
 .hero-stat-label {
+  display: inline;
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-muted);
   margin-top: 0.3rem;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, var(--ink-muted) 45%, transparent);
+  transition: color 0.15s var(--ease), text-decoration-color 0.15s var(--ease);
+}
+.hero-stat-label::after {
+  content: var(--arrow-glyph);
+  margin-left: 0.28em;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+.hero-stat:hover .hero-stat-num,
+.hero-stat:focus-visible .hero-stat-num {
+  color: var(--gold);
+}
+.hero-stat:hover .hero-stat-label,
+.hero-stat:focus-visible .hero-stat-label {
+  color: var(--gold);
+  text-decoration-color: var(--gold);
 }
 
 .hero-scroll-hint {
@@ -507,8 +644,8 @@ h1, h2, h3, h4 {
   left: var(--page-px);
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 0.72rem;
+  gap: var(--space-4);
+  font-size: var(--fs-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -532,25 +669,26 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 2rem;
+  gap: var(--space-7);
 }
 .timeline-header h2 {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: var(--fs-display-md);
   font-weight: 400;
   color: var(--cream);
 }
 .timeline-filter {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-3);
   flex-shrink: 0;
 }
 .filter-btn {
   padding: 0.4rem 0.9rem;
-  font-size: 0.78rem;
+  min-height: 44px;
+  font-size: var(--fs-sm);
   letter-spacing: 0.06em;
   border: 1px solid var(--navy-border);
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
   color: var(--text-muted);
   transition: all 0.2s;
 }
@@ -565,7 +703,7 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
-  gap: 1.5rem;
+  gap: var(--space-6);
 }
 
 .election-card {
@@ -585,7 +723,7 @@ h1, h2, h3, h4 {
   position: relative;
   z-index: 1;
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -608,7 +746,7 @@ h1, h2, h3, h4 {
   bottom: -3.25rem;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(7rem, 12vw, 11.875rem);
+  font-size: var(--fs-ghost);
   line-height: 1;
   color: var(--party-ghost, rgba(255, 255, 255, 0.07));
   pointer-events: none;
@@ -617,25 +755,25 @@ h1, h2, h3, h4 {
 
 .card-year {
   font-family: var(--font-display);
-  font-size: 3.625rem;
+  font-size: var(--fs-display-lg);
   font-weight: 500;
   color: var(--ink);
   line-height: 1;
 }
-.card-year.long-label { font-size: 2.875rem; line-height: 1.15; }
+.card-year.long-label { font-size: var(--fs-display-md); line-height: 1.15; }
 .card-date {
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   color: var(--ink-muted);
   margin-top: 0.5rem;
 }
 .card-winner {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: var(--space-4);
   margin-top: 1.25rem;
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--party-kicker, var(--gold));
 }
@@ -648,7 +786,7 @@ h1, h2, h3, h4 {
 .card-pm {
   margin-top: 0.5rem;
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: var(--fs-md);
   color: var(--ink-body);
 }
 .card-pm span { color: var(--ink); }
@@ -681,29 +819,33 @@ h1, h2, h3, h4 {
 }
 .browse-section-header h2 {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: var(--fs-display-md);
   color: var(--cream);
   margin: 0;
 }
 .browse-section-lede {
   margin: 0.75rem 0 0;
   max-width: 40rem;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   line-height: 1.55;
   color: var(--ink-chrome);
 }
 .browse-section-lede a {
-  color: var(--gold);
-  text-decoration: none;
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--gold-rule);
 }
 .browse-section-lede a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--gold-light);
 }
 .browse-section-link {
   display: inline-block;
   margin-top: 1.5rem;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   letter-spacing: 0.04em;
   color: var(--gold);
   transition: color 0.2s;
@@ -714,7 +856,7 @@ h1, h2, h3, h4 {
   margin: 2rem 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: var(--space-5);
 }
 
 @media (max-width: 640px) {
@@ -728,7 +870,7 @@ h1, h2, h3, h4 {
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto;
     align-items: center;
-    gap: 0.35rem 0.75rem;
+    gap: var(--space-2) var(--space-4);
     padding: 1rem 1.125rem;
     border-left: none;
     border-right: none;
@@ -739,10 +881,10 @@ h1, h2, h3, h4 {
   }
   .election-card:hover { transform: none; box-shadow: none; }
   .card-ghost-year { display: none; }
-  .card-year { font-size: 1.125rem; grid-row: 1 / 3; min-width: 3.5rem; }
+  .card-year { font-size: var(--fs-xl); grid-row: 1 / 3; min-width: 3.5rem; }
   .card-date { display: none; }
-  .card-winner { margin: 0; font-size: 0.8125rem; grid-column: 2; }
-  .card-pm { margin: 0; font-size: 0.8125rem; grid-column: 2; color: var(--ink-muted); }
+  .card-winner { margin: 0; font-size: var(--fs-sm); grid-column: 2; }
+  .card-pm { margin: 0; font-size: var(--fs-sm); grid-column: 2; color: var(--ink-muted); }
   .card-seats-bar { margin: 0; width: 72px; grid-column: 3; grid-row: 1 / 3; }
 }
 
@@ -767,7 +909,7 @@ h1, h2, h3, h4 {
 .nation-icon { display: none; }
 .nation-name {
   font-family: var(--font-display);
-  font-size: 1.875rem;
+  font-size: var(--fs-display-sm);
   font-weight: 500;
   color: var(--ink);
   position: relative;
@@ -775,7 +917,7 @@ h1, h2, h3, h4 {
 }
 .nation-mp {
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--ink-body);
   margin-top: 0.35rem;
   position: relative;
@@ -799,11 +941,11 @@ h1, h2, h3, h4 {
 }
 .party-card-body { padding: 1.625rem 1.75rem; min-width: 0; }
 .party-card::after { display: none; }
-.party-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); }
+.party-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); }
 
 .party-card-name {
   font-family: var(--font-display);
-  font-size: 1.6875rem;
+  font-size: var(--fs-3xl);
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 0;
@@ -813,7 +955,7 @@ h1, h2, h3, h4 {
   display: inline;
   margin-left: 0.875rem;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -822,7 +964,7 @@ h1, h2, h3, h4 {
 .party-card-color-swatch { display: none; }
 .party-card-desc {
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: var(--fs-md);
   color: var(--ink-body);
   line-height: 1.6;
   margin-top: 0.75rem;
@@ -833,9 +975,10 @@ h1, h2, h3, h4 {
 }
 .party-card-holdings {
   font-family: var(--font-ui);
-  font-size: 0.84rem;
+  font-size: var(--fs-sm);
   color: var(--ink-muted);
   margin-top: 0.875rem;
+  text-wrap: pretty;
 }
 .party-holdings-count { color: var(--ink); font-weight: 600; }
 
@@ -844,17 +987,17 @@ h1, h2, h3, h4 {
   margin: 1.25rem auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .more-party-card {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   padding: 0.9rem 1rem;
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   color: var(--cream-dim);
   transition: color 0.2s, border-color 0.2s;
 }
@@ -871,11 +1014,11 @@ h1, h2, h3, h4 {
   max-width: var(--max-w);
   margin: 1.25rem auto 0;
   padding: 0.7rem 1.5rem;
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   letter-spacing: 0.07em;
   color: var(--text-muted);
   border: 1px dashed var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   text-align: center;
   transition: color 0.2s, border-color 0.2s;
 }
@@ -902,12 +1045,12 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 3rem;
+  gap: var(--space-8);
   align-items: start;
 }
 
 .election-eyebrow {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--gold);
@@ -916,7 +1059,7 @@ h1, h2, h3, h4 {
 
 .election-title {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: var(--fs-display-xl);
   font-weight: 300;
   color: var(--cream);
   line-height: 0.95;
@@ -924,7 +1067,7 @@ h1, h2, h3, h4 {
 
 .election-date {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: var(--fs-xl);
   font-weight: 400;
   color: var(--text-muted);
   margin-top: 0.75rem;
@@ -938,15 +1081,15 @@ h1, h2, h3, h4 {
 .election-winner-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--space-3);
   margin-top: 1.5rem;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--party-color, var(--gold));
-  border-radius: 4px;
-  font-size: 0.875rem;
+  border: 1px solid var(--party-kicker, var(--party-color, var(--gold)));
+  border-radius: var(--radius-md);
+  font-size: var(--fs-md);
   font-weight: 500;
-  color: var(--party-color, var(--gold));
-  background: var(--party-dim, var(--gold-dim));
+  color: var(--ink);
+  background: color-mix(in srgb, var(--party-surface, var(--gold)) 16%, transparent);
 }
 .winner-dot {
   width: 9px; height: 9px;
@@ -958,19 +1101,20 @@ h1, h2, h3, h4 {
 .election-nav-btns {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-3);
   align-items: flex-end;
   padding-top: 3.5rem;
 }
 .election-nav-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-3);
   padding: 0.5rem 0.9rem;
-  font-size: 0.8rem;
+  min-height: 44px;
+  font-size: var(--fs-sm);
   letter-spacing: 0.06em;
   border: 1px solid var(--navy-border);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   color: var(--text-muted);
   white-space: nowrap;
   transition: all 0.2s;
@@ -983,6 +1127,71 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   padding: 3.5rem var(--page-px) 5rem;
   overflow-x: clip;
+}
+
+.page-with-rail {
+  display: grid;
+  grid-template-columns: 13.5rem minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+  max-width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 0 var(--page-px);
+}
+.page-with-rail > .election-body,
+.page-with-rail > .party-body {
+  max-width: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-rail {
+  width: 13.5rem;
+  position: sticky;
+  top: calc(var(--nav-h) + 1.5rem);
+  align-self: start;
+  max-height: calc(100vh - var(--nav-h) - 3rem);
+  overflow: auto;
+  padding-top: 3.5rem;
+}
+.page-rail-label {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-chrome);
+  padding: 0 0.5rem 0.75rem;
+}
+.page-rail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.page-rail-link {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  min-height: 24px;
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  color: var(--ink-chrome);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+}
+.page-rail-link:hover {
+  color: var(--ink);
+  border-left-color: var(--gold);
+}
+[data-rail][id] {
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
+}
+.page-rail-mobile { display: none; }
+.page-rail-mobile summary {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.75rem 0;
 }
 .election-body .results-table,
 .election-body table {
@@ -997,18 +1206,23 @@ h1, h2, h3, h4 {
 .election-grid {
   display: grid;
   grid-template-columns: 1fr 380px;
-  gap: 3rem;
+  gap: var(--space-8);
   align-items: start;
+  min-width: 0;
+}
+.election-grid > * {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .election-summary h2 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   margin-bottom: 1rem;
   color: var(--cream);
 }
 .election-summary p {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -1021,7 +1235,7 @@ h1, h2, h3, h4 {
 .supplementary-doc-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  gap: var(--space-4);
   margin-top: 0.65rem;
 }
 .supplementary-doc-btn {
@@ -1029,9 +1243,9 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 0.55rem 1rem;
   border: 1px solid var(--navy-light);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   color: var(--cream);
-  font-size: 0.88rem;
+  font-size: var(--fs-md);
   text-decoration: none;
   background: rgba(255, 255, 255, 0.03);
   transition: border-color 0.15s, background 0.15s;
@@ -1049,16 +1263,16 @@ h1, h2, h3, h4 {
 .highlights-list h2,
 .highlights-list h3 {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: var(--fs-2xl);
   color: var(--cream);
   margin-bottom: 1rem;
 }
 .highlight-item {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-5);
   padding: 0.85rem 0;
   border-bottom: 1px solid var(--navy-border);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -1074,26 +1288,26 @@ h1, h2, h3, h4 {
 .parliament-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   position: sticky;
   top: calc(var(--nav-h) + 1.5rem);
 }
 .parliament-card-title {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--cream);
   margin-bottom: 0.25rem;
 }
 .parliament-card-sub {
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
   margin-bottom: 1rem;
 }
 #parliament-svg-container {
   width: 100%;
   background: var(--navy-mid);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
 .parliament-chart {
@@ -1124,19 +1338,20 @@ h1, h2, h3, h4 {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: var(--space-3) var(--space-5);
 }
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.78rem;
+  gap: var(--space-3);
+  min-height: 24px;
+  font-size: var(--fs-sm);
   color: var(--text-muted);
   transition: opacity 0.18s ease, color 0.18s ease;
 }
 .legend-item-interactive {
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   padding: 0.15rem 0.25rem;
   margin: -0.15rem -0.25rem;
 }
@@ -1158,7 +1373,7 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 .legend-seats {
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
 }
 .legend-party-link {
@@ -1179,7 +1394,7 @@ h1, h2, h3, h4 {
 }
 .results-section h2 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 1.5rem;
 }
@@ -1187,12 +1402,12 @@ h1, h2, h3, h4 {
 .results-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
 }
 .results-table th {
   text-align: left;
   padding: 0.6rem 1rem;
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1220,46 +1435,69 @@ h1, h2, h3, h4 {
   color: var(--cream);
 }
 
+.results-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  min-width: 0;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.election-body .results-scroll .results-table,
+.election-body .results-scroll table {
+  max-width: none;
+}
+.results-scroll-hint {
+  display: none;
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  color: var(--ink-muted);
+  margin: 0 0 0.6rem;
+}
+@media (max-width: 640px) {
+  .results-scroll-hint { display: block; }
+  .results-scroll .results-table { min-width: 36rem; }
+}
+
 .result-party-name {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--space-3);
   font-weight: 500;
   color: var(--cream);
 }
 .result-party-swatch {
   width: 10px; height: 10px;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
 .result-seats-bar-wrap {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .result-seats-bar {
   flex: 1;
   height: 6px;
   background: var(--navy-light);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   min-width: 80px;
 }
 .result-seats-fill {
   height: 100%;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   transition: width 0.8s var(--ease);
 }
 .majority-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: var(--space-2);
   padding: 0.2rem 0.5rem;
-  font-size: 0.7rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.06em;
   background: rgba(201,168,76,0.15);
   color: var(--gold);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
 }
 
@@ -1269,12 +1507,12 @@ h1, h2, h3, h4 {
 }
 .manifestos-section h2 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
 .manifestos-intro {
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   margin-bottom: 2rem;
 }
@@ -1286,8 +1524,8 @@ h1, h2, h3, h4 {
   margin-bottom: 0;
 }
 .manifesto-nation-heading {
-  font-family: var(--font-display);
-  font-size: 1rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-lg);
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -1297,8 +1535,8 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--navy-border);
 }
 .manifesto-nation-subheading {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--text-faint);
   text-transform: uppercase;
@@ -1309,19 +1547,30 @@ h1, h2, h3, h4 {
 .manifesto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
-  gap: 1rem;
+  gap: var(--space-5);
 }
 
 .manifesto-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: border-color 0.2s, transform 0.2s;
   display: flex;
   flex-direction: column;
 }
 .manifesto-card:hover { transform: translateY(-2px); border-color: var(--navy-light); }
+.manifesto-card-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.manifesto-card-main:hover,
+.manifesto-card-main:focus-visible {
+  color: inherit;
+}
 
 /* ── Manifesto cover thumbnail ── */
 .manifesto-thumb {
@@ -1332,6 +1581,15 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--navy-border);
   display: block;
   cursor: pointer;
+}
+.manifesto-thumb picture,
+.latest-card-cover picture,
+.manifesto-viewer-cover-thumb picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 .manifesto-thumb img {
   width: 100%;
@@ -1368,12 +1626,12 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   font-family: var(--font-ui);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--party-kicker, var(--party-color, var(--gold)));
-  opacity: 0.75;
+  opacity: 0.85;
   text-align: center;
   padding: 0 1rem;
 }
@@ -1386,7 +1644,7 @@ h1, h2, h3, h4 {
 }
 .thumb-year {
   font-family: var(--font-display);
-  font-size: 2.4rem;
+  font-size: var(--fs-display-md);
   font-weight: 300;
   color: var(--party-color);
   opacity: 0.35;
@@ -1402,65 +1660,67 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--navy-border);
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .manifesto-party-dot {
   width: 12px; height: 12px;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
 .manifesto-party-name {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: var(--fs-xl);
   font-weight: 500;
   color: var(--cream);
 }
 .manifesto-party-tag {
   margin-left: auto;
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.2rem 0.5rem;
-  border-radius: 3px;
-  color: var(--party-color, var(--gold));
-  background: var(--party-dim, var(--gold-dim));
+  border-radius: var(--radius-sm);
+  color: var(--ink-body);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--party-kicker, var(--party-color, var(--gold))) 55%, transparent);
 }
 
 .manifesto-card-body {
   padding: 1rem 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: var(--space-3);
 }
 
 .manifesto-link {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--space-3);
   padding: 0.6rem 0.9rem;
+  min-height: 44px;
   border: 1px solid var(--navy-border);
-  border-radius: 5px;
-  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-md);
   color: var(--text-muted);
   transition: all 0.18s;
 }
 .manifesto-link:hover { border-color: var(--gold-rule); color: var(--cream); background: var(--cream-faint); }
 .manifesto-link-icon {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   flex-shrink: 0;
 }
 .manifesto-link-info { flex: 1; }
-.manifesto-link-title { font-weight: 500; font-size: 0.85rem; color: var(--cream); }
-.manifesto-link-sub { font-size: 0.75rem; color: var(--text-faint); }
+.manifesto-link-title { font-weight: 500; font-size: var(--fs-md); color: var(--cream); }
+.manifesto-link-sub { font-size: var(--fs-xs); color: var(--text-faint); }
 
 .manifesto-placeholder {
   padding: 1rem 1.25rem;
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
   font-style: italic;
   text-align: center;
   border: 1px dashed var(--navy-border);
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   margin: 0.75rem 0.25rem;
 }
 
@@ -1470,7 +1730,7 @@ h1, h2, h3, h4 {
 }
 .video-section h2 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 1rem;
 }
@@ -1479,7 +1739,7 @@ h1, h2, h3, h4 {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
 }
@@ -1488,7 +1748,7 @@ h1, h2, h3, h4 {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
 }
 .video-placeholder {
   position: absolute;
@@ -1497,15 +1757,15 @@ h1, h2, h3, h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   color: var(--text-faint);
 }
 .video-placeholder-icon {
-  font-size: 2.5rem;
+  font-size: var(--fs-display-md);
   opacity: 0.4;
 }
 .video-placeholder-text {
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   text-align: center;
 }
 
@@ -1529,13 +1789,13 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
+  gap: var(--space-7);
   align-items: center;
 }
 .party-hero-inner--with-aside {
   grid-template-columns: 1fr min(280px, 34%);
   align-items: start;
-  gap: 2.5rem;
+  gap: var(--space-7);
 }
 .party-hero-main {
   min-width: 0;
@@ -1549,7 +1809,7 @@ h1, h2, h3, h4 {
 .party-hero-stats--with-wins {
   display: grid;
   grid-template-columns: 1fr min(280px, 34%);
-  gap: 2.5rem;
+  gap: var(--space-7);
   align-items: start;
   margin-top: 1.5rem;
 }
@@ -1558,20 +1818,20 @@ h1, h2, h3, h4 {
 }
 .party-color-bar {
   width: 56px; height: 5px;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   background: var(--party-color, var(--gold));
   margin-bottom: 1rem;
 }
 .party-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-size: var(--fs-display-lg);
   font-weight: 300;
   color: var(--cream);
   line-height: 1.05;
 }
 .party-lede {
   max-width: 640px;
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   color: var(--cream-dark);
   line-height: 1.7;
   margin: 1rem 0 0;
@@ -1579,11 +1839,11 @@ h1, h2, h3, h4 {
 .party-hero-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: var(--space-6);
   margin-top: 1.5rem;
 }
 .party-meta-item {
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -1598,7 +1858,7 @@ h1, h2, h3, h4 {
   display: block;
   /* Theme-safe text tint (lighten dark party colours in dark mode) */
   color: var(--party-kicker, var(--party-color, var(--gold)));
-  font-size: 1.25rem;
+  font-size: var(--fs-2xl);
   font-family: var(--font-display);
   font-weight: 400;
   text-transform: none;
@@ -1608,7 +1868,7 @@ h1, h2, h3, h4 {
 .party-meta-item strong {
   display: block;
   color: var(--party-kicker, var(--party-color, var(--gold)));
-  font-size: 1.25rem;
+  font-size: var(--fs-2xl);
   font-family: var(--font-display);
   font-weight: 400;
   text-transform: none;
@@ -1624,7 +1884,7 @@ h1, h2, h3, h4 {
 .election-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: var(--space-3);
   margin: 0.45rem 0 0;
   padding: 0;
   list-style: none;
@@ -1632,15 +1892,15 @@ h1, h2, h3, h4 {
 .election-chip {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.35rem;
+  gap: var(--space-2);
   padding: 0.35rem 0.65rem 0.4rem;
   border: 1px solid color-mix(in srgb, var(--party-kicker, var(--party-color, var(--gold))) 40%, transparent);
   background: color-mix(in srgb, var(--party-kicker, var(--party-color, var(--gold))) 10%, transparent);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: var(--cream);
   text-decoration: none;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0;
   text-transform: none;
   transition: border-color 0.15s ease, background 0.15s ease;
@@ -1651,13 +1911,13 @@ a.election-chip:hover {
 }
 .election-chip-count {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   color: var(--party-kicker, var(--party-color, var(--gold)));
   line-height: 1;
 }
 .election-chip-label {
   color: var(--cream-dark);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
 }
 .party-elections-section[id] {
   scroll-margin-top: calc(var(--nav-h) + 1rem);
@@ -1669,14 +1929,14 @@ a.election-chip:hover {
   max-width: 14rem;
 }
 .elections-won-label {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 .elections-won-num {
   font-family: var(--font-display);
-  font-size: 4rem;
+  font-size: var(--fs-display-lg);
   font-weight: 300;
   color: var(--party-kicker, var(--party-color, var(--gold)));
   line-height: 1;
@@ -1685,7 +1945,7 @@ a.election-chip:hover {
 .wins-chamber {
   margin-top: 0.45rem;
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   color: var(--cream);
   line-height: 1.25;
 }
@@ -1693,7 +1953,7 @@ a.election-chip:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.35rem;
+  gap: var(--space-2);
   margin: 0.65rem 0 0;
   padding: 0;
   list-style: none;
@@ -1701,11 +1961,11 @@ a.election-chip:hover {
 .wins-year {
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 35%, transparent);
   background: color-mix(in srgb, var(--party-color, var(--gold)) 8%, transparent);
   color: var(--cream-dark);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
@@ -1717,20 +1977,20 @@ a.wins-year:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.4rem;
+  gap: var(--space-2);
   margin-top: 0.7rem;
 }
 .wins-chamber-chip {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.35rem;
+  gap: var(--space-2);
   padding: 0.3rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 40%, transparent);
   background: color-mix(in srgb, var(--party-color, var(--gold)) 10%, transparent);
   color: var(--cream-dark);
   text-decoration: none;
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
 }
 a.wins-chamber-chip:hover {
   border-color: var(--party-color, var(--gold));
@@ -1738,7 +1998,7 @@ a.wins-chamber-chip:hover {
 }
 .wins-chamber-chip-count {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   color: var(--party-color, var(--gold));
 }
 
@@ -1752,11 +2012,11 @@ a.wins-chamber-chip:hover {
   cursor: pointer;
   user-select: none;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--cream);
   padding: 0.75rem 1rem;
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   background: var(--navy-mid);
 }
 .party-results-fold-summary::-webkit-details-marker { display: none; }
@@ -1764,7 +2024,7 @@ a.wins-chamber-chip:hover {
 .party-results-fold-summary span {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-3);
 }
 .party-results-fold-summary span::after {
   content: '';
@@ -1788,25 +2048,25 @@ a.wins-chamber-chip:hover {
 @media (max-width: 900px) {
   .party-hero-inner--with-aside {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: var(--space-6);
   }
   .party-hero-stats,
   .party-hero-stats--with-wins {
     display: block;
     margin-top: 1rem;
     padding: 0.85rem 0.9rem 0.95rem;
-    border-radius: 12px;
+    border-radius: var(--radius-xl);
     border: 1px solid color-mix(in srgb, var(--party-color, var(--gold)) 28%, var(--navy-border));
     background: color-mix(in srgb, var(--party-color, var(--gold)) 7%, var(--navy-mid));
   }
   .party-hero-stats .party-hero-meta {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.65rem 1rem;
+    gap: var(--space-4) var(--space-5);
     margin-top: 0;
   }
   .party-hero-stats .party-meta-item dd {
-    font-size: 1.05rem;
+    font-size: var(--fs-lg);
   }
   .party-hero-stats .party-meta-item--elections {
     grid-column: 1 / -1;
@@ -1816,14 +2076,14 @@ a.wins-chamber-chip:hover {
   }
   .party-hero-stats .election-chips {
     margin-top: 0.35rem;
-    gap: 0.35rem;
+    gap: var(--space-2);
   }
   .party-hero-stats .election-chip {
     padding: 0.26rem 0.52rem 0.3rem;
-    font-size: 0.74rem;
+    font-size: var(--fs-xs);
   }
   .party-hero-stats .election-chip-count {
-    font-size: 0.92rem;
+    font-size: var(--fs-md);
   }
   .party-hero-stats .party-elections-won-badge {
     text-align: left;
@@ -1842,17 +2102,17 @@ a.wins-chamber-chip:hover {
   .party-hero-stats .elections-won-label {
     grid-column: 1 / -1;
     margin-top: 0;
-    font-size: 0.68rem;
+    font-size: var(--fs-2xs);
     letter-spacing: 0.09em;
   }
   .party-hero-stats .elections-won-num {
-    font-size: 2.1rem;
+    font-size: var(--fs-display-sm);
     grid-column: 1;
   }
   .party-hero-stats .wins-chamber {
     grid-column: 2;
     margin-top: 0;
-    font-size: 0.95rem;
+    font-size: var(--fs-lg);
   }
   .party-hero-stats .wins-years,
   .party-hero-stats .wins-chamber-chips {
@@ -1874,10 +2134,27 @@ a.wins-chamber-chip:hover {
 
 .party-description {
   max-width: 680px;
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.85;
   margin-bottom: 2rem;
+}
+.party-related {
+  max-width: 680px;
+  margin: -1rem 0 2rem;
+}
+.party-related-heading {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-3);
+}
+.party-related-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
 }
 
 /* Party results timeline */
@@ -1888,7 +2165,7 @@ a.wins-chamber-chip:hover {
 .party-elections-section h2,
 .party-manifestos-section h2 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 1rem;
 }
@@ -1901,48 +2178,48 @@ a.wins-chamber-chip:hover {
 
 .party-results-list .party-election-row {
   grid-template-columns: 56px 1fr 52px 72px;
-  gap: 0.65rem 0.85rem;
+  gap: var(--space-4) var(--space-4);
   padding: 0.45rem 0.65rem;
 }
 .party-results-list .per-year {
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   line-height: 1.1;
 }
 .party-results-list .per-outcome {
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   padding: 0.15rem 0.45rem;
 }
 .party-results-list .party-election-row > div:nth-child(2) > div:last-child {
-  font-size: 0.68rem !important;
+  font-size: var(--fs-2xs) !important;
   margin-top: 0.1rem !important;
   line-height: 1.25;
 }
 .party-results-list .per-seats-num {
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   line-height: 1.1;
 }
 .party-results-list .per-seats-label {
-  font-size: 0.62rem;
+  font-size: var(--fs-2xs);
 }
 .party-results-list .per-bar {
   height: 3px;
 }
 .party-results-list .per-pct {
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   line-height: 1.2;
 }
 .party-results-list .per-bar-wrap {
-  gap: 0.2rem;
+  gap: var(--space-1);
 }
 
 .party-election-row {
   display: grid;
   grid-template-columns: 80px 1fr 100px 140px;
-  gap: 1.5rem;
+  gap: var(--space-6);
   align-items: center;
   padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   transition: background 0.18s;
   cursor: pointer;
   text-decoration: none;
@@ -1952,58 +2229,58 @@ a.wins-chamber-chip:hover {
 
 .per-year {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: var(--fs-3xl);
   font-weight: 300;
   color: var(--cream);
 }
 .per-outcome {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.8rem;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
   letter-spacing: 0.06em;
   padding: 0.25rem 0.6rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   font-weight: 500;
 }
 .per-outcome.won { background: rgba(201,168,76,0.15); color: var(--gold); }
 .per-outcome.lost { background: var(--navy-card); color: var(--text-faint); }
 .per-outcome.coalition { background: rgba(250,166,26,0.12); color: var(--libdem); }
 
-.per-seats-wrap { display: flex; flex-direction: column; gap: 0.3rem; }
+.per-seats-wrap { display: flex; flex-direction: column; gap: var(--space-2); }
 .per-seats-num {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: var(--fs-2xl);
   color: var(--cream);
 }
-.per-seats-label { font-size: 0.72rem; color: var(--text-faint); letter-spacing: 0.06em; }
+.per-seats-label { font-size: var(--fs-xs); color: var(--text-faint); letter-spacing: 0.06em; }
 
 .per-bar-wrap {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: var(--space-2);
 }
 .per-bar {
   height: 5px;
   background: var(--navy-light);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
 }
 .per-bar-fill {
   height: 100%;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   background: var(--party-color, var(--gold));
 }
-.per-pct { font-size: 0.78rem; color: var(--text-muted); }
+.per-pct { font-size: var(--fs-sm); color: var(--text-muted); }
 
 /* Party manifesto list */
 .party-manifesto-item {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--space-6);
   padding: 1.1rem 1.25rem;
   border: 1px solid var(--navy-border);
-  border-radius: 7px;
+  border-radius: var(--radius-lg);
   margin-bottom: 0.75rem;
   background: var(--navy-card);
   transition: border-color 0.2s, transform 0.2s;
@@ -2014,32 +2291,32 @@ a.wins-chamber-chip:hover {
 }
 .pmi-year {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: var(--fs-3xl);
   font-weight: 300;
   color: var(--party-color, var(--gold));
   min-width: 60px;
 }
 .pmi-title {
   flex: 1;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   color: var(--cream);
 }
 .pmi-subtitle {
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--text-muted);
   margin-top: 0.15rem;
 }
 .pmi-links {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-3);
   flex-shrink: 0;
 }
 .pmi-link {
   padding: 0.35rem 0.7rem;
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.05em;
   border: 1px solid var(--navy-border);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   color: var(--text-muted);
   transition: all 0.18s;
 }
@@ -2054,14 +2331,14 @@ a.wins-chamber-chip:hover {
 }
 .about-section h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: var(--fs-display-lg);
   font-weight: 300;
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
 .about-domain {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   margin-bottom: 2rem !important;
 }
 .about-domain a {
@@ -2070,14 +2347,14 @@ a.wins-chamber-chip:hover {
 }
 .about-domain a:hover { text-decoration: underline; }
 .about-section p {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.85;
   margin-bottom: 1.25rem;
 }
 .about-section h2 {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin: 2.5rem 0 1rem;
   scroll-margin-top: calc(var(--nav-h) + 1rem);
@@ -2088,7 +2365,7 @@ a.wins-chamber-chip:hover {
   color: var(--text-muted);
 }
 .about-section li {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   line-height: 1.85;
   margin-bottom: 0.65rem;
 }
@@ -2118,16 +2395,17 @@ a.wins-chamber-chip:hover {
 }
 .not-found h1 {
   font-family: var(--font-display);
-  font-size: 5rem;
+  font-size: var(--fs-display-xl);
   font-weight: 300;
   color: var(--gold);
   line-height: 1;
 }
 .not-found p { color: var(--text-muted); margin-top: 1rem; max-width: 28rem; }
+.not-found-guesses,
 .not-found-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  gap: var(--space-4);
   justify-content: center;
   margin-top: 1.75rem;
   max-width: 36rem;
@@ -2137,9 +2415,9 @@ a.wins-chamber-chip:hover {
   display: inline-block;
   padding: 0.7rem 1.25rem;
   border: 1px solid var(--gold-rule);
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   color: var(--gold);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-family: var(--font-ui);
   background: transparent;
   cursor: pointer;
@@ -2163,11 +2441,11 @@ a.wins-chamber-chip:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: var(--space-7);
 }
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: var(--fs-2xl);
   font-weight: 500;
   color: var(--cream);
   margin-bottom: 0.5rem;
@@ -2178,18 +2456,18 @@ a.wins-chamber-chip:hover {
 }
 .footer-logo a:hover { color: var(--gold); }
 .footer-tagline {
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   max-width: 400px;
 }
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
+  gap: var(--space-4) var(--space-6);
   flex-shrink: 0;
 }
 .footer-links a {
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   transition: color 0.2s;
   white-space: nowrap;
@@ -2203,15 +2481,15 @@ a.wins-chamber-chip:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--space-6);
   flex-wrap: wrap;
 }
 .footer-contact {
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
 }
 .footer-contact a {
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s;
@@ -2221,7 +2499,7 @@ a.wins-chamber-chip:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.65rem;
+  gap: var(--space-4);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2232,7 +2510,7 @@ a.wins-chamber-chip:hover {
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   color: var(--text-muted);
   transition: color 0.2s, background 0.2s;
 }
@@ -2249,23 +2527,23 @@ a.wins-chamber-chip:hover {
 @media (max-width: 600px) {
   .footer-inner {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-6);
     padding-bottom: 1.5rem;
   }
   .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.65rem 1.25rem;
+    gap: var(--space-4) var(--space-5);
     width: 100%;
   }
   .footer-links a {
-    font-size: 0.9rem;
+    font-size: var(--fs-md);
     white-space: normal;
   }
   .footer-contact-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: var(--space-5);
     padding-bottom: 1.5rem;
   }
 }
@@ -2274,7 +2552,7 @@ a.wins-chamber-chip:hover {
   margin: 0 auto;
   padding: 1.25rem var(--page-px);
   border-top: 1px solid var(--navy-border);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
 }
 
@@ -2296,10 +2574,14 @@ a.wins-chamber-chip:hover {
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
-::-webkit-scrollbar-thumb { background: var(--navy-border); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--navy-border); border-radius: var(--radius-md); }
 ::-webkit-scrollbar-thumb:hover { background: var(--navy-light); }
 
 /* ── Responsive ── */
+@media (max-width: 1400px) {
+  .nav-wordmark-domain { display: none; }
+  .nav-wordmark-rest { display: block; }
+}
 @media (max-width: 900px) {
   .election-grid { grid-template-columns: 1fr; }
   .parliament-card { position: static; }
@@ -2310,12 +2592,11 @@ a.wins-chamber-chip:hover {
   .party-results-list .party-election-row { grid-template-columns: 52px 1fr 48px; }
   .party-results-list .per-bar-wrap { display: none; }
   .party-election-row { grid-template-columns: 60px 1fr 80px; }
-  .hero-stats { gap: 1.5rem; }
+  .hero-stats { gap: var(--space-6); }
 }
 
-@media (max-width: 640px) {
-  :root { --page-px: 1.25rem; }
-  .logo-text { font-size: 0.95rem; }
+/* Hamburger: 1100px is the first width where 2-line wordmark + desktop nav collide. */
+@media (max-width: 1100px) {
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
@@ -2324,37 +2605,129 @@ a.wins-chamber-chip:hover {
     top: var(--nav-h);
     left: 0; right: 0;
     z-index: 101;
+    max-height: calc(100dvh - var(--nav-h));
+    overflow-y: auto;
     background: var(--navy-mid);
     border-bottom: 1px solid var(--navy-border);
     padding: 1rem;
-    gap: 0.5rem;
+    gap: var(--space-3);
   }
-  .nav-desktop-only { display: none !important; }
-  .nav-mobile-only {
-    display: flex !important;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.25rem;
-  }
-  .nav-mobile-only .nav-btn {
-    width: 100%;
-    padding: 0.75rem 0.85rem;
-    display: flex !important;
+  .nav-drawer-toolbar {
+    display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: space-between;
+    padding: 0 0.35rem 0.5rem;
   }
+  .nav-drawer-kicker {
+    font-family: var(--font-ui);
+    font-size: var(--fs-xs);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .nav-drawer-close {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.5rem 0.85rem;
+    font-family: var(--font-ui);
+    font-size: var(--fs-md);
+    color: var(--cream);
+    background: var(--cream-faint);
+    border-radius: var(--radius-md);
+  }
+  .nav-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: var(--space-3);
+  }
+  .nav-tree .nav-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-tree .nav-dropdown { width: 100%; }
+  .nav-tree .nav-slot {
+    width: 100%;
+    gap: var(--space-2);
+  }
+  .nav-tree .nav-slot .nav-go { flex: 1; }
+  .nav-tree .nav-go-hint {
+    display: inline;
+    color: var(--gold);
+  }
+  .nav-tree .nav-disclose {
+    flex-shrink: 0;
+    border: 1px solid var(--navy-border);
+    background: var(--cream-faint);
+  }
+  .nav-tree .nav-disclose .caret {
+    font-size: var(--fs-md);
+    opacity: 1;
+    color: var(--gold);
+  }
+  .nav-links.open .dropdown-menu,
+  .nav-links.open .dropdown-mega {
+    position: static;
+    transform: none;
+    max-height: none;
+    overflow: visible;
+    width: 100%;
+    min-width: 0;
+    box-shadow: none;
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-md);
+  }
+  .nav-links.open .dropdown-menu:not(.is-open),
+  .nav-links.open .dropdown-mega:not(.is-open) {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav-links.open .dropdown-menu.is-open {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-links.open .dropdown-mega.is-open {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-links.open .dropdown-sub { display: none; }
+  .nav-links.open .mega-col {
+    padding: 0.65rem 0.85rem;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--navy-border);
+  }
+  .nav-links.open .mega-col:last-of-type { border-bottom: none; }
+  .nav-links.open .mega-nation-heading {
+    font-size: var(--fs-md);
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.35rem;
+  }
+  .nav-links.open .mega-party-link { min-height: 44px; padding: 0.35rem 0; }
+  .nav-scrim.is-open {
+    display: block;
+  }
+  body.nav-drawer-open { overflow: hidden; }
   .nav-mobile-btn { display: flex; }
-  .nav-search-label { display: inline; }
   .nav-search-kbd { display: none !important; }
   .nav-theme-btn {
     padding: 0.4rem 0.65rem;
-    min-height: 2.25rem;
+    min-height: 44px;
   }
+}
+
+@media (max-width: 640px) {
+  :root { --page-px: 1.25rem; }
+  .nav-search-label { display: inline; }
   .parties-grid { grid-template-columns: 1fr; }
   .timeline-header { flex-direction: column; align-items: flex-start; }
   .hero-stats { flex-wrap: wrap; }
-  .results-table th:nth-child(4),
-  .results-table td:nth-child(4) { display: none; }
   .party-results-list .party-election-row { grid-template-columns: 52px 1fr; }
   .party-results-list .per-seats-wrap { display: none; }
   .party-election-row { grid-template-columns: 60px 1fr; }
@@ -2386,7 +2759,9 @@ a.wins-chamber-chip:hover {
   background: var(--navy-mid);
   border-top: 2px solid var(--gold);
   border-bottom: 1px solid var(--navy-border);
-  box-shadow: 0 20px 48px rgba(0,0,0,0.55);
+  box-shadow: var(--shadow-3);
+  padding-left: max(var(--page-px), calc((100% - var(--max-w)) / 2));
+  padding-right: max(var(--page-px), calc((100% - var(--max-w)) / 2));
   opacity: 0;
   pointer-events: none;
   /* No translateY — avoids any pixel gap between nav edge and menu top */
@@ -2405,12 +2780,13 @@ a.wins-chamber-chip:hover {
   padding: 1.5rem 1.25rem;
   border-right: 1px solid var(--navy-border);
 }
+.mega-col:first-child { border-left: 1px solid var(--navy-border); }
 .mega-col:last-child { border-right: none; }
 
 .mega-nation-heading {
   display: block;
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--gold-light);
@@ -2424,9 +2800,9 @@ a.wins-chamber-chip:hover {
 .mega-party-link {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: var(--space-3);
   padding: 0.38rem 0;
-  font-size: 0.83rem;
+  font-size: var(--fs-sm);
   color: var(--cream-dim);
   transition: color 0.15s;
 }
@@ -2442,8 +2818,14 @@ a.wins-chamber-chip:hover {
 .nations-grid {
   margin: 2rem 0 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+@media (min-width: 640px) {
+  .nations-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+  .nations-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* Nation card styles — see browse section above (.nation-card) */
@@ -2460,7 +2842,7 @@ a.wins-chamber-chip:hover {
 }
 .nation-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: var(--fs-display-xl);
   font-weight: 300;
   color: var(--cream);
   line-height: 1;
@@ -2468,19 +2850,19 @@ a.wins-chamber-chip:hover {
 }
 .nation-hero-stats {
   display: flex;
-  gap: 3rem;
+  gap: var(--space-8);
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 .nation-stat-num {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: var(--fs-display-sm);
   font-weight: 300;
   color: var(--gold-light);
   line-height: 1;
 }
 .nation-stat-label {
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -2495,11 +2877,11 @@ a.wins-chamber-chip:hover {
 .nation-grid {
   display: grid;
   grid-template-columns: 1fr 260px;
-  gap: 3rem;
+  gap: var(--space-8);
   align-items: start;
 }
 .nation-description {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.85;
   margin-bottom: 0.5rem;
@@ -2513,7 +2895,7 @@ a.wins-chamber-chip:hover {
 .nation-parties-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 1.25rem;
 }
 .nation-aside .cross-archive-link {
@@ -2527,11 +2909,11 @@ a.wins-chamber-chip:hover {
 .nation-party-link {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: var(--space-4);
   padding: 0.55rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   transition: background 0.15s, color 0.15s;
 }
 .nation-party-link:hover {
@@ -2549,7 +2931,7 @@ a.wins-chamber-chip:hover {
 }
 .devolved-section h2 {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
@@ -2558,7 +2940,7 @@ a.wins-chamber-chip:hover {
 .others-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
+  gap: var(--space-5);
 }
 /* ── Manifesto viewer ────────────────────────────────────────── */
 .manifesto-viewer-page {
@@ -2580,9 +2962,9 @@ a.wins-chamber-chip:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-3);
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
+  font-size: var(--fs-sm);
   color: var(--ink-muted);
   margin-bottom: 1.35rem;
 }
@@ -2596,7 +2978,7 @@ a.wins-chamber-chip:hover {
 .manifesto-viewer-kicker {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   margin-bottom: 0.85rem;
 }
 .manifesto-viewer-kicker-rule {
@@ -2606,7 +2988,7 @@ a.wins-chamber-chip:hover {
 }
 .manifesto-viewer-kicker-text {
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   letter-spacing: 0.2em;
 }
@@ -2615,12 +2997,12 @@ a.wins-chamber-chip:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: var(--space-7);
 }
 
 .manifesto-viewer-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: var(--fs-display-md);
   font-weight: 500;
   color: var(--ink);
   line-height: 1.1;
@@ -2630,11 +3012,11 @@ a.wins-chamber-chip:hover {
 .manifesto-viewer-meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.5rem;
+  gap: var(--space-2) var(--space-6);
   align-items: center;
   margin-top: 0.85rem;
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: var(--fs-md);
   color: var(--ink-body);
 }
 .manifesto-viewer-meta-row .meta-sep { color: var(--ink-chrome); }
@@ -2651,7 +3033,7 @@ a.wins-chamber-chip:hover {
 }
 .manifesto-cite-label {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -2660,7 +3042,7 @@ a.wins-chamber-chip:hover {
 }
 .manifesto-cite-text {
   margin: 0 0 0.55rem;
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   line-height: 1.5;
   color: var(--ink-body);
 }
@@ -2668,18 +3050,18 @@ a.wins-chamber-chip:hover {
 .manifesto-cite-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--space-3);
 }
 .manifesto-cite-btn {
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   font-weight: 500;
   padding: 0.35rem 0.7rem;
   border: 1px solid var(--ink-chrome);
   background: transparent;
   color: var(--ink-body);
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
 }
 .manifesto-cite-btn:hover {
   color: var(--ink);
@@ -2687,17 +3069,80 @@ a.wins-chamber-chip:hover {
 }
 .manifesto-cite-note {
   margin: 0.55rem 0 0;
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--ink-chrome);
 }
 .manifesto-cite-note a { color: var(--gold); }
+
+.manifesto-viewer-party {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-chrome);
+}
+.manifesto-viewer-title--untitled {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink-body);
+}
+.archive-trust {
+  margin: 0.65rem 0 0;
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+  color: var(--ink-chrome);
+  max-width: 40rem;
+}
+.archive-trust a { color: var(--gold); }
+.home-dashboard-header .archive-trust {
+  margin-top: 1rem;
+  color: var(--text-muted);
+}
+.manifesto-provenance {
+  margin: 0.85rem 0 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.manifesto-provenance > div {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 0.5rem;
+  font-size: var(--fs-sm);
+  line-height: 1.45;
+}
+.manifesto-provenance dt {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-chrome);
+}
+.manifesto-provenance dd {
+  margin: 0;
+  color: var(--ink-body);
+}
+.manifesto-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1;
+}
+.manifesto-card-doc-title {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
 
 .manifesto-viewer-cover {
   width: 148px;
   flex: none;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .manifesto-viewer-cover.is-cover-missing .manifesto-viewer-cover-thumb {
   display: none;
@@ -2706,7 +3151,7 @@ a.wins-chamber-chip:hover {
   display: block;
   aspect-ratio: 210 / 297;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--hairline);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
   background: var(--navy-dark, #0c1224);
@@ -2745,9 +3190,9 @@ a.wins-chamber-chip:hover {
 .manifesto-btn-ghost {
   padding: 0.75rem 1.375rem;
   border: 1px solid rgba(217, 183, 106, 0.4);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--gold);
   transition: background 0.2s;
@@ -2757,9 +3202,9 @@ a.wins-chamber-chip:hover {
 a.manifesto-btn-solid,
 .manifesto-content a.manifesto-btn-solid {
   padding: 0.75rem 1.375rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   background: var(--gold);
   color: var(--field);
@@ -2775,7 +3220,7 @@ a.manifesto-btn-solid:hover,
 
 .manifesto-viewer-body {
   display: flex;
-  gap: 3.5rem;
+  gap: var(--space-8);
   align-items: flex-start;
   max-width: 1440px;
   margin: 0 auto;
@@ -2795,7 +3240,7 @@ a.manifesto-btn-solid:hover,
 }
 .manifesto-toc-label {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.18em;
   color: var(--ink-chrome);
@@ -2809,7 +3254,7 @@ a.manifesto-btn-solid:hover,
 .manifesto-find-label {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2819,18 +3264,18 @@ a.manifesto-btn-solid:hover,
 .manifesto-find-row {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
 }
 .manifesto-find-input {
   flex: 1 1 auto;
   min-width: 0;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   padding: 0.4rem 0.55rem;
   border: 1px solid var(--ink-chrome);
   background: transparent;
   color: var(--ink);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
 }
 .manifesto-find-input:focus {
   outline: 2px solid var(--gold);
@@ -2838,14 +3283,14 @@ a.manifesto-btn-solid:hover,
 }
 .manifesto-find-count {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--ink-chrome);
   white-space: nowrap;
   min-width: 3.5rem;
 }
 .manifesto-find-nav {
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   line-height: 1;
   width: 1.75rem;
   height: 1.75rem;
@@ -2853,7 +3298,7 @@ a.manifesto-btn-solid:hover,
   background: transparent;
   color: var(--ink-body);
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   flex: none;
 }
 .manifesto-find-nav:disabled {
@@ -2871,7 +3316,7 @@ mark.manifesto-find-hit {
   background: rgba(200, 168, 76, 0.35);
   color: inherit;
   padding: 0 0.1em;
-  border-radius: 1px;
+  border-radius: var(--radius-sm);
 }
 mark.manifesto-find-hit.is-current {
   background: rgba(200, 168, 76, 0.7);
@@ -2880,7 +3325,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-toc-list {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: var(--space-1);
   flex: 1 1 auto;
   min-height: 0;
   overflow-y: auto;
@@ -2892,7 +3337,7 @@ mark.manifesto-find-hit.is-current {
   padding: 0.625rem 0.875rem;
   border-left: 2px solid transparent;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--ink-body);
   transition: background 0.15s, color 0.15s;
 }
@@ -2910,7 +3355,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-toc-meta {
   padding: 0 0.875rem;
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
+  font-size: var(--fs-sm);
   line-height: 1.6;
   color: var(--ink-muted);
   flex: none;
@@ -2925,11 +3370,12 @@ mark.manifesto-find-hit.is-current {
   list-style: none;
   padding: 0.875rem 1rem;
   border: 1px solid var(--hairline);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--ink-body);
+  flex: none;
 }
 .manifesto-toc-mobile summary::-webkit-details-marker { display: none; }
 
@@ -2938,7 +3384,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-paper {
   position: relative;
   background: var(--paper);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -2961,7 +3407,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-content {
   padding: 4.5rem 5.5rem;
   font-family: var(--font-body);
-  font-size: 1.1875rem;
+  font-size: var(--fs-xl);
   line-height: 1.7;
   color: #3a3d45;
   max-width: 70ch;
@@ -2969,7 +3415,7 @@ mark.manifesto-find-hit.is-current {
 }
 .manifesto-content > p:first-of-type:not(.manifesto-doc-masthead),
 .manifesto-content .manifesto-lede {
-  font-size: 1.25rem;
+  font-size: var(--fs-2xl);
   line-height: 1.65;
   color: #26282e;
 }
@@ -2981,7 +3427,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-content h1,
 .manifesto-content .manifesto-doc-masthead {
   font-family: var(--font-display);
-  font-size: 2.375rem;
+  font-size: var(--fs-display-md);
   font-weight: 600;
   color: #191b20;
   line-height: 1.2;
@@ -2991,7 +3437,7 @@ mark.manifesto-find-hit.is-current {
 }
 .manifesto-content h2 {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: var(--fs-display-sm);
   font-weight: 600;
   color: #191b20;
   margin: 2.5rem 0 1rem;
@@ -3015,13 +3461,13 @@ mark.manifesto-find-hit.is-current {
 }
 .manifesto-content h3 {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: var(--fs-2xl);
   color: #191b20;
   margin: 1.75rem 0 0.65rem;
 }
 .manifesto-content h4 {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: var(--fs-2xl);
   font-weight: 700;
   color: #111318;
   margin: 2.25rem 0 0.65rem;
@@ -3031,7 +3477,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-content .manifesto-section-kicker,
 .manifesto-content h4.manifesto-section-kicker {
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -3048,7 +3494,7 @@ mark.manifesto-find-hit.is-current {
 }
 .manifesto-content li {
   display: flex;
-  gap: 0.875rem;
+  gap: var(--space-4);
   align-items: baseline;
   margin-bottom: 0.875rem;
 }
@@ -3072,7 +3518,7 @@ mark.manifesto-find-hit.is-current {
   height: auto;
   background: none;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: #5b6478;
   transform: none;
@@ -3086,9 +3532,9 @@ mark.manifesto-find-hit.is-current {
 }
 .manifesto-content code {
   font-family: 'Courier New', monospace;
-  font-size: 0.875em;
+  font-size: var(--fs-md);
   background: rgba(20, 32, 58, 0.06);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   padding: 0.1em 0.4em;
 }
 .manifesto-content hr {
@@ -3107,7 +3553,7 @@ mark.manifesto-find-hit.is-current {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
 }
 .manifesto-content th,
 .manifesto-content td {
@@ -3124,7 +3570,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   margin: 1rem 0;
 }
 
@@ -3139,7 +3585,7 @@ mark.manifesto-find-hit.is-current {
 .manifesto-skeleton .skeleton-line {
   height: 0.95rem;
   margin-bottom: 1.1rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   background: linear-gradient(
     90deg,
     rgba(20, 32, 58, 0.06) 0%,
@@ -3162,6 +3608,12 @@ mark.manifesto-find-hit.is-current {
 @media (max-width: 1199px) {
   .manifesto-toc { display: none; }
   .manifesto-toc-mobile { display: block; }
+  .manifesto-toc-mobile[open] .manifesto-toc-list {
+    max-height: min(60vh, calc(100dvh - var(--nav-h) - 8rem));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
   .manifesto-viewer-body { flex-direction: column; padding: 1.5rem var(--page-px); }
   .manifesto-paper-wrap { max-width: none; width: 100%; }
   .manifesto-content { padding: 1.5rem 1.25rem; }
@@ -3169,6 +3621,20 @@ mark.manifesto-find-hit.is-current {
   .manifesto-viewer-cover {
     width: min(148px, 42vw);
     align-self: flex-start;
+  }
+  .page-with-rail {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .page-rail { display: none; }
+  .page-rail-mobile {
+    display: block;
+    padding: 0.25rem var(--page-px) 0;
+  }
+  .page-with-rail > .election-body,
+  .page-with-rail > .party-body {
+    padding-left: var(--page-px);
+    padding-right: var(--page-px);
   }
 }
 
@@ -3207,9 +3673,9 @@ mark.manifesto-find-hit.is-current {
 .manifesto-placeholder-msg {
   background: var(--navy-card);
   border: 1px dashed var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 2rem;
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.7;
 }
@@ -3217,8 +3683,9 @@ mark.manifesto-find-hit.is-current {
 
 /* No-seats manifesto card tag */
 .manifesto-party-tag.no-seats-tag {
-  background: rgba(107,114,128,0.15);
-  color: var(--text-faint);
+  background: transparent;
+  color: var(--ink-muted);
+  border-color: var(--navy-border);
 }
 
 /* Responsive additions */
@@ -3234,7 +3701,7 @@ mark.manifesto-find-hit.is-current {
   .mega-col:nth-child(n+3) { border-top: 1px solid var(--navy-border); }
 }
 @media (max-width: 640px) {
-  .nations-grid { grid-template-columns: repeat(2, 1fr); }
+  .nations-grid { grid-template-columns: 1fr; }
   .dropdown-mega { grid-template-columns: 1fr; }
   .others-grid  { grid-template-columns: 1fr; }
   .others-devolved-grid { grid-template-columns: 1fr; }
@@ -3252,12 +3719,12 @@ mark.manifesto-find-hit.is-current {
   padding: 0.7rem var(--page-px);
   min-height: 2.75rem;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
   border-bottom: 1px solid var(--navy-border);
 }
 .breadcrumb a {
@@ -3291,13 +3758,14 @@ mark.manifesto-find-hit.is-current {
 .nav-search-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-3);
   padding: 0.4rem 0.75rem;
   border: 1px solid var(--navy-border);
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
   color: var(--text-muted);
   transition: border-color 0.2s, color 0.2s, background 0.2s;
-  min-height: 2.25rem;
+  min-width: 44px;
+  min-height: 44px;
 }
 .nav-search-btn svg { width: 15px; height: 15px; }
 .nav-search-btn:hover {
@@ -3307,17 +3775,17 @@ mark.manifesto-find-hit.is-current {
 }
 .nav-search-kbd {
   font-family: var(--font-ui);
-  font-size: 0.62rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.04em;
   padding: 0.12rem 0.35rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   background: var(--navy-light);
   color: var(--text-faint);
 }
 .nav-search-label {
   display: none;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   font-weight: 500;
 }
 @media (max-width: 900px) {
@@ -3329,12 +3797,12 @@ mark.manifesto-find-hit.is-current {
   margin-top: 0.75rem;
   padding: 0.55rem 0.75rem;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--gold) !important;
   border-top: 1px solid var(--navy-border);
 }
 .dropdown-menu a.mega-all-link {
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   padding: 0.55rem 0.75rem;
 }
 #devolved-dropdown a.mega-all-link {
@@ -3383,7 +3851,7 @@ mark.manifesto-find-hit.is-current {
   background: var(--navy-mid);
   border: 1px solid var(--navy-border);
   border-top: 2px solid var(--gold);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
   overflow: hidden;
   display: flex;
@@ -3394,30 +3862,31 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-5);
   padding: 0.65rem 1rem 0;
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 .search-mode-toggle {
   display: inline-flex;
-  gap: 0.25rem;
+  gap: var(--space-1);
   margin: 0.35rem 0.35rem 0.65rem;
   padding: 0.2rem;
   border: 1px solid var(--navy-border);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--cream-faint);
 }
 .search-mode-btn {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
+  min-height: 44px;
+  border-radius: var(--radius-pill);
   border: none;
   color: var(--text-muted);
   background: transparent;
@@ -3461,13 +3930,13 @@ mark.manifesto-find-hit.is-current {
 .search-panel-shortcuts {
   text-transform: none;
   letter-spacing: 0;
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-muted);
 }
 .search-panel-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--navy-border);
 }
@@ -3483,15 +3952,17 @@ mark.manifesto-find-hit.is-current {
   border: none;
   outline: none;
   font-family: var(--font-ui);
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--cream);
 }
 .search-input::placeholder { color: var(--text-faint); }
 .search-close {
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius-md);
 }
 .search-close:hover { color: var(--cream); background: var(--cream-faint); }
 .search-results {
@@ -3504,7 +3975,7 @@ mark.manifesto-find-hit.is-current {
 .search-empty {
   padding: 1rem 1.25rem 0.35rem;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -3512,7 +3983,7 @@ mark.manifesto-find-hit.is-current {
 .search-examples {
   padding: 0 1.25rem 1.1rem;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
   line-height: 1.7;
 }
@@ -3531,7 +4002,7 @@ mark.manifesto-find-hit.is-current {
 .search-empty-block { padding-bottom: 0.5rem; }
 .search-suggest-label {
   margin: 0.75rem 0 0.35rem;
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -3541,7 +4012,7 @@ mark.manifesto-find-hit.is-current {
 .search-empty-help {
   padding: 0 1.25rem 0.75rem;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
   line-height: 1.55;
 }
@@ -3550,9 +4021,9 @@ mark.manifesto-find-hit.is-current {
   margin: 0;
   padding: 0 1.25rem 1rem;
   display: grid;
-  gap: 0.35rem;
+  gap: var(--space-2);
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
 }
 .search-empty-links a {
   color: var(--gold);
@@ -3563,7 +4034,7 @@ mark.manifesto-find-hit.is-current {
 .search-group-label {
   margin: 0.35rem 0.5rem 0.25rem;
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3572,9 +4043,9 @@ mark.manifesto-find-hit.is-current {
 .search-result {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: var(--space-4);
   padding: 0.75rem;
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   transition: background 0.15s;
 }
 .search-result:hover,
@@ -3583,11 +4054,12 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: var(--space-5);
   padding: 0.7rem 1rem;
   border-top: 1px solid var(--navy-border);
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
 }
 .search-footer-keys {
   color: var(--text-faint);
@@ -3597,6 +4069,47 @@ mark.manifesto-find-hit.is-current {
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
+}
+.search-page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2.5rem var(--page-px) 5rem;
+}
+.search-page-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-4xl);
+  margin: 0 0 0.5rem;
+}
+.search-page-lead {
+  color: var(--text-muted);
+  max-width: 40rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+.search-page-form {
+  margin-bottom: 1.5rem;
+}
+.search-page-input-row {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: 0.75rem;
+}
+.search-page-input-row .search-input {
+  flex: 1;
+}
+.search-page-submit {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  min-height: 44px;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--navy, #0b1220);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.search-page-results {
+  max-width: 44rem;
 }
 .search-footer-browse:hover { text-decoration: underline; }
 .search-sr-status {
@@ -3621,28 +4134,28 @@ mark.manifesto-find-hit.is-current {
 .search-result-title {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   color: var(--cream);
 }
 .search-result-sub {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   color: var(--text-muted);
   margin-top: 0.15rem;
 }
 .search-result-snippet {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   margin-top: 0.35rem;
   line-height: 1.45;
 }
 .search-result-type {
   font-family: var(--font-ui);
-  font-size: 0.65rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -3680,7 +4193,7 @@ mark.manifesto-find-hit.is-current {
   margin: 0 auto;
 }
 .home-dashboard-header .hero-subtitle {
-  max-width: 620px;
+  max-width: 42rem;
   margin: 1.5rem auto 0;
 }
 .home-dashboard-header .hero-stats {
@@ -3693,7 +4206,7 @@ mark.manifesto-find-hit.is-current {
 .dashboard-layout {
   display: grid;
   grid-template-columns: 1fr min(320px, 32%);
-  gap: 1.5rem;
+  gap: var(--space-6);
   align-items: start;
 }
 
@@ -3701,20 +4214,20 @@ mark.manifesto-find-hit.is-current {
   background: rgba(17, 24, 39, 0.72);
   backdrop-filter: blur(12px);
   border: 1px solid var(--navy-border);
-  border-radius: 12px;
+  border-radius: var(--radius-xl);
   padding: 1.25rem 1.5rem 1.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow-2);
 }
 .dashboard-parliament-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-5);
   margin-bottom: 0.5rem;
 }
 .dashboard-election-label {
   font-family: var(--font-display, "Cormorant Garamond", serif);
-  font-size: 2rem;
+  font-size: var(--fs-display-sm);
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
@@ -3723,7 +4236,7 @@ mark.manifesto-find-hit.is-current {
 }
 .dashboard-election-meta {
   font-family: var(--font-ui, "DM Sans", sans-serif);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   color: var(--text-muted, #9ca3af);
   margin-top: 0.35rem;
@@ -3734,8 +4247,8 @@ mark.manifesto-find-hit.is-current {
   border: 1px solid var(--gold-rule, #c9a84c);
   color: var(--gold-light, #e5cf8f);
   padding: 0.4rem 1rem;
-  border-radius: 6px;
-  font-size: 0.8rem;
+  border-radius: var(--radius-lg);
+  font-size: var(--fs-sm);
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
@@ -3754,13 +4267,13 @@ mark.manifesto-find-hit.is-current {
 .home-chart-legend {
   margin-top: 1.5rem;
   justify-content: center;
-  gap: 0.5rem 1.375rem;
+  gap: var(--space-3) var(--space-6);
 }
 
 .share-bar {
   display: flex;
   height: 6px;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--navy-light);
 }
@@ -3771,15 +4284,15 @@ mark.manifesto-find-hit.is-current {
 .share-labels {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.25rem;
+  gap: var(--space-4) var(--space-5);
   margin-top: 0.75rem;
 }
 .share-label {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-muted);
 }
 .share-label i {
@@ -3795,20 +4308,20 @@ mark.manifesto-find-hit.is-current {
   background: rgba(17, 24, 39, 0.55);
   backdrop-filter: blur(10px);
   border: 1px solid var(--navy-border);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
 }
 .slider-wrap {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .slider-step-btn {
   width: 32px;
   height: 32px;
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--navy-border);
   color: var(--text-muted);
-  font-size: 0.65rem;
+  font-size: var(--fs-2xs);
   transition: all 0.15s;
   flex-shrink: 0;
 }
@@ -3822,7 +4335,7 @@ mark.manifesto-find-hit.is-current {
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   background: var(--navy-light);
   outline: none;
 }
@@ -3859,10 +4372,10 @@ mark.manifesto-find-hit.is-current {
   transform: translate(-50%, -100%);
   background: var(--party-accent, var(--gold));
   color: #fff;
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 700;
   padding: 0.25rem 0.6rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
   pointer-events: none;
   transition: left 0.1s ease-out, background-color 0.2s;
@@ -3929,10 +4442,10 @@ mark.manifesto-find-hit.is-current {
   position: absolute;
   transform: translateX(var(--tick-shift, -50%));
   font-family: var(--font-ui);
-  font-size: 0.62rem;
+  font-size: var(--fs-2xs);
   color: var(--text-faint);
   padding: 0.15rem 0.35rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   transition: color 0.15s, background 0.15s;
 }
 .slider-tick:hover {
@@ -3944,7 +4457,7 @@ mark.manifesto-find-hit.is-current {
 .dashboard-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: var(--space-4);
 }
 .timeline-card {
   position: relative;
@@ -3978,21 +4491,21 @@ mark.manifesto-find-hit.is-current {
 }
 .timeline-card-year {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   font-weight: 400;
   color: var(--cream);
   line-height: 1;
 }
 .timeline-card-party {
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   margin-top: 0.25rem;
 }
 .timeline-card-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: var(--space-3);
   margin: 0.85rem 0;
   padding: 0.65rem 0;
   border-top: 1px solid var(--navy-border);
@@ -4001,19 +4514,19 @@ mark.manifesto-find-hit.is-current {
 .timeline-card-stats strong {
   display: block;
   font-family: var(--font-ui);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   color: var(--cream);
   font-weight: 600;
 }
 .timeline-card-stats span {
   font-family: var(--font-ui);
-  font-size: 0.62rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 .timeline-card-summary {
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--text-muted);
   line-height: 1.55;
   display: -webkit-box;
@@ -4025,7 +4538,7 @@ mark.manifesto-find-hit.is-current {
   display: inline-block;
   margin-top: 0.65rem;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--gold);
 }
 
@@ -4040,25 +4553,25 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-5);
   margin-bottom: 1.75rem;
 }
 .latest-header h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: var(--fs-display-sm);
   color: var(--cream);
 }
 .carousel-controls {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-3);
 }
 .carousel-btn {
   width: 36px;
   height: 36px;
   border: 1px solid var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   color: var(--text-muted);
-  font-size: 0.7rem;
+  font-size: var(--fs-xs);
   transition: all 0.15s;
 }
 .carousel-btn:hover {
@@ -4076,7 +4589,7 @@ mark.manifesto-find-hit.is-current {
 .latest-track-wrap::-webkit-scrollbar { display: none; }
 .latest-track {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-5);
   width: max-content;
 }
 .latest-card {
@@ -4084,7 +4597,7 @@ mark.manifesto-find-hit.is-current {
   display: block;
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   scroll-snap-align: start;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -4115,7 +4628,7 @@ mark.manifesto-find-hit.is-current {
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: rgba(255, 255, 255, 0.7);
 }
 .latest-card-body {
@@ -4124,14 +4637,14 @@ mark.manifesto-find-hit.is-current {
 }
 .latest-card-party {
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 .latest-card-title {
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   font-weight: 500;
   color: var(--cream);
   margin-top: 0.2rem;
@@ -4139,14 +4652,14 @@ mark.manifesto-find-hit.is-current {
 }
 .latest-card-year {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   margin-top: 0.25rem;
 }
 .latest-loading,
 .latest-empty {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   padding: 1rem 0;
 }
@@ -4162,20 +4675,20 @@ mark.manifesto-find-hit.is-current {
 }
 .hub-page-header h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: var(--fs-display-lg);
   font-weight: 300;
   color: var(--cream);
   margin: 0.5rem 0 1rem;
 }
 .hub-page-header p {
   max-width: 640px;
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.75;
 }
 .hub-page-header p.hub-page-crosslink {
   margin-top: 0.65rem;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
 }
 .hub-page-header a {
   color: var(--gold);
@@ -4192,17 +4705,19 @@ mark.manifesto-find-hit.is-current {
 .hub-elections-grid {
   margin: 0;
 }
-.hub-devolved-grid,
-.hub-nations-grid,
-.nations-grid {
+.hub-devolved-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.75rem;
+  gap: var(--space-6);
 }
-@media (min-width: 960px) {
-  .hub-nations-grid,
-  .nations-grid {
-    grid-template-columns: repeat(3, 1fr);
+.hub-nations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+@media (min-width: 640px) {
+  .hub-nations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 .hub-nation-card {
@@ -4211,26 +4726,26 @@ mark.manifesto-find-hit.is-current {
   gap: 0;
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   padding: 2rem 2.125rem;
   border-top: none;
-  box-shadow: 0 6px 18px rgba(20, 32, 58, 0.06);
+  box-shadow: var(--shadow-1);
   transition: transform 0.2s var(--ease), border-color 0.2s, box-shadow 0.2s;
 }
 .hub-nation-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(20, 32, 58, 0.08);
+  box-shadow: var(--shadow-2);
 }
-.hub-nation-icon { font-size: 2rem; line-height: 1; }
+.hub-nation-icon { font-size: var(--fs-display-sm); line-height: 1; }
 .hub-nation-card strong {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-3xl);
   font-weight: 500;
   color: var(--cream);
   line-height: 1.15;
 }
 .hub-nation-meta {
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold);
@@ -4239,24 +4754,24 @@ mark.manifesto-find-hit.is-current {
 }
 .hub-nation-card p {
   flex: 1;
-  font-size: 1rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   line-height: 1.6;
   margin: 1rem 0 1.375rem;
 }
 .hub-card-cta {
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--gold);
 }
 .hub-devolved-card {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: var(--space-2);
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   border-top: 3px solid var(--gold-rule);
   transition: transform 0.2s var(--ease), border-color 0.2s;
@@ -4267,19 +4782,19 @@ mark.manifesto-find-hit.is-current {
 }
 .hub-devolved-card strong {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: var(--fs-2xl);
   font-weight: 500;
   color: var(--cream);
 }
 .hub-devolved-sub {
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
 }
 .hub-devolved-card p {
   flex: 1;
-  font-size: 0.875rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.65;
   margin: 0.5rem 0 0.75rem;
@@ -4287,18 +4802,18 @@ mark.manifesto-find-hit.is-current {
 .hub-parties-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem 1.5rem;
+  gap: var(--space-7) var(--space-6);
 }
 .hub-parties-section {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 1.25rem;
   border-top: 3px solid var(--gold-rule);
 }
 .hub-parties-nation-heading {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: var(--fs-xl);
   font-weight: 600;
   margin: 0 0 1rem;
   padding-bottom: 0.6rem;
@@ -4312,14 +4827,33 @@ mark.manifesto-find-hit.is-current {
 .hub-parties-list {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: var(--space-1);
 }
 .parties-all-list {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: var(--space-5);
   max-width: none;
   margin: 0;
+}
+.parties-all-letter-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.parties-all-letter {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--navy-border);
 }
 .parties-browse-page {
   max-width: 1200px;
@@ -4327,13 +4861,13 @@ mark.manifesto-find-hit.is-current {
 .parties-browse-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  gap: 2rem 2.5rem;
+  gap: var(--space-7) var(--space-7);
   align-items: end;
   margin-bottom: 1.75rem;
 }
 .parties-browse-hero-copy h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  font-size: var(--fs-display-md);
   font-weight: 600;
   line-height: 1.1;
   margin: 0.35rem 0 0.75rem;
@@ -4358,16 +4892,16 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-browse-search {
   border: 1px solid var(--navy-border);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   padding: 1rem 1.1rem 1.05rem;
   background: var(--navy-card, rgba(255, 255, 255, 0.03));
 }
 .parties-browse-search-meta {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-5);
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -4376,7 +4910,7 @@ mark.manifesto-find-hit.is-current {
 .parties-browse-search-form {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   border-bottom: 1px solid var(--navy-border);
   padding-bottom: 0.55rem;
 }
@@ -4387,7 +4921,7 @@ mark.manifesto-find-hit.is-current {
   background: transparent;
   color: var(--ink, var(--cream));
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: var(--fs-xl);
   font-style: italic;
   padding: 0.25rem 0;
   outline: none;
@@ -4397,7 +4931,7 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-browse-search-submit {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -4411,7 +4945,7 @@ mark.manifesto-find-hit.is-current {
 .parties-browse-search-submit:hover { color: var(--gold-light, var(--gold)); }
 .parties-browse-search-clear {
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold);
@@ -4434,7 +4968,7 @@ mark.manifesto-find-hit.is-current {
   border-radius: 50%;
   background: transparent;
   color: var(--text-muted);
-  font-size: 1.25rem;
+  font-size: var(--fs-2xl);
   line-height: 1;
   cursor: pointer;
 }
@@ -4456,12 +4990,12 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.4rem;
+  gap: var(--space-2);
   margin-top: 0.75rem;
 }
 .parties-browse-try-label {
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -4469,13 +5003,13 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-browse-try-chip {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-muted, var(--text-muted));
   border: 1px solid var(--navy-border);
   background: transparent;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 0.28rem 0.7rem;
   cursor: pointer;
 }
@@ -4492,7 +5026,7 @@ mark.manifesto-find-hit.is-current {
   margin: 0 0 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: var(--space-2);
 }
 .parties-spectrum-track {
   display: flex;
@@ -4524,13 +5058,13 @@ mark.manifesto-find-hit.is-current {
   transform: translateX(-50%) translateY(0.25rem);
   white-space: nowrap;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--ink, #090e1c);
   background: var(--field, #f7f3ea);
   border: 1px solid var(--navy-border);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   padding: 0.28rem 0.55rem;
   opacity: 0;
   pointer-events: none;
@@ -4545,7 +5079,7 @@ mark.manifesto-find-hit.is-current {
 .parties-browse-layout {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
-  gap: 2.25rem;
+  gap: var(--space-7);
   align-items: start;
 }
 .parties-browse-sidebar {
@@ -4553,7 +5087,7 @@ mark.manifesto-find-hit.is-current {
   top: calc(var(--nav-h) + 1rem);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: var(--space-5);
   max-height: calc(100vh - var(--nav-h) - 2rem);
   overflow: auto;
   padding-right: 0.25rem;
@@ -4563,16 +5097,16 @@ mark.manifesto-find-hit.is-current {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: var(--space-4);
 }
 .parties-browse-row {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: var(--space-2);
 }
 .parties-browse-label {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -4580,7 +5114,7 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-browse-hint {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   line-height: 1.45;
   color: var(--text-faint);
 }
@@ -4602,7 +5136,7 @@ mark.manifesto-find-hit.is-current {
   transform: translateY(-50%);
   height: var(--founded-track-h);
   background: var(--navy-border);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   pointer-events: none;
 }
 .parties-founded-track::before {
@@ -4613,7 +5147,7 @@ mark.manifesto-find-hit.is-current {
   top: 0;
   bottom: 0;
   background: var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
 }
 .parties-founded-input {
   position: absolute;
@@ -4663,7 +5197,7 @@ mark.manifesto-find-hit.is-current {
   margin-top: 0.55rem;
   text-align: center;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.04em;
   color: var(--text-faint);
 }
@@ -4671,11 +5205,11 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 0.75rem;
+  gap: var(--space-4);
 }
 .parties-tags-total {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--text-faint);
 }
@@ -4689,7 +5223,7 @@ mark.manifesto-find-hit.is-current {
   background: transparent;
   color: var(--ink, var(--cream));
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   font-style: italic;
   outline: none;
 }
@@ -4697,7 +5231,7 @@ mark.manifesto-find-hit.is-current {
 .parties-tags-meta {
   margin-top: 0.45rem;
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -4708,18 +5242,18 @@ mark.manifesto-find-hit.is-current {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: var(--space-1);
   padding-right: 0.15rem;
 }
 .parties-tag-row {
   display: grid;
   grid-template-columns: 1rem minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.55rem;
+  gap: var(--space-3);
   padding: 0.35rem 0;
   cursor: pointer;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   color: var(--ink-muted, var(--text-muted));
 }
 .parties-tag-row input {
@@ -4732,7 +5266,7 @@ mark.manifesto-find-hit.is-current {
   white-space: nowrap;
 }
 .parties-tag-count {
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
 }
@@ -4740,7 +5274,7 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.45rem;
+  gap: var(--space-3);
 }
 .parties-colour-swatch {
   width: 1.35rem;
@@ -4771,7 +5305,7 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-browse-clear-btn {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   color: var(--gold);
   background: none;
   border: none;
@@ -4787,16 +5321,17 @@ mark.manifesto-find-hit.is-current {
   max-width: none;
   margin: 1rem 0 0;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   line-height: 1.7;
 }
 .parties-all-row {
   display: grid;
   grid-template-columns: 12px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-4);
   padding: 0.65rem 0.75rem;
-  border-radius: 6px;
+  min-height: 44px;
+  border-radius: var(--radius-lg);
   border: 1px solid transparent;
   color: var(--cream);
   text-decoration: none;
@@ -4808,10 +5343,10 @@ mark.manifesto-find-hit.is-current {
 }
 .parties-all-name {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
 }
 .parties-all-meta {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   text-align: right;
 }
@@ -4842,7 +5377,7 @@ mark.manifesto-find-hit.is-current {
   .search-panel-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: var(--space-1);
   }
   .search-panel-footer {
     flex-direction: column;
@@ -4852,11 +5387,12 @@ mark.manifesto-find-hit.is-current {
 .hub-party-link {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: var(--space-3);
   padding: 0.4rem 0.25rem;
-  font-size: 0.85rem;
+  min-height: 44px;
+  font-size: var(--fs-md);
   color: var(--cream-dim);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   transition: background 0.15s, color 0.15s;
 }
 .hub-party-link:hover {
@@ -4867,7 +5403,7 @@ mark.manifesto-find-hit.is-current {
   display: inline-block;
   margin-top: 0.75rem;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--gold);
 }
 
@@ -4880,7 +5416,7 @@ mark.manifesto-find-hit.is-current {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 280px;
-  gap: 2.5rem;
+  gap: var(--space-7);
   align-items: start;
 }
 .devolved-hero-parties {
@@ -4889,12 +5425,12 @@ mark.manifesto-find-hit.is-current {
 @media (max-width: 900px) {
   .devolved-hero-inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-7);
   }
 }
 .devolved-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: var(--fs-display-md);
   color: var(--cream);
 }
 .devolved-hero-desc {
@@ -4906,14 +5442,14 @@ mark.manifesto-find-hit.is-current {
 .devolved-hero-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: var(--space-7);
   margin-top: 2rem;
 }
 .devolved-nation-link {
   display: inline-block;
   margin-top: 1.5rem;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--gold);
 }
 .devolved-body {
@@ -4924,7 +5460,7 @@ mark.manifesto-find-hit.is-current {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 280px;
-  gap: 2.5rem;
+  gap: var(--space-7);
   align-items: start;
 }
 
@@ -4953,10 +5489,16 @@ mark.manifesto-find-hit.is-current {
 }
 
 @media (max-width: 640px) {
-  .home-dashboard-header .hero-stats {
-    gap: 1.25rem;
-    flex-wrap: wrap;
+  .home-dashboard-header .hero-stats,
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4) var(--space-5);
+    width: 100%;
+    margin-top: var(--space-6);
+    text-align: center;
   }
+  .hero-stat-num { font-size: var(--fs-display-sm); }
   .dashboard-parliament-head {
     flex-direction: column;
   }
@@ -4977,22 +5519,23 @@ mark.manifesto-find-hit.is-current {
 }
 .viz-tabs {
   display: flex;
-  gap: 0.35rem;
+  gap: var(--space-2);
   margin-bottom: 0.75rem;
   padding: 0.25rem;
   background: rgba(17, 24, 39, 0.55);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
 }
 .viz-tab {
   flex: 1;
   padding: 0.45rem 0.75rem;
+  min-height: 44px;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--text-muted);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   transition: background 0.15s, color 0.15s;
 }
 .viz-tab:hover { color: var(--cream); background: var(--cream-faint); }
@@ -5004,21 +5547,21 @@ mark.manifesto-find-hit.is-current {
 .viz-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   padding: 1.25rem;
 }
 .hexmap-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-4);
   margin-top: 0.5rem;
 }
 .hexmap-1945-wrap {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1rem;
+  gap: var(--space-5);
   width: 100%;
 }
 .hexmap-1945-map {
@@ -5033,16 +5576,16 @@ mark.manifesto-find-hit.is-current {
   padding: 0.85rem 1rem;
   background: rgba(0, 0, 0, 0.18);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   font-family: var(--font-ui);
 }
 .hexmap-outside-rows {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.15rem 1.25rem;
+  gap: var(--space-1) var(--space-5);
 }
 .hexmap-outside-heading {
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -5050,7 +5593,7 @@ mark.manifesto-find-hit.is-current {
   margin-bottom: 0.35rem;
 }
 .hexmap-outside-note {
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   line-height: 1.45;
   color: var(--text-faint);
   margin: 0 0 0.75rem;
@@ -5063,12 +5606,12 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: var(--space-3);
   padding: 0.28rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 .hexmap-outside-name {
-  font-size: 0.74rem;
+  font-size: var(--fs-xs);
   line-height: 1.25;
   color: var(--cream);
   flex: 1 1 auto;
@@ -5077,13 +5620,13 @@ mark.manifesto-find-hit.is-current {
 .hexmap-outside-swatches {
   display: flex;
   flex-shrink: 0;
-  gap: 3px;
+  gap: var(--space-1);
 }
 .hexmap-outside-swatch {
   display: inline-block;
   width: 14px;
   height: 14px;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.15);
   cursor: help;
 }
@@ -5091,7 +5634,7 @@ mark.manifesto-find-hit.is-current {
   margin-bottom: 0.75rem;
 }
 .hexmap-outside-region-name {
-  font-size: 0.76rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--gold-light);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -5101,8 +5644,8 @@ mark.manifesto-find-hit.is-current {
 .hexmap-outside-member {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.72rem;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
   padding: 0.15rem 0;
 }
 .hexmap-outside-dot {
@@ -5117,7 +5660,7 @@ mark.manifesto-find-hit.is-current {
 }
 .hexmap-outside-party {
   color: var(--text-muted);
-  font-size: 0.68rem;
+  font-size: var(--fs-2xs);
   margin-left: auto;
 }
 @media (max-width: 520px) {
@@ -5134,7 +5677,7 @@ mark.manifesto-find-hit.is-current {
 .hexmap-loading,
 .hexmap-empty {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.6;
   padding: 2rem 0.5rem;
@@ -5163,17 +5706,17 @@ mark.manifesto-find-hit.is-current {
   background: rgba(9, 14, 28, 0.94);
   border: 1px solid var(--navy-border);
   border-top: 2px solid var(--gold);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   line-height: 1.4;
 }
 .hexmap-tooltip strong {
   display: block;
   color: var(--cream);
   font-weight: 600;
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   margin-bottom: 0.15rem;
 }
 .hexmap-tooltip span { color: var(--text-muted); }
@@ -5185,48 +5728,48 @@ mark.manifesto-find-hit.is-current {
 }
 .hexmap-detail-placeholder {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
 }
 .hexmap-detail-inner {
   display: flex;
-  gap: 0.85rem;
+  gap: var(--space-4);
   align-items: flex-start;
 }
 .hexmap-detail-swatch {
   width: 10px;
   height: 10px;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   margin-top: 0.35rem;
   flex-shrink: 0;
 }
 .hexmap-detail-name {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: var(--fs-xl);
   color: var(--cream);
   line-height: 1.2;
 }
 .hexmap-detail-mp {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--cream-dark);
   margin-top: 0.2rem;
 }
 .hexmap-detail-party {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   color: var(--text-muted);
   margin-top: 0.15rem;
 }
 .hexmap-detail-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem 1rem;
+  gap: var(--space-4) var(--space-5);
   margin-top: 0.65rem;
 }
 .hexmap-detail-link {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   color: var(--gold);
 }
 .hexmap-detail-link-muted { color: var(--text-muted); }
@@ -5246,17 +5789,17 @@ mark.manifesto-find-hit.is-current {
 .london-booklet {
   display: grid;
   grid-template-columns: 168px 1fr;
-  gap: 2rem;
+  gap: var(--space-7);
   align-items: center;
   background: linear-gradient(135deg, rgba(201,168,76,0.10), rgba(201,168,76,0.03) 48%, rgba(17,24,39,0.35));
   border: 1px solid var(--gold-rule);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   padding: 1.75rem 2rem;
   margin: 2.5rem 0 3rem;
 }
 .london-booklet-cover {
   display: block;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.45);
   transition: transform 0.2s var(--ease);
@@ -5265,13 +5808,13 @@ mark.manifesto-find-hit.is-current {
 .london-booklet-cover img { display: block; width: 100%; height: auto; }
 .london-booklet-body h2 {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin: 0.3rem 0 0.75rem;
 }
 .london-booklet-body p {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   line-height: 1.6;
   margin-bottom: 1.1rem;
   max-width: 60ch;
@@ -5279,20 +5822,20 @@ mark.manifesto-find-hit.is-current {
 .london-booklet-btn {
   display: inline-block;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--navy);
   background: var(--gold);
   padding: 0.6rem 1.1rem;
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   transition: background 0.2s;
 }
 .london-booklet-btn:hover { background: var(--gold-light); }
 
 /* Mayoral + Assembly tables */
 .london-cand-name {
-  font-size: 0.8rem;
+  font-size: var(--fs-sm);
   color: var(--text-muted);
   margin-top: 0.15rem;
   padding-left: 1.3rem;
@@ -5310,7 +5853,7 @@ mark.manifesto-find-hit.is-current {
 .london-others summary {
   cursor: pointer;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   color: var(--gold);
   letter-spacing: 0.03em;
 }
@@ -5322,7 +5865,7 @@ mark.manifesto-find-hit.is-current {
   padding-top: 1rem;
   border-top: 1px solid var(--navy-border);
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--gold);
   letter-spacing: 0.02em;
 }
@@ -5331,14 +5874,14 @@ mark.manifesto-find-hit.is-current {
 .cross-archive-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
   margin-bottom: 1.75rem;
   padding: 0.6rem 1rem;
   border: 1px solid rgba(201, 168, 76, 0.4);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   background: rgba(201, 168, 76, 0.08);
   font-family: var(--font-ui);
-  font-size: 0.88rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   color: var(--gold);
   letter-spacing: 0.02em;
@@ -5354,7 +5897,7 @@ mark.manifesto-find-hit.is-current {
 .others-devolved-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem 2rem;
+  gap: var(--space-6) var(--space-7);
   margin-bottom: 2.5rem;
 }
 .others-devolved-cell {
@@ -5362,7 +5905,7 @@ mark.manifesto-find-hit.is-current {
 }
 .others-devolved-label {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
   color: var(--text-muted);
   margin-bottom: 0.6rem;
 }
@@ -5370,14 +5913,14 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-5);
   width: 100%;
   padding: 0.85rem 1rem;
   border: 1px solid rgba(201, 168, 76, 0.4);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   background: rgba(201, 168, 76, 0.08);
   font-family: var(--font-ui);
-  font-size: 0.88rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--gold);
   letter-spacing: 0.02em;
@@ -5395,7 +5938,7 @@ mark.manifesto-find-hit.is-current {
 }
 
 .london-manifesto-title {
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   font-style: italic;
   color: var(--text-muted);
   padding: 0 1.25rem;
@@ -5409,22 +5952,22 @@ mark.manifesto-find-hit.is-current {
 }
 .london-sources ul { list-style: none; padding: 0; margin: 0.75rem 0 0; }
 .london-sources li { margin-bottom: 0.4rem; }
-.london-sources a { color: var(--cream-dark); font-size: 0.88rem; }
+.london-sources a { color: var(--cream-dark); font-size: var(--fs-md); }
 .london-sources a:hover { color: var(--gold); }
 
 /* Portal timeline */
 .london-era { max-width: var(--max-w); margin: 0 auto 3rem; }
 .london-era-head h2 {
   font-family: var(--font-display);
-  font-size: 1.7rem;
+  font-size: var(--fs-3xl);
   color: var(--cream);
   margin-bottom: 0.35rem;
 }
-.london-era-head p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem; }
+.london-era-head p { color: var(--text-muted); font-size: var(--fs-md); margin-bottom: 1.5rem; }
 .london-timeline-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: var(--space-5);
 }
 .london-timeline-card {
   display: block;
@@ -5448,7 +5991,7 @@ mark.manifesto-find-hit.is-current {
 }
 .london-timeline-year {
   font-family: var(--font-display);
-  font-size: 2.25rem;
+  font-size: var(--fs-display-sm);
   font-weight: 500;
   color: var(--cream);
   line-height: 1;
@@ -5458,7 +6001,7 @@ mark.manifesto-find-hit.is-current {
 }
 .london-timeline-leader {
   color: var(--cream);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   line-height: 1.45;
 }
@@ -5470,10 +6013,10 @@ mark.manifesto-find-hit.is-current {
 @media (max-width: 720px) {
   .london-booklet {
     grid-template-columns: 110px 1fr;
-    gap: 1.25rem;
+    gap: var(--space-5);
     padding: 1.25rem;
   }
-  .london-booklet-body h2 { font-size: 1.3rem; }
+  .london-booklet-body h2 { font-size: var(--fs-2xl); }
 }
 
 /* Co-operative Party custom styles */
@@ -5483,39 +6026,39 @@ mark.manifesto-find-hit.is-current {
 .coop-rep-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: var(--space-5);
   margin: 1.5rem 0 1.25rem;
 }
 .coop-rep-card {
   background: var(--navy-card);
   border: 1px solid var(--navy-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 1.75rem 1.5rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .coop-rep-num {
   font-family: var(--font-display);
-  font-size: 2.75rem;
+  font-size: var(--fs-display-md);
   font-weight: 700;
   color: var(--cream);
   line-height: 1.1;
 }
 .coop-rep-label {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   margin-top: 0.5rem;
   font-weight: 500;
 }
 .coop-rep-note {
-  font-size: 0.88rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
   line-height: 1.6;
   background: rgba(107, 45, 139, 0.08);
   border-left: 3px solid #6B2D8B;
   padding: 1.1rem 1.25rem;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   margin-top: 1.25rem;
 }
 .party-election-row.no-hover {
@@ -5525,7 +6068,7 @@ mark.manifesto-find-hit.is-current {
 @media (max-width: 768px) {
   .coop-rep-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--space-5);
   }
 }
 
@@ -5547,7 +6090,7 @@ mark.manifesto-find-hit.is-current {
 .dropdown-item-with-dot {
   display: flex !important;
   align-items: center !important;
-  gap: 0.75rem !important;
+  gap: var(--space-4) !important;
 }
 .dropdown-item-with-dot .dropdown-text {
   display: flex;
@@ -5578,21 +6121,21 @@ mark.manifesto-find-hit.is-current {
   text-align: left;
   padding: 1.1rem 0.5rem;
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: var(--fs-xl);
   font-weight: 500;
   color: var(--cream);
   cursor: pointer;
   user-select: none;
 }
 .accordion-header .count {
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   color: var(--text-muted);
   font-weight: 400;
   margin-left: 0.5rem;
   font-family: var(--font-ui);
 }
 .accordion-header .chevron {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   color: var(--text-faint);
   transition: transform 0.2s var(--ease);
 }
@@ -5612,10 +6155,10 @@ mark.manifesto-find-hit.is-current {
   align-items: center;
   padding: 0.8rem 0.5rem;
   font-family: var(--font-ui);
-  font-size: 0.92rem;
+  font-size: var(--fs-md);
   color: var(--text-muted);
-  gap: 0.85rem;
-  border-radius: 6px;
+  gap: var(--space-4);
+  border-radius: var(--radius-lg);
   text-decoration: none;
   transition: background 0.15s, color 0.15s;
 }
@@ -5628,7 +6171,7 @@ mark.manifesto-find-hit.is-current {
 }
 .election-arrow {
   color: var(--text-faint);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
 }
 
 /* ── Scroll Snap and Scrollbar enhancements ── */
@@ -5654,7 +6197,7 @@ mark.manifesto-find-hit.is-current {
   }
   .dashboard-sidebar::-webkit-scrollbar-thumb {
     background: var(--gold-dim);
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
   }
   .timeline-card {
     scroll-snap-align: start;
@@ -5663,11 +6206,12 @@ mark.manifesto-find-hit.is-current {
 
 .nav-theme-btn {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   font-weight: 500;
   padding: 0.35rem 0.75rem;
+  min-height: 44px;
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: var(--ink-body);
   transition: border-color 0.2s, color 0.2s;
 }
@@ -5681,13 +6225,13 @@ mark.manifesto-find-hit.is-current {
   margin: 1.5rem 0;
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--hairline);
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
   max-width: 36rem;
 }
 .data-error-kicker {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
@@ -5696,15 +6240,15 @@ mark.manifesto-find-hit.is-current {
 .data-error-text {
   color: var(--ink-body);
   margin: 0 0 0.85rem;
-  font-size: 0.95rem;
+  font-size: var(--fs-lg);
 }
 .data-error-retry {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: var(--fs-md);
   font-weight: 500;
   padding: 0.45rem 0.9rem;
   border: 1px solid var(--gold-rule);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   color: var(--gold);
   background: transparent;
   cursor: pointer;
@@ -5722,7 +6266,7 @@ mark.manifesto-find-hit.is-current {
 }
 .edge-noscript h1 {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: var(--fs-display-sm);
   margin-bottom: 0.75rem;
 }
 .edge-noscript p {
@@ -5745,7 +6289,7 @@ mark.manifesto-find-hit.is-current {
   justify-content: flex-start;
   background: var(--surface);
   border: 1px solid var(--nation-border, var(--hairline));
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
 }
 .hub-nation-card .hub-nation-icon { position: relative; z-index: 1; }
 .hub-nation-card strong,
@@ -5764,7 +6308,7 @@ mark.manifesto-find-hit.is-current {
   --ink-chrome:      #5b6478;
   /* Darkened for ≥4.5:1 on cream (#f7f3ea); previous #8a6d2c was ~4.41 (I18) */
   --gold:            #7a5f24;
-  --gold-light:      #8a6d2c;
+  --gold-light:      #7a5f24;
   --gold-dim:        rgba(122, 95, 36, 0.15);
   --gold-rule:       rgba(122, 95, 36, 0.4);
   --texture-opacity: 0;
@@ -5775,13 +6319,16 @@ mark.manifesto-find-hit.is-current {
   --cream-dark:      #5b6478;
   --cream-dim:       rgba(20, 32, 58, 0.72);
   --hero-glow:       rgba(138, 109, 44, 0.05);
+  --shadow-1: 0 1px 2px rgba(20, 32, 58, 0.06);
+  --shadow-2: 0 8px 24px rgba(20, 32, 58, 0.10);
+  --shadow-3: 0 16px 40px rgba(20, 32, 58, 0.12);
 }
 
 [data-theme="light"] .election-card,
 [data-theme="light"] .party-card,
 [data-theme="light"] .nation-card,
 [data-theme="light"] .hub-nation-card {
-  box-shadow: 0 2px 10px rgba(20, 32, 58, 0.06);
+  box-shadow: var(--shadow-1);
 }
 
 [data-theme="light"] #main-nav {
@@ -5901,14 +6448,14 @@ mark.manifesto-find-hit.is-current {
   box-shadow: 0 4px 14px rgba(20, 32, 58, 0.05);
 }
 [data-theme="light"] .home-chart-legend {
-  gap: 8px 22px;
+  gap: var(--space-3) var(--space-6);
 }
 [data-theme="light"] .parliament-hover-name {
   fill: var(--ink);
   stroke: rgba(255, 255, 255, 0.9);
 }
 [data-theme="light"] .home-chart-legend .legend-item {
-  font-size: 0.84rem;
+  font-size: var(--fs-sm);
   color: rgba(20, 32, 58, 0.72);
 }
 [data-theme="light"] .home-chart-legend .legend-item-interactive:hover,
@@ -6043,11 +6590,11 @@ mark.manifesto-find-hit.is-current {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.125rem;
+  gap: var(--space-5);
 }
 .manifesto-empty-kicker {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
@@ -6058,12 +6605,12 @@ mark.manifesto-find-hit.is-current {
   margin: 0;
   color: var(--ink-body);
   line-height: 1.6;
-  font-size: 1.125rem;
+  font-size: var(--fs-xl);
 }
 .manifesto-empty-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.875rem;
+  gap: var(--space-4);
   justify-content: center;
   margin-top: 0.625rem;
 }
@@ -6152,13 +6699,13 @@ mark.manifesto-find-hit.is-current {
   top: 16px;
   width: 80px;
   height: 80px;
-  border: 12px solid #8a6d2c;
+  border: 12px solid var(--gold);
   border-radius: 50%;
   box-sizing: border-box;
   background: transparent;
 }
 [data-theme="light"] .nation-motif-zone {
-  opacity: 0.15;
+  opacity: 0.28;
 }
 [data-theme="light"] .hub-nation-card strong {
   color: var(--ink);
@@ -6185,7 +6732,7 @@ mark.manifesto-find-hit.is-current {
   right: 0.75rem;
   bottom: -2.4rem;
   font-family: var(--font-display);
-  font-size: 9.375rem;
+  font-size: var(--fs-display-xl);
   font-weight: 600;
   line-height: 1;
   color: var(--party-ghost, rgba(255,255,255,0.07));
@@ -6205,14 +6752,14 @@ mark.manifesto-find-hit.is-current {
 .latest-card-cover-fallback {
   background: color-mix(in srgb, var(--party-surface, var(--party-color)) 18%, var(--field));
   flex-direction: column;
-  gap: 0.25rem;
+  gap: var(--space-1);
 }
 .latest-cover-label {
   font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--ink-muted);
 }
 [data-theme="light"] .hub-card-cta,
@@ -6350,7 +6897,7 @@ mark.manifesto-find-hit.is-current {
 .euro-map-label {
   fill: var(--cream);
   font-family: var(--font-ui);
-  font-size: 8px;
+  font-size: var(--fs-2xs);
   font-weight: 600;
   pointer-events: none;
   paint-order: stroke;
@@ -6369,20 +6916,20 @@ mark.manifesto-find-hit.is-current {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: var(--space-2);
 }
 .euro-map-mep {
   display: grid;
   grid-template-columns: 10px 1fr auto;
-  gap: 0.5rem;
+  gap: var(--space-3);
   align-items: baseline;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: var(--fs-sm);
 }
 .euro-map-mep-swatch {
   width: 8px;
   height: 8px;
-  border-radius: 1px;
+  border-radius: var(--radius-sm);
   margin-top: 0.3rem;
 }
 .euro-map-mep-name {
@@ -6394,4 +6941,459 @@ mark.manifesto-find-hit.is-current {
 }
 .euro-map-tooltip span {
   display: block;
+}
+
+@media (forced-colors: active) {
+  .manifesto-card,
+  .election-card,
+  .party-card,
+  .nation-card,
+  .hub-nation-card,
+  .latest-card,
+  .results-table th,
+  .results-table td,
+  .search-panel,
+  .dropdown-menu,
+  .dropdown-mega {
+    border: 1px solid CanvasText;
+  }
+  .manifesto-party-tag,
+  .election-winner-badge,
+  .filter-btn,
+  .nav-btn,
+  .nav-search-btn,
+  .nav-theme-btn,
+  .viz-tab,
+  .manifesto-link {
+    border: 1px solid ButtonText;
+    forced-color-adjust: auto;
+  }
+  .manifesto-card-main:focus-visible,
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid Highlight;
+    outline-offset: 2px;
+  }
+  .result-party-swatch,
+  .manifesto-party-dot,
+  .mega-dot,
+  .legend-dot,
+  .winner-dot,
+  img,
+  picture,
+  svg {
+    forced-color-adjust: none;
+  }
+}
+
+/* ── /manifesto cover wall ─────────────────────────────────── */
+
+.manifesto-browse-layout { margin-top: var(--space-7); }
+
+.manifesto-density {
+  margin: var(--space-8) 0 var(--space-7);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--hairline);
+}
+.manifesto-density-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.manifesto-density-note {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+}
+.manifesto-density-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.manifesto-density-axis,
+.manifesto-density-tick {
+  stroke: var(--gold-dim);
+  stroke-width: 1;
+}
+.manifesto-density-bar rect:first-child {
+  fill: var(--gold);
+  opacity: 0.8;
+  transition: opacity 0.2s var(--ease), fill 0.2s var(--ease);
+}
+.manifesto-density-chart:hover .manifesto-density-bar:not(:hover):not(.is-active) rect:first-child {
+  opacity: 0.38;
+}
+.manifesto-density-bar.is-active rect:first-child,
+.manifesto-density-bar:hover rect:first-child,
+.manifesto-density-bar:focus-within rect:first-child {
+  fill: var(--gold-light);
+  opacity: 1;
+}
+.manifesto-density-hit {
+  fill: transparent;
+  cursor: pointer;
+}
+.manifesto-density-hit:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 1px;
+}
+.manifesto-density-year {
+  fill: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--field);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.manifesto-density-bar:hover .manifesto-density-year,
+.manifesto-density-bar:focus-within .manifesto-density-year,
+.manifesto-density-bar.is-active .manifesto-density-year {
+  opacity: 1;
+}
+.manifesto-density-ticks text {
+  fill: var(--text-faint);
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+}
+
+.manifesto-facet-list,
+.manifesto-party-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.manifesto-facet,
+.manifesto-party-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  text-align: left;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: color 0.18s var(--ease), background 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+.manifesto-facet:hover,
+.manifesto-party-row:hover {
+  color: var(--text);
+  border-color: var(--gold-dim);
+}
+.manifesto-facet.is-active,
+.manifesto-party-row.is-active {
+  color: var(--text);
+  background: var(--gold-dim);
+  border-color: var(--gold-rule);
+}
+.manifesto-facet-label,
+.manifesto-party-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.manifesto-facet-count {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.manifesto-decade-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.manifesto-decade-chip {
+  padding: 0.35rem 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.manifesto-browse-hint {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  color: var(--gold);
+}
+
+.manifesto-results-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--hairline);
+}
+.manifesto-results-count {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  color: var(--text-muted);
+}
+.manifesto-results-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+.manifesto-filter input {
+  min-height: 44px;
+  min-width: 12rem;
+  padding: 0.3rem var(--space-4);
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-md);
+}
+.manifesto-filter input:focus-visible,
+.manifesto-sort select:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 2px;
+}
+.manifesto-filter-hint {
+  margin: 0 0 var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+}
+.manifesto-filter-hint a { color: var(--gold); }
+.manifesto-sort select {
+  min-height: 44px;
+  padding: 0.3rem var(--space-4);
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.manifesto-browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-7) var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.manifesto-browse-item { min-width: 0; }
+.manifesto-browse-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.manifesto-browse-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.manifesto-browse-shot {
+  display: block;
+  position: relative;
+  aspect-ratio: 150 / 212;
+  overflow: hidden;
+  background: var(--navy-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: var(--radius-sm);
+  transition: transform 0.22s var(--ease), border-color 0.22s var(--ease);
+}
+.manifesto-browse-shot img,
+.manifesto-browse-shot picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.manifesto-browse-link:hover .manifesto-browse-shot,
+.manifesto-browse-link:focus-visible .manifesto-browse-shot {
+  transform: translateY(-3px);
+  border-color: var(--gold-rule);
+}
+.manifesto-browse-link:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+.manifesto-browse-shot.is-gap {
+  background: var(--surface);
+  border-color: var(--gold-dim);
+}
+.manifesto-browse-gap {
+  position: absolute;
+  inset: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  text-align: center;
+  border: 1px dashed var(--gold-rule);
+  border-radius: var(--radius-sm);
+}
+.manifesto-browse-gap-label {
+  font-family: var(--font-ui);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.manifesto-browse-party {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-ui);
+  font-size: var(--fs-2xs);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.manifesto-browse-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  line-height: var(--lh-snug);
+  color: var(--text);
+  text-wrap: pretty;
+}
+.manifesto-browse-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+.manifesto-browse-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.manifesto-browse-badges li {
+  font-family: var(--font-ui);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--gold-dim);
+  border-radius: var(--radius-sm);
+  padding: 1px 6px;
+}
+
+.manifesto-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--hairline);
+}
+.manifesto-more-count {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+}
+.manifesto-more-btn {
+  min-height: 44px;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  color: var(--gold);
+  background: transparent;
+  border: 1px solid var(--gold-rule);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+[data-theme="light"] .manifesto-browse-shot {
+  background: #ffffff;
+  border-color: rgba(20, 32, 58, 0.12);
+  box-shadow: 0 4px 12px rgba(20, 32, 58, 0.07);
+}
+[data-theme="light"] .manifesto-browse-shot.is-gap {
+  background: var(--surface);
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .manifesto-density { display: none; }
+  .manifesto-browse-layout { grid-template-columns: minmax(0, 1fr); }
+  .manifesto-browse-filters {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .manifesto-facet-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-bottom: var(--space-2);
+  }
+  .manifesto-facet-list::-webkit-scrollbar { display: none; }
+  .manifesto-facet {
+    flex: none;
+    width: auto;
+    border-color: var(--navy-border);
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+  }
+  .manifesto-party-list { flex-direction: row; flex-wrap: wrap; }
+  .manifesto-party-row {
+    width: auto;
+    border-color: var(--navy-border);
+    border-radius: var(--radius-pill);
+  }
+}
+
+@media (max-width: 560px) {
+  .manifesto-browse-grid {
+    grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+    gap: var(--space-6) var(--space-4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manifesto-browse-shot,
+  .manifesto-facet,
+  .manifesto-party-row,
+  .manifesto-density-bar rect:first-child { transition: none; }
+  .manifesto-browse-link:hover .manifesto-browse-shot,
+  .manifesto-browse-link:focus-visible .manifesto-browse-shot { transform: none; }
+}
+
+@media (forced-colors: active) {
+  .manifesto-browse-shot { border: 1px solid CanvasText; }
+  .manifesto-facet.is-active,
+  .manifesto-party-row.is-active { border: 1px solid Highlight; }
+  .manifesto-density-year { stroke: Canvas; fill: CanvasText; }
+  .manifesto-density-bar.is-active rect:first-child,
+  .manifesto-density-bar:hover rect:first-child,
+  .manifesto-density-bar:focus-within rect:first-child { fill: Highlight; }
 }

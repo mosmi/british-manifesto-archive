@@ -9,17 +9,21 @@
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
 
+# Versioned via ?v= / ASSETS_VERSION — immutable is safe.
 /js/*
-  Cache-Control: public, max-age=300, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
 
 /data/*
-  Cache-Control: public, max-age=300, must-revalidate
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
 
 /styles.css
-  Cache-Control: public, max-age=300, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
 
 /og/*
   Cache-Control: public, max-age=604800
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 
 # Only cache real PDFs aggressively. Missing files are handled by middleware
 # (404 + no-store) so this rule must never apply to HTML SPA fallbacks.

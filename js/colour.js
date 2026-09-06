@@ -198,7 +198,7 @@ function formatPartyHoldingsLine(pid) {
     .filter(k => h[k] > 0)
     .map(k => `<span class="party-holdings-count">${h[k]}</span> ${labels[k]}`);
   if (!parts.length) return '';
-  return parts.join(' · ') + ' manifestos';
+  return parts.join(' · ') + '\u00a0manifestos';
 }
 
 let PARTY_HOLDINGS = {};

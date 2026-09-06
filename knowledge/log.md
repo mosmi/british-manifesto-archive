@@ -11,6 +11,118 @@ timestamp: 2026-07-05T00:00:00Z
 Newest first. Add a dated entry when you make a notable change. Keep deep technical
 detail in the relevant `knowledge/` concept; this is the timeline.
 
+## 2026-09-06 — Elections menu height
+
+Desktop `#elections-dropdown` is not height-capped; six chamber rows plus the
+hub link must all show without a scrollbar. Assets `?v=2026090628`. See
+[nations-vs-devolved](./design/nations-vs-devolved.md).
+
+## 2026-09-06 — Manifesto cover wall
+
+Canonical `/manifesto` is a filterable cover index from `manifesto-assets.json`
+(route-loaded `js/manifestos-hub.js`). Not a fifth header slot — footer, homepage Manifestos count, and the guessable URL. `/manifestos` 301s here. Gap tiles say “No
+cover scan”. Density axis is calendar decades (including 1950 and 2020) plus hover year/count. **1945** and **2026** are centred on their bars. Homepage hero stats are the ways in (Ways in row removed). Hero and catalogue count **619 unique folders** (London once). Assets
+`?v=2026090627`. See [manifesto-hub](./design/manifesto-hub.md).
+
+## 2026-09-06 — Drawer accordion and footer IA
+
+Hamburger menu starts on the four slots. Elections / Parties expand one at a
+time instead of dumping both megas. Footer links: Home / Elections / Parties /
+Nations / About. Assets `?v=2026090617`. The Elections / Parties **label**
+goes to the hub; the chevron opens the submenu.
+
+## 2026-09-06 — Batch 5 archive value
+
+Published manifesto titles (Wikipedia slogans for Lab/Con/LD; cover or
+document H1 otherwise) in H1, cards, catalogue, and citations. Fallback is
+`{Party} manifesto {Year}`, not “Published without a distinct title”. Page
+`<title>` leads with party and year. Per-document provenance and copyright on
+the reader. Home hero uses the title, four ways in, and the stat row (no
+1945–2024 span; Holyrood and Senedd 2026 are in the archive). Trust copy lives
+on manifesto pages and `/about`, not the homepage. Crawlable `/search?q=` with
+original-case snippets and `SearchAction`.
+Sticky on-this-page rails on election and party pages. Assets `?v=2026090614`.
+See [manifesto-titles](./pipelines/manifesto-titles.md) and
+[sep-2026-audit-plan](./design/sep-2026-audit-plan.md).
+
+## 2026-09-06 — Batch 4 singular URLs and four-slot header
+
+Public hubs are singular: `/election`, `/election/westminster`, `/party`,
+`/party/all`, `/party/other`, `/party/european-groups`, `/nation`. Legacy
+`/elections`, `/devolved/…`, `/parties/…`, `/others`, `/nations`, `/nation/europe`
+301 once. Header is Elections / Parties / Nations / About; mobile drawer matches
+desktop. Assets `?v=2026090608`. See [url-scheme](./architecture/url-scheme.md)
+and [nations-vs-devolved](./design/nations-vs-devolved.md).
+
+## 2026-09-06 — Batch 3 design tokens and polish
+
+`--fs-*` (11px floor), `--space-*`, `--radius-*`, `--shadow-*` in `styles.css`.
+Tracked uppercase uses `--font-ui`. Mega menu inset to the 1200px grid. Homepage
+nations are 2×2 / 4-col, not 3-col. Latest Additions leads with covers. Four ways
+in are underlined links. Party holdings keep “manifestos” with the last chamber.
+Mobile stats are a 2×2. Light gold is AA `#7a5f24`. Assets `?v=2026090607`. See
+[tokens](./design/tokens.md) and [sep-2026-audit-plan](./design/sep-2026-audit-plan.md)
+Batch 3.
+
+## 2026-09-06 — Batch 2 accessibility (WCAG 2.1 AA on tested pages)
+
+Party tags and winner badges use ink + kicker border, not party-on-party tint.
+Election results keep Votes and Vote % at 375px via `.results-scroll`. A–Z
+parties use letter `h2`s and real lists. Search trap re-tested (`inert` + Tab
+cycle; skip-link included). Chrome hit targets 44px; `forced-colors`; hemicycle
+`<desc>` seat summary; one cover+label link on manifesto cards. Assets
+`?v=2026090606`. See [a11y-programme](./design/a11y-programme.md) and
+[sep-2026-audit-plan](./design/sep-2026-audit-plan.md) Batch 2.
+
+## 2026-09-06 — Batch 1 performance (covers, fonts, JS)
+
+Homepage no longer requests missing covers, Google Fonts, jsDelivr, or unused
+devolved indexes. Cards use WebP `cover-356`/`cover-712` beside canonical PNGs.
+Chamber JS and `marked.min.js` load on the routes that need them. Latin fonts are
+self-hosted under `/fonts/`. Assets `?v=2026090605`. File count 8736. See
+[sep-2026-audit-plan](./design/sep-2026-audit-plan.md) Batch 1 (**4.1–4.7**).
+
+## 2026-09-06 — Header wordmark no longer overlaps nav
+
+Wordmark is a locked two-line stack (never a squeezed four-line column). Desktop
+nav collapses to the hamburger at **1100px** (JS hover matches). Assets
+`?v=2026090604`.
+
+## 2026-09-06 — Header wordmark wraps below 1400px
+
+Full name **The British Manifesto Archive** was `nowrap` and collided with
+desktop nav at mid widths. Below 1400px it stacks as “The British” /
+“Manifesto Archive”; domain hides; nav links no longer shrink. Assets
+`?v=2026090603`.
+
+## 2026-09-06 — Batch 0 of the forensic audit
+
+Shipped cache `immutable` on versioned JS/CSS; hero manifesto count from
+`data/archive-counts.json` (659 / 71); brand wordmark; underlined prose links;
+removed `role="menu"`; “Not yet digitised”; `aria-current` on crumbs and nav.
+Assets `?v=2026090602`. Parties hub `/parties/all` now marks the Parties nav current. See [sep-2026-audit-plan](./design/sep-2026-audit-plan.md).
+
+## 2026-09-06 — Header lock reopened (I04/I08)
+
+Four-slot nav: Elections, Parties, Nations, About. Beyond Westminster retired as
+a header label. WebP thumbnail derivatives confirmed beside canonical A4 PNGs.
+See [nations-vs-devolved](./design/nations-vs-devolved.md) and
+[sep-2026-audit-plan](./design/sep-2026-audit-plan.md). Not implemented.
+
+## 2026-09-06 — Forensic audit implementation plan
+
+Wrote [design/sep-2026-audit-plan](./design/sep-2026-audit-plan.md) (batches 0–6)
+and backlog task-008. Applies singular URLs and the locked Nations header split
+on top of the 6 Sep 2026 live-site audit.
+
+## 2026-09-06 — Singular URL scheme (decided, not shipped)
+
+Recorded [architecture/url-scheme](./architecture/url-scheme.md) after the Sep 2026
+forensic audit. Public pillars are singular (`/election`, `/party`, `/nation`,
+`/manifesto`). Westminster **items** stay `/election/1997` (optional alias
+`/election/westminster/1997`); chamber items become `/election/holyrood/2021`.
+Filesystem `/manifestos/` stays plural. Not implemented.
+
 ## 2026-08-10 — Natural Law spectrum + manifesto list formatting (Cursor Grok)
 
 Assets `?v=2026081002`.

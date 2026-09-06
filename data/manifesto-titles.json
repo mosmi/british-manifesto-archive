@@ -1,0 +1,1302 @@
+{
+  "1945/conservative": {
+    "title": "Winston Churchill's Declaration of Policy to the Electors",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1945/labour": {
+    "title": "Let Us Face the Future",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1945/libdem": {
+    "title": "20 Point Manifesto of the Liberal Party",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1950/conservative": {
+    "title": "This Is the Road",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1950/labour": {
+    "title": "Let Us Win Through Together",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1950/libdem": {
+    "title": "No Easy Way: Britain's Problems and the Liberal Answers",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1951/conservative": {
+    "title": "Conservative Party Manifesto 1951",
+    "source": "h1",
+    "distinctive": false
+  },
+  "1951/labour": {
+    "title": "Labour Party Manifesto 1951",
+    "source": "h1",
+    "distinctive": false
+  },
+  "1951/libdem": {
+    "title": "The Nation's Task",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1955/communist": {
+    "title": "A Policy for Britain",
+    "source": "h1",
+    "distinctive": true
+  },
+  "1955/conservative": {
+    "title": "United for Peace and Progress",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1955/labour": {
+    "title": "Forward with Labour",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1955/libdem": {
+    "title": "Crisis Unresolved",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1959/conservative": {
+    "title": "The Next Five Years",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1959/labour": {
+    "title": "Britain Belongs to You",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1959/libdem": {
+    "title": "People Count",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1964/conservative": {
+    "title": "\"Prosperity With A Purpose\"",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1964/labour": {
+    "title": "\"The New Britain\"",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1964/libdem": {
+    "title": "Think for Yourself",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1966/communist": {
+    "title": "New Britain, People's Britain",
+    "source": "h1",
+    "distinctive": true
+  },
+  "1966/conservative": {
+    "title": "Action Not Words: The New Conservative Programme",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1966/labour": {
+    "title": "Time for Decision",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1966/libdem": {
+    "title": "For All the People: the Liberal Plan of 1966",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1970/conservative": {
+    "title": "A Better Tomorrow",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1970/labour": {
+    "title": "Now Britain's Strong - Let's Make it Great to Live In",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1970/libdem": {
+    "title": "What a Life!",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1979/conservative": {
+    "title": "The Conservative manifesto 1979",
+    "source": "cover",
+    "distinctive": false
+  },
+  "1979/labour": {
+    "title": "The Labour Way is the Better Way",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1979/libdem": {
+    "title": "The Real Fight is for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1983/conservative": {
+    "title": "The Challenge of Our Times",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1983/labour": {
+    "title": "The New Hope for Britain",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "1983/libdem": {
+    "title": "Working Together for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1987/conservative": {
+    "title": "The Next Moves Forward",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1987/labour": {
+    "title": "Britain will win with Labour",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1987/libdem": {
+    "title": "Britain United - The Time Has Come",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1992/bnp": {
+    "title": "Fight Back!",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1992/conservative": {
+    "title": "The Best Future for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1992/labour": {
+    "title": "It's time to get Britain working again",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1992/libdem": {
+    "title": "Changing Britain for good",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1992/snp": {
+    "title": "Independence in Europe — Make It Happen Now!",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/alliance": {
+    "title": "Agenda for Change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/conservative": {
+    "title": "You can only be sure with the Conservatives",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/labour": {
+    "title": "new Labour because Britain deserves better",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/libdem": {
+    "title": "Make the Difference",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/naturallaw": {
+    "title": "Natural Law Party Manifesto 1997",
+    "source": "h1",
+    "distinctive": false
+  },
+  "1997/plaid": {
+    "title": "The Best for Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/sdlp": {
+    "title": "Real Leadership Real Peace",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/sinnfein": {
+    "title": "Building a dynamic for change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/snp": {
+    "title": "YES WE CAN — Win the Best for Scotland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "1997/ukip": {
+    "title": "UK Independence Party Manifesto 1997",
+    "source": "h1",
+    "distinctive": false
+  },
+  "1997/uup": {
+    "title": "Constitutional Affairs",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/conservative": {
+    "title": "Time for Common Sense",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/dup": {
+    "title": "DUP: Leadership to Put Things Right!",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/green": {
+    "title": "Reach for the future",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/labour": {
+    "title": "Ambitions for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/libdem": {
+    "title": "Freedom, Justice, Honesty",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/omrlp": {
+    "title": "Official Monster Raving Loony Party Manifesto 2001",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2001/plaid": {
+    "title": "Plaid Cymru Manifesto 2001",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2001/scottishcon": {
+    "title": "time for common sense in Scotland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/scottishlab": {
+    "title": "Scottish Labour Party Manifesto 2001",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2001/sinnfein": {
+    "title": "Building an Ireland of Equals",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/snp": {
+    "title": "Scottish National Party",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/uup": {
+    "title": "Election 2001",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2001/welshlab": {
+    "title": "Ambitions for Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/alliance": {
+    "title": "Alliance Works",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/bnp": {
+    "title": "Rebuilding British Democracy",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/conservative": {
+    "title": "Are You Thinking What We're Thinking?",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2005/cooperative": {
+    "title": "Politics for People: A Co-operative Agenda for a Labour Third Term",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/dup": {
+    "title": "Democratic Unionist Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/green": {
+    "title": "THE REAL CHOICE FOR REAL CHANGE",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2005/labour": {
+    "title": "Britain forward, not back",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2005/libdem": {
+    "title": "The Real Alternative",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2005/omrlp": {
+    "title": "The Official Monster Raving Loony Party",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/plaid": {
+    "title": "Plaid Cymru - The Party of Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/respect": {
+    "title": "Peace Justice Equality",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/scottishcon": {
+    "title": "Are You Thinking What We're Thinking?",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/scottishgrn": {
+    "title": "Scottish Green Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/scottishlab": {
+    "title": "Scottish Labour Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/scottishlibdem": {
+    "title": "Scottish Liberal Democrats",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/sdlp": {
+    "title": "A Better Way to a Better Ireland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/sinnfein": {
+    "title": "Sinn Féin Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/snp": {
+    "title": "SNP — If Scotland Matters to You, Make It Matter in May",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/ssp": {
+    "title": "Scottish Socialist Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/ukip": {
+    "title": "We Want Our Country Back",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2005/uup": {
+    "title": "Ulster Unionist Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/welshcon": {
+    "title": "Welsh Conservative Party Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/welshlab": {
+    "title": "Welsh Labour Manifesto 2005",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2005/welshlibdem": {
+    "title": "The REAL Alternative",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/alliance": {
+    "title": "Alliance Works: Working for You at Westminster",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2010/bnp": {
+    "title": "Democracy, Freedom, Culture and Identity",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/conservative": {
+    "title": "Invitation to join the government of Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/cooperative": {
+    "title": "A Co-operative Agenda for a Fourth Term",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/dup": {
+    "title": "Democratic Unionist Party Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/gpni": {
+    "title": "Green Party Northern Ireland Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/green": {
+    "title": "vote Green Party on May 6th",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2010/labour": {
+    "title": "A Future Fair for All",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2010/libdem": {
+    "title": "Change That Works for You",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2010/pirate": {
+    "title": "Pirate Party UK Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/plaid": {
+    "title": "Think Different. Think Plaid.",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/scottishcon": {
+    "title": "Invitation to Join the Government of Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/scottishgrn": {
+    "title": "A Living Wage for All · Protect Public Services · Support New Green Jobs",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2010/scottishlab": {
+    "title": "Scottish Labour Party Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/scottishlibdem": {
+    "title": "fair taxes",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2010/sdlp": {
+    "title": "Social Democratic and Labour Party Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/sinnfein": {
+    "title": "Sinn Féin Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/snp": {
+    "title": "Elect a Local Champion",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/tuv": {
+    "title": "Traditional Unionist Voice Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/ukip": {
+    "title": "Empowering the People",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/uup": {
+    "title": "Invitation to Join the Government of the United Kingdom",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/welshcon": {
+    "title": "Change the economy",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2010/welshlab": {
+    "title": "Welsh Labour Manifesto 2010",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2010/welshlibdem": {
+    "title": "create jobs by making Wales greener",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2015/alliance": {
+    "title": "Step Forward Not Back — Manifesto for 2015 Westminster Election",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2015/cista": {
+    "title": "CISTA — General Election 2015 Manifesto",
+    "source": "h1",
+    "distinctive": true
+  },
+  "2015/conservative": {
+    "title": "Strong Leadership. A Clear Economic Plan. A Brighter, More Secure Future.",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2015/cooperative": {
+    "title": "A Co-operative Agenda for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/dup": {
+    "title": "Democratic Unionist Party Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/gpni": {
+    "title": "What the Green Party in Northern Ireland Stands For",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/green": {
+    "title": "Natalie Bennett, Green Party Leader",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2015/labour": {
+    "title": "Britain can be better",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2015/libdem": {
+    "title": "Stronger Economy, Fairer Society: Opportunity for Everyone",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2015/omrlp": {
+    "title": "The Official Monster Raving Loony Party",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/pirate": {
+    "title": "Pirate Party UK Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/plaid": {
+    "title": "Working For Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/scottishcon": {
+    "title": "Scottish Conservative Party Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/scottishgrn": {
+    "title": "Vote Green in 2015",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/scottishlab": {
+    "title": "Scottish Labour Party Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/scottishlibdem": {
+    "title": "Scottish Liberal Democrats Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/sdlp": {
+    "title": "Prosperity Not Austerity",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/sinnfein": {
+    "title": "Equality not austerity",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/snp": {
+    "title": "Stronger for Scotland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/tuv": {
+    "title": "Traditional Unionist Voice Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/ukip": {
+    "title": "UK Independence Party Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/uup": {
+    "title": "Ulster Unionist Party Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/welshcon": {
+    "title": "Strong Leadership, A Clear Economic Plan, A Brighter, More Secure Future for Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2015/welshlab": {
+    "title": "Welsh Labour Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2015/welshlibdem": {
+    "title": "Welsh Liberal Democrats Manifesto 2015",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/alliance": {
+    "title": "Progressive Politics",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/conservative": {
+    "title": "Forward, Together: Our Plan for a Stronger Britain and a Prosperous Future",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2017/cooperative": {
+    "title": "A Co-operative Plan for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/dup": {
+    "title": "Standing Strong for Northern Ireland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/gpni": {
+    "title": "#PuttingYouFirst",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2017/green": {
+    "title": "A green ECONOMY THAT WORKS FOR EVERYONE",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/labour": {
+    "title": "For the many, not the few",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2017/libdem": {
+    "title": "Change Britain's future",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2017/nha": {
+    "title": "National Health Action Party Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/pirate": {
+    "title": "Pirate Party UK Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/plaid": {
+    "title": "Defending Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/scottishcon": {
+    "title": "Scottish Conservative Party Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/scottishlab": {
+    "title": "Scottish Labour Party Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/scottishlibdem": {
+    "title": "Your chance to",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/sdlp": {
+    "title": "Taking Our Seats, Taking A Stand",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/sinnfein": {
+    "title": "Standing Up for Equality, Rights, Irish Unity",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/snp": {
+    "title": "Stronger for Scotland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/ukip": {
+    "title": "Britain Together",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/uup": {
+    "title": "Northern Ireland for a Stronger, Better Union",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/welshcon": {
+    "title": "Forward, Together",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2017/welshlab": {
+    "title": "Welsh Labour Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/welshlibdem": {
+    "title": "Welsh Liberal Democrats Manifesto 2017",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2017/wep": {
+    "title": "General Election 2017",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/alliance": {
+    "title": "Alliance Party Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/conservative": {
+    "title": "Get Brexit Done: Unleash Britain's Potential",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2019/cooperative": {
+    "title": "The Co-operative Plan for Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/dup": {
+    "title": "Let's Get the UK Moving Again",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/gpni": {
+    "title": "greenparty NORTHERN IRELAND",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2019/green": {
+    "title": "Green Party Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/labour": {
+    "title": "It's time for real change",
+    "source": "italic",
+    "distinctive": true
+  },
+  "2019/libdem": {
+    "title": "Stop Brexit, Build a Brighter Future",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2019/plaid": {
+    "title": "Wales, it's us.",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2019/reform": {
+    "title": "Brexit Party 2019 Contract with the People",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/scottishcon": {
+    "title": "Our Guarantee",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/scottishgrn": {
+    "title": "Scottish Green Party Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/scottishlab": {
+    "title": "Real Change: For The Many Not The Few",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/scottishlibdem": {
+    "title": "Scottish Liberal Democrats Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/sdlp": {
+    "title": "Stop Boris, Stop Brexit",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/sinnfein": {
+    "title": "Time for Unity",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/snp": {
+    "title": "Stronger for Scotland",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/ukip": {
+    "title": "UK Independence Party Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/uup": {
+    "title": "Northern Ireland Needs Change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/welshcon": {
+    "title": "My Guarantee",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2019/welshlab": {
+    "title": "Welsh Labour Manifesto 2019",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2019/welshlibdem": {
+    "title": "Stop Brexit",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/alba": {
+    "title": "UK General Election 2024",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/alliance": {
+    "title": "Alliance Leading Change for Everyone",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/conservative": {
+    "title": "Clear Plan. Bold Action. Secure Future.",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "2024/cooperative": {
+    "title": "Co-operative Change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/dup": {
+    "title": "Speaking Up for Northern Ireland: Working and Winning for You",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/gpni": {
+    "title": "Greener, Cleaner, Fairer",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/green": {
+    "title": "Green Party Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2024/labour": {
+    "title": "Change",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2024/libdem": {
+    "title": "For a fair deal",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2024/plaid": {
+    "title": "For Fairness, For Ambition, For Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/reform": {
+    "title": "Our Contract with You",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/scottishcon": {
+    "title": "Scottish Conservative Party Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "2024/scottishgrn": {
+    "title": "Vote Like Our Future Depends on It",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/scottishlab": {
+    "title": "Changing Scotland’s politics",
+    "source": "bold",
+    "distinctive": true
+  },
+  "2024/scottishlibdem": {
+    "title": "A fair deal on the economy",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/sdlp": {
+    "title": "An Election for Change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/sinnfein": {
+    "title": "Strong Leadership, Positive Change",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/snp": {
+    "title": "\"A Future Made in Scotland.\"",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/tuv": {
+    "title": "Restore the Union",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/uup": {
+    "title": "Making Northern Ireland Work.",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/welshcon": {
+    "title": "The Conservatives’ record of action",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/welshlab": {
+    "title": "Labour’s six steps to change Wales",
+    "source": "h2",
+    "distinctive": true
+  },
+  "2024/workersparty": {
+    "title": "Workers Party of Britain Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "euro/1999/naturallaw": {
+    "title": "Natural Law Party European Manifesto 1999",
+    "source": "h1",
+    "distinctive": false
+  },
+  "feb1974/conservative": {
+    "title": "Firm Action for a Fair Britain",
+    "source": "h2",
+    "distinctive": true
+  },
+  "feb1974/labour": {
+    "title": "Let us work together - Labour's way out of the crisis",
+    "source": "h2",
+    "distinctive": true
+  },
+  "feb1974/libdem": {
+    "title": "Change the Face of Britain",
+    "source": "wikipedia",
+    "distinctive": true
+  },
+  "london/1958/spgb": {
+    "title": "London County Council Elections: Party Manifesto",
+    "source": "h1",
+    "distinctive": true
+  },
+  "london/2000/livingstone": {
+    "title": "Ken Livingstone's Manifesto for London",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2004/cpa": {
+    "title": "richness of human lives",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2004/green": {
+    "title": "Green Party London Mayoral Manifesto 2004",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2004/libdem": {
+    "title": "A NEW MAYOR FOR A GREATER LONDON",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2008/conservative": {
+    "title": "Making London’s Mayor More Accountable",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2008/cooperative": {
+    "title": "The Co-operative Party is the Party of social justice.",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2008/englishdemocrats": {
+    "title": "Putting England First",
+    "source": "italic",
+    "distinctive": true
+  },
+  "london/2008/green": {
+    "title": "Green Party London Mayoral Manifesto 2008",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2008/libdem": {
+    "title": "The Experience to Deliver",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2012/benita": {
+    "title": "An introduction",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2012/bnp": {
+    "title": "British National Party London Mayoral Manifesto 2012",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2012/conservative": {
+    "title": "BETTER OFF WITH BORIS",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2012/green": {
+    "title": "ACHIEVING OUR VISION FOR LONDON",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2012/labour": {
+    "title": "Labour Party London Mayoral Manifesto 2012",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2012/libdem": {
+    "title": "SERIOUS SOLUTIONS. FOR LONDON.",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2016/bnp": {
+    "title": "A new vision for London is needed.",
+    "source": "italic",
+    "distinctive": true
+  },
+  "london/2016/conservative": {
+    "title": "MY ACTION PLAN FOR GREATER LONDON",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2016/green": {
+    "title": "THE POWER OF GOOD IDEAS",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2016/labour": {
+    "title": "Labour Party London Mayoral Manifesto 2016",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2016/libdem": {
+    "title": "Making London work for everyone",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2016/onelove": {
+    "title": "One Love Party London Mayoral Manifesto 2016",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2016/respect": {
+    "title": "IF I'M MAYOR...",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2016/ukip": {
+    "title": "Mayor of London",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2016/wep": {
+    "title": "Sophie Walker",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2021/binface": {
+    "title": "COUNT BINFACE’S MAYORAL MANIFESTO 2021: PUTTING LONDON ON THE MAP",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2021/burningpink": {
+    "title": "Burning Pink London Mayoral Manifesto 2021",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2021/conservative": {
+    "title": "MY PLAN TO GIVE LONDON A FRESH START",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2021/green": {
+    "title": "SIAN BERRY - YOUR CANDIDATE FOR MAYOR OF LONDON",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2021/labour": {
+    "title": "Labour Party London Mayoral Manifesto 2021",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2021/libdem": {
+    "title": "Forewords 4",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2021/londonreal": {
+    "title": "BRIAN FOR MAYOR",
+    "source": "bold",
+    "distinctive": true
+  },
+  "london/2021/maxfosh": {
+    "title": "Independent London Mayoral Manifesto 2021",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2021/pierscorbyn": {
+    "title": "Let London Live London Mayoral Manifesto 2021",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2021/reclaim": {
+    "title": "Reclaim Party London Mayoral Manifesto 2021",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2024/awp": {
+    "title": "Mayor of London & London-Wide Assembly Election",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/binface": {
+    "title": "Count Binface London Mayoral Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2024/britainfirst": {
+    "title": "BRITAIN FIRST",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/campbell": {
+    "title": "Captured from teamcampbell.london/manifesto/ — Wayback Machine snapshot of 2 May 2024",
+    "source": "italic",
+    "distinctive": true
+  },
+  "london/2024/conservative": {
+    "title": "BETWEEN SUSAN HALL AND YOU",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/ghulati": {
+    "title": "Mayor of London Election, 2 May 2024",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/green": {
+    "title": "Green Party London Mayoral Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2024/labour": {
+    "title": "Labour Party London Mayoral Manifesto 2024",
+    "source": "h1",
+    "distinctive": false
+  },
+  "london/2024/libdem": {
+    "title": "Fix London.",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/londonreal": {
+    "title": "FIGHTING FOR FREEDOM OF SPEECH",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/michli": {
+    "title": "CRIME AND POLICING",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/reform": {
+    "title": "London needs Reform",
+    "source": "h2",
+    "distinctive": true
+  },
+  "london/2024/sdp": {
+    "title": "MAKING LONDON WORK FOR YOU",
+    "source": "h2",
+    "distinctive": true
+  },
+  "oct1974/conservative": {
+    "title": "Putting Britain First",
+    "source": "h2",
+    "distinctive": true
+  },
+  "oct1974/labour": {
+    "title": "Britain Will Win With Labour",
+    "source": "h2",
+    "distinctive": true
+  },
+  "oct1974/libdem": {
+    "title": "Why Britain Needs Liberal Government",
+    "source": "h2",
+    "distinctive": true
+  }
+}

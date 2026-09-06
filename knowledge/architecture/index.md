@@ -9,6 +9,7 @@ timestamp: 2026-07-05T00:00:00Z
 # Architecture
 
 - [site-structure](./site-structure.md) — files, JS modules, routing
+- [url-scheme](./url-scheme.md) — singular public URLs (`/election`, `/party`, `/nation`, `/manifesto`)
 - [local-preview](./local-preview.md) — SPA-aware `scripts/serve-preview.py` (default)
 - [deployment](./deployment.md) — Cloudflare runbook and the one critical gotcha
 - [cache-busting](./cache-busting.md) — the `?v=` versioning rule

@@ -24,6 +24,18 @@ Canonical size used across the archive: **1191 × 1684** px
 Do **not** ship `cover.jpg` with baked-in white margins as the primary cover. JPEG
 cannot carry transparency; cards try `cover.png` first then fall back to `cover.jpg`.
 
+Thumbnail **WebP** files (`cover-356.webp`, `cover-712.webp`, or `manifesto-356.webp`
+when the raster is `manifesto.png`) sit **beside** the PNG for cards. They never
+replace `cover.png`. Generate them with:
+
+```bash
+python3 scripts/build-cover-thumbs.py
+```
+
+Then bump `ASSETS_VERSION` / `?v=`. Run `python3 scripts/check-cloudflare-limits.py`
+after adding files. See forensic audit Batch 1 in
+[sep-2026-audit-plan](../design/sep-2026-audit-plan.md).
+
 ## Why this matters
 
 Manifesto thumbnails use `aspect-ratio: 210 / 297` (A4). Opaque white letterboxing
